@@ -1,0 +1,11 @@
+[General]
+last-saved-to[$e]=$HOME/Pictures
+
+[GuiConfig]
+captureDelay=2
+captureModeIndex=4
+includeDecorations=false
+includePointer=true
+transientOnly=false
+waitCaptureOnClick=false
+window-position=50,50
