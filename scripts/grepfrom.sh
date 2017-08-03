@@ -1,1 +1,0 @@
- grepfrom () { file=$(grep 'rdf:about' /Users/jim/img/data/fdetect-$1.rdf|head -n 1|awk -F'"' '{print $2}'|sed -e 's/=/%3d/g'); zgrep "$file" ~/tmp/sync/*unsorted-triples-201311* | grep '/depicts>'; }
