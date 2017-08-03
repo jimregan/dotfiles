@@ -9,3 +9,14 @@ Playing/
 bitext/
 .theano/
 .sbt/
+.ivy2/
+Downloads/
+.config/chromium/
+.nv/
+IdeaProjects/
+.cache/
+.config/pulse/
+*.swp
+.local/share/
+.local/bin/
+.local/lib/
