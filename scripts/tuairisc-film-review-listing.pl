@@ -55,7 +55,7 @@ my $articles = scraper {
 my $r = $articles->scrape($uri);
 
 for my $art (@{$r->{articles}}) {
-	print $art->{'uri'} . "\n";
+	print LIST $art->{'uri'} . "\n";
 }
 
 if(exists $r->{'a'}) {

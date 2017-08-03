@@ -5,7 +5,7 @@ use strict;
 use utf8;
 
 while(<>) {
-    while(/(\([^)]+\))/) {
+    while(/(\([^)]+\))/g) {
         print "$1\n";
         next;
     }

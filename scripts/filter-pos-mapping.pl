@@ -16,6 +16,7 @@ while(<MAP>) {
 while(<FILT>) {
     chomp;
     s/\&amp;/&/g;
+    s/ *$//;
     if(!exists $mapped{$_}) {
         print "$_\n";
     }

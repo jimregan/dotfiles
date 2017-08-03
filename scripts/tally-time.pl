@@ -13,7 +13,7 @@ my $omin = int($secs / 60);
 my $osec = $secs % 60;
 my $minout = $mins + $omin;
 my $hours = 0;
-$hours = $mins % 60;
-my $outmin = int($mins / 60);
+my $outmin = $mins % 60;
+$hours = int($mins / 60);
 
 print "$hours:$outmin:$osec\n";

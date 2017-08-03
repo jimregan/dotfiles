@@ -25,6 +25,7 @@ while(<>) {
     next if(/<div id="lastupdated"/);
     next if(/<meta name="google-site-verification"/);
     next if(/<link/);
+    next if(/<script/);
     if($reading) {
         print;
     }

@@ -86,7 +86,4 @@ if(!$response->is_success) {
 		print VIDEO "$stitle\t$series\t$episode\t$scategory\t$vidurl\n";
 	}
 	print DESC "$stitle\t$series\t$episode\t$scategory\t$endesc\t$gadesc\n";
-	if($ga ne '') {
-		print "$stitle\t$series\t$episode\t$vidurl\t$ga\n";
-	}
 }

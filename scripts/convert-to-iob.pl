@@ -35,6 +35,7 @@ while(<>) {
         } elsif ($tok =~ /\+/) {
             $tok =~ s/\+\@[^+]*//;
             if ($tok =~ /\+Punct/) {
+                $tok =~ s/\+<<<//;
                 print "$lem\t$tok\tO\n";
                 $lem = $tok = '';
             } else {

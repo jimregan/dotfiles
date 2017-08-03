@@ -28,7 +28,7 @@ while(<>) {
 		print "Nm_na_NmGenW\t$1 na $3\t$2,na,$4\n";
 	}
 	if(/\^([^\/]*)\/([^<]*)<Noun><Masc><Com><Sg>\$\^na\/na<Art><Pl><Def>\$\^([^\/]*)\/([^<]*)<Noun><Masc><Gen><Strong><Pl><DefArt>\$;$/) {
-		print "Nm_na_NmGenS\t$1 na $3\"\t$2,na,$4\n";
+		print "Nm_na_NmGenS\t$1 na $3\t$2,na,$4\n";
 	}
 	if(/\^([^\/]*)\/([^<]*)<Noun><Masc><Com><Sg>\$\^na\/na<Art><Gen><Sg><Def><Fem>\$\^([^\/]*)\/([^<]*)<Noun><Fem><Gen><Sg>/) {
 		print "Nm_na_Nf\t$1 na $3\t$2,na,$4\n";

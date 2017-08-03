@@ -13,7 +13,6 @@ use URI;
 
 my $catalogue = 'https://wolnelektury.pl/katalog/audiobooki/';
 
-
 my $booklister = scraper {
     process '//div[@id="books-list"]', "books[]" => scraper {
         process '//p/a', uri => '@href';

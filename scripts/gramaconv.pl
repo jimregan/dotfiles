@@ -22,7 +22,7 @@ my %posmap = (
   'DOS' => '(Det:Poss|Prep).*|Prop.Prep',
   '[^DOS]' => '(Det:Poss|Prep).*|Prop.Prep',
 );
-print "    <category id=\"GRAMADOIR_INPHRASE\" name=\"San abairtín\" type=\"nonstandard\">\n";
+print "    <category id=\"GRAMADOIR_BACHOIR\" name=\"San abairtín\" type=\"nonstandard\">\n";
 while(<>) {
     chomp;
     next if (/^#/);
@@ -89,6 +89,9 @@ while(<>) {
             push @toks, "<token ${neg}postag=\"$posmap{$curpos}:Len\" postag_regexp=\"yes\"></token>";
         } elsif ($inner eq 'ARWORD') {
             $rulename .= " ar";
+            push @toks, "<token postag=\"Prep:Simp|Pron:Prep.*\" postag_regexp=\"yes\" inflected=\"yes\">ar</token>";
+        } elsif ($inner eq 'PASTNORFORMLEN') {
+            $rulename .= " fuarthas";
             push @toks, "<token postag=\"Prep:Simp|Pron:Prep.*\" postag_regexp=\"yes\" inflected=\"yes\">ar</token>";
         } elsif ($inner eq 'JUSTTA') {
             $rulename .= " tá";

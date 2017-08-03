@@ -19,7 +19,7 @@ while(<IN>) {
 	} else {
 		next;
 	}
-	if($tag =~ /(Np|X)/) {
+	if($tag =~ /(Up|Np|X)/) {
 		$oword = $word;
 	} else {
 		$oword = lc($word);

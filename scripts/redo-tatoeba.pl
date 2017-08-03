@@ -20,7 +20,7 @@ my %trgsent = ();
 while(<SENTS>) {
     chomp;
     my ($id, $lang, $sent) = split /\t/;
-    next if ($id == 2828470); # ought to be glg, not gle
+    next if ($id == 2828470); # ought to be por?, not gle
     if ($lang eq $src) {
         $srcsent{$id} = $sent;
     } elsif ($lang eq $trg) {

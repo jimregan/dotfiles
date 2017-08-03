@@ -16,7 +16,7 @@ while(<>) {
     if(m!</sentence!) {
 #        print "OK: $flex $toks $orig\n";
         if ($flex != $toks) {
-            print "$orig";
+            print "$toks $flex $orig\n";
         }
         $flex = $toks = 0;
     }

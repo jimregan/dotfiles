@@ -24,7 +24,7 @@ while(<LIST>) {
 
 	my $nodes = $tree->findnodes('//div[@class="article--full__content"]/p');
 	for my $n ($nodes->getChildNodes()) {
-		if($tree->exists('./span')) {
+		if($tree->exists('./span', $n)) {
 			for my $m ($n->findnodes('./span')) {
 				print $m->string_value() . "\n";
 			}

@@ -84,7 +84,7 @@ print STDERR "$posraw\n";
             if ($title eq lc($title)) {
                 $tr = lc($tr);
             }
-            if ($tr =~ /the letter/) {
+            if ($tr =~ /the letter/i) {
                 $res = ' i="yes"';
             }
             print "    <e$res><p><l>$tr$posright</l><r>$title$posleft</r></p></e>\n";

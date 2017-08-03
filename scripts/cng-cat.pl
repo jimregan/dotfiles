@@ -62,7 +62,7 @@ while(<STDIN>) {
 
 sub clean {
 	local $_ = shift;
-	s/<([^>]*)>//;
+	s/<([^>]*)>//g;
 	s/^ *//;
 	s/ *$//;
 	$_;

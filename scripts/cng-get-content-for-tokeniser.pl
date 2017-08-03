@@ -15,6 +15,7 @@ binmode(STDOUT, ":utf8");
 my $reading = 0;
 while(<>) {
 	chomp;
+	s/\r//g;
 	if($reading == 0) {
 		if(/<body>/) {
 			$reading = 1;
