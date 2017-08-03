@@ -1,0 +1,1 @@
+findzero () { find . -size 0; }

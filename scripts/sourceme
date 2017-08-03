@@ -1,0 +1,297 @@
+user_agent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10"
+
+alias rmemptydir='find . -type d -empty -depth -exec rmdir {} \;'
+
+#tmp
+doeugograb () { ~/img/grab.sh "$@"; for i in "$@"; do ~/img/grab.sh $(lynx -dump "$i" |grep "$i.*[0-9]/$"|awk '{print $2}');done ; }
+
+unthumb () { echo $(perl -e 'if($ARGV[0] =~ m!(http://.*)-([0-9]*)x([0-9]*)(\..*)!) {print "$1$4";}' $1|sed -e 's/\-cr[0-9]*\././') ; }
+lunthumb () { echo $(perl -e 'if($ARGV[0] =~ m!(.*)-([0-9]*)x([0-9]*)(\..*)!) {print "$1$4";}' $1) ; }
+#lunthumb () { echo $1 | sed -e 's/\-cr[0-9]*\-[0-9]*x[0-9]*//;s/\-e[0-9]*\-[0-9]*x[0-9]*//' ; }
+
+dotag () { echo "<$1> <http://purl.org/dc/terms/subject> <$2> ." >> fash-rdf-links ; }
+fashtitle () { dotitle $1 "$(lynx -source $1|grep '<div class="grid_8 mba"><h1 class="centre"><a'|awk -F'<a' '{print $2}'|awk -F'>' '{print $2}'|awk -F'</a' '{print $1}')" ; }
+rwtitle () { dotitle $1 "$(lynx -source $1|grep '<h1>'|grep '/runway/'|awk -F'">' '{print $2}'|awk -F'<' '{print $1}')" ; }
+extag () { for i in $(grep $1 extract.n3|awk -F'<' '{print $4}'|awk -F'>' '{print $1}'|grep -i jpg); do dotag $i $2; done }
+dorunway () { for i in "$@";do rwtitle $i;done; ~/img/fash.sh "$@"; }
+dofash () { for i in "$@";do fashtitle $i;done; ~/img/fash.sh "$@"; }
+
+procnuts () { dir=$(dirname $1);for i in $(lynx -source $1 |grep 'var imgRequest'|gsed -e 's/,/\n/g'|grep filename|sed -e 's/\\//g'|awk -F'"' '{print $4}');do procimg $1 "http://www.nuts.co.uk/images/gallery/$i";done ; }
+fullnuts () { dir=$(dirname $2);for i in $(lynx -source $2 |grep 'var imgRequest'|gsed -e 's/,/\n/g'|grep filename|sed -e 's/\\//g'|awk -F'"' '{print $4}');do dofull $1 $2 "http://www.nuts.co.uk/images/gallery/$i";done ; }
+
+docelebslam () { for i in $(lynx -source $2|grep 'images\[image_count\]'|awk -F"'" '{print $2}'|sed -e 's/ /%20/g');do dofull $1 $2 $i;done ; }
+mycelebslam () { for i in $(lynx -source $2|grep 'images\[image_count\]'|awk -F"'" '{print $2}'|sed -e 's/ /%20/g');do myfull $1 $2 $i;done ; }
+
+beergogglerimg () { lynx -source $1|grep '<div align="center"><img src="'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+beergogglerpage () { lynx -dump $1 |grep 'attachment_id'|awk '{print $2}'|grep -v '&'|sort|uniq ; }
+
+dodonchavez () { for i in $(lynx -dump $2 | grep $2|awk '{print $2}'); do img=$(lynx -source $i|grep 'class="attachment-full"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}');dofull $1 $2 $img;done ; }
+mydonchavez () { for i in $(lynx -dump $2 | grep $2|awk '{print $2}'); do img=$(lynx -source $i|grep 'class="attachment-full"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}');myfull $1 $2 $img;done ; }
+procdonchavez () { for i in $(lynx -dump $1 | grep $1|awk '{print $2}'); do img=$(lynx -source $i|grep 'class="attachment-full"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}'); if [ "$img" != "" ]; then procimg $1 $img;fi;done ; }
+
+getheavyimg () { lynx -source $1|grep '<div class="currentImageMatte">'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+getbreakimg () { lynx -source $1|gsed -e 's/<img/\n<img/g'|grep '"galleries-media"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+
+#egotasticimg () { lynx -source $1|grep '<div class="entry-content-img">'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+egotasticimg () { lynx -source $1|grep 'attachment-img-435-580'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+#egotasticpage () { lynx -dump $1|grep -e "\($1\|/full-size-image/\)"|grep -v 'http://www.facebook.com'|awk '{print $2}' ; }
+egotasticpage () { part=$(lynx -source $1|grep 'title="View this Gallery"'|awk -F'href="' '{print $2}'|awk -F'"' '{print $1}');lynx -dump $1|grep "$part"|grep -v 'http://www.facebook.com'|awk '{print $2}' ; }
+
+getguyism () { lynx -source $1|grep '<p class="attachment">'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+myguyism () { url="$2"; for i in $(lynx -dump "$url"|grep "$url/attachment/"|awk '{print $2}'); do myfull $1 $url $(getguyism $i); done ; }
+doguyism () { url="$2"; for i in $(lynx -dump "$url"|grep "$url/attachment/"|awk '{print $2}'); do dofull $1 $url $(getguyism $i); done ; }
+procguyism () { url="$1"; for i in $(lynx -dump "$url"|grep "$url/attachment/"|awk '{print $2}'); do procimg $url $(getguyism $i); done ; }
+
+#dosuperficialimg () { lynx -source $1|grep 'class="align size-medium wp-image-"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+dosuperficialimg () { lynx -source $1|grep -e 'class="kht[0-9][0-9][0-9]x[0-9][0-9][0-9]"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}' ; }
+myfullsuperficial () { 
+	lpage=$(lynx -source $2|grep 'View Photo Gallery'|awk -F"<a href='" '{print $2}'|awk -F"'" '{print $1}')
+	echo $lpage
+	for i in $(lynx -dump $lpage|grep "$2/"|awk '{print $2}'|sort|uniq);do 
+		img=$(dosuperficialimg $i)
+		thumb=$(unthumb $img)
+		myfull $1 $2 $img
+		myfull $1 $2 $thumb
+		if [ "$thumb" != "" ] && [ "$img" != "" ] && [ "$img" != "$thumb" ]
+		then
+			dosimilar $img $thumb
+		fi
+	done
+}
+dofullsuperficial () { 
+	lpage=$(lynx -source $2|grep 'View Photo Gallery'|awk -F"<a href='" '{print $2}'|awk -F"'" '{print $1}')
+	if [ "$lpage" == "" ]
+	then
+		lpage=$(lynx -source $2|grep 'class="gallery-view-gallery-link"'|awk -F'href="' '{print $2}'|awk -F'"' '{print $1}')
+		echo $lpage
+	fi
+	for i in $(lynx -dump $lpage|grep "$2/"|awk '{print $2}'|sort|uniq);do 
+		img=$(dosuperficialimg $i)
+		thumb=$(unthumb $img)
+		dofull $1 $2 $img
+		dofull $1 $2 $thumb
+		if [ "$thumb" != "" ] && [ "$img" != "" ] && [ "$img" != "$thumb" ]
+		then
+			dosimilar $img $thumb
+		fi
+	done
+}
+
+dodepict () { echo "<$1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Image> ." >> fash-rdf-links; echo "<$1> <http://xmlns.com/foaf/0.1/depicts> <$2> ." >> fash-rdf-links; }
+mydepict () { echo "<$1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Image> ." >> fash-rdf-links; echo "<$1> <http://xmlns.com/foaf/0.1/depicts> $2 ." >> fash-rdf-links; }
+
+doimg () { echo "<$1> <http://xmlns.com/foaf/0.1/page> <$2> ." >> fash-rdf-links; }
+procimg () { doimg "$2" "$1"; wget --no-check-certificate -U "$user_agent" --referer="$1" -x -c "$2" ; }
+do404 () { echo "<$1> <http://www.w3.org/2011/http#statusCodeValue> <http://www.w3.org/2011/http-statusCodes#NotFound> ." >> fash-rdf-links; }
+dosimilar () { echo "<$1> <http://www.w3.org/2004/02/skos/core#closeMatch> <$2> ." >> fash-rdf-links; }
+kindasimilar () { echo "<$1> <http://www.w3.org/2004/02/skos/core#broadMatch> <$2> ." >> fash-rdf-links; }
+
+doimgvenue () { in=$1; base=$(echo $in|awk -F'/img.php' '{print $1}'); imgurl=$(lynx -source $in|grep SRC|awk -F'SRC="' '{print $2}'|awk -F'"' '{print $1}');echo "$base/$imgurl" ; procimg $in "$base/$imgurl" ; }
+
+_dovef () { img=$(lynx -source $1|grep '<[Ii][Mm][Gg]'|grep scaleImg|awk -F'SRC="' '{print $2}'|awk -F'"' '{print $1}');host=$(echo $1|sed -e 's#http://##'|awk -F/ '{print $1}'); if [ x"$host" != x"" ];then  echo http://$host/$img ;fi; }
+procvef () { img=$(_dovef $1);if [ x"$img" != x"" ];then procimg $1 $img; fi; }
+#procvef () { for i in $(lynx -dump $1|grep imagevenue|awk '{print $2}');do procimg $1 $(doimgvenue $i); done ; } 
+dosource () { echo "<$1> <http://purl.org/dc/elements/1.1/source> <$2> ." >> fash-rdf-links; }
+
+procfishki () { for i in $(lynx -source $1|grep '<img src'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}'|grep fishki.net|grep '/post/');do procimg $1 $i;done ; }
+procgirlsfishki () { for i in $(lynx -source $1|grep '<img src'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}'|grep fishki.net|grep '/girls/');do procimg $1 $i;done ; }
+
+dotitle () { echo "<$1> <http://purl.org/dc/terms/title> \"$2\" ." >> fash-rdf-links; }
+
+newdepict () { bnode="_:$3"; echo "$bnode  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> ." >> fash-rdf-links; echo "$bnode  <http://xmlns.com/foaf/0.1/name> \"$2\" ." >> fash-rdf-links;echo "<$1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Image> ." >> fash-rdf-links; echo "<$1> <http://xmlns.com/foaf/0.1/depicts> $bnode ." >> fash-rdf-links; }
+
+dofullsource () { dofull $1 $2 $3; dofull $1 $2 $(unthumb $3); dosource $3 $(unthumb $3); }
+myfullsource () { myfull $1 $2 $3; myfull $1 $2 $(unthumb $3); dosource $3 $(unthumb $3); }
+procimgsource () { procimg $1 $2; procimg $1 $(unthumb $2);dosource $2 $(unthumb $2); }
+
+congrep () { inp=$(echo "$1"|sed -e 's/^pic//'); grep $inp ~/Library/Application\ Support/Google/Picasa3/contacts/contacts.xml ; }
+exgrep () { grep $1 ~/img/exift.pl ; } 
+
+dofull () { 
+	if [ "$3" != "" ]
+		then dodepict $3 $1 
+		doimg $3 $2
+		wget --no-check-certificate -U "$user_agent" --referer=$2 -x -c $3
+	else
+		echo "Missing URL"
+	fi
+}
+myfull () { 
+	if [ "$3" != "" ]
+		then mydepict $3 $1 
+		doimg $3 $2
+		wget -U "$user_agent" --referer=$2 -x -c $3
+	else
+		echo "Missing URL"
+	fi
+}
+
+dopopohol () { for i in $(lynx -dump $1|grep photonew.php|awk '{print $2}');do dofull $2 $1 http://www.popoholic.com/$(lynx -source $i|grep bigimages|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}');done }
+
+doperson () { echo "$1  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> ." >> fash-rdf-links; echo "$1 <http://xmlns.com/foaf/0.1/name> \"$2\" ." >> fash-rdf-links; }
+
+sourcewhat () { for i in $(lynx -source $1 |gsed -e 's/<img/\n<img/g'|grep '^<img'|awk -F'src="' '{print $2}' |awk -F'"' '{print $1}'|grep chztdwtease.files|grep '?'|sed -e 's/#038;//g');do dosource $i $(echo $i|awk -F'?' '{print $1}');done; }
+sourcerofl () { for i in $(lynx -source $1 |gsed -e 's/<img/\n<img/g'|grep '^<img'|awk -F'src="' '{print $2}' |awk -F'"' '{print $1}'|grep roflrazzi.files|grep '?'|sed -e 's/#038;//g');do dosource $i $(echo $i|awk -F'?' '{print $1}');done; }
+
+fullpopoholic2 () { for i in $(lynx -dump $2|grep photonew.php|awk -F'id=' '{print $2}'|awk -F'&' '{print $1}');do dofull $1 $2 http://www.popoholic.com/bigimages2/$i.jpg;done; }
+fullpopoholic () { for i in $(lynx -dump $2|grep photo.php|awk -F'id=' '{print $2}'|awk -F'&' '{print $1}');do dofull $1 $2 http://www.popoholic.com/bigimages/$i.jpg;done; }
+myfullpopoholic () { for i in $(lynx -dump $2|grep photo.php|awk -F'id=' '{print $2}'|awk -F'&' '{print $1}');do myfull $1 $2 http://www.popoholic.com/bigimages/$i.jpg;done; }
+fullhollywoodtuna () { for i in $(lynx -useragent "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10" -dump $2|grep -e '\(photo.php\|?page_id\)'|awk '{print $2}');do url=$(echo $i|awk -F'&#038;id=|&id=' '{print $2}'|awk -F'&' '{print $1}');loc=$(echo $i|awk -F'loc=' '{print $2}'|awk -F'&' '{print $1}'); if [ "$url" != "" ];then dofull $1 $2 http://www.hollywoodtuna.com/images${loc}/bigimages${loc}/$url.jpg;fi;done; }
+myfullhollywoodtuna () { for i in $(lynx -useragent "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10" -dump $2|grep -e '\(photo.php\|?page_id\)'|awk '{print $2}');do url=$(echo $i|awk -F'&#038;id=|&id=' '{print $2}'|awk -F'&' '{print $1}');loc=$(echo $i|awk -F'loc=' '{print $2}'|awk -F'&' '{print $1}'); if [ "$url" != "" ];then myfull $1 $2 http://www.hollywoodtuna.com/images${loc}/bigimages${loc}/$url.jpg;fi;done; }
+prochollywoodtuna () { for i in $(lynx -useragent "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10" -dump $1|grep -e '\(photo.php\|?page_id\)'|awk '{print $2}');do url=$(echo $i|awk -F'&#038;id=|&id=' '{print $2}'|awk -F'&' '{print $1}');loc=$(echo $i|awk -F'loc=' '{print $2}'|awk -F'&' '{print $1}'); if [ "$url" != "" ];then procimg $1 http://www.hollywoodtuna.com/images${loc}/bigimages${loc}/$url.jpg;fi;done; }
+
+fullbrosome () { for i in $(lynx -source $2|grep 'title='|grep 'attachment-thumbnail'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}'); do th=$(unthumb $i); dofull $1 $2 $th; dosource $i $th ; done }
+myfullbrosome () { for i in $(lynx -source $2|grep 'title='|grep 'attachment-thumbnail'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}'); do th=$(unthumb $i); myfull $1 $2 $th; dosource $i $th ; done }
+
+fullbeergoggler () { for i in $(beergogglerpage $2);do dofull $1 $2 $(beergogglerimg $i);done; }
+myfullbeergoggler () { for i in $(beergogglerpage $2);do myfull $1 $2 $(beergogglerimg $i);done; }
+
+myfullegotastic () { 
+	for i in $(egotasticpage $2);do 
+		img=$(egotasticimg $i)
+		thumb=$(unthumb $img)
+		myfull $1 $2 $img
+		myfull $1 $2 $thumb
+		if [ "$thumb" != "" ] && [ "$img" != "" ] && [ "$img" != "$thumb" ]
+		then
+			dosimilar $img $thumb
+		fi
+	done
+}
+dofullegotastic () { 
+	for i in $(egotasticpage $2);do 
+		img=$(egotasticimg $i)
+		thumb=$(unthumb $img)
+		dofull $1 $2 $img
+		dofull $1 $2 $thumb
+		if [ "$thumb" != "" ] && [ "$img" != "" ] && [ "$img" != "$thumb" ]
+		then
+			dosimilar $img $thumb
+		fi
+	done
+}
+procegotastic () { 
+	for i in $(egotasticpage $1);do 
+		img=$(egotasticimg $i)
+		thumb=$(unthumb $img)
+		if [ "$img" != "" ] 
+		then
+			procimg $1 $img
+		fi
+		if [ "$thumb" != "" ] 
+		then
+			procimg $1 $thumb
+		fi
+		if [ "$thumb" != "" ] && [ "$img" != "" ] && [ "$img" != "$thumb" ]
+		then
+			dosimilar $img $thumb
+		fi
+	done
+}
+
+myfullwhat () { sourcewhat $2; for i in $(lynx -source $2 |gsed -e 's/<img/\n<img/g'|grep '^<img'|awk -F'src="' '{print $2}' |awk -F'"' '{print $1}'|awk -F'?' '{print $1}'|grep chztdwtease.files);do myfull $1 $2 $i;done; }
+fullwhat () { sourcewhat $2; for i in $(lynx -source $2 |gsed -e 's/<img/\n<img/g'|grep '^<img'|awk -F'src="' '{print $2}' |awk -F'"' '{print $1}'|awk -F'?' '{print $1}'|grep chztdwtease.files);do dofull $1 $2 $i;done; }
+procwhat () { for i in $(lynx -source $1 |gsed -e 's/<img/\n<img/g'|grep '^<img'|awk -F'src="' '{print $2}' |awk -F'"' '{print $1}'|awk -F'?' '{print $1}'|grep chztdwtease.files);do procimg $1 $i;done; }
+procrofl () { for i in $(lynx -source $1 |gsed -e 's/<img/\n<img/g'|grep '^<img'|awk -F'src="' '{print $2}' |awk -F'"' '{print $1}'|awk -F'?' '{print $1}'|grep roflrazzi.files);do procimg $1 $i;done; }
+
+dogrumpiest () { url=$1; who=$2; for i in $(lynx -dump $url|grep 'jpg&'|awk '{print $2}'|awk -F'&' '{print $1}'|sort|uniq|sed -e 's/picture.php\?MyImage=/wp-content\/uploads/g');do  dofull $who $url $i;done; }
+mygrumpiest () { url=$1; who=$2; for i in $(lynx -dump $url|grep 'jpg&'|awk '{print $2}'|awk -F'&' '{print $1}'|sort|uniq|sed -e 's/picture.php\?MyImage=/wp-content\/uploads/g');do  myfull $who $url $i;done; }
+
+myexperson () { for i in $(grep $1 extract.n3|awk -F'<' '{print $4}'|awk -F'>' '{print $1}'|grep -i jpg|sort|uniq); do mydepict $i $2; done }
+experson () { for i in $(grep $1 extract.n3|awk -F'<' '{print $4}'|awk -F'>' '{print $1}'|grep -i jpg|sort|uniq); do dodepict $i $2; done }
+metaexperson () { experson $1 http://imgmeta.sourceforge.net/0.1/person#$2 ; }
+exvef () { for i in $(grep $1 fash-rdf-links|awk -F'<' '{print $2}'|awk -F'>' '{print $1}'|grep -i jpg); do dodepict $i $2; done }
+
+wnnude () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-nude-noun-3.rdf> ." >> fash-rdf-links; done; }
+wnbreast () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-breast-noun-2.rdf> ." >> fash-rdf-links; done; }
+wnvagina () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-vulva-noun-1.rdf> ." >> fash-rdf-links; done; }
+fbschooluniform () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://rdf.freebase.com/rdf/m.07clzy> ." >> fash-rdf-links; done; }
+wnpenetration () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-penetration-noun-6.rdf> ." >> fash-rdf-links; done; }
+wnpenis () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-penis-noun-1.rdf> ." >> fash-rdf-links; done; }
+wnblowjob () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-blowjob-noun-1.rdf> ." >> fash-rdf-links; done; }
+wncunnilingus () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-cunnilingus-noun-1.rdf> ." >> fash-rdf-links; done; }
+wnlesbian () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-lesbianism-noun-1.rdf> ." >> fash-rdf-links; done; }
+wndildo () { for i in $@; do echo "<$i> <http://xmlns.com/foaf/0.1/depicts> <http://purl.org/vocabularies/princeton/wn30/synset-dildo-noun-1.rdf> ." >> fash-rdf-links; done; }
+
+docityrag () { url=$(echo $2|sed -e 's/\/$//'); for i in $(lynx -dump $2|grep $url|awk '{print $2}');do img=$(lynx -source $i|grep 'class="attachment-medium"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}');dofull $1 $2 $img;done ; }
+mycityrag () { url=$(echo $2|sed -e 's/\/$//'); for i in $(lynx -dump $2|grep $url|awk '{print $2}');do img=$(lynx -source $i|grep 'class="attachment-medium"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}');myfull $1 $2 $img;done ; }
+
+ntriplify () { rapper -i rdfxml -o ntriples $1 |sed -e 's/<file:\/\/\/Users\/jim\/img\/[^#]*#/_:/'|sed -e 's/\(Reg[0-9]*\)>/\1/'|grep '_:' ; }
+
+seq () { perl -e 'for $i($ARGV[0]..$ARGV[1]){print "$i ";}' $1 $2 ; }
+
+
+ogproc () { img=$(lynx -source $1 | gsed -e 's/<meta/\n<meta/g'|grep 'og:image'|awk -F'"' '{print $4}'|awk -F'?' '{print $1}'|sed -e 's#/thumbnail/#/#'); if [ x"$img" != x"" ]; then for image in $img;do procimg $1 $img ;done ;fi ; }
+
+ogfull () { img=$(lynx -source $2 | gsed -e 's/<meta/\n<meta/g'|grep 'og:image'|awk -F'"' '{print $4}'|awk -F'?' '{print $1}'|sed -e 's#/thumbnail/#/#'); if [ x"$img" != x"" ]; then for image in $img;do dofull $1 $2 $img ;done;fi ; }
+
+ogfullmult () { img=$(lynx -source $2 | gsed -e 's/<meta/\n<meta/g'|grep 'og:image'|awk -F'"' '{print $4}'|awk -F'?' '{print $1}'|sed -e 's#/thumbnail/#/#'); if [ x"$img" != x"" ]; then for i in "$img";do dofull $1 $2 $i;done ;fi ; }
+exfacedet () { perl ~/img/facedetect.pl $(grep $1 extract.n3 |grep container_of|awk -F'[<>]' '{print $6}'|sed -e 's#http://##;s#https://##'|sort|uniq) ; }
+fashexfacedet () { perl ~/img/facedetect.pl $(grep $1 fash-rdf-links |grep '/page>'|awk -F'[<>]' '{print $2}'|sed -e 's#http://##'|sed -e 's#https://##'|sort|uniq) ; }
+depexfacedet () { perl ~/img/facedetect.pl $(grep $1 fash-rdf-links |grep '/depicts>'|awk -F'[<>]' '{print $2}'|sed -e 's#http://##'|sed -e 's#https://##'|sort|uniq) ; }
+bothexfacedet () { perl ~/img/facedetect.pl $(grep $1 extract.n3 |grep container_of|awk -F'[<>]' '{print $6}'|sed -e 's#http://##;s#https://##'|sort|uniq) $(grep $1 fash-rdf-links |grep '/page>'|awk -F'[<>]' '{print $2}'|sed -e 's#http://##'|sed -e 's#https://##'|sort|uniq) ; }
+
+stripexif () { convert -strip "$1" tmp.jpg; mv tmp.jpg "$1"; }
+
+clearmp7symlinks () { find . -name "*xml"|sed -e 's/\.\///'|while read i;do j=$(echo "$i"|sed -e 's/\//~/g;s/mp7.xml$/jpg/');if [ -L "$j" ];then rm "$j";fi;done ; } 
+
+mkrunsh () { find . -type f|grep -v 'html$'|grep -v 'ttl$'|grep -v 'fv$'|grep -v 'loc$'|grep -v 'xml$'|grep -v 'fash-rdf-links'|grep -v 'extract.n3'|sed -e 's/\.\///'|awk '{a=$0;gsub(/\//, "~");gsub(/!/, "%21");print "ln -s \"" a "\" \"" $0 "\""}' > /tmp/run.sh ; }
+
+
+dofdetdupes () { if [ -e "$1" ];then f=$1;s=$2;else f=$2;s=$1;fi; rapper -o ntriples $f |grep 'hasPart'|awk -F'[<>]' '{print $6}'|awk -F'#' '{print $2}'|while read i;do printf "<http://imgmeta.sourceforge.net/0.1/detected/$s#$i> <http://www.w3.org/2002/07/owl#sameAs> <http://imgmeta.sourceforge.net/0.1/detected/$f#$i> .\n";done; }
+
+##
+addperson () { url=$(echo $2|sed -e 's/freeones.ie/freeones.com/'); if [ $# = 2 ]; then pers=$(echo "$1"|sed -e 's/ /_/g'); echo "ppl:$pers a dbpont:AdultActor, foaf:person ; foaf:gender \"female\"@en ; foaf:name \"$1\" ; foaf:isPrimaryTopicOf <$url> ." >> ~/tmp/fixed/people.ttl ;else echo "addperson [name] [url]";fi }
+
+
+ogimageproc () { curl $1 |gsed -e 's/<meta/\n<meta/g'|grep 'og:image'|grep -v '/[0-9].jpg'|awk -F'"' '{print $4}'|awk -F'?' '{print $1}'|grep jpg|while read i;do procimg $1 $i;done }
+
+pronqmatch () { echo "<file:/tmp/IMG/$1> <http://www.w3.org/2004/02/skos/core#exactMatch> <$2> ." >> ~/laptop/pod/DCIM/local-closematch.nt ; }
+
+grabfash () { for i in $@;do wget -x -c $i; dofash $i; done; }
+sourcesim () { a=$(echo $1|awk -F'?' '{print $1}');b=$(echo "$2"|awk -F'?' '{print $1}'); dosource $a $b; dosimilar $a $b; }
+ogfash () { ogimageproc $1; dofash $1; }
+dothumb () { "<$1> <http://xmlns.com/foaf/0.1/thumbnail> <$2> ." >> fash-rdf-links ; }
+
+oggrab () { wget -x -c $@; for i in "$@";do ogfash $i;done; }
+_fashexperson () { grep $2 fash-rdf-links |grep '/page>'|awk -F'[<>]' '{print $2}' | while read i;do dodepict $i $1; done; }
+ogimgfull () { ogimageproc $2; _fashexperson $1 $2; } 
+dotitle () { echo "<$1> <http://purl.org/dc/terms/title> \"$2\" ." >> fash-rdf-links ; }
+
+mgrab () { ~/img/grab.sh $2; metaexperson $2 $1; }
+exgrab () { ~/img/grab.sh $2; experson $2 $1; }
+dbpgrab () { ~/img/grab.sh $2; experson $2 "http://dbpedia.org/resource/$1" ; }
+fbgrab () { ~/img/grab.sh $2; experson "http://rdf.freebase.com/ns/$1" ; }
+
+mcomseealso () { lynx -dump $1 |grep models.com/models |awk '{print $2}'|while read i;do echo "<$1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <$i> ." >> ~/tmp/sync/modelscomseealso.nt;done; }
+
+procimageupper () { img=$(lynx -source $1 |grep '<[Ii][Mm][Gg]'|gsed -e 's/<[Ii][Mm][Gg]/\n<img/g'|grep '^<img'|grep scaleImg|awk -F'SRC="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$img" != x"" ];then procimg $1 $img; fi; }
+procpimpandhost () { img=$(lynx -source $1|grep 'id="image"'|awk -F'src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$img" != x"" ];then procimg $1 $img;fi; }
+
+waoview () { find $PWD/web.archive.org -type f|while read i; do f=$(echo $i|sed -e "s#$PWD/web.archive.org/web/[0-9]*/http:/##"); if [ -e "$f" ];then echo $i >> $1; echo $PWD/$f >> $1; echo >> $1;fi;done ; }
+
+stylecoll () { wget -x -c $(curl $1|grep fsUrl|awk -F'"' '{print "http://www.style.com/" $2 "/looks"}') ; }
+wcgrab () { for i in $@;do curl $i|lynx -stdin -dump |grep http|grep jpg|awk '{print $2}'|while read j;do procimg $i $j;done;done; }
+googimg () { img=$(echo $1|awk -F'=' '{print $2}'|awk -F'&' '{print $1}'|perl -MURI::Escape -wne 'chomp;print uri_unescape($_);') ; page=$(echo $1|awk -F'=' '{print $3}'|awk -F'&' '{print $1}'|perl -MURI::Escape -wne 'chomp;print uri_unescape($_);');procimg $page $img; }
+
+lmdepict () { dodepict $(echo "$1"|sed -e 's#/Users/jim/tmp/fashq[0-9]*/#http://#;s#/Users/jim/tmp/cfimg[0-9]*/#http://#') http://imgmeta.sourceforge.net/0.1/person#$2 ; }
+dbpdepict () { dodepict $(echo "$1"|sed -e 's#/Users/jim/tmp/fashq[0-9]*/#http://#;s#/Users/jim/tmp/cfimg[0-9]*/#http://#') http://dbpedia.org/resource/$2 ; }
+
+_checkjpgbin () { exiftool "$1" | grep '\(Binary data\|IPTC Digest\|XMP Toolkit\|APP14\)' ; }
+
+scanof_imgbox () { curl $1|lynx -stdin -dump |grep imgbox.com|awk '{print $2}'|while read i;do procimg $i $(echo $i|sed -e 's/imgbox/i.imgbox/').jpg;done ; }
+filtfind () { find . -type f|sed -e 's/^\.\///'|grep -v .picasa.ini | grep / ; }
+
+dbpentry () { awk '{print "\t\"" $1 "\" => \"http://dbpedia.org/resource/" $2 "\","}' ; }
+fbentry () { awk -F'\t' '{print "\t\"" $1 "\" => \"http://rdf.freebase.com/ns/m." $2 "\", #" $3}' ; }
+dbpttladd () { awk '{print "ppl:pic" $1 " owl:sameAs dbp:" $2 " ."}' ; }
+fbttladd () { awk '{print "ppl:pic" $1 " owl:sameAs <http://rdf.freebase.com/ns/m." $2 "> ."}' ; }
+
+procpin () { procimg $1 $(curl $1|grep 'class="pinImage"'|awk -F'"' '{print $2}') ; }
+
+iboxproc () { procimg $1 $(echo $1|sed -e 's#http://imgbox#http://i.imgbox#').jpg ; }
+
+mktobh () { filtfind |while read i;do grep "$i" $1 || echo $i >> tobh;done ; }
+dotobh () { cat tobh | awk 'BEGIN{OFS=FS="/"}{$NF="";print}'|uniq|while read i;do mkdir -p /tmp/asd/"$i";done; cat tobh|while read i;do jpegtran -copy none "$i" > /tmp/asd/"$i";done; }
+
+fashgrep () { grep "$(echo "$1"|sed -e 's#/Users/jim/tmp/fashq[0-9]*/##')" fash-rdf-links ; }
