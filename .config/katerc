@@ -9,8 +9,8 @@ Show Status Bar=true
 Show Tab Bar=true
 
 [KFileDialog Settings]
-Recent Files[$e]=interchunk.dtd,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/scratch.txt,file://$HOME/samplerun,file://$HOME/Downloads/interchunk.dtd,file://$HOME/Downloads/apertium-en-es.en-es.t1x
-Recent URLs[$e]=file://$HOME/Downloads/,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/
+Recent Files[$e]=interchunk.dtd,file:///tmp/filesin,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/scratch.txt,file://$HOME/samplerun,file://$HOME/Downloads/interchunk.dtd,file://$HOME/Downloads/apertium-en-es.en-es.t1x
+Recent URLs[$e]=file://$HOME/Downloads/,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/,file:///tmp/
 
 [MainWindow]
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA

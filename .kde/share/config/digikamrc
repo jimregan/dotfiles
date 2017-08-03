@@ -241,8 +241,8 @@ AlbumComboBox-RestoreChecked=true
 AlbumComboBox-Selection=
 AlbumComboBox-SortColumn=0
 AlbumComboBox-SortOrder=0
-Already Scanned Handling=Merge
-Face Scan Main Task=Recognize Marked Faces
+Already Scanned Handling=Skip
+Face Scan Main Task=Detect and Recognize Faces
 Settings Widget Visible=false
 TagComboBox-Checked=
 TagComboBox-CurrentIndex=
@@ -635,7 +635,7 @@ Metadata Writing Mode=1
 Rescan File If Modified=false
 Rotate By Internal Flag=true
 Rotate By Metadata Flag=true
-Rotate Contents Lossless=true
+Rotate Contents Lossless=false
 Rotate Contents Lossy=false
 Save Color Label=true
 Save Date Time=true
@@ -676,9 +676,9 @@ CaseSensitive=0
 
 [Setup Dialog]
 Height 1080=772
-Setup Page=6
+Setup Page=0
 Template Tab=0
-Width 1920=494
+Width 1920=537
 
 [TagEditDlgTitleEdit Search Text Tool]
 CaseSensitive=0

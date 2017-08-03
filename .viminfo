@@ -21,12 +21,22 @@
 # Registers:
 
 # File marks:
-'0  1  0  ~/.cfg/MERGE_MSG
+'0  2  13  ~/tmp/sourceme
+'1  1  0  ~/.cfg/MERGE_MSG
 
 # Jumplist (newest first):
+-'  2  13  ~/tmp/sourceme
+-'  1  0  ~/tmp/sourceme
+-'  1  0  ~/.cfg/MERGE_MSG
 -'  1  0  ~/.cfg/MERGE_MSG
 
 # History of marks within files (newest to oldest):
+
+> ~/tmp/sourceme
+	"	2	13
+	^	2	14
+	.	2	13
+	+	2	13
 
 > ~/.cfg/MERGE_MSG
 	"	1	0
