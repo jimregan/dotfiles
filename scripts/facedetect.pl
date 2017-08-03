@@ -1,15 +1,20 @@
-#!/usr/bin/perl5.8
+#!/usr/local/bin/perl
 
 use warnings;
 use strict;
+
+use lib '/usr/local/lib/perl5/site_perl/5.10.0/darwin-thread-multi-2level/';
 
 use Image::ObjectDetect;
 use Digest::MD5 qw(md5_hex);
 use Image::ExifTool qw(:Public);
 use POSIX qw/strftime/;
 use Image::Magick;
+use File::Temp;
 
-my $cascade = '/opt/local/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml';
+
+#my $cascade = '/opt/local/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml';
+my $cascade = '/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml';
 #my $file = $ARGV[0];
 my $detector = Image::ObjectDetect->new($cascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
@@ -47,8 +52,20 @@ $file =~ s/%20/ /g;
 		print OUTF "<!-- http://$file -->\n";
 		next;
 	}
-	my @faces = $detector->detect($file);
-	my $info = ImageInfo("$file", 'ImageWidth', 'ImageHeight');
+	my $imgfile = $file;
+	my $fh;
+	my $ft = new File::Temp ("TEMPLATE" => "fdetXXXXX", 
+				 "DIR" => "/tmp/", 
+				 "SUFFIX" => ".jpg");
+	if ($file =~ /\.webp$/) {
+		$imgfile = $ft->filename;
+		my $ret = `convert \"$file\" \"$imgfile\"`;
+	}
+	if (! -e $imgfile) {
+		die "Could not convert $file ($imgfile)";
+	}
+	my @faces = $detector->detect($imgfile);
+	my $info = ImageInfo("$imgfile", 'ImageWidth', 'ImageHeight');
 
 	my $md5 = Digest::MD5->new;
 	$md5->add("http://$file");
@@ -85,7 +102,7 @@ $file =~ s/%20/ /g;
 		my $magickh = "${wid}x${hght}+${magx}+${magy}";
 
 		my $im = new Image::Magick;
-		my $pic = $im->Read($file);
+		my $pic = $im->Read($imgfile);
 		my $colourspace = $im->Get('colorspace');
 		if ($colourspace eq 'CMYK') {
 			print STDERR "$file: CMYK\n";

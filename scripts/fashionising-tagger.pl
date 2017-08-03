@@ -15,7 +15,7 @@ while (<>) {
 	if (/^\.\//) {
 		s/^\.\//http:\/\//;
 	}
-	if (m!/lookbook/! || /look-book/ || m!portfoliopad.com!) {
+	if (m!/lookbook/! || /look-book/) {
 		print "<$_> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Lookbook> .\n";
 	}
 	if (/fashionising/ || /nymag.com/) {

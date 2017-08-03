@@ -22,6 +22,7 @@ while (<LOG>) {
 		my $url = $1;
 		my $ourl = $url;
 		$ourl =~ s!http://web.archive.org/web/[0-9]*/!!;
+		$ourl =~ s!http://web.archive.org/web/[0-9]*im_/!!;
 		$urls{$ourl} = $url;
 	}
 }
@@ -40,7 +41,13 @@ while (<LIST>) {
 	}
 	$f =~ s/^\.\///;
 	my $inurl = "http://$f";
-	my $otheru = $urls{$inurl};
+	my $otheru = "";
+	if(exists $urls{"http://$f"}) {
+		$otheru = $urls{$inurl};
+	} elsif (exists $urls{"https://$f"}) {
+		$inurl = "https://$f";
+		$otheru = $urls{$inurl};
+	}
 	next if (!$otheru || $otheru eq "");
 	my $osize = $sizes{$otheru};
 	if ($size == $osize) {
@@ -49,7 +56,7 @@ while (<LIST>) {
 		my $big = ($size > $osize) ? $size : $osize;
 		my $small = ($size > $osize) ? $osize : $size;
 		my $pct = ($small / $big)  * 100;
-		if ($pct > 95.0) {
+		if ($pct > 60.0) {
 			print OUTF "<$inurl> <http://imgmeta.sourceforge.net/0.1/props#exactVisualMatch> <$otheru> .\n";
 		}
 	}

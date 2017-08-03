@@ -19,7 +19,7 @@ while (<>) {
 	my $sizeb;
 	my $furl;
 	if ( -e "/Users/jim/tmp/faces_unprocessed/$fpart") {
-		$sizeb = stat(/Users/jim/tmp/faces_unprocessed/$fpart)->size;
+		$sizeb = stat("/Users/jim/tmp/faces_unprocessed/$fpart")->size;
 		$furl = 'file://tmp/face_detector2/facedet5';
 	} elsif ( -e "/Users/jim/img-data-prerelease/faces4/$fpart") {
 		$sizeb = stat("/Users/jim/img-data-prerelease/faces4/$fpart")->size;

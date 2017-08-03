@@ -24,17 +24,11 @@ while (<STDIN>) {
 	next if ($w == $h);
 	if ($w > $h) {
 		$new = $h;
-		$off = int(($w - $h) / 2);
-		$newx = $x + $off;
-		$newy = $y;
 	} else {
 		$new = $w;
-		$off = int(($h - $w) / 2);
-		$newx = $x;
-		$newy = $y + $off;
 	}
 	print "# $_\n";
 	print "convert -crop \"${new}x${new}+0+0\" \"$orig\" ";
-        printf "\"%s_0000_%04d_%04d_%04d_%04d.png\"\n", $file, $x, $y, $newx, $newy ;
+        printf "\"%s_0000_%04d_%04d_%04d_%04d.png\"\n", $file, $x, $y, $new, $new ;
 	
 }

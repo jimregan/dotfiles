@@ -15,7 +15,7 @@ my $detector = Image::ObjectDetect->new($cascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
 my $rdfoutdir = '/Users/jim/img/data';
-my $faceoutdir = '/Users/jim/img-data-prerelease/facedet6';
+my $faceoutdir = '/Users/jim/img-data-prerelease/facedet5';
 
 my $head = <<__HEAD__;
 <rdf:RDF
@@ -32,7 +32,9 @@ __HEAD__
 open (OUTF, ">", "$rdfoutdir/fdetect-$timestr.rdf");
 print OUTF $head;
 
-for my $file (@ARGV) {
+while (<>) {
+	chomp;
+	my $file = $_;
 print STDERR "\"$file\"\n";
 $file =~ s/%20/ /g;
 	next if ( -d $file);
@@ -44,20 +46,23 @@ $file =~ s/%20/ /g;
 	next if ($file =~ /\.bak$/);
 	$file =~ s/^\.\///;
 	if (! -e $file) {
-		print OUTF "<!-- file:/$file -->\n";
+		print OUTF "<!-- http://$file -->\n";
 		next;
 	}
 	my @faces = $detector->detect($file);
 	my $info = ImageInfo("$file", 'ImageWidth', 'ImageHeight');
 
 	my $md5 = Digest::MD5->new;
-	$md5->add("file:/$file");
+	$md5->add("http://$file");
 	my $md5hex = "MD5" . $md5->hexdigest;
 
 	my $fileurl = $file;
 	$fileurl =~ s/ /%20/g;
-	$fileurl =~ s#/Users/jim/img-data-prerelease/#/tmp/face_detector1/#;
-	print OUTF ' <foaf:Image rdf:about="file:/'.$fileurl.'">'."\n";
+	if ($fileurl =~ /i.chzbgr.com/) {
+		$fileurl =~ s/index.html.jpg$//;
+		$fileurl =~ s/index.html$//;
+	}
+	print OUTF ' <foaf:Image rdf:about="http://'.$fileurl.'">'."\n";
 	if (defined $info->{'ImageWidth'}) {
 		print OUTF "  <image:height>$info->{'ImageHeight'}</image:height>\n";
 		print OUTF "  <image:width>$info->{'ImageWidth'}</image:width>\n";
@@ -105,5 +110,5 @@ $file =~ s/%20/ /g;
 	print OUTF " </foaf:Image>\n";
 }
 
-print OUTF "</rdf:RDF>\n"
-
+print OUTF "</rdf:RDF>\n";
+print "$timestr\n";

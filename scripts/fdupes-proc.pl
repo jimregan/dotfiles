@@ -4,28 +4,32 @@ use strict;
 my $start="";
 my $url="http://imgmeta.sourceforge.net/0.1/props#identicalFile";
 if($ARGV[0]) {
-	print STDERR "$ARGV[0]\n";
 	if($ARGV[0] eq 'c') {
 		$url = 'http://imgmeta.sourceforge.net/0.1/props#closeVisualMatch';
 	}
 	if($ARGV[0] eq 'b') {
 		$url = 'http://imgmeta.sourceforge.net/0.1/props#broadVisualMatch';
 	}
+	if($ARGV[0] eq 'e') {
+		$url = 'http://imgmeta.sourceforge.net/0.1/props#exactVisualMatch';
+	}
 }
 while (<STDIN>) {
 	chomp;
 	s/ /%20/g;
 	s!^\./!http://!;
-	s!^./data/!http://!;
+	s!^\./data/!http://!;
 	s/^"//;
 	s!/Users/jim/laptop/pod/yerble/!http://!;
 	s!^/Users/jim/tmp/cfimg[0-9]*/!http://!;
 	s!^/Users/jim/tmp/fashq[0-9]*/!http://!;
 	s!/Users/jim/laptop/pod/pron/!http://!;
 	s!/Users/jim/laptop/pod/proc/!http://!;
+	s!/Users/jim/laptop/pod/DCIM/IMG/!file:/tmp/IMG/!;
 	s!/Users/jim/laptop/pod/DCIM/!http://!;
 	s!/Users/jim/laptop/pod/photos-lists/!http://!;
 	s!/Users/jim/img/!http://!;
+	s!/Users/jim/podagain/yerble/yerble/!http://!;
 	s!../laptop/pod/yerble/!http://!;
 	s!../img-queue!http://!;
 	s!./imgq(\d*)/!http://!;

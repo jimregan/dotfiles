@@ -7,7 +7,7 @@ my $last = '';
 while(<>) {
 	chomp;
 	my ($cur, $url) = split/\t/;
-	if($cur eq $last) {
+	if($cur ne $last) {
 		print "\n";
 	}
 	print "$url\n";

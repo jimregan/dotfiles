@@ -1,4 +1,4 @@
-dothumb () { "<$1> <http://xmlns.com/foaf/0.1/thumbnail> <$2> ." >> fash-rdf-links ; }
+dothumb () { echo "<$1> <http://xmlns.com/foaf/0.1/thumbnail> <$2> ." >> fash-rdf-links ; }
 dodepict () { echo "<$1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Image> ." >> fash-rdf-links; echo "<$1> <http://xmlns.com/foaf/0.1/depicts> <$2> ." >> fash-rdf-links; }
 doimg () { echo "<$1> <http://xmlns.com/foaf/0.1/page> <$2> ." >> fash-rdf-links; }
 

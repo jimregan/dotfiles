@@ -1,4 +1,4 @@
-#!/usr/bin/perl5.8
+#!/usr/bin/perl
 
 use warnings;
 use strict;
@@ -9,13 +9,14 @@ use Image::ExifTool qw(:Public);
 use POSIX qw/strftime/;
 use Image::Magick;
 
-my $cascade = '/opt/local/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml';
+#my $cascade = '/opt/local/share/OpenCV/haarcascades/haarcascade_fullbody.xml';
+my $cascade = '/opt/local/share/OpenCV/haarcascades/haarcascade_lowerbody.xml';
 #my $file = $ARGV[0];
 my $detector = Image::ObjectDetect->new($cascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
 my $rdfoutdir = '/Users/jim/img/data';
-my $faceoutdir = '/Users/jim/img-data-prerelease/facedet6';
+my $faceoutdir = '/Users/jim/img-data-prerelease/persondet';
 
 my $head = <<__HEAD__;
 <rdf:RDF
@@ -29,7 +30,7 @@ my $head = <<__HEAD__;
 __HEAD__
 
 
-open (OUTF, ">", "$rdfoutdir/fdetect-$timestr.rdf");
+open (OUTF, ">", "$rdfoutdir/pdetect-$timestr.rdf");
 print OUTF $head;
 
 for my $file (@ARGV) {
@@ -37,27 +38,23 @@ print STDERR "\"$file\"\n";
 $file =~ s/%20/ /g;
 	next if ( -d $file);
 	next if ($file =~ /\.fv$/);
-	next if ($file =~ /\.loc$/);
 	next if ($file =~ /\.xml$/);
 	next if ($file =~ /\.ini$/);
-	next if ($file =~ /\.wmv$/);
-	next if ($file =~ /\.bak$/);
 	$file =~ s/^\.\///;
 	if (! -e $file) {
-		print OUTF "<!-- file:/$file -->\n";
+		print OUTF "<!-- http://$file -->\n";
 		next;
 	}
 	my @faces = $detector->detect($file);
 	my $info = ImageInfo("$file", 'ImageWidth', 'ImageHeight');
 
 	my $md5 = Digest::MD5->new;
-	$md5->add("file:/$file");
+	$md5->add("http://$file");
 	my $md5hex = "MD5" . $md5->hexdigest;
 
 	my $fileurl = $file;
 	$fileurl =~ s/ /%20/g;
-	$fileurl =~ s#/Users/jim/img-data-prerelease/#/tmp/face_detector1/#;
-	print OUTF ' <foaf:Image rdf:about="file:/'.$fileurl.'">'."\n";
+	print OUTF ' <foaf:Image rdf:about="http://'.$fileurl.'">'."\n";
 	if (defined $info->{'ImageWidth'}) {
 		print OUTF "  <image:height>$info->{'ImageHeight'}</image:height>\n";
 		print OUTF "  <image:width>$info->{'ImageWidth'}</image:width>\n";

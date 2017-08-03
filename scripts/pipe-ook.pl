@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 
 use warnings;
 use strict;
@@ -16,7 +16,7 @@ my $base = "http://";
 if ($ARGV[0] ne '') {
 	$base = $ARGV[0];
 }
-while (<>) {
+while (<STDIN>) {
 	chomp;
 	my $f = $_;
 	my $file = File::Spec->abs2rel($f);

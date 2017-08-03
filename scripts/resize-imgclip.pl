@@ -32,6 +32,6 @@ while (<STDIN>) {
 		$newy = $y + $off;
 	}
 	print "# $_\n";
-	print "convert -crop \"${new}x${new}+${newx}+${newy}\" \"$file\" \"${file}_${newx}_${newy}_${new}_${new}.png\n";
+	print "convert -crop \"${new}x${new}+${newx}+${newy}\" \"$file\" \"${file}_${newx}_${newy}_${new}_${new}.png\"\n";
 	
 }

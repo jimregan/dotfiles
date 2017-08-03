@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 open ($urls, "<", "$ARGV[0]");
-open ($files, "<" "$ARGV[1]");
+open ($files, "<", "$ARGV[1]");
 
 if ($#ARGV != 1) {
 	die "bfb-align [urls] [files]\n";
@@ -16,7 +16,8 @@ while (<$urls>) {
 	next if ($seen{$turl});
 	$seen{$turl} = 1;
 	my @tmp = split(/\//, $turl);
-	my $filepart = $tmp[$#tmp];
+	my @filepartin = split(/\?/,$tmp[$#tmp]);
+	my $filepart = $filepartin[0];
 	$urllist{$filepart} = $turl;
 }
 
@@ -30,6 +31,6 @@ while (<$files>) {
 	if (exists $urllist{$filepart} && $urllist{$filepart} ne '') {
 		print "<$tfile> <http://www.w3.org/2004/02/skos/core#exactMatch> <$urllist{$filepart}>\n";
 	} else {
-		print "Error! Missing file: $orig\n";
+		print STDERR "Error! Missing file: $orig\n";
 	}
 }

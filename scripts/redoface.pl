@@ -1,4 +1,4 @@
-#!/usr/bin/perl5.8
+#!/usr/bin/perl
 
 use warnings;
 use strict;
@@ -15,7 +15,7 @@ my $detector = Image::ObjectDetect->new($cascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
 my $rdfoutdir = '/Users/jim/img/data';
-my $faceoutdir = '/Users/jim/img-data-prerelease/facedet6';
+my $faceoutdir = '/Users/jim/img-data-prerelease/faces_redo';
 
 my $head = <<__HEAD__;
 <rdf:RDF
@@ -29,24 +29,10 @@ my $head = <<__HEAD__;
 __HEAD__
 
 
-open (OUTF, ">", "$rdfoutdir/fdetect-$timestr.rdf");
+open (OUTF, ">", "$rdfoutdir/redone-$timestr.rdf");
 print OUTF $head;
 
 for my $file (@ARGV) {
-print STDERR "\"$file\"\n";
-$file =~ s/%20/ /g;
-	next if ( -d $file);
-	next if ($file =~ /\.fv$/);
-	next if ($file =~ /\.loc$/);
-	next if ($file =~ /\.xml$/);
-	next if ($file =~ /\.ini$/);
-	next if ($file =~ /\.wmv$/);
-	next if ($file =~ /\.bak$/);
-	$file =~ s/^\.\///;
-	if (! -e $file) {
-		print OUTF "<!-- file:/$file -->\n";
-		next;
-	}
 	my @faces = $detector->detect($file);
 	my $info = ImageInfo("$file", 'ImageWidth', 'ImageHeight');
 
@@ -54,10 +40,9 @@ $file =~ s/%20/ /g;
 	$md5->add("file:/$file");
 	my $md5hex = "MD5" . $md5->hexdigest;
 
-	my $fileurl = $file;
-	$fileurl =~ s/ /%20/g;
-	$fileurl =~ s#/Users/jim/img-data-prerelease/#/tmp/face_detector1/#;
-	print OUTF ' <foaf:Image rdf:about="file:/'.$fileurl.'">'."\n";
+	print OUTF ' <foaf:Image rdf:about="file:/'.$file.'">'."\n";
+	my $filename = $file;
+	$filename =~ s/.jpg$//;
 	if (defined $info->{'ImageWidth'}) {
 		print OUTF "  <image:height>$info->{'ImageHeight'}</image:height>\n";
 		print OUTF "  <image:width>$info->{'ImageWidth'}</image:width>\n";
@@ -83,18 +68,13 @@ $file =~ s/%20/ /g;
 
 		my $im = new Image::Magick;
 		my $pic = $im->Read($file);
-		my $colourspace = $im->Get('colorspace');
-		if ($colourspace eq 'CMYK') {
-			print STDERR "$file: CMYK\n";
-			$im->Quantize(colorspace=>'RGB');
-		}
 		if ($pic) {
 			warn "Error reading file: $file\n";
 			return;
 		}
 		$pic = $im->Crop(geometry => $magickh);
 		$pic = $im->Strip();
-		$pic = $im->Write("$faceoutdir/${timestr}_${md5hex}Reg${count}.jpg");
+		$pic = $im->Write("$faceoutdir/${filename}_Reg${count}.jpg");
 		if ($pic) {
 			warn "Error writing file: $file\n";
 			return;

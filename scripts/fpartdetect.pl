@@ -14,12 +14,16 @@ my $reyecascade = '/opt/local/share/opencv/haarcascades/haarcascade_mcs_righteye
 my $nosecascade = '/opt/local/share/opencv/haarcascades/haarcascade_mcs_nose.xml';
 my $mouthcascade = '/opt/local/share/opencv/haarcascades/haarcascade_mcs_mouth.xml';
 my $etegcascade = '/opt/local/share/opencv/haarcascades/haarcascade_eye_tree_eyeglasses.xml';
+my $eyesbigcascade = '/opt/local/share/opencv/haarcascades/haarcascade_mcs_eyepair_big.xml';
+my $eyessmallcascade = '/opt/local/share/opencv/haarcascades/haarcascade_mcs_eyepair_small.xml';
 #my $file = $ARGV[0];
 my $leyedetector = Image::ObjectDetect->new($leyecascade);
 my $reyedetector = Image::ObjectDetect->new($reyecascade);
 my $nosedetector = Image::ObjectDetect->new($nosecascade);
 my $mouthdetector = Image::ObjectDetect->new($mouthcascade);
 my $etegdetector = Image::ObjectDetect->new($etegcascade);
+my $eyesbigdetector = Image::ObjectDetect->new($eyesbigcascade);
+my $eyessmalldetector = Image::ObjectDetect->new($eyessmallcascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
 my $rdfoutdir = '/Users/jim/img/data';
@@ -33,6 +37,7 @@ my $head = <<__HEAD__;
  xmlns:foaf="http://xmlns.com/foaf/0.1/"
  xmlns:image="http://jibbering.com/vocabs/image/#"
  xmlns:an="http://www.w3.org/2000/10/annotation-ns#"
+ xmlns:imgmeta="http://imgmeta.sourceforge.net/0.1/props#"
 >
 __HEAD__
 
@@ -50,7 +55,9 @@ sub writeregion {
 		"REYE" => "right eye",
 		"MOUTH" => "mouth",
 		"NOSE" => "nose",
-		"ETEG" => "eye pair/eyeglasses"
+		"ETEG" => "eye pair/eyeglasses",
+		"EYESB" => "eye pair big",
+		"EYESS" => "eye pair small"
 	);
 
 	my $count = 1;
@@ -98,6 +105,8 @@ print STDERR "\"$file\"\n";
 	writeregion($md5hex, 'NOSE', $nosedetector->detect($forig));
 	writeregion($md5hex, 'MOUTH', $mouthdetector->detect($forig));
 	writeregion($md5hex, 'ETEG', $etegdetector->detect($forig));
+	writeregion($md5hex, 'EYESB', $eyesbigdetector->detect($forig));
+	writeregion($md5hex, 'EYESS', $eyessmalldetector->detect($forig));
 	print OUTF " </foaf:Image>\n";
 }
 

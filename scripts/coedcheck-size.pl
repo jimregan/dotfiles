@@ -16,7 +16,6 @@ if ($ARGV[0] && $ARGV[0] ne "") {
 	while(<MAPF>) {
 		if (m!<https?://([^>]*)> <http://purl.org/dc/elements/1.1/source> <https?://([^>]*)>!) {
 			$mapping{$2} = $1;
-print STDERR "$1 : $2 \n";
 		}
 	}
 }
@@ -28,15 +27,14 @@ while (<STDIN>) {
 		my $fin = $1;
 		if ($fin !~ m!http://web.archive.org/web/[0-9]*(im_/|/)!){
 			next;
-print STDERR "next!\n";
 		}
 		$fin =~ s!http://web.archive.org/web/[0-9]*(im_)?/https?://!!;
-print STDERR "fin: $fin\n";
-print STDERR "mapping fin: $mapping{$fin}\n";
+print STDERR "Got fin: $fin\n";
 		if (! -e $fin && exists $mapping{$fin}) {
 			my $mapd = $mapping{$fin};
 			if ( -e $mapd) {
 				$fin = $mapd;
+print STDERR "Mapping: $fin\n";
 			}
 		}
 		if ($fin =~ /r\-scale/) {
@@ -70,7 +68,6 @@ print STDERR "mapping fin: $mapping{$fin}\n";
 			}
 		}
 	} else {
-print "else next\n";
 		next;
 	}
 }

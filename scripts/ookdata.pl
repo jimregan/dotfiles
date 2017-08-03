@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 
 use warnings;
 use strict;
@@ -32,7 +32,7 @@ print STDERR $file . "\n";
         $url =~ s/ã/%C3%A3/g;
         $url =~ s/ /%20/g;
 
-	if (!-s "$file") {
+	if (! -s "$file") {
 		print FACES "<$url> <http://rdf.ookaboo.com/object/sizeInBytes> \"0\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n";
 		next;
 	}

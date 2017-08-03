@@ -40,7 +40,6 @@ print STDERR "$fname\n";
 			if ($sizein == $size) {
 				print OUTF "<file:/tmp/face_detector1/faces4/$fname> <http://imgmeta.sourceforge.net/0.1/props#identicalFile> <http://$fraw> .\n";
 			}
-		}
 		} elsif ( -e "/Users/jim/Library/Caches/com.apple.Safari/Webpage\ Previews/$fname") {
 			my $sizein = stat("/Users/jim/Library/Caches/com.apple.Safari/Webpage\ Previews/$fname")->size;
 			if ($sizein == $size) {
