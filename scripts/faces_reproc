@@ -1,4 +1,0 @@
-_getpicid () { grep 'rdf:about' ~/img/data/fdetect-$1.rdf|awk -F'"' '{print $2}'|awk -F'/' '{print $NF}'|awk -F'_' '{print $1}'|head -n 1; }
-selfboth () { dofdetboth $1 pic$(_getpicid $1); }
-exgrepself () { _tmp=$(_getpicid "$1"); echo "$_tmp"; exgrep "$_tmp" || congrep "$_tmp" || grep "$_tmp" /Users/jim/Downloads/contacts.xml || grep "$_tmp" /Users/jim/laptop/contacts.xml ; }
-doandcheck () { for i in "$@";do a=$(echo $i|awk -F'/' '{print $NF}'|awk -F'_' '{print $1 "_" $2}');echo $a;done | sort|uniq | while read j;do echo "$j"; selfboth "$j";exgrepself "$j";echo $i >> donelist ;done; }

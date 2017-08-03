@@ -26,8 +26,8 @@ my $eyesbigdetector = Image::ObjectDetect->new($eyesbigcascade);
 my $eyessmalldetector = Image::ObjectDetect->new($eyessmallcascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
-my $rdfoutdir = '/Users/jim/img/data';
-my $faceoutdir = '/Users/jim/img-data-prerelease/facedet5';
+my $rdfoutdir = 'data';
+my $faceoutdir = 'detect';
 
 my $head = <<__HEAD__;
 <rdf:RDF
