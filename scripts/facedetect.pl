@@ -19,8 +19,8 @@ my $cascade = '/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2
 my $detector = Image::ObjectDetect->new($cascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
-my $rdfoutdir = '/Users/jim/img/data';
-my $faceoutdir = '/Users/jim/img-data-prerelease/facedet5';
+my $rdfoutdir = 'data';
+my $faceoutdir = 'facedet';
 
 my $head = <<__HEAD__;
 <rdf:RDF
@@ -73,10 +73,6 @@ $file =~ s/%20/ /g;
 
 	my $fileurl = $file;
 	$fileurl =~ s/ /%20/g;
-	if ($fileurl =~ /i.chzbgr.com/) {
-		$fileurl =~ s/index.html.jpg$//;
-		$fileurl =~ s/index.html$//;
-	}
 	print OUTF ' <foaf:Image rdf:about="http://'.$fileurl.'">'."\n";
 	if (defined $info->{'ImageWidth'}) {
 		print OUTF "  <image:height>$info->{'ImageHeight'}</image:height>\n";
