@@ -10,6 +10,8 @@ dokaufman () { for i in "$@";do rmmetafull $i pic60e77ed4c0acf06f ; done ; }
 dosten () { for i in "$@";do rmmetafull $i picddbb78770d47c84 ; done ; }
 doola () { for i in "$@";do rmmetafull $i pic87d63669bedc9565 ; done ; }
 dobogu () { for i in "$@";do rmmetafull $i pic959a6686d5d4d85 ; done ; }
+dokrav () { for i in "$@";do rmmetafull $i pic637f44615b1b4e8e ;done; }
 
 domina () { for i in "$@";do rmdbpfull $i 'Mina_Cvetkovi%C4%87' ; done ; }
 dohanne () { for i in "$@";do rmdbpfull $i Hanne_Gaby_Odiele  ; done ; }
+doewers () { for i in "$@";do rmdbpfull $i Anna_Ewers ; done ; }
