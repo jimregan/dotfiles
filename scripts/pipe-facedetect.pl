@@ -14,8 +14,8 @@ my $cascade = '/opt/local/share/opencv/haarcascades/haarcascade_frontalface_alt2
 my $detector = Image::ObjectDetect->new($cascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
-my $rdfoutdir = '/Users/jim/img/data';
-my $faceoutdir = '/Users/jim/img-data-prerelease/facedet5';
+my $rdfoutdir = 'data';
+my $faceoutdir = 'detect';
 
 my $head = <<__HEAD__;
 <rdf:RDF
