@@ -1,0 +1,54 @@
+[CMakeBuildDirChooser]
+LastExtraArguments=
+
+[External Scripts]
+firstUse=false
+
+[External Scripts][script 0]
+command=g++ -o %b %f && ./%b
+errorMode=0
+filterMode=0
+inputMode=0
+name=Quick Compile
+outputMode=0
+saveMode=0
+shortcuts=
+showOutput=true
+
+[External Scripts][script 1]
+command=xdg-open "http://www.google.de/search?q=%s"
+errorMode=0
+filterMode=0
+inputMode=0
+name=Google Selection
+outputMode=0
+saveMode=0
+shortcuts=
+showOutput=false
+
+[External Scripts][script 2]
+command=sort
+errorMode=0
+filterMode=0
+inputMode=2
+name=Sort Selection
+outputMode=3
+saveMode=0
+shortcuts=
+showOutput=false
+
+[MainWindow]
+Height 1080=1081
+State=AAAA/wAAAAD9AAAAAQAAAAMAAAdIAAAAbvwBAAAAAfsAAAAoAFYAZQByAHMAaQBvAG4AIABDAG8AbgB0AHIAbwBsAF8AYwBvAGQAZQEAAAAcAAAHSAAAAGwBAAADAAAHSAAAAy4AAAAEAAAABAAAAAEAAAAC/AAAAAQAAAAAAAAAAQAAAB4ATABlAGYAdAAgAEIAdQB0AHQAbwBuACAAQgBhAHIDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAIABSAGkAZwBoAHQAIABCAHUAdAB0AG8AbgAgAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAABAAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAGQAZQBiAHUAZwBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAgAHEAdQBpAGMAawBPAHAAZQBuAFQAbwBvAGwAQgBhAHIBAAACXf////8AAAAAAAAAAAAAACwASwBEAGUAdgBDAG8AZABlAGIAcgBvAHcAcwBlAHIAVABvAG8AbABCAGEAcgEAAANF/////wAAAAAAAAAAAAAAAwAAAAEAAAAiAEIAbwB0AHQAbwBtACAAQgB1AHQAdABvAG4AIABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1921
+
+[Open File]
+Last Open File Directory=file:///home/jim/projects/testproj/
+
+[RecentProjects]
+File1[$e]=$HOME/projects/testproj/testproj.kdev4
+Name1[$e]=testproj.kdev4
+
+[Sessions]
+Active Session ID={92c59989-d62c-406a-918d-2ad0d6c4635b}
