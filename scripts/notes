@@ -1,0 +1,3 @@
+grep '<file://tmp/face_detector2/FACE-DONE/' ~/tmp/sync/byte-for-byte-identical-20131122-5.nt |grep 'web.archive.org'|awk -F'[<>]' '{print $2 "\n" $6}'|sed -e 's#http://#./#;s#file://tmp/face_detector2/#/Users/jim/img-data-prerelease/#' >> togo
+
+
