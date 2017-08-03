@@ -103,9 +103,13 @@ Sync Baloo to Digikam=false
 Sync Digikam to Baloo=false
 
 [Batch Queue Manager Settings]
-BqmBottomSplitter=AAAA/wAAAAAAAAAC//////////8BAAAAAQEAAAAB
-BqmTopSplitter=AAAA/wAAAAAAAAAD////////////////AQAAAAEBAAAAAQ==
-BqmVerticalSplitter=AAAA/wAAAAAAAAAC//////////8BAAAAAQEAAAAC
+BqmBottomSplitter=AAAA/wAAAAAAAAACAAAAkQAAAJEBAAAAAQEAAAAB
+BqmTopSplitter=AAAA/wAAAAAAAAADAAAAkQAAAF0AAABUAQAAAAEBAAAAAQ==
+BqmVerticalSplitter=AAAA/wAAAAAAAAACAAAAkAAAAIIBAAAAAQEAAAAC
+Height 1080=685
+State=AAAA/wAAAAD9AAAAAAAAA90AAAJcAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=989
 
 [Camera Settings]
 DefaultTargetAlbumId=0
@@ -241,9 +245,9 @@ AlbumComboBox-RestoreChecked=true
 AlbumComboBox-Selection=
 AlbumComboBox-SortColumn=0
 AlbumComboBox-SortOrder=0
-Already Scanned Handling=Skip
+Already Scanned Handling=Rescan
 Face Scan Main Task=Detect and Recognize Faces
-Settings Widget Visible=false
+Settings Widget Visible=true
 TagComboBox-Checked=
 TagComboBox-CurrentIndex=
 TagComboBox-Expansion=
@@ -635,7 +639,7 @@ Metadata Writing Mode=1
 Rescan File If Modified=false
 Rotate By Internal Flag=true
 Rotate By Metadata Flag=true
-Rotate Contents Lossless=false
+Rotate Contents Lossless=true
 Rotate Contents Lossy=false
 Save Color Label=true
 Save Date Time=true
@@ -676,7 +680,7 @@ CaseSensitive=0
 
 [Setup Dialog]
 Height 1080=772
-Setup Page=0
+Setup Page=6
 Template Tab=0
 Width 1920=537
 
