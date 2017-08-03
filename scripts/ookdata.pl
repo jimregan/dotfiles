@@ -20,13 +20,6 @@ print STDERR $file . "\n";
 	next unless -f $file;
 
         my $url = "http://" . $file;
-        $url =~ s!/Users/jim/img/data/!!;
-        $url =~ s!/Users/jim/img/!!;
-        $url =~ s!/Users/jim/laptop/pod/yerble/!!;
-        $url =~ s!/Users/jim/laptop/pod/proc/!!;
-        $url =~ s!/Users/jim/laptop/pod/pron/!!;
-        $url =~ s!/Volumes/UDISK/imgq\d*/!!;
-        $url =~ s!/tmp/img/!!;
         $url =~ s/é/%C3%A9/g;
         $url =~ s/í/%C3%AD/g;
         $url =~ s/ã/%C3%A3/g;

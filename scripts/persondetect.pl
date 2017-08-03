@@ -9,14 +9,12 @@ use Image::ExifTool qw(:Public);
 use POSIX qw/strftime/;
 use Image::Magick;
 
-#my $cascade = '/opt/local/share/OpenCV/haarcascades/haarcascade_fullbody.xml';
 my $cascade = '/opt/local/share/OpenCV/haarcascades/haarcascade_lowerbody.xml';
-#my $file = $ARGV[0];
 my $detector = Image::ObjectDetect->new($cascade);
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 
-my $rdfoutdir = '/Users/jim/img/data';
-my $faceoutdir = '/Users/jim/img-data-prerelease/persondet';
+my $rdfoutdir = 'data';
+my $faceoutdir = 'persondet';
 
 my $head = <<__HEAD__;
 <rdf:RDF
