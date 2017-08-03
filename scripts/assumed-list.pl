@@ -5,7 +5,7 @@ use strict;
 use URI::Escape;
 use POSIX qw/strftime/;
 
-my $outdir = '/Users/jim/tmp/sync';
+my $outdir = 'sync';
 my $timestr = strftime("%Y%m%d_%H%M%S", localtime);
 open (OUTF, ">", "$outdir/assumed-identical-$timestr.nt");
 
