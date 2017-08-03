@@ -76,13 +76,13 @@ ToolTips Show Video Frame Rate=true
 TreeView Font=Ubuntu,9,-1,5,50,0,0,0,0,0
 
 [AlbumDB Settings]
-Recently Used Tags=66,70,54,49,64,60,69,67,38,68
+Recently Used Tags=34,66,70,54,49,64,60,69,67,38
 
 [AlbumFolderView Sidebar]
-CurrentIndex=2
-Expansion=0,1,2
+CurrentIndex=9
+Expansion=0,1,5,6,7,8,9,10,11,12,2,3,4
 RestoreChecked=false
-Selection=2
+Selection=9
 SortColumn=0
 SortOrder=0
 
@@ -260,7 +260,7 @@ UseWholePAlbumsEntry=true
 UseWholeTAlbumsEntry=true
 
 [Face Detection Settings]
-Detection Accuracy=0.8
+Detection Accuracy=1
 
 [Find Duplicates View]
 AlbumComboBox-Checked=
@@ -398,7 +398,7 @@ SlideShowPrintTags=false
 SlideShowPrintTitle=false
 SlideShowProgressIndicator=true
 SlideShowStartCurrent=false
-SplitterState=AAAA/wAAAAAAAAAC//////////8BAAAAAQAAAAAB
+SplitterState=AAAA/wAAAAAAAAACAAAASwAAAQ0BAAAAAQAAAAAB
 State=AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 TIFFCompression=false
 ToolBarsMovable=Disabled
@@ -589,7 +589,7 @@ FileProperties Expanded=true
 ItemProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=32
+RestoreSize=33
 VideoProperties Expanded=true
 
 [LightTable Settings][Right Sidebar][Captions Tags Properties Tab]
@@ -632,15 +632,15 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [LightTable Thumbbar]
-Height 1080=222
+Height 1080=30
 State=AAAA/wAAAAD9AAAAAQAAAAIAAAQGAAAAxPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABAYAAABcAQAAAwAABAYAAAAZAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1030
+Width 1920=32
 
 [MainWindow]
-InitialAlbumID=2
-SplitterState=AAAA/wAAAAAAAAADAAACdgAAB0gAAAAAAQAAAAEAAAAAAQ==
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAVwAAABDvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABXAAAABcAQAAAwAABXAAAAOYAAAABAAAAAQAAAAIAAAACPwAAAAA
+InitialAlbumID=9
+SplitterState=AAAA/wAAAAAAAAADAAAB1wAAB0gAAAAAAQAAAAEAAAAAAQ==
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAXPAAABDvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABc8AAABcAQAAAwAABc8AAAKJAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [Metadata Settings]
 EXIF Rotate=true
@@ -667,10 +667,10 @@ Write RAW Files=false
 CaseSensitive=0
 
 [People Sidebar]
-CurrentIndex=25
-Expansion=26,25,23,24
+CurrentIndex=23
+Expansion=26,25,23,52,29,32,48,44,34,39,33,30,31,37,35,36,43,65,40,60,41,51,56,42,47,28,24,38,68,67,49
 RestoreChecked=false
-Selection=25
+Selection=23
 SortColumn=0
 SortOrder=0
 
@@ -708,10 +708,10 @@ TypeGeolocationFilter Expanded=true
 TypeMimeFilter Expanded=true
 
 [TagView Sidebar]
-CurrentIndex=
-Expansion=0
+CurrentIndex=29
+Expansion=0,27,26,25,23,29
 RestoreChecked=false
-Selection=
+Selection=29
 SortColumn=0
 SortOrder=0
 TagsSource=false
