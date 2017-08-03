@@ -1,0 +1,15 @@
+doyumi () { for i in "$@";do rmmetafull $i picadae626450577bae ; done ; }
+dotanya () { for i in "$@";do rmmetafull $i pic6024dd96c7b35f89 ; done ; }
+doxi () { for i in "$@";do rmmetafull $i picff69d000c7efd822 ; done ; }
+dobinx () { for i in "$@";do rmmetafull $i picbd839ee0b5acf23d ; done ; }
+dojasek () { for i in "$@";do rmmetafull $i pic2d7ebf16a61ad55d ; done ; }
+dodevon () { for i in "$@";do rmmetafull $i picc597766ac0d25c4f ; done ; }
+doaya () { for i in "$@";do rmmetafull $i piccb03c04d93808d08 ; done ; }
+doharleth () { for i in "$@";do rmmetafull $i picc6b8960f40c66ba4 ; done ; }
+dokaufman () { for i in "$@";do rmmetafull $i pic60e77ed4c0acf06f ; done ; }
+dosten () { for i in "$@";do rmmetafull $i picddbb78770d47c84 ; done ; }
+doola () { for i in "$@";do rmmetafull $i pic87d63669bedc9565 ; done ; }
+dobogu () { for i in "$@";do rmmetafull $i pic959a6686d5d4d85 ; done ; }
+
+domina () { for i in "$@";do rmdbpfull $i 'Mina_Cvetkovi%C4%87' ; done ; }
+dohanne () { for i in "$@";do rmdbpfull $i Hanne_Gaby_Odiele  ; done ; }
