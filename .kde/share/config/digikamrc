@@ -76,7 +76,7 @@ ToolTips Show Video Frame Rate=true
 TreeView Font=Ubuntu,9,-1,5,50,0,0,0,0,0
 
 [AlbumDB Settings]
-Recently Used Tags=26,25,27
+Recently Used Tags=66,70,54,49,64,60,69,67,38,68
 
 [AlbumFolderView Sidebar]
 CurrentIndex=2
@@ -524,10 +524,14 @@ Auto Sync Preview=true
 Clear On Close=false
 FullScreen Hide SideBars=false
 FullScreen Hide ToolBars=false
-Horizontal Splitter State=AAAA/wAAAAAAAAAD////////////////AQAAAAEAAAAAAQ==
+Height 1080=321
+Horizontal Splitter State=AAAA/wAAAAAAAAADAAABDQAAAFgAAAENAQAAAAEAAAAAAQ==
 Load Full Image size=false
 Navigate By Pair=false
 Show Thumbbar=true
+State=AAAA/wAAAAD9AAAAAAAABD4AAADeAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1086
 
 [LightTable Settings][Left Sidebar]
 ActiveTab=0
@@ -536,7 +540,7 @@ FileProperties Expanded=true
 ItemProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=-1
+RestoreSize=33
 VideoProperties Expanded=true
 
 [LightTable Settings][Left Sidebar][Captions Tags Properties Tab]
@@ -585,7 +589,7 @@ FileProperties Expanded=true
 ItemProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=-1
+RestoreSize=32
 VideoProperties Expanded=true
 
 [LightTable Settings][Right Sidebar][Captions Tags Properties Tab]
@@ -626,6 +630,12 @@ XMP Level=2
 [LightTable Settings][Right Sidebar][Version Properties Tab]
 Version Properties Tab=versions
 Version Properties View Mode=2
+
+[LightTable Thumbbar]
+Height 1080=222
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAQGAAAAxPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABAYAAABcAQAAAwAABAYAAAAZAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1030
 
 [MainWindow]
 InitialAlbumID=2
