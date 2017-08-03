@@ -11,7 +11,7 @@ use Cwd;
 use Digest::SHA1;
 use File::stat;
 
-open(FACES, '>>/Users/jim/img/data/ookdata.nt');
+open(FACES, '>>data/ookdata.nt');
 
 for my $f (@ARGV) {
 	my $file = File::Spec->abs2rel($f);

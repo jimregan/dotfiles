@@ -11,7 +11,6 @@ use Cwd;
 use Digest::SHA1;
 use File::stat;
 
-#open(FACES, '>>$ARGV[0]');
 my $base = "http://";
 if ($ARGV[0] ne '') {
 	$base = $ARGV[0];
