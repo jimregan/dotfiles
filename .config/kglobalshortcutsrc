@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Plasma
 switch-to-activity-6d49643a-ad65-454f-85c5-0ea914f4566e=none,none,
+switch-to-activity-82fbd5d2-bed5-48e6-971e-356db2c3c014=none,none,
 
 [KDE Keyboard Layout Switcher]
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout

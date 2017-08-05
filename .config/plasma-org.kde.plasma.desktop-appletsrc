@@ -140,6 +140,19 @@ wallpaperplugin=org.kde.image
 height=1080
 width=1920
 
+[Containments][35]
+activityId=82fbd5d2-bed5-48e6-971e-356db2c3c014
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=org.kde.image
+
+[Containments][35][Wallpaper][org.kde.image][General]
+height=1080
+width=1920
+
 [Containments][7]
 activityId=3a1e0546-c2f2-4879-85d6-3f5335994ba4
 formfactor=0
