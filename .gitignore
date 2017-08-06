@@ -37,3 +37,5 @@ IdeaProjects/
 .spumux/
 .config/MonoDevelop/addin-db-001/
 .thumbnails/
+.vagrant.d/boxes/
+.vagrant.d/gems/
