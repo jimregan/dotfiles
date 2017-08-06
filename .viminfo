@@ -32,12 +32,32 @@
 	_OUTPUT_NAME-NOTFOUND
 
 # File marks:
-'0  291  44  ~/Playing/tesseract/Makefile
-'1  23  13  ~/.gitignore
-'2  1  0  ~/.cfg/MERGE_MSG
+'0  1  0  ~/IdeaProjects/dictionaryconverter/.git/MERGE_MSG
+'1  291  44  ~/Playing/tesseract/Makefile
+'2  23  13  ~/.gitignore
 '3  1  0  ~/.cfg/MERGE_MSG
+'4  1  0  ~/.cfg/MERGE_MSG
 
 # Jumplist (newest first):
+-'  1  0  ~/IdeaProjects/dictionaryconverter/.git/MERGE_MSG
+-'  291  44  ~/Playing/tesseract/Makefile
+-'  1  0  ~/Playing/tesseract/Makefile
+-'  23  13  ~/.gitignore
+-'  15  0  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  1  0  ~/.cfg/MERGE_MSG
+-'  2  13  ~/tmp/sourceme
+-'  1  0  ~/tmp/sourceme
+-'  1  0  ~/.cfg/MERGE_MSG
+-'  1  0  ~/.cfg/MERGE_MSG
+-'  23  13  ~/.gitignore
+-'  15  0  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  1  0  ~/.cfg/MERGE_MSG
+-'  2  13  ~/tmp/sourceme
+-'  1  0  ~/tmp/sourceme
+-'  1  0  ~/.cfg/MERGE_MSG
+-'  1  0  ~/.cfg/MERGE_MSG
 -'  291  44  ~/Playing/tesseract/Makefile
 -'  1  0  ~/Playing/tesseract/Makefile
 -'  23  13  ~/.gitignore
@@ -58,6 +78,9 @@
 -'  1  0  ~/.cfg/MERGE_MSG
 
 # History of marks within files (newest to oldest):
+
+> ~/IdeaProjects/dictionaryconverter/.git/MERGE_MSG
+	"	1	0
 
 > ~/Playing/tesseract/Makefile
 	"	291	44
