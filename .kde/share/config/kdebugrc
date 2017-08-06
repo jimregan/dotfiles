@@ -13,6 +13,9 @@ InfoOutput=2
 [kdevdefinesandincludes]
 InfoOutput=2
 
+[kdialog]
+InfoOutput=4
+
 [kio (delegateanimationhandler)]
 InfoOutput=4
 

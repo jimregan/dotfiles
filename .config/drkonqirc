@@ -1,0 +1,9 @@
+[General]
+Height 1080=320
+Width 1920=640
+
+[KFileDialog Settings]
+Recent Files[$e]=file://$HOME/plasmashell-20170725-094722.kcrash.txt,file://$HOME/plasmashell-20170725-094722.kcrash.txt
+
+[SystemInformation]
+CompiledSources=false
