@@ -1,0 +1,12 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+i.guim.co.uk	0	0	1500747160	31536000
+raw.githubusercontent.com	0	0	1486989626	31536000
+sexphotos.pw	0	1	1489738598	63072000
+dumps.wikimedia.org	0	1	1491857723	31536000
+hdtv-sex.com	0	0	1492006971	31536000
+twitter.com	0	0	1487525533	631138519
+upload.wikimedia.org	0	1	1489353589	31536000
+github.com	0	1	1494932056	31536000
+mobile.twitter.com	0	0	1487525533	631138519
