@@ -49,3 +49,5 @@ IdeaProjects/
 .boot2docker/
 .fid/
 .FBReader/cache/
+.serverauth.*
+*~
