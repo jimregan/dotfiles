@@ -47,3 +47,5 @@ IdeaProjects/
 .swipl-dir-history/
 .go/
 .boot2docker/
+.fid/
+.FBReader/cache/
