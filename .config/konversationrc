@@ -1,0 +1,61 @@
+[Aliases]
+AliasList=sysinfo /exec sysinfo,gauge /exec gauge,tinyurl /exec tinyurl,bug /exec bug,mail /exec mail,sayclip /exec sayclip,media /exec media,audio /exec media audio,video /exec media video,fortune /exec fortune,uptime /exec uptime,cmd /exec cmd
+
+[Channel 0]
+Name=#kubuntu
+Password=
+
+[DCC Settings]
+PanelSplitter=AAAA/wAAAAEAAAAC//////////8B/////wEAAAACAA==
+
+[Identity 0]
+AuthType=nickserv
+AutomaticAway=false
+AutomaticUnaway=false
+AwayInactivity=10
+AwayMessage=
+AwayNick=
+AwayReason=Gone away for now
+Bot=nickserv
+Codec=UTF-8
+Ident=jim
+InsertRememberLineOnAway=false
+KickReason=User terminated!
+Name=Default Identity
+Nicknames=jim,jim_,jim__
+NickservCommand=identify
+PartReason=Konversation terminated!
+Password=
+PemClientCertFile=
+PreShellCommand=
+QuitReason=Konversation terminated!
+Realname=Jim O'Regan
+ReturnMessage=
+SaslAccount=
+ShowAwayMessage=false
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAGrAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Server 0]
+Password=
+Port=8001
+SSLEnabled=false
+Server=chat.freenode.net
+
+[ServerGroup 0]
+AutoConnect=false
+AutoJoinChannels=Channel 0
+ChannelHistory=
+ConnectCommands=
+EnableNotifications=true
+Expanded=false
+Identity=Default Identity
+Name=freenode
+NotifyList=
+ServerList=Server 0
+
+[ServerListDialog]
+ServerListHeaderState=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01£\x00\x00\x00\x03\x00\x01\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00»ˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00»\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00w\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03Ë\x01
+Size=533,274
