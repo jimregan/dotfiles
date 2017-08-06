@@ -43,3 +43,7 @@ IdeaProjects/
 .darcs/cache/
 .findimagedupes/
 .python-eggs/
+.swt/lib/
+.swipl-dir-history/
+.go/
+.boot2docker/
