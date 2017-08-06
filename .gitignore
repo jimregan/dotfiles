@@ -41,3 +41,5 @@ IdeaProjects/
 .vagrant.d/gems/
 .groovy/grapes/
 .darcs/cache/
+.findimagedupes/
+.python-eggs/
