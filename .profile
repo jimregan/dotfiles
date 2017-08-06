@@ -19,5 +19,7 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-
-. /home/jim/torch/install/bin/torch-activate
+if [ -d $HOME/torch ]
+then
+	. $HOME/torch/install/bin/torch-activate
+fi
