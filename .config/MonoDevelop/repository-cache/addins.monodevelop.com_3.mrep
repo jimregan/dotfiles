@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>MonoDevelop Add-in Repository (Beta channel)</Name>
+  <Url>http://addins.monodevelop.com/Beta/Mac/2.4.2/root.mrep</Url>
+  <Addin>
+    <Url>MonoDevelop.MonoDroid-2.4.2.2.mpack</Url>
+    <Addin>
+      <Id>MonoDroid</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>MonoDroid development</Name>
+      <Version>2.4.2.2</Version>
+      <BaseVersion />
+      <Author>Michael Hutchinson</Author>
+      <Copyright>MIT X11</Copyright>
+      <Url>http://monodevelop.com/</Url>
+      <Description>Support for developing and deploying MonoDroid applications.</Description>
+      <Category>Mobile Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>XmlEditor</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger.Soft</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+      </OptionalDependencies>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.MonoDroid-2.4.2.3.mpack</Url>
+    <Addin>
+      <Id>MonoDroid</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>MonoDroid development</Name>
+      <Version>2.4.2.3</Version>
+      <BaseVersion />
+      <Author>Michael Hutchinson</Author>
+      <Copyright>MIT X11</Copyright>
+      <Url>http://monodevelop.com/</Url>
+      <Description>Support for developing and deploying MonoDroid applications.</Description>
+      <Category>Mobile Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>XmlEditor</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger.Soft</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+      </OptionalDependencies>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.MonoDroid-2.4.2.mpack</Url>
+    <Addin>
+      <Id>MonoDroid</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>MonoDroid development</Name>
+      <Version>2.4.2.2</Version>
+      <BaseVersion />
+      <Author>Michael Hutchinson</Author>
+      <Copyright>MIT X11</Copyright>
+      <Url>http://monodevelop.com/</Url>
+      <Description>Support for developing and deploying MonoDroid applications.</Description>
+      <Category>Mobile Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>XmlEditor</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger.Soft</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+      </OptionalDependencies>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.MonoMac-2.4.2.0.mpack</Url>
+    <Addin>
+      <Id>MonoMac</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>MonoMac development</Name>
+      <Version>2.4.2.1</Version>
+      <BaseVersion />
+      <Author>Michael Hutchinson</Author>
+      <Copyright>MIT X11</Copyright>
+      <Url>http://monodevelop.com/</Url>
+      <Description>Support for developing MonoMac applications</Description>
+      <Category>Mac Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>MacDev</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger.Soft</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+      </OptionalDependencies>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.MonoMac-2.4.2.1.mpack</Url>
+    <Addin>
+      <Id>MonoMac</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>MonoMac development</Name>
+      <Version>2.4.2.1</Version>
+      <BaseVersion />
+      <Author>Michael Hutchinson</Author>
+      <Copyright>MIT X11</Copyright>
+      <Url>http://monodevelop.com/</Url>
+      <Description>Support for developing MonoMac applications</Description>
+      <Category>Mac Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>MacDev</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>2.4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Debugger.Soft</AddinId>
+          <Version>2.4</Version>
+        </AddinDependency>
+      </OptionalDependencies>
+    </Addin>
+  </Addin>
+</Repository>

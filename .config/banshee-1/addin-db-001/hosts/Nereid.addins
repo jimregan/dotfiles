@@ -1,0 +1,3 @@
+<Addins host-reference="/Applications/Banshee.app/Contents/Resources/lib/banshee/Nereid.exe">
+  <Directory shared="false">/Applications/Banshee.app/Contents/Resources/lib/banshee</Directory>
+</Addins>

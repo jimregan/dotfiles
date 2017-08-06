@@ -1,0 +1,3 @@
+<Addins host-reference="/Applications/MonoDevelop.app/Contents/MacOS/lib/monodevelop/bin/MonoDevelop.exe">
+  <Directory shared="false">/Applications/MonoDevelop.app/Contents/MacOS/lib/monodevelop/bin</Directory>
+</Addins>

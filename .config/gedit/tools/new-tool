@@ -1,0 +1,10 @@
+#!/bin/sh
+# [Gedit Tool]
+# Name=New tool
+# Shortcut=<Control>p
+# Applicability=all
+# Output=output-panel
+# Input=nothing
+# Save-files=nothing
+
+sed -e 's/ \([;:!]\) "/\1"/g;s/ \([;:!]\) /\1 /g'
