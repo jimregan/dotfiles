@@ -1,0 +1,9 @@
+int a = 372 / 4;
+a
+using namespace std;
+string s = "foo";
+s
+wstring s = L"bar";
+#include<wstring>
+exit
+.q

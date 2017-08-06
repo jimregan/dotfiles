@@ -1,0 +1,118 @@
+27 14:29:51 INFO  gate.Gate                     : Using /Applications/GATE-6.0 as GATE home
+27 14:29:51 INFO  gate.Gate                     : Using /Applications/GATE-6.0/plugins as installed plug-ins directory.
+27 14:29:51 INFO  gate.Gate                     : Using /Applications/GATE-6.0/gate.xml as site configuration file.
+27 14:29:51 INFO  gate.Gate                     : Using /Users/jim/.gate.xml as user configuration file
+27 14:29:51 INFO  gate.Gate                     : Using /Users/jim/.gate.session as user session file
+21 01:26:48 INFO  gate.Gate                     : Using /Applications/GATE-6.0 as GATE home
+21 01:26:48 INFO  gate.Gate                     : Using /Applications/GATE-6.0/plugins as installed plug-ins directory.
+21 01:26:48 INFO  gate.Gate                     : Using /Applications/GATE-6.0/gate.xml as site configuration file.
+21 01:26:48 INFO  gate.Gate                     : Using /Users/jim/.gate.xml as user configuration file
+21 01:26:48 INFO  gate.Gate                     : Using /Users/jim/.gate.session as user session file
+21 01:30:48 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/ANNIE/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Learning/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Keyphrase_Extraction_Algorithm/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Parser_Stanford/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Gazetteer_LKB/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Tagger_NP_Chunking/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Alignment/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Machine_Learning/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Information_Retrieval/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Jape_Compiler/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/UIMA/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Gazetteer_Ontology_Based/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Ontology/
+21 01:32:19 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/Applications/GATE-6.0/plugins/Tagger_Abner/
+21 01:36:57 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:36:57 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:36:57 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:36:57 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 01:37:11 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:37:11 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:37:11 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:37:11 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 01:37:41 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:37:41 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:37:41 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:37:41 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 01:38:03 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:38:03 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:38:03 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:38:03 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 01:41:08 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:41:08 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:41:08 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:41:08 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 01:44:00 INFO  gate.abner.AbnerTagger        : Abner intializing the BIOCREATIVE model...
+21 01:45:22 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:45:22 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:45:22 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:45:22 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 01:45:52 DEBUG ate.jape.SinglePhaseTransducer: Start: postprocess
+21 01:45:56 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:45:56 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:45:56 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:45:56 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 01:46:16 DEBUG ate.jape.SinglePhaseTransducer: Start: postprocess
+21 01:46:21 DEBUG ate.jape.SinglePhaseTransducer: Start: prepare
+21 01:46:21 DEBUG ate.jape.SinglePhaseTransducer: Start: find
+21 01:46:21 DEBUG ate.jape.SinglePhaseTransducer: Start: split
+21 01:46:21 DEBUG ate.jape.SinglePhaseTransducer: Start: cleanup
+21 13:47:07 ERROR gate.gui.MainFrame            : Some problems occurred when cleaning up the resources.
+java.lang.NullPointerException
+	at gate.gui.SerialControllerEditor.resourceUnloaded(SerialControllerEditor.java:1027)
+	at gate.creole.CreoleRegisterImpl.fireResourceUnloaded(CreoleRegisterImpl.java:1028)
+	at gate.creole.CreoleRegisterImpl.resourceUnloaded(CreoleRegisterImpl.java:1080)
+	at gate.CreoleProxy.fireResourceUnloaded(Factory.java:908)
+	at gate.Factory.deleteResource(Factory.java:421)
+	at gate.creole.SerialController.cleanup(SerialController.java:279)
+	at gate.Factory.deleteResource(Factory.java:424)
+	at gate.gui.MainFrame$ExitGateAction$1.run(MainFrame.java:3856)
+	at java.lang.Thread.run(Thread.java:680)
+22 10:56:44 WARN  gate.Gate                     : GATE home system property ("gate.home") not set.
+Attempting to guess...
+22 10:56:44 WARN  gate.Gate                     : Using "/private/tmp/gate-7.1-build4485-BIN" as GATE Home.
+If this is not correct please set it manually using the -Dgate.home option in your start-up script
+22 10:56:44 INFO  gate.Gate                     : Using /private/tmp/gate-7.1-build4485-BIN as GATE home
+22 10:56:44 INFO  gate.Gate                     : Using /private/tmp/gate-7.1-build4485-BIN/plugins as installed plug-ins directory.
+22 10:56:44 INFO  gate.Gate                     : Using /private/tmp/gate-7.1-build4485-BIN/gate.xml as site configuration file.
+22 10:56:44 INFO  gate.Gate                     : Using /Users/jim/.gate.xml as user configuration file
+22 10:56:44 INFO  gate.Gate                     : Using /Users/jim/.gate.session as user session file
+22 10:56:47 ERROR gate.Gate                     : Cannot load file:/Applications/GATE-6.0/plugins/OpenNLP/ CREOLE repository.
+gate.util.GateException: couldn't find:file:/Applications/GATE-6.0/plugins/OpenNLP/
+	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:306)
+	at gate.Gate.initCreoleRepositories(Gate.java:462)
+	at gate.Gate.init(Gate.java:225)
+	at gate.Main.runGui(Main.java:174)
+	at gate.Main.main(Main.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at gate.Launcher.startGate(Launcher.java:72)
+	at gate.Launcher.main(Launcher.java:232)
+22 10:56:47 ERROR gate.Gate                     : Cannot load file:/Applications/GATE-6.0/plugins/ANNIE/ CREOLE repository.
+gate.util.GateException: couldn't find:file:/Applications/GATE-6.0/plugins/OpenNLP/
+	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:306)
+	at gate.Gate.initCreoleRepositories(Gate.java:462)
+	at gate.Gate.init(Gate.java:225)
+	at gate.Main.runGui(Main.java:174)
+	at gate.Main.main(Main.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at gate.Launcher.startGate(Launcher.java:72)
+	at gate.Launcher.main(Launcher.java:232)
+22 10:56:54 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/ANNIE/
+22 10:56:54 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Tagger_NP_Chunking/
+22 10:56:54 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Alignment/
+22 10:56:54 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Machine_Learning/
+22 10:56:54 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Information_Retrieval/
+22 10:56:54 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Learning/
+22 10:56:55 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Keyphrase_Extraction_Algorithm/
+22 10:56:55 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Parser_Stanford/
+22 10:56:55 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Gazetteer_LKB/
+22 10:56:55 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/UIMA/
+22 10:56:55 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Gazetteer_Ontology_Based/
+22 10:56:56 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Ontology/
+22 10:56:56 INFO  gate.creole.CreoleRegisterImpl: CREOLE plugin loaded: file:/private/tmp/gate-7.1-build4485-BIN/plugins/Tagger_Abner/

@@ -77,10 +77,6 @@ while (<>) {
 		do301 ($url);
 	}
 	if (/Location: ([^ ]*) \[following\]/) {
-		if ($1 eq "http://mobile.3ireland.ie/pc/Live/pcreator/live/mwsun") {
-			print "<$url> <http://imgmeta.sourceforge.net/0.1/props#censored> \"true\"^^<http://www.w3.org/2001/XMLSchema#boolean> .\n";
-			next;
-		}
 		if ($1 eq "http://l.yimg.com/g/images/photo_unavailable.gif") {
 			do404 ($url);
 		} elsif ($1 eq "https://s.yimg.com/pw/images/photo_unavailable.gif") {

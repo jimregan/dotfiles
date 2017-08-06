@@ -1,0 +1,16 @@
+<MWFConfig>
+  <FileDialog>
+    <value name="Height" type="int">385</value>
+    <value name="Y" type="int">244</value>
+    <value name="X" type="int">439</value>
+    <value name="FileNames" type="string-array" />
+    <value name="LastFolder" type="string">/Users/jim/MoMA</value>
+    <value name="Width" type="int">555</value>
+  </FileDialog>
+  <FolderBrowserDialog>
+    <value name="Height" type="int">351</value>
+    <value name="Y" type="int">275</value>
+    <value name="X" type="int">555</value>
+    <value name="Width" type="int">330</value>
+  </FolderBrowserDialog>
+</MWFConfig>

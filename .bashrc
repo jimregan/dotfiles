@@ -116,9 +116,18 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -d $HOME/torch ]
+then
+    . $HOME/torch/install/bin/torch-activate
+fi
 
-. /home/jim/torch/install/bin/torch-activate
-
-export PATH=$PATH:/usr/local/cuda-8.0/bin/
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-alias config='/usr/bin/git --git-dir=/home/jim/.cfg/ --work-tree=/home/jim'
+if [ `uname` = "Linux" ]
+then
+    export PATH=$PATH:/usr/local/cuda-8.0/bin/
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+    alias config='/usr/bin/git --git-dir=/home/jim/.cfg/ --work-tree=/home/jim'
+fi
+if [ `uname` = "Darwin" ]
+then
+	alias config='/usr/local/bin/git --git-dir=/Users/jim/.cfg/ --work-tree=/Users/jim'
+fi
