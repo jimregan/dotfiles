@@ -1,0 +1,26 @@
+[General]
+Config Revision=10
+Days Meta Infos=30
+Last Session=
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+
+[KFileDialog Settings]
+Recent Files[$e]=interchunk.dtd,file:///tmp/filesin,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/scratch.txt,file://$HOME/samplerun,file://$HOME/Downloads/interchunk.dtd,file://$HOME/Downloads/apertium-en-es.en-es.t1x
+Recent URLs[$e]=file://$HOME/Downloads/,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/,file:///tmp/
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Window-Maximized 1080x1920=true
+
+[filetree]
+editShade=179,218,246
+listMode=false
+shadingEnabled=true
+showFullPathOnRoots=false
+sortRole=0
+viewShade=193,208,209
