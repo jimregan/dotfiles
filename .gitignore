@@ -28,3 +28,10 @@ IdeaProjects/
 .m2/
 .viminfo
 .wget-hsts
+.lilypond-fonts.cache-2
+.Trash/
+.dydra/
+.cpan/build/
+.cpan/sources/
+.fontconfig/
+.spumux/
