@@ -40,3 +40,4 @@ IdeaProjects/
 .vagrant.d/boxes/
 .vagrant.d/gems/
 .groovy/grapes/
+.darcs/cache/
