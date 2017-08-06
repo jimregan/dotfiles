@@ -1,0 +1,39 @@
+[a+b | (a,b) <- xs]
+let xs = [(1,3), (2,4), (5,5)]
+addThree :: Int -> Int -> Int -> Int
+:t "Hello"
+:t True
+:t 'a'
+add5 :: Integer -> Integer
+add5 :: Integer -> Integer
+(+) 2 3
+(+) :: (Num a) => a -> a -> a
+(+) :: (Num a) => a -> a -> a
+(+) :: (Num a) => a -> a ->
+mapM_ print [1, 2]
+zip [1, 2] [4,5]
+zip [1, 2] [2,3]
+snd ("a", "test")
+"a" ++ " " ++ "test"
+[1, 2, 3] ++ [2, 3]
+let xa = [1, 2, 3]
+doubler 2
+:l first
+doubler x = x + x
+succ 8
+True && False
+2 + 5
+myhead "ah"
+:l test.hs 
+doubleMe 2
+let doubleMe x = x + x
+doubleMe x = x + x
+doubler x = x + x
+min 9 10
+"hello" == "hello"
+calcBmis :: (RealFloat) => [(a, a)] -> [a]
+ah :: [a] -> a
+head' :: [a] -> a
+2 + 15
+:?
+myhead :: [a] -> a
