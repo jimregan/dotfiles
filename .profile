@@ -19,6 +19,7 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 if [ `uname` = "Linux" ]
+then
 	if [ -d $HOME/torch ]
 	then
 		. $HOME/torch/install/bin/torch-activate
