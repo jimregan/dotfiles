@@ -2,3 +2,7 @@
 .bash_history
 .scala_history
 .scala_history
+.netrc
+.Xauthority
+*.swp
+.DS_Store
