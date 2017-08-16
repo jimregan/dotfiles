@@ -1,0 +1,6 @@
+[user]
+	email = jaoregan@tcd.ie
+	name = Jim O'Regan
+	signingkey = FEF55F42E29785AA
+[url "https://github.com/"]
+	insteadOf = git://github.com/
