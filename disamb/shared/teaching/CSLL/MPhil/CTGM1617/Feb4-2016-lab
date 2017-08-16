@@ -1,0 +1,98 @@
+(0)
+mkdir Feb4-2016
+
+(1)
+cd Feb4-2016
+
+(2)
+
+From 
+/shared/teaching/CSLL/MPhil/CTGM1516/
+cp:  cl1.pl, testsuite1.pl, utilities1.pl
+
+i.e.
+cp   /shared/teaching/CSLL/MPhil/CTGM1516/cl1.pl .
+
+(etc.)
+
+(3)
+emacs cl1.pl
+
+(4)
+esc-x
+run-prolog
+
+(5)
+consult(cl1).
+
+(6) to switch back and forth between buffers:
+ctrl-x o
+
+(7)
+
+listing.
+
+(8)
+listing(np).
+
+(9)
+np(X,Y)
+(type a semicolon at the en of each response)
+
+(10)
+s([the,dog,sleeps],[]).
+
+(11)
+trace,s([the,dog,sleeps],[]).
+
+(12)
+at a call prompt, one might type
+a, s, f, or <return>
+
+at an exit prompt, one might type
+a, r, or <return>
+
+at the first Call: involving NP, what happens if one
+types s?
+
+at the first Call: involving VMT, what happens if one
+types f?
+
+at the first Call: what happens if one types r?
+
+(13)
+(13a)
+add new nouns:
+e.g. "person", "tenacity"
+
+(13b)
+test sentences involving those nouns
+
+(14)
+(14a)
+add new verbs:
+e.g. "writes", "write"
+
+(14b)
+test sentences involving those verbs
+
+(15)
+(15a)
+add adjectives:
+e.g. "new"
+
+(15b)
+test sentences involving those adjectives
+
+(16.)
+halt.
+
+(17)
+exit
+
+
+
+
+
+
+
