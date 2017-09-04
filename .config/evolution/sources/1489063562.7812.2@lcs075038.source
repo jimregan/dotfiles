@@ -1,0 +1,24 @@
+[Data Source]
+DisplayName=joregan@gmail.com
+Enabled=true
+Parent=1489063562.7812.0@lcs075038
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+
+[Mail Identity]
+Address=joregan@gmail.com
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=1489063562.7812.3@lcs075038
+RepliesToOriginFolder=false
