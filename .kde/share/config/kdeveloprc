@@ -1,6 +1,12 @@
 [CMakeBuildDirChooser]
 LastExtraArguments=
 
+[Compilers]
+number=0
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
 [External Scripts]
 firstUse=false
 
@@ -37,18 +43,183 @@ saveMode=0
 shortcuts=
 showOutput=false
 
+[Favorite Profiles]
+Favorites=
+
+[KFileDialog Settings]
+Height 1080=522
+Recent Files[$e]=lt_proc.cc,$HOME/Playing/mosesdecoder/contrib/relent-filter/src/IOWrapper.cpp,$HOME/Playing/lttoolbox/lttoolbox/expander.h,$HOME/Playing/lttoolbox/lttoolbox/compiler.cc,$HOME/Playing/lttoolbox/lttoolbox/dix.dtd,$HOME/Playing/lttoolbox/lttoolbox/expander.cc,$HOME/Playing/lttoolbox/lttoolbox/lt_expand.cc,$HOME/Playing/lttoolbox/lttoolbox/fst_processor.h,$HOME/Playing/lttoolbox/lttoolbox/fst_processor.cc,$HOME/Playing/lttoolbox/lttoolbox/lt_proc.cc
+Recent URLs[$e]=$HOME/Playing/lttoolbox/lttoolbox/,$HOME/Playing/lttoolbox/lttoolbox/win32/,$HOME/Playing/mosesdecoder/contrib/relent-filter/src/
+Width 1920=960
+
+[KatePart Settings]
+documents=/home/jim/Playing/lttoolbox/lttoolbox/fst_processor.h,/home/jim/Playing/lttoolbox/lttoolbox/lt_proc.cc,/home/jim/Playing/lttoolbox/lttoolbox/fst_processor.cc,/home/jim/Playing/lttoolbox/lttoolbox/dix.dtd,/home/jim/projects/testproj/main.cpp,/home/jim/Playing/lttoolbox/lttoolbox/expander.h,/home/jim/Playing/lttoolbox/lttoolbox/compiler.cc,/home/jim/Playing/lttoolbox/lttoolbox/lt_expand.cc,/home/jim/Playing/lttoolbox/lttoolbox/expander.cc
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/compiler.cc]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/dix.dtd]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=DTD
+Indentation Mode=normal
+Mode=DTD
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/expander.cc]
+Bookmarks=
+Encoding=ISO-8859-15
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/expander.h]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/fst_processor.cc]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/fst_processor.h]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/lt_expand.cc]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/Playing/lttoolbox/lttoolbox/lt_proc.cc]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/Playing/mosesdecoder/contrib/relent-filter/src/IOWrapper.cpp]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[KatePart Settings][/home/jim/projects/testproj/main.cpp]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=C++
+Indentation Mode=cstyle
+Mode=C++
+
+[Main Window]
+Desktop 1920 1080=0,29,1920,1015
+
 [MainWindow]
 Height 1080=1081
-State=AAAA/wAAAAD9AAAAAQAAAAMAAAdIAAAAbvwBAAAAAfsAAAAoAFYAZQByAHMAaQBvAG4AIABDAG8AbgB0AHIAbwBsAF8AYwBvAGQAZQEAAAAcAAAHSAAAAGwBAAADAAAHSAAAAy4AAAAEAAAABAAAAAEAAAAC/AAAAAQAAAAAAAAAAQAAAB4ATABlAGYAdAAgAEIAdQB0AHQAbwBuACAAQgBhAHIDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAIABSAGkAZwBoAHQAIABCAHUAdAB0AG8AbgAgAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAABAAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAGQAZQBiAHUAZwBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAgAHEAdQBpAGMAawBPAHAAZQBuAFQAbwBvAGwAQgBhAHIBAAACXf////8AAAAAAAAAAAAAACwASwBEAGUAdgBDAG8AZABlAGIAcgBvAHcAcwBlAHIAVABvAG8AbABCAGEAcgEAAANF/////wAAAAAAAAAAAAAAAwAAAAEAAAAiAEIAbwB0AHQAbwBtACAAQgB1AHQAdABvAG4AIABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAMAAAdIAAAAbvwBAAAAAfsAAAAoAFYAZQByAHMAaQBvAG4AIABDAG8AbgB0AHIAbwBsAF8AYwBvAGQAZQEAAAAcAAAHSAAAAAAAAAAAAAAHSAAAA50AAAAEAAAABAAAAAEAAAAC/AAAAAQAAAAAAAAAAQAAAB4ATABlAGYAdAAgAEIAdQB0AHQAbwBuACAAQgBhAHIDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAIABSAGkAZwBoAHQAIABCAHUAdAB0AG8AbgAgAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAABAAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAGQAZQBiAHUAZwBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAgAHEAdQBpAGMAawBPAHAAZQBuAFQAbwBvAGwAQgBhAHIBAAACXf////8AAAAAAAAAAAAAACwASwBEAGUAdgBDAG8AZABlAGIAcgBvAHcAcwBlAHIAVABvAG8AbABCAGEAcgEAAANF/////wAAAAAAAAAAAAAAAwAAAAEAAAAiAEIAbwB0AHQAbwBtACAAQgB1AHQAdABvAG4AIABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1921
 
+[MainWindow_code]
+Height 1080=1015
+State=AAAA/wAAAAD9AAAAAQAAAAMAAAdIAAAAbvwBAAAAAfsAAAAoAFYAZQByAHMAaQBvAG4AIABDAG8AbgB0AHIAbwBsAF8AYwBvAGQAZQEAAAAcAAAHSAAAAAAAAAAAAAAHSAAAA50AAAAEAAAABAAAAAEAAAAC/AAAAAQAAAAAAAAAAQAAAB4ATABlAGYAdAAgAEIAdQB0AHQAbwBuACAAQgBhAHIDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAIABSAGkAZwBoAHQAIABCAHUAdAB0AG8AbgAgAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAABAAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAGQAZQBiAHUAZwBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAgAHEAdQBpAGMAawBPAHAAZQBuAFQAbwBvAGwAQgBhAHIBAAACXf////8AAAAAAAAAAAAAACwASwBEAGUAdgBDAG8AZABlAGIAcgBvAHcAcwBlAHIAVABvAG8AbABCAGEAcgEAAANF/////wAAAAAAAAAAAAAAAwAAAAEAAAAiAEIAbwB0AHQAbwBtACAAQgB1AHQAdABvAG4AIABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Width 1920=1920
+debugToolBarVisibility=false
+
+[Notification Messages]
+DoNotShowAgainContinueSearchDialog=true
+
 [Open File]
-Last Open File Directory=file:///home/jim/projects/testproj/
+Last Open File Directory=file:///home/jim/Playing/mosesdecoder/contrib/relent-filter/src/
+
+[Recent Files]
+File1[$e]=$HOME/projects/testproj/main.cpp
+File10[$e]=$HOME/Playing/mosesdecoder/contrib/relent-filter/src/IOWrapper.cpp
+File2[$e]=$HOME/Playing/lttoolbox/lttoolbox/lt_proc.cc
+File3[$e]=$HOME/Playing/lttoolbox/lttoolbox/fst_processor.h
+File4[$e]=$HOME/Playing/lttoolbox/lttoolbox/fst_processor.cc
+File5[$e]=$HOME/Playing/lttoolbox/lttoolbox/lt_expand.cc
+File6[$e]=$HOME/Playing/lttoolbox/lttoolbox/expander.cc
+File7[$e]=$HOME/Playing/lttoolbox/lttoolbox/dix.dtd
+File8[$e]=$HOME/Playing/lttoolbox/lttoolbox/compiler.cc
+File9[$e]=$HOME/Playing/lttoolbox/lttoolbox/expander.h
+Name1[$e]=main.cpp
+Name10[$e]=IOWrapper.cpp
+Name2[$e]=lt_proc.cc
+Name3[$e]=fst_processor.h
+Name4[$e]=fst_processor.cc
+Name5[$e]=lt_expand.cc
+Name6[$e]=expander.cc
+Name7[$e]=dix.dtd
+Name8[$e]=compiler.cc
+Name9[$e]=expander.h
 
 [RecentProjects]
-File1[$e]=$HOME/projects/testproj/testproj.kdev4
-Name1[$e]=testproj.kdev4
+File1[$e]=$HOME/Playing/lttoolbox/lttoolbox.kdev4
+File2[$e]=$HOME/projects/testproj/testproj.kdev4
+File3[$e]=$HOME/Playing/mosesdecoder/mosesdecoder.kdev4
+Name1[$e]=lttoolbox.kdev4
+Name2[$e]=testproj.kdev4
+Name3[$e]=mosesdecoder.kdev4
 
 [Sessions]
-Active Session ID={92c59989-d62c-406a-918d-2ad0d6c4635b}
+Active Session ID={a72b2acd-90ee-4b99-b783-1835e9de3f1e}
+
+[User Interface]
+Main Windows Count=1
+
+[User Interface][Main Window 0][Area code]
+desired views=org.kdevelop.ClassBrowserView:1,org.kdevelop.ContextBrowser:8,org.kdevelop.DocumentationView:2,org.kdevelop.DocumentsView:1,org.kdevelop.ExternalScriptView:2,org.kdevelop.FileManagerView:1,org.kdevelop.KonsoleView:8,org.kdevelop.OutputView:8,org.kdevelop.OutputView.0:8,org.kdevelop.ProblemReporterView:8,org.kdevelop.ProjectsView:1,org.kdevelop.SnippetView:2
+id=code
+thickness bottom=-1
+thickness left=-1
+thickness right=-1
+thickness top=-1
+view on bottom=org.kdevelop.OutputView.0
+view on left=
+view on right=
+view on top=
+working set=code_64628
+
+[User Interface][Main Window 0][Area debug]
+desired views=org.kdevelop.DocumentationView:2,org.kdevelop.FileManagerView:1,org.kdevelop.KonsoleView:8,org.kdevelop.OutputView.0:8,org.kdevelop.debugger.BreakpointsView:8,org.kdevelop.debugger.ConsoleView:8,org.kdevelop.debugger.StackView:8,org.kdevelop.debugger.VariablesView:1
+id=debug
+thickness bottom=-1
+thickness left=-1
+thickness right=-1
+thickness top=-1
+view on bottom=
+view on left=
+view on right=
+view on top=
+working set=
+
+[User Interface][Main Window 0][Area review]
+desired views=org.kdevelop.DocumentationView:2,org.kdevelop.FileManagerView:1,org.kdevelop.OutputView.0:8,org.kdevelop.PatchReview:8,org.kdevelop.ProjectsView:1
+id=review
+thickness bottom=-1
+thickness left=-1
+thickness right=-1
+thickness top=-1
+view on bottom=
+view on left=
+view on right=
+view on top=
+working set=
+
+[breakpoints]
+number=0

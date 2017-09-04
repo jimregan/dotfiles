@@ -1,0 +1,6 @@
+[ui]
+username = "Jim O'Regan" <jimregan@users.sourceforge.net>
+verbose = true
+
+[web]
+cacerts=

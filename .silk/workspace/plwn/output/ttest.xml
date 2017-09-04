@@ -1,0 +1,4 @@
+<Output type="file" name="ttest">
+  <Param name="file" value="test.nt"></Param>
+  <Param name="format" value="ntriples"></Param>
+</Output>

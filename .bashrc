@@ -116,31 +116,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#eval `ssh-agent -s`
-env=~/.ssh/agent.env
-
-agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
-
-agent_start () {
-(umask 077; ssh-agent >| "$env")
-. "$env" >| /dev/null ; }
-
-agent_load_env
-
-# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
-agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
-
-if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
-    agent_start
-    ssh-add
-elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
-    ssh-add
+if [ `uname` = "Linux" ]
+then
+    export PATH=$PATH:/usr/local/cuda-8.0/bin/
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+    alias config='/usr/bin/git --git-dir=/home/jim/.cfg/ --work-tree=/home/jim'
+	if [ -d $HOME/torch ]
+	then
+	    . $HOME/torch/install/bin/torch-activate
+	fi
 fi
-
-unset env
-
-
-. /home/jim/torch/install/bin/torch-activate
-
-
-. /home/jim/torch/install/bin/torch-activate
+if [ `uname` = "Darwin" ]
+then
+	alias config='/usr/local/bin/git --git-dir=/Users/jim/.cfg/ --work-tree=/Users/jim'
+fi
