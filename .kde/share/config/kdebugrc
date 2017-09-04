@@ -1,3 +1,6 @@
+[FavIcons]
+InfoOutput=4
+
 [KDevplatform (External Script)]
 InfoOutput=4
 
@@ -8,6 +11,9 @@ InfoOutput=4
 InfoOutput=2
 
 [kdecore (KLibrary)]
+InfoOutput=2
+
+[kdecore (KPluginInfo)]
 InfoOutput=2
 
 [kdevdefinesandincludes]
