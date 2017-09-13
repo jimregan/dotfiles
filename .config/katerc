@@ -19,11 +19,11 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=interchunk.dtd,file://$HOME/Playing/OpenNLPMosesFactored/build.sbt,file:///tmp/casefeat,file://$HOME/Playing/OpenNLPMosesFactored/src/main/scala/ie/tcd/slscs/itut/OpenNLPMosesFactored/Convert.scala,file://$HOME/Playing/ainm-ner-corpus/adam_mickiewicz.txt,file://$HOME/Playing/dissertation-data/tagging/irishfst-gen-pairs.sh,file://$HOME/moses-ptb-extract.txt,file://$HOME/irish-lower.icu,file://$HOME/design-notes,file://$HOME/notes-moses-also-neuralmtcopy-citinfnums,file://$HOME/notes-thing-working-on,file://$HOME/GADDAG.java,file://$HOME/dissertation-notes-tagging.tex
-Recent URLs[$e]=file://$HOME/Playing/IrishDependencyTreebank/,file://$HOME/scripts/,file:///tmp/,file://$HOME/Playing/dissertation-data/tagging/,file://$HOME/Playing/ainm-ner-corpus/,file://$HOME/Playing/OpenNLPMosesFactored/src/main/scala/ie/tcd/slscs/itut/OpenNLPMosesFactored/,file://$HOME/Playing/OpenNLPMosesFactored/
+Recent Files[$e]=interchunk.dtd,file://$HOME/IdeaProjects/dictionaryconverter/scripts/tag-freqs,file://$HOME/IdeaProjects/dictionaryconverter/scripts/tags-ga.pl,file://$HOME/IdeaProjects/dictionaryconverter/src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/IrishFSTConvert.scala,file://$HOME/Playing/dissertation-data/moses/wordsplits.ga,file://$HOME/Playing/dissertation-data/moses/wordsplits.en,file://$HOME/Playing/dissertation-data/moses/aspell-split.pl,file://$HOME/Playing/dissertation-data/moses/corpus-ga-replace.tsv,file://$HOME/Playing/dissertation-data/citizens-information-raw/scripts/citinf-boilerplate.pl,file://$HOME/Playing/dissertation-data/moses/extract-factor.pl,file://$HOME/Playing/OpenNLPMosesFactored/build.sbt,file://$HOME/Playing/OpenNLPMosesFactored/src/main/scala/ie/tcd/slscs/itut/OpenNLPMosesFactored/Convert.scala,file://$HOME/Playing/ainm-ner-corpus/adam_mickiewicz.txt,file://$HOME/Playing/dissertation-data/tagging/irishfst-gen-pairs.sh,file://$HOME/moses-ptb-extract.txt,file://$HOME/irish-lower.icu
+Recent URLs[$e]=file://$HOME/Playing/OpenNLPMosesFactored/,file://$HOME/Playing/dissertation-data/moses/,file://$HOME/Playing/dissertation-data/citizens-information-raw/scripts/,file:///tmp/,file://$HOME/IdeaProjects/dictionaryconverter/src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/,file://$HOME/IdeaProjects/dictionaryconverter/scripts/,file://$HOME/IdeaProjects/dictionaryconverter/
 
 [KTextEditor::Search]
-Search History=don,"Foreign": "yes",=Voc
+Search History=Art,Subj,braille,don,"Foreign": "yes",=Voc
 
 [MainWindow]
 Height 1080=1015
