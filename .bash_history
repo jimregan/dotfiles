@@ -1,94 +1,3 @@
-cd ..
-git clone https://git.overleaf.com/3288004fqrkmb
-cp 3288004fqrkmb/gawn.bib 9879472fwnkgtfsztvt/
-cd ~-
-ls
-mkdir takefrom/3288004fqrkmb
-mv gawn.bib takefrom/3288004fqrkmb/
-git add takefrom/3288004fqrkmb/
-git status
-git add chapter1.tex refs.bib
-git commit -m ore
-make clean && make
-git status
-git add refs.bib chapter1.tex
-git commit -m more
-git add refs.bib chapter1.tex
-git push origin master
-make clean && make
-git add refs.bib chapter1.tex
-git commit -m more
-echo set|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo like|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo open|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo opens|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo wanna|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo want to|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo gonna|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo del|lt-proc /usr/share/apertium/apertium-en-es/es-en.automorf.bin 
-echo passers by|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo kick the bucket|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo speed of light|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo open|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob 
-#echo the dog|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.autobil.bin /usr/share/apertium/
-apertium-transfer 
-#echo the dog|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.t1x.bin  /usr/share/apertium/apertium-en-es/en-es.autobil.bin 
-echo the dog|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.t1x.bin  /usr/share/apertium/apertium-en-es/en-es.autobil.bin 
-echo big dog|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.t1x.bin  /usr/share/apertium/apertium-en-es/en-es.autobil.bin 
-make clean && make
-less ~/Downloads/10.1007%2F978-94-010-0181-6_1.bib 
-make clean && make
-git diff
-git add chapter1.tex
-git add refs.bib
-git status
-git add chapter2.tex chapter3.tex dissertation.tex
-git commit -m more
-git status
-echo '*.backup' >> .gitignore 
-git status
-echo dissertation.bbl >> .gitignore 
-echo dissertation.blg >> .gitignore 
-echo dissertation.glg >> .gitignore 
-echo dissertation.glo >> .gitignore 
-echo dissertation.gls >> .gitignore 
-echo dissertation.ist >> .gitignore 
-echo dissertation.out >> .gitignore 
-echo dissertation.pdf >> .gitignore 
-echo dissertation.toc >> .gitignore 
-git status
-git add .gitignore 
-git commit -m .gitignore 
-git push origin master
-git pull origin master
-git push origin master
-git log
-gitk
-git log
-git checkout -b newmaster 8f5e4838780f5cb90e333da9f6dd8073a57f1a6b
-git add takefrom/2859581dqcnzs/essay.*
-git commit -m blah
-git checkout -b newmaster 8f5e4838780f5cb90e333da9f6dd8073a57f1a6b
-git remote add gh https://github.com/jimregan/mphil-dissertation.git
-git push gh newmaster 
-git checkout master
-git push origin master
-git checkout -b wip
-git log
-git push gh wip
-mkdir /tmp/
-mkdir /tmp/copynow
-cp tcd-dissertation.cls refs.bib /tmp/copynow/
-git branch
-git checkout master
-cp /tmp/copynow/* .
-git status
-git checkout newmaster 
-ls
-git checkout master 
-cp .gitignore /tmp/copynow/
-git checkout newmaster 
-cp /tmp/copynow/* .
 git add refs.bib tcd-dissertation.cls 
 cp /tmp/copynow/.gitignore .
 git add .gitignore 
@@ -1959,3 +1868,133 @@ ls
 less all-words.txt 
 grep 000 *
 less balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
+cd Playing/OpenNMT/
+th tools/tokenize.lua -joiner_annotate -bpe_model ~/bitext/enga.onmt.bpe ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor-onmt.en > tok.en
+th tools/tokenize.lua -joiner_annotate -bpe_model ~/bitext/enga.onmt.bpe < ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor-onmt.en > tok.en
+less train.lua 
+th train.lua -h
+th preprocess.lua -h
+less preprocess.lua 
+ls
+find . -name '*lua'|xargs grep feattext
+less onmt/translate/Translator.lua 
+less data/src-train-case.txt 
+ls
+ls enga/
+find ~ -name '*t7'
+find ~ -name '*.t7.gz'
+gzip -d /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7.gz
+ls /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7 
+#th tools/release_model.lua -model /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7 -gpuid 1
+th tools/release_model.lua -help
+mv /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7 model.t7
+th tools/release_model.lua -model model.t7 -gpuid 1
+ls -al *t7
+th translate.lua -h
+th translate.lua -model model_release.t7 -src /tmp/iris_eval_set.tok.lc.en -output onmt1
+th tools/detokenize.lua < onmt1 
+th tools/detokenize.lua < onmt1 > /tmp/onmt-out
+th tools/detokenize.lua < onmt1 > ~/Playing/dissertation-data/opennmt/baseline-out
+find . -name 'wrap*'
+less benchmark/3rdParty/multi-bleu.perl 
+less benchmark/3rdParty/wrap-xml.perl 
+cd ~
+config status
+config add .viminfo .bash_history 
+config add -f .viminfo .bash_history 
+config commit -m 'whatever I was doing'
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/old-report/9772166rptrthgwcdyn
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd Playing/Dissertation/9879472fwnkgtfsztvt/
+make clean && make
+perl -e print '7 ** 2'
+perl -e print '7 * 2'
+perl -e 'print 7 ** 2'
+echo é|iconv -f latin -t utf8
+echo é|iconv -f latin1 -t utf8
+make clean && make
+git status
+git add citinf.tex chapter1.tex chapter3.tex refs.bib 
+git status
+git branch
+git push origin master
+git pull origin master
+git push origin master
+git commit 0m blah
+git commit -m blah
+git push origin master
+cd idea-IC-172.3317.76/
+ls
+bin/idea.sh 
