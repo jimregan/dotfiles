@@ -16,6 +16,9 @@ InfoOutput=2
 [kdecore (KPluginInfo)]
 InfoOutput=2
 
+[kdecore (services)]
+InfoOutput=2
+
 [kdevdefinesandincludes]
 InfoOutput=2
 

@@ -8,25 +8,46 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/[0-9]
+~MSle0~/\.
 
 # Last Substitute Search Pattern:
-~MSle0&tj\.
+~MSle0& $
 
 # Last Substitute String:
-$to jest
+$
 
 # Command Line History (newest to oldest):
-:q
+:wq
 :w
+:q
+:%s/ $//
+:%s/2 //
+:g/'/d
+:%s/ \. / /g
+:%s/0 //g
+:%s/1 //g
+:%s/ \. / /
+:%s/ \. //
+:%s/0  //
+:%s/1  //
+:%s/ \. 0 //
+:%s/ \. 1 //
+:s/ h-/ h/
+:%s/hÉ/hé/g
+:%s/gaedhlacha/gaelacha/g
+:%s/hin/gle_uncial/g
+:q!
+:g/w\.zip/d
+:g/Prop+Noun/d
+:g/Foreign+English/d
+:g/Verbal/d
+:g/NStem/d
 :s/tj\./to jest
 :%s/itd\./i tak dalej/g
-:wq
 :g/Verb/d
 :g/+CU/d
 :g/+CC/d
 :g/+CM/d
-:q!
 :%s/p3/p1
 :s/p3/p1
 :s/p3/p2
@@ -46,79 +67,58 @@ $to jest
 :%s/brownCluster/
 :%s/collocs/map/g
 :%s/brown-50c.txt/brown-50c-collocs.txt
-:%s/brownCluster/brown-50c.txt
-:%s/(//
-:%s/\*//g
-:%s/”//g
-:%s/„//g
-:%s/«//g
-:%s/»//g
-:%s/!//g
-:%s/)//g
-:%s/!//
-:%s/?//
-:%s/(//g
-:%s/
-:%s/& /\&amp; /g
-:%s/\& /&amp; /g
-:%s/& /&amp; /g
-:%s/^#//
-:s/ref/tst
-:s/src/tst
-:s/ref/src
-:s/src/ref
 
 # Search String History (newest to oldest):
+?/\.
+?/amach a
+?/agam
+??a. le
+??a. ke
+?/chomparáid
+?/go raibh
+?/an-
+?/osg
+?  $
+? 2 
+?? 
+? '
+?/béig
+??^ar
+?/amhlaidh
+?/1
+?  \. 
+? 0 
+? 1 
+? 0  
+? 1  
+?  \. 0 
+?  \. 1 
+?/18
+?/2
+?/\[
+?/do le
+?  h-
+?/ h-
+? hÉ
+? gaedhlacha
+?/h-
+?/ b. 
+?/gaedh
+?/gle_u
+? hin
+? w\.zip
+?/Verb
+? Prop+Noun
+? Foreign+English
+?/tsaighean
+?/phobal
+?/Nf2-7
+? Verbal
+?/AI-te
+?/sean
+? NStem
+?/hiad
 ?/[0-9]
-?/Ster
-?/\. [a-z]
-?/r\.
-?/w r\.
-? tj\.
-?/tj\.
-?/r\. 1
-? itd\.
-?/fr\.
-?/Św
-??00
-?/100
-?/1814
-?/^III\.
-? Verb
-? +CU
-? +CC
-? +CM
-? p3
-? sg
-? "f"
-? 3P
-? +
-? \+
-?/^[a-z]
-?/Rin
-?/Bh
-?/ -- 
-?/ --
-? \+CC
-?/VD
-?/'ga'
-?/'es'
-?/sv
-?/sv_t
-?/SV
-? <br\/>
-? &#160;
-? brownCluster
-?/s[01]\t1
-? collocs
-? brown-50c.txt
-? (
-? \*
-? ”
-? „
-? «
-? »
-? !
 
 # Expression History (newest to oldest):
 
@@ -127,122 +127,189 @@ $to jest
 # Input Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	Komedia ludzka
+""1	LINE	0
+	VI
 "2	LINE	0
-	ą
+	V
 "3	LINE	0
-	À
-"4	LINE	0
-	à
-"5	LINE	0
-	Á
-"6	LINE	0
+	
+	a
 	á
+	ach
+	a déarfaidh
+	a deirim
+	aduaidh
+	a dúirt
+	aeraíocht
+	agaibhse
+	agamsa
+	aicisí
+	aigesean
+	ainm
+	airíodar
+	amas
+	amuigh
+	aniar
+	aníos
+	arís
+	astu
+	aturnae
+	bailithe
+	baol
+	barr
+	beithíoch
+	beo
+	bhaol
+	bharr
+	bhreá
+	bhreoiteacht
+	bhreoiteachtaí
+	bhrí
+	bhrú
+	bhuí
+	bithiúnach
+	bosca
+	bpoiblíocht
+	bponc
+	breá
+	breátha
+	breathnú
+	breoiteacht
+	brí
+	bríomhar
+	brú
+	charraig
+	chlaí
+	chnoc
+	chnoic
+"4	LINE	0
+	was .
+"5	LINE	0
+	watch .
+"6	LINE	0
+	when .
 "7	LINE	0
-	A
+	you .
 "8	LINE	0
-	a'
+	n .
 "9	LINE	0
-	a.
+	\n .
 "q	CHAR	0
 	:::�kb�kb�kb
-""-	CHAR	0
-	.
+"-	CHAR	0
+	 
 
 # File marks:
-'0  3051  237  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
-'1  3  20  ~/Playing/wolne-lektury-audio-corpus/pron-data/additions-ipa.tsv
-'2  10  10  ~/Playing/wolne-lektury-audio-corpus/phon-ipa.tsv
-'3  9  8  ~/Playing/wolne-lektury-audio-corpus/phon-ipa.tsv
-'4  176  0  ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
-'5  424  0  ~/Playing/wolne-lektury-audio-corpus/text/xaa
-'6  748  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
-'7  188754  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
-'8  195201  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
-'9  195200  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
+'0  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
+'1  3  1585  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+'2  1590  2  ~/Playing/msf-asr/pron/munster.tsv
+'3  14  6  ~/Playing/msf-asr/tock
+'4  54  9  ~/Playing/msf-asr/pron/munster.tsv
+'5  1063  17  ~/Playing/msf-asr/pron/munster.tsv
+'6  1347  0  ~/Playing/msf-asr/pron/munster.tsv
+'7  1157  7  ~/Playing/msf-asr/pron/munster.tsv
+'8  879  0  ~/Playing/msf-asr/pron/munster.tsv
+'9  6  4  ~/Playing/msf-asr/pron/munster-double-check
 
 # Jumplist (newest first):
--'  3051  237  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2500  49  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2422  282  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2878  403  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2550  611  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2279  71  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  1808  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  82  307  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  72  3  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  3444  796  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2468  68  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2275  8  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2458  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2361  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2317  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  3371  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2263  407  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  2255  9  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  3052  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  3049  32  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  1593  923  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  1587  66  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  329  4  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  168  14  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  34  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
--'  3  20  ~/Playing/wolne-lektury-audio-corpus/pron-data/additions-ipa.tsv
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/pron-data/additions-ipa.tsv
--'  10  10  ~/Playing/wolne-lektury-audio-corpus/phon-ipa.tsv
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/phon-ipa.tsv
--'  9  8  ~/Playing/wolne-lektury-audio-corpus/phon-ipa.tsv
--'  176  0  ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
--'  1  0  ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
--'  424  0  ~/Playing/wolne-lektury-audio-corpus/text/xaa
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/text/xaa
--'  748  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  188754  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  188787  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  1090  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195201  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195198  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  194543  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195103  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195163  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195174  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195200  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  153666  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  194516  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  472  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195137  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195136  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195134  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195147  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  195112  8  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  422  0  ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/.git/MERGE_MSG
--'  4229  4  ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt.1
--'  23  0  ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt.1
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt.1
--'  2  30  ~/Playing/wolne-lektury-audio-corpus/norm
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/norm
--'  4224  0  ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt
--'  4  0  ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt
--'  6  19  ~/Playing/wolne-lektury-audio-corpus/speaker-gender-map.tsv
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/speaker-gender-map.tsv
--'  2  59  /tmp/ref.xml
--'  1  0  /tmp/ref.xml
--'  2006  8  /tmp/ref.xml
--'  2  61  /tmp/tgt.xml
--'  1  0  /tmp/tgt.xml
--'  2006  8  /tmp/tgt.xml
--'  1  0  /tmp/src.xml
--'  1586  0  /tmp/tgt.xml
--'  2003  0  /tmp/tgt.xml
--'  2006  0  /tmp/src.xml
--'  1  0  ~/IdeaProjects/dictionaryconverter/.git/MERGE_MSG
--'  27  0  ~/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
--'  1  0  ~/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
+-'  3  1585  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  15  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  1590  2  ~/Playing/msf-asr/pron/munster.tsv
+-'  1  0  ~/Playing/msf-asr/pron/munster.tsv
+-'  14  6  ~/Playing/msf-asr/tock
+-'  1  0  ~/Playing/msf-asr/tock
+-'  54  9  ~/Playing/msf-asr/pron/munster.tsv
+-'  1063  17  ~/Playing/msf-asr/pron/munster.tsv
+-'  1347  0  ~/Playing/msf-asr/pron/munster.tsv
+-'  1343  19  ~/Playing/msf-asr/pron/munster.tsv
+-'  1157  7  ~/Playing/msf-asr/pron/munster.tsv
+-'  879  0  ~/Playing/msf-asr/pron/munster.tsv
+-'  6  4  ~/Playing/msf-asr/pron/munster-double-check
+-'  1  0  ~/Playing/msf-asr/pron/munster-double-check
+-'  934  7  ~/Playing/msf-asr/prontodo
+-'  936  0  ~/Playing/msf-asr/prontodo
+-'  685  0  ~/Playing/msf-asr/prontodo
+-'  1  0  ~/Playing/msf-asr/prontodo
+-'  119  1  ~/Playing/msf-asr/pron-munst
+-'  1  0  ~/Playing/msf-asr/pron-munst
+-'  93  14  ~/Playing/msf-asr/pron-munst
+-'  43  0  ~/Playing/msf-asr/pron-munst
+-'  5  6  ~/Playing/msf-asr/pron/munster-double-check
+-'  216  0  ~/Playing/msf-asr/pron-munst
+-'  108  6  ~/Playing/msf-asr/pron-munst
+-'  139  7  ~/Playing/msf-asr/pron-munst
+-'  129  0  ~/Playing/msf-asr/pron-munst
+-'  122  0  ~/Playing/msf-asr/pron-munst
+-'  60  0  ~/Playing/msf-asr/pron-munst
+-'  128  0  ~/Playing/msf-asr/pron-munst
+-'  127  0  ~/Playing/msf-asr/pron-munst
+-'  5  4  ~/Playing/msf-asr/pron-double-check
+-'  1  0  ~/Playing/msf-asr/pron-double-check
+-'  2  0  ~/Playing/msf-asr/pron-double-check
+-'  5  261  ~/Playing/msf-asr/raw-text/MSF_chapter_25.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_25.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_125.txt
+-'  64  222  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
+-'  33  1544  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
+-'  1  0  ~/Playing/msf-asr/MSF_chapter_3.txt.norm
+-'  39  0  ~/Playing/msf-asr/scripts/fix-dictionary-pronunciations.pl
+-'  1  0  ~/Playing/msf-asr/scripts/fix-dictionary-pronunciations.pl
+-'  1  81  ~/Playing/msf-asr/raw-text/README
+-'  25  118  ~/Playing/msf-asr/raw-text/MSF_chapter_13.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_13.txt
+-'  28  281  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  24  59  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  18  631  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  15  46  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  11  650  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  7  517  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  5  789  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  3  852  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+-'  1  0  ~/Playing/opennlp/.git/MERGE_MSG
+-'  1  0  ~/Playing/opennlp/.git/rebase-merge/git-rebase-todo
+-'  23  0  ~/Playing/tesseract-gle-uncial/fonts.txt
+-'  1  0  ~/Playing/tesseract-gle-uncial/fonts.txt
+-'  392  0  ~/Playing/msf-asr/candidates
+-'  43  0  ~/Playing/msf-asr/candidates
+-'  1  0  ~/Playing/msf-asr/candidates
+-'  58  0  ~/Playing/msf-asr/client.pl
+-'  1  0  ~/Playing/msf-asr/client.pl
+-'  1  49  ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
+-'  100  105  ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
+-'  14  1  ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
+-'  46  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  18  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  40  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  30  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  28  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  26  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  24  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  16  767  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  14  571  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  8  323  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  42  48  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  25  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  1  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+-'  6  85  ~/Playing/tesseract/scr.sh
+-'  1  0  ~/Playing/tesseract/scr.sh
+-'  2  76  ~/Playing/tesseract/scr.sh
+-'  56  32  ~/Playing/tesseract/training/tesstrain-local.sh
+-'  1  0  ~/Playing/tesseract/training/tesstrain-local.sh
+-'  63  0  ~/Playing/tesseract/training/tesstrain.sh
+-'  1  0  ~/Playing/tesseract/training/tesstrain.sh
+-'  3  0  ~/Playing/langdata/gle_uncial/desired_characters
+-'  1  0  ~/Playing/langdata/gle_uncial/desired_characters
+-'  5  3  ~/Playing/langdata/gle_uncial/gle_uncial.numbers
+-'  3  1585  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  15  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  1590  2  ~/Playing/msf-asr/pron/munster.tsv
+-'  1  0  ~/Playing/msf-asr/pron/munster.tsv
 
 # Bar lines, copied verbatim:
 |1,4
@@ -535,6 +602,402 @@ $to jest
 |4,39,119,35,1499962429,"~/Playing/ainm-ner-corpus/src/main/scala/ie/tcd/slscs/itut/AinmNerCorpus/AinmProcess.scala"
 
 # History of marks within files (newest to oldest):
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+	"	3	1585
+	^	3	1435
+	.	3	1585
+	+	1	0
+	+	3	310
+	+	3	0
+	+	3	971
+	+	3	513
+	+	3	1142
+	+	3	1465
+	+	3	1585
+
+> ~/Playing/msf-asr/pron/munster.tsv
+	"	1590	2
+	^	1592	3
+	.	1592	2
+	+	65	0
+	+	1157	9
+	+	1343	19
+	+	1067	8
+	+	52	8
+	+	53	8
+	+	54	9
+	+	1592	2
+
+> ~/Playing/msf-asr/tock
+	"	14	6
+	^	14	7
+	.	14	6
+	+	1	10
+	+	14	6
+
+> ~/Playing/msf-asr/pron/munster-double-check
+	"	6	4
+	^	6	5
+	.	6	0
+	+	7	0
+	+	5	5
+	+	6	0
+
+> ~/Playing/msf-asr/prontodo
+	"	934	7
+	^	936	0
+	.	936	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	664	0
+	+	661	0
+	+	981	0
+	+	936	0
+
+> ~/Playing/msf-asr/pron-munst
+	"	119	1
+	^	109	2
+	.	109	1
+	+	45	0
+	+	44	0
+	+	45	0
+	+	47	0
+	+	15	0
+	+	108	0
+	+	131	0
+	+	89	1
+	+	93	14
+	+	109	1
+
+> ~/Playing/msf-asr/pron-double-check
+	"	5	4
+	^	5	5
+	.	5	0
+	+	1	9
+	+	4	4
+	+	5	0
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_25.txt
+	"	5	261
+	^	5	263
+	.	5	261
+	+	5	261
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_125.txt
+	"	1	0
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
+	"	64	222
+	^	64	223
+	.	64	222
+	+	64	222
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
+	"	33	1544
+	^	33	1545
+	.	33	1537
+	+	33	60
+	+	33	1537
+
+> ~/Playing/msf-asr/MSF_chapter_3.txt.norm
+	"	1	0
+
+> ~/Playing/msf-asr/scripts/fix-dictionary-pronunciations.pl
+	"	39	0
+	^	39	1
+	.	39	0
+	+	39	0
+
+> ~/Playing/msf-asr/raw-text/README
+	"	1	81
+	^	1	82
+	.	1	31
+	+	1	31
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_13.txt
+	"	25	118
+	.	25	118
+	+	25	118
+
+> ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
+	"	28	281
+	.	28	281
+	+	3	852
+	+	5	789
+	+	7	517
+	+	11	650
+	+	15	46
+	+	18	631
+	+	24	59
+	+	28	281
+
+> ~/Playing/opennlp/.git/MERGE_MSG
+	"	1	0
+
+> ~/Playing/opennlp/.git/rebase-merge/git-rebase-todo
+	"	1	0
+
+> ~/Playing/tesseract-gle-uncial/fonts.txt
+	"	23	0
+	.	24	0
+	+	23	33
+	+	24	0
+
+> ~/Playing/msf-asr/candidates
+	"	392	0
+	.	342	0
+	+	58	0
+	+	67	0
+	+	73	0
+	+	78	0
+	+	86	0
+	+	170	0
+	+	173	0
+	+	175	0
+	+	279	0
+	+	282	0
+	+	342	0
+
+> ~/Playing/msf-asr/client.pl
+	"	58	0
+	^	58	0
+	.	57	7
+	+	57	7
+
+> ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
+	"	1	49
+	^	1	50
+	.	1	41
+	+	1	16
+	+	3	0
+	+	6	0
+	+	7	0
+	+	9	0
+	+	14	305
+	+	16	0
+	+	23	0
+	+	35	0
+	+	36	0
+	+	41	0
+	+	52	0
+	+	58	0
+	+	75	0
+	+	85	0
+	+	86	0
+	+	87	0
+	+	90	0
+	+	91	0
+	+	98	0
+	+	100	12
+	+	115	0
+	+	123	0
+	+	1	41
+
+> ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+	"	46	0
+	^	42	49
+	.	18	0
+	+	26	91
+	+	26	239
+	+	8	133
+	+	42	48
+	+	8	321
+	+	14	135
+	+	14	571
+	+	16	141
+	+	16	380
+	+	16	657
+	+	18	701
+	+	18	0
+	+	6	0
+	+	24	0
+	+	26	0
+	+	28	0
+	+	30	0
+	+	40	0
+	+	18	0
+
+> ~/Playing/tesseract/scr.sh
+	"	6	85
+	^	6	86
+	.	6	18
+	+	7	23
+	+	2	16
+	+	5	19
+	+	6	18
+
+> ~/Playing/tesseract/training/tesstrain-local.sh
+	"	56	32
+	^	56	33
+	.	56	13
+	+	56	13
+
+> ~/Playing/tesseract/training/tesstrain.sh
+	"	63	0
+	^	63	1
+	.	63	0
+	+	53	0
+	+	54	0
+	+	55	0
+	+	56	43
+	+	60	0
+	+	62	0
+	+	63	0
+	+	56	0
+	+	53	0
+	+	54	0
+	+	60	0
+	+	62	0
+	+	63	0
+
+> ~/Playing/langdata/gle_uncial/desired_characters
+	"	3	0
+	.	3	0
+	+	3	0
+
+> ~/Playing/langdata/gle_uncial/gle_uncial.numbers
+	"	5	3
+	^	5	6
+	.	5	3
+	+	12	7
+	+	10	2
+	+	6	3
+	+	5	3
+
+> ~/Playing/langdata/gle_uncial/gle_uncial.training_text
+	"	1	21
+	.	514	43
+	+	509	45
+	+	510	22
+	+	514	43
+
+> ~/Playing/tesseract/oldtd/chars
+	"	84	0
+	.	81	0
+	+	53	0
+	+	81	0
+
+> ~/Playing/tesseract/training/language-specific.sh
+	"	960	16
+	^	960	17
+	.	960	16
+	+	29	64
+	+	111	20
+	+	135	0
+	+	960	17
+	+	961	0
+	+	960	15
+	+	960	16
+	+	960	16
+
+> ~/Playing/tesseract/txt2im.sh
+	"	2	23
+	^	2	24
+	.	2	23
+	+	6	88
+	+	3	0
+	+	2	23
+
+> ~/Playing/langdata/txt2im.sh
+	"	1	0
+
+> ~/Downloads/foo.sh
+	"	3	229
+	^	3	230
+	.	3	229
+	+	3	229
+
+> ~/Playing/tesseract/runtti.sh
+	"	3	0
+	^	7	0
+	.	6	88
+	+	6	88
+
+> /tmp/fnts
+	"	23	0
+	.	24	0
+	+	24	0
+
+> ~/IdeaProjects/dictionaryconverter/uncov
+	"	1	0
+	.	1	0
+	+	4	0
+	+	8	0
+	+	1	0
+
+> ~/IdeaProjects/dictionaryconverter/noun
+	"	146067	0
+	.	146067	0
+	+	1160074	0
+	+	1063542	0
+	+	1162544	0
+	+	146067	0
+
+> ~/IdeaProjects/dictionaryconverter/build.sbt
+	"	11	22
+	^	11	23
+	.	11	0
+	+	11	0
+
+> ~/IdeaProjects/dictionaryconverter/project/build.properties
+	"	1	0
+
+> ~/Playing/irishfst-1/src/xfst-fix.script
+	"	276	46
+	^	276	47
+	.	276	46
+	+	276	46
+	+	121	41
+	+	120	41
+	+	276	46
+
+> ~/Playing/irishfst-1/src/n-lex-cc.txt
+	"	132	8
+
+> ~/Playing/irishfst-1/src/adj-lex-stems-irreg.txt
+	"	191	11
+	^	191	15
+	.	191	0
+	+	197	18
+	+	199	18
+	+	203	19
+	+	178	18
+	+	179	18
+	+	180	18
+	+	184	19
+	+	185	19
+	+	188	22
+	+	191	0
+
+> ~/IdeaProjects/dictionaryconverter/.git/MERGE_MSG
+	"	1	0
+
+> ~/IdeaProjects/dictionaryconverter/onen
+	"	21	0
+	.	22	0
+	+	22	0
+
+> ~/IdeaProjects/dictionaryconverter/pairs.tsv.1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Playing/irishfst-1/src/pron-lex.txt
+	"	81	23
+	^	81	24
+	.	81	23
+	+	76	24
+	+	81	23
 
 > ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
 	"	3051	237
@@ -864,9 +1327,6 @@ $to jest
 > ~/Playing/spaCy/.git/MERGE_MSG
 	"	1	0
 
-> ~/Playing/opennlp/.git/MERGE_MSG
-	"	1	0
-
 > /tmp/apache-opennlp-1.8.1/gawiki.ner
 	"	3010	0
 	^	273	18
@@ -1070,9 +1530,6 @@ $to jest
 	+	1	7
 	+	2006	8
 
-> ~/IdeaProjects/dictionaryconverter/.git/MERGE_MSG
-	"	1	0
-
 > ~/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
 	"	27	0
 
@@ -1088,436 +1545,3 @@ $to jest
 	.	1	0
 	+	15	129
 	+	1	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/refs.bib
-	"	647	2
-	.	647	0
-	+	645	0
-	+	647	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/tcd-dissertation.cls
-	"	550	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex
-	"	11	0
-
-> ~/Playing/dissertation-data/moses/redo-tatoeba.pl
-	"	44	58
-	^	44	59
-	.	44	58
-	+	23	0
-	+	22	0
-	+	44	58
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/notes.txt
-	"	78	0
-	^	78	1
-	.	78	0
-	+	78	0
-
-> ~/Playing/dissertation-data/moses/tolower.sh
-	"	22	10
-	^	22	11
-	.	23	0
-	+	23	0
-
-> ~/Playing/mosesdecoder/attempts/mosesfactor2/moses.ini
-	"	17	0
-
-> osesfactor2/moses.ini
-	"	1	0
-
-> attempts/mosesfactor2/moses.ini
-	"	1	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex
-	"	92	8
-	.	92	8
-	+	81	5
-	+	82	5
-	+	84	4
-	+	92	8
-
-> /tmp/wrap.pl
-	"	22	4
-	^	22	5
-	.	22	4
-	+	8	0
-	+	3	19
-	+	11	12
-	+	16	16
-	+	13	12
-	+	26	10
-	+	23	0
-	+	17	8
-	+	7	3
-	+	22	4
-
-> ~/Playing/dissertation-data/ainm-ner/scripts/fix-embedded-elements.pl
-	"	22	10
-	^	22	11
-	.	23	0
-	+	23	0
-
-> ~/Playing/dissertation-data/tagging/idt-to-factor-sentence.pl
-	"	23	0
-	.	23	0
-	+	22	11
-	+	23	0
-
-> ~/Playing/dissertation-data/tagging/idt-fix.pl
-	"	22	10
-	^	22	11
-	.	23	0
-	+	23	0
-
-> ~/Playing/dissertation-data/tagging/irishfst-to-opennlp.pl
-	"	22	10
-	^	22	11
-	.	23	0
-	+	23	0
-
-> ~/Playing/dissertation-data/bitextor/downloaded-filelist-to-bitextor-ett.pl
-	"	23	0
-	^	23	0
-	.	22	11
-	+	22	11
-
-> ~/Playing/dissertation-data/moses/attempts/train-hist
-	"	1	2
-	.	1	0
-	+	1	0
-
-> /tmp/mosesgacase-out.xml
-	"	4	20
-	^	4	21
-	.	4	20
-	+	4	0
-	+	6007	0
-	+	4	20
-
-> ~/Playing/mosesdecoder/attempts/mosesfactor2/model/moses.ini
-	"	24	0
-	.	10	0
-	+	10	0
-
-> ~/Playing/chrF/chrF/measure.py
-	"	257	41
-	^	257	41
-	.	257	40
-	+	257	40
-
-> ~/Playing/mosesdecoder/attempts/mosesfactor/model/moses.ini
-	"	8	0
-	.	8	0
-	+	8	0
-
-> ~/Playing/mosesdecoder/attempts/mosespreproc/model/moses.ini
-	"	8	0
-	.	8	0
-	+	8	0
-
-> ~/Playing/mosesdecoder/attempts/onlppreprocclean/model/moses.ini
-	"	8	0
-	.	8	0
-	+	8	0
-
-> ~/Playing/mosesdecoder/attempts/onlppreproc/model/moses.ini
-	"	8	0
-	.	8	0
-	+	8	0
-
-> ~/Playing/mosesdecoder/attempts/mosespreprocclean/model/moses.ini
-	"	8	0
-	.	8	0
-	+	8	0
-
-> ~/Playing/mosesdecoder/attempts/mosesgacase/model/moses.ini
-	"	8	0
-	.	8	0
-	+	8	0
-
-> ~/.cfg/MERGE_MSG
-	"	1	0
-
-> ~/Playing/dictionaryconverter/src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/Trx.scala
-	*	1501252733	0
-	"	67	4
-	.	143	0
-	+	143	0
-
-> ~/Playing/ainm-ner-corpus/src/main/scala/ie/tcd/slscs/itut/AinmNerCorpus/AinmReader.scala
-	*	1501242646	0
-	"	96	4
-	^	51	1
-	.	51	0
-	+	27	0
-	+	4	0
-	+	49	65
-	+	110	87
-	+	49	64
-	+	51	0
-
-> /usr/share/vim/vim80/doc/help.txt
-	*	1501242644	0
-	"	1	0
-
-> /tmp/apertium-en-es/configure.ac
-	*	1501059444	0
-	"	7	36
-	.	7	36
-	+	7	36
-
-> ~/Playing/irishfst/Makefile
-	*	1500476552	0
-	"	1372	8
-
-> ~/Playing/ainm-ner-corpus/src/main/scala/ie/tcd/slscs/itut/AinmNerCorpus/AinmProcess.scala
-	*	1499962428	0
-	"	119	35
-	^	119	36
-	.	119	35
-	+	46	0
-	+	37	20
-	+	44	0
-	+	44	26
-	+	27	21
-	+	44	103
-	+	38	0
-	+	39	0
-	+	38	11
-	+	38	97
-	+	40	42
-	+	31	45
-	+	43	4
-	+	42	4
-	+	43	42
-	+	45	67
-	+	4	0
-	+	35	40
-	+	84	13
-	+	82	26
-	+	83	37
-	+	119	35
-
-> ~/Playing/ainm-ner-corpus/build.sbt
-	*	1499962009	0
-	"	9	70
-	^	9	71
-	.	9	70
-	+	19	1
-	+	1	22
-	+	9	71
-	+	17	44
-	+	15	63
-	+	17	46
-	+	15	62
-	+	16	62
-	+	17	44
-	+	17	0
-	+	11	0
-	+	9	70
-
-> ~/Playing/ainm-ner-corpus/src/main/scala/ie/tcd/slscs/itut/AinmNerCorpus/Ainm.scala
-	*	1499704327	0
-	"	15	1
-	^	62	16
-	.	62	15
-	+	55	45
-	+	55	12
-	+	55	0
-	+	55	14
-	+	55	0
-	+	33	0
-	+	36	14
-	+	42	53
-	+	39	46
-	+	103	80
-	+	103	3
-	+	104	3
-	+	63	0
-	+	121	0
-	+	121	91
-	+	121	0
-	+	109	1
-	+	110	3
-	+	121	3
-	+	121	1
-	+	121	0
-	+	121	86
-	+	121	0
-	+	113	0
-	+	121	90
-	+	113	40
-	+	52	30
-	+	52	37
-	+	46	53
-	+	121	125
-	+	113	39
-	+	114	0
-	+	121	30
-	+	52	106
-	+	95	0
-	+	96	22
-	+	96	107
-	+	98	49
-	+	96	27
-	+	96	144
-	+	98	73
-	+	121	60
-	+	96	127
-	+	121	164
-	+	98	43
-	+	49	0
-	+	49	17
-	+	116	0
-	+	121	98
-	+	116	0
-	+	121	25
-	+	116	52
-	+	121	68
-	+	47	0
-	+	48	17
-	+	117	0
-	+	118	0
-	+	50	0
-	+	51	90
-	+	115	0
-	+	119	134
-	+	111	0
-	+	112	10
-	+	113	0
-	+	112	51
-	+	120	54
-	+	119	56
-	+	108	2
-	+	105	69
-	+	107	54
-	+	103	0
-	+	104	0
-	+	103	54
-	+	104	38
-	+	105	79
-	+	103	70
-	+	105	85
-	+	103	96
-	+	104	0
-	+	103	49
-	+	120	66
-	+	107	66
-	+	105	5
-	+	106	84
-	+	42	54
-	+	41	0
-	+	44	0
-	+	40	11
-	+	43	11
-	+	40	17
-	+	34	58
-	+	42	24
-	+	42	0
-	+	43	9
-	+	40	9
-	+	34	47
-	+	38	0
-	+	62	15
-
-> /tmp/installsbt.sh
-	*	1499632294	0
-	"	66	0
-
-> ~/sound/LIUM_SpkDiarization.script.v3.9/gender.sh
-	*	1499560097	0
-	"	15	108
-	.	15	108
-	+	20	0
-	+	15	87
-	+	15	222
-	+	15	114
-	+	15	0
-	+	15	164
-	+	15	0
-	+	15	108
-
-> ~/sound/runner.sh
-	*	1499551144	0
-	"	1	61
-	^	1	62
-	.	1	61
-	+	1	61
-
-> ~/sound/eigin.txt
-	*	1499550707	0
-	"	36	0
-	^	36	0
-	.	35	0
-	+	35	0
-
-> ~/Playing/opennlp/opennlp-tools/tok.conv
-	*	1499472948	0
-	"	2949	62
-	^	2949	63
-	.	2949	62
-	+	295	0
-	+	55	0
-	+	3375	0
-	+	170	0
-	+	172	0
-	+	987	0
-	+	2949	62
-
-> ~/test.lrx
-	*	1499373477	0
-	"	2	19
-	^	2	20
-	.	2	19
-	+	6	0
-	+	3	33
-	+	4	23
-	+	3	25
-	+	2	19
-
-> ~/Playing/apertium-en-ga-git/apertium-en-ga/0001-dictionary-update.patch
-	*	1499183305	0
-	"	3	16
-	^	3	17
-	.	3	16
-	+	3	16
-
-> ~/Playing/apertium-en-ga/apertium-en-ga.ga.dix
-	*	1499181458	0
-	"	3221	4
-
-> ~/.bashrc
-	*	1499179867	0
-	"	137	0
-	^	141	0
-	.	135	0
-	+	119	7
-	+	119	0
-	+	119	9
-	+	119	0
-	+	142	0
-	+	134	0
-	+	124	16
-	+	125	0
-	+	126	0
-	+	128	0
-	+	130	0
-	+	131	0
-	+	133	0
-	+	141	0
-	+	138	0
-	+	140	0
-	+	137	0
-	+	135	0
-
-> ~/.profile
-	*	1499179746	0
-	"	1	0
-
-> ~/.subversion/config
-	*	1499173448	0
-	"	18	0
-	.	18	0
-	+	18	0

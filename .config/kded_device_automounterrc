@@ -6,9 +6,9 @@ LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
 EverMounted=true
-Icon=drive-removable-media-usb-pendrive
-LastNameSeen=14.9 GiB Removable Media
-LastSeenMounted=true
+Icon=drive-removable-media-usb
+LastNameSeen=TOSHIBA
+LastSeenMounted=false
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdc1]
 EverMounted=true
