@@ -1,48 +1,3 @@
-git pull origin master
-git log
-git checkout gaois 
-git log
-git log|less
-git push origin gaois 
-git push origin master
-git push origin still-in-progress 
-sbt console
-tail ~/.scala_history 
-tail -n 30 ~/.scala_history 
-sbt console
-cd idea-IC-172.3317.76/
-bin/idea.sh 
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
 clear
 cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
 clear
@@ -1998,3 +1953,48 @@ smbpasswd -a jim
 sudo smbpasswd -a jim
 ls -al /home/jim/Pictures/
 ls
+cd ../Corp
+cd ../Corpora/
+ls
+cd ga_UL/
+ls
+cd anb/
+ls
+find . -name '*.txt'
+less text01-001/txt/text01-001_044.txt 
+ls
+ls named-entities/missing_wav/
+ls
+find . -type f|less
+find . -name 'corpus*'
+ls
+cd ..
+ls
+cd ..
+ls
+ls scripts/
+less scripts/extract_melcep_coefs.pl 
+ls
+cd ..
+git clone https://github.com/HaraldBerthelsen/kaldi_stuff harald_kaldi_stuff
+cd Corpora/ga_UL/
+lss
+ls
+cd anb/
+ls
+python ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
+python2.7 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
+less ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
+python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
+less ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
+python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
+less ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
+vi ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
+python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
+less corpusfile.txt 
+python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/text01/xml/ ogg corpusfile1.txt
+less corpusfile1.txt 
+find . -type d -name wav
+find . -type d -and -name wav
+find . -type d -and -name ogg
+find . -type d -and -name xml
