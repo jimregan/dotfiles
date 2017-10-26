@@ -1,70 +1,3 @@
-cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##'|wc
-#cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##' > /tmp/postimgin 
-tail -f fash-rdf-links 
-less /tmp/postimgin 
-cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##' > /tmp/postimgin2
-tail -f fash-rdf-links 
-less /tmp/postimgin 
-tail -f fash-rdf-links 
-less /tmp/postimgin 
-vi /tmp/postimgin 
-less /tmp/postimgin2
-vi tospid 
-cd /tmp/asd
-ls
-tail -f inp.log 
-wc -l inp
-find /home/jim/Pictures/foo -name 'screen*'
-find /home/jim/Pictures/foo -name 'screen*' |while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep $f inp || echo $i >> tocopy;done
-less tocopy 
-rm tocopy 
-find /home/jim/Pictures/s-shots/ -name 'screen*' |while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep $f inp || echo $i >> tocopy;done
-cat toc
-ls
-rm nohup.out 
-tail -f inp.log 
-tail -f ~/tmp/sync/bhashc-20171019-3.tsv
-tail -f ~/tmp/sync/bhashc-20171019-3.tsv 
-cd |-
-cd -
-less ../sync/bhashc-20171019-1
-less ../sync/bhashc-20171019-1.tsv 
-less ../sync/bhashc-20171019-2.tsv 
-tail -f mrgs 
-cat mrgs |grep -v '^#'
-cat mrgs |grep -v '^#'|awk '{print $NF}'
-mv mrgs fomrg
-tail -f mrgs 
-cat mrgs |perl ../fdupes-proc.pl 
-less ../sync/byte-for-byte-identical-20171019-3.nt 
-cat mrgs |perl ../fdupes-proc.pl e >> ../sync/byte-for-byte-identical-20171019-4.nt
-less ../sync/byte-for-byte-identical-20171019-4.nt
-grep file: mrgs 
-less ../sync/byte-for-byte-identical-20171019-4.nt
-vi /tmp/postimgin
-vi tospid 
-tail -f /tmp/asd/inp.log 
-cat mrgr |perl ../fdupes-proc.pl e >> ../sync/byte-for-byte-identical-20171019-5.nt
-grep 'file:' ../sync/byte-for-byte-identical-20171019-5.nt
-grep 'file:' ../sync/byte-for-byte-identical-20171019-5.nt|wc
-ls ~/Pictures/foo/copy/
-ls ~/Pictures/foo/copy/|wc
-ls
-less mrgs 
-grep http mrgs 
-grep http mrgs |sed -e 's
-grep http mrgs |sed -e 's#https://##'
-grep http mrgs |sed -e 's#https://##'|grep http
-grep http mrgs |sed -e 's#https://##'|while read i;do rm $i;done
-ls
-find scontent-lh* -type f
-vi /tmp/regrab
-grep http mrgs |sed -e 's#https://##'|while read i;do echo rm $i;done
-grep http mrgs|grep -v scontent-lh |sed -e 's#https://##'|while read i;do echo rm $i;done
-grep http mrgs|grep -v scontent-lh |sed -e 's#https://##'|while read i;do rm $i;done
-ls
-find s1.postimg.org -type f
-find i.imgur.com -type f
 find i.imgur.com -type f|while read i;do grep $i mrgs ;done
 find i.imgur.com -type f|while read i;do grep $i mrgs && rm $i ;done
 find s1.postimg.org -type f|while read i;do grep $i mrgs && rm $i ;done
@@ -1998,3 +1931,70 @@ less parwave.c
 grep amp_voice *
 grep pulse_shape_a *
 scala
+tail -f ps.out 
+tail -f Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f.txt 
+vi audio2srt.py
+python audio2srt.py 
+vi audio2srt.py
+python3 audio2srt.py 
+python3 audio2srt.py -h
+ls
+python3 audio2srt.py -i ps.out -o out.srt
+less out.srt 
+python3 audio2srt.py -h
+python3 audio2srt.py -t ps.out -o out.srt
+less out.srt 
+apt-cache search srt
+sudo apt-get install gaupol 
+ls
+mv out.srt speech-at-the-opening-of-the-86th-national-ploughing-championships.srt
+mkdir original
+mv speech-at-the-opening-of-the-86th-national-ploughing-championships.srt original/
+git add original/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+git commit -m 'Michael D., 1'
+git status
+git push origin master
+mkdir edit
+ls
+cp original/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt .
+ffplay ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE
+ffplay Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f
+ls
+less speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+mv original/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt original/speech-to-representatives-of-the-national-literacy-agency.srt
+#mv  speech-to-representatives-of-the-national-literacy-agency.srt
+rm speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+cp original/speech-to-representatives-of-the-national-literacy-agency.srt .
+git add original/speech-*
+git status
+git add original/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt
+git commit -m 'fix name'
+ls
+python3 audio2srt.py -t Wid3RPBmMpfl.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__&Signature=hcnnEYTAynOOcSa9f.txt  -o out.srt
+python3 audio2srt.py -t 'Wid3RPBmMpfl.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__&Signature=hcnnEYTAynOOcSa9f.txt'  -o out.srt
+less out.srt 
+mv out.srt speech-at-the-opening-of-the-86th-national-ploughing-championships.srt
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt original/
+git add original/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+git commit -m 2
+gaupol &
+less speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+apt-cache search srt
+apt-cache search subtitle
+apt-cache search subtitle|grep srt
+apt-cache search subtitle|grep subrip
+apt-cache search srt|grep subt
+gaupol &
+apt-cache search subtitle
+apt-cache search subtitle|grep edit
+apt-get install subtitlecomposer 
+sud apt-get install subtitlecomposer 
+sudo apt-get install subtitlecomposer 
+subtitlecomposer 
+git status
+git diff
+got add edit/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+git add edit/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+git commit -m 'more'
+git push origin master
+ssh jimregan
