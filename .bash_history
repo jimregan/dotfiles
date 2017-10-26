@@ -1,11 +1,3 @@
-ls ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
-tar ztvf ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
-tar zxvf ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
-cd festival/lib/voices/pl/cstr_pl_em_diphone/
-ls
-less README 
-ls
-cd festvox/
 ls
 less number_decl.scm 
 less diphlist.scm 
@@ -1998,3 +1990,11 @@ cd ../IdeaProjects/
 ls
 cd dictionaryconverter/
 git status
+cd /tmp/klatt80/
+grep minus_pi_t *
+less parwave.c 
+less parwave.h
+grep phz *
+grep F1 *
+grep F4hz *
+less ~/Playing/apertium-en-es/apertium-en-es.en-es.t1x 
