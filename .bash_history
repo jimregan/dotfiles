@@ -1,50 +1,3 @@
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd Playing/Dissertation/9879472fwnkgtfsztvt/
-make clean && make
-perl -e print '7 ** 2'
-perl -e print '7 * 2'
-perl -e 'print 7 ** 2'
-echo é|iconv -f latin -t utf8
-echo é|iconv -f latin1 -t utf8
-make clean && make
-git status
-git add citinf.tex chapter1.tex chapter3.tex refs.bib 
-git status
-git branch
-git push origin master
-git pull origin master
-git push origin master
-git commit 0m blah
-git commit -m blah
-git push origin master
-cd idea-IC-172.3317.76/
-ls
-bin/idea.sh 
-cat build.sbt 
-#sbt "run ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper 
-ls
-less adj
-#sbt "run ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
-sbt "run ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
-sbt "run Mapper adj"
-sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
-cp adj.dix ~/Playing/apertium-en-ga/dev/
-sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
-less adj.dix 
-sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
-less adj.dix 
-sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
-less adj.dix 
-sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
-less adj.dix 
-cp ~/en-ga-rules example/en-ga/en-ga.rules.txt
-git add example/en-ga/en-ga.rules.txt
-git commit -m 'start of conversion'
-cp ~/en-ga-rules example/en-ga/en-ga.rules.txt
-git diff
-git add src/main/scala/ie/tcd/slscs/itut/RuleConverter/RuleHolder.scala .idea/modules/dictionaryconverter.iml example/en-ga/en-ga.rules.txt
 git commit -m more
 find . -name '*.bib'|xargs grep Moses
 git status
@@ -1998,3 +1951,50 @@ mkdir ../sync
 ~/bin/blockhash $(filtfind) > ../bhashc-20171019-1.tsv
 less ../bhashc-20171019-1.tsv
 mv ../bhashc-20171019-1.tsv ../sync/
+cd ~
+mkdir practice
+cd practice/
+vi linked-list-print-middle.cc
+g++ linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc
+g++ linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc
+./a.out 
+g++ linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc
+g++ linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc 
+g++ linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc 
+./a.out 
+gcc linked-list-print-middle.cc 
+./a.out 
+vi linked-list-print-middle.cc 
+gcc linked-list-print-middle.cc 
+./a.out 
+cat linked-list-print-middle.cc 
+ssh jimregan
