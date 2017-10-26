@@ -1,87 +1,3 @@
-ls
-cd ..
-git submodule update ainm-ner/
-cd ainm-ner/
-ls
-git pull origin master
-cd ..
-git submodule update ainm-ner/
-git status
-git push origin master
-git status
-git branch
-git add ainm-ner/
-git status
-git submodule update --init -- ainm-ner/
-git status
-git submodule update --remote ainm-ner/
-git status
-git add ainm-ner/
-git commit -m update
-git push origin master
-cd ..
-git clone https://github.com/jimregan/BuNaMo.git
-cd BuNaMo/
-cd noun
-ls
-ls |awk -F_ '{print $1}'
-ls |awk -F_ '{print $1}'|uniq -c
-ls |awk -F_ '{print $1}'|uniq -c|grep -v ' 1 '
-cd /tmp/
-unzip ~/Downloads/stanford-corenlp-full-2017-06-09.zip 
-cd stanford-corenlp-full-2017-06-09/
-ls
-ls patterns/example.properties 
-less patterns/example.properties 
-ls
-ls patterns/
-ls patterns/presidents.txt 
-less patterns/presidents.txt 
-less patterns/names.txt 
-less patterns/goldplaces.txt 
-less patterns/goldnames.txt 
-less patterns/stopwords.txt 
-less patterns/example.properties 
-cat ~/Playing/ainm-ner-corpus/all-ner.txt 
-cat ~/Playing/ainm-ner-corpus/loc-ner.txt 
-ls
-java -jar ~/Downloads/CS_2.003.04.jar 
-java -cp ~/Downloads/CS_2.003.04.jar  csearch/CorpusSearch
-cd ~/Documents/
-cd ../Downloads/
-pdftohtml Cover-letter-11.09.2017-tweak.pdf 
-ls
-vi Cover-letter-11.09.2017-tweaks.html 
-man pdftohtml
-pdftohtml -enc utf8 Cover-letter-11.09.2017-tweak.pdf 
-pdftohtml -enc utf-8 Cover-letter-11.09.2017-tweak.pdf 
-pdftohtml -enc UTF-8 Cover-letter-11.09.2017-tweak.pdf 
-vi Cover-letter-11.09.2017-tweaks.html 
-pdftotext -enc UTF-8 Cover-letter-11.09.2017-tweak.pdf 
-ls
-less Cover-letter-11.09.2017-tweak.txt 
-ssh jimregan
-cd /tmp/
-wget https://dumps.wikimedia.org/other/cirrussearch/20170904/gawiki-20170904-cirrussearch-content.json.gz
-zless gawiki-20170904-cirrussearch-content.json.gz 
-cd ~/Playing/brown-cluster/
-ls
-./wcluster --text /tmp/merged --c 1000 --threads 16
-cd ~/PL
-cd ~/Playing/
-ls
-git clone https://github.com/percyliang/brown-cluster.git
-cd brown-cluster/
-ls
-make
-cd ..
-git clone https://github.com/dav/word2vec.git
-cd word2vec/
-ls
-cd src/
-ls
-make
-ls
 cd ..
 ls
 ls bin/
@@ -1998,3 +1914,87 @@ less /tmp/exif.out
 ls
 vi /tmp/exif.out 
 mv /tmp/exif.out ~/tmp/sync/exif-20171019-2.xml 
+git add abuzei-i-tair.txt
+git add akslop.txt
+git add aniol-pasterzom-mowil.txt
+git remote show
+git status
+cd ..
+ls
+git status
+git remote show
+git diff
+less pron-data/
+less pron-data/plwiktionary-ipa.tsv 
+less pron-data/enwiktionary-ipa.tsv 
+less pron-data/additions-ipa.tsv 
+ls
+less normalisations.tsv 
+less in-chk 
+wc -l in-chk 
+less opennlp-ner-to-corenlp.pl 
+less phon-ipa.tsv 
+git status
+ls polimorf/
+cd polimorf/
+less polimorf.tab 
+grep aaron ../pron-data/*
+grep -i aaron ../pron-data/*
+grep -i aaron polimorf.tab 
+grep -i aaron polimorf.tab |awk -F'\t' '{print $1}'
+grep -i aaron polimorf.tab |awk -F'\t' '{print $1}' > aaron-tmp
+cat aaron-tmp |sort|uniq
+cat aaron-tmp |sort|uniq > aaron-l
+cat aaron-l |sed -e 's/Aa/A/;s/aar/ar/'
+cat aaron-l |sed -e 's/Aa/A/;s/aar/ar/' > aaron-r
+paste  aaron-l aaron-r 
+paste  aaron-l aaron-r >> ../pron-data/pronounce-as.tsv
+rm aaron-*
+ls
+less nonpropernames 
+less propernames 
+less common 
+echo abbreviatura |iconv -x 'pl-fonipa'
+echo abbreviatura |iconv -x 'PL-FONIPA'
+echo abbreviatura |uconv -x 'PL-FONIPA'
+echo abbreviatura |uconv -x 'pl-fonipa'
+echo abbreviatura |uconv -x 'pl_fonipa'
+echo abbreviatury |uconv -x 'pl_fonipa'
+echo cha |uconv -x 'pl_fonipa'
+echo cha |uconv -x 'pl_FONIPA'
+grep abbreviatura ../pron-data/*
+grep accapello ../pron-data/*
+grep acapello ../pron-data/*
+grep 'capella' ../pron-data/*
+vi ../pron-data/pronounce-as.tsv 
+ls
+git status
+git add ../pron-data/pronounce-as.tsv 
+git commit -m 'pronounce as'
+grep Akteon polimorf.tab
+grep Akteon polimorf.tab|awk -F'\t' '{print $1}'|sort|uniq
+apt-cache search mstch
+ls
+less propernames 
+less nonpropernames 
+less ../pron-data/pronounce-as.tsv 
+less ../text/xaa 
+grep 'ów$' ../text/x*
+less ../pron-data/enwiktionary-ipa.tsv 
+wc -l ../pron-data/enwiktionary-ipa.tsv 
+less ../pron-data/enwiktionary-ipa.tsv 
+ls ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
+tar ztvf ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
+tar zxvf ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
+cd festival/lib/voices/pl/cstr_pl_em_diphone/
+ls
+less README 
+ls
+cd festvox/
+ls
+less number_decl.scm 
+less diphlist.scm 
+less cstr_pl_lex.scm 
+ls
+less cstr_pl_l
+less cstr_pl_lts.scm 
