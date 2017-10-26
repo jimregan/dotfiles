@@ -1,31 +1,3 @@
-ls
-less number_decl.scm 
-less diphlist.scm 
-less cstr_pl_lex.scm 
-ls
-less cstr_pl_l
-less cstr_pl_lts.scm 
-cd tm
-cd ~/tmp/
-ls
-cd foo/
-ls
-cd ..
-ls
-cd bar/
-ls
-less mrg 
-grep TAGGED/screenshot_20170812-161732.png mrg 
-grep file: mrg 
-#grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#
-ls /home/jim/Pictures/foo/
-#grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#/home/jim/Pictures/
-grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#/home/jim/Pictures/foo/'); rm $f;done
-grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#/home/jim/Pictures/foo/#'); rm $f;done
-find /home/jim/Pictures/ -name 'screenshot_20170815-202731.png'
-less mrg 
-ls
-find . -type f
 ls ../sync/
 less ../sync/exif-20171019-1.xml 
 sh ../wrap-exif.sh 
@@ -1998,3 +1970,31 @@ grep phz *
 grep F1 *
 grep F4hz *
 less ~/Playing/apertium-en-es/apertium-en-es.en-es.t1x 
+cd ~/Playing/jklaat/
+git init .
+git status
+git add src/
+git commit -m 'start'
+ls ../
+less ../gramadanj/pom.xml 
+cp ../gramadanj/pom.xml .
+vi pom.xml 
+git add pom.xml 
+git commit -m 'add pom'
+vi src/ie/tcd/slscs/itut/jklaat/ParameterFile.java 
+vi bhlah
+grep ' to ' bhlah 
+grep ' to ' bhlah |wc
+grep ' to ' bhlah |awk -F, '{print $2}'
+vi bhlah 
+cat bhlah |awk '{print $1}'
+vi bhlah 
+cat bhlah |awk '{print $1}'
+cat bhlah |awk '{print $1}'| awk 'BEGIN{a=""}{a += $0; a += ", "}END{print a}'
+cat bhlah |awk '{print $1}'| awk 'BEGIN{a=""}{a .= $0; a .= ", "}END{print a}'
+cat bhlah |awk '{print $1}'| awk 'BEGIN{a=""}{a = a ", " $0}END{print a}'
+cat bhlah |awk '{print $3}'| awk 'BEGIN{a=""}{a = a ", " $0}END{print a}'
+vi bhlah 
+cat bhlah |awk '{print $2}'|sed -e 's/;//'| awk 'BEGIN{a=""}{a = a "\", \"" $0}END{print a}'
+vi src/ie/tcd/slscs/itut/jklaat/ParameterFile.java 
+vi /tmp/scratch
