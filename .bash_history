@@ -1,16 +1,3 @@
-ls
-less fstbin/fstfactor 
-ls
-cd ../egs/
-ls
-fdupes -r .
-find . -type f|grep nnet3
-less wsj/s5/steps/nnet3/lstm/make_configs.py 
-less wsj/s5/steps/nnet3/lstm/train.sh 
-grep -i lstm ../src/nnet3/*
-grep -i gru ../src/nnet3/*
-less ../src/nnet3/nnet-simple-component.cc 
-find . -type f|grep merge
 find .. -name '*merge*'
 less ../src/fgmmbin/fgmm-global-merge.cc 
 ls
@@ -1998,3 +1985,16 @@ less out_MU.json
 cat trans-cm 
 cat trans-cm |tr ' ' '\n'|sort|uniq
 cat trans-cm |tr ' ' '\n'|sort|uniq|wc
+cd /media/jim/TOSHIBA/
+ls
+find . -name '*[Nn][Ss][Pp]'
+cd labcds/
+find . -name '*[Nn][Ss][Pp]'
+find . -name '*[Nn][Ss][Pp]'|wc
+fdupes -r .
+find . -name '*.[Ww][Aa][Vv]'
+ffplay ./connemara/Female_Speaker_Annotated/punk2.wav
+ls /connemara/Female_Speaker_Annotated/
+ls ./connemara/Female_Speaker_Annotated/
+less ./connemara/Female_Speaker_Annotated/amuigh1.TextGrid 
+killall sox
