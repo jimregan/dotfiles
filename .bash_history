@@ -1,14 +1,3 @@
-fdupes -r . ../foo/
-fdupes -r . ../foo/ > duptmp
-cat duptmp 
-ls
-filtfind 
-filtfind |awk '{print "http://web.archive.org/save/https://" $0}'
-filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > tospider
-ls
-less /home/jim/scripts/spider.sh 
-less /home/jim/scripts/grab-logged.sh 
-mkdir tttmp
 mv tospider tttmp/
 cd tttmp/
 $HOME/scripts/grab-logged.sh tospider 
@@ -1998,3 +1987,14 @@ lt-comp lr noun.dix noun.bin
 vi noun.dix
 lt-comp lr noun.dix noun.bin
 vi noun.dix
+cd ..
+vi pron/munster.tsv 
+vi scripts/normalise.pl 
+git add scripts/normalise.pl pron/munster.tsv 
+git commit -m 'i: ɾˠ dʲ ə is still a valid munster pronunciation for airde'
+git push origin master
+echo żartów | uconv -x pl-pl_FONIPA
+echo całość | uconv -x pl-pl_FONIPA
+echo całość | uconv -x pl-pl_FONIPA | uconv -x IPA_XSAMPA
+echo całość | uconv -x pl-pl_FONIPA | uconv -x IPA_XSampa
+echo całość | uconv -x pl-pl_FONIPA | uconv -x IPA-XSampa
