@@ -1,386 +1,3 @@
-perl scripts/ems/support/create-xml.perl 
-less scripts/ems/support/create-xml.perl 
-cat /tmp/iris_eval_set.tok.lc.en| scripts/ems/support/create-xml.perl s 
-cat /tmp/iris_eval_set.tok.lc.en| scripts/ems/support/create-xml.perl s  > /tmp/src.xml
-cat /tmp/iris_eval_set.tok.lc.ga| scripts/ems/support/create-xml.perl r  > /tmp/ref.xml
-cat /tmp/onmt-out| scripts/ems/support/create-xml.perl t  > /tmp/tgt.xml
-scala
-scala
-cd Pl
-cd ~/Playing/
-git clone https://github.com/cesilko/cesilko.git
-cd cesilko/
-ls
-make
-apt-cache search gnustep-config
-gnustep-config --objc-flags
-sudo apt install gnustep-make
-make
-sudo apt-get install clang
-make
-ls
-cd code/morph/
-ls
-cd ..
-ls
-cd ..
-ls
-less test_example 
-less Makefile 
-$(MAKE) -C code/morph
-less Makefile 
-make -C code/morph
-less Makefile 
-ls
-ls code/morph/Makefile 
-less code/morph/Makefile 
-cd code/morph/
-make
-Foundation/Foundation.h
-apt-cache search gnustep-base
-sudo apt-get install libgnustep-base-dev
-make
-apt-cache search libobjc2
-apt-cache search libobjc
-apt-cache search 
-apt-cache search libdispatch
-sudo apt-get install libdispatch-dev
-make
-apt-cache search libobjc
-apt-cache search clang
-apt-cache search clang|grep obj
-apt-cache search gobjc
-make
-ls
-less CSCzechMorphologicalAnalyzer.m 
-ls
-apt-cache search blocks
-apt-cache search blocks|grep dev
-sudo apt-get install libblocksruntime-dev
-curl http://wolnelektury.pl/media/book/xml/list-prywatny-do-kornela-makuszynskiego_1.xml
-perl ~/scripts/czytamy-sluchajac.pl 
-apt-cache search scraper|grep perl
-sudo apt-get install libweb-scraper-perl
-perl ~/scripts/czytamy-sluchajac.pl 
-apt-cache search aspell|grep pl
-sudo apt-get install aspell-pl
-curl https://wolnelektury.pl/katalog/audiobooki/
-perl ~/scripts/czytamy-sluchajac.pl 
-curl https://wolnelektury.pl/katalog/audiobooki/|grep https://wolnelektury.pl/katalog/lektura/brzydkie-kaczatko/
-curl https://wolnelektury.pl/katalog/audiobooki/|grep brzydkie-kaczatko/
-curl https://wolnelektury.pl/katalog/audiobooki/|grep plain-list
-curl https://wolnelektury.pl/katalog/audiobooki/|grep plain-list|wc
-curl https://wolnelektury.pl/katalog/audiobooki/|grep books-list
-perl ~/scripts/czytamy-sluchajac.pl 
-curl https://wolnelektury.pl/katalog/audiobooki/|grep books-list
-perl ~/scripts/czytamy-sluchajac.pl 
-perl ~/scripts/czytamy-sluchajac.pl |wc
-mkdir ~/Playing/wolne-lektury-audio-corpus
-perl ~/Playing/wolne-lektury-audio-corpus/test.pl 
-curl http://wolnelektury.pl/katalog/lektura/slowka-zbior-list-prywatny-do-kornela-makuszynskiego/|grep XML
-perl ~/Playing/wolne-lektury-audio-corpus/test.pl 
-perl ~/scripts/czytamy-sluchajac.pl 
-perl ~/Playing/wolne-lektury-audio-corpus/test.pl 
-perl ~/scripts/czytamy-sluchajac.pl 
-cp ~/scripts/czytamy-sluchajac.pl ~/Playing/wolne-lektury-audio-corpus/
-perl ~/scripts/czytamy-sluchajac.pl > ~/Playing/wolne-lektury-audio-corpus/audiobooks.tsv
-less ~/Downloads/sanchez-martinez09c.bib 
-less ~/Downloads/sanchez-martinez09d.bib 
-less ~/Downloads/citation-264436418.bib 
-perl -e 'print 2 ** 7'
-cd ~/scripts/
-config status
-config rm czytamy-sluchajac.pl 
-config rm -f czytamy-sluchajac.pl 
-ls
-less convert-dumped-irishfst.pl 
-config rm convert-dumped-irishfst.pl 
-ls
-config commit -m rm
-config push origin master
-cd ../
-cd Playing/irishfst-1/
-ls
-cat all-tags 
-cat all-tags |gsed -e 's/\+/\n+/g'
-cat all-tags |sed -e 's/\+/\n+/g'
-cat all-tags |sed -e 's/\+/\n+/g'|sort|uniq|grep '+'
-cat all-tags |sed -e 's/\+/\n+/g'|sort|uniq|grep '+'|wc
-cat all-tags |sed -e 's/\+/\n+/g'|sort|uniq|grep '+'|less
-cat all-tags |sed -e 's/\+/\n+/g'|sort|uniq|grep '+' > individual-tags
-vi individual-tags 
-grep VF all-
-grep VF all-tags 
-grep VF pairs.tsv.1 
-grep is+Cop+Past+Rel pairs.tsv.1 
-vi individual-tags 
-cat all-tags 
-cat all-tags |while read i;do grep "^$i$" /tmp/tagsfilt ;done
-cat all-tags |while read i;do grep "^$i$" /tmp/tagsfilt || echo $i >> tagstodo ;done
-less tagstodo 
-cat tagstodo |while read i;do grep "^$i$" /tmp/tagsfilt || echo $i >> tagstodo1 ;done
-mv tagstodo1 tagstodo
-cat tagstodo |sed -e 's/\+/\n+/g'|sort|uniq|grep '+' > individual-tags
-less individual-tags 
-cat individual-tags |while read i;do grep "^$i$" /tmp/tagsfiltind || echo $i >> individual-tags.f;done
-less individual-tags
-rm individual-tags.f 
-cat individual-tags|sed -e 's/\+//' |while read i;do grep "^$i$" /tmp/tagsfiltind || echo $i >> individual-tags.f;done
-less individual-tags.f 
-grep Wh all-tags 
-grep dv+Q+Wh+Past pairs.tsv.1 
-vi individual-tags.f 
-grep Subst all-
-grep Subst all-tags 
-grep +Subst+Noun+Sg+Part+Comp pairs.tsv.1 
-grep níos pairs.tsv.1 
-grep +Subst+Noun+Sg+Part+Comp pairs.tsv.1 
-cd ~/Playing/
-cd wolne-lektury-audio-corpus/
-ls
-tail -f audiobooks.tsv 
-cat audiobooks.tsv |awk -F'\t' '{print $2}'
-cat audiobooks.tsv |awk -F'\t' '{print $2}'|sort|uniq
-cat speaker-gender-map.tsv 
-vi speaker-gender-map.tsv 
-git init . 
-ls
-git add speaker-gender-map.tsv czytamy-sluchajac.pl 
-git commit -m init
-tail -f audiobooks.tsv 
-wget https://wolnelektury.pl/media/book/txt/dziewczynka-z-zapalkami.txt
-less dziewczynka-z-zapalkami.txt 
-wget https://wolnelektury.pl/katalog/zip/mp3/przygody-tomka-sawyera.zip
-cd text/
-ls
-git init .
-git add *txt
-git status
-git commit -m orig
-for i in *txt;do cat $i |perl ../norm-text.pl > tmp;mv tmp $i;done
-git diff|less
-ls
-cat *
-cat *|grep IV
-cat *
-cat *|tr ' ' '\n'
-cat *|tr ' ' '\n'|sort|uniq
-cat *|tr ' ' '\n'|sort|uniq|wc
-cat *|tr ' ' '\n'|sed -e 's/\.$//;s/,$//'|sort|uniq
-cat *|tr ' ' '\n'|sed -e 's/\.$//;s/,$//;s/…//g'|sort|uniq
-cat *|tr ' ' '\n'|sed -e 's/\.$//;s/,$//;s/…//g'|sort|uniq|wc
-cat *|tr ' ' '\n'|sed -e 's/\.$//;s/,$//;s/…//g;s/\?$//;s/!$//;s/:$//;s/;$//'|sort|uniq|wc
-cat *|tr ' ' '\n'|sed -e 's/\.$//;s/,$//;s/…//g;s/\?$//;s/!$//;s/:$//;s/;$//'|sort|uniq > all-words.txt
-less all-words.txt 
-cat all-words.txt |sort|uniq|wc
-cat all-words.txt |sort|uniq|wc > tmp
-mv tmp all-words.txt 
-less all-words.txt 
-cat *|tr ' ' '\n'|sed -e 's/\.$//;s/,$//;s/…//g;s/\?$//;s/!$//;s/:$//;s/;$//'|sort|uniq > all-words.txt
-vi all-words.txt 
-cat all-words.txt |sort|uniq > tmp
-mv tmp all-words.txt 
-wc -l all-words.txt 
-less all-words.txt 
-cat all-words.txt |sort|uniq > tmp
-mv tmp all-words.txt 
-wc -l all-words.txt 
-vi all-words.txt 
-grep '[A-Z]' all-words.txt 
-scp all-words.txt jimregan:/tmp
-split -l 1000 all-words.txt 
-vi xaa 
-wc -l xaa
-less xaa
-cat xaa |aspell -a -l pl
-cat xaa |aspell -a -l pl|grep '^+'
-cat xaa |aspell -a -l pl|grep '^+'|uniq
-cat xaa |aspell -a -l pl|grep '^+'|sort|uniq|wc
-cat xaa |aspell -a -l pl|grep '^+'|sort|uniq
-ls ~/Downloads/*bib
-ls
-cd ..
-ls
-git add extract-enwiktionary-ipa.pl 
-git commit -m 'pull IPA from en.wiktionary'
-git add pron-data/enwiktionary-ipa.tsv 
-git commit -m 'output'
-git push origin master
-vi pron-data/additions-ipa.tsv
-ls
-less phon-ipa.tsv 
-grep pizza pron-data/enwiktionary-ipa.tsv 
-grep Huck pron-data/enwiktionary-ipa.tsv 
-grep Potter pron-data/enwiktionary-ipa.tsv 
-git add pron-data/additions-ipa.tsv 
-git commit -m 'some additions'
-echo pizza |espeak -v pl --ipa
-echo czarny |espeak -v pl --ipa
-echo ciemny |espeak -v pl --ipa
-echo kilogram |espeak -v pl --ipa
-echo matematyka |espeak -v pl --ipa
-ls
-cat text/xaa 
-cat text/xaa |espeak -v pl --ipa
-less text/xaa
-head -n 4 text/xaa|espeak -v pl --ipa
-head -n 4 text/xaa
-cat pron-data/enwiktionary-ipa.tsv 
-cat pron-data/enwiktionary-ipa.tsv |awk -F'\t' '{print $1}'|sort|uniq
-cat pron-data/enwiktionary-ipa.tsv |awk -F'\t' '{print $1}'|sort|uniq|wc
-cat pron-data/enwiktionary-ipa.tsv |awk -F'\t' '{print $1}'|sort|uniq > in-chk
-ls
-bzless polimorf/plwiktionary-20170901-pages-articles.xml.bz2 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |less
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pl-ipa.out
-wc -l pl-ipa.out 
-less pl-ipa.out 
-rm ~/Pictures/Screenshot_20170909_143133.png 
-ssh jimregan
-ls
-git add extract-plwiktionary-ipa.pl 
-git commit -m 'other script'
-less in-chk 
-less pl-ipa.out 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |less
-less pl-ipa.out 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |less
-less pl-ipa.out 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pl-w.out
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pl-w.out2
-less pl-w.out2 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pl-w.out2
-less pl-w.out2 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pl-w.out3
-diff -u pl-w.out2 pl-w.out3 
-less pl-w.out3 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pl-w.out3
-less pl-w.out3 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pl-w.out3
-less pl-w.out3 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl pron-data/plwiktionary-ipa.tsv 
-bzcat polimorf/plwiktionary-20170901-pages-articles.xml.bz2 |perl extract-plwiktionary-ipa.pl > pron-data/plwiktionary-ipa.tsv 
-git add extract-plwiktionary-ipa.pl pron-data/plwiktionary-ipa.tsv 
-git commit -m 'fix; add output'
-git push origin master
-less pron-data/plwiktionary-ipa.tsv 
-cat pron-data/enwiktionary-ipa.tsv |perl fix-english.pl 
-cat pron-data/enwiktionary-ipa.tsv |perl fix-english.pl |less
-less ~/Downloads/LnPM-gmail 
-ls
-cd text/
-ls
-less all-words.txt 
-grep 000 *
-less balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
-cd Playing/OpenNMT/
-th tools/tokenize.lua -joiner_annotate -bpe_model ~/bitext/enga.onmt.bpe ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor-onmt.en > tok.en
-th tools/tokenize.lua -joiner_annotate -bpe_model ~/bitext/enga.onmt.bpe < ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor-onmt.en > tok.en
-less train.lua 
-th train.lua -h
-th preprocess.lua -h
-less preprocess.lua 
-ls
-find . -name '*lua'|xargs grep feattext
-less onmt/translate/Translator.lua 
-less data/src-train-case.txt 
-ls
-ls enga/
-find ~ -name '*t7'
-find ~ -name '*.t7.gz'
-gzip -d /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7.gz
-ls /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7 
-#th tools/release_model.lua -model /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7 -gpuid 1
-th tools/release_model.lua -help
-mv /home/jim/bitext/onmt_enga-4-1000-600_epoch13_1.71.t7 model.t7
-th tools/release_model.lua -model model.t7 -gpuid 1
-ls -al *t7
-th translate.lua -h
-th translate.lua -model model_release.t7 -src /tmp/iris_eval_set.tok.lc.en -output onmt1
-th tools/detokenize.lua < onmt1 
-th tools/detokenize.lua < onmt1 > /tmp/onmt-out
-th tools/detokenize.lua < onmt1 > ~/Playing/dissertation-data/opennmt/baseline-out
-find . -name 'wrap*'
-less benchmark/3rdParty/multi-bleu.perl 
-less benchmark/3rdParty/wrap-xml.perl 
-cd ~
-config status
-config add .viminfo .bash_history 
-config add -f .viminfo .bash_history 
-config commit -m 'whatever I was doing'
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/old-report/9772166rptrthgwcdyn
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
 clear
 cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
 clear
@@ -1998,3 +1615,386 @@ ls
 less ~/IdeaProjects/dictionaryconverter/build.sbt 
 vi build.sbt
 sbt console
+cd ..
+mkdir bar
+less sourceme 
+. sourceme 
+cd bar/
+procimg https://www.instagram.com/p/BaSDCI9gIc8/?taken-by=volkonskaya.reshetova
+cat fash-rdf-links 
+rm fash-rdf-links 
+curl
+ogimageproc https://www.instagram.com/p/BaSDCI9gIc8/?taken-by=volkonskaya.reshetova
+ogimageproc https://www.instagram.com/p/BaEUAqeAhVs/?taken-by=volkonskaya.reshetova
+ogimageproc https://www.instagram.com/p/BZovSJjgVlR/?taken-by=volkonskaya.reshetova
+ogimageproc https://www.instagram.com/p/BaTsLDNB8zj/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BaWVzRhBW7a/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BaBmG0phakA/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BZn7ZJMBDLZ/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BYNz6EeBhl4/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BXvCjlTBYZm/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BaHUMV1Hdmz/?taken-by=sandra_traczyk
+ogimageproc https://www.instagram.com/p/BZ0_iBsH8QV/?taken-by=sandra_traczyk
+ogimageproc https://www.instagram.com/p/BZoAhXLnDXB/?taken-by=sandra_traczyk
+ogimageproc https://www.instagram.com/p/BaWJWk1BM1g/?taken-by=y_gaar
+ogimageproc https://www.instagram.com/p/BaWKjqSFNv4/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BaTwezvF4Sv/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BaRrIzbF8L5/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BaQ16Tql5eB/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BaVVkB3A2vr/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BaWG10EA6v1/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BaJlrVzAjw3/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BaTYyuOBuw2/?taken-by=veronika_chachyna
+ogimageproc https://www.instagram.com/p/BaLEcmwl5NI/?taken-by=mr.s_kris
+ogimageproc https://www.instagram.com/p/BaL9VfThncq/?taken-by=nadiyaarcher
+ogimageproc https://www.instagram.com/p/BaJIhBDhHus/?taken-by=nadiyaarcher
+ogimageproc https://www.instagram.com/p/BaWO3Qinjyb/?taken-by=paulinaapsp
+ogimageproc https://www.instagram.com/p/BaWUQachjLk/?taken-by=alina_akilova
+ogimageproc https://www.instagram.com/p/BaAE9LUhIaL/?taken-by=alina_akilova
+ogimageproc https://www.instagram.com/p/BZ8LayPB9KG/?taken-by=alina_akilova
+ogimageproc https://www.instagram.com/p/BaQk0HRHGgu/?taken-by=ira_kamale
+ogimageproc https://www.instagram.com/p/BaRJ-RYl__3/?taken-by=space_margo
+ogimageproc https://www.instagram.com/p/BaUJfjxAKK8/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BaJklZVAcaW/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BaUCDhaBv6D/?taken-by=mo_na2016
+ogimageproc https://www.instagram.com/p/BaT1sBJg_aW/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BaUOFvNApCv/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BZwNeCzglbf/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BaUCHHGFlmd/?taken-by=liberateme.1
+ogimageproc https://www.instagram.com/p/BaRsYeABrDC/?taken-by=sandrapodbielska
+ogimageproc https://www.instagram.com/p/BaTVti1gs6l/?taken-by=vasilisa_beautiful_
+ogimageproc https://www.instagram.com/p/BaTTlnLAwsX/?taken-by=ketrinolshevskay
+ogimageproc https://www.instagram.com/p/BaMHaeoHBjS/?taken-by=marymax01
+ogimageproc https://www.instagram.com/p/BaREeIoFvjR/?taken-by=ssweet.girl
+ogimageproc https://www.instagram.com/p/BaPUCG8n_Fh/?taken-by=ssweet.girl
+ogimageproc https://www.instagram.com/p/BaMKt4JHNmm/?taken-by=ssweet.girl
+ogimageproc https://www.instagram.com/p/BaQDVTLn2HZ/?taken-by=arishabo
+ogimageproc https://www.instagram.com/p/BYRyXOmHMjb/?taken-by=arishabo
+ogimageproc https://www.instagram.com/p/BX7UfESlQ7n/?taken-by=arishabo
+ogimageproc https://www.instagram.com/p/BaOcDycg-OI/?taken-by=burdagrin
+ogimageproc https://www.instagram.com/p/BaS3yD7n3lc/?taken-by=julia__yaroshenko
+ogimageproc https://www.instagram.com/p/BaTYyuOBuw2/?taken-by=veronika_chachyna
+ogimageproc https://www.instagram.com/p/BaMNCmyBuES/?taken-by=veronika_chachyna
+ogimageproc https://www.instagram.com/p/BZwB1VYhb8W/?taken-by=veronika_chachyna
+ogimageproc https://www.instagram.com/p/BZlG14zhrDG/?taken-by=veronika_chachyna
+ogimageproc https://www.instagram.com/p/BZbI2QKhBNx/?taken-by=veronika_chachyna
+ogimageproc https://www.instagram.com/p/BaTLOsNBvKY/?taken-by=yuliakhramova
+ogimageproc https://www.instagram.com/p/BZB8vgAFeFG/?taken-by=princessniquisha
+vi /tmp/inpp
+cat /tmp/inpp |while read i;do ogimageproc $i;done
+ls
+find scontent-lht6-1.cdninstagram.com -type f|zip /tmp/tmmp.zip -@
+grep 22580731_1978121865766544_1983872014229700608_n.jpg fash-rdf-links 
+grep 22580761_1090764057693651_5828174671102607360_n.jpg fash-rdf-links 
+grep 20398298_369624303456716_7637561482858725376_n.jpg fash-rdf-links 
+grep 22344602_1658436987533716_2456017584395386880_n.jpg fash-rdf-links 
+grep /home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/20184199_1459732814120169_2984853939729465344_n.jpg fash-rdf-links 
+grep 20184199_1459732814120169_2984853939729465344_n.jpg fash-rdf-links 
+grep 20184954_334507016971754_2244148097519190016_n.jpg fash-rdf-links 
+grep 20398298_369624303456716_7637561482858725376_n.jpg fash-rdf-links 
+grep 20589709_343251822770562_667572088281759744_n.jpg fash-rdf-links 
+grep 20633522_528823657458093_5018748342839017472_n.jpg fash-rdf-links 
+grep 20766715_142348159690104_3461209243565162496_n.jpg fash-rdf-links 
+grep 20837581_451560521890538_943074904377393152_n.jpg fash-rdf-links 
+grep 21041804_111698902877169_3691839392403423232_n.jpg fash-rdf-links 
+grep 21042569_1972913982920893_5138687452063465472_n.jpg  fash-rdf-links 
+grep 21107946_231516100705607_5161334346463838208_n.jpg fash-rdf-links 
+grep 21149675_1976865692561257_2890744733758390272_n.jpg fash-rdf-links 
+grep 19228823_284059958669562_8829936350888198144_n.jpg fash-rdf-links 
+grep 22157356_544352292562527_3970743706633371648_n.jpg fash-rdf-links 
+grep 22158067_210928372777319_941257927052754944_n.jpg fash-rdf-links 
+grep 22220753_1691551310878053_15318065285693440_n.jpg fash-rdf-links 
+grep 22277898_504543699907269_1555096117580922880_n.jpg fash-rdf-links 
+grep 22280035_483142375375776_486121947797651456_n.jpg fash-rdf-links 
+grep 22280331_1985271401761982_4443876221628973056_n.jpg fash-rdf-links 
+grep 22352339_272173299959065_2108912019888406528_n.jpg fash-rdf-links 
+grep 22352555_123640911675713_1397939725167230976_n.jpg fash-rdf-links 
+grep 22427213_1491949630898321_308437226616782848_n.jpg fash-rdf-links 
+ls
+ogimageproc https://www.instagram.com/p/BYNdc1BhDGq/?taken-by=sandra_muzalewska
+ogimageproc https://www.instagram.com/p/BaOZYtQhBBM/?taken-by=liana_shel
+ogimageproc https://www.instagram.com/p/BX-UJudBiaf/?taken-by=liana_shel
+ogimageproc https://www.instagram.com/p/BZ-2F7_lJwa/?taken-by=leto.__
+ogimageproc https://www.instagram.com/p/BY24J_jBr47/?taken-by=aniu_ta
+ogimageproc https://www.instagram.com/p/BHc3Y3OBZRt/?taken-by=aniu_ta
+ogimageproc https://www.instagram.com/p/BE_7fvvuzrR/?taken-by=aniu_ta
+ogimageproc https://www.instagram.com/p/4ybrTZuzrK/?taken-by=aniu_ta
+ogimageproc https://www.instagram.com/p/BZ6qY7QlfVn/?taken-by=kasia.nalepa
+ogimageproc https://www.instagram.com/p/BY0qof_lvzD/?taken-by=kasia.nalepa
+ogimageproc https://www.instagram.com/p/BaRiVWen8zK/?taken-by=barbeliciouss
+ogimageproc https://www.instagram.com/p/BZodVa4HSu6/?taken-by=barbeliciouss
+vi gal1
+vi imgur-gals
+vi imgur-gals-ia
+ogimageproc https://www.instagram.com/p/BaRJANoh-Sn/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BaKSBj8h4Cq/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BaMsI0GhTFW/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BZeGMx0BwZ_/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BZb5KVkBEe5/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BXM_e16BEoo/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BXJBRMOh_gl/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BXLHr0yBxzM/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BXH0tCTBzek/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BVM53ErBh4h/?taken-by=nadia_khom
+ogimageproc https://www.instagram.com/p/BZ1hz8-g91m/?taken-by=awesomeantjay
+ogimageproc https://www.instagram.com/p/BZMXVNYAR_h/?taken-by=awesomeantjay
+ogimageproc https://www.instagram.com/p/BYeU6F2g-z9/?taken-by=awesomeantjay
+ogimageproc https://www.instagram.com/p/BXyPdCZgSNw/?taken-by=awesomeantjay
+ogimageproc https://www.instagram.com/p/BV2cM_AgSZX/?taken-by=awesomeantjay
+ogimageproc https://www.instagram.com/p/BU0EDIogjDx/?taken-by=awesomeantjay
+ogimageproc https://www.instagram.com/p/BUmtaQrgcb4/?taken-by=awesomeantjay
+ogimageproc https://www.instagram.com/p/BaMvMArFf3C/?taken-by=luciajavorcekova
+ogimageproc https://www.instagram.com/p/BYv_hNEFbzK/?taken-by=luciajavorcekova
+ogimageproc https://www.instagram.com/p/BXkaq9cF47i/?taken-by=luciajavorcekova
+ogimageproc https://www.instagram.com/p/BWzwHLUFqaX/?taken-by=luciajavorcekova
+ogimageproc https://www.instagram.com/p/BUrg_RtFqyS/?taken-by=luciajavorcekova
+ogimageproc https://www.instagram.com/p/BULxDujF7FU/?taken-by=luciajavorcekova
+ogimageproc https://www.instagram.com/p/BTEb06Bljei/?taken-by=luciajavorcekova
+ogimageproc https://www.instagram.com/p/BaYy9sunajU/?taken-by=aaii.yai
+ogimageproc https://www.instagram.com/p/BZYq-BYHxU3/?taken-by=aaii.yai
+ogimageproc https://www.instagram.com/p/BYgBPL7nykJ/?taken-by=aaii.yai
+ogimageproc https://www.instagram.com/p/BXpRFkxAItr/?taken-by=aaii.yai
+ogimageproc https://www.instagram.com/p/BXB2_YGA4SC/?taken-by=aaii.yai
+ogimageproc https://www.instagram.com/p/BWz0ciEA4XE/?taken-by=aaii.yai
+ogimageproc https://www.instagram.com/p/BVtsjYzgJOS/?taken-by=aaii.yai
+ogimageproc https://www.instagram.com/p/BaWZSn-n2hd/?taken-by=karolajnax._
+ogimageproc https://www.instagram.com/p/BZTQ1k9nMn-/?taken-by=karolajnax._
+ogimageproc https://www.instagram.com/p/BY3Y0aEnRnq/?taken-by=karolajnax._
+ogimageproc https://www.instagram.com/p/BYLuVVgHNfw/?taken-by=karolajnax._
+ogimageproc https://www.instagram.com/p/BT_ttOCA5gx/?taken-by=karolajnax._
+sudo apt-get install kdenetwork-filesharing
+ogimageproc https://www.instagram.com/p/BZ_BRhSAkbW/?taken-by=klaudia.owczarek
+tail fash-rdf-links 
+ogimageproc https://www.instagram.com/p/BZqZEbxglgv/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BZbsSOggXQ1/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BZRJtA8Dzbj/?taken-by=kristiii_1194
+ogimageproc https://www.instagram.com/p/BZqZEbxglgv/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BZbsSOggXQ1/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BZRJtA8Dzbj/?taken-by=kristiii_1194
+ogimageproc https://www.instagram.com/p/BZ_BRhSAkbW/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BaYbEBtlD_z/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BaUJNe3laNd/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BaROLCHFmxz/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BaOeWV-lX-8/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BaGrCpzlaug/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BaCW5_nl-ic/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BZ1FrClF9vw/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BZJ3DJDgWfE/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BW7cgZfgRSU/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BVZeXlNgp8A/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BS9NCwMgmVR/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BRd_zaagpOM/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BPNlYoMDPSs/?taken-by=klaudia.owczarek
+ogimageproc https://www.instagram.com/p/BaDrHywgJN1/?taken-by=irina_pim_fit
+ogimageproc https://www.instagram.com/p/BZTsN4hA8F2/?taken-by=irina_pim_fit
+ogimageproc https://www.instagram.com/p/BZ3diSShsTv/?taken-by=leonksen
+ogimageproc https://www.instagram.com/p/BZvEb98BtAe/?taken-by=leonksen
+ogimageproc https://www.instagram.com/p/BZ0xJkohAM6/?taken-by=misslilan
+ogimageproc https://www.instagram.com/p/BZOziEyBEP6/?taken-by=misslilan
+ogimageproc https://www.instagram.com/p/BYXVQOdBHmg/?taken-by=misslilan
+ogimageproc https://www.instagram.com/p/BZ8YoBZnHwj/?taken-by=j.u.s.t_me_ry
+ogimageproc https://www.instagram.com/p/BYGqnuTAOGc/?taken-by=j.u.s.t_me_ry
+ogimageproc https://www.instagram.com/p/BWh-TmCgr8i/?taken-by=j.u.s.t_me_ry
+ogimageproc https://www.instagram.com/p/BaTEnpml2Gv/?taken-by=galinka.krk
+ogimageproc https://www.instagram.com/p/BaJPII8jknJ/?taken-by=nellchh
+ogimageproc https://www.instagram.com/p/BYVpeW2Dfgw/?taken-by=nellchh
+ogimageproc https://www.instagram.com/p/BUtpsaQDGud/?taken-by=nellchh
+ogimageproc https://www.instagram.com/p/BaRyT0DlhBO/?taken-by=alexandra.kazmierczak
+ogimageproc https://www.instagram.com/p/BZ_Wdt2FUUZ/?taken-by=alexandra.kazmierczak
+ogimageproc https://www.instagram.com/p/BaRqmiolUzo/?taken-by=galinka.krk
+ogimageproc https://www.instagram.com/p/BaQyaiAFDZG/?taken-by=galinka.krk
+ogimageproc https://www.instagram.com/p/BZ3DJnHlPIr/?taken-by=galinka.krk
+ogimageproc https://www.instagram.com/p/BZtnudaFgy3/?taken-by=galinka.krk
+ogimageproc https://www.instagram.com/p/BZv7WLvFkMP/?taken-by=galinka.krk
+ogimageproc https://www.instagram.com/p/BaHqYLohtYf/?taken-by=kasia_dziurska
+ogimageproc https://www.instagram.com/p/BZ9DIn6hrkP/?taken-by=kasia_dziurska
+ogimageproc https://www.instagram.com/p/BaJ_OrZDnp-/?taken-by=madziaa.t
+ogimageproc https://www.instagram.com/p/BaHfvTZj3Z8/?taken-by=madziaa.t
+ogimageproc https://www.instagram.com/p/BZbu6cWjtEG/?taken-by=madziaa.t
+ogimageproc https://www.instagram.com/p/BZWT2q0jDoE/?taken-by=madziaa.t
+ogimageproc https://www.instagram.com/p/BZGj8xQDuXd/?taken-by=madziaa.t
+ogimageproc https://www.instagram.com/p/BZHeSNonVou/?taken-by=octamevia
+ogimageproc https://www.instagram.com/p/BZ_IYEyFod7/?taken-by=kingakomar
+ogimageproc https://www.instagram.com/p/BN2oMgjlSGq/?taken-by=kingakomar
+ogimageproc https://www.instagram.com/p/BYldqYLjYOE/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BYyTSyjjjve/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BYI0DWYDrxk/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BYAwgS4jS1d/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BXc02HfD5qU/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BWzvOnijlcj/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BVpfhf3DNYY/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BT_zQGXjs6P/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BR_uYOUjVGB/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BREZmFcDjor/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BPu7bAHj2TG/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BK_M3cCD7OX/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BIdbpGNDeP7/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BHmzNawjpA7/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BHdKzdOD_Q3/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BGKKtCwlNIu/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BCv09cGlNJW/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/BAaBcS2FNFk/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/_Wr0COFNLH/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/9a7jzLlNKd/?taken-by=marijuama
+ogimageproc https://www.instagram.com/p/5s-MiCFNNb/?taken-by=marijuama
+ls
+cat imgur-gals
+lynx -dump https://imgur.com/a/pWy46
+vi /tmp/imgurtmp
+les /tmp/imgurtmp
+less /tmp/imgurtmp
+cat /tmp/imgurtmp
+cat /tmp/imgurtmp|grep '<img class="js-post-image-thumb"'
+grep wpfwKJO.jpg /tmp/imgurtmp 
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/VLnL70S.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/pJcyAhl.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/TcC5XDb.jpg
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/VMzZM65.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/XI0eCEj.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/IoBMPD1.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/ysevDvd.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/s1tZjSJ.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/iiFFcjy.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/Dz1UA34.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/wOixiwZ.jpg
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/IuGUz0A.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/1MHp9o8.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/PXXr8X1.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/D4IjDmr.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/MYwiArT.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/J73XGsa.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/L2U01YZ.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/weZwqnl.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/ftJs1nv.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/C8lHVFV.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/XFJyHZo.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/Gpz0WOO.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/o5BBXcD.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/sXOrS7U.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/ydPvmGB.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/imd822p.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/MgI01CI.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/Ojkmjec.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/FNwwwJ4.png
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/4cffD8G.jpg
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/O4UoWoz.jpg
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/wpfwKJO.jpg
+ls
+fdupes -r . ../foo/
+procimg https://imgur.com/a/pWy46 https://i.imgur.com/wpfwKJO.png
+fdupes -r . ../foo/
+fdupes -r . ../foo/ > duptmp
+cat duptmp 
+ls
+filtfind 
+filtfind |awk '{print "http://web.archive.org/save/https://" $0}'
+filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > tospider
+ls
+less /home/jim/scripts/spider.sh 
+less /home/jim/scripts/grab-logged.sh 
+mkdir tttmp
+mv tospider tttmp/
+cd tttmp/
+$HOME/scripts/grab-logged.sh tospider 
+tail -f tospider.log 
+cd ..
+ls
+fdupes -r . > archdup
+less archdup 
+grep tttmp/ archdup 
+grep tttmp/ archdup |while read i;do rm $i;done
+cd tttmp/
+rmemptydir 
+ls
+cd ..
+ls
+find scontent-lht6-1.cdninstagram.com -type f
+find scontent-lht6-1.cdninstagram.com -type f|while read i;do grep $i archdup || echo http://web.archive.org/save/https://$i >> tttmp/tospb;done
+cd tttmp/
+ls
+cd ..
+ls
+les ~/scripts/pipe-ook.pl 
+less ~/scripts/pipe-ook.pl 
+vi /tmp/drilink
+vi /tmp/link
+paste /tmp/link /tmp/drilink 
+paste /tmp/link /tmp/drilink |awk '{print $1 " " $2}'
+paste /tmp/link /tmp/drilink |awk '{print $1 " " $2}'|while read i;do procimg $i;done
+tail fash-rdf-links 
+vi fash-rdf-links 
+cat /tmp/drilink 
+cat /tmp/drilink |grep http
+cat /tmp/drilink |grep http|while read i;do doimg $i https://postimg.org/gallery/10noq3870/;done
+tail fash-rdf-links 
+fdupes -r . ../foo/ > duptmp2
+less duptmp2 
+rm tttmp/nohup.out 
+vi duptmp2 
+fdupes -r . ~/Pictures/foo > duptmp2
+less duptmp2 
+cat /tmp/drilink 
+identify s1.postimg.org/5a0nmeek1b/screenshot_20171011-212624.png
+curl https://postimg.org/image/8pm9lh8m63/
+curl https://postimg.org/image/8pm9lh8m63/|grep dl=1
+curl https://postimg.org/image/8pm9lh8m63/|grep screensh
+lynx -dump https://postimg.org/image/8pm9lh8m63/
+lynx -dump https://postimg.org/image/8pm9lh8m63/|grep dl=1
+lynx -dump https://postimg.org/image/8pm9lh8m63/|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}'
+grep http /tmp/link|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;done
+grep 22500293_1996512857291245_7006758639662792704_n.jpg fasd
+grep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22500266_1765608903744524_6435478781854482432_n.jpg fash-rdf-links 
+fashgrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22500266_1765608903744524_6435478781854482432_n.jpg
+instagrep () { grep $(echo $1|awk -F'/' '{print $NF}') fash-rdf-links ; }
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22500266_1765608903744524_6435478781854482432_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22580569_367278817043376_734750101255225344_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22580628_123878811603085_739573461197783040_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22580885_773381976155990_827512903698481152_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22581761_422266138169161_2915771233314275328_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22582428_1734781170160761_4012272282289307648_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430134_287855851728286_8288033983485181952_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430208_2152933881399664_6227177545217867776_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430384_165878903993537_2436843729399578624_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430486_122420325099540_3442288654200864768_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21910970_1677977905568864_440559268274372608_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/13584207_1749651501969452_1727782324_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/18812097_1835128613481423_8064652236204015616_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21225033_114941555876208_5214158136352440320_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21372476_139791019962546_3537088628352090112_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21372854_120300055245711_3624358833343692800_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21576850_851222065043183_3973163516977741824_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21690363_116932052354950_1038139804996337664_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21690365_928512777302736_3271193353449897984_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21820381_117301058959002_835398253200539648_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21909486_1967681856836318_8201899247587557376_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21910078_281705859009256_6517087438265909248_n.jpg
+ls
+ogimageproc https://www.instagram.com/p/BY_iS0hDFZH/?taken-by=martina.willson
+ogimageproc https://www.instagram.com/p/BXv4d2pDCPG/?taken-by=martina.willson
+ogimageproc https://www.instagram.com/p/BBDY7oKy0fB/?taken-by=martina.willson
+ogimageproc https://www.instagram.com/p/BaRdttCjFBv/?taken-by=martina.willson
+ogimageproc https://www.instagram.com/p/BZ9cN4iD1BV/?taken-by=martina.willson
+ogimageproc https://www.instagram.com/p/BZ6_XFID0Vu/?taken-by=martina.willson
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/22351894_1845004835738129_2156865282503606272_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430000_944381602389475_4490890308040523776_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430046_1931387773850028_7407558571044372480_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22427497_138677756755729_6044601865604169728_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22427606_1944751899116796_4370176820507574272_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22427615_320794198388577_2189742329441550336_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22429670_1667498593281851_829071654704381952_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22429671_181325932431945_1455180906099638272_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22429714_1950364471905703_6451029788986441728_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344333_139769913233286_7341298121999122432_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344647_875201905970845_3963179844023353344_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344669_1088567047944200_3357880645480087552_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344034_1267171643388775_7001661686008512512_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21980725_1782516352047263_7240626949029101568_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21985131_420389581710903_7789940093522804736_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22069679_118360105522635_7271702454754869248_n.jpg
+instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22069919_1892256451037596_5489680249736134656_n.jpg
+~/bin/blockhash 
+~/bin/blockhash $(filtfind)
+mkdir ../sync
+~/bin/blockhash $(filtfind) > ../bhashc-20171019-1.tsv
+less ../bhashc-20171019-1.tsv
+mv ../bhashc-20171019-1.tsv ../sync/
