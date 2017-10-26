@@ -5,8 +5,11 @@ DefaultProfile=
 Favorites=
 
 [MainWindow]
-Height 1080=1051
+Height 1080=1015
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1920
 Window-Maximized 1080x1920=true
+
+[Notification Messages]
+ShowPasteHugeTextWarning=false

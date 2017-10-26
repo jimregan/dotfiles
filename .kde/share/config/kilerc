@@ -22,6 +22,12 @@ Highlighting=LaTeX
 Indentation Mode=normal
 Mode=LaTeX
 
+[Document-Settings,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/appendixB.tex]
+Bookmarks=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [Document-Settings,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex]
 Bookmarks=
 Highlighting=LaTeX
@@ -41,6 +47,18 @@ Indentation Mode=normal
 Mode=LaTeX
 
 [Document-Settings,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex]
+Bookmarks=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[Document-Settings,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex]
+Bookmarks=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[Document-Settings,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex]
 Bookmarks=
 Highlighting=LaTeX
 Indentation Mode=normal
@@ -88,6 +106,12 @@ Highlighting=BibTeX
 Indentation Mode=normal
 Mode=BibTeX
 
+[Document-Settings,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf/main.tex]
+Bookmarks=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [Document-Settings,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/tcd-dissertation.cls]
 Bookmarks=
 Highlighting=LaTeX
@@ -126,21 +150,21 @@ View Style=Simple
 listViewIconSize=0
 
 [Files]
-LastDocument[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex
+LastDocument[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex
 lastDir[$e]=$HOME/
 
 [FilesOpenOnStart]
 DocsOpenOnStart0[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/refs.bib
 DocsOpenOnStart1[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex
-DocsOpenOnStart10[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex
+DocsOpenOnStart10[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex
 DocsOpenOnStart2[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex
-DocsOpenOnStart3[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.tex
-DocsOpenOnStart4[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
-DocsOpenOnStart5[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib
-DocsOpenOnStart6[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
-DocsOpenOnStart7[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib
-DocsOpenOnStart8[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex
-DocsOpenOnStart9[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex
+DocsOpenOnStart3[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
+DocsOpenOnStart4[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
+DocsOpenOnStart5[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib
+DocsOpenOnStart6[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex
+DocsOpenOnStart7[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex
+DocsOpenOnStart8[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex
+DocsOpenOnStart9[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex
 EncodingsOfDocsOpenOnStart0[$e]=UTF-8
 EncodingsOfDocsOpenOnStart1[$e]=UTF-8
 EncodingsOfDocsOpenOnStart10[$e]=UTF-8
@@ -166,8 +190,8 @@ imagemagick=true
 
 [KFileDialog Settings]
 Height 1080=522
-Recent Files[$e]=chapter1.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.tex,$HOME/Playing/Dissertation/old-report/9772166rptrthgwcdyn/main.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/refs.bib,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/tcd-dissertation.cls,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex
-Recent URLs[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9772166rptrthgwcdyn/,$HOME/Playing/,$HOME/Playing/Dissertation/old-report/9772166rptrthgwcdyn/,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/
+Recent Files[$e]=chapter1.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixB.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf/main.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.tex,$HOME/Playing/Dissertation/old-report/9772166rptrthgwcdyn/main.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex
+Recent URLs[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9772166rptrthgwcdyn/,$HOME/Playing/,$HOME/Playing/Dissertation/old-report/9772166rptrthgwcdyn/,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/,$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf/
 Width 1920=960
 
 [Kate Document Defaults]
@@ -253,7 +277,7 @@ Scroll Bar Mini Map=false
 Scroll Bar Mini Map All=false
 Scroll Bar Mini Map Width=60
 Scroll Past End=false
-Search Pattern History=Tied,gram
+Search Pattern History=Kevin,95,koehn,pitt,Tied,gram
 Search/Replace Flags=140
 Show Scrollbars=0
 Smart Copy Cut=false
@@ -277,7 +301,7 @@ Width 1920=1820
 
 [MainWindow]
 Height 1080=980
-State=AAAA/wAAAAD9AAAAAAAABxwAAAODAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAA=
+State=AAAA/wAAAAD9AAAAAAAABxwAAAODAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgEAAAHc/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1920=1820
 
@@ -298,30 +322,30 @@ dvipng=true
 KILE_LATEX_SAVE_DIR[$e]=file://$HOME/Documents/,$HOME/Documents
 
 [Recent Files]
-File1[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex
-File10[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex
-File2[$e]=$HOME/Playing/Dissertation/old-report/9772166rptrthgwcdyn/main.tex
-File3[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.tex
-File4[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
-File5[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib
-File6[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
-File7[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib
-File8[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex
-File9[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex
-Name1[$e]=chapter1.tex
-Name10[$e]=citinf.tex
-Name2[$e]=main.tex
-Name3[$e]=essay.tex
-Name4[$e]=dissertation.tex
-Name5[$e]=gawn.bib
-Name6[$e]=chapter2.tex
-Name7[$e]=essay.bib
-Name8[$e]=chapter3.tex
-Name9[$e]=appendixA.tex
+File1[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib
+File10[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixB.tex
+File2[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
+File3[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib
+File4[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex
+File5[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex
+File6[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex
+File7[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex
+File8[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex
+File9[$e]=$HOME/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf/main.tex
+Name1[$e]=gawn.bib
+Name10[$e]=appendixB.tex
+Name2[$e]=chapter2.tex
+Name3[$e]=essay.bib
+Name4[$e]=chapter3.tex
+Name5[$e]=appendixA.tex
+Name6[$e]=citinf.tex
+Name7[$e]=chapter5.tex
+Name8[$e]=chapter6.tex
+Name9[$e]=main.tex
 
 [Session Settings]
-Documents=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex
-Saved Documents=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/refs.bib,file:///home/jim/Playing/Dissertation/old-report/9772166rptrthgwcdyn/main.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/ack.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/tcd-dissertation.cls,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/ref.tex,file:///home/jim/Documents/chapter3a.tex,file:///usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/thesis.tex
+Documents=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex
+Saved Documents=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/citinf.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/refs.bib,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/appendixB.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf/main.tex,file:///home/jim/Playing/Dissertation/old-report/9772166rptrthgwcdyn/main.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/ack.tex,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/tcd-dissertation.cls,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/ref.tex,file:///home/jim/Documents/chapter3a.tex,file:///usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty,file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/thesis.tex
 
 [Show]
 BottomBarSize=175
@@ -1214,32 +1238,50 @@ JumpList=
 ViMarks=
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/appendixA.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=16
+CursorLine=18
+JumpList=
+ViMarks=
+
+[View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/appendixB.tex]
+CursorColumn=7
+CursorLine=1
 JumpList=
 ViMarks=
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter1.tex]
-CursorColumn=7
+CursorColumn=11
 CursorLine=340
 JumpList=
-ViMarks=
+ViMarks=.,0,0,[,0,0,],340,10
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex]
-CursorColumn=71
-CursorLine=278
+CursorColumn=105
+CursorLine=516
 JumpList=
-ViMarks=
+ViMarks=.,0,0,[,0,0,],522,76
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex]
+CursorColumn=56
+CursorLine=38
+JumpList=
+ViMarks=.,309,78,[,308,57,],309,78
+
+[View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex]
+CursorColumn=58
+CursorLine=17
+JumpList=
+ViMarks=.,17,50,[,17,46,],17,57
+
+[View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex]
 CursorColumn=0
-CursorLine=160
+CursorLine=30
 JumpList=
 ViMarks=
 
-[View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex]
-CursorColumn=1
-CursorLine=64
+[View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex]
+CursorColumn=0
+CursorLine=82
 JumpList=
 ViMarks=
 
@@ -1250,10 +1292,10 @@ JumpList=
 ViMarks=
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex]
-CursorColumn=0
-CursorLine=279
+CursorColumn=31
+CursorLine=89
 JumpList=
-ViMarks=
+ViMarks=.,0,0,[,0,0,],-1,-1
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/ref.tex]
 CursorColumn=0
@@ -1262,16 +1304,16 @@ JumpList=
 ViMarks=
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/refs.bib]
-CursorColumn=30
-CursorLine=698
+CursorColumn=0
+CursorLine=1001
 JumpList=
-ViMarks=
+ViMarks=.,0,0,[,0,0,],-1,-1
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.bib]
 CursorColumn=0
-CursorLine=56
+CursorLine=96
 JumpList=
-ViMarks=
+ViMarks=.,0,0,[,0,0,],647,0
 
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs/essay.tex]
 CursorColumn=21
@@ -1282,6 +1324,12 @@ ViMarks=
 [View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb/gawn.bib]
 CursorColumn=93
 CursorLine=142
+JumpList=
+ViMarks=
+
+[View-Settings,View=0,URL=file:///home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf/main.tex]
+CursorColumn=0
+CursorLine=22
 JumpList=
 ViMarks=
 

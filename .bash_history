@@ -1,255 +1,3 @@
-git add refs.bib tcd-dissertation.cls 
-cp /tmp/copynow/.gitignore .
-git add .gitignore 
-git commit -m "stuff I can push out now"
-git push origin newmaster 
-git push gh newmaster 
-git checkout wip 
-git merge newmaster 
-git status
-git push gh wip 
-grep donaill1977focloir *
-git status
-git branch
-git checkout master 
-git add refs.bib dissertation.tex 
-git commit -m more
-git push origin master
-make clean && make
-make
-make clean && make
-cd Playing/Dissertation/9879472fwnkgtfsztvt/
-git status
-git add chapter1.tex chapter2.tex refs.bib
-git commit -m update
-git add chapter4.tex
-git commit -m 'chrF for opennmt baseline'
-git push origin master
-git add chapter4.tex
-git commit -m 'meteor for opennmt baseline'
-find ~ -name 'wrap.pl'
-git add chapter4.tex
-git commit -m 'bleu - this is weird'
-git push origin master
-sudo apt-get install gitk
-gitk
-git diff
-git add chapter1.tex
-git commit -m 'might not use this quote'
-git diff
-clear
-git diff
-git add chapter4.tex
-git commit -m '2.0'
-make
-make clean && make
-git diff
-git add chapter1.tex refs.bib
-git commit -m more
-git diff
-make clean && make
-cd ..
-git clone https://github.com/jimregan/gramadanj.git
-cd gramadanj/
-git pull origin master
-git rm -r .settings/
-git commit -m 'remove eclipse files'
-git push origin master
-git pull origin master
-git rm LICENSE LICENSE.md 
-git rm -f LICENSE LICENSE.md 
-git push origin master 
-git pull origin master
-git stash
-git pull origin master
-vi LICENSE
-git add LICENSE
-git commit -m 'put it back the way it was'
-git push origin master 
-git rm LICENSE.md 
-git commit -m 'remove'
-git push origin master 
-mvn install
-less ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor.ga 
-less ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor.en 
-less ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor.ga 
-cd /tmp/
-ls sentences.xml ref.xml src.xml tgt.xml |zip ~/Playing/dissertation-data/onmt.trans.zip -@
-cd ~
-config status
-config add .wget-hsts .viminfo .scala_history .kde/share/config/kilerc 
-config add .wget-hsts .viminfo .scala_history .kde/share/config/kdeglobals .gitk .config/katevirc 
-config add .config/baloofilerc 
-config add .config/dconf/user .config/gtkrc*
-ls
-config status
-less .gitconfig 
-config add .config/katerc .config/kactivitymanagerdrc 
-config commit -m whatevs
-config push origin master
-cd ../IdeaProjects/
-cd dictionaryconverter/
-git branch
-git status
-git pull origin master
-git pull origin cur
-git commit -m add
-git add src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/IrishFSTConvert.scala 
-git commit -m 'whatever I was doing before those assholes cut the power'
-git pull origin cur
-git push origin cur
-git add src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/IrishFSTConvert.scala 
-git commit -m 'I think this is what I had done before those assholes cut the power'
-git add scripts/tags-ga.pl 
-git commit -m add
-git status
-git commit -m 'add'
-git add src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/IrishFSTConvert.scala src/test/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/IrishFSTConvertTest.scala 
-git commit -m more
-git add src/test/scala/ie/tcd/slscs/itut/RuleConverter/TrxProcTest.scala 
-git commit -m 'disable, I think this stuff is gone'
-git status
-sbt test
-find . -name '*scala'|xargs grep App
-scala
-git add scripts/tag-freqs 
-git rm scripts/tags-ga.pl 
-git rm -f scripts/tags-ga.pl 
-git commit -m blah
-vi scripts/tag-freqs 
-git diff scripts/tag-freqs 
-vi scripts/tag-freqs 
-git add scripts/tag-freqs 
-git commit -m trim
-vi scripts/tag-freqs 
-git add scripts/tag-freqs 
-git commit -m trim
-mvn "run Mapper /tmp/ian"
-mvn "run-main Mapper /tmp/ian"
-mvn "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper /tmp/ian"
-sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper /tmp/ian"
-cp /tmp/onmt-out ~/Playing/dissertation-data/
-ls /tmp/*xml
-cd ~/Playing/irishfst-1/
-ls
-less all-tags 
-cd ~/Playing/irishfst-1/
-less all-tags 
-less pairs.tsv.1 
-grep Cmc pairs.tsv.1 
-grep Pl pairs.tsv.1 
-grep Prep pairs.tsv.1 
-grep Pron+Prep pairs.tsv.1 
-grep Pron+Prep pairs.tsv.1 |grep Emph
-grep Pron+Prep pairs.tsv.1 
-grep Pron+Prep pairs.tsv.1 |wc
-grep Pron+Prep pairs.tsv.1 |less
-grep Pron+Prep pairs.tsv.1 |grep '-'
-grep CmpdNoGen pairs.tsv.1 
-grep Sbj pairs.tsv.1 
-grep Typo all-tags 
-grep +Typo pairs.tsv.1 
-grep Nm all-
-grep Nm all-tags 
-grep St all-
-grep St all-tags 
-grep Subj all-tags 
-grep Subj all-tags |grep -v PresS
-grep +Subj pairs.tsv.1 
-grep Card all-tags 
-grep Def all-tags 
-grep Num+Ord all-tags 
-grep Deg all-tags 
-grep +Deg pairs.tsv.1 
-grep Int all-tags 
-grep Its all-tags 
-grep Its pairs.tsv.1 
-grep Base all-tags 
-grep Verbal all-tags 
-grep Verbal all-tags |grep CC
-grep Verbal all-tags |grep -v CC
-grep Verbal all-tags |grep -v CC|awk '{print "                        \"" $0 "\","}'
-grep NStem all-tags 
-grep Var all-
-grep Var all-tags 
-grep +Var pairs.tsv.1 
-grep téigh+Verb+VTI+PastInd+Dep pairs.tsv.1 
-grep Var all-tags 
-grep Suf tags
-grep Suf all-tags 
-grep Suf pairs.tsv.1 
-grep Art tags
-grep Art all-tags 
-grep Subst tags
-grep Subst all-tags 
-grep Bar all-tags 
-grep Vb all-tags 
-grep Part+Vb pairs.tsv.1 
-grep +Ad all-tags 
-grep +Part+Ad pairs.tsv.1 
-grep Dir all-tags 
-grep Deg all-tags 
-grep Part+Deg pairs.tsv.1 
-grep Adj+Its pairs.tsv.1 
-grep Cmpl all-
-grep Cmpl all-tags 
-grep Cmpl pairs.tsv.1 
-grep '^nach+' pairs.tsv.1 
-grep Cp all-tags 
-grep Part+Cp+Rel pairs.tsv.1 
-less dis/gael-dis.rle 
-grep 'an+Part' pairs.tsv.1 
-grep 'nach+Part' pairs.tsv.1 
-less dis/gael-dis.rle 
-grep Direct pairs.tsv.1 
-grep Indirect pairs.tsv.1 
-grep Abr pairs.tsv.1 
-grep lena pairs.tsv.1 
-grep san pairs.tsv.1 
-grep 'san$' pairs.tsv.1 
-grep 'san$' pairs.tsv.1 |grep Prep
-grep +Prep+Art+Sg pairs.tsv.1 
-grep +Cop+Pres+Pron+Pers+3P+Sg+Masc+Art+Sg+Def+Subst+Noun+Sg pairs.tsv.1 
-grep +Cop+Pres+Pron+Pers+3P+Sg+Masc+Art+Sg+Def pairs.tsv.1 
-grep +Pron+Pers+3P+Sg+Masc+Art+Sg+Def pairs.tsv.1 
-grep +Pron+Pers+3P+Sg+Masc pairs.tsv.1 
-grep éard pairs.tsv.1 
-grep éard pairs.tsv.1 |grep Subst
-grep +Cop+Pres+Pron+Pers+3P+Sg+Masc+Art+Sg+Def+Subst+Noun+Sg pairs.tsv.1 
-grep +Det+Q+Art+Sg pairs.tsv.1 
-grep Pat all-
-grep Pat all-tags 
-grep Indirect all-tags 
-grep Deg all-tags 
-grep Cmpl all-tags 
-grep Op all-
-grep Op all-tags 
-grep Pro all-tags 
-grep Pro all-tags |grep -v Prop
-grep Pro all-tags |grep -v Prop|grep -v Pron
-grep +Part+Deg pairs.tsv.1 
-less dis/gael-dis.rle 
-grep +Prep+Deg pairs.tsv.1 
-cat pairs.tsv.1 |awk -F'\t' '($2 == "dá"){print}'
-grep Prep+Poss pairs.tsv.1 
-vi /tmp/preps
-cat /tmp/preps |awk '{print "                        \"" $1 "+" $2 "\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"mf\", \"pl\")))),"}
-cat /tmp/preps |awk '{print "                        \"" $1 "+" $2 "\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"mf\", \"pl\")))),"}'
-cat /tmp/preps|grep P3|grep Pl |awk '{print "                        \"" $1 "+" $2 "\\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"mf\", \"pl\")))),"}'
-cat /tmp/preps|grep 3P|grep Pl |awk '{print "                        \"" $1 "+" $2 "\\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"mf\", \"pl\")))),"}'
-cat /tmp/preps|grep 3P|grep Pl |awk '{print "                        \"" $1 "+" $2 "\\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"mf\", \"pl\")))),"}' >> prepsout
-cat /tmp/preps|grep 3P|grep Masc |awk '{print "                        \"" $1 "+" $2 "\\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"m\", \"sg\")))),"}' >> prepsout
-cat /tmp/preps|grep 3P|grep Fem |awk '{print "                        \"" $1 "+" $2 "\\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"f\", \"sg\")))),"}' >> prepsout
-sort /tmp/preps 
-sort prepsout 
-grep do+Prep+Poss+3P+Pl+Obj pairs.tsv.1 
-vi /tmp/preps 
-cat /tmp/preps |awk '{print "                        \"" $1 "+" $2 "\\t" $3 "\" -> JoinedEntry(\"" $3 "\", List(RHS(\"" $1 "\", List(\"pr\")), RHS(\"a\", List(\"det\", \"pos\", \"p3\", \"f\", \"sg\")))),"}' > prepsout 
-less prepsout 
-vi prepsout 
-rm prepsout 
-grep Subj pairs.tsv.1 
-grep Subj pairs.tsv.1 |grep -v PresSubj
 grep Sbj pairs.tsv.1 |grep -v PresSubj
 less all-tags 
 cat pairs.tsv.1 
@@ -1998,3 +1746,255 @@ git push origin master
 cd idea-IC-172.3317.76/
 ls
 bin/idea.sh 
+cat build.sbt 
+#sbt "run ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper 
+ls
+less adj
+#sbt "run ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
+sbt "run ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
+sbt "run Mapper adj"
+sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
+cp adj.dix ~/Playing/apertium-en-ga/dev/
+sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
+less adj.dix 
+sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
+less adj.dix 
+sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
+less adj.dix 
+sbt "run-main ie.tcd.slscs.itut.DictionaryConverter.dix.Mapper adj"
+less adj.dix 
+cp ~/en-ga-rules example/en-ga/en-ga.rules.txt
+git add example/en-ga/en-ga.rules.txt
+git commit -m 'start of conversion'
+cp ~/en-ga-rules example/en-ga/en-ga.rules.txt
+git diff
+git add src/main/scala/ie/tcd/slscs/itut/RuleConverter/RuleHolder.scala .idea/modules/dictionaryconverter.iml example/en-ga/en-ga.rules.txt
+git commit -m more
+find . -name '*.bib'|xargs grep Moses
+git status
+git log
+git push origin master
+git status
+git push origin master
+cd ../IdeaProjects/dictionaryconverter/
+git status
+git branch
+git push origin still-in-progress 
+sbt test
+ls example/en-ga/ga.attribs.txt 
+cat example/en-ga/ga.attribs.txt 
+git rm example/en-ga/ga.attribs.txt 
+cat example/en-ga/en.attribs_chunk.txt 
+git rm example/en-ga/en.attribs_chunk.txt 
+git status
+cat example/en-ga/en.attribs.txt 
+git rm example/en-ga/en.attribs.txt 
+ls example/en-ga/
+cat example/en-ga/en.attrib-seq.txt 
+git rm example/en-ga/en.attrib-seq.txt 
+cat example/en-ga/ga.attrib-seq.txt 
+git rm example/en-ga/ga.attrib-seq.txt 
+cat example/en-ga/ga.attribs_chunk.txt 
+git rm example/en-ga/ga.attribs_chunk.txt 
+git status
+git add src/main/scala/ie/tcd/slscs/itut/RuleConverter/Irish.scala 
+git commit -m 'simplify: put everything into code. Because I do not have the time'
+git log
+git revert fc156ded8707c98622b0699c4f6223009b381276
+vi example/en-ga/ga.attribs.txt 
+git add example/en-ga/ga.attribs.txt 
+git commit -m 
+git commit -m ''
+git commit -m  ' ' 
+git commit -m  '_' 
+less ~/Playing/apertium-en-es/apertium-en-es.en-es.t1x 
+git checkout master 
+git stash 
+git checkout master 
+git pull origin master 
+git branch -D still-in-progress 
+cd ..
+ls
+cd gramadanj/
+git status
+git branch
+git push origin master 
+git pull origin master
+git push origin master 
+cd ../
+ls
+cd jngramtool/
+git pull origin master
+git push origin master 
+git branch
+cd ..
+ls
+cd duckegg/
+git branch 
+git push origin master
+git pull origin master
+git log
+git checkout gaois 
+git log
+git log|less
+git push origin gaois 
+git push origin master
+git push origin still-in-progress 
+sbt console
+tail ~/.scala_history 
+tail -n 30 ~/.scala_history 
+sbt console
+cd idea-IC-172.3317.76/
+bin/idea.sh 
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
+clear
+cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
+clear
+cd ../msf-asr/
+cd scripts/
+ls
+grep '=>' normalise.pl 
+grep '=>' normalise.pl |grep -v '#'
+grep '=>' normalise.pl |grep -v '#'|grep -v "'"
+grep '=>' normalise.pl |grep -v '#'|grep -v "'"|awk -F'"' '{print $2 "\t" $4}'
+grep '=>' normalise.pl |grep -v '#'|grep -v "'"|awk -F'"' '{print $2 "\t" $4}'|sort|uniq
+grep '=>' normalise.pl |grep -v '#'|grep -v "'"|awk -F'"' '{print $2 "\t" $4}'|sort|uniq > normalisations.tsv
+grep '=>' normalise.pl |grep -v '#'|grep -v '"'|awk -F"'" '{print $2 "\t" $4}'|sort|uniq 
+grep '=>' normalise.pl |grep -v '#'|grep -v '"'|awk -F"'" '{print $2 "\t" $4}'|sort|uniq >> normalisations.tsv 
+cat normalisations.tsv |sort|uniq > tmp
+mv tmp normalisations.tsv 
+git add normalisations.tsv 
+wc -l normalisations.tsv 
+less normalisations.tsv 
+less ~/bin/ga-tok 
+ls normalisations.tsv 
+ls
+cd ..
+ls
+cat MSF_chapter_1.txt.norm | perl scripts/normalise.pl 
+git status
+git add scripts/normalise.pl
+git commit -m 'separate normalisations from script'
+git push origin master
+git status
+ls
+ls caighdean/
+cat MSF_chapter_*
+cat caighdean/MSF_chapter_*
+cat caighdean/MSF_chapter_*|sort|uniq
+cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '{print $1 "\t" $2}'
+cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}'
+cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}'|less
+cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}' > scripts/normalisations.tocheck
+wc -l scripts/normalisations.tocheck 
+git add scripts/normalisations.tocheck 
+git commit -m 'norms todo'
+cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || echo $i >> scripts/normalisations.tocheck.f;done
+mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
+git diff
+less scripts/normalisations.tocheck 
+wc -l scripts/normalisations.tocheck 
+git stash
+cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || printf("%s"\n",$i) >> scripts/normalisations.tocheck.f;done
+cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || printf "%s\n",$i >> scripts/normalisations.tocheck.f;done
+git diff
+less scripts/normalisations.tsv 
+less scripts/normalisations.tocheck
+git diff
+less scripts/normalisations.tocheck | perl scripts/filter-norm.pl 
+less scripts/normalisations.tocheck | perl scripts/filter-norm.pl > scripts/normalisations.tocheck.f 
+mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
+git diff
+git stash
+less scripts/normalisations.tocheck | perl scripts/filter-norm.pl > scripts/normalisations.tocheck.f 
+mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
+git diff
+git add scripts/normalisations.tocheck 
+git commit -m 'remove dups'
+git push origin master
+git diff
+vi scripts/normalisations.tsv 
+git diff
+git add scripts/normalisations.tocheck 
+git add scripts/normalisations.tsv 
+git commit -m 'norm more'
+git push origin master
+ls
+ls raw-text/
+less prontodo 
+less ga-std.pl 
+ls caighdean/
+cat raw-text/MSF_chapter_10.txt |wc
+cat raw-text/MSF_chapter_10.txt |perl ga-std.pl 
+cat raw-text/MSF_chapter_10.txt |perl ga-std.pl ga > caighdean/MSF_chapter_10.txt
+less caighdean/MSF_chapter_10.txt
+wc -l raw-text/*
+cat raw-text/MSF_chapter_12.txt |perl ga-std.pl ga > caighdean/MSF_chapter_12.txt
+cat raw-text/MSF_chapter_13.txt |perl ga-std.pl ga > caighdean/MSF_chapter_13.txt
+cat raw-text/MSF_chapter_30.txt |perl ga-std.pl ga > caighdean/MSF_chapter_30.txt
+cat raw-text/MSF_chapter_31.txt |perl ga-std.pl ga > caighdean/MSF_chapter_31.txt
+cat raw-text/MSF_chapter_32.txt |perl ga-std.pl ga > caighdean/MSF_chapter_32.txt
+cat raw-text/MSF_chapter_23.txt |perl ga-std.pl ga > caighdean/MSF_chapter_23.txt
+cat raw-text/MSF_chapter_16.txt |perl ga-std.pl ga > caighdean/MSF_chapter_16.txt
+less caighdean/MSF_chapter_12.txt 
+rm caighdean/MSF_chapter_12.txt 
+ls -al caighdean/
+grep MAGHCHROMTHA raw-text/*

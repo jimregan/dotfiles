@@ -10,7 +10,7 @@ Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
 
 [amarok]
-_k_friendly_name=amarok
+_k_friendly_name=Amarok
 decreaseVolume=,Meta+-,Decrease Volume
 increaseVolume=Meta++,Meta++,Increase Volume
 loveTrack=Meta+L,Meta+L,Last.fm: Love Current Track
@@ -86,7 +86,7 @@ Lock Session=Ctrl+Alt+L\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
-_k_friendly_name=ksmserver
+_k_friendly_name=System Settings
 
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
@@ -237,7 +237,7 @@ view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
-_k_friendly_name=mediacontrol
+_k_friendly_name=Media Controller
 nextmedia=,Media Next,Media playback next
 playpausemedia=,Media Play,Play/Pause media playback
 previousmedia=,Media Previous,Media playback previous

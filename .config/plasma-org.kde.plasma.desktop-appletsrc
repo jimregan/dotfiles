@@ -51,6 +51,13 @@ plugin=org.kde.plasma.pager
 immutability=1
 plugin=org.kde.plasma.taskmanager
 
+[Containments][1][Applets][4][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][Applets][4][Configuration][General]
+showToolTips=false
+
 [Containments][1][Applets][5]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -62,6 +69,10 @@ location=4
 [Containments][1][Applets][5][Configuration][Containments][12][Applets][36]
 immutability=1
 plugin=org.kde.plasma.volume
+
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][36][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][1][Applets][5][Configuration][Containments][12][Applets][37]
 immutability=1
