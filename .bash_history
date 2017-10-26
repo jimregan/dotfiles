@@ -1,11 +1,3 @@
-cd mosesdecoder/
-find . -name '*.perl'
-find . -name '*.perl'|grep wrap
-find . -name '*.perl'|grep bleu
-
-less scripts/ems/support/
-find . -name '*.perl'|grep xml
-less scripts/ems/support/create-xml.perl 
 perl scripts/ems/support/create-xml.perl 
 less scripts/ems/support/create-xml.perl 
 cat /tmp/iris_eval_set.tok.lc.en| scripts/ems/support/create-xml.perl s 
@@ -1998,3 +1990,11 @@ convert ~/Downloads/unnamed.jpg ~/Downloads/unnamed.xpm
 less ~/Downloads/unnamed.xpm 
 ls -al ~/Downloads/unnamed.xpm 
 ls -al ~/Downloads/unnamed.jpg 
+cd ..
+mkdir icuplay
+cd icuplay/
+sbt init
+ls
+less ~/IdeaProjects/dictionaryconverter/build.sbt 
+vi build.sbt
+sbt console
