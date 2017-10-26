@@ -1,9 +1,3 @@
-find . -name 'screen*' |grep -v 'xmp$'
-ls
-less screenshot_20171011-121620.png.xmp
-nohup sh ~/tmp/wrap-exif.sh &
-tail -f /tmp/exif.out 
-find . -name 'screen*' |grep -v 'xmp$' > /tmp/listing
 for i in TAGGED/*xmp;do echo $i; grep People $i;done
 for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|uniq;done
 for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|grep -v '|'|uniq;done
@@ -1998,3 +1992,9 @@ git status
 git push origin master
 kwin --replace
 vi open-tabs
+cd ~/Downloads/
+ls *sh
+sh netbeans-8.2-cpp-linux-x64.sh 
+cd ~/netbeans-8.2/
+ls
+bin/netbeans 
