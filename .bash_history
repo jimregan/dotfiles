@@ -1,192 +1,3 @@
-cd ..
-ls
-ls bin/
-less scripts/demo-word.sh 
-#word2vec -train $TEXT_DATA -output $VECTOR_DATA -cbow 0 -size 200 -window 5 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1
-word2vec 
-bin/word
-bin/word2vec 
-bin/word2vec -train /tmp/merged -debug 2 -output gavec.txt -size 200 -window 5 -threads 16 -binary 0 -negative 5 -sample 1e-5 -cbow 0
-less gavec.txt 
-cp gavec.txt /tmp/
-cd ../brown-cluster/
-ls
-./wcluster 
-./wcluster  text /tmp/merged featvec ga.brown
-./wcluster  -text /tmp/merged -featvec ga.brown
-less basic/opt.cc 
-ls
-less wcluster.cc 
-./wcluster  -text /tmp/merged -featvec ga.brown
-./wcluster  --text /tmp/merged --c 50
-less merged-c50-p1.out/log 
-less merged-c50-p1.out/collocs 
-less merged-c50-p1.out/paths 
-less merged-c50-p1.out/map 
-less merged-c50-p1.out/paths 
-cp merged-c50-p1.out/paths /tmp/brown-50c.txt
-less merged-c50-p1.out/collocs 
-cp  merged-c50-p1.out/collocs /tmp/brown-50c-collocs.txt
-less merged-c50-p1.out/map 
-less /tmp/brown-50c.txt 
-less /tmp/brown-50c-collocs.txt 
-less merged-c50-p1.out/map 
-less merged-c50-p1.out/paths 
-less merged-c50-p1.out/map 
-cp merged-c50-p1.out/map /tmp/
-less merged-c50-p1.out/map 
-less merged-c50-p1.out/paths 
-ls merged-c50-p1.out/* |zip /tmp/brown.zip -@
-less merged-c50-p1.out/collocs 
-less merged-c50-p1.out/map 
-less merged-c50-p1.out/paths 
-less merged-c50-p1.out/map 
-less merged-c50-p1.out/collocs 
-less merged-c50-p1.out/map 
-less merged-c50-p1.out/paths 
-less merged-c50-p1.out/map 
-less merged-c50-p1.out/paths 
-vim -b merged-c50-p1.out/paths 
-tail -f /tmp/apache-opennlp-1.8.1/gawiki.ner 
-ssh jimregan
-cd ../ainm-ner-corpus/
-ls
-vi máire_ann_nic_reachtain.txt
-ls
-less ner-plain.txt 
-wget https://dumps.wikimedia.org/plwiktionary/20170901/plwiktionary-20170901-pages-articles.xml.bz2
-bzless plwiktionary-20170901-pages-articles.xml.bz2 
-bzcat plwiktionary-20170901-pages-articles.xml.bz2 |grep '{{IPA'
-bzless plwiktionary-20170901-pages-articles.xml.bz2 
-bzcat plwiktionary-20170901-pages-articles.xml.bz2 |grep '=='
-bzcat plwiktionary-20170901-pages-articles.xml.bz2 |grep '=='|grep polski
-bzcat plwiktionary-20170901-pages-articles.xml.bz2 |grep '{{ortograficzny|'
-bzcat plwiktionary-20170901-pages-articles.xml.bz2 |grep '{{spolszczona}}'
-vi ../pron-data/additions-ipa.tsv 
-cd ..
-git status
-git add pron-data/additions-ipa.tsv 
-git commit -m 'komedia ludzka'
-git push origin master
-git add fix-english.pl 
-git commit -m 'tweak wiktionary'
-git push origin master
-less dziewczynka-z-zapalkami.txt 
-vi text/dziewczynka-z-zapalkami.txt 
-vi pron-data/additions-ipa.tsv 
-git add pron-data/additions-ipa.tsv 
-git commit -m 'more Balzac'
-ls
-git add testnum.pl 
-git commit -m 'start of number to text'
-perl testnum.pl 
-perl -e '$a = "123"; print substr($a, 0, length($a) % 3)'
-perl -e '$a = "123"; print substr($a, 0, length($a) % 3);'
-perl -e '$a = "1123"; print substr($a, 0, length($a) % 3);'
-perl -e '$a = "1123"; print substr($a, length($a) % 3);'
-perl testnum.pl 
-perl -e 'print length('')'
-perl -e 'print length("");'
-perl testnum.pl 
-perl -e '$a = "111123"; print substr($a, 0, length($a) % 3);'
-perl -e '$a = "111123"; print substr($a, length($a) % 3);'
-perl testnum.pl 
-git add testnum.pl 
-git commit -m 'extend. not convinced of the nn3nnn being trzy tysiące though'
-git commit --amend
-perl testnum.pl 
-git add testnum.pl 
-\git commit -m 'fix bug with 
-perl testnum.pl 
-git commit -m 'fix bug with empty parts'
-git push origin master
-perl testnum.pl 
-git add testnum.pl NumberNorm.pm 
-git commit -m 'move to module'
-git push origin master
-git add norm-text.pl 
-git commit -m 'Rozdział sometimes written all caps; sometimes the translator is mentioned'
-git status
-less test.pl 
-rm test.pl 
-perl testnum.pl 
-rm test.pl 
-perl testnum.pl 
-git add testnum.pl NumberNorm.pm 
-git commit -m 'limited inflector for ordinals, mostly for years, etc.'
-git push origin master
-cd /tmp/
-unzip ~/Downloads/apache-opennlp-1.8.1-bin.zip 
-cd  apache-opennlp-1.8.1/
-wget https://github.com/jimregan/ainm-ner-corpus/releases/download/v0.1/ga-ner-loc.bin.zip
-wget https://github.com/jimregan/ainm-ner-corpus/releases/download/v0.1/ga-ner-person.bin.zip
-./bin/opennlp
-./bin/opennlp TokenNameFinderEvaluator
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person.bin.zip -data ~/Playing/ainm-ner-corpus/máire_ann_nic_reachtain.txt 
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-loc.bin.zip -data ~/Playing/ainm-ner-corpus/máire_ann_nic_reachtain.txt 
-unzip -l ga-ner-loc.bin.zip 
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-loc.bin.zip -model ga-ner-person.bin.zip -data ~/Playing/ainm-ner-corpus/máire_ann_nic_reachtain.txt 
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-loc.bin.zip -nameTypes location -data ~/Playing/ainm-ner-corpus/máire_ann_nic_reachtain.txt 
-vi tstdt
-./bin/opennlp TokenNameFinder
-./bin/opennlp TokenNameFinder ga-ner-person.bin.zip ga-ner-loc.bin.zip < tstdt 
-bin/opennlp
-bin/opennlp SentenceDetector
-bin/opennlp SentenceDetector ~/Playing/ainm-ner-corpus/src/main/resources/ie/tcd/slscs/itut/AinmNerCorpus/ga-sent.bin < ../gawiki.txt > gawiki.sent
-vi gawiki.sent 
-:q
-bin/opennlp 
-bin/opennlp TokenizerME ~/Playing/ainm-ner-corpus/src/main/resources/ie/tcd/slscs/itut/AinmNerCorpus/ga-token.bin < gawiki.sent > gawiki.tok
-vi gawiki.tok 
-:q
-mv gawiki.tok ..
-<generators>
-vi featgen.xml
-cp ../gavec.txt .
-cp ../brown-50c.txt .
-vi featgen.xml
-bin/opennlp TokenNameFinderTrainer
-#bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/
-less ~/Playing/ainm-ner-corpus/ainm.txt 
-less ~/Playing/ainm-ner-corpus/all-ner.txt 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-cp ../brown-50c-collocs.txt .
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-cp ../brown-50c-collocs.txt .
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-cp ../brown-50c-collocs.txt .
-vi featgen.xml 
-unzip ../brown.zip 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-vi featgen.xml 
-ls merged-c50-p1.out/
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-vi featgen.xml 
-ls
-less brown-50c.txt 
-cat brown-50c.txt |perl -ane 'my @t=split/\t/;if ($t[2] !~ /[0-9]+);print'
-cat brown-50c.txt |perl -ane 'my @t=split/\t/;if ($t[2] !~ /[0-9]+/);print'
-cat brown-50c.txt |perl -ane 'my @t=split/\t/;if ($t[2] !~ /[0-9]+/){print}'
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-vi featgen.xml 
-cat brown-50c.txt |awk -F'\t' '{print $2 "\t" $1 "\t" $3}'
-cat brown-50c.txt |awk -F'\t' '{print $2 "\t" $1 "\t" $3}' > brown-redone.txt
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-cat brown-50c.txt |awk -F'\t' '{print $2 "\t" $1 }' > brown-redone.txt
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-vi featgen.xml 
-cat brown-50c.txt |awk -F'\t' '{print $2 "\t" $1 "\t" $3}' > brown-redone.txt
-ls
 unzip -l ga-ner-loc.bin.zip 
 mkdir tmp
 cd tmp/
@@ -1998,3 +1809,192 @@ less cstr_pl_lex.scm
 ls
 less cstr_pl_l
 less cstr_pl_lts.scm 
+cd tm
+cd ~/tmp/
+ls
+cd foo/
+ls
+cd ..
+ls
+cd bar/
+ls
+less mrg 
+grep TAGGED/screenshot_20170812-161732.png mrg 
+grep file: mrg 
+#grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#
+ls /home/jim/Pictures/foo/
+#grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#/home/jim/Pictures/
+grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#/home/jim/Pictures/foo/'); rm $f;done
+grep file: mrg |while read i;do f=$(echo $i|sed -e 's#file:/tmp/sshts/#/home/jim/Pictures/foo/#'); rm $f;done
+find /home/jim/Pictures/ -name 'screenshot_20170815-202731.png'
+less mrg 
+ls
+find . -type f
+ls ../sync/
+less ../sync/exif-20171019-1.xml 
+sh ../wrap-exif.sh 
+vi /tmp//exif.out 
+mv  /tmp//exif.out  ../sync/exif-20171019-3.xml
+ls
+vi tospid
+tail -f fash-rdf-links 
+vi tospid 
+tail fash-rdf-links 
+less /tmp/postimgin 
+grep https://postimg.org/gallery/w7rvwqt8/ /tmp/postimgin 
+grep https://postimg.org/gallery/w7rvwqt8 /tmp/postimgin 
+grep w7rvwqt8 /tmp/postimgin 
+vi tospid 
+tail fash-rdf-links 
+vi tospid 
+vi /tmp/oops
+cat /tmp/oops
+cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##'
+cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##'|wc
+#cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##' > /tmp/postimgin 
+tail -f fash-rdf-links 
+less /tmp/postimgin 
+cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##' > /tmp/postimgin2
+tail -f fash-rdf-links 
+less /tmp/postimgin 
+tail -f fash-rdf-links 
+less /tmp/postimgin 
+vi /tmp/postimgin 
+less /tmp/postimgin2
+vi tospid 
+cd /tmp/asd
+ls
+tail -f inp.log 
+wc -l inp
+find /home/jim/Pictures/foo -name 'screen*'
+find /home/jim/Pictures/foo -name 'screen*' |while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep $f inp || echo $i >> tocopy;done
+less tocopy 
+rm tocopy 
+find /home/jim/Pictures/s-shots/ -name 'screen*' |while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep $f inp || echo $i >> tocopy;done
+cat toc
+ls
+rm nohup.out 
+tail -f inp.log 
+tail -f ~/tmp/sync/bhashc-20171019-3.tsv
+tail -f ~/tmp/sync/bhashc-20171019-3.tsv 
+cd |-
+cd -
+less ../sync/bhashc-20171019-1
+less ../sync/bhashc-20171019-1.tsv 
+less ../sync/bhashc-20171019-2.tsv 
+tail -f mrgs 
+cat mrgs |grep -v '^#'
+cat mrgs |grep -v '^#'|awk '{print $NF}'
+mv mrgs fomrg
+tail -f mrgs 
+cat mrgs |perl ../fdupes-proc.pl 
+less ../sync/byte-for-byte-identical-20171019-3.nt 
+cat mrgs |perl ../fdupes-proc.pl e >> ../sync/byte-for-byte-identical-20171019-4.nt
+less ../sync/byte-for-byte-identical-20171019-4.nt
+grep file: mrgs 
+less ../sync/byte-for-byte-identical-20171019-4.nt
+vi /tmp/postimgin
+vi tospid 
+tail -f /tmp/asd/inp.log 
+cat mrgr |perl ../fdupes-proc.pl e >> ../sync/byte-for-byte-identical-20171019-5.nt
+grep 'file:' ../sync/byte-for-byte-identical-20171019-5.nt
+grep 'file:' ../sync/byte-for-byte-identical-20171019-5.nt|wc
+ls ~/Pictures/foo/copy/
+ls ~/Pictures/foo/copy/|wc
+ls
+less mrgs 
+grep http mrgs 
+grep http mrgs |sed -e 's
+grep http mrgs |sed -e 's#https://##'
+grep http mrgs |sed -e 's#https://##'|grep http
+grep http mrgs |sed -e 's#https://##'|while read i;do rm $i;done
+ls
+find scontent-lh* -type f
+vi /tmp/regrab
+grep http mrgs |sed -e 's#https://##'|while read i;do echo rm $i;done
+grep http mrgs|grep -v scontent-lh |sed -e 's#https://##'|while read i;do echo rm $i;done
+grep http mrgs|grep -v scontent-lh |sed -e 's#https://##'|while read i;do rm $i;done
+ls
+find s1.postimg.org -type f
+find i.imgur.com -type f
+find i.imgur.com -type f|while read i;do grep $i mrgs ;done
+find i.imgur.com -type f|while read i;do grep $i mrgs && rm $i ;done
+find s1.postimg.org -type f|while read i;do grep $i mrgs && rm $i ;done
+find s1.postimg.org -type f|while read i;do grep $i mrgr && rm $i ;done
+find s1.postimg.org -type f
+rm -rf s1.postimg.org/
+find i.imgur.com/ -type f
+rm -rf i.imgur.com/
+ls
+find preview.ibb.co -type f|while read i;do grep $i mrgr && rm $i ;done
+find preview.ibb.co -type f|while read i;do grep $i mrgs && rm $i ;done
+find preview.ibb.co -type f
+rm -rf preview.ibb.co/
+ls
+rm mrg
+grep file: mrgs
+grep file: mrgs|sed -e 's#file:/tmp/sshts/##'
+grep file: mrgs|sed -e 's#file:/tmp/sshts/##'|while read i;do rm ~/Pictures/foo/$i;done
+grep file: mrgs|sed -e 's#file:/tmp/sshts/##' > /tmp/delme
+cd ~/Pictures/foo/
+find . -name 'screen*'
+find . -name 'screen*'|while read i;do grep $i /tmp/delme && rm $i;done
+less /tmp/delme 
+find . -name 'screen*'|sed -e 's/\.\///'|while read i;do grep $i /tmp/delme && rm $i;done
+rm -rf copy/
+ls
+rm nohup.out 
+rm xa*
+. ~/tmp/sourceme 
+rmemptydir 
+ls
+filtfind 
+rm -rf broken/
+ls
+cd ../s-shots/
+find . -name 'screen*'|sed -e 's/\.\///'|while read i;do grep $i /tmp/delme && rm $i;done
+ls
+grep creenshot_20171021-225821.png /tmp/drilink
+grep creenshot_20171021-225821.png /tmp/delme 
+find . -name 'screen*'|sed -e 's/\.\///'|while read i;do grep -i $i /tmp/delme && rm $i;done
+find . -name 'screen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme && rm $i;done
+find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme && rm $i;done
+ls
+rm *xmp
+ls
+cd -
+find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme && rm $i;done
+rmemptydir 
+ls
+filtfind |wc
+find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme2 && rm $i;done
+ls
+rmemptydir 
+ls
+filtfind 
+filtfind |wc
+find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep -i $f /tmp/delme2 && rm $i;done
+find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep -i $f /tmp/delme && rm $i;done
+rmemptydir 
+ls
+ls ~/tmp/foo/
+cd ~/tmp/foo/
+ls
+for i in *;do grep $i /tmp/delme && rm $i;done
+ls
+for i in *;do grep $i /tmp/delme2 && rm $i;done
+ls
+for i in *;do f=$(echo $i|sed -e 's/png$/jpg/); grep $f /tmp/delme2 && rm $i;done
+for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep $f /tmp/delme2 && rm $i;done
+ls
+mv * ~/Pictures/foo/
+for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep $f /tmp/delme && rm $i;done
+cd ~/Pictures/foo/
+for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep $f /tmp/delme && rm $i;done
+ls
+for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep -i $f /tmp/delme && rm $i;done
+grep creenshot_20170904-003120 /tmp/delme
+grep creenshot_20170904-003120 /tmp/delme2
+ls
+for i in *;do convert $i $i.jpg;done
+ls
