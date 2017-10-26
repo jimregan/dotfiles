@@ -19,8 +19,8 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=interchunk.dtd,file://$HOME/practice/trie-node.h,file://$HOME/sru-bw-gpu.py,file://$HOME/sru-bw-cuda.c,file://$HOME/nematus-gru.py,file:///tmp/natl,file:///tmp/nattop,file:///tmp/natr,file://$HOME/Playing/World/autodesc/www/js/short_autodesc.js,file://$HOME/Playing/World/autodesc/www/js/auto_long_desc.js,file://$HOME/Playing/msf-asr/scripts/abair-xml-extract.pl,file://$HOME/Playing/msf-asr/scripts/normalisations.tsv,file://$HOME/Playing/msf-asr/scripts/filter-norm.pl,file://$HOME/Playing/msf-asr/scripts/normalisations.tocheck,file://$HOME/Playing/msf-asr/scripts/normalise.pl,file://$HOME/Playing/msf-asr/gaipa-to-arpabet.pl
-Recent URLs[$e]=file://$HOME/Playing/msf-asr/,file://$HOME/Playing/msf-asr/pron/,file://$HOME/Playing/,file://$HOME/Playing/msf-asr/scripts/,file://$HOME/Playing/World/autodesc/www/js/,file:///tmp/,file://$HOME/practice/
+Recent Files[$e]=interchunk.dtd,file://$HOME/crash-scratch,file://$HOME/practice/trie-node.h,file://$HOME/sru-bw-gpu.py,file://$HOME/sru-bw-cuda.c,file://$HOME/nematus-gru.py,file:///tmp/natl,file:///tmp/nattop,file:///tmp/natr,file://$HOME/Playing/World/autodesc/www/js/short_autodesc.js,file://$HOME/Playing/World/autodesc/www/js/auto_long_desc.js,file://$HOME/Playing/msf-asr/scripts/abair-xml-extract.pl,file://$HOME/Playing/msf-asr/scripts/normalisations.tsv,file://$HOME/Playing/msf-asr/scripts/filter-norm.pl,file://$HOME/Playing/msf-asr/scripts/normalisations.tocheck,file://$HOME/Playing/msf-asr/scripts/normalise.pl
+Recent URLs[$e]=file://$HOME/Playing/msf-asr/pron/,file://$HOME/Playing/,file://$HOME/Playing/msf-asr/scripts/,file://$HOME/Playing/World/autodesc/www/js/,file:///tmp/,file://$HOME/practice/
 
 [KTextEditor::Search]
 Search History=nper,log10,setabc,minus_pi_t,sample,[,h-éagcóra,Art,Subj,braille,don,"Foreign": "yes",=Voc
