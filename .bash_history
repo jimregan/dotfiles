@@ -1,6 +1,3 @@
-cat example/en-ga/ga.attribs.txt 
-git rm example/en-ga/ga.attribs.txt 
-cat example/en-ga/en.attribs_chunk.txt 
 git rm example/en-ga/en.attribs_chunk.txt 
 git status
 cat example/en-ga/en.attribs.txt 
@@ -1998,3 +1995,6 @@ ls|grep scree
 ls|grep scree|while read i;do grep $i /tmp/alreadyhere ;done
 #ls|grep scree|while read i;do grep $i /tmp/alreadyhere || cp $i  ;done
 ls|grep scree|while read i;do grep $i /tmp/alreadyhere || cp $i /home/jim/Pictures/foo/ ;done
+grep Aachen polimorf.tab 
+grep aachen polimorf.tab 
+grep aache polimorf.tab 
