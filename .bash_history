@@ -1,155 +1,3 @@
-mv /home/jim/Pictures/foo/screenshot_20170808-000109.png* yuliyabb/
-mv /home/jim/Pictures/foo/screenshot_20170808-000104.png* yuliyabb/
-mkdir fernandafiuzac
-mv /home/jim/Pictures/foo/screenshot_20170808-120723.png* fernandafiuzac/
-mv /home/jim/Pictures/foo/screenshot_20170808-120727.png* fernandafiuzac/
-mv /home/jim/Pictures/foo/screenshot_20170808-160449.png* ars.anastasia/
-mv /home/jim/Pictures/foo/screenshot_20170808-220325.png* nadiyamol/
-mv /home/jim/Pictures/foo/screenshot_20170808-220333.png* sasha_raymer/
-mv /home/jim/Pictures/foo/screenshot_20170808-220340.png* zuueva/
-mv /home/jim/Pictures/foo/screenshot_20170810-090746.png* andziathere/
-mv /home/jim/Pictures/foo/screenshot_20170810-091840.png* maria_domark/
-mv /home/jim/Pictures/foo/screenshot_20170810-091950.png* ___love.me__/
-mv /home/jim/Pictures/foo/screenshot_20170810-091959.png* ___love.me__/
-mkdir bellaheathcote
-mv /home/jim/Pictures/foo/screenshot_20171011-120934.png* bellaheathcote/
-mkdir zuzannabrzezinska
-mv /home/jim/Pictures/foo/screenshot_20171011-121023.png* zuzannabrzezinska/
-mv /home/jim/Pictures/foo/screenshot_20171011-121031.png* zuzannabrzezinska/
-mkdir aniu_ta
-mkdir alyukovaaa
-mkdir geegentle
-mkdir y_gaar
-mkdir sandrapodbielska
-mv /home/jim/Pictures/foo/screenshot_20171010-204520.png* sandrapodbielska/
-mkdir diana_dryn
-mkdir gayana_model
-mkdir piskorekatarzyna
-mkdir jagoda_urban
-mkdir luchkina.as
-mkdir angel.lovett
-mkdir elaina_judithh
-cd broken/
-for i in *png;do convert $i $i.jpg;done
-ls
-ls *png
-ls *png > /tmp/broken-list
-scp /tmp/broken-list jimregan:/tmp
-ls
-cd ..
-ls
-mv natalya.talya/paulinye/ .
-mkdir _alina3333
-mkdir mariya_istomina
-mkdir tsvet4
-mkdir xenia92k
-ls
-mkdir natka131
-mkdir mohini_amrita
-file:///home/jim/Pictures/foo/screenshot_20171010-164725.png
-file:///home/jim/Pictures/foo/screenshot_20171010-164731.png
-file:///home/jim/Pictures/foo/screenshot_20171010-164737.png
-file:///home/jim/Pictures/foo/screenshot_20171010-164719.png
-file:///home/jim/Pictures/foo/screenshot_20171010-164653.png
-file:///home/jim/Pictures/foo/screenshot_20171010-164646.png
-vi /tmp/files
-cat /tmp/files |sed -e 's#file://##'
-mv $(cat /tmp/files |sed -e 's#file://##') mohini_amrita/
-ls mohini_amrita/
-tesseract 
-tesseract -l eng
-less $PWD/.kde/share/apps/konsole
-less $HOME/.kde/share/apps/konsole
-config status
-mv /home/jim/Pictures/foo/screenshot_20170811-223908.png*  ___love.me__/
-mv /home/jim/Pictures/foo/screenshot_20170812-140256.png* karolina_pisarek/
-#mv /home/jim/Pictures/foo/screenshot_20170812-140307.png* /home/jim/Pictures/foo/screenshot_20170812-140317.png* gos
-mkdir gosialeitner
-mv /home/jim/Pictures/foo/screenshot_20170812-140307.png* /home/jim/Pictures/foo/screenshot_20170812-140317.png* gosialeitner/
-mv /home/jim/Pictures/foo/screenshot_20170812-152825.png* /home/jim/Pictures/foo/screenshot_20170812-152832.png* /home/jim/Pictures/foo/screenshot_20170812-152841.png* cyxoemope/
-mv /home/jim/Pictures/foo/screenshot_20171001-111738.png* /home/jim/Pictures/foo/screenshot_20171001-111745.png* kbprada/
-apt-cache search ocr
-sudo apt-get install ocrad
-ls
-ocrad screenshot_20170813-200800.png
-tesseract -h
-tesseract -l eng screenshot_20170813-200800.png -
-for i in *png;do tesseract -l eng $i -;done
-for i in *png;do echo $i; tesseract -l eng $i -;done
-mkdir nadia_khom
-ls
-less JpegRotator-e20667.digikamtempfile.jpg.xmp 
-find . -name 'screenshot*'|grep -v 'xmp$'
-find . -name 'screenshot*'|grep -v 'xmp$'|awk -F/ '{print $NF}'
-find . -name 'screenshot*'|grep -v 'xmp$'|awk -F/ '{print $NF}' > /tmp/alreadyhere
-wc -l /tmp/alreadyhere 
-tail -f ~/tmp/bar/mrg 
-. ~/tmp/sourceme 
-filtfind |perl ~/scripts/pipe-ook.pl 
-apt-cache search sha1|grep perl
-cpan Digest::SHA1
-sudo cpan Digest::SHA1
-filtfind |perl ~/scripts/pipe-ook.pl 
-less ~/tmp/sync/assumed-identical-20171019_162928.nt 
-filtfind |perl ~/scripts/pipe-ook.pl |sed -e 's#<file:/tmp/sshts/
-filtfind |perl ~/scripts/pipe-ook.pl |sed -e 's#^<http://#<file:/tmp/sshts/#'
-filtfind |perl ~/scripts/pipe-ook.pl |sed -e 's#^<http://#<file:/tmp/sshts/#' >> ~/tmp/ookdata-20171019-1.nt
-less ~/tmp/ookdata-20171019-1.nt
-ls
-find . -name screenshot_20170807-232531.png
-ls ../s-shots/
-ls ../s-shots/*png|wc
-ls ../s-shots/*png
-fdupes -r ../s-shots/
-rm ../s-shots/mtp\:⁄HTC\ Desire\ 530⁄Internal\ storage⁄Pictures⁄Screenshots⁄Screenshot_20170807-2325*
-ls ../s-shots/*png|wc
-vi spp
-ls
-cd ~/practice/
-vi boost-upper.cc
-g++ -std=cxx11 boost-upper.cc
-g++  boost-upper.cc
-g++ -std=c++11 boost-upper.cc
-./a.out 
-vi boost-upper.cc
-g++ -std=c++11 boost-upper.cc
-./a.out 
-vi boost-upper.cc
-g++ -std=c++11 boost-upper.cc
-./a.out 
-vi boost-upper.cc
-g++ -std=c++11 boost-upper.cc
-./a.out 
-apt-cache search tuxhuitar
-apt-cache search tuxguitar
-sudo apt-get install tuxguitar-fluidsynth tuxguitar-jack tuxguitar-jsa
-cd ~/Playing/kaldi/
-cd egs/tidigits/s5/
-ls
-less run.sh 
-. ./cmd.sh
-cat run.sh 
-cat run.sh |grep prep
-less local/tidigits_data_prep.sh
-less  utils/utt2spk_to_spk2utt.pl 
-apt-cache search djvu
-sudo apt-get install djvulibre-bin
-man djvutxt 
-djvutxt 
-#djvutxt -page=320 ~/Downloads/
-ls ~/Downloads/*djvu
-#djvutxt -page=320 ~/Downloads/polandstudyoflan00braniala.djvu 
-djvutxt -page=320 ~/Downloads/polandstudyoflan00braniala.djvu 
-djvutxt -page=319 ~/Downloads/polandstudyoflan00braniala.djvu 
-djvutxt -page=19 ~/Downloads/polandstudyoflan00braniala.djvu 
-cd ~/practice/
-g++ --std=c++11 trie-node.h 
-less ~/tmp/sync/exif-20171019-1.xml 
-less ~/tmp/sync/bhashc-20171019-2
-less ~/tmp/sync/bhashc-20171019-2.tsv 
-grep tmp/ ~/tmp/sync/*
-cd ~/tmp/foo/
-ls
 cd ~/Pictures/foo/
 ls
 find . -name 'screen*' |grep -v 'xmp$'
@@ -1998,3 +1846,155 @@ unzip ~/Downloads/TeXcount_3_1.zip
 perl texcount.pl ~/Playing/Dissertation/9879472fwnkgtfsztvt/*tex
 less ~/Downloads/S0885230801901846.bib 
 th
+cd Playing/Dissertation/9879472fwnkgtfsztvt/
+git status
+git push origin master
+git pull origin master
+git branch
+git remote show
+git checkout wip
+git merge master
+git push gh wip 
+make
+grep tabular *tex
+less chapter4.tex
+make clean && make
+apt-cache search ctex
+sudo apt-get install texlive-lang-chinese
+make clean && make
+less Makefile 
+make clean && make
+ps2pdf ~/Downloads/neco96p.ps 
+ls ~/Downloads/neco96p.ps 
+ps2pdf 
+ps2pdf ~/Downloads/neco96p.ps neco.pdf
+ssh jimregan
+make clean && make
+ssh jimregan
+make clean && make
+git status
+git add chapter1.tex 
+git add chapter2.tex 
+git add chapter4.tex 
+git add chapter5.tex 
+git add dissertation.tex 
+git add refs.bib 
+git commit -m update
+git push origin master
+git pull origin master
+git push origin master
+git log
+git branch
+git push gh wip
+git log
+git checkout master
+git cherry-pick 6194729a2462f88d759fd30bf0e12877fb8e1dff
+git push origin master
+git checkout wip
+git merge master
+git push gh wip
+git checkout master
+grep -i 'iscriminative Training and Maximum Entropy' refs.bib
+find . -name '*.bib'
+find . -name '*.bib'|xargs grep -i entropy
+vi refs.bib
+make clean && make
+vi refs.bib
+grep -i alignment refs.bib
+vi refs.bib
+make clean && make
+vi refs.bib
+make clean && make
+apt-cache search texco
+vi refs.bib
+make clean && make
+vi refs.bib
+make clean && make
+vi refs.bib
+make clean && make
+vi refs.bib
+make clean && make
+vi refs.bib
+cat ~/Downloads/sanchez*
+vi refs.bib
+cat ~/Downloads/sanchez*
+vi refs.bib
+cat ~/Downloads/sanchez*
+vi refs.bib
+cat ~/Downloads/sanchez*
+make clean && make
+cat ~/Downloads/10.1007%2F*
+vi refs.bib
+cat ~/Downloads/sanchez*
+vi refs.bib
+find . -name '*.bib'|xargs grep Moses
+vi refs.bib
+grep -v 'Selective addition of corpus-extracted phrasal lexical rules to a rule-based machine translation system' refs.bib
+grep -i 'Selective addition of corpus-extracted phrasal lexical rules to a rule-based machine translation system' refs.bib
+vi refs.bib
+make clean && make 2> errs
+less errs 
+rm errs 
+make clean && make > errs
+less errs 
+less refs.bib
+grep sect:intromt *tex
+grep sect:introirish *tex
+grep sect:introeval *tex
+vi refs.bib
+make clean && make > errs
+vi refs.bib
+make clean && make > errs
+vi refs.bib
+make clean && make > errs
+git status
+git branch
+git add refs.bib chapter1.tex 
+git add chapter2.tex 
+git add chapter3.tex 
+git commit -m mre
+git push origin master
+git checkout wip
+git merge master
+git push gh wip
+vi refs.bib
+git diff
+ls takefrom/
+ls takefrom/9772166rptrthgwcdyn/main.tex 
+less takefrom/9772166rptrthgwcdyn/main.tex 
+less takefrom/9447602wxgsyszkgpcf/main.tex 
+less dissertation.tex
+vi refs.bib
+perl /tmp/texcount.pl *tex
+grep tokeni abstract.tex 
+perl /tmp/texcount.pl *tex
+perl /tmp/texcount.pl chap*tex
+perl /tmp/texcount.pl *tex
+less refs.bib
+grep sanchez-cartagena16b *tex
+make clean && make > errs
+grep figure *tex
+less chapter3.tex
+make clean && make > errs
+less citinf.
+less citinf.tex
+make clean && make > errs
+vi refs.bib
+grep 'Sentence Bank' *tex
+grep Bank *tex
+make clean && make > errs
+make clean && make 
+less refs.bib
+git status
+git add refs.bib chapter*.tex
+git status
+git commit -m more
+git status
+git branch
+git log
+git checkout master
+git cherry-pick e3442fe7204869b2f511d766f7a242d33903d84c
+git push gh wip
+git push origin master
+git status
+git push origin master
