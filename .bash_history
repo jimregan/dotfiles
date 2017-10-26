@@ -1,100 +1,3 @@
-less ../src/fgmmbin/fgmm-global-merge.cc 
-ls
-ls gp/
-cd gp/
-less README.txt 
-cd s5
-ls
-less local/
-ls local/
-less local/gp_norm_dict_PL.pl 
-less local/gp_norm_dict_RU.pl 
-less local/gp_rmn2utf_PL.pl 
-ls ~/Downloads/*jpg
-ls ~/Pictures/*jpg
-ls ~/Downloads/unnamed.jpg 
-convert ~/Downloads/unnamed.jpg ~/Downloads/unnamed.xpm
-less ~/Downloads/unnamed.xpm 
-ls -al ~/Downloads/unnamed.xpm 
-ls -al ~/Downloads/unnamed.jpg 
-cd ..
-mkdir icuplay
-cd icuplay/
-sbt init
-ls
-less ~/IdeaProjects/dictionaryconverter/build.sbt 
-vi build.sbt
-sbt console
-cd ..
-mkdir bar
-less sourceme 
-. sourceme 
-cd bar/
-procimg https://www.instagram.com/p/BaSDCI9gIc8/?taken-by=volkonskaya.reshetova
-cat fash-rdf-links 
-rm fash-rdf-links 
-curl
-ogimageproc https://www.instagram.com/p/BaSDCI9gIc8/?taken-by=volkonskaya.reshetova
-ogimageproc https://www.instagram.com/p/BaEUAqeAhVs/?taken-by=volkonskaya.reshetova
-ogimageproc https://www.instagram.com/p/BZovSJjgVlR/?taken-by=volkonskaya.reshetova
-ogimageproc https://www.instagram.com/p/BaTsLDNB8zj/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/BaWVzRhBW7a/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/BaBmG0phakA/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/BZn7ZJMBDLZ/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/BYNz6EeBhl4/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/BXvCjlTBYZm/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/BaHUMV1Hdmz/?taken-by=sandra_traczyk
-ogimageproc https://www.instagram.com/p/BZ0_iBsH8QV/?taken-by=sandra_traczyk
-ogimageproc https://www.instagram.com/p/BZoAhXLnDXB/?taken-by=sandra_traczyk
-ogimageproc https://www.instagram.com/p/BaWJWk1BM1g/?taken-by=y_gaar
-ogimageproc https://www.instagram.com/p/BaWKjqSFNv4/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BaTwezvF4Sv/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BaRrIzbF8L5/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BaQ16Tql5eB/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BaVVkB3A2vr/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BaWG10EA6v1/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BaJlrVzAjw3/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BaTYyuOBuw2/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BaLEcmwl5NI/?taken-by=mr.s_kris
-ogimageproc https://www.instagram.com/p/BaL9VfThncq/?taken-by=nadiyaarcher
-ogimageproc https://www.instagram.com/p/BaJIhBDhHus/?taken-by=nadiyaarcher
-ogimageproc https://www.instagram.com/p/BaWO3Qinjyb/?taken-by=paulinaapsp
-ogimageproc https://www.instagram.com/p/BaWUQachjLk/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/BaAE9LUhIaL/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/BZ8LayPB9KG/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/BaQk0HRHGgu/?taken-by=ira_kamale
-ogimageproc https://www.instagram.com/p/BaRJ-RYl__3/?taken-by=space_margo
-ogimageproc https://www.instagram.com/p/BaUJfjxAKK8/?taken-by=lerazhuravleva
-ogimageproc https://www.instagram.com/p/BaJklZVAcaW/?taken-by=lerazhuravleva
-ogimageproc https://www.instagram.com/p/BaUCDhaBv6D/?taken-by=mo_na2016
-ogimageproc https://www.instagram.com/p/BaT1sBJg_aW/?taken-by=galina.dub
-ogimageproc https://www.instagram.com/p/BaUOFvNApCv/?taken-by=galina.dub
-ogimageproc https://www.instagram.com/p/BZwNeCzglbf/?taken-by=galina.dub
-ogimageproc https://www.instagram.com/p/BaUCHHGFlmd/?taken-by=liberateme.1
-ogimageproc https://www.instagram.com/p/BaRsYeABrDC/?taken-by=sandrapodbielska
-ogimageproc https://www.instagram.com/p/BaTVti1gs6l/?taken-by=vasilisa_beautiful_
-ogimageproc https://www.instagram.com/p/BaTTlnLAwsX/?taken-by=ketrinolshevskay
-ogimageproc https://www.instagram.com/p/BaMHaeoHBjS/?taken-by=marymax01
-ogimageproc https://www.instagram.com/p/BaREeIoFvjR/?taken-by=ssweet.girl
-ogimageproc https://www.instagram.com/p/BaPUCG8n_Fh/?taken-by=ssweet.girl
-ogimageproc https://www.instagram.com/p/BaMKt4JHNmm/?taken-by=ssweet.girl
-ogimageproc https://www.instagram.com/p/BaQDVTLn2HZ/?taken-by=arishabo
-ogimageproc https://www.instagram.com/p/BYRyXOmHMjb/?taken-by=arishabo
-ogimageproc https://www.instagram.com/p/BX7UfESlQ7n/?taken-by=arishabo
-ogimageproc https://www.instagram.com/p/BaOcDycg-OI/?taken-by=burdagrin
-ogimageproc https://www.instagram.com/p/BaS3yD7n3lc/?taken-by=julia__yaroshenko
-ogimageproc https://www.instagram.com/p/BaTYyuOBuw2/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BaMNCmyBuES/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BZwB1VYhb8W/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BZlG14zhrDG/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BZbI2QKhBNx/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BaTLOsNBvKY/?taken-by=yuliakhramova
-ogimageproc https://www.instagram.com/p/BZB8vgAFeFG/?taken-by=princessniquisha
-vi /tmp/inpp
-cat /tmp/inpp |while read i;do ogimageproc $i;done
-ls
-find scontent-lht6-1.cdninstagram.com -type f|zip /tmp/tmmp.zip -@
-grep 22580731_1978121865766544_1983872014229700608_n.jpg fash-rdf-links 
 grep 22580761_1090764057693651_5828174671102607360_n.jpg fash-rdf-links 
 grep 20398298_369624303456716_7637561482858725376_n.jpg fash-rdf-links 
 grep 22344602_1658436987533716_2456017584395386880_n.jpg fash-rdf-links 
@@ -1998,3 +1901,100 @@ ls ./connemara/Female_Speaker_Annotated/
 less ./connemara/Female_Speaker_Annotated/amuigh1.TextGrid 
 killall sox
 git diff
+cd ~/Playing/
+git clone https://github.com/jimregan/apertium-en-ga.git
+cd apertium-en-ga/
+ls
+ls .git/
+ls .git/packed-refs 
+less .git/packed-refs 
+less .git/refs/remotes/origin/HEAD 
+less .git/config 
+less .git/description 
+less .git/logs/HEAD 
+less .git/refs/heads/master 
+less .git/HEAD 
+less .git/index 
+git pull origin
+git checkout spider 
+ls
+git rm en-tagger.sh 
+less tocheck 
+git rm tocheck 
+ls dev/
+less dev/verb-bits 
+less dev/nomination.url 
+less dev/nomination.en 
+less dev/nomination.ga 
+less ../apertium/.svn/entries 
+less ../apertium/.svn/wc.db
+svn ls https://svn.code.sf.net/p/apertium/svn/incubator/apertium-en-ga
+svn ls https://svn.code.sf.net/p/apertium/svn/
+git status
+git commit -m rm
+git push origin spider 
+git status
+git checkout master 
+git pull origin master
+ls
+git log
+svn ls svn+ssh://svn.code.sf.net/p/apertium/svn/incubator/apertium-en-ga
+svn --username=jimregan ls svn+ssh://svn.code.sf.net/p/apertium/svn/incubator/apertium-en-ga
+ls
+git branch -D spider 
+git checkout skeleton 
+git merge master
+vi apertium-en-ga.en-ga.t1x 
+git checkout master
+git add apertium-en-ga.en-ga.t1x 
+git checkout master
+git commit -m blah
+git checkout master
+cp apertium-en-ga.en-ga.t1x /tmp/
+git checkout skeleton 
+cp /tmp/apertium-en-ga.en-ga.t1x .
+git add apertium-en-ga.en-ga.t1x 
+git commit -m 'replace whole'
+less apertium-en-ga.en-ga.t1x 
+git push origin skeleton 
+git checkout master
+cp apertium-en-ga.en-ga.dix /tmp/
+git checkout skeleton 
+cp /tmp/apertium-en-ga.en-ga.dix 
+cp /tmp/apertium-en-ga.en-ga.dix .
+git add apertium-en-ga.en-ga.dix 
+git commit -m replace
+git push origin skeleton 
+rm /tmp/apertium-en-ga.en-ga.*
+git checkout master
+cp apertium-en-ga.ga.dix /tmp/
+git checkout skeleton 
+cp /tmp/apertium-en-ga.ga.dix .
+git add apertium-en-ga.ga.dix 
+git commit -m replace
+git push origin skeleton 
+git checkout master 
+git branch -D skeleton 
+git branch
+git checkout -b fstconvert
+cp ~/IdeaProjects/dictionaryconverter/noun.dix.1 dev/noun.dix
+git add dev/noun.dix 
+git commit -m 'first conversion pass -- nouns'
+cp ~/IdeaProjects/dictionaryconverter/noun.dix dev/noun.dix
+git diff
+git add dev/noun.dix 
+git commit -m 'second conversion pass -- nouns'
+cp ~/IdeaProjects/dictionaryconverter/adv.dix dev/
+cp ~/IdeaProjects/dictionaryconverter/adj.dix dev/
+cp ~/IdeaProjects/dictionaryconverter/testp.dix dev/pr.dix
+less dev/pr.dix 
+git add dev/*dix
+git commit -m 'more'
+git branch 
+git push origin fstconvert 
+git log
+git checkout master
+git checkout -b fstconv
+git cherry-pick 07660d213f3853ee5044bf678756441ee7d1b66c
+git push origin fstconv
+ls -al dev/
