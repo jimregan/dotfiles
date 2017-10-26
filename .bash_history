@@ -1,16 +1,3 @@
-git commit -m more
-find . -name '*.bib'|xargs grep Moses
-git status
-git log
-git push origin master
-git status
-git push origin master
-cd ../IdeaProjects/dictionaryconverter/
-git status
-git branch
-git push origin still-in-progress 
-sbt test
-ls example/en-ga/ga.attribs.txt 
 cat example/en-ga/ga.attribs.txt 
 git rm example/en-ga/ga.attribs.txt 
 cat example/en-ga/en.attribs_chunk.txt 
@@ -1998,3 +1985,16 @@ gcc linked-list-print-middle.cc
 ./a.out 
 cat linked-list-print-middle.cc 
 ssh jimregan
+cd ~
+mkdir tmp
+cd tmp/
+ls
+mkdir foo
+cd foo/
+ls
+ls|wc
+ls
+ls|grep scree
+ls|grep scree|while read i;do grep $i /tmp/alreadyhere ;done
+#ls|grep scree|while read i;do grep $i /tmp/alreadyhere || cp $i  ;done
+ls|grep scree|while read i;do grep $i /tmp/alreadyhere || cp $i /home/jim/Pictures/foo/ ;done
