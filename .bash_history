@@ -1,119 +1,3 @@
-ogimageproc https://www.instagram.com/p/BZYq-BYHxU3/?taken-by=aaii.yai
-ogimageproc https://www.instagram.com/p/BYgBPL7nykJ/?taken-by=aaii.yai
-ogimageproc https://www.instagram.com/p/BXpRFkxAItr/?taken-by=aaii.yai
-ogimageproc https://www.instagram.com/p/BXB2_YGA4SC/?taken-by=aaii.yai
-ogimageproc https://www.instagram.com/p/BWz0ciEA4XE/?taken-by=aaii.yai
-ogimageproc https://www.instagram.com/p/BVtsjYzgJOS/?taken-by=aaii.yai
-ogimageproc https://www.instagram.com/p/BaWZSn-n2hd/?taken-by=karolajnax._
-ogimageproc https://www.instagram.com/p/BZTQ1k9nMn-/?taken-by=karolajnax._
-ogimageproc https://www.instagram.com/p/BY3Y0aEnRnq/?taken-by=karolajnax._
-ogimageproc https://www.instagram.com/p/BYLuVVgHNfw/?taken-by=karolajnax._
-ogimageproc https://www.instagram.com/p/BT_ttOCA5gx/?taken-by=karolajnax._
-sudo apt-get install kdenetwork-filesharing
-ogimageproc https://www.instagram.com/p/BZ_BRhSAkbW/?taken-by=klaudia.owczarek
-tail fash-rdf-links 
-ogimageproc https://www.instagram.com/p/BZqZEbxglgv/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BZbsSOggXQ1/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BZRJtA8Dzbj/?taken-by=kristiii_1194
-ogimageproc https://www.instagram.com/p/BZqZEbxglgv/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BZbsSOggXQ1/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BZRJtA8Dzbj/?taken-by=kristiii_1194
-ogimageproc https://www.instagram.com/p/BZ_BRhSAkbW/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BaYbEBtlD_z/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BaUJNe3laNd/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BaROLCHFmxz/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BaOeWV-lX-8/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BaGrCpzlaug/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BaCW5_nl-ic/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BZ1FrClF9vw/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BZJ3DJDgWfE/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BW7cgZfgRSU/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BVZeXlNgp8A/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BS9NCwMgmVR/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BRd_zaagpOM/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BPNlYoMDPSs/?taken-by=klaudia.owczarek
-ogimageproc https://www.instagram.com/p/BaDrHywgJN1/?taken-by=irina_pim_fit
-ogimageproc https://www.instagram.com/p/BZTsN4hA8F2/?taken-by=irina_pim_fit
-ogimageproc https://www.instagram.com/p/BZ3diSShsTv/?taken-by=leonksen
-ogimageproc https://www.instagram.com/p/BZvEb98BtAe/?taken-by=leonksen
-ogimageproc https://www.instagram.com/p/BZ0xJkohAM6/?taken-by=misslilan
-ogimageproc https://www.instagram.com/p/BZOziEyBEP6/?taken-by=misslilan
-ogimageproc https://www.instagram.com/p/BYXVQOdBHmg/?taken-by=misslilan
-ogimageproc https://www.instagram.com/p/BZ8YoBZnHwj/?taken-by=j.u.s.t_me_ry
-ogimageproc https://www.instagram.com/p/BYGqnuTAOGc/?taken-by=j.u.s.t_me_ry
-ogimageproc https://www.instagram.com/p/BWh-TmCgr8i/?taken-by=j.u.s.t_me_ry
-ogimageproc https://www.instagram.com/p/BaTEnpml2Gv/?taken-by=galinka.krk
-ogimageproc https://www.instagram.com/p/BaJPII8jknJ/?taken-by=nellchh
-ogimageproc https://www.instagram.com/p/BYVpeW2Dfgw/?taken-by=nellchh
-ogimageproc https://www.instagram.com/p/BUtpsaQDGud/?taken-by=nellchh
-ogimageproc https://www.instagram.com/p/BaRyT0DlhBO/?taken-by=alexandra.kazmierczak
-ogimageproc https://www.instagram.com/p/BZ_Wdt2FUUZ/?taken-by=alexandra.kazmierczak
-ogimageproc https://www.instagram.com/p/BaRqmiolUzo/?taken-by=galinka.krk
-ogimageproc https://www.instagram.com/p/BaQyaiAFDZG/?taken-by=galinka.krk
-ogimageproc https://www.instagram.com/p/BZ3DJnHlPIr/?taken-by=galinka.krk
-ogimageproc https://www.instagram.com/p/BZtnudaFgy3/?taken-by=galinka.krk
-ogimageproc https://www.instagram.com/p/BZv7WLvFkMP/?taken-by=galinka.krk
-ogimageproc https://www.instagram.com/p/BaHqYLohtYf/?taken-by=kasia_dziurska
-ogimageproc https://www.instagram.com/p/BZ9DIn6hrkP/?taken-by=kasia_dziurska
-ogimageproc https://www.instagram.com/p/BaJ_OrZDnp-/?taken-by=madziaa.t
-ogimageproc https://www.instagram.com/p/BaHfvTZj3Z8/?taken-by=madziaa.t
-ogimageproc https://www.instagram.com/p/BZbu6cWjtEG/?taken-by=madziaa.t
-ogimageproc https://www.instagram.com/p/BZWT2q0jDoE/?taken-by=madziaa.t
-ogimageproc https://www.instagram.com/p/BZGj8xQDuXd/?taken-by=madziaa.t
-ogimageproc https://www.instagram.com/p/BZHeSNonVou/?taken-by=octamevia
-ogimageproc https://www.instagram.com/p/BZ_IYEyFod7/?taken-by=kingakomar
-ogimageproc https://www.instagram.com/p/BN2oMgjlSGq/?taken-by=kingakomar
-ogimageproc https://www.instagram.com/p/BYldqYLjYOE/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BYyTSyjjjve/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BYI0DWYDrxk/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BYAwgS4jS1d/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BXc02HfD5qU/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BWzvOnijlcj/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BVpfhf3DNYY/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BT_zQGXjs6P/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BR_uYOUjVGB/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BREZmFcDjor/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BPu7bAHj2TG/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BK_M3cCD7OX/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BIdbpGNDeP7/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BHmzNawjpA7/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BHdKzdOD_Q3/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BGKKtCwlNIu/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BCv09cGlNJW/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/BAaBcS2FNFk/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/_Wr0COFNLH/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/9a7jzLlNKd/?taken-by=marijuama
-ogimageproc https://www.instagram.com/p/5s-MiCFNNb/?taken-by=marijuama
-ls
-cat imgur-gals
-lynx -dump https://imgur.com/a/pWy46
-vi /tmp/imgurtmp
-les /tmp/imgurtmp
-less /tmp/imgurtmp
-cat /tmp/imgurtmp
-cat /tmp/imgurtmp|grep '<img class="js-post-image-thumb"'
-grep wpfwKJO.jpg /tmp/imgurtmp 
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/VLnL70S.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/pJcyAhl.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/TcC5XDb.jpg
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/VMzZM65.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/XI0eCEj.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/IoBMPD1.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/ysevDvd.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/s1tZjSJ.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/iiFFcjy.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/Dz1UA34.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/wOixiwZ.jpg
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/IuGUz0A.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/1MHp9o8.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/PXXr8X1.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/D4IjDmr.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/MYwiArT.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/J73XGsa.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/L2U01YZ.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/weZwqnl.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/ftJs1nv.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/C8lHVFV.png
 procimg https://imgur.com/a/pWy46 https://i.imgur.com/XFJyHZo.png
 procimg https://imgur.com/a/pWy46 https://i.imgur.com/Gpz0WOO.png
 procimg https://imgur.com/a/pWy46 https://i.imgur.com/o5BBXcD.png
@@ -1998,3 +1882,119 @@ less ~/Playing/apertium-en-es/apertium-en-es.en-es.t3x
 rm ~/Pictures/Screenshot_2017092*
 ssh jimregan
 cat ~/Downloads/citation-228685431.bib 
+cd ../wolne-lektury-audio-corpus/
+ls
+cd text/
+ls
+cat x*
+cat x*|grep -v '[A-Z]'
+cat x*|grep -v '[A-Z]' > all-lower
+cat all-lower |uconv -x pl-pl_FONIPA
+cat all-lower |uconv -x pl-pl_FONIPA > all-lower-uconvipa
+wc -l all-lower
+less all-lower
+grep '-' all-lower
+grep é all-lower
+grep é all-lower|while read i;do unacc=$(echo $i|sed -e 's/é/e/g'); grep "^$unacc$" all-lower && printf "$i\t$unacc\n" >> tonorm;done
+cat tonorm 
+grep 'cy' all-lower
+grep 'cy[aeiąę]' all-lower
+grep 'cy[aei]' all-lower|while read i;do unacc=$(echo $i|sed -e 's/cy/cy/g'); grep "^$unacc$" all-lower && printf "$i\t$unacc\n" >> tonorm;done
+cat tonorm 
+vi tonorm 
+grep 'cy[aei]' all-lower|while read i;do unacc=$(echo $i|sed -e 's/cy/cj/g'); grep "^$unacc$" all-lower && printf "$i\t$unacc\n" >> tonorm;done
+tail tonorm 
+grep 'cyą' all-lower|while read i;do unacc=$(echo $i|sed -e 's/cy/cj/g'); grep "^$unacc$" all-lower && printf "$i\t$unacc\n" >> tonorm;done
+grep 'cyę' all-lower|while read i;do unacc=$(echo $i|sed -e 's/cy/cj/g'); grep "^$unacc$" all-lower && printf "$i\t$unacc\n" >> tonorm;done
+git status
+ls ..
+mv tonorm ../normalisations.tsv
+git add ../normalisations.tsv 
+cd ..
+git status
+git add normalisations.tsv 
+git commit -m 'orthographic normalisations'
+git push origin master
+less normed 
+less phon-ipa.tsv 
+ls
+git status
+less normed 
+less norm
+cd |-
+cd ~-
+echo pias |uconv -x pl-pl_FONIPA 
+echo pies |uconv -x pl-pl_FONIPA 
+echo wielki |uconv -x pl-pl_FONIPA 
+echo kontinuuje |uconv -x pl-pl_FONIPA 
+echo statule |uconv -x pl-pl_FONIPA 
+ls
+cat all-words.txt 
+cat all-words.txt |grep '-'
+cat all-words.txt |grep '-' > all-hyphens
+ls
+grep -i rozdia *txt
+grep -i rozdi *txt
+less synogarlica.txt 
+ls ../audio
+ls ../audio/*syno*
+ffplay ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.txt "task_language=pol|is_text_type=plain|os_task_file_format=json"
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.txt "task_language=pol|is_text_type=plain|os_task_file_format=json" out.json
+less out.json 
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.txt "task_language=pol|is_text_type=plain|os_task_file_format=srt" out.srt
+less out.srt 
+vim -b out.srt 
+mv out.srt synogarlica.srt
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.txt "task_language=pol|is_text_type=plain|os_task_file_format=wtt" out.srt
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.txt "task_language=pol|is_text_type=plain|os_task_file_format=aud" synogarlica.aud
+less synogarlica.aud 
+cat synogarlica.txt |grep -v '^$'
+cat synogarlica.txt |grep -v '^$'|tr '^ *//'
+cat synogarlica.txt |grep -v '^$'|sed -e '^ //'
+cat synogarlica.txt |grep -v '^$'|sed -e 's/^ *//'
+cat synogarlica.txt |grep -v '^$'|sed -e 's/^ *//' > synogarlica.text
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.text "task_language=pol|is_text_type=plain|os_task_file_format=aud" synogarlica.aud
+less synogarlica.aud 
+ls
+cat all-hyphens 
+cat *.txt
+cat *.txt|grep '\. [a-z]'
+vi ../normalisations.tsv 
+cat *.txt|grep '\. [a-z]'
+cat *.txt|grep '\. [a-z]'|wc
+cat *.txt|grep '\. [a-z]'|less
+grep 'wraz z p. de Martignac' *txt
+less balzac-komedia-ludzka-corka-ewy.txt 
+ls ..
+git status
+git diff
+ls ../audio/*grandet*
+ffplay ../audio/01-honore-de-balzac-eugenia-grandet.mp3
+git diff | grep tłum
+grep Londyń *
+git diff 
+ls ../audio/*rozanka*
+ffplay ../audio/jacob-i-wilhelm-grimm-bialosniezka-i-rozanka.mp3
+vi ../norm-text.pl 
+git diff
+ls ../audio/*aptekarzowa*
+ffplay ../audio/anton-czechow-aptekarzowa.mp3 
+ffplay ../audio/anton-czechow-bezbronna-istota.mp3 
+ffplay ../audio/anton-czechow-wanka.mp3 
+vi ../norm-text.pl 
+cd ..
+git diff
+git add norm-text.pl normalisations.tsv 
+git commit -m 'more normalisation'
+ls
+less in-chk 
+less NumberNorm.pm 
+ls
+less fix-english.pl 
+cd |-
+cd ~-
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.text "task_language=pol|is_text_type=plain|os_task_file_format=aud" synogarlica.csv
+less synogarlica.csv 
+python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.txt "task_language=pol|is_text_type=plain|os_task_file_format=aud" synogarlica.csv2
+diff -u synogarlica.csv synogarlica.csv2 
