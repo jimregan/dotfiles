@@ -1,259 +1,3 @@
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430134_287855851728286_8288033983485181952_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430208_2152933881399664_6227177545217867776_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430384_165878903993537_2436843729399578624_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430486_122420325099540_3442288654200864768_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21910970_1677977905568864_440559268274372608_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/13584207_1749651501969452_1727782324_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/18812097_1835128613481423_8064652236204015616_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21225033_114941555876208_5214158136352440320_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21372476_139791019962546_3537088628352090112_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21372854_120300055245711_3624358833343692800_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21576850_851222065043183_3973163516977741824_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21690363_116932052354950_1038139804996337664_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21690365_928512777302736_3271193353449897984_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21820381_117301058959002_835398253200539648_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21909486_1967681856836318_8201899247587557376_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21910078_281705859009256_6517087438265909248_n.jpg
-ls
-ogimageproc https://www.instagram.com/p/BY_iS0hDFZH/?taken-by=martina.willson
-ogimageproc https://www.instagram.com/p/BXv4d2pDCPG/?taken-by=martina.willson
-ogimageproc https://www.instagram.com/p/BBDY7oKy0fB/?taken-by=martina.willson
-ogimageproc https://www.instagram.com/p/BaRdttCjFBv/?taken-by=martina.willson
-ogimageproc https://www.instagram.com/p/BZ9cN4iD1BV/?taken-by=martina.willson
-ogimageproc https://www.instagram.com/p/BZ6_XFID0Vu/?taken-by=martina.willson
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/22351894_1845004835738129_2156865282503606272_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430000_944381602389475_4490890308040523776_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430046_1931387773850028_7407558571044372480_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22427497_138677756755729_6044601865604169728_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22427606_1944751899116796_4370176820507574272_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22427615_320794198388577_2189742329441550336_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22429670_1667498593281851_829071654704381952_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22429671_181325932431945_1455180906099638272_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22429714_1950364471905703_6451029788986441728_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344333_139769913233286_7341298121999122432_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344647_875201905970845_3963179844023353344_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344669_1088567047944200_3357880645480087552_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22344034_1267171643388775_7001661686008512512_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21980725_1782516352047263_7240626949029101568_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/21985131_420389581710903_7789940093522804736_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22069679_118360105522635_7271702454754869248_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22069919_1892256451037596_5489680249736134656_n.jpg
-~/bin/blockhash 
-~/bin/blockhash $(filtfind)
-mkdir ../sync
-~/bin/blockhash $(filtfind) > ../bhashc-20171019-1.tsv
-less ../bhashc-20171019-1.tsv
-mv ../bhashc-20171019-1.tsv ../sync/
-cd ~
-mkdir practice
-cd practice/
-vi linked-list-print-middle.cc
-g++ linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc
-g++ linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc
-./a.out 
-g++ linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc
-g++ linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc 
-g++ linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc 
-./a.out 
-gcc linked-list-print-middle.cc 
-./a.out 
-vi linked-list-print-middle.cc 
-gcc linked-list-print-middle.cc 
-./a.out 
-cat linked-list-print-middle.cc 
-ssh jimregan
-cd ~
-mkdir tmp
-cd tmp/
-ls
-mkdir foo
-cd foo/
-ls
-ls|wc
-ls
-ls|grep scree
-ls|grep scree|while read i;do grep $i /tmp/alreadyhere ;done
-#ls|grep scree|while read i;do grep $i /tmp/alreadyhere || cp $i  ;done
-ls|grep scree|while read i;do grep $i /tmp/alreadyhere || cp $i /home/jim/Pictures/foo/ ;done
-grep Aachen polimorf.tab 
-grep aachen polimorf.tab 
-grep aache polimorf.tab 
-git status
-git status|less
-cat x*
-wc -l x*
-cd ~/Pictures/
-l;s
-ls
-ls -al *
-ls -al
-ls -alls foo/
-ls -al foo/|wc
-ls foo
-cat foo/*xmp
-cd foo
-ls
-mkdir schatzii_
-mkdir space_margo
-ls
-ps aux|grep dolph
-ps aux|grep digikam
-ls -al 
-mkdir volkonskaya.reshetova
-mkdir tolloczkoklaudia
-mkdir nazarovamur
-ls
-for i in *png;do if [ -e ~/tmp/foo/$i ] ; then echo rm ~/tmp/foo/$i; fi;done
-for i in *png;do if [ -e ~/tmp/foo/$i ] ; then  rm ~/tmp/foo/$i; fi;done
-ls
-mv ~/tmp/foo/screenshot_20171012-* .
-mv ~/tmp/foo/screenshot_20171011-* .
-mv ~/tmp/foo/screenshot_20171010-* .
-mv ~/tmp/foo/screenshot_20171009-* .
-mv ~/tmp/foo/screenshot_20171008-* .
-mv ~/tmp/foo/screenshot_2017100*-* .
-tail -f /var/log/samba/log.jimregan 
-ls -al /var/log/samba/
-less /var/log/samba/log.nmbd
-less /etc/samba/smb.conf 
-smbpasswd -h
-smbpasswd 
-sudo smbpasswd -L jim
-man useradd
-man adduser
-smbpasswd -a jim
-sudo smbpasswd -a jim
-ls -al /home/jim/Pictures/
-ls
-cd ../Corp
-cd ../Corpora/
-ls
-cd ga_UL/
-ls
-cd anb/
-ls
-find . -name '*.txt'
-less text01-001/txt/text01-001_044.txt 
-ls
-ls named-entities/missing_wav/
-ls
-find . -type f|less
-find . -name 'corpus*'
-ls
-cd ..
-ls
-cd ..
-ls
-ls scripts/
-less scripts/extract_melcep_coefs.pl 
-ls
-cd ..
-git clone https://github.com/HaraldBerthelsen/kaldi_stuff harald_kaldi_stuff
-cd Corpora/ga_UL/
-lss
-ls
-cd anb/
-ls
-python ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
-python2.7 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
-less ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
-python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
-less ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
-python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
-less ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
-vi ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py 
-python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/named-entities/xml/ wav corpusfile.txt
-less corpusfile.txt 
-python3 ../../../harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py anb /home/jim/Playing/Corpora/ga_UL/anb/text01/xml/ ogg corpusfile1.txt
-less corpusfile1.txt 
-find . -type d -name wav
-find . -type d -and -name wav
-find . -type d -and -name ogg
-find . -type d -and -name xml
-cd ..
-git clone https://github.com/mmorise/World.git
-cd World/
-ls
-cd src/
-ls
-less matlabfunctions.cpp 
-less fft.cpp 
-less codec.cpp 
-grep TimeBaseGeneration *
-grep -i TimeBaseGeneration *
-less synthesis.cpp 
-ssh jimregan
-vi /tmp/tst.c
-cd /tmp/
-gcc tst.c 
-vi /tmp/tst.c
-g++ tst.c 
-vi /tmp/tst.c
-g++ tst.c 
-rm ~/Pictures/Screenshot_2017100*
-cd ~/Playing/
-git clone https://github.com/jonathf/matlab2cpp.git
-ssh jimregan
-git clone https://github.com/bjbschmitt/AMFM_decompy/
-git clone https://github.com/taolei87/sru
-git clone https://github.com/snukky/plerrex
-git clone https://github.com/emjotde/nematus
-cd nematus/
-ls
-python setup.py ins
-python setup.py install
-sudo python setup.py install
-sudo python2.7 setup.py install
-df
-grep ConvertPowerToDecibel *
-apt-cache search codebl
-sudo apt-get install codeblocks
-codeblocks &
-cd ..
-wget http://ml.cs.yamanashi.ac.jp/world/data/world-0.2.1_4_matlab.zip
-unzip -l world-0.2.1_4_matlab.zip 
-unzip world-0.2.1_4_matlab.zip 
-cd world-0.2.1_4_matlab/
-ls
-less Synthesis.m 
-rm ~/Pictures/Screenshot_20171010_205352.png 
-cd ~/practice/
-ls
-vi max-subarray.cc
-vi remove-if.cc
-g++ remove-if.cc
-g++ -std=c++11 remove-if.cc
-./a.out 
-vi remove-if.cc
 vi max-subarray.cc
 vi remove-if.cc
 vi max-subarray.cc
@@ -1998,3 +1742,259 @@ config push origin master
 kwin
 kwin --replace
 vi open-tabs 
+config status
+config add .scala_history 
+config add .bash_history 
+config status
+config add .octave_hist 
+config add .config/dconf/user 
+config add .config/dolphinrc 
+config add .config/gtk-2.0/gtkfilechooser.ini 
+config add .config/kactivitymanagerd
+config add .config/kactivitymanagerdrc 
+config add .config/katerc 
+config add .config/kded_device_automounterrc 
+config add .config/kglobalshortcutsrc 
+config add .config/konsolerc 
+config add .config/plasma-org.kde.plasma.desktop-appletsrc 
+config add .config/spectaclerc 
+config add .kde/share/apps/libkface/database/recognition.db 
+config add .kde/share/config/digikamrc 
+config add .kde/share/config/drkonqirc 
+config add .kde/share/config/kdeglobals 
+config add .kde/share/config/kilerc 
+config add open-tabs 
+config commit -m 'mid crash'
+config push origin master
+config status
+config add .config/dolphinrc 
+config add .kde/share/config/kdialogrc 
+config add open-tabs 
+config status
+config add .bash_history 
+config commit -m 'mid crash 2'
+config add .config/dolphinrc 
+config commit -m 'mid crash'
+config checkout -b slow-crash
+config add crash-scratch
+config add .config/katerc 
+config commit -m 'mid crash'
+config add .bash_history 
+config status
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config log
+config revert 534c4adcdd01dc2b5a9955c7db959105b2676104
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .vim
+config commit -m 'mid crash'
+config diff
+onfig add .viminfo
+config add .viminfo
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config add .scala_history 
+config commit -m 'mid crash'
+config add .bash_history 
+find . -name '*torch*'
+config add .bash_history 
+config commit -m 'mid crash'
+config add crash-scratch 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .viminfo 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config status
+config add crash-scratch 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config add .scala_history 
+config commit -m 'mid crash'
+config add .scala_history 
+config add .bash_history 
+config commit -m 'mid crash'
+config status
+config add .config/kactivitymanagerdrc 
+config add .config/katerc 
+config commit -m 'mid crash'
+config status
+config add .config/dolphinrc 
+config commit -m 'mid crash'
+config add .config/dolphinrc 
+config commit -m 'mid crash'
+config add .config/dolphinrc 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config add .bash_history 
+config commit -m 'mid crash'
+config commit -m open-tabs 
+config add open-tabs 
+config commit -m 'another window'
+config add open-tabs 
+config commit -m 'another window'
+config add open-tabs 
+config commit -m 'another window'
+config add open-tabs 
+config commit -m 'another window'
+config add open-tabs 
+config commit -m 'another window, pt1'
+config commit -m 'another window, pt2'
+config add open-tabs 
+config commit -m 'another window, pt2'
+config add crash-scratch 
+config add open-tabs 
+config commit -m 'another window, pt2'
+config add crash-scratch 
+config add open-tabs 
+config commit -m 'another window, pt2'
+config add crash-scratch 
+config add open-tabs 
+config commit -m 'another window, pt2'
+config add crash-scratch 
+config commit -m 'another window, pt2'
+config add crash-scratch 
+config add open-tabs 
+config commit -m 'another window, pt2'
+vi crash-scratch 
+config add crash-scratch 
+config add open-tabs 
+config commit -m 'another window'
+config add .bash_history 
+config commit -m 'mid crash'
+cd Playing/msf-asr/
+git diff
+git stash
+kwin --replace
+reboot
+loginctl unlock-session 
+sudo loginctl unlock-session 
+loginctl unlock-session 
+sudo loginctl unlock-session 
+sudo loginctl unlock-sessions

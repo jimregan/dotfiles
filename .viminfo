@@ -17,9 +17,9 @@
 $about='file:\/tmp\/sshts\/
 
 # Command Line History (newest to oldest):
-:q!
-:w
 :wq
+:w
+:q!
 :%s/about='http:\/\//about='file:\/tmp\/sshts\//
 :q
 :g/broken/d
@@ -128,43 +128,44 @@ $about='file:\/tmp\/sshts\/
 
 # Registers:
 ""1	LINE	0
-	https://github.com/zsiciarz/aquila/blob/master/examples/spectrogram/spectrogram.cpp
+	https://github.com/spro/nalgene/blob/master/node.py
 "2	LINE	0
-	
+	http://libgen.io/ads.php?md5=7ECBFA717EC2AAF7E2F20AA3597D1C8C
 "3	LINE	0
-	
+	http://libgen.io/ads.php?md5=7ECBFA717EC2AAF7E2F20AA3597D1C8
 "4	LINE	0
-	</rdf:Description>
+	https://www.instagram.com/karolajnax._/
 "5	LINE	0
-	 <ExifTool:Error>Unknown file type</ExifTool:Error>
+	</rdf:Description>
 "6	LINE	0
-	 <ExifTool:ExifToolVersion>10.10</ExifTool:ExifToolVersion>
+	
 "7	LINE	0
-	  xmlns:System='http://ns.exiftool.ca/File/System/1.0/'>
+	</rdf:Description>
 "8	LINE	0
-	  xmlns:ExifTool='http://ns.exiftool.ca/ExifTool/1.0/'
+	 <ExifTool:Error>Unknown file type</ExifTool:Error>
 "9	LINE	0
-	  xmlns:et='http://ns.exiftool.ca/1.0/' et:toolkit='Image::ExifTool 10.10'
+	 <ExifTool:ExifToolVersion>10.10</ExifTool:ExifToolVersion>
 "q	CHAR	0
 	:::€kb€kb€kb
 "-	CHAR	0
 	 
 
 # File marks:
-'0  68  0  ~/open-tabs
-'1  1  1  /tmp/regrab
-'2  27530  0  /tmp/exif.out
-'3  14  79  ~/tmp/bar/tospid
-'4  86  36  /tmp/postimgin
-'5  208502  0  /tmp/exif.out
-'6  131  0  /tmp/asd/tocopy
-'7  12  78  ~/tmp/bar/tospid
-'8  1  35  /tmp/postimgin
-'9  571  77  /tmp/oops
+'0  345  35  ~/open-tabs
+'1  69  0  ~/open-tabs
+'2  1  1  /tmp/regrab
+'3  27530  0  /tmp/exif.out
+'4  14  79  ~/tmp/bar/tospid
+'5  86  36  /tmp/postimgin
+'6  208502  0  /tmp/exif.out
+'7  131  0  /tmp/asd/tocopy
+'8  12  78  ~/tmp/bar/tospid
+'9  1  35  /tmp/postimgin
 
 # Jumplist (newest first):
--'  68  0  ~/open-tabs
+-'  345  35  ~/open-tabs
 -'  1  0  ~/open-tabs
+-'  69  0  ~/open-tabs
 -'  1  1  /tmp/regrab
 -'  27530  0  /tmp/exif.out
 -'  1  0  /tmp/exif.out
@@ -259,9 +260,6 @@ $about='file:\/tmp\/sshts\/
 -'  1  0  ~/tmp/bar/gal1
 -'  77  57  /tmp/inpp
 -'  1  0  /tmp/inpp
--'  33  37  ~/practice/word-average.cc
--'  1  0  ~/practice/word-average.cc
--'  31  73  ~/practice/word-average.cc
 
 # Bar lines, copied verbatim:
 |1,4
@@ -556,13 +554,34 @@ $about='file:\/tmp\/sshts\/
 # History of marks within files (newest to oldest):
 
 > ~/open-tabs
-	"	68	0
-	^	68	0
-	.	67	54
-	+	2	0
-	+	69	0
-	+	66	0
-	+	67	54
+	"	345	35
+	^	345	36
+	.	345	28
+	+	68	67
+	+	87	59
+	+	97	0
+	+	110	54
+	+	121	0
+	+	119	0
+	+	346	0
+	+	180	74
+	+	128	0
+	+	249	36
+	+	257	52
+	+	287	51
+	+	288	54
+	+	290	32
+	+	303	41
+	+	322	43
+	+	344	0
+	+	345	28
+
+> ~/crash-scratch
+	"	41	0
+	^	41	1
+	.	41	0
+	+	1	15
+	+	41	0
 
 > ~/.cfg/COMMIT_EDITMSG
 	"	1	0
@@ -1726,9 +1745,3 @@ $about='file:\/tmp\/sshts\/
 	+	279	0
 	+	282	0
 	+	342	0
-
-> ~/Playing/msf-asr/client.pl
-	"	58	0
-	^	58	0
-	.	57	7
-	+	57	7
