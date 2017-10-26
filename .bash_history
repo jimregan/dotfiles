@@ -1,19 +1,3 @@
-less opennlp-ner-to-corenlp.pl 
-less phon-ipa.tsv 
-git status
-ls polimorf/
-cd polimorf/
-less polimorf.tab 
-grep aaron ../pron-data/*
-grep -i aaron ../pron-data/*
-grep -i aaron polimorf.tab 
-grep -i aaron polimorf.tab |awk -F'\t' '{print $1}'
-grep -i aaron polimorf.tab |awk -F'\t' '{print $1}' > aaron-tmp
-cat aaron-tmp |sort|uniq
-cat aaron-tmp |sort|uniq > aaron-l
-cat aaron-l |sed -e 's/Aa/A/;s/aar/ar/'
-cat aaron-l |sed -e 's/Aa/A/;s/aar/ar/' > aaron-r
-paste  aaron-l aaron-r 
 paste  aaron-l aaron-r >> ../pron-data/pronounce-as.tsv
 rm aaron-*
 ls
@@ -1998,3 +1982,19 @@ less procsy/example/jh0001.hl
 cat procsy/example/jh0001.hl|grep -v '^;'|awk -F'\t' '{print $1}'|sort|uniq
 top
 killall ssh
+cd ~/IdeaProjects/dictionaryconverter/
+sbt test
+less ~/Playing/apertium-en-es/apertium-en-es.en-es.t1x 
+less .idea/copyright/tcd.xml 
+cp .idea/copyright/tcd.xml .idea/copyright/me.xml
+vi .idea/copyright/me.xml
+vi .idea/copyright/profiles_settings.xml 
+less ~/Playing/ruLearn/phrase-extraction/src/Utils.C 
+less ~/Playing/ruLearn/phrase-extraction/src/Utils.H
+grep ostream ~/Playing/ruLearn/phrase-extraction/src/*
+less /home/jim/Playing/ruLearn/phrase-extraction/src/Alignment.C
+less /home/jim/Playing/ruLearn/phrase-extraction/src/Alignment.H
+less /home/jim/Playing/ruLearn/phrase-extraction/src/Alignment.C
+less /home/jim/Playing/ruLearn/phrase-extraction/src/Utils.C 
+less ~/NetBeansProjects/CppApplication_1/streamreader.cpp 
+less ~/NetBeansProjects/CppApplication_1/simpletoken.cpp 
