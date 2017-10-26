@@ -1,24 +1,3 @@
-cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob |apertium-retxt 
-cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob |apertium-retxt  > ~/Playing/mosesdecoder/corpus/all-clean-1-50.en.apertium
-less ~/Playing/mosesdecoder/corpus/all-clean-1-50.en.apertium
-rm ~/Pictures/Screenshot_2017091*
-cd ../ruLearn/
-ls
-less README 
-find . -type f|xargs grep 'tag sequences'
-less rule-generalisation/sample-config.es-ca.cfg 
-less rule-generalisation/sample-config.es-en.cfg 
-less ruLearn
-find . -type f|xargs grep '<chunk'
-ls
-less ruLearn
-find . -type f|xargs grep chunkName
-less phrase-extraction/src/AlignmentTemplate.C 
-less phrase-extraction/src/AlignmentTemplate.H 
-less ~/Downloads/43O0FMG9.tsv 
-cat ~/Downloads/43O0FMG9.tsv |awk -F'\t' '{print $2}'|sort|uniq
-cd ../dissertation-data/
-cd ainm-ner/
 ls
 cd ..
 git submodule update ainm-ner/
@@ -1998,3 +1977,24 @@ less ~/tmp/sync/exif-20171019-1.xml
 less ~/tmp/sync/bhashc-20171019-2
 less ~/tmp/sync/bhashc-20171019-2.tsv 
 grep tmp/ ~/tmp/sync/*
+cd ~/tmp/foo/
+ls
+cd ~/Pictures/foo/
+ls
+find . -name 'screen*' |grep -v 'xmp$'
+ls
+less screenshot_20171011-121620.png.xmp
+nohup sh ~/tmp/wrap-exif.sh &
+tail -f /tmp/exif.out 
+find . -name 'screen*' |grep -v 'xmp$' > /tmp/listing
+for i in TAGGED/*xmp;do echo $i; grep People $i;done
+for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|uniq;done
+for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|grep -v '|'|uniq;done
+for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|grep -v '|'|sort|uniq;done
+for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|grep -v '|'|sort|uniq;done > /tmp/listing2
+scp /tmp/listing jimregan:/tmp/
+scp /tmp/listing* jimregan:/tmp/
+less /tmp/exif.out 
+ls
+vi /tmp/exif.out 
+mv /tmp/exif.out ~/tmp/sync/exif-20171019-2.xml 
