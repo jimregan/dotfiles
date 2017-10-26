@@ -1,4 +1,41 @@
-# past: an + ecl; ní + len: but faigh: ní + ecl; abair: ní dúirt (also, no len in reg. past)
-verbs_past_an = bí téigh feic faigh déan abair
+#!/usr/bin/perl
 
-vowels = a e i o u á é í ó ú
+use warnings;
+use strict;
+use utf8;
+
+use FindBin qw($RealBin);
+
+binmode(STDIN, ":utf8");
+binmode(STDOUT, ":utf8");
+
+#my %norm = (
+#    "dh'fheisgint" => "d'fheiscint",
+#    "dtineóntaidhe" => "dtionóntaí",
+#    'lastiar' => 'laistiar',
+#    'sheasuigheadh' => 'sheasadh',
+#    "tineóntaithe" => "tionóntaí",
+#    "Maghchromtha" => "Maigh Chromtha",
+#);
+
+my %norm = ();
+open(NORM, "$RealBin/normalisations.tsv");
+binmode(NORM, ":utf8");
+while(<NORM>) {
+    chomp;
+    next if(/^#/);
+    my ($a, $b) = split/\t/;
+    $norm{$a} = $b;
+}
+
+while(<STDIN>) {
+    chomp;
+    my ($a, $b) = split/\t/;
+    if($norm{$a} eq $b) {
+        next;
+    } elsif($norm{lc($a)} eq lc($b)) {
+        next;
+    } else {
+        print "$_;
+    }
+}
