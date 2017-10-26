@@ -1,52 +1,3 @@
-grep 22580761_1090764057693651_5828174671102607360_n.jpg fash-rdf-links 
-grep 20398298_369624303456716_7637561482858725376_n.jpg fash-rdf-links 
-grep 22344602_1658436987533716_2456017584395386880_n.jpg fash-rdf-links 
-grep /home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/20184199_1459732814120169_2984853939729465344_n.jpg fash-rdf-links 
-grep 20184199_1459732814120169_2984853939729465344_n.jpg fash-rdf-links 
-grep 20184954_334507016971754_2244148097519190016_n.jpg fash-rdf-links 
-grep 20398298_369624303456716_7637561482858725376_n.jpg fash-rdf-links 
-grep 20589709_343251822770562_667572088281759744_n.jpg fash-rdf-links 
-grep 20633522_528823657458093_5018748342839017472_n.jpg fash-rdf-links 
-grep 20766715_142348159690104_3461209243565162496_n.jpg fash-rdf-links 
-grep 20837581_451560521890538_943074904377393152_n.jpg fash-rdf-links 
-grep 21041804_111698902877169_3691839392403423232_n.jpg fash-rdf-links 
-grep 21042569_1972913982920893_5138687452063465472_n.jpg  fash-rdf-links 
-grep 21107946_231516100705607_5161334346463838208_n.jpg fash-rdf-links 
-grep 21149675_1976865692561257_2890744733758390272_n.jpg fash-rdf-links 
-grep 19228823_284059958669562_8829936350888198144_n.jpg fash-rdf-links 
-grep 22157356_544352292562527_3970743706633371648_n.jpg fash-rdf-links 
-grep 22158067_210928372777319_941257927052754944_n.jpg fash-rdf-links 
-grep 22220753_1691551310878053_15318065285693440_n.jpg fash-rdf-links 
-grep 22277898_504543699907269_1555096117580922880_n.jpg fash-rdf-links 
-grep 22280035_483142375375776_486121947797651456_n.jpg fash-rdf-links 
-grep 22280331_1985271401761982_4443876221628973056_n.jpg fash-rdf-links 
-grep 22352339_272173299959065_2108912019888406528_n.jpg fash-rdf-links 
-grep 22352555_123640911675713_1397939725167230976_n.jpg fash-rdf-links 
-grep 22427213_1491949630898321_308437226616782848_n.jpg fash-rdf-links 
-ls
-ogimageproc https://www.instagram.com/p/BYNdc1BhDGq/?taken-by=sandra_muzalewska
-ogimageproc https://www.instagram.com/p/BaOZYtQhBBM/?taken-by=liana_shel
-ogimageproc https://www.instagram.com/p/BX-UJudBiaf/?taken-by=liana_shel
-ogimageproc https://www.instagram.com/p/BZ-2F7_lJwa/?taken-by=leto.__
-ogimageproc https://www.instagram.com/p/BY24J_jBr47/?taken-by=aniu_ta
-ogimageproc https://www.instagram.com/p/BHc3Y3OBZRt/?taken-by=aniu_ta
-ogimageproc https://www.instagram.com/p/BE_7fvvuzrR/?taken-by=aniu_ta
-ogimageproc https://www.instagram.com/p/4ybrTZuzrK/?taken-by=aniu_ta
-ogimageproc https://www.instagram.com/p/BZ6qY7QlfVn/?taken-by=kasia.nalepa
-ogimageproc https://www.instagram.com/p/BY0qof_lvzD/?taken-by=kasia.nalepa
-ogimageproc https://www.instagram.com/p/BaRiVWen8zK/?taken-by=barbeliciouss
-ogimageproc https://www.instagram.com/p/BZodVa4HSu6/?taken-by=barbeliciouss
-vi gal1
-vi imgur-gals
-vi imgur-gals-ia
-ogimageproc https://www.instagram.com/p/BaRJANoh-Sn/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BaKSBj8h4Cq/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BaMsI0GhTFW/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BZeGMx0BwZ_/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BZb5KVkBEe5/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BXM_e16BEoo/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BXJBRMOh_gl/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BXLHr0yBxzM/?taken-by=nadia_khom
 ogimageproc https://www.instagram.com/p/BXH0tCTBzek/?taken-by=nadia_khom
 ogimageproc https://www.instagram.com/p/BVM53ErBh4h/?taken-by=nadia_khom
 ogimageproc https://www.instagram.com/p/BZ1hz8-g91m/?taken-by=awesomeantjay
@@ -1998,3 +1949,52 @@ git checkout -b fstconv
 git cherry-pick 07660d213f3853ee5044bf678756441ee7d1b66c
 git push origin fstconv
 ls -al dev/
+file *srt
+less speech-to-representatives-of-the-national-literacy-agency.srt 
+unzip -l ~/Downloads/subcheck-0.78.2a.zip 
+unzip ~/Downloads/subcheck-0.78.2a.zip 
+perl subcheck/subcheck.pl 
+ls
+perl subcheck/subcheck.pl -i speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+ls
+perl subcheck/subcheck.pl -i original/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+git status
+git diff
+git stash
+perl subcheck/subcheck.pl 
+less subcheck/subcheck.pl 
+less subcheck/man/subcheck.8.gz 
+cp original/speech-* .
+less ~/Downloads/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt.vtt 
+cp ~/Downloads/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt.vtt  .
+cp ~/Downloads/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt.sbv  .
+cp ~/Downloads/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt.sub  .
+git status
+less speech-at-the-opening-of-the-86th-national-ploughing-championships.srt
+git status
+ls
+cp original/* edit/
+git add edit/
+git commit -m edit
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt edit/
+git diff
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt edit/
+git diff
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt edit/
+git diff
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt edit/
+git diff
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt edit/
+git diff
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt edit/
+git diff
+git add edit/speech-at-the-opening-of-the-86th-national-ploughing-championships.srt 
+git commit -m 'fix'
+git push origin master
+cp speech-at-the-opening-of-the-86th-national-ploughing-championships.srt edit/
+git diff
+lynx http://theloungelobby.com/watch/37680/7/11
+curl http://theloungelobby.com/watch/37680/7/11
+ps aux|grep firefox
+# https://www.youtube.com/watch?v=TKKPzFrvvsY
+ssh jimregan
