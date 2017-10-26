@@ -1,24 +1,3 @@
-sh autogen.sh 
-sudo make install
-cd ../ruLearn/
-sh autogen.sh 
-vi apertium-patch/test/testApertiumPatchAutoconf.sh 
-sh autogen.sh 
-sudo ldconfig
-sh autogen.sh 
-apt-cache search parallel
-apt-cache search parallel|grep more
-sudo apt-get install moreutils
-sh autogen.sh 
-apt-cache search pulp
-sudo apt-get install python-pulp
-sh autogen.sh 
-make
-make -j 8
-less ruLearn
-sh ruLearn -X
-sh ruLearn -x
-apt-cache search shflags
 cd ..
 git clone https://github.com/kward/shflags.git
 cd shflags/
@@ -1998,3 +1977,24 @@ find . -name 'screenshot*'|grep -v 'xmp$'|awk -F/ '{print $NF}'
 find . -name 'screenshot*'|grep -v 'xmp$'|awk -F/ '{print $NF}' > /tmp/alreadyhere
 wc -l /tmp/alreadyhere 
 tail -f ~/tmp/bar/mrg 
+. ~/tmp/sourceme 
+filtfind |perl ~/scripts/pipe-ook.pl 
+apt-cache search sha1|grep perl
+cpan Digest::SHA1
+sudo cpan Digest::SHA1
+filtfind |perl ~/scripts/pipe-ook.pl 
+less ~/tmp/sync/assumed-identical-20171019_162928.nt 
+filtfind |perl ~/scripts/pipe-ook.pl |sed -e 's#<file:/tmp/sshts/
+filtfind |perl ~/scripts/pipe-ook.pl |sed -e 's#^<http://#<file:/tmp/sshts/#'
+filtfind |perl ~/scripts/pipe-ook.pl |sed -e 's#^<http://#<file:/tmp/sshts/#' >> ~/tmp/ookdata-20171019-1.nt
+less ~/tmp/ookdata-20171019-1.nt
+ls
+find . -name screenshot_20170807-232531.png
+ls ../s-shots/
+ls ../s-shots/*png|wc
+ls ../s-shots/*png
+fdupes -r ../s-shots/
+rm ../s-shots/mtp\:⁄HTC\ Desire\ 530⁄Internal\ storage⁄Pictures⁄Screenshots⁄Screenshot_20170807-2325*
+ls ../s-shots/*png|wc
+vi spp
+ls
