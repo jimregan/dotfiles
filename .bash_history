@@ -1,7 +1,3 @@
-#mv /home/jim/Pictures/foo/screenshot_20170807-235539.png* anab
-mkdir anabartocha
-mv /home/jim/Pictures/foo/screenshot_20170807-235539.png* anabartocha/
-mkdir ziyatova_kristina
 mv /home/jim/Pictures/foo/screenshot_20170807-235922.png* ziyatova_kristina/
 mv /home/jim/Pictures/foo/screenshot_20170808-000109.png* yuliyabb/
 mv /home/jim/Pictures/foo/screenshot_20170808-000104.png* yuliyabb/
@@ -1998,3 +1994,7 @@ cp dissertation.pdf /tmp/
 ssh jimregan
 apt-cache search librev
 ssh jimregan
+cd /tmp/
+unzip ~/Downloads/TeXcount_3_1.zip 
+perl texcount.pl ~/Playing/Dissertation/9879472fwnkgtfsztvt/*tex
+less ~/Downloads/S0885230801901846.bib 
