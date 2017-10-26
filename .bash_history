@@ -1,4 +1,3 @@
-git push origin master
 git pull origin master
 git log
 git checkout gaois 
@@ -1998,3 +1997,4 @@ man adduser
 smbpasswd -a jim
 sudo smbpasswd -a jim
 ls -al /home/jim/Pictures/
+ls
