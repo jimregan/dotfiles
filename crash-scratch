@@ -1,103 +1,16 @@
-// IRISH
-language_specs['ga'] = new lang_class ;
-
-language_specs['en'].setup = function () {
-	this.init() ;
-	this.month_label = [ '' , 'January','February','March','April','May','June','July','August','September','October','November','December' ] ; // First one needs to be empty!!
-	this.is_male = !this.i.hasClaimItemLink('P21','Q6581072') ;
-	this.s_he = (this.is_male?'sé':'sé') ;
-	this.s_he = (this.is_male?'é':'í') ;
-	this.his_er = 'a' ;
-}
-
-language_specs['en'].renderDateByPrecision = function ( pre , year , month , day , precision , no_prefix ) {
-	var me = this ;
-	var ret = {} ;
-	if ( precision <= 9 ) {
-		ret.iso = year*pre ;
-		ret.label = year ;
-		if ( !no_prefix ) ret.before = 'in ' ;
-	} else if ( precision == 10 ) {
-		ret.iso = year*pre + '-' + month ;
-		ret.label = me.month_label[month*1] + ' ' + year ;
-		if ( !no_prefix ) ret.before = 'in ' ;
-	} else if ( precision == 11 ) {
-		ret.iso = year*pre + '-' + month + '-' + day ;
-		ret.label = me.month_label[month*1] + ' ' + (day*1) + ', ' + year ;
-		if ( !no_prefix ) ret.before = 'on ' ;
-	}
-	if ( pre == -1 ) ret.after = " <small>B.C.E.</small>" + ret.after ;
-	return ret ;
-}
-
-language_specs['en'].employers = function ( d ) {
-	var me = this ;
-	this.listSentence ( {
-		data : d ,
-		start : function() { me.h.push ( { label:me.s_he+' worked for ' } ) } ,
-		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
-		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
-		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
-		qualifiers : { job:function(qv){me.h.push ( { before:'as ' , q:qv[0] , after:' ' } )} } ,
-		item_end : function(num,sep) { me.h.push ( { label:sep+(num+1<d.length?'for ':'') } ) } ,
-		end : function() { me.h.push ( { label:'. ' } ) }
-	} ) ;
-}
-
-language_specs['en'].position = function ( d ) {
-	var me = this ;
-	this.listSentence ( {
-		data : d ,
-		start : function() { me.h.push ( { label:me.s_he+' was'+(me.is_dead?'':'/is')+' ' } ) } ,
-		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
-		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
-		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
-		qualifiers : { of:function(qv){me.h.push ( { before:'for ' , q:qv[0] , after:' ' } )} } ,
-		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
-		end : function() { me.h.push ( { label:'. ' } ) }
-	} ) ;
-}
-
-language_specs['en'].member = function ( d ) {
-	var me = this ;
-	this.listSentence ( {
-		data : d ,
-		start : function() { me.h.push ( { label:me.s_he+' was'+(me.is_dead?'':'/is')+' a member of ' } ) } ,
-		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
-		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
-		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
-//					qualifiers : { job:function(qv){me.h.push ( { before:'as ' , q:qv[0] , after:' ' } )} } ,
-		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
-		end : function() { me.h.push ( { label:'. ' } ) }
-	} ) ;
-}
-
-language_specs['en'].alma = function ( d ) {
-	var me = this ;
-	this.listSentence ( {
-		data : d ,
-		start : function() { me.h.push ( { label:me.s_he+' studied at ' } ) } ,
-		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
-		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
-		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
-		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
-		end : function() { me.h.push ( { label:'. ' } ) }
-	} ) ;
-}
-
 language_specs['en'].field = function ( d ) { var me=this; this.simpleList ( d , me.his_er+' field of work include'+(me.is_dead?'d':'s')+' ' , '. ' ) ; }
 language_specs['en'].cause_of_death = function ( d ) { this.simpleList ( d , 'of ' , ' ' ) ; }
 language_specs['en'].killer = function ( d ) { this.simpleList ( d , 'by ' , ' ' ) ; }
 language_specs['en'].sig_event = function ( d ) { this.simpleList ( d , this.s_he+' played a role in ' , '.' ) ; }
 
-language_specs['en'].spouses = function ( d ) {
+language_specs['pl'].spouses = function ( d ) {
 	var me = this ;
 	this.listSentence ( {
 		data : d ,
-		start : function() { me.h.push ( { label:me.s_he+' married ' } ) } ,
+		start : function() { me.h.push ( { 'Poślubił'+me.verb_end+' ' } ) } ,
 		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
 		date_from : function(cb) { cb(); me.h.push ( { label:' ' } ) ; } ,
-		date_to : function(cb) { me.h.push ( { label:'(married until ' } ) ; cb() ; me.h.push ( { label:') ' } ) } ,
+		date_to : function(cb) { me.h.push ( { label:'(do ' } ) ; cb() ; me.h.push ( { label:') ' } ) } ,
 		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
 		end : function() { me.h.push ( { label:'. ' } ) }
 	} ) ;
@@ -115,10 +28,10 @@ language_specs['en'].children = function ( d ) {
 }
 
 
-language_specs['en'].addFirstSentence = function () {
+language_specs['pl'].addFirstSentence = function () {
 	var me = this ;
 	me.h.push ( me.getBold ( { label:me.mainTitleLabel() } ) ) ;
-	me.h.push ( { label:(this.is_dead?'was':'is') , after:' a ' } ) ;
+	me.h.push ( { label:' — ' } ) ;
 	this.listNationalities() ;
 	this.listOccupations() ;
 	me.h.push ( { label:'. ' } ) ;
@@ -137,7 +50,7 @@ language_specs['en'].addBirthText = function () {
 		me.h.push ( { label:me.s_he , after:' was born ' } ) ;
 		if ( birthname !== undefined ) me.h.push ( { label:me.i.getClaimTargetString(birthname[0]) , before:'<i>' , after:'</i> ' } ) ;
 		if ( birthdate !== undefined ) me.h.push ( me.renderDate(birthdate[0]) ) ;
-		if ( birthplace !== undefined ) me.addPlace ( { q:me.i.getClaimTargetItemID(birthplace[0]) , before:'in ' , after:' ' } ) ;
+		if ( birthplace !== undefined ) me.addPlace ( { q:me.i.getClaimTargetItemID(birthplace[0]) , before:'w ' , after:' ' } ) ;
 		var father = me.getParent ( 22 ) ;
 		var mother = me.getParent ( 25 ) ;
 		if ( father !== undefined || mother !== undefined ) {

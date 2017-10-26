@@ -301,4 +301,23 @@ https://github.com/bamtercelboo/pytorch_SRU/blob/master/train_ALL_SRU_1.py
 https://github.com/bamtercelboo/pytorch_SRU/blob/master/train_ALL_SRU.py
 https://github.com/salesforce/pytorch-qrnn/blob/master/torchqrnn/forget_mult.py
 https://github.com/salesforce/awd-lstm-lm
+https://github.com/salesforce/pytorch-qrnn/blob/master/torchqrnn/forget_mult.py
+http://www.gitxiv.com/posts/LaWwi5Js7TTEKKtRK/designing-neural-network-architectures-using-reinforcement
+https://github.com/LiyuanLucasLiu/LM-LSTM-CRF/blob/master/model/utils.py
+https://arxiv.org/pdf/1612.07837.pdf
+https://github.com/soroushmehr/sampleRNN_ICLR2017/blob/master/models/three_tier/three_tier.py
+http://book.paddlepaddle.org/index.html
+https://discuss.pytorch.org/t/any-plans-on-including-qrnn-into-recurrent-layers/4928
+http://mxnet.incubator.apache.org/api/python/symbol.html#neural-network
+https://github.com/apache/incubator-mxnet/blob/master/cpp-package/example/charRNN.cpp
+https://github.com/apache/incubator-mxnet/blob/master/example/rnn/old/char-rnn.ipynb
+https://github.com/apache/incubator-mxnet/blob/master/example/speech_recognition/stt_layer_lstm.py
+http://mxnet.incubator.apache.org/api/python/rnn.html
+https://github.com/apache/incubator-mxnet/blob/master/python/mxnet/gluon/rnn/rnn_cell.py
+https://github.com/apache/incubator-mxnet/tree/master/python/mxnet/rnn
+https://aws.amazon.com/blogs/ai/exploiting-the-unique-features-of-the-apache-mxnet-deep-learning-framework-with-a-cheat-sheet/
+https://github.com/ysh329/deep-learning-model-convertor
+https://gist.github.com/wolet/1b49c03968b2c83897a4a15c78980b18
+https://github.com/neulab/dynet-benchmark/blob/master/dynet-py/treenn.py
+https://grpc.io/docs/tutorials/basic/c.html
 
