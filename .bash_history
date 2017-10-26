@@ -1,4 +1,3 @@
-ls
 find . -name 'screen*' |grep -v 'xmp$'
 ls
 less screenshot_20171011-121620.png.xmp
@@ -1998,3 +1997,4 @@ git push origin master
 git status
 git push origin master
 kwin --replace
+vi open-tabs
