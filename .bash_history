@@ -1,4 +1,3 @@
-cd ~/Pictures/foo/
 ls
 find . -name 'screen*' |grep -v 'xmp$'
 ls
@@ -1998,3 +1997,4 @@ git push gh wip
 git push origin master
 git status
 git push origin master
+kwin --replace
