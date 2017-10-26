@@ -1,122 +1,3 @@
-grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt ; done
-grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt || echo $i >> mrg.g;done
-cd ~/Pictures/foo/
-ls
-cd ..
-ls
-unzip /tmp/tmmp.zip 
-rm /tmp/tmmp.zip 
-ls
-cd foo/
-mkdir alexisren
-mkdir lilly.marchel
-mkdir ms.saldar
-ls alexisren/
-mkdir ofitial
-mkdir karolina_pisarek
-mkdir paulinaapsp
-mkdir lilia_gold
-mkdir camillekaftan
-mkdir alina_akilova
-mkdir marii212121
-mkdir nataliesng
-mkdir babybratz
-mkdir rosaliette
-mkdir kbprada
-mkdir yuliyabb
-mkdir _lesya_novikova_
-mkdir anella_miller
-mkdir shipilovaks
-mkdir i.s.nesquik
-mkdir aleksanina.k
-mkdir ola_wanserska
-mkdir mo_na2016
-mkdir zuueva
-ls zuueva/
-rm screenshot_20170806-181548.png
-rm screenshot_20170806-181548.png.xmp 
-rm screenshot_20170806-181556.png
-rm screenshot_20170806-181556.png.xmp 
-mkdir gradek_justyna
-mkdir martynakepa
-ls
-ls|wc
-mkdir unnamed
-mkdir broken
-less /home/jim/Pictures/foo/screenshot_20170814-191320.png.xmp 
-less /home/jim/Pictures/foo/screenshot_20170815-141659.png.xmp 
-ls
-mkdir helga_model
-ls nazarovamur/
-mkdir bitch_soul_
-mkdir veronika_chachyna
-mkdir monika.chmielecka
-mkdir kasiabielecka_
-mkdir to_kasi_insta
-mkdir natali_danish
-mkdir anastasiasergeevaaaaa
-mkdir dashamart
-mkdir svetabily
-mkdir _daria___igorevna_
-mkdir vdp02
-mkdir sandra_traczyk
-ls|wc
-ls
-less /home/jim/Pictures/foo/shipilovaks/screenshot_20170810-090330.png.xmp 
-rm /home/jim/Pictures/foo/shipilovaks/screenshot_20170810-090330.png.xmp 
-mv /home/jim/Pictures/foo/shipilovaks/screenshot_20170810-090330.png unnamed/
-mkdir trishka92
-mkdir rimmula_007
-mkdir popova__l
-mkdir pakhotinaart
-mkdir nastyushaaaa
-mkdir anikina95
-mkdir 2121kk___k
-mkdir sasha_raymer
-mkdir alexandra.one
-mkdir viki_odintcova
-mkdir katya_parshina
-mkdir di.gq7
-mkdir juleczkaaa_jula
-mkdir arishabo
-mkdir marymax01
-mkdir carolynduchene
-mkdir 94pln_
-mkdir ey.marie
-mkdir vasilisa_beautiful_
-mkdir alina_sabirova1
-mkdir katekirienko
-mkdir natasha_mankovskaya
-mkdir maryhockings
-mkdir lazarenkoyuliya
-mkdir dagmaramalus
-mkdir veronicabielik
-mkdir mashenka.khv
-mkdir maria_domark
-mkdir paulinye
-mkdir karri_official_
-mkdir malwinakosinska
-mkdir k.maciag
-mkdir dmitrievna_555
-mkdir anetasnake
-mkdir marilica_
-mkdir lilymaymac
-mkdir ngizerskaya
-mkdir a.zimny
-mkdir skysoulmate
-mkdir zolzalaura
-mkdir alesiaasta
-mkdir justynka.jalowiecka
-grep diva *xmp
-mkdir _____diva_diva
-grep serg *xmp
-mkdir _yuliya_sergeevna
-mkdir kraseczka
-grep summer *xmp
-mkdir summerlovesummerl
-grep madzii *xmp
-mkdir madziiex
-grep vot *xmp
 mkdir votyakovanastya
 grep kates *xmp
 mkdir katesytsevich
@@ -1998,3 +1879,122 @@ cd pmg
 ls
 less allcomments091109
 less allcomments091109.txt 
+cd /tmp/
+ls ~/Downloads/[Ii]*
+tar zxvf ~/Downloads/iris_eval_set.tgz 
+grep " b ' " iris_eval_set.tok.lc.ga 
+less iris_eval_set.tok.lc.ga 
+cd ~/Playing/Dissertation/
+ls
+cd ../dissertation-data/
+ls
+unzip -l onmt.trans.zip 
+cp onmt.trans.zip /tmp/
+cd /tmp/
+unzip onmt.trans.zip 
+less sentences.xml 
+rm sentences.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+less ref.xml 
+find /home/jim/Playing/mosesdecoder -name '*clean*'
+less /home/jim/Playing/mosesdecoder/scripts/training/clean-corpus-n.perl
+less tgt.xml 
+less ref.xml 
+less tgt.xml 
+grep '>$<' tgt.xml 
+cat tgt.xml |perl -ane 'if(/>([^<]*)<) {print length($1);};'
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1);}'
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}'
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort 
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort |less
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n|uniq -c
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n|uniq -c|sort -nr
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n|uniq -c|sort -nr|awk '($2 < 10){print)'
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n|uniq -c|sort -nr|awk '($2 < 10){print}'
+cat ref.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n|uniq -c|sort -nr|awk '($2 < 10){print}'
+cat tgt.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n|uniq -c|sort -nr|awk '($2 < 10){print}'|awk 'BEGIN{a=0}{a += $1}END{print a}'
+cat ref.xml |perl -ane 'if(/>([^<]*)</) {print length($1) . "\n";}' |sort -n|uniq -c|sort -nr|awk '($2 < 10){print}'|awk 'BEGIN{a=0}{a += $1}END{print a}'
+sudo apt-get install docker
+curl http://jsnoori.loria.fr/dist/jsnoori.jnlp
+wget http://jsnoori.loria.fr/dist/jsnoori.jar
+unzip -l jsnoori.jar 
+curl http://jsnoori.loria.fr/dist/jsnoori.jnlp
+wget http://jsnoori.loria.fr/dist/lib/jtrans.jar
+unzip jtrans.jar 
+ls
+javap plugins/speechreco/frontEnd/DCT.class
+javap plugins/phonetiseur/SuitePhonemes.class
+curl http://jsnoori.loria.fr/dist/jsnoori.jnlp
+unzip -l jtrans.jar 
+unzip jsnoori.jar 
+ls
+find fr/loria/parole -type f
+find fr/loria/parole -type f|grep -i syn
+find fr/loria/parole -type f|grep -i spee
+find fr/loria/parole -type f|grep -i laa
+apt-cache search jad
+apt-cache search cfr
+git clone https://github.com/deathmarine/Luyten.git
+ls ~/Downloads/*jar
+java -jar ~/Downloads/cfr_0_122.jar 
+java -jar ~/Downloads/cfr_0_122.jar fr/loria/parole/jsnoori/model/speech/pitch/Pitch.class
+find fr/loria/parole -type f|grep -i pitch
+sudo apt-get install wine
+apt-cache search snowman
+apt-cache search smartdec
+tar zxvf ~/Downloads/kpe80.src.tgz 
+cd klatt80/
+ls
+less README 
+ls
+less klatt
+less klatt.c 
+less klatt.man 
+ls
+less parwave.c 
+less parwave.h 
+less proto.h 
+make
+rm parwave.o 
+make
+ls
+./klatt 
+less klatt.c 
+ls
+less parwave.h 
+less parwave.c 
+grep two_pi_t *
+less parwave.c 
+less parwave.h
+grep frame *
+wc  params.txt
+vi  params.txt
+echo 1000 0 543 0 1324 0 2663 0 3681 0 4279 0 4000 0 0 0 200 40  0 40  0 20  0  0  0 52  0 57  0 72  0 67  0 80  0 80  0  0  0 70|tr ' ' '\n'|wc
+git status
+ssh jimregan
+ls
+git clone https://github.com/rsprouse/klsyn
+cd klsyn/
+ls
+ssh jimregan
