@@ -1,33 +1,3 @@
-ls
-zless binary-vectors.txt.gz 
-less word-feat.txt 
-ls -al
-cd ..
-git clone https://bitbucket.org/magnusmanske/autodesc.git
-cd autodesc/
-ls
-cd www/js/
-ls
-grep 'de' *
-grep 'fr' *
-vi /tmp/ennat
-cat /tmp/ennat |sed -e 's/:/\n/g'
-cat /tmp/ennat |sed -e 's/,/\n/g'
-cat /tmp/ennat |sed -e 's/,/\n/g'|awk -F"'" '{print $2}'
-cat /tmp/ennat |sed -e 's/,/\n/g'|awk -F"'" '{print $4}'
-cat /tmp/nattop 
-cat /tmp/nattop |awk -F'\t' "{print \"'\"}'
-cat /tmp/nattop |awk -F'\t' "{print \"'\"}"
-cat /tmp/nattop |awk -F'\t' "{print \"'\" $1 \"'\",}"
-cat /tmp/nattop |awk -F'\t' "{print \"'\" $1 \"':'\" $2 \"', \"}"
-cat /tmp/nattop |awk -F'\t' '{print "\"" $1}'
-cat /tmp/nattop |awk -F'\t' '{print "\"" $1 "\",\""}'
-cat /tmp/nattop |awk -F'\t' '{print "\"" $1 "\":\"" $2 "\","}'
-cat /tmp/nattop |awk -F'\t' '{print "\"" $1 "\":\"" $2 "\","}'|tr '"' "'"
-paste /tmp/natl /tmp/natr |awk -F'\t' '{print "\"" $1 "\":\"" $2 "\","}'|tr '"' "'"
-git remote add mine https://joregan@bitbucket.org/joregan/autodesc.git
-git diff
-git add short_autodesc.js 
 git commit -m 'ga nationalities; ga+pl list'
 git checkout -b ga-nationalities
 git push mine ga-nationalities 
@@ -1998,3 +1968,33 @@ cat words.txt
 ls
 less DecideVUV.m 
 less GenerateVUVSetting.m 
+git status
+ls -al caighdean/
+git status
+cd caighdean/
+git status
+ls
+rm MSF_chapter_xa*
+ls
+git status
+git diff
+ls
+git status
+less MSF_chapter_9.pairs 
+git status
+less MSF_chapter_11.pairs 
+cd ..
+cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}' > scripts/normalisations.tocheck2
+less scripts/normalisations.tocheck2 
+sphinxtrain -t ga setup
+ls ga/
+ls
+ls etc/feat.params 
+mkdir sphtr
+cd sphtr/
+sphinxtrain -t ga setup
+ls
+cd etc/
+ls
+less sphinx_train.cfg 
+vi sphinx_train.cfg 
