@@ -1,14 +1,3 @@
-vi ../pron-data/pronounce-as.tsv 
-ls
-git status
-git add ../pron-data/pronounce-as.tsv 
-git commit -m 'pronounce as'
-grep Akteon polimorf.tab
-grep Akteon polimorf.tab|awk -F'\t' '{print $1}'|sort|uniq
-apt-cache search mstch
-ls
-less propernames 
-less nonpropernames 
 less ../pron-data/pronounce-as.tsv 
 less ../text/xaa 
 grep 'ów$' ../text/x*
@@ -1998,3 +1987,14 @@ less pom.xml
 find . -name '*.class'
 mvn install
 unzip -l target/jklatt-1.0-SNAPSHOT.jar 
+cd klsyn/
+ls
+cd c/
+ls
+grep original_f0 *
+grep -i f0 *
+less klsynman.pdf 
+grep -i flutter *
+grep AVdb *
+grep pulse_shape_a *
+grep -i pulse *
