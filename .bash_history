@@ -1,45 +1,3 @@
-ls example/en-ga/
-cat example/en-ga/en.attrib-seq.txt 
-git rm example/en-ga/en.attrib-seq.txt 
-cat example/en-ga/ga.attrib-seq.txt 
-git rm example/en-ga/ga.attrib-seq.txt 
-cat example/en-ga/ga.attribs_chunk.txt 
-git rm example/en-ga/ga.attribs_chunk.txt 
-git status
-git add src/main/scala/ie/tcd/slscs/itut/RuleConverter/Irish.scala 
-git commit -m 'simplify: put everything into code. Because I do not have the time'
-git log
-git revert fc156ded8707c98622b0699c4f6223009b381276
-vi example/en-ga/ga.attribs.txt 
-git add example/en-ga/ga.attribs.txt 
-git commit -m 
-git commit -m ''
-git commit -m  ' ' 
-git commit -m  '_' 
-less ~/Playing/apertium-en-es/apertium-en-es.en-es.t1x 
-git checkout master 
-git stash 
-git checkout master 
-git pull origin master 
-git branch -D still-in-progress 
-cd ..
-ls
-cd gramadanj/
-git status
-git branch
-git push origin master 
-git pull origin master
-git push origin master 
-cd ../
-ls
-cd jngramtool/
-git pull origin master
-git push origin master 
-git branch
-cd ..
-ls
-cd duckegg/
-git branch 
 git push origin master
 git pull origin master
 git log
@@ -1998,3 +1956,45 @@ git status
 git status|less
 cat x*
 wc -l x*
+cd ~/Pictures/
+l;s
+ls
+ls -al *
+ls -al
+ls -alls foo/
+ls -al foo/|wc
+ls foo
+cat foo/*xmp
+cd foo
+ls
+mkdir schatzii_
+mkdir space_margo
+ls
+ps aux|grep dolph
+ps aux|grep digikam
+ls -al 
+mkdir volkonskaya.reshetova
+mkdir tolloczkoklaudia
+mkdir nazarovamur
+ls
+for i in *png;do if [ -e ~/tmp/foo/$i ] ; then echo rm ~/tmp/foo/$i; fi;done
+for i in *png;do if [ -e ~/tmp/foo/$i ] ; then  rm ~/tmp/foo/$i; fi;done
+ls
+mv ~/tmp/foo/screenshot_20171012-* .
+mv ~/tmp/foo/screenshot_20171011-* .
+mv ~/tmp/foo/screenshot_20171010-* .
+mv ~/tmp/foo/screenshot_20171009-* .
+mv ~/tmp/foo/screenshot_20171008-* .
+mv ~/tmp/foo/screenshot_2017100*-* .
+tail -f /var/log/samba/log.jimregan 
+ls -al /var/log/samba/
+less /var/log/samba/log.nmbd
+less /etc/samba/smb.conf 
+smbpasswd -h
+smbpasswd 
+sudo smbpasswd -L jim
+man useradd
+man adduser
+smbpasswd -a jim
+sudo smbpasswd -a jim
+ls -al /home/jim/Pictures/
