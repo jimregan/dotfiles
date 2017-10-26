@@ -1,34 +1,3 @@
-echo "Rozdział X"|perl norm-text.pl 
-echo "Rozdział I"|perl norm-text.pl 
-echo "Rozdział XXI"|perl norm-text.pl 
-echo "Rozdział X"|perl norm-text.pl 
-echo "Rozdział I"|perl norm-text.pl 
-echo "Rozdział XXI"|perl norm-text.pl 
-echo "Rozdział XI"|perl norm-text.pl 
-echo "Rozdział XXXIV"|perl norm-text.pl 
-echo "Rozdział XXXIX"|perl norm-text.pl 
-echo "Rozdział XXXX"|perl norm-text.pl 
-echo "Rozdział XXIX"|perl norm-text.pl 
-perl -e 'my $a = 1; if($a){print "foo";}'
-perl -e 'my $a = 0; if($a){print "foo";}'
-curl https://wolnelektury.pl/media/book/txt/przygody-tomka-sawyera.txt|perl norm-text.pl 
-wget https://wolnelektury.pl/media/book/txt/przygody-tomka-sawyera.txt
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl 
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl |less
-vi przygody-tomka-sawyera.txt.1
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl |less
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl 
-echo "Rozdział I"|perl norm-text.pl 
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl 
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl |less
-file przygody-tomka-sawyera.txt.1 
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl 
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl > normed
-diff -u przygody-tomka-sawyera.txt.1 normed |less
-dos2unix przygody-tomka-sawyera.txt.1 
-diff -u przygody-tomka-sawyera.txt.1 normed |less
-git add norm-text.pl 
-git commit -m 'text norm'
 git status
 less audiobooks.tsv 
 git add audiobooks.tsv 
@@ -1998,3 +1967,34 @@ cd s-shots/
 sh ~/tmp/wrap-exif.sh 
 vi /tmp//exif.out 
 mv /tmp//exif.out ~/tmp/sync/exif-20171019-5.xml
+cd ~/Pictures/
+ls
+cd foo/
+ls
+find . -name '*xmp' -delete
+ls
+find . -name '*png'|wc
+find . -name 'screens*'
+find . -name 'screens*' > /tmp/listing
+split -l 1000 /tmp/listing
+less xaa 
+mkdir copy
+cp $(cat xaa) copy/
+rm copy/screenshot_2017*
+cp $(cat xab) copy/
+rm copy/*
+cp $(cat xac) copy/
+rm copy/*
+cp $(cat xad) copy/
+rm copy/*
+cp $(cat xae) copy/
+rm copy/*
+cp $(cat xaf) copy/
+rm copy/*
+cp $(cat xag) copy/
+wc -l xag
+rm copy/*
+cp $(cat /tmp/asd/tocopy) copy/
+ls copy/
+cat ~/tmp/bar/mrgs 
+cat ~/tmp/bar/mrgs |grep inst
