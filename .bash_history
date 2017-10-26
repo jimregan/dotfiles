@@ -1,50 +1,3 @@
-mv tospider tttmp/
-cd tttmp/
-$HOME/scripts/grab-logged.sh tospider 
-tail -f tospider.log 
-cd ..
-ls
-fdupes -r . > archdup
-less archdup 
-grep tttmp/ archdup 
-grep tttmp/ archdup |while read i;do rm $i;done
-cd tttmp/
-rmemptydir 
-ls
-cd ..
-ls
-find scontent-lht6-1.cdninstagram.com -type f
-find scontent-lht6-1.cdninstagram.com -type f|while read i;do grep $i archdup || echo http://web.archive.org/save/https://$i >> tttmp/tospb;done
-cd tttmp/
-ls
-cd ..
-ls
-les ~/scripts/pipe-ook.pl 
-less ~/scripts/pipe-ook.pl 
-vi /tmp/drilink
-vi /tmp/link
-paste /tmp/link /tmp/drilink 
-paste /tmp/link /tmp/drilink |awk '{print $1 " " $2}'
-paste /tmp/link /tmp/drilink |awk '{print $1 " " $2}'|while read i;do procimg $i;done
-tail fash-rdf-links 
-vi fash-rdf-links 
-cat /tmp/drilink 
-cat /tmp/drilink |grep http
-cat /tmp/drilink |grep http|while read i;do doimg $i https://postimg.org/gallery/10noq3870/;done
-tail fash-rdf-links 
-fdupes -r . ../foo/ > duptmp2
-less duptmp2 
-rm tttmp/nohup.out 
-vi duptmp2 
-fdupes -r . ~/Pictures/foo > duptmp2
-less duptmp2 
-cat /tmp/drilink 
-identify s1.postimg.org/5a0nmeek1b/screenshot_20171011-212624.png
-curl https://postimg.org/image/8pm9lh8m63/
-curl https://postimg.org/image/8pm9lh8m63/|grep dl=1
-curl https://postimg.org/image/8pm9lh8m63/|grep screensh
-lynx -dump https://postimg.org/image/8pm9lh8m63/
-lynx -dump https://postimg.org/image/8pm9lh8m63/|grep dl=1
 lynx -dump https://postimg.org/image/8pm9lh8m63/|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}'
 grep http /tmp/link|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;done
 grep 22500293_1996512857291245_7006758639662792704_n.jpg fasd
@@ -1998,3 +1951,50 @@ echo całość | uconv -x pl-pl_FONIPA
 echo całość | uconv -x pl-pl_FONIPA | uconv -x IPA_XSAMPA
 echo całość | uconv -x pl-pl_FONIPA | uconv -x IPA_XSampa
 echo całość | uconv -x pl-pl_FONIPA | uconv -x IPA-XSampa
+cd Playing/msf-asr/
+git status
+git add raw-text/MSF_chapter_6.txt 
+git commit -m change
+mv normalise.pl scripts/
+git diff
+git add scripts/normalise.pl 
+git commit -m more
+git remote add origin https://github.com/jimregan/irish-asr-data.git
+git push origin master
+git status
+less gaipa-to-arpabet.pl 
+less candidates 
+less prontodo 
+ls wav/
+less sent1-2pt.jsgf 
+grep beag pron/munster.tsv 
+cat sent1-en 
+mkdir mickyd
+cd mickyd/
+wget 'https://cf-media.sndcdn.com/Wid3RPBmMpfl.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__&Signature=hcnnEYTAynOOcSa9ftqn1zmnwOcdBugQ8wQ3iRgC3qF2QEn0U7lCIs5GSeE97p501ASTn0YDJmkuzGrNvK6qBL4pTXJ8U5Gajh8ifiI3LycUtRBHu9NEYCuqnPVf2VxH3URPRBCrQs5MSdMAs51vvXW0-6Xoyt3-YE1RJc8c3ml-N-Vif--n1G2JVR0QCJYn08NRtnJbO1vFJM24aE1jN9FhAJWz~Yx7JivcGnIgS53NbES6JMu4Gdmp-VIxyGN867CMsGe5NR6s~zAF36w-Y5Xoi2ZY0Z2y0P9Q84USsQ3GMayQx2CiQufV~skHWM5T7dNaEtzDMnCVqMYI19srxg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+wget 'https://cf-media.sndcdn.com/ur31JHvX4m2k.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__&Signature=aWK-jYE-9DlrPUTqEDiG5zTRxEtF5EUIK9lfVMz33sVDjpzrha3PWXAyAtf9paynP0eMPWgQkmnTNbEGdZFmmtplssLeOtYTMkOaP1CHX6DapAGsR2-HgqMvQf7y6RSJ1Vrx6PYlpRCvk1AqmdaahcC9vmyku45DTZx8f3yx7QrwChyFHAN69lqAxCm0DRVrH26tEkCp3R68IB-uPNxLuf7SvrjOXnfMo607Qv~XQhx099MU1T2ZDmnoLj122xLPAFZU442UgOxoctBozKvXa~Qt120xE9wwt5TojslBI7DZ5mS0108LiFbGw5nTeWT08ICOGPicDbLbSeXKokLyGQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+less ~/scripts/*
+grep pocket ~/scripts/*
+grep pocket ~/bin/*
+pocketsphinx_continuous 
+#bash ~/bin/convert-mp3.sh 
+ls
+bash ~/bin/convert-mp3.sh ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE literacy.wav
+ls -al
+exiftool ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav 
+pocketsphinx_continuous ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/sphinx-voxforge-en/hmm/
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/sphinx-voxforge-en/hmm/voxforge_en_sphinx.cd_cont_3000/
+ffplay ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav 
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/sphinx-voxforge-en/hmm/voxforge_en_sphinx.cd_cont_3000/
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/sphinx-voxforge-en/hmm/voxforge_en_sphinx.cd_cont_3000/ -lm /usr/share/sphinx-voxforge-en/lm/voxforge_en_sphinx.cd_cont_3000/
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/sphinx-voxforge-en/hmm/voxforge_en_sphinx.cd_cont_3000/ -lm /usr/share/sphinx-voxforge-en/lm/voxforge_en_sphinx.cd_cont_3000/voxforge_en_sphinx.lm.DMP 
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/sphinx-voxforge-en/hmm/voxforge_en_sphinx.cd_cont_3000/ -lm /usr/share/sphinx-voxforge-en/lm/voxforge_en_sphinx.cd_cont_3000/voxforge_en_sphinx.lm.DMP  > ps.out
+less ps.out 
+apt-cache search sphinx
+apt-cache search sphinx|grep hmm
+sudo apt-get install pocketsphinx-en-us
+pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/pocketsphinx/model/en-us/en-us/ -lm /usr/share/pocketsphinx/model/en-us/en-us.lm.bin  > ps.out
+bash ~/bin/convert-mp3.sh Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f 
+pocketsphinx_continuous -infile Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f.wav -time yes -hmm /usr/share/pocketsphinx/model/en-us/en-us/ -lm /usr/share/pocketsphinx/model/en-us/en-us.lm.bin  > Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f.txt
