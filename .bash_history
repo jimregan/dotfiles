@@ -1,4 +1,3 @@
-cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##'
 cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##'|wc
 #cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##' > /tmp/postimgin 
 tail -f fash-rdf-links 
@@ -1998,3 +1997,4 @@ less parwave.h
 less parwave.c
 grep amp_voice *
 grep pulse_shape_a *
+scala
