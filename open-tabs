@@ -288,4 +288,17 @@ https://github.com/spro/nalgene/blob/master/node.py
 https://github.com/spro/pytorch-seq2seq-intent-parsing
 https://github.com/spro/torch-seq2seq-intent-parsing
 https://arxiv.org/abs/1506.03134
+https://arxiv.org/abs/1603.06393
+https://github.com/spro/torch-seq2seq/blob/master/data.lua
+https://github.com/spro/the-incredible-pytorch
+https://github.com/clab/dynet_tutorial_examples/blob/master/tutorial_bilstm_viterbi_tagger.py
+https://github.com/rguthrie3/DeepLearningForNLPInPytorch/blob/master/Deep%20Learning%20for%20Natural%20Language%20Processing%20with%20Pytorch.ipynb
+https://ytaigman.github.io/loop/site/
+https://github.com/facebookresearch/fairseq-py
+https://arxiv.org/pdf/1705.03122.pdf
+https://github.com/bamtercelboo/pytorch_SRU/blob/master/models/model_SRU.py
+https://github.com/bamtercelboo/pytorch_SRU/blob/master/train_ALL_SRU_1.py
+https://github.com/bamtercelboo/pytorch_SRU/blob/master/train_ALL_SRU.py
+https://github.com/salesforce/pytorch-qrnn/blob/master/torchqrnn/forget_mult.py
+https://github.com/salesforce/awd-lstm-lm
 

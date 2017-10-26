@@ -1,46 +1,173 @@
-https://github.com/mozilla/DeepSpeech/tree/master/native_client
-http://chrislord.net/2017/02/23/machine-learning-speech-recognition/
-https://github.com/mozilla/DeepSpeech/blob/master/native_client/deepspeech.cc
+// IRISH
+language_specs['ga'] = new lang_class ;
+
+language_specs['en'].setup = function () {
+	this.init() ;
+	this.month_label = [ '' , 'January','February','March','April','May','June','July','August','September','October','November','December' ] ; // First one needs to be empty!!
+	this.is_male = !this.i.hasClaimItemLink('P21','Q6581072') ;
+	this.s_he = (this.is_male?'sé':'sé') ;
+	this.s_he = (this.is_male?'é':'í') ;
+	this.his_er = 'a' ;
+}
+
+language_specs['en'].renderDateByPrecision = function ( pre , year , month , day , precision , no_prefix ) {
+	var me = this ;
+	var ret = {} ;
+	if ( precision <= 9 ) {
+		ret.iso = year*pre ;
+		ret.label = year ;
+		if ( !no_prefix ) ret.before = 'in ' ;
+	} else if ( precision == 10 ) {
+		ret.iso = year*pre + '-' + month ;
+		ret.label = me.month_label[month*1] + ' ' + year ;
+		if ( !no_prefix ) ret.before = 'in ' ;
+	} else if ( precision == 11 ) {
+		ret.iso = year*pre + '-' + month + '-' + day ;
+		ret.label = me.month_label[month*1] + ' ' + (day*1) + ', ' + year ;
+		if ( !no_prefix ) ret.before = 'on ' ;
+	}
+	if ( pre == -1 ) ret.after = " <small>B.C.E.</small>" + ret.after ;
+	return ret ;
+}
+
+language_specs['en'].employers = function ( d ) {
+	var me = this ;
+	this.listSentence ( {
+		data : d ,
+		start : function() { me.h.push ( { label:me.s_he+' worked for ' } ) } ,
+		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
+		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
+		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
+		qualifiers : { job:function(qv){me.h.push ( { before:'as ' , q:qv[0] , after:' ' } )} } ,
+		item_end : function(num,sep) { me.h.push ( { label:sep+(num+1<d.length?'for ':'') } ) } ,
+		end : function() { me.h.push ( { label:'. ' } ) }
+	} ) ;
+}
+
+language_specs['en'].position = function ( d ) {
+	var me = this ;
+	this.listSentence ( {
+		data : d ,
+		start : function() { me.h.push ( { label:me.s_he+' was'+(me.is_dead?'':'/is')+' ' } ) } ,
+		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
+		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
+		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
+		qualifiers : { of:function(qv){me.h.push ( { before:'for ' , q:qv[0] , after:' ' } )} } ,
+		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
+		end : function() { me.h.push ( { label:'. ' } ) }
+	} ) ;
+}
+
+language_specs['en'].member = function ( d ) {
+	var me = this ;
+	this.listSentence ( {
+		data : d ,
+		start : function() { me.h.push ( { label:me.s_he+' was'+(me.is_dead?'':'/is')+' a member of ' } ) } ,
+		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
+		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
+		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
+//					qualifiers : { job:function(qv){me.h.push ( { before:'as ' , q:qv[0] , after:' ' } )} } ,
+		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
+		end : function() { me.h.push ( { label:'. ' } ) }
+	} ) ;
+}
+
+language_specs['en'].alma = function ( d ) {
+	var me = this ;
+	this.listSentence ( {
+		data : d ,
+		start : function() { me.h.push ( { label:me.s_he+' studied at ' } ) } ,
+		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
+		date_from : function(cb) { me.h.push ( { label:'from ' } ) ; cb({no_prefix:true}) } ,
+		date_to : function(cb) { me.h.push ( { label:'until ' } ) ; cb({no_prefix:true}) } ,
+		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
+		end : function() { me.h.push ( { label:'. ' } ) }
+	} ) ;
+}
+
+language_specs['en'].field = function ( d ) { var me=this; this.simpleList ( d , me.his_er+' field of work include'+(me.is_dead?'d':'s')+' ' , '. ' ) ; }
+language_specs['en'].cause_of_death = function ( d ) { this.simpleList ( d , 'of ' , ' ' ) ; }
+language_specs['en'].killer = function ( d ) { this.simpleList ( d , 'by ' , ' ' ) ; }
+language_specs['en'].sig_event = function ( d ) { this.simpleList ( d , this.s_he+' played a role in ' , '.' ) ; }
+
+language_specs['en'].spouses = function ( d ) {
+	var me = this ;
+	this.listSentence ( {
+		data : d ,
+		start : function() { me.h.push ( { label:me.s_he+' married ' } ) } ,
+		item_start : function(cb) { cb(); me.h.push ( { label:' ' } ) } ,
+		date_from : function(cb) { cb(); me.h.push ( { label:' ' } ) ; } ,
+		date_to : function(cb) { me.h.push ( { label:'(married until ' } ) ; cb() ; me.h.push ( { label:') ' } ) } ,
+		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
+		end : function() { me.h.push ( { label:'. ' } ) }
+	} ) ;
+}
+
+language_specs['en'].children = function ( d ) {
+	var me = this ;
+	this.listSentence ( {
+		data : d ,
+		start : function() { me.h.push ( { label:me.his_er+' children include ' } ) } ,
+		item_start : function(cb) { cb() } ,
+		item_end : function(num,sep) { me.h.push ( { label:sep } ) } ,
+		end : function() { me.h.push ( { label:'. ' } ) }
+	} ) ;
+}
 
 
-https://arxiv.org/pdf/1705.08039.pdf
-Poincaré Embeddings for
-Learning Hierarchical Representations
+language_specs['en'].addFirstSentence = function () {
+	var me = this ;
+	me.h.push ( me.getBold ( { label:me.mainTitleLabel() } ) ) ;
+	me.h.push ( { label:(this.is_dead?'was':'is') , after:' a ' } ) ;
+	this.listNationalities() ;
+	this.listOccupations() ;
+	me.h.push ( { label:'. ' } ) ;
+	if ( me.h.length == 3 ) me.h = [] ; // No information, skip it.
+	var sig_event = this.getRelatedItemsWithQualifiers ( { properties:['P793'] } ) ;
+	me.sig_event ( sig_event ) ;
+	me.h.push ( { label:me.getNewline() } ) ;
+}
 
-https://github.com/TatsuyaShirakawa/poincare-embedding/
-https://github.com/nmfisher/poincare-embeddings
-
-https://research.googleblog.com/2017/10/tensorflow-lattice-flexibility.html
-
-http://www.gitxiv.com/posts/gWu72JqHPyFPM5AKy/reinforcement-learning-for-bandit-neural-machine-translation
-https://arxiv.org/abs/1707.07402
-https://github.com/khanhptnk/bandit-nmt
-http://machineslearner.com/
-
-
-http://www.gitxiv.com/posts/gxaF5iTgh8DJ8X6e8/empower-sequence-labeling-with-task-aware-neural-language
-https://github.com/LiyuanLucasLiu/LM-LSTM-CRF
-
-https://github.com/jinyanzi/CRF/blob/master/code_Torch/ClassCRFCriterion.lua
-
-https://github.com/torch/tutorials/blob/master/4_graphicalmodels/2_crf.lua
-
-
-http://www.gitxiv.com/posts/xQtiqDJj8g353wdJg/regularizing-and-optimizing-lstm-language-models
-https://github.com/salesforce/awd-lstm-lm
-
-
-https://github.com/salesforce/pytorch-qrnn/
-
-
-http://www.gitxiv.com/posts/roRiGHCsEHAsYeGcn/voice-synthesis-for-in-the-wild-speakers-via-a-phonological
-https://github.com/facebookresearch/loop
-
-
-http://www.gitxiv.com/posts/MY4vr2gvygiP3WCL5/efanna-an-extremely-fast-approximate-nearest-neighbor-search
-https://github.com/fc731097343/efanna
-
-
-https://github.com/facebookresearch/ParlAI
+language_specs['en'].addBirthText = function () {
+	var me = this ;
+	var birthdate = me.i.raw.claims['P569'] ;
+	var birthplace = me.i.raw.claims['P19'] ;
+	var birthname = me.i.raw.claims['P513'] ;
+	if ( birthdate !== undefined || birthplace !== undefined || birthname !== undefined ) {
+		me.h.push ( { label:me.s_he , after:' was born ' } ) ;
+		if ( birthname !== undefined ) me.h.push ( { label:me.i.getClaimTargetString(birthname[0]) , before:'<i>' , after:'</i> ' } ) ;
+		if ( birthdate !== undefined ) me.h.push ( me.renderDate(birthdate[0]) ) ;
+		if ( birthplace !== undefined ) me.addPlace ( { q:me.i.getClaimTargetItemID(birthplace[0]) , before:'in ' , after:' ' } ) ;
+		var father = me.getParent ( 22 ) ;
+		var mother = me.getParent ( 25 ) ;
+		if ( father !== undefined || mother !== undefined ) {
+			me.h.push ( { label:'to ' } ) ;
+			if ( father !== undefined ) me.addPerson ( father , ' ' ) ;
+			if ( father !== undefined && mother !== undefined ) me.h.push ( { label:'and ' } ) ;
+			if ( mother !== undefined ) me.addPerson ( mother , ' ' ) ;
+		}
+		me.h.push ( { label:'. ' } ) ;
+		me.h.push ( { label:me.getNewline() } ) ;
+	}
+}
 
 
+language_specs['en'].addDeathText = function () {
+	var me = this ;
+	var deathdate = me.i.raw.claims['P570'] ;
+	var deathplace = me.i.raw.claims['P20'] ;
+	var deathcause = me.i.hasClaims('P509') ;
+	var killer = me.i.hasClaims('P157') ;
+	if ( deathdate !== undefined || deathplace !== undefined || deathcause || killer ) {
+		me.h.push ( { label:me.s_he , after:' died ' } ) ;
+		if ( deathcause !== undefined ) me.cause_of_death ( me.getRelatedItemsWithQualifiers ( { properties:['P509'] } ) ) ;
+		if ( killer !== undefined ) me.killer ( me.getRelatedItemsWithQualifiers ( { properties:['P157'] } ) ) ;
+		if ( deathdate !== undefined ) me.h.push ( me.renderDate(deathdate[0]) ) ;
+		if ( deathplace !== undefined ) me.addPlace ( { q:me.i.getClaimTargetItemID(deathplace[0]) , before:'in ' , after:' ' } ) ;
+		me.h.push ( { label:'. ' } ) ;
+	}
+	var burialplace = me.i.raw.claims['P119'] ;
+	if ( burialplace !== undefined ) {
+		me.addPlace ( { q:me.i.getClaimTargetItemID(burialplace[0]) , before:me.s_he+' was buried at ' , after:'. ' } ) ;
+	}
+}
