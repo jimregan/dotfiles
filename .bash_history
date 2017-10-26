@@ -1,14 +1,3 @@
-git status
-less audiobooks.tsv 
-git add audiobooks.tsv 
-git commit -m 'audiobooks list, take 1'
-grep https://wolnelektury.pl/katalog/lektura/slowka-zbior/ audiobooks.tsv 
-git diff
-;s
-less norm
-ls
-less speaker-gender-map.tsv 
-cat audiobooks.tsv 
 git diff
 git remote add origin https://github.com/jimregan/wolnelektury-audio-corpus.git
 git push -u origin master
@@ -1998,3 +1987,14 @@ cp $(cat /tmp/asd/tocopy) copy/
 ls copy/
 cat ~/tmp/bar/mrgs 
 cat ~/tmp/bar/mrgs |grep inst
+ls -al
+df
+cd ~/
+cd Playing/Daisy/
+du .
+ls
+ls new_books/
+find . -name '*.epub'
+ffplay /home/jim/Playing/Daisy/books_in_progress/apa/z3986/speechgen0001.mp3
+ffplay /home/jim/Playing/Daisy/books_in_progress/apa/z3986/speechgen0002.mp3
+find . -type f|grep -i liom
