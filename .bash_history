@@ -1,7 +1,3 @@
-git rm example/en-ga/en.attribs_chunk.txt 
-git status
-cat example/en-ga/en.attribs.txt 
-git rm example/en-ga/en.attribs.txt 
 ls example/en-ga/
 cat example/en-ga/en.attrib-seq.txt 
 git rm example/en-ga/en.attrib-seq.txt 
@@ -1998,3 +1994,7 @@ ls|grep scree|while read i;do grep $i /tmp/alreadyhere || cp $i /home/jim/Pictur
 grep Aachen polimorf.tab 
 grep aachen polimorf.tab 
 grep aache polimorf.tab 
+git status
+git status|less
+cat x*
+wc -l x*
