@@ -1,31 +1,3 @@
-git commit -m 'ga nationalities; ga+pl list'
-git checkout -b ga-nationalities
-git push mine ga-nationalities 
-git diff
-git checkout master
-git diff
-git log
-git reset --hard HEAD~1
-git log
-git checkout -b 'polish-long'
-git diff
-git add auto_long_desc.js 
-git commit -m 'first pass at Polish'
-git push mine polish-long 
-ssh jimregan
-rm ~/Downloads/print/*
-cd ~/Playing/pl-ipa/
-ls
-cd ..
-ls
-cd wolne-lektury-audio-corpus/
-ls
-cd text/
-ls
-less synogarlica.srt 
-less xaa 
-git status
-git diff
 git add zwierzeta-i-niedzwiedz.txt
 git status
 git diff
@@ -1998,3 +1970,31 @@ cd etc/
 ls
 less sphinx_train.cfg 
 vi sphinx_train.cfg 
+less Corpora/tcd_gd_anb/DVD01/Readme.txt 
+cd msf-asr/
+vi raw-text/MSF_chapter_9.txt
+git add raw-text/MSF_chapter_9.txt
+git commit -m 'missed chapter 9'
+for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for i in xa*;do cat $i |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;done
+for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for i in xa*;do cat $i |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
+#for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
+rm xa*
+for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
+git status
+git stash
+ls
+ls caighdean/
+cd caighdean/
+for i in *txt;do mv $i $(echo $i|sed -e 's/txt$/pairs/');done
+git status
+git add *pairs
+git commit -m 'more'
+cd ..
+#for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.pairs ];then split -l 15 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
+rm xa*
+for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.pairs ];then split -l 15 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
+ls -al caighdean/*
+git add caighdean/*
+git commit -m rest
+git push origin master 
+#cat pron-data/enwiktionary-ipa.tsv |awk -F'\t' '{print $1}'|sort|uniq > in-chk
