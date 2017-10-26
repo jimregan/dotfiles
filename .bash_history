@@ -1,7 +1,3 @@
-grep 'ów$' ../text/x*
-less ../pron-data/enwiktionary-ipa.tsv 
-wc -l ../pron-data/enwiktionary-ipa.tsv 
-less ../pron-data/enwiktionary-ipa.tsv 
 ls ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
 tar ztvf ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
 tar zxvf ~/Downloads/festvox_cstr_pl_em_diphone.tar.gz 
@@ -1998,3 +1994,7 @@ grep pulse_shape_a *
 grep -i pulse *
 cd idea-IC-172.3317.76/
 bin/idea.sh 
+cd ../IdeaProjects/
+ls
+cd dictionaryconverter/
+git status
