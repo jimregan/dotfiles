@@ -1,44 +1,3 @@
-cat durs |awk 'BEGIN{total=0;{total += $2}END{print total}'
-cat durs |awk 'BEGIN{total=0}{total += $2}END{print total}'
-echo $((1116961 / 60))
-echo $((1116961 / 60 / 60))
-tail -f ../pl-w.out 
-wc -l ../pl-w.out 
-wc -l ../pl-ipa.out 
-less ../pl-w.out 
-tail -f tok.en 
-th tools/tokenize.lua -joiner_annotate -bpe_model ~/bitext/enga.onmt.bpe < ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase-factor-onmt.ga > tok.ga
-cd /tmp/apache-opennlp-1.8.1/
-ls
-bin/opennlp
-bin/opennlp TokenNameFinderTrainer
-bin/opennlp TokenNameFinderTrainer -type location -model ga-ner-loc.bin -data ~/Playing/ainm-ner-corpus/loc-ner.txt -encoding utf8
-bin/opennlp TokenNameFinderTrainer -nameTypes location -model ga-ner-loc.bin -data ~/Playing/ainm-ner-corpus/loc-ner.txt -encoding utf8
-bin/opennlp TokenNameFinderTrainer -model ga-ner-loc.bin -data ~/Playing/ainm-ner-corpus/loc-ner.txt -encoding utf8
-bin/opennlp TokenNameFinderTrainer -model ga-ner-loc.bin -data ~/Playing/ainm-ner-corpus/loc-ner.txt 
-bin/opennlp TokenNameFinderTrainer 
-bin/opennlp TokenNameFinderTrainer -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt 
-bin/opennlp TokenNameFinderTrainer -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga
-ls ~/Pictures/Screenshot_20170912_14*|wc
-rm ~/Pictures/Screenshot_20170912_14*
-bin/opennlp 
-#bin/opennlp TokenNameFinderTrainer -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga
-bin/opennlp TokenNameFinderEvaluator
-bin/opennlp TokenNameFinderTrainer -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga
-#bin/opennlp TokenNameFinderEvaluator -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga
-bin/opennlp TokenNameFinderEvaluator 
-bin/opennlp TokenNameFinderEvaluator -misclassified true -detailedF trie -reportOutputFile loc-new-report -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga > loc-eval-out
-bin/opennlp TokenNameFinderEvaluator -misclassified true -detailedF true -reportOutputFile loc-new-report -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga > loc-eval-out
-bin/opennlp TokenNameFinderEvaluator -nameTypes location  -misclassified true -detailedF true -reportOutputFile loc-new-report -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga > loc-eval-out
-bin/opennlp TokenNameFinderEvaluator -nameTypes location  -misclassified true -detailedF true -reportOutputFile loc-new-report -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga 
-bin/opennlp TokenNameFinderEvaluator -nameTypes location  -misclassified true -detailedF true -reportOutputFile loc-new-report -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -lang ga -encoding utf8 > loc-ner-out
-bin/opennlp TokenNameFinderEvaluator -nameTypes location  -misclassified true -detailedF true -reportOutputFile loc-new-report -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -encoding utf8 > loc-ner-out
-bin/opennlp TokenNameFinderEvaluator -nameTypes location  -misclassified true -detailedF true -reportOutputFile loc-new-report -model ga-ner-loc.bin -data /home/jim/Playing/ainm-ner-corpus/loc-ner.txt  -encoding utf8 2> loc-ner-err > loc-ner-out
-less loc-ner-out 
-less loc-ner-err 
-ls ~/Playing/dissertation-data/ainm-ner/
-cp ga-ner-loc.bin ../ga-ner-loc.bin.zip
-cd ~/Playing/
 cd mosesdecoder/
 find . -name '*.perl'
 find . -name '*.perl'|grep wrap
@@ -1998,3 +1957,44 @@ gulp create
 sudo gulp create 
 node --version
 nodejs --version
+cd ~/Playing/kaldi/
+git pull origin master
+ls
+less INSTALL 
+cd src/
+ls
+./configure 
+make clean -j 16; make depend -j 16 make -j 16
+ls
+less fstbin/fstfactor 
+ls
+cd ../egs/
+ls
+fdupes -r .
+find . -type f|grep nnet3
+less wsj/s5/steps/nnet3/lstm/make_configs.py 
+less wsj/s5/steps/nnet3/lstm/train.sh 
+grep -i lstm ../src/nnet3/*
+grep -i gru ../src/nnet3/*
+less ../src/nnet3/nnet-simple-component.cc 
+find . -type f|grep merge
+find .. -name '*merge*'
+less ../src/fgmmbin/fgmm-global-merge.cc 
+ls
+ls gp/
+cd gp/
+less README.txt 
+cd s5
+ls
+less local/
+ls local/
+less local/gp_norm_dict_PL.pl 
+less local/gp_norm_dict_RU.pl 
+less local/gp_rmn2utf_PL.pl 
+ls ~/Downloads/*jpg
+ls ~/Pictures/*jpg
+ls ~/Downloads/unnamed.jpg 
+convert ~/Downloads/unnamed.jpg ~/Downloads/unnamed.xpm
+less ~/Downloads/unnamed.xpm 
+ls -al ~/Downloads/unnamed.xpm 
+ls -al ~/Downloads/unnamed.jpg 
