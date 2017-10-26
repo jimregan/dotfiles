@@ -1,9 +1,3 @@
-less ~/Playing/mosesdecoder/corpus/all-clean-1-50.en 
-cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-less ~/Playing/mosesdecoder/corpus/all-clean-1-50.en 
-cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob |apertium-destxt 
 cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob |apertium-retxt 
 cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob |apertium-retxt  > ~/Playing/mosesdecoder/corpus/all-clean-1-50.en.apertium
 less ~/Playing/mosesdecoder/corpus/all-clean-1-50.en.apertium
@@ -1998,3 +1992,9 @@ ls ~/Downloads/*djvu
 djvutxt -page=320 ~/Downloads/polandstudyoflan00braniala.djvu 
 djvutxt -page=319 ~/Downloads/polandstudyoflan00braniala.djvu 
 djvutxt -page=19 ~/Downloads/polandstudyoflan00braniala.djvu 
+cd ~/practice/
+g++ --std=c++11 trie-node.h 
+less ~/tmp/sync/exif-20171019-1.xml 
+less ~/tmp/sync/bhashc-20171019-2
+less ~/tmp/sync/bhashc-20171019-2.tsv 
+grep tmp/ ~/tmp/sync/*
