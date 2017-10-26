@@ -1,5 +1,3 @@
-wc -l audiobooks.tsv 
-git diff
 git stash
 ls
 rm *mp3
@@ -1998,3 +1996,5 @@ docker pull node
 sudo docker pull node
 ls
 sudo usermod -aG docker jim
+sudo dpkg -i /home/jim/Downloads/code_1.17.2-1508162334_amd64.deb 
+sudo apt-get install -f
