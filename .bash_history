@@ -1,22 +1,3 @@
-rm -rf apertium-en-es/
-git clone https://github.com/jimregan/apertium-en-es.git
-cd apertium-en-es/
-ls
-git checkout -b upstream
-git push origin upstream
-git log
-git reset --hard HEAD~5
-git cherry-pick b32b5a4119859f3dc757614369548cae7355ec4e
-git checkout -n no-lrx
-git checkout -b no-lrx
-git push origin no-lrx 
-sh autogen.sh 
-sudo make install
-sudo vi /usr/local/share/lttoolbox/dix.dtd 
-sudo make install
-ls ~/bitext/
-unzip -l ~/bitext/crp.zip 
-less ~/Playing/mosesdecoder/corpus/all-moses-preproc-clean-gacase.en 
 less ~/Playing/mosesdecoder/corpus/all-clean-1-50.en 
 cat ~/Playing/mosesdecoder/corpus/all-clean-1-50.en |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
 less ~/Playing/mosesdecoder/corpus/all-clean-1-50.en 
@@ -1998,3 +1979,22 @@ g++ -std=c++11 boost-upper.cc
 apt-cache search tuxhuitar
 apt-cache search tuxguitar
 sudo apt-get install tuxguitar-fluidsynth tuxguitar-jack tuxguitar-jsa
+cd ~/Playing/kaldi/
+cd egs/tidigits/s5/
+ls
+less run.sh 
+. ./cmd.sh
+cat run.sh 
+cat run.sh |grep prep
+less local/tidigits_data_prep.sh
+less  utils/utt2spk_to_spk2utt.pl 
+apt-cache search djvu
+sudo apt-get install djvulibre-bin
+man djvutxt 
+djvutxt 
+#djvutxt -page=320 ~/Downloads/
+ls ~/Downloads/*djvu
+#djvutxt -page=320 ~/Downloads/polandstudyoflan00braniala.djvu 
+djvutxt -page=320 ~/Downloads/polandstudyoflan00braniala.djvu 
+djvutxt -page=319 ~/Downloads/polandstudyoflan00braniala.djvu 
+djvutxt -page=19 ~/Downloads/polandstudyoflan00braniala.djvu 
