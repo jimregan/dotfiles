@@ -1,62 +1,3 @@
-zcat ~/Downloads/PoliMorf-0.6.7.tab.gz > polimorf.tab
-grep '[A-Z]' polimorf.tab 
-cat polimorf.tab |awk -F'\t' '($4=="własna"){print}'
-cat polimorf.tab |awk -F'\t' '($4=="własna"){print}' > propernames
-cat polimorf.tab |awk -F'\t' '($4!="własna"){print}' > nonpropernames
-less nonpropernames 
-cat polimorf.tab |awk -F'\t' '($4=="pospolita"){print}' > common
-less common 
-wc -l common 
-less common 
-grep 'abc' common 
-grep 'abc' common |grep -v 'bce'
-grep 'abc' common |grep -v 'bc[ei]'
-grep 'abc' common |grep -v 'bc[eiu]'
-grep 'abc' common |grep -v 'bc[eiua]'
-grep 'abc' common |grep -v 'bc[eiuaó]'
-grep 'abc' common |grep -v 'bc[eiuaóo]'
-grep 'abc' common |grep -v 'bc[eiuaóoz]'
-grep 'abc' common |grep -v 'bc[eiuaóozh]'
-vi ../phon-ipa.tsv 
-wget https://dumps.wikimedia.org/plwiktionary/20170901/plwiktionary-20170901-pages-meta-history.xml.7z
-rm plwiktionary-20170901-pages-meta-history.xml.7z 
-wget https://dumps.wikimedia.org/enwiktionary/20170901/enwiktionary-20170901-pages-articles.xml.bz2
-bzless enwiktionary-20170901-pages-articles.xml.bz2 
-perl -e 'my @foo=(1,2);print $#foo;'
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 | perl ~/Playing/wolne-lektury-audio-corpus/extract-enwiktionary-ipa.pl 
-perl -e 'my @foo=(1,2);print $#foo;'
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 | perl ~/Playing/wolne-lektury-audio-corpus/extract-enwiktionary-ipa.pl 
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 | perl ~/Playing/wolne-lektury-audio-corpus/extract-enwiktionary-ipa.pl > en-ipa.tsv
-wc -l en-ipa.tsv 
-less en-ipa.tsv 
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 | perl ~/Playing/wolne-lektury-audio-corpus/extract-enwiktionary-ipa.pl > en-ipa.tsv2
-wc -l en-ipa.tsv*
-less en-ipa.tsv2 
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 | perl ~/Playing/wolne-lektury-audio-corpus/extract-enwiktionary-ipa.pl > en-ipa.tsv2
-less 
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 |less
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 | perl ~/Playing/wolne-lektury-audio-corpus/extract-enwiktionary-ipa.pl > en-ipa.tsv3
-diff -u en-ipa.tsv2 en-ipa.tsv3 
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 |less
-bzcat enwiktionary-20170901-pages-articles.xml.bz2 | perl ~/Playing/wolne-lektury-audio-corpus/extract-enwiktionary-ipa.pl > en-ipa.tsv3
-diff -u en-ipa.tsv2 en-ipa.tsv3 
-diff -u en-ipa.tsv2 en-ipa.tsv3 |les
-diff -u en-ipa.tsv2 en-ipa.tsv3 |less
-wc -l en-ipa.tsv3
-less en-ipa.tsv3 
-ls
-mkdir ../pron-data
-mv en-ipa.tsv3 ../pron-data/enwiktionary-ipa.tsv
-perl -e 'print 11 % 10'
-perl -e 'print 111 % 10'
-perl -e 'print 111 % 100'
-perl -e 'print 111 / 100'
-perl -e 'print int(111 / 100)'
-perl -e 'print int(1111 / 100)'
-perl -e 'print int(2111 / 100)'
-perl -e 'print 4  % 3'
-perl -e 'print 3  % 3'
 perl -e 'print 5  % 3'
 perl -e 'print 6  % 3'
 perl -e 'my $a="1222"; substr($a, len($a)%3)'
@@ -1998,3 +1939,62 @@ grep file: mrgs
 grep file: mrgs|wc
 grep file: mrgr|wc
 grep file: mrgr >> /tmp/delme2
+cd ..
+git clone https://github.com/google/yang_vocoder.git
+cd yang_vocoder/
+ls
+sudo apt-get install octave
+ls
+octave
+cd ~/Playing/
+ls
+git clone https://github.com/clab/dynet.git
+cd dynet/
+ls
+cmake .
+apt-cache search eigen
+sudo apt-get install libeigen3-dev 
+less CMakeLists.txt 
+mkdir build
+cd build/
+cmake ..
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/
+make
+cd ..
+make
+make -j 8
+make clean
+ls
+git status
+git stash
+cd build/
+ls
+scmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON
+cd ..
+make -j 8
+less .gitignore 
+grep -v '^#' .gitignore 
+rm $(grep -v '^#' .gitignore |grep -v '^$' )
+ls
+rm -rf CMakeFiles/
+cd build/
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/ /usr/local/cuda-8.0/
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/
+cmake .. -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/lib64
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -DCUDNN_ROOT=/usr/local/cuda-8.0 
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -DCUDNN_ROOT=/usr/local/cuda-8.0/lib64 
+cd ..
+make -j 8
+cd build/
+cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -DCUDNN_ROOT=/usr/local/cuda-8.0/lib64 
+ls
+make -j 8
+ls 
+cd ..
+rm -rf build/
+mkdir build
+cd build/
