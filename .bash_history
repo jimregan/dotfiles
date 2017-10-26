@@ -1,107 +1,3 @@
-grep '=>' normalise.pl |grep -v '#'
-grep '=>' normalise.pl |grep -v '#'|grep -v "'"
-grep '=>' normalise.pl |grep -v '#'|grep -v "'"|awk -F'"' '{print $2 "\t" $4}'
-grep '=>' normalise.pl |grep -v '#'|grep -v "'"|awk -F'"' '{print $2 "\t" $4}'|sort|uniq
-grep '=>' normalise.pl |grep -v '#'|grep -v "'"|awk -F'"' '{print $2 "\t" $4}'|sort|uniq > normalisations.tsv
-grep '=>' normalise.pl |grep -v '#'|grep -v '"'|awk -F"'" '{print $2 "\t" $4}'|sort|uniq 
-grep '=>' normalise.pl |grep -v '#'|grep -v '"'|awk -F"'" '{print $2 "\t" $4}'|sort|uniq >> normalisations.tsv 
-cat normalisations.tsv |sort|uniq > tmp
-mv tmp normalisations.tsv 
-git add normalisations.tsv 
-wc -l normalisations.tsv 
-less normalisations.tsv 
-less ~/bin/ga-tok 
-ls normalisations.tsv 
-ls
-cd ..
-ls
-cat MSF_chapter_1.txt.norm | perl scripts/normalise.pl 
-git status
-git add scripts/normalise.pl
-git commit -m 'separate normalisations from script'
-git push origin master
-git status
-ls
-ls caighdean/
-cat MSF_chapter_*
-cat caighdean/MSF_chapter_*
-cat caighdean/MSF_chapter_*|sort|uniq
-cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '{print $1 "\t" $2}'
-cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}'
-cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}'|less
-cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}' > scripts/normalisations.tocheck
-wc -l scripts/normalisations.tocheck 
-git add scripts/normalisations.tocheck 
-git commit -m 'norms todo'
-cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || echo $i >> scripts/normalisations.tocheck.f;done
-mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
-git diff
-less scripts/normalisations.tocheck 
-wc -l scripts/normalisations.tocheck 
-git stash
-cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || printf("%s"\n",$i) >> scripts/normalisations.tocheck.f;done
-cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || printf "%s\n",$i >> scripts/normalisations.tocheck.f;done
-git diff
-less scripts/normalisations.tsv 
-less scripts/normalisations.tocheck
-git diff
-less scripts/normalisations.tocheck | perl scripts/filter-norm.pl 
-less scripts/normalisations.tocheck | perl scripts/filter-norm.pl > scripts/normalisations.tocheck.f 
-mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
-git diff
-git stash
-less scripts/normalisations.tocheck | perl scripts/filter-norm.pl > scripts/normalisations.tocheck.f 
-mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
-git diff
-git add scripts/normalisations.tocheck 
-git commit -m 'remove dups'
-git push origin master
-git diff
-vi scripts/normalisations.tsv 
-git diff
-git add scripts/normalisations.tocheck 
-git add scripts/normalisations.tsv 
-git commit -m 'norm more'
-git push origin master
-ls
-ls raw-text/
-less prontodo 
-less ga-std.pl 
-ls caighdean/
-cat raw-text/MSF_chapter_10.txt |wc
-cat raw-text/MSF_chapter_10.txt |perl ga-std.pl 
-cat raw-text/MSF_chapter_10.txt |perl ga-std.pl ga > caighdean/MSF_chapter_10.txt
-less caighdean/MSF_chapter_10.txt
-wc -l raw-text/*
-cat raw-text/MSF_chapter_12.txt |perl ga-std.pl ga > caighdean/MSF_chapter_12.txt
-cat raw-text/MSF_chapter_13.txt |perl ga-std.pl ga > caighdean/MSF_chapter_13.txt
-cat raw-text/MSF_chapter_30.txt |perl ga-std.pl ga > caighdean/MSF_chapter_30.txt
-cat raw-text/MSF_chapter_31.txt |perl ga-std.pl ga > caighdean/MSF_chapter_31.txt
-cat raw-text/MSF_chapter_32.txt |perl ga-std.pl ga > caighdean/MSF_chapter_32.txt
-cat raw-text/MSF_chapter_23.txt |perl ga-std.pl ga > caighdean/MSF_chapter_23.txt
-cat raw-text/MSF_chapter_16.txt |perl ga-std.pl ga > caighdean/MSF_chapter_16.txt
-less caighdean/MSF_chapter_12.txt 
-rm caighdean/MSF_chapter_12.txt 
-ls -al caighdean/
-grep MAGHCHROMTHA raw-text/*
-cd /tmp/
-tar ztvf ~/Downloads/rm1_cepstra.tar.gz 
-tar zxvf ~/Downloads/rm1_cepstra.tar.gz 
-ls
-cd rm1/
-ls
-less etc/rm1.dic 
-less etc/rm1_train.fileids 
-less etc/rm1_train.transcription 
-less etc/rm1.bigram.arpabo
-less etc/rm1.filler 
-less etc/rm1.phone 
-less etc/rm1_test.fileids 
-ls
-ls feat/adg0_4/sr329.mfc 
-less feat/adg0_4/sr329.mfc 
-apt-cache search mxnet
-cd ~
 cd Playing/
 git clone https://github.com/mfaruqui/non-distributional.git
 cd non-distributional/
@@ -1998,3 +1894,107 @@ python setup.py install
 sudo python setup.py install
 sudo python2.7 setup.py install
 df
+grep ConvertPowerToDecibel *
+apt-cache search codebl
+sudo apt-get install codeblocks
+codeblocks &
+cd ..
+wget http://ml.cs.yamanashi.ac.jp/world/data/world-0.2.1_4_matlab.zip
+unzip -l world-0.2.1_4_matlab.zip 
+unzip world-0.2.1_4_matlab.zip 
+cd world-0.2.1_4_matlab/
+ls
+less Synthesis.m 
+rm ~/Pictures/Screenshot_20171010_205352.png 
+cd ~/practice/
+ls
+vi max-subarray.cc
+vi remove-if.cc
+g++ remove-if.cc
+g++ -std=c++11 remove-if.cc
+./a.out 
+vi remove-if.cc
+vi max-subarray.cc
+vi remove-if.cc
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+vi max-subarray.cc
+clang++ max-subarray.cc 
+clang++ -std=c++11 max-subarray.cc 
+vi max-subarray.cc
+clang++ -std=c++11 max-subarray.cc 
+./a.out 
+g++ -std=c++11 max-subarray.cc 
+./a.out 
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+./a.out 
+vi max-subarray.cc
+perl -e '@foo=(2,1,3,4,1,2,1,5,4);my$sum=0;for my$add(@foo){$sum+=$add;};print $sum;'
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+./a.out 
+vi max-subarray.cc
+g++ -std=c++11 max-subarray.cc 
+./a.out 
+cat max-subarray.cc 
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+vi words.txt
+./a.out 
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+cat words.txt 
+cat words.txt |wc
+echo $((74 / 10))
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+cat word-average.cc
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+g++ word-average.cc
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+vi word-average.cc
+g++ word-average.cc
+./a.out 
+cat word-average.cc 
+cat words.txt 
+./a.out 
