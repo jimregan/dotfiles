@@ -1,28 +1,3 @@
-grep Sbj pairs.tsv.1 |grep -v PresSubj
-less all-tags 
-cat pairs.tsv.1 
-cat pairs.tsv.1 |sed -e 's/^[^+]*//'
-cat pairs.tsv.1 |sed -e 's/^[^+]*//'|awk -F'\t' '{print $2}'|sort|uniq -c|sort -nr > tag-freqs
-less tag-freqs 
-cat pairs.tsv.1 |sed -e 's/^[^+]*//'|awk -F'\t' '{print $1}'|sort|uniq -c|sort -nr > tag-freqs
-less tag-freqs 
-grep +Adj+Base+Ecl pairs.tsv.1 
-less tag-freqs 
-grep +Adj+Masc+Com+Pl pairs.tsv.1 
-grep ' 1 ' tag-freqs 
-grep Verb+VD pairs.tsv.1 
-cat ../../IdeaProjects/dictionaryconverter/scripts/tag-freqs 
-cat ../../IdeaProjects/dictionaryconverter/scripts/tag-freqs |awk '{print $2}'
-cat ../../IdeaProjects/dictionaryconverter/scripts/tag-freqs |awk '{print $2}'|while read i;do grep $i ../../IdeaProjects/dictionaryconverter/src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/IrishFSTConvert.scala || echo $i >> tags-filt;done
-cat tags-filt 
-grep +CU+Cop+Pro+Q pairs.tsv.1 
-grep +Part+Vb+Rel+Indirect+Past pairs.tsv.1 
-grep Noun pairs.tsv.1 
-grep Noun pairs.tsv.1 |grep ^ian+'
-grep Noun pairs.tsv.1 |grep '^ian+'
-grep Noun pairs.tsv.1 |grep '^ian+' > /tmp/ian
-echo I went|apertium en-es
-echo I went|apertium en-es|lt-proc /usr/share/apertium/apertium-en-es/es-en.automorf.bin 
 grep PastImp pairs.tsv.1 
 grep PastImp pairs.tsv.1 |grep deir
 grep PastImp pairs.tsv.1 |grep abair
@@ -1998,3 +1973,28 @@ less caighdean/MSF_chapter_12.txt
 rm caighdean/MSF_chapter_12.txt 
 ls -al caighdean/
 grep MAGHCHROMTHA raw-text/*
+cd /tmp/
+tar ztvf ~/Downloads/rm1_cepstra.tar.gz 
+tar zxvf ~/Downloads/rm1_cepstra.tar.gz 
+ls
+cd rm1/
+ls
+less etc/rm1.dic 
+less etc/rm1_train.fileids 
+less etc/rm1_train.transcription 
+less etc/rm1.bigram.arpabo
+less etc/rm1.filler 
+less etc/rm1.phone 
+less etc/rm1_test.fileids 
+ls
+ls feat/adg0_4/sr329.mfc 
+less feat/adg0_4/sr329.mfc 
+apt-cache search mxnet
+cd ~
+cd Playing/
+git clone https://github.com/mfaruqui/non-distributional.git
+cd non-distributional/
+ls
+zless binary-vectors.txt.gz 
+less word-feat.txt 
+ls -al
