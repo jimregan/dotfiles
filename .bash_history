@@ -1,20 +1,3 @@
-grep +Prep+CmpdNoGen+Poss+3P+Sg+Masc pairs.tsv.1 
-echo his |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-grep +Det+Poss+1P+Pl pairs.tsv.1 
-echo our |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-grep +Pat all-tags 
-echo first |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo that |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-grep Comp all-tags 
-grep +Subst+Noun+Sg+Part+Comp pairs.tsv.1 
-grep NotSl pairs.tsv.1 
-grep Slender pairs.tsv.1 
-grep NotSl pairs.tsv.1 
-grep Slender pairs.tsv.1 
-grep NotSl pairs.tsv.1 
-grep Slender pairs.tsv.1 
-grep NotSl pairs.tsv.1 
-grep Pron all-tags 
 grep Pron+Ref pairs.tsv.1 
 grep Pron pairs.tsv.1 
 grep Direct pairs.tsv.1 
@@ -1998,3 +1981,20 @@ git commit -m 'first pass at Polish'
 git push mine polish-long 
 ssh jimregan
 rm ~/Downloads/print/*
+cd ~/Playing/pl-ipa/
+ls
+cd ..
+ls
+cd wolne-lektury-audio-corpus/
+ls
+cd text/
+ls
+less synogarlica.srt 
+less xaa 
+git status
+git diff
+git add zwierzeta-i-niedzwiedz.txt
+git status
+git diff
+ls
+less xaa
