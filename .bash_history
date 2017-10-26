@@ -1,95 +1,3 @@
-find i.imgur.com -type f|while read i;do grep $i mrgs ;done
-find i.imgur.com -type f|while read i;do grep $i mrgs && rm $i ;done
-find s1.postimg.org -type f|while read i;do grep $i mrgs && rm $i ;done
-find s1.postimg.org -type f|while read i;do grep $i mrgr && rm $i ;done
-find s1.postimg.org -type f
-rm -rf s1.postimg.org/
-find i.imgur.com/ -type f
-rm -rf i.imgur.com/
-ls
-find preview.ibb.co -type f|while read i;do grep $i mrgr && rm $i ;done
-find preview.ibb.co -type f|while read i;do grep $i mrgs && rm $i ;done
-find preview.ibb.co -type f
-rm -rf preview.ibb.co/
-ls
-rm mrg
-grep file: mrgs
-grep file: mrgs|sed -e 's#file:/tmp/sshts/##'
-grep file: mrgs|sed -e 's#file:/tmp/sshts/##'|while read i;do rm ~/Pictures/foo/$i;done
-grep file: mrgs|sed -e 's#file:/tmp/sshts/##' > /tmp/delme
-cd ~/Pictures/foo/
-find . -name 'screen*'
-find . -name 'screen*'|while read i;do grep $i /tmp/delme && rm $i;done
-less /tmp/delme 
-find . -name 'screen*'|sed -e 's/\.\///'|while read i;do grep $i /tmp/delme && rm $i;done
-rm -rf copy/
-ls
-rm nohup.out 
-rm xa*
-. ~/tmp/sourceme 
-rmemptydir 
-ls
-filtfind 
-rm -rf broken/
-ls
-cd ../s-shots/
-find . -name 'screen*'|sed -e 's/\.\///'|while read i;do grep $i /tmp/delme && rm $i;done
-ls
-grep creenshot_20171021-225821.png /tmp/drilink
-grep creenshot_20171021-225821.png /tmp/delme 
-find . -name 'screen*'|sed -e 's/\.\///'|while read i;do grep -i $i /tmp/delme && rm $i;done
-find . -name 'screen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme && rm $i;done
-find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme && rm $i;done
-ls
-rm *xmp
-ls
-cd -
-find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme && rm $i;done
-rmemptydir 
-ls
-filtfind |wc
-find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do echo $i; grep -i $i /tmp/delme2 && rm $i;done
-ls
-rmemptydir 
-ls
-filtfind 
-filtfind |wc
-find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep -i $f /tmp/delme2 && rm $i;done
-find . -name '[Ss]creen*'|sed -e 's/\.\///'|while read i;do f=$(echo $i|awk -F/ '{print $NF}'); grep -i $f /tmp/delme && rm $i;done
-rmemptydir 
-ls
-ls ~/tmp/foo/
-cd ~/tmp/foo/
-ls
-for i in *;do grep $i /tmp/delme && rm $i;done
-ls
-for i in *;do grep $i /tmp/delme2 && rm $i;done
-ls
-for i in *;do f=$(echo $i|sed -e 's/png$/jpg/); grep $f /tmp/delme2 && rm $i;done
-for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep $f /tmp/delme2 && rm $i;done
-ls
-mv * ~/Pictures/foo/
-for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep $f /tmp/delme && rm $i;done
-cd ~/Pictures/foo/
-for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep $f /tmp/delme && rm $i;done
-ls
-for i in *;do f=$(echo $i|sed -e 's/png$/jpg/'); grep -i $f /tmp/delme && rm $i;done
-grep creenshot_20170904-003120 /tmp/delme
-grep creenshot_20170904-003120 /tmp/delme2
-ls
-for i in *;do convert $i $i.jpg;done
-ls
-. ../sourceme 
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171019-1.nt
-less ~/tmp/sync/ookdata-20171019-1.nt
-find ~/tmp -name 'ook*;
-find ~/tmp -name 'ook*'
-less ../ookdata-20171019-1.nt 
-diff -u ../ookdata-20171019-1.nt ../sync/ookdata-20171019-1.nt 
-diff -u ../ookdata-20171019-1.nt ../sync/ookdata-20171019-1.nt |less
-mv ../ookdata-20171019-1.nt ../sync/ookdata-20171019-1.1.nt 
-ls
-vi /tmp/postimgin
 wc -l /tmp/postimgin
 lynx -dump https://postimg.org/image/1zjf0gn0mz/
 cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2t986vwak/;done
@@ -1998,3 +1906,95 @@ git add edit/speech-at-the-opening-of-the-86th-national-ploughing-championships.
 git commit -m 'more'
 git push origin master
 ssh jimregan
+cd ../duckegg/
+git branch -D gaois 
+git checkout master 
+git branch -D gaois 
+cd ..
+ls
+cd dictionaryconverter/
+git push origin still-in-progress 
+cd ..
+cd ../Playing/
+ls
+cd ainm-ner-corpus/
+git status
+git diff
+git add build.sbt 
+git commit -m 'update build'
+git branch
+git push origin master
+git pull origin master
+git checkout simpler 
+git log 
+git merge master
+vi build.sbt 
+git add build.sbt 
+git commit -m merge
+git push origin simpler 
+git checkout master 
+git branch -D simpler 
+git branch
+git checkout try-again 
+git log
+git checkout master 
+git branch -D try-again 
+git branch
+git checkout finishing-start 
+git log
+git checkout master 
+git branch -D finishing-start 
+git branch 
+git checkout something-went-wrong 
+git log
+git branch
+git push origin something-went-wrong 
+git merge master
+git push origin something-went-wrong 
+git checkout master 
+git pull origin master
+git checkout something-went-wrong 
+git merge master
+git push origin something-went-wrong 
+git checkout master 
+git branch -D something-went-wrong 
+cd ..
+ls
+cd CorpStuff/
+ls
+cd ../Dissertation/
+git status
+ls
+cd ../dissertation-data/
+ls
+git status
+git branch
+git push origin master
+cd ../
+ls
+cd IrishDependencyTreebank/
+ls
+git status
+git diff
+git branch
+git push origin my-changes 
+cd ../irishfst-1/
+git status
+git branch
+git push origin missing-defart-more 
+ls /media/jim/
+mount
+mount|grep med
+find ~ -name 'apertium-en-ga'
+ls ~/Pictures/
+less ~/IdeaProjects/dictionaryconverter/example/en-ga/en-ga.rules.txt 
+grep 'rather than' *tex
+grep 't-' *tex
+rm ~/Pictures/Screenshot_2017*
+sudo dmesg
+less /media/jim/TOSHIBA/labcds/Amstardam XML/Amstardam.xml
+less "/media/jim/TOSHIBA/labcds/Amstardam XML/Amstardam.xml"
+find ~ -name 'pron*'
+apt-cache search waves
+sudo apt-get install wavesurfer
+wavesurfer 
