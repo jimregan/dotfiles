@@ -1,12 +1,3 @@
-grep Pron+Ref pairs.tsv.1 
-grep Pron pairs.tsv.1 
-grep Direct pairs.tsv.1 
-grep Indirect pairs.tsv.1 
-echo that |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-less ~/Playing/apertium-en-es/apertium-en-es.en.metadix 
-grep Pro pairs.tsv.1 
-grep Pro+ pairs.tsv.1 
-grep céard pairs.tsv.1 
 grep cad_é pairs.tsv.1 
 echo "a woman whose son isn't working" |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
 echo BBC |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
@@ -1998,3 +1989,12 @@ git status
 git diff
 ls
 less xaa
+cd /tmp/
+unzip ~/Downloads/src.zip 
+cd src/termextractor/
+ls
+less DocFreq.java 
+less AndTemplate.java 
+less SimpleTemplate.java 
+less TermMatcher.java 
+less Term.java 
