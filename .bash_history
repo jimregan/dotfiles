@@ -1,45 +1,3 @@
-grep PastImp pairs.tsv.1 
-grep PastImp pairs.tsv.1 |grep deir
-grep PastImp pairs.tsv.1 |grep abair
-less /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t3x 
-grep bheannaínn pairs.tsv.1 
-scp jimregan:/tmp/tags-ga.pl .
-mv tags-ga.pl ~/IdeaProjects/dictionaryconverter/scripts/
-grep Guess pairs.tsv.1 
-grep Foreign pairs.tsv.1 
-grep Foreign all-tags 
-grep Filler all-tags 
-grep Cmpf all-tags 
-grep Cmp all-tags 
-grep Part+Vb pairs.tsv.1 
-grep  Prop all-tags 
-echo me |lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-grep  Prop all-tags 
-grep Pron
-grep Pron all-
-grep Pron all-tags |grep Prep
-echo we |lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo they |lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin
-less individual-tags.f 
-grep Punct all-tags 
-grep Punct pairs.tsv.1 
-echo '"' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo '(' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-grep +St pairs.tsv.1 
-grep '+St$' pairs.tsv.1 
-grep '+St+' pairs.tsv.1 
-grep '+End' pairs.tsv.1 
-grep +Punct pairs.tsv.1 
-echo '-' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo "'" |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo ; |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-echo ';' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-less individual-tags.f 
-grep +Bar all-tags 
-grep Simp all-
-grep Simp all-tags 
-grep Simp pairs.tsv.1 
-grep Poss all-tags 
 grep +Prep+CmpdNoGen+Poss+3P+Sg+Masc pairs.tsv.1 
 echo his |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
 grep +Det+Poss+1P+Pl pairs.tsv.1 
@@ -1998,3 +1956,45 @@ ls
 zless binary-vectors.txt.gz 
 less word-feat.txt 
 ls -al
+cd ..
+git clone https://bitbucket.org/magnusmanske/autodesc.git
+cd autodesc/
+ls
+cd www/js/
+ls
+grep 'de' *
+grep 'fr' *
+vi /tmp/ennat
+cat /tmp/ennat |sed -e 's/:/\n/g'
+cat /tmp/ennat |sed -e 's/,/\n/g'
+cat /tmp/ennat |sed -e 's/,/\n/g'|awk -F"'" '{print $2}'
+cat /tmp/ennat |sed -e 's/,/\n/g'|awk -F"'" '{print $4}'
+cat /tmp/nattop 
+cat /tmp/nattop |awk -F'\t' "{print \"'\"}'
+cat /tmp/nattop |awk -F'\t' "{print \"'\"}"
+cat /tmp/nattop |awk -F'\t' "{print \"'\" $1 \"'\",}"
+cat /tmp/nattop |awk -F'\t' "{print \"'\" $1 \"':'\" $2 \"', \"}"
+cat /tmp/nattop |awk -F'\t' '{print "\"" $1}'
+cat /tmp/nattop |awk -F'\t' '{print "\"" $1 "\",\""}'
+cat /tmp/nattop |awk -F'\t' '{print "\"" $1 "\":\"" $2 "\","}'
+cat /tmp/nattop |awk -F'\t' '{print "\"" $1 "\":\"" $2 "\","}'|tr '"' "'"
+paste /tmp/natl /tmp/natr |awk -F'\t' '{print "\"" $1 "\":\"" $2 "\","}'|tr '"' "'"
+git remote add mine https://joregan@bitbucket.org/joregan/autodesc.git
+git diff
+git add short_autodesc.js 
+git commit -m 'ga nationalities; ga+pl list'
+git checkout -b ga-nationalities
+git push mine ga-nationalities 
+git diff
+git checkout master
+git diff
+git log
+git reset --hard HEAD~1
+git log
+git checkout -b 'polish-long'
+git diff
+git add auto_long_desc.js 
+git commit -m 'first pass at Polish'
+git push mine polish-long 
+ssh jimregan
+rm ~/Downloads/print/*
