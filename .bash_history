@@ -1,21 +1,3 @@
-cd ..
-git clone https://github.com/kward/shflags.git
-cd shflags/
-ls
-less README.md 
-ls
-cd ../ruLearn/
-vi ruLearn
-sh ruLearn -X
-bash ruLearn -X
-bash ruLearn -h
-less ruLearn
-cd ..
-svn co https://svn.code.sf.net/p/apertium/svn/trunk/apertium-en-es
-cd apertium-en-es/
-vi configure.ac 
-sh autogen.sh 
-cd ..
 rm -rf apertium-en-es/
 git clone https://github.com/jimregan/apertium-en-es.git
 cd apertium-en-es/
@@ -1998,3 +1980,21 @@ rm ../s-shots/mtp\:⁄HTC\ Desire\ 530⁄Internal\ storage⁄Pictures⁄Screensh
 ls ../s-shots/*png|wc
 vi spp
 ls
+cd ~/practice/
+vi boost-upper.cc
+g++ -std=cxx11 boost-upper.cc
+g++  boost-upper.cc
+g++ -std=c++11 boost-upper.cc
+./a.out 
+vi boost-upper.cc
+g++ -std=c++11 boost-upper.cc
+./a.out 
+vi boost-upper.cc
+g++ -std=c++11 boost-upper.cc
+./a.out 
+vi boost-upper.cc
+g++ -std=c++11 boost-upper.cc
+./a.out 
+apt-cache search tuxhuitar
+apt-cache search tuxguitar
+sudo apt-get install tuxguitar-fluidsynth tuxguitar-jack tuxguitar-jsa
