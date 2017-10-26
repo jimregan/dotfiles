@@ -1,113 +1,3 @@
-grep Pron+Ref pairs.tsv.1 
-grep Pron pairs.tsv.1 
-grep Direct pairs.tsv.1 
-grep Indirect pairs.tsv.1 
-echo that |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin 
-less ~/Playing/apertium-en-es/apertium-en-es.en.metadix 
-grep Pro pairs.tsv.1 
-grep Pro+ pairs.tsv.1 
-grep céard pairs.tsv.1 
-grep cad_é pairs.tsv.1 
-echo "a woman whose son isn't working" |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo BBC |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo Ltd. |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo Inc. |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-grep Sup tags
-grep Sup tags-
-grep Sup all-tags 
-grep Part+Sup pairs.tsv.1 
-grep Art all-tags 
-echo the |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo '+' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo '=' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo '*' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo 'a' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-grep +Prep+Art+Pl all-tags 
-grep +Prep+Art+Pl pairs.tsv.1 
-grep Prep+D pairs.tsv.1 
-echo his |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo me@me.com |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo 'me@me.com' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo 'me@me.com'|apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-grep Op all-tags 
-grep Op pairs
-grep Op pairs.tsv.1 
-ls
-cp tag-freqs ../../IdeaProjects/dictionaryconverter/scripts/
-echo she|apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-cd ~/Playing/
-ls
-cd nkjp-sample/
-ls
-cd nkjp/
-ls
-less KOT/text.xml 
-less KOT/ann_segmentation.xml 
-less KOT/text.xml 
-cd ../apertium-en-es/
-echo "a woman whose son isn't working" |apertium -d . en-es-chunker
-lt-expand .deps/en.dix |grep '<rel>'
-lt-expand .deps/en.dix |grep '<rel>'|sort|uniq
-echo BBC|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.t1x.bin  /usr/share/apertium/apertium-en-es/en-es.autobil.bin 
-echo 'me@me.com'|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.t1x.bin  /usr/share/apertium/apertium-en-es/en-es.autobil.bin 
-less apertium-en-es.en.metadix 
-cd ../ainm-ner-corpus/
-git push origin master
-git pull origin master
-git push origin master
-git branch
-git log
-git status
-git add máire_ann_nic_reachtain.txt 
-git commit -m 'another wikipedia test article'
-git push origin master
-sbt test
-sbt run
-#sbt "run 
-sbt "run www.ainm.ie all"
-sbt "run www.ainm.ie person"
-sbt "run www.ainm.ie text"
-sbt "run www.ainm.ie organization"
-sbt "run www.ainm.ie location"
-sbt "run www.ainm.ie"
-less all-ner.txt 
-wc -l all-ner.txt 
-wc -l ner-plain.txt 
-vi ner-plain.txt 
-ls
-cd ~/Playing/
-git clone https://github.com/yurkor/graph-expression.git
-mvn
-cd graph-expression/
-mvn
-mvn install
-mvn test
-mvn isntall
-mvn install
-git remote add mine https://github.com/jimregan/graph-expression.git
-git status
-git checkout -b type-erasure
-git push mine type-erasure 
-git log
-git checkout master
-git checkout -b typos
-git log
-git reset --hard HEAD~
-git log
-git cherry-pick 54b74093b71679b7b616d8cf0112156c3e39bca9
-git push mine typos 
-ls ../thesis/
-cd ..
-cp Dissertation/9879472fwnkgtfsztvt/dissertation.tex thesis/
-cd thesis/
-git diff
-git stash
-cp ../Dissertation/9879472fwnkgtfsztvt/*cls .
-ls
-git rm cam-thesis.cls 
-git add tcd-dissertation.cls 
-git commit -m 'rename & update for TCD M.Phil requirements'
-git push origin master
 git push mine master
 cd ../dissertation-data/
 ls
@@ -1998,3 +1888,113 @@ git status
 git diff
 ls
 less xaa
+cd ~/Pictures/foo/
+ls
+. ~/tmp/sourceme 
+filtfind |grep screen
+filtfind |grep screen|grep -v xmp
+~/bin/blockhash $(filtfind |grep screen|grep -v xmp) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+filtfind |grep screen|grep -v xmp|grep -v broken/|while read i;do grep $i ~/tmp/sync/bhashc-20171019-2.tsv || echo $i >> /tmp/tobedonebhc;done
+less /tmp/tobedonebhc 
+~/bin/blockhash $(cat /tmp/tobedonebhc ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+wc -l ~/tmp/sync/bhashc-20171019-2.tsv 
+, ~/tmp/sourceme 
+. ~/tmp/sourceme 
+filtfind |grep -v xmp|wc
+ls
+less ~/tmp/sync/bhashc-20171019-2.tsv 
+~/bin/blockhash screenshot_2017* >> ~/tmp/sync/bhashc-20171019-2.tsv 
+identify screenshot_20170819-214157.png
+gwenview screenshot_20170819-214157.png
+mv screenshot_20170819-214157.png broken/
+ls screenshot_2017*|grep -v 'xmp$'
+ls screenshot_2017*|grep -v 'xmp$' > /tmp/tobedonebhc 
+vi /tmp/tobedonebhc 
+cat ~/tmp/sync/bhashc-20171019-2.tsv 
+cat ~/tmp/sync/bhashc-20171019-2.tsv |awk '{print $2}'
+cat ~/tmp/sync/bhashc-20171019-2.tsv |awk '{print $2}'|grep -v /
+cat ~/tmp/sync/bhashc-20171019-2.tsv |awk '{print $2}'|grep -v / > /tmp/tbddone
+cat /tmp/tobedonebhc |while read i;do grep $i /tmp/tbddone || echo $i >> /tmp/tobedonebhc.f;done
+#~/bin/blockhash $(cat /tmp/tobed ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170905-092517.png broken/
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170905-092528.png broken/
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170908-001805.png broken/
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170909-003107.png broken/
+vi /tmp/tobedonebhc.f 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170915-001559.png broken/
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+vi /tmp/tobedonebhc.f 
+mv screenshot_20170920-155246.png broken/
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170920-172135.png broken/
+vi /tmp/tobedonebhc.f 
+mv screenshot_20170920-172135.png broken/
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170920-173414.png broken/
+vi /tmp/tobedonebhc.f 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170923-095355.png broken/
+vi /tmp/tobedonebhc.f 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170926-145455.png broken/
+vi /tmp/tobedonebhc.f 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170926-145531.png broken/
+vi /tmp/tobedonebhc.f 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170926-172758.png broken/
+vi /tmp/tobedonebhc.f 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+mv screenshot_20170928-182245.png broken/
+vi /tmp/tobedonebhc.f 
+~/bin/blockhash $(cat /tmp/tobedonebhc.f ) >> ~/tmp/sync/bhashc-20171019-2.tsv 
+ls
+sh ~/tmp/wrap-exif.sh 
+less /tmp/exif.out 
+mv /tmp/exif.out  ~/tmp/sync/exif-20171019-1.xml
+ls
+find . -name 'screenshot_20171002*.xmp'
+find . -name 'screenshot_20171002*.xmp'|grep 212
+less ./aleksanina.k/screenshot_20171002-212549.png.xmp
+wc -l ~/tmp/sync/assumed-identical-20171022_202603.nt 
+cd ..
+ls
+mkdir baz
+cd baz/
+. ~/tmp/sourceme 
+gimageproc https://www.instagram.com/p/BZotL_Cjk-2/?taken-by=juliapawlakx
+less ~/tmp/sourceme 
+curl 
+ogimageproc https://www.instagram.com/p/BZotL_Cjk-2/?taken-by=juliapawlakx
+ogimageproc https://www.instagram.com/p/BZ9XSyQD_dK/?taken-by=juliapawlakx
+ogimageproc https://www.instagram.com/p/BW_FaMBlaqw/?taken-by=juliapawlakx
+ogimageproc https://www.instagram.com/p/BYZD1X1Dh_n/?taken-by=juliapawlakx
+ogimageproc https://www.instagram.com/p/BUrRijLD7rG/?taken-by=juliapawlakx
+ogimageproc https://www.instagram.com/p/BUsNSYUjJmt/?taken-by=juliapawlakx
+ogimageproc https://www.instagram.com/p/BRB-GYKDrGe/?taken-by=juliapawlakx
+ogimageproc https://www.instagram.com/p/BU4ipQ3DgIO/?taken-by=julie_kn_
+ogimageproc https://www.instagram.com/p/BVdnVTxjIlx/?taken-by=julie_kn_
+ogimageproc https://www.instagram.com/p/BW17ukxj-gs/?taken-by=julie_kn_
+ogimageproc https://www.instagram.com/p/BW7I8_wjGqM/?taken-by=julie_kn_
+ogimageproc https://www.instagram.com/p/BYbKroqjqVG/?taken-by=julie_kn_
+ogimageproc https://www.instagram.com/p/BY7TPZ3DMpe/?taken-by=julie_kn_
+ogimageproc https://www.instagram.com/p/BZtJ_7rH4vy/?taken-by=olyaevgenya
+ogimageproc https://www.instagram.com/p/BXVUtztnuPA/?taken-by=olyaevgenya
+ogimageproc https://www.instagram.com/p/BX71XDaHr92/?taken-by=olyaevgenya
+ogimageproc https://www.instagram.com/p/BP_ALmDhgI0/?taken-by=olyaevgenya
+ogimageproc https://www.instagram.com/p/BaQ3wwYjugG/?taken-by=annabuzova
+ogimageproc https://www.instagram.com/p/BaTpj_7DxYt/?taken-by=annabuzova
+ogimageproc https://www.instagram.com/p/BaHCRs4D1MI/?taken-by=annabuzova
+ogimageproc https://www.instagram.com/p/BZnpdqEjpXY/?taken-by=annabuzova
+ogimageproc https://www.instagram.com/p/BZdaQopDDER/?taken-by=annabuzova
+ogimageproc https://www.instagram.com/p/Bac9wNgnZL2/?taken-by=celinefarach
+ogimageproc https://www.instagram.com/p/BaKl3d1HuzV/?taken-by=celinefarach
+ogimageproc https://www.instagram.com/p/BZW05MPHmmS/?taken-by=celinefarach
+ogimageproc https://www.instagram.com/p/BZF2l0rnbl1/?taken-by=celinefarach
+ogimageproc https://www.instagram.com/p/BYzJGmDHrm3/?taken-by=celinefarach
+ogimageproc https://www.instagram.com/p/BYhtJL2HLKY/?taken-by=celinefarach
