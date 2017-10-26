@@ -1,246 +1,3 @@
-git add zwierzeta-i-niedzwiedz.txt
-git status
-git diff
-ls
-less xaa
-cd /tmp/
-unzip ~/Downloads/src.zip 
-cd src/termextractor/
-ls
-less DocFreq.java 
-less AndTemplate.java 
-less SimpleTemplate.java 
-less TermMatcher.java 
-less Term.java 
-fdupes -r . ~/Pictures/foo/ > tmpdupck
-less tmpdupck 
-grep -v 'xmp$' tmpdupck 
-grep -v 'xmp$' tmpdupck |less
-identify s1.postimg.org/19a8lii9gd/screenshot_20170812-161826.png
-ls -al s1.postimg.org/19a8lii9gd/screenshot_20170812-161826.png
-ls -al ~/Pictures/foo/TAGGED/screenshot_20170812-161826.png
-ls -al ../foo/screenshot_20170812-161826.png
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv
-vi /tmp/tobedonebhc.f 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi /tmp/tobedonebhc.f 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-vi /tmp/tobedonebhc.f 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-vi /tmp/tobedonebhc.f 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-vi ~/tmp/sync/bhashc-20171019-2.tsv 
-tail -f ~/tmp/sync/bhashc-20171019-2.tsv
-wc -l ~/tmp/sync/bhashc-20171019-2.tsv
-cd ..
-scp jimregan:tmp/wrap-exif.sh .
-less wrap-exif.sh 
-cd ~-
-ls
-cd ..
-scp jimregan:img/fdupes-proc.pl .
-less fdupes-proc.pl 
-scp jimregan:img/check-size.pl .
-cd ~-
-cat tttmp/tospider.log |perl ~/bin/wget-http.pl 
-cat tttmp/tospider.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171019-1.nt
-cat tttmp/tospider.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-less ../check-size.pl 
-cat tttmp/tospider.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-less ../sync/assumed-identical-20171019_162928.nt 
-wc -l ../sync/assumed-identical-20171019_162928.nt 
-wc -l tttmp/tospider
-cd tttmp/
-ls
-cd ..
-rm -rf tttmp/
-ls
-ls ../fdupes-proc.pl 
-cat tmpdupck 
-cat tmpdupck |grep -v 'xmp$'
-cat tmpdupck |grep -v 'xmp$'|less
-vi tmpdupck 
-cat tmpdupck |grep -v 'xmp$'|less
-cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'
-cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl 
-cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl |grep -v '^$'
-tail -f /tmp/exif.out 
-cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl |grep -v '^$'
-cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl |grep -v '^$' >> ~/tmp/sync/byte-for-byte-identical-20171019-1.nt
-less ~/tmp/sync/byte-for-byte-identical-20171019-1.nt
-ls
-rm tmpdupck 
-ls
-less archdup 
-cat archdup |sed -e 's/ttmp\///'|perl ../fdupes-proc.pl |grep -v '^$' >> ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
-less ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
-rm ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
-cat archdup |sed -e 's/tttmp\///'|perl ../fdupes-proc.pl |grep -v '^$' >> ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
-less ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
-ls
-rm archdup 
-less duptmp
-rm duptmp
-less duptmp2 
-. ../sourceme 
-#filtfind |while read i;do grep $i ../sync/assumed-identical-20171019_162928.nt || echo http
-mkdir sptmp
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171019_162928.nt || echo http://web.archive.org/save/https://$i >> sptmp/inp;done
-cd sptmp/
-ls
-less inp 
-~/scripts/grab-logged.sh inp 
-tail -f inp.log 
-vi spp
-ls
-cd ..
-cat sptmp/inp.log |perl ~/bin/wget-http.pl| perl ../check-size.pl 
-cat sptmp/inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171019-2.nt 
-less ~/tmp/sync/http-misc-20171019-2.nt 
-grep Gateway ~/tmp/sync/http-misc-20171019-2.nt 
-wc -l sptmp/inp
-cd sptmp/
-ls
-rm -rf web.archive.org/
-rm inp
-rm inp.log 
-rm nohup.out 
-vi inp
-~/scripts/grab-logged.sh inp 
-~/scripts/grab-logged.sh spp 
-tail -f spp.log 
-tail inp.log 
-cd ..
-cat sptmp/inp.log |perl ~/bin/wget-http.pl| perl ../check-size.pl 
-less ../sync/assumed-identical-20171022_203008.nt 
-cat sptmp/inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171019-2.nt 
-cat sptmp/spp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171019-2.nt 
-less ~/tmp/sync/http-misc-20171019-2.nt 
-cd sptmp/
-ls
-rm inp
-rm inp.log 
-rm spp
-rm spp.log 
-rm -rf web.archive.org/
-rm nohup.out 
-cd ..
-ls
-less gal1 
-less ../sync/bhashc-20171019-2.tsv 
-less ../sync/bhashc-20171019-1.tsv 
-filtfind |while read i;do grep $i ../sync/bhashc-20171019-1.tsv || echo $i >> tobh;done
-less tobh 
-~/bin/blockhash $(cat tobh)
-~/bin/blockhash $(cat tobh) >> ../sync/bhashc-20171019-1.tsv 
-less ../sync/bhashc-20171019-1.tsv 
-less ../sync/byte-for-byte-identical-20171019-1.nt 
-rm tobh 
-filtfind |while read i;do grep $i ../sync/assumed-identical-201710* || echo $i >> tospid;done
-ls
-rm -rf sptmp/
-ls
-less duptmp2 
-rm duptmp2 
-ls
-less fash-rdf-links 
-ls
-less imgur-gals
-mkdir footmp
-mv imgur-gals-ia footmp/
-cd footmp/
-~/scripts/grab-logged.sh imgur-gals-ia 
-tail -f imgur-gals-ia.log 
-cd ..
-cat footmp/imgur-gals-ia.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171019-1.nt
-less ../sync/http-misc-20171019-1.nt
-rm -rf footmp/
-ls
-cat imgur-gals |while read i;do grep $i fash-rdf-links || echo $i >> imgur-gals.f;done
-cat imgur-gals.f 
-mv imgur-gals.f imgur-gals
-ls
-less gal1 
-grep screenshot_20170806_180059.png fash-rdf-links 
-less gal1 
-ls
-cat gal1 
-cat gal1 |awk -F'"' '{print $2 $4}'
-cat gal1 |awk -F'"' '{print $2 " " $4}'
-cat gal1 |awk -F'"' '{print $2 " " $4}'|while read i;do procimg $i;done
-fdupes -r .
-ls
-find preview.ibb.co -type f
-find preview.ibb.co -type f > tobh
-~/bin/blockhash $(cat tobh) >> ../sync/bhashc-20171019-1.tsv 
-less ../sync/bhashc-20171019-1.tsv 
-grep screenshot_20170812_075847.png  ../sync/bhashc-20171019-*
-fdupes -r ./preview.ibb.co ~/Pictures/foo
-fdupes -r ./preview.ibb.co ~/Pictures/foo > dddduop
-vi dddduop #
-cat dddduop |perl ../fdupes-proc.pl 
-cat dddduop |perl ../fdupes-proc.pl |grep -v '^$'
-rm dddduop 
-ls
-mkdir nla
-cd nla/
-mb ../tobh .
-mv ../tobh .
-ls
-~/scripts/grab-logged.sh tobh 
-tail -f tobh.log 
-cat tobh|awk '{print "http://web.archive.org/save/" $0}'
-cat tobh|awk '{print "http://web.archive.org/save/https://" $0}' > gr
-~/scripts/grab-logged.sh gr 
-tail -f gr.log 
-cd ..
-tail nla/gr.log 
-cat nla/gr.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171019-1.nt
-cat nla/gr.log |perl ~/bin/wget-http.pl| perl ../check-size.pl 
-less ../sync/assumed-identical-20171022_212602.nt 
-wc -l ../sync/assumed-identical-20171022_212602.nt 
-rm -rf nla/
-less  ../sync/bhashc-20171019-1.tsv 
-ls
-less ../sync/bhashc-20171019-2.tsv 
-cat ../sync/bhashc-20171019-2.tsv |awk '{print $1}'
-cat ../sync/bhashc-20171019-2.tsv |awk '{print $1}'|while read i;do echo >> mrg; echo "# $i" >> mrg; grep $i ../sync/bhashc-20171019-1.tsv|awk '{print $2}' >> mrg; grep $i ../sync/bhashc-20171019-2.tsv |awk '{print $2}' >> mrg;done
-less mrg 
-rm mrg 
-grep -i screenshot ../sync/bhashc-20171019-1.tsv |awk '{print $1}'|while read i;do echo >> mrg; echo "# $i" >> mrg; grep $i ../sync/bhashc-20171019-1.tsv|awk '{print $2}' >> mrg; grep $i ../sync/bhashc-20171019-2.tsv |awk '{print $2}' >> mrg;done
-less mrg 
-rm mrg 
-grep -i screenshot ../sync/bhashc-20171019-1.tsv |awk '{print $1}'|while read i;do echo >> mrg; echo "# $i" ; grep $i ../sync/bhashc-20171019-1.tsv|awk '{print "https://" $2}' >> mrg; grep $i ../sync/bhashc-20171019-2.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrg;done
-less mrg 
-cat mrg |perl ~/tmp/fdupes-proc.pl 
-cat mrg |perl ~/tmp/fdupes-proc.pl |grep '<>'
-cat mrg |perl ~/tmp/fdupes-proc.pl |less
-less mrg 
-cat mrg |perl ~/tmp/fdupes-proc.pl |grep 20171011-121932.png
-less mrg 
-cat mrg |perl ~/tmp/fdupes-proc.pl |grep 20171007-222616.png
-cat mrg |perl ~/tmp/fdupes-proc.pl e > ../sync/byte-for-byte-identical-20171019-3.nt
-grep file: mrg 
-grep file: mrg |sort|uniq
 grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt ; done
 grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt || echo $i >> mrg.g;done
 cd ~/Pictures/foo/
@@ -1998,3 +1755,246 @@ git add caighdean/*
 git commit -m rest
 git push origin master 
 #cat pron-data/enwiktionary-ipa.tsv |awk -F'\t' '{print $1}'|sort|uniq > in-chk
+cd ~/Playing/
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software/marytts-lang-ga/
+svn co --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software/marytts-lang-ga/
+svn co --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software/tcdsynthesiser/
+svn co --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Daisy/
+svn co --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/
+cd Corp
+cd Corpora/
+ls
+svn up
+svn cleanup
+apt-cache search pdf
+apt-cache search pdf|grep gnome
+apt-cache search pdf|grep gtk
+apt-cache search popler
+apt-cache search pop
+apt-cache search pop|grep pdf
+sudo apt-get install qpdfview
+svn up
+ls
+less en_IE/nnc/Arctic/flite_tcd_en_IE_nnc_arctic 
+less en_IE/nnc/Arctic/notes.txt 
+ffplay en_IE/nnc/Arctic/test.wav 
+find . -type f
+ls ga_MU/nnc/CDAn_tOileanach_part1_newLTS/txt/
+less ga_MU/nnc/CDAn_tOileanach_part1_newLTS/txt/CI0001CDAn_tOileanach_0188.txt 
+less ga_MU/nnc/CDAn_tOileanach_part1_newLTS/txt/CI0001CDAn_tOileanach_0189.txt 
+ls
+du .
+ls
+ls tcd_gd_anb/
+less tcd_gd_anb/dirlist 
+less tcd_gd_anb/index.xml 
+less tcd_gd_anb/xml/DVD01/Session001_17-05-05/text01-001/text01-001_000.xml 
+less tcd_gd_anb/xml/DVD01/Session001_17-05-05/text01-001/text01-001_001.xml 
+ls
+ls ga_UL/anb/text01/txt/text01-001_000.txt 
+less ga_UL/anb/text01/txt/text01-001_000.txt 
+less ga_UL/anb/text01/xml/text01-001_000.xml 
+less ga_UL/anb/text01/xml/text01-001_009.xml 
+less ga_UL/anb/named-entities/textproc_xml/named-entities_000.xml 
+cd ..
+lks
+ls
+cd tcdsynthesiser/
+ls
+less agus_mas_gaolmhar_ni_cosuil.xml 
+ls
+less \#vp.c# 
+less mgram_dat.py
+less mgram.dic 
+less Viterbi
+less NewIrishLts.py 
+ls
+less Viterbi_src/readme 
+less Viterbi_src/VI-lib.c 
+ls cab/
+less cab/gd_lex_non_native.txt 
+less cab/Utterance.py
+less cab/gaoth-dobhair-irish-lts-rules.lff 
+less cab/ExpandedLTSComponent.py
+ls
+less cab/inflections.tsv n
+less cab/inflections.tsv 
+less cab/mutations.tsv 
+less cab/ga_u_g2p_rules.lff 
+less cab/cab.log 
+less cab/common_lts.lff 
+less cab/SyllabifierComponent.py
+less cab/LTSRules.py
+less cab/stress.lff 
+less cab/stresser.lff 
+less cab/syllabifier.lff 
+less cab/gdlts.lff 
+ls
+less gaothdobhair.xml 
+less NewIrishLts.py 
+find . -name '*xml'
+ls
+less ps2b.py 
+cd ../Corp
+cd ../Corpora/
+ls
+ls ga_MU/
+ls ga_MU/bearach_mna_ag_caint/paragraphformat.xml 
+less ga_MU/bearach_mna_ag_caint/paragraphformat.xml 
+ls ga_MU/bearach_mna_ag_caint/sentenceformat/
+ls ga_MU/
+ls ga_MU/corpus_beag_na_mumhan/
+less ga_MU/corpus_beag_na_mumhan/corpus_beag_na_mumhan.txt 
+less ga_MU/corpus_beag_na_mumhan/missing_diphones_MU.txt 
+less ga_MU/corpus_beag_na_mumhan/words_transcribed.txt 
+less ga_MU/corpus_beag_na_mumhan/stats/
+find  ga_MU/corpus_beag_na_mumhan -type f
+find  ga_MU/corpus_beag_na_mumhan -type f|less
+less ga_MU/corpus_beag_na_mumhan/stats/corpus_beag_na_mumhan_0094.pkl 
+ls
+find . -name '*[Ww][Aa][Vv]'
+find . -name '*[Ww][Aa][Vv]'|less
+find . -name '*mp3'|less
+find . -name '*ogg'|less
+find . -name '*[Ww][Aa][Vv]'|while read i;do soxi -D $i;done
+find . -name '*[Ww][Aa][Vv]'
+ls ga_CO/pmg/RC_ALL
+ls ga_CO/pmg/RC_ALL/julius_xml/MI0001RCNuachtRTE1-1506_0101.xml 
+less ga_CO/pmg/RC_ALL/julius_xml/MI0001RCNuachtRTE1-1506_0101.xml 
+less ga_CO/pmg/RC_ALL/htk_lab/MI0001RCNuachtRTE1-1506_0101.lab 
+less ga_CO/pmg/RC_ALL/festvox/tcd_ga_CO_pmg_RC_ALL_multisyn.scm 
+less ga_CO/pmg/RC_ALL/festival_multisyn/multisyn_data/utts.data 
+less ga_CO/pmg/RC_ALL/txt_without_markup/MI0001RCNuachtRTE1-1506_0101.txt 
+lss ga_CO/pmg/RC_ALL/wav/
+ls ga_CO/pmg/RC_ALL/wav/
+ls ga_CO/pmg/RC_ALL/textproc_xml/MI0001RCNuachtRTE1-1506_0101.xml 
+less ga_CO/pmg/RC_ALL/textproc_xml/MI0001RCNuachtRTE1-1506_0101.xml 
+ls
+ls ga_UL/
+ls ga_UL/anb/
+ls ga_UL/anb/text01/txt/text01-001_021.txt 
+less ga_UL/anb/text01/txt/text01-001_021.txt 
+less ga_UL/anb/text01/xml/text01-001_021.xml 
+less ga_UL/anb/text01/txt/text01-001_021.txt 
+find . -name '*txt'
+find . -name '*txt'|xargs grep '<spoken'
+find . -name '*txt'|xargs grep '<spoken'|gsed -e 's/<spoken-like/\n<spoken-like/g;s#</spoken-like>#</spoken-like>\n#g'
+find . -name '*txt'|xargs grep '<spoken'|sed -e 's/<spoken-like/\n<spoken-like/g;s#</spoken-like>#</spoken-like>\n#g'
+find . -name '*txt'|xargs grep '<spoken'|sed -e 's/<spoken-like/\n<spoken-like/g;s#</spoken-like>#</spoken-like>\n#g'|grep '^<spok' > ~/spoken-like
+less ~/spoken-like 
+wc -l ~/spoken-like 
+cat ~/spoken-like |sort|uniq
+cat ~/spoken-like |sort|uniq|wc
+cat ~/spoken-like |sort|uniq > ~/spoken-like.uniq
+vi ~/spoken-like.uniq 
+cp ~/spoken-like.uniq ~/spoken-like.edit
+vi ~/spoken-like.edit 
+ls ga_MU/mo_sgeal_fein_CORK/
+ls ga_MU/mo_sgeal_fein_CORK/aeneas_test/MsfChapter1_sentences.txt 
+less ga_MU/mo_sgeal_fein_CORK/aeneas_test/MsfChapter1_sentences.txt 
+less ga_MU/mo_sgeal_fein_CORK/sent/MsfModernised_Chapter_00.txt 
+less ga_MU/mo_sgeal_fein_CORK/sent/MsfModernised_Chapter_01.txt 
+apt-cache search diff|grep word
+sudo apt-get install wdiff
+wdiff ga_MU/mo_sgeal_fein_CORK/sent/MsfModernised_Chapter_01.txt ga_MU/mo_sgeal_fein_CORK/orig_txt/MsfModernised_Chapter_01.txt 
+man wdiff
+wdiff -i ga_MU/mo_sgeal_fein_CORK/sent/MsfModernised_Chapter_01.txt ga_MU/mo_sgeal_fein_CORK/orig_txt/MsfModernised_Chapter_01.txt 
+wdiff -i ga_MU/mo_sgeal_fein_CORK/sent/MsfModernised_Chapter_02.txt ga_MU/mo_sgeal_fein_CORK/orig_txt/MsfModernised_Chapter_02.txt 
+ls
+unzip -l ga_CO/Conemara-Rec/iosagantest.zip 
+ls ga_CO/Conemara-Rec/iosagantest
+ls ga_CO/Conemara-Rec/bairbre/
+less ga_CO/Conemara-Rec/README.txt 
+ls ga_CO/Conemara-Rec/
+ls ga_CO/Conemara-Rec/Conversion\ Script/
+ls ga_CO/Conemara-Rec/Conversion\ Script/An\ Punk/
+less ga_CO/Conemara-Rec/Conversion\ Script/txt2xml-prompts-amelia.py 
+ls
+ls ga_CO/
+ls ga_CO/pmg
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0010.xml 
+less ga_CO/pmg/RCAlphaBet/lab/
+less ga_CO/pmg/RCAlphaBet/lab/MI0001RCAlphaBet_0009.lab 
+less ga_CO/pmg/RCAlphaBet/txt/MI0001RCAlphaBet_0001.txt 
+less ga_CO/pmg/RCAlphaBet/txt/MI0001RCAlphaBet_0002.txt 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0002.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0003.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+perl ~/Playing/msf-asr/scripts/abair-xml-extract.pl ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0003.xml 
+perl ~/Playing/msf-asr/scripts/abair-xml-extract.pl ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+grep LibXML ~/*pl
+grep LibXML ~/scripts/*pl
+grep LibXML ~/bin/*pl
+perl ~/Playing/msf-asr/scripts/abair-xml-extract.pl ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0003.xml 
+perl ~/Playing/msf-asr/scripts/abair-xml-extract.pl ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0003.xml 
+perl ~/Playing/msf-asr/scripts/abair-xml-extract.pl ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0003.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+perl ~/Playing/msf-asr/scripts/abair-xml-extract.pl ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+perl ~/Playing/msf-asr/scripts/abair-xml-extract.pl ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+less ga_CO/pmg/RCAlphaBet/xml/MI0001RCAlphaBet_0001.xml 
+grep open ~/*pl
+grep open ~/scripts/*pl
+ls
+less UISC/LEX/lex.txt 
+less UISC/DOC/Catalogue_of_words_per_annotation_file.txt 
+less UISC/DOC/GTPrules.pdf 
+less UISC/TOOLS/config 
+ls
+ls ga_CO/Scanned\ Text/
+ls ga_CO/Scanned\ Text/Punk/
+ls ga_CO/Scanned\ Text/GearrscВalta/
+ls ga_CO/mysql/
+ls ga_CO/mysql/phonelist 
+less ga_CO/mysql/phonelist 
+less ga_CO/mysql/tcd_rc_pmc_mysql.txt 
+less ga_CO/mysql/tcd_rc_pmc_mysql_100407.txt 
+less ga_CO/mysql/notes 
+find ga_CO -name '*wav'
+ls ga_CO/pmg_recordings/RCAlphaBet/RECS/
+ls ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/
+ffplay ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0001.wav 
+find ga_CO -name '*wav'
+cd ga_CO/
+fdupes -r .
+ls
+ls pmg
+less pmg/RCNamedEntities02/txt/MI0001RCNamedEntities02_0020.txt 
+ls
+ls texts/
+ls texts/deoraiocht/
+ls pmg_recordings/
+ls pmg_recordings/RCNuachtRTEMay/
+ls pmg_recordings/RCNuachtRTEMay/R
+ls pmg_recordings/RCNuachtRTEMay/RECS/
+find pmg_recordings -name '*wav'
+find pmg_recordings -name '*wav'|awk -F/ '{print $NF}'
+find pmg_recordings -name '*wav'|awk -F/ '{print $NF}' > /tmp/pmg_recordings-wav.txt
+find pmg_recordings -not -name '*wav'
+less pmg_recordings/RCPiarsachBoithre/RCPiarsachBoithre.xml
+find pmg_recordings -name 'RCPiarsachBoithre_0001*'
+find pmg -name 'RCPiarsachBoithre_0001*'
+find pmg -name 'RCPiarsachBoithr*'
+ls pmg/RCPiarsachBoithre/ogg/
+less pmg_recordings/RCPiarsachBoithre/RCPiarsachBoithre.xml
+find pmg_recordings -name '*RCPiarsachBoithre_0001*'
+ffplay pmg_recordings/RCPiarsachBoithre/RECS/0001/MI0001RCPiarsachBoithre_0001.wav
+less pmg_recordings/RCPiarsachBoithre/RCPiarsachBoithre.xml
+ffplay pmg_recordings/RCPiarsachBoithre/RECS/0001/MI0001RCPiarsachBoithre_0282.wav
+less pmg_recordings/RCPiarsachBoithre/RCPiarsachBoithre.xml
+find pmg -name 'RCPiarsachBoithr*'
+find pmg -name '*RCPiarsachBoithr*'
+less pmg/RCPiarsachBoithre/txt/MI0001RCPiarsachBoithre_0215.txt
+less pmg/RCPiarsachBoithre/txt/MI0001RCPiarsachBoithre_0282.txt 
+less pmg_recordings/RCPiarsachBoithre/RCPiarsachBoithre.xml
+less pmg/RCPiarsachBoithre/txt/MI0001RCPiarsachBoithre_0281.txt 
+ls
+cd pmg
+ls
+less allcomments091109
+less allcomments091109.txt 
