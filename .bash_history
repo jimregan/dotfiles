@@ -1,4 +1,3 @@
-find .. -name '*merge*'
 less ../src/fgmmbin/fgmm-global-merge.cc 
 ls
 ls gp/
@@ -1998,3 +1997,4 @@ ls /connemara/Female_Speaker_Annotated/
 ls ./connemara/Female_Speaker_Annotated/
 less ./connemara/Female_Speaker_Annotated/amuigh1.TextGrid 
 killall sox
+git diff
