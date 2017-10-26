@@ -1,19 +1,3 @@
-perl -e 'print 5  % 3'
-perl -e 'print 6  % 3'
-perl -e 'my $a="1222"; substr($a, len($a)%3)'
-perl -e 'my $a="1222"; substr($a, length($a)%3)'
-perl -e 'my $a="1222"; print substr($a, length($a)%3)'
-perl -e 'my $a="1222"; print substr($a, 0, length($a)%3)'
-perl -e 'my $a="1222222"; print substr($a, length($a)%3)'
-perl ../testnum.pl 
-perl -e 'print length("124")'
-perl -e 'my $a="1222"; substr($a, length($a)%3)'
-perl ../testnum.pl 
-vi norm
-wget https://wolnelektury.pl/media/book/txt/przygody-tomka-sawyera.txt
-cat przygody-tomka-sawyera.txt |tr ' ' '\n'
-vi przygody-tomka-sawyera.txt 
-cat przygody-tomka-sawyera.txt |tr ' ' '\n'
 cat przygody-tomka-sawyera.txt |tr ' ' '\n'|aspell -a -l pl
 cat przygody-tomka-sawyera.txt |tr ' ' '\n'|aspell -a -l pl|grep '^&'
 ls
@@ -1998,3 +1982,19 @@ cd ..
 rm -rf build/
 mkdir build
 cd build/
+cd ~/Pl
+cd ~/Playing
+ls
+cd Daisy
+rm -rf .svn
+df
+cd ../Corpora/
+rm -rf .svn
+df
+less /home/jim/Playing/Daisy/books_in_progress/gafa_mini/gafa_mini_2.xml
+less /home/jim/Playing/Daisy/books_in_progress/gafa_mini/gafa_mini.xml 
+less /home/jim/Playing/Daisy/books_in_progress/TRASH_THESE if all ok/SEAN_am_don_leamh4/Am Don Léamh Rang a 4 ceartaithe.txt
+less '/home/jim/Playing/Daisy/books_in_progress/TRASH_THESE if all ok/SEAN_am_don_leamh4/Am Don Léamh Rang a 4 ceartaithe.txt'
+ps aux|grep hrom
+killall chromium-browser
+ps aux|grep hrom
