@@ -1,38 +1,3 @@
-git diff
-git remote add origin https://github.com/jimregan/wolnelektury-audio-corpus.git
-git push -u origin master
-git diff
-curl https://wolnelektury.pl/media/book/txt/piesni-ksiegi-pierwsze-piesn-x.txt
-curl https://wolnelektury.pl/media/book/txt/piesni-ksiegi-pierwsze-piesn-x.txt | perl norm-text.pl 
-git add norm-text.pl 
-git commit -m 'feminine ordinals'
-git push -u origin master
-git pull origin master
-git push origin master
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl 
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl |less
-cat przygody-tomka-sawyera.txt.1|perl norm-text.pl |grep Rozdzi
-curl https://wolnelektury.pl/media/book/txt/piesni-ksiegi-pierwsze-piesn-x.txt | perl norm-text.pl 
-git diff
-git add norm-text.pl 
-git commit -m 'may need others''
-git commit -m 'may need others'
-git push origin master
-git diff
-git add audiobooks.tsv 
-git commit -m 'collection appears twice'
-cat audiobooks.tsv |awk -F'\t' '{print $2}'|sed -e 's/ $//'
-cat audiobooks.tsv |awk -F'\t' '{print $2}'|sed -e 's/ $//'|sort|uniq
-cat audiobooks.tsv |awk -F'\t' '{print $2}'|sed -e 's/ $//;s/ i /\n/g;s/, /\n/g'
-cat audiobooks.tsv |awk -F'\t' '{print $2}'|sed -e 's/ $//;s/ i /\n/g;s/, ?/\n/g'
-cat audiobooks.tsv |awk -F'\t' '{print $2}'|sed -e 's/ $//;s/ i /\n/g;s/, /\n/g;s/,/\n/g'
-cat audiobooks.tsv |awk -F'\t' '{print $2}'|sed -e 's/ $//;s/ i /\n/g;s/, /\n/g;s/,/\n/g'|sort|uniq
-git diff
-grep Iwo audiobooks.tsv 
-git add speaker-gender-map.tsv 
-git commit -m extend
-git push origin master
-cat audiobooks.tsv |awk -F'\t' '{print $3}'
 mkdir text
 cd text/
 cat ../audiobooks.tsv |awk -F'\t' '{print $3}'
@@ -1998,3 +1963,38 @@ find . -name '*.epub'
 ffplay /home/jim/Playing/Daisy/books_in_progress/apa/z3986/speechgen0001.mp3
 ffplay /home/jim/Playing/Daisy/books_in_progress/apa/z3986/speechgen0002.mp3
 find . -type f|grep -i liom
+docker
+docker pull debian
+docker help pull 
+sudo docker pull debian:sid
+mkdir docktst
+cd docktst/
+ls
+vi Dockerfile
+docker
+docker build
+docker build .
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+vi Dockerfile 
+sudo docker build .
+less file:///home/jim/Playing/Daisy/books_in_progress/Bua_sa_Bhealtriail/Bua_sa_Bhealtriail_Pages_1_120.xml
+less /home/jim/Playing/Daisy/books_in_progress/Bua_sa_Bhealtriail/Bua_sa_Bhealtriail_Pages_1_120.xml
+rm ~/Pictures/Screenshot_2017100*
+rm ~/Pictures/w1.png 
+rm ~/Pictures/q2.png 
