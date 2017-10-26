@@ -1,38 +1,3 @@
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/9447602wxgsyszkgpcf
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/3288004fqrkmb
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt/takefrom/2859581dqcnzs
-clear
-cd /home/jim/Playing/Dissertation/9879472fwnkgtfsztvt
-clear
-cd ../msf-asr/
-cd scripts/
-ls
-grep '=>' normalise.pl 
 grep '=>' normalise.pl |grep -v '#'
 grep '=>' normalise.pl |grep -v '#'|grep -v "'"
 grep '=>' normalise.pl |grep -v '#'|grep -v "'"|awk -F'"' '{print $2 "\t" $4}'
@@ -1998,3 +1963,38 @@ find . -type d -name wav
 find . -type d -and -name wav
 find . -type d -and -name ogg
 find . -type d -and -name xml
+cd ..
+git clone https://github.com/mmorise/World.git
+cd World/
+ls
+cd src/
+ls
+less matlabfunctions.cpp 
+less fft.cpp 
+less codec.cpp 
+grep TimeBaseGeneration *
+grep -i TimeBaseGeneration *
+less synthesis.cpp 
+ssh jimregan
+vi /tmp/tst.c
+cd /tmp/
+gcc tst.c 
+vi /tmp/tst.c
+g++ tst.c 
+vi /tmp/tst.c
+g++ tst.c 
+rm ~/Pictures/Screenshot_2017100*
+cd ~/Playing/
+git clone https://github.com/jonathf/matlab2cpp.git
+ssh jimregan
+git clone https://github.com/bjbschmitt/AMFM_decompy/
+git clone https://github.com/taolei87/sru
+git clone https://github.com/snukky/plerrex
+git clone https://github.com/emjotde/nematus
+cd nematus/
+ls
+python setup.py ins
+python setup.py install
+sudo python setup.py install
+sudo python2.7 setup.py install
+df
