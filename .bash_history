@@ -1,15 +1,3 @@
-mkdir text
-cd text/
-cat ../audiobooks.tsv |awk -F'\t' '{print $3}'
-wget $(cat ../audiobooks.tsv |awk -F'\t' '{print $3}')
-rm *.1
-ls|wc
-cd ..
-ls
-cat audiobooks.tsv |sort|uniq
-cat audiobooks.tsv |sort|uniq > su
-mv su audiobooks.tsv 
-git diff
 wc -l audiobooks.tsv 
 git diff
 git stash
@@ -1998,3 +1986,15 @@ less /home/jim/Playing/Daisy/books_in_progress/Bua_sa_Bhealtriail/Bua_sa_Bhealtr
 rm ~/Pictures/Screenshot_2017100*
 rm ~/Pictures/w1.png 
 rm ~/Pictures/q2.png 
+cd /tmp/
+docker pull node
+sudo apt-get install docker.io
+docker pull node
+man dockerd
+dockerd
+sudo dockerd
+ps aux|grep docker
+docker pull node
+sudo docker pull node
+ls
+sudo usermod -aG docker jim
