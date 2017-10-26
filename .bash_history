@@ -1,6 +1,3 @@
-cd Playing/
-git clone https://github.com/mfaruqui/non-distributional.git
-cd non-distributional/
 ls
 zless binary-vectors.txt.gz 
 less word-feat.txt 
@@ -1998,3 +1995,6 @@ g++ word-average.cc
 cat word-average.cc 
 cat words.txt 
 ./a.out 
+ls
+less DecideVUV.m 
+less GenerateVUVSetting.m 
