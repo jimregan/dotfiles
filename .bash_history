@@ -1,18 +1,3 @@
-cat przygody-tomka-sawyera.txt |tr ' ' '\n'|aspell -a -l pl
-cat przygody-tomka-sawyera.txt |tr ' ' '\n'|aspell -a -l pl|grep '^&'
-ls
-vi norm 
-unzip -l przygody-tomka-sawyera.zip 
-unzip przygody-tomka-sawyera.zip 
-ffplay 25-mark-twain-przygody-tomka-sawyera.mp3 
-cat przygody-tomka-sawyera.txt |tr ' ' '\n'|grep X
-cat przygody-tomka-sawyera.txt |grep Rozdzi
-cat przygody-tomka-sawyera.txt |grep Rozdzia
-cat przygody-tomka-sawyera.txt |grep ISBN
-cat przygody-tomka-sawyera.txt |grep IS
-less przygody-tomka-sawyera.
-less przygody-tomka-sawyera.txt 
-echo "Rozdział XI"|perl norm-text.pl 
 echo "Rozdział X"|perl norm-text.pl 
 echo "Rozdział I"|perl norm-text.pl 
 echo "Rozdział XXI"|perl norm-text.pl 
@@ -1998,3 +1983,18 @@ less '/home/jim/Playing/Daisy/books_in_progress/TRASH_THESE if all ok/SEAN_am_do
 ps aux|grep hrom
 killall chromium-browser
 ps aux|grep hrom
+sh ../wrap-exif.sh 
+vi /tmp//exif.out 
+mv /tmp//exif.out ../sync/exif-20171019-4.xml
+ls
+cd ~/Pictures/s-shots/
+ls
+cd ..
+find s-shots -type f
+find s-shots -type f|grep -v 'xmp$'
+~/bin/blockhash $(find s-shots -type f|grep -v 'xmp$')
+~/bin/blockhash $(find s-shots -type f|grep -v 'xmp$') >> ~/tmp/sync/bhashc-20171019-2.tsv 
+cd s-shots/
+sh ~/tmp/wrap-exif.sh 
+vi /tmp//exif.out 
+mv /tmp//exif.out ~/tmp/sync/exif-20171019-5.xml
