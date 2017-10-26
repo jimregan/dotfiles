@@ -1,298 +1,3 @@
-wc -l /tmp/postimgin
-lynx -dump https://postimg.org/image/1zjf0gn0mz/
-cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2t986vwak/;done
-vi /tmp/postimgin 
-cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/w7rvwqt8/;done
-vi /tmp/postimgin 
-cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/jebghyd8/;done
-vi /tmp/postimgin 
-cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2meohgy0s/;done
-vi /tmp/postimgin 
-cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/upxs0c3g/;done
-vi /tmp/postimgin 
-cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/1mj3eym2k/;done
-cat /tmp/postimgin2|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/vffn9y64/;done ; cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2ljaxewqk/;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-201710* || echo http://web.archive.org/save/https://$i >> inp;done
-less inp 
-mkdir /tmp/asd
-mv inp /tmp/asd/
-cd /tmp/asd/
-ls
-sh ~/scripts/grab-logged.sh inp
-cd ~-
-ls
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171019-2.nt
-~/bin/blockhash $(filtfind ) >> ../sync/bhashc-20171019-3.tsv
-cat ../sync/bhashc-20171019-3.tsv|awk '{print $1}'
-cat ../sync/bhashc-20171019-3.tsv
-fdupes -r .
-ls
-cat ../sync/bhashc-20171019-3.tsv|awk '{print $1}'|while read i; do echo "# $i" >> mrgs; grep $i ../sync/bhashc-20171019-3.tsv >> mrgs; grep $i ../sync/bhashc-20171019-2.tsv >> mrgs; echo >> mrgs;done
-cat ../sync/bhashc-20171019-3.tsv|awk '{print $1}'|while read i; do echo $i; grep $i ../sync/bhashc-20171019-3.tsv | awk '{print "https://" $2}' >> mrgs; grep $i ../sync/bhashc-20171019-2.tsv|awk '{print "file:/tmp/sshts/" $2}' >> mrgs; echo >> mrgs;done
-cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2pu4ggszg/;done
-grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links 
-grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'
-grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print "http://web.archive.org/save/" $2}' > /tmp/asd/inpa
-less /tmp//asd/inpa 
-cd /tmp//asd/
-sh ~/scripts/grab-logged.sh inpa
-tail -f inpa.log 
-cd -
-ls
-grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'
-grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'|perl ~/scripts/pipe-ook.pl >> ../sync/ookdata-20171019-2.nt 
-grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'
-grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'|zip /tmp/tot.zip -@
-mkdir foo
-unzip /tmp/tot.zip 
-cd foo/
-ls
-unzip /tmp/tot.zip 
-less ../../sync/bhashc-20171019-4.tsv 
-less ../../sync/bhashc-20171019-2.tsv 
-less ../../sync/byte-for-byte-identical-20171019-4.nt 
-ls
-sh ~/tmp/wrap-exif.sh 
-mv /tmp/exif.out ~/tmp/sync/exif-20171019-6.xml
-less ~/tmp/sync/exif-20171019-6.xml
-cd ..
-rm -rf foo/
-rm /tmp/tot.zip 
-cat ../sync/bhashc-20171019-4.tsv|awk '{print $1}'|while read i; do echo $i; grep $i ../sync/bhashc-20171019-4.tsv | awk '{print "https://" $2}' >> mrgr; grep $i ../sync/bhashc-20171019-2.tsv|awk '{print "file:/tmp/sshts/" $2}' >> mrgr; echo >> mrgr;done
-less mrgr 
-ls
-rmemptydir 
-ls
-filtfind 
-grep cdninst mrgs 
-wget -x -c $(grep cdninst mrgs )
-ls
-less mrgs 
-grep file: mrgs
-grep file: mrgs|wc
-grep file: mrgr|wc
-grep file: mrgr >> /tmp/delme2
-cd ..
-git clone https://github.com/google/yang_vocoder.git
-cd yang_vocoder/
-ls
-sudo apt-get install octave
-ls
-octave
-cd ~/Playing/
-ls
-git clone https://github.com/clab/dynet.git
-cd dynet/
-ls
-cmake .
-apt-cache search eigen
-sudo apt-get install libeigen3-dev 
-less CMakeLists.txt 
-mkdir build
-cd build/
-cmake ..
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/
-make
-cd ..
-make
-make -j 8
-make clean
-ls
-git status
-git stash
-cd build/
-ls
-scmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON
-cd ..
-make -j 8
-less .gitignore 
-grep -v '^#' .gitignore 
-rm $(grep -v '^#' .gitignore |grep -v '^$' )
-ls
-rm -rf CMakeFiles/
-cd build/
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/ /usr/local/cuda-8.0/
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/
-cmake .. -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -CUDNN_ROOT=/usr/local/cuda-8.0/lib64
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -DCUDNN_ROOT=/usr/local/cuda-8.0 
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -DCUDNN_ROOT=/usr/local/cuda-8.0/lib64 
-cd ..
-make -j 8
-cd build/
-cmake .. -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3/  -DENABLE_CPP_EXAMPLES=ON -DBACKEND=cuda -DCUDNN_ROOT=/usr/local/cuda-8.0/lib64 
-ls
-make -j 8
-ls 
-cd ..
-rm -rf build/
-mkdir build
-cd build/
-cd ~/Pl
-cd ~/Playing
-ls
-cd Daisy
-rm -rf .svn
-df
-cd ../Corpora/
-rm -rf .svn
-df
-less /home/jim/Playing/Daisy/books_in_progress/gafa_mini/gafa_mini_2.xml
-less /home/jim/Playing/Daisy/books_in_progress/gafa_mini/gafa_mini.xml 
-less /home/jim/Playing/Daisy/books_in_progress/TRASH_THESE if all ok/SEAN_am_don_leamh4/Am Don Léamh Rang a 4 ceartaithe.txt
-less '/home/jim/Playing/Daisy/books_in_progress/TRASH_THESE if all ok/SEAN_am_don_leamh4/Am Don Léamh Rang a 4 ceartaithe.txt'
-ps aux|grep hrom
-killall chromium-browser
-ps aux|grep hrom
-sh ../wrap-exif.sh 
-vi /tmp//exif.out 
-mv /tmp//exif.out ../sync/exif-20171019-4.xml
-ls
-cd ~/Pictures/s-shots/
-ls
-cd ..
-find s-shots -type f
-find s-shots -type f|grep -v 'xmp$'
-~/bin/blockhash $(find s-shots -type f|grep -v 'xmp$')
-~/bin/blockhash $(find s-shots -type f|grep -v 'xmp$') >> ~/tmp/sync/bhashc-20171019-2.tsv 
-cd s-shots/
-sh ~/tmp/wrap-exif.sh 
-vi /tmp//exif.out 
-mv /tmp//exif.out ~/tmp/sync/exif-20171019-5.xml
-cd ~/Pictures/
-ls
-cd foo/
-ls
-find . -name '*xmp' -delete
-ls
-find . -name '*png'|wc
-find . -name 'screens*'
-find . -name 'screens*' > /tmp/listing
-split -l 1000 /tmp/listing
-less xaa 
-mkdir copy
-cp $(cat xaa) copy/
-rm copy/screenshot_2017*
-cp $(cat xab) copy/
-rm copy/*
-cp $(cat xac) copy/
-rm copy/*
-cp $(cat xad) copy/
-rm copy/*
-cp $(cat xae) copy/
-rm copy/*
-cp $(cat xaf) copy/
-rm copy/*
-cp $(cat xag) copy/
-wc -l xag
-rm copy/*
-cp $(cat /tmp/asd/tocopy) copy/
-ls copy/
-cat ~/tmp/bar/mrgs 
-cat ~/tmp/bar/mrgs |grep inst
-ls -al
-df
-cd ~/
-cd Playing/Daisy/
-du .
-ls
-ls new_books/
-find . -name '*.epub'
-ffplay /home/jim/Playing/Daisy/books_in_progress/apa/z3986/speechgen0001.mp3
-ffplay /home/jim/Playing/Daisy/books_in_progress/apa/z3986/speechgen0002.mp3
-find . -type f|grep -i liom
-docker
-docker pull debian
-docker help pull 
-sudo docker pull debian:sid
-mkdir docktst
-cd docktst/
-ls
-vi Dockerfile
-docker
-docker build
-docker build .
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-vi Dockerfile 
-sudo docker build .
-less file:///home/jim/Playing/Daisy/books_in_progress/Bua_sa_Bhealtriail/Bua_sa_Bhealtriail_Pages_1_120.xml
-less /home/jim/Playing/Daisy/books_in_progress/Bua_sa_Bhealtriail/Bua_sa_Bhealtriail_Pages_1_120.xml
-rm ~/Pictures/Screenshot_2017100*
-rm ~/Pictures/w1.png 
-rm ~/Pictures/q2.png 
-cd /tmp/
-docker pull node
-sudo apt-get install docker.io
-docker pull node
-man dockerd
-dockerd
-sudo dockerd
-ps aux|grep docker
-docker pull node
-sudo docker pull node
-ls
-sudo usermod -aG docker jim
-sudo dpkg -i /home/jim/Downloads/code_1.17.2-1508162334_amd64.deb 
-sudo apt-get install -f
-apt-cache search node
-apt-cache search node|grep js
-sudo apt-get install nodejs
-which node
-sudo apt-get install nodejs-legacy
-which node
-cd ~/Playing/
-git clone https://github.com/mozilla/voice-web.git
-cd voice-web/
-ls
-less README.md 
-less gulpfile.js 
-apt-cache search gulp
-npm install gulp-cli -g
-sudo npm install gulp-cli -g
-sudo npm install gulp -D
-gulp
-ls
-gulp --help
-less package.json 
-less config.json 
-less package-lock.json 
-node
-npm 
-npm install
-gulp create && gulp ts && gulp ts-server
-sudo npm install
-gulp create && gulp ts && gulp ts-server
-gulp create 
-sudo gulp create 
-node --version
-nodejs --version
-cd ~/Playing/kaldi/
-git pull origin master
-ls
-less INSTALL 
-cd src/
-ls
-./configure 
-make clean -j 16; make depend -j 16 make -j 16
 ls
 less fstbin/fstfactor 
 ls
@@ -1998,3 +1703,298 @@ find ~ -name 'pron*'
 apt-cache search waves
 sudo apt-get install wavesurfer
 wavesurfer 
+cd ~/Playing/
+git clone git clone https://git.code.sf.net/p/sox/code sox-code
+git clone https://git.code.sf.net/p/sox/code  sox
+cd sox/
+ls
+less COPYING 
+ls
+cd src/
+ls
+git checkout -b nsp
+scp jimregan:/tmp/patch .
+git help am
+git am patch
+git log
+ls
+less nsp.c 
+ls
+cd ..
+ls
+cmake .
+make
+ls
+vi src/formats.c 
+less src/nsp.c 
+vi src/formats.c 
+vi src/formats.h
+vi src/formats.c 
+vi src/formats.h
+vi src/nsp.c 
+cd ..
+make
+cd sox
+make
+grep lsx_ src/*
+grep lsx_ src/*h
+make
+grep lsx_maud_format_fn src/*
+grep _format_fn src/*
+grep maud src/*
+vi src/Makefile.am 
+make
+cmake .
+make
+git diff
+less src/aiff.c 
+less src/nsp.c 
+grep startread src/*
+less src/xa.c 
+make
+less src/formats.c 
+less src/formats.h
+grep lsx_aiff_format_fn src/*
+grep _format_fn src/*
+less src/xi.c
+cmake .
+make
+grep _format_fn src/*
+less src/aiff-fmt.c 
+less src/aiff.h 
+less src/aiff-fmt.c 
+less src/aiff.c
+less src/sox.h 
+make clean
+make
+less src/formats.h
+grep maud src/*
+vi src/CMakeLists.txt 
+git diff
+cmake .
+make
+make clean
+make
+grep lsx_rawread src/*
+grep lsx_rawread src/*h
+grep priv_t src/*
+grep priv_t src/*h
+less src/amr.h 
+make
+sox -h
+find /media/jim -name '*NSP'
+ls
+find . -name six
+find . -name sox
+./src/sox
+./src/sox /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo01.NSP /tmp/out.wav
+./src/sox /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+grep 'sampling rate' src/*c
+less src/formats.c 
+make
+./src/sox -h
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+less /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+less src/sox_i.h 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+less /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+less src/sox_i.h 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+less src/sox_i.h 
+grep rate src/*
+grep 44100 src/*
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+grep 44100 src/*
+less src/pulseaudio.c
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+grep signal.rate src/*
+less src/vorbis.c 
+grep lsx_check_read_params src/*
+less src/formats_i.c 
+grep sox_rate_t src/*h
+grep 44100\. src/*
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+ls -al /tmp/out.wav 
+grep data src/*
+less src/wav.c
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+ls -al /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+echo $((6350400 * 2))
+less /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+git diff
+git add src/CMakeLists.txt src/Makefile.am src/formats.c src/formats.h src/nsp.c 
+git commit -m 'starting to get somewhere'
+git status
+rm src/patch 
+make
+grep lsx_reads src/aiff.c 
+less src/aiff.c 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+git diff
+git add src/nsp.c 
+git commit -m tidy
+less src/aiff.c 
+less src/wav.c 
+less src/aiff.c 
+make
+less src/aiff.c 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+less /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+less src/formats_i.c 
+less src/sox_i.h 
+less src/formats_i.c 
+less /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+less src/aiff.c 
+make
+git diff
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+git stash
+less /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+scp jimregan:/tmp/get-csl-header.c .
+less get-csl-header.c 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+wget http://web.archive.org/web/20160525045942/http://www-mmsp.ece.mcgill.ca/Documents/AudioFormats/CSL/Samples/addf8.nsp
+less addf8.nsp 
+./src/sox -V6 addf8.nsp /tmp/out.wav
+less addf8.nsp 
+./src/sox -V6 addf8.nsp /tmp/out.wav
+make
+./src/sox -V6 addf8.nsp /tmp/out.wav
+gdb ./src/sox -V6 addf8.nsp /tmp/out.wav
+gdb './src/sox -V6 addf8.nsp /tmp/out.wav'
+./src/sox -V6 addf8.nsp /tmp/out.wav
+make
+./src/sox -V6 addf8.nsp /tmp/out.wav
+make
+./src/sox -V6 addf8.nsp /tmp/out.wav
+make
+./src/sox -V6 addf8.nsp /tmp/out.wav
+less src/aiff.c 
+make
+./src/sox -V6 addf8.nsp /tmp/out.wav
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+ls -al /tmp/out.wav 
+less /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP 
+less src/aiff.c 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+ls -al /tmp/out.wav 
+less src/
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+ffplay /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo2.wav 
+sox /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo2.wav /tmp/foo.wav
+sox /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo2.wav 
+sox /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo2.wav /tmp/foo.aiff
+sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo2.wav /tmp/foo.aiff
+sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/foo.wav
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/foo.wav
+ls -al /tmp/out.wav 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/foo.wav
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/foo.wav
+less src/formats_i.c 
+grep lsx_check_read_params src/*
+less src/formats_i.c 
+less src/aiff.c
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/foo.wav
+ls -al /tmp/out.wav 
+ffplay /tmp/out.wav 
+rm /tmp/out.wav 
+less src/aiff.c
+less src/sox_i.h 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/foo.wav
+ls -al /tmp/out.wav 
+ls -al /tmp/foo.wav 
+ffplay /tmp/foo.wav 
+make
+./src/sox -V6 /media/jim/TOSHIBA/labcds/connemara/Male_Speaker_NotAnnotated/beo02.NSP /tmp/out.wav
+ls -al /tmp//out.wav 
+ffplay /tmp/out.wav 
+git diff
+git add src/nsp.c 
+git commit -m works
+git remote add gh https://github.com/jimregan/sox-nsp.git
+git push gh origin
+git push gh master
+git push gh nsp 
+./src/sox -V6 addf8.nsp /tmp/head.wav
+ffplay /tmp/head.wav 
+grep '||' src/*
+git status
+git add src/nsp.c 
+git commit -m 'delete useless comment'
+git push gh nsp 
+git checkout master
+git remote add minesf ssh://jimregan@git.code.sf.net/u/jimregan/sox
+git checkout -b rudimentary-nsp-format
+git merge --squash nsp
+git push gh rudimentary-nsp-format 
+git push minesf  rudimentary-nsp-format 
+git checkout master
+git stash
+git merge rudimentary-nsp-format 
+git log
+git checkout rudimentary-nsp-format
+git merge --squash nsp
+git status
+git add src/nsp.c 
+git add src/formats.c 
+git add src/formats.h 
+git add src/Makefile.am 
+git add src/CMakeLists.txt 
+git status
+git commit -m 'rudimentary NSP support'
+git push minesf  rudimentary-nsp-format 
+cd ..
+unzip ~/Downloads/ipa_transcription.zip 
+cd output/
+less out_CM.json 
+cat out_CM.json |awk -F'"Transcription":"' '{print $2}'|awk -F'"' '{print $1}'
+less out_CM.json 
+cat out_CM.json |awk -F'"Word":"' '{print $2}'|awk -F'"' '{print $1}'
+cat out_CM.json |awk -F'"Word":"' '{print $2}'|awk -F'"' '{print $1}' > words-cm
+cat out_CM.json |awk -F'"Transcription":"' '{print $2}'|awk -F'"' '{print $1}' > trans-cm
+paste words-cm trans-cm 
+less out_MU.json 
+cat trans-cm 
+cat trans-cm |tr ' ' '\n'|sort|uniq
+cat trans-cm |tr ' ' '\n'|sort|uniq|wc
