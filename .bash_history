@@ -1,29 +1,3 @@
-rm przygody-tomka-sawyera.txt.1 
-mv przygody-tomka-sawyera.zip audio/
-cat audiobooks.tsv 
-cat audiobooks.tsv |awk -F'\t' '{print $4}'
-cat audiobooks.tsv |awk -F'\t' '{print $4}'|sort|uniq
-cat audiobooks.tsv |awk -F'\t' '{print $4}'|sort|uniq|grep sawyer
-cat audiobooks.tsv |awk -F'\t' '{print $4}'|sort|uniq|grep -v sawyer
-cat audiobooks.tsv |awk -F'\t' '{print $4}'|sort|uniq|grep -v sawyer > audio/in
-cd audio/
-wget -i in 
-ls
-for i in *zip;do unzip $i;done
-rm *zip
-ls
-#for i in *mp3; do 
-mp3info
-sudo apt-get install mp3info
-mp3info -p "%S" teofil-lenartowicz-mizerna-cicha.mp3 
-mp3info -p "%S\n" teofil-lenartowicz-mizerna-cicha.mp3 
-man mp3info
-mp3info -p "%f %S\n" teofil-lenartowicz-mizerna-cicha.mp3 
-for i in *mp3; do mp3info -p "%f %S\n" teofil-lenartowicz-mizerna-cicha.mp3 ;done > durs
-less durs 
-for i in *mp3; do mp3info -p "%f %S\n" $i ;done > durs
-cat durs 
-cat durs |awk '{print $2}'
 cat durs |awk 'BEGIN{total=0;{total += $2}END{print total}'
 cat durs |awk 'BEGIN{total=0}{total += $2}END{print total}'
 echo $((1116961 / 60))
@@ -1998,3 +1972,29 @@ sudo apt-get install nodejs
 which node
 sudo apt-get install nodejs-legacy
 which node
+cd ~/Playing/
+git clone https://github.com/mozilla/voice-web.git
+cd voice-web/
+ls
+less README.md 
+less gulpfile.js 
+apt-cache search gulp
+npm install gulp-cli -g
+sudo npm install gulp-cli -g
+sudo npm install gulp -D
+gulp
+ls
+gulp --help
+less package.json 
+less config.json 
+less package-lock.json 
+node
+npm 
+npm install
+gulp create && gulp ts && gulp ts-server
+sudo npm install
+gulp create && gulp ts && gulp ts-server
+gulp create 
+sudo gulp create 
+node --version
+nodejs --version
