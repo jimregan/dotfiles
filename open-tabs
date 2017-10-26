@@ -320,4 +320,26 @@ https://github.com/ysh329/deep-learning-model-convertor
 https://gist.github.com/wolet/1b49c03968b2c83897a4a15c78980b18
 https://github.com/neulab/dynet-benchmark/blob/master/dynet-py/treenn.py
 https://grpc.io/docs/tutorials/basic/c.html
+https://github.com/clab/dynet/tree/master/dynet
+https://github.com/clab/dynet/blob/master/dynet/gru.cc
+https://github.com/clab/dynet/blob/master/dynet/gru.h
+https://github.com/clab/dynet/tree/master/dynet
+https://github.com/clab/dynet/blob/master/dynet/lstm.cc
+https://github.com/clab/dynet/blob/master/dynet/rnn.h
+https://github.com/clab/dynet/blob/master/examples/word-embedding/train_tok-embed.cc
+https://github.com/clab/dynet/blob/master/tutorial/1_linear_regression.cc
+https://github.com/pcyin/dynet/compare/master...rnn_cell
+https://dynet.readthedocs.io/en/latest/core.html
+http://dynet.readthedocs.io/en/latest/tutorials_notebooks/RNNs.html
+https://github.com/mfaruqui/morph-trans/blob/master/src/sep-morph.cc
+https://dynet.readthedocs.io/en/latest/cpp_basic_tutorial.html
+https://arxiv.org/pdf/1701.03980.pdf
+https://github.com/neulab/dynet-benchmark/blob/master/pytorch/bilstm-tagger.py
+https://github.com/torch/nn/blob/master/doc/criterion.md#nn.MSECriterion
+https://github.com/apache/incubator-mxnet/blob/master/cpp-package/example/googlenet.cpp
+https://github.com/apache/incubator-mxnet/blob/master/cpp-package/example/charRNN.cpp
+https://github.com/apache/incubator-mxnet/tree/master/src
+https://www.google.ie/search?q=tensorflow+c%2B%2B&oq=tensorflow+c%2B%2B&aqs=chrome..69i57j0l5.5927j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+https://github.com/jhjin/tensorflow-cpp/blob/master/app.cc
+
 
