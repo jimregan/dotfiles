@@ -1,88 +1,3 @@
-unzip -l ga-ner-loc.bin.zip 
-mkdir tmp
-cd tmp/
-unzip ../ga-ner-person.bin.zip 
-less generator.featuregen 
-less manifest.properties 
-cp ../featgen.xml generator.featuregen 
-less generator.featuregen 
-cp ../gavec.txt .
-cp ../brown-redone.txt .
-cd ..
-cd ~-
-ls *|zip ../ga-ner-person-brown50-word2vec.bin.zip -@
-cd ..
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person-brown50-word2vec.bin.zip -nameTypes person -data ~/Playing/ainm-ner-corpus/máire_ann_nic_reachtain.txt 
-bin/opennlp TokenNameFinderTrainer 
-#bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-mkdir rsrc
-cp brown-redone.txt gavec.txt rsrc/
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-word2vec-brown50.bin -resources rsrc/ -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-unzip -l ga-ner-person-word2vec-brown50.bin 
-rm tmp/*
-cd tmp/
-unzip ../ga-ner-person-brown50-word2vec.bin.zip 
-ls -al
-cd ..
-rm tmp/*
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person-word2vec-brown50.bin -nameTypes person -data ~/Playing/ainm-ner-corpus/máire_ann_nic_reachtain.txt 
-unzip -l ga-ner-person-word2vec-brown50.bin
-cd tmp/
-unzip ../ga-ner-person-word2vec-brown50.bin
-less brown-redone.txt 
-less gavec.txt 
-cat brown-50c.txt |awk -F'\t' '{print $2 "\t" $1 }' > brown-redone.txt
-cd ..
-cat brown-50c.txt |awk -F'\t' '{print $2 "\t" $1 }' > brown-redone.txt
-vi featgen.xml 
-bin/opennlp TokenNameFinderTrainer -lang ga -featuregen featgen.xml -nameTypes person -model ga-ner-person-brown50.bin -resources rsrc/ -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-cd tmp/
-unzip ../ga-ner-person-brown50.bin
-less brown-redone.txt 
-cd ..
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person-word2vec-brown50.bin -nameTypes person -data ~/Playing/ainm-ner-corpus/adam_mickiewicz.txt 
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person-word2vec-brown50.bin -nameTypes person -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person-brown50.bin -nameTypes person -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person.bin.zip -nameTypes person -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-bin/opennlp TokenizerME ~/Playing/ainm-ner-corpus/src/main/resources/ie/tcd/slscs/itut/AinmNerCorpus/ga-token.bin < gawiki.sent > gawiki.tok
-vi gawiki.tok 
-#./bin/opennlp TokenNameFinder ga-ner-person.bin.zip ga-ner-loc.bin.zip  < 
-wget https://github.com/jimregan/ainm-ner-corpus/releases/download/v0.1/ga-ner-org.bin.zip
-#./bin/opennlp TokenNameFinder ga-ner-person.bin.zip ga-ner-loc.bin.zip ga-ner-org.bin.zip < gawiki.tok > gawiki.ner
-./bin/opennlp TokenNameFinder ga-ner-person.bin.zip ga-ner-loc.bin.zip ga-ner-org.bin.zip < gawiki.tok > gawiki.ner
-vi gawiki.ner 
-cat gawiki.ner |sed -e 's/<END>/<END>\n/g;s/<START/\n<START/g'
-cat gawiki.ner |sed -e 's/<END>/<END>\n/g;s/<START/\n<START/g'|grep '^<START'
-cat gawiki.ner |sed -e 's/<END>/<END>\n/g;s/<START/\n<START/g'|grep '^<START'|sort |uniq
-less ~/Downloads/cam.psd 
-cd ~/Playing/
-git clone https://github.com/attardi/wikiextractor.git
-cd wikiextractor/
-ls
-python setup.py install
-sudo python setup.py install
-wget https://dumps.wikimedia.org/gawiki/20170901/gawiki-20170901-pages-articles.xml.bz2
-less WikiExtractor.py 
-WikiExtractor.py gawiki-20170901-pages-articles.xml.bz2 
-ls
-ls text/
-less text/AA/wiki_00 
-cat text/AA/wiki_*
-cat text/AA/wiki_*|grep -v '^<doc '|grep -v '^</doc>'
-cat text/AA/wiki_*|grep -v '^<doc '|grep -v '^</doc>' > /tmp/gawiki.txt
-cat ~/Playing/ainm-ner-corpus/ner-plain.txt /tmp/gawiki.tok >> /tmp/merged
-less /tmp/merged 
-ls /tmp/
-less /tmp/gavec.txt 
-<generators>
-ls
-less /tmp/gawiki.t
-less /tmp/gawiki.txt 
-less ~/Downloads/179465citation.bibtex 
-cd ..
-mkdir polimorf
-cd polimorf/
-zcat ~/Downloads/PoliMorf-0.6.7.tab.gz 
 zcat ~/Downloads/PoliMorf-0.6.7.tab.gz > polimorf.tab
 grep '[A-Z]' polimorf.tab 
 cat polimorf.tab |awk -F'\t' '($4=="własna"){print}'
@@ -1998,3 +1913,88 @@ grep creenshot_20170904-003120 /tmp/delme2
 ls
 for i in *;do convert $i $i.jpg;done
 ls
+. ../sourceme 
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171019-1.nt
+less ~/tmp/sync/ookdata-20171019-1.nt
+find ~/tmp -name 'ook*;
+find ~/tmp -name 'ook*'
+less ../ookdata-20171019-1.nt 
+diff -u ../ookdata-20171019-1.nt ../sync/ookdata-20171019-1.nt 
+diff -u ../ookdata-20171019-1.nt ../sync/ookdata-20171019-1.nt |less
+mv ../ookdata-20171019-1.nt ../sync/ookdata-20171019-1.1.nt 
+ls
+vi /tmp/postimgin
+wc -l /tmp/postimgin
+lynx -dump https://postimg.org/image/1zjf0gn0mz/
+cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2t986vwak/;done
+vi /tmp/postimgin 
+cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/w7rvwqt8/;done
+vi /tmp/postimgin 
+cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/jebghyd8/;done
+vi /tmp/postimgin 
+cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2meohgy0s/;done
+vi /tmp/postimgin 
+cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/upxs0c3g/;done
+vi /tmp/postimgin 
+cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/1mj3eym2k/;done
+cat /tmp/postimgin2|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/vffn9y64/;done ; cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2ljaxewqk/;done
+filtfind |while read i;do grep $i ../sync/assumed-identical-201710* || echo http://web.archive.org/save/https://$i >> inp;done
+less inp 
+mkdir /tmp/asd
+mv inp /tmp/asd/
+cd /tmp/asd/
+ls
+sh ~/scripts/grab-logged.sh inp
+cd ~-
+ls
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171019-2.nt
+~/bin/blockhash $(filtfind ) >> ../sync/bhashc-20171019-3.tsv
+cat ../sync/bhashc-20171019-3.tsv|awk '{print $1}'
+cat ../sync/bhashc-20171019-3.tsv
+fdupes -r .
+ls
+cat ../sync/bhashc-20171019-3.tsv|awk '{print $1}'|while read i; do echo "# $i" >> mrgs; grep $i ../sync/bhashc-20171019-3.tsv >> mrgs; grep $i ../sync/bhashc-20171019-2.tsv >> mrgs; echo >> mrgs;done
+cat ../sync/bhashc-20171019-3.tsv|awk '{print $1}'|while read i; do echo $i; grep $i ../sync/bhashc-20171019-3.tsv | awk '{print "https://" $2}' >> mrgs; grep $i ../sync/bhashc-20171019-2.tsv|awk '{print "file:/tmp/sshts/" $2}' >> mrgs; echo >> mrgs;done
+cat /tmp/postimgin|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;doimg $img https://postimg.org/gallery/2pu4ggszg/;done
+grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links 
+grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'
+grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print "http://web.archive.org/save/" $2}' > /tmp/asd/inpa
+less /tmp//asd/inpa 
+cd /tmp//asd/
+sh ~/scripts/grab-logged.sh inpa
+tail -f inpa.log 
+cd -
+ls
+grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'
+grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'|perl ~/scripts/pipe-ook.pl >> ../sync/ookdata-20171019-2.nt 
+grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'
+grep https://postimg.org/gallery/2pu4ggszg/ fash-rdf-links |awk -F'[<>]' '{print $2}'|sed -e 's#https://##'|zip /tmp/tot.zip -@
+mkdir foo
+unzip /tmp/tot.zip 
+cd foo/
+ls
+unzip /tmp/tot.zip 
+less ../../sync/bhashc-20171019-4.tsv 
+less ../../sync/bhashc-20171019-2.tsv 
+less ../../sync/byte-for-byte-identical-20171019-4.nt 
+ls
+sh ~/tmp/wrap-exif.sh 
+mv /tmp/exif.out ~/tmp/sync/exif-20171019-6.xml
+less ~/tmp/sync/exif-20171019-6.xml
+cd ..
+rm -rf foo/
+rm /tmp/tot.zip 
+cat ../sync/bhashc-20171019-4.tsv|awk '{print $1}'|while read i; do echo $i; grep $i ../sync/bhashc-20171019-4.tsv | awk '{print "https://" $2}' >> mrgr; grep $i ../sync/bhashc-20171019-2.tsv|awk '{print "file:/tmp/sshts/" $2}' >> mrgr; echo >> mrgr;done
+less mrgr 
+ls
+rmemptydir 
+ls
+filtfind 
+grep cdninst mrgs 
+wget -x -c $(grep cdninst mrgs )
+ls
+less mrgs 
+grep file: mrgs
+grep file: mrgs|wc
+grep file: mrgr|wc
+grep file: mrgr >> /tmp/delme2
