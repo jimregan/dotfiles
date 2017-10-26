@@ -1,12 +1,3 @@
-lynx -dump https://postimg.org/image/8pm9lh8m63/|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}'
-grep http /tmp/link|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'|awk -F'?' '{print $1}');procimg $i $img;done
-grep 22500293_1996512857291245_7006758639662792704_n.jpg fasd
-grep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22500266_1765608903744524_6435478781854482432_n.jpg fash-rdf-links 
-fashgrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22500266_1765608903744524_6435478781854482432_n.jpg
-instagrep () { grep $(echo $1|awk -F'/' '{print $NF}') fash-rdf-links ; }
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22500266_1765608903744524_6435478781854482432_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22580569_367278817043376_734750101255225344_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22580628_123878811603085_739573461197783040_n.jpg
 instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22580885_773381976155990_827512903698481152_n.jpg
 instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22581761_422266138169161_2915771233314275328_n.jpg
 instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22582428_1734781170160761_4012272282289307648_n.jpg
@@ -1998,3 +1989,12 @@ sudo apt-get install pocketsphinx-en-us
 pocketsphinx_continuous -infile ur31JHvX4m2k.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vdXIzMUpIdlg0bTJrLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA0NTJ9fX1dfQ__\&Signature\=aWK-jYE-9DlrPUTqE.wav  -time yes -hmm /usr/share/pocketsphinx/model/en-us/en-us/ -lm /usr/share/pocketsphinx/model/en-us/en-us.lm.bin  > ps.out
 bash ~/bin/convert-mp3.sh Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f 
 pocketsphinx_continuous -infile Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f.wav -time yes -hmm /usr/share/pocketsphinx/model/en-us/en-us/ -lm /usr/share/pocketsphinx/model/en-us/en-us.lm.bin  > Wid3RPBmMpfl.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vV2lkM1JQQm1NcGZsLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MDYwMDA2MTV9fX1dfQ__\&Signature\=hcnnEYTAynOOcSa9f.txt
+config status
+config add .scala_history .kde/share/config/amarokrc 
+config add .config/dolphinrc .config/gtkrc*
+config status
+config add .kde/share/config/kdebugrc .config/gtk-2.0/gtkfilechooser.ini .config/katerc .config/kdebugrc 
+config status
+config add .viminfo .config/kglobalshortcutsrc .config/kded_device_automounterrc 
+config commit -m blah
+config push origin master
