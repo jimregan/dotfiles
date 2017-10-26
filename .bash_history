@@ -1,21 +1,3 @@
-paste  aaron-l aaron-r >> ../pron-data/pronounce-as.tsv
-rm aaron-*
-ls
-less nonpropernames 
-less propernames 
-less common 
-echo abbreviatura |iconv -x 'pl-fonipa'
-echo abbreviatura |iconv -x 'PL-FONIPA'
-echo abbreviatura |uconv -x 'PL-FONIPA'
-echo abbreviatura |uconv -x 'pl-fonipa'
-echo abbreviatura |uconv -x 'pl_fonipa'
-echo abbreviatury |uconv -x 'pl_fonipa'
-echo cha |uconv -x 'pl_fonipa'
-echo cha |uconv -x 'pl_FONIPA'
-grep abbreviatura ../pron-data/*
-grep accapello ../pron-data/*
-grep acapello ../pron-data/*
-grep 'capella' ../pron-data/*
 vi ../pron-data/pronounce-as.tsv 
 ls
 git status
@@ -1998,3 +1980,21 @@ less /home/jim/Playing/ruLearn/phrase-extraction/src/Alignment.C
 less /home/jim/Playing/ruLearn/phrase-extraction/src/Utils.C 
 less ~/NetBeansProjects/CppApplication_1/streamreader.cpp 
 less ~/NetBeansProjects/CppApplication_1/simpletoken.cpp 
+cd ~/Playing/jklaat/
+ls
+rm jklaat.iml 
+cd ..
+mv jklaat/ jklatt
+cd jklatt/
+ls
+rm -rf .idea/
+cat bhlah 
+mvn
+mvn test
+mvn clean
+mvn test
+ls
+less pom.xml 
+find . -name '*.class'
+mvn install
+unzip -l target/jklatt-1.0-SNAPSHOT.jar 
