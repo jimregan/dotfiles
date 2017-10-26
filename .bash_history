@@ -1,32 +1,3 @@
-for i in TAGGED/*xmp;do echo $i; grep People $i;done
-for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|uniq;done
-for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|grep -v '|'|uniq;done
-for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|grep -v '|'|sort|uniq;done
-for i in TAGGED/*xmp;do echo $i; grep People $i|grep '<rdf:li>'|grep -v '|'|sort|uniq;done > /tmp/listing2
-scp /tmp/listing jimregan:/tmp/
-scp /tmp/listing* jimregan:/tmp/
-less /tmp/exif.out 
-ls
-vi /tmp/exif.out 
-mv /tmp/exif.out ~/tmp/sync/exif-20171019-2.xml 
-git add abuzei-i-tair.txt
-git add akslop.txt
-git add aniol-pasterzom-mowil.txt
-git remote show
-git status
-cd ..
-ls
-git status
-git remote show
-git diff
-less pron-data/
-less pron-data/plwiktionary-ipa.tsv 
-less pron-data/enwiktionary-ipa.tsv 
-less pron-data/additions-ipa.tsv 
-ls
-less normalisations.tsv 
-less in-chk 
-wc -l in-chk 
 less opennlp-ner-to-corenlp.pl 
 less phon-ipa.tsv 
 git status
@@ -1998,3 +1969,32 @@ sh netbeans-8.2-cpp-linux-x64.sh
 cd ~/netbeans-8.2/
 ls
 bin/netbeans 
+cd /tmp
+tar zxvf ~/Downloads/procsy_20011217.tar.gz 
+cd  procsy/
+ls
+less form.prx 
+less approx.prx 
+ls
+less xml2hl.prx 
+less ldspdata.prx 
+cd ..
+less procsy/example/jh0001.x
+less procsy/example/jh0001.xms 
+less procsy/example/jh0001.xml
+less procsy/example/jh0001.doc 
+less procsy/example/jh0001.lab 
+less procsy/example/wav2xml.sh 
+less procsy/example/jh0001.hl 
+less procsy/example/jh0001.doc 
+less procsy/example/jh0001.hl 
+less procsy/example/jh0001.doc 
+less procsy/example/jh0001.hl 
+less procsy/example/jh0001.doc 
+curl http://www.phon.ucl.ac.uk/project/prosynth/example/jh0001.hl.txt
+curl http://www.phon.ucl.ac.uk/project/prosynth/example/jh0001.hl.txt|grep -v '^;'
+curl http://www.phon.ucl.ac.uk/project/prosynth/example/jh0001.hl.txt|grep -v '^;'|awk -F'\t' '{print $1}'|sort|uniq
+less procsy/example/jh0001.hl 
+cat procsy/example/jh0001.hl|grep -v '^;'|awk -F'\t' '{print $1}'|sort|uniq
+top
+killall ssh
