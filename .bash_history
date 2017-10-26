@@ -1,22 +1,3 @@
-ls ../sync/
-less ../sync/exif-20171019-1.xml 
-sh ../wrap-exif.sh 
-vi /tmp//exif.out 
-mv  /tmp//exif.out  ../sync/exif-20171019-3.xml
-ls
-vi tospid
-tail -f fash-rdf-links 
-vi tospid 
-tail fash-rdf-links 
-less /tmp/postimgin 
-grep https://postimg.org/gallery/w7rvwqt8/ /tmp/postimgin 
-grep https://postimg.org/gallery/w7rvwqt8 /tmp/postimgin 
-grep w7rvwqt8 /tmp/postimgin 
-vi tospid 
-tail fash-rdf-links 
-vi tospid 
-vi /tmp/oops
-cat /tmp/oops
 cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##'
 cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##'|wc
 #cat /tmp/oops|sed -e 's#http://web.archive.org/web/[0-9]*/##' > /tmp/postimgin 
@@ -1998,3 +1979,22 @@ vi bhlah
 cat bhlah |awk '{print $2}'|sed -e 's/;//'| awk 'BEGIN{a=""}{a = a "\", \"" $0}END{print a}'
 vi src/ie/tcd/slscs/itut/jklaat/ParameterFile.java 
 vi /tmp/scratch
+cd /tmp/
+ls
+cd klatt80/
+ls
+grep original_f0 *
+less parwave.c 
+grep original_f0 *
+grep amp_parF5 *
+grep amp_parF4 *
+grep amp_parF3 *
+grep amp_parF2 *
+grep amp_parF1 *
+grep amp_parF6 *
+grep amp_parFNP *
+grep amp_byp *
+less parwave.h 
+less parwave.c
+grep amp_voice *
+grep pulse_shape_a *
