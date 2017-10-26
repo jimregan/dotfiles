@@ -1,6 +1,3 @@
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22580885_773381976155990_827512903698481152_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22581761_422266138169161_2915771233314275328_n.jpg
-instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22582428_1734781170160761_4012272282289307648_n.jpg
 instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430134_287855851728286_8288033983485181952_n.jpg
 instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430208_2152933881399664_6227177545217867776_n.jpg
 instagrep file:///home/jim/Pictures/scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/22430384_165878903993537_2436843729399578624_n.jpg
@@ -1998,3 +1995,6 @@ config status
 config add .viminfo .config/kglobalshortcutsrc .config/kded_device_automounterrc 
 config commit -m blah
 config push origin master
+kwin
+kwin --replace
+vi open-tabs 
