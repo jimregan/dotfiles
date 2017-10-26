@@ -1,9 +1,3 @@
-git stash
-ls
-rm *mp3
-ls
-mkdir audio
-rm przygody-tomka-sawyera.txt
 rm przygody-tomka-sawyera.txt.1 
 mv przygody-tomka-sawyera.zip audio/
 cat audiobooks.tsv 
@@ -1998,3 +1992,9 @@ ls
 sudo usermod -aG docker jim
 sudo dpkg -i /home/jim/Downloads/code_1.17.2-1508162334_amd64.deb 
 sudo apt-get install -f
+apt-cache search node
+apt-cache search node|grep js
+sudo apt-get install nodejs
+which node
+sudo apt-get install nodejs-legacy
+which node
