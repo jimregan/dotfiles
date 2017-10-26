@@ -1,234 +1,3 @@
-grep cad_é pairs.tsv.1 
-echo "a woman whose son isn't working" |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo BBC |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo Ltd. |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo Inc. |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-grep Sup tags
-grep Sup tags-
-grep Sup all-tags 
-grep Part+Sup pairs.tsv.1 
-grep Art all-tags 
-echo the |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo '+' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo '=' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo '*' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo 'a' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-grep +Prep+Art+Pl all-tags 
-grep +Prep+Art+Pl pairs.tsv.1 
-grep Prep+D pairs.tsv.1 
-echo his |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo me@me.com |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo 'me@me.com' |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-echo 'me@me.com'|apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-grep Op all-tags 
-grep Op pairs
-grep Op pairs.tsv.1 
-ls
-cp tag-freqs ../../IdeaProjects/dictionaryconverter/scripts/
-echo she|apertium-destxt |lt-proc /usr/local/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-en-es/en-es.prob 
-cd ~/Playing/
-ls
-cd nkjp-sample/
-ls
-cd nkjp/
-ls
-less KOT/text.xml 
-less KOT/ann_segmentation.xml 
-less KOT/text.xml 
-cd ../apertium-en-es/
-echo "a woman whose son isn't working" |apertium -d . en-es-chunker
-lt-expand .deps/en.dix |grep '<rel>'
-lt-expand .deps/en.dix |grep '<rel>'|sort|uniq
-echo BBC|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.t1x.bin  /usr/share/apertium/apertium-en-es/en-es.autobil.bin 
-echo 'me@me.com'|lt-proc /usr/share/apertium/apertium-en-es/en-es.automorf.bin |apertium-tagger -g /usr/share/apertium/apertium-en-es/en-es.prob |apertium-transfer /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x /usr/share/apertium/apertium-en-es/en-es.t1x.bin  /usr/share/apertium/apertium-en-es/en-es.autobil.bin 
-less apertium-en-es.en.metadix 
-cd ../ainm-ner-corpus/
-git push origin master
-git pull origin master
-git push origin master
-git branch
-git log
-git status
-git add máire_ann_nic_reachtain.txt 
-git commit -m 'another wikipedia test article'
-git push origin master
-sbt test
-sbt run
-#sbt "run 
-sbt "run www.ainm.ie all"
-sbt "run www.ainm.ie person"
-sbt "run www.ainm.ie text"
-sbt "run www.ainm.ie organization"
-sbt "run www.ainm.ie location"
-sbt "run www.ainm.ie"
-less all-ner.txt 
-wc -l all-ner.txt 
-wc -l ner-plain.txt 
-vi ner-plain.txt 
-ls
-cd ~/Playing/
-git clone https://github.com/yurkor/graph-expression.git
-mvn
-cd graph-expression/
-mvn
-mvn install
-mvn test
-mvn isntall
-mvn install
-git remote add mine https://github.com/jimregan/graph-expression.git
-git status
-git checkout -b type-erasure
-git push mine type-erasure 
-git log
-git checkout master
-git checkout -b typos
-git log
-git reset --hard HEAD~
-git log
-git cherry-pick 54b74093b71679b7b616d8cf0112156c3e39bca9
-git push mine typos 
-ls ../thesis/
-cd ..
-cp Dissertation/9879472fwnkgtfsztvt/dissertation.tex thesis/
-cd thesis/
-git diff
-git stash
-cp ../Dissertation/9879472fwnkgtfsztvt/*cls .
-ls
-git rm cam-thesis.cls 
-git add tcd-dissertation.cls 
-git commit -m 'rename & update for TCD M.Phil requirements'
-git push origin master
-git push mine master
-cd ../dissertation-data/
-ls
-git submodule add https://github.com/jimregan/thesis.git dissertation-template
-git commit -m 'latex template'
-git status
-git push origin master
-ls
-cd opennlp-tools/
-bin/opennlp 
-bin/opennlp SentenceDetectorConverter
-bin/opennlp SentenceDetectorConverter nkjp
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/text_structure.xml -data ../../nkjp-sample/ann_segmentation.xml 
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-cd ..
-mvn install
-cd ~-
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-ls
-find target -name '*xml'
-less target/test-classes/opennlp/tools/formats/nkjp/ann_segmentation.xml
-less ../../nkjp-sample/ann_segmentation.xml 
-ls target/surefire-reports/opennlp.tools.formats.nkjp.NKJPSegmentationDocumentTest.txt 
-less target/surefire-reports/opennlp.tools.formats.nkjp.NKJPSegmentationDocumentTest.txt 
-less bin/opennlp
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-mvn install
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-ls
-bin/opennlp SentenceDetectorConverter nkjp 
-bin/opennlp SentenceDetectorConverter 
-bin/opennlp SentenceDetectorConverter conllu
-bin/opennlp SentenceDetectorConverter irishsentencebank
-git status
-git diff
-bin/opennlp SentenceDetectorConverter conllu
-bin/opennlp SentenceDetectorConverter irishsentencebank
-bin/opennlp SentenceDetectorConverter irishsentencebank -data /tmp/sentences.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-less ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-less src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  
-less src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml 
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-less src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml 
-less src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-less ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  
-less ../../nkjp-sample/nkjp/KOT/text.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml 
-less src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less ../../nkjp-sample/nkjp/KOT/text.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-less src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less ../../nkjp-sample/nkjp/KOT/text.xml 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile src/test/resources/opennlp/tools/formats/nkjp/text_structure.xml -data src/test/resources/opennlp/tools/formats/nkjp/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-gitk
-git push origin issue-780 
-git push mine  issue-780 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
 mvn install -DskipTests
 bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
 less /tmp/tmpp 
@@ -1998,3 +1767,234 @@ less AndTemplate.java
 less SimpleTemplate.java 
 less TermMatcher.java 
 less Term.java 
+fdupes -r . ~/Pictures/foo/ > tmpdupck
+less tmpdupck 
+grep -v 'xmp$' tmpdupck 
+grep -v 'xmp$' tmpdupck |less
+identify s1.postimg.org/19a8lii9gd/screenshot_20170812-161826.png
+ls -al s1.postimg.org/19a8lii9gd/screenshot_20170812-161826.png
+ls -al ~/Pictures/foo/TAGGED/screenshot_20170812-161826.png
+ls -al ../foo/screenshot_20170812-161826.png
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv
+vi /tmp/tobedonebhc.f 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi /tmp/tobedonebhc.f 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+vi /tmp/tobedonebhc.f 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+vi /tmp/tobedonebhc.f 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+vi ~/tmp/sync/bhashc-20171019-2.tsv 
+tail -f ~/tmp/sync/bhashc-20171019-2.tsv
+wc -l ~/tmp/sync/bhashc-20171019-2.tsv
+cd ..
+scp jimregan:tmp/wrap-exif.sh .
+less wrap-exif.sh 
+cd ~-
+ls
+cd ..
+scp jimregan:img/fdupes-proc.pl .
+less fdupes-proc.pl 
+scp jimregan:img/check-size.pl .
+cd ~-
+cat tttmp/tospider.log |perl ~/bin/wget-http.pl 
+cat tttmp/tospider.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171019-1.nt
+cat tttmp/tospider.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+less ../check-size.pl 
+cat tttmp/tospider.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+less ../sync/assumed-identical-20171019_162928.nt 
+wc -l ../sync/assumed-identical-20171019_162928.nt 
+wc -l tttmp/tospider
+cd tttmp/
+ls
+cd ..
+rm -rf tttmp/
+ls
+ls ../fdupes-proc.pl 
+cat tmpdupck 
+cat tmpdupck |grep -v 'xmp$'
+cat tmpdupck |grep -v 'xmp$'|less
+vi tmpdupck 
+cat tmpdupck |grep -v 'xmp$'|less
+cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'
+cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl 
+cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl |grep -v '^$'
+tail -f /tmp/exif.out 
+cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl |grep -v '^$'
+cat tmpdupck |grep -v 'xmp$'|sed -e 's#/home/jim/Pictures/foo/#file:/tmp/sshts/#'|perl ../fdupes-proc.pl |grep -v '^$' >> ~/tmp/sync/byte-for-byte-identical-20171019-1.nt
+less ~/tmp/sync/byte-for-byte-identical-20171019-1.nt
+ls
+rm tmpdupck 
+ls
+less archdup 
+cat archdup |sed -e 's/ttmp\///'|perl ../fdupes-proc.pl |grep -v '^$' >> ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
+less ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
+rm ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
+cat archdup |sed -e 's/tttmp\///'|perl ../fdupes-proc.pl |grep -v '^$' >> ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
+less ~/tmp/sync/byte-for-byte-identical-20171019-2.nt
+ls
+rm archdup 
+less duptmp
+rm duptmp
+less duptmp2 
+. ../sourceme 
+#filtfind |while read i;do grep $i ../sync/assumed-identical-20171019_162928.nt || echo http
+mkdir sptmp
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171019_162928.nt || echo http://web.archive.org/save/https://$i >> sptmp/inp;done
+cd sptmp/
+ls
+less inp 
+~/scripts/grab-logged.sh inp 
+tail -f inp.log 
+vi spp
+ls
+cd ..
+cat sptmp/inp.log |perl ~/bin/wget-http.pl| perl ../check-size.pl 
+cat sptmp/inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171019-2.nt 
+less ~/tmp/sync/http-misc-20171019-2.nt 
+grep Gateway ~/tmp/sync/http-misc-20171019-2.nt 
+wc -l sptmp/inp
+cd sptmp/
+ls
+rm -rf web.archive.org/
+rm inp
+rm inp.log 
+rm nohup.out 
+vi inp
+~/scripts/grab-logged.sh inp 
+~/scripts/grab-logged.sh spp 
+tail -f spp.log 
+tail inp.log 
+cd ..
+cat sptmp/inp.log |perl ~/bin/wget-http.pl| perl ../check-size.pl 
+less ../sync/assumed-identical-20171022_203008.nt 
+cat sptmp/inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171019-2.nt 
+cat sptmp/spp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171019-2.nt 
+less ~/tmp/sync/http-misc-20171019-2.nt 
+cd sptmp/
+ls
+rm inp
+rm inp.log 
+rm spp
+rm spp.log 
+rm -rf web.archive.org/
+rm nohup.out 
+cd ..
+ls
+less gal1 
+less ../sync/bhashc-20171019-2.tsv 
+less ../sync/bhashc-20171019-1.tsv 
+filtfind |while read i;do grep $i ../sync/bhashc-20171019-1.tsv || echo $i >> tobh;done
+less tobh 
+~/bin/blockhash $(cat tobh)
+~/bin/blockhash $(cat tobh) >> ../sync/bhashc-20171019-1.tsv 
+less ../sync/bhashc-20171019-1.tsv 
+less ../sync/byte-for-byte-identical-20171019-1.nt 
+rm tobh 
+filtfind |while read i;do grep $i ../sync/assumed-identical-201710* || echo $i >> tospid;done
+ls
+rm -rf sptmp/
+ls
+less duptmp2 
+rm duptmp2 
+ls
+less fash-rdf-links 
+ls
+less imgur-gals
+mkdir footmp
+mv imgur-gals-ia footmp/
+cd footmp/
+~/scripts/grab-logged.sh imgur-gals-ia 
+tail -f imgur-gals-ia.log 
+cd ..
+cat footmp/imgur-gals-ia.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171019-1.nt
+less ../sync/http-misc-20171019-1.nt
+rm -rf footmp/
+ls
+cat imgur-gals |while read i;do grep $i fash-rdf-links || echo $i >> imgur-gals.f;done
+cat imgur-gals.f 
+mv imgur-gals.f imgur-gals
+ls
+less gal1 
+grep screenshot_20170806_180059.png fash-rdf-links 
+less gal1 
+ls
+cat gal1 
+cat gal1 |awk -F'"' '{print $2 $4}'
+cat gal1 |awk -F'"' '{print $2 " " $4}'
+cat gal1 |awk -F'"' '{print $2 " " $4}'|while read i;do procimg $i;done
+fdupes -r .
+ls
+find preview.ibb.co -type f
+find preview.ibb.co -type f > tobh
+~/bin/blockhash $(cat tobh) >> ../sync/bhashc-20171019-1.tsv 
+less ../sync/bhashc-20171019-1.tsv 
+grep screenshot_20170812_075847.png  ../sync/bhashc-20171019-*
+fdupes -r ./preview.ibb.co ~/Pictures/foo
+fdupes -r ./preview.ibb.co ~/Pictures/foo > dddduop
+vi dddduop #
+cat dddduop |perl ../fdupes-proc.pl 
+cat dddduop |perl ../fdupes-proc.pl |grep -v '^$'
+rm dddduop 
+ls
+mkdir nla
+cd nla/
+mb ../tobh .
+mv ../tobh .
+ls
+~/scripts/grab-logged.sh tobh 
+tail -f tobh.log 
+cat tobh|awk '{print "http://web.archive.org/save/" $0}'
+cat tobh|awk '{print "http://web.archive.org/save/https://" $0}' > gr
+~/scripts/grab-logged.sh gr 
+tail -f gr.log 
+cd ..
+tail nla/gr.log 
+cat nla/gr.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171019-1.nt
+cat nla/gr.log |perl ~/bin/wget-http.pl| perl ../check-size.pl 
+less ../sync/assumed-identical-20171022_212602.nt 
+wc -l ../sync/assumed-identical-20171022_212602.nt 
+rm -rf nla/
+less  ../sync/bhashc-20171019-1.tsv 
+ls
+less ../sync/bhashc-20171019-2.tsv 
+cat ../sync/bhashc-20171019-2.tsv |awk '{print $1}'
+cat ../sync/bhashc-20171019-2.tsv |awk '{print $1}'|while read i;do echo >> mrg; echo "# $i" >> mrg; grep $i ../sync/bhashc-20171019-1.tsv|awk '{print $2}' >> mrg; grep $i ../sync/bhashc-20171019-2.tsv |awk '{print $2}' >> mrg;done
+less mrg 
+rm mrg 
+grep -i screenshot ../sync/bhashc-20171019-1.tsv |awk '{print $1}'|while read i;do echo >> mrg; echo "# $i" >> mrg; grep $i ../sync/bhashc-20171019-1.tsv|awk '{print $2}' >> mrg; grep $i ../sync/bhashc-20171019-2.tsv |awk '{print $2}' >> mrg;done
+less mrg 
+rm mrg 
+grep -i screenshot ../sync/bhashc-20171019-1.tsv |awk '{print $1}'|while read i;do echo >> mrg; echo "# $i" ; grep $i ../sync/bhashc-20171019-1.tsv|awk '{print "https://" $2}' >> mrg; grep $i ../sync/bhashc-20171019-2.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrg;done
+less mrg 
+cat mrg |perl ~/tmp/fdupes-proc.pl 
+cat mrg |perl ~/tmp/fdupes-proc.pl |grep '<>'
+cat mrg |perl ~/tmp/fdupes-proc.pl |less
+less mrg 
+cat mrg |perl ~/tmp/fdupes-proc.pl |grep 20171011-121932.png
+less mrg 
+cat mrg |perl ~/tmp/fdupes-proc.pl |grep 20171007-222616.png
+cat mrg |perl ~/tmp/fdupes-proc.pl e > ../sync/byte-for-byte-identical-20171019-3.nt
+grep file: mrg 
+grep file: mrg |sort|uniq
+grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt ; done
+grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt || echo $i >> mrg.g;done
