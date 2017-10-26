@@ -1,5 +1,3 @@
-less ../pron-data/pronounce-as.tsv 
-less ../text/xaa 
 grep 'ów$' ../text/x*
 less ../pron-data/enwiktionary-ipa.tsv 
 wc -l ../pron-data/enwiktionary-ipa.tsv 
@@ -1998,3 +1996,5 @@ grep -i flutter *
 grep AVdb *
 grep pulse_shape_a *
 grep -i pulse *
+cd idea-IC-172.3317.76/
+bin/idea.sh 
