@@ -1,5 +1,3 @@
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/XFJyHZo.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/Gpz0WOO.png
 procimg https://imgur.com/a/pWy46 https://i.imgur.com/o5BBXcD.png
 procimg https://imgur.com/a/pWy46 https://i.imgur.com/sXOrS7U.png
 procimg https://imgur.com/a/pWy46 https://i.imgur.com/ydPvmGB.png
@@ -1998,3 +1996,5 @@ python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowies
 less synogarlica.csv 
 python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowiesci-synogarlica.mp3 synogarlica.txt "task_language=pol|is_text_type=plain|os_task_file_format=aud" synogarlica.csv2
 diff -u synogarlica.csv synogarlica.csv2 
+ls ../audio/*balzac*
+ffplay ../audio/01-honore-de-balzac-corka-ewy.mp3 
