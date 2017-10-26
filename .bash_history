@@ -1,16 +1,3 @@
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/o5BBXcD.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/sXOrS7U.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/ydPvmGB.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/imd822p.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/MgI01CI.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/Ojkmjec.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/FNwwwJ4.png
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/4cffD8G.jpg
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/O4UoWoz.jpg
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/wpfwKJO.jpg
-ls
-fdupes -r . ../foo/
-procimg https://imgur.com/a/pWy46 https://i.imgur.com/wpfwKJO.png
 fdupes -r . ../foo/
 fdupes -r . ../foo/ > duptmp
 cat duptmp 
@@ -1998,3 +1985,16 @@ python -m aeneas.tools.execute_task  ../audio/ignacy-krasicki-bajki-i-przypowies
 diff -u synogarlica.csv synogarlica.csv2 
 ls ../audio/*balzac*
 ffplay ../audio/01-honore-de-balzac-corka-ewy.mp3 
+cd ../..
+ls
+cd ../IdeaProjects/
+ls
+cd dictionaryconverter/
+ls
+less noun.dix
+less noun.dix.1 
+less noun.dix
+lt-comp lr noun.dix noun.bin
+vi noun.dix
+lt-comp lr noun.dix noun.bin
+vi noun.dix
