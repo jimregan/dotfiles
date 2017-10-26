@@ -1,107 +1,3 @@
-mkdir votyakovanastya
-grep kates *xmp
-mkdir katesytsevich
-grep sofia_ *xmp
-mkdir sofia_official_
-grep julia *xmp
-mkdir julia__yaroshenko
-mkdir snow_cherry
-grep liber *xmp
-mkdir liberateme.1
-mkdir miiss_angelok
-mkdir irina_dreyt
-mkdir ssweet.girl
-grep trofi *xmp
-mkdir trofimova.svet
-grep leto._ *xmp
-mkdir leto.__
-mkdir anna.kondra
-mkdir _alena_alena_
-mkdir _alexa_alexa_
-mkdir timanova_arina
-mkdir theonlyping
-mkdir pilipenko_12
-mkdir madelinekate.b
-mkdir miss_medis_
-mkdir _supermasik_
-mkdir shestakova_me
-mkdir fiolkowelove
-mkdir vikunciy1991
-mkdir frennechka
-mkdir yuliakhramova
-mkdir barbeliciouss
-mkdir victoriabonya
-mkdir kate_lalima
-mkdir mr.s_kris
-mkdir anikina95
-mkdir asiicca
-mkdir raabiosa
-mkdir kalujina
-mkdir _alenamills_
-mkdir lerazhuravleva
-mkdir masha_lobanovaa
-mkdir ekaterinavladis
-mkdir letovayana
-mkdir joannaannamarianna
-mkdir sadovskaya1111
-mkdir ola_ciupa
-mkdir andziathere
-mkdir martynovanatalya
-mkdir alina39
-mkdir jot.kaaaaa
-mkdir katrinaplahina
-mkdir nataliazasadzka
-mkdir to_be_in_vogue
-mkdir milevskate
-mkdir juliadybowska
-mkdir krissycela
-mkdir aszijka
-mkdir verenea777
-mkdir asyashilovaaa
-mkdir magdalenaperlinska_
-mkdir missalena.92
-mkdir ekaterinakobe
-mkdir likekate_
-mkdir ekaterina_mudraya
-mkdir ksenya_foksi
-mkdir rolchikova_a
-mkdir kurushkaa
-mkdir karri_official_/
-mkdir forsurprise
-mkdir nikola_lach
-mkdir nadiyamol
-mkdir marymarymua
-mkdir oly_a_lexandrovna
-mkdir valentivitell
-mkdir l_kondra
-mkdir natalya.talya
-mkdir morrgena
-mkdir karolinaaaka
-mkdir ewastaniszewska
-mkdir al_saymeow
-mkdir tak.ta.paula
-mkdir efremovaluba
-mkdir chiara.rui
-mkdir mamikoyoko
-mkdir ___love.me__
-mkdir olgakulikova707
-mkdir annakoplik
-mkdir alenaluckyone
-mkdir cyxoemope
-mkdir ira_kamale
-mkdir sianovaa
-mkdir _nik_ola
-mkdir sarenka_24
-mkdir mariyafishman
-mkdir lucjalov
-mkdir ars.anastasia
-mkdir furaeva_tatyana
-mv file:///home/jim/Pictures/foo/screenshot_20170807-235721.png* alina39/
-mv /home/jim/Pictures/foo/screenshot_20170807-235721.png* alina39/
-mv /home/jim/Pictures/foo/screenshot_20170807-235644.png* furaeva_tatyana/
-mv /home/jim/Pictures/foo/screenshot_20170807-235629.png* marilica_/
-mkdir misilonka
-mv /home/jim/Pictures/foo/screenshot_20170807-235548.png* misilonka/
 #mv /home/jim/Pictures/foo/screenshot_20170807-235539.png* anab
 mkdir anabartocha
 mv /home/jim/Pictures/foo/screenshot_20170807-235539.png* anabartocha/
@@ -1997,4 +1893,108 @@ ls
 git clone https://github.com/rsprouse/klsyn
 cd klsyn/
 ls
+ssh jimregan
+less errs 
+tail -f errs 
+grep uasal *tex
+grep tU *tex
+grep 'rather than' *tex
+grep 'instead of' *tex
+grep '%' *tex
+grep '%' chap*tex
+grep 't-' *tex
+less ~/Downloads/imagenet-classification-with-deep-convolutional-neural-networks
+less ~/Downloads/imagenet-classification-with-deep-convolutional-neural-networks.bib 
+vi refs.bib
+make clean && make
+grep app:fsttoopennlp *tex
+git rm appendixB.tex 
+vi dissertation.tex
+cat ~/Playing/dissertation-data/moses/tolower.sh 
+less dissertation.tex
+git status
+git add chapter*.tex dissertation.tex refs.bib 
+git commit -m more
+git branch
+git push origin master
+less refs.bib
+make clean && make
+grep statut *
+git status
+git add refs.bib chapter*tex
+git commit -m more
+git push origin master
+git checkout wip
+git merge master
+git status
+git merge --abort
+git status
+git stash
+git checkout master
+git log
+git checkout wip
+ls
+git log
+git merge master
+git merge --abort
+git stash
+git diff
+git branch
+git merge master
+less refs.bib
+git add refs.bib 
+vi chapter3.tex
+vi chapter4.tex
+vi chapter5.tex
+vi chapter6.tex
+git add refs.bib chapter*tex
+git status
+git commit -m merge
+git checkout master
+cp *tex refs.bib /tmp/
+git checkout wip
+cp /tmp//chapter*tex .
+cp /tmp/refs.bib .
+git diff
+git stash
+git checkout master
+grep evrbmtbi *tex
+less chapter3.tex
+grep Subword refs.bib
+less refs.bib
+git branch
+git status
+git diff
+git add refs.bib chapter*tex
+git commit -m merge
+git push origin master
+git checkout wip
+git merge master
+git diff
+vi chapter3.tex
+git diff
+git checkout master
+git add chapter3.tex 
+git commit -m mergish
+git push gh wip
+git checkout master
+git diff
+git checkout wip
+git diff
+git checkout master
+make clean && make
+less refs.bib
+git diff
+git add chapter6.tex 
+git commit -m more
+git push origin master
+git status
+make clean && make
+git add chapter6.tex 
+git commit -m more
+git push origin master
+make clean && make
+cp dissertation.pdf /tmp/
+ssh jimregan
+apt-cache search librev
 ssh jimregan
