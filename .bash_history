@@ -1,315 +1,3 @@
-mvn install -DskipTests
-bin/opennlp SentenceDetectorConverter nkjp -textFile ../../nkjp-sample/nkjp/KOT/text.xml -data ../../nkjp-sample/nkjp/KOT/ann_segmentation.xml  > /tmp/tmpp
-less /tmp/tmpp 
-less ../../nkjp-sample/nkjp/KOT/text.xml 
-git checkout master
-git pull origin master
-git push mine master
-git checkout issue-780 
-git merge master
-git checkout master 
-git branch
-git checkout -b issue-1130
-git merge --squash issue-780 
-git status
-git commit -m 'OPENNLP-1130 Sentence detector format support for NKJP'
-git push mine issue-1130 
-mvn install
-git checkout issue-780 
-git push mine  issue-780 
-git checkout master 
-ls
-cd ../opennlp/
-git branch
-git pull origin master
-git branch
-git push origin issue-780 
-git push mine issue-780 
-mvn deploy
-mvn 
-mvn install
-top
-balooctl disable
-top
-ps aux|grep baloo
-kill -9 2089
-kill -9 7282
-ps aux|grep baloo
-cd ../OpenNLPMosesFactored/
-ls
-less all-moses-preproc-clean-gacase.ga
-git remote add gh https://github.com/jimregan/mphil-dissertation.git
-git remote show
-git remote rm gh
-git remote show
-less KOT/ann_segmentation.xml 
-top
-less KOT/ann_segmentation.xml 
-cat */ann_segmentation.xml 
-less KOT/ann_segmentation.xml 
-less KOT/text.xml 
-less KOT/ann_segmentation.xml 
-cd /tmp/
-unzip ~/Downloads/sentencebank-ga.zip 
-less /tmp/tmpp 
-cat /tmp/tmpp |grep -v '^$'
-scala
-cd ../../spaCy/
-ls
-git pull origin master
-git status
-git branch
-git status
-git log
-cd ..
-rm -rf spaCy/
-git clone https://github.com/explosion/spaCy.git
-cd spaCy/
-git remote add mine https://github.com/jimregan/spaCy.git
-git pull mine
-git push mine master
-git push mine develop
-git checkout irish
-git checkout develop-irish 
-git merge develop
-git merge origin/develop
-git push mine develop-irish 
-git checkout irish 
-git merge master
-git push mine irish 
-git checkout develop-irish 
-less spacy/lang/pl/examples.py 
-less spacy/tests/lang/sv/test_tokenizer.py 
-less spacy/tests/lang/sv/__init__.py 
-less spacy/tests/lang/es/test_text.py 
-less spacy/lang/ga/tokenizer_exceptions.py 
-less spacy/tests/lang/sv/test_tokenizer.py 
-less spacy/lang/sv/tokenizer_exceptions.py 
-less /tmp/sentences.xml 
-git branch
-vi spacy/lang/ga/tokenizer_exceptions.py 
-vi spacy/tests/lang/ga/test_tokenizer.py 
-touch spacy/tests/lang/ga/test_tokenizer.py 
-mkdir spacy/tests/lang/ga/
-vi spacy/tests/lang/ga/test_tokenizer.py 
-touch spacy/tests/lang/ga/__init__.py 
-git add spacy/tests/lang/ga/*
-git commit -m 'first stab at test'
-git push mine develop-irish 
-ls
-less README.rst 
-apt-cache search cython
-sudo apt-get install cython
-less requirements.txt 
-cython -v
-cython --version
-apt-cache search pathlib
-sudo apt-get install python-pathlib
-apt-cache search numpy
-sudo apt-get install python-numpy python-cymem
-sudo apt-get install python-numpy 
-sudo apt-get install python-preshed
-sudo apt-get install python-thinc
-apt-cache search thinc
-apt-cache search murmurhash
-apt-cache search ujson
-sudo apt-get install python-ujson
-sudo apt-get install python-dill
-#grep SV_TOKEN_EXCEPTION_TESTS 
-git branch
-grep SV_TOKEN_EXCEPTION_TESTS spacy/tests/*
-grep SV_TOKEN_EXCEPTION_TESTS spacy/tests/lang/*
-grep SV_TOKEN_EXCEPTION_TESTS spacy/tests/lang/sv/*
-vi spacy/tests/lang/ga/test_tokenizer.py 
-git add spacy/tests/lang/ga/test_tokenizer.py 
-git commit -m 'copy/paste error'
-git push mine develop-irish 
-vi spacy/tests/lang/ga/test_tokenizer.py 
-vi spacy/lang/ga/__init__.py 
-less spacy/lang/sv/__init__.py 
-vi spacy/lang/ga/__init__.py 
-git add spacy/lang/ga/__init__.py 
-git commit -m 'rearrange
-git commit -m 'rearrange'
-git push mine develop-irish 
-grep tokeniz spacy/lang/sv/*
-grep tokeniz spacy/lang/sv/*/*
-find . -name '*py' |xargs grep sv_tok
-vi spacy/tests/conftest.py 
-git add spacy/tests/conftest.py 
-git commit -m 'add ga_tokenizer'
-git push mine develop-irish 
-git checkout irish
-less spacy/tests/sv/test_tokenizer.py 
-#vi spacy/tests/ga/test_tokenizer.py 
-mkdir spacy/tests/ga/ 
-vi spacy/tests/ga/test_tokenizer.py 
-grep sv_tok spacy/tests/*py
-vi spacy/tests/conftest.py 
-vi spacy/tests/ga/test_tokenizer.py 
-git status
-git checkout develop-irish 
-git log
-git revert 9dfd30196289536bf0bbc029d1b0d36c0adbc190
-vi spacy/lang/ga/__init__.py 
-grep Swed spacy/lang/*
-grep Swed spacy/*
-grep sv spacy/*
-grep sv spacy/*py
-grep Swed spacy/*.py
-grep Swed spacy/*/*.py
-grep sv spacy/*/*.py
-vi spacy/tests/conftest.py 
-git reset --hard HEAD~
-git log
-git add  spacy/tests/conftest.py 
-git commit -m 'missed adding here'
-vi spacy/tests/conftest.py 
-git add  spacy/tests/conftest.py 
-git commit -m 'missed adding here'
-git push mine develop-irish 
-less spacy/util.py
-less spacy/language.py 
-less spacy/lang/__init__.py 
-less spacy/lang/tokenizer_exceptions.py 
-less spacy/lang/ga/__init__.py 
-less spacy/lang/es/__init__.py 
-vi spacy/tests/conftest.py 
-cd ..
-git clone https://github.com/explosion/spaCy.git
-cd spaCy/
-git remote add mine https://github.com/jimregan/spaCy.git
-git pull mine
-git checkout irish 
-less spacy/sv/tokenizer_exceptions.py 
-less spacy/en/tokenizer_exceptions.py 
-vi spacy/tests/ga/test_tokenizer.py 
-git add spacy/tests/ga/test_tokenizer.py 
-git commit -m "I don't know why this is failing"
-git push mine rrish 
-git push mine irish 
-less /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x 
-vi /tmp/tagfilt1
-cat /tmp/tagfilt1|awk -F'"' '{print $2}'
-cat /tmp/tagfilt1|awk -F'"' '{print $2}' |sort|uniq
-cat /tmp/tagfilt1|awk -F'"' '{print $2}' |sort|uniq > /tmp/tagsfilt
-vi /tmp/indvtg
-cat /tmp/indvtg|awk -F'"' '{print $2}' > tagsfiltind
-mv tagsfiltind /tmp/
-scala
-less /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x
-cd /tmp/
-ls
-ls *out
-less onmt-out 
-less ref.xml 
-less spacy/lang/ga/__init__.py 
-less spacy/lang/ga/tokenizer_exceptions.py 
-git checkout irish
-ls
-less spacy/__init__.py 
-git checkout develop-irish 
-less spacy/__init__.py 
-less spacy/util.py 
-less spacy/lang/sv/__init__.py 
-less spacy/lang/__init__.py 
-less spacy/lang/ga/__init__.py 
-git checkout irish 
-vi spacy/tests/ga/test_tokenizer.py 
-git add spacy/tests/ga/test_tokenizer.py 
-git commit -m 'see if this works here'
-git push mine irish 
-less spacy/__init__.p
-less spacy/__init__.py
-less setup.py 
-git checkout master
-git pull origin master
-git push mine master
-git pull origin develop
-git status
-cd ..
-rm -rf spaCy/
-less /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t1x 
-less /usr/share/apertium/apertium-en-es/apertium-en-es.en-es.t2x 
-tail -f tok.ga 
-less tools/tokenize.lua 
-th tools/tokenize.lua -h
-find ~ -name '*.t7'
-tail -f onmt1 
-ls
-history > hist
-cd /tmp/
-tar zxvf ~/Downloads/iris_eval_set.tgz 
-chrF 
-chrF onmt-out iris_eval_set.tok.lc.ga 
-tar zxvf ~/Downloads/meteor-1.5.tar.gz 
-java -jar meteor-1.5/meteor-1.5.jar 
-java -jar meteor-1.5/meteor-1.5.jar onmt-out iris_eval_set.tok.lc.ga 
-tar zxvf ~/Downloads/mteval-v13a-20091001.tar.gz 
-less mteval-v13a-20091001/readme.txt 
-./mteval-v13a-20091001/mteval-v13a.pl 
-ls
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-less src.xml 
-less mteval-v13a-20091001/example/src.xml 
-vi src.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-vi src.xml 
-less mteval-v13a-20091001/mteval-v13a.pl 
-less tgt.xml 
-vi tgt.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-vi ref.xml 
-vi src.xml 
-vi tgt.xml 
-less mteval-v13a-20091001/mteval-v13a.pl 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-grep setid *xml
-vi tgt.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-vi tgt.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-vi tgt.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-vi ref.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-vi ref.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-vi ref.xml 
-perl mteval-v13a-20091001/mteval-v13a.pl -r ref.xml -s src.xml -t tgt.xml 
-chrF -b 2.0 onmt-out iris_eval_set.tok.lc.ga 
-less onmt-out 
-cd ../
-svn co https://svn.code.sf.net/p/apertium/svn/trunk/ruLearn
-cd ruLearn/
-ls
-sh autogen.sh 
-apt-cache search apertium
-sudo apt-get install apertium-dev
-ls
-sh autogen.sh 
-vi apertium-patch/test/testApertiumPatchAutoconf.sh 
-APERTIUMPATH=`echo "$APERTIUMLIBS" | tr ' ' '\n' | grep -- '-L' | cut -f 1 | sed 's:^-L::' | sed -r 's:lib/?$::' | sed 's:$:/bin:' `
-echo $APERTIUMPATH 
-vi apertium-patch/test/testApertiumPatchAutoconf.sh 
-sh autogen.sh 
-apertium -v
-apertium-transfer --version
-apertium-transfer -v
-lt-proc -h
-lt-proc -v
-cd ..
-ls
-cd lttoolbox/
-ls
-sudo make install
-cd ..
-svn co https://svn.code.sf.net/p/apertium/svn/trunk/apertium
-sudo apt-get remove lttoolbox
-cd apertium
-ls
-sh autogen.sh 
-sudo apt-get install flex
 sh autogen.sh 
 sudo make install
 cd ../ruLearn/
@@ -1998,3 +1686,315 @@ grep file: mrg
 grep file: mrg |sort|uniq
 grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt ; done
 grep file: mrg |sort|uniq|while read i;do grep $i ../sync/byte-for-byte-identical-20171019-3.nt || echo $i >> mrg.g;done
+cd ~/Pictures/foo/
+ls
+cd ..
+ls
+unzip /tmp/tmmp.zip 
+rm /tmp/tmmp.zip 
+ls
+cd foo/
+mkdir alexisren
+mkdir lilly.marchel
+mkdir ms.saldar
+ls alexisren/
+mkdir ofitial
+mkdir karolina_pisarek
+mkdir paulinaapsp
+mkdir lilia_gold
+mkdir camillekaftan
+mkdir alina_akilova
+mkdir marii212121
+mkdir nataliesng
+mkdir babybratz
+mkdir rosaliette
+mkdir kbprada
+mkdir yuliyabb
+mkdir _lesya_novikova_
+mkdir anella_miller
+mkdir shipilovaks
+mkdir i.s.nesquik
+mkdir aleksanina.k
+mkdir ola_wanserska
+mkdir mo_na2016
+mkdir zuueva
+ls zuueva/
+rm screenshot_20170806-181548.png
+rm screenshot_20170806-181548.png.xmp 
+rm screenshot_20170806-181556.png
+rm screenshot_20170806-181556.png.xmp 
+mkdir gradek_justyna
+mkdir martynakepa
+ls
+ls|wc
+mkdir unnamed
+mkdir broken
+less /home/jim/Pictures/foo/screenshot_20170814-191320.png.xmp 
+less /home/jim/Pictures/foo/screenshot_20170815-141659.png.xmp 
+ls
+mkdir helga_model
+ls nazarovamur/
+mkdir bitch_soul_
+mkdir veronika_chachyna
+mkdir monika.chmielecka
+mkdir kasiabielecka_
+mkdir to_kasi_insta
+mkdir natali_danish
+mkdir anastasiasergeevaaaaa
+mkdir dashamart
+mkdir svetabily
+mkdir _daria___igorevna_
+mkdir vdp02
+mkdir sandra_traczyk
+ls|wc
+ls
+less /home/jim/Pictures/foo/shipilovaks/screenshot_20170810-090330.png.xmp 
+rm /home/jim/Pictures/foo/shipilovaks/screenshot_20170810-090330.png.xmp 
+mv /home/jim/Pictures/foo/shipilovaks/screenshot_20170810-090330.png unnamed/
+mkdir trishka92
+mkdir rimmula_007
+mkdir popova__l
+mkdir pakhotinaart
+mkdir nastyushaaaa
+mkdir anikina95
+mkdir 2121kk___k
+mkdir sasha_raymer
+mkdir alexandra.one
+mkdir viki_odintcova
+mkdir katya_parshina
+mkdir di.gq7
+mkdir juleczkaaa_jula
+mkdir arishabo
+mkdir marymax01
+mkdir carolynduchene
+mkdir 94pln_
+mkdir ey.marie
+mkdir vasilisa_beautiful_
+mkdir alina_sabirova1
+mkdir katekirienko
+mkdir natasha_mankovskaya
+mkdir maryhockings
+mkdir lazarenkoyuliya
+mkdir dagmaramalus
+mkdir veronicabielik
+mkdir mashenka.khv
+mkdir maria_domark
+mkdir paulinye
+mkdir karri_official_
+mkdir malwinakosinska
+mkdir k.maciag
+mkdir dmitrievna_555
+mkdir anetasnake
+mkdir marilica_
+mkdir lilymaymac
+mkdir ngizerskaya
+mkdir a.zimny
+mkdir skysoulmate
+mkdir zolzalaura
+mkdir alesiaasta
+mkdir justynka.jalowiecka
+grep diva *xmp
+mkdir _____diva_diva
+grep serg *xmp
+mkdir _yuliya_sergeevna
+mkdir kraseczka
+grep summer *xmp
+mkdir summerlovesummerl
+grep madzii *xmp
+mkdir madziiex
+grep vot *xmp
+mkdir votyakovanastya
+grep kates *xmp
+mkdir katesytsevich
+grep sofia_ *xmp
+mkdir sofia_official_
+grep julia *xmp
+mkdir julia__yaroshenko
+mkdir snow_cherry
+grep liber *xmp
+mkdir liberateme.1
+mkdir miiss_angelok
+mkdir irina_dreyt
+mkdir ssweet.girl
+grep trofi *xmp
+mkdir trofimova.svet
+grep leto._ *xmp
+mkdir leto.__
+mkdir anna.kondra
+mkdir _alena_alena_
+mkdir _alexa_alexa_
+mkdir timanova_arina
+mkdir theonlyping
+mkdir pilipenko_12
+mkdir madelinekate.b
+mkdir miss_medis_
+mkdir _supermasik_
+mkdir shestakova_me
+mkdir fiolkowelove
+mkdir vikunciy1991
+mkdir frennechka
+mkdir yuliakhramova
+mkdir barbeliciouss
+mkdir victoriabonya
+mkdir kate_lalima
+mkdir mr.s_kris
+mkdir anikina95
+mkdir asiicca
+mkdir raabiosa
+mkdir kalujina
+mkdir _alenamills_
+mkdir lerazhuravleva
+mkdir masha_lobanovaa
+mkdir ekaterinavladis
+mkdir letovayana
+mkdir joannaannamarianna
+mkdir sadovskaya1111
+mkdir ola_ciupa
+mkdir andziathere
+mkdir martynovanatalya
+mkdir alina39
+mkdir jot.kaaaaa
+mkdir katrinaplahina
+mkdir nataliazasadzka
+mkdir to_be_in_vogue
+mkdir milevskate
+mkdir juliadybowska
+mkdir krissycela
+mkdir aszijka
+mkdir verenea777
+mkdir asyashilovaaa
+mkdir magdalenaperlinska_
+mkdir missalena.92
+mkdir ekaterinakobe
+mkdir likekate_
+mkdir ekaterina_mudraya
+mkdir ksenya_foksi
+mkdir rolchikova_a
+mkdir kurushkaa
+mkdir karri_official_/
+mkdir forsurprise
+mkdir nikola_lach
+mkdir nadiyamol
+mkdir marymarymua
+mkdir oly_a_lexandrovna
+mkdir valentivitell
+mkdir l_kondra
+mkdir natalya.talya
+mkdir morrgena
+mkdir karolinaaaka
+mkdir ewastaniszewska
+mkdir al_saymeow
+mkdir tak.ta.paula
+mkdir efremovaluba
+mkdir chiara.rui
+mkdir mamikoyoko
+mkdir ___love.me__
+mkdir olgakulikova707
+mkdir annakoplik
+mkdir alenaluckyone
+mkdir cyxoemope
+mkdir ira_kamale
+mkdir sianovaa
+mkdir _nik_ola
+mkdir sarenka_24
+mkdir mariyafishman
+mkdir lucjalov
+mkdir ars.anastasia
+mkdir furaeva_tatyana
+mv file:///home/jim/Pictures/foo/screenshot_20170807-235721.png* alina39/
+mv /home/jim/Pictures/foo/screenshot_20170807-235721.png* alina39/
+mv /home/jim/Pictures/foo/screenshot_20170807-235644.png* furaeva_tatyana/
+mv /home/jim/Pictures/foo/screenshot_20170807-235629.png* marilica_/
+mkdir misilonka
+mv /home/jim/Pictures/foo/screenshot_20170807-235548.png* misilonka/
+#mv /home/jim/Pictures/foo/screenshot_20170807-235539.png* anab
+mkdir anabartocha
+mv /home/jim/Pictures/foo/screenshot_20170807-235539.png* anabartocha/
+mkdir ziyatova_kristina
+mv /home/jim/Pictures/foo/screenshot_20170807-235922.png* ziyatova_kristina/
+mv /home/jim/Pictures/foo/screenshot_20170808-000109.png* yuliyabb/
+mv /home/jim/Pictures/foo/screenshot_20170808-000104.png* yuliyabb/
+mkdir fernandafiuzac
+mv /home/jim/Pictures/foo/screenshot_20170808-120723.png* fernandafiuzac/
+mv /home/jim/Pictures/foo/screenshot_20170808-120727.png* fernandafiuzac/
+mv /home/jim/Pictures/foo/screenshot_20170808-160449.png* ars.anastasia/
+mv /home/jim/Pictures/foo/screenshot_20170808-220325.png* nadiyamol/
+mv /home/jim/Pictures/foo/screenshot_20170808-220333.png* sasha_raymer/
+mv /home/jim/Pictures/foo/screenshot_20170808-220340.png* zuueva/
+mv /home/jim/Pictures/foo/screenshot_20170810-090746.png* andziathere/
+mv /home/jim/Pictures/foo/screenshot_20170810-091840.png* maria_domark/
+mv /home/jim/Pictures/foo/screenshot_20170810-091950.png* ___love.me__/
+mv /home/jim/Pictures/foo/screenshot_20170810-091959.png* ___love.me__/
+mkdir bellaheathcote
+mv /home/jim/Pictures/foo/screenshot_20171011-120934.png* bellaheathcote/
+mkdir zuzannabrzezinska
+mv /home/jim/Pictures/foo/screenshot_20171011-121023.png* zuzannabrzezinska/
+mv /home/jim/Pictures/foo/screenshot_20171011-121031.png* zuzannabrzezinska/
+mkdir aniu_ta
+mkdir alyukovaaa
+mkdir geegentle
+mkdir y_gaar
+mkdir sandrapodbielska
+mv /home/jim/Pictures/foo/screenshot_20171010-204520.png* sandrapodbielska/
+mkdir diana_dryn
+mkdir gayana_model
+mkdir piskorekatarzyna
+mkdir jagoda_urban
+mkdir luchkina.as
+mkdir angel.lovett
+mkdir elaina_judithh
+cd broken/
+for i in *png;do convert $i $i.jpg;done
+ls
+ls *png
+ls *png > /tmp/broken-list
+scp /tmp/broken-list jimregan:/tmp
+ls
+cd ..
+ls
+mv natalya.talya/paulinye/ .
+mkdir _alina3333
+mkdir mariya_istomina
+mkdir tsvet4
+mkdir xenia92k
+ls
+mkdir natka131
+mkdir mohini_amrita
+file:///home/jim/Pictures/foo/screenshot_20171010-164725.png
+file:///home/jim/Pictures/foo/screenshot_20171010-164731.png
+file:///home/jim/Pictures/foo/screenshot_20171010-164737.png
+file:///home/jim/Pictures/foo/screenshot_20171010-164719.png
+file:///home/jim/Pictures/foo/screenshot_20171010-164653.png
+file:///home/jim/Pictures/foo/screenshot_20171010-164646.png
+vi /tmp/files
+cat /tmp/files |sed -e 's#file://##'
+mv $(cat /tmp/files |sed -e 's#file://##') mohini_amrita/
+ls mohini_amrita/
+tesseract 
+tesseract -l eng
+less $PWD/.kde/share/apps/konsole
+less $HOME/.kde/share/apps/konsole
+config status
+mv /home/jim/Pictures/foo/screenshot_20170811-223908.png*  ___love.me__/
+mv /home/jim/Pictures/foo/screenshot_20170812-140256.png* karolina_pisarek/
+#mv /home/jim/Pictures/foo/screenshot_20170812-140307.png* /home/jim/Pictures/foo/screenshot_20170812-140317.png* gos
+mkdir gosialeitner
+mv /home/jim/Pictures/foo/screenshot_20170812-140307.png* /home/jim/Pictures/foo/screenshot_20170812-140317.png* gosialeitner/
+mv /home/jim/Pictures/foo/screenshot_20170812-152825.png* /home/jim/Pictures/foo/screenshot_20170812-152832.png* /home/jim/Pictures/foo/screenshot_20170812-152841.png* cyxoemope/
+mv /home/jim/Pictures/foo/screenshot_20171001-111738.png* /home/jim/Pictures/foo/screenshot_20171001-111745.png* kbprada/
+apt-cache search ocr
+sudo apt-get install ocrad
+ls
+ocrad screenshot_20170813-200800.png
+tesseract -h
+tesseract -l eng screenshot_20170813-200800.png -
+for i in *png;do tesseract -l eng $i -;done
+for i in *png;do echo $i; tesseract -l eng $i -;done
+mkdir nadia_khom
+ls
+less JpegRotator-e20667.digikamtempfile.jpg.xmp 
+find . -name 'screenshot*'|grep -v 'xmp$'
+find . -name 'screenshot*'|grep -v 'xmp$'|awk -F/ '{print $NF}'
+find . -name 'screenshot*'|grep -v 'xmp$'|awk -F/ '{print $NF}' > /tmp/alreadyhere
+wc -l /tmp/alreadyhere 
+tail -f ~/tmp/bar/mrg 
