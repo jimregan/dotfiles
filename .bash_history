@@ -1,20 +1,3 @@
-ogimageproc https://www.instagram.com/p/BXH0tCTBzek/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BVM53ErBh4h/?taken-by=nadia_khom
-ogimageproc https://www.instagram.com/p/BZ1hz8-g91m/?taken-by=awesomeantjay
-ogimageproc https://www.instagram.com/p/BZMXVNYAR_h/?taken-by=awesomeantjay
-ogimageproc https://www.instagram.com/p/BYeU6F2g-z9/?taken-by=awesomeantjay
-ogimageproc https://www.instagram.com/p/BXyPdCZgSNw/?taken-by=awesomeantjay
-ogimageproc https://www.instagram.com/p/BV2cM_AgSZX/?taken-by=awesomeantjay
-ogimageproc https://www.instagram.com/p/BU0EDIogjDx/?taken-by=awesomeantjay
-ogimageproc https://www.instagram.com/p/BUmtaQrgcb4/?taken-by=awesomeantjay
-ogimageproc https://www.instagram.com/p/BaMvMArFf3C/?taken-by=luciajavorcekova
-ogimageproc https://www.instagram.com/p/BYv_hNEFbzK/?taken-by=luciajavorcekova
-ogimageproc https://www.instagram.com/p/BXkaq9cF47i/?taken-by=luciajavorcekova
-ogimageproc https://www.instagram.com/p/BWzwHLUFqaX/?taken-by=luciajavorcekova
-ogimageproc https://www.instagram.com/p/BUrg_RtFqyS/?taken-by=luciajavorcekova
-ogimageproc https://www.instagram.com/p/BULxDujF7FU/?taken-by=luciajavorcekova
-ogimageproc https://www.instagram.com/p/BTEb06Bljei/?taken-by=luciajavorcekova
-ogimageproc https://www.instagram.com/p/BaYy9sunajU/?taken-by=aaii.yai
 ogimageproc https://www.instagram.com/p/BZYq-BYHxU3/?taken-by=aaii.yai
 ogimageproc https://www.instagram.com/p/BYgBPL7nykJ/?taken-by=aaii.yai
 ogimageproc https://www.instagram.com/p/BXpRFkxAItr/?taken-by=aaii.yai
@@ -1998,3 +1981,20 @@ curl http://theloungelobby.com/watch/37680/7/11
 ps aux|grep firefox
 # https://www.youtube.com/watch?v=TKKPzFrvvsY
 ssh jimregan
+ssh jimregan
+rm ~/Pictures/Screenshot_2017092*
+ssh jimregan
+ls ~/Downloads/*oehn*
+less ~/Downloads/cgmwout.txt 
+grep GenS ~/Downloads/cgmwout.txt 
+ssh jimregan
+tidy -quiet -asxml -xml -indent -wrap 1024 --hide-comments 1 ~/Playing/apertium-en-es/apertium-en-es.en-es.t1x 
+tidy -quiet -asxml -xml -indent -wrap 1024 --hide-comments 1 ~/Playing/apertium-en-es/apertium-en-es.en-es.t1x |grep '<rule'
+tidy -quiet -asxml -xml -indent -wrap 1024 --hide-comments 1 ~/Playing/apertium-en-es/apertium-en-es.en-es.t2x 
+less ~/Playing/apertium-en-es/apertium-en-es.en-es.t2x 
+tidy -quiet -asxml -xml -indent -wrap 1024 --hide-comments 1 ~/Playing/apertium-en-es/apertium-en-es.en-es.t3x 
+tidy -quiet -asxml -xml -indent -wrap 1024 --hide-comments 1 ~/Playing/apertium-en-es/apertium-en-es.en-es.t3x |grep '<rule'
+less ~/Playing/apertium-en-es/apertium-en-es.en-es.t3x 
+rm ~/Pictures/Screenshot_2017092*
+ssh jimregan
+cat ~/Downloads/citation-228685431.bib 
