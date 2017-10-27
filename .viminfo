@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/web
+~MSle0~/imdb
 
 # Last Substitute Search Pattern:
 ~MSle0& $
@@ -17,9 +17,9 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
 :q
 :w
-:wq
 :q!
 :q1
 :g/_e$/d
@@ -69,6 +69,9 @@ $
 :%s/brownCluster/
 
 # Search String History (newest to oldest):
+?/imdb
+?/>>>>
+?/<<<<
 ?/>>>
 ?/<<<
 ??>>>
@@ -119,44 +122,47 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	https://gi
-"2	LINE	0
-	       rule.clear();
-"3	LINE	0
-	       nrules++;
-"4	LINE	0
-	       fancy_print(rule);
-"5	LINE	0
-	    vector<string> rule;
-"6	LINE	0
+""1	LINE	0
 	
+"2	LINE	0
+	http://www.imdb.com/name/nm0905126/?ref_=ttfc_fc_cl_t16
+"3	LINE	0
+	http://www.gitxiv.com/
+"4	LINE	0
+	https://www.facebook.com/
+"5	LINE	0
+	>>>>>>> more
+"6	LINE	0
+	https://gi
 "7	LINE	0
-								<exclude>etc/agpl-v3-header-no-copyright.txt</exclude>
+	       rule.clear();
 "8	LINE	0
-								<exclude>etc/agpl-v3-header.txt</exclude>
+	       nrules++;
 "9	LINE	0
-				</dependency>
+	       fancy_print(rule);
 "q	CHAR	0
 	:::€kb€kb€kb
-""-	CHAR	0
+"-	CHAR	0
 	i
 
 # File marks:
-'0  240  0  ~/open-tabs
-'1  1  26  /tmp/lhasa-0.3.1/extr/thing
-'2  110  0  ~/open-tabs
-'3  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
-'4  1  0  /tmp/lhasa-0.3.1/extr/q8.c
-'5  47  0  /tmp/lhasa-0.3.1/extr/orig.cc
-'6  56  20  /tmp/lhasa-0.3.1/extr/q8.cc
-'7  58  8  /tmp/lhasa-0.3.1/extr/q8.cc
-'8  1  0  /tmp/lhasa-0.3.1/extr/orig.cc
-'9  16  0  /tmp/lhasa-0.3.1/extr/thing.cc
+'0  125  0  ~/open-tabs
+'1  1  0  ~/.cfg/COMMIT_EDITMSG
+'2  238  0  ~/open-tabs
+'3  1  26  /tmp/lhasa-0.3.1/extr/thing
+'4  110  0  ~/open-tabs
+'5  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
+'6  1  0  /tmp/lhasa-0.3.1/extr/q8.c
+'7  47  0  /tmp/lhasa-0.3.1/extr/orig.cc
+'8  56  20  /tmp/lhasa-0.3.1/extr/q8.cc
+'9  58  8  /tmp/lhasa-0.3.1/extr/q8.cc
 
 # Jumplist (newest first):
--'  240  0  ~/open-tabs
+-'  125  0  ~/open-tabs
+-'  394  0  ~/open-tabs
 -'  1  0  ~/open-tabs
+-'  1  0  ~/.cfg/COMMIT_EDITMSG
+-'  238  0  ~/open-tabs
 -'  1  26  /tmp/lhasa-0.3.1/extr/thing
 -'  110  0  ~/open-tabs
 -'  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
@@ -249,9 +255,6 @@ $
 -'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_125.txt
 -'  64  222  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
 -'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
--'  33  1544  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
--'  1  0  ~/.viminfo
 
 # Bar lines, copied verbatim:
 |1,4
@@ -546,23 +549,30 @@ $
 # History of marks within files (newest to oldest):
 
 > ~/open-tabs
-	"	240	0
-	^	240	0
-	.	239	51
+	"	125	0
+	^	238	0
+	.	125	0
 	+	109	45
-	+	241	0
+	+	239	0
 	+	124	0
+	+	131	0
+	+	126	47
+	+	127	42
 	+	133	0
-	+	128	47
-	+	129	42
-	+	135	0
-	+	195	0
-	+	190	67
-	+	214	32
-	+	212	0
-	+	211	10
-	+	221	75
-	+	239	51
+	+	193	0
+	+	188	67
+	+	212	32
+	+	210	0
+	+	209	10
+	+	219	75
+	+	237	51
+	+	252	0
+	+	400	0
+	+	417	0
+	+	125	0
+
+> ~/.cfg/COMMIT_EDITMSG
+	"	1	0
 
 > ~/.viminfo
 	"	1	0
@@ -1677,6 +1687,3 @@ $
 	+	13	10
 	+	21	11
 	+	22	27
-
-> ~/Playing/spaCy/.git/COMMIT_EDITMSG
-	"	1	0
