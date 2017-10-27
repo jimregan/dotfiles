@@ -998,3 +998,123 @@ cp Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk ~/Joyce/Disks/
 rm Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk 
 file ~/Downloads/*com
 history -w
+config status
+config diff
+config add .bash_history 
+config add .viminfo 
+config status
+config add .config/gtkrc
+config add .config/gtkrc-2.0 
+config add .config/kactivitymanagerdrc 
+config add .config/kded_device_automounterrc 
+config add .config/kglobalshortcutsrc 
+config commit -m reboot
+config branch
+config push origin slow-crash
+config checkout master
+config log
+echo żartów | uconv -x pl-pl_FONIPA
+echo żartów |uconv -x pl-pl_FONIPA | uconv -x IPA-XSampa
+sudo cpan AI::MXNet
+apt-cache search Tk::Zinc
+apt-cache search tk-zinc
+apt-cache search zinc
+apt-cache search mxnet
+apt-cache search zinc
+sudo cpan AI::MXNet
+sudo cpan AI::MXNetCAPI
+apt-cache search tkzinc
+apt-cache search dlib
+sudo apt-get install libdlib-dev 
+sudo apt-get install libopencv-dev 
+cd Playing/
+git clone https://github.com/apache/incubator-mxnet.git
+cd incubator-mxnet/
+ls
+cd ..
+rm -rf incubator-mxnet/
+git clone --recursive https://github.com/apache/incubator-mxnet.git
+echo aktualizacja |uconv -x pl-pl_FONIPA | uconv -x IPA-XSampa
+echo aktualizacja |uconv -x pl-pl_FONIPA 
+echo balladzie |uconv -x pl-pl_FONIPA 
+echo świątyniach |uconv -x pl-pl_FONIPA 
+git clone https://gist.github.com/jimregan/adaf90af2bab7bbc32bf33036024fe3d
+cd adaf90af2bab7bbc32bf33036024fe3d/
+ls
+cp wnu-wnu_FONIPA.xml wnu-wnu_FONIPA.txt
+vi wnu-wnu_FONIPA.txt 
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '^#')"
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '^#'|grep -v '::')"
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '^#'|grep -v '::'|grep -v '^$')"
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '::'|grep -v '^$')"
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+cat wnu-wnu_FONIPA.txt |tr '\n' ' '
+cat wnu-wnu_FONIPA.txt |tr '\n' ' ' > tmppp
+vi tmppp
+ivi wnu-wnu_FONIPA.txt 
+vi wnu-wnu_FONIPA.txt 
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+vi wnu-wnu_FONIPA.txt 
+cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+cat /tmp/usun |sed -e 's/[";\.]//' |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+cat /tmp/usun |tr -d '".;:' |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+cat /tmp/usun |tr -d '".;:,' |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'
+cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'
+cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'|sort|uniq
+cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'|sort|uniq|grep -v '^$'
+cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'|sort|uniq|grep -v '^$' > wnu-fonipa-t-wnu.txt
+cat wnu-fonipa-t-wnu.txt |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
+cat wnu-fonipa-t-wnu.txt |uconv -x "$(cat wnu-wnu_FONIPA.txt)" > right
+paste wnu-fonipa-t-wnu.txt right 
+paste wnu-fonipa-t-wnu.txt right  > tmaa
+mv tmaa wnu-fonipa-t-wnu.txt 
+grep -v '^d' tmaa wnu-fonipa-t-wnu.txt 
+grep -v '^d' wnu-fonipa-t-wnu.txt 
+grep -v '^d' wnu-fonipa-t-wnu.txt |grep d
+vi wnu-wnu_FONIPA.txt 
+cat wnu-fonipa-t-wnu.txt|awk '{print $1}' |uconv -x "$(cat wnu-wnu_FONIPA.txt)" > right
+cat wnu-fonipa-t-wnu.txt|awk '{print $1}'  > left
+paste left right > wnu-fonipa-t-wnu.txt 
+less wnu-fonipa-t-wnu.txt 
+cat /tmp/usun |tr -d '".;:,' 
+cat /tmp/usun |tr -d '".;:,'  > t1
+cat t1 |uconv -x "$(cat wnu-wnu_FONIPA.txt)" > t2
+cat t1
+cat t1;echo;cat t2;echo
+less wnu-fonipa-t-wnu.txt 
+less wnu-wnu_FONIPA.txt 
+mv wnu-wnu_FONIPA.txt wnu-fonipa-t-wnu.txt ~/Playing/language-resources/third_party/cldr/
+ls
+rm wnu-wnu_FONIPA.xml tmppp t1 t2 left right 
+ls
+less aev-aev_FONIPA.xml 
+mv aev-aev_FONIPA.xml aev-aev_FONIPA.txt
+less aev-aev_FONIPA.txt 
+mv aev-aev_FONIPA.txt aey-aey_FONIPA.txt 
+vi aey-aey_FONIPA.txt 
+cp aey-aey_FONIPA.txt ~/Playing/language-resources/third_party/cldr/
+vi /tmp/amele
+cat /tmp/amele |uconv -x "$(cat aey-aey_FONIPA.txt)" > t2
+cat /tmp/amele |uconv -x "$(cat aey-aey_FONIPA.txt)" 
+vi aey-aey_FONIPA.txt 
+cat /tmp/amele |tr -d '".;:,'  
+cat /tmp/amele |tr -d '".;:,'
+cat /tmp/amele |tr -d '".;:,'|tr ' ' '\n' |grep -v '^$'
+cat /tmp/amele |tr -d '".;:,'|tr ' ' '\n' |grep -v '^$'|tr 'A-Z' 'a-z'|sort|uniq
+cat /tmp/amele |tr -d '".;:,'|tr ' ' '\n' |grep -v '^$'|tr 'A-Z' 'a-z'|sort|uniq > left
+vi left 
+cat left |uconv -x "$(cat aey-aey_FONIPA.txt)" 
+cat left |uconv -x "$(cat aey-aey_FONIPA.txt)"  > right
+paste left right 
+paste left right > ~/Playing/language-resources/third_party/cldr/aey-fonipa-t-aey.txt
+rm left right 
+ls
+rm t2 
+rm aey-aey_FONIPA.txt 
+mv mi-mi_FONIPA.xml mi-mi_FONIPA.txt
+vi mi-mi_FONIPA.txt 
+cp mi-mi_FONIPA.txt ~/Playing/language-resources/third_party/cldr/
+history -w
+history -a
