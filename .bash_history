@@ -1134,3 +1134,27 @@ sudo apt-get install libsdl1.2-dev
 unzip ~/Downloads/LocoScript_v4.06__ENGLISH.zip 
 history -w
 history -a
+wget http://www.seasip.info/Unix/Joyce/joyce-2.2.12.tar.gz
+tar zxvf joyce-2.2.12.tar.gz 
+cd joyce-2.2.12/
+ls
+./configure 
+make -j 8
+ls
+sudo make install
+sudo ldconfig
+ls
+ls bin/
+xjoyce 
+cd ..
+unzip ~/Downloads/LocoScript_v2.03__ENGLISH.zip 
+xjoyce 
+ls
+mv LocoScript_v* ~/Joyce/Disks/
+ls ~/Joyce/Boot/
+ls -al ~/Joyce/Boot/
+vi ~/Joyce/Boot/joycebt.xml 
+cp ~/Joyce/Disks/LocoScript_v2.03__ENGLISH.dsk ~/Joyce/Boot/boot1.dsk 
+xjoyce 
+history -w
+history -a
