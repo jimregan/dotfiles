@@ -1118,3 +1118,19 @@ vi mi-mi_FONIPA.txt
 cp mi-mi_FONIPA.txt ~/Playing/language-resources/third_party/cldr/
 history -w
 history -a
+cd /tmp/
+wget https://www.macdisk.com/cvfr/cnvxywri.zip
+unzip cnvxywri.zip 
+less CNVXYWRI.DLL 
+unzip ~/Downloads/LocoScript_v4.06__ENGLISH.zip 
+file LocoScript_v4.06__ENGLISH__Side_*
+apt-cache search joycew
+apt-cache search joyce
+apt-cache search pcw
+apt-cache search sdl
+apt-cache search sdl-dev
+sudo apt-get install libsdl2-dev 
+sudo apt-get install libsdl1.2-dev 
+unzip ~/Downloads/LocoScript_v4.06__ENGLISH.zip 
+history -w
+history -a
