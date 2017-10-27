@@ -1362,3 +1362,12 @@ rm Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk
 file ~/Downloads/*com
 history -w
 history -a
+cd ~/Joyce/
+ls
+cd Disks/
+ls
+mkdir files
+less ~/Downloads/VOA-newscast-2017-03-29-0600Z.afpk 
+lynx https://www.reddit.com/r/perl/comments/5trtpl/perl_interface_to_mxnet_machine_learning_lib/
+lynx http://gluon.mxnet.io/chapter07_distributed-learning/hybridize.html
+history -a
