@@ -1,6 +1,4 @@
 vi max-subarray.cc
-vi remove-if.cc
-vi max-subarray.cc
 g++ -std=c++11 max-subarray.cc 
 vi max-subarray.cc
 g++ -std=c++11 max-subarray.cc 
@@ -1998,3 +1996,5 @@ sudo loginctl unlock-session
 loginctl unlock-session 
 sudo loginctl unlock-session 
 sudo loginctl unlock-sessions
+less pl_with_types/output-00034-of-00100 
+cd 
