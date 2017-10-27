@@ -1,41 +1,86 @@
-#!/usr/bin/perl
-
-use warnings;
-use strict;
-use utf8;
-
-use FindBin qw($RealBin);
-
-binmode(STDIN, ":utf8");
-binmode(STDOUT, ":utf8");
-
-#my %norm = (
-#    "dh'fheisgint" => "d'fheiscint",
-#    "dtineóntaidhe" => "dtionóntaí",
-#    'lastiar' => 'laistiar',
-#    'sheasuigheadh' => 'sheasadh',
-#    "tineóntaithe" => "tionóntaí",
-#    "Maghchromtha" => "Maigh Chromtha",
-#);
-
-my %norm = ();
-open(NORM, "$RealBin/normalisations.tsv");
-binmode(NORM, ":utf8");
-while(<NORM>) {
-    chomp;
-    next if(/^#/);
-    my ($a, $b) = split/\t/;
-    $norm{$a} = $b;
-}
-
-while(<STDIN>) {
-    chomp;
-    my ($a, $b) = split/\t/;
-    if($norm{$a} eq $b) {
-        next;
-    } elsif($norm{lc($a)} eq lc($b)) {
-        next;
-    } else {
-        print "$_;
-    }
-}
+!
+@
+a
+aa
+a_e
+ai
+au
+b
+bj
+d
+d_e
+dj
+djzj
+dzh_e
+e
+@_e
+ee
+e_e
+ee_e
+f
+fj
+g
+g_e
+gf
+gfj
+gj
+h
+h_e
+hj
+i
+i@
+ia
+i_e
+ii
+ii_e
+j_e
+k
+kj
+l
+l_e
+lj
+lj_d
+ll
+ll_d
+llj
+llj_d
+m
+m_e
+mj
+n
+ng
+ng_e
+ngj
+nj
+nj_d
+nn
+nn_d
+nnj
+o
+oo
+o_o
+oo_o
+p
+pj
+r
+r_d
+r_e
+rj
+rj_d
+s
+s_e
+sil
+sj
+sp
+t
+tj
+u
+u@
+ua
+uu
+v
+vj
+w_e
+x
+xj
+z_e
