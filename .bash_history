@@ -1609,3 +1609,20 @@ ls -al utils
 ls utils/prepare_lang.sh 
 less utils/prepare_lang.sh 
 history -a
+ls fstaddselfloops
+find ../.. -name fstaddselfloops
+find ../.. -name fstaddselfloops.cc
+find /home/jim/Playing/kaldi/ -name fstaddselfloops.cc
+find /home/jim/Playing/kaldi/ -name fstaddselfloops
+less local_clarin/clarin_pl_data_prep.sh
+history -a
+cd ~/Playing/
+git clone https://github.com/mitlm/mitlm.git
+cd mitlm/
+ls
+./autogen.sh 
+make -j 8
+sudo make install
+sudo ldconfig
+estimate-ngram 
+estimate-ngram -h
