@@ -8,20 +8,20 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/>>>
+~MSle0~/web
 
 # Last Substitute Search Pattern:
-~MSle0&about='http:\/\/
+~MSle0& $
 
 # Last Substitute String:
-$about='file:\/tmp\/sshts\/
+$
 
 # Command Line History (newest to oldest):
 :q
+:w
 :wq
 :q!
 :q1
-:w
 :g/_e$/d
 :%s/ $//
 :%s/2 //
@@ -119,93 +119,46 @@ $about='file:\/tmp\/sshts\/
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
-	>>>>>>> more
+"1	LINE	0
+	https://gi
 "2	LINE	0
-	>>>>>>> more
+	       rule.clear();
 "3	LINE	0
-	=======
+	       nrules++;
 "4	LINE	0
-	<<<<<<< HEAD
+	       fancy_print(rule);
 "5	LINE	0
-	=======
+	    vector<string> rule;
 "6	LINE	0
-		+	103	19
+	
 "7	LINE	0
-		.	103	19
+								<exclude>etc/agpl-v3-header-no-copyright.txt</exclude>
 "8	LINE	0
-		^	104	0
+								<exclude>etc/agpl-v3-header.txt</exclude>
 "9	LINE	0
-		"	17	0
+				</dependency>
 "q	CHAR	0
 	:::€kb€kb€kb
-"-	CHAR	0
-	file:///home/jim/Downloads/Amele.pdf
+""-	CHAR	0
+	i
 
 # File marks:
-'0  1  0  ~/.viminfo
-'1  373  11  ~/.viminfo
-'2  1  26  ~/Playing/ClarinStudioKaldi/path.sh
-'3  2536  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
-'4  26  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
-'5  16  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
-'6  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
-'7  25  10  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
-'8  8  86  /tmp/amele
-'9  1  55  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+'0  240  0  ~/open-tabs
+'1  1  26  /tmp/lhasa-0.3.1/extr/thing
+'2  110  0  ~/open-tabs
+'3  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
+'4  1  0  /tmp/lhasa-0.3.1/extr/q8.c
+'5  47  0  /tmp/lhasa-0.3.1/extr/orig.cc
+'6  56  20  /tmp/lhasa-0.3.1/extr/q8.cc
+'7  58  8  /tmp/lhasa-0.3.1/extr/q8.cc
+'8  1  0  /tmp/lhasa-0.3.1/extr/orig.cc
+'9  16  0  /tmp/lhasa-0.3.1/extr/thing.cc
 
 # Jumplist (newest first):
--'  1  0  ~/.viminfo
--'  373  11  ~/.viminfo
--'  1646  1  ~/.viminfo
--'  372  11  ~/.viminfo
--'  966  0  ~/.viminfo
--'  1118  0  ~/.viminfo
--'  831  1  ~/.viminfo
--'  625  0  ~/.viminfo
--'  621  1  ~/.viminfo
--'  547  0  ~/.viminfo
--'  254  0  ~/.viminfo
--'  143  0  ~/.viminfo
--'  137  0  ~/.viminfo
--'  120  1  ~/.viminfo
--'  89  0  ~/.viminfo
--'  59  0  ~/.viminfo
--'  1  26  ~/Playing/ClarinStudioKaldi/path.sh
--'  6  0  ~/Playing/ClarinStudioKaldi/path.sh
--'  2536  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
--'  18  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
--'  1  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
--'  26  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
--'  1  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
--'  16  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
--'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
--'  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
--'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
--'  25  10  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
--'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
--'  8  86  /tmp/amele
--'  1  0  /tmp/amele
--'  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
--'  31  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
--'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
--'  10  6  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
--'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
--'  28  6  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
--'  13  7  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
--'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/tmppp
--'  9  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
--'  1  0  ~/Playing/language-resources/ga/phonemes.txt
--'  22  6  ~/Playing/language-resources/ga/phonemes.txt
--'  67  0  /tmp/phones
--'  68  0  /tmp/phones
--'  1  0  /tmp/phones
--'  8  5  ~/Playing/language-resources/ga/phonemes.txt
--'  30  10  ~/Playing/language-resources/ga/phonemes.txt
--'  71  2  ~/Playing/language-resources/ga/phonemes.txt
+-'  240  0  ~/open-tabs
+-'  1  0  ~/open-tabs
 -'  1  26  /tmp/lhasa-0.3.1/extr/thing
 -'  110  0  ~/open-tabs
--'  1  0  ~/open-tabs
 -'  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
 -'  1  0  /tmp/lhasa-0.3.1/extr/q8.cc
 -'  1  0  /tmp/lhasa-0.3.1/extr/q8.c
@@ -249,6 +202,56 @@ $about='file:\/tmp\/sshts\/
 -'  52  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
 -'  19  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
 -'  30  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  2  92  ~/Joyce/Boot/joycebt.xml
+-'  1  0  ~/Joyce/Boot/joycebt.xml
+-'  277  9  ~/Playing/sweble-wikitext/pom.xml
+-'  177  7  ~/Playing/sweble-wikitext/pom.xml
+-'  178  7  ~/Playing/sweble-wikitext/pom.xml
+-'  1  0  ~/Playing/sweble-wikitext/pom.xml
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
+-'  3  1585  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  15  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
+-'  1590  2  ~/Playing/msf-asr/pron/munster.tsv
+-'  1  0  ~/Playing/msf-asr/pron/munster.tsv
+-'  14  6  ~/Playing/msf-asr/tock
+-'  1  0  ~/Playing/msf-asr/tock
+-'  54  9  ~/Playing/msf-asr/pron/munster.tsv
+-'  1063  17  ~/Playing/msf-asr/pron/munster.tsv
+-'  1347  0  ~/Playing/msf-asr/pron/munster.tsv
+-'  1343  19  ~/Playing/msf-asr/pron/munster.tsv
+-'  1157  7  ~/Playing/msf-asr/pron/munster.tsv
+-'  879  0  ~/Playing/msf-asr/pron/munster.tsv
+-'  6  4  ~/Playing/msf-asr/pron/munster-double-check
+-'  1  0  ~/Playing/msf-asr/pron/munster-double-check
+-'  934  7  ~/Playing/msf-asr/prontodo
+-'  936  0  ~/Playing/msf-asr/prontodo
+-'  685  0  ~/Playing/msf-asr/prontodo
+-'  1  0  ~/Playing/msf-asr/prontodo
+-'  119  1  ~/Playing/msf-asr/pron-munst
+-'  1  0  ~/Playing/msf-asr/pron-munst
+-'  93  14  ~/Playing/msf-asr/pron-munst
+-'  43  0  ~/Playing/msf-asr/pron-munst
+-'  5  6  ~/Playing/msf-asr/pron/munster-double-check
+-'  216  0  ~/Playing/msf-asr/pron-munst
+-'  108  6  ~/Playing/msf-asr/pron-munst
+-'  139  7  ~/Playing/msf-asr/pron-munst
+-'  129  0  ~/Playing/msf-asr/pron-munst
+-'  122  0  ~/Playing/msf-asr/pron-munst
+-'  60  0  ~/Playing/msf-asr/pron-munst
+-'  128  0  ~/Playing/msf-asr/pron-munst
+-'  127  0  ~/Playing/msf-asr/pron-munst
+-'  5  4  ~/Playing/msf-asr/pron-double-check
+-'  1  0  ~/Playing/msf-asr/pron-double-check
+-'  2  0  ~/Playing/msf-asr/pron-double-check
+-'  5  261  ~/Playing/msf-asr/raw-text/MSF_chapter_25.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_25.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_125.txt
+-'  64  222  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
+-'  33  1544  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
+-'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
+-'  1  0  ~/.viminfo
 
 # Bar lines, copied verbatim:
 |1,4
@@ -542,6 +545,25 @@ $about='file:\/tmp\/sshts\/
 
 # History of marks within files (newest to oldest):
 
+> ~/open-tabs
+	"	240	0
+	^	240	0
+	.	239	51
+	+	109	45
+	+	241	0
+	+	124	0
+	+	133	0
+	+	128	47
+	+	129	42
+	+	135	0
+	+	195	0
+	+	190	67
+	+	214	32
+	+	212	0
+	+	211	10
+	+	221	75
+	+	239	51
+
 > ~/.viminfo
 	"	1	0
 	.	1647	0
@@ -735,12 +757,6 @@ $about='file:\/tmp\/sshts\/
 	^	1	27
 	.	1	26
 	+	1	26
-
-> ~/open-tabs
-	"	110	0
-	^	110	0
-	.	109	45
-	+	109	45
 
 > /tmp/lhasa-0.3.1/extr/q8.cc
 	"	53	18
