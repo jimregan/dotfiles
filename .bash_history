@@ -1542,3 +1542,70 @@ less run.sh
 less path.sh 
 ./run.sh 
 history -a
+ls 
+ls ~/crash-scratch 
+less ~/crash-scratch 
+vi ~/crash-scratch 
+cd ../kaldi/
+ls
+cd src/
+ls
+cd fstbin/
+ls
+make
+cd ..
+make -j 8
+cd ../egs/clarinpl
+s
+ls
+./run.sh 
+less run.sh 
+less utils/prepare_lang.sh 
+less run.sh 
+./run.sh 
+less local_clarin/clarin_pl_data_prep.sh
+man irstlm 
+irstlm help
+irstlm dict
+find /home/jim/Playing/kaldi/egs -name '*.sh'|xargs grep ngram
+less /home/jim/Playing/kaldi/egs/babel/s5d/local/extend_lexicon.sh
+find /home/jim/Playing/kaldi/egs -name '*.sh'|xargs grep ngram|grep unk
+less 
+less /home/jim/Playing/kaldi/egs/fisher_swbd/s5/local/swbd1_train_lms.sh
+find ~/Playing/mosesdecoder/ -name 'lmplz'
+apt-cache search mitlm
+apt-cache search lm
+apt-cache search lm|grep lang
+apt-cache search lm|grep arpa
+apt-cache search irst
+apt-cache search irst;
+apt-cache search irstl
+./run.sh 
+less local_clarin/clarin_pl_data_prep.sh
+estimate-ngram  local_clarin/arpa.lm.gz
+estimate-ngram -unk -write-vocab data/local/lm.wlist -lm  local_clarin/arpa.lm.gz
+gzcat local_clarin/arpa.lm.gz|estimate-ngram -unk -write-vocab data/local/lm.wlist 
+zcat local_clarin/arpa.lm.gz|estimate-ngram -unk -write-vocab data/local/lm.wlist 
+estimate-ngram -unk -write-vocab data/local/lm.wlist -text local_clarin/arpa.lm.gz
+less data/local/lm.wlist 
+less local_clarin/clarin_pl_data_prep.sh
+zless local_clarin/arpa.lm.gz
+./run.sh 
+less ~/Playing/kaldi/tools/config/common_path.sh
+KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
+inf . -name 'prepare_lang.sh'
+find . -name 'prepare_lang.sh'
+ls -al
+ls local
+ls data/
+ls data/local/
+ls data/local/train.wlist 
+less data/local/train.wlist 
+less data/local/train.wlist ls *
+less data/local/train.wlist ls *|grep prepare
+find .. -name prepare_lang.sh
+ls
+ls -al utils
+ls utils/prepare_lang.sh 
+less utils/prepare_lang.sh 
+history -a

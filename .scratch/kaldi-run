@@ -1,0 +1,197 @@
+$ KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh   
+ln: failed to create symbolic link './conf': File exists
+ln: failed to create symbolic link './local': File exists
+ln: failed to create symbolic link './utils': File exists
+ln: failed to create symbolic link './steps': File exists
+Would you like to clean all the data and experiments in this project? (type yes): yes
+Cleaning directory...
+Done!
+~/Playing/kaldi/egs/clarinpl/audio ~/Playing/kaldi/egs/clarinpl
+File already downloaded! Checking if download is consistent...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    47  100    47    0     0    311      0 --:--:-- --:--:-- --:--:--   313
+audio.tar.gz: OK
+Files already extracted?
+Remove the audio dir to extract them again...
+~/Playing/kaldi/egs/clarinpl
+Generating file lists using proper paths...
+WARNING: skipped empty file: SES0461_sent16
+Generating spk2utt...
+Preparing dictionary...
+0.000   Loading corpus local_clarin/arpa.lm.gz...
+3.476   Smoothing[1] = ModKN
+3.476   Smoothing[2] = ModKN
+3.476   Smoothing[3] = ModKN
+3.476   Set smoothing algorithms...
+3.486   Y 9.778535e-01
+3.509   Y 8.243298e-01
+3.532   Y 9.794861e-01
+3.532   Saving vocabulary to data/local/lm.wlist...
+local_clarin/clarin_prepare_dict.sh data/local/all.wlist data/local/dict_nosp
+local_clarin/clarin_prepare_dict.sh: line 72: phonetisaurus_apply: command not found
+Dictionary preparation succeeded
+utils/prepare_lang.sh data/local/dict_nosp <unk> data/local/tmp_nosp data/lang_nosp
+Checking data/local/dict_nosp/silence_phones.txt ...
+--> reading data/local/dict_nosp/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/silence_phones.txt is OK
+
+Checking data/local/dict_nosp/optional_silence.txt ...
+--> reading data/local/dict_nosp/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/optional_silence.txt is OK
+
+Checking data/local/dict_nosp/nonsilence_phones.txt ...
+--> reading data/local/dict_nosp/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict_nosp/lexicon.txt
+--> reading data/local/dict_nosp/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexicon.txt is OK
+
+Checking data/local/dict_nosp/extra_questions.txt ...
+--> reading data/local/dict_nosp/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict_nosp]
+
+**Creating data/local/dict_nosp/lexiconp.txt from data/local/dict_nosp/lexicon.txt
+fstaddselfloops data/lang_nosp/phones/wdisambig_phones.int data/lang_nosp/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang_nosp
+Checking data/lang_nosp/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_nosp/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> summation property is OK
+
+Checking data/lang_nosp/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.int corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.csl corresponds to data/lang_nosp/phones/context_indep.txt
+--> data/lang_nosp/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 144 entry/entries in data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.int corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.csl corresponds to data/lang_nosp/phones/nonsilence.txt
+--> data/lang_nosp/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.int corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.csl corresponds to data/lang_nosp/phones/silence.txt
+--> data/lang_nosp/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.int corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.csl corresponds to data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 4 entry/entries in data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.int corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.csl corresponds to data/lang_nosp/phones/disambig.txt
+--> data/lang_nosp/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_nosp/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 38 entry/entries in data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.int corresponds to data/lang_nosp/phones/roots.txt
+--> data/lang_nosp/phones/roots.{txt, int} are OK
+
+Checking data/lang_nosp/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 38 entry/entries in data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.int corresponds to data/lang_nosp/phones/sets.txt
+--> data/lang_nosp/phones/sets.{txt, int} are OK
+
+Checking data/lang_nosp/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 11 entry/entries in data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.int corresponds to data/lang_nosp/phones/extra_questions.txt
+--> data/lang_nosp/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_nosp/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 154 entry/entries in data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.int corresponds to data/lang_nosp/phones/word_boundary.txt
+--> data/lang_nosp/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_nosp/phones/optional_silence.txt
+--> data/lang_nosp/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_nosp/phones/disambig.txt has "#0" and "#1"
+--> data/lang_nosp/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_nosp/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_nosp/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_nosp/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
+--> generating a 49 word sequence
+The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
+--> ERROR: number of reconstructed words 0 does not match real number of words 49; indicates problem in L.fst or word_boundary.int.  phoneseq = , wordseq = !SIL <SPOKEN_NOISE> !SIL !SIL <unk> <unk> <SPOKEN_NOISE> !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> !SIL <unk> !SIL !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> !SIL <SPOKEN_NOISE> <unk> <SPOKEN_NOISE> <unk> !SIL <SPOKEN_NOISE> !SIL <unk> <SPOKEN_NOISE> <SPOKEN_NOISE> !SIL !SIL <SPOKEN_NOISE> <unk> !SIL <SPOKEN_NOISE> <unk> !SIL <unk> <unk> <SPOKEN_NOISE> <unk> <unk> <SPOKEN_NOISE> !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> !SIL <unk> 
+--> generating a 55 word sequence
+The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
+
+Checking data/lang_nosp/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.int corresponds to data/lang_nosp/oov.txt
+--> data/lang_nosp/oov.{txt, int} are OK
+
+The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
+--> ERROR: data/lang_nosp/L.fst is not olabel sorted
+The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
+--> ERROR: data/lang_nosp/L_disambig.fst is not olabel sorted
+--> ERROR (see error messages above)
+prepare_lang.sh: error validating output
