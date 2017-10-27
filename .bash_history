@@ -1158,3 +1158,207 @@ cp ~/Joyce/Disks/LocoScript_v2.03__ENGLISH.dsk ~/Joyce/Boot/boot1.dsk
 xjoyce 
 history -w
 history -a
+cd ~/Joyce/
+ls
+ls Pngs/
+display Pngs/matrix0.png 
+ls Disks/
+ls Boot/
+ls boot/
+cd /tmp/
+wget http://www.seasip.info/Unix/LibDsk/libdsk-1.4.2.tar.gz
+tar zxvf libdsk-1.4.2.tar.gz 
+ls
+cd libdsk-1.4.2/
+ls
+./configure 
+make -j 8
+;s
+ls
+ls tools/
+tools/dskutil
+tools/dskutil -types
+tools/dskutil -type dsk ~/Joyce/Boot/boot1.dsk 
+less ~/Joyce/Boot/boot1.dsk 
+ls tools/
+tools/dskdump 
+ls
+less doc/libdsk.lyx 
+ls
+less doc/apridisk.html 
+ls man/
+less man/dskutil.1 
+nroff -man man/dskutil.1 
+nroff -man man/dskutil.1 |less
+nroff -man man/dsktrans.1 
+nroff -man man/dsktrans.1 |less
+nroff -man man/dskdump.1 |less
+nroff -man man/dskutil.1 |less
+xjoyce 
+ls
+less doc/libdsk.txt 
+find . -type f
+cd lib/
+ls
+less compress.c 
+grep PCW *
+less dskgeom.c 
+ls
+less uk/co/demon/seasip/libdsk/FormatType.java 
+less uk/co/demon/seasip/libdsk/FormatData.java 
+less uk/co/demon/seasip/libdsk/Geometry.java 
+ls
+less uk_co_demon_seasip_libdsk_Drive.h 
+less dskpars.c 
+cd ..
+cd tools/
+ls
+grep copy *
+less dsktrans.c 
+sudo apt-get install cpmtools
+cpmls -h
+man cpmls 
+cpmls ~/Joyce/Boot/boot1.dsk 
+man cpmls 
+man cpm
+man cpmls 
+cpmls -d ~/Joyce/Boot/boot1.dsk 
+strings ~/Joyce/Boot/boot1.dsk 
+cd ..
+wget http://www.seasip.info/Unix/PcwPlore/pcwplore-0.3.0.tar.gz
+tar zxvf pcwplore-0.3.0.tar.gz 
+cd pcwplore-0.3.0/
+ls
+less imtypes/image_mda.cxx 
+ls bin/
+less bin/file_bas.cxx 
+apt-cache search wx
+sudo apt-get install libwxgtk3.0-dev 
+ls
+./configure 
+make
+sudo apt-get install libwxbase3.0-dev 
+make
+find . -name image_cut.cxx
+vi imtypes/image_cut.cxx 
+vi imtypes/image_cut.hxx 
+vi imtypes/image_cut.cxx 
+vi imtypes/image_cut.hxx 
+vi imtypes/image_cut.cxx 
+vi imtypes/image_cut.hxx 
+vi imtypes/image_cut.cxx 
+make
+vi imtypes/image_logo.cxx 
+make
+vi imtypes/image_mda.cxx 
+make
+vi imtypes/image_mvg.cxx 
+make
+vi imtypes/image_spc.cxx 
+make
+find . -name drivechooser.hxx
+vi bin/drivechooser.hxx 
+find . -name app.cxx
+vi bin/app.cxx 
+vi bin/drivechooser.hxx 
+make
+vi bin/drivechooser.hxx 
+make
+ls
+less cpmtools/cpmfs.c 
+less cpmtools/device_libdsk.c 
+cd ..
+git clone git://gerrit.libreoffice.org/libqxp
+less ~/Downloads/chart-pageimagebackground.prd 
+file ~/Downloads/chart-pageimagebackground.prd 
+git clone https://github.com/diazbastian/softmakeroffice-sample-documents.git
+apt-cache search ole
+apt-cache search ole|grep -i comp
+apt-cache search ole|grep -i compou
+sudo apt-get install libolecf-utils
+apt-cache search gnumer
+sudo apt-get install gnumeric
+gnumeric 
+less Book1.gnumeric 
+file Book1.gnumeric 
+gzcat Book1.gnumeric 
+zcat Book1.gnumeric 
+git clone git://gerrit.libreoffice.org/libabw
+ls
+cd libabw/
+ls
+cd src/
+ls
+cd lib/
+ls
+less ABWZlibStream.cpp 
+less ABWParser.cpp 
+less ABWXMLTokenMap.cpp 
+less ABWXMLTokenMap.h 
+less ABWXMLHelper.
+less ABWXMLHelper.cpp 
+less ABWXMLHelper.h 
+grep ABWXMLHelper.h *
+less AbiDocument.cpp 
+less ABWZlibStream.cpp 
+less ABWZlibStream.h 
+vi ~/tmp/bar/tospid 
+less tokens.txt 
+less gentoken.pl 
+ls
+less libabw_internal.
+less libabw_internal.cpp 
+less libabw_internal.h 
+less Makefile.am 
+less ABWStylesCollector.
+less ABWStylesCollector.cpp 
+less ABWOutputElements.cpp 
+less ABWContentCollector.cpp 
+less tokens.txt 
+less gentoken.pl 
+perl gentoken.pl tokens.txt a.h a.gperf
+less a.h 
+less a.gperf 
+apt-cache search gperf
+sudo apt-get install gperf
+gperf a.gperf 
+find /tmp -name '*gnumeric'
+zcat /tmp/Book1.gnumeric 
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|less
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n/</g'
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sort|uniq
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sort|uniq|sed -e 's/<//'
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sed -e 's/\///'|sort|uniq|sed -e 's/<//'
+zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sed -e 's/\///'|sort|uniq|sed -e 's/<//' > gnumeric-tokens.txt
+perl gentoken.pl gnumeric-tokens.txt b.h b.gperf
+less b.gperf 
+less b.h
+l
+ls
+less ABWParser.cpp 
+ls
+less libabw_internal.cpp 
+ls
+cd ..
+ls
+cd ..
+ls
+less CREDITS 
+less HACKING 
+less awml.dtd 
+less README 
+ls
+less TODO 
+less /usr/include/boost/iostreams/device/mapped_file.hpp 
+less ~/Downloads/Masterfile\ 8000\ \[SD\]\ Disks.zip 
+unzip ~/Downloads/Masterfile\ 8000\ \[SD\]\ Disks.zip 
+less Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk 
+cp Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk ~/Joyce/Disks/
+rm Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk 
+file ~/Downloads/*com
+history -w
+history -a
