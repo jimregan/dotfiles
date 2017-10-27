@@ -482,3 +482,17 @@ https://www.google.ie/search?q=tensorflow+c%2B%2B&oq=tensorflow+c%2B%2B&aqs=chro
 https://github.com/jhjin/tensorflow-cpp/blob/master/app.cc
 
 https://arxiv.org/pdf/1703.08864.pdf
+
+https://www.theguardian.com/news/2017/oct/27/the-war-against-pope-francis?CMP=fb_gu
+
+http://www.perlmonks.org/?node_id=388423
+@sorted = sort { length $a <=> length $b } @elements
+
+https://github.com/googlei18n/language-resources/tree/master/festus
+https://github.com/googlei18n/language-resources/blob/master/si/textnorm/classifier/date.grm
+
+https://github.com/rwsproat/text-normalization-data
+https://arxiv.org/pdf/1611.00068.pdf
+
+https://github.com/CSTR-Edinburgh/merlin/
+

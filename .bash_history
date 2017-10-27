@@ -1,100 +1,3 @@
-cat words.txt |wc
-echo $((74 / 10))
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-cat word-average.cc
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-cat word-average.cc 
-cat words.txt 
-./a.out 
-ls
-less DecideVUV.m 
-less GenerateVUVSetting.m 
-git status
-ls -al caighdean/
-git status
-cd caighdean/
-git status
-ls
-rm MSF_chapter_xa*
-ls
-git status
-git diff
-ls
-git status
-less MSF_chapter_9.pairs 
-git status
-less MSF_chapter_11.pairs 
-cd ..
-cat caighdean/MSF_chapter_*|sort|uniq|awk -F' => ' '($1 != $2){print $1 "\t" $2}' > scripts/normalisations.tocheck2
-less scripts/normalisations.tocheck2 
-sphinxtrain -t ga setup
-ls ga/
-ls
-ls etc/feat.params 
-mkdir sphtr
-cd sphtr/
-sphinxtrain -t ga setup
-ls
-cd etc/
-ls
-less sphinx_train.cfg 
-vi sphinx_train.cfg 
-less Corpora/tcd_gd_anb/DVD01/Readme.txt 
-cd msf-asr/
-vi raw-text/MSF_chapter_9.txt
-git add raw-text/MSF_chapter_9.txt
-git commit -m 'missed chapter 9'
-for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for i in xa*;do cat $i |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;done
-for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for i in xa*;do cat $i |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
-#for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
-rm xa*
-for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.txt ];then split -l 25 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
-git status
-git stash
-ls
-ls caighdean/
-cd caighdean/
-for i in *txt;do mv $i $(echo $i|sed -e 's/txt$/pairs/');done
-git status
-git add *pairs
-git commit -m 'more'
-cd ..
-#for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.pairs ];then split -l 15 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
-rm xa*
-for i in $(seq 1 32);do if [ ! -e caighdean/MSF_chapter_$i.pairs ];then split -l 15 raw-text/MSF_chapter_$i.txt; for j in xa*;do cat $j |perl ga-std.pl ga >> caighdean/MSF_chapter_$i.pairs;done;rm xa*;fi;done
-ls -al caighdean/*
-git add caighdean/*
-git commit -m rest
-git push origin master 
 #cat pron-data/enwiktionary-ipa.tsv |awk -F'\t' '{print $1}'|sort|uniq > in-chk
 cd ~/Playing/
 svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software/marytts-lang-ga/
@@ -1998,3 +1901,100 @@ git commit -m 'remove affero shit'
 git push -f origin develop
 apt-cache search emscripte
 sudo apt-get install emscripten
+cd ~/Playing/
+git clone https://github.com/googlei18n/language-resources.git
+#kaldi/tools/openfst/bin/farprintstrings 
+kaldi/tools/openfst/bin/farprintstrings 
+find language-resources -name '*.far'
+kaldi/tools/openfst/bin/farprintstrings  language-resources/af/textnorm/verbalizer/number_names_depot.far
+kaldi/tools/openfst/bin/farprintstrings  -h
+kaldi/tools/openfst/bin/farextract 
+kaldi/tools/openfst/bin/farinfo  language-resources/af/textnorm/verbalizer/number_names_depot.far
+kaldi/tools/openfst/bin/farextract  language-resources/af/textnorm/verbalizer/number_names_depot.far
+ls
+less CARDINAL_NUMBER_NAME 
+kaldi/tools/openfst/bin/fstprint CARDINAL_NUMBER_NAME 
+kaldi/tools/openfst/bin/fstprint CARDINAL_NUMBER_NAME |less
+ls
+less \*StringFstSymbolTable 
+kaldi/tools/openfst/bin/fstprint \*StringFstSymbolTable 
+kaldi/tools/openfst/bin/fstprint SINGLE_DIGIT 
+ls
+cd language-resources/
+ls
+less BUILD 
+bazel
+bazel build
+ls
+bazel build festus
+bazel build sparrowhawk
+bazel build af/
+less sparrowhawk.BUILD 
+less six.BUILD 
+bazel build 
+ls
+bazel build thrax
+bazel build af/sparrowhawk:af_sparrowhawk
+bazel-bin/af/sparrowhawk/af_sparrowhawk
+ls bazel-bin/utils/sh_utter
+less bazel-bin/utils/sh_utter
+bazel build si/sparrowhawk:si_sparrowhawk
+bazel build festus/festus
+ls
+less BUILD 
+less festus/BUILD 
+bazel build festus/
+bazel build festival_utils/
+bazel build sparrowhawk
+ls
+ls bazel-bin
+ls bazel-bin/external/
+ls bazel-bin/utils/
+ls bazel-bin/utils/_objs/
+ls bazel-bin/utils/_objs/sh_utter/
+ls bazel-bin/utils/_objs/sh_utter/utils/
+ls bazel-bin/utils/
+ls
+git checkout -b ga
+less zu/phonemes.txt 
+#vi ga/phonemes.txt 
+mkdir ga
+vi ga/phonemes.txt 
+cat ga/phonemes.txt |sort|uniq
+cat ga/phonemes.txt |sort|uniq > tmpa
+mv tmpa ga/phonemes.txt 
+vi ga/phonemes.txt 
+cat ga/phonemes.txt |sort|uniq > tmpa
+mv tmpa ga/phonemes.txt 
+vi ga/phonemes.txt 
+cat ga/phonemes.txt |sort|uniq > tmpa
+mv tmpa ga/phonemes.txt 
+vi ga/phonemes.txt 
+git add  ga/phonemes.txt 
+git commit -m 'abair.ie SAMPA/IPA mapping'
+git remote show
+git remote show origin
+git add mine https://github.com/jimregan/language-resources.git
+git remote add mine https://github.com/jimregan/language-resources.git
+git push mine ga
+cat /tmp/plipamap 
+cat /tmp/plipamap |sed -e 's/,/\n/g'
+cat /tmp/plipamap |sed -e 's/,/\n/g'|sed -e 's/^ *//'
+cat /tmp/plipamap |sed -e 's/,/\n/g'|sed -e 's/^ *//'|grep "'"
+cat /tmp/plipamap |sed -e 's/,/\n/g'|sed -e 's/^ *//'|grep "'"|awk -F"'" '{print "    \"" $4 "\" => \"" $2 "\","}'
+cat /tmp/plipamap |sed -e 's/,/\n/g'|sed -e 's/^ *//'|grep "'"|awk -F"'" '{print "    \"" $4 "\" => \"" $2 "\","}' > /tmp/remap-ipa.pl
+git checkout master
+git checkout -b translit
+ls
+cd third_party/cldr/
+ls
+git add mi-mi_FONIPA.txt aey-aey_FONIPA.txt wnu-wnu_FONIPA.txt 
+#git commit -m 'FONIPA transliterators for 
+less wnu-wnu_FONIPA.txt 
+#git commit -m 'FONIPA transliterators for Usan (wnu), Amele (aey), and Maori (mi)'
+less aey-aey_FONIPA.txt 
+git commit -m 'FONIPA transliterators for Usan (wnu), Amele (aey), and Maori (mi)'
+git branch
+git push mine translit 
+vi mi-mi_FONIPA.txt 
+df
