@@ -1506,3 +1506,39 @@ less lexicon.txt
 wc -l lexicon.txt 
 less lexicon.txt 
 history -a
+cd /tmp/
+unzip ~/Downloads/clarin_emu.zip 
+cd ~/Playing/ClarinStudioKaldi/
+ls
+less LICENSE.audio 
+less cmd.sh 
+cd ..
+cd kaldi/
+cd egs/
+man ln
+ln -sd ../../ClarinStudioKaldi/ clarinpl
+cd clarinpl
+ls
+less path.sh 
+less run.sh 
+less local_clarin/clarin_pl_clean.sh 
+less local_clarin/clarin_pl_data_prep.sh 
+zless local_clarin/arpa.lm.gz 
+ls -al local_clarin/arpa.lm.gz 
+ls local_clarin/
+less local_clarin/model.fst.gz 
+less local_clarin/generate_lists.py 
+rm -rf /tmp/clarin/
+ls
+rm ~/Downloads/clarin_emu.zip 
+df
+ls
+sh run.sh 
+ls
+sh path.sh 
+#ls ../wsj/s5/conf/
+ls ..
+less run.sh 
+less path.sh 
+./run.sh 
+history -a
