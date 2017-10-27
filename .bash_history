@@ -1454,3 +1454,45 @@ sh ~/scripts/spider.sh thing
 tail -f thing.log 
 vi ~/open-tabs
 history -a
+cd Cor
+cd ~/Playing/Corp
+cd ~/Playing/Corpora/
+ls
+cd ga_UL/anb/
+ls
+ls text01/xml/text01-001_000.xml 
+less text01/xml/text01-001_000.xml 
+grep '<phoneme' text01/xml/text01-001_000.xml 
+grep '<phoneme' */xml/*.xml 
+grep '<phoneme' */xml/*.xml |awk -F'"' '{print $2}'|sort|uniq
+vi /tmp/phones
+cat /tmp/phones
+grep nj_d */xml/*.xml 
+less new_text02/xml/tcd_gd_text02-004_008.xml
+grep ai */xml/*.xml 
+grep ai */xml/*.xml |grep '<ph'
+less text02/xml/tcd_gd_text02_002_503.xml
+grep '"au"' */xml/*.xml |grep '<ph'
+less text02/xml/tcd_gd_text02_002_503.xml
+less text02/xml/tcd_gd_text02_007_314.xml
+grep '"ai"' */xml/*.xml |grep '<ph'
+less
+less text02/xml/tcd_gd_text02_007_278.xml
+grep '"i@"' */xml/*.xml |grep '<ph'
+less text02/xml/tcd_gd_text02_007_283.xml
+grep '"llj_d"' */xml/*.xml |grep '<ph'
+less new_text02/xml/tcd_gd_text02-003_276.xml
+grep '"nj"' */xml/*.xml |grep '<ph'
+less text02/xml/tcd_gd_text02_007_330.xml
+grep '"nn_d"' */xml/*.xml |grep '<ph'
+less text02/xml/tcd_gd_text02_004_513.xml
+grep '"r_d"' */xml/*.xml |grep '<ph'
+less text02/xml/tcd_gd_text02_007_320.xml
+grep '"rj_d"' */xml/*.xml |grep '<ph'
+less text02/xml/tcd_gd_text02_004_662.xml
+grep '"sp"' */xml/*.xml |grep '<ph'
+less text01/xml/text01-001_154.xml
+grep '"u@"' */xml/*.xml |grep '<ph'
+less text01/xml/text01-001_154.xml
+less text02/xml/tcd_gd_text02_007_320.xml
+history -a
