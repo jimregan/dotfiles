@@ -146,18 +146,19 @@ $
 	i
 
 # File marks:
-'0  125  0  ~/open-tabs
-'1  1  0  ~/.cfg/COMMIT_EDITMSG
-'2  238  0  ~/open-tabs
-'3  1  26  /tmp/lhasa-0.3.1/extr/thing
-'4  110  0  ~/open-tabs
-'5  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
-'6  1  0  /tmp/lhasa-0.3.1/extr/q8.c
-'7  47  0  /tmp/lhasa-0.3.1/extr/orig.cc
-'8  56  20  /tmp/lhasa-0.3.1/extr/q8.cc
-'9  58  8  /tmp/lhasa-0.3.1/extr/q8.cc
+'0  1  0  ~/.cfg/MERGE_MSG
+'1  125  0  ~/open-tabs
+'2  1  0  ~/.cfg/COMMIT_EDITMSG
+'3  238  0  ~/open-tabs
+'4  1  26  /tmp/lhasa-0.3.1/extr/thing
+'5  110  0  ~/open-tabs
+'6  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
+'7  1  0  /tmp/lhasa-0.3.1/extr/q8.c
+'8  47  0  /tmp/lhasa-0.3.1/extr/orig.cc
+'9  56  20  /tmp/lhasa-0.3.1/extr/q8.cc
 
 # Jumplist (newest first):
+-'  1  0  ~/.cfg/MERGE_MSG
 -'  125  0  ~/open-tabs
 -'  394  0  ~/open-tabs
 -'  1  0  ~/open-tabs
@@ -547,6 +548,9 @@ $
 |4,39,119,35,1499962429,"~/Playing/ainm-ner-corpus/src/main/scala/ie/tcd/slscs/itut/AinmNerCorpus/AinmProcess.scala"
 
 # History of marks within files (newest to oldest):
+
+> ~/.cfg/MERGE_MSG
+	"	1	0
 
 > ~/open-tabs
 	"	125	0
@@ -1673,17 +1677,3 @@ $
 	+	103	5
 	+	104	33
 	+	15	55
-
-> ~/Playing/spaCy/spacy/lang/ga/__init__.py
-	"	12	0
-	^	22	28
-	.	22	27
-	+	24	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	17	0
-	+	18	0
-	+	13	10
-	+	21	11
-	+	22	27
