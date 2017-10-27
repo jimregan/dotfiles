@@ -122,8 +122,6 @@ http://mowa.clarin-pl.eu/tools/ui/align/segment
 http://mowa.clarin-pl.eu/korpusy
 https://github.com/danijel3/ClarinStudioKaldi
 
-http://www.imdb.com/name/nm0905126/?ref_=ttfc_fc_cl_t16
-
 https://github.com/danijel3/ClarinSpeechWebsite
 https://github.com/danijel3/SpeechToolsWorkers/
 https://github.com/danijel3/Phonetisaurus
@@ -251,7 +249,6 @@ https://www.forbes.com/sites/kevinmurnane/2017/04/11/google-makes-your-smartphon
 
 http://cpansearch.perl.org/src/SKOLYCHEV/AI-MXNetCAPI-1.1/README
 http://neuralnetworksanddeeplearning.com/chap1.html
->>>>>>> more
 
 http://www.jennwv.com/courses/F10/material/notes_1018.pdf
 http://people.csail.mit.edu/dsontag/courses/ml16/slides/lecture1.pdf
@@ -400,7 +397,6 @@ https://www.coursera.org/learn/deep-neural-network
 https://www.coursera.org/learn/neural-networks-deep-learning/lecture/2c38r/supervised-learning-with-neural-networks
 https://www.wired.com/story/new-theory-deep-learning
 
-https://www.facebook.com/
 https://arxiv.org/pdf/1710.05941.pdf
 https://github.com/kaldi-asr/kaldi/tree/master/egs/yesno
 http://white.ucc.asn.au/Kaldi-Notes/tidigits/train
@@ -418,7 +414,6 @@ https://theboostcpplibraries.com/boost.datetime-calendar
 http://www.boost.org/doc/libs/1_65_1/doc/html/date_time.html
 https://theboostcpplibraries.com/boost.smartpointers-sole-ownership
 https://theboostcpplibraries.com/boost.stringalgorithms
-http://www.gitxiv.com/
 https://github.com/salesforce/awd-lstm-lm/blob/master/data.py
 https://github.com/salesforce/pytorch-qrnn/blob/master/torchqrnn/forget_mult.py
 https://github.com/facebookresearch/loop/blob/master/model.py
