@@ -109,6 +109,150 @@ https://www.google.ie/search?q=samsung+research+interview+questions&oq=samsung+r
 https://www.glassdoor.ie/Interview/Samsung-Research-America-Interview-Questions-E295294_P2.htm
 https://leetcode.com/problems/word-ladder/description/
 
+https://ukrainian.voanews.com/z/1686
+video links
+
+https://ukrainian.voanews.com/programs/radio
+
+http://mowa.clarin-pl.eu/
+http://mowa.clarin-pl.eu/tools/
+http://mowa.clarin-pl.eu/tools/ui/text/normalize
+http://mowa.clarin-pl.eu/tools/ui/align/forced
+http://mowa.clarin-pl.eu/tools/ui/align/segment
+http://mowa.clarin-pl.eu/korpusy
+https://github.com/danijel3/ClarinStudioKaldi
+
+http://www.imdb.com/name/nm0905126/?ref_=ttfc_fc_cl_t16
+
+https://github.com/danijel3/ClarinSpeechWebsite
+https://github.com/danijel3/SpeechToolsWorkers/
+https://github.com/danijel3/Phonetisaurus
+https://github.com/AdolfVonKleist/Phonetisaurus
+
+http://www.aakanee.com/main.html
+Thai/Khmer transcripts (NC)
+
+
+http://selfstudythai.com/
+VOA Thai transcripts
+
+http://www.seasip.info/Unix/Joyce/download.html
+http://www.seasip.info/Unix/index.html
+http://www.seasip.info/Unix/Joyce/index.html
+http://www.seasip.info/Unix/PcwPlore/index.html
+http://www.seasip.info/Unix/PSF/index.html
+
+http://www.seasip.info/Unix/Joyce/ls1frm.html
+http://www.chiark.greenend.org.uk/~jacobn/cpm/mdaspec.html
+
+
+http://www.fileformat.info/format/atari/egff.htm
+
+http://blogs.perl.org/users/sergey_kolychev/2017/02/machine-learning-in-perl.html
+## It's considered "Hello, World" for Neural Networks
+## For more info about the MNIST problem please refer to http://neuralnetworksanddeeplearning.com/chap1.html
+use strict;
+use warnings;
+use AI::MXNet qw(mx);
+use AI::MXNet::TestUtils qw(GetMNIST_ubyte);
+use Test::More tests => 1;
+# symbol net
+my $batch_size = 100;
+### model
+my $data = mx->symbol->Variable('data');
+my $conv1= mx->symbol->Convolution(data => $data, name => 'conv1', num_filter => 32, kernel => [3,3], stride => [2,2]);
+my $bn1  = mx->symbol->BatchNorm(data => $conv1, name => "bn1");
+my $act1 = mx->symbol->Activation(data => $bn1, name => 'relu1', act_type => "relu");
+my $mp1  = mx->symbol->Pooling(data => $act1, name => 'mp1', kernel => [2,2], stride =>[2,2], pool_type=>'max');
+my $conv2= mx->symbol->Convolution(data => $mp1, name => 'conv2', num_filter => 32, kernel=>[3,3], stride=>[2,2]);
+my $bn2  = mx->symbol->BatchNorm(data => $conv2, name=>"bn2");
+my $act2 = mx->symbol->Activation(data => $bn2, name=>'relu2', act_type=>"relu");
+my $mp2  = mx->symbol->Pooling(data => $act2, name => 'mp2', kernel=>[2,2], stride=>[2,2], pool_type=>'max');
+my $fl   = mx->symbol->Flatten(data => $mp2, name=>"flatten");
+my $fc1  = mx->symbol->FullyConnected(data => $fl,  name=>"fc1", num_hidden=>30);
+my $act3 = mx->symbol->Activation(data => $fc1, name=>'relu3', act_type=>"relu");
+my $fc2  = mx->symbol->FullyConnected(data => $act3, name=>'fc2', num_hidden=>10);
+my $softmax = mx->symbol->SoftmaxOutput(data => $fc2, name => 'softmax');
+# check data
+GetMNIST_ubyte();
+my $train_dataiter = mx->io->MNISTIter({
+    image=>"data/train-images-idx3-ubyte",
+    label=>"data/train-labels-idx1-ubyte",
+    data_shape=>[1, 28, 28],
+    batch_size=>$batch_size, shuffle=>1, flat=>0, silent=>0, seed=>10});
+my $val_dataiter = mx->io->MNISTIter({
+    image=>"data/t10k-images-idx3-ubyte",
+    label=>"data/t10k-labels-idx1-ubyte",
+    data_shape=>[1, 28, 28],
+    batch_size=>$batch_size, shuffle=>1, flat=>0, silent=>0});
+my $n_epoch = 1;
+my $mod = mx->mod->new(symbol => $softmax);
+$mod->fit(
+    $train_dataiter,
+    eval_data => $val_dataiter,
+    optimizer_params=>{learning_rate=>0.01, momentum=> 0.9},
+    num_epoch=>$n_epoch
+);
+my $res = $mod->score($val_dataiter, mx->metric->create('acc'));
+ok($res->{accuracy} > 0.8);
+
+https://github.com/apache/incubator-mxnet/tree/master/perl-package
+https://github.com/sergeykolychev/mxnet-perl
+https://www.reddit.com/r/perl/comments/5trtpl/perl_interface_to_mxnet_machine_learning_lib/
+https://metacpan.org/pod/AI::MXNet::Gluon::RNN::RNN
+https://mxnet.incubator.apache.org/tutorials/gluon/gluon.html
+http://gluon.mxnet.io/chapter07_distributed-learning/hybridize.html
+
+https://www.tensorflow.org/extend/adding_an_op#shape_functions
+
+https://github.com/yahoo/gryffin
+
+https://medium.com/@privacy.no.name/coreml-allows-stealing-your-private-info-6x-faster-than-before-b4f180031c03
+
+https://yahooeng.tumblr.com/post/151148689421/open-sourcing-a-deep-learning-solution-for
+https://github.com/yahoo/open_nsfw/blob/master/classify_nsfw.py
+
+http://www.jsweet.org/
+(TypeScript - problems)
+https://github.com/cincheo/jsweet
+
+https://www.javapoly.com/
+
+https://github.com/yahoo/intl-relativeformat
+
+https://github.com/yahoo/mdbm
+http://yahoo.github.io/mdbm/
+mmap-ed dbm
+
+
+https://github.com/yahoo/cerebro
+
+https://github.com/jay-mahadeokar/pynetbuilder
+(build caffe proto)
+
+http://caffe.berkeleyvision.org/gathered/examples/finetune_flickr_style.html
+
+https://www.wired.com/brandlab/2017/06/mine-big-data-like-pro/?intcid=polar
+
+https://arxiv.org/pdf/1710.07032.pdf
+SLING: A framework for frame semantic parsing
+https://github.com/google/sling/tree/88771ebb771d2e32a2f481d3523c4747303047e0/frame
+https://github.com/google/sling/blob/88771ebb771d2e32a2f481d3523c4747303047e0/string/strcat.cc
+https://github.com/google/sling/tree/88771ebb771d2e32a2f481d3523c4747303047e0/tools
+
+http://www.gitxiv.com/posts/Pc5uyMEXg6CwkFLHA/quasi-recurrent-neural-networks
+
+http://www.gitxiv.com/posts/9uHHaYxHApFemuFa5/pytorch-code-draft-for-a-dynamic-rnn-decoder-tree
+
+https://research.googleblog.com/2017/04/federated-learning-collaborative.html
+https://research.google.com/pubs/pub44822.html
+
+https://www.forbes.com/sites/kevinmurnane/2017/04/11/google-makes-your-smartphone-smarter-with-federated-learning/#7a42d66c5a0f
+
+http://cpansearch.perl.org/src/SKOLYCHEV/AI-MXNetCAPI-1.1/README
+http://neuralnetworksanddeeplearning.com/chap1.html
+>>>>>>> more
+
 http://www.jennwv.com/courses/F10/material/notes_1018.pdf
 http://people.csail.mit.edu/dsontag/courses/ml16/slides/lecture1.pdf
 http://josephpcohen.com/teaching/cs310/

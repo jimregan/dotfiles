@@ -8,117 +8,109 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/Unknown f
+~MSle0~/>>>
 
 # Last Substitute Search Pattern:
-~MSle0~&about='http:\/\/
+~MSle0&about='http:\/\/
 
 # Last Substitute String:
 $about='file:\/tmp\/sshts\/
 
 # Command Line History (newest to oldest):
-:wq
-:w
-:q!
-:%s/about='http:\/\//about='file:\/tmp\/sshts\//
 :q
-:g/broken/d
-://postimg.org/image/4odtycsqqz/
-://postimg.org/image/7c3a8pl4xn/
-://postimg.org/image/2eutev62u3/
-://postimg.org/image/6ud8k4iwhn/
-://postimg.org/image/1bv43za18r/
-://postimg.org/image/8bjdlvoqyj/
-://postimg.org/image/97fv1bu52z/
-://postimg.org/image/4346c1una3/
-://postimg.org/image/6g6st97tbf/
-://postimg.org/image/8m67f0z9cr/
-://postimg.org/image/5ntxbiq50b/
-://postimg.org/image/2ly1aamnnf/
-://postimg.org/image/1feq1oxjcb/
-://postimg.org/image/8bjdlvg6bf/
-://postimg.org/image/2phn80iayj/
-://postimg.org/image/1tl5sk44h7/
-://postimg.org/image/1q1juubh6z/
-://postimg.org/image/9azgz1gsbf/
-://postimg.org/image/33o2yvl8x7/
-://postimg.org/image/4odtycivt7/
-://postimg.org/image/377owlejcr/
-://postimg.org/image/1posgokeh7/
-://postimg.org/image/3shciw67cb/
-://postimg.org/image/9spinmfdl7/
-://postimg.org/image/2sohrkfdhn/
-://postimg.org/image/5r0rv2mztn/
-://postimg.org/image/1bicptadvv/
-://postimg.org/image/3okz70nrmz/
-://postimg.org/image/5nh5xcthob/
-://postimg.org/image/5ukdssekiz/
-://postimg.org/image/9scr9gpdgb/
-://postimg.org/image/2sohrkcswb/
-://postimg.org/image/74naz3vh97/
-://postimg.org/image/68qtjnm88r/
-://postimg.org/image/843ec9y0p7/
-://postimg.org/image/3dy5dv5r6j/
-://postimg.org/image/1t8eee8rfv/
-://postimg.org/image/1m56iyl3zv/
-://postimg.org/image/2zrpmzx8ln/
-://postimg.org/image/8swnwajtzf/
-://postimg.org/image/6577lxr0d7/
-://postimg.org/image/713p1dybxn/
-://postimg.org/image/2p4vtufnkr/
-://postimg.org/image/36uxifglq3/
+:wq
+:q!
+:q1
+:w
+:g/_e$/d
+:%s/ $//
+:%s/2 //
+:g/'/d
+:%s/ \. / /g
+:%s/0 //g
+:%s/1 //g
+:%s/ \. / /
+:%s/ \. //
+:%s/0  //
+:%s/1  //
+:%s/ \. 0 //
+:%s/ \. 1 //
+:s/ h-/ h/
+:%s/h√â/h√©/g
+:%s/gaedhlacha/gaelacha/g
+:%s/hin/gle_uncial/g
+:g/w\.zip/d
+:g/Prop+Noun/d
+:g/Foreign+English/d
+:g/Verbal/d
+:g/NStem/d
+:s/tj\./to jest
+:%s/itd\./i tak dalej/g
+:g/Verb/d
+:g/+CU/d
+:g/+CC/d
+:g/+CM/d
+:%s/p3/p1
+:s/p3/p1
+:s/p3/p2
+:s/sg/pl
+:%s/"f"/"mf"
+:g/3P/d
+:%s/+/ /
+:%s/\+/ /
+:%s/+CU//
+:%s/+CM//
+:%s/+CC//
+:%s/\+CC//
+:%s/<br\/>/ /g
+:%s/&#160;/ /g
+:w!
+:%s/brownCluster/brown-redone.txt
+:%s/brownCluster/
 
 # Search String History (newest to oldest):
-? about='http:\/\/
-?/Unknown f
-? broken
-? xmp$
-? tr_TR
-?/screenshot_20170928-182245.png
-?/screenshot_20170926-172758.png
-?/screenshot_20170926-145531.png
-?/screenshot_20170926-145455.png
-?/screenshot_20170923-095355.png
-?/screenshot_20170920-173414.png
-?/screenshot_20170920-172135.png
-?/screenshot_20170920-155246.png
-?/screenshot_20170915-001559.png
-?/screenshot_20170909-003107.png
-?/screenshot_20170908-001805.png
-?/screenshot_20170905-092528.png
-?/screenshot_20170905-092517.png
-??screenshot_20170905-092517.png
-?/screenshot_20170819-214157.png
-?/tot
+?/>>>
+?/<<<
+??>>>
+?/'
+? _e$
+?/web
+?/N
+?/m_type
+?/m_type = 
+?/\.
+?/amach a
+?/agam
+??a. le
+??a. ke
+?/chompar√°id
+?/go raibh
+?/an-
+?/osg
+?  $
+? 2 
 ?? 
 ? Short
 ? short
 ?/Perm
 ?/\[
-?   *
-? \.0,
-? \.,
-? public long 
-? params\.(
-? params\.\(
-? get
-?/maud
-?/hcom
-?/<<<
-?/append
-??hesis
-??volume
-?/English-
-??Cho
-?/Prep
-??Prep
-??Goodf
-??Moses
-?/cart
-?/sanchez06a
-?/Linguistic 
-?/Linguistic
-?/actore
+?/do le
+?  h-
+?/ h-
+? h√â
+? gaedhlacha
+?/h-
+?/ b. 
+?/gaedh
+?/gle_u
+? hin
+? w\.zip
+?/Verb
+? Prop+Noun
+? Foreign+English
+?/tsaighean
+?/phobal
+?/Nf2-7
 
 # Expression History (newest to oldest):
 
@@ -128,138 +120,135 @@ $about='file:\/tmp\/sshts\/
 
 # Registers:
 ""1	LINE	0
-	https://github.com/spro/nalgene/blob/master/node.py
+	>>>>>>> more
 "2	LINE	0
-	http://libgen.io/ads.php?md5=7ECBFA717EC2AAF7E2F20AA3597D1C8C
+	>>>>>>> more
 "3	LINE	0
-	http://libgen.io/ads.php?md5=7ECBFA717EC2AAF7E2F20AA3597D1C8
+	=======
 "4	LINE	0
-	https://www.instagram.com/karolajnax._/
+	<<<<<<< HEAD
 "5	LINE	0
-	</rdf:Description>
+	=======
 "6	LINE	0
-	
+		+	103	19
 "7	LINE	0
-	</rdf:Description>
+		.	103	19
 "8	LINE	0
-	 <ExifTool:Error>Unknown file type</ExifTool:Error>
+		^	104	0
 "9	LINE	0
-	 <ExifTool:ExifToolVersion>10.10</ExifTool:ExifToolVersion>
+		"	17	0
 "q	CHAR	0
 	:::ÄkbÄkbÄkb
 "-	CHAR	0
-	 
+	file:///home/jim/Downloads/Amele.pdf
 
 # File marks:
-'0  345  35  ~/open-tabs
-'1  69  0  ~/open-tabs
-'2  1  1  /tmp/regrab
-'3  27530  0  /tmp/exif.out
-'4  14  79  ~/tmp/bar/tospid
-'5  86  36  /tmp/postimgin
-'6  208502  0  /tmp/exif.out
-'7  131  0  /tmp/asd/tocopy
-'8  12  78  ~/tmp/bar/tospid
-'9  1  35  /tmp/postimgin
+'0  1  0  ~/.viminfo
+'1  373  11  ~/.viminfo
+'2  1  26  ~/Playing/ClarinStudioKaldi/path.sh
+'3  2536  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+'4  26  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+'5  16  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+'6  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+'7  25  10  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+'8  8  86  /tmp/amele
+'9  1  55  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
 
 # Jumplist (newest first):
--'  345  35  ~/open-tabs
+-'  1  0  ~/.viminfo
+-'  373  11  ~/.viminfo
+-'  1646  1  ~/.viminfo
+-'  372  11  ~/.viminfo
+-'  966  0  ~/.viminfo
+-'  1118  0  ~/.viminfo
+-'  831  1  ~/.viminfo
+-'  625  0  ~/.viminfo
+-'  621  1  ~/.viminfo
+-'  547  0  ~/.viminfo
+-'  254  0  ~/.viminfo
+-'  143  0  ~/.viminfo
+-'  137  0  ~/.viminfo
+-'  120  1  ~/.viminfo
+-'  89  0  ~/.viminfo
+-'  59  0  ~/.viminfo
+-'  1  26  ~/Playing/ClarinStudioKaldi/path.sh
+-'  6  0  ~/Playing/ClarinStudioKaldi/path.sh
+-'  2536  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+-'  18  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+-'  1  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+-'  26  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+-'  1  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+-'  16  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+-'  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+-'  25  10  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+-'  8  86  /tmp/amele
+-'  1  0  /tmp/amele
+-'  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+-'  31  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+-'  10  6  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  28  6  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  13  7  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/tmppp
+-'  9  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  1  0  ~/Playing/language-resources/ga/phonemes.txt
+-'  22  6  ~/Playing/language-resources/ga/phonemes.txt
+-'  67  0  /tmp/phones
+-'  68  0  /tmp/phones
+-'  1  0  /tmp/phones
+-'  8  5  ~/Playing/language-resources/ga/phonemes.txt
+-'  30  10  ~/Playing/language-resources/ga/phonemes.txt
+-'  71  2  ~/Playing/language-resources/ga/phonemes.txt
+-'  1  26  /tmp/lhasa-0.3.1/extr/thing
+-'  110  0  ~/open-tabs
 -'  1  0  ~/open-tabs
--'  69  0  ~/open-tabs
--'  1  1  /tmp/regrab
--'  27530  0  /tmp/exif.out
--'  1  0  /tmp/exif.out
--'  14  79  ~/tmp/bar/tospid
+-'  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/q8.c
+-'  47  0  /tmp/lhasa-0.3.1/extr/orig.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/orig.cc
+-'  56  20  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  58  8  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  16  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  26  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  1  1  /tmp/lhasa-0.3.1/extr/gram
+-'  34  12  /tmp/lhasa-0.3.1/extr/gram
+-'  51  24  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  30  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  31  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  61  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  66  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  15  185  ~/tmp/bar/tospid
 -'  1  0  ~/tmp/bar/tospid
--'  86  36  /tmp/postimgin
--'  1  0  /tmp/postimgin
--'  208502  0  /tmp/exif.out
--'  208150  0  /tmp/exif.out
--'  131  0  /tmp/asd/tocopy
--'  1  0  /tmp/asd/tocopy
--'  12  78  ~/tmp/bar/tospid
--'  571  77  /tmp/oops
--'  1  0  /tmp/oops
--'  10  77  ~/tmp/bar/tospid
--'  8  77  ~/tmp/bar/tospid
--'  6  78  ~/tmp/bar/tospid
--'  99  35  /tmp/postimgin
--'  4  77  ~/tmp/bar/tospid
--'  2  79  ~/tmp/bar/tospid
--'  51116  0  /tmp/exif.out
--'  50764  0  /tmp/exif.out
--'  1085  0  /tmp/postimgin
--'  2  0  ~/tmp/sourceme
--'  43  0  ~/tmp/sourceme
--'  1  0  ~/tmp/sourceme
--'  363271  2  /tmp/exif.out
--'  13  0  ~/Playing/wolne-lektury-audio-corpus/icuplay/build.sbt
--'  1  0  ~/Playing/wolne-lektury-audio-corpus/icuplay/build.sbt
--'  49  0  ~/tmp/bar/dddduop
--'  1  0  ~/tmp/bar/dddduop
--'  333  0  ~/tmp/bar/duptmp2
--'  43  0  ~/tmp/bar/duptmp2
--'  1  0  ~/tmp/bar/duptmp2
--'  1  91  ~/tmp/bar/sptmp/inp
--'  2  136  ~/tmp/bar/sptmp/spp
--'  1  0  ~/tmp/bar/sptmp/spp
--'  1  0  ~/Pictures/foo/spp
--'  13  2  ~/practice/boost-upper.cc
--'  4  0  ~/practice/boost-upper.cc
--'  1  0  ~/practice/boost-upper.cc
--'  1990  0  ~/tmp/bar/sptmp/inp
--'  1949  0  ~/tmp/bar/sptmp/inp
--'  62  0  ~/tmp/bar/tmpdupck
--'  1  0  ~/tmp/bar/tmpdupck
--'  9  18  ~/tmp/check-size.pl
--'  43  2  ~/tmp/check-size.pl
--'  1  0  ~/tmp/check-size.pl
--'  7050  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  1  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  1  0  /tmp/tobedonebhc.f
--'  6832  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  6811  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  6810  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  6515  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  6325  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  6314  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  6295  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  5701  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  4953  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  4849  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  444  0  /tmp/tobedonebhc.f
--'  4518  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  1  0  /tmp/tobedonebhc
--'  3134  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  3302  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  3008  0  ~/tmp/sync/bhashc-20171019-2.tsv
--'  2238  0  ~/tmp/bhashc-20171019-1.tsv
--'  2197  0  ~/tmp/bhashc-20171019-1.tsv
--'  1  0  ~/tmp/bhashc-20171019-1.tsv
--'  323  0  ~/tmp/bar/duptmp2
--'  202  0  ~/tmp/bar/duptmp2
--'  7  0  ~/tmp/bar/duptmp2
--'  1279  0  ~/tmp/bar/fash-rdf-links
--'  1  0  ~/tmp/bar/fash-rdf-links
--'  993  0  /tmp/link
--'  1  0  /tmp/link
--'  993  0  /tmp/drilink
--'  1  0  /tmp/drilink
--'  102  0  ~/tmp/bar/archdup
--'  100  0  ~/tmp/bar/archdup
--'  1  0  ~/tmp/bar/archdup
--'  1636  0  /tmp/imgurtmp
--'  1  0  /tmp/imgurtmp
--'  6  59  /tmp/files
--'  1  0  /tmp/files
--'  3  66  ~/tmp/bar/imgur-gals-ia
--'  1  0  ~/tmp/bar/imgur-gals-ia
--'  3  24  ~/tmp/bar/imgur-gals
--'  1  0  ~/tmp/bar/imgur-gals
--'  16  230  ~/tmp/bar/gal1
--'  1  0  ~/tmp/bar/gal1
--'  77  57  /tmp/inpp
--'  1  0  /tmp/inpp
+-'  43  10  /tmp/libabw/src/lib/ABWZlibStream.h
+-'  1  0  /tmp/libabw/src/lib/ABWZlibStream.h
+-'  34  81  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  1  0  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  33  77  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  54  0  /tmp/pcwplore-0.3.0/bin/app.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/bin/app.cxx
+-'  42  20  /tmp/pcwplore-0.3.0/bin/app.cxx
+-'  66  0  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_spc.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_spc.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_mvg.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_mvg.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_mda.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_mda.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_logo.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_logo.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+-'  25  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+-'  52  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  19  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+-'  30  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
 
 # Bar lines, copied verbatim:
 |1,4
@@ -553,694 +542,268 @@ $about='file:\/tmp\/sshts\/
 
 # History of marks within files (newest to oldest):
 
-> ~/open-tabs
-	"	345	35
-	^	345	36
-	.	345	28
-	+	68	67
-	+	87	59
-	+	97	0
-	+	110	54
-	+	121	0
-	+	119	0
-	+	346	0
-	+	180	74
-	+	128	0
-	+	249	36
-	+	257	52
-	+	287	51
-	+	288	54
-	+	290	32
-	+	303	41
-	+	322	43
-	+	344	0
-	+	345	28
-
-> ~/crash-scratch
-	"	41	0
-	^	41	1
-	.	41	0
-	+	1	15
-	+	41	0
-
-> ~/.cfg/COMMIT_EDITMSG
+> ~/.viminfo
 	"	1	0
+	.	1647	0
+	+	11	0
+	+	15	0
+	+	21	0
+	+	89	0
+	+	94	0
+	+	111	0
+	+	120	0
+	+	137	0
+	+	143	0
+	+	254	0
+	+	547	0
+	+	621	0
+	+	625	0
+	+	826	0
+	+	831	0
+	+	1118	0
+	+	966	0
+	+	1647	0
 
-> /tmp/regrab
-	"	1	1
-	^	1	2
-	.	1	1
-	+	1	1
+> ~/Playing/ClarinStudioKaldi/path.sh
+	"	1	26
+	^	1	27
+	.	1	26
+	+	1	26
 
-> /tmp/exif.out
-	"	27530	0
-	.	4	0
-	+	4	0
-	+	50764	0
-	+	51116	0
-	+	208150	0
-	+	208502	0
-	+	4	0
+> /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+	"	2536	0
+	^	68	14
+	.	68	13
+	+	18	0
+	+	18	15
+	+	25	0
+	+	17	0
+	+	24	0
+	+	25	0
+	+	69	0
+	+	68	13
 
-> ~/tmp/bar/tospid
-	"	14	79
-	^	14	80
-	.	14	40
-	+	1	79
-	+	2	40
-	+	4	33
-	+	6	77
-	+	8	74
-	+	10	37
-	+	12	37
-	+	14	40
+> ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+	"	26	0
+	.	26	0
+	+	26	0
 
-> /tmp/postimgin
-	"	86	36
-	^	86	37
-	.	87	0
-	+	977	0
-	+	978	0
-	+	979	0
-	+	980	0
-	+	981	0
-	+	982	0
-	+	983	0
-	+	984	0
-	+	985	0
-	+	986	0
-	+	987	0
-	+	988	0
-	+	989	0
-	+	990	0
-	+	991	0
-	+	992	0
-	+	993	0
-	+	994	0
-	+	995	0
-	+	996	0
-	+	997	0
-	+	998	0
-	+	999	0
-	+	1000	0
-	+	1001	0
-	+	1002	0
-	+	1003	0
-	+	1004	0
-	+	1005	0
-	+	1006	0
-	+	1007	0
-	+	1008	0
-	+	1009	0
-	+	1010	0
-	+	1011	0
-	+	1012	0
-	+	1013	0
-	+	1014	0
-	+	1015	0
-	+	1016	0
-	+	1017	0
-	+	1018	0
-	+	1019	0
-	+	1020	0
-	+	1021	0
-	+	1022	0
-	+	1023	0
-	+	1024	0
-	+	1025	0
-	+	1026	0
-	+	1027	0
-	+	1028	0
-	+	1029	0
-	+	1030	0
-	+	1031	0
-	+	1032	0
-	+	1033	0
-	+	1034	0
-	+	1035	0
-	+	1036	0
-	+	1037	0
-	+	1038	0
-	+	1039	0
-	+	1040	0
-	+	1041	0
-	+	1042	0
-	+	1043	0
-	+	1044	0
-	+	1045	0
-	+	1046	0
-	+	1047	0
-	+	1048	0
-	+	1049	0
-	+	1050	0
-	+	1051	0
-	+	1052	0
-	+	1053	0
-	+	1054	0
-	+	1055	0
-	+	1056	0
-	+	1057	0
-	+	1058	0
-	+	1059	0
-	+	1060	0
-	+	1061	0
-	+	1062	0
-	+	1063	0
-	+	1064	0
-	+	1065	0
-	+	1066	0
-	+	1067	0
-	+	1	36
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+	"	16	0
+	.	28	0
 	+	1	0
-	+	1	36
-	+	1	36
-	+	1	36
-	+	1	36
-	+	1	36
-	+	1	37
-	+	87	0
+	+	28	0
 
-> /tmp/asd/tocopy
-	"	131	0
-	.	131	0
-	+	131	0
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+	"	26	0
+	.	26	0
+	+	26	0
 
-> /tmp/oops
-	"	571	77
-	^	571	78
-	.	572	0
-	+	572	0
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+	"	25	10
+	^	1	56
+	.	1	2
+	+	1	2
 
-> ~/tmp/sourceme
-	"	2	0
+> /tmp/amele
+	"	8	86
+	^	8	87
+	.	8	0
+	+	8	0
 
-> ~/Playing/wolne-lektury-audio-corpus/icuplay/build.sbt
-	"	13	0
-	^	13	55
-	.	13	0
-	+	13	1
-	+	3	34
-	+	1	16
-	+	13	0
-	+	13	25
-	+	13	0
-	+	13	0
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+	"	26	0
+	^	31	1
+	.	31	0
+	+	31	0
+	+	1	0
+	+	34	0
+	+	31	0
+	+	31	0
+	+	32	0
+	+	31	0
 
-> ~/tmp/bar/dddduop
-	"	49	0
-	.	298	0
-	+	298	0
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+	"	10	6
+	^	10	7
+	.	10	6
+	+	1	0
+	+	32	0
+	+	10	6
+	+	10	5
+	+	9	0
+	+	13	7
+	+	28	6
+	+	9	0
+	+	10	6
 
-> ~/tmp/bar/duptmp2
-	"	333	0
-	.	350	0
-	+	7	0
-	+	350	0
-
-> ~/tmp/bar/sptmp/inp
-	"	1	91
-	^	1	92
-	.	1	88
-	+	1991	0
-	+	1	88
-
-> ~/tmp/bar/sptmp/spp
-	"	2	136
-	^	2	137
-	.	3	0
-	+	3	0
-
-> ~/Pictures/foo/spp
-	"	1	0
-
-> ~/practice/boost-upper.cc
-	"	13	2
-	^	13	45
-	.	12	0
-	+	16	0
-	+	12	62
-	+	13	39
-	+	12	67
-	+	13	44
-	+	12	0
-
-> ~/tmp/bar/tmpdupck
-	"	62	0
-	.	62	0
-	+	62	0
-
-> ~/tmp/check-size.pl
-	"	9	18
-	^	9	19
-	.	9	18
-	+	9	18
-
-> ~/tmp/sync/bhashc-20171019-2.tsv
-	"	7050	0
-	.	7051	0
-	+	3009	0
-	+	3302	0
-	+	3302	0
-	+	4519	0
-	+	4850	0
-	+	4954	0
-	+	5702	0
-	+	6296	0
-	+	6315	0
-	+	6326	0
-	+	6516	0
-	+	6811	0
-	+	6812	0
-	+	6833	0
-	+	7051	0
-
-> /tmp/tobedonebhc.f
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/tmppp
 	"	1	0
 	.	1	0
 	+	1	0
 
-> /tmp/tobedonebhc
+> ~/Playing/language-resources/ga/phonemes.txt
 	"	1	0
-
-> ~/tmp/bhashc-20171019-1.tsv
-	"	2238	0
-	.	2239	0
-	+	2239	0
-
-> ~/tmp/bar/fash-rdf-links
-	"	1279	0
-	.	1280	0
-	+	1280	0
-
-> /tmp/link
-	"	993	0
-	^	993	0
-	.	992	37
-	+	992	37
-
-> /tmp/drilink
-	"	993	0
-	^	993	0
-	.	992	64
-	+	992	64
-
-> ~/tmp/bar/archdup
-	"	102	0
-	.	102	0
-	+	102	0
-
-> /tmp/imgurtmp
-	"	1636	0
-	^	1636	0
-	.	1635	7
-	+	1635	7
-
-> /tmp/files
-	"	6	59
-	^	6	60
-	.	7	0
-	+	7	0
-
-> ~/tmp/bar/imgur-gals-ia
-	"	3	66
-	^	3	67
-	.	3	41
-	+	3	41
-
-> ~/tmp/bar/imgur-gals
-	"	3	24
-	^	3	25
-	.	3	0
-	+	1	0
-	+	3	0
-
-> ~/tmp/bar/gal1
-	"	16	230
-	^	16	231
-	.	16	146
-	+	16	146
-
-> /tmp/inpp
-	"	77	57
-	^	77	58
-	.	77	0
-	+	77	0
-
-> ~/practice/word-average.cc
-	"	33	37
-	^	33	38
-	.	33	37
-	+	34	0
-	+	10	1
-	+	6	19
-	+	29	1
-	+	21	1
-	+	17	15
-	+	18	23
-	+	20	10
-	+	25	2
-	+	24	16
-	+	26	40
-	+	28	2
-	+	27	17
-	+	23	29
-	+	26	28
-	+	34	0
-	+	31	0
-	+	32	0
-	+	33	57
-	+	26	21
-	+	3	17
-	+	31	69
-	+	32	66
-	+	30	36
-	+	33	32
-	+	30	18
+	^	22	8
+	.	22	6
+	+	1	2
+	+	2	4
+	+	1	4
 	+	5	19
-	+	30	45
-	+	5	0
-	+	30	68
-	+	31	73
-	+	4	15
-	+	30	6
-	+	31	0
-	+	33	37
-
-> ~/practice/words.txt
-	"	1	75
-	^	1	76
-	.	1	42
-	+	1	42
-
-> ~/practice/max-subarray.cc
-	"	18	43
-	^	18	44
-	.	18	43
-	+	14	0
-	+	7	0
-	+	1	16
-	+	1	14
-	+	4	0
-	+	6	29
-	+	7	4
-	+	6	32
-	+	10	14
-	+	2	19
-	+	11	12
-	+	10	15
-	+	13	12
-	+	22	0
-	+	22	56
-	+	22	39
-	+	3	18
-	+	22	56
-	+	6	28
-	+	5	25
-	+	6	39
-	+	22	5
-	+	22	40
-	+	9	32
-	+	10	38
-	+	18	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	19	22
-	+	21	30
-	+	18	43
-
-> ~/practice/remove-if.cc
-	"	1	0
-	^	12	24
-	.	12	23
-	+	13	0
-	+	11	1
-	+	10	23
-	+	12	23
-
-> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv
-	"	37	7
-	^	37	8
-	.	37	8
-	+	37	8
-
-> ~/practice/linked-list-print-middle.cc
-	"	73	11
-	^	73	12
-	.	73	11
-	+	19	0
-	+	18	19
-	+	13	14
-	+	18	18
-	+	19	1
-	+	49	0
-	+	48	1
-	+	46	2
-	+	44	2
-	+	43	26
-	+	45	22
-	+	47	29
-	+	80	0
-	+	78	1
-	+	77	21
-	+	79	9
-	+	51	19
-	+	58	0
-	+	53	0
-	+	51	33
-	+	56	1
-	+	54	30
-	+	56	2
-	+	57	9
-	+	76	19
-	+	55	21
-	+	4	0
-	+	2	3
-	+	42	8
-	+	13	45
-	+	37	36
-	+	51	35
-	+	69	10
-	+	2	0
-	+	3	0
-	+	1	49
-	+	2	1
-	+	2	90
-	+	3	47
-	+	35	0
-	+	21	31
-	+	27	7
-	+	10	12
-	+	74	27
-	+	75	9
-	+	60	33
-	+	67	0
-	+	63	30
-	+	66	1
-	+	65	11
-	+	63	26
-	+	21	30
-	+	27	4
-	+	26	0
-	+	27	5
-	+	26	10
-	+	27	17
-	+	34	1
-	+	30	1
-	+	26	15
-	+	32	2
-	+	31	18
-	+	33	21
-	+	75	11
-	+	21	25
-	+	27	3
-	+	29	21
-	+	75	11
-	+	26	4
-	+	73	11
-
-> ~/Playing/harald_kaldi_stuff/abair_scripts/convertAbairXmlToCorpusfile.py
-	"	29	23
-	^	26	41
-	.	29	23
-	+	26	40
-	+	29	23
-
-> ~/IdeaProjects/dictionaryconverter/.idea/copyright/profiles_settings.xml
-	"	2	22
-	^	2	23
-	.	2	22
-	+	2	22
-
-> ~/IdeaProjects/dictionaryconverter/.idea/copyright/me.xml
-	"	3	112
-	^	3	113
-	.	3	112
-	+	6	34
-	+	3	112
-
-> ~/IdeaProjects/dictionaryconverter/.idea/copyright/tcd.xml
-	"	3	355
-	.	3	355
-	+	3	355
-
-> /tmp/tst.c
-	"	2	32
-	^	2	33
-	.	2	32
-	+	15	37
-	+	16	8
-	+	1	16
-	+	2	32
-
-> /tmp/ennat
-	"	1	1143
-	^	1	1144
-	.	1	1100
-	+	1	1100
-
-> /tmp/docktst/Dockerfile
-	"	4	22
-	^	4	23
-	.	4	23
-	+	13	38
-	+	14	20
-	+	16	8
-	+	9	104
-	+	13	21
-	+	7	35
-	+	13	0
-	+	7	65
-	+	7	0
-	+	4	52
-	+	7	0
-	+	5	0
-	+	6	53
-	+	9	58
-	+	18	24
-	+	14	41
+	+	10	0
+	+	5	16
 	+	9	0
-	+	12	26
-	+	10	25
-	+	11	22
-	+	4	23
-
-> ~/Playing/msf-asr/sphtr/etc/sphinx_train.cfg
-	"	99	0
-
-> ~/Playing/msf-asr/raw-text/MSF_chapter_9.txt
-	"	79	760
-	^	83	970
-	.	79	760
-	+	83	965
-	+	3	225
-	+	5	988
-	+	19	111
-	+	47	46
-	+	65	244
-	+	69	1486
-	+	75	514
-	+	79	760
-
-> ~/Playing/msf-asr/scripts/normalisations.tsv
-	"	415	4
-
-> ~/spoken-like.edit
-	"	252	0
-	.	252	0
-	+	1	0
-	+	2	0
-	+	4	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	21	0
-	+	22	0
-	+	24	0
-	+	26	0
-	+	27	0
-	+	28	0
-	+	29	0
-	+	30	0
-	+	35	0
-	+	39	0
+	+	5	10
+	+	7	0
+	+	5	2
+	+	6	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	9	0
+	+	10	4
+	+	11	3
+	+	12	2
+	+	13	4
+	+	32	2
+	+	25	3
+	+	26	4
+	+	27	2
+	+	29	3
+	+	31	5
+	+	32	4
+	+	59	2
+	+	42	2
+	+	43	3
+	+	44	2
+	+	45	3
+	+	48	2
+	+	49	3
+	+	50	2
+	+	51	4
+	+	56	6
+	+	57	4
+	+	58	3
+	+	59	4
+	+	62	1
+	+	68	0
+	+	60	3
+	+	61	4
+	+	62	4
+	+	63	3
+	+	64	3
+	+	65	5
+	+	66	4
+	+	67	3
+	+	71	1
+	+	69	5
+	+	70	3
+	+	71	3
+	+	72	0
+	+	21	2
+	+	41	2
+	+	53	2
 	+	41	0
-	+	42	0
-	+	45	0
-	+	46	0
-	+	47	0
-	+	48	0
-	+	66	0
-	+	82	0
-	+	83	0
-	+	86	24
-	+	87	0
-	+	88	0
-	+	90	0
-	+	96	0
-	+	98	0
-	+	102	0
-	+	103	0
-	+	107	0
-	+	109	22
-	+	114	0
-	+	115	0
-	+	118	0
-	+	120	23
-	+	131	0
-	+	132	0
-	+	133	0
-	+	139	0
-	+	140	0
-	+	145	0
-	+	154	0
-	+	153	0
-	+	155	0
-	+	157	0
-	+	160	0
-	+	161	0
-	+	162	0
-	+	166	0
-	+	167	0
-	+	168	0
-	+	169	0
-	+	170	0
-	+	172	0
-	+	174	0
-	+	179	0
-	+	176	0
-	+	189	0
-	+	190	0
-	+	199	0
-	+	209	0
-	+	211	0
-	+	215	0
-	+	223	0
-	+	222	0
-	+	223	0
-	+	227	0
-	+	230	0
-	+	232	0
-	+	234	0
-	+	237	3
-	+	240	0
-	+	250	0
-	+	237	0
-	+	252	0
+	+	52	0
+	+	53	0
+	+	23	0
+	+	30	10
+	+	8	5
+	+	36	8
+	+	4	3
+	+	35	7
+	+	3	3
+	+	40	0
+	+	38	0
+	+	28	11
+	+	33	4
+	+	37	10
+	+	47	8
+	+	55	3
+	+	46	9
+	+	54	6
+	+	22	6
 
-> ~/spoken-like.uniq
+> /tmp/phones
+	"	67	0
+	.	68	0
+	+	68	3
+	+	68	0
+
+> /tmp/lhasa-0.3.1/extr/thing
+	"	1	26
+	^	1	27
+	.	1	26
+	+	1	26
+
+> ~/open-tabs
+	"	110	0
+	^	110	0
+	.	109	45
+	+	109	45
+
+> /tmp/lhasa-0.3.1/extr/q8.cc
+	"	53	18
+	^	56	21
+	.	56	20
+	+	51	37
+	+	53	18
+	+	56	32
+	+	57	29
+	+	58	8
+	+	56	20
+
+> /tmp/lhasa-0.3.1/extr/q8.c
 	"	1	0
 
-> /tmp/scratch
-	"	18	18
-	^	18	26
-	.	18	18
-	+	18	23
-	+	1	0
-	+	18	25
-	+	1	0
+> /tmp/lhasa-0.3.1/extr/orig.cc
+	"	47	0
+	^	62	11
+	.	1	0
+	+	62	0
+	+	61	0
+	+	60	0
+	+	59	0
+	+	58	0
+	+	57	0
+	+	56	0
+	+	55	0
+	+	54	0
+	+	53	0
+	+	52	0
+	+	51	0
+	+	50	0
+	+	49	0
+	+	48	0
+	+	47	0
+	+	46	0
+	+	45	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	41	0
+	+	40	0
+	+	39	0
+	+	38	0
+	+	37	0
+	+	36	0
+	+	35	0
+	+	34	0
+	+	33	0
+	+	32	0
+	+	31	0
+	+	30	0
+	+	29	0
+	+	28	0
+	+	27	0
+	+	26	0
+	+	25	0
+	+	24	0
+	+	23	0
+	+	22	0
+	+	21	0
+	+	20	0
+	+	19	0
 	+	18	0
 	+	17	0
 	+	16	0
@@ -1258,341 +821,168 @@ $about='file:\/tmp\/sshts\/
 	+	4	0
 	+	3	0
 	+	2	0
-	+	18	18
+	+	1	0
 
-> ~/Playing/jklaat/src/ie/tcd/slscs/itut/jklaat/ParameterFile.java
-	"	271	4
-	.	76	0
+> /tmp/lhasa-0.3.1/extr/thing.cc
+	"	16	0
+	^	51	25
+	.	51	24
+	+	67	0
+	+	66	0
+	+	61	0
+	+	61	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	21	0
+	+	22	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	31	0
+	+	32	0
+	+	33	0
+	+	34	0
 	+	35	0
 	+	36	0
-	+	76	0
-
-> ~/Playing/jklaat/bhlah
-	"	41	0
-	^	41	0
-	.	40	77
-	+	1	77
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	77
-	+	40	77
-
-> /tmp/klatt80/params.txt
-	"	39	40
-	^	39	41
-	.	39	39
-	+	39	39
-
-> ~/Playing/jklaat/pom.xml
-	"	12	21
-	^	12	22
-	.	8	21
-	+	8	21
-
-> ~/Playing/sox/src/CMakeLists.txt
-	"	111	4
-	^	111	5
-	.	111	4
-	+	111	4
-
-> ~/Playing/sox/src/Makefile.am
-	"	124	76
-	^	124	77
-	.	124	76
-	+	124	76
-
-> ~/Playing/sox/src/nsp.c
-	"	1	0
-
-> ~/Playing/sox/src/formats.h
-	"	38	9
-	^	39	12
-	.	39	11
+	+	37	0
 	+	38	0
-	+	39	11
-
-> ~/Playing/sox/src/formats.c
-	"	32	0
-	^	70	39
-	.	70	39
-	+	70	39
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter3.tex
-	"	334	0
-	.	298	0
-	+	684	0
-	+	688	0
-	+	736	0
-	+	738	0
-	+	298	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter6.tex
-	"	81	0
-	.	82	0
-	+	7	0
-	+	82	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter5.tex
-	"	30	0
-	.	31	0
-	+	5	0
-	+	11	0
-	+	16	0
-	+	31	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter4.tex
-	"	14	0
-	.	14	0
-	+	6	0
-	+	6	0
-	+	14	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/refs.bib
-	"	1413	0
-	^	1409	30
-	.	1414	0
-	+	1265	0
-	+	1267	0
-	+	1255	13
-	+	1256	15
-	+	1254	18
-	+	1281	1
-	+	1275	17
-	+	1276	65
-	+	1412	0
-	+	1412	0
-	+	1412	0
-	+	1295	0
-	+	1291	1
-	+	1284	74
-	+	1285	113
-	+	1285	13
-	+	1310	0
-	+	1306	1
-	+	1299	84
-	+	1298	10
-	+	1326	0
-	+	1319	0
-	+	1312	62
-	+	1313	13
-	+	1314	17
-	+	1315	15
-	+	1314	63
-	+	1317	28
-	+	1324	29
-	+	1323	64
-	+	1336	0
-	+	1335	4
-	+	1331	0
-	+	1330	88
-	+	1329	12
-	+	1320	1
-	+	1343	0
-	+	1340	15
-	+	1339	114
-	+	1338	80
-	+	1339	0
-	+	1338	79
-	+	1342	29
-	+	1341	97
-	+	1341	31
-	+	1323	30
-	+	1314	73
-	+	1323	10
-	+	688	116
-	+	1350	0
-	+	1346	13
-	+	1346	106
-	+	1347	15
-	+	1323	10
-	+	1344	34
-	+	971	95
-	+	1360	1
-	+	1358	4
-	+	1354	16
-	+	1354	114
-	+	1352	13
-	+	1371	0
-	+	1365	10
-	+	1362	0
-	+	1366	14
-	+	1368	20
-	+	1364	24
-	+	1364	54
-	+	1365	0
-	+	1365	0
-	+	1365	0
-	+	1379	0
-	+	1378	0
-	+	1372	74
-	+	1373	12
-	+	1390	0
-	+	1389	2
-	+	1385	76
-	+	1390	0
-	+	526	0
-	+	520	0
-	+	1391	24
-	+	1392	17
-	+	1394	63
-	+	1395	12
-	+	1393	11
-	+	1403	0
-	+	1398	73
-	+	1400	0
-	+	1397	1
-	+	1402	0
-	+	1400	15
-	+	1386	20
-	+	1411	0
-	+	1407	14
-	+	1407	104
-	+	1406	14
-	+	1409	29
-	+	1372	0
-	+	1414	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
-	"	297	0
-	.	297	0
-	+	297	0
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/.git/MERGE_MSG
-	"	1	0
-
-> ~/Playing/apertium-en-ga/apertium-en-ga.en-ga.t1x
-	"	3642	14
-	.	1442	0
-	+	4	0
-	+	32	0
-	+	36	0
-	+	99	0
-	+	110	0
-	+	709	0
-	+	712	0
-	+	721	0
-	+	742	0
-	+	743	0
-	+	761	0
-	+	835	0
-	+	839	0
-	+	844	0
-	+	851	0
-	+	852	0
-	+	857	0
-	+	867	0
-	+	868	0
-	+	872	0
-	+	1028	0
-	+	1032	0
-	+	1438	0
-	+	1442	0
-
-> ~/Playing/ainm-ner-corpus/build.sbt
-	"	6	0
-	.	6	0
-	+	5	0
-	+	6	0
-
-> ~/IdeaProjects/dictionaryconverter/noun.dix
-	"	813773	15
-	^	6	19
-	.	6	18
-	+	6	18
-
-> ~/IdeaProjects/dictionaryconverter/example/en-ga/ga.attribs.txt
-	"	2	3
-	^	2	4
-	.	2	3
-	+	2	3
-
-> ~/IdeaProjects/dictionaryconverter/.git/COMMIT_EDITMSG
-	"	1	0
-
-> ~/Playing/wolne-lektury-audio-corpus/norm-text.pl
-	"	1	8
-	^	67	12
-	.	67	11
-	+	68	28
-	+	67	11
-
-> ~/Playing/wolne-lektury-audio-corpus/normalisations.tsv
-	"	92	15
-	^	92	16
-	.	92	15
-	+	91	15
-	+	92	15
-
-> ~/Playing/wolne-lektury-audio-corpus/text/out.srt
-	"	1	0
-
-> ~/Playing/wolne-lektury-audio-corpus/text/tonorm
-	"	84	0
-	.	85	0
-	+	85	0
-
-> ~/Playing/msf-asr/scripts/normalise.pl
-	"	29	0
-	.	29	0
-	+	29	0
-
-> ~/Playing/msf-asr/pron/munster.tsv
-	"	60	0
-	^	1384	24
-	.	60	0
-	+	64	0
-	+	1156	9
-	+	1342	19
-	+	1066	8
-	+	52	8
-	+	53	8
-	+	54	9
-	+	1592	2
-	+	1384	22
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	49	0
+	+	52	5
+	+	52	5
+	+	53	0
+	+	54	0
+	+	55	0
+	+	56	0
+	+	57	0
+	+	58	0
+	+	59	0
 	+	60	0
+	+	61	0
+	+	31	0
+	+	30	0
+	+	48	0
+	+	48	0
+	+	22	0
+	+	27	6
+	+	19	7
+	+	20	36
+	+	48	0
+	+	47	33
+	+	20	36
+	+	49	63
+	+	52	4
+	+	53	0
+	+	51	24
 
-> ~/Playing/msf-asr/mickyd/audio2srt.py
-	"	17	0
-	^	104	0
-	.	103	19
-	+	103	19
+> /tmp/lhasa-0.3.1/extr/gram
+	"	1	1
+	^	34	13
+	.	34	0
+	+	34	0
+
+> ~/tmp/bar/tospid
+	"	15	185
+	^	15	186
+	.	15	185
+	+	15	185
+
+> /tmp/libabw/src/lib/ABWZlibStream.h
+	"	43	10
+	^	43	11
+	.	43	10
+	+	43	10
+
+> /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+	"	34	81
+	^	34	82
+	.	34	81
+	+	33	77
+	+	34	81
+
+> /tmp/pcwplore-0.3.0/bin/app.cxx
+	"	54	0
+
+> /tmp/pcwplore-0.3.0/imtypes/image_spc.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_mvg.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_mda.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_logo.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+	"	1	0
+
+> ~/Joyce/Boot/joycebt.xml
+	"	2	92
+	^	2	93
+	.	2	92
+	+	2	92
+
+> ~/Playing/sweble-wikitext/pom.xml
+	"	277	9
+	.	176	0
+	+	40	0
+	+	41	0
+	+	152	0
+	+	178	0
+	+	176	0
 
 > ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
 	"	1	0
@@ -1745,3 +1135,532 @@ $about='file:\/tmp\/sshts\/
 	+	279	0
 	+	282	0
 	+	342	0
+
+> ~/Playing/msf-asr/client.pl
+	"	58	0
+	^	58	0
+	.	57	7
+	+	57	7
+
+> ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
+	"	1	49
+	^	1	50
+	.	1	41
+	+	1	16
+	+	3	0
+	+	6	0
+	+	7	0
+	+	9	0
+	+	14	305
+	+	16	0
+	+	23	0
+	+	35	0
+	+	36	0
+	+	41	0
+	+	52	0
+	+	58	0
+	+	75	0
+	+	85	0
+	+	86	0
+	+	87	0
+	+	90	0
+	+	91	0
+	+	98	0
+	+	100	12
+	+	115	0
+	+	123	0
+	+	1	41
+
+> ~/Playing/msf-asr/MSF_chapter_1.txt.norm
+	"	46	0
+	^	42	49
+	.	18	0
+	+	26	91
+	+	26	239
+	+	8	133
+	+	42	48
+	+	8	321
+	+	14	135
+	+	14	571
+	+	16	141
+	+	16	380
+	+	16	657
+	+	18	701
+	+	18	0
+	+	6	0
+	+	24	0
+	+	26	0
+	+	28	0
+	+	30	0
+	+	40	0
+	+	18	0
+
+> ~/Playing/tesseract/scr.sh
+	"	6	85
+	^	6	86
+	.	6	18
+	+	7	23
+	+	2	16
+	+	5	19
+	+	6	18
+
+> ~/Playing/tesseract/training/tesstrain-local.sh
+	"	56	32
+	^	56	33
+	.	56	13
+	+	56	13
+
+> ~/Playing/tesseract/training/tesstrain.sh
+	"	63	0
+	^	63	1
+	.	63	0
+	+	53	0
+	+	54	0
+	+	55	0
+	+	56	43
+	+	60	0
+	+	62	0
+	+	63	0
+	+	56	0
+	+	53	0
+	+	54	0
+	+	60	0
+	+	62	0
+	+	63	0
+
+> ~/Playing/langdata/gle_uncial/desired_characters
+	"	3	0
+	.	3	0
+	+	3	0
+
+> ~/Playing/langdata/gle_uncial/gle_uncial.numbers
+	"	5	3
+	^	5	6
+	.	5	3
+	+	12	7
+	+	10	2
+	+	6	3
+	+	5	3
+
+> ~/Playing/langdata/gle_uncial/gle_uncial.training_text
+	"	1	21
+	.	514	43
+	+	509	45
+	+	510	22
+	+	514	43
+
+> ~/Playing/tesseract/oldtd/chars
+	"	84	0
+	.	81	0
+	+	53	0
+	+	81	0
+
+> ~/Playing/tesseract/training/language-specific.sh
+	"	960	16
+	^	960	17
+	.	960	16
+	+	29	64
+	+	111	20
+	+	135	0
+	+	960	17
+	+	961	0
+	+	960	15
+	+	960	16
+	+	960	16
+
+> ~/Playing/tesseract/txt2im.sh
+	"	2	23
+	^	2	24
+	.	2	23
+	+	6	88
+	+	3	0
+	+	2	23
+
+> ~/Playing/langdata/txt2im.sh
+	"	1	0
+
+> ~/Downloads/foo.sh
+	"	3	229
+	^	3	230
+	.	3	229
+	+	3	229
+
+> ~/Playing/tesseract/runtti.sh
+	"	3	0
+	^	7	0
+	.	6	88
+	+	6	88
+
+> /tmp/fnts
+	"	23	0
+	.	24	0
+	+	24	0
+
+> ~/IdeaProjects/dictionaryconverter/uncov
+	"	1	0
+	.	1	0
+	+	4	0
+	+	8	0
+	+	1	0
+
+> ~/IdeaProjects/dictionaryconverter/noun
+	"	146067	0
+	.	146067	0
+	+	1160074	0
+	+	1063542	0
+	+	1162544	0
+	+	146067	0
+
+> ~/IdeaProjects/dictionaryconverter/build.sbt
+	"	11	22
+	^	11	23
+	.	11	0
+	+	11	0
+
+> ~/IdeaProjects/dictionaryconverter/project/build.properties
+	"	1	0
+
+> ~/Playing/irishfst-1/src/xfst-fix.script
+	"	276	46
+	^	276	47
+	.	276	46
+	+	276	46
+	+	121	41
+	+	120	41
+	+	276	46
+
+> ~/Playing/irishfst-1/src/n-lex-cc.txt
+	"	132	8
+
+> ~/Playing/irishfst-1/src/adj-lex-stems-irreg.txt
+	"	191	11
+	^	191	15
+	.	191	0
+	+	197	18
+	+	199	18
+	+	203	19
+	+	178	18
+	+	179	18
+	+	180	18
+	+	184	19
+	+	185	19
+	+	188	22
+	+	191	0
+
+> ~/IdeaProjects/dictionaryconverter/.git/MERGE_MSG
+	"	1	0
+
+> ~/IdeaProjects/dictionaryconverter/onen
+	"	21	0
+	.	22	0
+	+	22	0
+
+> ~/IdeaProjects/dictionaryconverter/pairs.tsv.1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Playing/irishfst-1/src/pron-lex.txt
+	"	81	23
+	^	81	24
+	.	81	23
+	+	76	24
+	+	81	23
+
+> ~/Playing/wolne-lektury-audio-corpus/text/balzac-komedia-ludzka-male-niedole-pozycia-malzenskiego.txt
+	"	3051	237
+	^	3051	238
+	.	3051	237
+	+	4	0
+	+	3	0
+	+	11	126
+	+	54	17
+	+	70	4
+	+	72	2
+	+	104	3
+	+	106	5
+	+	108	4
+	+	110	5
+	+	112	77
+	+	114	62
+	+	116	69
+	+	118	60
+	+	168	14
+	+	1587	66
+	+	1587	616
+	+	1593	1302
+	+	1593	229
+	+	1593	923
+	+	3039	2
+	+	3041	60
+	+	3043	50
+	+	3041	42
+	+	3047	97
+	+	3043	46
+	+	3049	29
+	+	3045	49
+	+	3043	55
+	+	3047	86
+	+	3043	71
+	+	3049	32
+	+	2255	21
+	+	2263	407
+	+	719	0
+	+	2317	0
+	+	2361	0
+	+	2458	0
+	+	2275	0
+	+	2279	71
+	+	2422	283
+	+	2436	837
+	+	3051	237
+
+> ~/IdeaProjects/dictionaryconverter/scripts/tag-freqs
+	"	95	5
+	.	29	0
+	+	273	0
+	+	273	0
+	+	222	0
+	+	213	0
+	+	209	0
+	+	147	0
+	+	101	0
+	+	1	0
+	+	3	0
+	+	13	0
+	+	16	0
+	+	17	0
+	+	27	0
+	+	101	0
+	+	29	0
+
+> ~/Playing/irishfst-1/prepsout
+	"	13	24
+	.	9	0
+	+	1	0
+	+	13	0
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+
+> /tmp/preps
+	"	3	0
+	^	13	0
+	.	13	0
+	+	13	33
+	+	14	0
+	+	1	0
+	+	6	0
+	+	5	0
+	+	13	0
+
+> ~/Playing/gramadanj/LICENSE
+	"	46	8
+	^	46	9
+	.	47	0
+	+	1	71
+	+	47	0
+
+> ~/Playing/Dissertation/9879472fwnkgtfsztvt/.git/MERGE_MSG
+	"	1	0
+
+> ~/Playing/ainm-ner-corpus/ner-plain.txt
+	"	2336	0
+	^	2336	0
+	.	1588	358
+	+	30	219
+	+	38	69
+	+	103	134
+	+	240	35
+	+	325	318
+	+	326	0
+	+	326	0
+	+	416	150
+	+	482	216
+	+	488	186
+	+	532	309
+	+	533	0
+	+	533	75
+	+	555	105
+	+	561	97
+	+	562	0
+	+	562	0
+	+	564	177
+	+	565	0
+	+	565	0
+	+	600	101
+	+	600	197
+	+	601	3
+	+	604	0
+	+	601	150
+	+	602	153
+	+	612	12
+	+	612	10
+	+	616	76
+	+	616	76
+	+	616	76
+	+	616	182
+	+	482	213
+	+	768	16
+	+	829	30
+	+	866	34
+	+	867	74
+	+	871	56
+	+	873	24
+	+	875	42
+	+	875	230
+	+	1053	77
+	+	1054	0
+	+	1054	0
+	+	1080	79
+	+	1081	0
+	+	1081	0
+	+	1124	54
+	+	1134	130
+	+	1260	96
+	+	1306	19
+	+	1386	94
+	+	1419	173
+	+	1420	43
+	+	1420	220
+	+	1420	40
+	+	1420	40
+	+	1420	217
+	+	1440	18
+	+	1460	141
+	+	1461	0
+	+	1461	0
+	+	1460	0
+	+	1460	0
+	+	1459	110
+	+	1460	65
+	+	1466	25
+	+	1466	25
+	+	1467	88
+	+	1469	23
+	+	1471	85
+	+	1471	83
+	+	1473	99
+	+	1473	97
+	+	1588	359
+	+	1589	0
+	+	1588	358
+
+> ~/Playing/ainm-ner-corpus/.git/MERGE_MSG
+	"	1	0
+
+> /usr/local/share/lttoolbox/dix.dtd
+	"	122	22
+	.	122	0
+	+	122	0
+
+> ~/Playing/apertium-en-es/configure.ac
+	"	7	42
+	^	7	43
+	.	7	42
+	+	7	42
+
+> ~/Playing/ruLearn/ruLearn
+	"	26	16
+	^	26	17
+	.	26	16
+	+	26	16
+
+> ~/Playing/ruLearn/apertium-patch/test/testApertiumPatchAutoconf.sh
+	"	9	22
+	^	9	23
+	.	9	22
+	+	9	22
+
+> ~/Playing/irishfst-1/individual-tags.f
+	"	2	0
+	.	54	0
+	+	54	0
+
+> /tmp/indvtg
+	"	53	0
+	^	53	0
+	.	52	7
+	+	50	6
+	+	51	6
+	+	52	7
+
+> ~/Playing/irishfst-1/individual-tags
+	"	106	0
+	.	1	0
+	+	1	0
+	+	102	0
+	+	104	0
+	+	105	0
+	+	107	0
+	+	1	0
+	+	2	0
+	+	37	0
+	+	38	0
+	+	35	0
+	+	52	0
+	+	54	0
+	+	106	0
+	+	104	0
+	+	1	0
+
+> ~/Playing/irishfst-1/tagstodo
+	"	533	0
+	.	445	0
+	+	31	0
+	+	75	0
+	+	445	0
+
+> /tmp/tagfilt1
+	"	83	57
+	^	83	58
+	.	83	0
+	+	84	0
+	+	83	0
+
+> ~/Playing/spaCy/spacy/tests/ga/test_tokenizer.py
+	"	8	79
+	^	8	80
+	.	8	0
+	+	17	40
+	+	9	0
+	+	8	0
+
+> ~/Playing/spaCy/spacy/tests/conftest.py
+	"	84	0
+	^	15	56
+	.	15	55
+	+	97	0
+	+	101	0
+	+	103	5
+	+	104	33
+	+	15	55
+
+> ~/Playing/spaCy/spacy/lang/ga/__init__.py
+	"	12	0
+	^	22	28
+	.	22	27
+	+	24	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	17	0
+	+	18	0
+	+	13	10
+	+	21	11
+	+	22	27
+
+> ~/Playing/spaCy/.git/COMMIT_EDITMSG
+	"	1	0
