@@ -1,20 +1,3 @@
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-vi max-subarray.cc
-clang++ max-subarray.cc 
-clang++ -std=c++11 max-subarray.cc 
-vi max-subarray.cc
-clang++ -std=c++11 max-subarray.cc 
 ./a.out 
 g++ -std=c++11 max-subarray.cc 
 ./a.out 
@@ -1998,3 +1981,20 @@ sudo loginctl unlock-session
 sudo loginctl unlock-sessions
 less pl_with_types/output-00034-of-00100 
 cd 
+apt-cache search caffe
+git clone https://github.com/sweble/sweble-wikitext.git
+cd sweble-wikitext/
+ls
+rm -rf sweble-wom3-parent/
+rm -rf sweble-engine-parent/
+vi pom.xml 
+mvn install
+git status
+git add sweble-wom3-parent pom.xml 
+git status
+git add sweble-engine-parent 
+git commit -m 'apache only'
+git remote add mine https://github.com/jimregan/sweble-wikitext.git
+git push mine master
+git pull mine 
+git push mine master
