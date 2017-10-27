@@ -1496,3 +1496,13 @@ grep '"u@"' */xml/*.xml |grep '<ph'
 less text01/xml/text01-001_154.xml
 less text02/xml/tcd_gd_text02_007_320.xml
 history -a
+cd ~/Playing/
+git clone https://github.com/danijel3/ClarinStudioKaldi
+cd ClarinStudioKaldi/
+ls
+cd local_clarin/
+ls
+less lexicon.txt 
+wc -l lexicon.txt 
+less lexicon.txt 
+history -a
