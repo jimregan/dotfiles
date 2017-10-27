@@ -1,11 +1,3 @@
-./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person.bin.zip -nameTypes person -data ~/Playing/ainm-ner-corpus/all-ner.txt 
-bin/opennlp TokenizerME ~/Playing/ainm-ner-corpus/src/main/resources/ie/tcd/slscs/itut/AinmNerCorpus/ga-token.bin < gawiki.sent > gawiki.tok
-vi gawiki.tok 
-#./bin/opennlp TokenNameFinder ga-ner-person.bin.zip ga-ner-loc.bin.zip  < 
-wget https://github.com/jimregan/ainm-ner-corpus/releases/download/v0.1/ga-ner-org.bin.zip
-#./bin/opennlp TokenNameFinder ga-ner-person.bin.zip ga-ner-loc.bin.zip ga-ner-org.bin.zip < gawiki.tok > gawiki.ner
-./bin/opennlp TokenNameFinder ga-ner-person.bin.zip ga-ner-loc.bin.zip ga-ner-org.bin.zip < gawiki.tok > gawiki.ner
-vi gawiki.ner 
 cat gawiki.ner |sed -e 's/<END>/<END>\n/g;s/<START/\n<START/g'
 cat gawiki.ner |sed -e 's/<END>/<END>\n/g;s/<START/\n<START/g'|grep '^<START'
 cat gawiki.ner |sed -e 's/<END>/<END>\n/g;s/<START/\n<START/g'|grep '^<START'|sort |uniq
@@ -983,18 +975,26 @@ ls
 zless binary-vectors.txt.gz 
 less word-feat.txt 
 ls -al
-cd /tmp/
-wget https://www.macdisk.com/cvfr/cnvxywri.zip
-unzip cnvxywri.zip 
-less CNVXYWRI.DLL 
-unzip ~/Downloads/LocoScript_v4.06__ENGLISH.zip 
-file LocoScript_v4.06__ENGLISH__Side_*
-apt-cache search joycew
-apt-cache search joyce
-apt-cache search pcw
-apt-cache search sdl
-apt-cache search sdl-dev
-sudo apt-get install libsdl2-dev 
-sudo apt-get install libsdl1.2-dev 
-unzip ~/Downloads/LocoScript_v4.06__ENGLISH.zip 
+wget http://www.seasip.info/Unix/Joyce/joyce-2.2.12.tar.gz
+tar zxvf joyce-2.2.12.tar.gz 
+cd joyce-2.2.12/
+ls
+./configure 
+make -j 8
+ls
+sudo make install
+sudo ldconfig
+ls
+ls bin/
+xjoyce 
+cd ..
+unzip ~/Downloads/LocoScript_v2.03__ENGLISH.zip 
+xjoyce 
+ls
+mv LocoScript_v* ~/Joyce/Disks/
+ls ~/Joyce/Boot/
+ls -al ~/Joyce/Boot/
+vi ~/Joyce/Boot/joycebt.xml 
+cp ~/Joyce/Disks/LocoScript_v2.03__ENGLISH.dsk ~/Joyce/Boot/boot1.dsk 
+xjoyce 
 history -w
