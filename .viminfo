@@ -8,18 +8,21 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\.
+~MSle0~/'
 
 # Last Substitute Search Pattern:
-~MSle0& $
+~MSle0&_e$
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-:w
+:q!
 :q
+:q1
+:w
+:g/_e$/d
 :%s/ $//
 :%s/2 //
 :g/'/d
@@ -36,7 +39,6 @@ $
 :%s/hÉ/hé/g
 :%s/gaedhlacha/gaelacha/g
 :%s/hin/gle_uncial/g
-:q!
 :g/w\.zip/d
 :g/Prop+Noun/d
 :g/Foreign+English/d
@@ -65,10 +67,14 @@ $
 :w!
 :%s/brownCluster/brown-redone.txt
 :%s/brownCluster/
-:%s/collocs/map/g
-:%s/brown-50c.txt/brown-50c-collocs.txt
 
 # Search String History (newest to oldest):
+?/'
+? _e$
+?/web
+?/N
+?/m_type
+?/m_type = 
 ?/\.
 ?/amach a
 ?/agam
@@ -113,12 +119,6 @@ $
 ?/tsaighean
 ?/phobal
 ?/Nf2-7
-? Verbal
-?/AI-te
-?/sean
-? NStem
-?/hiad
-?/[0-9]
 
 # Expression History (newest to oldest):
 
@@ -128,90 +128,125 @@ $
 
 # Registers:
 ""1	LINE	0
-	VI
+	PUNCT	.	sil
 "2	LINE	0
-	V
+	PLAIN	ok	<self>
 "3	LINE	0
-	
-	a
-	á
-	ach
-	a déarfaidh
-	a deirim
-	aduaidh
-	a dúirt
-	aeraíocht
-	agaibhse
-	agamsa
-	aicisí
-	aigesean
-	ainm
-	airíodar
-	amas
-	amuigh
-	aniar
-	aníos
-	arís
-	astu
-	aturnae
-	bailithe
-	baol
-	barr
-	beithíoch
-	beo
-	bhaol
-	bharr
-	bhreá
-	bhreoiteacht
-	bhreoiteachtaí
-	bhrí
-	bhrú
-	bhuí
-	bithiúnach
-	bosca
-	bpoiblíocht
-	bponc
-	breá
-	breátha
-	breathnú
-	breoiteacht
-	brí
-	bríomhar
-	brú
-	charraig
-	chlaí
-	chnoc
-	chnoic
+	PLAIN	ok.	około
 "4	LINE	0
-	was .
+	PUNCT	.	sil
 "5	LINE	0
-	watch .
+	PUNCT	.	sil
 "6	LINE	0
-	when .
+	h → 
 "7	LINE	0
-	you .
+	</supplementalData>
 "8	LINE	0
-	n .
+		</transforms>
 "9	LINE	0
-	\n .
+			</transform>
 "q	CHAR	0
 	:::�kb�kb�kb
 "-	CHAR	0
-	 
+	file:///home/jim/Downloads/Amele.pdf
 
 # File marks:
-'0  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
-'1  3  1585  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
-'2  1590  2  ~/Playing/msf-asr/pron/munster.tsv
-'3  14  6  ~/Playing/msf-asr/tock
-'4  54  9  ~/Playing/msf-asr/pron/munster.tsv
-'5  1063  17  ~/Playing/msf-asr/pron/munster.tsv
-'6  1347  0  ~/Playing/msf-asr/pron/munster.tsv
-'7  1157  7  ~/Playing/msf-asr/pron/munster.tsv
-'8  879  0  ~/Playing/msf-asr/pron/munster.tsv
-'9  6  4  ~/Playing/msf-asr/pron/munster-double-check
+'0  1  26  ~/Playing/ClarinStudioKaldi/path.sh
+'1  2536  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+'2  26  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+'3  16  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+'4  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+'5  25  10  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+'6  8  86  /tmp/amele
+'7  1  55  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+'8  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+'9  10  6  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
 
 # Jumplist (newest first):
+-'  1  26  ~/Playing/ClarinStudioKaldi/path.sh
+-'  6  0  ~/Playing/ClarinStudioKaldi/path.sh
+-'  2536  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+-'  18  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+-'  1  0  /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+-'  26  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+-'  1  0  ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+-'  16  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+-'  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+-'  25  10  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+-'  8  86  /tmp/amele
+-'  1  0  /tmp/amele
+-'  26  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+-'  31  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+-'  10  6  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  28  6  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  13  7  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  1  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/tmppp
+-'  9  0  ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+-'  1  0  ~/Playing/language-resources/ga/phonemes.txt
+-'  22  6  ~/Playing/language-resources/ga/phonemes.txt
+-'  67  0  /tmp/phones
+-'  68  0  /tmp/phones
+-'  1  0  /tmp/phones
+-'  8  5  ~/Playing/language-resources/ga/phonemes.txt
+-'  30  10  ~/Playing/language-resources/ga/phonemes.txt
+-'  71  2  ~/Playing/language-resources/ga/phonemes.txt
+-'  1  26  /tmp/lhasa-0.3.1/extr/thing
+-'  110  0  ~/open-tabs
+-'  1  0  ~/open-tabs
+-'  53  18  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/q8.c
+-'  47  0  /tmp/lhasa-0.3.1/extr/orig.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/orig.cc
+-'  56  20  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  58  8  /tmp/lhasa-0.3.1/extr/q8.cc
+-'  16  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  1  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  26  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  1  1  /tmp/lhasa-0.3.1/extr/gram
+-'  34  12  /tmp/lhasa-0.3.1/extr/gram
+-'  51  24  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  30  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  31  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  61  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  66  0  /tmp/lhasa-0.3.1/extr/thing.cc
+-'  15  185  ~/tmp/bar/tospid
+-'  1  0  ~/tmp/bar/tospid
+-'  43  10  /tmp/libabw/src/lib/ABWZlibStream.h
+-'  1  0  /tmp/libabw/src/lib/ABWZlibStream.h
+-'  34  81  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  1  0  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  33  77  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  54  0  /tmp/pcwplore-0.3.0/bin/app.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/bin/app.cxx
+-'  42  20  /tmp/pcwplore-0.3.0/bin/app.cxx
+-'  66  0  /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_spc.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_spc.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_mvg.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_mvg.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_mda.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_mda.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_logo.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_logo.cxx
+-'  53  23  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  1  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+-'  25  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+-'  52  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  19  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+-'  30  0  /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+-'  2  92  ~/Joyce/Boot/joycebt.xml
+-'  1  0  ~/Joyce/Boot/joycebt.xml
+-'  277  9  ~/Playing/sweble-wikitext/pom.xml
+-'  177  7  ~/Playing/sweble-wikitext/pom.xml
+-'  178  7  ~/Playing/sweble-wikitext/pom.xml
+-'  1  0  ~/Playing/sweble-wikitext/pom.xml
 -'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
 -'  3  1585  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
 -'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
@@ -227,89 +262,6 @@ $
 -'  1157  7  ~/Playing/msf-asr/pron/munster.tsv
 -'  879  0  ~/Playing/msf-asr/pron/munster.tsv
 -'  6  4  ~/Playing/msf-asr/pron/munster-double-check
--'  1  0  ~/Playing/msf-asr/pron/munster-double-check
--'  934  7  ~/Playing/msf-asr/prontodo
--'  936  0  ~/Playing/msf-asr/prontodo
--'  685  0  ~/Playing/msf-asr/prontodo
--'  1  0  ~/Playing/msf-asr/prontodo
--'  119  1  ~/Playing/msf-asr/pron-munst
--'  1  0  ~/Playing/msf-asr/pron-munst
--'  93  14  ~/Playing/msf-asr/pron-munst
--'  43  0  ~/Playing/msf-asr/pron-munst
--'  5  6  ~/Playing/msf-asr/pron/munster-double-check
--'  216  0  ~/Playing/msf-asr/pron-munst
--'  108  6  ~/Playing/msf-asr/pron-munst
--'  139  7  ~/Playing/msf-asr/pron-munst
--'  129  0  ~/Playing/msf-asr/pron-munst
--'  122  0  ~/Playing/msf-asr/pron-munst
--'  60  0  ~/Playing/msf-asr/pron-munst
--'  128  0  ~/Playing/msf-asr/pron-munst
--'  127  0  ~/Playing/msf-asr/pron-munst
--'  5  4  ~/Playing/msf-asr/pron-double-check
--'  1  0  ~/Playing/msf-asr/pron-double-check
--'  2  0  ~/Playing/msf-asr/pron-double-check
--'  5  261  ~/Playing/msf-asr/raw-text/MSF_chapter_25.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_25.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_125.txt
--'  64  222  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_17.txt
--'  33  1544  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_3.txt
--'  1  0  ~/Playing/msf-asr/MSF_chapter_3.txt.norm
--'  39  0  ~/Playing/msf-asr/scripts/fix-dictionary-pronunciations.pl
--'  1  0  ~/Playing/msf-asr/scripts/fix-dictionary-pronunciations.pl
--'  1  81  ~/Playing/msf-asr/raw-text/README
--'  25  118  ~/Playing/msf-asr/raw-text/MSF_chapter_13.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_13.txt
--'  28  281  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  24  59  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  18  631  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  15  46  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  11  650  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  7  517  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  5  789  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  3  852  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_12.txt
--'  1  0  ~/Playing/opennlp/.git/MERGE_MSG
--'  1  0  ~/Playing/opennlp/.git/rebase-merge/git-rebase-todo
--'  23  0  ~/Playing/tesseract-gle-uncial/fonts.txt
--'  1  0  ~/Playing/tesseract-gle-uncial/fonts.txt
--'  392  0  ~/Playing/msf-asr/candidates
--'  43  0  ~/Playing/msf-asr/candidates
--'  1  0  ~/Playing/msf-asr/candidates
--'  58  0  ~/Playing/msf-asr/client.pl
--'  1  0  ~/Playing/msf-asr/client.pl
--'  1  49  ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
--'  100  105  ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
--'  14  1  ~/Playing/msf-asr/MSF_chapter_1.txt.norm.sent
--'  46  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  18  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  40  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  30  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  28  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  26  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  24  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  16  767  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  14  571  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  8  323  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  42  48  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  25  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  1  0  ~/Playing/msf-asr/MSF_chapter_1.txt.norm
--'  6  85  ~/Playing/tesseract/scr.sh
--'  1  0  ~/Playing/tesseract/scr.sh
--'  2  76  ~/Playing/tesseract/scr.sh
--'  56  32  ~/Playing/tesseract/training/tesstrain-local.sh
--'  1  0  ~/Playing/tesseract/training/tesstrain-local.sh
--'  63  0  ~/Playing/tesseract/training/tesstrain.sh
--'  1  0  ~/Playing/tesseract/training/tesstrain.sh
--'  3  0  ~/Playing/langdata/gle_uncial/desired_characters
--'  1  0  ~/Playing/langdata/gle_uncial/desired_characters
--'  5  3  ~/Playing/langdata/gle_uncial/gle_uncial.numbers
--'  3  1585  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
--'  1  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
--'  15  0  ~/Playing/msf-asr/raw-text/MSF_chapter_5.txt
--'  1590  2  ~/Playing/msf-asr/pron/munster.tsv
--'  1  0  ~/Playing/msf-asr/pron/munster.tsv
 
 # Bar lines, copied verbatim:
 |1,4
@@ -602,6 +554,426 @@ $
 |4,39,119,35,1499962429,"~/Playing/ainm-ner-corpus/src/main/scala/ie/tcd/slscs/itut/AinmNerCorpus/AinmProcess.scala"
 
 # History of marks within files (newest to oldest):
+
+> ~/Playing/ClarinStudioKaldi/path.sh
+	"	1	26
+	^	1	27
+	.	1	26
+	+	1	26
+
+> /tmp/clarin/SES0034_ses/sent006_bndl/pl_with_types/output-00098-of-00100
+	"	2536	0
+	^	68	14
+	.	68	13
+	+	18	0
+	+	18	15
+	+	25	0
+	+	17	0
+	+	24	0
+	+	25	0
+	+	69	0
+	+	68	13
+
+> ~/Playing/language-resources/third_party/cldr/mi-mi_FONIPA.txt
+	"	26	0
+	.	26	0
+	+	26	0
+
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/mi-mi_FONIPA.txt
+	"	16	0
+	.	28	0
+	+	1	0
+	+	28	0
+
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/left
+	"	26	0
+	.	26	0
+	+	26	0
+
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aey-aey_FONIPA.txt
+	"	25	10
+	^	1	56
+	.	1	2
+	+	1	2
+
+> /tmp/amele
+	"	8	86
+	^	8	87
+	.	8	0
+	+	8	0
+
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/aev-aev_FONIPA.xml
+	"	26	0
+	^	31	1
+	.	31	0
+	+	31	0
+	+	1	0
+	+	34	0
+	+	31	0
+	+	31	0
+	+	32	0
+	+	31	0
+
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/wnu-wnu_FONIPA.txt
+	"	10	6
+	^	10	7
+	.	10	6
+	+	1	0
+	+	32	0
+	+	10	6
+	+	10	5
+	+	9	0
+	+	13	7
+	+	28	6
+	+	9	0
+	+	10	6
+
+> ~/Playing/adaf90af2bab7bbc32bf33036024fe3d/tmppp
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Playing/language-resources/ga/phonemes.txt
+	"	1	0
+	^	22	8
+	.	22	6
+	+	1	2
+	+	2	4
+	+	1	4
+	+	5	19
+	+	10	0
+	+	5	16
+	+	9	0
+	+	5	10
+	+	7	0
+	+	5	2
+	+	6	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	9	0
+	+	10	4
+	+	11	3
+	+	12	2
+	+	13	4
+	+	32	2
+	+	25	3
+	+	26	4
+	+	27	2
+	+	29	3
+	+	31	5
+	+	32	4
+	+	59	2
+	+	42	2
+	+	43	3
+	+	44	2
+	+	45	3
+	+	48	2
+	+	49	3
+	+	50	2
+	+	51	4
+	+	56	6
+	+	57	4
+	+	58	3
+	+	59	4
+	+	62	1
+	+	68	0
+	+	60	3
+	+	61	4
+	+	62	4
+	+	63	3
+	+	64	3
+	+	65	5
+	+	66	4
+	+	67	3
+	+	71	1
+	+	69	5
+	+	70	3
+	+	71	3
+	+	72	0
+	+	21	2
+	+	41	2
+	+	53	2
+	+	41	0
+	+	52	0
+	+	53	0
+	+	23	0
+	+	30	10
+	+	8	5
+	+	36	8
+	+	4	3
+	+	35	7
+	+	3	3
+	+	40	0
+	+	38	0
+	+	28	11
+	+	33	4
+	+	37	10
+	+	47	8
+	+	55	3
+	+	46	9
+	+	54	6
+	+	22	6
+
+> /tmp/phones
+	"	67	0
+	.	68	0
+	+	68	3
+	+	68	0
+
+> /tmp/lhasa-0.3.1/extr/thing
+	"	1	26
+	^	1	27
+	.	1	26
+	+	1	26
+
+> ~/open-tabs
+	"	110	0
+	^	110	0
+	.	109	45
+	+	109	45
+
+> /tmp/lhasa-0.3.1/extr/q8.cc
+	"	53	18
+	^	56	21
+	.	56	20
+	+	51	37
+	+	53	18
+	+	56	32
+	+	57	29
+	+	58	8
+	+	56	20
+
+> /tmp/lhasa-0.3.1/extr/q8.c
+	"	1	0
+
+> /tmp/lhasa-0.3.1/extr/orig.cc
+	"	47	0
+	^	62	11
+	.	1	0
+	+	62	0
+	+	61	0
+	+	60	0
+	+	59	0
+	+	58	0
+	+	57	0
+	+	56	0
+	+	55	0
+	+	54	0
+	+	53	0
+	+	52	0
+	+	51	0
+	+	50	0
+	+	49	0
+	+	48	0
+	+	47	0
+	+	46	0
+	+	45	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	41	0
+	+	40	0
+	+	39	0
+	+	38	0
+	+	37	0
+	+	36	0
+	+	35	0
+	+	34	0
+	+	33	0
+	+	32	0
+	+	31	0
+	+	30	0
+	+	29	0
+	+	28	0
+	+	27	0
+	+	26	0
+	+	25	0
+	+	24	0
+	+	23	0
+	+	22	0
+	+	21	0
+	+	20	0
+	+	19	0
+	+	18	0
+	+	17	0
+	+	16	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	11	0
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	4	0
+	+	3	0
+	+	2	0
+	+	1	0
+
+> /tmp/lhasa-0.3.1/extr/thing.cc
+	"	16	0
+	^	51	25
+	.	51	24
+	+	67	0
+	+	66	0
+	+	61	0
+	+	61	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	21	0
+	+	22	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	31	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	36	0
+	+	37	0
+	+	38	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	49	0
+	+	52	5
+	+	52	5
+	+	53	0
+	+	54	0
+	+	55	0
+	+	56	0
+	+	57	0
+	+	58	0
+	+	59	0
+	+	60	0
+	+	61	0
+	+	31	0
+	+	30	0
+	+	48	0
+	+	48	0
+	+	22	0
+	+	27	6
+	+	19	7
+	+	20	36
+	+	48	0
+	+	47	33
+	+	20	36
+	+	49	63
+	+	52	4
+	+	53	0
+	+	51	24
+
+> /tmp/lhasa-0.3.1/extr/gram
+	"	1	1
+	^	34	13
+	.	34	0
+	+	34	0
+
+> ~/tmp/bar/tospid
+	"	15	185
+	^	15	186
+	.	15	185
+	+	15	185
+
+> /tmp/libabw/src/lib/ABWZlibStream.h
+	"	43	10
+	^	43	11
+	.	43	10
+	+	43	10
+
+> /tmp/pcwplore-0.3.0/bin/drivechooser.hxx
+	"	34	81
+	^	34	82
+	.	34	81
+	+	33	77
+	+	34	81
+
+> /tmp/pcwplore-0.3.0/bin/app.cxx
+	"	54	0
+
+> /tmp/pcwplore-0.3.0/imtypes/image_spc.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_mvg.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_mda.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_logo.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_cut.cxx
+	"	53	23
+	^	53	24
+	.	53	23
+	+	53	23
+
+> /tmp/pcwplore-0.3.0/imtypes/image_cut.hxx
+	"	1	0
+
+> ~/Joyce/Boot/joycebt.xml
+	"	2	92
+	^	2	93
+	.	2	92
+	+	2	92
+
+> ~/Playing/sweble-wikitext/pom.xml
+	"	277	9
+	.	176	0
+	+	40	0
+	+	41	0
+	+	152	0
+	+	178	0
+	+	176	0
 
 > ~/Playing/msf-asr/raw-text/MSF_chapter_6.txt
 	"	1	0
@@ -1296,252 +1668,3 @@ $
 
 > ~/Playing/spaCy/.git/COMMIT_EDITMSG
 	"	1	0
-
-> ~/Playing/spaCy/spacy/tests/lang/ga/test_tokenizer.py
-	"	13	11
-	^	7	2
-	.	7	1
-	+	19	0
-	+	7	1
-
-> ~/Downloads/Cover-letter-11.09.2017-tweak.txt
-	"	41	0
-	.	41	0
-	+	41	0
-
-> ~/Downloads/Cover-letter-11.09.2017-tweaks.html
-	"	33	35
-	.	42	10
-	+	31	0
-	+	42	10
-
-> spacy/tests/lang/ga/test_tokenizer.py
-	"	18	0
-	^	18	0
-	.	19	0
-	+	19	0
-
-> ~/Playing/spaCy/spacy/lang/ga/tokenizer_exceptions.py
-	"	1	0
-
-> ~/Playing/spaCy/.git/MERGE_MSG
-	"	1	0
-
-> /tmp/apache-opennlp-1.8.1/gawiki.ner
-	"	3010	0
-	^	273	18
-	.	273	17
-	+	389566	0
-	+	257	10
-	+	262	18
-	+	273	17
-	+	273	17
-
-> /tmp/apache-opennlp-1.8.1/gawiki.tok
-	"	389569	0
-	.	389570	0
-	+	389570	0
-
-> /tmp/apache-opennlp-1.8.1/featgen.xml
-	"	19	4
-	^	18	48
-	.	19	0
-	+	21	0
-	+	19	0
-	+	19	25
-	+	19	0
-	+	19	48
-	+	19	43
-	+	19	46
-	+	19	56
-	+	19	56
-	+	19	53
-	+	19	58
-	+	19	57
-	+	19	60
-	+	19	41
-	+	19	0
-	+	19	0
-	+	18	0
-	+	15	0
-	+	19	0
-
-> ~/Playing/brown-cluster/merged-c50-p1.out/paths
-	"	533	0
-	.	413	0
-	+	79	0
-	+	198	0
-	+	294	0
-	+	413	0
-
-> /tmp/apache-opennlp-1.8.1/gawiki.sent
-	"	389569	0
-	.	389570	0
-	+	389570	0
-
-> /tmp/apache-opennlp-1.8.1/tstdt
-	"	1	267
-	^	1	268
-	.	1	251
-	+	1	251
-
-> ~/Playing/ainm-ner-corpus/máire_ann_nic_reachtain.txt
-	"	1	1382
-	^	1	1383
-	.	1	1334
-	+	1	1334
-
-> ~/Playing/wolne-lektury-audio-corpus/.git/COMMIT_EDITMSG
-	"	1	23
-	^	1	24
-	.	1	23
-	+	1	23
-
-> ~/Playing/wolne-lektury-audio-corpus/pron-data/additions-ipa.tsv
-	"	21	24
-	^	21	25
-	.	21	24
-	+	1	13
-	+	2	11
-	+	3	20
-	+	4	14
-	+	5	0
-	+	22	0
-	+	22	0
-	+	5	0
-	+	22	0
-	+	5	28
-	+	6	28
-	+	8	8
-	+	7	21
-	+	12	28
-	+	8	21
-	+	15	19
-	+	4	14
-	+	17	19
-	+	18	9
-	+	19	11
-	+	21	24
-
-> ~/Playing/wolne-lektury-audio-corpus/text/dziewczynka-z-zapalkami.txt
-	"	5	0
-
-> ~/Playing/wolne-lektury-audio-corpus/phon-ipa.tsv
-	"	10	10
-	^	10	11
-	.	10	10
-	+	9	8
-	+	10	10
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/chapter2.tex
-	"	176	0
-
-> ~/Playing/wolne-lektury-audio-corpus/text/xaa
-	"	424	0
-	.	6	0
-	+	1	0
-	+	2	0
-	+	5	0
-	+	6	0
-
-> ~/Playing/wolne-lektury-audio-corpus/text/all-words.txt
-	"	748	0
-	.	5	0
-	+	1	0
-	+	48	0
-	+	1	0
-	+	195170	0
-	+	1	0
-	+	1	0
-	+	298	0
-	+	611	0
-	+	304	0
-	+	485	0
-	+	305	0
-	+	1	0
-	+	6	0
-	+	325	0
-	+	332	0
-	+	331	0
-	+	11	0
-	+	75	0
-	+	70	0
-	+	5	0
-
-> ~/Playing/wolne-lektury-audio-corpus/.git/MERGE_MSG
-	"	1	0
-
-> ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt.1
-	"	4229	4
-
-> ~/Playing/wolne-lektury-audio-corpus/norm
-	"	2	30
-	^	2	31
-	.	2	30
-	+	1	73
-	+	2	30
-
-> ~/Playing/wolne-lektury-audio-corpus/przygody-tomka-sawyera.txt
-	"	4224	0
-	.	4226	0
-	+	4	0
-	+	4226	0
-
-> ~/Playing/wolne-lektury-audio-corpus/speaker-gender-map.tsv
-	"	6	19
-	^	6	20
-	.	6	19
-	+	1	10
-	+	2	16
-	+	3	17
-	+	4	20
-	+	5	15
-	+	6	19
-
-> /tmp/ref.xml
-	"	2	59
-	^	2	60
-	.	2	59
-	+	6009	4
-	+	5	3
-	+	6009	0
-	+	5	55
-	+	1	7
-	+	2006	8
-	+	2	59
-
-> /tmp/tgt.xml
-	"	2	61
-	^	2	62
-	.	2	61
-	+	1586	0
-	+	1	0
-	+	1586	0
-	+	1	7
-	+	2006	8
-	+	2	61
-
-> /tmp/src.xml
-	"	1	0
-	^	2006	9
-	.	2006	8
-	+	6009	0
-	+	5	43
-	+	1	7
-	+	2006	8
-
-> ~/Playing/Dissertation/9879472fwnkgtfsztvt/dissertation.tex
-	"	27	0
-
-> /tmp/blocks
-	"	106	35
-	^	106	36
-	.	106	29
-	+	106	29
-
-> /tmp/getf
-	"	15	0
-	^	16	0
-	.	1	0
-	+	15	129
-	+	1	0
