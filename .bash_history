@@ -1,31 +1,3 @@
-./a.out 
-g++ -std=c++11 max-subarray.cc 
-./a.out 
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-./a.out 
-vi max-subarray.cc
-perl -e '@foo=(2,1,3,4,1,2,1,5,4);my$sum=0;for my$add(@foo){$sum+=$add;};print $sum;'
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-./a.out 
-vi max-subarray.cc
-g++ -std=c++11 max-subarray.cc 
-./a.out 
-cat max-subarray.cc 
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-g++ word-average.cc
-vi word-average.cc
-vi words.txt
-./a.out 
-vi word-average.cc
-g++ word-average.cc
-./a.out 
-cat words.txt 
 cat words.txt |wc
 echo $((74 / 10))
 vi word-average.cc
@@ -1998,3 +1970,31 @@ git remote add mine https://github.com/jimregan/sweble-wikitext.git
 git push mine master
 git pull mine 
 git push mine master
+cd ..
+git clone https://github.com/jimregan/sweble-wikitext-old.git
+cd sweble-wikitext-old/
+git remote add upstream https://github.com/sweble/sweble-wikitext.git
+git pull upstream master
+ls
+cp ../sweble-wikitext/pom.xml .
+git rm sweble-wom3-parent/ sweble-engine-parent/
+git rm -r  sweble-wom3-parent/ sweble-engine-parent/
+git commit -m 'remove affero shit'
+git push origin master
+git push -f origin master
+git push -f origin develop
+git pull origin develop
+git pull upstream develop
+git stash
+cp ../sweble-wikitext/pom.xml .
+git add pom.xml 
+git commit -m 'remove affero shit'
+git pull upstream develop
+git push -f origin develop
+git pull upstream develop
+git rm -rf sweble-wom3-parent/
+git rm -rf sweble-engine-parent/
+git commit -m 'remove affero shit'
+git push -f origin develop
+apt-cache search emscripte
+sudo apt-get install emscripten
