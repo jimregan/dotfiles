@@ -1371,3 +1371,86 @@ less ~/Downloads/VOA-newscast-2017-03-29-0600Z.afpk
 lynx https://www.reddit.com/r/perl/comments/5trtpl/perl_interface_to_mxnet_machine_learning_lib/
 lynx http://gluon.mxnet.io/chapter07_distributed-learning/hybridize.html
 history -a
+cd ..
+tar zxvf ~/Downloads/lhasa-0.3.1.tar.gz 
+cd lhasa-0.3.1/
+ls
+cd src/
+ls
+cd ..
+ls
+./configure 
+make -j 8
+cd lib/
+ls
+less lha_decoder.
+less lha_decoder.c 
+ls
+cd ..
+ls
+ls src/
+ls
+ls src/
+src/lha
+#src/lha l ~/Downloads/
+ls ~/Downloads/*com
+src/lha l ~/Downloads/mdcnv102.com 
+src/lha x ~/Downloads/mdcnv102.com 
+less mdaconv.c
+ls
+mkdir extr
+cd extr/
+for i in ~/Downloads/*.com ;do ../src/lha x $i;done
+less spc2bmp.c
+less ~/Downloads/pcw052.wpd 
+less ~/Downloads/DATABASE.TZT 
+file ~/Downloads/DATABASE.TZT 
+file ~/Downloads/*LBR
+../src/lha ~/Downloads/PF2ASC.LBR 
+apt-cache search lbr
+sudo apt-get install unar
+vi thing.cc
+g++ thing.cc
+vi gram
+./a.out gram 
+vi gram
+vi thing.cc
+./a.out gram 
+vi thing.cc
+vi orig.cc
+g++ orig.cc 
+./a.out gram 
+g++ orig.cc 
+./a.out gram 
+diff -u orig.cc thing.cc 
+mv thing.cc q7.cc
+cp q7.cc q8.cc
+vi q8.cc
+g++ q8.cc 
+vi q8.cc
+g++ q8.cc 
+./a.out gram 
+g++ q7.cc 
+./a.out gram > q7.out
+g++ q8.cc 
+./a.out gram 
+vi orig.cc
+vi q8.c
+ls *cc
+vi q8.cc
+diff -u q7.cc q8.cc
+cat orig.cc 
+cat #include <string>
+cat q7.cc 
+cat q8.cc 
+vi thing
+ls ~/*tab*
+vi ~/open-tabs
+vi thing
+sh ~/scripts/spider.sh thing
+tail -f thing.log 
+vi thing
+sh ~/scripts/spider.sh thing
+tail -f thing.log 
+vi ~/open-tabs
+history -a
