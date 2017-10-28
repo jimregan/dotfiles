@@ -1773,3 +1773,9 @@ rm -rf exp/
 mkdir -p exp/mono0
 steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
 history -a
+ls
+cd ..
+ls
+less audio/audio/SES0001/sent001.txt 
+vi run-ctd.sh 
+history -a

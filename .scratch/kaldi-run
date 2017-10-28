@@ -417,3 +417,4 @@ WARNING (gmm-init-model[5.2.160~1-51042]:InitAmGmm():gmm-init-model.cc:55) Tree 
 steps/train_deltas.sh: converting alignments from exp/mono0_ali to use current tree
 steps/train_deltas.sh: compiling graphs of transcripts
 steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
