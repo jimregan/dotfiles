@@ -1705,3 +1705,39 @@ find -L . -name '*sh'|xargs grep 'Checking word_bounda'
 find -L . -name '*sh'|xargs grep word_bounda
 grep word_index run.sh 
 history -a
+for i in exp/mono0/log/align.*log;do grep ' with errors' $i;done
+less exp/mono0/log/compile_graphs.10.log 
+cat exp/mono0/log/compile_graphs.10.log 
+for i in exp/mono0/log/compile_graphs..*log;do grep 'failed for' $i;done
+for i in exp/mono0/log/compile_graphs.*log;do grep 'failed for' $i;done
+cat exp/mono0/log/init.log 
+cat exp/mono0/log/update.0.log 
+ls exp/mono0/1.mdl 
+less exp/mono0/1.mdl 
+ls -al exp/mono0/1.mdl 
+less exp/mono0/tree 
+less exp/mono0/cmvn_opts 
+less exp/mono0/ali.1.gz 
+less exp/mono0/ali.32.gz 
+zless exp/mono0/ali.32.gz 
+less steps/train_mono.sh
+cat exp/mono0/log/update.0.log 
+less steps/train_mono.sh
+utils/summarize_warnings.pl exp/mono0/log/
+less exp/mono0/log/update.0.log 
+less exp/mono0/log/update.1.log 
+less exp/mono0/log/align.0.40.log 
+less exp/mono0/log/align.0.32.log 
+less exp/mono0/log/align.0.33.log 
+less exp/mono0/log/align.0.1.log 
+less utils/summarize_warnings.pl 
+less exp/mono0/log/align.0.1.log 
+less steps/train_mono.sh
+find . -name final.mdl
+find . -name '*.mdl'
+less steps/train_mono.sh
+less exp/mono0/log/align.0.3.log 
+less exp/mono0/log/align.0.2.log 
+less exp/mono0/log/align.0.1.log 
+less steps/train_mono.sh
+history -a
