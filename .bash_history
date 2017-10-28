@@ -1626,3 +1626,34 @@ sudo make install
 sudo ldconfig
 estimate-ngram 
 estimate-ngram -h
+less run.sh 
+less utils/prepare_lang.sh 
+less run.sh 
+less local_clarin/clarin_pl_data_prep.sh 
+less run.sh 
+less utils/prepare_lang.sh 
+less run.sh 
+utils/prepare_lang.sh data/local/dict_nosp "<unk>" data/local/tmp_nosp data/lang_nosp
+less utils/prepare_lang.sh 
+less  utils/make_lexicon_fst_silprob.pl 
+find -L . -type f|xargs grep 'Checking word-level disambiguation symbols...'
+find -L . -type f|xargs grep 'word-level disambiguation symbols...'
+find -L . -type f -name '*.sh' -or -name '*.pl' |xargs grep 'word-level disambiguation symbols...'
+less ./utils/validate_lang.pl
+vi path.sh 
+./run.sh 
+less exp/mono0/ali.21.gz 
+less exp/mono0/ali.22.gz 
+less exp/mono0/ali.23.gz 
+less exp/mono0/ali.25.gz 
+less exp/mono0/ali.22.gz 
+ls
+find data -type 
+find data -type f
+less exp/mono0/log/align.0.22.log 
+less exp/mono0/log/align.0.23.log 
+less exp/mono0/log/align.0.40.log 
+less 
+less exp/mono0/log/compile_graphs.10.log 
+less steps/train_mono.sh
+history -a

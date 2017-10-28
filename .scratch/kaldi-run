@@ -259,3 +259,4 @@ steps/train_mono.sh: Compiling training graphs
 steps/train_mono.sh: Aligning data equally (pass 0)
 steps/train_mono.sh: Pass 1
 steps/train_mono.sh: Aligning data
+run.pl: 21 / 40 failed, log is in exp/mono0/log/align.1.*.log
