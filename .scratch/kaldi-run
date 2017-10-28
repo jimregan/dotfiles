@@ -481,3 +481,12 @@ HCLGa is not stochastic
 add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl 
 steps/decode.sh --nj 40 exp/tri1/graph data/test exp/tri1/decode
 decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,8,13) and mean=8.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri1/graph exp/tri1/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/align_si.sh --nj 40 data/train data/lang_nosp exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
