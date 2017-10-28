@@ -438,3 +438,28 @@ steps/train_deltas.sh: training pass 18
 steps/train_deltas.sh: training pass 19
 steps/train_deltas.sh: training pass 20
 steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+2384 warnings in exp/tri1/log/align.*.*.log
+172 warnings in exp/tri1/log/acc.*.*.log
+36 warnings in exp/tri1/log/questions.log
+1224 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/build_tree.log
+36 warnings in exp/tri1/log/init_model.log
+exp/tri1: nj=40 align prob=-93.30 over 51.07h [retry=6.6%, fail=0.1%] states=45 gauss=10019 tree-impr=4.87
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
