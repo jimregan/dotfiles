@@ -1741,3 +1741,35 @@ less exp/mono0/log/align.0.2.log
 less exp/mono0/log/align.0.1.log 
 less steps/train_mono.sh
 history -a
+less steps/train_mono.sh
+ls
+grep abażurem local_clarin/lexicon.txt 
+less steps/train_mono.sh 
+less run.sh 
+cp steps/train_mono.sh train_mono.sh
+vi train_mono.sh 
+rm train_mono.sh 
+steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
+less steps/train_mono.sh 
+ls
+steps/train_mono.sh --nj 10 data/train data/lang_nosp exp/mono0
+rm -rf exp/
+mkdir exp
+mkdir exp/mono0
+steps/train_mono.sh --nj 10 data/train data/lang_nosp exp/mono0
+less exp/mono0/log/align.1.1.log 
+less exp/mono0/log/align.1.2.log 
+less exp/mono0/log/align.1.3.log 
+less exp/mono0/log/align.1.9.log 
+les ssteps/train_mono.sh 
+less steps/train_mono.sh 
+cat exp/mono0/log/align.1.*.log 
+cat exp/mono0/log/align.1.*.log |grep 'Did not secc'
+cat exp/mono0/log/align.1.*.log |grep 'Did not succ'
+cat exp/mono0/log/align.1.*.log 
+cat exp/mono0/log/align.1.*.log |grep 'Retried'
+cat exp/mono0/log/align.1.*.log |grep 'errors on '
+rm -rf exp/
+mkdir -p exp/mono0
+steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
+history -a
