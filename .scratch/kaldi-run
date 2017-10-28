@@ -332,3 +332,29 @@ steps/diagnostic/analyze_alignments.sh: see stats in exp/mono0/log/analyze_align
 4320 warnings in exp/mono0/log/update.*.log
 exp/mono0: nj=40 align prob=-95.27 over 51.10h [retry=3.2%, fail=0.0%] states=118 gauss=994
 steps/train_mono.sh: Done training monophone system in exp/mono0
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono0/tree 
+tree-info exp/mono0/tree 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fsttablecompose data/lang_nosp_test/L_disambig.fst data/lang_nosp_test/G.fst 
+fstminimizeencoded 
+fstisstochastic data/lang_nosp_test/tmp/LG.fst 
+0.796265 0.795333
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang_nosp_test/phones/disambig.int --write-disambig-syms=data/lang_nosp_test/tmp/disambig_ilabels_1_0.int data/lang_nosp_test/tmp/ilabels_1_0.8480 
+fstisstochastic data/lang_nosp_test/tmp/CLG_1_0.fst 
+0.796265 0.795333
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/mono0/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_1_0 exp/mono0/tree exp/mono0/final.mdl 
+fsttablecompose exp/mono0/graph/Ha.fst data/lang_nosp_test/tmp/CLG_1_0.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/mono0/graph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic exp/mono0/graph/HCLGa.fst 
+0.795925 -0.000366664
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono0/final.mdl 
+steps/decode.sh --nj 40 exp/mono0/graph data/test exp/mono0/decode
+decode.sh: feature type is delta
