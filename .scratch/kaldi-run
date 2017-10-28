@@ -256,3 +256,6 @@ Succeeded creating CMVN stats for test
 steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
 steps/train_mono.sh: Initializing monophone system.
 steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
