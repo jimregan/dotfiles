@@ -1,4 +1,4 @@
-$ KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
+$ ./run.sh              
 ln: failed to create symbolic link './conf': File exists
 ln: failed to create symbolic link './local': File exists
 ln: failed to create symbolic link './utils': File exists
@@ -10,7 +10,7 @@ Done!
 File already downloaded! Checking if download is consistent...
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100    47  100    47    0     0    173      0 --:--:-- --:--:-- --:--:--   174
+100    47  100    47    0     0      8      0  0:00:05  0:00:05 --:--:--    11
 audio.tar.gz: OK
 Files already extracted?
 Remove the audio dir to extract them again...
@@ -20,14 +20,14 @@ WARNING: skipped empty file: SES0461_sent16
 Generating spk2utt...
 Preparing dictionary...
 0.000   Loading corpus local_clarin/arpa.lm.gz...
-3.440   Smoothing[1] = ModKN
-3.440   Smoothing[2] = ModKN
-3.440   Smoothing[3] = ModKN
-3.440   Set smoothing algorithms...
-3.450   Y 9.778535e-01
-3.473   Y 8.243298e-01
-3.491   Y 9.794861e-01
-3.491   Saving vocabulary to data/local/lm.wlist...
+3.527   Smoothing[1] = ModKN
+3.527   Smoothing[2] = ModKN
+3.527   Smoothing[3] = ModKN
+3.527   Set smoothing algorithms...
+3.537   Y 9.778535e-01
+3.559   Y 8.243298e-01
+3.582   Y 9.794861e-01
+3.582   Saving vocabulary to data/local/lm.wlist...
 local_clarin/clarin_prepare_dict.sh data/local/all.wlist data/local/dict_nosp
 local_clarin/clarin_prepare_dict.sh: line 72: phonetisaurus_apply: command not found
 Dictionary preparation succeeded
@@ -175,12 +175,12 @@ Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
 Checking word-level disambiguation symbols...
 --> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
 Checking word_boundary.int and disambig.int
-The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
 --> generating a 40 word sequence
-The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
---> ERROR: number of reconstructed words 0 does not match real number of words 40; indicates problem in L.fst or word_boundary.int.  phoneseq = , wordseq = !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> !SIL <unk> !SIL !SIL !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> !SIL <SPOKEN_NOISE> <unk> <SPOKEN_NOISE> <unk> <unk> <SPOKEN_NOISE> !SIL !SIL <unk> !SIL <unk> <unk> <unk> !SIL !SIL !SIL <unk> <SPOKEN_NOISE> <unk> <unk> <unk> 
---> generating a 86 word sequence
-The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 39 word sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
 
 Checking data/lang_nosp/oov.{txt, int} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
@@ -189,9 +189,70 @@ Checking data/lang_nosp/oov.{txt, int} ...
 --> data/lang_nosp/oov.int corresponds to data/lang_nosp/oov.txt
 --> data/lang_nosp/oov.{txt, int} are OK
 
-The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
---> ERROR: data/lang_nosp/L.fst is not olabel sorted
-The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
---> ERROR: data/lang_nosp/L_disambig.fst is not olabel sorted
---> ERROR (see error messages above)
-prepare_lang.sh: error validating output
+--> data/lang_nosp/L.fst is olabel sorted
+--> data/lang_nosp/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang_nosp]
+Converting 'local_clarin/arpa.lm.gz' to FST
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - data/lang_nosp_test/G.fst 
+LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:98) Reading \data\ section.
+LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \1-grams: section.
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 11 [-2.387844   a       -0.2394255] skipped: word 'a' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 12 [-5.252399   aare    -0.05016758] skipped: word 'aare' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 13 [-4.800938   ab      -0.01376556] skipped: word 'ab' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 14 [-5.23682    abażurem        -0.0302294] skipped: word 'abażurem' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 15 [-5.226714   abchazję        -0.06154328] skipped: word 'abchazję' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 16 [-5.245582   abchazów        -0.02685788] skipped: word 'abchazów' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 17 [-5.255419   aberon] skipped: word 'aberon' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 18 [-5.262231   aberonowi] skipped: word 'aberonowi' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 19 [-5.26215    aberracyjna] skipped: word 'aberracyjna' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 20 [-5.250469   abgarowicz] skipped: word 'abgarowicz' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 21 [-4.881186   abonament       -0.1130914] skipped: word 'abonament' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 22 [-4.876382   abonamentu      -0.07834942] skipped: word 'abonamentu' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 23 [-5.163284   abonamentów     -0.06102198] skipped: word 'abonamentów' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 24 [-5.184859   abonentom       -0.03256992] skipped: word 'abonentom' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 25 [-5.010186   aborcja -0.1268652] skipped: word 'aborcja' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 26 [-4.724734   aborcji -0.1546028] skipped: word 'aborcji' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 27 [-5.047917   aborcję -0.1214982] skipped: word 'aborcję' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 28 [-5.229477   abramsa -0.03953429] skipped: word 'abramsa' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 29 [-5.259943   abramsy] skipped: word 'abramsy' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 30 [-5.241594   abruzji -0.05095416] skipped: word 'abruzji' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 31 [-4.978928   absolutna       -0.03940874] skipped: word 'absolutna' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 32 [-5.007071   absolutne       -0.04487412] skipped: word 'absolutne' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 33 [-4.915956   absolutnej      -0.08613706] skipped: word 'absolutnej' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 34 [-4.264698   absolutnie      -0.1241204] skipped: word 'absolutnie' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 35 [-4.894648   absolutną       -0.07766653] skipped: word 'absolutną' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 36 [-4.74231    absolutorium    -0.1669805] skipped: word 'absolutorium' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 37 [-5.259502   absolutów] skipped: word 'absolutów' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 38 [-4.900764   absolwenci      -0.06442387] skipped: word 'absolwenci' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 39 [-4.807225   absolwent       -0.1084523] skipped: word 'absolwent' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 40 [-5.189535   absolwentami    -0.03575665] skipped: word 'absolwentami' not in symbol table
+LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \2-grams: section.
+LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \3-grams: section.
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:263) Of 1043998 parse warnings, 30 were reported. Run program with --max_warnings=-1 to see all warnings
+LOG (arpa2fst[5.2.160~1-51042]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 3 to 2
+fstisstochastic data/lang_nosp_test/G.fst 
+2.50007 0.201763
+Succeeded in formatting LM: 'local_clarin/arpa.lm.gz'
+steps/make_mfcc.sh --nj 40 data/train
+Checking data/train/text ...
+--> reading data/train/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for train
+steps/compute_cmvn_stats.sh data/train
+Succeeded creating CMVN stats for train
+steps/make_mfcc.sh --nj 40 data/test
+Checking data/test/text ...
+--> reading data/test/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh data/test
+Succeeded creating CMVN stats for test
+steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
