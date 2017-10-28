@@ -463,3 +463,21 @@ steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignm
 36 warnings in exp/tri1/log/init_model.log
 exp/tri1: nj=40 align prob=-93.30 over 51.07h [retry=6.6%, fail=0.1%] states=45 gauss=10019 tree-impr=4.87
 steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+tree-info exp/tri1/tree 
+tree-info exp/tri1/tree 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_nosp_test/phones/disambig.int --write-disambig-syms=data/lang_nosp_test/tmp/disambig_ilabels_3_1.int data/lang_nosp_test/tmp/ilabels_3_1.17116 
+fstisstochastic data/lang_nosp_test/tmp/CLG_3_1.fst 
+0.796265 0
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fstrmepslocal 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstminimizeencoded 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+2.3161 -0.000370538
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl 
+steps/decode.sh --nj 40 exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
