@@ -1,4 +1,4 @@
-$ KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh   
+$ KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
 ln: failed to create symbolic link './conf': File exists
 ln: failed to create symbolic link './local': File exists
 ln: failed to create symbolic link './utils': File exists
@@ -10,7 +10,7 @@ Done!
 File already downloaded! Checking if download is consistent...
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100    47  100    47    0     0    311      0 --:--:-- --:--:-- --:--:--   313
+100    47  100    47    0     0    173      0 --:--:-- --:--:-- --:--:--   174
 audio.tar.gz: OK
 Files already extracted?
 Remove the audio dir to extract them again...
@@ -20,14 +20,14 @@ WARNING: skipped empty file: SES0461_sent16
 Generating spk2utt...
 Preparing dictionary...
 0.000   Loading corpus local_clarin/arpa.lm.gz...
-3.476   Smoothing[1] = ModKN
-3.476   Smoothing[2] = ModKN
-3.476   Smoothing[3] = ModKN
-3.476   Set smoothing algorithms...
-3.486   Y 9.778535e-01
-3.509   Y 8.243298e-01
-3.532   Y 9.794861e-01
-3.532   Saving vocabulary to data/local/lm.wlist...
+3.440   Smoothing[1] = ModKN
+3.440   Smoothing[2] = ModKN
+3.440   Smoothing[3] = ModKN
+3.440   Set smoothing algorithms...
+3.450   Y 9.778535e-01
+3.473   Y 8.243298e-01
+3.491   Y 9.794861e-01
+3.491   Saving vocabulary to data/local/lm.wlist...
 local_clarin/clarin_prepare_dict.sh data/local/all.wlist data/local/dict_nosp
 local_clarin/clarin_prepare_dict.sh: line 72: phonetisaurus_apply: command not found
 Dictionary preparation succeeded
@@ -176,10 +176,10 @@ Checking word-level disambiguation symbols...
 --> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
 Checking word_boundary.int and disambig.int
 The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
---> generating a 49 word sequence
+--> generating a 40 word sequence
 The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
---> ERROR: number of reconstructed words 0 does not match real number of words 49; indicates problem in L.fst or word_boundary.int.  phoneseq = , wordseq = !SIL <SPOKEN_NOISE> !SIL !SIL <unk> <unk> <SPOKEN_NOISE> !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> !SIL <unk> !SIL !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> !SIL <SPOKEN_NOISE> <unk> <SPOKEN_NOISE> <unk> !SIL <SPOKEN_NOISE> !SIL <unk> <SPOKEN_NOISE> <SPOKEN_NOISE> !SIL !SIL <SPOKEN_NOISE> <unk> !SIL <SPOKEN_NOISE> <unk> !SIL <unk> <unk> <SPOKEN_NOISE> <unk> <unk> <SPOKEN_NOISE> !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> !SIL <unk> 
---> generating a 55 word sequence
+--> ERROR: number of reconstructed words 0 does not match real number of words 40; indicates problem in L.fst or word_boundary.int.  phoneseq = , wordseq = !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> <SPOKEN_NOISE> <SPOKEN_NOISE> <unk> !SIL <unk> !SIL !SIL !SIL <SPOKEN_NOISE> <SPOKEN_NOISE> !SIL <SPOKEN_NOISE> <unk> <SPOKEN_NOISE> <unk> <unk> <SPOKEN_NOISE> !SIL !SIL <unk> !SIL <unk> <unk> <unk> !SIL !SIL !SIL <unk> <SPOKEN_NOISE> <unk> <unk> <unk> 
+--> generating a 86 word sequence
 The standard file ~/Playing/kaldi/tools/config/common_path.sh is not present -> Exit!
 
 Checking data/lang_nosp/oov.{txt, int} ...
