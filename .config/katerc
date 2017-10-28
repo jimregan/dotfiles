@@ -19,13 +19,8 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-<<<<<<< HEAD
-Recent Files[$e]=interchunk.dtd,file://$HOME/crash-scratch,file:///tmp/trx.scala,file:///tmp/klatt80/klsyn/c/parwvt.h,file:///tmp/klatt80/klsyn/c/parwv.c,file:///tmp/klatt80/klsyn/c/klsyn.h,file:///tmp/klatt80/klsyn/c/klsyn.c,file:///tmp/klatt80/klatt.c,file:///tmp/klatt80/parwave.h,file:///tmp/klatt80/parwave.c,file://$HOME/Playing/sox/src/aifc-fmt.c,file://$HOME/Playing/sox/src/nsp.c,file://$HOME/Playing/sox/src/xa.c,file://$HOME/Playing/sox/src/aiff.c,file://$HOME/Playing/msf-asr/filter-pron.pl,file://$HOME/Playing/msf-asr/pron/munster.tsv
-Recent URLs[$e]=file://$HOME/Playing/msf-asr/,file://$HOME/Playing/msf-asr/pron/,file://$HOME/Playing/sox/src/,file:///tmp/klatt80/,file:///tmp/klatt80/klsyn/c/,file:///tmp/
-=======
-Recent Files[$e]=interchunk.dtd,file:///tmp/usun,file:///tmp/remap-ipa.pl,file://$HOME/Playing/wolne-lektury-audio-corpus/pron-data/plwiktionary-ipa.tsv,file://$HOME/Playing/wolne-lektury-audio-corpus/pron-data/enwiktionary-ipa.tsv,file:///tmp/plipamap,file://$HOME/practice/trie-node.h,file://$HOME/sru-bw-gpu.py,file://$HOME/sru-bw-cuda.c,file://$HOME/nematus-gru.py,file://$HOME/Playing/World/autodesc/www/js/short_autodesc.js,file://$HOME/Playing/World/autodesc/www/js/auto_long_desc.js,file://$HOME/Playing/msf-asr/scripts/abair-xml-extract.pl,file://$HOME/Playing/msf-asr/scripts/normalisations.tsv,file://$HOME/Playing/msf-asr/scripts/filter-norm.pl,file://$HOME/Playing/msf-asr/scripts/normalisations.tocheck
-Recent URLs[$e]=file://$HOME/Playing/,file://$HOME/Playing/msf-asr/scripts/,file://$HOME/Playing/World/autodesc/www/js/,file:///tmp/,file://$HOME/practice/,file://$HOME/Playing/wolne-lektury-audio-corpus/pron-data/
->>>>>>> more
+Recent Files[$e]=interchunk.dtd,file://$HOME/.scratch/kaldi-run,file:///tmp/usun,file:///tmp/remap-ipa.pl,file://$HOME/Playing/wolne-lektury-audio-corpus/pron-data/plwiktionary-ipa.tsv,file://$HOME/Playing/wolne-lektury-audio-corpus/pron-data/enwiktionary-ipa.tsv,file:///tmp/plipamap,file://$HOME/practice/trie-node.h,file://$HOME/sru-bw-gpu.py,file://$HOME/sru-bw-cuda.c,file://$HOME/nematus-gru.py,file://$HOME/Playing/World/autodesc/www/js/short_autodesc.js,file://$HOME/Playing/World/autodesc/www/js/auto_long_desc.js,file://$HOME/Playing/msf-asr/scripts/abair-xml-extract.pl,file://$HOME/Playing/msf-asr/scripts/normalisations.tsv,file://$HOME/Playing/msf-asr/scripts/filter-norm.pl
+Recent URLs[$e]=file://$HOME/Playing/,file://$HOME/Playing/msf-asr/scripts/,file://$HOME/Playing/World/autodesc/www/js/,file:///tmp/,file://$HOME/practice/,file://$HOME/Playing/wolne-lektury-audio-corpus/pron-data/,file://$HOME/.scratch/
 
 [KTextEditor::Search]
 Search History=nper,log10,setabc,minus_pi_t,sample,[,h-éagcóra,Art,Subj,braille,don,"Foreign": "yes",=Voc
