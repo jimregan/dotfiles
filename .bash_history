@@ -1657,3 +1657,51 @@ less
 less exp/mono0/log/compile_graphs.10.log 
 less steps/train_mono.sh
 history -a
+less data/lang_nosp/phones/wdisambig.txt
+less data/lang_nosp/phones/disambig.txt
+rm -rf data/
+KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
+ls
+git status
+git diff
+git add local_clarin/clarin_pl_data_prep.sh path.sh 
+git commit -m 'local changes'
+git remote add mine https://github.com/jimregan/ClarinStudioKaldi.git
+git checkout -b local-changes
+git push mine local-changes 
+git status
+less local_clarin/model.fst
+ls -al
+grep local/ local_clarin/*
+less local/chain/compare_wer.sh 
+grep steps *sh
+vi run.sh 
+local_clarin/clarin_pl_clean.sh 
+ls
+git status
+rm local_clarin/model.fst
+KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
+less data/lang_nosp/phones.txt 
+ls
+ls data/
+less local/prepare_lang.sh
+less steps/prepare_lang.sh
+less utils/prepare_lang.sh
+grep ' is not present' utils/*
+grep ' is not present' utils/*/*
+grep ' is not present' utils/*/*/*
+grep ' is not present' local/*
+grep ' is not present' local_clarin/*
+grep ' is not present' steps/*
+grep ' is not present' steps/*/*
+grep ' is not present' steps/*/*/*
+grep ' is not present' steps/*/*/*/*
+grep ' is not present' steps/*/*/*/*/*
+less run.sh 
+find . -name '*sh'
+man find
+find -L . -name '*sh'
+find -L . -name '*sh'|xargs grep 'Checking word_bounda'
+find -L . -name '*sh'|xargs grep word_bounda
+grep word_index run.sh 
+history -a
