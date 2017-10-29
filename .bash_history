@@ -1789,3 +1789,14 @@ sh run-ctd.sh
 steps/train_deltas.sh 2000 10000 data/train data/lang_nosp exp/mono0_ali exp/tri1
 sh run-ctd.sh 
 history -a
+less run-ctd.sh 
+utils/mkgraph.sh data/lang_nosp_test exp/tri2b exp/tri2b/graph
+steps/train_lda_mllt.sh --splice-opts --left-context=3 --right-context=3 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
+steps/train_lda_mllt.sh --splice-opts --left-context 3 --right-context 3 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
+less run-ctd.sh 
+steps/train_lda_mllt.sh --splice-opts "--left-context=3 --right-context=3" 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
+less steps/train_lda_mllt.sh 
+ls exp/tri2b
+ls exp/tri2b/log/
+cat exp/tri2b/log/*
+history -a
