@@ -576,3 +576,5 @@ steps/train_mmi.sh: feature type is lda
 Iteration 0 of MMI training
 Iteration 0: objf was 0.202566927580284, MMI auxf change was 0.00593964785065866
 Iteration 1 of MMI training
+Iteration 1: objf was 0.212053292451508, MMI auxf change was 0.00330754458221714
+Iteration 2 of MMI training
