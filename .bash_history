@@ -2302,3 +2302,42 @@ df -m
 df
 df -m
 history -a
+cd ~/Playing/kaldi/
+cd src/lmbin/
+ls
+vi arpa2fst.cc 
+ls
+vi ../lm/arpa-file-parser.cc 
+vi arpa2fst.cc 
+ls
+less arpa-to-const-arpa
+less arpa-to-const-arpa.cc 
+vi arpa2fst.cc 
+ls
+vi arpa2fst.cc 
+vi ../lm/arpa-lm-compiler.h 
+vi arpa2fst.cc 
+vi ../util/parse-options.h 
+vi arpa2fst.cc 
+grep ArpaParseOptions *
+grep ArpaParseOptions ../lm/*
+grep ArpaParseOptions ../lm/arpa-file-parser.h 
+less ../lm/arpa-file-parser.h 
+vi arpa2fst.cc 
+less ../lm/arpa-file-parser.h 
+vi arpa2fst.cc 
+vi arpa-to-const-arpa.cc 
+vi arpa2fst.cc 
+make
+git diff
+git add arpa2fst.cc 
+git commit -m 'register max_warnings option, referred to in parse error message'
+git remote add mine https://github.com/jimregan/kaldi.git
+git checkout -b arpa2fst-missing-option
+git push mine arpa2fst-missing-option
+git pull origin master
+less tools/ATLAS_headers/include/README.txt
+cd ..
+less tools/ATLAS_headers/include/README.txt
+vi src/lm/arpa-file-parser.cc 
+history -a

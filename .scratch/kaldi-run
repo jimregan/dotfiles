@@ -1079,3 +1079,46 @@ steps/diagnostic/analyze_lats.sh: see stats in /home/jim/Playing/kaldi/egs/vysta
 Decode tri1
 steps/decode.sh --scoring-opts --min-lmw 4 --max-lmw 15 --config common/decode.conf --nj 20 --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/graph_build2 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/dev_build2 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2
 decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/graph_build2 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2
+steps/diagnostic/analyze_lats.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,18,135) and mean=50.9
+steps/diagnostic/analyze_lats.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/log/analyze_lattice_depth_stats.log
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_10
+%WER 56.11 [ 6654 / 11858, 712 ins, 1349 del, 4593 sub ]
+%SER 70.75 [ 1415 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_11
+%WER 55.62 [ 6595 / 11858, 607 ins, 1497 del, 4491 sub ]
+%SER 70.55 [ 1411 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_12
+%WER 55.54 [ 6586 / 11858, 539 ins, 1595 del, 4452 sub ]
+%SER 70.30 [ 1406 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_13
+%WER 56.12 [ 6655 / 11858, 480 ins, 1729 del, 4446 sub ]
+%SER 70.50 [ 1410 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_14
+%WER 56.73 [ 6727 / 11858, 418 ins, 1902 del, 4407 sub ]
+%SER 70.90 [ 1418 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_15
+%WER 57.21 [ 6784 / 11858, 365 ins, 2036 del, 4383 sub ]
+%SER 71.05 [ 1421 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_4
+%WER 65.43 [ 7759 / 11858, 1726 ins, 696 del, 5337 sub ]
+%SER 77.95 [ 1559 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_5
+%WER 62.99 [ 7469 / 11858, 1516 ins, 771 del, 5182 sub ]
+%SER 76.20 [ 1524 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_6
+%WER 60.44 [ 7167 / 11858, 1278 ins, 880 del, 5009 sub ]
+%SER 74.25 [ 1485 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_7
+%WER 58.68 [ 6958 / 11858, 1109 ins, 993 del, 4856 sub ]
+%SER 73.05 [ 1461 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_8
+%WER 57.26 [ 6790 / 11858, 934 ins, 1110 del, 4746 sub ]
+%SER 71.85 [ 1437 / 2000 ]
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/decode_dev_build2/wer_9
+%WER 56.46 [ 6695 / 11858, 810 ins, 1247 del, 4638 sub ]
+%SER 71.15 [ 1423 / 2000 ]
+Decode tri2a
+steps/decode.sh --scoring-opts --min-lmw 4 --max-lmw 15 --config common/decode.conf --nj 20 --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a/graph_build2 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/dev_build2 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a/decode_dev_build2
+decode.sh: feature type is delta
