@@ -1914,3 +1914,30 @@ ls ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0001.xml
 less ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0001.xml 
 less ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0029.xml 
 history -a
+ls /media/jim/TOSHIBA/labcds/rzmaster/
+ls /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/
+ls /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/Fuaim/
+ls /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/Fuaim/Ceart/
+file /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Scannain/Lch*
+ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Scannain/Lch01.swf 
+ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Lch01.a5r 
+file /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Lch01.a5r 
+less /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Lch01.a5r 
+less /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Bearnai.a5e 
+less /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/Ainmhithe/Eolas/
+ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
+ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/3/Scannain/Lch01.swf 
+ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Scannain/Lch01.swf 
+ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
+find /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/ -type f
+find /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/ -type f|xargs grep -i maidin
+strings /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
+strings /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf |grep maidin
+strings /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf |less
+apt-cache search swf
+sudo apt-get install swfmill swftools
+man swfmill 
+swfmill swf2xml /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
+swfmill swf2xml /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf |less
+ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
+history -a
