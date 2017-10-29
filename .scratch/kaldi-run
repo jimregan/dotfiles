@@ -580,3 +580,11 @@ Iteration 1: objf was 0.212053292451508, MMI auxf change was 0.00330754458221714
 Iteration 2 of MMI training
 Iteration 2: objf was 0.21794984434514, MMI auxf change was 0.002405974497023
 Iteration 3 of MMI training
+Iteration 3: objf was 0.222362554457885, MMI auxf change was 0.00196346090639116
+MMI training finished
+Train MMI on top of LDA+MLLT with boosting. train_mmi_boost is a e.g. 0.05
+steps/train_mmi.sh --boost 0.05 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_ali /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_mmi_b0.05
+steps/train_mmi.sh: feature type is lda
+Iteration 0 of MMI training
+Iteration 0: objf was 0.192743526821622, MMI auxf change was 0.00653888273226237
+Iteration 1 of MMI training
