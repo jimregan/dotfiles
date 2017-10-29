@@ -562,3 +562,4 @@ steps/train_deltas.sh: training pass 18
 steps/train_deltas.sh: training pass 19
 steps/train_deltas.sh: training pass 20
 steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
