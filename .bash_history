@@ -1832,3 +1832,16 @@ find . -name G.fst
 ls -al data/lang_nosp_test/G.fst 
 ~/Playing/kaldi/src/lmbin/arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - /tmp/G.fst
 history -a
+cd ../..
+find . -name CI0001CDNamedEntities02_0029.xml
+less ./ga_MU/nnc/CDNamedEntities02/textproc_xml/CI0001CDNamedEntities02_0029.xml
+find ga_MU -name '*xml'
+find ga_MU -name '*xml'|xargs grep '<word'
+find . -name res
+find ../tcdsynthesiser -name 
+find ga_MU -name '*xml'|xargs grep '<word'|grep 'original_transcription='
+find ga_MU -name '*xml'|xargs grep '<word'
+less ga_MU/nnc/CDAn_tOileanach_part1_newLTS/xml/CI0001CDAn_tOileanach_1169.xml
+find . -name '*wav' -or -name '*.ogg' -or -name '*.mp3'
+find . -name '*wav' -or -name '*.ogg' -or -name '*.mp3' > ~/.scratch/audio-list
+history -a
