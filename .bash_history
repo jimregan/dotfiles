@@ -1941,3 +1941,66 @@ swfmill swf2xml /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.s
 swfmill swf2xml /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf |less
 ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
 history -a
+ls /media/jim/TOSHIBA/labcds/fest1/more_fst/IRISH.SCM 
+less /media/jim/TOSHIBA/labcds/fest1/more_fst/IRISH.SCM 
+less /media/jim/TOSHIBA/labcds/fest1/more_fst/IRISH/TCD_GA_LEXICON.SCM
+ffplay /media/jim/TOSHIBA/labcds/dunchaochain/CLP/BAILE.AVI 
+file /media/jim/TOSHIBA/labcds/dunchaochain/PRE/00000*
+file /media/jim/TOSHIBA/labcds/dunchaochain/PRO/*/*
+file /media/jim/TOSHIBA/labcds/dunchaochain/PRO/*/*|less
+file /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
+less /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
+ls
+./a.out 
+ls
+make
+ls
+cd ..
+ls
+src/lha -h
+./src/lha -h
+./src/lha 
+./src/lha x /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
+ls
+ls /media/jim/TOSHIBA/labcds/dunchaochain/
+./src/lha v /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
+cd ..
+git clone https://github.com/jimregan/unspis.git
+cd unspis/
+ls
+make
+ls
+./unspis 
+./unspis /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
+ls
+mkdir extr
+cd extr/
+../unspis /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
+ls
+find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'
+ls
+find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'
+less smbgsb.htm 
+ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
+less smbgsb.htm 
+ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
+less smbgsb.htm 
+less tstan.htm 
+ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/TSTAN.WAV
+ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
+less snamb.htm 
+less snam2.htm 
+less snamb.htm 
+ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
+less snamb.htm 
+ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/CILLPRO/SNAMB.WAV 
+less snamb.htm 
+find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'
+find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'|grep '~[2-9]'
+find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'|grep '~[2-9]'|awk -F'/' '{print $NF}'
+grep abair ~/.bash_history 
+grep dotfiles ~/open-tabs 
+svn ls --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/
+svn ls --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/vifax
+svn mkdir --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/cdroms
+history -a
