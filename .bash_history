@@ -2004,3 +2004,146 @@ svn ls --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora
 svn ls --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/vifax
 svn mkdir --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/cdroms
 history -a
+ls -al /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build2/G.fst
+ls
+less run.sh 
+less local/create_sample.sh 
+less local/make_baseform.pl 
+less steps/decode_sgmm2_fromlats.sh 
+less steps/align_sgmm2.sh 
+less steps/dict/learn_lexicon.sh 
+less local/create_phone_lists.sh 
+less local/make_baseform.pl 
+less local/prepare_cs_transcription.sh 
+less local/create_G.sh 
+ls
+less steps/dict/train_g2p.sh 
+cd /tmp/
+svn co --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/cdroms
+cd cdroms/
+ls
+df
+mkdir dunchaochain/
+cd dunchaochain/
+ls
+cp /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ .
+vi README
+ls /media/jim/TOSHIBA/labcds/dunchaochain/PRO/*
+cp -r /media/jim/TOSHIBA/labcds/dunchaochain/PRO/ .
+ls
+cd ..
+svn add dunchaochain/
+svn commit -m 'dunchaochain files (cd of pronunciations of placenames in Connacht)'
+ls
+df
+ls
+cd dunchaochain/
+ls
+#/tmp/unspis/
+mkdir html
+cd html/
+#/tmp/unspis/unspis 
+ls
+ls ..
+/tmp/unspis/unspis ../DUN18.HTZ 
+ls
+less portaighmhaidhc.htm 
+grep '~' *htm
+grep '1' *htm
+ffplay ../PRO/CILLPRO/UAIGAR.WAV 
+less uaigar.htm 
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm|less
+perl ~/.scratch/dunchaochain-to-tsv.pl antuir.htm 
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm
+less trne.htm 
+perl ~/.scratch/dunchaochain-to-tsv.pl antuir.htm 
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm 
+dunplay () { ffplay ../$(echo $1 | tr 'a-z' 'A-Z') ; }
+dunplay pro/thgp/strant.wav
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
+less anbat.htm 
+find ../PRO -name 'ANBAT*'
+grep anbat *
+find ../PRO -name 'ANBAT*'
+cd ..
+ls
+less text.tsv 
+dunplay pro/cillpro/anpadb.wav
+cd html/
+dunplay pro/cillpro/anpadb.wav
+grep / ../text.tsv 
+dunplay pro/thgp/tsabth.wav
+dunplay pro/rosp/tnamb.wav
+grep ' /' ../text.tsv 
+dunplay pro/rosp/anclo.wav
+dunplay pro/rosp/angi.wav
+dunplay pro/cillpro/anpadb.wav
+dunplay pro/cngp/ml.wav 
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
+less ../text.tsv 
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
+find ../PRO/ -name 'GARRAN~1.WAV'
+ffplay ../PRO/THGP/GARRAN~1.WAV
+grep garran *htm
+less asin.htm 
+dunplay pro/bdp/asin.wav
+ffplay ../PRO/THGP/GARRAN~1.WAV
+less garana.htm 
+grep wav garr*
+grep pro/thgp/garr *
+ffplay ../PRO/THGP/GARROI.WAV 
+less garroi.htm 
+ls *htm|wc
+find ../PRO -name '*WAV'|wc
+grep garraí *
+grep garrai *
+cat ../text.tsv 
+cat ../text.tsv |awk '{print uc $2}'
+cat ../text.tsv |awk '{print uc $1}'
+cat ../text.tsv |awk '{print $1}'|tr 'a-z' 'A-Z'
+cat ../text.tsv |awk '{print $1}'|tr 'a-z' 'A-Z'|while read i;do if [ ! -e ../$i ]; then echo $i;fi;done
+grep /.wav *htm
+grep '<bgsound' *htm
+grep '<bgsound' *htm |awk -F'"' '{print $2}'
+grep '<bgsound' *htm |awk -F'"' '{print $2}' > /tmp/wavlist
+find ../PRO -name '*WAV'
+find ../PRO -name '*WAV'|sed -e 's/\.\.\///'
+find ../PRO -name '*WAV'|sed -e 's/\.\.\///'|perl -C7 -ane 'print lc'
+find ../PRO -name '*WAV'|sed -e 's/\.\.\///'|perl -C7 -ane 'print lc'|while read i;do grep $i /tmp/wavlist || echo $i >> /tmp/notinwav;done
+less /tmp/notinwav 
+cat /tmp/notinwav 
+grep bunmhu *
+grep bunmh *
+grep bun *
+grep satp *
+grep '/.' *
+grep '/\.' *
+grep satp /tmp/notinwav 
+grep afotb /tmp/notinwav 
+grep anpol /tmp/notinwav 
+echo pro/thgp/anpol.wav|tr 'a-z' 'A-Z'
+grep barchn /tmp/notinwav 
+grep cardu /tmp/notinwav 
+grep geard /tmp/notinwav 
+grep sps /tmp/notinwav 
+grep muic /tmp/notinwav 
+grep tal /tmp/notinwav 
+less talri.htm
+dunplay pro/prdp/talri.wav
+less talri.htm
+echo pro/prdp/talri.wav|tr 'a-z' 'A-Z'
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
+less ../text.tsv 
+cd ..
+cp ~/.scratch/dunchaochain-to-tsv.pl .
+svn add dunchaochain-to-tsv.pl text.tsv 
+svn ci -m 'add script and output; still some adjustments to be made, but the list of files and their transcriptions do not fully overlap'
+cd html/
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
+svn diff
+cd ..
+svn diff
+cp ~/.scratch/dunchaochain-to-tsv.pl .
+cd html/
+history -a
