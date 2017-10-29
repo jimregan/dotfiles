@@ -563,3 +563,49 @@ steps/train_deltas.sh: training pass 19
 steps/train_deltas.sh: training pass 20
 steps/train_deltas.sh: aligning data
 steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2a
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2a/log/analyze_alignments.log
+36 warnings in exp/tri2a/log/questions.log
+1 warnings in exp/tri2a/log/build_tree.log
+1224 warnings in exp/tri2a/log/update.*.log
+274 warnings in exp/tri2a/log/acc.*.*.log
+2659 warnings in exp/tri2a/log/align.*.*.log
+36 warnings in exp/tri2a/log/init_model.log
+exp/tri2a: nj=40 align prob=-92.97 over 51.06h [retry=7.0%, fail=0.1%] states=45 gauss=15024 tree-impr=4.91
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri2a
+tree-info exp/tri2a/tree 
+tree-info exp/tri2a/tree 
+make-h-transducer --disambig-syms-out=exp/tri2a/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri2a/tree exp/tri2a/final.mdl 
+fsttablecompose exp/tri2a/graph/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/tri2a/graph/disambig_tid.int 
+fstrmepslocal 
+fstminimizeencoded 
+fstisstochastic exp/tri2a/graph/HCLGa.fst 
+2.31596 -0.000515846
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2a/final.mdl 
+steps/decode.sh --nj 40 exp/tri2a/graph data/test exp/tri2a/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri2a/graph exp/tri2a/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2a/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,8,12) and mean=7.7
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2a/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri2a/graph exp/tri2a/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/train_lda_mllt.sh --splice-opts --left-context=3 --right-context=3 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.

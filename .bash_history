@@ -1779,3 +1779,13 @@ ls
 less audio/audio/SES0001/sent001.txt 
 vi run-ctd.sh 
 history -a
+utils/mkgraph.sh --mono data/lang_nosp_test exp/mono0 exp/mono0/graph
+export nj=40
+steps/decode.sh --nj $nj exp/mono0/graph data/test exp/mono0/decode
+steps/align_si.sh --nj $nj data/train data/lang_nosp exp/mono0 exp/mono0_ali
+cp run.sh run-ctd.sh
+vi run-ctd.sh 
+sh run-ctd.sh 
+steps/train_deltas.sh 2000 10000 data/train data/lang_nosp exp/mono0_ali exp/tri1
+sh run-ctd.sh 
+history -a
