@@ -2248,3 +2248,57 @@ man unar
 unar x wGeorge\ R\ R\ Martin\ -\ \[A\ Song\ of\ Ice\ and\ Fire\]\ -\ The\ World\ of\ Ice\ \&\ Fire-\ The\ Untold\ History\ of\ Westeros\ and\ the\ Game\ of\ Thrones\ -\ Elio\ Garcia\,\ Linda\ Antonsson\ \(epub\).rar 
 unar George\ R\ R\ Martin\ -\ \[A\ Song\ of\ Ice\ and\ Fire\]\ -\ The\ World\ of\ Ice\ \&\ Fire-\ The\ Untold\ History\ of\ Westeros\ and\ the\ Game\ of\ Thrones\ -\ Elio\ Garcia\,\ Linda\ Antonsson\ \(epub\).rar 
 history -a
+cd /tmp
+tar zxvf ~/Downloads/zero_ru_cont_8k_v3.tar.gz 
+tar zxvf ~/Downloads/cmusphinx-ru-5.2.tar.gz 
+less cmusphinx-ru-5.2/README 
+less zero_ru_cont_8k_v3/decoder-test.
+less zero_ru_cont_8k_v3/decoder-test.sh 
+unzip -l ~/Downloads/Kyiv.zip 
+unzip -l ~/Downloads/Kyiv.zip |less
+vi ~/open-tabs 
+ssh jimregan
+tar zxvf ~/Downloads/export3.tgz 
+cd export/
+ls
+less README 
+ls
+cd grammars/
+ls
+less currency/cur_center.grm 
+less currency/cur_R.grm 
+ls
+less dates/date_en.grm 
+less dates/date.grm 
+less dates/date_tags.grm 
+ls
+less number_names/
+less number_names/numbers_hu_hu.grm 
+less number_names/numbers_eu_es.grm 
+less number_names/numbers_it_it.grm 
+cd /tmp/
+ls
+ls ~/Downloads/*ru*
+tar jxvf ~/Downloads/msu_ru_nsh_clunits-0.5.tar.bz2 
+cd msu_ru_nsh_clunits/
+ls
+less lab/ru_0001.lab 
+ffplay wav/ru_0001.wav 
+ls
+less dict/msu_ru_nsh_dict.scm 
+ls
+less README 
+ls
+less mcep/
+less mcep/ru_0001.mcep 
+ls
+less festival/clunits/phonenames 
+ls
+less etc/txt.done.data 
+ls
+less festvox/msu_ru_nsh_phoneset.scm 
+df
+df -m
+df
+df -m
+history -a
