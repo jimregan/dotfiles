@@ -729,4 +729,25 @@ https://www.forbes.com/sites/kalevleetaru/2017/01/06/the-internet-archives-new-d
 https://archive.org/post/1026229/audio-fingerprinting-using-docker
 https://blog.archive.org/2017/01/05/internet-archives-trump-archive-launches-today/
 
+http://www.danielpovey.com/files/2017_interspeech_dropout.pdf
+http://www.danielpovey.com/files/2017_icassp_reverberation.pdf
+http://www.danielpovey.com/files/2017_icassp_diarization_embeddings.pdf
+http://www.danielpovey.com/files/2015_interspeech_augmentation.pdf
+http://www.danielpovey.com/files/2015_icassp_librispeech.pdf
+http://www.danielpovey.com/files/2013_icassp_quantifying.pdf
+
+https://sourceforge.net/p/kaldi/mailman/message/33229487/
+https://chrisearch.wordpress.com/2017/03/11/speech-recognition-using-kaldi-extending-and-using-the-aspire-model/
+http://codingandlearning.blogspot.ie/2014/01/kaldi-lattices.html
+https://github.com/kaldi-asr/kaldi/blob/master/src/lat/kaldi-lattice.cc
+http://kaldi-asr.org/doc/graph.html
+http://senarvi.github.io/2016/12/15/kaldi-lattices
+https://github.com/
+https://github.com/wiseodd/generative-models
+https://github.com/kaldi-asr/kaldi/issues/720
+https://github.com/danpovey/pocolm/blob/master/src/perturb-counts.cc
+http://vpanayotov.blogspot.ie/2012/06/kaldi-decoding-graph-construction.html
+
+https://github.com/aalto-speech/finnish-parliament-scripts/blob/master/extract/elan_wav_extractor.py
+
 
