@@ -1845,3 +1845,72 @@ less ga_MU/nnc/CDAn_tOileanach_part1_newLTS/xml/CI0001CDAn_tOileanach_1169.xml
 find . -name '*wav' -or -name '*.ogg' -or -name '*.mp3'
 find . -name '*wav' -or -name '*.ogg' -or -name '*.mp3' > ~/.scratch/audio-list
 history -a
+ls
+ls da
+rm -rf data
+ls
+df
+ls /tmp/
+ls
+ls audio/
+ls -al ~/Downloads/
+rm ~/Downloads/stanford-corenlp-full-2017-06-09.zip 
+rm ~/Downloads/English_File_3d_Advanced_Class_Cds_www.frenglish.ru.rar 
+df
+du ~
+du /tmp/
+rm -rf /tmp/zero_ru_cont_8k_v3/
+du /tmp/
+du -k /tmp/
+man du
+du -m /tmp/
+ls /tmp/cmusphinx-ru-5.2/
+ls -al /tmp/cmusphinx-ru-5.2/
+rm -rf /tmp/cmusphinx-ru-5.2/
+df
+du -m ~
+du -m ~/Playing/wolne-lektury-audio-corpus/
+du -m ~/Playing/Corpora/
+cd ../Corpora/
+ffplay ./saytime-anb/wav/saytime-gu_012.wav
+less ./saytime-anb/readme 
+less ./saytime-anb/index.xml 
+less ./saytime-anb/xml/
+less ./saytime-anb/xml/saytime-gu_004.xml 
+ffplay ./en_IE/anb/tcd_ANB_eng_cleaned/arctic_0241.wav
+ffplay ./en_IE/nnc/Arctic/wav/nnc_arctic_0518.wav
+ffplay ./ga_UL/anb/new_text01/wav44/tcd_gd_text01-020_087.wav
+ffplay ./ga_CO/pmg_recordings/RCPiarsachBairbre/RECS/0001/MI0001RCPiarsachBairbre_0301.wav
+ffplay ./ga_CO/pmg_recordings/RCPiarsachSagart/RECS/0001/MI0001RCPiarsachSagart_0055.wav
+ffplay ./ga_CO/pmg_recordings/
+ls ./ga_CO/pmg_recordings/
+ls ./ga_CO/Conemara-Rec/
+find  ./ga_CO/Conemara-Rec/
+./ga_CO/Conemara-Rec/Conversion Script/txt2xml-prompts-amelia.py
+less './ga_CO/Conemara-Rec/Conversion Script/txt2xml-prompts-amelia.py'
+grep 'wav$' ~/.scratch/audio-list 
+ls
+ls ga_CO/
+less ga_CO/mysql/extract_audio.pl 
+less ga_CO/mysql/phonelist 
+less ga_CO/mysql/tcd_rc_pmc_mysql_100407.txt 
+ls
+ls scripts/
+find . -name '*.scm'
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/festival_multisyn/festvox/tcd_ga_mu_mnl_msf.scm 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/festival_multisyn/multisyn_data/utt/tcd_ga_mu_mnl_msf_1295.utt 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/festival_multisyn/multisyn_data/utts.data
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/removed_files/tcd_ga_mu_mnl_msf_0653.xml 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0001.txt 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0002.txt 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0003.txt 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0004.txt 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_3317.txt 
+cat ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_*
+cat ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_*|less
+ls -al ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_*
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/status/tcd_ga_mu_mnl_msf_0001.txt 
+ls ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0001.xml 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0001.xml 
+less ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0029.xml 
+history -a
