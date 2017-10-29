@@ -1,83 +1,94 @@
-ln: failed to create symbolic link './conf': File exists
-ln: failed to create symbolic link './local': File exists
-ln: failed to create symbolic link './utils': File exists
-ln: failed to create symbolic link './steps': File exists
-Would you like to clean all the data and experiments in this project? (type yes): yes
-Cleaning directory...
-Done!
-~/Playing/kaldi/egs/clarinpl/audio ~/Playing/kaldi/egs/clarinpl
-File already downloaded! Checking if download is consistent...
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100    47  100    47    0     0    172      0 --:--:-- --:--:-- --:--:--   173
-audio.tar.gz: OK
-Files already extracted?
-Remove the audio dir to extract them again...
-~/Playing/kaldi/egs/clarinpl
-Generating file lists using proper paths...
-WARNING: skipped empty file: SES0461_sent16
-Generating spk2utt...
-Preparing dictionary...
-0.000   Loading corpus local_clarin/arpa.lm.gz...
-4.353   Smoothing[1] = ModKN
-4.353   Smoothing[2] = ModKN
-4.353   Smoothing[3] = ModKN
-4.353   Set smoothing algorithms...
-4.363   Y 9.778535e-01
-4.386   Y 8.243298e-01
-4.416   Y 9.794861e-01
-4.416   Saving vocabulary to data/local/lm.wlist...
-local_clarin/clarin_prepare_dict.sh data/local/all.wlist data/local/dict_nosp
-local_clarin/clarin_prepare_dict.sh: line 72: phonetisaurus_apply: command not found
-Dictionary preparation succeeded
-utils/prepare_lang.sh data/local/dict_nosp <unk> data/local/tmp_nosp data/lang_nosp
-Checking data/local/dict_nosp/silence_phones.txt ...
---> reading data/local/dict_nosp/silence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/silence_phones.txt is OK
+$ sh run.sh 
+6756 (process ID) old priority 0, new priority 19
+ Copy the configuration files to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp directory.
+Checking if data extracted correctly
+It seams that data are extracted correctly
+~/Playing/kaldi/egs/vystadial_cz/s5/data ~/Playing/kaldi/egs/vystadial_cz/s5
+ln: failed to create symbolic link './test': File exists
+ln: failed to create symbolic link './train': File exists
+ln: failed to create symbolic link './dev': File exists
+ln: failed to create symbolic link 'arpa-bigram': File exists
+~/Playing/kaldi/egs/vystadial_cz/s5
+LMs build0 build2  test_sets dev test
+=== Starting initial Vystadial data preparation ...
+--- Making test/train data split from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/data taking every 1 recording...
+Set 1:1 relation for spk2utt: spk in dev test AND train, sort in place
+--- Distributing the file lists to train and (dev test x build0 build2) directories ...
+=== Preparing the LM ...
+=== Building LM of order 0...
+Zerogram build0 LM is build from text: /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test/trans.txt
+=== Building zerogram build0 from . ...
+=== Building LM of order 2...
+LM build2 is build from text: /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/train/trans.txt
+*** LMs preparation finished!
+=== Preparing the vocabulary ...
 
-Checking data/local/dict_nosp/optional_silence.txt ...
---> reading data/local/dict_nosp/optional_silence.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/optional_silence.txt is OK
+Building dictionary from train data
 
-Checking data/local/dict_nosp/nonsilence_phones.txt ...
---> reading data/local/dict_nosp/nonsilence_phones.txt
+Removing from vocabulary _NOISE_, and  all '_' words from vocab-full.txt
+*** Vocabulary preparation finished!
+Removing from vocabulary _NOISE_, and  all '_' words from vocab-test.txt
+--- Searching for OOV words ...
+0 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/vocab-oov.txt
+14886 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexicon.txt
+--- Prepare nonsilence phone lists ...
+--- Adding silence phones to lexicon ...
+--- Sorting lexicon in place...
+--- Prepare silence phone lists ...
+*** Creating phone lists finished!
+utils/prepare_lang.sh /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict _SIL_ /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/silence_phones.txt ...
+--> reading /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/silence_phones.txt
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> data/local/dict_nosp/nonsilence_phones.txt is OK
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/silence_phones.txt is OK
+
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/optional_silence.txt ...
+--> reading /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/optional_silence.txt is OK
+
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/nonsilence_phones.txt ...
+--> reading /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/nonsilence_phones.txt is OK
 
 Checking disjoint: silence_phones.txt, nonsilence_phones.txt
 --> disjoint property is OK.
 
-Checking data/local/dict_nosp/lexicon.txt
---> reading data/local/dict_nosp/lexicon.txt
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexicon.txt
+--> reading /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexicon.txt
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> data/local/dict_nosp/lexicon.txt is OK
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexicon.txt is OK
 
-Checking data/local/dict_nosp/extra_questions.txt ...
---> reading data/local/dict_nosp/extra_questions.txt
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexiconp.txt
+--> reading /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexiconp.txt
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> data/local/dict_nosp/extra_questions.txt is OK
---> SUCCESS [validating dictionary directory data/local/dict_nosp]
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexiconp.txt is OK
 
-**Creating data/local/dict_nosp/lexiconp.txt from data/local/dict_nosp/lexicon.txt
-fstaddselfloops data/lang_nosp/phones/wdisambig_phones.int data/lang_nosp/phones/wdisambig_words.int 
+Checking lexicon pair /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexicon.txt and /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexiconp.txt
+--> lexicon pair /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexicon.txt and /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/lexiconp.txt match
+
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/extra_questions.txt ...
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dict]
+
+fstaddselfloops /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/wdisambig_phones.int /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/wdisambig_words.int 
 prepare_lang.sh: validating output directory
-utils/validate_lang.pl data/lang_nosp
-Checking data/lang_nosp/phones.txt ...
+utils/validate_lang.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones.txt ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> data/lang_nosp/phones.txt is OK
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones.txt is OK
 
 Checking words.txt: #0 ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> data/lang_nosp/words.txt is OK
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/words.txt is OK
 
 Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
 --> silence.txt and nonsilence.txt are disjoint
@@ -88,154 +99,480 @@ Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
 Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
 --> summation property is OK
 
-Checking data/lang_nosp/phones/context_indep.{txt, int, csl} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/context_indep.{txt, int, csl} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 10 entry/entries in data/lang_nosp/phones/context_indep.txt
---> data/lang_nosp/phones/context_indep.int corresponds to data/lang_nosp/phones/context_indep.txt
---> data/lang_nosp/phones/context_indep.csl corresponds to data/lang_nosp/phones/context_indep.txt
---> data/lang_nosp/phones/context_indep.{txt, int, csl} are OK
+--> 25 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/context_indep.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/context_indep.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/context_indep.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/context_indep.csl corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/context_indep.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/context_indep.{txt, int, csl} are OK
 
-Checking data/lang_nosp/phones/nonsilence.{txt, int, csl} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/nonsilence.{txt, int, csl} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 144 entry/entries in data/lang_nosp/phones/nonsilence.txt
---> data/lang_nosp/phones/nonsilence.int corresponds to data/lang_nosp/phones/nonsilence.txt
---> data/lang_nosp/phones/nonsilence.csl corresponds to data/lang_nosp/phones/nonsilence.txt
---> data/lang_nosp/phones/nonsilence.{txt, int, csl} are OK
+--> 152 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/nonsilence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/nonsilence.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/nonsilence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/nonsilence.csl corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/nonsilence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/nonsilence.{txt, int, csl} are OK
 
-Checking data/lang_nosp/phones/silence.{txt, int, csl} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/silence.{txt, int, csl} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 10 entry/entries in data/lang_nosp/phones/silence.txt
---> data/lang_nosp/phones/silence.int corresponds to data/lang_nosp/phones/silence.txt
---> data/lang_nosp/phones/silence.csl corresponds to data/lang_nosp/phones/silence.txt
---> data/lang_nosp/phones/silence.{txt, int, csl} are OK
+--> 25 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/silence.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/silence.csl corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/silence.{txt, int, csl} are OK
 
-Checking data/lang_nosp/phones/optional_silence.{txt, int, csl} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.{txt, int, csl} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 1 entry/entries in data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.int corresponds to data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.csl corresponds to data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.{txt, int, csl} are OK
+--> 1 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.csl corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.{txt, int, csl} are OK
 
-Checking data/lang_nosp/phones/disambig.{txt, int, csl} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.{txt, int, csl} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 4 entry/entries in data/lang_nosp/phones/disambig.txt
---> data/lang_nosp/phones/disambig.int corresponds to data/lang_nosp/phones/disambig.txt
---> data/lang_nosp/phones/disambig.csl corresponds to data/lang_nosp/phones/disambig.txt
---> data/lang_nosp/phones/disambig.{txt, int, csl} are OK
+--> 5 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.csl corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.{txt, int, csl} are OK
 
-Checking data/lang_nosp/phones/roots.{txt, int} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/roots.{txt, int} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 38 entry/entries in data/lang_nosp/phones/roots.txt
---> data/lang_nosp/phones/roots.int corresponds to data/lang_nosp/phones/roots.txt
---> data/lang_nosp/phones/roots.{txt, int} are OK
+--> 43 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/roots.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/roots.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/roots.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/roots.{txt, int} are OK
 
-Checking data/lang_nosp/phones/sets.{txt, int} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/sets.{txt, int} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 38 entry/entries in data/lang_nosp/phones/sets.txt
---> data/lang_nosp/phones/sets.int corresponds to data/lang_nosp/phones/sets.txt
---> data/lang_nosp/phones/sets.{txt, int} are OK
+--> 43 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/sets.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/sets.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/sets.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/sets.{txt, int} are OK
 
-Checking data/lang_nosp/phones/extra_questions.{txt, int} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/extra_questions.{txt, int} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 11 entry/entries in data/lang_nosp/phones/extra_questions.txt
---> data/lang_nosp/phones/extra_questions.int corresponds to data/lang_nosp/phones/extra_questions.txt
---> data/lang_nosp/phones/extra_questions.{txt, int} are OK
+--> 9 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/extra_questions.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/extra_questions.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/extra_questions.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/extra_questions.{txt, int} are OK
 
-Checking data/lang_nosp/phones/word_boundary.{txt, int} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.{txt, int} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 154 entry/entries in data/lang_nosp/phones/word_boundary.txt
---> data/lang_nosp/phones/word_boundary.int corresponds to data/lang_nosp/phones/word_boundary.txt
---> data/lang_nosp/phones/word_boundary.{txt, int} are OK
+--> 177 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.{txt, int} are OK
 
 Checking optional_silence.txt ...
---> reading data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.txt is OK
+--> reading /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/optional_silence.txt is OK
 
 Checking disambiguation symbols: #0 and #1
---> data/lang_nosp/phones/disambig.txt has "#0" and "#1"
---> data/lang_nosp/phones/disambig.txt is OK
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.txt has "#0" and "#1"
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/disambig.txt is OK
 
 Checking topo ...
 
 Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
---> data/lang_nosp/phones/word_boundary.txt doesn't include disambiguation symbols
---> data/lang_nosp/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
---> data/lang_nosp/phones/word_boundary.txt is OK
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/word_boundary.txt is OK
 
 Checking word-level disambiguation symbols...
---> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
 Checking word_boundary.int and disambig.int
---> generating a 25 word sequence
+--> generating a 43 word sequence
 --> resulting phone sequence from L.fst corresponds to the word sequence
 --> L.fst is OK
---> generating a 2 word sequence
+--> generating a 100 word sequence
 --> resulting phone sequence from L_disambig.fst corresponds to the word sequence
 --> L_disambig.fst is OK
 
-Checking data/lang_nosp/oov.{txt, int} ...
+Checking /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/oov.{txt, int} ...
 --> text seems to be UTF-8 or ASCII, checking whitespaces
 --> text contains only allowed whitespaces
---> 1 entry/entries in data/lang_nosp/oov.txt
---> data/lang_nosp/oov.int corresponds to data/lang_nosp/oov.txt
---> data/lang_nosp/oov.{txt, int} are OK
+--> 1 entry/entries in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/oov.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/oov.int corresponds to /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/oov.txt
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/oov.{txt, int} are OK
 
---> data/lang_nosp/L.fst is olabel sorted
---> data/lang_nosp/L_disambig.fst is olabel sorted
---> SUCCESS [validating lang directory data/lang_nosp]
-Converting 'local_clarin/arpa.lm.gz' to FST
-arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - data/lang_nosp_test/G.fst 
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/L.fst is olabel sorted
+--> /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang]
+===test_sets Formating data ...
+--- Preparing the grammar transducer (G.fst) from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/lm/build0 in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build0 ...
+arpa2fst --disambig-symbol=#0 --read-symbol-table=/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build0/words.txt - /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build0/G.fst 
 LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:98) Reading \data\ section.
 LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \1-grams: section.
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 11 [-2.387844   a       -0.2394255] skipped: word 'a' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 12 [-5.252399   aare    -0.05016758] skipped: word 'aare' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 13 [-4.800938   ab      -0.01376556] skipped: word 'ab' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 14 [-5.23682    abażurem        -0.0302294] skipped: word 'abażurem' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 15 [-5.226714   abchazję        -0.06154328] skipped: word 'abchazję' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 16 [-5.245582   abchazów        -0.02685788] skipped: word 'abchazów' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 17 [-5.255419   aberon] skipped: word 'aberon' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 18 [-5.262231   aberonowi] skipped: word 'aberonowi' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 19 [-5.26215    aberracyjna] skipped: word 'aberracyjna' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 20 [-5.250469   abgarowicz] skipped: word 'abgarowicz' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 21 [-4.881186   abonament       -0.1130914] skipped: word 'abonament' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 22 [-4.876382   abonamentu      -0.07834942] skipped: word 'abonamentu' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 23 [-5.163284   abonamentów     -0.06102198] skipped: word 'abonamentów' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 24 [-5.184859   abonentom       -0.03256992] skipped: word 'abonentom' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 25 [-5.010186   aborcja -0.1268652] skipped: word 'aborcja' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 26 [-4.724734   aborcji -0.1546028] skipped: word 'aborcji' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 27 [-5.047917   aborcję -0.1214982] skipped: word 'aborcję' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 28 [-5.229477   abramsa -0.03953429] skipped: word 'abramsa' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 29 [-5.259943   abramsy] skipped: word 'abramsy' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 30 [-5.241594   abruzji -0.05095416] skipped: word 'abruzji' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 31 [-4.978928   absolutna       -0.03940874] skipped: word 'absolutna' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 32 [-5.007071   absolutne       -0.04487412] skipped: word 'absolutne' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 33 [-4.915956   absolutnej      -0.08613706] skipped: word 'absolutnej' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 34 [-4.264698   absolutnie      -0.1241204] skipped: word 'absolutnie' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 35 [-4.894648   absolutną       -0.07766653] skipped: word 'absolutną' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 36 [-4.74231    absolutorium    -0.1669805] skipped: word 'absolutorium' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 37 [-5.259502   absolutów] skipped: word 'absolutów' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 38 [-4.900764   absolwenci      -0.06442387] skipped: word 'absolwenci' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 39 [-4.807225   absolwent       -0.1084523] skipped: word 'absolwent' not in symbol table
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 40 [-5.189535   absolwentami    -0.03575665] skipped: word 'absolwentami' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 13 [-3.470704   ADVOKÁTNÍ] skipped: word 'ADVOKÁTNÍ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 16 [-3.470704   ADÉLKY] skipped: word 'ADÉLKY' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 17 [-3.470704   AGRESIVNĚJŠÍ] skipped: word 'AGRESIVNĚJŠÍ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 23 [-3.470704   AKUTNÍ] skipped: word 'AKUTNÍ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 27 [-3.470704   AMBULANCI] skipped: word 'AMBULANCI' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 28 [-3.470704   AMBULANTNÍ] skipped: word 'AMBULANTNÍ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 33 [-3.470704   ANINKA] skipped: word 'ANINKA' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 40 [-3.470704   ASÁNAMA] skipped: word 'ASÁNAMA' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 41 [-3.470704   ATÉN] skipped: word 'ATÉN' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 45 [-3.470704   AUTOMOBILŮM] skipped: word 'AUTOMOBILŮM' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 49 [-3.470704   AŽE] skipped: word 'AŽE' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 54 [-3.470704   BALONU] skipped: word 'BALONU' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 55 [-3.470704   BALONĚ] skipped: word 'BALONĚ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 61 [-3.470704   BARÁČKU] skipped: word 'BARÁČKU' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 66 [-3.470704   BEJ] skipped: word 'BEJ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 68 [-3.470704   BENBINTONOVĚ] skipped: word 'BENBINTONOVĚ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 74 [-3.470704   BEZPEČÍ] skipped: word 'BEZPEČÍ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 75 [-3.470704   BEČVICI] skipped: word 'BEČVICI' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 76 [-3.470704   BIROKRACIE] skipped: word 'BIROKRACIE' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 84 [-3.470704   BLÁTA] skipped: word 'BLÁTA' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 90 [-3.470704   BOHEMIANS] skipped: word 'BOHEMIANS' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 96 [-3.470704   BORČA] skipped: word 'BORČA' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 98 [-3.470704   BOŘISLAVKU] skipped: word 'BOŘISLAVKU' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 102 [-3.470704  BRATŘÍ] skipped: word 'BRATŘÍ' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 104 [-3.470704  BRITÁNIE] skipped: word 'BRITÁNIE' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 106 [-3.470704  BRNKNU] skipped: word 'BRNKNU' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 107 [-3.470704  BROUČKU] skipped: word 'BROUČKU' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 110 [-3.470704  BUBLINA] skipped: word 'BUBLINA' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 122 [-3.470704  BUH] skipped: word 'BUH' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:223) line 133 [-3.470704  BYLINKOU] skipped: word 'BYLINKOU' not in symbol table
+WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:263) Of 710 parse warnings, 30 were reported. Run program with --max_warnings=-1 to see all warnings
+LOG (arpa2fst[5.2.160~1-51042]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 1 to 1
+fstisstochastic /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build0/G.fst 
+0.275577 0.275577
+*** Succeeded in creating G.fst for /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build0
+--- Preparing the grammar transducer (G.fst) from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/lm/build2 in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build2 ...
+arpa2fst --disambig-symbol=#0 --read-symbol-table=/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build2/words.txt - /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build2/G.fst 
+LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:98) Reading \data\ section.
+LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \1-grams: section.
 LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \2-grams: section.
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \3-grams: section.
-WARNING (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:263) Of 1043998 parse warnings, 30 were reported. Run program with --max_warnings=-1 to see all warnings
-LOG (arpa2fst[5.2.160~1-51042]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 3 to 2
-fstisstochastic data/lang_nosp_test/G.fst 
-2.50007 0.201763
-Succeeded in formatting LM: 'local_clarin/arpa.lm.gz'
-steps/make_mfcc.sh --nj 40 data/train
-Checking data/train/text ...
---> reading data/train/text
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
-utils/validate_data_dir.sh: Successfully validated data-directory data/train
+LOG (arpa2fst[5.2.160~1-51042]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 14892 to 14892
+fstisstochastic /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build2/G.fst 
+5.85454e-07 -0.168275
+*** Succeeded in creating G.fst for /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build2
+Create MFCC features and storing them (Could be large).
+steps/make_mfcc.sh --mfcc-config common/mfcc.conf --cmd run.pl --nj 20 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/make_mfcc/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/train
 steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for train
+steps/compute_cmvn_stats.sh --fake /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/make_mfcc/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc
+feat-to-dim scp:/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/train/feats.scp - 
+copy-matrix ark:- ark,scp:/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc/cmvn_train.ark,/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc/cmvn_train.scp 
+LOG (copy-matrix[5.2.160~1-51042]:main():copy-matrix.cc:135) Copied 22567 matrices.
+Succeeded creating CMVN stats for train
+steps/make_mfcc.sh --mfcc-config common/mfcc.conf --cmd run.pl --nj 20 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/make_mfcc/dev /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for dev
+steps/compute_cmvn_stats.sh --fake /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/make_mfcc/dev /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc
+feat-to-dim scp:/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev/feats.scp - 
+copy-matrix ark:- ark,scp:/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc/cmvn_dev.ark,/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc/cmvn_dev.scp 
+LOG (copy-matrix[5.2.160~1-51042]:main():copy-matrix.cc:135) Copied 2000 matrices.
+Succeeded creating CMVN stats for dev
+steps/make_mfcc.sh --mfcc-config common/mfcc.conf --cmd run.pl --nj 20 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/make_mfcc/test /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh --fake /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/make_mfcc/test /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc
+feat-to-dim scp:/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test/feats.scp - 
+copy-matrix ark:- ark,scp:/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc/cmvn_test.ark,/home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/mfcc/cmvn_test.scp 
+LOG (copy-matrix[5.2.160~1-51042]:main():copy-matrix.cc:135) Copied 2000 matrices.
+Succeeded creating CMVN stats for test
+Decoding is done for each pair (TEST_SET x LMs)
+Distribute the links to MFCC feats to all LM variations.
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev/feats.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/dev_build0/feats.scp
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev/cmvn.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/dev_build0/cmvn.scp
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev/feats.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/dev_build2/feats.scp
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/dev/cmvn.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/dev_build2/cmvn.scp
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test/feats.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/test_build0/feats.scp
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test/cmvn.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/test_build0/cmvn.scp
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test/feats.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/test_build2/feats.scp
+cp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/local/test/cmvn.scp /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/test_build2/cmvn.scp
+Train monophone models on full data -> may be wastefull (can be done on subset)
+steps/train_mono.sh --nj 20 --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono
+steps/diagnostic/analyze_alignments.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono/log/analyze_alignments.log
+807 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono/log/acc.*.*.log
+18966 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono/log/align.*.*.log
+43 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono/log/update.*.log
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono: nj=20 align prob=-99.01 over 15.29h [retry=1.7%, fail=0.0%] states=139 gauss=981
+steps/train_mono.sh: Done training monophone system in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono
+Get alignments from monophone system.
+steps/align_si.sh --nj 20 --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train using model from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono, putting alignments in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono_ali
+steps/diagnostic/analyze_alignments.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+Train tri1 [first triphone pass]
+steps/train_deltas.sh --cmd run.pl 1200 19200 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono_ali /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/log/analyze_alignments.log
+2 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/log/init_model.log
+1269 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/log/align.*.*.log
+1 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/log/build_tree.log
+391 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/log/acc.*.*.log
+2 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1/log/update.*.log
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1: nj=20 align prob=-96.65 over 15.28h [retry=1.5%, fail=0.1%] states=1006 gauss=19239 tree-impr=3.22
+steps/train_deltas.sh: Done training system with delta+delta-delta features in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1
+Align tri1
+steps/align_si.sh --nj 20 --cmd run.pl --use-graphs true /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train using model from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1, putting alignments in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+Train tri2a [delta+delta-deltas]
+steps/train_deltas.sh --cmd run.pl 1200 19200 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a
+steps/diagnostic/analyze_alignments.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a/log/analyze_alignments.log
+473 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a/log/acc.*.*.log
+1 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a/log/build_tree.log
+2 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a/log/update.*.log
+1388 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a/log/align.*.*.log
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a: nj=20 align prob=-96.59 over 15.28h [retry=1.6%, fail=0.1%] states=1003 gauss=19224 tree-impr=3.49
+steps/train_deltas.sh: Done training system with delta+delta-delta features in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2a
+Train tri2b [LDA+MLLT]
+steps/train_lda_mllt.sh --cmd run.pl 1200 19200 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri1_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/log/analyze_alignments.log
+1453 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/log/align.*.*.log
+12 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/log/lda_acc.*.log
+1 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/log/build_tree.log
+493 warnings in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/log/acc.*.*.log
+/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b: nj=20 align prob=-47.89 over 15.28h [retry=1.7%, fail=0.1%] states=1044 gauss=19238 tree-impr=3.62 lda-sum=11.66 mllt:impr,logdet=0.93,1.49
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b
+Align all data with LDA+MLLT system (tri2b)
+steps/align_si.sh --nj 20 --cmd run.pl --use-graphs true /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train using model from /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b, putting alignments in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh: see stats in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+Train MMI on top of LDA+MLLT.
+steps/make_denlats.sh --nj 20 --cmd run.pl --beam 16.0 --lattice-beam 10.0 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats
+Making unigram grammar FST in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang
+Compiling decoding graph in /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/dengraph
+tree-info /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/tree 
+tree-info /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/tree 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstpushspecial 
+fsttablecompose /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/L_disambig.fst /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/G.fst 
+fstisstochastic /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/tmp/LG.fst 
+0.000206268 -0.000164939
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/phones/disambig.int --write-disambig-syms=/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/tmp/disambig_ilabels_3_1.int /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/tmp/ilabels_3_1.14776 
+fstisstochastic /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/tmp/CLG_3_1.fst 
+0.000206268 -0.000164939
+make-h-transducer --disambig-syms-out=/home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/dengraph/disambig_tid.int --transition-scale=1.0 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/tmp/ilabels_3_1 /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/tree /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/final.mdl 
+fsttablecompose /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/dengraph/Ha.fst /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/lang/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmsymbols /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/dengraph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats/dengraph/HCLGa.fst 
+0.000530038 -0.00095604
+add-self-loops --self-loop-scale=0.1 --reorder=true /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b/final.mdl 
+steps/make_denlats.sh: feature type is lda
+steps/make_denlats.sh: done generating denominator lattices.
+steps/train_mmi.sh /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_ali /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_mmi
+steps/train_mmi.sh: feature type is lda
+Iteration 0 of MMI training
+Iteration 0: objf was 0.202566927580284, MMI auxf change was 0.00593964785065866
+Iteration 1 of MMI training

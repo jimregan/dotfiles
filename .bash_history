@@ -1800,3 +1800,35 @@ ls exp/tri2b
 ls exp/tri2b/log/
 cat exp/tri2b/log/*
 history -a
+utils/summarize_warnings.pl $dir/log
+utils/summarize_warnings.pl exp/tri1_ali/log/
+ls exp/tri1_ali/
+ls exp/tri1_ali/final.mdl 
+less exp/tri1_ali/final.mdl 
+utils/mkgraph.sh data/lang_nosp_test exp/tri2b exp/tri2b/graph
+utils/summarize_warnings.pl exp/tri2b/
+ls exp/tri2b/
+ls exp/tri2b/log/
+utils/summarize_warnings.pl exp/tri2b/log/*
+less steps/train_lda_mllt.sh 
+est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.*.acc
+find /home/jim/Playing/kaldi/ -name est-lda
+~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.*.acc
+~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.1.acc
+~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.2.acc
+~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.2.accw
+~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.3.acc
+~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.4.acc
+~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.5.acc
+ls ~/Playing/kaldi/src/bin/est-lda
+ls ~/Playing/kaldi/src/bin/est-lda.cc 
+less ~/Playing/kaldi/src/bin/est-lda.cc 
+ls
+arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - data/lang_nosp_test/G.fst.tmp
+find /home/jim/Playing/kaldi/ -name arpa2fst
+~/Playing/kaldi/src/lmbin/arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - data/lang_nosp_test/G.fst.tmp
+~/Playing/kaldi/src/lmbin/arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - /tmp/G.fst
+find . -name G.fst
+ls -al data/lang_nosp_test/G.fst 
+~/Playing/kaldi/src/lmbin/arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - /tmp/G.fst
+history -a
