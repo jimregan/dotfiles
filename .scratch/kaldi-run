@@ -598,3 +598,7 @@ Train MPE.
 steps/train_mpe.sh /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/train /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_ali /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_denlats /home/jim/Playing/kaldi/egs/vystadial_cz/s5/exp/tri2b_mpe
 steps/train_mpe.sh: feature type is lda
 Iteration 0 of MPE training
+Iteration 0: objf was 0.814661660603783, MPE auxf change was 0.0492093219081858
+Iteration 1 of MPE training
+Iteration 1: objf was 0.857595599038366, MPE auxf change was 0.0215532223395375
+Iteration 2 of MPE training
