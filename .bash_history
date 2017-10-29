@@ -2147,3 +2147,39 @@ svn diff
 cp ~/.scratch/dunchaochain-to-tsv.pl .
 cd html/
 history -a
+less local/phonetic_transcription_cs.pl 
+ls
+ls data
+ls -al data/data_voip_cs.tgz 
+ls -al data/data_voip_cs/
+less /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build0/words.txt
+ls
+find . -name 'lexic*'
+grep BIROKRACIE lang_prep/local/dict/lexicon.txt 
+less lang_prep/local/dict/lexicon.txt 
+echo "/asd/asd/asd//sd/asd/sds" |perl -ane 's/[^/]*$//';print'
+echo "/asd/asd/asd//sd/asd/sds" |perl -ane 's/[^/]*$//;print'
+echo "/asd/asd/asd//sd/asd/sds" |perl -ane 's/[^\/]*$//;print'
+echo "/asd/asd/asd//sd/asd/sds" |perl -ane 's/\/[^\/]*$//;print'
+grep open ~/scripts/*pl
+grep binmode ~/scripts/*pl
+ls
+top
+cd ~/Playing/kaldi/
+git branch
+git log
+git reset --hard HEAD^
+cd src/lm/
+vi arpa-lm-compiler.cc 
+vi arpa-lm-compiler.h 
+vi arpa-file-parser.cc 
+grep Register *
+vi arpa-file-parser.h 
+vi arpa-file-parser.cc 
+git log
+git revert 88ea1a2a1065917aebc4cfb95853892c92823397
+git diff
+git add arpa-file-parser.cc 
+git commit -m 'fix error message'
+git push mine arpa2fst-missing-option 
+history -a
