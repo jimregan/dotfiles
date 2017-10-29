@@ -2183,3 +2183,68 @@ git add arpa-file-parser.cc
 git commit -m 'fix error message'
 git push mine arpa2fst-missing-option 
 history -a
+cd ~
+config add crash-scratch .bash_history open-tabs 
+config commit -m more
+mkdir .scratch
+git mv crash-scratch .scratch/abair-old-phoneme-list
+config mv crash-scratch .scratch/abair-old-phoneme-list
+config commit -m semi-organise
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+config diff
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+vi open-tabs 
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+vi open-tabs 
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+vi open-tabs 
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+vi open-tabs 
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+vi open-tabs 
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+less .bash_history 
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+config add  .bash_history open-tabs  .scratch/kaldi-run 
+config commit -m semi-organise
+apt-cache search 7zip
+apt-cache search rar
+apt-cache search rar|grep archive
+sudo apt-get install unrar-free 
+sudo apt-get install unar
+unar -h
+unrar -h
+unrar --help
+unrar -t ~/Downloads/Paul_Howard_-_\[Ross_O\'Carroll-Kelly_03\]_-_The_Orange_Mocha-Chip_Frappuccino_Years_\(retail\)_\(epub\).rar 
+unrar -x ~/Downloads/Paul_Howard_-_\[Ross_O\'Carroll-Kelly_03\]_-_The_Orange_Mocha-Chip_Frappuccino_Years_\(retail\)_\(epub\).rar 
+mv Paul\ Howard\ -\ \[Ross\ O\'Carroll-Kelly\ 03\]\ -\ The\ Orange\ Mocha-Chip\ Frappuccino\ Years\ \(retail\)\ \(epub\).epub ~/Downloads/
+cd Downloads/
+ls
+unrar -x Gardner\ Dozois\ \(ed\)\ -\ The\ Book\ of\ Swords\ -\ George\ R\ R\ Martin\,\ Gart\ Nix\,\ C\ J\ Cherryh\,\ Robin\ Hobb\,\ et\ al\ \(retail\)\ \(epub\).rar 
+rm Gardner\ Dozois\ \(ed\)\ -\ The\ Book\ of\ Swords\ -\ George\ R\ R\ Martin\,\ Gart\ Nix\,\ C\ J\ Cherryh\,\ Robin\ Hobb\,\ et\ al\ \(retail\)\ \(epub\).epub 
+unrar -x Gardner\ Dozois\ \(ed\)\ -\ The\ Book\ of\ Swords\ -\ George\ R\ R\ Martin\,\ Gart\ Nix\,\ C\ J\ Cherryh\,\ Robin\ Hobb\,\ et\ al\ \(retail\)\ \(epub\).rar 
+rm Gardner\ Dozois\ \(ed\)\ -\ The\ Book\ of\ Swords\ -\ George\ R\ R\ Martin\,\ Gart\ Nix\,\ C\ J\ Cherryh\,\ Robin\ Hobb\,\ et\ al\ \(retail\)\ \(epub\).rar 
+ls *rar
+unrar -x Ross\ O\'Carroll-Kelly\ -\ The\ Oh\ My\ God\ Delusion\ \(retail\)\ \(epub\).rar 
+rm zero_ru_cont_8k_v3.tar.gz
+ls How
+ls How*
+ls *rar
+unrar -x George\ R\ R\ Martin\ -\ \[A\ Song\ of\ Ice\ and\ Fire\]\ -\ The\ World\ of\ Ice\ \&\ Fire-\ The\ Untold\ History\ of\ Westeros\ and\ the\ Game\ of\ Thrones\ -\ Elio\ Garcia\,\ Linda\ Antonsson\ \(epub\).rar 
+unar x George\ R\ R\ Martin\ -\ \[A\ Song\ of\ Ice\ and\ Fire\]\ -\ The\ World\ of\ Ice\ \&\ Fire-\ The\ Untold\ History\ of\ Westeros\ and\ the\ Game\ of\ Thrones\ -\ Elio\ Garcia\,\ Linda\ Antonsson\ \(epub\).rar 
+man unar
+unar x wGeorge\ R\ R\ Martin\ -\ \[A\ Song\ of\ Ice\ and\ Fire\]\ -\ The\ World\ of\ Ice\ \&\ Fire-\ The\ Untold\ History\ of\ Westeros\ and\ the\ Game\ of\ Thrones\ -\ Elio\ Garcia\,\ Linda\ Antonsson\ \(epub\).rar 
+unar George\ R\ R\ Martin\ -\ \[A\ Song\ of\ Ice\ and\ Fire\]\ -\ The\ World\ of\ Ice\ \&\ Fire-\ The\ Untold\ History\ of\ Westeros\ and\ the\ Game\ of\ Thrones\ -\ Elio\ Garcia\,\ Linda\ Antonsson\ \(epub\).rar 
+history -a
