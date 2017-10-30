@@ -1,55 +1,3 @@
-wc -l scripts/normalisations.tocheck 
-git stash
-cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || printf("%s"\n",$i) >> scripts/normalisations.tocheck.f;done
-cat scripts/normalisations.tocheck |while read i;do grep "^$i$" scripts/normalisations.tsv || printf "%s\n",$i >> scripts/normalisations.tocheck.f;done
-git diff
-less scripts/normalisations.tsv 
-less scripts/normalisations.tocheck
-git diff
-less scripts/normalisations.tocheck | perl scripts/filter-norm.pl 
-less scripts/normalisations.tocheck | perl scripts/filter-norm.pl > scripts/normalisations.tocheck.f 
-mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
-git diff
-git stash
-less scripts/normalisations.tocheck | perl scripts/filter-norm.pl > scripts/normalisations.tocheck.f 
-mv scripts/normalisations.tocheck.f scripts/normalisations.tocheck
-git diff
-git add scripts/normalisations.tocheck 
-git commit -m 'remove dups'
-git push origin master
-git diff
-vi scripts/normalisations.tsv 
-git diff
-git add scripts/normalisations.tocheck 
-git add scripts/normalisations.tsv 
-git commit -m 'norm more'
-git push origin master
-ls
-ls raw-text/
-less prontodo 
-less ga-std.pl 
-ls caighdean/
-cat raw-text/MSF_chapter_10.txt |wc
-cat raw-text/MSF_chapter_10.txt |perl ga-std.pl 
-cat raw-text/MSF_chapter_10.txt |perl ga-std.pl ga > caighdean/MSF_chapter_10.txt
-less caighdean/MSF_chapter_10.txt
-wc -l raw-text/*
-cat raw-text/MSF_chapter_12.txt |perl ga-std.pl ga > caighdean/MSF_chapter_12.txt
-cat raw-text/MSF_chapter_13.txt |perl ga-std.pl ga > caighdean/MSF_chapter_13.txt
-cat raw-text/MSF_chapter_30.txt |perl ga-std.pl ga > caighdean/MSF_chapter_30.txt
-cat raw-text/MSF_chapter_31.txt |perl ga-std.pl ga > caighdean/MSF_chapter_31.txt
-cat raw-text/MSF_chapter_32.txt |perl ga-std.pl ga > caighdean/MSF_chapter_32.txt
-cat raw-text/MSF_chapter_23.txt |perl ga-std.pl ga > caighdean/MSF_chapter_23.txt
-cat raw-text/MSF_chapter_16.txt |perl ga-std.pl ga > caighdean/MSF_chapter_16.txt
-less caighdean/MSF_chapter_12.txt 
-rm caighdean/MSF_chapter_12.txt 
-ls -al caighdean/
-grep MAGHCHROMTHA raw-text/*
-cd /tmp/
-tar ztvf ~/Downloads/rm1_cepstra.tar.gz 
-tar zxvf ~/Downloads/rm1_cepstra.tar.gz 
-ls
-cd rm1/
 ls
 less etc/rm1.dic 
 less etc/rm1_train.fileids 
@@ -1998,3 +1946,55 @@ wmctrl -c chromium-browser
 ps aux|grep chromium
 kill -9 2641
 ps aux|grep chromium
+ls
+vi run.sh 
+grep ngram local_clarin/*
+vi local_clarin/clarin_pl_data_prep.sh 
+df
+sh run.sh 
+less local_clarin/arpa.lm.gz 
+less data/lang_nosp_test/words.txt 
+find data -name words.txt
+grep words.txt run.sh 
+grep words.txt local_clarin/*
+grep arpa local_clarin/*
+find data -name words.txt
+less data/lang_nosp/words.txt 
+vi local_clarin/clarin_pl_data_prep.sh 
+local_clarin/clarin_prepare_dict.sh data/local/all.wlist data/local/dict_nosp
+vi local_clarin/clarin_prepare_dict.sh 
+lesss local_clarin/lexicon.txt 
+less local_clarin/lexicon.txt 
+apt-cache search phonetisaurus
+vi local_clarin/clarin_prepare_dict.sh 
+local_clarin/clarin_prepare_dict.sh data/local/all.wlist data/local/dict_nosp
+git diff
+git checkout -b exit-without-phonetisaurus
+git add local_clarin/clarin_prepare_dict.sh 
+git commit -m 'exit if phonetisaurus fails(/does not exist)'
+git remote show origin
+git push mine exit-without-phonetisaurus 
+git checkout master
+git checkout -b exit-without-phonetisaurus2
+git log
+git checkout exit-without-phonetisaurus
+git checkout -b exit-without-phonetisaurus3
+git log
+git checkout master
+git log
+git reset --hard HEAD^
+git log
+git checkout exit-without-phonetisaurus3
+git checkout master
+git branch -D exit-without-phonetisaurus
+git checkout -b exit-without-phonetisaurus
+git log
+git checkout exit-without-phonetisaurus3
+git log
+git checkout exit-without-phonetisaurus
+git cherry-pick eb1c84db35d2e5d86b5ab04f61de2b598e7078a8
+git log
+git push mine exit-without-phonetisaurus 
+git diff
+which ngram
+. path.sh 
