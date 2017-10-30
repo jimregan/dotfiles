@@ -712,3 +712,10 @@ fstrmsymbols exp/tri3b/graph_nosp/disambig_tid.int
 fstrmepslocal 
 fstdeterminizestar --use-log=true 
 fstminimizeencoded 
+fstisstochastic exp/tri3b/graph_nosp/HCLGa.fst 
+0.000487826 -0.192217
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl 
+steps/decode_fmllr.sh --nj 40 exp/tri3b/graph_nosp data/test exp/tri3b/decode_nosp
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 40 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph_nosp data/test exp/tri3b/decode_nosp.si
+decode.sh: feature type is lda
