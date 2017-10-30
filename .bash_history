@@ -2341,3 +2341,130 @@ cd ..
 less tools/ATLAS_headers/include/README.txt
 vi src/lm/arpa-file-parser.cc 
 history -a
+ls
+ls online_demo/
+less online_demo/Makefile 
+ls
+ls s5
+cd s5/
+ls
+sh run.sh 
+cd ../../../tools/
+./extras/install_srilm.sh 
+cp ~/Downloads/srilm-1.7.2.tar.gz srilm.tgz
+./extras/install_srilm.sh 
+vi extras/install_srilm.sh 
+cp ~/Downloads/srilm-1.7.2.tar.gz .
+./extras/install_srilm.sh 
+sh ./extras/install_srilm.sh 
+vi extras/install_srilm.sh 
+ls
+cd pocolm/
+ls
+make
+ls
+ls ssr
+ls src/
+less src/compute-probs.cc 
+less src/get-text-counts.cc 
+cd ..
+ls
+cd extras/
+ls
+sh install_srilm.sh 
+cd ..
+sh extras/install_srilm.sh 
+ls
+cd srilm/
+ls
+cd ..
+rm -rf srilm
+tar zxvf srilm.tgz 
+file srilm-1.7.2.tar.gz 
+tar zxvf srilm-1.7.2.tar.gz 
+ls
+mkdir srilm
+cd srilm/
+tar zxvf ../srilm-1.7.2.tar.gz 
+ls
+less License 
+make
+cd ..
+ls
+sh extras/install_srilm.sh 
+less tools/env.sh
+cd ..
+less tools/env.sh
+cd egs/vystadial_cz/
+ls
+cd s5/
+ls
+less path.sh 
+sh run.sh 
+ls
+git status
+ls
+sh run.sh 
+less run.sh 
+sh local/download_cs_data.sh 
+less local/download_cs_data.sh 
+sh local/download_cs_data.sh test
+df
+du 
+wget -c https://lindat.mff.cuni.cz/repository/xmlui/bitstream/handle/11858/00-097C-0000-0023-4670-6/data_voip_cs.tgz
+du -m
+df -m
+ls
+ls -al data_voip_cs.tgz 
+ls data
+rm data/data_voip_cs.tgz 
+mv data_voip_cs.tgz data
+sh run.sh 
+vi run.sh 
+sh run.sh 
+vi run.sh 
+sh run.sh 
+ls
+ls lang_prep/
+vi local/download_cs_data.sh 
+vi run.sh 
+sh run.sh 
+ls
+ls data/
+ls -al data/
+cd data/
+tar zxvf data_voip_cs.tgz 
+df -m
+ls
+cd ..
+sh run.sh 
+less exp/make_mfcc/train/q/make_mfcc_train.log 
+ls
+less cmd.sh 
+ls data
+ls
+rm -rf exp/
+ls
+sh run.sh 
+less run.sh 
+cp run.sh run-ctd.sh 
+vi run-ctd.sh 
+ls
+vi run-ctd.sh 
+rm -rf exp/tri2a/decode_*
+sh run-ctd.sh 
+vi run.sh 
+vi cmd.sh 
+vi run.sh 
+sh run-ctd.sh 
+ls
+ls trained_models/
+ls -al trained_models/
+less trained_models/phones.txt 
+less trained_models/tri2a.mdl 
+less trained_models/tri2a.tree 
+less trained_models/tri2b_bmmi.m
+less trained_models/tri2b_bmmi.mdl 
+less trained_models/tri2a.mdl 
+less trained_models/tri2b_bmmi.mdl 
+history -a
