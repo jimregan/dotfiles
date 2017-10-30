@@ -719,3 +719,12 @@ add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl
 steps/decode_fmllr.sh --nj 40 exp/tri3b/graph_nosp data/test exp/tri3b/decode_nosp
 steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 40 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph_nosp data/test exp/tri3b/decode_nosp.si
 decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph_nosp exp/tri3b/decode_nosp.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_nosp.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_nosp.si/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri3b/graph_nosp exp/tri3b/decode_nosp.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
