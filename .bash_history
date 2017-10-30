@@ -2662,3 +2662,16 @@ ls ..
 ls ../dunchaochain/
 ls
 history -a
+find  ~/.wine/ -type f
+ls -al /home/jim/.wine/drive_c/windows/A5W.INI
+less /home/jim/.wine/drive_c/windows/A5W.INI
+ls -al /home/jim/.wine/drive_c/windows/syswow64/wineps.drv|
+find  ~/.wine/ -type f|less
+ls ~/.wine/drive_c/Program\ Files\ \(x86\)/Fios\ Feasa/RuairiDL/
+ls ~/.wine/drive_c/Program\ Files\ \(x86\)/Fios\ Feasa/RuairiDL/Readme.txt 
+less ~/.wine/drive_c/Program\ Files\ \(x86\)/Fios\ Feasa/RuairiDL/Readme.txt 
+find /media/jim/TOSHIBA/labcds/drochla -type f|xargs grep bricfeast
+find /media/jim/TOSHIBA/labcds/drochla -type f |xargs -0 grep bricfeast
+find /media/jim/TOSHIBA/labcds/drochla -type f |xargs grep bricfeast
+find /media/jim/TOSHIBA/labcds/drochla -type f |while read i;do grep bricfeast "$i";done
+history -a
