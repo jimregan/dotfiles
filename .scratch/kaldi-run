@@ -674,3 +674,41 @@ Pass 18
 Pass 19
 Pass 20
 Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b/log/analyze_alignments.log
+1 warnings in exp/tri3b/log/questions.log
+1 warnings in exp/tri3b/log/init_model.log
+1 warnings in exp/tri3b/log/est_alimdl.log
+759 warnings in exp/tri3b/log/acc.*.*.log
+34 warnings in exp/tri3b/log/update.*.log
+1 warnings in exp/tri3b/log/build_tree.log
+1 warnings in exp/tri3b/log/compile_questions.log
+813 warnings in exp/tri3b/log/align.*.*.log
+109 warnings in exp/tri3b/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-45.7469 -45.6177 -45.4747 -45.2816 -44.458 -43.7917 -43.4497 -43.2491 -43.0823 -42.5898 -42.403 -42.176 -42.0551 -41.9537 -41.8646 -41.7852 -41.7131 -41.6441 -41.5769 -41.4406 -41.3608 -41.3094 -41.2623 -41.2182 -41.1762 -41.1356 -41.096 -41.0584 -41.0225 -40.9476 -40.8998 -40.8768 -40.863 -40.8539 
+exp/tri3b: nj=40 align prob=-44.15 over 51.01h [retry=1.2%, fail=0.1%] states=2050 gauss=15021 fmllr-impr=3.43 over 34.68h tree-impr=8.45
+steps/train_sat.sh: done training SAT system in exp/tri3b
+tree-info exp/tri3b/tree 
+tree-info exp/tri3b/tree 
+make-h-transducer --disambig-syms-out=exp/tri3b/graph_nosp/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
+fsttablecompose exp/tri3b/graph_nosp/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
+fstrmsymbols exp/tri3b/graph_nosp/disambig_tid.int 
+fstrmepslocal 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 

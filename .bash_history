@@ -1,29 +1,3 @@
-less ABWParser.cpp 
-less ABWXMLTokenMap.cpp 
-less ABWXMLTokenMap.h 
-less ABWXMLHelper.
-less ABWXMLHelper.cpp 
-less ABWXMLHelper.h 
-grep ABWXMLHelper.h *
-less AbiDocument.cpp 
-less ABWZlibStream.cpp 
-less ABWZlibStream.h 
-vi ~/tmp/bar/tospid 
-less tokens.txt 
-less gentoken.pl 
-ls
-less libabw_internal.
-less libabw_internal.cpp 
-less libabw_internal.h 
-less Makefile.am 
-less ABWStylesCollector.
-less ABWStylesCollector.cpp 
-less ABWOutputElements.cpp 
-less ABWContentCollector.cpp 
-less tokens.txt 
-less gentoken.pl 
-perl gentoken.pl tokens.txt a.h a.gperf
-less a.h 
 less a.gperf 
 apt-cache search gperf
 sudo apt-get install gperf
