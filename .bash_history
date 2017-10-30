@@ -2468,3 +2468,197 @@ less trained_models/tri2b_bmmi.mdl
 less trained_models/tri2a.mdl 
 less trained_models/tri2b_bmmi.mdl 
 history -a
+ls
+less ../text.tsv 
+grep 'An Cuan' *
+less ancuan.htm 
+find ../ -name 'ANCUAN.WAV'
+ffplay ../PRO/PORP/ANCUAN.WAV
+ffplay ../PRO/CNGP/ANCUAN.WAV
+grep ANCUAN.WAV ../text.tsv 
+less ancuan2.htm 
+less ancuan.htm 
+less acuan.htm 
+cat /tmp/notinwav 
+grep grab *
+less grabo.htm 
+grep Grab ../text.tsv 
+ffplay ../PRO/PRDP/GRABÓ.WAV
+dunplay pro/rosp/leacht~1.wav
+grep Leach *
+dunplay pro/rosp/leacht~1.wav
+perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
+cd ..
+svn diff
+cp ~/.scratch/dunchaochain-to-tsv.pl .
+svn diff
+svn ci -m 'some adjustments'
+grep ~ /tmp/notinwav 
+grep \~ /tmp/notinwav 
+dunplay "pro/thgp/cúla'm~1.wav"
+ffplay PRO/THGP/CÚLA\'M~1.WAV 
+cd html/
+grep Cúla *
+grep Cúl *
+grep C.l *
+less culac.htm 
+ffplay PRO/THGP/CÚLA\'C~1.WAV 
+ffplay ../PRO/THGP/CÚLA\'C~1.WAV 
+less culac.htm 
+ffplay ../PRO/CNGP/CULAC.WAV 
+ffplay ../PRO/THGP/CÚLA\'C~1.WAV 
+ls
+rm toolbackground.bmp 
+cd ..
+ls
+less README 
+cd ..
+ls /media/jim/TOSHIBA/labcds/drochla/Bearnai/
+find /media/jim/TOSHIBA/labcds/drochla
+ffplay /media/jim/TOSHIBA/labcds/drochla/Scannain/lch01c.swf
+swfmill swf2xml
+swfmill swf2xml /media/jim/TOSHIBA/labcds/drochla/Scannain/lch01c.swf
+swfmill swf2xml /media/jim/TOSHIBA/labcds/drochla/Scannain/lch01c.swf|less
+find /media/jim/TOSHIBA/labcds/drochla/
+strings /media/jim/TOSHIBA/labcds/drochla/Bearnai/Bearnai01C.a5r
+strings /media/jim/TOSHIBA/labcds/drochla/Bearnai/Bearnai01C.a5r|less
+strings /media/jim/TOSHIBA/labcds/drochla/SETUP.EXE 
+wine /media/jim/TOSHIBA/labcds/drochla/SETUP.EXE 
+killall wine
+killall wineserver
+ps aux|grep wine
+wine /media/jim/TOSHIBA/labcds/proverbs/SETUP.EXE 
+ls ~/.wine/drive_c/Program\ Files\ \(x86\)/
+ls ~/.wine/drive_c/Program\ Files\ \(x86\)/Fios\ Feasa/
+less ~/.wine/drive_c/Program\ Files/Fios\ Feasa/Seanfhocail/Seanfhcl.a4r 
+#wine /media/jim/TOSHIBA/labcds/coisceim/SETUP.EXE 
+ls /media/jim/TOSHIBA/labcds/coisceim/Fuaim/
+ffplay /media/jim/TOSHIBA/labcds/coisceim/Fuaim/1/cnoca1.wav 
+ffplay /media/jim/TOSHIBA/labcds/coisceim/Fuaim/1/cnoca2.wav 
+ffplay /media/jim/TOSHIBA/labcds/coisceim/Fuaim/1/cnoca3.wav 
+ffplay /media/jim/TOSHIBA/labcds/coisceim/Fuaim/1/cnoca4.wav 
+ffplay /media/jim/TOSHIBA/labcds/coisceim/Fuaim/1/cnoca5.wav 
+ffplay /media/jim/TOSHIBA/labcds/coisceim/Scannaain/1/aabhairb.swf 
+ffplay /media/jim/TOSHIBA/labcds/coisceim/Scannaain/1/bunchlaaroscarg.swf 
+swfmill swf2xml /media/jim/TOSHIBA/labcds/coisceim/Scannaain/1/bunchlaaroscarg.swf 
+swfmill swf2xml /media/jim/TOSHIBA/labcds/coisceim/Scannaain/1/bunchlaaroscarg.swf |less
+swfmill swf2xml /media/jim/TOSHIBA/labcds/coisceim/Comhaid/1/abhair.txt 
+less /media/jim/TOSHIBA/labcds/coisceim/Comhaid/1/abhair.txt 
+less /media/jim/TOSHIBA/labcds/coisceim/Comhaid/1/rudai.txt 
+swfmill swf2xml /media/jim/TOSHIBA/labcds/coisceim/Fuaim/
+swfmill swf2xml /media/jim/TOSHIBA/labcds/coisceim/Fuaim/1/
+ls /media/jim/TOSHIBA/labcds/coisceim/Fuaim/1/
+less /media/jim/TOSHIBA/labcds/coisceim/Comhaid/1/rudai.txt 
+less /media/jim/TOSHIBA/labcds/coisceim/Comhaid/1/focail.txt 
+ls
+mkdir coisceim
+cd coisceim
+cp -r /media/jim/TOSHIBA/labcds/coisceim/Comhaid/  .
+cp -r /media/jim/TOSHIBA/labcds/coisceim/Fuaim/  .
+cd ..
+svn add coisceim/
+svn ci -m coisceim
+svn ci -m coisceim_
+cd coisceim/
+ls
+ls Fuaim/
+ls Fuaim/1/
+ls Fuaim/1/aabhair/
+less Comhaid/1/abhair.txt 
+ffplay Fuaim/1/aabhair/02.wav 
+less Comhaid/1/abhair.txt 
+ffplay Fuaim/1/aabhair/03.wav 
+less Comhaid/1/abhair.txt 
+ffplay Fuaim/1/aabhair/0*.wav 
+ffplay Fuaim/1/aabhair/09.wav 
+ffplay Fuaim/1/aabhair/08.wav 
+less Comhaid/1/abhair.txt 
+find /media/jim/TOSHIBA/labcds/coisceim/Fuaim
+find /media/jim/TOSHIBA/labcds/coisceim/Fuaim -name '*wav'|sed -e 's#/media/jim/TOSHIBA/labcds/coisceim/##'
+find /media/jim/TOSHIBA/labcds/coisceim/Fuaim -name '*wav'|sed -e 's#/media/jim/TOSHIBA/labcds/coisceim/##'|while read i;do if [ ! -e $i ];then cp /media/jim/TOSHIBA/labcds/coisceim/$i $i;fi;done
+svn status
+ffplay Fuaim/1/aabhair/13.wav 
+less Comhaid/1/abhair.txt 
+ffplay Fuaim/1/aabhair/12.wav 
+less Comhaid/1/abhair.txt 
+less Comhaid/1/jigsaws.txt 
+find Fuaim/1/ -type d
+less Comhaid/1/daite.txt 
+ffplay Fuaim/1/oorla/spelling.wav 
+ffplay Fuaim/1/oorla/dathanna.wav 
+ffplay Fuaim/1/oorla/foghlaim.wav 
+ffplay Fuaim/1/oorla/ancheeadcheanneile.wav 
+ffplay Fuaim/1/oorla/siargodtiinaroghanna.wav 
+find Fuaim/1/ -type d
+ls Fuaim/1/aabhair/
+ls Fuaim/1/oscar/
+ffplay Fuaim/1/oscar/eeachlosariis.wav 
+ffplay Fuaim/1/oscar/imeacht.wav 
+ffplay Fuaim/1/oscar/tosnuuariis.wav 
+ffplay Fuaim/1/oscar/tosnuuariis.wav
+ffplay Fuaim/1/oscar/cleachtadh.wav 
+ffplay Fuaim/1.wav 
+ffplay Fuaim/2.wav 
+ffplay Fuaim/7.wav 
+svn rm Fuaim/*wav
+ls
+less Comhaid/2/daoine.txt 
+less Comhaid/1/daoine.txt 
+less Comhaid/1/jigsaws.txt 
+find . -name 'baad*'
+less Comhaid/1/abhair.txt 
+less Comhaid/1/rudai.txt 
+ffplay Fuaim/2/baad1.wav 
+ls Fuaim/1/aabhair/
+less Comhaid/1/rudai.txt 
+less Comhaid/1/abhair.txt 
+perl ~/.scratch/coisceim.pl Comhaid/1/abhair.txt 
+perl ~/.scratch/coisceim.pl Comhaid/2/abhair.txt 
+less Comhaid/2/daoine.txt 
+grep bean Comhaid/*
+grep bean Comhaid/2/*
+less Comhaid/2/focail.txt 
+ffplay Fuaim/2/bean.wav 
+ffplay Fuaim/2/beana1.wav 
+ffplay Fuaim/2/beana2.wav 
+ffplay Fuaim/2/abhaa1.wav 
+less Comhaid/2/focail.txt 
+ffplay Fuaim/2/abha.wav 
+less Comhaid/2/focail.txt 
+cat Comhaid/2/focail.txt |awk -F'\t' '{print NF}'
+cat Comhaid/2/focail.txt |awk -F'\t' '{print NF}'|less
+less Comhaid/2/focail.txt 
+perl ~/.scratch/coisceim.pl Comhaid/2/focail.txt 
+less Comhaid/2/focail.txt 
+perl ~/.scratch/coisceim.pl Comhaid/2/focail.txt 
+perl ~/.scratch/coisceim.pl Comhaid/2/abhair.txt 
+perl ~/.scratch/coisceim.pl Comhaid/2/abhair.txt >> ../text.tsv
+perl ~/.scratch/coisceim.pl Comhaid/1/abhair.txt > ../text.tsv
+perl ~/.scratch/coisceim.pl Comhaid/2/abhair.txt >> ../text.tsv
+perl ~/.scratch/coisceim.pl Comhaid/3/abhair.txt >> ../text.tsv
+perl ~/.scratch/coisceim.pl Comhaid/1/focail.txt >> ../text.tsv
+perl ~/.scratch/coisceim.pl Comhaid/2/focail.txt >> ../text.tsv
+perl ~/.scratch/coisceim.pl Comhaid/3/focail.txt >> ../text.tsv
+less ../text.tsv 
+cat ../text.tsv |while read i;do if [ ! -e $i ];then echo $i;fi;done
+cat ../text.tsv|awk '{print $1}' |while read i;do if [ ! -e $i ];then echo $i;fi;done
+less Comhaid/3/abhair.txt 
+less Comhaid/3/focail.txt 
+cat ../text.tsv|awk '{print $1}' |while read i;do if [ ! -e $i ];then echo $i;fi;done
+ls Comhaid/1/daite.txt 
+less Comhaid/1/daite.txt 
+cat Comhaid/1/daite.txt
+ffplay Fuaim/1/baadbaan.wav 
+ffplay Fuaim/1/suuilbaan.wav 
+ls
+mv ../text.tsv .
+less text.tsv 
+svn add text.tsv 
+cp ~/.scratch/coisceim.pl .
+svn add coisceim.pl 
+svn ci -m 'partial addition of text; more files to process'
+ls
+ls ..
+ls ../dunchaochain/
+ls
+history -a
