@@ -318,3 +318,59 @@ steps/train_mono.sh: Pass 24
 steps/train_mono.sh: Pass 25
 steps/train_mono.sh: Pass 26
 steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/mono0
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono0/log/analyze_alignments.log
+21008 warnings in exp/mono0/log/align.*.*.log
+5356 warnings in exp/mono0/log/acc.*.*.log
+200 warnings in exp/mono0/log/update.*.log
+exp/mono0: nj=40 align prob=-94.49 over 51.10h [retry=0.7%, fail=0.0%] states=118 gauss=991
+steps/train_mono.sh: Done training monophone system in exp/mono0
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono0/tree 
+tree-info exp/mono0/tree 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fsttablecompose data/lang_nosp_test/L_disambig.fst data/lang_nosp_test/G.fst 
+fstminimizeencoded 
+fstisstochastic data/lang_nosp_test/tmp/LG.fst 
+-0.0601397 -0.0608264
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang_nosp_test/phones/disambig.int --write-disambig-syms=data/lang_nosp_test/tmp/disambig_ilabels_1_0.int data/lang_nosp_test/tmp/ilabels_1_0.29974 
+fstisstochastic data/lang_nosp_test/tmp/CLG_1_0.fst 
+-0.0601397 -0.0608264
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/mono0/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_1_0 exp/mono0/tree exp/mono0/final.mdl 
+fsttablecompose exp/mono0/graph/Ha.fst data/lang_nosp_test/tmp/CLG_1_0.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmepslocal 
+fstrmsymbols exp/mono0/graph/disambig_tid.int 
+fstisstochastic exp/mono0/graph/HCLGa.fst 
+2.05226e-05 -0.121614
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono0/final.mdl 
+steps/decode.sh --nj 40 exp/mono0/graph data/test exp/mono0/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono0/graph exp/mono0/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono0/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,8,68) and mean=27.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono0/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/mono0/graph exp/mono0/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
