@@ -1064,3 +1064,60 @@ add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl
 steps/decode_fmllr.sh --nj 40 exp/tri3b/graph data/test exp/tri3b/decode
 steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 40 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/test exp/tri3b/decode.si
 decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b/decode.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b/decode.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,7) and mean=3.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/align_fmllr.sh --nj 40 data/train data/lang exp/tri3b exp/tri3b_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3b_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali/log/analyze_alignments.log
+15 warnings in exp/tri3b_ali/log/fmllr.*.log
+196 warnings in exp/tri3b_ali/log/align_pass2.*.log
+181 warnings in exp/tri3b_ali/log/align_pass1.*.log
+steps/make_denlats.sh --nj 40 --transform-dir exp/tri3b_ali data/train data/lang exp/tri3b exp/tri3b_denlats
+Making unigram grammar FST in exp/tri3b_denlats/lang
+Compiling decoding graph in exp/tri3b_denlats/dengraph
+tree-info exp/tri3b/tree 
+tree-info exp/tri3b/tree 
+fstpushspecial 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/tri3b_denlats/lang/L_disambig.fst exp/tri3b_denlats/lang/G.fst 
+fstminimizeencoded 
+fstisstochastic exp/tri3b_denlats/lang/tmp/LG.fst 
+-0.0204473 -0.0210886
+[info]: LG not stochastic.
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=exp/tri3b_denlats/lang/phones/disambig.int --write-disambig-syms=exp/tri3b_denlats/lang/tmp/disambig_ilabels_3_1.int exp/tri3b_denlats/lang/tmp/ilabels_3_1.25838 
+fstisstochastic exp/tri3b_denlats/lang/tmp/CLG_3_1.fst 
+0 -0.0210886
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri3b_denlats/dengraph/disambig_tid.int --transition-scale=1.0 exp/tri3b_denlats/lang/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
+fsttablecompose exp/tri3b_denlats/dengraph/Ha.fst exp/tri3b_denlats/lang/tmp/CLG_3_1.fst 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstrmsymbols exp/tri3b_denlats/dengraph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic exp/tri3b_denlats/dengraph/HCLGa.fst 
+0.000486887 -0.055427
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl 
+steps/make_denlats.sh: feature type is lda
+steps/make_denlats.sh: using fMLLR transforms from exp/tri3b_ali
