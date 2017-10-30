@@ -623,3 +623,5 @@ fstisstochastic exp/tri2b/graph/HCLGa.fst
 0.00048784 -0.192214
 HCLGa is not stochastic
 add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2b/final.mdl 
+steps/decode.sh --nj 40 exp/tri2b/graph data/test exp/tri2b/decode
+decode.sh: feature type is lda

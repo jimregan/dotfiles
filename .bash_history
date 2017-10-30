@@ -1998,3 +1998,29 @@ ls
 history -a
 cd /tmp/
 git clone https://github.com/AdolfVonKleist/Phonetisaurus.git
+cd Lib/corpuscrawler/
+ls
+less crawl_rm.py
+less crawl_gv.py
+ls
+cp crawl_gd.py crawl_mi.py
+vi crawl_mi.py 
+less util.py
+grep globalv *
+less util.py
+ls
+git checkout -b scots-gaelic
+git status
+git diff
+vi main.py
+git diff
+git add main.py crawl_gd.py 
+git commit -m 'basic crawler for Scots Gaelic (gd)'
+git remote add https://github.com/jimregan/corpuscrawler.git
+git remote add mine https://github.com/jimregan/corpuscrawler.git
+git push mine scots-gaelic 
+curl https://globalvoices.org/sitemap-news.xml
+curl https://pl.globalvoices.org/sitemap-news.xml
+curl https://pl.globalvoices.org/sitemap.xml
+tail -f ../../corpus/gd.txt 
+history -a
