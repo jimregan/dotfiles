@@ -1998,3 +1998,155 @@ git push mine exit-without-phonetisaurus
 git diff
 which ngram
 . path.sh 
+cd ~/Playing/kaldi/
+cd egs/clarinpl
+ls
+ngram -lm local_clarin/arpa.lm.gz -unk -write-vocab data/local/lm.wlist
+~/Playing/kaldi/tools/srilm/bin/ngram -lm local_clarin/arpa.lm.gz -unk -write-vocab data/local/lm.wlist
+find ~/Playing/kaldi/tools/srilm -name ngram
+~/Playing/kaldi/tools/srilm/bin/i686-m64/ngram -lm local_clarin/arpa.lm.gz -unk -write-vocab data/local/lm.wlist
+less data/local/lm.wlist 
+estimate-ngram -unk  -text local_clarin/arpa.lm.gz -write-vocab data/local/lm.wlist2
+less data/local/lm.wlist2
+diff -u data/local/lm.wlist data/local/lm.wlist2
+diff -u data/local/lm.wlist data/local/lm.wlist2|less
+irstlm -h
+man irstlm 
+irstlm help
+irstlm dict 
+irstlm dict -i local_clarin/arpa.lm.gz  -oov
+irstlm dict -i=local_clarin/arpa.lm.gz  
+irstlm dict -i=local_clarin/arpa.lm.gz  |less
+irstlm dict 
+cp local_clarin/arpa.lm.gz  /tmp/
+gzip -d /tmp/arpa.lm.gz 
+less /tmp//arpa.lm 
+irstlm dict -i=/tmp/arpa.lm.gz  
+irstlm dict -i=/tmp/arpa.lm
+irstlm dict -i=/tmp/arpa.lm -OutputFile=foooo
+less foooo 
+irstlm dict -i=/tmp/arpa.lm -oov -OutputFile=foooo
+less foooo 
+irstlm dict -i=/tmp/arpa.lm -oov  -OutputFile=fooooo
+diff -u foooo fooooo 
+rm fooooo 
+rm foooo 
+irstlm dict -i=/tmp/arpa.lm -oov=1  -OutputFile=fooooo
+irstlm dict -i=/tmp/arpa.lm -oov=true  -OutputFile=fooooo
+less fooooo 
+irstlm help
+irstlm dtsel
+rm fooooo 
+irstlm 
+irstlm help
+less /tmp/arpa.lm 
+vi vocab.pl
+perl vocab.pl /tmp/arpa.lm 
+vi vocab.pl
+lesss /tmp/arpa.lm 
+less /tmp/arpa.lm 
+vi vocab.pl
+perl vocab.pl /tmp/arpa.lm 
+vi vocab.pl
+perl vocab.pl /tmp/arpa.lm 
+vi vocab.pl
+perl vocab.pl /tmp/arpa.lm 
+perl vocab.pl /tmp/arpa.lm |less
+perl vocab.pl  local_clarin/arpa.lm.gz >
+perl vocab.pl  local_clarin/arpa.lm.gz > data/local/lm.wlist2 
+vi vocab.pl
+perl vocab.pl  local_clarin/arpa.lm.gz > data/local/lm.wlist2 
+vi vocab.pl
+perl -e 'my $bool=1;if($bool){print "true";}'
+perl -e 'my $bool=0;if($bool){print "true";}'
+vi vocab.pl
+perl vocab.pl  local_clarin/arpa.lm.gz > 
+perl vocab.pl  local_clarin/arpa.lm.gz > data/local/lm.wlist2 
+diff -u data/local/lm.wlist data/local/lm.wlist2 
+vi vocab.pl
+~/Playing/kaldi/tools/srilm/bin/i686-m64/ngram -lm local_clarin/arpa.lm.gz -write-vocab data/local/lm.wlist3
+diff -u data/local/lm.wlist data/local/lm.wlist3
+less data/local/lm.wlist data/local/lm.wlist3
+less data/local/lm.wlist3
+vi vocab.pl
+perl vocab.pl  local_clarin/arpa.lm.gz > data/local/lm.wlist2 
+diff -u data/local/lm.wlist data/local/lm.wlist2
+mv vocab.pl local_clarin/extract_vocab.pl
+git branch
+git checkout master
+git checkout -b issue-3
+#~/Playing/kaldi/tools/srilm/bin/i686-m64/ngram 
+pathold=$PATH
+echo $pathold 
+PATH=$PATH:$PWD/Playing/kaldi/tools/srilm/bin/i686-m64/ which ngram
+echo $PATH
+export PATH=$PATH:$PWD/Playing/kaldi/tools/srilm/bin/i686-m64/ which ngram
+which ngram
+echo $PATH
+ls |/Playing/kaldi/tools/srilm/bin/i686-m64/
+ls $HOME//Playing/kaldi/tools/srilm/bin/i686-m64/
+export PATH=$PATH:$HOME/Playing/kaldi/tools/srilm/bin/i686-m64/ which ngram
+export PATH=$PATH:$HOME/Playing/kaldi/tools/srilm/bin/i686-m64/ 
+which ngram
+if [ x"`which ngram`" = x"" ];then echo "Nope";else echo Yep;fi
+export PATH=$pathold 
+if [ x"`which ngram`" = x"" ];then echo "Nope";else echo Yep;fi
+grep ngram local_clarin/*
+vi local_clarin/clarin_pl_data_prep.sh 
+less local_clarin/compute-oov.sh
+git diff
+vi local_clarin/compute-oov.sh
+vi local_clarin/clarin_pl_data_prep.sh 
+git status
+git add local_clarin/clarin_pl_data_prep.sh local_clarin/extract_vocab.pl 
+git commit -m 'extract vocabulary without SRILM (#3)'
+git branch
+git push mine issue-3 
+if [ x"`which ngram`" != x"" ];then echo "Nope";else echo Yep;fi
+if [ x"`which ngram`" != x"" ];then echo Yep;else echo Nope;fi
+if [ x"`which ls`" != x"" ];then echo Yep;else echo Nope;fi
+if [ x"$(which ls)" != x"" ];then echo Yep;else echo Nope;fi
+cd ../..
+ls
+cd tools/
+ls
+git clone https://github.com/danijel3/Phonetisaurus.git
+cd Phonetisaurus/
+ls
+ls src/
+ls src/lib/
+ls
+python setup.py 
+python setup.py install
+sudo python setup.py install
+ls
+phonetisaurus
+sudo ldconfig
+phonetisaurus
+less `which phonetisaurus`
+which phonetisaurus
+sudo python setup.py install
+ls
+cd src/
+ls
+./configure 
+#./configure --with-openfst-libs $HOME/Pl
+find /home/jim/Playing/kaldi/tools/openfst-1.6.2/ -type f
+./configure --with-openfst-libs=/home/jim/Playing/kaldi/tools/openfst-1.6.2/
+ls /home/jim/Playing/kaldi/tools/openfst-1.6.2/lib/
+./configure --with-openfst-libs=/home/jim/Playing/kaldi/tools/openfst-1.6.2/lib/
+less configure 
+./configure --with-openfst-libs=/home/jim/Playing/kaldi/tools/openfst-1.6.2/lib/ --with-openfst-includes=/home/jim/Playing/kaldi/tools/openfst-1.6.2/include/
+make
+ls
+ls bin/
+ls
+sudo make install
+cd ..
+ls
+sudo python setup.py install
+phonetisaurus-g2pfst 
+sudo ldconfig
+phonetisaurus-g2pfst 
+ls
+history -a
