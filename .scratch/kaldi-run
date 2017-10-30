@@ -597,3 +597,29 @@ Training pass 30
 Aligning data
 Training pass 31
 Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+9 warnings in exp/tri2b/log/lda_acc.*.log
+706 warnings in exp/tri2b/log/acc.*.*.log
+1 warnings in exp/tri2b/log/init_model.log
+953 warnings in exp/tri2b/log/align.*.*.log
+34 warnings in exp/tri2b/log/update.*.log
+1 warnings in exp/tri2b/log/questions.log
+1 warnings in exp/tri2b/log/build_tree.log
+1 warnings in exp/tri2b/log/compile_questions.log
+exp/tri2b: nj=40 align prob=-44.56 over 50.98h [retry=1.7%, fail=0.2%] states=2045 gauss=15023 tree-impr=5.68 lda-sum=25.15 mllt:impr,logdet=1.33,1.90
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+tree-info exp/tri2b/tree 
+tree-info exp/tri2b/tree 
+make-h-transducer --disambig-syms-out=exp/tri2b/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri2b/tree exp/tri2b/final.mdl 
+fstrmsymbols exp/tri2b/graph/disambig_tid.int 
+fsttablecompose exp/tri2b/graph/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
+fstdeterminizestar --use-log=true 
+fstrmepslocal 
+fstminimizeencoded 
+fstisstochastic exp/tri2b/graph/HCLGa.fst 
+0.00048784 -0.192214
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2b/final.mdl 
