@@ -2141,3 +2141,70 @@ cat leng |awk 'BEGIN{a=0.0}{a += $NF}END{print a}'
 cat leng |awk 'BEGIN{a=0.0}{a += $NF}END{print a / 2}'
 perl -e 'print 32090.7 / (60 * 60)'
 history -a
+cd ~/Playing/kaldi/egs/clarinpl
+ls
+less exp/tri3b/phones.txt 
+df
+ls
+sh ~/Playing/kaldi/
+rm -rf ~/Playing/JourneyToTheCenterOfMyHeadache/
+sh ~/Playing/kaldi/egs/vystadial_cz/s5/local/export_models.sh 
+less ~/Playing/kaldi/egs/vystadial_cz/s5/local/export_models.sh 
+mkdir models
+less ~/Playing/kaldi/egs/vystadial_cz/s5/local/export_models.sh 
+sh ~/Playing/kaldi/egs/vystadial_cz/s5/local/export_models.sh exp models pl
+ls models/
+less ~/Playing/kaldi/egs/vystadial_cz/s5/local/export_models.sh 
+ls exp/
+ls exp/ -al
+ls exp/tri3b_mmi/
+ls exp/tri3b_denlats/
+find exp -name '*fst'
+ls
+ls data/
+ls data/lang
+ls data/lang/L.fst 
+less data/lang/L.fst 
+less data/lang/topo 
+less data/lang_nosp/topo 
+;s
+ls
+find  . -name '*mfcc*'
+ls -al data/train/data/
+less data/train/data/raw_mfcc_train.9.scp 
+du -k data/train/data/
+du -m data/train/data/
+less data/train/data/raw_mfcc_train.9.scp 
+less data/train/spk2utt 
+less data/train/utt2spk 
+ls
+rmdir models/
+ls
+less README.md 
+ls
+ls local
+find . -name '*decode*'
+find . -name '*decode*'|grep -v /exp/
+grep decode run.sh 
+less steps/decode_fmllr.sh 
+less ~/Playing/kaldi/egs/vystadial_cz/s5/steps/decode.sh 
+df
+ls
+find audio/
+find audio/ -name '*.wav' -delete
+d
+df
+ls
+less local_clarin/train.sessions 
+less local_clarin/generate_lists.py 
+less local_clarin/clarin_chain_tdnn.sh 
+ls
+ls steps
+less steps/decode_fmllr.sh 
+find . -name 'spk2gender*'
+find . -name 'spk*'
+find . -name '*mfcc*'
+find . -name '*mfcc*'|grep con
+find . -name '*mfcc*'|grep -v ark
+find . -name '*mfcc*'|grep -v ark|grep -v scp
+history -a
