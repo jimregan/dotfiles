@@ -1998,3 +1998,146 @@ curl https://pl.globalvoices.org/sitemap-news.xml
 curl https://pl.globalvoices.org/sitemap.xml
 tail -f ../../corpus/gd.txt 
 history -a
+cd ~/Playing/
+ls
+cd LIUM_SpkDiarization.script.v3.9/
+ls
+find www.teanglann.ie -type f
+ls
+vi gender.sh
+sh gender.sh www.teanglann.ie/CanM/útamáil.mp3.wav test.seg
+;s
+ls
+less segTranscriptionFull.sh 
+sh segTranscriptionFull.sh www.teanglann.ie/CanM/útamáil.mp3.wav 
+less segTranscriptionFull.sh 
+ls
+sh segTranscriptionFull.sh www.teanglann.ie/CanM/útamáil.mp3.wav 
+vi gender.sh
+less segTranscriptionFull.sh 
+sh segTranscriptionFull.sh www.teanglann.ie/CanM/útamáil.mp3.wav 
+ls
+cat útamáil.mp3/útamáil.mp3.*
+less segTranscriptionFull.sh 
+ls
+sh segTranscriptionFull.sh www.teanglann.ie/CanM/útamáil.mp3.wav 
+less segTranscriptionFull.sh 
+ffplay www.teanglann.ie/CanM/útamáil.mp3.wav 
+ffplay www.teanglann.ie/CanM/bunscoil.mp3
+ffplay www.teanglann.ie/CanM/bunscoile.mp3 
+ffplay www.teanglann.ie/CanM/mar\ sin\ féin.mp3.wav 
+sh segTranscriptionFull.sh www.teanglann.ie/CanM/mar\ sin\ féin.mp3.wav
+sh segTranscriptionFull.sh "www.teanglann.ie/CanM/mar sin féin.mp3.wav"
+less segTranscriptionFull.sh 
+find www.teanglann.ie -name '*mp3'
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+less todo 
+find www.teanglann.ie -name '*mp3' > all
+less all 
+find www.teanglann.ie -name '*.wav'
+ls
+wc -l todo 
+wc -l all 
+find www.teanglann.ie -name '*wav'|wc
+less all 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+find www.teanglann.ie -name '*mp3'|wc
+find www.teanglann.ie -name '*wav'|wc
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |head -n 1 |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+ls 'www.teanglann.ie/CanC/a dhiabhail!.mp3*'
+ls 'www.teanglann.ie/CanC/a dhiabhail!.mp3'
+ffplay www.teanglann.ie/CanC/a\ dhiabhail\!.mp3.wav 
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+file www.teanglann.ie/CanM/mistéireach.mp3 
+ffplay www.teanglann.ie/CanM/mistéireach.mp3
+rm www.teanglann.ie/CanM/mistéireach.mp3
+wget -x -c www.teanglann.ie/CanM/mistéireach.mp3
+ffplay www.teanglann.ie/CanM/mistéireach.mp3
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+wc -l todo 
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+cat todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+ls -al www.teanglann.ie/CanM/idirphearsanta.mp3
+cat todo 
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+cat todo |while read i;do sh ~/bin/convert-mp3.sh "$i" ;done
+rm todo 
+find www.teanglann.ie -name '*mp3'|while read i;do if [ ! -e "$i.wav" ];then echo $i >> todo;fi;done
+ls
+find www.teanglann.ie -name '*wav'|wc
+find www.teanglann.ie -name '*mp3'|wc
+#java -Xmx2G -Xms2G -cp ./LIUM_SpkDiarization.jar  fr.lium.spkDiarization.programs.Identification --help --sInputMask=%s.seg --fInputMask=%s.wav  --sOutputMask=%s.ident.seg --fInputDesc="audio16kHz2sphinx,1:3:2:0:0:0,13,1:1:300:4" --tInputMask=speakers.gmm --sTop=5,ubm.gmm  --sSetLabel=add testShow
+ls
+less all 
+rm all 
+rm -rf útamáil.mp3/
+ls
+sox -n stat www.teanglann.ie/CanC/a\ dhiabhail\!.mp3.wav 
+sox www.teanglann.ie/CanC/a\ dhiabhail\!.mp3.wav -n stat
+sox www.teanglann.ie/CanC/a\ dhiabhail\!.mp3.wav -n stat|grep Length
+sox www.teanglann.ie/CanC/a\ dhiabhail\!.mp3.wav -n stat|grep '^Length'
+sox www.teanglann.ie/CanC/a\ dhiabhail\!.mp3.wav -n stat 2>&1 |grep '^Length'
+find www.teanglann.ie -type f|while read i;do sox "$i" -n stat 2>&1 |grep '^Length' >> leng;done
+wc -l leng 
+find www.teanglann.ie -type f
+find www.teanglann.ie -type f|wc
+cat leng 
+cat leng |awk '{print $NF}'
+cat leng |awk 'BEGIN{a=0.0}{print a += $NF}END{print a}'
+cat leng |awk 'BEGIN{a=0.0}{a += $NF}END{print a}'
+cat leng |awk 'BEGIN{a=0.0}{a += $NF}END{print a / 2}'
+perl -e 'print 32090.7 / (60 * 60)'
+history -a

@@ -1121,3 +1121,10 @@ HCLGa is not stochastic
 add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl 
 steps/make_denlats.sh: feature type is lda
 steps/make_denlats.sh: using fMLLR transforms from exp/tri3b_ali
+steps/make_denlats.sh: using fMLLR transforms from exp/tri3b_ali
+steps/make_denlats.sh: done generating denominator lattices.
+steps/train_mmi.sh data/train data/lang exp/tri3b_ali exp/tri3b_denlats exp/tri3b_mmi
+steps/train_mmi.sh: feature type is lda
+Using transforms from exp/tri3b_ali
+Iteration 0 of MMI training
+run.pl: 9 / 40 failed, log is in exp/tri3b_mmi/log/acc.0.*.log
