@@ -1,608 +1,3 @@
-less a.gperf 
-apt-cache search gperf
-sudo apt-get install gperf
-gperf a.gperf 
-find /tmp -name '*gnumeric'
-zcat /tmp/Book1.gnumeric 
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|less
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n/</g'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sort|uniq
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sort|uniq|sed -e 's/<//'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sed -e 's/\///'|sort|uniq|sed -e 's/<//'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sed -e 's/\///'|sort|uniq|sed -e 's/<//' > gnumeric-tokens.txt
-perl gentoken.pl gnumeric-tokens.txt b.h b.gperf
-less b.gperf 
-less b.h
-l
-ls
-less ABWParser.cpp 
-ls
-less libabw_internal.cpp 
-ls
-cd ..
-ls
-cd ..
-ls
-less CREDITS 
-less HACKING 
-less awml.dtd 
-less README 
-ls
-less TODO 
-less /usr/include/boost/iostreams/device/mapped_file.hpp 
-less ~/Downloads/Masterfile\ 8000\ \[SD\]\ Disks.zip 
-unzip ~/Downloads/Masterfile\ 8000\ \[SD\]\ Disks.zip 
-less Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk 
-cp Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk ~/Joyce/Disks/
-rm Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk 
-file ~/Downloads/*com
-history -w
-config status
-config diff
-config add .bash_history 
-config add .viminfo 
-config status
-config add .config/gtkrc
-config add .config/gtkrc-2.0 
-config add .config/kactivitymanagerdrc 
-config add .config/kded_device_automounterrc 
-config add .config/kglobalshortcutsrc 
-config commit -m reboot
-config branch
-config push origin slow-crash
-config checkout master
-config log
-echo żartów | uconv -x pl-pl_FONIPA
-echo żartów |uconv -x pl-pl_FONIPA | uconv -x IPA-XSampa
-sudo cpan AI::MXNet
-apt-cache search Tk::Zinc
-apt-cache search tk-zinc
-apt-cache search zinc
-apt-cache search mxnet
-apt-cache search zinc
-sudo cpan AI::MXNet
-sudo cpan AI::MXNetCAPI
-apt-cache search tkzinc
-apt-cache search dlib
-sudo apt-get install libdlib-dev 
-sudo apt-get install libopencv-dev 
-cd Playing/
-git clone https://github.com/apache/incubator-mxnet.git
-cd incubator-mxnet/
-ls
-cd ..
-rm -rf incubator-mxnet/
-git clone --recursive https://github.com/apache/incubator-mxnet.git
-echo aktualizacja |uconv -x pl-pl_FONIPA | uconv -x IPA-XSampa
-echo aktualizacja |uconv -x pl-pl_FONIPA 
-echo balladzie |uconv -x pl-pl_FONIPA 
-echo świątyniach |uconv -x pl-pl_FONIPA 
-git clone https://gist.github.com/jimregan/adaf90af2bab7bbc32bf33036024fe3d
-cd adaf90af2bab7bbc32bf33036024fe3d/
-ls
-cp wnu-wnu_FONIPA.xml wnu-wnu_FONIPA.txt
-vi wnu-wnu_FONIPA.txt 
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '^#')"
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '^#'|grep -v '::')"
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '^#'|grep -v '::'|grep -v '^$')"
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt|grep -v '::'|grep -v '^$')"
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-cat wnu-wnu_FONIPA.txt |tr '\n' ' '
-cat wnu-wnu_FONIPA.txt |tr '\n' ' ' > tmppp
-vi tmppp
-ivi wnu-wnu_FONIPA.txt 
-vi wnu-wnu_FONIPA.txt 
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-vi wnu-wnu_FONIPA.txt 
-cat /tmp/usun |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-cat /tmp/usun |sed -e 's/[";\.]//' |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-cat /tmp/usun |tr -d '".;:' |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-cat /tmp/usun |tr -d '".;:,' |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'
-cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'
-cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'|sort|uniq
-cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'|sort|uniq|grep -v '^$'
-cat /tmp/usun |tr -d '".;:,' |tr 'A-Z' 'a-z'|tr ' ' '\n'|sort|uniq|grep -v '^$' > wnu-fonipa-t-wnu.txt
-cat wnu-fonipa-t-wnu.txt |uconv -x "$(cat wnu-wnu_FONIPA.txt)"
-cat wnu-fonipa-t-wnu.txt |uconv -x "$(cat wnu-wnu_FONIPA.txt)" > right
-paste wnu-fonipa-t-wnu.txt right 
-paste wnu-fonipa-t-wnu.txt right  > tmaa
-mv tmaa wnu-fonipa-t-wnu.txt 
-grep -v '^d' tmaa wnu-fonipa-t-wnu.txt 
-grep -v '^d' wnu-fonipa-t-wnu.txt 
-grep -v '^d' wnu-fonipa-t-wnu.txt |grep d
-vi wnu-wnu_FONIPA.txt 
-cat wnu-fonipa-t-wnu.txt|awk '{print $1}' |uconv -x "$(cat wnu-wnu_FONIPA.txt)" > right
-cat wnu-fonipa-t-wnu.txt|awk '{print $1}'  > left
-paste left right > wnu-fonipa-t-wnu.txt 
-less wnu-fonipa-t-wnu.txt 
-cat /tmp/usun |tr -d '".;:,' 
-cat /tmp/usun |tr -d '".;:,'  > t1
-cat t1 |uconv -x "$(cat wnu-wnu_FONIPA.txt)" > t2
-cat t1
-cat t1;echo;cat t2;echo
-less wnu-fonipa-t-wnu.txt 
-less wnu-wnu_FONIPA.txt 
-mv wnu-wnu_FONIPA.txt wnu-fonipa-t-wnu.txt ~/Playing/language-resources/third_party/cldr/
-ls
-rm wnu-wnu_FONIPA.xml tmppp t1 t2 left right 
-ls
-less aev-aev_FONIPA.xml 
-mv aev-aev_FONIPA.xml aev-aev_FONIPA.txt
-less aev-aev_FONIPA.txt 
-mv aev-aev_FONIPA.txt aey-aey_FONIPA.txt 
-vi aey-aey_FONIPA.txt 
-cp aey-aey_FONIPA.txt ~/Playing/language-resources/third_party/cldr/
-vi /tmp/amele
-cat /tmp/amele |uconv -x "$(cat aey-aey_FONIPA.txt)" > t2
-cat /tmp/amele |uconv -x "$(cat aey-aey_FONIPA.txt)" 
-vi aey-aey_FONIPA.txt 
-cat /tmp/amele |tr -d '".;:,'  
-cat /tmp/amele |tr -d '".;:,'
-cat /tmp/amele |tr -d '".;:,'|tr ' ' '\n' |grep -v '^$'
-cat /tmp/amele |tr -d '".;:,'|tr ' ' '\n' |grep -v '^$'|tr 'A-Z' 'a-z'|sort|uniq
-cat /tmp/amele |tr -d '".;:,'|tr ' ' '\n' |grep -v '^$'|tr 'A-Z' 'a-z'|sort|uniq > left
-vi left 
-cat left |uconv -x "$(cat aey-aey_FONIPA.txt)" 
-cat left |uconv -x "$(cat aey-aey_FONIPA.txt)"  > right
-paste left right 
-paste left right > ~/Playing/language-resources/third_party/cldr/aey-fonipa-t-aey.txt
-rm left right 
-ls
-rm t2 
-rm aey-aey_FONIPA.txt 
-mv mi-mi_FONIPA.xml mi-mi_FONIPA.txt
-vi mi-mi_FONIPA.txt 
-cp mi-mi_FONIPA.txt ~/Playing/language-resources/third_party/cldr/
-history -w
-history -a
-cd /tmp/
-wget https://www.macdisk.com/cvfr/cnvxywri.zip
-unzip cnvxywri.zip 
-less CNVXYWRI.DLL 
-unzip ~/Downloads/LocoScript_v4.06__ENGLISH.zip 
-file LocoScript_v4.06__ENGLISH__Side_*
-apt-cache search joycew
-apt-cache search joyce
-apt-cache search pcw
-apt-cache search sdl
-apt-cache search sdl-dev
-sudo apt-get install libsdl2-dev 
-sudo apt-get install libsdl1.2-dev 
-unzip ~/Downloads/LocoScript_v4.06__ENGLISH.zip 
-history -w
-history -a
-wget http://www.seasip.info/Unix/Joyce/joyce-2.2.12.tar.gz
-tar zxvf joyce-2.2.12.tar.gz 
-cd joyce-2.2.12/
-ls
-./configure 
-make -j 8
-ls
-sudo make install
-sudo ldconfig
-ls
-ls bin/
-xjoyce 
-cd ..
-unzip ~/Downloads/LocoScript_v2.03__ENGLISH.zip 
-xjoyce 
-ls
-mv LocoScript_v* ~/Joyce/Disks/
-ls ~/Joyce/Boot/
-ls -al ~/Joyce/Boot/
-vi ~/Joyce/Boot/joycebt.xml 
-cp ~/Joyce/Disks/LocoScript_v2.03__ENGLISH.dsk ~/Joyce/Boot/boot1.dsk 
-xjoyce 
-history -w
-history -a
-cd ~/Joyce/
-ls
-ls Pngs/
-display Pngs/matrix0.png 
-ls Disks/
-ls Boot/
-ls boot/
-cd /tmp/
-wget http://www.seasip.info/Unix/LibDsk/libdsk-1.4.2.tar.gz
-tar zxvf libdsk-1.4.2.tar.gz 
-ls
-cd libdsk-1.4.2/
-ls
-./configure 
-make -j 8
-;s
-ls
-ls tools/
-tools/dskutil
-tools/dskutil -types
-tools/dskutil -type dsk ~/Joyce/Boot/boot1.dsk 
-less ~/Joyce/Boot/boot1.dsk 
-ls tools/
-tools/dskdump 
-ls
-less doc/libdsk.lyx 
-ls
-less doc/apridisk.html 
-ls man/
-less man/dskutil.1 
-nroff -man man/dskutil.1 
-nroff -man man/dskutil.1 |less
-nroff -man man/dsktrans.1 
-nroff -man man/dsktrans.1 |less
-nroff -man man/dskdump.1 |less
-nroff -man man/dskutil.1 |less
-xjoyce 
-ls
-less doc/libdsk.txt 
-find . -type f
-cd lib/
-ls
-less compress.c 
-grep PCW *
-less dskgeom.c 
-ls
-less uk/co/demon/seasip/libdsk/FormatType.java 
-less uk/co/demon/seasip/libdsk/FormatData.java 
-less uk/co/demon/seasip/libdsk/Geometry.java 
-ls
-less uk_co_demon_seasip_libdsk_Drive.h 
-less dskpars.c 
-cd ..
-cd tools/
-ls
-grep copy *
-less dsktrans.c 
-sudo apt-get install cpmtools
-cpmls -h
-man cpmls 
-cpmls ~/Joyce/Boot/boot1.dsk 
-man cpmls 
-man cpm
-man cpmls 
-cpmls -d ~/Joyce/Boot/boot1.dsk 
-strings ~/Joyce/Boot/boot1.dsk 
-cd ..
-wget http://www.seasip.info/Unix/PcwPlore/pcwplore-0.3.0.tar.gz
-tar zxvf pcwplore-0.3.0.tar.gz 
-cd pcwplore-0.3.0/
-ls
-less imtypes/image_mda.cxx 
-ls bin/
-less bin/file_bas.cxx 
-apt-cache search wx
-sudo apt-get install libwxgtk3.0-dev 
-ls
-./configure 
-make
-sudo apt-get install libwxbase3.0-dev 
-make
-find . -name image_cut.cxx
-vi imtypes/image_cut.cxx 
-vi imtypes/image_cut.hxx 
-vi imtypes/image_cut.cxx 
-vi imtypes/image_cut.hxx 
-vi imtypes/image_cut.cxx 
-vi imtypes/image_cut.hxx 
-vi imtypes/image_cut.cxx 
-make
-vi imtypes/image_logo.cxx 
-make
-vi imtypes/image_mda.cxx 
-make
-vi imtypes/image_mvg.cxx 
-make
-vi imtypes/image_spc.cxx 
-make
-find . -name drivechooser.hxx
-vi bin/drivechooser.hxx 
-find . -name app.cxx
-vi bin/app.cxx 
-vi bin/drivechooser.hxx 
-make
-vi bin/drivechooser.hxx 
-make
-ls
-less cpmtools/cpmfs.c 
-less cpmtools/device_libdsk.c 
-cd ..
-git clone git://gerrit.libreoffice.org/libqxp
-less ~/Downloads/chart-pageimagebackground.prd 
-file ~/Downloads/chart-pageimagebackground.prd 
-git clone https://github.com/diazbastian/softmakeroffice-sample-documents.git
-apt-cache search ole
-apt-cache search ole|grep -i comp
-apt-cache search ole|grep -i compou
-sudo apt-get install libolecf-utils
-apt-cache search gnumer
-sudo apt-get install gnumeric
-gnumeric 
-less Book1.gnumeric 
-file Book1.gnumeric 
-gzcat Book1.gnumeric 
-zcat Book1.gnumeric 
-git clone git://gerrit.libreoffice.org/libabw
-ls
-cd libabw/
-ls
-cd src/
-ls
-cd lib/
-ls
-less ABWZlibStream.cpp 
-less ABWParser.cpp 
-less ABWXMLTokenMap.cpp 
-less ABWXMLTokenMap.h 
-less ABWXMLHelper.
-less ABWXMLHelper.cpp 
-less ABWXMLHelper.h 
-grep ABWXMLHelper.h *
-less AbiDocument.cpp 
-less ABWZlibStream.cpp 
-less ABWZlibStream.h 
-vi ~/tmp/bar/tospid 
-less tokens.txt 
-less gentoken.pl 
-ls
-less libabw_internal.
-less libabw_internal.cpp 
-less libabw_internal.h 
-less Makefile.am 
-less ABWStylesCollector.
-less ABWStylesCollector.cpp 
-less ABWOutputElements.cpp 
-less ABWContentCollector.cpp 
-less tokens.txt 
-less gentoken.pl 
-perl gentoken.pl tokens.txt a.h a.gperf
-less a.h 
-less a.gperf 
-apt-cache search gperf
-sudo apt-get install gperf
-gperf a.gperf 
-find /tmp -name '*gnumeric'
-zcat /tmp/Book1.gnumeric 
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|less
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n/</g'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sort|uniq
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sort|uniq|sed -e 's/<//'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sed -e 's/\///'|sort|uniq|sed -e 's/<//'
-zcat /tmp/Book1.gnumeric |grep -v '<?xml'|sed -e 's/</\n</g'|grep '^<'|grep -v '^</'|awk -F'[ >]' '{print $1}'|sed -e 's/\///'|sort|uniq|sed -e 's/<//' > gnumeric-tokens.txt
-perl gentoken.pl gnumeric-tokens.txt b.h b.gperf
-less b.gperf 
-less b.h
-l
-ls
-less ABWParser.cpp 
-ls
-less libabw_internal.cpp 
-ls
-cd ..
-ls
-cd ..
-ls
-less CREDITS 
-less HACKING 
-less awml.dtd 
-less README 
-ls
-less TODO 
-less /usr/include/boost/iostreams/device/mapped_file.hpp 
-less ~/Downloads/Masterfile\ 8000\ \[SD\]\ Disks.zip 
-unzip ~/Downloads/Masterfile\ 8000\ \[SD\]\ Disks.zip 
-less Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk 
-cp Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk ~/Joyce/Disks/
-rm Masterfile\ 8000\ \[SD\]\ \(1-1\).dsk 
-file ~/Downloads/*com
-history -w
-history -a
-cd ~/Joyce/
-ls
-cd Disks/
-ls
-mkdir files
-less ~/Downloads/VOA-newscast-2017-03-29-0600Z.afpk 
-lynx https://www.reddit.com/r/perl/comments/5trtpl/perl_interface_to_mxnet_machine_learning_lib/
-lynx http://gluon.mxnet.io/chapter07_distributed-learning/hybridize.html
-history -a
-cd ..
-tar zxvf ~/Downloads/lhasa-0.3.1.tar.gz 
-cd lhasa-0.3.1/
-ls
-cd src/
-ls
-cd ..
-ls
-./configure 
-make -j 8
-cd lib/
-ls
-less lha_decoder.
-less lha_decoder.c 
-ls
-cd ..
-ls
-ls src/
-ls
-ls src/
-src/lha
-#src/lha l ~/Downloads/
-ls ~/Downloads/*com
-src/lha l ~/Downloads/mdcnv102.com 
-src/lha x ~/Downloads/mdcnv102.com 
-less mdaconv.c
-ls
-mkdir extr
-cd extr/
-for i in ~/Downloads/*.com ;do ../src/lha x $i;done
-less spc2bmp.c
-less ~/Downloads/pcw052.wpd 
-less ~/Downloads/DATABASE.TZT 
-file ~/Downloads/DATABASE.TZT 
-file ~/Downloads/*LBR
-../src/lha ~/Downloads/PF2ASC.LBR 
-apt-cache search lbr
-sudo apt-get install unar
-vi thing.cc
-g++ thing.cc
-vi gram
-./a.out gram 
-vi gram
-vi thing.cc
-./a.out gram 
-vi thing.cc
-vi orig.cc
-g++ orig.cc 
-./a.out gram 
-g++ orig.cc 
-./a.out gram 
-diff -u orig.cc thing.cc 
-mv thing.cc q7.cc
-cp q7.cc q8.cc
-vi q8.cc
-g++ q8.cc 
-vi q8.cc
-g++ q8.cc 
-./a.out gram 
-g++ q7.cc 
-./a.out gram > q7.out
-g++ q8.cc 
-./a.out gram 
-vi orig.cc
-vi q8.c
-ls *cc
-vi q8.cc
-diff -u q7.cc q8.cc
-cat orig.cc 
-cat #include <string>
-cat q7.cc 
-cat q8.cc 
-vi thing
-ls ~/*tab*
-vi ~/open-tabs
-vi thing
-sh ~/scripts/spider.sh thing
-tail -f thing.log 
-vi thing
-sh ~/scripts/spider.sh thing
-tail -f thing.log 
-vi ~/open-tabs
-history -a
-cd Cor
-cd ~/Playing/Corp
-cd ~/Playing/Corpora/
-ls
-cd ga_UL/anb/
-ls
-ls text01/xml/text01-001_000.xml 
-less text01/xml/text01-001_000.xml 
-grep '<phoneme' text01/xml/text01-001_000.xml 
-grep '<phoneme' */xml/*.xml 
-grep '<phoneme' */xml/*.xml |awk -F'"' '{print $2}'|sort|uniq
-vi /tmp/phones
-cat /tmp/phones
-grep nj_d */xml/*.xml 
-less new_text02/xml/tcd_gd_text02-004_008.xml
-grep ai */xml/*.xml 
-grep ai */xml/*.xml |grep '<ph'
-less text02/xml/tcd_gd_text02_002_503.xml
-grep '"au"' */xml/*.xml |grep '<ph'
-less text02/xml/tcd_gd_text02_002_503.xml
-less text02/xml/tcd_gd_text02_007_314.xml
-grep '"ai"' */xml/*.xml |grep '<ph'
-less
-less text02/xml/tcd_gd_text02_007_278.xml
-grep '"i@"' */xml/*.xml |grep '<ph'
-less text02/xml/tcd_gd_text02_007_283.xml
-grep '"llj_d"' */xml/*.xml |grep '<ph'
-less new_text02/xml/tcd_gd_text02-003_276.xml
-grep '"nj"' */xml/*.xml |grep '<ph'
-less text02/xml/tcd_gd_text02_007_330.xml
-grep '"nn_d"' */xml/*.xml |grep '<ph'
-less text02/xml/tcd_gd_text02_004_513.xml
-grep '"r_d"' */xml/*.xml |grep '<ph'
-less text02/xml/tcd_gd_text02_007_320.xml
-grep '"rj_d"' */xml/*.xml |grep '<ph'
-less text02/xml/tcd_gd_text02_004_662.xml
-grep '"sp"' */xml/*.xml |grep '<ph'
-less text01/xml/text01-001_154.xml
-grep '"u@"' */xml/*.xml |grep '<ph'
-less text01/xml/text01-001_154.xml
-less text02/xml/tcd_gd_text02_007_320.xml
-history -a
-cd ~/Playing/
-git clone https://github.com/danijel3/ClarinStudioKaldi
-cd ClarinStudioKaldi/
-ls
-cd local_clarin/
-ls
-less lexicon.txt 
-wc -l lexicon.txt 
-less lexicon.txt 
-history -a
-cd /tmp/
-unzip ~/Downloads/clarin_emu.zip 
-cd ~/Playing/ClarinStudioKaldi/
-ls
-less LICENSE.audio 
-less cmd.sh 
-cd ..
-cd kaldi/
-cd egs/
-man ln
-ln -sd ../../ClarinStudioKaldi/ clarinpl
-cd clarinpl
-ls
-less path.sh 
-less run.sh 
-less local_clarin/clarin_pl_clean.sh 
-less local_clarin/clarin_pl_data_prep.sh 
-zless local_clarin/arpa.lm.gz 
-ls -al local_clarin/arpa.lm.gz 
-ls local_clarin/
-less local_clarin/model.fst.gz 
-less local_clarin/generate_lists.py 
-rm -rf /tmp/clarin/
-ls
-rm ~/Downloads/clarin_emu.zip 
-df
-ls
-sh run.sh 
-ls
-sh path.sh 
-#ls ../wsj/s5/conf/
-ls ..
-less run.sh 
-less path.sh 
-./run.sh 
-history -a
-ls 
-ls ~/crash-scratch 
-less ~/crash-scratch 
-vi ~/crash-scratch 
-cd ../kaldi/
-ls
-cd src/
-ls
-cd fstbin/
-ls
-make
-cd ..
-make -j 8
-cd ../egs/clarinpl
-s
-ls
-./run.sh 
-less run.sh 
 less utils/prepare_lang.sh 
 less run.sh 
 ./run.sh 
@@ -2207,4 +1602,399 @@ find . -name '*mfcc*'
 find . -name '*mfcc*'|grep con
 find . -name '*mfcc*'|grep -v ark
 find . -name '*mfcc*'|grep -v ark|grep -v scp
+history -a
+find www.teanglann.ie -name '*mp3'
+ls
+wget http://www-lium.univ-lemans.fr/diarization/lib/exe/fetch.php/data_ilp.tgz
+vi ilp.sh
+tar zxvf data_ilp.tgz 
+ls
+sh ilp.sh 
+vi ilp.sh 
+find www.teanglann.ie/CanC -type f
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do echo ln -s "$i" CC_$(printf "%06d" $a).wav;a=$(($a + 1));done
+mkdir wavs
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do ln -s "$i" wavs/CC_$(printf "%06d" $a).wav;a=$(($a + 1));done
+ls wavs/
+a=1;find www.teanglann.ie/CanM -name '*.wav'|while read i;do ln -s "$i" wavs/CM_$(printf "%06d" $a).wav;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanU -name '*.wav'|while read i;do ln -s "$i" wavs/CU_$(printf "%06d" $a).wav;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do echo "$i" "\t" wavs/CC_$(printf "%06d" $a).wav;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do echo "$i" wavs/CC_$(printf "\t%06d" $a).wav;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do echo "$i" $(printf "wavs/CC_\t%06d" $a).wav;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do echo "$i" $(printf "\twavs/CC_%06d" $a).wav;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do printf "%s\twavs/CC_%06d.wav" $i $a;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do printf "%s\twavs/CC_%06d.wav\n" $i $a;a=$(($a + 1));done
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do printf "%s\twavs/CC_%06d.wav\n" $i $a;a=$(($a + 1));done >> list
+less list 
+a=1;find www.teanglann.ie/CanC -name '*.wav'|while read i;do printf "%s\twavs/CC_%06d.wav\n" "$i" $a;a=$(($a + 1));done > list
+less list 
+a=1;find www.teanglann.ie/CanM -name '*.wav'|while read i;do printf "%s\twavs/CM_%06d.wav\n" "$i" $a;a=$(($a + 1));done >> list
+a=1;find www.teanglann.ie/CanU -name '*.wav'|while read i;do printf "%s\twavs/CU_%06d.wav\n" "$i" $a;a=$(($a + 1));done >> list
+wc -l list 
+find www.teanglann.ie -name '*.wav'|wc
+less list 
+ls
+#for i in wavs/*;do sh 
+less segTranscriptionFull.sh 
+for i in wavs/*;do sh segTranscriptionFull.sh $i;done
+ls wavs/
+sh segTranscriptionFull.sh wavs/CM_000409.wav
+df
+rm -rf wavs/
+#a=1;find www.teanglann.ie/CanU -name '*.wav'|while read i;do cp "$i" wavs/CU_$(printf "%06d" $a).wav;a=$(($a + 1));done
+mkdir wavs
+a=1;find www.teanglann.ie/CanU -name '*.wav'|while read i;do cp "$i" wavs/CU_$(printf "%06d" $a).wav;a=$(($a + 1));done
+for i in wavs/*;do sh segTranscriptionFull.sh $i;done
+history -a
+cd /tmp/
+ls
+git clone https://github.com/jimregan/corpuscrawler.git
+git branch -a
+cd corpuscrawler/
+ls
+git log
+git checkout -b maori-scraper
+git cherry-pick a895308b7686550d660017a485478ac4d92ff620
+git cherry-pick f2bd2841b65cb2847b8fec08c580c66ef70b1e2e
+git cherry-pick bdc517b0417707da0c707a04edcd824871c06b74
+git cherry-pick 3159028897bd730e94fc841ecad032b1f9421086
+git log
+git push origin maori-scraper 
+cd /tmp/
+ls
+less WS2TXT.C 
+less WSCNVN.
+less WSCNVN.DOC 
+less WSTXT.DOC 
+less ~/Downloads/testletter.aww 
+curl http://www.rte.ie/sitemap-710000.xml|less
+curl http://www.rte.ie/sitemap-10000.xml
+curl http://www.rte.ie/sitemap-10000.xml|less
+python
+cd ~/Playing/corpuscrawler/
+cd Lib/corpuscrawler/
+python
+curl http://www.rte.ie/sitemap-10000.xml|less
+python
+cd ..
+vi Lib/corpuscrawler/main.py
+ls
+./corpuscrawler -h
+grep coding Lib/corpuscrawler/*
+less Lib/corpuscrawler/crawl_ae.py
+./corpuscrawler -h
+./corpuscrawler ga
+./corpuscrawler --language ga
+ls
+ls corpus
+less corpus/ga.txt 
+vi Lib/corpuscrawler/crawl_ga.py
+curl http://www.rte.ie/sitemap-10000.xml|less
+curl http://www.rte.ie/sitemap-1000.xml|less
+curl http://www.rte.ie/sitemap-20000.xml|less
+curl -10000
+curl http://www.rte.ie/sitemap-500000.xml
+curl http://www.rte.ie/sitemap-0.xml
+./corpuscrawler --language ga
+ls
+ls cache-corpuscrawler/
+grep rte.ie cache-corpuscrawler/*
+less cache-corpuscrawler/faLXs3UCrrvuDjvkoWuxpw3tpzPg2OiYDT5iPdruQ4WI=
+python
+./corpuscrawler --language ga
+grep rte.ie cache-corpuscrawler/*
+rm cache-corpuscrawler/fmc-EpibMIscciDm7iHzr1biagvdHg4utH4oTaSKuwv8=
+grep rte.ie cache-corpuscrawler/*
+rm cache-corpuscrawler/fN08tzbuJKdbarAMGtzTo0hakawuP5ogPBRpaWVa4pCQ=
+grep rte.ie cache-corpuscrawler/*
+rm cache-corpuscrawler/fCoNhvmPbenPP6DwSTQWvPQsyZ8iFNlyGcLB7rAsGlGI=
+grep rte.ie cache-corpuscrawler/*
+rm cache-corpuscrawler/faLXs3UCrrvuDjvkoWuxpw3tpzPg2OiYDT5iPdruQ4WI=
+grep rte.ie cache-corpuscrawler/*
+rm cache-corpuscrawler/fU7-tF8iNN74PRWqJvc9zWG1WsK2ovNSYgnpU3Yyc8Pg=
+grep rte.ie cache-corpuscrawler/*
+./corpuscrawler --language ga
+./corpuscrawler --help
+python
+cd Lib/corpuscrawler/
+python
+cd ../..
+./corpuscrawler --language ga
+less Lib/corpuscrawler/util.py
+./corpuscrawler --language ga
+curl http://www.rte.ie/sitemap-20000.xml
+curl http://www.rte.ie/sitemap-20000.xml|less
+curl http://www.rte.ie/sitemap-0.xml|less
+curl http://www.rte.ie/sitemap.xml|less
+curl http://www.rte.ie/sitemap-0.xml|less
+./corpuscrawler --language ga
+rm -rf cache-corpuscrawler/
+./corpuscrawler --language ga
+rm -rf cache-corpuscrawler/
+./corpuscrawler --language ga
+rm -rf cache-corpuscrawler/
+ls
+unzip tmp.zip 
+./corpuscrawler --language ga
+rm -rf cache-corpuscrawler/
+unzip tmp.zip 
+./corpuscrawler --language ga
+rm -rf cache-corpuscrawler/
+unzip tmp.zip 
+./corpuscrawler --language ga
+git diff
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m 'some of the files in the sitemap do not exist'
+./corpuscrawler --language ga
+grep striptags Lib/corpuscrawler/*
+./corpuscrawler --language ga
+git checkout master
+git pull origin master
+git branch
+git branch -D irish-fixed 
+git checkout -b irish-fixed
+git push mine master
+git push mine irish-fixed 
+git branch -D irish
+git checkout irish-fixed 
+./corpuscrawler --language ga
+less corpus/ga.txt 
+git log
+ls
+vi Lib/corpuscrawler/crawl_ga.py
+./corpuscrawler --language ga
+vi Lib/corpuscrawler/crawl_ga.py
+git stash
+./corpuscrawler --language ga
+git add Lib/corpuscrawler/crawl_ga.py 
+git checkout -b irish-scraper-still-giving-trouble
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m '[ga] conditions were right, needed to cast to int'
+git push mine irish-scraper-still-giving-trouble 
+./corpuscrawler --language ga
+less corpus/ga.txt 
+./corpuscrawler --language ga
+less corpus/ga.txt 
+./corpuscrawler --language ga
+less corpus/ga.txt 
+./corpuscrawler --language ga
+git diff
+./corpuscrawler --language ga
+git diff
+./corpuscrawler --language ga
+less corpus/ga.txt 
+gzip corpus/ga.txt 
+ls -al corpus/ga.txt.gz 
+less corpus/ga.txt.gz 
+git branch
+git checkout master
+git pull origin master
+vi Lib/corpuscrawler/crawl_ga.py
+git checkout -b 'further filtering'
+git checkout -b 'further-filtering'
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m 'another sentence start to omit'
+git push mine further-filtering 
+less corpus/ga.txt 
+tail -f corpus/ga.txt 
+ls
+ls corpus
+git checkout master
+git add Lib/corpuscrawler/main.py 
+git add Lib/corpuscrawler/crawl_ga.py 
+git log
+git commit -m 'basic crawler for Irish; fetch_sitemap returning nothing :/'
+git log
+git checkout master
+git pull origin master
+git checkout -b irish
+git cherry-pick c956b9725b9cb659c4973fb9d67ef3a122aea394
+git log
+git push mine irish 
+less Lib/corpuscrawler/util.py
+python
+tail -f corpus/ga.txt 
+less corpus/ga.txt 
+tail -f corpus/ga.txt 
+git diff
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m "deal with RTE's funky sitemap"
+ls -al cache-corpuscrawler/
+less cache-corpuscrawler/fcSsOJSumEjHRJ4lbcV3oAbXtJLqrDE5AX04KwoVCvwM\= 
+perl -e 'print 14500 / 110'
+ls
+find cache-corpuscrawler -type f
+find cache-corpuscrawler -type f|zip tmp.zip -@
+ls -al cache-corpuscrawler/
+less cache-corpuscrawler/fN08tzbuJKdbarAMGtzTo0hakawuP5ogPBRpaWVa4pCQ\= 
+less cache-corpuscrawler/f8O5smso1d6ksXdHrW_9SRuN4W02g8Cub3X5fMtSpvJ8\= 
+ls -al cache-corpuscrawler/
+tail -f corpus/ga.txt 
+git diff
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m 'strip cookie warnings, etc.'
+git push mine irish 
+git checkout -b irish-fixed
+git push mine irish-fixed 
+git checkout irish
+git log
+git checkout irish-fixed 
+git cherry-pick 1946bdb90f114674504f318914248dc5d43757c3
+git cherry-pick 249fd68e71b98df761f020df371b27634f13a46c
+git cherry-pick cd8f2f83c55acd53eeaba1b89ac3599e8bde1e75
+git push mine irish-fixed 
+tail -f corpus/ga.txt 
+ls
+git status
+cat .gitignore 
+git log
+git checkout -b maori
+vi Lib/corpuscrawler/main.py
+./corpuscrawler --language mi
+vi Lib/corpuscrawler/main.py
+./corpuscrawler --language mi
+vi Lib/corpuscrawler/main.py
+./corpuscrawler --language mi
+less corpus/mi.txt 
+rm corpus/mi.txt 
+./corpuscrawler --language mi
+rm corpus/mi.txt 
+./corpuscrawler --language mi
+less corpus/mi.txt 
+rm corpus/mi.txt 
+./corpuscrawler --language mi
+less corpus/mi.txt 
+rm corpus/mi.txt 
+./corpuscrawler --language mi
+vi Lib/corpuscrawler/crawl_mi.py
+git add Lib/corpuscrawler/crawl_mi.py
+git commit -m 'skip articles that describe a news programme (with identical text each time)'
+./corpuscrawler --language mi
+git branch
+git pull mine irish-fixed 
+git checkout master 
+git pull origin master 
+git push mine master 
+./corpuscrawler --language mi
+less corpus/mi.txt 
+ls -al corpus/mi.txt 
+gzip corpus/mi.txt 
+ls -al corpus/mi.txt.gz 
+cd /tmp/
+mkdir gd
+cd gd/
+lynx -dump https://dasg.ac.uk/text/
+curl https://dasg.ac.uk/text/
+lynx -dump https://dasg.ac.uk/text/
+lynx -dump http://dasg.ac.uk/text/
+vi html
+lynx -force_html -dump html
+lynx -force_html -dump html|grep txt
+lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'
+lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|while read i;do wget https://dasg.ac.uk/text/$i;done
+lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|grep 'txt$'|while read i;do wget https://dasg.ac.uk/text/$i;done
+lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|grep 'txt$'|while read i;do wget --no-check-cerfiticate https://dasg.ac.uk/text/$i;done
+lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|grep 'txt$'|while read i;do wget --no-check-certificate https://dasg.ac.uk/text/$i;done
+ls 
+ls *txt|zip ~/gd.zip -@
+vim -b 99.txt 
+ls
+grep '<' *
+grep '<eng>' *
+grep '<eng>' *|grep -v '<gai>'
+python
+cd ../corpuscrawler/
+git pull origin
+git branch
+git checkout master
+git pull origin
+git checkout maori-scraper 
+git checkout master
+git pull origin
+git checkout maori-scraper 
+git cherry-pick 9af054a5e5140dbcdf2253d989feacb2c41837e8
+git push origin maori-scraper 
+git checkout master
+git checkout issue-12
+git checkout -b issue-12
+vi Lib/corpuscrawler/crawl_gd.py 
+git diff
+./corpuscrawler --language gd
+vi Lib/corpuscrawler/crawl_gd.py 
+git status
+git branch
+git add Lib/corpuscrawler/crawl_gd.py 
+git commit -m 'first pass'
+vi Lib/corpuscrawler/crawl_gd.py 
+./corpuscrawler --language gd
+vi Lib/corpuscrawler/crawl_gd.py 
+./corpuscrawler --language gd
+grep assert Lib/corpuscrawler/*
+vi Lib/corpuscrawler/crawl_gd.py 
+./corpuscrawler --language gd
+vi Lib/corpuscrawler/crawl_gd.py 
+grep assert Lib/corpuscrawler/*
+vi Lib/corpuscrawler/crawl_ae.py
+vi Lib/corpuscrawler/crawl_gd.py 
+./corpuscrawler --language gd
+vi Lib/corpuscrawler/crawl_gd.py 
+./corpuscrawler --language gd
+vi Lib/corpuscrawler/crawl_gd.py 
+./corpuscrawler --language gd
+vi Lib/corpuscrawler/crawl_gd.py 
+git add Lib/corpuscrawler/crawl_gd.py 
+git commit -m 'remove page numbers and blank page notices'
+git push origin issue-12 
+vi Lib/corpuscrawler/crawl_gd.py 
+git add Lib/corpuscrawler/crawl_gd.py 
+git commit -m 'strip \r, replace multiple \n with one'
+git push origin issue-12 
+./corpuscrawler --language gd
+wget http://nzetc.victoria.ac.nz/tei-source/WillDict.xml
+./corpuscrawler --language gd
+vi tei2wiki.xsl
+man xsltproc 
+xsltproc tei2wiki.xsl KenGramm.xml 
+vi tei2wiki.xsl 
+xsltproc tei2wiki.xsl KenGramm.xml 
+vi tei2wiki.xsl 
+xsltproc tei2wiki.xsl KenGramm.xml 
+vi tei2wiki.xsl 
+xsltproc tei2wiki.xsl KenGramm.xml 
+vi tei2wiki.xsl 
+xsltproc tei2wiki.xsl KenGramm.xml 
+xsltproc tei2wiki.xsl KenGramm.xml |less
+vi tei2html.xsl
+xsltproc tei2html.xsl KenGramm.xml 
+xsltproc tei2html.xsl KenGramm.xml |less
+less KenGramm.xml 
+xsltproc tei2html.xsl KenGramm.xml 
+less KenGramm.xml |file
+less KenGramm.xml |less
+xsltproc tei2html.xsl KenGramm.xml |less
+less KenGramm.xml 
+less tei2wiki.xsl 
+less KenGramm.xml 
+less ~/Downloads/KenGramm.html 
+apt-cache search pandoc
+sudo apt-get install pandoc
+man pandoc
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html 
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |less
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''$1''/g"
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''$1''/g;print;"
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"
+./corpuscrawler --language gd
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|less
+less KenGramm.xml 
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|less
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;s/^\{\|/{|style=\"margin: auto;\""|less
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;'|sed -e 's/^\{\|/{|style="margin: auto;"'|less
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;'|sed -e 's/^\{\|/{|style="margin: auto;"'
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^\{\|/{|style="margin: auto;"'
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^\{\|/\{\|style="margin: auto;"'
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^\{\|/{|style="margin: auto;"/'
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^{|/{|style="margin: auto;"/'
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^{|/{|style="margin: auto;"/'|less
+./corpuscrawler --language gd
 history -a
