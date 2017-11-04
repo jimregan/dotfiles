@@ -1998,3 +1998,13 @@ pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=
 pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^{|/{|style="margin: auto;"/'|less
 ./corpuscrawler --language gd
 history -a
+cd ~/Downloads/
+unzip ailink.zip 
+wine AILINK.EXE 
+cd 
+cd
+reset
+ls
+config add open-tabs .bash_history 
+config commit -m more
+history -a
