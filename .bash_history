@@ -1,187 +1,3 @@
-ffplay ./ga_CO/pmg_recordings/RCPiarsachSagart/RECS/0001/MI0001RCPiarsachSagart_0055.wav
-ffplay ./ga_CO/pmg_recordings/
-ls ./ga_CO/pmg_recordings/
-ls ./ga_CO/Conemara-Rec/
-find  ./ga_CO/Conemara-Rec/
-./ga_CO/Conemara-Rec/Conversion Script/txt2xml-prompts-amelia.py
-less './ga_CO/Conemara-Rec/Conversion Script/txt2xml-prompts-amelia.py'
-grep 'wav$' ~/.scratch/audio-list 
-ls
-ls ga_CO/
-less ga_CO/mysql/extract_audio.pl 
-less ga_CO/mysql/phonelist 
-less ga_CO/mysql/tcd_rc_pmc_mysql_100407.txt 
-ls
-ls scripts/
-find . -name '*.scm'
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/festival_multisyn/festvox/tcd_ga_mu_mnl_msf.scm 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/festival_multisyn/multisyn_data/utt/tcd_ga_mu_mnl_msf_1295.utt 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/festival_multisyn/multisyn_data/utts.data
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/removed_files/tcd_ga_mu_mnl_msf_0653.xml 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0001.txt 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0002.txt 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0003.txt 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_0004.txt 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_3317.txt 
-cat ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_*
-cat ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_*|less
-ls -al ./ga_MU/mo_sgeal_fein_CORK/corpus/txt/tcd_ga_mu_mnl_msf_*
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/status/tcd_ga_mu_mnl_msf_0001.txt 
-ls ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0001.xml 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0001.xml 
-less ./ga_MU/mo_sgeal_fein_CORK/corpus/textproc_xml/tcd_ga_mu_mnl_msf_0029.xml 
-history -a
-ls /media/jim/TOSHIBA/labcds/rzmaster/
-ls /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/
-ls /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/Fuaim/
-ls /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/Fuaim/Ceart/
-file /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Scannain/Lch*
-ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Scannain/Lch01.swf 
-ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Lch01.a5r 
-file /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Lch01.a5r 
-less /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Lch01.a5r 
-less /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Bearnai/Bearnai.a5e 
-less /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/Ainmhithe/Eolas/
-ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
-ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/3/Scannain/Lch01.swf 
-ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/1/Scannain/Lch01.swf 
-ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
-find /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/ -type f
-find /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/ -type f|xargs grep -i maidin
-strings /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
-strings /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf |grep maidin
-strings /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf |less
-apt-cache search swf
-sudo apt-get install swfmill swftools
-man swfmill 
-swfmill swf2xml /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
-swfmill swf2xml /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf |less
-ffplay /media/jim/TOSHIBA/labcds/rzmaster/RuairiSaZu/2/Scannain/Lch01.swf 
-history -a
-ls /media/jim/TOSHIBA/labcds/fest1/more_fst/IRISH.SCM 
-less /media/jim/TOSHIBA/labcds/fest1/more_fst/IRISH.SCM 
-less /media/jim/TOSHIBA/labcds/fest1/more_fst/IRISH/TCD_GA_LEXICON.SCM
-ffplay /media/jim/TOSHIBA/labcds/dunchaochain/CLP/BAILE.AVI 
-file /media/jim/TOSHIBA/labcds/dunchaochain/PRE/00000*
-file /media/jim/TOSHIBA/labcds/dunchaochain/PRO/*/*
-file /media/jim/TOSHIBA/labcds/dunchaochain/PRO/*/*|less
-file /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
-less /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
-ls
-./a.out 
-ls
-make
-ls
-cd ..
-ls
-src/lha -h
-./src/lha -h
-./src/lha 
-./src/lha x /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
-ls
-ls /media/jim/TOSHIBA/labcds/dunchaochain/
-./src/lha v /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
-cd ..
-git clone https://github.com/jimregan/unspis.git
-cd unspis/
-ls
-make
-ls
-./unspis 
-./unspis /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
-ls
-mkdir extr
-cd extr/
-../unspis /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ 
-ls
-find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'
-ls
-find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'
-less smbgsb.htm 
-ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
-less smbgsb.htm 
-ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
-less smbgsb.htm 
-less tstan.htm 
-ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/TSTAN.WAV
-ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
-less snamb.htm 
-less snam2.htm 
-less snamb.htm 
-ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/THGP/SNAMB.WAV
-less snamb.htm 
-ffplay /media/jim/TOSHIBA/labcds/dunchaochain/PRO/CILLPRO/SNAMB.WAV 
-less snamb.htm 
-find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'
-find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'|grep '~[2-9]'
-find /media/jim/TOSHIBA/labcds/dunchaochain/ -name '*.[Ww][Aa][Vv]'|grep '~[2-9]'|awk -F'/' '{print $NF}'
-grep abair ~/.bash_history 
-grep dotfiles ~/open-tabs 
-svn ls --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/
-svn ls --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/vifax
-svn mkdir --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/cdroms
-history -a
-ls -al /home/jim/Playing/kaldi/egs/vystadial_cz/s5/lang_prep/lang_build2/G.fst
-ls
-less run.sh 
-less local/create_sample.sh 
-less local/make_baseform.pl 
-less steps/decode_sgmm2_fromlats.sh 
-less steps/align_sgmm2.sh 
-less steps/dict/learn_lexicon.sh 
-less local/create_phone_lists.sh 
-less local/make_baseform.pl 
-less local/prepare_cs_transcription.sh 
-less local/create_G.sh 
-ls
-less steps/dict/train_g2p.sh 
-cd /tmp/
-svn co --username=abair.ie http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/cdroms
-cd cdroms/
-ls
-df
-mkdir dunchaochain/
-cd dunchaochain/
-ls
-cp /media/jim/TOSHIBA/labcds/dunchaochain/DUN18.HTZ .
-vi README
-ls /media/jim/TOSHIBA/labcds/dunchaochain/PRO/*
-cp -r /media/jim/TOSHIBA/labcds/dunchaochain/PRO/ .
-ls
-cd ..
-svn add dunchaochain/
-svn commit -m 'dunchaochain files (cd of pronunciations of placenames in Connacht)'
-ls
-df
-ls
-cd dunchaochain/
-ls
-#/tmp/unspis/
-mkdir html
-cd html/
-#/tmp/unspis/unspis 
-ls
-ls ..
-/tmp/unspis/unspis ../DUN18.HTZ 
-ls
-less portaighmhaidhc.htm 
-grep '~' *htm
-grep '1' *htm
-ffplay ../PRO/CILLPRO/UAIGAR.WAV 
-less uaigar.htm 
-perl ~/.scratch/dunchaochain-to-tsv.pl *htm
-perl ~/.scratch/dunchaochain-to-tsv.pl *htm|less
-perl ~/.scratch/dunchaochain-to-tsv.pl antuir.htm 
-perl ~/.scratch/dunchaochain-to-tsv.pl *htm
-less trne.htm 
-perl ~/.scratch/dunchaochain-to-tsv.pl antuir.htm 
-perl ~/.scratch/dunchaochain-to-tsv.pl *htm 
-dunplay () { ffplay ../$(echo $1 | tr 'a-z' 'A-Z') ; }
-dunplay pro/thgp/strant.wav
-perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
-less anbat.htm 
-find ../PRO -name 'ANBAT*'
-grep anbat *
 find ../PRO -name 'ANBAT*'
 cd ..
 ls
@@ -1998,3 +1814,187 @@ cat /tmp/vfy/tmp/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-2017110
 less ../sync/http-misc-20171106-2.nt
 cat /tmp/tock/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-3.nt
 less ../sync/http-misc-20171106-3.nt
+cd /tmp/toupl/
+ls
+~/bin/blockhash screenshot_2017* >> ~/tmp/sync/bhashc-20171106-1.tsv
+ls
+for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-1.nt && rm $i;done
+ls
+cd ~/Pictures/foo/
+ls
+cd ~/tmp/foo/
+ls
+cd ../bar/
+ls
+less tospid 
+cd /tmp/asd/
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+wc -l inp
+tail -f inp.log 
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+vi /tmp/galin 
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+rm -rf web.archive.org/
+cd ../toupl/
+ls
+for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-3.nt && rm $i;done
+ls
+cd -
+ls
+sh ~/scripts/grab-logged.sh inp
+wc -l inp
+killall wget
+wc -l inp
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cd -
+for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-3.nt && rm $i;done
+cd -
+ls
+ls|wc
+cd -
+sh ~/scripts/grab-logged.sh inp
+cd -
+for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-4.nt && rm $i;done
+ls
+ls|wc
+cd -
+tail -f inp.log 
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cd -
+for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-4.nt && rm $i;done
+cd -
+vi ~/tmp/bar/tospid 
+vi /tmp/galin 
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+vi ~/tmp/bar/tospid 
+tail -f inp.log 
+cd -
+for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-5.nt && rm $i;done
+ls
+ls -al
+cd -
+tail -f inp.log 
+ls
+rm -rf web.archive.org/
+rm *
+ls
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+vi ftea
+ct ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+sh ~/scripts/grab-logged.sh totea
+tail -f totea.log 
+tail -f inp.log 
+fdupes -r ./web.archive.org ~/tmp/sync/
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
+less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
+rm -rf web.archive.org/
+ls
+rm *
+vi ftea
+cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+sh ~/scripts/grab-logged.sh totea
+tail -f totea.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
+less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
+ls
+rm *
+rm -rf web.archive.org/
+vi ftea
+cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+sh ~/scripts/grab-logged.sh totea
+tail -f totea.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+ls
+rm -rf web.archive.org/
+rm *
+ls
+vi ftea
+cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+sh ~/scripts/grab-logged.sh totea
+tail -f totea.log 
+cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
+sh ~/scripts/grab-logged.sh totea2
+tail -f totea2.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+rm -rf web.archive.org/
+ls
+rm *
+less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+ls
+vi ftea
+cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
+sh ~/scripts/grab-logged.sh totea2
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+rm -rf web.archive.org/
+vi ftea 
+cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
+sh ~/scripts/grab-logged.sh totea2
+tail -f totea2.log 
+vi ftea 
+cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
+sh ~/scripts/grab-logged.sh totea2
+tail -f totea2.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+tail -f totea2.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+ls
+rm -rf web.archive.org/
+rm *
+vi ftea 
+cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
+sh ~/scripts/grab-logged.sh totea2
+tail -f totea2.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+rm -rf web.archive.org/
+rm *
+ls
+vi ftea 
+sh ~/scripts/grab-logged.sh totea2
+cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
+sh ~/scripts/grab-logged.sh totea2
+tail -f totea2.log 
+cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+sh ~/scripts/grab-logged.sh totea
+tail -f totea.log 
+less totea2.log 
+rm totea2.log 
+cat totea,
+cat totea.log 
+tail -f totea.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+ls
+tail totea.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+ls
+rm *
+rm -rf web.archive.org/
+vi ftea 
+cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+sh ~/scripts/grab-logged.sh totea
+tail -f totea.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+ls
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+rm -rf web.archive.org/
+ls
+rm *
+vi ftea 
+cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
+sh ~/scripts/grab-logged.sh totea
+tail -f totea.log 
+fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+rm -rf web.archive.org/
+rm *
+less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
