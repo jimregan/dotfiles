@@ -259,6 +259,10 @@ WINE REGISTRY Version 2
 
 [Software\\Microsoft\\Protected Storage System Provider] 1509320725
 
+[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced] 1509488552
+
+[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedMRU] 1509488552
+
 [Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders] 1509320713
 "AppData"="C:\\users\\jim\\Application Data"
 "Cache"="C:\\users\\jim\\Local Settings\\Temporary Internet Files"
@@ -535,6 +539,13 @@ WINE REGISTRY Version 2
 
 [Software\\Wine\\Drivers\\winepulse.drv] 1509320789
 
+[Software\\Wine\\FileOpenAssociations\\.a4r] 1509488536
+"AppName"="Authorware Runtime"
+"DesktopFile"="/home/jim/.local/share/applications/wine-extension-a4r.desktop"
+"MimeType"="application/x-wine-extension-a4r"
+"OpenWithIcon"="3249_runa4w32.0"
+"ProgID"="Authorware.Runtime.4"
+
 [Software\\Wine\\FileOpenAssociations\\.a5r] 1509322180
 "AppName"="Authorware Runtime"
 "DesktopFile"="/home/jim/.local/share/applications/wine-extension-a5r.desktop"
@@ -645,11 +656,11 @@ WINE REGISTRY Version 2
 "OpenWithIcon"="7765_winebrowser.0"
 "ProgID"="xmlfile"
 
-[Software\\Wine\\Fonts] 1509322179
+[Software\\Wine\\Fonts] 1509488528
 "Codepages"="1252,850"
 "LogPixels"=dword:00000060
 
-[Software\\Wine\\Fonts\\External Fonts] 1509322179
+[Software\\Wine\\Fonts\\External Fonts] 1509488535
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"

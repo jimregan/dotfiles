@@ -8,7 +8,7 @@ LastSeenMounted=true
 EverMounted=true
 Icon=drive-removable-media-usb
 LastNameSeen=TOSHIBA
-LastSeenMounted=true
+LastSeenMounted=false
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdc1]
 EverMounted=true

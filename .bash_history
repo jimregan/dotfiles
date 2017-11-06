@@ -1,144 +1,3 @@
-less utils/prepare_lang.sh 
-less run.sh 
-./run.sh 
-less local_clarin/clarin_pl_data_prep.sh
-man irstlm 
-irstlm help
-irstlm dict
-find /home/jim/Playing/kaldi/egs -name '*.sh'|xargs grep ngram
-less /home/jim/Playing/kaldi/egs/babel/s5d/local/extend_lexicon.sh
-find /home/jim/Playing/kaldi/egs -name '*.sh'|xargs grep ngram|grep unk
-less 
-less /home/jim/Playing/kaldi/egs/fisher_swbd/s5/local/swbd1_train_lms.sh
-find ~/Playing/mosesdecoder/ -name 'lmplz'
-apt-cache search mitlm
-apt-cache search lm
-apt-cache search lm|grep lang
-apt-cache search lm|grep arpa
-apt-cache search irst
-apt-cache search irst;
-apt-cache search irstl
-./run.sh 
-less local_clarin/clarin_pl_data_prep.sh
-estimate-ngram  local_clarin/arpa.lm.gz
-estimate-ngram -unk -write-vocab data/local/lm.wlist -lm  local_clarin/arpa.lm.gz
-gzcat local_clarin/arpa.lm.gz|estimate-ngram -unk -write-vocab data/local/lm.wlist 
-zcat local_clarin/arpa.lm.gz|estimate-ngram -unk -write-vocab data/local/lm.wlist 
-estimate-ngram -unk -write-vocab data/local/lm.wlist -text local_clarin/arpa.lm.gz
-less data/local/lm.wlist 
-less local_clarin/clarin_pl_data_prep.sh
-zless local_clarin/arpa.lm.gz
-./run.sh 
-less ~/Playing/kaldi/tools/config/common_path.sh
-KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
-inf . -name 'prepare_lang.sh'
-find . -name 'prepare_lang.sh'
-ls -al
-ls local
-ls data/
-ls data/local/
-ls data/local/train.wlist 
-less data/local/train.wlist 
-less data/local/train.wlist ls *
-less data/local/train.wlist ls *|grep prepare
-find .. -name prepare_lang.sh
-ls
-ls -al utils
-ls utils/prepare_lang.sh 
-less utils/prepare_lang.sh 
-history -a
-ls fstaddselfloops
-find ../.. -name fstaddselfloops
-find ../.. -name fstaddselfloops.cc
-find /home/jim/Playing/kaldi/ -name fstaddselfloops.cc
-find /home/jim/Playing/kaldi/ -name fstaddselfloops
-less local_clarin/clarin_pl_data_prep.sh
-history -a
-cd ~/Playing/
-git clone https://github.com/mitlm/mitlm.git
-cd mitlm/
-ls
-./autogen.sh 
-make -j 8
-sudo make install
-sudo ldconfig
-estimate-ngram 
-estimate-ngram -h
-less run.sh 
-less utils/prepare_lang.sh 
-less run.sh 
-less local_clarin/clarin_pl_data_prep.sh 
-less run.sh 
-less utils/prepare_lang.sh 
-less run.sh 
-utils/prepare_lang.sh data/local/dict_nosp "<unk>" data/local/tmp_nosp data/lang_nosp
-less utils/prepare_lang.sh 
-less  utils/make_lexicon_fst_silprob.pl 
-find -L . -type f|xargs grep 'Checking word-level disambiguation symbols...'
-find -L . -type f|xargs grep 'word-level disambiguation symbols...'
-find -L . -type f -name '*.sh' -or -name '*.pl' |xargs grep 'word-level disambiguation symbols...'
-less ./utils/validate_lang.pl
-vi path.sh 
-./run.sh 
-less exp/mono0/ali.21.gz 
-less exp/mono0/ali.22.gz 
-less exp/mono0/ali.23.gz 
-less exp/mono0/ali.25.gz 
-less exp/mono0/ali.22.gz 
-ls
-find data -type 
-find data -type f
-less exp/mono0/log/align.0.22.log 
-less exp/mono0/log/align.0.23.log 
-less exp/mono0/log/align.0.40.log 
-less 
-less exp/mono0/log/compile_graphs.10.log 
-less steps/train_mono.sh
-history -a
-less data/lang_nosp/phones/wdisambig.txt
-less data/lang_nosp/phones/disambig.txt
-rm -rf data/
-KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
-ls
-git status
-git diff
-git add local_clarin/clarin_pl_data_prep.sh path.sh 
-git commit -m 'local changes'
-git remote add mine https://github.com/jimregan/ClarinStudioKaldi.git
-git checkout -b local-changes
-git push mine local-changes 
-git status
-less local_clarin/model.fst
-ls -al
-grep local/ local_clarin/*
-less local/chain/compare_wer.sh 
-grep steps *sh
-vi run.sh 
-local_clarin/clarin_pl_clean.sh 
-ls
-git status
-rm local_clarin/model.fst
-KALDI_PATH=$HOME/Playing/kaldi/ ./run.sh 
-less data/lang_nosp/phones.txt 
-ls
-ls data/
-less local/prepare_lang.sh
-less steps/prepare_lang.sh
-less utils/prepare_lang.sh
-grep ' is not present' utils/*
-grep ' is not present' utils/*/*
-grep ' is not present' utils/*/*/*
-grep ' is not present' local/*
-grep ' is not present' local_clarin/*
-grep ' is not present' steps/*
-grep ' is not present' steps/*/*
-grep ' is not present' steps/*/*/*
-grep ' is not present' steps/*/*/*/*
-grep ' is not present' steps/*/*/*/*/*
-less run.sh 
-find . -name '*sh'
-man find
-find -L . -name '*sh'
 find -L . -name '*sh'|xargs grep 'Checking word_bounda'
 find -L . -name '*sh'|xargs grep word_bounda
 grep word_index run.sh 
@@ -2007,4 +1866,135 @@ reset
 ls
 config add open-tabs .bash_history 
 config commit -m more
+history -a
+cd /tmp/toupl/
+ls
+for i in screenshot_2017*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171019-* && rm $i;done
+ls
+ls|wc
+less ~/tmp/sync/byte-for-byte-identical-20171019-2.nt 
+less ~/tmp/sync/byte-for-byte-identical-20171019-5.nt 
+vi /tmp/galin
+lynx -dump https://postimg.org/image/6ydr8kej4b/
+ls
+cd ~/tmp/
+ls
+mkdir fqnew
+cd fqnew/
+ls
+. ../sourceme 
+cat /tmp/galin |while read i;do lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'
+cat /tmp/galin |head -n 1 |while read i;do lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'; donee; done
+cat /tmp/galin |head -n 1 |while read i;do img=$(lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1mzudrve4/ ; done
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1mzudrve4/ ; done
+vi fash-rdf-links 
+rm fash-rdf-links 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1mzudrve4/ ; done
+ls
+mkdir /tmp//asd
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp/asd/inp
+cd /tmp//asd/
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cd ~-
+ls
+~/bin/blockhash $(find s1.postimg.org -type f) >> ~/tmp/sync/bhashc-20171106-2.tsv 
+less ~/tmp/sync/bhashc-20171106-2.tsv 
+sh ../wrap-exif.sh 
+vi /tmp//exif.out 
+mv /tmp//exif.out ~/tmp/sync/exif-20171106-1.xml
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
+less ~/tmp/sync/ookdata-20171106-1.nt
+identify /tmp/toupl/*
+ls
+cat ../sync/bhashc-20171106-2.tsv 
+cat ../sync/bhashc-20171106-2.tsv |awk -F'\t' '{print $1}'
+cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'
+cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print $2}' >> mrgd; grep $i ../sync/bhashc-20171106-2.tsv |awk '{print $2}' >> mrgd; done
+less mrgd 
+cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-2.tsv |awk '{print "https://" $2}' >> mrgd; done
+rm mrgd 
+cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-2.tsv |awk '{print "https://" $2}' >> mrgd; done
+less mrgd 
+cat mrgd |perl ../fdupes-proc.pl 
+cat mrgd |perl ../fdupes-proc.pl  >> ../sync/byte-for-byte-identical-20171106-1.nt
+#cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-1.nt
+less ../sync/byte-for-byte-identical-20171106-1.nt
+cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-1.nt
+less ../sync/byte-for-byte-identical-20171106-1.nt
+ls
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+less ../sync/assumed-identical-20171106_154745.nt 
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_154745.nt && rm $i;done
+find s1.postimg.org -type f
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+rm /tmp//asd/inp.log 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_160301.nt && rm $i;done
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_160349.nt && rm $i;done
+find s1.postimg.org -type f
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/191mupwvg/c1794242/ ; done
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+~/bin/blockhash $(find s1.postimg.org -type f) >> ~/tmp/sync/bhashc-20171106-2.tsv 
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
+sh ../wrap-exif.sh 
+mv /tmp//exif.out ~/tmp/sync/exif-20171106-2.xml
+~/bin/blockhash $(find s1.postimg.org -type f) >> ~/tmp/sync/bhashc-20171106-3.tsv 
+rm mrgd 
+cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
+cat ../sync/bhashc-20171106-3.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
+rm mrgd 
+cat ../sync/bhashc-20171106-3.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
+less mrgd 
+cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-2.nt
+grep '<' ../sync/byte-for-byte-identical-20171106-2.nt 
+grep '<' ../sync/byte-for-byte-identical-20171106-2.nt |wc
+find s1.postimg.org -type f|wc
+wc -l /tmp/asd/inp
+less mrgd 
+rm mrgd 
+less ~/tmp/sync/bhashc-20171106-3.tsv 
+vi ~/tmp/sync/bhashc-20171106-3.tsv 
+vi ~/tmp/sync/bhashc-20171106-2.tsv 
+~/bin/blockhash $(find s1.postimg.org -type f) 
+file s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
+less s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
+rm s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png 
+wget -x -c s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
+less s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
+~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-3.tsv 
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
+vi ~/tmp/sync/bhashc-20171106-3.tsv 
+wc -l ~/tmp/sync/bhashc-20171106-3.tsv 
+sh ../wrap-exif.sh 
+mv /tmp//exif.out ~/tmp/sync/exif-20171106-3.xml
+cat ../sync/bhashc-20171106-3.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
+cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-3.nt
+less ../sync/byte-for-byte-identical-20171106-3.nt
+grep '<' ../sync/byte-for-byte-identical-20171106-3.nt |wc
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_163025.nt && rm $i;done
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_163258.nt && rm $i;done
+find s1.postimg.org -type f
+vi /tmp/galin 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/eckg2xws/ ; done
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-4.tsv 
+less ~/tmp/sync/bhashc-20171106-4.tsv 
+wc -l ~/tmp/sync/bhashc-20171106-4.tsv 
+wc -l /tmp//asd/inp
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
+sh ../wrap-exif.sh 
+mv /tmp//exif.out ~/tmp/sync/exif-20171106-4.xml
+cat ../sync/bhashc-20171106-4.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-4.tsv |awk '{print "https://" $2}' >> mrgd; done
 history -a

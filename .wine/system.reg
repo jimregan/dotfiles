@@ -31781,7 +31781,7 @@ WINE REGISTRY Version 2
 "CommonPictures"=str(2):"%ALLUSERSPROFILE%\\Pictures"
 "CommonVideo"=str(2):"%ALLUSERSPROFILE%\\Videos"
 
-[Software\\Microsoft\\Windows\\CurrentVersion\\Fonts] 1509322179
+[Software\\Microsoft\\Windows\\CurrentVersion\\Fonts] 1509488535
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
@@ -35853,7 +35853,7 @@ WINE REGISTRY Version 2
 
 [Software\\Microsoft\\Windows NT\\CurrentVersion\\FontMapper] 1509320725
 
-[Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts] 1509322225
+[Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts] 1509488535
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
@@ -37360,6 +37360,9 @@ WINE REGISTRY Version 2
   00,5c,00,4d,00,61,00,63,00,68,00,69,00,6e,00,65,00,5c,00,53,00,6f,00,66,00,\
   74,00,77,00,61,00,72,00,65,00,5c,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,\
   00,66,00,74,00,5c,00,43,00,6c,00,69,00,65,00,6e,00,74,00,73,00
+
+[Software\\Wow6432Node\\Microsoft\\Cryptography] 1509488573
+"MachineGuid"="32af15be-91ad-442f-b4ff-62ecf48b7a24"
 
 [Software\\Wow6432Node\\Microsoft\\Cryptography\\Calais\\Current] 1509320710
 #link
