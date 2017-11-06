@@ -1,148 +1,3 @@
-less exp/mono0/log/align.0.3.log 
-less exp/mono0/log/align.0.2.log 
-less exp/mono0/log/align.0.1.log 
-less steps/train_mono.sh
-history -a
-less steps/train_mono.sh
-ls
-grep abażurem local_clarin/lexicon.txt 
-less steps/train_mono.sh 
-less run.sh 
-cp steps/train_mono.sh train_mono.sh
-vi train_mono.sh 
-rm train_mono.sh 
-steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
-less steps/train_mono.sh 
-ls
-steps/train_mono.sh --nj 10 data/train data/lang_nosp exp/mono0
-rm -rf exp/
-mkdir exp
-mkdir exp/mono0
-steps/train_mono.sh --nj 10 data/train data/lang_nosp exp/mono0
-less exp/mono0/log/align.1.1.log 
-less exp/mono0/log/align.1.2.log 
-less exp/mono0/log/align.1.3.log 
-less exp/mono0/log/align.1.9.log 
-les ssteps/train_mono.sh 
-less steps/train_mono.sh 
-cat exp/mono0/log/align.1.*.log 
-cat exp/mono0/log/align.1.*.log |grep 'Did not secc'
-cat exp/mono0/log/align.1.*.log |grep 'Did not succ'
-cat exp/mono0/log/align.1.*.log 
-cat exp/mono0/log/align.1.*.log |grep 'Retried'
-cat exp/mono0/log/align.1.*.log |grep 'errors on '
-rm -rf exp/
-mkdir -p exp/mono0
-steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
-history -a
-ls
-cd ..
-ls
-less audio/audio/SES0001/sent001.txt 
-vi run-ctd.sh 
-history -a
-utils/mkgraph.sh --mono data/lang_nosp_test exp/mono0 exp/mono0/graph
-export nj=40
-steps/decode.sh --nj $nj exp/mono0/graph data/test exp/mono0/decode
-steps/align_si.sh --nj $nj data/train data/lang_nosp exp/mono0 exp/mono0_ali
-cp run.sh run-ctd.sh
-vi run-ctd.sh 
-sh run-ctd.sh 
-steps/train_deltas.sh 2000 10000 data/train data/lang_nosp exp/mono0_ali exp/tri1
-sh run-ctd.sh 
-history -a
-less run-ctd.sh 
-utils/mkgraph.sh data/lang_nosp_test exp/tri2b exp/tri2b/graph
-steps/train_lda_mllt.sh --splice-opts --left-context=3 --right-context=3 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
-steps/train_lda_mllt.sh --splice-opts --left-context 3 --right-context 3 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
-less run-ctd.sh 
-steps/train_lda_mllt.sh --splice-opts "--left-context=3 --right-context=3" 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
-less steps/train_lda_mllt.sh 
-ls exp/tri2b
-ls exp/tri2b/log/
-cat exp/tri2b/log/*
-history -a
-utils/summarize_warnings.pl $dir/log
-utils/summarize_warnings.pl exp/tri1_ali/log/
-ls exp/tri1_ali/
-ls exp/tri1_ali/final.mdl 
-less exp/tri1_ali/final.mdl 
-utils/mkgraph.sh data/lang_nosp_test exp/tri2b exp/tri2b/graph
-utils/summarize_warnings.pl exp/tri2b/
-ls exp/tri2b/
-ls exp/tri2b/log/
-utils/summarize_warnings.pl exp/tri2b/log/*
-less steps/train_lda_mllt.sh 
-est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.*.acc
-find /home/jim/Playing/kaldi/ -name est-lda
-~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.*.acc
-~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.1.acc
-~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.2.acc
-~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.2.accw
-~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.3.acc
-~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.4.acc
-~/Playing/kaldi/src/bin/est-lda --write-full-matrix=exp/tri2b/full.mat --dim=40 exp/tri2b/0.mat exp/tri2b/lda.5.acc
-ls ~/Playing/kaldi/src/bin/est-lda
-ls ~/Playing/kaldi/src/bin/est-lda.cc 
-less ~/Playing/kaldi/src/bin/est-lda.cc 
-ls
-arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - data/lang_nosp_test/G.fst.tmp
-find /home/jim/Playing/kaldi/ -name arpa2fst
-~/Playing/kaldi/src/lmbin/arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - data/lang_nosp_test/G.fst.tmp
-~/Playing/kaldi/src/lmbin/arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - /tmp/G.fst
-find . -name G.fst
-ls -al data/lang_nosp_test/G.fst 
-~/Playing/kaldi/src/lmbin/arpa2fst --max_warnings=-1  --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - /tmp/G.fst
-history -a
-cd ../..
-find . -name CI0001CDNamedEntities02_0029.xml
-less ./ga_MU/nnc/CDNamedEntities02/textproc_xml/CI0001CDNamedEntities02_0029.xml
-find ga_MU -name '*xml'
-find ga_MU -name '*xml'|xargs grep '<word'
-find . -name res
-find ../tcdsynthesiser -name 
-find ga_MU -name '*xml'|xargs grep '<word'|grep 'original_transcription='
-find ga_MU -name '*xml'|xargs grep '<word'
-less ga_MU/nnc/CDAn_tOileanach_part1_newLTS/xml/CI0001CDAn_tOileanach_1169.xml
-find . -name '*wav' -or -name '*.ogg' -or -name '*.mp3'
-find . -name '*wav' -or -name '*.ogg' -or -name '*.mp3' > ~/.scratch/audio-list
-history -a
-ls
-ls da
-rm -rf data
-ls
-df
-ls /tmp/
-ls
-ls audio/
-ls -al ~/Downloads/
-rm ~/Downloads/stanford-corenlp-full-2017-06-09.zip 
-rm ~/Downloads/English_File_3d_Advanced_Class_Cds_www.frenglish.ru.rar 
-df
-du ~
-du /tmp/
-rm -rf /tmp/zero_ru_cont_8k_v3/
-du /tmp/
-du -k /tmp/
-man du
-du -m /tmp/
-ls /tmp/cmusphinx-ru-5.2/
-ls -al /tmp/cmusphinx-ru-5.2/
-rm -rf /tmp/cmusphinx-ru-5.2/
-df
-du -m ~
-du -m ~/Playing/wolne-lektury-audio-corpus/
-du -m ~/Playing/Corpora/
-cd ../Corpora/
-ffplay ./saytime-anb/wav/saytime-gu_012.wav
-less ./saytime-anb/readme 
-less ./saytime-anb/index.xml 
-less ./saytime-anb/xml/
-less ./saytime-anb/xml/saytime-gu_004.xml 
-ffplay ./en_IE/anb/tcd_ANB_eng_cleaned/arctic_0241.wav
-ffplay ./en_IE/nnc/Arctic/wav/nnc_arctic_0518.wav
-ffplay ./ga_UL/anb/new_text01/wav44/tcd_gd_text01-020_087.wav
-ffplay ./ga_CO/pmg_recordings/RCPiarsachBairbre/RECS/0001/MI0001RCPiarsachBairbre_0301.wav
 ffplay ./ga_CO/pmg_recordings/RCPiarsachSagart/RECS/0001/MI0001RCPiarsachSagart_0055.wav
 ffplay ./ga_CO/pmg_recordings/
 ls ./ga_CO/pmg_recordings/
@@ -1998,3 +1853,148 @@ ls
 for i in *;do if [ -e tock/$i ];then echo $i;fi;done
 for i in *;do grep $i local-dup-20171106-3.nt && mv $i tock/;done
 ls
+cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-4.nt
+grep '<'  ../sync/byte-for-byte-identical-20171106-4.nt|wc
+rm mrgd 
+cat ../sync/bhashc-20171106-4.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-4.tsv |awk '{print "https://" $2}' >> mrgd; done
+cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-4.nt
+grep '<'  ../sync/byte-for-byte-identical-20171106-4.nt|wc
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_170307.nt && rm $i;done
+find s1.postimg.org -type f
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_170341.nt.nt && rm $i;done
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_170341.nt && rm $i;done
+find s1.postimg.org -type f
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/ws0vh1rg/ ; done
+~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-5.tsv 
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
+sh ../wrap-exif.sh 
+mv /tmp//exif.out ~/tmp/sync/exif-20171106-5.xml
+rm mrgd 
+cat ../sync/bhashc-20171106-5.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-5.tsv |awk '{print "https://" $2}' >> mrgd; done
+less mrgd 
+cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-5.nt
+grep '<'  ../sync/byte-for-byte-identical-20171106-5.nt|wc
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' |wc
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
+find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_183036.nt && rm $i;done
+find s1.postimg.org/ -type f
+rm -rf s1.postimg.org/
+ls
+rm mrgd 
+mv fash-rdf-links ../sync/unsorted-triples-20171106-1.nt
+ls
+cd ../bar/
+ls
+ogimageproc https://www.instagram.com/p/BbJfVgUhAiH/?taken-by=alina_akilova
+ogimageproc https://www.instagram.com/p/BbJ_PM3hbCF/?taken-by=alina_akilova
+ogimageproc https://www.instagram.com/p/BbKUnWEgR5g/?taken-by=_daria___igorevna_
+ogimageproc https://www.instagram.com/p/BavlPQjAmT3/?taken-by=_daria___igorevna_
+ogimageproc https://www.instagram.com/p/BbJ6VOLFOAT/?taken-by=svetabily
+ogimageproc https://www.instagram.com/p/BbJ7zirl_IF/?taken-by=viki_odintcova
+ogimageproc https://www.instagram.com/p/BbG0UF8hJ5S/?taken-by=mo_na2016
+ogimageproc https://www.instagram.com/p/BaB2_wOBgLI/?taken-by=mo_na2016
+ogimageproc https://www.instagram.com/p/BbC02phlv8m/?taken-by=a.zimny
+ogimageproc https://www.instagram.com/p/BapJ72rFJFm/?taken-by=a.zimny
+ogimageproc https://www.instagram.com/p/Ba_KQkWgU91/?taken-by=vasilisa_beautiful_
+ogimageproc https://www.instagram.com/p/BbHvOfFACeo/?taken-by=vasilisa_beautiful_
+ogimageproc https://www.instagram.com/p/BbKfGUaAQQ-/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/BbJmC77Abdb/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/BbEuWEdgmoc/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/BbAx0bQg1Kq/?taken-by=camila_cabello
+ogimageproc https://www.instagram.com/p/BbEc7cmnktm/?taken-by=aleksanina.k
+ogimageproc https://www.instagram.com/p/BagW9D7nBaA/?taken-by=aleksanina.k
+ogimageproc https://www.instagram.com/p/BXxpo8_H8UU/?taken-by=aleksanina.k
+ogimageproc https://www.instagram.com/p/BbEb5O3lMDu/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BbB1NmcFhGf/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/Ba-_BbxFbRt/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/Ba3cH9YF-a_/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/Bav-VKuF7Dw/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BaZpm1ajOsw/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BbKQ_qggyjx/?taken-by=anetasnake
+ogimageproc https://www.instagram.com/p/Ba_uT-JguvV/?taken-by=anetasnake
+ogimageproc https://www.instagram.com/p/Ba9LIA-gm87/?taken-by=anetasnake
+ogimageproc https://www.instagram.com/p/BbJhWlGhId_/?taken-by=asiicca
+ogimageproc https://www.instagram.com/p/BbJAzkWgvf3/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbHYCN_A_Lt/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/Ba-h-0qgXR1/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BagGTl6gTPg/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BaZBAD1AXax/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BaZB9xVAD83/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BaWG10EA6v1/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BaVVkB3A2vr/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbE8b0MglxX/?taken-by=snow_cherry
+ogimageproc https://www.instagram.com/p/Ba3t2l3Af8i/?taken-by=snow_cherry
+ogimageproc https://www.instagram.com/p/BajZCJ8AfHv/?taken-by=snow_cherry
+ogimageproc https://www.instagram.com/p/BbHaTu-ANBH/?taken-by=camillekaftan
+ogimageproc https://www.instagram.com/p/BbFbQG9AfqH/?taken-by=camillekaftan
+ogimageproc https://www.instagram.com/p/Ba6HpVhAsDW/?taken-by=camillekaftan
+ogimageproc https://www.instagram.com/p/BbH-N0jH3cmn2aZ4mf-S6Fv2Sh0kQtweyxatUA0/?taken-by=anya_amour
+ogimageproc https://www.instagram.com/p/BbALv6JHUTrF-VvgnA9QjYe3QlmFjO8Rp5mRSU0/?taken-by=anya_amour
+ogimageproc https://www.instagram.com/p/BbH-N0jH3cmn2aZ4mf-S6Fv2Sh0kQtweyxatUA0/?taken-by=anya_amour
+ogimageproc https://www.instagram.com/p/BbFKDWMDbXm/?taken-by=alina39
+ogimageproc https://www.instagram.com/p/BZ8o9YJDQrk/?taken-by=alina39
+ogimageproc https://www.instagram.com/p/BbJ6VOLFOAT/?taken-by=svetabily
+ogimageproc https://www.instagram.com/p/BatyLx8l4ti/?taken-by=svetabily
+ogimageproc https://www.instagram.com/p/BaWmfUYhLXU/?taken-by=sandrra_s
+ogimageproc https://www.instagram.com/p/BYbFDSOBdf5/?taken-by=sandrra_s
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+wc -l /tmp/asd/inp
+wc -l ../sync/assumed-identical-20171106_185905.nt 
+mv fash-rdf-links ../sync/unsorted-triples-20171106-2.nt 
+cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+less ../sync/http-misc-20171106-2.nt
+ls
+sh ~/scripts/spider.sh tospid
+tail -f tospid.log 
+cat tospid.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt 
+cat tospid.log |perl ~/bin/wget-http.pl 
+rm tospid
+rm tospid.log 
+ls
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-2.nt
+sh ../wrap-exif.sh 
+vi /tmp//exif.out 
+mv /tmp//exif.out ~/tmp/sync/exif-20171106-6.xml
+~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-6.tsv
+~/bin/blockhash $(filtfind ) > ~/tmp/sync/bhashc-20171106-6.tsv
+cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+ls
+find scontent-lh* -type f
+find scontent-lh* -type f|zip /tmp/copy.zip
+find scontent-lh* -type f|zip /tmp/copy.zip -@
+rm -rf scontent-lh*
+scp /tmp/copy.zip jimregan:/tmp
+rm /tmp//copy.zip 
+ls
+rm nohup.out 
+cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+less ../sync/http-misc-20171106-2.nt
+cat /tmp/asd/totea2.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+less ../sync/http-misc-20171106-2.nt
+cat /tmp/asd/totea2.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+less ../sync/http-misc-20171106-2.nt
+cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/regrab.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+less ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/tock.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/ftin.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/ftin1.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/ftin2.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/ftin3.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/ftin4.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+cat /tmp/vfy/tmp/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
+less ../sync/http-misc-20171106-2.nt
+cat /tmp/tock/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-3.nt
+less ../sync/http-misc-20171106-3.nt
