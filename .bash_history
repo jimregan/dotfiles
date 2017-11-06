@@ -1,59 +1,3 @@
-find ../PRO -name 'ANBAT*'
-cd ..
-ls
-less text.tsv 
-dunplay pro/cillpro/anpadb.wav
-cd html/
-dunplay pro/cillpro/anpadb.wav
-grep / ../text.tsv 
-dunplay pro/thgp/tsabth.wav
-dunplay pro/rosp/tnamb.wav
-grep ' /' ../text.tsv 
-dunplay pro/rosp/anclo.wav
-dunplay pro/rosp/angi.wav
-dunplay pro/cillpro/anpadb.wav
-dunplay pro/cngp/ml.wav 
-perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
-less ../text.tsv 
-perl ~/.scratch/dunchaochain-to-tsv.pl *htm > ../text.tsv
-find ../PRO/ -name 'GARRAN~1.WAV'
-ffplay ../PRO/THGP/GARRAN~1.WAV
-grep garran *htm
-less asin.htm 
-dunplay pro/bdp/asin.wav
-ffplay ../PRO/THGP/GARRAN~1.WAV
-less garana.htm 
-grep wav garr*
-grep pro/thgp/garr *
-ffplay ../PRO/THGP/GARROI.WAV 
-less garroi.htm 
-ls *htm|wc
-find ../PRO -name '*WAV'|wc
-grep garraí *
-grep garrai *
-cat ../text.tsv 
-cat ../text.tsv |awk '{print uc $2}'
-cat ../text.tsv |awk '{print uc $1}'
-cat ../text.tsv |awk '{print $1}'|tr 'a-z' 'A-Z'
-cat ../text.tsv |awk '{print $1}'|tr 'a-z' 'A-Z'|while read i;do if [ ! -e ../$i ]; then echo $i;fi;done
-grep /.wav *htm
-grep '<bgsound' *htm
-grep '<bgsound' *htm |awk -F'"' '{print $2}'
-grep '<bgsound' *htm |awk -F'"' '{print $2}' > /tmp/wavlist
-find ../PRO -name '*WAV'
-find ../PRO -name '*WAV'|sed -e 's/\.\.\///'
-find ../PRO -name '*WAV'|sed -e 's/\.\.\///'|perl -C7 -ane 'print lc'
-find ../PRO -name '*WAV'|sed -e 's/\.\.\///'|perl -C7 -ane 'print lc'|while read i;do grep $i /tmp/wavlist || echo $i >> /tmp/notinwav;done
-less /tmp/notinwav 
-cat /tmp/notinwav 
-grep bunmhu *
-grep bunmh *
-grep bun *
-grep satp *
-grep '/.' *
-grep '/\.' *
-grep satp /tmp/notinwav 
-grep afotb /tmp/notinwav 
 grep anpol /tmp/notinwav 
 echo pro/thgp/anpol.wav|tr 'a-z' 'A-Z'
 grep barchn /tmp/notinwav 
@@ -1998,3 +1942,59 @@ fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp
 rm -rf web.archive.org/
 rm *
 less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
+tail -f corpus/gd.txt 
+less corpus/gd.txt 
+tail -f  corpus/gd.txt 
+git status
+git push origin issue-12
+git branch
+git checkout maori-scraper 
+vi Lib/corpuscrawler/crawl_mi.py 
+git add Lib/corpuscrawler/crawl_mi.py 
+git commit -m 'change to Translation.en:'
+git push origin maori-scraper 
+vi Lib/corpuscrawler/crawl_mi.py 
+git remote add upstream https://github.com/googlei18n/corpuscrawler.git
+git branch
+git checkout master
+git pull upstream master
+git push origin master 
+vi Lib/corpuscrawler/util.py
+#git checkout -b 'handle mixed broken/unbroken namespaces'
+git checkout -b mixed-ns
+git add Lib/corpuscrawler/util.py
+git commit -m 'handle mixed broken/unbroken namespaces'
+git push origin mixed-ns 
+git remote show
+git push origin mixed-ns 
+git checkout master
+git pull origin 
+git checkout irish-fixed 
+ls
+./corpuscrawler --language ga
+git pull origin irish-fixed 
+git merge mixed-ns 
+./corpuscrawler --language ga
+git pull origin irish-fixed 
+./corpuscrawler --language ga
+vi Lib/corpuscrawler/crawl_ga.py
+./corpuscrawler --language ga
+python
+cd Lib/corpuscrawler/
+python
+cd ..
+python
+perl -C7 'print \x{2618}'
+perl -C7 'print "\x{2618}"'
+perl -C7 'print "\x{0100}"'
+perl -C7 -e 'print "\x{0100}"'
+perl -C7 -e 'print "\x{2618}\n"'
+wget http://nzetc.victoria.ac.nz/tei-source/BIMs38TeAu.xml
+wget http://nzetc.victoria.ac.nz/tei-source/BIMs38TeAu.xml http://nzetc.victoria.ac.nz/tm/scholarly/name-101861.html
+wget http://nzetc.victoria.ac.nz/tei-source/KenGramm.xml
+less KenGramm.xml 
+wget http://nzetc.victoria.ac.nz/downloads/BIMs38TeAu.pdf
+less ../gd/68.txt 
+cat ../gd/68.txt 
+cat ../gd/68.txt |sed -e 's/<gai>//g;s/<eng>//g'
+cat ../gd/68.txt |sed -e 's/<gai>//g;s/<eng>//g'|less
