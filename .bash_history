@@ -1,4 +1,3 @@
-grep anpol /tmp/notinwav 
 echo pro/thgp/anpol.wav|tr 'a-z' 'A-Z'
 grep barchn /tmp/notinwav 
 grep cardu /tmp/notinwav 
@@ -1998,3 +1997,197 @@ less ../gd/68.txt
 cat ../gd/68.txt 
 cat ../gd/68.txt |sed -e 's/<gai>//g;s/<eng>//g'
 cat ../gd/68.txt |sed -e 's/<gai>//g;s/<eng>//g'|less
+mkdir /tmp/proc
+cd /tmp/proc/
+mkdir fdet1
+mv *jpg fdet1/
+ls
+ls|wc
+ls
+cd fdet1/
+ls
+~/bin/blockhash *jpg >> ~/tmp/sync/bhash-20171107-3.tsv
+cd ..
+for i in 1 2 3 4 5 6 7 8 9 a b c d e f ;do ~/bin/blockhash $i*jpg >> ~/tmp/sync/bhash-20171107-3.tsv ;done
+for i in 1 2 3 4 5 6 7 8 9 a b c d e f ;do mkdir $i; mv $i*jpg $i/;done
+ls
+vi /tmp/galin 
+vi ~/tmp/foo/tospid
+vi /tmp/galin2
+vi ~/tmp/foo/tospid
+vi /tmp/galin
+vi ~/tmp/foo/tospid
+vi /tmp/galin2
+vi /tmp/galin
+vi ~/tmp/foo/tospid
+vi /tmp/galin
+vi ~/tmp/foo/tospid
+vi /tmp/galin2
+vi ~/tmp/foo/tospid
+vi /tmp/galin2
+mv /tmp/galin2 /tmp/galin7
+vi /tmp/url7
+vi /tmp/galin8
+vi /tmp/url8
+tail -f ~/tmp/foo/fash-rdf-links 
+vi /tmp/galin9
+vi /tmp/url9
+vi ~/tmp/foo/tospid
+vi /tmp/url8
+vi ~/tmp/foo/tospid
+vi /tmp/galina
+vi /tmp/urla
+vi ~/tmp/foo/tospid
+vi /tmp/galinb
+vi /tmp/urlb
+vi ~/tmp/foo/tospid
+vi /tmp/galinc
+vi /tmp/urlc
+vi ~/tmp/foo/tospid
+vi /tmp/galind
+vi /tmp/urld
+vi ~/tmp/foo/tospid
+vi /tmp/galine
+vi /tmp/urle
+vi ~/tmp/foo/tospid
+vi /tmp/galinf
+vi /tmp/urlf
+vi ~/tmp/foo/tospid
+tail -f ~/tmp/foo/fash-rdf-links 
+cat /tmp/galin9 
+cat /tmp/url9 
+tail -f ~/tmp/foo/fash-rdf-links 
+ls /tmp/asd/
+tail -f ~/tmp/foo/fash-rdf-links 
+tail -f ~/tmp/sync/bhash-20171107-4.tsv 
+ls /tmp/asd/
+ls
+tail -f /tmp//exif.out 
+ls fdet1/|wc
+ls
+ls 2|wc
+ls f|wc
+wc -l /tmp/galinf 
+tail -f /tmp//exif.out 
+cd /tmp/asd/
+tail -f inp.log 
+cat inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
+cd -
+ls
+cd -
+cd ~/tmp/foo/
+ls
+cat ~-/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+less ../sync/assumed-identical-20171108_092000.nt 
+wc -l ../sync/assumed-identical-20171108_092000.nt 
+wc -l /tmp/asd/inp
+cd -
+cat inp|while read i;do grep $i ~/tmp/sync/assumed-identical-20171108_092000.nt || echo $i >> inp.f; done
+rm inp.f 
+less inp
+cat inp|sed -e 's#http://web.archive.org/save/##'|while read i;do grep $i ~/tmp/sync/assumed-identical-20171108_092000.nt || echo http://web.archive.org/save/$i >> inp.f; done
+less inp.
+less inp.f 
+sh ~/scripts/grab-logged.sh inp.f
+tail -f inp.f.log 
+cat inp.f.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
+cd -
+ls
+cat ~-/inp.f.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+less ../sync/assumed-identical-20171108_092808.nt 
+wc -l ../sync/assumed-identical-20171108_0*
+find s1.postimg.org -type f|wc
+cd -
+ls
+rm *
+rm -rf web.archive.org/
+printf "%06s" 0123456789
+cd ~/tmp/foo/
+vi /tmp/galinf 
+vi /tmp/urlf 
+vi tospid
+vi /tmp/urle
+vi /tmp/galine
+vi tospid 
+vi /tmp/url1
+vi /tmp/galin1
+vi /tmp/galin2
+vi /tmp/url2
+vi tospid 
+vi /tmp/url2
+vi tospid 
+vi /tmp/galin3
+vi /tmp/url3
+vi tospid 
+vi /tmp/galin4
+vi /tmp/url4
+vi tospid 
+vi /tmp/galin5
+vi /tmp/url5
+vi tospid 
+vi /tmp/galin6
+vi /tmp/url6
+vi tospid 
+vi /tmp/galin7
+vi /tmp/url7
+vi tospid 
+vi /tmp/galin8
+vi /tmp/url8
+vi tospid 
+vi /tmp/galin9
+vi /tmp/url0
+vi /tmp/url9
+vi tospid 
+vi /tmp/galina
+vi /tmp/urla
+vi tospid 
+vi /tmp/galinb
+vi /tmp/urlb
+vi tospid 
+vi /tmp/galinc
+vi /tmp/urlc
+vi tospid 
+vi /tmp/galind
+vi /tmp/urld
+vi tospid 
+sh ~/scripts/spider.sh tospid
+tail -f tospid.log 
+tail tospid
+cat tospid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
+less ~/tmp/sync/http-misc-20171107-1.nt 
+rm tospid
+rm tospid.log 
+ls
+rm mrgd nohup.out 
+tail -f fash-rdf-links 
+cat /tmp/galin7 |while read i;do grep $i fash-rdf-links || echo $i >> /tmp/galin7.f;done
+wc -l /tmp//galin7
+wc -l /tmp//galin7.f 
+mv /tmp/galin7.f /tmp/galin7
+less ~/Downloads/C11121.m3u 
+ls
+. ../sourceme 
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171108_092* ||echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171108_092* || grep $i /tmp/asd/inp ||echo http://web.archive.org/save/https://$i >> /tmp//asd/inpa;done
+filtfind |wc
+find /tmp/proc -type f|wc
+wc -l ../sync/bhash-20171107-3.tsv 
+tail -f /tmp//asd/inp.log 
+tail -f /tmp//asd/inpa.log 
+tail -f /tmp//asd/inp.log 
+ls
+cat ~-/inpa.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+cat /tmp/asd/inpa.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
+less ~/tmp/sync/http-misc-20171107-1.nt 
+tail -f /tmp//asd/inp.log 
+ls /tmp/asd/
+cd /tmp/proc/
+ls
+cd 1
+cd ~
+ls
+git diff
+config diff
+config add open-tabs .kde/share/config/kdeglobals .kde/share/config/kdialogrc 
+config commit -m more
+history -a
