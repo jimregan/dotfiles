@@ -1,36 +1,3 @@
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/191mupwvg/c1794242/ ; done
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-~/bin/blockhash $(find s1.postimg.org -type f) >> ~/tmp/sync/bhashc-20171106-2.tsv 
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
-sh ../wrap-exif.sh 
-mv /tmp//exif.out ~/tmp/sync/exif-20171106-2.xml
-~/bin/blockhash $(find s1.postimg.org -type f) >> ~/tmp/sync/bhashc-20171106-3.tsv 
-rm mrgd 
-cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
-cat ../sync/bhashc-20171106-3.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
-rm mrgd 
-cat ../sync/bhashc-20171106-3.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-2.nt
-grep '<' ../sync/byte-for-byte-identical-20171106-2.nt 
-grep '<' ../sync/byte-for-byte-identical-20171106-2.nt |wc
-find s1.postimg.org -type f|wc
-wc -l /tmp/asd/inp
-less mrgd 
-rm mrgd 
-less ~/tmp/sync/bhashc-20171106-3.tsv 
-vi ~/tmp/sync/bhashc-20171106-3.tsv 
-vi ~/tmp/sync/bhashc-20171106-2.tsv 
-~/bin/blockhash $(find s1.postimg.org -type f) 
-file s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
-less s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
-rm s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png 
-wget -x -c s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
-less s1.postimg.org/2wml5ra6fx/screenshot_20171101-004355.png
-~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-3.tsv 
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
-vi ~/tmp/sync/bhashc-20171106-3.tsv 
-wc -l ~/tmp/sync/bhashc-20171106-3.tsv 
 sh ../wrap-exif.sh 
 mv /tmp//exif.out ~/tmp/sync/exif-20171106-3.xml
 cat ../sync/bhashc-20171106-3.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
@@ -1998,3 +1965,36 @@ cd ~/Playing/corpuscrawler/
 ./corpuscrawler --language mi
 less corpus/mi.txt
 vi ~/open-tabs 
+cd ../libabw/
+ls
+cd src/lib/
+ls
+grep spirit *
+less ABWParser.cpp 
+less ABWCollector.cpp 
+less ABWContentCollector.cpp 
+python
+cat /tmp/rtesite 
+cat /tmp/rtesite |awk '{print $NF}'
+#cat /tmp/rtesite |awk '{print $NF}'|while read i;do curl
+#cat /tmp/rtesite |awk '{print $NF}'|while read i;do curl -I $i |head -n 1|cut -d$' ' -f2
+cat /tmp/rtesite |awk '{print $NF}'|while read i;do curl -I $i |head -n 1|cut -d$' ' -f2; done
+cat /tmp/rtesite |awk '{print $NF}'|while read i;do echo $i; curl -I $i |head -n 1|cut -d$' ' -f2; done
+python
+vi /tmp/tmpf
+cat /tmp/tmpf |awk '($0 == ""){print}'
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){print "{{outdent|" $0 "}}"}'
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+vi /tmp/tmpf
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+vi /tmp/tmpf
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a[0] "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a[1] "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+vi /tmp/tmpf
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a[1] "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+vi /tmp/tmpf
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a[1] "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+vi /tmp/tmpf
+cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a[1] "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
