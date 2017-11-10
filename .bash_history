@@ -1,7 +1,3 @@
-~/bin/blockhash screenshot_2017* >> ~/tmp/sync/bhashc-20171106-1.tsv
-ls
-for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-1.nt && rm $i;done
-ls
 cd ~/Pictures/foo/
 ls
 cd ~/tmp/foo/
@@ -1998,3 +1994,7 @@ apt-cache search kspread
 apt-cache search calligra
 sudo apt-get install calligra
 ls
+cd ~/Playing/sweble-wikitext
+ls
+find . -name '*.rats' |xargs grep -i attribute
+less ./sweble-wikitext-components-parent/swc-parser-lazy/src/main/rats/org/sweble/wikitext/parser/utils/XmlAttribute.rats
