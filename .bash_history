@@ -1,33 +1,3 @@
-cat ../sync/bhashc-20171106-2.tsv |awk -F'\t' '{print $1}'
-cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'
-cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print $2}' >> mrgd; grep $i ../sync/bhashc-20171106-2.tsv |awk '{print $2}' >> mrgd; done
-less mrgd 
-cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-2.tsv |awk '{print "https://" $2}' >> mrgd; done
-rm mrgd 
-cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-2.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl 
-cat mrgd |perl ../fdupes-proc.pl  >> ../sync/byte-for-byte-identical-20171106-1.nt
-#cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-1.nt
-less ../sync/byte-for-byte-identical-20171106-1.nt
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-1.nt
-less ../sync/byte-for-byte-identical-20171106-1.nt
-ls
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-less ../sync/assumed-identical-20171106_154745.nt 
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_154745.nt && rm $i;done
-find s1.postimg.org -type f
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-rm /tmp//asd/inp.log 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_160301.nt && rm $i;done
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_160349.nt && rm $i;done
-find s1.postimg.org -type f
 cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/191mupwvg/c1794242/ ; done
 find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
 ~/bin/blockhash $(find s1.postimg.org -type f) >> ~/tmp/sync/bhashc-20171106-2.tsv 
@@ -1998,3 +1968,33 @@ vi mi.txt
 less mi.txt 
 cat mi.txt |perl bibler.pl 
 cat mi.txt |perl bibler.pl > wikiin
+cd /tmp/
+unzip ~/Downloads/wscnvn.zip 
+less WSCNVN.TXT 
+
+unzip ~/Downloads/wetter.zip 
+less DISKETTE.INC 
+less 
+unzip ~/Downloads/wscnvn.zip 
+unzip ~/Downloads/wstxt.zip 
+less WS2TXT.C 
+less WS2TXT.D
+less WSTXT.DOC
+unzip ~/Downloads/jcc20.zip 
+less PAG9.MDA 
+file PAG9.MDA 
+unzip ~/Downloads/jcc09.zip 
+file PA*
+less PAGE0000.PAG 
+unzip ~/Downloads/jcc18.zip 
+less CHECK.MDF 
+file CHECK.MDF 
+file LEES.MIJ 
+less LEES.MIJ 
+hexdump LEES.MIJ |less
+less LEES.MIJ 
+less INTRO 
+cd ~/Playing/corpuscrawler/
+./corpuscrawler --language mi
+less corpus/mi.txt
+vi ~/open-tabs 
