@@ -1998,3 +1998,13 @@ config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs
 config commit -m mro
 config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
 config commit -m mro
+cd /tmp/
+tar ztvf ~/Downloads/tuxguitar-1.4-linux-x86_64.tar.gz 
+tar zxvf ~/Downloads/tuxguitar-1.4-linux-x86_64.tar.gz 
+cd tuxguitar-1.4-linux-x86_64/
+ls
+sh tuxguitar.sh 
+cd 
+config add .bash_history 
+config commit -m more
+history -a
