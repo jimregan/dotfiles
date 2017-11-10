@@ -1998,3 +1998,100 @@ less ~/tmp/sync/local-dup-20171109-2.nt
 grep /home/jim/ dup |grep -v /tock/|while read i;do mv $i ~/tmp/sync/verify2/;done
 grep /tmp/ dup |grep -v /tock/|while read i;do mv $i ~/tmp/sync/verify2/;done
 ls ~/tmp/sync/verify2
+cd ..
+git add .bash_history 
+config add .bash_history 
+config status
+config add .kde/share/config/kdeglobals 
+config add .kde/share/config/kdialogrc 
+config add .config/katerc 
+config commit -m asdb
+vi open-tabs 
+config add open-tabs 
+config commit -m asdb
+less ~/20171109\ d.tg 
+vi /tmp/foo.html
+grep pageParams.contentUrl  /tmp/foo.html
+grep pageParams.contentUrl  /tmp/foo.html|awk -F'"' '{print $2}'
+cd /tmp/foo
+mkdir /tmp/foo
+grep pageParams.contentUrl  /tmp/foo.html|awk -F'"' '{print $2}'
+wget $(grep pageParams.contentUrl  /tmp/foo.html|awk -F'"' '{print $2}')
+grep orig *jsonp
+less ls
+ls
+mkdir foo
+mv *.jsonp foo/
+cd foo/
+ls
+cat *
+reset
+file *
+for i in [0-9]-* [0-9][0-9]* [0-9][0-9][0-9]-*;do gzcat $i;done
+for i in [0-9]-* [0-9][0-9]* [0-9][0-9][0-9]-*;do echo $i;done
+for i in *;do zcat $i;done
+for i in *;do zcat $i |awk -F'orig=\\"' '{print $2}' ;done
+for i in *;do zcat $i |awk -F'orig=' '{print $2}' ;done
+for i in *;do zcat $i |awk -F'orig=' '{print $2}'|tr -d '\' ;done
+for i in *;do zcat $i |awk -F'orig=' '{print $2}'|tr -d '\\' ;done
+for i in *;do zcat $i |awk -F'orig=' '{print $2}'|tr -d '\\' |awk -F'"' '{print $2}' ;done 
+for i in *;do zcat $i |awk -F'orig=' '{print $2}'|tr -d '\\' |awk -F'"' '{print $2}'|sort|uniq ;done
+for i in *;do zcat $i |awk -F'orig=' '{print $2}'|tr -d '\\' |awk -F'"' '{print $2}'|sort|uniq ;done > list
+for i in *;do zcat $i |awk -F'orig=' '{print $2}'|tr -d '\\' |awk -F'"' '{print $2}'|sort|uniq ;done > /tmp//list
+rm list 
+for i in *;do zcat $i |awk -F'orig=' '{print $2}'|tr -d '\\' |awk -F'"' '{print $2}'|sort|uniq ;done > /tmp//list
+less /tmp/list 
+wget -i /tmp/list 
+apt-cache search img2pdf
+sudo apt-get install img2pdf
+man img2pdf
+cat 2-6e73b89abb.jsonp 
+zcat 2-6e73b89abb.jsonp 
+for i in [0-9][-]*jpg;do echo $i;done
+for i in [0-9][-]*jpg [0-9][0-9][-]*jpg [0-9][0-9][0-9][-]*jpg ;do echo $i;done
+img2pdf -o out.pdf [0-9][-]*jpg [0-9][0-9][-]*jpg [0-9][0-9][0-9][-]*jpg 
+pwd
+ls ..
+ls
+cp out.pdf /tmp/foo/
+ls
+convert [0-9][-]*jpg [0-9][0-9][-]*jpg [0-9][0-9][0-9][-]*jpg  +compress new_english_file.pdf
+ls-al new_english_file.pdf 
+ls -al new_english_file.pdf 
+cp new_english_file.pdf /tmp/foo
+ls -al
+rm new_english_file.pdf 
+mv out new_english_file.pdf
+mv out.pdf new_english_file.pdf
+vi inp
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cat inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171109-1.nt 
+rm inp
+rm inp.log 
+ls
+rm *jpg
+rm *jsonp
+ls
+rm nohup.out 
+rm -rf web.archive.org/
+vi /tmp/html
+grep pageParams.contentUrl /tmp/html
+grep pageParams.contentUrl /tmp/html|awk -F'"' '{print $2}'
+wget $(grep pageParams.contentUrl /tmp/html|awk -F'"' '{print $2}')
+ls
+for i in *;do zcat $i;done
+for i in *jsonp;do zcat $i;done
+for i in *jsonp;do zcat $i;echo;done
+for i in *jsonp;do zcat $i;echo;done|tr -d '\\' |awk -F'orig="' '{print $2}'|awk -F'"' '{print $1}'
+wget $(for i in *jsonp;do zcat $i;echo;done|tr -d '\\' |awk -F'orig="' '{print $2}'|awk -F'"' '{print $1}')
+img2pdf -o new_english_file_workbook.pdf [0-9][-]*jpg [0-9][0-9][-]*jpg [0-9][0-9][0-9][-]*jpg 
+img2pdf -o new_english_file_workbook.pdf [0-9][-]*jpg [0-9][0-9][-]*jpg 
+cp new_english_file_workbook.pdf /tmp/
+cp new_english_file_workbook.pdf /tmp/foo
+vi inp
+sh ~/scripts/grab-logged.sh inp
+vi ~/open-tabs 
+df
+cd ..
+history -a

@@ -883,3 +883,143 @@ https://github.com/facebookresearch/StarSpace
 # not open source
 https://github.com/facebookresearch/faiss
 
+http://www.gitxiv.com/posts/FqWSa2CexrKDyMhgQ/learning-asymmetric-recurrent-neural-networks-thru
+https://github.com/anirudh9119/walkback_nips17
+https://arxiv.org/abs/1711.02282
+
+http://www.gitxiv.com/posts/J5MeRzFnHsRDxpHSC/decoupled-neural-interfaces-using-synthetic-gradients
+https://github.com/1adrianb/face-alignment/blob/master/face_alignment/models.py
+https://github.com/1adrianb/binary-human-pose-estimation
+https://github.com/1adrianb/bnn.torch/blob/3f588a3d607c01a71fd176f1aaef4f0cacc34585/BinarySpatialConvolution.cu
+https://github.com/1adrianb/optimize-net/tree/b4c872cfc90c4f04f62fc8a8931219aeb16858bb
+https://github.com/cnclabs/proNet-core
+https://github.com/chihming/awesome-network-embedding
+https://dl.acm.org/citation.cfm?id=3098061
+struc2vec: Learning Node Representations from Structural Identity
+
+https://github.com/iamaaditya/neural-paraphrase-generation
+
+https://www.codeproject.com/Articles/20027/JSON-Spirit-A-C-JSON-Parser-Generator-Implemented
+http://rapidjson.org/md_doc_tutorial.html
+https://github.com/Tencent/rapidjson/blob/master/doc/tutorial.md
+
+http://www.martinbroadhurst.com/context-free-grammar-in-c.html
+http://www.martinbroadhurst.com/ungers-method-in-c.html
+https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#C.2B.2B
+unsigned int levenshtein_distance(const std::string& s1, const std::string& s2) 
+{
+	const std::size_t len1 = s1.size(), len2 = s2.size();
+	std::vector<unsigned int> col(len2+1), prevCol(len2+1);
+	
+	for (unsigned int i = 0; i < prevCol.size(); i++)
+		prevCol[i] = i;
+	for (unsigned int i = 0; i < len1; i++) {
+		col[0] = i+1;
+		for (unsigned int j = 0; j < len2; j++)
+                        // note that std::min({arg1, arg2, arg3}) works only in C++11,
+                        // for C++98 use std::min(std::min(arg1, arg2), arg3)
+			col[j+1] = std::min({ prevCol[1 + j] + 1, col[j] + 1, prevCol[j] + (s1[i]==s2[j] ? 0 : 1) });
+		col.swap(prevCol);
+	}
+	return prevCol[len2];
+}
+
+O(min(m,n))
+int levenshtein_distance(const std::string &s1, const std::string &s2)
+{
+	// To change the type this function manipulates and returns, change
+	// the return type and the types of the two variables below.
+	int s1len = s1.size();
+	int s2len = s2.size();
+	
+	auto column_start = (decltype(s1len))1;
+	
+	auto column = new decltype(s1len)[s1len + 1];
+	std::iota(column + column_start, column + s1len + 1, column_start);
+	
+	for (auto x = column_start; x <= s2len; x++) {
+		column[0] = x;
+		auto last_diagonal = x - column_start;
+		for (auto y = column_start; y <= s1len; y++) {
+			auto old_diagonal = column[y];
+			auto possibilities = {
+				column[y] + 1,
+				column[y - 1] + 1,
+				last_diagonal + (s1[y - 1] == s2[x - 1]? 0 : 1)
+			};
+			column[y] = std::min(possibilities);
+			last_diagonal = old_diagonal;
+		}
+	}
+	auto result = column[s1len];
+	delete[] column;
+	return result;
+}
+
+https://gist.github.com/TheRayTracer/2644387
+https://github.com/Martinsos/edlib/tree/master/edlib
+
+http://zverovich.net/2013/09/07/integer-to-string-conversion-in-cplusplus.html
+https://github.com/fmtlib/fmt
+https://github.com/scylladb/seastar
+https://github.com/scylladb/seastar/blob/master/json/json2code.py
+http://dpdk.org/
+https://github.com/scylladb/seastar/blob/master/doc/mini-tutorial.md
+https://www.reddit.com/r/cpp/comments/4vm6rs/which_parts_of_boost_do_you_use_with_c11/
+https://stackoverflow.com/questions/9354806/c-will-you-choose-boostdate-time-or-icudate-time-library
+https://github.com/taocpp/PEGTL
+https://github.com/Tencent/rapidjson
+https://github.com/Tencent/rapidjson/blob/master/doc/tutorial.md
+http://en.cppreference.com/w/cpp/io/basic_stringbuf
+
+https://github.com/dbpedia/extraction-framework
+https://github.com/dbpedia/extraction-framework/tree/master/wiktionary/src/main/scala/org/dbpedia/extraction/mappings/wikitemplate/wiktionary/bindinghandler
+https://github.com/dbpedia/Dockerized-DBpedia/tree/master/docker
+https://github.com/dbpedia/table-extractor/blob/master/table_extractor/HtmlTableParser.py
+https://github.com/nausheenfatma/embeddings/tree/master/gsoc2017-nausheen
+https://github.com/nausheenfatma?tab=repositories
+https://github.com/nausheenfatma/Spell-Check-Using-Bigram-Language-Modelling/blob/master/BigramModelSpellCheck.py
+https://github.com/nausheenfatma/KB2E
+https://github.com/nausheenfatma/QuestionClassification
+https://github.com/nausheenfatma/embeddings/blob/master/gsoc2017-nausheen/contribution_patch.patch
+https://github.com/mnick/holographic-embeddings/blob/master/kg/base.py
+https://github.com/dbpedia/extraction-framework/blob/master/wiktionary/src/main/scala/org/dbpedia/extraction/mappings/wikitemplate/WiktionaryUtils.scala
+https://github.com/jbrekle/jbrekle-master-thesis/blob/master/master.pdf
+https://github.com/jbrekle/jbrekle-master-thesis
+http://www.carlgibbs.co.uk/blog/?p=243
+https://stackoverflow.com/questions/22386882/why-have-unary-function-binary-function-been-removed-from-c11
+http://blog.madhukaraphatak.com/functional-programming-in-c++/
+http://www.boost.org/doc/libs/1_54_0/libs/range/doc/html/range/reference/algorithms/introduction.html
+https://github.com/mrange/cpplinq
+
+https://github.com/wikimedia/mediawiki-extensions-Math/tree/master/math
+https://github.com/wikimedia/mediawiki-extensions-Math/blob/master/math/texutil.mli
+https://github.com/mzur/pretty-formula/tree/master/src/de/uni_bielefeld/cebitec/mzurowie/pretty_formula/main
+https://github.com/mzur/pretty-formula/blob/master/src/de/uni_bielefeld/cebitec/mzurowie/pretty_formula/antlr/VanesaFormula.g4
+
+http://openframeworks.cc/documentation/
+https://github.com/micknoise/Maximilian/blob/master/RtAudio.cpp
+https://github.com/micknoise/Maximilian/tree/master/openFrameworks
+https://github.com/micknoise/Maximilian/blob/master/maximilian_examples/18.DrumMachine.cpp
+https://github.com/micknoise/Maximilian/blob/master/maximilian_examples/13.Advanced-Filters.cpp
+https://github.com/google/pindrop
+
+https://github.com/spectralmind
+
+https://github.com/facebookresearch/faiss
+
+https://github.com/facebookresearch/loop/blob/master/train.py
+# not open source
+https://arxiv.org/pdf/1707.06588.pdf
+
+https://arxiv.org/pdf/1705.08947.pdf
+https://github.com/philipperemy/deep-speaker
+https://github.com/baidu-research
+https://github.com/baidu-research/deep-voice/blob/master/scripts/f0-script.praat
+https://github.com/philipperemy/deep-speaker/blob/master/models_train.py
+https://github.com/philipperemy?tab=repositories
+
+https://github.com/rushter/MLAlgorithms
+https://github.com/eriklindernoren/ML-From-Scratch
+
+

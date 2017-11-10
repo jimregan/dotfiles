@@ -71,7 +71,7 @@ new_note_clipboard=Alt+Shift+C,Alt+Shift+C,New Note From Clipboard
 show_all_notes=Alt+Shift+S,Alt+Shift+S,Show All Notes
 
 [konversation]
-_k_friendly_name=konversation
+_k_friendly_name=Konversation
 next_active_tab=none,none,Next Active Tab
 toggle_mainwindow_visibility=none,none,Show/Hide Konversation
 
