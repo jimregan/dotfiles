@@ -1,17 +1,3 @@
-cd ~/Pictures/foo/
-ls
-cd ~/tmp/foo/
-ls
-cd ../bar/
-ls
-less tospid 
-cd /tmp/asd/
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-wc -l inp
-tail -f inp.log 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
 vi /tmp/galin 
 sh ~/scripts/grab-logged.sh inp
 tail -f inp.log 
@@ -1998,3 +1984,17 @@ cd ~/Playing/sweble-wikitext
 ls
 find . -name '*.rats' |xargs grep -i attribute
 less ./sweble-wikitext-components-parent/swc-parser-lazy/src/main/rats/org/sweble/wikitext/parser/utils/XmlAttribute.rats
+cd ~/Playing/kaldi/
+ls
+ls /tmp/
+cd egs/
+ls -al
+ls ../../ClarinStudioKaldi/
+cd ../../ClarinStudioKaldi/
+ls
+ls -al
+git remote show
+git remote show origin
+git status
+git diff
+ssh jimregan
