@@ -179,3 +179,6 @@ UpdateTabNavigation - Tab: 1875, Index: 1, Url: http://stevehanov.ca/blog/index.
 SelectedNavigationInTab - Tab: 1876, Index: 1, Time: 13154817674096781
 UpdateTabNavigation - Tab: 1876, Index: 0, Url: http://stevehanov.ca/blog/index.php?id=146
 UpdateTabNavigation - Tab: 1876, Index: 1, Url: http://zork.net/~st/jottings/sais.html
+SelectedNavigationInTab - Tab: 1877, Index: 1, Time: 13154817924036651
+UpdateTabNavigation - Tab: 1877, Index: 0, Url: https://github.com/search?q=topic%3Adeep-speaker&type=Repositories
+UpdateTabNavigation - Tab: 1877, Index: 1, Url: https://github.com/topics/deep-learning
