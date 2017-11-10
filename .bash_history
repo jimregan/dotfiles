@@ -1,167 +1,3 @@
-ls
-rm nohup.out 
-cat ~/tmp/sync/bhash-20171107-4.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-3.tsv |awk '{print "file:/tmp/fdet/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-4.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cd /tmp/proc/
-cd 1
-for i in *;do grep "/$i" /tmp/asd/inp;done
-ls
-for i in *;do grep "$i" /tmp/asd/inp;done
-cd ../fdet1/
-for i in *;do grep "/$i" /tmp/asd/inp;done
-less /tmp/asd/inp
-wc -l /tmp/asd/inp
-for i in *;do grep "$i" /tmp/asd/inp;done
-cat /tmp/asd/inp|awk -F/ '{print $NF}'
-cat /tmp/asd/inp|awk -F/ '{print $NF}' > /tmp/imglist
-for i in *;do grep $i /tmp/imglist ;done
-cat /tmp/imglist 
-cat /tmp/imglist |while read i;do if [ -e $i ];then echo $i;fi;done
-ls
-cat /tmp/imglist |while read i;do if [ ! -e $i ];then echo $i;fi;done
-ls
-cat /tmp/imglist 
-ks
-ls
-cd ../
-ls
-cd 1/
-for i in *;do grep $i ~/tmp/sync/assumed-identical-20171108_092000.nt && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && echo $i > /tmp/bfb;done
-for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && echo $i >> /tmp/bfb;done
-for i in *;do grep $i ~/tmp/sync/assumed-identical-20171108_092000.nt && echo $i >> /tmp/assumed;done
-less ~/tmp/sync/assumed-identical-20171108_092000.nt 
-ls
-less /tmp/bfb 
-for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt ;done
-cd ../fdet1/
-for i in *;do grep $i ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-ls
-for i in *;do grep $(echo $i|sed -e 's/Reg/_Reg/') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && echo rm $i;done
-for i in *;do grep $(echo $i|sed -e 's/Reg/_Reg/') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-ls
-ls |wc
-cd ..
-ls
-cd 1
-for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt ;done
-cat ~/tmp/sync/byte-for-byte-identical-20171107-2.nt|awk -F'[<>]' '{print $6}'|grep postimg
-cat ~/tmp/sync/byte-for-byte-identical-20171107-2.nt|awk -F'[<>]' '{print $6}'|grep postimg|awk -F/ '{print $NF}'
-cat ~/tmp/sync/byte-for-byte-identical-20171107-2.nt|awk -F'[<>]' '{print $6}'|grep postimg|awk -F/ '{print $NF}'|sed -e 's/\.jpg$//'
-cat ~/tmp/sync/byte-for-byte-identical-20171107-2.nt|awk -F'[<>]' '{print $6}'|grep postimg|awk -F/ '{print $NF}'|sed -e 's/\.jpg$//'|perl -ane 'chomp;print len($_)."\n"'
-cat ~/tmp/sync/byte-for-byte-identical-20171107-2.nt|awk -F'[<>]' '{print $6}'|grep postimg|awk -F/ '{print $NF}'|sed -e 's/\.jpg$//'|perl -ane 'chomp;print length($_)."\n";'
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && echo rm $i;done
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && echo rm $i;done|grep '^rm'|wc
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../2
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-ls
-cd ../3
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-ls
-ls|wc
-cd ../4
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../5
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../6
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../7
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../8
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../9
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../a
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-ls
-for i in *;do grep $i ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../b
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../c
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../d
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../e
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-cd ../f
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-2.nt && rm $i;done
-ls
-ls|wc
-cd ..
-find . -type f|wc
-cd /tmp/asd
-ls
-wc -l inp 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-wc -l inpa 
-sh ~/scripts/grab-logged.sh inpa
-tail -f inpa.log 
-#for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-cd /tmp/proc/1/
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-cd /tmp/asd/
-ls
-cd /tmp/proc/
-cd 1
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../2
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-lscd 
-cd ../3
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../4
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../5
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-ls|wc
-cd ../6
-ls
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../7
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../8
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../9
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../a
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../b
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../c
-ls
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../d/
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../
-cd e
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../f
-ls
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ../fdet1/
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-for i in *;do grep $(echo $i|sed -e 's/Reg/_Reg/') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-3.nt && rm $i;done
-ls
-cd ..
-ls
-for i in *;do mv $i/*jpg .;done
-ls
 rmemptydir 
 ls
 ls|wc
@@ -1998,3 +1834,167 @@ rm ~/Pictures/Screenshot_20171*
 ls
 vi grammar.hpp
 vi ../open-tabs-reopen 
+config add open-tabs 
+config add .bash_history 
+config status
+config add .tuxguitar-1.2/history.properties 
+config add .tuxguitar-1.2/config.properties 
+config add .config/gtk-2.0/gtkfilechooser.ini .config/dconf/user .config/kglobalshortcutsrc 
+config status
+config add .kde/share/config/kdeglobals .kde/share/config/kdialogrc .tuxguitar-1.2/plugins/tuxguitar-community.cfg 
+config commit -m mr
+config add .bash_history open-tabs 
+config commit -m mr
+less open-tabs 
+vi ~/open-tabs 
+vi ~/open-tabs-reopen
+vi ~/open-tabs 
+config add .bash_history open-tabs  open-tabs-reopen 
+config commit -m mr
+config commit -m .scratch/chromium-tabs 
+config add .scratch/chromium-tabs 
+config add .scratch/[a-z]* practice/*
+config commit -m mro
+less .scratch/chromium-tabs 
+config diff
+vi ~/open-tabs 
+config add open-tabs
+config add open-tabs-reopen 
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config add .bash_history 
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+tail .scratch/chromium-tabs 
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config diff
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+tail .scratch/chromium-tabs 
+config diff
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config branch
+config push origin slow-crash
+vi .scratch/mit-opencw-thing
+config add .scratch/mit-opencw-thing
+config commit -m mro
+mv /tmp/bibler.pl .scratch/
+config add .scratch/bibler.pl 
+config commit -m mro
+cp xml.pl .scratch/
+config add .scratch/xml.pl 
+config commit -m mro
+vi .scratch/start.ly
+config add .scratch/start.ly
+config commit -m mro
+cp 20171109\ d.tg .scratch/
+config add .scratch/20171109\ d.tg 
+config commit -m mro
+cp 20171109\ d1.tg .scratch/20171109\ d.tg 
+config add .scratch/20171109\ d.tg 
+config commit -m mro
+config push origin slow-crash
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
+config add .bash_history open-tabs open-tabs-reopen .scratch/chromium-tabs 
+config commit -m mro
