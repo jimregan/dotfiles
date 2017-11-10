@@ -1,107 +1,3 @@
-sh ../wrap-exif.sh 
-mv /tmp//exif.out ~/tmp/sync/exif-20171106-3.xml
-cat ../sync/bhashc-20171106-3.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-3.tsv |awk '{print "https://" $2}' >> mrgd; done
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-3.nt
-less ../sync/byte-for-byte-identical-20171106-3.nt
-grep '<' ../sync/byte-for-byte-identical-20171106-3.nt |wc
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_163025.nt && rm $i;done
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_163258.nt && rm $i;done
-find s1.postimg.org -type f
-vi /tmp/galin 
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/eckg2xws/ ; done
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-4.tsv 
-less ~/tmp/sync/bhashc-20171106-4.tsv 
-wc -l ~/tmp/sync/bhashc-20171106-4.tsv 
-wc -l /tmp//asd/inp
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
-sh ../wrap-exif.sh 
-mv /tmp//exif.out ~/tmp/sync/exif-20171106-4.xml
-cat ../sync/bhashc-20171106-4.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-4.tsv |awk '{print "https://" $2}' >> mrgd; done
-history -a
-cd ../sync/
-ls
-mkdir tock
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-ls
-for i in *;do if [ -e tock/$i ];then echo $i;fi;done
-ls
-for i in *;do if [ -e tock/$i ];then echo $i;fi;done
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-ls
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-ls
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-ls
-ls -al tock/unsorted-triples-20171106_c.nt 
-less tock/unsorted-triples-20171106_c.nt 
-ls
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-mv tock/bhash-20171106.zip .
-ls
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-ls
-cd tock/
-ls
-mv vfy.zip /tmp/
-ls
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-ls
-cd ..
-ls
-for i in *;do grep $i byte-for-byte-identical-20171106-6.nt && mv $i tock/;done
-ls
-for i in *;do if [ -e tock/$i ];then echo $i;fi;done
-for i in *;do grep $i local-dup-20171106-3.nt && mv $i tock/;done
-ls
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-4.nt
-grep '<'  ../sync/byte-for-byte-identical-20171106-4.nt|wc
-rm mrgd 
-cat ../sync/bhashc-20171106-4.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-4.tsv |awk '{print "https://" $2}' >> mrgd; done
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-4.nt
-grep '<'  ../sync/byte-for-byte-identical-20171106-4.nt|wc
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_170307.nt && rm $i;done
-find s1.postimg.org -type f
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_170341.nt.nt && rm $i;done
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_170341.nt && rm $i;done
-find s1.postimg.org -type f
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/ws0vh1rg/ ; done
-~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-5.tsv 
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
-sh ../wrap-exif.sh 
-mv /tmp//exif.out ~/tmp/sync/exif-20171106-5.xml
-rm mrgd 
-cat ../sync/bhashc-20171106-5.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171106-5.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171106-5.nt
-grep '<'  ../sync/byte-for-byte-identical-20171106-5.nt|wc
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' |wc
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-1.nt
-find s1.postimg.org -type f|while read i;do grep $i ~/tmp/sync/assumed-identical-20171106_183036.nt && rm $i;done
-find s1.postimg.org/ -type f
-rm -rf s1.postimg.org/
-ls
-rm mrgd 
-mv fash-rdf-links ../sync/unsorted-triples-20171106-1.nt
-ls
-cd ../bar/
-ls
-ogimageproc https://www.instagram.com/p/BbJfVgUhAiH/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/BbJ_PM3hbCF/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/BbKUnWEgR5g/?taken-by=_daria___igorevna_
 ogimageproc https://www.instagram.com/p/BavlPQjAmT3/?taken-by=_daria___igorevna_
 ogimageproc https://www.instagram.com/p/BbJ6VOLFOAT/?taken-by=svetabily
 ogimageproc https://www.instagram.com/p/BbJ7zirl_IF/?taken-by=viki_odintcova
@@ -1998,3 +1894,107 @@ vi /tmp/tmpf
 cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a[1] "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
 vi /tmp/tmpf
 cat /tmp/tmpf |awk '($0 == ""){print}($0 != ""){split($0,a,",");print "{{anchor|" a[1] "}}" ;print "{{outdent|" $0 "}}"}'|sed -e 's/ü/ú/g;s/amp;//g'
+git branch
+git add Lib/corpuscrawler/main.py 
+git add Lib/corpuscrawler/crawl_mi.py 
+git commit -m '[mi] first pass at Maori'
+git diff
+git add Lib/corpuscrawler/crawl_mi.py 
+git commit -m 'these articles have tags, output them'
+git push mine maori 
+less corpus/ga.txt 
+git diff
+git add Lib/corpuscrawler/crawl_mi.py 
+git commit -m 'some fixes; also crawl the sport section'
+git push mine maori 
+less corpus/mi.txt 
+git add Lib/corpuscrawler/crawl_mi.py 
+git commit -m "make tags conditional, they aren't always present"
+git push mine maori 
+tail -f corpus/mi.txt 
+git branch
+git push mine maori 
+less Lib/corpuscrawler/util.py
+git branch
+vi Lib/corpuscrawler/crawl_mi.py
+git add Lib/corpuscrawler/crawl_mi.py
+git commit -m 'change to Translation.en:'
+git diff
+git statis
+git status
+git diff
+git status
+git diff
+git branch
+git checkout master
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m '[ga] get rid of duplicate sitemap crawler'
+git log
+git checkout master
+git pull origin master
+git remote show
+git checkout -b ga-sitemap
+git log
+git cherry-pick 6507c01700edd542c8fb685d689f0fe26c7b47e0
+git diff
+vi Lib/corpuscrawler/crawl_ga.py
+git branch
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m merge
+vi Lib/corpuscrawler/crawl_ga.py
+git diff
+git log
+git branch -a
+git checkout irish-fixed 
+git stash
+git checkout irish-fixed 
+git log
+git # coding: utf-8
+# Copyright 2017 Google Inc. All rights reserved.
+# Copyright 2017 Jim O'Regan
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+from __future__ import absolute_import, print_function, unicode_literals
+import re
+vi Lib/corpuscrawler/crawl_ga.py
+git diff
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m '[ga] get rid of duplicate sitemap crawler'
+git branch 
+git push mine irish-fixed 
+vi Lib/corpuscrawler/crawl_ga.py
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m 'fix regex'
+git push mine irish-fixed 
+vi Lib/corpuscrawler/crawl_ga.py
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m 'missing param'
+git push mine irish-fixed 
+python
+git branch
+git checkout master
+git diff
+git add Lib/corpuscrawler/util.py 
+git commit -m 'need more ns/no ns handling here'
+git log
+git checkout master
+git stash
+git checkout master
+git checkout -b more-ns-handling
+git cherry-pick a0472db8261301431d519b9e56b0df47ace8693c
+git push mine more-ns-handling 
+echo $((83649 / 12))
+cd ..
+git clone https://github.com/kaitai-io/kaitai_struct.git
+git clone --recursive https://github.com/kaitai-io/kaitai_struct.git
+df
