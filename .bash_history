@@ -1,41 +1,3 @@
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171108_092* ||echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171108_092* || grep $i /tmp/asd/inp ||echo http://web.archive.org/save/https://$i >> /tmp//asd/inpa;done
-filtfind |wc
-find /tmp/proc -type f|wc
-wc -l ../sync/bhash-20171107-3.tsv 
-tail -f /tmp//asd/inp.log 
-tail -f /tmp//asd/inpa.log 
-tail -f /tmp//asd/inp.log 
-ls
-cat ~-/inpa.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inpa.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
-less ~/tmp/sync/http-misc-20171107-1.nt 
-tail -f /tmp//asd/inp.log 
-ls /tmp/asd/
-cd /tmp/proc/
-ls
-cd 1
-cd ~
-ls
-git diff
-config diff
-config add open-tabs .kde/share/config/kdeglobals .kde/share/config/kdialogrc 
-config commit -m more
-history -a
-. ../sourceme 
-filtfind |perl ~/scripts/pipe-ook.pl >> ../sync/ookdata-20171107-1.nt
-filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp/asd/inp
-cd /tmp/asd/
-ls
-sh ~/scripts/grab-logged.sh inp
-cd -
-ls
-sh ~/scripts/spider.sh tospid
-tail -f tospid.log 
-cat tospid.log |perl ~/bin/wget-http.pl 
-cat tospid.log |perl ~/bin/wget-http.pl  >> ../sync/http-misc-20171107-1.nt 
-rm tospid
-rm tospid.log 
 ls
 rm nohup.out 
 cat ~/tmp/sync/bhash-20171107-4.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-3.tsv |awk '{print "file:/tmp/fdet/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-4.tsv |awk '{print "https://" $2}' >> mrgd; done
@@ -1998,3 +1960,41 @@ python chromagnon ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium
 python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
 python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs >> ~/.scratch/chromium-tabs
 python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+cd ~/practice/
+ls
+vi spirit-optional.cc
+g++ spirit-optional.cc 
+vi spirit-optional.cc
+g++ spirit-optional.cc 
+grep lexeme /usr/include/boost/spirit/home/qi/*
+vi spirit-optional.cc
+grep lexeme /usr/include/boost/spirit/home/qi/*
+g++ spirit-optional.cc 
+vi spirit-optional.cc
+g++ -std=c++11 spirit-optional.cc 
+vi spirit-optional.cc
+vi spirit-string-view.cc
+g++ -std=c++11 spirit-string-view.cc 
+g++ -std=c++17 spirit-string-view.cc 
+./a.out 
+vi spirit-string-view.cc
+vi boost-graph-create-undirected.cc
+g++ -std=c++11 boost-graph-create-undirected.cc 
+./a.out 
+vi boost-graph-traverse.cc 
+g++ -std=c++11 boost-graph-traverse.cc 
+vi boost-graph-traverse.cc 
+g++ -std=c++11 boost-graph-traverse.cc 
+ls
+less linked-list-print-middle.cc 
+less remove-if.cc 
+vi boost-graph-traverse.cc 
+g++ -std=c++11 boost-graph-traverse.cc 
+vi boost-graph-traverse.cc 
+g++ -std=c++11 boost-graph-traverse.cc 
+./a.out 
+tail -f ~/tmp/sync/bhash-20171107-5.tsv
+rm ~/Pictures/Screenshot_20171*
+ls
+vi grammar.hpp
+vi ../open-tabs-reopen 
