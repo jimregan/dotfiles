@@ -1,25 +1,3 @@
-config add open-tabs .bash_history 
-config commit -m more
-history -a
-cd /tmp/toupl/
-ls
-for i in screenshot_2017*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171019-* && rm $i;done
-ls
-ls|wc
-less ~/tmp/sync/byte-for-byte-identical-20171019-2.nt 
-less ~/tmp/sync/byte-for-byte-identical-20171019-5.nt 
-vi /tmp/galin
-lynx -dump https://postimg.org/image/6ydr8kej4b/
-ls
-cd ~/tmp/
-ls
-mkdir fqnew
-cd fqnew/
-ls
-. ../sourceme 
-cat /tmp/galin |while read i;do lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'
-cat /tmp/galin |head -n 1 |while read i;do lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'; donee; done
-cat /tmp/galin |head -n 1 |while read i;do img=$(lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1mzudrve4/ ; done
 cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1mzudrve4/ ; done
 vi fash-rdf-links 
 rm fash-rdf-links 
@@ -1998,3 +1976,25 @@ mkdir /tmp/toupl
 tail -f ~/tmp/sync/bhashc-20171106-1.tsv
 tail -f /tmp//exif.out 
 tail -f /tmp/asd/inp.log 
+cd tmp
+cd ~/Playing/corpuscrawler/
+git branch
+git diff
+git checkout -b maori-bible
+git add Lib/corpuscrawler/crawl_mi.py 
+git commit -m '[mi] (public domain) Bible scraper'
+git push mine maori-bible 
+git log
+git checkout master
+git pull origin master
+git log
+git checkout maori-bible 
+git log
+git branch
+git log
+git checkout master 
+git branch -D maori-bible 
+git checkout -b maori-bible
+git cherry-pick d651c4821f964b2b595bf73e2f54b81c0616149b
+git log
+git push mine maori-bible 
