@@ -1,74 +1,3 @@
-vi /tmp/galin 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-rm -rf web.archive.org/
-cd ../toupl/
-ls
-for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-3.nt && rm $i;done
-ls
-cd -
-ls
-sh ~/scripts/grab-logged.sh inp
-wc -l inp
-killall wget
-wc -l inp
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-cd -
-for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-3.nt && rm $i;done
-cd -
-ls
-ls|wc
-cd -
-sh ~/scripts/grab-logged.sh inp
-cd -
-for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-4.nt && rm $i;done
-ls
-ls|wc
-cd -
-tail -f inp.log 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-cd -
-for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-4.nt && rm $i;done
-cd -
-vi ~/tmp/bar/tospid 
-vi /tmp/galin 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-vi ~/tmp/bar/tospid 
-tail -f inp.log 
-cd -
-for i in screenshot_20171*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-5.nt && rm $i;done
-ls
-ls -al
-cd -
-tail -f inp.log 
-ls
-rm -rf web.archive.org/
-rm *
-ls
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-vi ftea
-ct ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-sh ~/scripts/grab-logged.sh totea
-tail -f totea.log 
-tail -f inp.log 
-fdupes -r ./web.archive.org ~/tmp/sync/
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
-less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
-rm -rf web.archive.org/
-ls
-rm *
-vi ftea
-cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-sh ~/scripts/grab-logged.sh totea
-tail -f totea.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
-less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt
 ls
 rm *
 rm -rf web.archive.org/
@@ -1998,3 +1927,74 @@ git remote show origin
 git status
 git diff
 ssh jimregan
+ls
+find . -name '*ctm'
+find exp -type f
+less exp/tri2b_ali/ali.15.gz 
+less exp/tri2b_ali/ali.14.gz 
+less exp/tri2b_ali/ali.15.gz 
+ls
+ls data/
+ls data/lang/phones.txt 
+less data/lang/phones.txt 
+less data/lang/phones/optional_silence.txt 
+grep spn local_clarin/*
+grep '<SPOKEN' data/train/text 
+less data/train/text 
+df
+find data -type f
+du -m data/
+du -m exp/
+find . -name '*log'
+find . -name '*log'|xargs grep spn
+less ~/.scratch/kaldi-run 
+cat exp/tri3b_mmi/log/acc.0.*.log
+ls exp/tri3b_mmi/log/acc.0.*.log
+less ~/.scratch/kaldi-run 
+cat exp/tri3b_mmi/log/acc.0.*.log|grep Phone
+cat exp/tri3b_mmi/log/acc.0.*.log|grep phone
+less data/lang/phones.txt 
+grep 'phone 6' ~/.scratch/kaldi-run 
+grep -i 'phone' ~/.scratch/kaldi-run 
+kess data/lang_test/phones/disambig.int 
+less data/lang_test/phones/disambig.int 
+git branch
+git diff
+git log
+git diff
+git add path.sh 
+git commit -m 'fix path'
+git checkout master
+git pull origin master 
+git checkout local-changes 
+git merge master
+git status
+vi local_clarin/clarin_prepare_dict.sh 
+git diff
+vi local_clarin/clarin_pl_data_prep.sh 
+git diff
+git add local_clarin/clarin_pl_data_prep.sh 
+git commit -m merg
+git status
+vi ~/open-tabs 
+apt-cache search projectlibre
+sudo dpkg -i /home/jim/Downloads/projectlibre_1.7.0-1.deb 
+projectlibre 
+vi ~/open-tabs 
+apt-cache search atom
+apt-cache search atom|grep gith
+apt-cache search atom|grep edit
+vi ~/open-tabs 
+sudo dpkg -i /home/jim/Downloads/atom-amd64.deb 
+sudo apt-get install gvfs-bin
+sudo apt-get install gvfs-bin gfvs-common
+sudo apt update
+apt list --upgradable
+sudo apt-get install gvfs-bin
+sudo apt-get install 
+sudo apt-get 0f install 
+sudo apt-get -f install 
+atom 
+less ~/.config/chromium/Local\ State 
+less ~/.config/chromium/Default/Last\ Tabs 
+less ~/.config/chromium/Default/Current\ Tabs 
