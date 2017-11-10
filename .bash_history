@@ -1,55 +1,3 @@
-ogimageproc https://www.instagram.com/p/BXxpo8_H8UU/?taken-by=aleksanina.k
-ogimageproc https://www.instagram.com/p/BbEb5O3lMDu/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BbB1NmcFhGf/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/Ba-_BbxFbRt/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/Ba3cH9YF-a_/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/Bav-VKuF7Dw/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BaZpm1ajOsw/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BbKQ_qggyjx/?taken-by=anetasnake
-ogimageproc https://www.instagram.com/p/Ba_uT-JguvV/?taken-by=anetasnake
-ogimageproc https://www.instagram.com/p/Ba9LIA-gm87/?taken-by=anetasnake
-ogimageproc https://www.instagram.com/p/BbJhWlGhId_/?taken-by=asiicca
-ogimageproc https://www.instagram.com/p/BbJAzkWgvf3/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BbHYCN_A_Lt/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/Ba-h-0qgXR1/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BagGTl6gTPg/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BaZBAD1AXax/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BaZB9xVAD83/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BaWG10EA6v1/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BaVVkB3A2vr/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BbE8b0MglxX/?taken-by=snow_cherry
-ogimageproc https://www.instagram.com/p/Ba3t2l3Af8i/?taken-by=snow_cherry
-ogimageproc https://www.instagram.com/p/BajZCJ8AfHv/?taken-by=snow_cherry
-ogimageproc https://www.instagram.com/p/BbHaTu-ANBH/?taken-by=camillekaftan
-ogimageproc https://www.instagram.com/p/BbFbQG9AfqH/?taken-by=camillekaftan
-ogimageproc https://www.instagram.com/p/Ba6HpVhAsDW/?taken-by=camillekaftan
-ogimageproc https://www.instagram.com/p/BbH-N0jH3cmn2aZ4mf-S6Fv2Sh0kQtweyxatUA0/?taken-by=anya_amour
-ogimageproc https://www.instagram.com/p/BbALv6JHUTrF-VvgnA9QjYe3QlmFjO8Rp5mRSU0/?taken-by=anya_amour
-ogimageproc https://www.instagram.com/p/BbH-N0jH3cmn2aZ4mf-S6Fv2Sh0kQtweyxatUA0/?taken-by=anya_amour
-ogimageproc https://www.instagram.com/p/BbFKDWMDbXm/?taken-by=alina39
-ogimageproc https://www.instagram.com/p/BZ8o9YJDQrk/?taken-by=alina39
-ogimageproc https://www.instagram.com/p/BbJ6VOLFOAT/?taken-by=svetabily
-ogimageproc https://www.instagram.com/p/BatyLx8l4ti/?taken-by=svetabily
-ogimageproc https://www.instagram.com/p/BaWmfUYhLXU/?taken-by=sandrra_s
-ogimageproc https://www.instagram.com/p/BYbFDSOBdf5/?taken-by=sandrra_s
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-wc -l /tmp/asd/inp
-wc -l ../sync/assumed-identical-20171106_185905.nt 
-mv fash-rdf-links ../sync/unsorted-triples-20171106-2.nt 
-cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-less ../sync/http-misc-20171106-2.nt
-ls
-sh ~/scripts/spider.sh tospid
-tail -f tospid.log 
-cat tospid.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt 
-cat tospid.log |perl ~/bin/wget-http.pl 
-rm tospid
-rm tospid.log 
-ls
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-2.nt
 sh ../wrap-exif.sh 
 vi /tmp//exif.out 
 mv /tmp//exif.out ~/tmp/sync/exif-20171106-6.xml
@@ -2032,3 +1980,21 @@ cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'| ca
 cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'| cat /tmp/tst|perl -C7 -ane 'chomp;s/  +/ || /;print "| {{sc|" . lc $_ . "\n|-\n"'
 cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'| cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'
 history -a
+cd Playing/
+ls
+cd spaCy/
+git branch
+vi spacy/tests/lang/ga/test_tokenizer.py 
+git diff
+git add spacy/tests/lang/ga/test_tokenizer.py 
+git commit -m 'Ó, not O'
+git push mine develop-irish 
+git pull mine develop-irish 
+vi spacy/tests/lang/ga/test_tokenizer.py 
+git diff
+git add spacy/tests/lang/ga/test_tokenizer.py 
+git commit -m merge
+git push mine develop-irish 
+scp /home/jim/Downloads/*epub jimregan:/tmp
+python
+ls
