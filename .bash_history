@@ -1998,3 +1998,37 @@ musescore
 sudo apt-get install denemo
 denemo
 less ~/Downloads/Tajemnica\ Baskerville\ ów\ \ \ dziwne\ przygody\ Sherlocka.xml 
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^{|/{|style="margin: auto;"/'|less
+man split
+pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^{|/{|style="margin: auto;"/'|less
+vi /tmp/a1
+vi /tmp/a4
+vi /tmp/a3
+paste /tmp/a1 /tmp/a3 /tmp/a4
+paste /tmp/a1 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2}'
+paste /tmp/a1 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3}'
+vi /tmp/a4 
+paste /tmp/a1 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3}'
+vi /tmp/a4 
+vi /tmp/a3
+paste /tmp/a1 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3}'
+vi /tmp/a4 
+paste /tmp/a1 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3}'
+vi /tmp/a1
+paste /tmp/a1 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3}'
+vi /tmp/a1
+paste /tmp/a1 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3}'
+vi /tmp/a2
+paste /tmp/a1 /tmp/a2 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3 "\n|" $4}'
+paste /tmp/a1 /tmp/a2 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3 "\n| " $4}'
+paste /tmp/a1 /tmp/a2 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3 "\n| " $4}'|less
+vi /tmp/a2
+paste /tmp/a1 /tmp/a2 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3 "\n| " $4}'|less
+paste /tmp/a1 /tmp/a2 /tmp/a3 /tmp/a4|awk -F'\t' '{print "|-\n| " $1 "\n| " $2 "\n| " $3 "\n| " $4}'
+vi /tmp/tst
+cat /tmp/tst|perl -C7 -ane 'print lc'
+cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'| cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'
+cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'| cat /tmp/tst|perl -C7 -ane 'chomp;s/  +/ || /;print "| " . lc $_ . "\n|-\n"'
+cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'| cat /tmp/tst|perl -C7 -ane 'chomp;s/  +/ || /;print "| {{sc|" . lc $_ . "\n|-\n"'
+cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'| cat /tmp/tst|perl -C7 -ane 'chomp;s/  */ || /;print "| " . lc $_ . "\n|-\n"'
+history -a
