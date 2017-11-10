@@ -1,149 +1,3 @@
-git checkout master
-git pull origin master
-git branch
-git branch -D irish-fixed 
-git checkout -b irish-fixed
-git push mine master
-git push mine irish-fixed 
-git branch -D irish
-git checkout irish-fixed 
-./corpuscrawler --language ga
-less corpus/ga.txt 
-git log
-ls
-vi Lib/corpuscrawler/crawl_ga.py
-./corpuscrawler --language ga
-vi Lib/corpuscrawler/crawl_ga.py
-git stash
-./corpuscrawler --language ga
-git add Lib/corpuscrawler/crawl_ga.py 
-git checkout -b irish-scraper-still-giving-trouble
-git add Lib/corpuscrawler/crawl_ga.py 
-git commit -m '[ga] conditions were right, needed to cast to int'
-git push mine irish-scraper-still-giving-trouble 
-./corpuscrawler --language ga
-less corpus/ga.txt 
-./corpuscrawler --language ga
-less corpus/ga.txt 
-./corpuscrawler --language ga
-less corpus/ga.txt 
-./corpuscrawler --language ga
-git diff
-./corpuscrawler --language ga
-git diff
-./corpuscrawler --language ga
-less corpus/ga.txt 
-gzip corpus/ga.txt 
-ls -al corpus/ga.txt.gz 
-less corpus/ga.txt.gz 
-git branch
-git checkout master
-git pull origin master
-vi Lib/corpuscrawler/crawl_ga.py
-git checkout -b 'further filtering'
-git checkout -b 'further-filtering'
-git add Lib/corpuscrawler/crawl_ga.py
-git commit -m 'another sentence start to omit'
-git push mine further-filtering 
-less corpus/ga.txt 
-tail -f corpus/ga.txt 
-ls
-ls corpus
-git checkout master
-git add Lib/corpuscrawler/main.py 
-git add Lib/corpuscrawler/crawl_ga.py 
-git log
-git commit -m 'basic crawler for Irish; fetch_sitemap returning nothing :/'
-git log
-git checkout master
-git pull origin master
-git checkout -b irish
-git cherry-pick c956b9725b9cb659c4973fb9d67ef3a122aea394
-git log
-git push mine irish 
-less Lib/corpuscrawler/util.py
-python
-tail -f corpus/ga.txt 
-less corpus/ga.txt 
-tail -f corpus/ga.txt 
-git diff
-git add Lib/corpuscrawler/crawl_ga.py 
-git commit -m "deal with RTE's funky sitemap"
-ls -al cache-corpuscrawler/
-less cache-corpuscrawler/fcSsOJSumEjHRJ4lbcV3oAbXtJLqrDE5AX04KwoVCvwM\= 
-perl -e 'print 14500 / 110'
-ls
-find cache-corpuscrawler -type f
-find cache-corpuscrawler -type f|zip tmp.zip -@
-ls -al cache-corpuscrawler/
-less cache-corpuscrawler/fN08tzbuJKdbarAMGtzTo0hakawuP5ogPBRpaWVa4pCQ\= 
-less cache-corpuscrawler/f8O5smso1d6ksXdHrW_9SRuN4W02g8Cub3X5fMtSpvJ8\= 
-ls -al cache-corpuscrawler/
-tail -f corpus/ga.txt 
-git diff
-git add Lib/corpuscrawler/crawl_ga.py 
-git commit -m 'strip cookie warnings, etc.'
-git push mine irish 
-git checkout -b irish-fixed
-git push mine irish-fixed 
-git checkout irish
-git log
-git checkout irish-fixed 
-git cherry-pick 1946bdb90f114674504f318914248dc5d43757c3
-git cherry-pick 249fd68e71b98df761f020df371b27634f13a46c
-git cherry-pick cd8f2f83c55acd53eeaba1b89ac3599e8bde1e75
-git push mine irish-fixed 
-tail -f corpus/ga.txt 
-ls
-git status
-cat .gitignore 
-git log
-git checkout -b maori
-vi Lib/corpuscrawler/main.py
-./corpuscrawler --language mi
-vi Lib/corpuscrawler/main.py
-./corpuscrawler --language mi
-vi Lib/corpuscrawler/main.py
-./corpuscrawler --language mi
-less corpus/mi.txt 
-rm corpus/mi.txt 
-./corpuscrawler --language mi
-rm corpus/mi.txt 
-./corpuscrawler --language mi
-less corpus/mi.txt 
-rm corpus/mi.txt 
-./corpuscrawler --language mi
-less corpus/mi.txt 
-rm corpus/mi.txt 
-./corpuscrawler --language mi
-vi Lib/corpuscrawler/crawl_mi.py
-git add Lib/corpuscrawler/crawl_mi.py
-git commit -m 'skip articles that describe a news programme (with identical text each time)'
-./corpuscrawler --language mi
-git branch
-git pull mine irish-fixed 
-git checkout master 
-git pull origin master 
-git push mine master 
-./corpuscrawler --language mi
-less corpus/mi.txt 
-ls -al corpus/mi.txt 
-gzip corpus/mi.txt 
-ls -al corpus/mi.txt.gz 
-cd /tmp/
-mkdir gd
-cd gd/
-lynx -dump https://dasg.ac.uk/text/
-curl https://dasg.ac.uk/text/
-lynx -dump https://dasg.ac.uk/text/
-lynx -dump http://dasg.ac.uk/text/
-vi html
-lynx -force_html -dump html
-lynx -force_html -dump html|grep txt
-lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'
-lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|while read i;do wget https://dasg.ac.uk/text/$i;done
-lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|grep 'txt$'|while read i;do wget https://dasg.ac.uk/text/$i;done
-lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|grep 'txt$'|while read i;do wget --no-check-cerfiticate https://dasg.ac.uk/text/$i;done
 lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|grep 'txt$'|while read i;do wget --no-check-certificate https://dasg.ac.uk/text/$i;done
 ls 
 ls *txt|zip ~/gd.zip -@
@@ -2105,3 +1959,42 @@ ls
 python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs 
 python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs >> ~/open-tabs 
 history -a
+ls
+cd /tmp/
+tar zxvf ~/Downloads/morfeusz-src-20171029.tar.gz 
+cd trunk/
+ls
+cmake .
+ls
+make -j 8
+ls
+sudo apt-get install cppunit
+sudo apt-get install libcppunit-dev 
+apt-cache search morfeusz
+cmake .
+make -j 8
+ls
+ls morfeusz/morfeusz2.h 
+less morfeusz/morfeusz2.h 
+ls 
+find . -name morfeusz
+echo tak i nie | ./morfeusz/
+echo tak i nie | ./morfeusz
+less ~/tmp/sync/byte-for-byte-identical-20171019-5.nt 
+ls
+less README 
+ls
+cd ../corpuscrawler/
+ls
+cd cache-corpuscrawler/
+ls
+for i in *;do if [ ! -e ~/Playing/corpuscrawler/cache-corpuscrawler/$i ];then cp $i ~/Playing/corpuscrawler/cache-corpuscrawler/;fi;done
+cd ..
+ls
+less corpus/ga.txt 
+less corpus/gd.txt 
+mv corpus/gd.txt ~
+cd ..
+rm -rf corpuscrawler/
+ls
+ls /tmp/*gpx
