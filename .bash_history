@@ -1,313 +1,3 @@
-ls
-rm *
-rm -rf web.archive.org/
-vi ftea
-cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-sh ~/scripts/grab-logged.sh totea
-tail -f totea.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-ls
-rm -rf web.archive.org/
-rm *
-ls
-vi ftea
-cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-sh ~/scripts/grab-logged.sh totea
-tail -f totea.log 
-cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
-sh ~/scripts/grab-logged.sh totea2
-tail -f totea2.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-rm -rf web.archive.org/
-ls
-rm *
-less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-ls
-vi ftea
-cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
-sh ~/scripts/grab-logged.sh totea2
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-rm -rf web.archive.org/
-vi ftea 
-cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
-sh ~/scripts/grab-logged.sh totea2
-tail -f totea2.log 
-vi ftea 
-cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
-sh ~/scripts/grab-logged.sh totea2
-tail -f totea2.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-tail -f totea2.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-ls
-rm -rf web.archive.org/
-rm *
-vi ftea 
-cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
-sh ~/scripts/grab-logged.sh totea2
-tail -f totea2.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-rm -rf web.archive.org/
-rm *
-ls
-vi ftea 
-sh ~/scripts/grab-logged.sh totea2
-cat ftea |awk '{print "http://web.archive.org/web/" $0 "/dl"}' > totea2
-sh ~/scripts/grab-logged.sh totea2
-tail -f totea2.log 
-cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-sh ~/scripts/grab-logged.sh totea
-tail -f totea.log 
-less totea2.log 
-rm totea2.log 
-cat totea,
-cat totea.log 
-tail -f totea.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-ls
-tail totea.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-ls
-rm *
-rm -rf web.archive.org/
-vi ftea 
-cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-sh ~/scripts/grab-logged.sh totea
-tail -f totea.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-ls
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-rm -rf web.archive.org/
-ls
-rm *
-vi ftea 
-cat ftea |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > totea
-sh ~/scripts/grab-logged.sh totea
-tail -f totea.log 
-fdupes -r ./web.archive.org ~/tmp/sync/|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-rm -rf web.archive.org/
-rm *
-less ~/tmp/sync/byte-for-byte-identical-20171106-6.nt 
-tail -f corpus/gd.txt 
-less corpus/gd.txt 
-tail -f  corpus/gd.txt 
-git status
-git push origin issue-12
-git branch
-git checkout maori-scraper 
-vi Lib/corpuscrawler/crawl_mi.py 
-git add Lib/corpuscrawler/crawl_mi.py 
-git commit -m 'change to Translation.en:'
-git push origin maori-scraper 
-vi Lib/corpuscrawler/crawl_mi.py 
-git remote add upstream https://github.com/googlei18n/corpuscrawler.git
-git branch
-git checkout master
-git pull upstream master
-git push origin master 
-vi Lib/corpuscrawler/util.py
-#git checkout -b 'handle mixed broken/unbroken namespaces'
-git checkout -b mixed-ns
-git add Lib/corpuscrawler/util.py
-git commit -m 'handle mixed broken/unbroken namespaces'
-git push origin mixed-ns 
-git remote show
-git push origin mixed-ns 
-git checkout master
-git pull origin 
-git checkout irish-fixed 
-ls
-./corpuscrawler --language ga
-git pull origin irish-fixed 
-git merge mixed-ns 
-./corpuscrawler --language ga
-git pull origin irish-fixed 
-./corpuscrawler --language ga
-vi Lib/corpuscrawler/crawl_ga.py
-./corpuscrawler --language ga
-python
-cd Lib/corpuscrawler/
-python
-cd ..
-python
-perl -C7 'print \x{2618}'
-perl -C7 'print "\x{2618}"'
-perl -C7 'print "\x{0100}"'
-perl -C7 -e 'print "\x{0100}"'
-perl -C7 -e 'print "\x{2618}\n"'
-wget http://nzetc.victoria.ac.nz/tei-source/BIMs38TeAu.xml
-wget http://nzetc.victoria.ac.nz/tei-source/BIMs38TeAu.xml http://nzetc.victoria.ac.nz/tm/scholarly/name-101861.html
-wget http://nzetc.victoria.ac.nz/tei-source/KenGramm.xml
-less KenGramm.xml 
-wget http://nzetc.victoria.ac.nz/downloads/BIMs38TeAu.pdf
-less ../gd/68.txt 
-cat ../gd/68.txt 
-cat ../gd/68.txt |sed -e 's/<gai>//g;s/<eng>//g'
-cat ../gd/68.txt |sed -e 's/<gai>//g;s/<eng>//g'|less
-mkdir /tmp/proc
-cd /tmp/proc/
-mkdir fdet1
-mv *jpg fdet1/
-ls
-ls|wc
-ls
-cd fdet1/
-ls
-~/bin/blockhash *jpg >> ~/tmp/sync/bhash-20171107-3.tsv
-cd ..
-for i in 1 2 3 4 5 6 7 8 9 a b c d e f ;do ~/bin/blockhash $i*jpg >> ~/tmp/sync/bhash-20171107-3.tsv ;done
-for i in 1 2 3 4 5 6 7 8 9 a b c d e f ;do mkdir $i; mv $i*jpg $i/;done
-ls
-vi /tmp/galin 
-vi ~/tmp/foo/tospid
-vi /tmp/galin2
-vi ~/tmp/foo/tospid
-vi /tmp/galin
-vi ~/tmp/foo/tospid
-vi /tmp/galin2
-vi /tmp/galin
-vi ~/tmp/foo/tospid
-vi /tmp/galin
-vi ~/tmp/foo/tospid
-vi /tmp/galin2
-vi ~/tmp/foo/tospid
-vi /tmp/galin2
-mv /tmp/galin2 /tmp/galin7
-vi /tmp/url7
-vi /tmp/galin8
-vi /tmp/url8
-tail -f ~/tmp/foo/fash-rdf-links 
-vi /tmp/galin9
-vi /tmp/url9
-vi ~/tmp/foo/tospid
-vi /tmp/url8
-vi ~/tmp/foo/tospid
-vi /tmp/galina
-vi /tmp/urla
-vi ~/tmp/foo/tospid
-vi /tmp/galinb
-vi /tmp/urlb
-vi ~/tmp/foo/tospid
-vi /tmp/galinc
-vi /tmp/urlc
-vi ~/tmp/foo/tospid
-vi /tmp/galind
-vi /tmp/urld
-vi ~/tmp/foo/tospid
-vi /tmp/galine
-vi /tmp/urle
-vi ~/tmp/foo/tospid
-vi /tmp/galinf
-vi /tmp/urlf
-vi ~/tmp/foo/tospid
-tail -f ~/tmp/foo/fash-rdf-links 
-cat /tmp/galin9 
-cat /tmp/url9 
-tail -f ~/tmp/foo/fash-rdf-links 
-ls /tmp/asd/
-tail -f ~/tmp/foo/fash-rdf-links 
-tail -f ~/tmp/sync/bhash-20171107-4.tsv 
-ls /tmp/asd/
-ls
-tail -f /tmp//exif.out 
-ls fdet1/|wc
-ls
-ls 2|wc
-ls f|wc
-wc -l /tmp/galinf 
-tail -f /tmp//exif.out 
-cd /tmp/asd/
-tail -f inp.log 
-cat inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
-cd -
-ls
-cd -
-cd ~/tmp/foo/
-ls
-cat ~-/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-less ../sync/assumed-identical-20171108_092000.nt 
-wc -l ../sync/assumed-identical-20171108_092000.nt 
-wc -l /tmp/asd/inp
-cd -
-cat inp|while read i;do grep $i ~/tmp/sync/assumed-identical-20171108_092000.nt || echo $i >> inp.f; done
-rm inp.f 
-less inp
-cat inp|sed -e 's#http://web.archive.org/save/##'|while read i;do grep $i ~/tmp/sync/assumed-identical-20171108_092000.nt || echo http://web.archive.org/save/$i >> inp.f; done
-less inp.
-less inp.f 
-sh ~/scripts/grab-logged.sh inp.f
-tail -f inp.f.log 
-cat inp.f.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
-cd -
-ls
-cat ~-/inp.f.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-less ../sync/assumed-identical-20171108_092808.nt 
-wc -l ../sync/assumed-identical-20171108_0*
-find s1.postimg.org -type f|wc
-cd -
-ls
-rm *
-rm -rf web.archive.org/
-printf "%06s" 0123456789
-cd ~/tmp/foo/
-vi /tmp/galinf 
-vi /tmp/urlf 
-vi tospid
-vi /tmp/urle
-vi /tmp/galine
-vi tospid 
-vi /tmp/url1
-vi /tmp/galin1
-vi /tmp/galin2
-vi /tmp/url2
-vi tospid 
-vi /tmp/url2
-vi tospid 
-vi /tmp/galin3
-vi /tmp/url3
-vi tospid 
-vi /tmp/galin4
-vi /tmp/url4
-vi tospid 
-vi /tmp/galin5
-vi /tmp/url5
-vi tospid 
-vi /tmp/galin6
-vi /tmp/url6
-vi tospid 
-vi /tmp/galin7
-vi /tmp/url7
-vi tospid 
-vi /tmp/galin8
-vi /tmp/url8
-vi tospid 
-vi /tmp/galin9
-vi /tmp/url0
-vi /tmp/url9
-vi tospid 
-vi /tmp/galina
-vi /tmp/urla
-vi tospid 
-vi /tmp/galinb
-vi /tmp/urlb
-vi tospid 
-vi /tmp/galinc
-vi /tmp/urlc
-vi tospid 
-vi /tmp/galind
-vi /tmp/urld
-vi tospid 
-sh ~/scripts/spider.sh tospid
-tail -f tospid.log 
-tail tospid
-cat tospid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171107-1.nt 
-less ~/tmp/sync/http-misc-20171107-1.nt 
-rm tospid
-rm tospid.log 
-ls
 rm mrgd nohup.out 
 tail -f fash-rdf-links 
 cat /tmp/galin7 |while read i;do grep $i fash-rdf-links || echo $i >> /tmp/galin7.f;done
@@ -1998,3 +1688,313 @@ atom
 less ~/.config/chromium/Local\ State 
 less ~/.config/chromium/Default/Last\ Tabs 
 less ~/.config/chromium/Default/Current\ Tabs 
+cd /tmp/
+mkdir vfy
+cd vfy/
+unzip ../vfy.zip 
+ls
+cd verify
+ls
+for i in *;do grep $i ~/tmp/sync/tock/byte-for-byte-identical-20171106_c.nt ;done
+cd ../verify2/
+for i in *;do grep $i ~/tmp/sync/tock/byte-for-byte-identical-20171106_c.nt ;done
+cd ../verify3/
+ls
+for i in *;do grep $i ~/tmp/sync/tock/byte-for-byte-identical-20171106_c.nt ;done
+cd ../verify1
+for i in *;do grep $i ~/tmp/sync/tock/byte-for-byte-identical-20171106_c.nt ;done
+cd ..
+ls
+for i in *;do grep $i ~/tmp/sync/local-dup-201* ;done
+ls
+cd verify
+for i in *;do grep $i ~/tmp/sync/local-dup-201* ;done|awk -F'[<>]' '{print $6}' >> ../regrab
+less ../regrab 
+cd ../verify1/
+for i in *;do grep $i ~/tmp/sync/local-dup-201* ;done|awk -F'[<>]' '{print $6}' >> ../regrab
+cd ../verify2/
+for i in *;do grep $i ~/tmp/sync/local-dup-201* ;done|awk -F'[<>]' '{print $6}' >> ../regrab
+cd ../verify3/
+for i in *;do grep $i ~/tmp/sync/local-dup-201* ;done|awk -F'[<>]' '{print $6}' >> ../regrab
+cd ..
+sh ~/scripts/grab-logged.sh regrab
+tail -f regrab.log 
+ls
+fdupes -r .
+rm nohup.out 
+fdupes -r .|sed -e 's/^\.\/v/file:\/v/'
+fdupes -r .|sed -e 's/^\.\/v/file:\/v/'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-1.nt
+less ~/tmp/sync/local-dup-20171106-1.nt
+fdupes -r . > /tmp/dups
+grep verify /tmp/dups 
+grep verify /tmp/dups |while read i;do rm $i;done
+rm -rf web.archive.org/
+ls
+rm regrab
+rm regrab.log 
+ls
+ls verify
+ls verify2
+ls verify3
+ls verify4
+rmdir verify3
+rmdir verify1
+rmdir verify2
+ls
+ls verify1
+ls
+mv verify2/blockhash_c-20160701-3.tsv verify1/
+unzip ~/tmp/sync/tock/cxtx-20170209-1.zip 
+ls
+grep file: byte-for-byte-identical-201*
+grep '/dl' byte-for-byte-identical-201*
+ls
+rm *
+ls
+rmdir verify2/
+cd verify1
+ls
+for i in *;do grep $i ~/tmp/sync/tock/local-dup-201*;done
+grep zip ~/tmp/sync/tock/local-dup-201*
+grep zip ~/tmp/sync/tock/local-dup-201*|grep cx
+grep zip ~/tmp/sync/tock/local-dup-201*|grep cx|awk -F'[<>]' '{print $6}'
+wget $(grep zip ~/tmp/sync/tock/local-dup-201*|grep cx|awk -F'[<>]' '{print $6}')
+for i in dl*;do unzip -l $i;done
+rm dl.2
+unzip dl.1
+rm cf_* byte-for-byte-identical-20161216-1.nt image-depictions-f* unsorted-triples-2016* gallery-extracts-2016*
+ls
+cd ..
+mkdir tmp
+cd tmp/
+unzip /tmp/vfy.zip 
+for i in */*;do grep $i /tmp/dups && rm $i;done
+ls
+rmdir verify3
+cd ..
+ls
+cd verify1/
+ls
+mv local-dup-20161216-1.nt ..
+unzip -l dl
+unzip -l dl|grep loc
+unzip dl
+mv local-dup-2016* ..
+ls
+rm *
+ls
+cd ..
+ls
+cd tmp/verify1
+for i in *;do grep $i ../../local-dup-2016*;done
+ls
+find . -size 0
+cd ..
+ls
+cd ..
+ls
+grep cxtx local-dup-2016*
+wget $(grep zip local-dup-201*|grep cx|awk -F'[<>]' '{print $6}')
+ls
+mkdir unzi
+cd unzi/
+for i in ../dl*;do unzip $i;done
+ls
+rm [a-km-z]*
+ls
+ls ..
+rm ../local-dup-2016* ../dl*
+ls
+ls ..
+mv local-dup-2016* ..
+cd ..
+ls
+cd tmp/verify1
+for i in *;do grep $i ../../local-dup-2016*;done
+for i in *;do grep $i ../../local-dup-2016*;done|awk -F'[<>]' '{print $6}'
+for i in *;do grep $i ../../local-dup-2016*;done|awk -F'[<>]' '{print $6}'|grep web
+for i in *;do grep $i ../../local-dup-2016*;done|awk -F'[<>]' '{print $6}'|grep web > ../tock
+mv ../tock .
+mv tock ..
+cd ..
+ls
+sh ~/scripts/grab-logged.sh tock
+tail -f tock.log 
+ls
+ls verify1/
+ls verify2
+ls
+rm nohup.out 
+fdupes -r . > /tmp/dups1
+fdupes -r .|sed -e 's/^\.\/v/file:\/v/'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-1.nt
+less ~/tmp/sync/local-dup-20171106-1.nt
+grep ver /tmp/dups1 
+grep ver /tmp/dups1 |while read i;do rm $i;done
+ls
+rm tock*
+rm -rf web.archive.org/
+ls
+ls verify1/
+ls verify2/
+grep blockhash_c-20160701-3.tsv  ../local-dup-2016*
+wget -x -c http://web.archive.org/web/20160907080521/https:/filetea.me/t1sJ2xRbpaxRcyQYTAzW1DKZA/dl
+ls
+grep assumed ../local-dup-2016*
+grep assumed ../local-dup-2016*grep -v '201[5-7]'
+grep assumed ../local-dup-2016*|grep -v '201[5-7]'
+ls
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin
+sh ~/scripts/grab-logged.sh ftin
+tail -f ftin.log 
+ls
+vi ftin
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin1
+sh ~/scripts/grab-logged.sh ftin1
+tail -f ftin1.log 
+tail ftin.log 
+rm ftin
+rm ftin.log 
+tail -f ftin1.log 
+rm ftin1
+rm ftin1.log 
+vi redo 
+vi ftin
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin1
+sh ~/scripts/grab-logged.sh ftin1
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin2
+sh ~/scripts/grab-logged.sh ftin2
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin3
+sh ~/scripts/grab-logged.sh ftin3
+tail ftin1.log 
+rm ftin1
+rm ftin1.log 
+tail ftin2.log 
+rm ftin2
+rm ftin2.log 
+tail ftin3.log 
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin4
+sh ~/scripts/grab-logged.sh ftin4
+ls
+tail -f ftin3.log 
+rm ftin3
+rm ftin3.log 
+tail -f ftin4.log 
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin5
+sh ~/scripts/grab-logged.sh ftin5
+tail -f ftin5.log 
+rm ftin5
+rm ftin5.log 
+tail -f ftin4.log 
+rm ftin4
+rm ftin4.log 
+ls
+rm nohup.out redo 
+fdupes -r .|sed -e 's/^\.\/v/file:\/v/'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-2.nt
+less ~/tmp/sync/local-dup-20171106-2.nt
+fdupes -r .
+fdupes -r .|grep verify
+grep '<' ~/tmp/sync/local-dup-20171106-2.nt|wc
+fdupes -r .|grep verify
+fdupes -r .|grep verify|wc
+ls
+ls verify*/* |zip ~/tmp/sync/toverify.zip -@
+fdupes -r .|grep verify|while read i;do rm $i;done
+ls verify*/*
+rm -rf web.archive.org/
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin5
+sh ~/scripts/grab-logged.sh ftin5
+tail -f ftin5.log 
+#fdupes -r .|sed -e 's/^\.\/v/file:\/v/'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-2.nt
+fdupes -r .|sed -e 's/^\.\/v/file:\/v/'|perl ~/tmp/fdupes-proc.pl 
+fdupes -r .|sed -e 's/^\.\/v/file:\/v/'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-2.nt
+ls
+rm *
+rm -rf *
+cd ..
+ls
+rm *
+cd ..
+rm -rf vfy
+s
+ls
+rm vfy.zip 
+cd ~/tmp/
+cd sync/
+ls
+mv local-dup-20171106-1.nt local-dup-20171106-1vfy.nt
+less local-dup-20171106-1vfy.nt 
+grep file byte-for-byte-identical-20171106-6.nt 
+grep file: byte-for-byte-identical-20171106-6.nt  >> local-dup-20171106-1.nt 
+less local-dup-20171106-1.nt 
+ls
+cd /tmp/
+mkdir tock
+cd tock/
+vi redo
+cat redo |awk '{print "http://web.archive.org/save/" $0 "/dl"}' > ftin5
+sh ~/scripts/grab-logged.sh ftin5
+tail -f ftin5.log 
+#fdupes -r .|sed -e 's/^\.\/v/file:\/v/'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-3.nt
+fdupes -r . ~/tmp/sync|sed -e 's#/home/jim/#file:/'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-3.nt
+fdupes -r . ~/tmp/sync|sed -e 's#/home/jim/#file:/#'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/local-dup-20171106-3.nt
+less ~/tmp/sync/local-dup-20171106-3.nt
+;s
+ls
+rm *
+rm -rf web.archive.org/
+cd
+config branch
+config add .bash_history 
+config status
+config add .config/gtkrc
+config add .config/gtkrc-2.0 
+config add .config/katerc 
+config add .config/kded_device_automounterrc 
+config add .config/kglobalshortcutsrc .wine/*.reg .kde/share/config/kdialogrc .kde/share/config/kdeglobals 
+config commit -m aasdl
+config add .bash_history 
+config commit -m aasdl
+config add .bash_history 
+config commit -m aasdl
+config add .bash_history 
+config commit -m aasdl
+config add .bash_history 
+config commit -m aasdl
+cd /tmp/
+mkdir sphinxtrain
+cd sphinxtrain/
+sudo apt-get install sphinxtrain 
+#ls ~/Playing/Corpora/ga_UL/anb/
+sphinxtrain -t anb setup
+ls
+less etc/sphinx_train.cfg 
+find ~/Playing/Corpora/ga_UL/anb/ -name '*.wav'
+ffplay ~/Playing/Corpora/ga_UL/anb/text02/wav_trimmed/tcd_gd_text02-002_108.wav 
+less ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+apt-cache search xml|grep simple
+sudo apt-get install libxml-simple-perl 
+perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+perl -e '$a=1;if($a){print;}'
+perl -e '$a=1;if($a){print "o";}'
+perl -e '$a=0;if($a){print "o";}'
+perl -e '@f=(1,2);print join(@f, " ")'
+perl -e '@f=(1,2);print join(" ", @f)'
+perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+less ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+less ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_106.xml 
+less ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_107.xml 
+perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_106.xml 
+less dict.tsv 
+less ~/Playing/corpuscrawler/corpus/mi.txt
+grep “ ~/Playing/corpuscrawler/corpus/mi.txt
