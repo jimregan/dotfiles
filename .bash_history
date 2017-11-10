@@ -1,18 +1,3 @@
-ogimageproc https://www.instagram.com/p/BavlPQjAmT3/?taken-by=_daria___igorevna_
-ogimageproc https://www.instagram.com/p/BbJ6VOLFOAT/?taken-by=svetabily
-ogimageproc https://www.instagram.com/p/BbJ7zirl_IF/?taken-by=viki_odintcova
-ogimageproc https://www.instagram.com/p/BbG0UF8hJ5S/?taken-by=mo_na2016
-ogimageproc https://www.instagram.com/p/BaB2_wOBgLI/?taken-by=mo_na2016
-ogimageproc https://www.instagram.com/p/BbC02phlv8m/?taken-by=a.zimny
-ogimageproc https://www.instagram.com/p/BapJ72rFJFm/?taken-by=a.zimny
-ogimageproc https://www.instagram.com/p/Ba_KQkWgU91/?taken-by=vasilisa_beautiful_
-ogimageproc https://www.instagram.com/p/BbHvOfFACeo/?taken-by=vasilisa_beautiful_
-ogimageproc https://www.instagram.com/p/BbKfGUaAQQ-/?taken-by=anella_miller
-ogimageproc https://www.instagram.com/p/BbJmC77Abdb/?taken-by=anella_miller
-ogimageproc https://www.instagram.com/p/BbEuWEdgmoc/?taken-by=anella_miller
-ogimageproc https://www.instagram.com/p/BbAx0bQg1Kq/?taken-by=camila_cabello
-ogimageproc https://www.instagram.com/p/BbEc7cmnktm/?taken-by=aleksanina.k
-ogimageproc https://www.instagram.com/p/BagW9D7nBaA/?taken-by=aleksanina.k
 ogimageproc https://www.instagram.com/p/BXxpo8_H8UU/?taken-by=aleksanina.k
 ogimageproc https://www.instagram.com/p/BbEb5O3lMDu/?taken-by=_____diva_diva
 ogimageproc https://www.instagram.com/p/BbB1NmcFhGf/?taken-by=_____diva_diva
@@ -1998,3 +1983,18 @@ cd ..
 git clone https://github.com/kaitai-io/kaitai_struct.git
 git clone --recursive https://github.com/kaitai-io/kaitai_struct.git
 df
+config add open-tabs .bash_history 
+config commit -m more
+cd Playing/
+cd libwpd-project-generator/
+ls
+mv libloco/ ..
+cd ..
+cd libloco/
+ls
+less COPYING 
+sudo apt-get install musescore
+musescore 
+sudo apt-get install denemo
+denemo
+less ~/Downloads/Tajemnica\ Baskerville\ ów\ \ \ dziwne\ przygody\ Sherlocka.xml 
