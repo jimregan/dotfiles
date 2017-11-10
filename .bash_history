@@ -1,41 +1,3 @@
-sh ../wrap-exif.sh 
-vi /tmp//exif.out 
-mv /tmp//exif.out ~/tmp/sync/exif-20171106-6.xml
-~/bin/blockhash $(find s1.postimg.org -type f) > ~/tmp/sync/bhashc-20171106-6.tsv
-~/bin/blockhash $(filtfind ) > ~/tmp/sync/bhashc-20171106-6.tsv
-cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-ls
-find scontent-lh* -type f
-find scontent-lh* -type f|zip /tmp/copy.zip
-find scontent-lh* -type f|zip /tmp/copy.zip -@
-rm -rf scontent-lh*
-scp /tmp/copy.zip jimregan:/tmp
-rm /tmp//copy.zip 
-ls
-rm nohup.out 
-cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-less ../sync/http-misc-20171106-2.nt
-cat /tmp/asd/totea2.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-less ../sync/http-misc-20171106-2.nt
-cat /tmp/asd/totea2.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-less ../sync/http-misc-20171106-2.nt
-cat /tmp/asd/totea.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/regrab.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-less ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/tock.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/ftin.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/ftin1.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/ftin2.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/ftin3.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/ftin4.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-cat /tmp/vfy/tmp/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-2.nt
-less ../sync/http-misc-20171106-2.nt
-cat /tmp/tock/ftin5.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171106-3.nt
-less ../sync/http-misc-20171106-3.nt
-cd /tmp/toupl/
-ls
 ~/bin/blockhash screenshot_2017* >> ~/tmp/sync/bhashc-20171106-1.tsv
 ls
 for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171106-1.nt && rm $i;done
@@ -1997,4 +1959,42 @@ git commit -m merge
 git push mine develop-irish 
 scp /home/jim/Downloads/*epub jimregan:/tmp
 python
+ls
+cd ..
+git clone https://github.com/kaitai-io/kaitai_struct_formats.git
+cd kaitai_struct_formats/
+ls
+less database/dbf.ksy 
+less archive/rar.ksy 
+less filesystem/vfat.ksy 
+ls
+ls font/
+less machine_code/code_6502.ksy 
+less scientific/nt_mdt/
+less scientific/nt_mdt/nt_mdt.ksy 
+ls
+less image/bmp.ksy 
+less image/ico.ksy 
+less image/bmp.ksy 
+cd ..
+unzip ~/Downloads/json_spirit.zip 
+cd json_spirit/
+ls
+cd json_spirit/
+ls
+less json_spirit_reader.cpp 
+less json_spirit_writer.cpp 
+less json_spirit_writer.h 
+cd ..
+tar zxvf ~/Downloads/lapos-0.1.2.tar.gz 
+cd lapos-0.1.2/
+ls
+less README 
+less LICENSE 
+less README 
+less samples/train.pos 
+ls
+apt-cache search kspread
+apt-cache search calligra
+sudo apt-get install calligra
 ls
