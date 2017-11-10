@@ -1,9 +1,3 @@
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|awk '{print $2}'|grep jpg|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1mzudrve4/ ; done
-vi fash-rdf-links 
-rm fash-rdf-links 
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1mzudrve4/ ; done
-ls
-mkdir /tmp//asd
 find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp/asd/inp
 cd /tmp//asd/
 sh ~/scripts/grab-logged.sh inp
@@ -1998,3 +1992,9 @@ git checkout -b maori-bible
 git cherry-pick d651c4821f964b2b595bf73e2f54b81c0616149b
 git log
 git push mine maori-bible 
+cd /tmp/
+wget https://archive.org/stream/kotepaiperatapua00barl/kotepaiperatapua00barl_djvu.txt
+less kotepaiperatapua00barl_djvu.txt 
+vi gen.txt
+lynx -dump http://web.archive.org/web/20170408002807/http://www.paiperatapu.maori.nz/paipera-tapu-online
+python
