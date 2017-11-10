@@ -1,19 +1,3 @@
-find s1.postimg.org -type f|awk '{print "http://web.archive.org/save/https://" $0}' > /tmp/asd/inp
-cd /tmp//asd/
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-cd ~-
-ls
-~/bin/blockhash $(find s1.postimg.org -type f) >> ~/tmp/sync/bhashc-20171106-2.tsv 
-less ~/tmp/sync/bhashc-20171106-2.tsv 
-sh ../wrap-exif.sh 
-vi /tmp//exif.out 
-mv /tmp//exif.out ~/tmp/sync/exif-20171106-1.xml
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171106-1.nt
-less ~/tmp/sync/ookdata-20171106-1.nt
-identify /tmp/toupl/*
-ls
-cat ../sync/bhashc-20171106-2.tsv 
 cat ../sync/bhashc-20171106-2.tsv |awk -F'\t' '{print $1}'
 cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'
 cat ../sync/bhashc-20171106-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171106-1.tsv |awk '{print $2}' >> mrgd; grep $i ../sync/bhashc-20171106-2.tsv |awk '{print $2}' >> mrgd; done
@@ -1998,3 +1982,19 @@ less kotepaiperatapua00barl_djvu.txt
 vi gen.txt
 lynx -dump http://web.archive.org/web/20170408002807/http://www.paiperatapu.maori.nz/paipera-tapu-online
 python
+cd ~/Downloads/
+ls
+unrar Ross\ O\'Carroll-Kelly\ -\ Rhino\ What\ You\ Did\ Last\ Summer\ \(epub\).rar 
+unrar Ross\ O\'Carroll-Kelly\ -\ The\ Curious\ Incident\ of\ the\ Dog\ in\ the\ Nightdress\ \(retail\)\ \(epub\).rar 
+scp Ross\ O\'Carroll-Kelly\ -\ [RT]*epub jimregan:/tmp
+tail -f ~/Playing/corpuscrawler/corpus/mi.txt
+less ~/Playing/corpuscrawler/corpus/mi.txt
+vi /tmp/chin
+cat /tmp/chin |perl -ane 's/^([0-9]+) /{{verse|1|\1}}\n/;print'
+cat /tmp/chin |perl -ane 's/^([0-9]+) /\n{{verse|1|\1}}\n/;print'
+cd /tmp/
+cp ~/Playing/corpuscrawler/corpus/mi.txt .
+vi mi.txt 
+less mi.txt 
+cat mi.txt |perl bibler.pl 
+cat mi.txt |perl bibler.pl > wikiin
