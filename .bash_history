@@ -2095,3 +2095,13 @@ vi ~/open-tabs
 df
 cd ..
 history -a
+cd ..
+git clone https://github.com/JRBANCEL/Chromagnon.git
+cd Chromagnon/
+ls
+git branch -a
+git checkout SNSS
+ls
+python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs 
+python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs >> ~/open-tabs 
+history -a
