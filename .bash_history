@@ -1,12 +1,3 @@
-rm mrgd nohup.out 
-tail -f fash-rdf-links 
-cat /tmp/galin7 |while read i;do grep $i fash-rdf-links || echo $i >> /tmp/galin7.f;done
-wc -l /tmp//galin7
-wc -l /tmp//galin7.f 
-mv /tmp/galin7.f /tmp/galin7
-less ~/Downloads/C11121.m3u 
-ls
-. ../sourceme 
 filtfind |while read i;do grep $i ../sync/assumed-identical-20171108_092* ||echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
 filtfind |while read i;do grep $i ../sync/assumed-identical-20171108_092* || grep $i /tmp/asd/inp ||echo http://web.archive.org/save/https://$i >> /tmp//asd/inpa;done
 filtfind |wc
@@ -1998,3 +1989,12 @@ perl ~/xml.pl ~/Playing/Corpora/ga_UL/anb/text02/xml/tcd_gd_text02_002_106.xml
 less dict.tsv 
 less ~/Playing/corpuscrawler/corpus/mi.txt
 grep “ ~/Playing/corpuscrawler/corpus/mi.txt
+ls -al ~/.config/chromium/Default/Current\ Tabs 
+ls -al ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+python chromagnon ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+less ~/.config/chromium/Default/Current\ Tabs 
+python chromagnon ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs >> ~/.scratch/chromium-tabs
+python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
