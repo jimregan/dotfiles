@@ -1,114 +1,3 @@
-lynx -force_html -dump html|grep txt|awk -F/ '{print $NF}'|grep 'txt$'|while read i;do wget --no-check-certificate https://dasg.ac.uk/text/$i;done
-ls 
-ls *txt|zip ~/gd.zip -@
-vim -b 99.txt 
-ls
-grep '<' *
-grep '<eng>' *
-grep '<eng>' *|grep -v '<gai>'
-python
-cd ../corpuscrawler/
-git pull origin
-git branch
-git checkout master
-git pull origin
-git checkout maori-scraper 
-git checkout master
-git pull origin
-git checkout maori-scraper 
-git cherry-pick 9af054a5e5140dbcdf2253d989feacb2c41837e8
-git push origin maori-scraper 
-git checkout master
-git checkout issue-12
-git checkout -b issue-12
-vi Lib/corpuscrawler/crawl_gd.py 
-git diff
-./corpuscrawler --language gd
-vi Lib/corpuscrawler/crawl_gd.py 
-git status
-git branch
-git add Lib/corpuscrawler/crawl_gd.py 
-git commit -m 'first pass'
-vi Lib/corpuscrawler/crawl_gd.py 
-./corpuscrawler --language gd
-vi Lib/corpuscrawler/crawl_gd.py 
-./corpuscrawler --language gd
-grep assert Lib/corpuscrawler/*
-vi Lib/corpuscrawler/crawl_gd.py 
-./corpuscrawler --language gd
-vi Lib/corpuscrawler/crawl_gd.py 
-grep assert Lib/corpuscrawler/*
-vi Lib/corpuscrawler/crawl_ae.py
-vi Lib/corpuscrawler/crawl_gd.py 
-./corpuscrawler --language gd
-vi Lib/corpuscrawler/crawl_gd.py 
-./corpuscrawler --language gd
-vi Lib/corpuscrawler/crawl_gd.py 
-./corpuscrawler --language gd
-vi Lib/corpuscrawler/crawl_gd.py 
-git add Lib/corpuscrawler/crawl_gd.py 
-git commit -m 'remove page numbers and blank page notices'
-git push origin issue-12 
-vi Lib/corpuscrawler/crawl_gd.py 
-git add Lib/corpuscrawler/crawl_gd.py 
-git commit -m 'strip \r, replace multiple \n with one'
-git push origin issue-12 
-./corpuscrawler --language gd
-wget http://nzetc.victoria.ac.nz/tei-source/WillDict.xml
-./corpuscrawler --language gd
-vi tei2wiki.xsl
-man xsltproc 
-xsltproc tei2wiki.xsl KenGramm.xml 
-vi tei2wiki.xsl 
-xsltproc tei2wiki.xsl KenGramm.xml 
-vi tei2wiki.xsl 
-xsltproc tei2wiki.xsl KenGramm.xml 
-vi tei2wiki.xsl 
-xsltproc tei2wiki.xsl KenGramm.xml 
-vi tei2wiki.xsl 
-xsltproc tei2wiki.xsl KenGramm.xml 
-xsltproc tei2wiki.xsl KenGramm.xml |less
-vi tei2html.xsl
-xsltproc tei2html.xsl KenGramm.xml 
-xsltproc tei2html.xsl KenGramm.xml |less
-less KenGramm.xml 
-xsltproc tei2html.xsl KenGramm.xml 
-less KenGramm.xml |file
-less KenGramm.xml |less
-xsltproc tei2html.xsl KenGramm.xml |less
-less KenGramm.xml 
-less tei2wiki.xsl 
-less KenGramm.xml 
-less ~/Downloads/KenGramm.html 
-apt-cache search pandoc
-sudo apt-get install pandoc
-man pandoc
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html 
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |less
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''$1''/g"
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''$1''/g;print;"
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"
-./corpuscrawler --language gd
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|less
-less KenGramm.xml 
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|less
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;s/^\{\|/{|style=\"margin: auto;\""|less
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;'|sed -e 's/^\{\|/{|style="margin: auto;"'|less
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;'|sed -e 's/^\{\|/{|style="margin: auto;"'
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^\{\|/{|style="margin: auto;"'
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^\{\|/\{\|style="margin: auto;"'
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^\{\|/{|style="margin: auto;"/'
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^{|/{|style="margin: auto;"/'
-pandoc -f html -t mediawiki ~/Downloads/KenGramm.html |perl -ane "s/<span style=\"font-style:italic\">([^<]*)<\/span>/''\1''/g;print;"|sed -e 's/^{|/{|style="margin: auto;"/'|less
-./corpuscrawler --language gd
-history -a
-cd ~/Downloads/
-unzip ailink.zip 
-wine AILINK.EXE 
-cd 
-cd
-reset
-ls
 config add open-tabs .bash_history 
 config commit -m more
 history -a
@@ -1998,3 +1887,114 @@ cd ..
 rm -rf corpuscrawler/
 ls
 ls /tmp/*gpx
+cd ~/Downloads/
+for i in 2*jpg;do c44 -dpi 300 $i;done
+ls
+ls 2*
+djvm -c Niema_czego_trzeba_-_Chopin,_Noskowski.djvu 2739328.djvu 2739333.djvu 2739338.djvu 2739343.djvu 
+ls Niema_czego_trzeba_-_Chopin,_Noskowski.djvu 
+djvutoxml tombrownsschoold00hugh2.djvu 
+sudo apt-get install ocrodjvu
+sudo apt-get install python-djvu python-pyicu
+cd ../Playing/
+git clone https://github.com/jwilk/ocrodjvu.git
+less ~/Downloads/testletter.aww 
+apt-cache search ole|grep storage
+sudo cpan OLE::Storage
+lls ~/Downloads/testletter.aww 
+less /usr/local/bin/lls
+sudo cpan Startup
+lls ~/Downloads/testletter.aww 
+sudo cpan Unicode::Map
+lls ~/Downloads/testletter.aww 
+ls ~/Downloads/*.a*
+less ~/Downloads/test.apx 
+less ~/Downloads/sample.apx 
+less ~/Downloads/test.apx 
+less ~/Downloads/sample.apx 
+less ~/Downloads/test.apx 
+ls -al ~/Downloads/test.apx 
+less ~/Downloads/test.apx 
+less ~/Downloads/TESTDB.ADB 
+file ~/Downloads/TESTDB.ADB 
+apt-cache search mdbtools
+sudo apt-get install mdbtools 
+mdb-export ~/Downloads/TESTDB.ADB 
+mdb-schema ~/Downloads/TESTDB.ADB 
+mdb-export ~/Downloads/TESTDB.ADB RoundTable
+lls ~/Downloads/Write4.aww 
+lls ~/Downloads/Write6.aww 
+lls ~/Downloads/Write6.awp
+man lls
+lls ~/Downloads/cashflow.aws 
+ldat --all ~/Downloads/cashflow.aws 
+ldat --all ~/Downloads/Write4.aww 
+lls --save ~/Downloads/cashflow.aws 
+ls
+less CARDINAL_NUMBER_NAME 
+file CARDINAL_NUMBER_NAME 
+ls -al
+mkdir ability
+cd ability/
+lls --save ~/Downloads/cashflow.aws 
+lls --save ~/Downloads/cashflow.aws 7
+lls --save ~/Downloads/cashflow.aws Spreadsheet
+lls --save ~/Downloads/cashflow.aws 
+mkdir cashflow
+lls --save --dest_base cashflow/ ~/Downloads/cashflow.aws 
+ls cashflow/
+cd cashflow/
+less cashflow.01 
+less cashflow.07
+less cashflow.0b
+less cashflow.09
+less cashflow.08
+less cashflow.07
+less cashflow.04
+ls
+less cashflow.05
+less cashflow.01
+cd ..
+mkdir write4
+lls --save --dest_base write4/ ~/Downloads/Write4.aww 
+cd write4/
+ls
+less Write4.01
+less Write4.02
+less Write4.07
+less Write4.05
+less Write4.04
+ls -al
+less Write4.02 
+less Write4.01
+less ~/Downloads/Wikisource-20171105234548.xml 
+less ~/Downloads/Wikisource-20171105234741.xml 
+less ~/Downloads/Wikisource-20171105234808.xml 
+vi /tmp/rocmp.c
+gcc /tmp/rocmp.c
+vi /tmp/rocmp.c
+gcc /tmp/rocmp.c
+./a.out 
+vi /tmp/rocmp.c
+./a.out 
+gcc /tmp/rocmp.c
+./a.out 
+vi /tmp/rocmp.c
+gcc /tmp/rocmp.c
+./a.out 
+vi /tmp/rocmp.c
+gcc /tmp/rocmp.c
+./a.out 
+vi /tmp/rocmp.c
+gcc /tmp/rocmp.c
+./a.out 
+vi /tmp/rocmp.c
+gcc /tmp/rocmp.c
+./a.out 
+vi /tmp/rocmp.c
+gcc /tmp/rocmp.c
+./a.out 
+mkdir /tmp/toupl
+tail -f ~/tmp/sync/bhashc-20171106-1.tsv
+tail -f /tmp//exif.out 
+tail -f /tmp/asd/inp.log 
