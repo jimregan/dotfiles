@@ -1,24 +1,3 @@
-rmemptydir 
-ls
-ls|wc
-mkdir d
-ls |head -n 300
-mv $(ls *jpg |head -n 300) d/
-ls
-ls|wc
-mkdir e
-mv *jpg e/
-ls
-rm /tmp/galin*
-rm /tmp/url*
-ls /tmp/asd/
-rm -rf /tmp//asd/
-mkdir /tmp/asd
-history -a
-ls
-cd d/
-for i in *;do grep $(echo $i|sed -e 's/Reg/_Reg/') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-4.nt && rm $i;done
-ls
 for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-4.nt && rm $i;done
 ls
 cd ../e/
@@ -2008,3 +1987,14 @@ cd
 config add .bash_history 
 config commit -m more
 history -a
+config add .bash_history 
+config commit -m more
+ls /tmp/
+ls /tmp/tock/
+ls /tmp/toupl/
+ls /tmp/proc/
+ls /tmp/a1 
+ls /tmp/foo
+reboot
+atom
+loginctl unlock-sessions
