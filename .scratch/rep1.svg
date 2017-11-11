@@ -1,0 +1,19 @@
+<svg width="640" height="480" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <line fill="none" stroke-width="5" stroke="#000000" id="svg_1" y2="170" x2="145" y1="70" x1="145"/>
+  <line fill="none" stroke-width="5" stroke="#000000" id="svg_2" y2="170" x2="285" y1="170" x1="145"/>
+  <line fill="none" stroke-width="5" stroke="#000000" id="svg_3" y2="170" x2="285" y1="90" x1="285"/>
+  <line fill="none" stroke-width="5" stroke="#000000" id="svg_4" y2="70" x2="245" y1="70" x1="145"/>
+  <line fill="none" stroke-width="5" stroke="#000000" id="svg_5" y2="70" x2="245" y1="90" x1="285"/>
+  <text x="167.699838" y="168.197881" id="svg_10" fill="#000000" stroke="#000000" stroke-width="0" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.5001625418663025,0,0,0.37389714202990115,77.7786096893251,109.23478516495004) ">x</text>
+  <text x="150.173077" y="158.567075" id="svg_11" fill="#000000" stroke="#000000" stroke-width="0" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.47924799658600437,0,0,0.3091206669052937,73.01470230114163,117.50085493721129) ">x</text>
+  <line x1="145.5" y1="77" x2="154.5" y2="99" id="svg_12" stroke="#000000" stroke-width="5" fill="none"/>
+  <text x="147.16667" y="134.125" id="svg_13" fill="#000000" stroke="#000000" stroke-width="0" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.4171001315116883,0,0,0.30115827135597684,83.36622215993701,95.59749349543269) ">x</text>
+  <text x="168.70079" y="142.77182" id="svg_17" fill="#000000" stroke="#000000" stroke-width="0" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.4976888458015691,0,0,0.4928815275084865,78.47483473822885,65.76768088549434) ">P2</text>
+  <text x="152.66397" y="164.97651" id="svg_18" fill="#000000" stroke="#000000" stroke-width="0" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.4848255480822772,0,0,0.5269925076632695,56.63759502552844,81.4723269047193) ">D1</text>
+  <text x="170" y="193" id="svg_19" fill="#000000" stroke="#000000" stroke-width="0" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.5439497561488966,0,0,0.5089865892179161,69.9463482148409,86.811717955771) ">P1</text>
+  <text x="330.48217" y="67.24138" id="svg_20" fill="#000000" stroke="#000000" stroke-width="0" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.4905528426170349,0,0,0.5178571343421936,119.13103370927274,38.57142925262451) ">Fireplace</text>
+  <line fill="none" stroke-dasharray="null" stroke-width="5" stroke="#000000" id="svg_21" y2="85.6" x2="271.7" y1="76.3" x1="252.7"/>
+ </g>
+</svg>
