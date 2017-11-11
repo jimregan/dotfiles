@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 package ie.tcd.slscs.itut.DictionaryConverter
-sealed abstract class Entry
+abstract class Entry
 abstract class TranslationEntry(src: String, trg: String) extends Entry {
   def isAmbiguous: Boolean = trg.contains(",")
   def hasBrackets: Boolean = trg.contains("(")

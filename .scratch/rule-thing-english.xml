@@ -53,25 +53,24 @@
     </rule>
 
     <rule name="v">
+      <common>
+        <entry tags="pres" equals="inf" />
+        <entry tags="pprs" equals="ger" />
+        <entry tags="subs" equals="ger" />
+      </common>
       <subrule default="yes">
         <entry tags="inf" ending="~" />
-        <entry tags="pres" equals="inf" />
         <entry tags="pri.p3.sg" ending="~s" />
         <entry tags="past" ending="~ed" />
         <entry tags="pp" equals="past" />
         <entry tags="ger" ending="~ing" />
-        <entry tags="pprs" equals="ger" />
-        <entry tags="subs" equals="ger" />
       </subrule>
       <subrule match="~e">
         <entry tags="inf" ending="~" />
-        <entry tags="pres" equals="inf" />
         <entry tags="pri.p3.sg" ending="~s" />
         <entry tags="past" ending="~d" />
         <entry tags="pp" equals="past" />
         <entry tags="ger" ending="-ing" />
-        <entry tags="pprs" equals="ger" />
-        <entry tags="subs" equals="ger" />
       </subrule>
     </rule>
 

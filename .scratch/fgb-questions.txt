@@ -3,4 +3,4 @@ TYPESETCx.xml:<entry xml:space="preserve"><title>clóicín, </title><g>m. (gs. <
 TYPESETCx.xml:<entry xml:space="preserve"><title>cróma</title><x>2</x>(<h>e</h><x>0</x>i)<h>-, </h><g>pref. </g><trans><r>Chromo-</r></trans></entry>
 TYPESETSx.xml:<entry xml:space="preserve"><title>strolús</title><x>1</x>, <b>~e</b><x>0</x>ach<x>1</x> = <s>treallús, -ach.</s></entry>
 
-
+<entry xml:space="preserve"><title>rí</title><x>1</x>, <g>m. (gs. </g><b>~, </b><g>pl. </g><b>~the, </b><g>gpl. </g><b>~ </b><g>used in phrases</g>).<p>   </p><trans><r>King. </r></trans><b>1. </b>(<l>a</l>)<trans><r> Sovereign, monarch. </r></trans><c>B</c>:<r> </r>(<l>b</l>)<r> </r><c>Hist</c>:<trans><r> Ruler, chief. </r></trans>(<l>c</l>)<r> </r><c>Hist</c>:<trans><r> Leader. </r></trans><b>2.  </b><r>(Of God) </r><b>3. </b><r>(Of pre-eminent person or thing) </r><b>4. </b><c>Cards</c>:<r> </r><c>Chess</c>:<r>  </r><c>Draughts</c>:<trans><r> King. </r></trans><b>5. </b>(<l>a</l>)<r> </r><c>Orn</c>:<r> </r>(<l>b</l>)<r> </r><c>Astr</c>:<r> </r></entry>

@@ -6,7 +6,7 @@
   </group>
   <chargroup name="adjinitlen" repeated="no">bcdfgmpst</chargroup>
   <word-rules>
-    <rule name="m1">
+    <rule name="m1" replacement_tag="m">
       <subrule match="~each" append_bil="weak">
         <entry tags="sg.nom" ending="~" />
         <entry tags="sg.gen" ending="-igh" />

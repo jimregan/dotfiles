@@ -13,6 +13,7 @@ ClassNoun(["ciste"/"ciste"/noun "airgeadaíochta"/"airgeadaíocht"/noun], <http:
 	with genitive plural "cistí airgeadaíochta",
 Name(["Ciste Airgeadaíochta"/"ciste airgeadaíochta"/noun "Idirnáisiúnta"/"idirnáisiúnta"/adjective], ) masculine with genitive "Ciste Airgeadaíochta Idirnáisiúnta",
 Name(["Eoin"/"proper noun" "Baiste"/"baiste"/noun], gadbp:Eoin_Baiste) masculine with genitive "Eoin Baiste",
+Name(["San"/noun "Seán"/"proper noun"], gadbp:Eoin_Baiste) masculine with genitive "San Seáin",
 ClassNoun(["luibh"/noun "Eoin Baiste"/"proper noun"], ) feminine 
 	with genitive "luibhe Eoin Baiste"
 	with nominative plural "luibheanna Eoin Baiste"

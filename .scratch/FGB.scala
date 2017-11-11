@@ -23,8 +23,8 @@
  */
 package ie.tcd.slscs.itut.DictionaryConverter
 
-case class SeeAlso(src: String, trg: String)
-case class NounSeeAlso(src: String, trg: String, gen: String)
+case class SeeAlso(src: String, trg: String) extends Entry
+case class NounSeeAlso(src: String, trg: String, gen: String) extends Entry
 
 object FGB {
   import scala.xml._

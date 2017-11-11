@@ -1,12 +1,14 @@
 <rules>
-  <group n="add_e" repeated="no">
-    <item>ch</item>
-    <item>sh</item>
-    <item>x</item>
-  </group>
-  <chargroup name="double" repeated="no">bdgtnmp</chargroup>
-  <chargroup name="vowel" repeated="no">aeiou</chargroup>
-  <chargroup name="nonvowel" repeated="no" negates="vowel" />
+  <groups>
+    <group n="add_e" repeated="no">
+      <item>ch</item>
+      <item>sh</item>
+      <item>x</item>
+    </group>
+    <chargroup name="double" repeated="no">bdgtnmp</chargroup>
+    <chargroup name="vowel" repeated="no">aeiou</chargroup>
+    <chargroup name="nonvowel" repeated="no" negates="vowel" />
+  </groups>
   <word-rules>
     <rule name="adj.sint">
       <subrule match="~&vowel;&double;">

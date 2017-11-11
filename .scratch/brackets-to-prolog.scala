@@ -18,7 +18,7 @@ case class Terminal(label: String, l: List[Node]) extends Node
 case class NonTerminalGroup(l: List[NonTerminal]) extends Node
 
 def tokenise(s: String): List[Token] = {
-  @tailrec
+  @annotation.tailrec
   def tokeniser(ca: List[Char], l: List[Token]): List[Token] = ca match {
     case '[' :: rest => tokeniser(rest, l ++ List(Left()))
     case ']' :: rest => tokeniser(rest, l ++ List(Right()))
@@ -36,7 +36,7 @@ def tokenise(s: String): List[Token] = {
       tokeniser(newrest, l ++ List(Text(out.mkString)))
     }
     case List(']') => tokeniser(List[Char](), l)
-    case _ => l
+    case Nil => l
   }
 
   val clist = s.toCharArray.toList
@@ -82,15 +82,16 @@ def filterNodes(l: List[Token]): List[Token] = {
     case Nil => acc
   }
   @tailrec
-  def parentAll(l: List[Token], acc: List[Token]): List[Token] = l match {
+  def parentAll(l: List[Token]): Terminal = l match {
+    case TerminalLabel(p) :: TerminalLabel(c) :: rest => Terminal(p, List(parentAll(List(TerminalLabel(c)) ++ rest)))
     case TerminalLabel(l) :: rest => {
       val children = rest.takeWhile(j => !isRight(j))
       val newrest = rest.dropWhile(j => !isRight(j))
-        if(isRight(newrest(0))) {
-          parentNTs(newrest.drop(1), acc ++ List(Terminal(l, nts)))
+//        if(isRight(newrest(0))) {
+          //Terminal(l, children)
+          parentAll(List[Token](Terminal(l, children)) ++ List(rest.drop(0)))
+//        }
     }
-    case t:TerminalLabel(l) => t
-    case Nil => acc
   }
 
   filterNodesInner(l, Nil)
@@ -106,4 +107,5 @@ def isNT(t: Token): Boolean = t match {
   case _ => false
 }
 
+[.S [.NP [.NP [.N The ] [.A big ] [.N man ] [.Rel who ] [.VP [.VP [.V was ] [.V eating ] ] ]
 

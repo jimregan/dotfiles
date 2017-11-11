@@ -23,7 +23,7 @@ using System.Linq;
  
 public class Gaddag
 {
-    public Node RootNode { get; private set; }
+    public Node RootNode;
     public Node getRootNode() {
         return this.RootNode;
     }

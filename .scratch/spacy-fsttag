@@ -114,7 +114,7 @@
     'VTI' => '',
     'Var' => '',
     'Vb' => '',
-    'Verb' => '',
+    'Verb' => 'POS: VERB',
     'Verbal' => '',
     'Voc' => '',
     'Vow' => '',
