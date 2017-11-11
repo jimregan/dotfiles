@@ -1,0 +1,40 @@
+au	prn.pers.p1.sg	I
+ahau	prn.pers.p1.sg	I	?difference?
+koe	prn.pers.p2.sg	you
+ia	prn.pers.p3.sg	he,she,it
+tāua	prn.pers.p1.du.inc	we
+tātou	prn.pers.p1.pl.inc	we
+māua	prn.pers.p1.du.exc	we
+mātou	prn.pers.p1.pl.exc	we
+kōrua	prn.pers.p2.du	you
+koutou	prn.pers.p2.pl	you
+rāua	prn.pers.p3.du	they
+rātou	prn.pers.p3.pl	they
+i	vpart.past
+kua	vpart.pperf
+kei te	vpart.pres
+ka	vpart.fut
+haere	vblex	go
+hoki mai	vblex	return
+te	det.def.sg
+ngā	det.def.pl
+tēnei	det.dem.sg	this
+tēnā	det.dem.sg	that
+tērā	det.dem.sg	that
+ēnei	det.dem.pl	these
+ēnā	det.dem.pl	those
+ērā	det.dem.pl	those
+he	vbser	be
+tahi	num.sg	one
+rua	num.pl	two
+toru	num.pl	three
+whā	num.pl	four
+rima	num.pl	five
+ono	num.pl	six
+whitu	num.pl	seven
+waru	num.pl	eight
+iwa	num.pl	nine
+tekau	num.pl	ten
+a	det.pers		(personal article)
+i	part.acc
+ki a au nei	adv	in my opinion
