@@ -1,5 +1,5 @@
 kcminputrc Mouse cursorTheme 'breeze_cursors'
-!/home/jim/.config/kcminputrc
+/home/jim/.config/kcminputrc
 !/etc/xdg/xdg-/usr/share/xsessions/plasma/kcminputrc
 !/etc/xdg/kcminputrc
 !/usr/share/kubuntu-default-settings/kf5-settings/kcminputrc
@@ -10,7 +10,7 @@ kcminputrc Mouse cursorTheme 'breeze_cursors'
 !/var/lib/snapd/desktop/config/kcminputrc
 *
 kcminputrc Mouse cursorSize ''
-!/home/jim/.config/kcminputrc
+/home/jim/.config/kcminputrc
 !/etc/xdg/xdg-/usr/share/xsessions/plasma/kcminputrc
 !/etc/xdg/kcminputrc
 !/usr/share/kubuntu-default-settings/kf5-settings/kcminputrc

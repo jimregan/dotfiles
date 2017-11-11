@@ -1,0 +1,13 @@
+def _is_ga_upper_vowel(char):
+	vowels = ['A', 'E', 'I', 'O', 'U', 'Á', 'É', 'Í', 'Ó', 'Ú']
+	return char in vowels
+
+def _ga_lower(string):
+	prefix = ['t', 'n']
+	vowels = ['A', 'E', 'I', 'O', 'U', 'Á', 'É', 'Í', 'Ó', 'Ú']
+	if string[0] in prefix and string[1] in vowels:
+		return string[0] + '-' + string[1:].lower()
+	else:
+		return string.lower()
+
+

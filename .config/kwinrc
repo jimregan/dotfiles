@@ -1,5 +1,5 @@
 [Compositing]
-OpenGLIsUnsafe=false
+OpenGLIsUnsafe=true
 
 [Desktops]
 Number=1

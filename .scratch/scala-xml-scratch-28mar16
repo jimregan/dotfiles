@@ -1,0 +1,9 @@
+<entry><title><src>{src}</src>, <label>{label}</label>  <trg>{trg}</trg>.</title></entry>
+
+<entry><title><src>{src}</src>, <label>{l}</label>{spc}<trg>{trg}<label>{gender}</label></trg>{tail}</title></entry>
+
+
+scala> enn match {     | case <entry><title><src>{src}</src>, <label>{l}</label>{spc}<trg>{trg}<label>{gender}</label></trg>{tail}</title></entry> => n(src.text, trg.text, gender.text, tail.text)
+     | }
+res15: n = n(abdomen,Bolg ,m,.)
+

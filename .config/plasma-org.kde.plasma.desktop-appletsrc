@@ -51,6 +51,13 @@ plugin=org.kde.plasma.pager
 immutability=1
 plugin=org.kde.plasma.taskmanager
 
+[Containments][1][Applets][4][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][Applets][4][Configuration][General]
+showToolTips=false
+
 [Containments][1][Applets][5]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -59,47 +66,47 @@ plugin=org.kde.plasma.systemtray
 formfactor=2
 location=4
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][24]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][36]
 immutability=1
 plugin=org.kde.plasma.volume
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][24][Configuration][ConfigDialog]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][36][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][25]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][37]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][26]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][38]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][27]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][39]
 immutability=1
 plugin=org.kde.kdeconnect
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][28]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][40]
 immutability=1
 plugin=org.kde.plasma.notifications
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][29]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][41]
 immutability=1
 plugin=org.kde.plasma.printmanager
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][30]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][42]
 immutability=1
 plugin=org.kde.discovernotifier
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][31]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][43]
 immutability=1
 plugin=org.kde.plasma.battery
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][32]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][44]
 immutability=1
 plugin=org.kde.ktp-contactlist
 
-[Containments][1][Applets][5][Configuration][Containments][12][Applets][33]
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][45]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
@@ -116,7 +123,7 @@ DialogHeight=84
 DialogWidth=1920
 
 [Containments][1][General]
-AppletOrder=2;3;4;5;6;23
+AppletOrder=2;3;4;5;23;6
 
 [Containments][10]
 activityId=9db71ab8-4547-4802-93c5-df5576d5557f

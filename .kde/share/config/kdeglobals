@@ -124,9 +124,13 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=100
-View Style=Simple
+Speedbar Width=335
+View Style=Detail
+detailedViewIconSize=0
 listViewIconSize=0
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [Toolbar style]
 ToolButtonStyle=TextBesideIcon
