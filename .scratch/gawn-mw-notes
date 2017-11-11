@@ -1,0 +1,21 @@
+n.m.sg.nom	acadamh+Noun+Masc+Com+Sg ríoga+Adj+Base
+n.m.sg.nom.detart	acadamh+Noun+Masc+Com+Sg+DefArt ríoga+Adj+Base
+n.m.sg.gen	acadamh+Noun+Masc+Gen+Sg ríoga+Adj+Base+Len
+n.m.sg.gen.detart	acadamh+Noun+Masc+Gen+Sg+DefArt ríoga+Adj+Base+Len
+n.m.pl.nom	acadamh+Noun+Masc+Com+Pl ríoga+Adj+Base
+n.m.pl.nom.detart	acadamh+Noun+Masc+Com+Pl+DefArt ríoga+Adj+Base
+n.m.pl.gen	acadamh+Noun+Masc+Gen+Weak+Pl ríoga+Adj+Base
+n.m.pl.gen.detart	acadamh+Noun+Masc+Gen+Weak+Pl+DefArt ríoga+Adj+Base
+
+ClassNoun(["ciste"/"ciste"/noun "airgeadaíochta"/"airgeadaíocht"/noun], <http://wordnet-rdf.princeton.edu/wn31/monetary%20fund-n>) masculine 
+	with genitive "ciste airgeadaíochta"
+	with nominative plural "cistí airgeadaíochta"
+	with genitive plural "cistí airgeadaíochta",
+Name(["Ciste Airgeadaíochta"/"ciste airgeadaíochta"/noun "Idirnáisiúnta"/"idirnáisiúnta"/adjective], ) masculine with genitive "Ciste Airgeadaíochta Idirnáisiúnta",
+Name(["Eoin"/"proper noun" "Baiste"/"baiste"/noun], gadbp:Eoin_Baiste) masculine with genitive "Eoin Baiste",
+ClassNoun(["luibh"/noun "Eoin Baiste"/"proper noun"], ) feminine 
+	with genitive "luibhe Eoin Baiste"
+	with nominative plural "luibheanna Eoin Baiste"
+	with genitive plural "luibheanna Eoin Baiste",
+
+

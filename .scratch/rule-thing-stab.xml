@@ -1,0 +1,36 @@
+<rules>
+  <group n="cons" repeated="no">
+    <item>d</item>
+    <item>n</item>
+    <item>l</item>
+  </group>
+  <chargroup name="adjinitlen" repeated="no">bcdfgmpst</chargroup>
+  <word-rules>
+    <rule name="m1">
+      <subrule match="~each" append_bil="weak">
+        <entry tags="sg.nom" ending="~" />
+        <entry tags="sg.gen" ending="-igh" />
+        <entry tags="sg.voc" equals="sg.gen" />
+        <entry tags="pl.nom" equals="sg.gen" />
+        <entry tags="pl.gen" equals="sg.nom" />
+        <entry tags="pl.nom" ending="~a" />
+      </subrule>
+      <subrule match="~ach" append_bil="weak">
+        <entry tags="sg.nom" ending="~" />
+        <entry tags="sg.gen" ending="-aigh" />
+        <entry tags="sg.voc" equals="sg.gen" />
+        <entry tags="pl.nom" equals="sg.gen" />
+        <entry tags="pl.gen" equals="sg.nom" />
+        <entry tags="pl.nom" ending="~a" />
+      </subrule>
+      <subrule match="~éa&cons;" append_bil="weak">
+        <entry tags="sg.nom" ending="~" />
+        <entry tags="sg.gen" ending="-éi&cons;" />
+        <entry tags="sg.voc" equals="sg.gen" />
+        <entry tags="pl.nom" equals="sg.gen" />
+        <entry tags="pl.gen" equals="sg.nom" />
+        <entry tags="pl.nom" ending="~a" />
+      </subrule>
+    </rule>
+  </word-rules>
+</rules>

@@ -1,0 +1,5 @@
+def _is_ga_upper_vowel(char):
+	vowels = ['A', 'E', 'I', 'O', 'U', 'Á', 'É', 'Í', 'Ó', 'Ú']
+	return char in vowels
+
+ 
