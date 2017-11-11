@@ -1,0 +1,86 @@
+Transfer rules
+
+Date rules
+
+FIXME: These need to be double checked. I used 'Dé Luain', etc., in the original set of rules primarily to double check that these could be generated, and never got around to fixing them. 
+
+on DAY the ORD of MONTH YEAR
+(on Monday the 8th of April 2011)
+
+->
+should this be:
+ar an Luan an 8 Aibreán, 2011
+Dé Luain, 8 Aibreán 2011
+
+on DAY the ORD
+(On Monday the 8th)
+Dé Luain 8ú
+FIXME: should have an article?
+
+on NUM MONTH
+(On 6 April)
+ar an 6ú lá de mhí Aibreáin
+
+on NUM MONTH YEAR
+(On 6 April 2011)
+ar an 6ú lá de mhí Aibreáin, 2011
+
+on DAY
+(on Monday)
+ar an Luan
+
+Transfer rules.
+
+Lexical transfer in Apertium is based on fixed-length patterns. As these
+patterns typically correspond to linguistic chunks, and because in its 
+multi-stage configuration, the lexical transfer compenent groups its output
+into chunks, this process is referred to as chunking; it is not, however,
+the same process as is typically intended in natural language processing, where
+chunking is a part of the analysis process. In Apertium, chunking is 
+translation-driven, and the ``chunks'' it processes do not always have a
+one-to-one correspondence with the chunks of a single-language analysis.
+
+One common pattern that frequently occurs among European languages where the
+chunking boundaries are blurred for the purpose of translation is where verbs
+and pronouns collocate. For example, although French is, like English, an SVO
+language, in sentences containing personal pronouns as the object, it adopts
+an SOV configuration. Similarly, between Irish and English there is a need to
+consider object pronouns together with the verb when translating the English
+continuous tenses: ``doing it'' ought not to be translated as ``ag d\'eanamh \'e'',
+but rather as ``\'a dh\'eanamh''; that is, the two English chunks need to be
+merged into a single Irish chunk.
+
+This consideration of target language aside, as chunking is performed by the
+structural transfer component, it takes care of local agreements and reordering.
+As later processing stages which move chunks are based around this initial
+structural transfer component, they inherit from it a structure based on the
+morphologically analysed tokens that the initial transfer component receives;
+that is, the chunks it outputs are not only assigned chunk tags to reflect
+the type of phrase contained in the chunk, but are assigned a chunk ``lemma'',
+which more accurately describes its contents, as well as any tags that are
+deemed relevant. So, in a chunk containing a noun phrase, the contents of the
+tags of the noun that describe its gender and number can be propagated to the
+chunk, which the later stages can propagate to other chunks, to ensure, for 
+example, that the verb agrees with its subject. The tags assigned to words within the chunk can
+be replaced with a pointer to the chunk's own tags, meaning that changes to
+those chunks are passed to those words immediately.
+
+A final, post-chunk phase removes the chunking, outputting the words within. Tags
+that are linked to 
+
+\begin{verbatim}
+output from tagger:
+^the<det><def><sg>$ ^big<adj><sint>$ ^house<n><sg>$ ^of<pr>$ ^the<det><def><sg>$ ^small<adj><sint>$ ^man<n><sg>$
+
+``chunking'' (incorporating lexical and structural transfer)
+^det_adj_n<NP><DEFART><m><sg><CD><defart>{^an<det><def><4><5>$ ^teach<n><3><4><5><6>$ ^mór<adj><3><4><5><6>$}$
+^of<PR>{}
+^det_adj_n<NP><DEFART><m><sg><CD><defart>{^an<det><def><4><5>$ ^fear<n><3><4><5><6>$ ^beag<adj><3><4><5><6>$}$
+
+second stage:
+^det_adj_n<NP><REMOVEART><m><sg><com>{^an<det><def><4><5>$ ^teach<n><3><4><5><6>$ ^mór<adj><3><4><5><6>$}$
+^det_adj_n<NP><DEFART><m><sg><gen><defart>{^an<det><def><4><5>$ ^fear<n><3><4><5><6>$ ^beag<adj><3><4><5><6>$}$
+
+final stage:
+^teach<n><m><sg><com>$ ^mór<adj><m><sg><com>$ ^an<det><def><sg><gen>$ ^fear<n><m><sg><gen><defart>$ ^beag<adj><m><sg><gen>$
+\end{verbatim}
