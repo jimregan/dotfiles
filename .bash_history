@@ -1998,3 +1998,389 @@ ls /tmp/foo
 reboot
 atom
 loginctl unlock-sessions
+config status
+config diff
+config add .config/gedit/accels
+config commit -m 'local change'
+config status
+less wexford.tex 
+mkdir .scratch
+mv wexford.* .scratch/
+less ubuntu-things-to-try 
+mv ubuntu-things-to-try .scratch/
+config checkout -b misc
+config add .scratch/*
+cd .scratch/
+mv wexford.tex ..
+mv wexford.bib ..
+mv ../wexford.tex .
+mv wexford.bib~ wexford.bib
+config add wexford.*
+config commit -m old
+mv ../wexford.bib .
+config add wexford.*
+config commit -m old
+cd ..
+ls
+ls wnplaying/
+ls
+less pcomb.scala 
+mv pcomb.scala .scratch/
+less taintmp 
+mv taintmp .scratch/
+ls
+mv tippgaa.addresses .scratch/
+less tabs-7jun16 
+mv tabs-7jun16 .scratch/
+ls
+less spsim-bits.scala.txt 
+mv spsim-bits.scala.txt .scratch/
+less swinglon2 
+ls
+mv transfer-report~ .scratch/
+mv .scratch/transfer-report~ .scratch/transfer-report
+config add .scratch/*
+config commit -m old
+mv transfer-report .scratch/
+ls
+ls *~
+less hpsg-notes
+mv *~ .scratch/
+cd .scratch/
+ls
+for i in *~;do mv $i $(echo $i|sed -e 's/~//'); done
+ls
+config add *
+config commit -m old
+for i in *;do if [ -e ../$i ];then mv ../$i . ;fi;done
+config add *
+config commit -m old
+ls
+less ros-na-run.txt 
+less irish-audio 
+less kaldi-links-etc 
+config rm GADDAG.java 
+less rule-thing-english.xml 
+less notes-from-meeting-elaine-2ndaug 
+config rm notes-from-meeting-elaine-2ndaug 
+config commit -m rm
+l
+ls
+config rm tippgaa.addresses 
+cd ..
+ls
+less tuairisc-film-review-uris.txt 
+mv tuairisc-film-review-uris.txt .scratch/
+less tatar-dbpedia-notes 
+mv tatar-dbpedia-notes .scratch/
+mv stanford-links-29feb16 .scratch/
+ls -al .scratch/
+config status
+less synthetic-adjectives.txt 
+mv synthetic-adjectives.txt .scratch/
+less sphp-data 
+mv sphp-data .scratch/
+ls
+less tei2wikitext.xsl 
+less sounds/
+ls sounds/
+ls sounds/output/
+ls
+less solong.tg 
+mv solong.tg .scratch/
+mv spacy-tokens.in .scratch/
+ls
+less slownik-gwar-polskich-images 
+mv slownik-gwar-polskich-images .scratch/
+ls
+less sim.scala 
+mv sim.scala .scratch/
+less spone.tex 
+mv spone.tex .scratch/
+ls
+less sendvid.tmp 
+mv sendvid.tmp .scratch/
+ls
+less sl-adj
+mv sl-adj-es .scratch/
+mv sl-adj .scratch/
+ls
+ls *~
+mv links-* .scratch/
+cd  .scratch/
+ls
+less links-to-self 
+config status
+config add *
+config commit -m old
+config rm sendvid.tmp 
+less sl-adj
+less sl-adj-es 
+config rm sl-adj
+config rm sl-adj-es 
+ls
+less transfer-report 
+config rm transfer-report 
+less newverbs 
+config rm newverbs 
+less lex-sel.txt 
+less sphp-data 
+config commit -m old
+ls
+cd ..
+ls
+less suligowski-autor 
+mv suligowski-autor .scratch/
+less talbanken-conv/
+ls
+less scala-bigram-thing 
+less scala-xml-scratch-28mar16 
+mv scala-xml-scratch-28mar16 scala-bigram-thing .scratch/
+ls
+less header-trim.c 
+mv header-trim.c .scratch/
+ls
+less smt-koehn 
+mv smt-koehn .scratch/
+ls
+less scratch-test.xsl 
+mv scratch* .scratch/
+ls
+less runtime-EclipseApplication/
+ls
+config status
+less Scratch-dbped 
+mv Scratch-dbped .scratch/
+less Scratch-apr18 
+mv Scratch-apr18 .scratch/
+config add .scratch/*
+config commit -m old
+vi .scratch/Scratch-apr18 
+vi .scratch/Scratch-dbped 
+ls
+less Scratchpad
+mv Scratch* .scratch/
+cd .scratch/
+config add *
+config commit -m old
+vi Scratch-detectedfaces 
+config rm Scratch-detectedfaces 
+vi Scratch-apr18 
+vi Scratchpad
+config add Scratchpad
+vi Scratchpad2 
+config add Scratchpad2 
+vi Scratchpad-plwn 
+config commit -m old
+ls
+config rm ubuntu-things-to-try 
+less /Users/jim/openthes_sl.mapping.ttl 
+mv /Users/jim/openthes_sl.mapping.ttl  .
+mv /Users/jim/output-cartesian.scala .
+less /Users/jim/outline-legal 
+mv /Users/jim/outline-legal .
+less /Users/jim/out.txt 
+mv /Users/jim/out.txt .
+mv /Users/jim/pl-pl_FONIPA.xml .
+less /Users/jim/parb.note 
+mv /Users/jim/parb.note  .
+mv /Users/jim/openimaj-paper.groovy .
+mv /Users/jim/oregon-state-thesis-template.tex .
+less /Users/jim/pantad-en-1-raw 
+less /Users/jim/nowe-ateny-pages.txt 
+mv /Users/jim/nowe-ateny-pages.txt .
+less /Users/jim/NOTES-Lexica 
+mv /Users/jim/NOTES-Lexica  .
+less /Users/jim/names-grefine 
+mv /Users/jim/names-grefine .
+mv /Users/jim/mwproc-test.cc .
+less /Users/jim/neural-notes 
+mv /Users/jim/neural-notes .
+less /Users/jim/mpeg7-rdf2 
+less /Users/jim/abair-phono 
+mv /Users/jim/abair-phono .
+less /Users/jim/aas.ScanTailor 
+mv /Users/jim/aas.ScanTailor .
+config add *
+config commit -m old
+config rm pl-pl_FONIPA.xml oregon-state-thesis-template.tex aas.ScanTailor 
+less NOTES-Lexica 
+config commit -m old
+mv /Users/jim/apertium-cleanstream.cc .
+less /Users/jim/attrvalue.red 
+mv /Users/jim/hellogtk.vala /Users/jim/ia-books 
+mv ../ia-books hellogtk.vala
+config add *
+config commit -m old
+less /Users/jim/imgboxtodo 
+less /Users/jim/hitesh.cc 
+less /Users/jim/Vilamovan-pronunciation 
+mv /Users/jim/Vilamovan-pronunciation .
+less /Users/jim/verb-rules 
+mv /Users/jim/verb-rules .
+mv /Users/jim/Wordnet-References-to-track .
+less /Users/jim/ZimbioBits 
+less /Users/jim/Wikitrans-notes 
+mv /Users/jim/Wikitrans-notes .
+less /Users/jim/Wikt-notes-8oct 
+mv /Users/jim/Wikt-notes-8oct .
+less /Users/jim/Texts 
+mv /Users/jim/Texts .
+less /Users/jim/tesseract-iterator-notes 
+less /Users/jim/SJP-extract-notes 
+mv /Users/jim/SJP-extract-notes .
+less /Users/jim/Subtract.java 
+mv /Users/jim/Subtract.java .
+less /Users/jim/swinglon2 
+mv /Users/jim/swinglon2 .
+config add *
+ls
+config commit -m old
+ls
+less /Users/jim/schloalph.txt 
+mv /Users/jim/schloalph.txt  .
+config add *
+config commit -m old
+mv /Users/jim/rep1.svg  .
+less /Users/jim/PPL-TODO 
+mv /Users/jim/PPL-TODO  .
+config add *
+config commit -m old
+config rm rep1.svg PPL-TODO 
+less /Users/jim/rectsource.sh 
+mv /Users/jim/rectsource.sh  .
+config add rectsource.sh 
+less /Users/jim/plwn-plwiki.tsv 
+mv /Users/jim/plwn-plwiki.tsv  .
+less /Users/jim/oldflteanotes 
+mv /Users/jim/oldflteanotes  .
+config add *
+config commit -m old
+less /Users/jim/polish-stuff 
+mv /Users/jim/polish-stuff  .
+config add *
+less /Users/jim/PROCIMG 
+mv /Users/jim/PROCIMG  .
+mv /Users/jim/PROCIMG2  .
+less /Users/jim/Pubs-lookup 
+mv /Users/jim/Pubs-lookup  .
+config add *
+config commit -m old
+config rm PROCIMG PROCIMG2 
+less /Users/jim/polish-modern-in 
+mv /Users/jim/polish-modern-in  .
+less /Users/jim/podtnlist 
+mv /Users/jim/podtnlist /Users/jim/poland-ukaze /Users/jim/poland-ukaze-goog  .
+config add *
+config commit -m old
+config rm podtnlist 
+less poland-ukaze
+config rm poland-ukaze
+less poland-ukaze-goog 
+config rm poland-ukaze-goog 
+less polish-modern-in 
+config rm polish-modern-in 
+config commit -m old
+less /Users/jim/rm-data.tsv 
+mv /Users/jim/rm-data.tsv  .
+config add *
+less /Users/jim/Scala-xml-transform 
+mv /Users/jim/Scala-xml-transform  .
+less /Users/jim/ru-ca.translit.txt 
+mv /Users/jim/ru-ca.translit.txt  .
+less /Users/jim/Terminal\ Saved\ Output-check.txt 
+less /Users/jim/rudict 
+mv /Users/jim/rudict  .
+less rudict 
+mv rudict ..
+less /Users/jim/projectID5558a7123283a_P1_latest.txt 
+config add *
+config commit -m old
+config rm rm-data.tsv 
+mv /Users/jim/numberthing.scala  .
+config add *
+less /Users/jim/offsetter-test 
+mv /Users/jim/offsetter-test  .
+less /Users/jim/NamesRemove 
+mv /Users/jim/NamesRemove  .
+config add *
+config commit -m old
+config rm NamesRemove 
+less /Users/jim/nonsynth-check 
+less /Users/jim/msg-c1-espeak 
+mv /Users/jim/msg-c1-espeak  .
+less /Users/jim/mote-ga-notes 
+mv /Users/jim/mote-ga-notes .
+radd
+config add *
+config commit -m old
+less /Users/jim/mh-keep-images 
+less /Users/jim/MERGE-REGIONS 
+mv /Users/jim/MERGE-REGIONS  .
+less /Users/jim/misc-for-application 
+mv /Users/jim/misc-for-application  .
+less /Users/jim/Module:wuu-pron 
+mv /Users/jim/Module:wuu-pron  .
+less /Users/jim/moar-neural 
+mv /Users/jim/moar-neural  .
+less /Users/jim/mktext.out.txt 
+mv /Users/jim/mktext.out.txt  .
+less /Users/jim/mkskel.sh 
+mv /Users/jim/mkskel.sh  .
+less /Users/jim/most-test.xml 
+mv /Users/jim/most-test.xml  .
+less /Users/jim/morphadorn1 
+mv /Users/jim/morphadorn1  .
+less /Users/jim/moses-stuff.txt 
+mv /Users/jim/moses-stuff.txt  .
+config add *
+config commit -m old
+less MERGE-REGIONS 
+config rm MERGE-REGIONS 
+vi moses-stuff.txt 
+config add *
+config commit -m old
+less /Users/jim/MLODE-todo 
+mv /Users/jim/MLODE-todo  .
+ls
+less /Users/jim/mini-dixtools.scala 
+mv /Users/jim/mini-dixtools.scala  .
+less /Users/jim/maori-in 
+mv /Users/jim/maori-in  .
+less /Users/jim/midnightcourtnotes 
+mv /Users/jim/midnightcourtnotes  .
+less /Users/jim/lt_simple.cc 
+mv /Users/jim/lt_simple.cc  .
+less /Users/jim/Lua-colon 
+mv /Users/jim/Lua-colon  .
+less /Users/jim/lv-thing 
+mv /Users/jim/lv-thing  .
+less /Users/jim/list-test.cc 
+mv /Users/jim/list-test.cc  .
+less /Users/jim/lrs.py 
+mv /Users/jim/lrs.py  .
+less /Users/jim/list-strip.cc 
+mv /Users/jim/list-strip.cc  .
+less /Users/jim/lemon-rule-rdfa 
+mv /Users/jim/lemon-rule-rdfa  .
+less /Users/jim/lemon-rdfa.html 
+mv /Users/jim/lemon-rdfa.html  .
+mv /Users/jim/ldb-gawn-bits /Users/jim/lemon-rdfa-2.html  .
+ls -al
+config add *
+config commit -m old
+config branch
+config push origin misc
+cd ..
+git checkout master
+config checkout master
+config checkout -b misc2
+mkdir .scratch
+less maori-languagetool.xml 
+mv maori-languagetool.xml .scratch/
+config add .scratch/maori-languagetool.xml 
+config commit -m old
+config push origin misc2
+config pull origin misc2
+config rm practice/a.out 
+history -a
