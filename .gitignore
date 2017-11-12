@@ -52,3 +52,4 @@ IdeaProjects/
 .serverauth.*
 *~
 .config/dconf/user
+.config/dconf/user
