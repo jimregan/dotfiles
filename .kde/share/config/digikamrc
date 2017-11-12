@@ -10,7 +10,7 @@ Options are expanded=true
 [Album Settings]
 Album Collections=Category,Friends,Holidays,Miscellaneous,Nature,Party,Todo,Travel
 Album Sort Order=0
-Default Icon Size=142
+Default Icon Size=173
 Default Tree Icon Size=22
 Icon Show Aspect Ratio=false
 Icon Show Comments=true
@@ -76,13 +76,13 @@ ToolTips Show Video Frame Rate=true
 TreeView Font=Ubuntu,9,-1,5,50,0,0,0,0,0
 
 [AlbumDB Settings]
-Recently Used Tags=34,66,70,54,49,64,60,69,67,38
+Recently Used Tags=32,137,76,68,110,130,42,213,210,75
 
 [AlbumFolderView Sidebar]
-CurrentIndex=9
-Expansion=0,1,5,6,7,8,9,10,11,12,2,3,4
+CurrentIndex=5
+Expansion=0,1,2,5,3,4,221,10,11,12,13
 RestoreChecked=false
-Selection=9
+Selection=5
 SortColumn=0
 SortOrder=0
 
@@ -90,10 +90,10 @@ SortOrder=0
 CaseSensitive=0
 
 [AlbumSelectWidget]
-AlbumTreeViewCurrentIndex=
+AlbumTreeViewCurrentIndex=1
 AlbumTreeViewExpansion=
 AlbumTreeViewRestoreChecked=false
-AlbumTreeViewSelection=
+AlbumTreeViewSelection=1
 AlbumTreeViewSortColumn=0
 AlbumTreeViewSortOrder=0
 CaseSensitive=0
@@ -165,24 +165,24 @@ Minimized=false
 RestoreSize=-1
 
 [Digikam Right Sidebar]
-ActiveTab=0
+ActiveTab=3
 DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
-Minimized=true
+Minimized=false
 PhotographProperties Expanded=true
 RestoreSize=-1
 VideoProperties Expanded=true
 
 [Digikam Right Sidebar][Captions Tags Properties Tab]
 Contact Expanded=true
-ImageDescEdit Tab=0
+ImageDescEdit Tab=1
 ImageDescEditTab CaptionsLang=x-default
 ImageDescEditTab SearchBarCaseSensitive=0
-ImageDescEditTab TagCheckViewCurrentIndex=
-ImageDescEditTab TagCheckViewExpansion=0
+ImageDescEditTab TagCheckViewCurrentIndex=23
+ImageDescEditTab TagCheckViewExpansion=0,27,264,25,23,70,207,62,365
 ImageDescEditTab TagCheckViewRestoreChecked=false
-ImageDescEditTab TagCheckViewSelection=
+ImageDescEditTab TagCheckViewSelection=23
 ImageDescEditTab TagCheckViewSortColumn=0
 ImageDescEditTab TagCheckViewSortOrder=0
 ImageDescEditTab TagCheckViewToggle Auto Tags=0
@@ -238,25 +238,25 @@ Toggle Auto Tags=0
 CaseSensitive=0
 
 [Face Detection Dialog]
-AlbumComboBox-Checked=
-AlbumComboBox-CurrentIndex=
-AlbumComboBox-Expansion=1
+AlbumComboBox-Checked=5
+AlbumComboBox-CurrentIndex=1
+AlbumComboBox-Expansion=1,5
 AlbumComboBox-RestoreChecked=true
-AlbumComboBox-Selection=
+AlbumComboBox-Selection=1
 AlbumComboBox-SortColumn=0
 AlbumComboBox-SortOrder=0
-Already Scanned Handling=Rescan
-Face Scan Main Task=Detect and Recognize Faces
+Already Scanned Handling=Skip
+Face Scan Main Task=Recognize Marked Faces
 Settings Widget Visible=true
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=
+TagComboBox-CurrentIndex=27
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=
+TagComboBox-Selection=27
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=true
-UseWholePAlbumsEntry=true
+UseWholePAlbumsEntry=false
 UseWholeTAlbumsEntry=true
 
 [Face Detection Settings]
@@ -300,7 +300,7 @@ CaseSensitive=0
 
 [General Settings]
 Application Style=
-Apply Sidebar Changes Directly=false
+Apply Sidebar Changes Directly=true
 Face Scanner First Run=true
 Finger Prints Generator First Run=true
 FullScreen Hide SideBars=false
@@ -512,6 +512,12 @@ ToolTips Show Photo Make=true
 ToolTips Show Photo WB=false
 ToolTips Show Tags=true
 
+[KFileDialog Settings]
+Height 1080=522
+Recent Files[$e]=$HOME/tmp/foo,$HOME/tmp/foo
+Recent URLs[$e]=$HOME/tmp/foo/
+Width 1920=960
+
 [Labels Sidebar]
 ColorSelection=
 Expansion=
@@ -638,9 +644,9 @@ ToolBarsMovable=Disabled
 Width 1920=32
 
 [MainWindow]
-InitialAlbumID=9
-SplitterState=AAAA/wAAAAAAAAADAAAB1wAAB0gAAAAAAQAAAAEAAAAAAQ==
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAXPAAABDvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABc8AAABcAQAAAwAABc8AAAKJAAAABAAAAAQAAAAIAAAACPwAAAAA
+InitialAlbumID=5
+SplitterState=AAAA/wAAAAAAAAADAAABEAAABioAAAEdAQAAAAEAAAAAAQ==
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAUpAAABDvwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABSkAAABcAQAAAwAABSkAAAOYAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [Metadata Settings]
 EXIF Rotate=true
@@ -668,9 +674,9 @@ CaseSensitive=0
 
 [People Sidebar]
 CurrentIndex=23
-Expansion=26,25,23,52,29,32,48,44,34,39,33,30,31,37,35,36,43,65,40,60,41,51,56,42,47,28,24,38,68,67,49
+Expansion=264,26,25,23,287,83,156,167,52,188,168,105,208,29,220,263,280,223,135,32,157,288,101,359,189,372,289,82,97,129,63,89,226,319,199,351,169,48,265,296,64,75,132,321,219,228,147,204,237,69,345,329,375,302,87,166,127,380,94,266,72,44,34,195,39,124,33,95,30,31,37,35,36,43,65,40,60,41,99,51,56,42,47,28,24,133,110,38,123,139,206,68,67,121,49,122,100
 RestoreChecked=false
-Selection=23
+Selection=24
 SortColumn=0
 SortOrder=0
 
@@ -678,10 +684,10 @@ SortOrder=0
 CaseSensitive=0
 
 [Search Sidebar]
-CurrentIndex=
+CurrentIndex=2
 Expansion=
 RestoreChecked=false
-Selection=
+Selection=2
 SortColumn=0
 SortOrder=0
 
@@ -690,7 +696,7 @@ CaseSensitive=0
 
 [Setup Dialog]
 Height 1080=772
-Setup Page=6
+Setup Page=10
 Template Tab=0
 Width 1920=537
 

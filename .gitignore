@@ -63,3 +63,5 @@ IdeaProjects/
 .config/kactivitymanagerdrc
 .config/katerc
 .config/spectaclerc
+.kde/share/config/kdialogrc
+.kde/share/apps/libkface/database/recognition.db
