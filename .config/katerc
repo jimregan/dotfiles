@@ -1,20 +1,35 @@
+[Desktop Entry]
+DefaultProfile=
+
+[Favorite Profiles]
+Favorites=
+
 [General]
 Config Revision=10
 Days Meta Infos=30
 Last Session=
+Modified Notification=false
+Recent File List Entry Count=10
+Restore Window Configuration=true
 Save Meta Infos=true
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
 Show Tab Bar=true
+Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=interchunk.dtd,file:///tmp/filesin,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/scratch.txt,file://$HOME/samplerun,file://$HOME/Downloads/interchunk.dtd,file://$HOME/Downloads/apertium-en-es.en-es.t1x
-Recent URLs[$e]=file://$HOME/Downloads/,file://$HOME/IdeaProjects/dictionaryconverter/src/main/resource/,file:///tmp/
+Recent Files[$e]=interchunk.dtd,file://$HOME/Playing/msf-asr/filter-pron.pl,file://$HOME/Playing/msf-asr/pron/munster.tsv,file://$HOME/Playing/msf-asr/prontodo,file://$HOME/Playing/msf-asr/abair.html,file://$HOME/Playing/msf-asr/abair-scrape.pl,file://$HOME/Playing/msf-asr/pron-munst,file://$HOME/Playing/msf-asr/norm-in
+Recent URLs[$e]=file:///tmp/,file://$HOME/IdeaProjects/dictionaryconverter/src/main/scala/ie/tcd/slscs/itut/DictionaryConverter/dix/,file://$HOME/IdeaProjects/dictionaryconverter/scripts/,file://$HOME/IdeaProjects/dictionaryconverter/,file://$HOME/Playing/msf-asr/,file://$HOME/Playing/msf-asr/pron/
+
+[KTextEditor::Search]
+Search History=[,h-éagcóra,Art,Subj,braille,don,"Foreign": "yes",=Voc
 
 [MainWindow]
+Height 1080=1015
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
+Width 1920=1920
 Window-Maximized 1080x1920=true
 
 [filetree]

@@ -9,3 +9,7 @@ State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAAD0fwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAG
 ToolBarsMovable=Disabled
 Width 1920=750
 Window-Maximized 1080x1920=true
+
+[Open-with settings]
+CompletionMode=5
+History=audacity

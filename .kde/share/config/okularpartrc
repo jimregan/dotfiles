@@ -6,3 +6,7 @@ ObeyDRM=false
 
 [General]
 ObeyDRM[$d]
+UseKTTSD=false
+
+[PageView]
+MouseMode=RectSelect
