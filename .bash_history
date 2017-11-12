@@ -1,116 +1,3 @@
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-12.ts
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-12.tsv
-rm ../sync/bhash-20171107-12.ts
-vi /tmp//exif.out 
-mv /tmp//exif.out ../sync/exif-20171107-8.xml
-cat ~/tmp/sync/bhash-20171107-12.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-11.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-12.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-7.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-wc -l /tmp//asd/inp 
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp/asd/tospid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ls
-rm nohup.out mrgd 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-nohup sh ../wrap-exif.sh &
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-13.tsv
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-8.nt
-cat ~/tmp/sync/bhash-20171107-13.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-11.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-13.tsv |awk '{print "https://" $2}' >> mrgd; done
-mv /tmp//exif.out ../sync/exif-20171107-9.xml
-vi ../sync/exif-20171107-9.xml
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-8.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-ls
-rm mrgd nohup.out 
-rm -rf s1.postimg.org/
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-grep 'class="post-image-container"' /tmp/imgur|awk -F'"' '{print $2}'
-grep 'class="post-image-container"' /tmp/imgur|awk -F'"' '{print $2}'|while read i;do procimg https://imgur.com/$i https://i.imgur.com/$i.jpg;doimg https://i.imgur.com/$i.jpg https://imgur.com/a/UR46X;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ls
-fdupes -r . /tmp/proc/
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp#file:/tmp#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp#file:/tmp#'|perl ../fdupes-proc.pl >> ../sync/byte-for-byte-identical-20171107-9.nt
-less ../sync/byte-for-byte-identical-20171107-9.nt
-rm ../sync/byte-for-byte-identical-20171107-9.nt
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#http://#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#https://#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#https://#;s/^\.\//https:\/\//'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#https://#;s/^\.\//https:\/\//'|perl ../fdupes-proc.pl >> ../sync/byte-for-byte-identical-20171107-9.nt
-less ../sync/byte-for-byte-identical-20171107-9.nt
-fdupes -r . /tmp/proc/
-fdupes -r . /tmp/proc/|grep '^$'|wc
-ls
-less ../sync/bhash-20171107-13.tsv
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-14.tsv
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-9.nt
-nohup sh ../wrap-exif.sh &
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-mv /tmp//exif.out ../sync/exif-20171107-10.xml
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ls
-rm nohup.out 
-ls
-rm -rf i.imgur.com/
-rm /tmp/toc.zip 
-rm /tmp/proc/*jpg
-ls
-rm -rf s1.postimg.org/
-ls /tmp/proc/
-ls
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-ls
-fdupes -r . /tmp/proc
-fdupes -r . /tmp/proc|sed -e 's/^/tmp/file:\//'
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'|perl ../fdupes-proc.pl 
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'|perl ../fdupes-proc.pl  >> ~/tmp/sync/byte-for-byte-identical-20171107-10.nt
-nohup sh ../wrap-exif.sh &
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-10.nt
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-16.tsv
-mv /tmp//exif.out ../sync/exif-20171107-11.xml
-less ../sync/byte-for-byte-identical-20171107-10.nt 
-grep -v '> <file:' ../sync/byte-for-byte-identical-20171107-10.nt 
-grep -v '> <file:' ../sync/byte-for-byte-identical-20171107-10.nt > /tmp/tmpbfb
-vi /tmp/galind 
-vi /tmp/urld 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'|perl ../fdupes-proc.pl  >> ~/tmp/sync/byte-for-byte-identical-20171107-11.nt
-less ~/tmp/sync/byte-for-byte-identical-20171107-11.nt
-cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ls -al ~/tmp/sync/assumed-identical-2017110*
-wc -l /home/jim/tmp/sync/assumed-identical-20171109_163400.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-nohup sh ../wrap-exif.sh &
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-17.tsv
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-11.nt
-filtfind |wc
-ls
-mv /tmp//exif.out ../sync/exif-20171107-12.xml
-ls
-rm nohup.out 
-ls
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
 cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
 filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
 ls
@@ -1998,3 +1885,135 @@ config push origin misc2
 config pull origin misc2
 config rm practice/a.out 
 history -a
+cd tmp/fashq5/
+. ~/img/sourceme 
+ogimageproc https://www.instagram.com/p/BbVaZRDl1gN/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BbWSvlrFTyF/?taken-by=fiolkowelove
+ogimageproc https://www.instagram.com/p/BbU7ffelLrD/?taken-by=fiolkowelove
+ogimageproc https://www.instagram.com/p/BbWPesll8Wd/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BbPaQt0F8qp/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BbVOGvAg2ai/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbRbjkzg7ot/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbKod3tg3rF/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbG_2cBg2yF/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbF46q5Az68/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbEtwsPAaS_/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbSOLx4BUQ3/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/Ba87nq-BwjN/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BaOztYZh79Z/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BZgvZHNBEh7/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BZYEoT6h70P/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BbWb7avhNsi/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbU04PwBn3m/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbR30WPBMxZ/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbNRFzNBdnc/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbHd047BnJU/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbB2OZvBfdx/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbROBk9juG1/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/BbPoI17jMEM/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/BbUzquejpvE/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/BbWDTLlAudz/?taken-by=_lesya_novikova_
+ogimageproc https://www.instagram.com/p/BbMkgiEgR7w/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BbJvB0qgqUq/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BbCZFg_gsGm/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BbWPv_6lkoy/?taken-by=mashenka.khv
+ogimageproc https://www.instagram.com/p/BbUCov3lPqS/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BbSF8CjlgLO/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BaovxwLF_Wk/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BaE17HsFqQ4/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BbRdavcjuRT/?taken-by=dashamart
+ogimageproc https://www.instagram.com/p/BbRT4lxlT0N/?taken-by=yuliyabb
+ogimageproc https://www.instagram.com/p/BbVrtRPAqhB/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbUGFqOgr0m/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbODeU7Aqls/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbSPy3XBfs0/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BbSAcZ5hA0S/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BbWcTZmFGAp/?taken-by=maria_domark
+ogimageproc https://www.instagram.com/p/BbMLg_QFTT6/?taken-by=maria_domark
+ogimageproc https://www.instagram.com/p/BbWcboCnweH/?taken-by=lubimaya_yulya
+ogimageproc https://www.instagram.com/p/BbUA6U1hUNM/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BbMMsBch0Di/?taken-by=_liliyapetrova_
+ls /tmp/asd
+mkdir /tmp/asd
+filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp/asd/inp
+cd /tmp/asd/
+sh ~/tmp/cfimg2/scripts/grab.sh inp 
+cd ~-
+ls
+sh ../wrap-exif.sh 
+less /tmp/exif.out 
+mv /tmp/exif.out ~/tmp/sync/exif-20171111-1.xml
+filtfind |perl ~/img/pipe-ook.pl >> ~/tmp/sync/ookdata-20171111-1.nt
+filtfind |~/bin/phash >> ~/tmp/sync/phash-20171111-1.nt
+blockhash.py $(filtfind ) >> ~/tmp/sync/blockhash_p-20171111-1.tsv
+blockhash.py $(filtfind ) >> ~/tmp/sync/blockhash_p-20171111-2.tsv
+ls
+ls -al
+ogimageproc https://www.instagram.com/p/Ba6Q6VulmTU/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/Bay3cOulGCs/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BahleQLlS6M/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/Baueo_mFDP0/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/Baq1WBVlcfN/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BagYLWRl4vj/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BVac7_Ull9j/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BVPPXjXDl7c/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BUmJf3vjCBd/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BbKETiwlKXA/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BbVznz7lddQ/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BbO1a4SFR9v/?taken-by=monika.chmielecka
+ogimageproc https://www.instagram.com/p/BbPx4Iagmbi/?taken-by=raabiosa
+ogimageproc https://www.instagram.com/p/BbEXGCrAfYL/?taken-by=raabiosa
+ogimageproc https://www.instagram.com/p/BbAK7gDgNbU/?taken-by=raabiosa
+ogimageproc https://www.instagram.com/p/BbSj5Mnnyfx/?taken-by=natali_danish
+ogimageproc https://www.instagram.com/p/BbNCkp6nZ6v/?taken-by=natali_danish
+ogimageproc https://www.instagram.com/p/BbUqfTBHMex/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbPKOZQnz2x/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbUbGgYHK84/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BbRyG1zHiYW/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BbKYz1UHKLL/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BazHl6AHRUC/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/Baa1lLZnumS/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BaEQh9nDVVU/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BaJSq1eDmDU/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BZ6PZd7jw8u/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BZ3aFkuH9Sd/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BZ0sUacjNfr/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BbWDZB8nIXj/?taken-by=ira_kamale
+ogimageproc https://www.instagram.com/p/BbFHMm5H4Zg/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/Ba4H4HNnCUH/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BaWHQ4aHQwA/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BX2RS2OD8FY/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BXyq7D3jOOF/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BXxicCjjbJA/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BXq0Tu9jLiZ/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BbU_1p6nAid/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/BbBRa8VHRIz/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/Ba_Bv4Xn7qn/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/Ba5F8CWnrRA/?taken-by=bitch_soul_
+less ~/tmp/sync/unsorted-triples-20171111-2.nt 
+less ~/tmp/sync/unsorted-triples-20171111-1.nt 
+grep 21227333_129696450988121_1069634602609410048_n.jpg ~/tmp/sync/unsorted-triples-20171111-1.nt 
+echo 'ppl:picd922591af518d535 owl:sameAs ppl:pic'
+congrep shipil
+echo 'ppl:picd922591af518d535 owl:sameAs ppl:pic71069bf0b7745d08 .'
+echo 'ppl:picd922591af518d535 owl:sameAs ppl:pic71069bf0b7745d08 .' >> ~/tmp/fixed/people.ttl 
+ogimageproc https://www.instagram.com/p/BbWMfw7H2RC/?taken-by=sofia_official_
+ogimageproc https://www.instagram.com/p/BbXN180BDd-/?taken-by=maryhockings
+ogimageproc https://www.instagram.com/p/BbHVZFGhXKQ/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbMBF9Rhj5A/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbJ-LghhXlz/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/Ba1QVMgh0E-/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BamCXjJhiZQ/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbW9HTZhorx/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbW_JjhnXoK/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbUqfTBHMex/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbXFnSxFQAm/?taken-by=helga_model
+ogimageproc https://www.instagram.com/p/BbU-26phCrk/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BbWgcheBJo4/?taken-by=lerazhuravleva
+ogimageproc https://www.youtube.com/watch?v=hISSsaIvUSU
+ogimageproc https://www.youtube.com/watch?v=Js-TqXjtdMg
+ogimageproc https://www.youtube.com/watch?v=-ki2n7nC5Zw
+ogimageproc https://www.youtube.com/watch?v=WpPwJ8YtWhI
+ogimageproc https://www.youtube.com/watch?v=W5-9mVvPcGs
+ogimageproc https://www.youtube.com/watch?v=k6ZRmTD_e2k
+ogimageproc https://www.youtube.com/watch?v=IQisUbBljW0
