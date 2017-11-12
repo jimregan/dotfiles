@@ -65,3 +65,4 @@ IdeaProjects/
 .config/spectaclerc
 .kde/share/config/kdialogrc
 .kde/share/apps/libkface/database/recognition.db
+.config/enchant/*.dic
