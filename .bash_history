@@ -1,521 +1,3 @@
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-4.nt && rm $i;done
-ls
-cd ../e/
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-4.nt && rm $i;done
-ls
-mv * ..
-cd ../d/
-mv * ..
-ls
-cd ..
-ks
-lsls
-ls
-rmemptydir 
-ls
-ls|wc
-vi /tmp/galind 
-vi /tmp/urld 
-ls /tmp/asd/
-ls
-ls|wc
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-5.nt && rm $i;done
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171109* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-5.nt && rm $i;done
-ls
-mv fash-rdf-links ~/tmp/sync/unsorted-triples-20171107-2.nt 
-less postimg1.f 
-cat postimg1.f|while read i;do grep $i ~/tmp/sync/unsorted-triples-20171107-2.nt || echo $i >> tojustgrab; done
-mv tojustgrab ~/tmp/foo/
-ls
-rm postimg1.f 
-mv pstimg ~/tmp/foo/
-ls
-~/bin/blockhash *jpg >> ~/tmp/sync/bhash-20171107-8.tsv
-vi /tmp/galind 
-vi /tmp/urld 
-ls
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171109* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-6.nt && rm $i;done
-ls
-cd ~/tmp/foo/
-ls
-nohup sh ../wrap-exif.sh &
-blockhash $(filtfind ) >> ~/tmp/sync/bhash-20171107-10.tsv
-less ~/tmp/sync/bhash-20171107-10.tsv
-less /tmp//exif.out 
-mv /tmp//exif.out ~/tmp/sync/exif-20171107-7.xml
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-6.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-2017110* ||echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-find . -name 'screen*'
-find . -name 'screen*'|while read i;do grep $i ~/tmp/sync/unsorted-triples-20171107-*;done
-grep depicts ~/tmp/sync/unsorted-triples-20171107-2.nt > deps
-find . -name 'screen*'|while read i;do grep $i deps;done
-find . -name 'screen*'|while read i;do grep $i deps || echo $i >> nodeps;done
-less nodeps 
-wc -l nodeps 
-caat /tmp/proc/flist 
-cat /tmp/proc/flist 
-cat /tmp/proc/flist |while read i;do grep $i ~/tmp/sync/tock/unsorted-*nt;done
-cat /tmp/proc/flist |while read i;do grep $i ~/tmp/sync/tock/unsorted-triples-20171106-2.nt ;done
-cat /tmp/proc/flist |while read i;do grep $i ~/tmp/sync/tock/unsorted-triples-20171106-2.nt || echo $i >> notin ;done 
-ls
-cat /tmp/proc/flist |while read i;do grep $i ~/tmp/sync/tock/unsorted-triples-20171106-2.nt >> /tmp/proc/fash-rdf-links ;done 
-grep pic5838842 ~/tmp/sync/unsorted-triples-20171107-*
-less ../sync/image-depictions-assumed-20171108-1.nt 
-grep depicts ~/tmp/sync/unsorted-triples-20171107-3.nt >> deps
-rm nodeps 
-find . -name 'screen*'|while read i;do grep $i deps || echo $i >> nodeps;done
-less nodeps 
-find . -name 'screen*'|while read i;do grep $i deps && rm $i;done
-rmemptydir 
-ls
-find s* -name 'screen*'
-find s* -name 'screen*'|zip /tmp/copyback.zip -@
-scp /tmp/copyback.zip jimregan:/tmp
-ls
-mv fash-rdf-links ../sync/unsorted-triples-20171107-4.nt
-ls
-rm -rf *
-ls
-ls /tmp/proc/
-mv /tmp/proc/fash-rdf-links ../sync/unsorted-triples-20171107-5.nt
-mv /tmp/proc/image-depictions ../sync/image-depictions-assumed-20171108-2.nt 
-ls
-cd /tmp/proc/
-ls
-rm flist 
-ls
-blockhash *jpg >> ~/tmp/sync/bhash-20171107-11.tsv
-less ~/tmp/sync/bhash-20171107-11.tsv
-wc -l ~/tmp/sync/bhash-20171107-11.tsv
-vi /tmp/galind 
-vi /tmp/urld 
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171109* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-7.nt && rm $i;done
-ls
-ls|wc
-vi /tmp//galind 
-vi /tmp/urld 
-ls
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171109* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-8.nt && rm $i;done
-ls
-unzip /tmp/toc.zip 
-ls
-a=1;find . -type f|while read i;do cp $i $a.jpg;a=$(($a + 1));done
-ls
-blockhash *jpg >> ~/tmp/sync/bhash-20171107-14.tsv
-less ~/tmp/sync/bhash-20171107-14.tsv
-rm ~/tmp/sync/bhash-20171107-14.tsv
-blockhash $(filtfind) >> ~/tmp/sync/bhash-20171107-14.tsv
-less ~/tmp/sync/bhash-20171107-14.tsv
-lynx -dump https://imgur.com/a/UR46X
-vi /tmp/imgur
-grep 'class="post-image-container"' /tmp/imgur
-grep 'class="post-image-container"' /tmp/imgur|qwc
-grep 'class="post-image-container"' /tmp/imgur|wc
-ls
-find . -type f|while read i;do grep $i ~/tmp/sync/byte-for-byte-identical-20171107-9.nt && rm $i;done
-ls
-rmemptydir 
-ls
-grep 'lisarichards.ie/thumbnailer/phpThumb.php\?src\=%2Fimages%2F1234.jpg\&w\=180\&zc\=1\&fltr\[\]\=usm%7C40%7C2%7C3\&q\=95' ~/tmp/sync/byte-for-byte-identical-20171107-9.nt 
-grep 'lisarichards.ie/thumbnailer/phpThumb.php?src=%2Fimages%2F1234.jpg&w=180&zc\=1&fltr\[\]=usm%7C40%7C2%7C3&q=95' ~/tmp/sync/byte-for-byte-identical-20171107-9.nt 
-rm -rf lisarichards.ie/
-ls
-ls|wc
-blockhash $(filtfind) >> ~/tmp/sync/bhash-20171107-15.tsv
-less ~/tmp/sync/bhash-20171107-15.tsv
-less ~/tmp/sync/bhash-20171107-14.tsv 
-less ~/tmp/sync/bhash-20171107-13.tsv 
-less ~/tmp/sync/bhash-20171107-12.tsv 
-less ~/tmp/sync/bhash-20171107-11.tsv 
-blockhash *jpg > ~/tmp/sync/bhash-20171107-15.tsv
-less ~/tmp/sync/bhash-20171107-15.tsv
-mkdir done
-for i in *jpg;do grep $i ../tmpbfb && mv $i done/;done
-ls
-ls|wc
-ls
-mv done/* .
-rmdir done/
-ls|wc
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171109* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-11.nt && rm $i;done
-ls
-blockhash *jpg > ~/tmp/sync/bhash-20171107-18.tsv
-ls|wc
-rm *jpg
-ls
-blockhash *jpg > ~/tmp/sync/bhash-20171107-19.tsv
-blockhash *png > ~/tmp/sync/bhash-20171107-19.tsv
-blockhash screenshot_2017* > ~/tmp/sync/bhash-20171107-19.tsv
-less ~/tmp/sync/bhash-20171107-19.tsv
-for i in *;do grep $i ~/tmp/sync/assumed-identical-20171109* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-13.nt && rm $i;done
-ls
-mkdir ~/tmp/sync/verify
-rm /home/jim/tmp/sync/verify/assumed-identical-20171108_120805.nt
-rm /home/jim/tmp/sync/tock/face_ignored-20120729.nt
-rm /home/jim/tmp/sync/tock/region-depictions.nt
-rm /home/jim/tmp/sync/tock/face_misdetections-20120729.nt
-mkdir ~/tmp/sync/verify2
-ls
-blockhash screenshot_2017* > ~/tmp/sync/bhash-20171109-1.tsv
-blockhash * >> ~/tmp/sync/bhash-20171109-1.tsv
-less ~/tmp/sync/bhash-20171109-1.tsv
-wc -l ~/tmp/sync/bhash-20171109-1.tsv
-ls|wc
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171109* && grep $i ~/tmp/sync/byte-for-byte-identical-20171109-1.nt && rm $i;done
-ls
-cd ~
-config add open-tabs .bash_history 
-config commit -m more
-config status
-config add .config/katerc 
-config commit -m more
-config add open-tabs .bash_history 
-config commit -m more
-config add open-tabs .bash_history 
-config commit -m more
-config add open-tabs .bash_history 
-config commit -m more
-cd tmp/
-ls
-cd bar/
-ls
-cd ../foo/
-ls
-. ../sourceme 
-cd /tmp/proc/
-ls
-~/bin/blockhash screenshot_2017110* >> ~/tmp/sync/bhash-20171107-1.tsv
-cd -
-gal=https://postimg.org/gallery/31yfr4418/
-vi /tmp/galin
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-ls
-~/bin/blockhash $(filtfind) >> ~/tmp/sync/bhash-20171107-2.tsv
-cat ~/tmp/sync/bhash-20171107-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ../sync/bhashc-20171107-2.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ../sync/bhashc-20171107-2.tsv |awk '{print "https://" $2}' >> mrgd; done
-cat ~/tmp/sync/bhash-20171107-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhashc-20171107-2.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhashc-20171107-2.tsv |awk '{print "https://" $2}' >> mrgd; done
-rm mrgd 
-cat ~/tmp/sync/bhash-20171107-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-1.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-2.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-1.nt
-less ../sync/byte-for-byte-identical-20171107-1.nt
-filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-cd /tmp//asd/
-ls
-#sh ~/scripts/grab-logged.sh 
-vi inp 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-cd -
-cd /tmp/proc/
-ls
-for i in screenshot_2017110*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171107-1.nt && rm $i;done
-ls
-cd -
-ls
-rm mrgd 
-mv fash-rdf-links ../sync/unsorted-triples-20171107-1.nt
-cd /tmp//asd/
-tail -f inp.log 
-cat inp.log |perl ~/bin/wget-http.pl 
-cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cd -
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-wc -l ~/tmp/sync/assumed-identical-20171107_232442.nt 
-rm -rf /tmp//asd/
-mkdir /tmp/asd
-vi /tmp/galin
-ls
-rm -rf s1.postimg.org/
-gal=https://postimg.org/gallery/3ao7bogvg/
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-tail -f ~/tmp/sync/bhash-20171107-3.tsv
-wc -l ~/tmp/sync/bhash-20171107-3.tsv
-find /tmp/proc -type f|wc
-gal=https://postimg.org/gallery/2iid8eelo/
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-gal=https://postimg.org/gallery/h5rtlxf0/
-cat /tmp/galin2 |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-gal=https://postimg.org/gallery/2q6x7nnfw/
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-gal=https://postimg.org/gallery/10kidqkj0/
-cat /tmp/galin2 |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-gal=https://postimg.org/gallery/28jmkpab0/
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-gal=https://postimg.org/gallery/25wzpmd0s/
-cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $gal ; done
-cat /tmp/galin7 |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url7) ; done
-for j in 8 9 a ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-for j in b c d e f ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-filtfind |wc
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-4.tsv
-sh ../wrap-exif.sh 
-vi /tmp/exif.out 
-mv /tmp/exif.out ../sync/exif-20171107-1.xml
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-2.nt
-less ../sync/byte-for-byte-identical-20171107-2.nt
-for j in e f ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-for j in 1 2 3 4 5 6 7 ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-for j in 7 8 9 a b c d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-ls
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-2.nt 
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-5.tsv
-ls
-nohup sh ../wrap-exif.sh &
-ls
-rm nohup.out 
-ls
-cat ~/tmp/sync/bhash-20171107-5.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-3.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-5.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-3.nt
-less ../sync/byte-for-byte-identical-20171107-3.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp//asd//inpa.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp/asd/inpa.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-vi /tmp/galind
-vi /tmp/urld
-vi tospid
-vi /tmp/galine
-vi /tmp/galind
-vi /tmp/urle
-for j in d e  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-ls /tmp//asd/
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-6.tsv
-mv /tmp//exif.out ~/tmp/sync/exif-20171107-2.xml 
-nohup sh ../wrap-exif.sh &
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-3.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-wc -l ../sync/assumed-identical-20171108_214919.nt 
-wc -l /tmp/asd/inp
-rm /tmp/asd/*
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-less /tmp/exif.out 
-mv /tmp//exif.out ~/tmp/sync/exif-20171107-3.xml 
-ls
-rm mrgd 
-rm nohup.out 
-cat ~/tmp/sync/bhash-20171107-6.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-3.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-6.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-4.nt
-ls
-rm mrgd 
-vi tospid 
-sh ~/scripts/spider.sh tospid
-tail -f tospid.log 
-cat tospid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-rm tospid
-rm tospid.log 
-ls
-rm nohup.out 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-nohup sh ../wrap-exif.sh &
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-4.nt
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-7.tsv
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-wc -l ../sync/assumed-identical-20171108_235100.nt 
-wc -l ../sync/assumed-identical-20171109_001934.nt 
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ls -la ../sync/
-ls
-rm nohup.out 
-mv /tmp//exif.out ~/tmp/sync/exif-20171107-4.xml
-cat ~/tmp/sync/bhash-20171107-6.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-3.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-6.tsv |awk '{print "https://" $2}' >> mrgd; done
-rm mrgd 
-cat ~/tmp/sync/bhash-20171107-7.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-3.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-7.tsv |awk '{print "https://" $2}' >> mrgd; done
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-5.nt
-ls
-rm -rf s1.postimg.org/
-rm mrgd 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-less /tmp/exif.out 
-mv /tmp//exif.out ~/tmp/sync/exif-20171107-5.xml
-nohup sh ../wrap-exif.sh &
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-5.nt
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-9.tsv
-mv /tmp//exif.out ~/tmp/sync/exif-20171107-6.xml
-filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
-vi /tmp/asd/inp 
-cat ~/tmp/sync/bhash-20171107-9.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-8.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-9.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-6.nt
-ls
-rm mrgd nohup.out 
-cat pstimg 
-cat pstimg |less
-cat pstimg |awk -F']' '{print $1}'
-cat pstimg |awk -F']' '{print $1}'|awk -F'=' '{print $2}'
-cat pstimg |awk -F']' '{print $1}'|awk -F'=' '{print $2}'|grep http
-#cat pstimg |awk -F']' '{print $1}'|awk -F'=' '{print $2}'|grep http |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;done
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-wc -l ../sync/assumed-identical-20171109_003824.nt 
-wc -l /tmp//asd/inp
-cat pstimg |awk -F']' '{print $1}'|awk -F'=' '{print $2}'|grep http |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;done
-ls
-cat tojustgrab |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;done
-tail ../sync/unsorted-triples-20171107-2.nt 
-mv /tmp/proc/fash-rdf-links ~/tmp/sync/unsorted-triples-20171107-3.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-wc -l ../sync/assumed-identical-20171109_024921.nt 
-wc -l /tmp//asd/inp
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ls ../sync/assumed-identical-2017110*
-ls ../sync/assumed-identical-2017110* -al
-wc -l ../sync/assumed-identical-20171109_025030.nt 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-ls
-rm pstimg tojustgrab nohup.out 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-ls
-filtfind |wc
-wc -l /tmp/galind 
-nohup sh ../wrap-exif.sh &
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-7.nt
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-12.ts
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-12.tsv
-rm ../sync/bhash-20171107-12.ts
-vi /tmp//exif.out 
-mv /tmp//exif.out ../sync/exif-20171107-8.xml
-cat ~/tmp/sync/bhash-20171107-12.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-11.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-12.tsv |awk '{print "https://" $2}' >> mrgd; done
-less mrgd 
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-7.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-wc -l /tmp//asd/inp 
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp/asd/tospid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-less ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ls
-rm nohup.out mrgd 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-nohup sh ../wrap-exif.sh &
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-13.tsv
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-8.nt
-cat ~/tmp/sync/bhash-20171107-13.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171107-11.tsv |awk '{print "file:/tmp/sshts/" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171107-13.tsv |awk '{print "https://" $2}' >> mrgd; done
-mv /tmp//exif.out ../sync/exif-20171107-9.xml
-vi ../sync/exif-20171107-9.xml
-cat mrgd |perl ../fdupes-proc.pl e  > ../sync/byte-for-byte-identical-20171107-8.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-ls
-rm mrgd nohup.out 
-rm -rf s1.postimg.org/
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-grep 'class="post-image-container"' /tmp/imgur|awk -F'"' '{print $2}'
-grep 'class="post-image-container"' /tmp/imgur|awk -F'"' '{print $2}'|while read i;do procimg https://imgur.com/$i https://i.imgur.com/$i.jpg;doimg https://i.imgur.com/$i.jpg https://imgur.com/a/UR46X;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ls
-fdupes -r . /tmp/proc/
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp#file:/tmp#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp#file:/tmp#'|perl ../fdupes-proc.pl >> ../sync/byte-for-byte-identical-20171107-9.nt
-less ../sync/byte-for-byte-identical-20171107-9.nt
-rm ../sync/byte-for-byte-identical-20171107-9.nt
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#http://#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#https://#'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#https://#;s/^\.\//https:\/\//'
-fdupes -r . /tmp/proc/|sed -e 's#^/tmp/proc/\([0-9]*\)\.jpg$#file:/tmp/proc/\1.jpg#;s#^/tmp/proc/#https://#;s/^\.\//https:\/\//'|perl ../fdupes-proc.pl >> ../sync/byte-for-byte-identical-20171107-9.nt
-less ../sync/byte-for-byte-identical-20171107-9.nt
-fdupes -r . /tmp/proc/
-fdupes -r . /tmp/proc/|grep '^$'|wc
-ls
-less ../sync/bhash-20171107-13.tsv
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-14.tsv
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-9.nt
-nohup sh ../wrap-exif.sh &
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-mv /tmp//exif.out ../sync/exif-20171107-10.xml
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ls
-rm nohup.out 
-ls
-rm -rf i.imgur.com/
-rm /tmp/toc.zip 
-rm /tmp/proc/*jpg
-ls
-rm -rf s1.postimg.org/
-ls /tmp/proc/
-ls
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-ls
-fdupes -r . /tmp/proc
-fdupes -r . /tmp/proc|sed -e 's/^/tmp/file:\//'
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'|perl ../fdupes-proc.pl 
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'|perl ../fdupes-proc.pl  >> ~/tmp/sync/byte-for-byte-identical-20171107-10.nt
-nohup sh ../wrap-exif.sh &
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-10.nt
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-16.tsv
-mv /tmp//exif.out ../sync/exif-20171107-11.xml
-less ../sync/byte-for-byte-identical-20171107-10.nt 
-grep -v '> <file:' ../sync/byte-for-byte-identical-20171107-10.nt 
-grep -v '> <file:' ../sync/byte-for-byte-identical-20171107-10.nt > /tmp/tmpbfb
-vi /tmp/galind 
-vi /tmp/urld 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'|perl ../fdupes-proc.pl  >> ~/tmp/sync/byte-for-byte-identical-20171107-11.nt
-less ~/tmp/sync/byte-for-byte-identical-20171107-11.nt
-cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ls -al ~/tmp/sync/assumed-identical-2017110*
-wc -l /home/jim/tmp/sync/assumed-identical-20171109_163400.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-nohup sh ../wrap-exif.sh &
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-17.tsv
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-11.nt
-filtfind |wc
-ls
-mv /tmp//exif.out ../sync/exif-20171107-12.xml
-ls
-rm nohup.out 
-ls
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ls
-rm -rf s1.postimg.org/
-vi /tmp/galind 
-vi /tmp/urld 
-for j in d  ;do cat /tmp/galin$j |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img $(cat /tmp/url$j) ; done;done
-filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-nohup sh ../wrap-exif.sh &
-filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171107-12.nt
-mv /tmp//exif.out ../sync/exif-20171107-13.xml
-~/bin/blockhash $(filtfind ) >> ../sync/bhash-20171107-19.tsv
-fdupes -r . /tmp/proc|sed -e 's/\/tmp/file:\//'|perl ../fdupes-proc.pl  >> ~/tmp/sync/byte-for-byte-identical-20171107-12.nt
-less ~/tmp/sync/byte-for-byte-identical-20171107-12.nt
-grep '<' ~/tmp/sync/byte-for-byte-identical-20171107-12.nt|wc
-filtfind |wc
-cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
-cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
 filtfind |while read i;do grep $i ../sync/assumed-identical-20171* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
 cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
 cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
@@ -1998,3 +1480,521 @@ ls /tmp/foo
 reboot
 atom
 loginctl unlock-sessions
+config status
+config diff
+config add .config/gedit/accels
+config commit -m 'local change'
+config status
+less wexford.tex 
+mkdir .scratch
+mv wexford.* .scratch/
+less ubuntu-things-to-try 
+mv ubuntu-things-to-try .scratch/
+config checkout -b misc
+config add .scratch/*
+cd .scratch/
+mv wexford.tex ..
+mv wexford.bib ..
+mv ../wexford.tex .
+mv wexford.bib~ wexford.bib
+config add wexford.*
+config commit -m old
+mv ../wexford.bib .
+config add wexford.*
+config commit -m old
+cd ..
+ls
+ls wnplaying/
+ls
+less pcomb.scala 
+mv pcomb.scala .scratch/
+less taintmp 
+mv taintmp .scratch/
+ls
+mv tippgaa.addresses .scratch/
+less tabs-7jun16 
+mv tabs-7jun16 .scratch/
+ls
+less spsim-bits.scala.txt 
+mv spsim-bits.scala.txt .scratch/
+less swinglon2 
+ls
+mv transfer-report~ .scratch/
+mv .scratch/transfer-report~ .scratch/transfer-report
+config add .scratch/*
+config commit -m old
+mv transfer-report .scratch/
+ls
+ls *~
+less hpsg-notes
+mv *~ .scratch/
+cd .scratch/
+ls
+for i in *~;do mv $i $(echo $i|sed -e 's/~//'); done
+ls
+config add *
+config commit -m old
+for i in *;do if [ -e ../$i ];then mv ../$i . ;fi;done
+config add *
+config commit -m old
+ls
+less ros-na-run.txt 
+less irish-audio 
+less kaldi-links-etc 
+config rm GADDAG.java 
+less rule-thing-english.xml 
+less notes-from-meeting-elaine-2ndaug 
+config rm notes-from-meeting-elaine-2ndaug 
+config commit -m rm
+l
+ls
+config rm tippgaa.addresses 
+cd ..
+ls
+less tuairisc-film-review-uris.txt 
+mv tuairisc-film-review-uris.txt .scratch/
+less tatar-dbpedia-notes 
+mv tatar-dbpedia-notes .scratch/
+mv stanford-links-29feb16 .scratch/
+ls -al .scratch/
+config status
+less synthetic-adjectives.txt 
+mv synthetic-adjectives.txt .scratch/
+less sphp-data 
+mv sphp-data .scratch/
+ls
+less tei2wikitext.xsl 
+less sounds/
+ls sounds/
+ls sounds/output/
+ls
+less solong.tg 
+mv solong.tg .scratch/
+mv spacy-tokens.in .scratch/
+ls
+less slownik-gwar-polskich-images 
+mv slownik-gwar-polskich-images .scratch/
+ls
+less sim.scala 
+mv sim.scala .scratch/
+less spone.tex 
+mv spone.tex .scratch/
+ls
+less sendvid.tmp 
+mv sendvid.tmp .scratch/
+ls
+less sl-adj
+mv sl-adj-es .scratch/
+mv sl-adj .scratch/
+ls
+ls *~
+mv links-* .scratch/
+cd  .scratch/
+ls
+less links-to-self 
+config status
+config add *
+config commit -m old
+config rm sendvid.tmp 
+less sl-adj
+less sl-adj-es 
+config rm sl-adj
+config rm sl-adj-es 
+ls
+less transfer-report 
+config rm transfer-report 
+less newverbs 
+config rm newverbs 
+less lex-sel.txt 
+less sphp-data 
+config commit -m old
+ls
+cd ..
+ls
+less suligowski-autor 
+mv suligowski-autor .scratch/
+less talbanken-conv/
+ls
+less scala-bigram-thing 
+less scala-xml-scratch-28mar16 
+mv scala-xml-scratch-28mar16 scala-bigram-thing .scratch/
+ls
+less header-trim.c 
+mv header-trim.c .scratch/
+ls
+less smt-koehn 
+mv smt-koehn .scratch/
+ls
+less scratch-test.xsl 
+mv scratch* .scratch/
+ls
+less runtime-EclipseApplication/
+ls
+config status
+less Scratch-dbped 
+mv Scratch-dbped .scratch/
+less Scratch-apr18 
+mv Scratch-apr18 .scratch/
+config add .scratch/*
+config commit -m old
+vi .scratch/Scratch-apr18 
+vi .scratch/Scratch-dbped 
+ls
+less Scratchpad
+mv Scratch* .scratch/
+cd .scratch/
+config add *
+config commit -m old
+vi Scratch-detectedfaces 
+config rm Scratch-detectedfaces 
+vi Scratch-apr18 
+vi Scratchpad
+config add Scratchpad
+vi Scratchpad2 
+config add Scratchpad2 
+vi Scratchpad-plwn 
+config commit -m old
+ls
+config rm ubuntu-things-to-try 
+less /Users/jim/openthes_sl.mapping.ttl 
+mv /Users/jim/openthes_sl.mapping.ttl  .
+mv /Users/jim/output-cartesian.scala .
+less /Users/jim/outline-legal 
+mv /Users/jim/outline-legal .
+less /Users/jim/out.txt 
+mv /Users/jim/out.txt .
+mv /Users/jim/pl-pl_FONIPA.xml .
+less /Users/jim/parb.note 
+mv /Users/jim/parb.note  .
+mv /Users/jim/openimaj-paper.groovy .
+mv /Users/jim/oregon-state-thesis-template.tex .
+less /Users/jim/pantad-en-1-raw 
+less /Users/jim/nowe-ateny-pages.txt 
+mv /Users/jim/nowe-ateny-pages.txt .
+less /Users/jim/NOTES-Lexica 
+mv /Users/jim/NOTES-Lexica  .
+less /Users/jim/names-grefine 
+mv /Users/jim/names-grefine .
+mv /Users/jim/mwproc-test.cc .
+less /Users/jim/neural-notes 
+mv /Users/jim/neural-notes .
+less /Users/jim/mpeg7-rdf2 
+less /Users/jim/abair-phono 
+mv /Users/jim/abair-phono .
+less /Users/jim/aas.ScanTailor 
+mv /Users/jim/aas.ScanTailor .
+config add *
+config commit -m old
+config rm pl-pl_FONIPA.xml oregon-state-thesis-template.tex aas.ScanTailor 
+less NOTES-Lexica 
+config commit -m old
+mv /Users/jim/apertium-cleanstream.cc .
+less /Users/jim/attrvalue.red 
+mv /Users/jim/hellogtk.vala /Users/jim/ia-books 
+mv ../ia-books hellogtk.vala
+config add *
+config commit -m old
+less /Users/jim/imgboxtodo 
+less /Users/jim/hitesh.cc 
+less /Users/jim/Vilamovan-pronunciation 
+mv /Users/jim/Vilamovan-pronunciation .
+less /Users/jim/verb-rules 
+mv /Users/jim/verb-rules .
+mv /Users/jim/Wordnet-References-to-track .
+less /Users/jim/ZimbioBits 
+less /Users/jim/Wikitrans-notes 
+mv /Users/jim/Wikitrans-notes .
+less /Users/jim/Wikt-notes-8oct 
+mv /Users/jim/Wikt-notes-8oct .
+less /Users/jim/Texts 
+mv /Users/jim/Texts .
+less /Users/jim/tesseract-iterator-notes 
+less /Users/jim/SJP-extract-notes 
+mv /Users/jim/SJP-extract-notes .
+less /Users/jim/Subtract.java 
+mv /Users/jim/Subtract.java .
+less /Users/jim/swinglon2 
+mv /Users/jim/swinglon2 .
+config add *
+ls
+config commit -m old
+ls
+less /Users/jim/schloalph.txt 
+mv /Users/jim/schloalph.txt  .
+config add *
+config commit -m old
+mv /Users/jim/rep1.svg  .
+less /Users/jim/PPL-TODO 
+mv /Users/jim/PPL-TODO  .
+config add *
+config commit -m old
+config rm rep1.svg PPL-TODO 
+less /Users/jim/rectsource.sh 
+mv /Users/jim/rectsource.sh  .
+config add rectsource.sh 
+less /Users/jim/plwn-plwiki.tsv 
+mv /Users/jim/plwn-plwiki.tsv  .
+less /Users/jim/oldflteanotes 
+mv /Users/jim/oldflteanotes  .
+config add *
+config commit -m old
+less /Users/jim/polish-stuff 
+mv /Users/jim/polish-stuff  .
+config add *
+less /Users/jim/PROCIMG 
+mv /Users/jim/PROCIMG  .
+mv /Users/jim/PROCIMG2  .
+less /Users/jim/Pubs-lookup 
+mv /Users/jim/Pubs-lookup  .
+config add *
+config commit -m old
+config rm PROCIMG PROCIMG2 
+less /Users/jim/polish-modern-in 
+mv /Users/jim/polish-modern-in  .
+less /Users/jim/podtnlist 
+mv /Users/jim/podtnlist /Users/jim/poland-ukaze /Users/jim/poland-ukaze-goog  .
+config add *
+config commit -m old
+config rm podtnlist 
+less poland-ukaze
+config rm poland-ukaze
+less poland-ukaze-goog 
+config rm poland-ukaze-goog 
+less polish-modern-in 
+config rm polish-modern-in 
+config commit -m old
+less /Users/jim/rm-data.tsv 
+mv /Users/jim/rm-data.tsv  .
+config add *
+less /Users/jim/Scala-xml-transform 
+mv /Users/jim/Scala-xml-transform  .
+less /Users/jim/ru-ca.translit.txt 
+mv /Users/jim/ru-ca.translit.txt  .
+less /Users/jim/Terminal\ Saved\ Output-check.txt 
+less /Users/jim/rudict 
+mv /Users/jim/rudict  .
+less rudict 
+mv rudict ..
+less /Users/jim/projectID5558a7123283a_P1_latest.txt 
+config add *
+config commit -m old
+config rm rm-data.tsv 
+mv /Users/jim/numberthing.scala  .
+config add *
+less /Users/jim/offsetter-test 
+mv /Users/jim/offsetter-test  .
+less /Users/jim/NamesRemove 
+mv /Users/jim/NamesRemove  .
+config add *
+config commit -m old
+config rm NamesRemove 
+less /Users/jim/nonsynth-check 
+less /Users/jim/msg-c1-espeak 
+mv /Users/jim/msg-c1-espeak  .
+less /Users/jim/mote-ga-notes 
+mv /Users/jim/mote-ga-notes .
+radd
+config add *
+config commit -m old
+less /Users/jim/mh-keep-images 
+less /Users/jim/MERGE-REGIONS 
+mv /Users/jim/MERGE-REGIONS  .
+less /Users/jim/misc-for-application 
+mv /Users/jim/misc-for-application  .
+less /Users/jim/Module:wuu-pron 
+mv /Users/jim/Module:wuu-pron  .
+less /Users/jim/moar-neural 
+mv /Users/jim/moar-neural  .
+less /Users/jim/mktext.out.txt 
+mv /Users/jim/mktext.out.txt  .
+less /Users/jim/mkskel.sh 
+mv /Users/jim/mkskel.sh  .
+less /Users/jim/most-test.xml 
+mv /Users/jim/most-test.xml  .
+less /Users/jim/morphadorn1 
+mv /Users/jim/morphadorn1  .
+less /Users/jim/moses-stuff.txt 
+mv /Users/jim/moses-stuff.txt  .
+config add *
+config commit -m old
+less MERGE-REGIONS 
+config rm MERGE-REGIONS 
+vi moses-stuff.txt 
+config add *
+config commit -m old
+less /Users/jim/MLODE-todo 
+mv /Users/jim/MLODE-todo  .
+ls
+less /Users/jim/mini-dixtools.scala 
+mv /Users/jim/mini-dixtools.scala  .
+less /Users/jim/maori-in 
+mv /Users/jim/maori-in  .
+less /Users/jim/midnightcourtnotes 
+mv /Users/jim/midnightcourtnotes  .
+less /Users/jim/lt_simple.cc 
+mv /Users/jim/lt_simple.cc  .
+less /Users/jim/Lua-colon 
+mv /Users/jim/Lua-colon  .
+less /Users/jim/lv-thing 
+mv /Users/jim/lv-thing  .
+less /Users/jim/list-test.cc 
+mv /Users/jim/list-test.cc  .
+less /Users/jim/lrs.py 
+mv /Users/jim/lrs.py  .
+less /Users/jim/list-strip.cc 
+mv /Users/jim/list-strip.cc  .
+less /Users/jim/lemon-rule-rdfa 
+mv /Users/jim/lemon-rule-rdfa  .
+less /Users/jim/lemon-rdfa.html 
+mv /Users/jim/lemon-rdfa.html  .
+mv /Users/jim/ldb-gawn-bits /Users/jim/lemon-rdfa-2.html  .
+ls -al
+config add *
+config commit -m old
+config branch
+config push origin misc
+cd ..
+git checkout master
+config checkout master
+config checkout -b misc2
+mkdir .scratch
+less maori-languagetool.xml 
+mv maori-languagetool.xml .scratch/
+config add .scratch/maori-languagetool.xml 
+config commit -m old
+config push origin misc2
+config pull origin misc2
+config rm practice/a.out 
+history -a
+cd tmp/fashq5/
+. ~/img/sourceme 
+ogimageproc https://www.instagram.com/p/BbVaZRDl1gN/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BbWSvlrFTyF/?taken-by=fiolkowelove
+ogimageproc https://www.instagram.com/p/BbU7ffelLrD/?taken-by=fiolkowelove
+ogimageproc https://www.instagram.com/p/BbWPesll8Wd/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BbPaQt0F8qp/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BbVOGvAg2ai/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbRbjkzg7ot/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbKod3tg3rF/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbG_2cBg2yF/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbF46q5Az68/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbEtwsPAaS_/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BbSOLx4BUQ3/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/Ba87nq-BwjN/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BaOztYZh79Z/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BZgvZHNBEh7/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BZYEoT6h70P/?taken-by=ivettamakarova
+ogimageproc https://www.instagram.com/p/BbWb7avhNsi/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbU04PwBn3m/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbR30WPBMxZ/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbNRFzNBdnc/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbHd047BnJU/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbB2OZvBfdx/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/BbROBk9juG1/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/BbPoI17jMEM/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/BbUzquejpvE/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/BbWDTLlAudz/?taken-by=_lesya_novikova_
+ogimageproc https://www.instagram.com/p/BbMkgiEgR7w/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BbJvB0qgqUq/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BbCZFg_gsGm/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/BbWPv_6lkoy/?taken-by=mashenka.khv
+ogimageproc https://www.instagram.com/p/BbUCov3lPqS/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BbSF8CjlgLO/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BaovxwLF_Wk/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BaE17HsFqQ4/?taken-by=l_kondra
+ogimageproc https://www.instagram.com/p/BbRdavcjuRT/?taken-by=dashamart
+ogimageproc https://www.instagram.com/p/BbRT4lxlT0N/?taken-by=yuliyabb
+ogimageproc https://www.instagram.com/p/BbVrtRPAqhB/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbUGFqOgr0m/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbODeU7Aqls/?taken-by=summerlovesummerl
+ogimageproc https://www.instagram.com/p/BbSPy3XBfs0/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BbSAcZ5hA0S/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BbWcTZmFGAp/?taken-by=maria_domark
+ogimageproc https://www.instagram.com/p/BbMLg_QFTT6/?taken-by=maria_domark
+ogimageproc https://www.instagram.com/p/BbWcboCnweH/?taken-by=lubimaya_yulya
+ogimageproc https://www.instagram.com/p/BbUA6U1hUNM/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/BbMMsBch0Di/?taken-by=_liliyapetrova_
+ls /tmp/asd
+mkdir /tmp/asd
+filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp/asd/inp
+cd /tmp/asd/
+sh ~/tmp/cfimg2/scripts/grab.sh inp 
+cd ~-
+ls
+sh ../wrap-exif.sh 
+less /tmp/exif.out 
+mv /tmp/exif.out ~/tmp/sync/exif-20171111-1.xml
+filtfind |perl ~/img/pipe-ook.pl >> ~/tmp/sync/ookdata-20171111-1.nt
+filtfind |~/bin/phash >> ~/tmp/sync/phash-20171111-1.nt
+blockhash.py $(filtfind ) >> ~/tmp/sync/blockhash_p-20171111-1.tsv
+blockhash.py $(filtfind ) >> ~/tmp/sync/blockhash_p-20171111-2.tsv
+ls
+ls -al
+ogimageproc https://www.instagram.com/p/Ba6Q6VulmTU/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/Bay3cOulGCs/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BahleQLlS6M/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/Baueo_mFDP0/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/Baq1WBVlcfN/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BagYLWRl4vj/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BVac7_Ull9j/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BVPPXjXDl7c/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BUmJf3vjCBd/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BbKETiwlKXA/?taken-by=vdp02
+ogimageproc https://www.instagram.com/p/BbVznz7lddQ/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BbO1a4SFR9v/?taken-by=monika.chmielecka
+ogimageproc https://www.instagram.com/p/BbPx4Iagmbi/?taken-by=raabiosa
+ogimageproc https://www.instagram.com/p/BbEXGCrAfYL/?taken-by=raabiosa
+ogimageproc https://www.instagram.com/p/BbAK7gDgNbU/?taken-by=raabiosa
+ogimageproc https://www.instagram.com/p/BbSj5Mnnyfx/?taken-by=natali_danish
+ogimageproc https://www.instagram.com/p/BbNCkp6nZ6v/?taken-by=natali_danish
+ogimageproc https://www.instagram.com/p/BbUqfTBHMex/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbPKOZQnz2x/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbUbGgYHK84/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BbRyG1zHiYW/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BbKYz1UHKLL/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BazHl6AHRUC/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/Baa1lLZnumS/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BaEQh9nDVVU/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BaJSq1eDmDU/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BZ6PZd7jw8u/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BZ3aFkuH9Sd/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BZ0sUacjNfr/?taken-by=pretty__potatoo
+ogimageproc https://www.instagram.com/p/BbWDZB8nIXj/?taken-by=ira_kamale
+ogimageproc https://www.instagram.com/p/BbFHMm5H4Zg/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/Ba4H4HNnCUH/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BaWHQ4aHQwA/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BX2RS2OD8FY/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BXyq7D3jOOF/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BXxicCjjbJA/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BXq0Tu9jLiZ/?taken-by=shipilovaks
+ogimageproc https://www.instagram.com/p/BbU_1p6nAid/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/BbBRa8VHRIz/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/Ba_Bv4Xn7qn/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/Ba5F8CWnrRA/?taken-by=bitch_soul_
+less ~/tmp/sync/unsorted-triples-20171111-2.nt 
+less ~/tmp/sync/unsorted-triples-20171111-1.nt 
+grep 21227333_129696450988121_1069634602609410048_n.jpg ~/tmp/sync/unsorted-triples-20171111-1.nt 
+echo 'ppl:picd922591af518d535 owl:sameAs ppl:pic'
+congrep shipil
+echo 'ppl:picd922591af518d535 owl:sameAs ppl:pic71069bf0b7745d08 .'
+echo 'ppl:picd922591af518d535 owl:sameAs ppl:pic71069bf0b7745d08 .' >> ~/tmp/fixed/people.ttl 
+ogimageproc https://www.instagram.com/p/BbWMfw7H2RC/?taken-by=sofia_official_
+ogimageproc https://www.instagram.com/p/BbXN180BDd-/?taken-by=maryhockings
+ogimageproc https://www.instagram.com/p/BbHVZFGhXKQ/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbMBF9Rhj5A/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbJ-LghhXlz/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/Ba1QVMgh0E-/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BamCXjJhiZQ/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbW9HTZhorx/?taken-by=alina_sabirova1
+ogimageproc https://www.instagram.com/p/BbW_JjhnXoK/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbUqfTBHMex/?taken-by=juleczkaaa_jula
+ogimageproc https://www.instagram.com/p/BbXFnSxFQAm/?taken-by=helga_model
+ogimageproc https://www.instagram.com/p/BbU-26phCrk/?taken-by=lerazhuravleva
+ogimageproc https://www.instagram.com/p/BbWgcheBJo4/?taken-by=lerazhuravleva
+ogimageproc https://www.youtube.com/watch?v=hISSsaIvUSU
+ogimageproc https://www.youtube.com/watch?v=Js-TqXjtdMg
+ogimageproc https://www.youtube.com/watch?v=-ki2n7nC5Zw
+ogimageproc https://www.youtube.com/watch?v=WpPwJ8YtWhI
+ogimageproc https://www.youtube.com/watch?v=W5-9mVvPcGs
+ogimageproc https://www.youtube.com/watch?v=k6ZRmTD_e2k
+ogimageproc https://www.youtube.com/watch?v=IQisUbBljW0
