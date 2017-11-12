@@ -1,13 +1,3 @@
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-4.nt && rm $i;done
-ls
-cd ../e/
-for i in *;do grep $(echo $i|sed -e 's/\.jpg$//'|awk '{a=substr($0,0,64);print a ".jpg"}') ~/tmp/sync/assumed-identical-20171108* && grep $i ~/tmp/sync/byte-for-byte-identical-20171107-4.nt && rm $i;done
-ls
-mv * ..
-cd ../d/
-mv * ..
-ls
-cd ..
 ks
 lsls
 ls
@@ -1998,3 +1988,13 @@ ls /tmp/foo
 reboot
 atom
 loginctl unlock-sessions
+config status
+config branch
+less .bash_history 
+loginctl unlock-sessions
+ls
+less Playing/Chromagnon/.git/refs/remotes/origin/HEAD 
+less Playing/Chromagnon/.git/config 
+cd Playing/
+ls
+git clone https://github.com/JRBANCEL/Chromagnon.git
