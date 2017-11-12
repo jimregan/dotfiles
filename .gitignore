@@ -56,3 +56,4 @@ IdeaProjects/
 .config/gtkrc-2.0
 .config/gtkrc
 .scala_history
+.gdb_history
