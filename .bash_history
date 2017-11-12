@@ -1,4 +1,3 @@
-ks
 lsls
 ls
 rmemptydir 
@@ -1998,3 +1997,4 @@ less Playing/Chromagnon/.git/config
 cd Playing/
 ls
 git clone https://github.com/JRBANCEL/Chromagnon.git
+loginctl unlock-sessions
