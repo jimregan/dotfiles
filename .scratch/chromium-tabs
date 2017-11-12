@@ -111,3 +111,13 @@ SelectedNavigationInTab - Tab: 447, Index: 0, Time: 13154921830144459
 UpdateTabNavigation - Tab: 447, Index: 0, Url: http://www.voxforge.org/home/forums/message-boards/speech-recognition-engines/using-your-graphics-card-for-improved-speech-recognition-and-acoustic-model-training
 SelectedNavigationInTab - Tab: 448, Index: 0, Time: 13154921834878107
 UpdateTabNavigation - Tab: 448, Index: 0, Url: https://liuchuan.org/pub/cuHMM.pdf
+SelectedNavigationInTab - Tab: 449, Index: 2, Time: 13154921862898843
+UpdateTabNavigation - Tab: 449, Index: 0, Url: https://github.com/c4dm/vamp-plugin-sdk
+UpdateTabNavigation - Tab: 449, Index: 1, Url: https://github.com/c4dm/vamp-plugin-sdk/tree/master/examples
+UpdateTabNavigation - Tab: 449, Index: 2, Url: https://github.com/c4dm/vamp-plugin-sdk/blob/master/examples/SpectralCentroid.cpp
+SelectedNavigationInTab - Tab: 450, Index: 0, Time: 13154921864611759
+UpdateTabNavigation - Tab: 450, Index: 0, Url: http://www.vamp-plugins.org/guide.pdf
+SelectedNavigationInTab - Tab: 451, Index: 0, Time: 13154921866431385
+UpdateTabNavigation - Tab: 451, Index: 0, Url: https://github.com/c4dm/qm-vamp-plugins/blob/master/plugins/DWT.cpp
+SelectedNavigationInTab - Tab: 452, Index: 0, Time: 13154921869015908
+UpdateTabNavigation - Tab: 452, Index: 0, Url: https://github.com/c4dm/qm-vamp-plugins/blob/master/plugins/Transcription.cpp
