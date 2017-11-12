@@ -128,5 +128,6 @@ then
 fi
 if [ `uname` = "Darwin" ]
 then
+	export PATH=$PATH:/usr/local/bin/
 	alias config='/usr/local/bin/git --git-dir=/Users/jim/.cfg/ --work-tree=/Users/jim'
 fi
