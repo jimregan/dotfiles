@@ -116,3 +116,17 @@ SelectedNavigationInTab - Tab: 430, Index: 0, Time: 13155005527267671
 UpdateTabNavigation - Tab: 430, Index: 0, Url: https://github.com/tensorflow/tensorflow/issues/13868
 SelectedNavigationInTab - Tab: 431, Index: 0, Time: 13155006173954678
 UpdateTabNavigation - Tab: 431, Index: 0, Url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/ops/parsing_ops.cc
+SelectedNavigationInTab - Tab: 432, Index: 0, Time: 13155006212410105
+UpdateTabNavigation - Tab: 432, Index: 0, Url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/ops/word2vec_ops.cc
+SelectedNavigationInTab - Tab: 433, Index: 1, Time: 13155006213546022
+UpdateTabNavigation - Tab: 433, Index: 0, Url: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/user_ops
+UpdateTabNavigation - Tab: 433, Index: 1, Url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/user_ops/ackermann_op.cc
+SelectedNavigationInTab - Tab: 434, Index: 0, Time: 13155006421487708
+UpdateTabNavigation - Tab: 434, Index: 0, Url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/mfcc_dct.cc
+SelectedNavigationInTab - Tab: 435, Index: 0, Time: 13155006586858730
+UpdateTabNavigation - Tab: 435, Index: 0, Url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/mfcc.cc
+SelectedNavigationInTab - Tab: 436, Index: 1, Time: 13155006691677234
+UpdateTabNavigation - Tab: 436, Index: 0, Url: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core
+UpdateTabNavigation - Tab: 436, Index: 1, Url: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/kernels
+SelectedNavigationInTab - Tab: 437, Index: 0, Time: 13155006764853542
+UpdateTabNavigation - Tab: 437, Index: 0, Url: https://github.com/tensorflow/tensorflow/commit/ffc5e6fbf68b5229b68cfe96bbcaf58619277c06
