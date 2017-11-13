@@ -505,3 +505,74 @@ filtfind |wc
 cat /tmp/asd/spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
 cat /tmp//asd//inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
 cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171107-1.nt
+cd ../../ClarinStudioKaldi/
+ls
+cd local_clarin/
+ls
+grep L\. *
+grep L. *
+less clarin_prepare_dict.sh 
+less clarin_chain_tdnn.sh 
+grep lexicon *
+less clarin_prepare_dict.sh 
+man find
+ls
+less arpa.lm.gz 
+find . -name '*ark'
+ls
+cd ..
+find . -name '*ark'
+less data/test/data/raw_mfcc_test.39.ark 
+less data/test/data/raw_mfcc_test.39.scp 
+less data/test/data/raw_mfcc_test.39.ark 
+less data/test/data/raw_mfcc_test.39.scp 
+cd Playing/kaldi/
+find src -name '*h' -or -name '*cc'|xargs grep irst
+find src -name '*h' -or -name '*cc'|xargs grep irstl
+find src -name '*h' -or -name '*cc'|xargs grep '<irst'
+find src -name '*h' -or -name '*cc'|xargs grep '"irst'
+find src -name '*h' -or -name '*cc'|xargs grep n_gram
+find src -name '*h' -or -name '*cc'|xargs grep dictionary
+find src -name '*h' -or -name '*cc'|xargs grep lmContainer.h
+ls
+cd src/
+ls
+cd lm
+ls
+less irstlm.mk 
+ls README 
+less README 
+find ../.. -name '*replace-example*'
+find ../.. -name '*replace*example*'
+less README 
+ls
+less README 
+cd ..
+ls
+ls fstbin/
+ls fst/
+ls fstext/
+ls
+ls decoder/
+find . -name 'arpa2*'
+less lmbin/arpa2fst.cc 
+less lm/arpa-lm-compiler.cc 
+find . -name 'edit*'
+ls util/
+less util/edit-distance.h 
+less util/edit-distance-inl.h 
+find . -name 'lexicon*'
+find . -name 'lex*'
+find . -name 'dict*'
+find . -name '*dict*'
+find . -name '*lex*'
+less lat/word-align-lattice-lexicon.cc 
+less util/stl-utils.h 
+ls
+find . -name 'README'
+less lm/README 
+find . -name 'convert*'
+less bin/convert-ali.cc 
+cd ../
+ls
+ls models/
