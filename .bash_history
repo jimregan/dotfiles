@@ -576,3 +576,20 @@ less bin/convert-ali.cc
 cd ../
 ls
 ls models/
+cd /tmp/proc/
+ls
+~/bin/blockhash *jpg >> ~/tmp/sync/bhash-20171111-1.tsv 
+for i in */*;do grep $i ~/tmp/sync/byte-for-byte-identical-20171111-1.nt && rm $i;done
+ls
+for i in *;do grep $i ~/tmp/sync/byte-for-byte-identical-20171111-1.nt && rm $i;done
+ls
+~/bin/blockhash *jpg >> ~/tmp/sync/bhash-20171111-2.tsv 
+less ~/tmp/sync/bhash-20171111-2.tsv 
+rm ~/tmp/sync/bhash-20171111-2.tsv 
+~/bin/blockhash * >> ~/tmp/sync/bhash-20171111-2.tsv 
+less ~/tmp/sync/bhash-20171111-2.tsv 
+vi /tmp//galin 
+mkdir /tmp/asd
+for i in *;do grep $i ~/tmp/sync/assumed-identical-20171111_140835.nt && grep $i ~/tmp/sync/byte-for-byte-identical-20171111-* && rm $i;done
+ls
+history -a
