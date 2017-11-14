@@ -67,3 +67,4 @@ IdeaProjects/
 .kde/share/apps/libkface/database/recognition.db
 .config/enchant/*.dic
 .config/enchant/*.dic
+.kde/share/config/kdialogrc
