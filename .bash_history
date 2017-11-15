@@ -593,3 +593,32 @@ mkdir /tmp/asd
 for i in *;do grep $i ~/tmp/sync/assumed-identical-20171111_140835.nt && grep $i ~/tmp/sync/byte-for-byte-identical-20171111-* && rm $i;done
 ls
 history -a
+cd ~/Playing/models/
+ls
+ls -al
+cd syntaxnet/
+ls
+cd tensorflow/
+ls
+ls -al
+git status
+ls
+cd tensorflow/core/ops/
+ls
+cd ..
+find . -name '*grad.py'
+find . -name '*grad.cc'
+less python/ops/spectral_ops.py 
+find . -name '*py'|xargs grep @ops.RegisterGradient
+git checkout master
+git pull origin master
+find . -name '*py'|xargs grep @ops.RegisterGradient
+find . -name '*py'|xargs grep @ops.RegisterGradient > /tmp/pyops
+find . -name '*cc'|xargs grep REGISTER_GRADIENT_OP > /tmp/ccops
+less /tmp/ccops 
+wc -l /tmp//*ops
+less /tmp/pyops 
+less /tmp/ccops 
+less /tmp/pyops 
+less /tmp/ccops 
+less ./cc/gradients/math_grad.cc
