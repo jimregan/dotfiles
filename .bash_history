@@ -736,3 +736,41 @@ less ~/.scratch/list-test.cc
 less ~/.scratch/list-strip.cc 
 ls ~/*cc
 less ~/test.cc 
+cd Playing/
+git clone https://github.com/amaurycrickx/recognito.git
+cd recognito/
+ls
+cd recognito/
+ls
+mvn install
+ls
+find src -type f
+find src -type f |xargs grep main
+cd ../..
+git clone https://github.com/nltk/nltk_data.git
+cd nltk_data/
+ls
+cd packages/corpora/
+ls
+unzip -l stopwords.zip 
+less stopwords.xml 
+git checkout gh-pages
+ls
+unzip -l wordnet
+unzip -l nonbreaking_prefixes.zip 
+unzip -l dependency_treebank.zip 
+less ~/Playing/mosesdecoder/scripts/tokenizer/tokenizer.perl 
+find ~/Playing/mosesdecoder/scripts -name 'non*break*'
+less /home/jim/Playing/mosesdecoder/scripts/share/nonbreaking_prefixes/nonbreaking_prefix.ga
+unzip -l nonbreaking_prefixes.zip 
+unzip nonbreaking_prefixes.zip 
+diff -u nonbreaking_prefixes/nonbreaking_prefix.pl /home/jim/Playing/mosesdecoder/scripts/share/nonbreaking_prefixes/nonbreaking_prefix.pl 
+less nonbreaking_prefixes/nonbreaking_prefix.pl 
+cp /home/jim/Playing/mosesdecoder/scripts/share/nonbreaking_prefixes/nonbreaking_prefix.ga nonbreaking_prefixes/
+less nonbreaking_prefixes/README.txt 
+ls nonbreaking_prefixes/* |zip nonbreaking_prefixes.zip -@
+git checkout -b irish
+git add nonbreaking_prefixes.zip 
+git commit -m 'add Irish (ga) nonbreaking prefixes'
+git remote add mine https://github.com/jimregan/nltk_data.git
+git push mine irish 
