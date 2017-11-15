@@ -724,3 +724,15 @@ less 1
 sphinx_jsgf2fsg -fsm 1 -jsgf /tmp/inp.jsgf
 less 1
 apt-cache search pdftoxml
+ls /tmp/pr
+ls /tmp/
+mkdir /tmp/proc
+vi /tmp/galin
+less ~/practice/boost-upper.cc 
+less ~/practice/trie-node.h
+less ~/practice/max-subarray.cc 
+ls ~/.scratch/
+less ~/.scratch/list-test.cc 
+less ~/.scratch/list-strip.cc 
+ls ~/*cc
+less ~/test.cc 
