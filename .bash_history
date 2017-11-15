@@ -622,3 +622,105 @@ less /tmp/ccops
 less /tmp/pyops 
 less /tmp/ccops 
 less ./cc/gradients/math_grad.cc
+cd ../tmp/foo/
+ls
+rm nohup.out 
+find s1.postimg.org -type f
+find s1.postimg.org -type f|while read i;do grep $i ../sync/byte-for-byte-identical-20171109-1.nt && rm $i;done
+ls
+. ../sourceme 
+rmemptydir 
+ls
+cat /tmp/galin ;while read i;do img=$(lynx -dump $i|grep dl=|awk '{print $2}');echo $img;done
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep dl=|awk '{print $2}');echo $img;done
+cat /tmp/galin|head -n 1
+i=$(cat /tmp/galin|head -n 1)
+lynx -dump $i
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep https|grep dl|awk '{print $2}');echo $img;done
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep https|grep dl|awk '{print $2}');echo procimg $i $img;doimg $img https://postimg.org/gallery/24rgvaoy4/;done
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep https|grep dl|awk '{print $2}'); procimg $i $img;doimg $img https://postimg.org/gallery/24rgvaoy4/;done
+fdupes -r . /tmp/proc/
+fdupes -r . /tmp/proc/|sed -e 's/^\/tmp/file:\//'
+fdupes -r . /tmp/proc/|sed -e 's/^\/tmp/file:\//'|perl ../fdupes-proc.pl 
+fdupes -r . /tmp/proc/|sed -e 's/^\/tmp/file:\//'|perl ../fdupes-proc.pl  >> ../sync/byte-for-byte-identical-20171111-1.nt 
+#cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep https|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img ;done
+vi spid
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep https|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/2gx9qw34c/ ;done
+ls
+filtfind 
+filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp/asd/inp
+cd /tmp/asd/
+ls
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cd ~-
+ls
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+less spid.log 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171109-1.nt 
+rm spid
+rm spid.log 
+ls
+rm nohup.out 
+filtfind |perl ~/scripts/pipe-ook.pl >> ../sync/ookdata-20171111-1.nt 
+sh ../wrap-exif.sh 
+mv /tmp/exif.out ~/tmp/sync/exif-20171111-1.xml 
+~/bin/blockhash $(filtfind ) >> ~/tmp/sync/bhash-20171111-3.tsv
+cat ~/tmp/sync/bhash-20171111-3.tsv
+cat ~/tmp/sync/bhash-20171111-3.tsv|awk '{print $1}' |while read i;do echo >> mrgd; grep $i ../sync/bhash-20171111-2.tsv |awk '{print $2}' >> mrgd; grep $i ../sync/bhash-20171111-3.tsv |awk '{print $2}' >> mrgd;done
+less mrgd 
+cat mrgd |perl ../fdupes-proc.pl e
+less mrgd 
+#cat ~/tmp/sync/bhash-20171111-3.tsv|awk '{print $1}' |while read i;do echo >> mrgd; grep $i ../sync/bhash-20171111-2.tsv |awk '{print "file:/sshots/" $2}' >> mrgd; grep $i ../sync/bhash-20171111-3.tsv |awk '{print "https//" $2}' >> mrgd;done
+rm mrgd 
+cat ~/tmp/sync/bhash-20171111-3.tsv|awk '{print $1}' |while read i;do echo >> mrgd; grep $i ../sync/bhash-20171111-2.tsv |awk '{print "file:/sshots/" $2}' >> mrgd; grep $i ../sync/bhash-20171111-3.tsv |awk '{print "https//" $2}' >> mrgd;done
+less mrgd 
+cat mrgd |perl ../fdupes-proc.pl e
+cat mrgd |perl ../fdupes-proc.pl e >> ../sync/byte-for-byte-identical-20171111-2.nt 
+less ../sync/byte-for-byte-identical-20171111-2.nt 
+tail -f /tmp//asd/inp.log 
+ls
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171109-1.nt 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+less ~/tmp/sync/http-misc-20171109-1.nt 
+rm -rf /tmp/asd/
+mkdir /tmp/asd/
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171111_140835.nt || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
+ls ../sync/
+less ~/tmp/sync/ookdata-20171111-1.nt 
+ls
+rm -rf s17.postimg.org/ mrgd 
+mv fash-rdf-links ../sync/unsorted-triples-20171111-1.nt
+ls
+config diff
+cd ~/Playing/kaldi/
+ls
+less README.md 
+find . -name '*.l'
+find . -name '*.y'
+find . -name '*.yy#'
+find . -name '*.yy'
+find . -name '*.ll'
+find . -name '*h'|xargs grep boost
+sphinx_jsgf2fsg 
+vi /tmp/inp.jsgf
+sphinx_jsgf2fsg -fsm /tmp/inp.jsgf
+sphinx_jsgf2fsg -fsm -jsgf /tmp/inp.jsgf
+sphinx_jsgf2fsg -fsm -jsgf=/tmp/inp.jsgf
+sphinx_jsgf2fsg -fsm=yes -jsgf=/tmp/inp.jsgf
+sphinx_jsgf2fsg -fsm 1 -jsgf=/tmp/inp.jsgf
+sphinx_jsgf2fsg -fsm 1 -jsgf /tmp/inp.jsgf
+ls
+less 1 
+sphinx_jsgf2fsg -fsg 1 -jsgf /tmp/inp.jsgf
+less 1
+vi /tmp/inp.jsgf
+sphinx_jsgf2fsg -fsg 1 -jsgf /tmp/inp.jsgf
+less 1
+vi /tmp/inp.jsgf
+sphinx_jsgf2fsg -fsg 1 -jsgf /tmp/inp.jsgf
+less 1
+sphinx_jsgf2fsg -fsm 1 -jsgf /tmp/inp.jsgf
+less 1
+apt-cache search pdftoxml
