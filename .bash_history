@@ -774,3 +774,107 @@ git add nonbreaking_prefixes.zip
 git commit -m 'add Irish (ga) nonbreaking prefixes'
 git remote add mine https://github.com/jimregan/nltk_data.git
 git push mine irish 
+who
+cd tmp/fashq5
+tail fash-rdf-links 
+ls
+ls -al
+pwd
+who
+ps aux|grep atom
+killall atom
+ps aux|grep atom
+kill -9 2169
+kill -9 2182
+kill -9 2254
+ps aux|grep atom
+atom
+apt-cache search clangd
+sudo apt install clang-5.0
+apt-cache search clang
+sudo apt-get upgrade
+cd Playing/
+git clone git://github.com/ajaxorg/cloud9.git
+git clone https://github.com/creationix/nvm.git ~/.nvm
+source ~/.nvm/nvm.sh
+nvm install 0.10
+cd cloud9/
+sudo npm install packager
+ls
+less README.md 
+cd ..
+rm -rf cloud9/
+sudo rm -rf cloud9/
+git clone https://github.com/c9/core
+mv core/ cloud9core
+cd cloud9core/
+ls
+sudo npm install packager
+cd ..
+sudo rm -rf cloud9core/
+ssh jimregan
+python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+cd ..
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+ssh jimregan
+ls /tmp/pr
+ls /tmp/proc/
+less ~/tmp/sync/byte-for-byte-identical-20171113-3.nt 
+cp ~/tmp/sync/byte-for-byte-identical-20171113-3.nt jimregan:/tmp/
+scp ~/tmp/sync/byte-for-byte-identical-20171113-3.nt jimregan:/tmp/
+ssh jimregan
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+less .scratch/chromium-tabs 
+cp .scratch/chromium-tabs .scratch/jsgf
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+less .scratch/chromium-tabs 
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+ssh jimregan
+ping jimregan
+ssh jimregan
+ping jimregan
+ssh 192.168.1.11
+ping 192.168.1.11
+ping jimregan
+ssh 192.168.1.11
