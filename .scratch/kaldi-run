@@ -1183,4 +1183,23 @@ steps/nnet3/get_egs.sh: Getting validation and training subset examples.
 steps/nnet3/get_egs.sh: ... extracting validation and training-subset alignments.
 ... Getting subsets of validation examples for diagnostics and combination.
 steps/nnet3/get_egs.sh: Generating training examples on disk
+run.pl: 6 / 6 failed, log is in exp/nnet3/tdnn1a_sp/egs/log/get_egs.*.log
+Traceback (most recent call last):
+  File "steps/nnet3/train_dnn.py", line 419, in main
+    train(args, run_opts)
+  File "steps/nnet3/train_dnn.py", line 229, in train
+    stage=args.egs_stage)
+  File "steps/libs/nnet3/train/frame_level_objf/acoustic_model.py", line 65, in generate_egs
+    egs_opts=egs_opts if egs_opts is not None else ''))
+  File "steps/libs/common.py", line 153, in execute_command
+    p.returncode, command))
+Exception: Command exited with status 1: steps/nnet3/get_egs.sh                  --cmd "run.pl"                 --cmvn-opts "--norm-means=false --norm-vars=false"                 --transform-dir "exp/tri3b_ali_ali_train_sp"                 --online-ivector-dir "exp/nnet3/ivectors_train_sp_hires"                 --left-context 13                 --right-context 7                 --left-context-initial -1                 --right-context-final -1                 --stage 0                 --samples-per-iter 400000                 --frames-per-eg 8                 --srand 0                 data/train_sp_hires exp/tri3b_ali_ali_train_sp exp/nnet3/tdnn1a_sp/egs
+        
+jim@HG658c:~/Playing/ClarinStudioKaldi$ ls exbash: cannot create temp file for here-document: No space left on device
+bash: cannot create temp file for here-document: No space left on device
+^C
+jim@HG658c:~/Playing/ClarinStudioKaldi$ ls ~/bibash: cannot create temp file for here-document: No space left on device
+bash: cannot create temp file for here-document: No space left on device
+
+ls: cannot access '/home/jim/bi': No such file or directory
 
