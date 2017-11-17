@@ -1180,4 +1180,5 @@ copy-int-vector ark:- ark,scp:exp/nnet3/tdnn1a_sp/egs/ali.ark,exp/nnet3/tdnn1a_s
 LOG (copy-int-vector[5.2.160~1-51042]:main():copy-int-vector.cc:83) Copied 37569 vectors of int32.
 steps/nnet3/get_egs.sh: Getting validation and training subset examples.
 steps/nnet3/get_egs.sh: ... extracting validation and training-subset alignments.
-
+... Getting subsets of validation examples for diagnostics and combination.
+steps/nnet3/get_egs.sh: Generating training examples on disk
