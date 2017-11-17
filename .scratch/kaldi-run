@@ -1031,4 +1031,156 @@ Checking exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2/text ...
 utils/validate_data_dir.sh: Successfully validated data-directory exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2
 steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 40 exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2 exp/nnet3/extractor exp/nnet3/ivectors_train_sp_hires
 steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_train_sp_hires using the extractor in exp/nnet3/extractor.
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 55 data/test_hires exp/nnet3/extractor exp/nnet3/ivectors_test_hires
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_test_hires using the extractor in exp/nnet3/extractor.
+./local/nnet3/run_ivector_common.sh: preparing directory for low-resolution speed-perturbed data (for alignment)
+utils/data/perturb_data_dir_speed_3way.sh: making sure the utt2dur file is present in data/train, because 
+... obtaining it after speed-perturbing would be very slow, and
+... you might need it.
+utils/data/get_utt2dur.sh: data/train/utt2dur already exists with the expected length.  We won't recompute it.
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed0.9
+Checking data/train_sp_speed0.9/text ...
+--> reading data/train_sp_speed0.9/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed0.9
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed1.1
+Checking data/train_sp_speed1.1/text ...
+--> reading data/train_sp_speed1.1/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed1.1
+utils/data/combine_data.sh data/train_sp data/train data/train_sp_speed0.9 data/train_sp_speed1.1
+utils/data/combine_data.sh: combined utt2uniq
+utils/data/combine_data.sh [info]: not combining segments as it does not exist
+utils/data/combine_data.sh: combined utt2spk
+utils/data/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/data/combine_data.sh: combined utt2dur
+utils/data/combine_data.sh [info]: **not combining feats.scp as it does not exist everywhere**
+utils/data/combine_data.sh: combined text
+utils/data/combine_data.sh [info]: **not combining cmvn.scp as it does not exist everywhere**
+utils/data/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/data/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/data/combine_data.sh: combined wav.scp
+utils/data/combine_data.sh [info]: not combining spk2gender as it does not exist
+fix_data_dir.sh: kept all 37620 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+utils/data/perturb_data_dir_speed_3way.sh: generated 3-way speed-perturbed version of data in data/train, in data/train_sp
+Checking data/train_sp/text ...
+--> reading data/train_sp/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+./local/nnet3/run_ivector_common.sh: making MFCC features for low-resolution speed-perturbed data (needed for alignments)
+steps/make_mfcc.sh --nj 40 --cmd run.pl data/train_sp
+Checking data/train_sp/text ...
+--> reading data/train_sp/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for train_sp
+steps/compute_cmvn_stats.sh data/train_sp
+Succeeded creating CMVN stats for train_sp
+./local/nnet3/run_ivector_common.sh: fixing input data-dir to remove nonexistent features, in case some 
+.. speed-perturbed segments were too short.
+fix_data_dir.sh: kept all 37620 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+./local/nnet3/run_ivector_common.sh: aligning with the perturbed low-resolution data
+steps/align_fmllr.sh --nj 40 --cmd run.pl data/train_sp data/lang exp/tri3b_ali exp/tri3b_ali_ali_train_sp
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train_sp using exp/tri3b_ali/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3b_ali_ali_train_sp
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali_ali_train_sp/log/analyze_alignments.log
+527 warnings in exp/tri3b_ali_ali_train_sp/log/align_pass2.*.log
+647 warnings in exp/tri3b_ali_ali_train_sp/log/align_pass1.*.log
+52 warnings in exp/tri3b_ali_ali_train_sp/log/fmllr.*.log
+./local_clarin/clarin_tdnn.sh: creating neural net configs using the xconfig parser
+tree-info exp/tri3b_ali/tree 
+steps/nnet3/xconfig_to_configs.py --xconfig-file exp/nnet3/tdnn1a_sp/configs/network.xconfig --config-dir exp/nnet3/tdnn1a_sp/configs/
+nnet3-init exp/nnet3/tdnn1a_sp/configs//init.config exp/nnet3/tdnn1a_sp/configs//init.raw 
+LOG (nnet3-init[5.2.160~1-51042]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3/tdnn1a_sp/configs//init.raw
+nnet3-info exp/nnet3/tdnn1a_sp/configs//init.raw 
+nnet3-init exp/nnet3/tdnn1a_sp/configs//ref.config exp/nnet3/tdnn1a_sp/configs//ref.raw 
+LOG (nnet3-init[5.2.160~1-51042]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3/tdnn1a_sp/configs//ref.raw
+nnet3-info exp/nnet3/tdnn1a_sp/configs//ref.raw 
+nnet3-init exp/nnet3/tdnn1a_sp/configs//ref.config exp/nnet3/tdnn1a_sp/configs//ref.raw 
+LOG (nnet3-init[5.2.160~1-51042]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3/tdnn1a_sp/configs//ref.raw
+nnet3-info exp/nnet3/tdnn1a_sp/configs//ref.raw 
+2017-11-17 15:07:43,955 [steps/nnet3/train_dnn.py:35 - <module> - INFO ] Starting DNN trainer (train_dnn.py)
+steps/nnet3/train_dnn.py --stage=-10 --cmd=run.pl --feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires --feat.cmvn-opts=--norm-means=false --norm-vars=false --trainer.srand=0 --trainer.max-param-change=2.0 --trainer.num-epochs=3 --trainer.samples-per-iter=400000 --trainer.optimization.num-jobs-initial=2 --trainer.optimization.num-jobs-final=6 --trainer.optimization.initial-effective-lrate=0.0015 --trainer.optimization.final-effective-lrate=0.00015 --trainer.optimization.minibatch-size=256,128 --egs.dir= --cleanup.remove-egs=true --use-gpu=true --feat-dir=data/train_sp_hires --ali-dir=exp/tri3b_ali_ali_train_sp --lang=data/lang --reporting.email= --dir=exp/nnet3/tdnn1a_sp
+['steps/nnet3/train_dnn.py', '--stage=-10', '--cmd=run.pl', '--feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires', '--feat.cmvn-opts=--norm-means=false --norm-vars=false', '--trainer.srand=0', '--trainer.max-param-change=2.0', '--trainer.num-epochs=3', '--trainer.samples-per-iter=400000', '--trainer.optimization.num-jobs-initial=2', '--trainer.optimization.num-jobs-final=6', '--trainer.optimization.initial-effective-lrate=0.0015', '--trainer.optimization.final-effective-lrate=0.00015', '--trainer.optimization.minibatch-size=256,128', '--egs.dir=', '--cleanup.remove-egs=true', '--use-gpu=true', '--feat-dir=data/train_sp_hires', '--ali-dir=exp/tri3b_ali_ali_train_sp', '--lang=data/lang', '--reporting.email=', '--dir=exp/nnet3/tdnn1a_sp']
+2017-11-17 15:07:43,958 [steps/nnet3/train_dnn.py:163 - train - INFO ] Arguments for the experiment
+{'ali_dir': 'exp/tri3b_ali_ali_train_sp',
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl',
+ 'compute_per_dim_accuracy': False,
+ 'dir': 'exp/nnet3/tdnn1a_sp',
+ 'do_final_combination': True,
+ 'dropout_schedule': None,
+ 'egs_command': None,
+ 'egs_dir': None,
+ 'egs_opts': None,
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_sp_hires',
+ 'final_effective_lrate': 0.00015,
+ 'frames_per_eg': 8,
+ 'initial_effective_lrate': 0.0015,
+ 'lang': 'data/lang',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_param_change': 2.0,
+ 'minibatch_size': '256,128',
+ 'momentum': 0.0,
+ 'num_epochs': 3.0,
+ 'num_jobs_compute_prior': 10,
+ 'num_jobs_final': 6,
+ 'num_jobs_initial': 2,
+ 'online_ivector_dir': 'exp/nnet3/ivectors_train_sp_hires',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'prior_subset_size': 20000,
+ 'proportional_shrink': 0.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'samples_per_iter': 400000,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'transform_dir': 'exp/tri3b_ali_ali_train_sp',
+ 'use_gpu': True}
+2017-11-17 15:07:44,068 [steps/nnet3/train_dnn.py:203 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
+2017-11-17 15:07:44,086 [steps/nnet3/train_dnn.py:213 - train - INFO ] Generating egs
+steps/nnet3/get_egs.sh --cmd run.pl --cmvn-opts --norm-means=false --norm-vars=false --transform-dir exp/tri3b_ali_ali_train_sp --online-ivector-dir exp/nnet3/ivectors_train_sp_hires --left-context 13 --right-context 7 --left-context-initial -1 --right-context-final -1 --stage 0 --samples-per-iter 400000 --frames-per-eg 8 --srand 0 data/train_sp_hires exp/tri3b_ali_ali_train_sp exp/nnet3/tdnn1a_sp/egs
+File data/train_sp_hires/utt2uniq exists, so augmenting valid_uttlist to
+include all perturbed versions of the same 'real' utterances.
+steps/nnet3/get_egs.sh: feature type is raw
+feat-to-dim scp:exp/nnet3/ivectors_train_sp_hires/ivector_online.scp - 
+steps/nnet3/get_egs.sh: working out number of frames of training data
+feat-to-len 'scp:head -n 10 data/train_sp_hires/feats.scp|' ark,t:- 
+steps/nnet3/get_egs.sh: working out feature dim
+steps/nnet3/get_egs.sh: creating 18 archives, each with 386356 egs, with
+steps/nnet3/get_egs.sh:   8 labels per example, and (left,right) context = (13,7)
+steps/nnet3/get_egs.sh: copying data alignments
+copy-int-vector ark:- ark,scp:exp/nnet3/tdnn1a_sp/egs/ali.ark,exp/nnet3/tdnn1a_sp/egs/ali.scp 
+LOG (copy-int-vector[5.2.160~1-51042]:main():copy-int-vector.cc:83) Copied 37569 vectors of int32.
+steps/nnet3/get_egs.sh: Getting validation and training subset examples.
+steps/nnet3/get_egs.sh: ... extracting validation and training-subset alignments.
+... Getting subsets of validation examples for diagnostics and combination.
+steps/nnet3/get_egs.sh: Generating training examples on disk
 
