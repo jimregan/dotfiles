@@ -1115,10 +1115,10 @@ nnet3-info exp/nnet3/tdnn1a_sp/configs//ref.raw
 nnet3-init exp/nnet3/tdnn1a_sp/configs//ref.config exp/nnet3/tdnn1a_sp/configs//ref.raw 
 LOG (nnet3-init[5.2.160~1-51042]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3/tdnn1a_sp/configs//ref.raw
 nnet3-info exp/nnet3/tdnn1a_sp/configs//ref.raw 
-2017-11-17 15:07:43,955 [steps/nnet3/train_dnn.py:35 - <module> - INFO ] Starting DNN trainer (train_dnn.py)
+2017-11-17 15:23:04,340 [steps/nnet3/train_dnn.py:35 - <module> - INFO ] Starting DNN trainer (train_dnn.py)
 steps/nnet3/train_dnn.py --stage=-10 --cmd=run.pl --feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires --feat.cmvn-opts=--norm-means=false --norm-vars=false --trainer.srand=0 --trainer.max-param-change=2.0 --trainer.num-epochs=3 --trainer.samples-per-iter=400000 --trainer.optimization.num-jobs-initial=2 --trainer.optimization.num-jobs-final=6 --trainer.optimization.initial-effective-lrate=0.0015 --trainer.optimization.final-effective-lrate=0.00015 --trainer.optimization.minibatch-size=256,128 --egs.dir= --cleanup.remove-egs=true --use-gpu=true --feat-dir=data/train_sp_hires --ali-dir=exp/tri3b_ali_ali_train_sp --lang=data/lang --reporting.email= --dir=exp/nnet3/tdnn1a_sp
 ['steps/nnet3/train_dnn.py', '--stage=-10', '--cmd=run.pl', '--feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires', '--feat.cmvn-opts=--norm-means=false --norm-vars=false', '--trainer.srand=0', '--trainer.max-param-change=2.0', '--trainer.num-epochs=3', '--trainer.samples-per-iter=400000', '--trainer.optimization.num-jobs-initial=2', '--trainer.optimization.num-jobs-final=6', '--trainer.optimization.initial-effective-lrate=0.0015', '--trainer.optimization.final-effective-lrate=0.00015', '--trainer.optimization.minibatch-size=256,128', '--egs.dir=', '--cleanup.remove-egs=true', '--use-gpu=true', '--feat-dir=data/train_sp_hires', '--ali-dir=exp/tri3b_ali_ali_train_sp', '--lang=data/lang', '--reporting.email=', '--dir=exp/nnet3/tdnn1a_sp']
-2017-11-17 15:07:43,958 [steps/nnet3/train_dnn.py:163 - train - INFO ] Arguments for the experiment
+2017-11-17 15:23:04,345 [steps/nnet3/train_dnn.py:163 - train - INFO ] Arguments for the experiment
 {'ali_dir': 'exp/tri3b_ali_ali_train_sp',
  'backstitch_training_interval': 1,
  'backstitch_training_scale': 0.0,
@@ -1164,15 +1164,14 @@ steps/nnet3/train_dnn.py --stage=-10 --cmd=run.pl --feat.online-ivector-dir=exp/
  'stage': -10,
  'transform_dir': 'exp/tri3b_ali_ali_train_sp',
  'use_gpu': True}
-2017-11-17 15:07:44,068 [steps/nnet3/train_dnn.py:203 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
-2017-11-17 15:07:44,086 [steps/nnet3/train_dnn.py:213 - train - INFO ] Generating egs
+2017-11-17 15:23:05,310 [steps/nnet3/train_dnn.py:203 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
+2017-11-17 15:23:05,425 [steps/nnet3/train_dnn.py:213 - train - INFO ] Generating egs
 steps/nnet3/get_egs.sh --cmd run.pl --cmvn-opts --norm-means=false --norm-vars=false --transform-dir exp/tri3b_ali_ali_train_sp --online-ivector-dir exp/nnet3/ivectors_train_sp_hires --left-context 13 --right-context 7 --left-context-initial -1 --right-context-final -1 --stage 0 --samples-per-iter 400000 --frames-per-eg 8 --srand 0 data/train_sp_hires exp/tri3b_ali_ali_train_sp exp/nnet3/tdnn1a_sp/egs
 File data/train_sp_hires/utt2uniq exists, so augmenting valid_uttlist to
 include all perturbed versions of the same 'real' utterances.
 steps/nnet3/get_egs.sh: feature type is raw
 feat-to-dim scp:exp/nnet3/ivectors_train_sp_hires/ivector_online.scp - 
 steps/nnet3/get_egs.sh: working out number of frames of training data
-feat-to-len 'scp:head -n 10 data/train_sp_hires/feats.scp|' ark,t:- 
 steps/nnet3/get_egs.sh: working out feature dim
 steps/nnet3/get_egs.sh: creating 18 archives, each with 386356 egs, with
 steps/nnet3/get_egs.sh:   8 labels per example, and (left,right) context = (13,7)
@@ -1181,25 +1180,4 @@ copy-int-vector ark:- ark,scp:exp/nnet3/tdnn1a_sp/egs/ali.ark,exp/nnet3/tdnn1a_s
 LOG (copy-int-vector[5.2.160~1-51042]:main():copy-int-vector.cc:83) Copied 37569 vectors of int32.
 steps/nnet3/get_egs.sh: Getting validation and training subset examples.
 steps/nnet3/get_egs.sh: ... extracting validation and training-subset alignments.
-... Getting subsets of validation examples for diagnostics and combination.
-steps/nnet3/get_egs.sh: Generating training examples on disk
-run.pl: 6 / 6 failed, log is in exp/nnet3/tdnn1a_sp/egs/log/get_egs.*.log
-Traceback (most recent call last):
-  File "steps/nnet3/train_dnn.py", line 419, in main
-    train(args, run_opts)
-  File "steps/nnet3/train_dnn.py", line 229, in train
-    stage=args.egs_stage)
-  File "steps/libs/nnet3/train/frame_level_objf/acoustic_model.py", line 65, in generate_egs
-    egs_opts=egs_opts if egs_opts is not None else ''))
-  File "steps/libs/common.py", line 153, in execute_command
-    p.returncode, command))
-Exception: Command exited with status 1: steps/nnet3/get_egs.sh                  --cmd "run.pl"                 --cmvn-opts "--norm-means=false --norm-vars=false"                 --transform-dir "exp/tri3b_ali_ali_train_sp"                 --online-ivector-dir "exp/nnet3/ivectors_train_sp_hires"                 --left-context 13                 --right-context 7                 --left-context-initial -1                 --right-context-final -1                 --stage 0                 --samples-per-iter 400000                 --frames-per-eg 8                 --srand 0                 data/train_sp_hires exp/tri3b_ali_ali_train_sp exp/nnet3/tdnn1a_sp/egs
-        
-jim@HG658c:~/Playing/ClarinStudioKaldi$ ls exbash: cannot create temp file for here-document: No space left on device
-bash: cannot create temp file for here-document: No space left on device
-^C
-jim@HG658c:~/Playing/ClarinStudioKaldi$ ls ~/bibash: cannot create temp file for here-document: No space left on device
-bash: cannot create temp file for here-document: No space left on device
-
-ls: cannot access '/home/jim/bi': No such file or directory
 
