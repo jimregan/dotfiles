@@ -878,3 +878,216 @@ ssh 192.168.1.11
 ping 192.168.1.11
 ping jimregan
 ssh 192.168.1.11
+ls
+ls -al sjp
+ls -al sjp.warc.gz.warc.gz 
+less sjp.warc.gz.warc.gz 
+cd sjp/
+ls
+less sjp.warc.gz 
+ls
+ls -al
+rm -rf ~/Playing/kaldi/egs/pwr_polish/s5/data/AM_Train_sng_male/
+rm -rf ~/Playing/kaldi/egs/pwr_polish/s5/data/SWD/
+df
+less sjp.pl/oldschool 
+grep '<br />2' sjp.pl/a*
+find ~ -name '*.log'
+find ~/[A-Za-z]* -name '*.log'
+find ~/[A-Za-z]* -name '*.log'|less
+less ~/Playing/kaldi/egs/clarinpl/local_clarin/clarin_pl_data_prep.sh 
+find /tmp/ -name '*log'
+cat /tmp/asd/inp.log 
+rm ~/Downloads/0001_aspire_chain_model.tar.gz 
+df
+killall ssh
+ls
+df
+cd ~/Playing/ClarinStudioKaldi/
+ls
+grep spn local_clarin/*
+less local_clarin/model.fst.gz 
+less local_clarin/model.fst
+less local_clarin/arpa.lm.gz 
+ls
+du -m
+ls
+git status
+rm run-ctd.sh 
+ls -al
+git status
+git pull origin master
+vi run.sh 
+less path.sh 
+git diff
+git branch
+find exp -name '*.log'|xargs grep -i unknown
+find exp -name '*.log'|xargs grep -i 'not covered'
+find exp -name '*.log'|xargs grep -i phone
+find exp -name '*.log'|xargs grep -i 'phone [0-9]'
+find exp -name '*.log'|xargs grep -i 'phone 0'
+find exp -name '*.log'|xargs grep -i 'phone 1'
+find exp -name '*.log'|xargs grep -i '[0-9]'
+find . -name '*_phones*'
+less exp/tri3b_denlats/lang/phones.txt 
+less exp/tri3b_denlats/lang/phones/word_boundary.txt 
+find . -name '*lexi*'
+less exp/tri2a/graph/phones/align_lexicon.int 
+less local_clarin/lexicon.txt 
+
+sh run.sh 
+ls -al audio/
+sh run.sh 
+man md5sum
+cat audio/audio.md5sum 
+cd audio/
+md5sum audio.md5sum 
+md5sum -c  audio.md5sum  || echo nope
+sh run.sh 
+cd ...
+cd ..
+sh run.sh 
+ls
+ls data
+git status
+less utils/validate_data_dir.sh
+touch empty
+if [ -s empty ] ; then echo zer ; fi
+if [ -z empty ] ; then echo zer ; fi
+man if
+help test
+ls
+rm -rf data/
+sh run.sh 
+find . -name '*.sh' |xargs grep 'Generating spk2utt'
+less local_clarin/clarin_pl_data_prep.sh 
+less data/train/utt2spk 
+grep utt2spk local_clarin/*
+grep utt2sp run.sh 
+git status
+find . -name 'utt2spk'
+find . -name 'utt2spk' -exec ls -al {} \;
+find . -name spk2utt -exec ls -al {} \;
+git checkout master
+git checkout -b skip-md5sum-download
+ls -al
+git status
+tar ztvf audio/audio.tar.gz 
+git branch
+git checkout local-changes 
+git log
+git checkout skip-md5sum-download 
+git log
+git cherry-pick f7f8f5ddbce3c333578eca30d1a617034b3bd00a
+git push mine skip-md5sum-download 
+git push mine master
+ls
+ls audio/audio/
+find audio -type f
+cd audio/
+rm -rf audio
+cd ..
+grep utt2sp run.sh 
+./run.sh 
+sh run.sh 
+ls
+git checkout local-changes 
+sh run.sh 
+vi run.sh 
+man set
+help set
+vi run.sh 
+sh run.sh 
+vi run.sh 
+sh run.sh 
+rm -rf ex
+rm -rf exp
+df
+cp audio/audio.tar.gz /media/jim/TOSHIBA/
+rm file:///media/jim/TOSHIBA/audio.tar.gz
+rm /media/jim/TOSHIBA/audio.tar.gz
+git branch
+vi run.sh 
+ls exp/tri1/
+ls exp/
+ls
+df
+vi run.sh 
+rm audio/audio.tar.gz 
+df
+sh run.sh 
+df
+tail ~/.scratch/kaldi-run 
+cat exp/tri3b_mmi/log/acc.0.*.log
+sudo apt-get remove atom
+sudo apt-get remove netbeans
+ls ~/Downloads/*deb
+sudo apt-get remove projectlibre
+sudo apt-get remove code
+df
+ls
+du -k data/
+du -k exp/
+du -m exp/
+du -m data/
+ls data/lang_test/tmp/
+ls -al data/lang_test/tmp/
+ls exp/
+cat exp/tri3b_mmi/log/acc.0.*.log
+tail ~/.scratch/kaldi-run 
+rm -rf exp/tri3b_mmi/
+df
+tail ~/.scratch/kaldi-run 
+less ~/.scratch/kaldi-run 
+df
+ls exp/
+vi run.sh 
+git diff
+cat exp/tri3b_ali/log/*log
+sh run.sh 
+vi run.sh 
+sh run.sh 
+vi run.sh 
+less ./local/nnet3/run_ivector_common.sh
+vi ~/.scratch/kaldi-run 
+less ~/.scratch/kaldi-run 
+clear
+sh run.sh 
+ls ~/bi
+ls ~
+ls ~/bitext
+rm ~/bitext/en-ga-train.t7.gz
+rm ~/bitext/onmt_enga-4-1000-600_checkpoint.t7.gz 
+df
+grep steps/nnet3/get_egs.sh run.sh 
+less run.sh 
+less ./local_clarin/clarin_tdnn.sh
+less run.sh 
+less ./local/nnet3/run_ivector_common.sh
+less run.sh 
+less ./local_clarin/clarin_chain_tdnn.sh
+less ./local/nnet3/run_ivector_common.sh
+find . -name '*.sh'|xargs grep get_egs
+find local -type f|xargs grep get_egs
+find steps -type f|xargs grep get_egs
+find local_clarin -type f|xargs grep get_egs
+ls local_clarin/
+vi run.sh 
+less local_clarin/clarin_tdnn.sh 
+df
+sh run.sh 
+du -m exp/nnet3/tdnn1a_sp/egs/
+ls exp/nnet3/tdnn1a_sp/egs/
+ls -al exp/nnet3/tdnn1a_sp/egs/
+dupes -r  exp/nnet3/tdnn1a_sp/egs/
+ddupes -r  exp/nnet3/tdnn1a_sp/egs/
+fdupes -r  exp/nnet3/tdnn1a_sp/egs/
+rm -rf  exp/nnet3/tdnn1a_sp/egs/
+df
+du ~/Downloads/
+ls -al ~/Downloads/
+rm ~/Downloads/msu_ru_nsh_clunits-0.5.tar.bz2 
+ls -al ~/Download
+rm ~/Downloads/cmusphinx-ru-5.2.tar.gz 
+rm ~/Downloads/cmu_haitian_bdmw_lexicon.scm 
+history -a
