@@ -1,1130 +1,988 @@
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/38/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/38/utt2spk scp:data/train/split40/38/cmvn.scp scp:data/train/split40/38/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.38 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/38/utt2spk scp:data/train/split40/38/cmvn.scp scp:data/train/split40/38/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.38.gz|' ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/38/utt2spk scp:data/train/split40/38/cmvn.scp scp:data/train/split40/38/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/38/utt2spk scp:data/train/split40/38/cmvn.scp scp:data/train/split40/38/feats.scp ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.37628 per frame over 17633 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0517, auxf-impr from fMLLR is 3.37628, over 17633 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.75674 per frame over 15889 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0518, auxf-impr from fMLLR is 3.75674, over 15889 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.61828 per frame over 16481 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0519, auxf-impr from fMLLR is 3.61828, over 16481 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.98724 per frame over 17261 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0520, auxf-impr from fMLLR is 2.98724, over 17261 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.75201 per frame over 15258 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0521, auxf-impr from fMLLR is 3.75201, over 15258 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.58061 per frame over 19076 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0522, auxf-impr from fMLLR is 3.58061, over 19076 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.4821 per frame over 17711 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0523, auxf-impr from fMLLR is 2.4821, over 17711 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.97145 per frame over 16979 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0524, auxf-impr from fMLLR is 2.97145, over 16979 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.75947 per frame over 18206 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0525, auxf-impr from fMLLR is 2.75947, over 18206 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.53375 per frame over 16850 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0526, auxf-impr from fMLLR is 4.53375, over 16850 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.65081 per frame over 14657 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0527, auxf-impr from fMLLR is 4.65081, over 14657 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.64531 per frame over 16976 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0528, auxf-impr from fMLLR is 6.64531, over 16976 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 273 alignments.
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 273 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 273 utterances, errors on 0
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 273 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 341870 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 273 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 273 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -49.0921 over 219994 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 341870 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 273 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.11897 per frame over 17017 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0529, auxf-impr from fMLLR is 3.11897, over 17017 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 273 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 3.68679 over 219994 frames.
+# Accounting: time=14 threads=1
+# Ended (code 0) at Fri Nov 17 04:50:33 GMT 2017, elapsed time 14 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.39.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/39/utt2spk scp:data/train/split40/39/cmvn.scp scp:data/train/split40/39/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/39/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/39/utt2spk scp:data/train/split40/39/cmvn.scp scp:data/train/split40/39/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.39 
+# Started at Fri Nov 17 04:50:19 GMT 2017
+#
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/39/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/39/utt2spk scp:data/train/split40/39/cmvn.scp scp:data/train/split40/39/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.39 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/39/utt2spk scp:data/train/split40/39/cmvn.scp scp:data/train/split40/39/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.39.gz|' ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/39/utt2spk scp:data/train/split40/39/cmvn.scp scp:data/train/split40/39/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/39/utt2spk scp:data/train/split40/39/cmvn.scp scp:data/train/split40/39/feats.scp ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.02076 per frame over 17229 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0530, auxf-impr from fMLLR is 3.02076, over 17229 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.22144 per frame over 20517 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0531, auxf-impr from fMLLR is 3.22144, over 20517 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.99928 per frame over 15144 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0532, auxf-impr from fMLLR is 3.99928, over 15144 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.24096 per frame over 16118 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0533, auxf-impr from fMLLR is 4.24096, over 16118 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.68756 per frame over 15250 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0534, auxf-impr from fMLLR is 2.68756, over 15250 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.40067 per frame over 15291 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0535, auxf-impr from fMLLR is 3.40067, over 15291 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.54983 per frame over 15698 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0536, auxf-impr from fMLLR is 3.54983, over 15698 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.53404 per frame over 14643 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0537, auxf-impr from fMLLR is 3.53404, over 14643 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.70876 per frame over 15062 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0538, auxf-impr from fMLLR is 3.70876, over 15062 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.0721 per frame over 12770 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0539, auxf-impr from fMLLR is 4.0721, over 12770 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.0438 per frame over 14813 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0540, auxf-impr from fMLLR is 5.0438, over 14813 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 252 alignments.
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 252 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 252 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 288415 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 252 utterances; 0 had errors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 252 utterances, errors on 0
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 252 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -49.796 over 189034 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 288415 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 252 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.93328 per frame over 16499 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0541, auxf-impr from fMLLR is 5.93328, over 16499 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 252 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 3.8511 over 189034 frames.
+# Accounting: time=13 threads=1
+# Ended (code 0) at Fri Nov 17 04:50:32 GMT 2017, elapsed time 13 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.3.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/3/utt2spk scp:data/train/split40/3/cmvn.scp scp:data/train/split40/3/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/3/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/3/utt2spk scp:data/train/split40/3/cmvn.scp scp:data/train/split40/3/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.3 
+# Started at Fri Nov 17 04:48:41 GMT 2017
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/3/utt2spk scp:data/train/split40/3/cmvn.scp scp:data/train/split40/3/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/3/utt2spk scp:data/train/split40/3/cmvn.scp scp:data/train/split40/3/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.3.gz|' ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/3/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/3/utt2spk scp:data/train/split40/3/cmvn.scp scp:data/train/split40/3/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.3 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/3/utt2spk scp:data/train/split40/3/cmvn.scp scp:data/train/split40/3/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.50661 per frame over 41139 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0027, auxf-impr from fMLLR is 6.50661, over 41139 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.26377 per frame over 43348 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0028, auxf-impr from fMLLR is 3.26377, over 43348 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.45982 per frame over 31746 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0029, auxf-impr from fMLLR is 3.45982, over 31746 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.63302 per frame over 33247 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0030, auxf-impr from fMLLR is 4.63302, over 33247 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.78642 per frame over 44743 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0031, auxf-impr from fMLLR is 4.78642, over 44743 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.64605 per frame over 35063 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0032, auxf-impr from fMLLR is 7.64605, over 35063 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.50333 per frame over 32723 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0033, auxf-impr from fMLLR is 4.50333, over 32723 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.11173 per frame over 29681 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0034, auxf-impr from fMLLR is 5.11173, over 29681 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.12435 per frame over 30454 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0035, auxf-impr from fMLLR is 7.12435, over 30454 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.17595 per frame over 34769 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0036, auxf-impr from fMLLR is 7.17595, over 34769 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.85127 per frame over 36257 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0037, auxf-impr from fMLLR is 6.85127, over 36257 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 372 alignments.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 372 utterances, errors on 0
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 372 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 372 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 565057 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 372 utterances; 0 had errors.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 565057 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 372 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 372 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -50.8155 over 439634 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.1204 per frame over 46464 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0038, auxf-impr from fMLLR is 4.1204, over 46464 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 372 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 5.36965 over 439634 frames.
+# Accounting: time=30 threads=1
+# Ended (code 0) at Fri Nov 17 04:49:11 GMT 2017, elapsed time 30 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.40.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/40/utt2spk scp:data/train/split40/40/cmvn.scp scp:data/train/split40/40/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/40/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/40/utt2spk scp:data/train/split40/40/cmvn.scp scp:data/train/split40/40/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.40 
+# Started at Fri Nov 17 04:50:21 GMT 2017
+#
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/40/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/40/utt2spk scp:data/train/split40/40/cmvn.scp scp:data/train/split40/40/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.40 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/40/utt2spk scp:data/train/split40/40/cmvn.scp scp:data/train/split40/40/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.40.gz|' ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/40/utt2spk scp:data/train/split40/40/cmvn.scp scp:data/train/split40/40/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/40/utt2spk scp:data/train/split40/40/cmvn.scp scp:data/train/split40/40/feats.scp ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.63401 per frame over 17693 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0542, auxf-impr from fMLLR is 3.63401, over 17693 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.04351 per frame over 17455 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0543, auxf-impr from fMLLR is 4.04351, over 17455 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.10151 per frame over 16768 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0544, auxf-impr from fMLLR is 3.10151, over 16768 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.26763 per frame over 15402 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0546, auxf-impr from fMLLR is 5.26763, over 15402 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.32469 per frame over 14911 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0547, auxf-impr from fMLLR is 5.32469, over 14911 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.67006 per frame over 13920 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0548, auxf-impr from fMLLR is 2.67006, over 13920 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.3824 per frame over 13431 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0549, auxf-impr from fMLLR is 3.3824, over 13431 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.34633 per frame over 12395 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0550, auxf-impr from fMLLR is 3.34633, over 12395 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.63073 per frame over 13732 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0551, auxf-impr from fMLLR is 3.63073, over 13732 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.97114 per frame over 15124 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0552, auxf-impr from fMLLR is 5.97114, over 15124 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.48607 per frame over 16345 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0553, auxf-impr from fMLLR is 6.48607, over 16345 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 252 alignments.
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 252 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 252 utterances, errors on 0
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 252 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 277146 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 252 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 252 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -49.0409 over 184863 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 277146 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 252 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.76373 per frame over 17687 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0554, auxf-impr from fMLLR is 6.76373, over 17687 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 252 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 4.52927 over 184863 frames.
+# Accounting: time=12 threads=1
+# Ended (code 0) at Fri Nov 17 04:50:33 GMT 2017, elapsed time 12 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.4.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/4/utt2spk scp:data/train/split40/4/cmvn.scp scp:data/train/split40/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/4/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/4/utt2spk scp:data/train/split40/4/cmvn.scp scp:data/train/split40/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.4 
+# Started at Fri Nov 17 04:48:41 GMT 2017
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/4/utt2spk scp:data/train/split40/4/cmvn.scp scp:data/train/split40/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/4/utt2spk scp:data/train/split40/4/cmvn.scp scp:data/train/split40/4/feats.scp ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.4.gz|' ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/4/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/4/utt2spk scp:data/train/split40/4/cmvn.scp scp:data/train/split40/4/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.4 
+apply-cmvn --utt2spk=ark:data/train/split40/4/utt2spk scp:data/train/split40/4/cmvn.scp scp:data/train/split40/4/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.06026 per frame over 28768 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0039, auxf-impr from fMLLR is 7.06026, over 28768 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.52707 per frame over 32867 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0040, auxf-impr from fMLLR is 3.52707, over 32867 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.47889 per frame over 30891 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0041, auxf-impr from fMLLR is 5.47889, over 30891 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.40036 per frame over 33479 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0042, auxf-impr from fMLLR is 2.40036, over 33479 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.64656 per frame over 33742 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0043, auxf-impr from fMLLR is 2.64656, over 33742 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.16978 per frame over 46078 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0044, auxf-impr from fMLLR is 6.16978, over 46078 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.73524 per frame over 31550 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0045, auxf-impr from fMLLR is 4.73524, over 31550 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.97987 per frame over 39540 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0047, auxf-impr from fMLLR is 2.97987, over 39540 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.54108 per frame over 30798 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0048, auxf-impr from fMLLR is 3.54108, over 30798 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.69904 per frame over 34053 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0049, auxf-impr from fMLLR is 4.69904, over 34053 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.5954 per frame over 31200 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0050, auxf-impr from fMLLR is 3.5954, over 31200 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 8.12523 per frame over 35405 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0051, auxf-impr from fMLLR is 8.12523, over 35405 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 402 alignments.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 402 utterances, errors on 0
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 402 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 402 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 598840 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 402 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 402 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -50.7631 over 442799 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 598840 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 402 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.29016 per frame over 34428 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0052, auxf-impr from fMLLR is 4.29016, over 34428 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 402 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 4.57563 over 442799 frames.
+# Accounting: time=30 threads=1
+# Ended (code 0) at Fri Nov 17 04:49:11 GMT 2017, elapsed time 30 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.5.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/5/utt2spk scp:data/train/split40/5/cmvn.scp scp:data/train/split40/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/5/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/5/utt2spk scp:data/train/split40/5/cmvn.scp scp:data/train/split40/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.5 
+# Started at Fri Nov 17 04:48:41 GMT 2017
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/5/utt2spk scp:data/train/split40/5/cmvn.scp scp:data/train/split40/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/5/utt2spk scp:data/train/split40/5/cmvn.scp scp:data/train/split40/5/feats.scp ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.5.gz|' ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/5/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/5/utt2spk scp:data/train/split40/5/cmvn.scp scp:data/train/split40/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.5 
+apply-cmvn --utt2spk=ark:data/train/split40/5/utt2spk scp:data/train/split40/5/cmvn.scp scp:data/train/split40/5/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.95624 per frame over 28771 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0053, auxf-impr from fMLLR is 2.95624, over 28771 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.11702 per frame over 44186 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0054, auxf-impr from fMLLR is 3.11702, over 44186 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.0411 per frame over 30422 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0055, auxf-impr from fMLLR is 4.0411, over 30422 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.71392 per frame over 30300 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0056, auxf-impr from fMLLR is 5.71392, over 30300 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.04431 per frame over 34005 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0057, auxf-impr from fMLLR is 5.04431, over 34005 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.5367 per frame over 61266 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0058, auxf-impr from fMLLR is 3.5367, over 61266 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.76216 per frame over 39417 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0059, auxf-impr from fMLLR is 6.76216, over 39417 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.19217 per frame over 40569 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0060, auxf-impr from fMLLR is 6.19217, over 40569 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.16615 per frame over 34202 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0061, auxf-impr from fMLLR is 4.16615, over 34202 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.14559 per frame over 37587 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0062, auxf-impr from fMLLR is 4.14559, over 37587 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.81007 per frame over 37857 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0063, auxf-impr from fMLLR is 6.81007, over 37857 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.72834 per frame over 37715 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0064, auxf-impr from fMLLR is 6.72834, over 37715 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 403 alignments.
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 403 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 403 utterances, errors on 0
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 403 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 656507 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 403 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 403 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -49.2034 over 490181 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 656507 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 403 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.46341 per frame over 33884 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0066, auxf-impr from fMLLR is 3.46341, over 33884 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 403 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 4.79833 over 490181 frames.
+# Accounting: time=33 threads=1
+# Ended (code 0) at Fri Nov 17 04:49:14 GMT 2017, elapsed time 33 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.6.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/6/utt2spk scp:data/train/split40/6/cmvn.scp scp:data/train/split40/6/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/6/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/6/utt2spk scp:data/train/split40/6/cmvn.scp scp:data/train/split40/6/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.6 
+# Started at Fri Nov 17 04:48:41 GMT 2017
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/6/utt2spk scp:data/train/split40/6/cmvn.scp scp:data/train/split40/6/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/6/utt2spk scp:data/train/split40/6/cmvn.scp scp:data/train/split40/6/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.6.gz|' ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/6/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/6/utt2spk scp:data/train/split40/6/cmvn.scp scp:data/train/split40/6/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.6 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/6/utt2spk scp:data/train/split40/6/cmvn.scp scp:data/train/split40/6/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.46786 per frame over 36029 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0067, auxf-impr from fMLLR is 3.46786, over 36029 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.60564 per frame over 29370 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0068, auxf-impr from fMLLR is 4.60564, over 29370 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.27743 per frame over 29648 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0069, auxf-impr from fMLLR is 5.27743, over 29648 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.11213 per frame over 36042 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0070, auxf-impr from fMLLR is 9.11213, over 36042 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.16283 per frame over 38368 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0071, auxf-impr from fMLLR is 5.16283, over 38368 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.26048 per frame over 32775 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0072, auxf-impr from fMLLR is 4.26048, over 32775 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.34922 per frame over 37019 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0073, auxf-impr from fMLLR is 5.34922, over 37019 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.3475 per frame over 37231 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0074, auxf-impr from fMLLR is 5.3475, over 37231 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.03634 per frame over 32649 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0075, auxf-impr from fMLLR is 4.03634, over 32649 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.22154 per frame over 30231 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0076, auxf-impr from fMLLR is 6.22154, over 30231 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.87951 per frame over 29274 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0078, auxf-impr from fMLLR is 5.87951, over 29274 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 372 alignments.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 372 utterances, errors on 0
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 372 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 372 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 562887 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 372 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 372 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -48.9286 over 405320 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 562887 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 372 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.57975 per frame over 36684 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0080, auxf-impr from fMLLR is 4.57975, over 36684 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 372 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 5.27959 over 405320 frames.
+# Accounting: time=28 threads=1
+# Ended (code 0) at Fri Nov 17 04:49:09 GMT 2017, elapsed time 28 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.7.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/7/utt2spk scp:data/train/split40/7/cmvn.scp scp:data/train/split40/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/7/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/7/utt2spk scp:data/train/split40/7/cmvn.scp scp:data/train/split40/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.7 
+# Started at Fri Nov 17 04:48:41 GMT 2017
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/7/utt2spk scp:data/train/split40/7/cmvn.scp scp:data/train/split40/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/7/utt2spk scp:data/train/split40/7/cmvn.scp scp:data/train/split40/7/feats.scp ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.7.gz|' ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/7/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/7/utt2spk scp:data/train/split40/7/cmvn.scp scp:data/train/split40/7/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.7 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/7/utt2spk scp:data/train/split40/7/cmvn.scp scp:data/train/split40/7/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.32796 per frame over 39263 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0081, auxf-impr from fMLLR is 4.32796, over 39263 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.53847 per frame over 31735 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0082, auxf-impr from fMLLR is 6.53847, over 31735 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 401 alignments.
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 401 posteriors.
+WARNING (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:116) Did not find posteriors for utterance SES0083_sent026
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.53387 per frame over 30775 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0083, auxf-impr from fMLLR is 6.53387, over 30775 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.23642 per frame over 34759 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0084, auxf-impr from fMLLR is 7.23642, over 34759 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.5313 per frame over 34181 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0085, auxf-impr from fMLLR is 9.5313, over 34181 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.58691 per frame over 34151 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0086, auxf-impr from fMLLR is 6.58691, over 34151 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.86577 per frame over 32947 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0087, auxf-impr from fMLLR is 6.86577, over 32947 frames.
+WARNING (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:116) Did not find posteriors for utterance SES0089_rich001
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.05302 per frame over 30979 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0089, auxf-impr from fMLLR is 3.05302, over 30979 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.22974 per frame over 34945 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0090, auxf-impr from fMLLR is 9.22974, over 34945 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.54212 per frame over 40216 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0091, auxf-impr from fMLLR is 3.54212, over 40216 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.17706 per frame over 38716 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0092, auxf-impr from fMLLR is 3.17706, over 38716 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.82554 per frame over 30589 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0093, auxf-impr from fMLLR is 9.82554, over 30589 frames.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 403 utterances, errors on 0
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 403 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 628948 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 403 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 401 files, 2 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -48.4077 over 446177 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 628948 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 403 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.63716 per frame over 32921 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0094, auxf-impr from fMLLR is 9.63716, over 32921 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 401 files, 2 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 6.51617 over 446177 frames.
+# Accounting: time=31 threads=1
+# Ended (code 0) at Fri Nov 17 04:49:12 GMT 2017, elapsed time 31 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.8.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/8/utt2spk scp:data/train/split40/8/cmvn.scp scp:data/train/split40/8/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/8/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/8/utt2spk scp:data/train/split40/8/cmvn.scp scp:data/train/split40/8/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.8 
+# Started at Fri Nov 17 04:48:41 GMT 2017
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/8/utt2spk scp:data/train/split40/8/cmvn.scp scp:data/train/split40/8/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.8.gz|' ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/8/utt2spk scp:data/train/split40/8/cmvn.scp scp:data/train/split40/8/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/8/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/8/utt2spk scp:data/train/split40/8/cmvn.scp scp:data/train/split40/8/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.8 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/8/utt2spk scp:data/train/split40/8/cmvn.scp scp:data/train/split40/8/feats.scp ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.57584 per frame over 37203 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0095, auxf-impr from fMLLR is 4.57584, over 37203 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.45417 per frame over 37656 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0096, auxf-impr from fMLLR is 5.45417, over 37656 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.22322 per frame over 33230 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0097, auxf-impr from fMLLR is 4.22322, over 33230 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 7.25094 per frame over 38814 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0098, auxf-impr from fMLLR is 7.25094, over 38814 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 9.91199 per frame over 33996 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0099, auxf-impr from fMLLR is 9.91199, over 33996 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.00053 per frame over 38248 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0100, auxf-impr from fMLLR is 4.00053, over 38248 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.07388 per frame over 38953 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0101, auxf-impr from fMLLR is 6.07388, over 38953 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.6823 per frame over 38922 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0102, auxf-impr from fMLLR is 6.6823, over 38922 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 8.21825 per frame over 29243 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0103, auxf-impr from fMLLR is 8.21825, over 29243 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 8.25451 per frame over 31075 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0104, auxf-impr from fMLLR is 8.25451, over 31075 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.82795 per frame over 32985 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0105, auxf-impr from fMLLR is 4.82795, over 32985 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 372 alignments.
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 372 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 372 utterances, errors on 0
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 372 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 598792 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 372 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 372 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -47.561 over 426391 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 598792 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 372 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.60426 per frame over 36066 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0106, auxf-impr from fMLLR is 4.60426, over 36066 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 372 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 6.11223 over 426391 frames.
+# Accounting: time=29 threads=1
+# Ended (code 0) at Fri Nov 17 04:49:10 GMT 2017, elapsed time 29 seconds
+# ali-to-post "ark:gunzip -c exp/tri3b_ali/pre_ali.9.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri3b/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/9/utt2spk scp:data/train/split40/9/cmvn.scp scp:data/train/split40/9/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/9/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/9/utt2spk scp:data/train/split40/9/cmvn.scp scp:data/train/split40/9/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3b_ali/trans.9 
+# Started at Fri Nov 17 04:49:05 GMT 2017
+#
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/train/split40/9/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/9/utt2spk scp:data/train/split40/9/cmvn.scp scp:data/train/split40/9/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3b_ali/trans.9 
+gmm-post-to-gpost exp/tri3b/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split40/9/utt2spk scp:data/train/split40/9/cmvn.scp scp:data/train/split40/9/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- |' ark:- ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3b/final.alimdl ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3b_ali/pre_ali.9.gz|' ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/9/utt2spk scp:data/train/split40/9/cmvn.scp scp:data/train/split40/9/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split40/9/utt2spk scp:data/train/split40/9/cmvn.scp scp:data/train/split40/9/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.64427 per frame over 39304 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0107, auxf-impr from fMLLR is 4.64427, over 39304 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 8.48384 per frame over 34695 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0108, auxf-impr from fMLLR is 8.48384, over 34695 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.92725 per frame over 34878 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0109, auxf-impr from fMLLR is 6.92725, over 34878 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.65429 per frame over 34185 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0110, auxf-impr from fMLLR is 5.65429, over 34185 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.57242 per frame over 32883 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0111, auxf-impr from fMLLR is 5.57242, over 32883 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.0553 per frame over 32477 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0112, auxf-impr from fMLLR is 3.0553, over 32477 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.33891 per frame over 34558 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0113, auxf-impr from fMLLR is 3.33891, over 34558 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.31368 per frame over 30010 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0114, auxf-impr from fMLLR is 6.31368, over 30010 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.43277 per frame over 29478 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0115, auxf-impr from fMLLR is 6.43277, over 29478 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 5.65601 per frame over 36687 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0116, auxf-impr from fMLLR is 5.65601, over 36687 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 6.23623 per frame over 36603 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0117, auxf-impr from fMLLR is 6.23623, over 36603 frames.
+LOG (ali-to-post[5.2.160~1-51042]:main():ali-to-post.cc:73) Converted 371 alignments.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 371 utterances, errors on 0
+LOG (weight-silence-post[5.2.160~1-51042]:main():weight-silence-post.cc:95) Done 371 posteriors.
+LOG (apply-cmvn[5.2.160~1-51042]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 371 utterances, errors on 0
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 581920 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 371 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:124) Done 371 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -49.0019 over 407850 frames.
+LOG (gmm-post-to-gpost[5.2.160~1-51042]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.856 over 581920 frames.
+LOG (transform-feats[5.2.160~1-51042]:main():transform-feats.cc:161) Applied transform to 371 utterances; 0 had errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.68054 per frame over 32092 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:141) For speaker SES0118, auxf-impr from fMLLR is 3.68054, over 32092 frames.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:186) Done 371 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.2.160~1-51042]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 5.49863 over 407850 frames.
+# Accounting: time=28 threads=1
+# Ended (code 0) at Fri Nov 17 04:49:33 GMT 2017, elapsed time 28 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.10.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.10.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.10.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 400 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.11.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.11.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.11.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 371 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.12.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.12.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.12.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 370 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.13.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.13.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.13.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 401 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.14.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.14.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.14.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 401 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.15.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.15.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.15.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 371 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.16.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.16.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.16.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 341 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.17.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.17.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.17.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 310 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.18.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.18.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.18.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 304 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.19.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.19.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.19.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 294 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.1.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.1.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.1.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 402 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.20.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.20.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.20.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.21.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.21.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.21.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 271 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.22.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.22.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.22.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 252 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.23.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.23.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.23.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.24.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.24.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.24.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 251 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.25.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.25.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.25.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.26.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.26.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.26.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 251 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.27.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.27.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.27.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.28.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.28.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.28.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 252 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.29.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.29.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.29.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.2.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.2.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.2.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 372 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.30.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.30.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.30.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 251 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.31.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.31.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.31.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 252 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.32.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.32.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.32.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 251 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.33.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.33.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.33.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 272 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.34.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.34.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.34.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.35.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.35.gz 
+# Started at Fri Nov 17 04:52:34 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.35.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 252 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.36.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.36.gz 
+# Started at Fri Nov 17 04:52:34 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.36.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.37.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.37.gz 
+# Started at Fri Nov 17 04:52:34 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.37.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 251 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.38.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.38.gz 
+# Started at Fri Nov 17 04:52:34 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.38.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 273 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.39.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.39.gz 
+# Started at Fri Nov 17 04:52:34 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.39.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 252 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.3.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.3.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.3.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 372 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.40.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.40.gz 
+# Started at Fri Nov 17 04:52:34 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.40.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 252 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:34 GMT 2017, elapsed time 0 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.4.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.4.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.4.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 402 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.5.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.5.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.5.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 402 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.6.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.6.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.6.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 372 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.7.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.7.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.7.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 400 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.8.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.8.gz 
+# Started at Fri Nov 17 04:52:32 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.8.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 372 utterances.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 1 seconds
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl "ark:gunzip -c exp/tri3b_ali/ali.9.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri3b_ali/phone_stats.9.gz 
+# Started at Fri Nov 17 04:52:33 GMT 2017
+#
+ali-to-phones --write-lengths=true exp/tri3b_ali/final.mdl 'ark:gunzip -c exp/tri3b_ali/ali.9.gz|' ark,t:- 
+LOG (ali-to-phones[5.2.160~1-51042]:main():ali-to-phones.cc:134) Done 371 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Nov 17 04:52:33 GMT 2017, elapsed time 0 seconds
+jim@HG658c:~/Playing/ClarinStudioKaldi$ sh run.sh 
 ln: failed to create symbolic link './conf': File exists
 ln: failed to create symbolic link './local': File exists
 ln: failed to create symbolic link './utils': File exists
 ln: failed to create symbolic link './steps': File exists
-Would you like to clean all the data and experiments in this project? (type yes): yes
-Cleaning directory...
-Done!
-~/Playing/kaldi/egs/clarinpl/audio ~/Playing/kaldi/egs/clarinpl
-File already downloaded! Checking if download is consistent...
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100    47  100    47    0     0    117      0 --:--:-- --:--:-- --:--:--   117
-audio.tar.gz: OK
-Files already extracted?
-Remove the audio dir to extract them again...
-~/Playing/kaldi/egs/clarinpl
-Generating file lists using proper paths...
-WARNING: skipped empty file: SES0461_sent16
-Generating spk2utt...
-Preparing dictionary...
-0.000   Loading corpus local_clarin/arpa.lm.gz...
-4.270   Smoothing[1] = ModKN
-4.270   Smoothing[2] = ModKN
-4.270   Smoothing[3] = ModKN
-4.270   Set smoothing algorithms...
-4.280   Y 9.778535e-01
-4.305   Y 8.243298e-01
-4.343   Y 9.794861e-01
-4.344   Saving vocabulary to data/local/lm.wlist...
-local_clarin/clarin_prepare_dict.sh data/local/all.wlist data/local/dict_nosp
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0001169736'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0001385254'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0001900219'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0001962068'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0001995652'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0002205288'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0002276055'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0002417117'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0002626097'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0002652705'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0002703546'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0002929308'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0003144529'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0003268344'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0003274189'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0003416254'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.000345204'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0005001803'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0005066993'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0005267076'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0005327803'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.000542846'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.000569961'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0005971189'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0006383448'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0006590593'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0006613326'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0006632935'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0006658398'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0006897813'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0007195366'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0007869664'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0007939672'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0008847797'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0008969589'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0009068837'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.0009410072'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.001206786'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.001214713'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.001546446'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.001549121'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.00171647'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.001882903'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.002036634'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.002291949'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.002704184'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '0.01136997'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '1=58852'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '2=415092'
-WARNING:phonetisaurus-apply:2017-10-30 12:22:59:  No pronunciation for word: '3=570057'
-Dictionary preparation succeeded
-utils/prepare_lang.sh data/local/dict_nosp <unk> data/local/tmp_nosp data/lang_nosp
-Checking data/local/dict_nosp/silence_phones.txt ...
---> reading data/local/dict_nosp/silence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/silence_phones.txt is OK
-
-Checking data/local/dict_nosp/optional_silence.txt ...
---> reading data/local/dict_nosp/optional_silence.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/optional_silence.txt is OK
-
-Checking data/local/dict_nosp/nonsilence_phones.txt ...
---> reading data/local/dict_nosp/nonsilence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/nonsilence_phones.txt is OK
-
-Checking disjoint: silence_phones.txt, nonsilence_phones.txt
---> disjoint property is OK.
-
-Checking data/local/dict_nosp/lexicon.txt
---> reading data/local/dict_nosp/lexicon.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/lexicon.txt is OK
-
-Checking data/local/dict_nosp/extra_questions.txt ...
---> reading data/local/dict_nosp/extra_questions.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/extra_questions.txt is OK
---> SUCCESS [validating dictionary directory data/local/dict_nosp]
-
-**Creating data/local/dict_nosp/lexiconp.txt from data/local/dict_nosp/lexicon.txt
-fstaddselfloops data/lang_nosp/phones/wdisambig_phones.int data/lang_nosp/phones/wdisambig_words.int 
-prepare_lang.sh: validating output directory
-utils/validate_lang.pl data/lang_nosp
-Checking data/lang_nosp/phones.txt ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/lang_nosp/phones.txt is OK
-
-Checking words.txt: #0 ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/lang_nosp/words.txt is OK
-
-Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
---> silence.txt and nonsilence.txt are disjoint
---> silence.txt and disambig.txt are disjoint
---> disambig.txt and nonsilence.txt are disjoint
---> disjoint property is OK
-
-Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
---> summation property is OK
-
-Checking data/lang_nosp/phones/context_indep.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 10 entry/entries in data/lang_nosp/phones/context_indep.txt
---> data/lang_nosp/phones/context_indep.int corresponds to data/lang_nosp/phones/context_indep.txt
---> data/lang_nosp/phones/context_indep.csl corresponds to data/lang_nosp/phones/context_indep.txt
---> data/lang_nosp/phones/context_indep.{txt, int, csl} are OK
-
-Checking data/lang_nosp/phones/nonsilence.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 144 entry/entries in data/lang_nosp/phones/nonsilence.txt
---> data/lang_nosp/phones/nonsilence.int corresponds to data/lang_nosp/phones/nonsilence.txt
---> data/lang_nosp/phones/nonsilence.csl corresponds to data/lang_nosp/phones/nonsilence.txt
---> data/lang_nosp/phones/nonsilence.{txt, int, csl} are OK
-
-Checking data/lang_nosp/phones/silence.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 10 entry/entries in data/lang_nosp/phones/silence.txt
---> data/lang_nosp/phones/silence.int corresponds to data/lang_nosp/phones/silence.txt
---> data/lang_nosp/phones/silence.csl corresponds to data/lang_nosp/phones/silence.txt
---> data/lang_nosp/phones/silence.{txt, int, csl} are OK
-
-Checking data/lang_nosp/phones/optional_silence.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 1 entry/entries in data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.int corresponds to data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.csl corresponds to data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.{txt, int, csl} are OK
-
-Checking data/lang_nosp/phones/disambig.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 1258153 entry/entries in data/lang_nosp/phones/disambig.txt
---> data/lang_nosp/phones/disambig.int corresponds to data/lang_nosp/phones/disambig.txt
---> data/lang_nosp/phones/disambig.csl corresponds to data/lang_nosp/phones/disambig.txt
---> data/lang_nosp/phones/disambig.{txt, int, csl} are OK
-
-Checking data/lang_nosp/phones/roots.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 38 entry/entries in data/lang_nosp/phones/roots.txt
---> data/lang_nosp/phones/roots.int corresponds to data/lang_nosp/phones/roots.txt
---> data/lang_nosp/phones/roots.{txt, int} are OK
-
-Checking data/lang_nosp/phones/sets.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 38 entry/entries in data/lang_nosp/phones/sets.txt
---> data/lang_nosp/phones/sets.int corresponds to data/lang_nosp/phones/sets.txt
---> data/lang_nosp/phones/sets.{txt, int} are OK
-
-Checking data/lang_nosp/phones/extra_questions.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 11 entry/entries in data/lang_nosp/phones/extra_questions.txt
---> data/lang_nosp/phones/extra_questions.int corresponds to data/lang_nosp/phones/extra_questions.txt
---> data/lang_nosp/phones/extra_questions.{txt, int} are OK
-
-Checking data/lang_nosp/phones/word_boundary.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 154 entry/entries in data/lang_nosp/phones/word_boundary.txt
---> data/lang_nosp/phones/word_boundary.int corresponds to data/lang_nosp/phones/word_boundary.txt
---> data/lang_nosp/phones/word_boundary.{txt, int} are OK
-
-Checking optional_silence.txt ...
---> reading data/lang_nosp/phones/optional_silence.txt
---> data/lang_nosp/phones/optional_silence.txt is OK
-
-Checking disambiguation symbols: #0 and #1
---> data/lang_nosp/phones/disambig.txt has "#0" and "#1"
---> data/lang_nosp/phones/disambig.txt is OK
-
-Checking topo ...
-
-Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
---> data/lang_nosp/phones/word_boundary.txt doesn't include disambiguation symbols
---> data/lang_nosp/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
---> data/lang_nosp/phones/word_boundary.txt is OK
-
-Checking word-level disambiguation symbols...
---> data/lang_nosp/phones/wdisambig.txt exists (newer prepare_lang.sh)
-Checking word_boundary.int and disambig.int
---> generating a 28 word sequence
---> resulting phone sequence from L.fst corresponds to the word sequence
---> L.fst is OK
---> generating a 85 word sequence
---> resulting phone sequence from L_disambig.fst corresponds to the word sequence
---> L_disambig.fst is OK
-
-Checking data/lang_nosp/oov.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 1 entry/entries in data/lang_nosp/oov.txt
---> data/lang_nosp/oov.int corresponds to data/lang_nosp/oov.txt
---> data/lang_nosp/oov.{txt, int} are OK
-
---> data/lang_nosp/L.fst is olabel sorted
---> data/lang_nosp/L_disambig.fst is olabel sorted
---> SUCCESS [validating lang directory data/lang_nosp]
-Converting 'local_clarin/arpa.lm.gz' to FST
-arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_nosp_test/words.txt - data/lang_nosp_test/G.fst 
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:98) Reading \data\ section.
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \1-grams: section.
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \2-grams: section.
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \3-grams: section.
-LOG (arpa2fst[5.2.160~1-51042]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 615820 to 373636
-fstisstochastic data/lang_nosp_test/G.fst 
-2.3509e-06 -0.441586
-Succeeded in formatting LM: 'local_clarin/arpa.lm.gz'
-steps/make_mfcc.sh --nj 40 data/train
-Checking data/train/text ...
---> reading data/train/text
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
-utils/validate_data_dir.sh: Successfully validated data-directory data/train
-steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
-Succeeded creating MFCC features for train
-steps/compute_cmvn_stats.sh data/train
-Succeeded creating CMVN stats for train
-steps/make_mfcc.sh --nj 40 data/test
-Checking data/test/text ...
---> reading data/test/text
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
-utils/validate_data_dir.sh: Successfully validated data-directory data/test
-steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
-Succeeded creating MFCC features for test
-steps/compute_cmvn_stats.sh data/test
-Succeeded creating CMVN stats for test
-steps/train_mono.sh --nj 40 data/train data/lang_nosp exp/mono0
-steps/train_mono.sh: Initializing monophone system.
-steps/train_mono.sh: Compiling training graphs
-steps/train_mono.sh: Aligning data equally (pass 0)
-steps/train_mono.sh: Pass 1
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 2
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 3
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 4
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 5
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 6
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 7
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 8
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 9
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 10
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 11
-steps/train_mono.sh: Pass 12
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 13
-steps/train_mono.sh: Pass 14
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 15
-steps/train_mono.sh: Pass 16
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 17
-steps/train_mono.sh: Pass 18
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 19
-steps/train_mono.sh: Pass 20
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 21
-steps/train_mono.sh: Pass 22
-steps/train_mono.sh: Pass 23
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 24
-steps/train_mono.sh: Pass 25
-steps/train_mono.sh: Pass 26
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 27
-steps/train_mono.sh: Pass 28
-steps/train_mono.sh: Pass 29
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 30
-steps/train_mono.sh: Pass 31
-steps/train_mono.sh: Pass 32
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 33
-steps/train_mono.sh: Pass 34
-steps/train_mono.sh: Pass 35
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 36
-steps/train_mono.sh: Pass 37
-steps/train_mono.sh: Pass 38
-steps/train_mono.sh: Aligning data
-steps/train_mono.sh: Pass 39
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/mono0
-steps/diagnostic/analyze_alignments.sh: see stats in exp/mono0/log/analyze_alignments.log
-21008 warnings in exp/mono0/log/align.*.*.log
-5356 warnings in exp/mono0/log/acc.*.*.log
-200 warnings in exp/mono0/log/update.*.log
-exp/mono0: nj=40 align prob=-94.49 over 51.10h [retry=0.7%, fail=0.0%] states=118 gauss=991
-steps/train_mono.sh: Done training monophone system in exp/mono0
-WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
-tree-info exp/mono0/tree 
-tree-info exp/mono0/tree 
-fstpushspecial 
-fstdeterminizestar --use-log=true 
-fsttablecompose data/lang_nosp_test/L_disambig.fst data/lang_nosp_test/G.fst 
-fstminimizeencoded 
-fstisstochastic data/lang_nosp_test/tmp/LG.fst 
--0.0601397 -0.0608264
-[info]: LG not stochastic.
-fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang_nosp_test/phones/disambig.int --write-disambig-syms=data/lang_nosp_test/tmp/disambig_ilabels_1_0.int data/lang_nosp_test/tmp/ilabels_1_0.29974 
-fstisstochastic data/lang_nosp_test/tmp/CLG_1_0.fst 
--0.0601397 -0.0608264
-[info]: CLG not stochastic.
-make-h-transducer --disambig-syms-out=exp/mono0/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_1_0 exp/mono0/tree exp/mono0/final.mdl 
-fsttablecompose exp/mono0/graph/Ha.fst data/lang_nosp_test/tmp/CLG_1_0.fst 
-fstminimizeencoded 
-fstdeterminizestar --use-log=true 
-fstrmepslocal 
-fstrmsymbols exp/mono0/graph/disambig_tid.int 
-fstisstochastic exp/mono0/graph/HCLGa.fst 
-2.05226e-05 -0.121614
-HCLGa is not stochastic
-add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono0/final.mdl 
-steps/decode.sh --nj 40 exp/mono0/graph data/test exp/mono0/decode
-decode.sh: feature type is delta
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono0/graph exp/mono0/decode
-steps/diagnostic/analyze_lats.sh: see stats in exp/mono0/decode/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,8,68) and mean=27.8
-steps/diagnostic/analyze_lats.sh: see stats in exp/mono0/decode/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/mono0/graph exp/mono0/decode
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-steps/align_si.sh --nj 40 data/train data/lang_nosp exp/mono0 exp/mono0_ali
-steps/align_si.sh: feature type is delta
-steps/align_si.sh: aligning data in data/train using model from exp/mono0, putting alignments in exp/mono0_ali
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/mono0_ali
-steps/diagnostic/analyze_alignments.sh: see stats in exp/mono0_ali/log/analyze_alignments.log
-steps/align_si.sh: done aligning data.
-steps/train_deltas.sh 2000 10000 data/train data/lang_nosp exp/mono0_ali exp/tri1
-steps/train_deltas.sh: accumulating tree stats
-steps/train_deltas.sh: getting questions for tree-building, via clustering
-steps/train_deltas.sh: building the tree
-WARNING (gmm-init-model[5.2.160~1-51042]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
-** The warnings above about 'no stats' generally mean you have phones **
-** (or groups of phones) in your phone set that had no corresponding data. **
-** You should probably figure out whether something went wrong, **
-** or whether your data just doesn't happen to have examples of those **
-** phones. **
-steps/train_deltas.sh: converting alignments from exp/mono0_ali to use current tree
-steps/train_deltas.sh: compiling graphs of transcripts
-steps/train_deltas.sh: training pass 1
-steps/train_deltas.sh: training pass 2
-steps/train_deltas.sh: training pass 3
-steps/train_deltas.sh: training pass 4
-steps/train_deltas.sh: training pass 5
-steps/train_deltas.sh: training pass 6
-steps/train_deltas.sh: training pass 7
-steps/train_deltas.sh: training pass 8
-steps/train_deltas.sh: training pass 9
-steps/train_deltas.sh: training pass 10
-steps/train_deltas.sh: aligning data
-steps/train_deltas.sh: training pass 11
-steps/train_deltas.sh: training pass 12
-steps/train_deltas.sh: training pass 13
-steps/train_deltas.sh: training pass 14
-steps/train_deltas.sh: training pass 15
-steps/train_deltas.sh: training pass 16
-steps/train_deltas.sh: training pass 17
-steps/train_deltas.sh: training pass 18
-steps/train_deltas.sh: training pass 19
-steps/train_deltas.sh: training pass 20
-steps/train_deltas.sh: aligning data
-steps/train_deltas.sh: training pass 21
-steps/train_deltas.sh: training pass 22
-steps/train_deltas.sh: training pass 23
-steps/train_deltas.sh: training pass 24
-steps/train_deltas.sh: training pass 25
-steps/train_deltas.sh: training pass 26
-steps/train_deltas.sh: training pass 27
-steps/train_deltas.sh: training pass 28
-steps/train_deltas.sh: training pass 29
-steps/train_deltas.sh: training pass 30
-steps/train_deltas.sh: aligning data
-steps/train_deltas.sh: training pass 31
-steps/train_deltas.sh: training pass 32
-steps/train_deltas.sh: training pass 33
-steps/train_deltas.sh: training pass 34
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri1
-steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
-1 warnings in exp/tri1/log/init_model.log
-585 warnings in exp/tri1/log/align.*.*.log
-1 warnings in exp/tri1/log/questions.log
-1 warnings in exp/tri1/log/build_tree.log
-218 warnings in exp/tri1/log/acc.*.*.log
-34 warnings in exp/tri1/log/update.*.log
-exp/tri1: nj=40 align prob=-92.61 over 51.04h [retry=1.2%, fail=0.1%] states=1673 gauss=10024 tree-impr=5.46
-steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
-tree-info exp/tri1/tree 
-tree-info exp/tri1/tree 
-fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_nosp_test/phones/disambig.int --write-disambig-syms=data/lang_nosp_test/tmp/disambig_ilabels_3_1.int data/lang_nosp_test/tmp/ilabels_3_1.1822 
-fstisstochastic data/lang_nosp_test/tmp/CLG_3_1.fst 
-0 -0.0608264
-[info]: CLG not stochastic.
-make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
-fstrmsymbols exp/tri1/graph/disambig_tid.int 
-fsttablecompose exp/tri1/graph/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
-fstminimizeencoded 
-fstdeterminizestar --use-log=true 
-fstrmepslocal 
-fstisstochastic exp/tri1/graph/HCLGa.fst 
-0.000487826 -0.19227
-HCLGa is not stochastic
-add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl 
-steps/decode.sh --nj 40 exp/tri1/graph data/test exp/tri1/decode
-decode.sh: feature type is delta
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,3,15) and mean=6.7
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/tri1/graph exp/tri1/decode
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-steps/align_si.sh --nj 40 data/train data/lang_nosp exp/tri1 exp/tri1_ali
-steps/align_si.sh: feature type is delta
-steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri1_ali
-steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1_ali/log/analyze_alignments.log
-steps/align_si.sh: done aligning data.
-steps/train_deltas.sh 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2a
-steps/train_deltas.sh: accumulating tree stats
-steps/train_deltas.sh: getting questions for tree-building, via clustering
-steps/train_deltas.sh: building the tree
-WARNING (gmm-init-model[5.2.160~1-51042]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
-** The warnings above about 'no stats' generally mean you have phones **
-** (or groups of phones) in your phone set that had no corresponding data. **
-** You should probably figure out whether something went wrong, **
-** or whether your data just doesn't happen to have examples of those **
-** phones. **
-steps/train_deltas.sh: converting alignments from exp/tri1_ali to use current tree
-steps/train_deltas.sh: compiling graphs of transcripts
-steps/train_deltas.sh: training pass 1
-steps/train_deltas.sh: training pass 2
-steps/train_deltas.sh: training pass 3
-steps/train_deltas.sh: training pass 4
-steps/train_deltas.sh: training pass 5
-steps/train_deltas.sh: training pass 6
-steps/train_deltas.sh: training pass 7
-steps/train_deltas.sh: training pass 8
-steps/train_deltas.sh: training pass 9
-steps/train_deltas.sh: training pass 10
-steps/train_deltas.sh: aligning data
-steps/train_deltas.sh: training pass 11
-steps/train_deltas.sh: training pass 12
-steps/train_deltas.sh: training pass 13
-steps/train_deltas.sh: training pass 14
-steps/train_deltas.sh: training pass 15
-steps/train_deltas.sh: training pass 16
-steps/train_deltas.sh: training pass 17
-steps/train_deltas.sh: training pass 18
-steps/train_deltas.sh: training pass 19
-steps/train_deltas.sh: training pass 20
-steps/train_deltas.sh: aligning data
-steps/train_deltas.sh: training pass 21
-steps/train_deltas.sh: training pass 22
-steps/train_deltas.sh: training pass 23
-steps/train_deltas.sh: training pass 24
-steps/train_deltas.sh: training pass 25
-steps/train_deltas.sh: training pass 26
-steps/train_deltas.sh: training pass 27
-steps/train_deltas.sh: training pass 28
-steps/train_deltas.sh: training pass 29
-steps/train_deltas.sh: training pass 30
-steps/train_deltas.sh: aligning data
-steps/train_deltas.sh: training pass 31
-steps/train_deltas.sh: training pass 32
-steps/train_deltas.sh: training pass 33
-steps/train_deltas.sh: training pass 34
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2a
-steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2a/log/analyze_alignments.log
-1 warnings in exp/tri2a/log/init_model.log
-624 warnings in exp/tri2a/log/align.*.*.log
-346 warnings in exp/tri2a/log/acc.*.*.log
-34 warnings in exp/tri2a/log/update.*.log
-1 warnings in exp/tri2a/log/build_tree.log
-1 warnings in exp/tri2a/log/questions.log
-exp/tri2a: nj=40 align prob=-92.19 over 51.04h [retry=1.1%, fail=0.1%] states=2114 gauss=15031 tree-impr=6.22
-steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri2a
-tree-info exp/tri2a/tree 
-tree-info exp/tri2a/tree 
-make-h-transducer --disambig-syms-out=exp/tri2a/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri2a/tree exp/tri2a/final.mdl 
-fsttablecompose exp/tri2a/graph/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
-fstdeterminizestar --use-log=true 
-fstrmepslocal 
-fstminimizeencoded 
-fstrmsymbols exp/tri2a/graph/disambig_tid.int 
-fstisstochastic exp/tri2a/graph/HCLGa.fst 
-0.000487826 -0.192213
-HCLGa is not stochastic
-add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2a/final.mdl 
-steps/decode.sh --nj 40 exp/tri2a/graph data/test exp/tri2a/decode
-decode.sh: feature type is delta
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri2a/graph exp/tri2a/decode
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri2a/decode/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,3,13) and mean=6.4
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri2a/decode/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/tri2a/graph exp/tri2a/decode
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-steps/train_lda_mllt.sh --splice-opts --left-context=3 --right-context=3 2500 15000 data/train data/lang_nosp exp/tri1_ali exp/tri2b
-steps/train_lda_mllt.sh: Accumulating LDA statistics.
-steps/train_lda_mllt.sh: Accumulating tree stats
-steps/train_lda_mllt.sh: Getting questions for tree clustering.
-steps/train_lda_mllt.sh: Building the tree
-steps/train_lda_mllt.sh: Initializing the model
-WARNING (gmm-init-model[5.2.160~1-51042]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
-This is a bad warning.
-steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali to use current tree
-steps/train_lda_mllt.sh: Compiling graphs of transcripts
-Training pass 1
-Training pass 2
-steps/train_lda_mllt.sh: Estimating MLLT
-Training pass 3
-Training pass 4
-steps/train_lda_mllt.sh: Estimating MLLT
-Training pass 5
-Training pass 6
-steps/train_lda_mllt.sh: Estimating MLLT
-Training pass 7
-Training pass 8
-Training pass 9
-Training pass 10
-Aligning data
-Training pass 11
-Training pass 12
-steps/train_lda_mllt.sh: Estimating MLLT
-Training pass 13
-Training pass 14
-Training pass 15
-Training pass 16
-Training pass 17
-Training pass 18
-Training pass 19
-Training pass 20
-Aligning data
-Training pass 21
-Training pass 22
-Training pass 23
-Training pass 24
-Training pass 25
-Training pass 26
-Training pass 27
-Training pass 28
-Training pass 29
-Training pass 30
-Aligning data
-Training pass 31
-Training pass 32
-Training pass 33
-Training pass 34
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b
-steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
-9 warnings in exp/tri2b/log/lda_acc.*.log
-706 warnings in exp/tri2b/log/acc.*.*.log
-1 warnings in exp/tri2b/log/init_model.log
-953 warnings in exp/tri2b/log/align.*.*.log
-34 warnings in exp/tri2b/log/update.*.log
-1 warnings in exp/tri2b/log/questions.log
-1 warnings in exp/tri2b/log/build_tree.log
-1 warnings in exp/tri2b/log/compile_questions.log
-exp/tri2b: nj=40 align prob=-44.56 over 50.98h [retry=1.7%, fail=0.2%] states=2045 gauss=15023 tree-impr=5.68 lda-sum=25.15 mllt:impr,logdet=1.33,1.90
-steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
-tree-info exp/tri2b/tree 
-tree-info exp/tri2b/tree 
-make-h-transducer --disambig-syms-out=exp/tri2b/graph/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri2b/tree exp/tri2b/final.mdl 
-fstrmsymbols exp/tri2b/graph/disambig_tid.int 
-fsttablecompose exp/tri2b/graph/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
-fstdeterminizestar --use-log=true 
-fstrmepslocal 
-fstminimizeencoded 
-fstisstochastic exp/tri2b/graph/HCLGa.fst 
-0.00048784 -0.192214
-HCLGa is not stochastic
-add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2b/final.mdl 
-steps/decode.sh --nj 40 exp/tri2b/graph data/test exp/tri2b/decode
-decode.sh: feature type is lda
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri2b/graph exp/tri2b/decode
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b/decode/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,2,11) and mean=4.6
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b/decode/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/tri2b/graph exp/tri2b/decode
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-steps/align_si.sh --nj 40 --use-graphs true data/train data/lang_nosp exp/tri2b exp/tri2b_ali
-steps/align_si.sh: feature type is lda
-steps/align_si.sh: aligning data in data/train using model from exp/tri2b, putting alignments in exp/tri2b_ali
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b_ali
-steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b_ali/log/analyze_alignments.log
-steps/align_si.sh: done aligning data.
-steps/train_sat.sh 2500 15000 data/train data/lang_nosp exp/tri2b_ali exp/tri3b
-steps/train_sat.sh: feature type is lda
-steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali
-steps/train_sat.sh: Accumulating tree stats
-steps/train_sat.sh: Getting questions for tree clustering.
-steps/train_sat.sh: Building the tree
-steps/train_sat.sh: Initializing the model
-WARNING (gmm-init-model[5.2.160~1-51042]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
-This is a bad warning.
-steps/train_sat.sh: Converting alignments from exp/tri2b_ali to use current tree
-steps/train_sat.sh: Compiling graphs of transcripts
-Pass 1
-Pass 2
-Estimating fMLLR transforms
-Pass 3
-Pass 4
-Estimating fMLLR transforms
-Pass 5
-Pass 6
-Estimating fMLLR transforms
-Pass 7
-Pass 8
-Pass 9
-Pass 10
-Aligning data
-Pass 11
-Pass 12
-Estimating fMLLR transforms
-Pass 13
-Pass 14
-Pass 15
-Pass 16
-Pass 17
-Pass 18
-Pass 19
-Pass 20
-Aligning data
-Pass 21
-Pass 22
-Pass 23
-Pass 24
-Pass 25
-Pass 26
-Pass 27
-Pass 28
-Pass 29
-Pass 30
-Aligning data
-Pass 31
-Pass 32
-Pass 33
-Pass 34
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b
-steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b/log/analyze_alignments.log
-1 warnings in exp/tri3b/log/questions.log
-1 warnings in exp/tri3b/log/init_model.log
-1 warnings in exp/tri3b/log/est_alimdl.log
-759 warnings in exp/tri3b/log/acc.*.*.log
-34 warnings in exp/tri3b/log/update.*.log
-1 warnings in exp/tri3b/log/build_tree.log
-1 warnings in exp/tri3b/log/compile_questions.log
-813 warnings in exp/tri3b/log/align.*.*.log
-109 warnings in exp/tri3b/log/fmllr.*.*.log
-steps/train_sat.sh: Likelihood evolution:
--45.7469 -45.6177 -45.4747 -45.2816 -44.458 -43.7917 -43.4497 -43.2491 -43.0823 -42.5898 -42.403 -42.176 -42.0551 -41.9537 -41.8646 -41.7852 -41.7131 -41.6441 -41.5769 -41.4406 -41.3608 -41.3094 -41.2623 -41.2182 -41.1762 -41.1356 -41.096 -41.0584 -41.0225 -40.9476 -40.8998 -40.8768 -40.863 -40.8539 
-exp/tri3b: nj=40 align prob=-44.15 over 51.01h [retry=1.2%, fail=0.1%] states=2050 gauss=15021 fmllr-impr=3.43 over 34.68h tree-impr=8.45
-steps/train_sat.sh: done training SAT system in exp/tri3b
-tree-info exp/tri3b/tree 
-tree-info exp/tri3b/tree 
-make-h-transducer --disambig-syms-out=exp/tri3b/graph_nosp/disambig_tid.int --transition-scale=1.0 data/lang_nosp_test/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
-fsttablecompose exp/tri3b/graph_nosp/Ha.fst data/lang_nosp_test/tmp/CLG_3_1.fst 
-fstrmsymbols exp/tri3b/graph_nosp/disambig_tid.int 
-fstrmepslocal 
-fstdeterminizestar --use-log=true 
-fstminimizeencoded 
-fstisstochastic exp/tri3b/graph_nosp/HCLGa.fst 
-0.000487826 -0.192217
-HCLGa is not stochastic
-add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl 
-steps/decode_fmllr.sh --nj 40 exp/tri3b/graph_nosp data/test exp/tri3b/decode_nosp
-steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 40 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph_nosp data/test exp/tri3b/decode_nosp.si
-decode.sh: feature type is lda
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph_nosp exp/tri3b/decode_nosp.si
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_nosp.si/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.9
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_nosp.si/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/tri3b/graph_nosp exp/tri3b/decode_nosp.si
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-steps/decode_fmllr.sh: feature type is lda
-steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
-steps/decode_fmllr.sh: doing main lattice generation phase
-steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
-steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph_nosp exp/tri3b/decode_nosp
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_nosp/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.5
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode_nosp/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/tri3b/graph_nosp exp/tri3b/decode_nosp
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-./steps/get_prons.sh data/train data/lang_nosp exp/tri3b
-./steps/get_prons.sh: exp/tri3b/ali.1.gz exists, so starting from alignments.
-./steps/get_prons.sh: done writing prons to exp/tri3b/prons.*.gz, silence counts in 
-./steps/get_prons.sh: exp/tri3b/sil_counts_nowb.txt and pronunciation counts in 
-./steps/get_prons.sh: exp/tri3b/pron_counts.{int,txt}
-./steps/get_prons.sh: ... and also in exp/tri3b/pron_counts_nowb.txt
-Checking data/local/dict_nosp/silence_phones.txt ...
---> reading data/local/dict_nosp/silence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/silence_phones.txt is OK
-
-Checking data/local/dict_nosp/optional_silence.txt ...
---> reading data/local/dict_nosp/optional_silence.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/optional_silence.txt is OK
-
-Checking data/local/dict_nosp/nonsilence_phones.txt ...
---> reading data/local/dict_nosp/nonsilence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/nonsilence_phones.txt is OK
-
-Checking disjoint: silence_phones.txt, nonsilence_phones.txt
---> disjoint property is OK.
-
-Checking data/local/dict_nosp/lexicon.txt
---> reading data/local/dict_nosp/lexicon.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/lexicon.txt is OK
-
-Checking data/local/dict_nosp/lexiconp.txt
---> reading data/local/dict_nosp/lexiconp.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/lexiconp.txt is OK
-
-Checking lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt
---> lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt match
-
-Checking data/local/dict_nosp/extra_questions.txt ...
---> reading data/local/dict_nosp/extra_questions.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict_nosp/extra_questions.txt is OK
---> SUCCESS [validating dictionary directory data/local/dict_nosp]
-
-./utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
-./utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dict/
-./utils/dict_dir_add_pronprobs.sh: validating data/local/dict ..
-Checking data/local/dict/silence_phones.txt ...
---> reading data/local/dict/silence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/silence_phones.txt is OK
-
-Checking data/local/dict/optional_silence.txt ...
---> reading data/local/dict/optional_silence.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/optional_silence.txt is OK
-
-Checking data/local/dict/nonsilence_phones.txt ...
---> reading data/local/dict/nonsilence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/nonsilence_phones.txt is OK
-
-Checking disjoint: silence_phones.txt, nonsilence_phones.txt
---> disjoint property is OK.
-
-Checking data/local/dict/lexicon.txt
---> reading data/local/dict/lexicon.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/lexicon.txt is OK
-
-Checking data/local/dict/lexiconp.txt
---> reading data/local/dict/lexiconp.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/lexiconp.txt is OK
-
-Checking data/local/dict/lexiconp_silprob.txt
---> reading data/local/dict/lexiconp_silprob.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/lexiconp_silprob.txt is OK
-
-Checking lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt
---> lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt match
-
-Checking lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt
---> lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt match
-
-Checking data/local/dict/extra_questions.txt ...
---> reading data/local/dict/extra_questions.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/extra_questions.txt is OK
---> SUCCESS [validating dictionary directory data/local/dict]
-
-Some low-probability prons include: 
-# sort -k2,2 -n data/local/dict/lexiconp.txt  | head -n 8
-i 0.00299316 a j
-co 0.00612245 k o
-szybko 0.011628 S I b k o
-przypadku 0.0119048 p S I p a d k u
-między 0.0135135 m j en dz I
-często 0.013986 tS en s t o
-zawsze 0.0145631 z a v S e
-pierwszy 0.0169491 p j e r v S I
-utils/prepare_lang.sh data/local/dict <unk> data/local/tmp data/lang
-Checking data/local/dict/silence_phones.txt ...
---> reading data/local/dict/silence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/silence_phones.txt is OK
-
-Checking data/local/dict/optional_silence.txt ...
---> reading data/local/dict/optional_silence.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/optional_silence.txt is OK
-
-Checking data/local/dict/nonsilence_phones.txt ...
---> reading data/local/dict/nonsilence_phones.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/nonsilence_phones.txt is OK
-
-Checking disjoint: silence_phones.txt, nonsilence_phones.txt
---> disjoint property is OK.
-
-Checking data/local/dict/lexicon.txt
---> reading data/local/dict/lexicon.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/lexicon.txt is OK
-
-Checking data/local/dict/lexiconp.txt
---> reading data/local/dict/lexiconp.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/lexiconp.txt is OK
-
-Checking data/local/dict/lexiconp_silprob.txt
---> reading data/local/dict/lexiconp_silprob.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/lexiconp_silprob.txt is OK
-
-Checking lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt
---> lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt match
-
-Checking lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt
---> lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt match
-
-Checking data/local/dict/extra_questions.txt ...
---> reading data/local/dict/extra_questions.txt
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/local/dict/extra_questions.txt is OK
---> SUCCESS [validating dictionary directory data/local/dict]
-
-fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
-prepare_lang.sh: validating output directory
-utils/validate_lang.pl data/lang
-Checking data/lang/phones.txt ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/lang/phones.txt is OK
-
-Checking words.txt: #0 ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> data/lang/words.txt is OK
-
-Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
---> silence.txt and nonsilence.txt are disjoint
---> silence.txt and disambig.txt are disjoint
---> disambig.txt and nonsilence.txt are disjoint
---> disjoint property is OK
-
-Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
---> summation property is OK
-
-Checking data/lang/phones/context_indep.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 10 entry/entries in data/lang/phones/context_indep.txt
---> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
---> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
---> data/lang/phones/context_indep.{txt, int, csl} are OK
-
-Checking data/lang/phones/nonsilence.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 144 entry/entries in data/lang/phones/nonsilence.txt
---> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
---> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
---> data/lang/phones/nonsilence.{txt, int, csl} are OK
-
-Checking data/lang/phones/silence.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 10 entry/entries in data/lang/phones/silence.txt
---> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
---> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
---> data/lang/phones/silence.{txt, int, csl} are OK
-
-Checking data/lang/phones/optional_silence.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 1 entry/entries in data/lang/phones/optional_silence.txt
---> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
---> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
---> data/lang/phones/optional_silence.{txt, int, csl} are OK
-
-Checking data/lang/phones/disambig.{txt, int, csl} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 1258153 entry/entries in data/lang/phones/disambig.txt
---> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
---> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
---> data/lang/phones/disambig.{txt, int, csl} are OK
-
-Checking data/lang/phones/roots.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 38 entry/entries in data/lang/phones/roots.txt
---> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
---> data/lang/phones/roots.{txt, int} are OK
-
-Checking data/lang/phones/sets.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 38 entry/entries in data/lang/phones/sets.txt
---> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
---> data/lang/phones/sets.{txt, int} are OK
-
-Checking data/lang/phones/extra_questions.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 11 entry/entries in data/lang/phones/extra_questions.txt
---> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
---> data/lang/phones/extra_questions.{txt, int} are OK
-
-Checking data/lang/phones/word_boundary.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 154 entry/entries in data/lang/phones/word_boundary.txt
---> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
---> data/lang/phones/word_boundary.{txt, int} are OK
-
-Checking optional_silence.txt ...
---> reading data/lang/phones/optional_silence.txt
---> data/lang/phones/optional_silence.txt is OK
-
-Checking disambiguation symbols: #0 and #1
---> data/lang/phones/disambig.txt has "#0" and "#1"
---> data/lang/phones/disambig.txt is OK
-
-Checking topo ...
-
-Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
---> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
---> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
---> data/lang/phones/word_boundary.txt is OK
-
-Checking word-level disambiguation symbols...
---> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
-Checking word_boundary.int and disambig.int
---> generating a 48 word sequence
---> resulting phone sequence from L.fst corresponds to the word sequence
---> L.fst is OK
---> generating a 27 word sequence
---> resulting phone sequence from L_disambig.fst corresponds to the word sequence
---> L_disambig.fst is OK
-
-Checking data/lang/oov.{txt, int} ...
---> text seems to be UTF-8 or ASCII, checking whitespaces
---> text contains only allowed whitespaces
---> 1 entry/entries in data/lang/oov.txt
---> data/lang/oov.int corresponds to data/lang/oov.txt
---> data/lang/oov.{txt, int} are OK
-
---> data/lang/L.fst is olabel sorted
---> data/lang/L_disambig.fst is olabel sorted
---> SUCCESS [validating lang directory data/lang]
-Converting 'local_clarin/arpa.lm.gz' to FST
-arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test/words.txt - data/lang_test/G.fst 
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:98) Reading \data\ section.
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \1-grams: section.
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \2-grams: section.
-LOG (arpa2fst[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \3-grams: section.
-LOG (arpa2fst[5.2.160~1-51042]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 615820 to 373636
-fstisstochastic data/lang_test/G.fst 
-2.3509e-06 -0.441586
-Succeeded in formatting LM: 'local_clarin/arpa.lm.gz'
-tree-info exp/tri3b/tree 
-tree-info exp/tri3b/tree 
-fsttablecompose data/lang_test/L_disambig.fst data/lang_test/G.fst 
-fstminimizeencoded 
-fstdeterminizestar --use-log=true 
-fstpushspecial 
-fstisstochastic data/lang_test/tmp/LG.fst 
--0.0345778 -0.0351733
-[info]: LG not stochastic.
-fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_test/phones/disambig.int --write-disambig-syms=data/lang_test/tmp/disambig_ilabels_3_1.int data/lang_test/tmp/ilabels_3_1.8565 
-fstisstochastic data/lang_test/tmp/CLG_3_1.fst 
-0 -0.0351733
-[info]: CLG not stochastic.
-make-h-transducer --disambig-syms-out=exp/tri3b/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
-fsttablecompose exp/tri3b/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
-fstrmepslocal 
-fstdeterminizestar --use-log=true 
-fstrmsymbols exp/tri3b/graph/disambig_tid.int 
-fstminimizeencoded 
-fstisstochastic exp/tri3b/graph/HCLGa.fst 
-0.00048784 -0.13022
-HCLGa is not stochastic
-add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl 
-steps/decode_fmllr.sh --nj 40 exp/tri3b/graph data/test exp/tri3b/decode
-steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 40 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/test exp/tri3b/decode.si
-decode.sh: feature type is lda
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b/decode.si
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.6
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b/decode.si
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-steps/decode_fmllr.sh: feature type is lda
-steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
-steps/decode_fmllr.sh: doing main lattice generation phase
-steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
-steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
-steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b/decode
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode/log/analyze_alignments.log
-Overall, lattice depth (10,50,90-percentile)=(1,2,7) and mean=3.2
-steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode/log/analyze_lattice_depth_stats.log
-local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b/decode
-local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
-steps/align_fmllr.sh --nj 40 data/train data/lang exp/tri3b exp/tri3b_ali
-steps/align_fmllr.sh: feature type is lda
-steps/align_fmllr.sh: compiling training graphs
-steps/align_fmllr.sh: aligning data in data/train using exp/tri3b/final.alimdl and speaker-independent features.
-steps/align_fmllr.sh: computing fMLLR transforms
-steps/align_fmllr.sh: doing final alignment.
-steps/align_fmllr.sh: done aligning data.
-steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3b_ali
-steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali/log/analyze_alignments.log
-15 warnings in exp/tri3b_ali/log/fmllr.*.log
-196 warnings in exp/tri3b_ali/log/align_pass2.*.log
-181 warnings in exp/tri3b_ali/log/align_pass1.*.log
 steps/make_denlats.sh --nj 40 --transform-dir exp/tri3b_ali data/train data/lang exp/tri3b exp/tri3b_denlats
 Making unigram grammar FST in exp/tri3b_denlats/lang
 Compiling decoding graph in exp/tri3b_denlats/dengraph
-tree-info exp/tri3b/tree 
-tree-info exp/tri3b/tree 
-fstpushspecial 
-fstdeterminizestar --use-log=true 
-fsttablecompose exp/tri3b_denlats/lang/L_disambig.fst exp/tri3b_denlats/lang/G.fst 
-fstminimizeencoded 
-fstisstochastic exp/tri3b_denlats/lang/tmp/LG.fst 
--0.0204473 -0.0210886
-[info]: LG not stochastic.
-fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=exp/tri3b_denlats/lang/phones/disambig.int --write-disambig-syms=exp/tri3b_denlats/lang/tmp/disambig_ilabels_3_1.int exp/tri3b_denlats/lang/tmp/ilabels_3_1.25838 
-fstisstochastic exp/tri3b_denlats/lang/tmp/CLG_3_1.fst 
-0 -0.0210886
-[info]: CLG not stochastic.
-make-h-transducer --disambig-syms-out=exp/tri3b_denlats/dengraph/disambig_tid.int --transition-scale=1.0 exp/tri3b_denlats/lang/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
-fsttablecompose exp/tri3b_denlats/dengraph/Ha.fst exp/tri3b_denlats/lang/tmp/CLG_3_1.fst 
-fstdeterminizestar --use-log=true 
-fstminimizeencoded 
-fstrmsymbols exp/tri3b_denlats/dengraph/disambig_tid.int 
-fstrmepslocal 
-fstisstochastic exp/tri3b_denlats/dengraph/HCLGa.fst 
-0.000486887 -0.055427
-HCLGa is not stochastic
-add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl 
+Graph exp/tri3b_denlats/dengraph/HCLG.fst already exists: skipping graph creation.
 steps/make_denlats.sh: feature type is lda
 steps/make_denlats.sh: using fMLLR transforms from exp/tri3b_ali
-steps/make_denlats.sh: using fMLLR transforms from exp/tri3b_ali
-steps/make_denlats.sh: done generating denominator lattices.
+        steps/make_denlats.sh: done generating denominator lattices.
 steps/train_mmi.sh data/train data/lang exp/tri3b_ali exp/tri3b_denlats exp/tri3b_mmi
 steps/train_mmi.sh: feature type is lda
 Using transforms from exp/tri3b_ali
 Iteration 0 of MMI training
-run.pl: 9 / 40 failed, log is in exp/tri3b_mmi/log/acc.0.*.log
+Iteration 0: objf was 0.16171422598068, MMI auxf change was 0.00460021381474145
+Iteration 1 of MMI training
+Iteration 1: objf was 0.168792647644949, MMI auxf change was 0.00250583688102784
+Iteration 2 of MMI training
+Iteration 2: objf was 0.173787031921683, MMI auxf change was 0.0023472185839103
+Iteration 3 of MMI training
+Iteration 3: objf was 0.178648512587269, MMI auxf change was 0.00241193484913426
+MMI training finished
+steps/decode_fmllr.sh --nj 40 --alignment-model exp/tri3b/final.alimdl --adapt-model exp/tri3b/final.mdl exp/tri3b/graph data/test exp/tri3b_mmi/decode
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 40 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/test exp/tri3b_mmi/decode.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b_mmi/decode.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode.si/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b_mmi/decode.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b_mmi/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b_mmi/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh --nj 40 --alignment-model exp/tri3b/final.alimdl --adapt-model exp/tri3b/final.mdl --beam 24 --lattice-beam 12 exp/tri3b/graph data/test exp/tri3b_mmi/decode_wb
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 40 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/test exp/tri3b_mmi/decode_wb.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b_mmi/decode_wb.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode_wb.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,2,8) and mean=3.6
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode_wb.si/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b_mmi/decode_wb.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b_mmi/decode_wb
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode_wb/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(2,7,35) and mean=17.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b_mmi/decode_wb/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri3b/graph exp/tri3b_mmi/decode_wb
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+./steps/oracle_wer.sh data/test data/lang exp/tri3b_mmi/decode_wb
+./steps/oracle_wer.sh: measuring lattice depth
+Depth is: 17.12 ( 29057420 / 1696840 )
+./steps/oracle_wer.sh: measuring lattice oracle WER
+Oracle WER is: 3.41% [ 893 / 26189, 605 insertions, 11 deletions, 277 substitutions ]
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  842M  100  842M    0     0  4585k      0  0:03:08  0:03:08 --:--:-- 3986k
+arpa-to-const-arpa --bos-symbol=58869 --eos-symbol=58870 --unk-symbol=3 'gunzip -c local_clarin/large.arpa.gz | utils/map_arpa_lm.pl data/lang_carpa/words.txt|' data/lang_carpa/G.carpa 
+LOG (arpa-to-const-arpa[5.2.160~1-51042]:BuildConstArpaLm():const-arpa-lm.cc:1078) Reading gunzip -c local_clarin/large.arpa.gz | utils/map_arpa_lm.pl data/lang_carpa/words.txt|
+utils/map_arpa_lm.pl: Processing "\data\"
+utils/map_arpa_lm.pl: Processing "\1-grams:\"
+LOG (arpa-to-const-arpa[5.2.160~1-51042]:Read():arpa-file-parser.cc:98) Reading \data\ section.
+LOG (arpa-to-const-arpa[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \1-grams: section.
+utils/map_arpa_lm.pl: Processing "\2-grams:\"
+LOG (arpa-to-const-arpa[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \2-grams: section.
+utils/map_arpa_lm.pl: Processing "\3-grams:\"
+LOG (arpa-to-const-arpa[5.2.160~1-51042]:Read():arpa-file-parser.cc:153) Reading \3-grams: section.
+./steps/lmrescore_const_arpa.sh data/lang_test data/lang_carpa data/test exp/tri3b_mmi/decode_wb exp/tri3b_mmi/decode_rs
+local/score.sh --cmd run.pl data/test data/lang_carpa exp/tri3b_mmi/decode_rs
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+./local/nnet3/run_ivector_common.sh: preparing directory for speed-perturbed data
+utils/data/perturb_data_dir_speed_3way.sh: making sure the utt2dur file is present in data/train, because 
+... obtaining it after speed-perturbing would be very slow, and
+... you might need it.
+utils/data/get_utt2dur.sh: segments file does not exist so getting durations from wave files
+utils/data/get_utt2dur.sh: could not get utterance lengths from sphere-file headers, using wav-to-duration
+wav-to-duration --read-entire-file=false scp:data/train/wav.scp ark,t:data/train/utt2dur 
+LOG (wav-to-duration[5.2.160~1-51042]:main():wav-to-duration.cc:92) Printed duration for 12540 audio files.
+LOG (wav-to-duration[5.2.160~1-51042]:main():wav-to-duration.cc:94) Mean duration was 14.6899, min and max durations were 4.01681, 99.06
+utils/data/get_utt2dur.sh: computed data/train/utt2dur
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed0.9
+Checking data/train_sp_speed0.9/text ...
+--> reading data/train_sp_speed0.9/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed0.9
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed1.1
+Checking data/train_sp_speed1.1/text ...
+--> reading data/train_sp_speed1.1/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed1.1
+utils/data/combine_data.sh data/train_sp data/train data/train_sp_speed0.9 data/train_sp_speed1.1
+utils/data/combine_data.sh: combined utt2uniq
+utils/data/combine_data.sh [info]: not combining segments as it does not exist
+utils/data/combine_data.sh: combined utt2spk
+utils/data/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/data/combine_data.sh: combined utt2dur
+utils/data/combine_data.sh [info]: **not combining feats.scp as it does not exist everywhere**
+utils/data/combine_data.sh: combined text
+utils/data/combine_data.sh [info]: **not combining cmvn.scp as it does not exist everywhere**
+utils/data/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/data/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/data/combine_data.sh: combined wav.scp
+utils/data/combine_data.sh [info]: not combining spk2gender as it does not exist
+fix_data_dir.sh: kept all 37620 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+utils/data/perturb_data_dir_speed_3way.sh: generated 3-way speed-perturbed version of data in data/train, in data/train_sp
+Checking data/train_sp/text ...
+--> reading data/train_sp/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+./local/nnet3/run_ivector_common.sh: creating high-resolution MFCC features
+utils/copy_data_dir.sh: copied data from data/train_sp to data/train_sp_hires
+Checking data/train_sp_hires/text ...
+--> reading data/train_sp_hires/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+utils/copy_data_dir.sh: copied data from data/test to data/test_hires
+Checking data/test_hires/text ...
+--> reading data/test_hires/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+utils/data/perturb_data_dir_volume.sh: added volume perturbation to the data in data/train_sp_hires
+steps/make_mfcc.sh --nj 40 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/train_sp_hires
+Checking data/train_sp_hires/text ...
+--> reading data/train_sp_hires/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for train_sp_hires
+steps/compute_cmvn_stats.sh data/train_sp_hires
+Succeeded creating CMVN stats for train_sp_hires
+fix_data_dir.sh: kept all 37620 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_hires/.backup
+steps/make_mfcc.sh --nj 40 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/test_hires
+steps/make_mfcc.sh: moving data/test_hires/feats.scp to data/test_hires/.backup
+Checking data/test_hires/text ...
+--> reading data/test_hires/text
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for test_hires
+steps/compute_cmvn_stats.sh data/test_hires
+Succeeded creating CMVN stats for test_hires
+fix_data_dir.sh: kept all 1275 utterances.
+fix_data_dir.sh: old files are kept in data/test_hires/.backup
+./local/nnet3/run_ivector_common.sh: computing a subset of data to train the diagonal UBM.
+utils/data/subset_data_dir.sh: reducing #utt from 37620 to 9405
+./local/nnet3/run_ivector_common.sh: computing a PCA transform from the hires data.
+steps/online/nnet2/get_pca_transform.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 --max-utts 10000 --subsample 2 exp/nnet3/diag_ubm/train_sp_hires_subset exp/nnet3/pca_transform
+Done estimating PCA transform in exp/nnet3/pca_transform
+./local/nnet3/run_ivector_common.sh: training the diagonal UBM.
+steps/online/nnet2/train_diag_ubm.sh --cmd run.pl --nj 30 --num-frames 700000 --num-threads 32 exp/nnet3/diag_ubm/train_sp_hires_subset 512 exp/nnet3/pca_transform exp/nnet3/diag_ubm
+steps/online/nnet2/train_diag_ubm.sh: Directory exp/nnet3/diag_ubm already exists. Backing up diagonal UBM in exp/nnet3/diag_ubm/backup.lVl
+steps/online/nnet2/train_diag_ubm.sh: initializing model from E-M in memory, 
+steps/online/nnet2/train_diag_ubm.sh: starting from 256 Gaussians, reaching 512;
+steps/online/nnet2/train_diag_ubm.sh: for 20 iterations, using at most 700000 frames of data
+Getting Gaussian-selection info
+run.pl: 16 / 30 failed, log is in exp/nnet3/diag_ubm/log/gselect.*.log
+
