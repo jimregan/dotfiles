@@ -1115,10 +1115,10 @@ nnet3-info exp/nnet3/tdnn1a_sp/configs//ref.raw
 nnet3-init exp/nnet3/tdnn1a_sp/configs//ref.config exp/nnet3/tdnn1a_sp/configs//ref.raw 
 LOG (nnet3-init[5.2.160~1-51042]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3/tdnn1a_sp/configs//ref.raw
 nnet3-info exp/nnet3/tdnn1a_sp/configs//ref.raw 
-2017-11-17 15:23:04,340 [steps/nnet3/train_dnn.py:35 - <module> - INFO ] Starting DNN trainer (train_dnn.py)
+2017-11-17 15:47:49,303 [steps/nnet3/train_dnn.py:35 - <module> - INFO ] Starting DNN trainer (train_dnn.py)
 steps/nnet3/train_dnn.py --stage=-10 --cmd=run.pl --feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires --feat.cmvn-opts=--norm-means=false --norm-vars=false --trainer.srand=0 --trainer.max-param-change=2.0 --trainer.num-epochs=3 --trainer.samples-per-iter=400000 --trainer.optimization.num-jobs-initial=2 --trainer.optimization.num-jobs-final=6 --trainer.optimization.initial-effective-lrate=0.0015 --trainer.optimization.final-effective-lrate=0.00015 --trainer.optimization.minibatch-size=256,128 --egs.dir= --cleanup.remove-egs=true --use-gpu=true --feat-dir=data/train_sp_hires --ali-dir=exp/tri3b_ali_ali_train_sp --lang=data/lang --reporting.email= --dir=exp/nnet3/tdnn1a_sp
 ['steps/nnet3/train_dnn.py', '--stage=-10', '--cmd=run.pl', '--feat.online-ivector-dir=exp/nnet3/ivectors_train_sp_hires', '--feat.cmvn-opts=--norm-means=false --norm-vars=false', '--trainer.srand=0', '--trainer.max-param-change=2.0', '--trainer.num-epochs=3', '--trainer.samples-per-iter=400000', '--trainer.optimization.num-jobs-initial=2', '--trainer.optimization.num-jobs-final=6', '--trainer.optimization.initial-effective-lrate=0.0015', '--trainer.optimization.final-effective-lrate=0.00015', '--trainer.optimization.minibatch-size=256,128', '--egs.dir=', '--cleanup.remove-egs=true', '--use-gpu=true', '--feat-dir=data/train_sp_hires', '--ali-dir=exp/tri3b_ali_ali_train_sp', '--lang=data/lang', '--reporting.email=', '--dir=exp/nnet3/tdnn1a_sp']
-2017-11-17 15:23:04,345 [steps/nnet3/train_dnn.py:163 - train - INFO ] Arguments for the experiment
+2017-11-17 15:47:49,307 [steps/nnet3/train_dnn.py:163 - train - INFO ] Arguments for the experiment
 {'ali_dir': 'exp/tri3b_ali_ali_train_sp',
  'backstitch_training_interval': 1,
  'backstitch_training_scale': 0.0,
@@ -1164,8 +1164,8 @@ steps/nnet3/train_dnn.py --stage=-10 --cmd=run.pl --feat.online-ivector-dir=exp/
  'stage': -10,
  'transform_dir': 'exp/tri3b_ali_ali_train_sp',
  'use_gpu': True}
-2017-11-17 15:23:05,310 [steps/nnet3/train_dnn.py:203 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
-2017-11-17 15:23:05,425 [steps/nnet3/train_dnn.py:213 - train - INFO ] Generating egs
+2017-11-17 15:47:49,321 [steps/nnet3/train_dnn.py:203 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
+2017-11-17 15:47:49,338 [steps/nnet3/train_dnn.py:213 - train - INFO ] Generating egs
 steps/nnet3/get_egs.sh --cmd run.pl --cmvn-opts --norm-means=false --norm-vars=false --transform-dir exp/tri3b_ali_ali_train_sp --online-ivector-dir exp/nnet3/ivectors_train_sp_hires --left-context 13 --right-context 7 --left-context-initial -1 --right-context-final -1 --stage 0 --samples-per-iter 400000 --frames-per-eg 8 --srand 0 data/train_sp_hires exp/tri3b_ali_ali_train_sp exp/nnet3/tdnn1a_sp/egs
 File data/train_sp_hires/utt2uniq exists, so augmenting valid_uttlist to
 include all perturbed versions of the same 'real' utterances.
@@ -1180,4 +1180,3 @@ copy-int-vector ark:- ark,scp:exp/nnet3/tdnn1a_sp/egs/ali.ark,exp/nnet3/tdnn1a_s
 LOG (copy-int-vector[5.2.160~1-51042]:main():copy-int-vector.cc:83) Copied 37569 vectors of int32.
 steps/nnet3/get_egs.sh: Getting validation and training subset examples.
 steps/nnet3/get_egs.sh: ... extracting validation and training-subset alignments.
-
