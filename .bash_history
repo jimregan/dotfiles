@@ -1,58 +1,3 @@
-sudo apt install clang-5.0
-apt-cache search clang
-sudo apt-get upgrade
-cd Playing/
-git clone git://github.com/ajaxorg/cloud9.git
-git clone https://github.com/creationix/nvm.git ~/.nvm
-source ~/.nvm/nvm.sh
-nvm install 0.10
-cd cloud9/
-sudo npm install packager
-ls
-less README.md 
-cd ..
-rm -rf cloud9/
-sudo rm -rf cloud9/
-git clone https://github.com/c9/core
-mv core/ cloud9core
-cd cloud9core/
-ls
-sudo npm install packager
-cd ..
-sudo rm -rf cloud9core/
-ssh jimregan
-python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-cd ..
-config diff
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config diff
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config diff
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config diff
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config diff
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-ssh jimregan
-ls /tmp/pr
-ls /tmp/proc/
-less ~/tmp/sync/byte-for-byte-identical-20171113-3.nt 
-cp ~/tmp/sync/byte-for-byte-identical-20171113-3.nt jimregan:/tmp/
-scp ~/tmp/sync/byte-for-byte-identical-20171113-3.nt jimregan:/tmp/
-ssh jimregan
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config diff
-config add .bash_history .scratch/chromium-tabs 
 config commit -m more
 python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
 config add .bash_history .scratch/chromium-tabs 
@@ -2008,3 +1953,48 @@ config commit -m blah
 config add .bash_history 
 config commit -m blah
 history -a
+config add .bash_history 
+config commit -m blah
+sudo reboot
+cd /tmp/
+tar zxvf ~/Downloads/0001_aspire_chain_model.tar.gz 
+cd exp/
+ls
+less nnet3/extractor/final.mat 
+less nnet3/extractor/final.ie 
+less nnet3/extractor/online_cmvn.conf 
+ls
+less tdnn_7b_chain_online/decode_dev/log/decode.9.log 
+ls
+ls chain/blstm_7b/accuracy.report 
+less chain/blstm_7b/accuracy.report 
+less chain/tdnn_7b/final.mdl 
+ls
+cd ..
+ls
+less data/lang_chain/L.fst 
+less data/lang_chain/oov.txt 
+less data/lang_chain/oov.int 
+less data/lang_chain/phones
+less data/lang_chain/phones.txt 
+less data/lang_chain/words.txt 
+less data/lang_chain/phones/wdisambig_phones.int 
+less data/lang_chain/phones/align_lexicon.txt 
+less data/lang_chain/phones/sets.txt 
+less exp/nnet3/extractor/final.dubm 
+rm -rf data/
+find exp -name '*log'
+find exp -name '*log' -delete
+cd exp/
+. ~/tmp/sourceme 
+rmemptydir 
+ls
+ls chain/
+ls chain/blstm_7b/
+find . -type f
+ls -lR
+less ./chain/tdnn_7b/configs/init.config 
+less ./chain/tdnn_7b/configs/layer7.config 
+for i in ./chain/tdnn_7b/configs/*config ;do echo $i; cat $i;done
+for i in ./chain/tdnn_7b/configs/*config ;do echo "==================================" echo $i; cat $i;done
+for i in ./chain/tdnn_7b/configs/*config ;do echo "=================================="; echo $i; cat $i;echo;done
