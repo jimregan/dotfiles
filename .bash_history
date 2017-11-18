@@ -1998,3 +1998,13 @@ cat 2
 cp /tmp/inp.jsgf /tmp/inp3.jsgf
 vi /tmp/inp3.jsgf 
 sphinx_jsgf2fsg -symtab 2 -jsgf /tmp/inp3.jsgf
+cd idea-IC-172.3317.76/
+ls
+bin/idea.sh 
+df
+cd ..
+config add .bash_history 
+config commit -m blah
+config add .bash_history 
+config commit -m blah
+history -a
