@@ -16,3 +16,9 @@ steps/nnet3/chain/build_tree.sh: feature type is lda
 steps/nnet3/chain/build_tree.sh: Using transforms from exp/tri3b_ali_ali_train_sp
 steps/nnet3/chain/build_tree.sh: Initializing monophone model (for alignment conversion, in case topology changed)
 steps/nnet3/chain/build_tree.sh: Accumulating tree stats
+steps/nnet3/chain/build_tree.sh: Getting questions for tree clustering.
+steps/nnet3/chain/build_tree.sh: Building the tree
+steps/nnet3/chain/build_tree.sh: Initializing the model
+WARNING (gmm-init-model[5.2.204~1-08848]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+This is a bad warning.
+steps/nnet3/chain/build_tree.sh: Converting alignments from exp/tri3b_ali_ali_train_sp to use current tree
