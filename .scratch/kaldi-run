@@ -22,3 +22,100 @@ steps/nnet3/chain/build_tree.sh: Initializing the model
 WARNING (gmm-init-model[5.2.204~1-08848]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
 This is a bad warning.
 steps/nnet3/chain/build_tree.sh: Converting alignments from exp/tri3b_ali_ali_train_sp to use current tree
+steps/nnet3/chain/build_tree.sh: Done building tree
+./local_clarin/clarin_chain_tdnn.sh: creating neural net configs using the xconfig parser
+tree-info exp/chain/tree_a_sp/tree 
+steps/nnet3/xconfig_to_configs.py --xconfig-file exp/chain/tdnn1f_sp/configs/network.xconfig --config-dir exp/chain/tdnn1f_sp/configs/
+nnet3-init exp/chain/tdnn1f_sp/configs//init.config exp/chain/tdnn1f_sp/configs//init.raw 
+LOG (nnet3-init[5.2.204~1-08848]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn1f_sp/configs//init.raw
+nnet3-info exp/chain/tdnn1f_sp/configs//init.raw 
+nnet3-init exp/chain/tdnn1f_sp/configs//ref.config exp/chain/tdnn1f_sp/configs//ref.raw 
+LOG (nnet3-init[5.2.204~1-08848]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn1f_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn1f_sp/configs//ref.raw 
+nnet3-init exp/chain/tdnn1f_sp/configs//ref.config exp/chain/tdnn1f_sp/configs//ref.raw 
+LOG (nnet3-init[5.2.204~1-08848]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn1f_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn1f_sp/configs//ref.raw 
+2017-11-18 21:39:07,990 [steps/nnet3/chain/train.py:33 - <module> - INFO ] Starting chain model trainer (train.py)
+2017-11-18 21:39:07,994 [steps/nnet3/chain/train.py:271 - train - INFO ] Arguments for the experiment
+{'alignment_subsampling_factor': 3,
+ 'apply_deriv_weights': False,
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'chunk_left_context': 0,
+ 'chunk_left_context_initial': 0,
+ 'chunk_right_context': 0,
+ 'chunk_right_context_final': 0,
+ 'chunk_width': '140,100,160',
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl',
+ 'compute_per_dim_accuracy': False,
+ 'deriv_truncate_margin': None,
+ 'dir': 'exp/chain/tdnn1f_sp',
+ 'do_final_combination': True,
+ 'dropout_schedule': None,
+ 'egs_command': None,
+ 'egs_dir': None,
+ 'egs_opts': '--frames-overlap-per-eg 0',
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_sp_hires',
+ 'final_effective_lrate': 0.0001,
+ 'frame_subsampling_factor': 3,
+ 'frames_per_iter': 3000000,
+ 'initial_effective_lrate': 0.001,
+ 'input_model': None,
+ 'l2_regularize': 5e-05,
+ 'lat_dir': 'exp/chain/tri3b_ali_train_sp_lats',
+ 'leaky_hmm_coefficient': 0.1,
+ 'left_deriv_truncate': None,
+ 'left_tolerance': 5,
+ 'lm_opts': '--num-extra-lm-states=2000',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_param_change': 2.0,
+ 'momentum': 0.0,
+ 'num_chunk_per_minibatch': '256,128,64',
+ 'num_epochs': 4.0,
+ 'num_jobs_final': 6,
+ 'num_jobs_initial': 2,
+ 'online_ivector_dir': 'exp/nnet3/ivectors_train_sp_hires',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'proportional_shrink': 60.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'right_tolerance': 5,
+ 'samples_per_iter': 400000,
+ 'shrink_saturation_threshold': 0.4,
+ 'shrink_value': 1.0,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'transform_dir': 'exp/chain/tri3b_ali_train_sp_lats',
+ 'tree_dir': 'exp/chain/tree_a_sp',
+ 'use_gpu': True,
+ 'xent_regularize': 0.1}
+2017-11-18 21:39:08,009 [steps/nnet3/chain/train.py:320 - train - INFO ] Creating phone language-model
+2017-11-18 21:39:16,996 [steps/nnet3/chain/train.py:325 - train - INFO ] Creating denominator FST
+copy-transition-model exp/chain/tree_a_sp/final.mdl exp/chain/tdnn1f_sp/0.trans_mdl 
+LOG (copy-transition-model[5.2.204~1-08848]:main():copy-transition-model.cc:62) Copied transition model.
+2017-11-18 21:39:20,243 [steps/nnet3/chain/train.py:332 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
+2017-11-18 21:39:20,269 [steps/nnet3/chain/train.py:354 - train - INFO ] Generating egs
+steps/nnet3/chain/get_egs.sh --frames-overlap-per-eg 0 --cmd run.pl --cmvn-opts --norm-means=false --norm-vars=false --transform-dir exp/chain/tri3b_ali_train_sp_lats --online-ivector-dir exp/nnet3/ivectors_train_sp_hires --left-context 17 --right-context 11 --left-context-initial 17 --right-context-final 11 --left-tolerance 5 --right-tolerance 5 --frame-subsampling-factor 3 --alignment-subsampling-factor 3 --stage 0 --frames-per-iter 3000000 --frames-per-eg 140,100,160 --srand 0 data/train_sp_hires exp/chain/tdnn1f_sp exp/chain/tri3b_ali_train_sp_lats exp/chain/tdnn1f_sp/egs
+utils/data/get_utt2dur.sh: data/train_sp_hires/utt2dur already exists with the expected length.  We won't recompute it.
+File data/train_sp_hires/utt2uniq exists, so augmenting valid_uttlist to
+include all perturbed versions of the same 'real' utterances.
+steps/nnet3/chain/get_egs.sh: feature type is raw
+feat-to-dim scp:exp/nnet3/ivectors_train_sp_hires/ivector_online.scp - 
+steps/nnet3/chain/get_egs.sh: working out number of frames of training data
+steps/nnet3/chain/get_egs.sh: working out feature dim
+steps/nnet3/chain/get_egs.sh: creating 19 archives, each with 18301 egs, with
+steps/nnet3/chain/get_egs.sh:   140,100,160 labels per example, and (left,right) context = (17,11)
+steps/nnet3/chain/get_egs.sh:   ... and (left-context-initial,right-context-final) = (17,11)
+steps/nnet3/chain/get_egs.sh: copying training lattices
+steps/nnet3/chain/get_egs.sh: Getting validation and training subset examples.
+steps/nnet3/chain/get_egs.sh: ... extracting validation and training-subset alignments.
