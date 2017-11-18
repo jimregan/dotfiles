@@ -19,3 +19,4 @@ steps/align_fmllr_lats.sh --nj 100 --cmd run.pl data/train_sp data/lang exp/tri3
 steps/align_fmllr_lats.sh: feature type is lda
 steps/align_fmllr_lats.sh: compiling training graphs
 steps/align_fmllr_lats.sh: aligning data in data/train_sp using exp/tri3b_ali/final.alimdl and speaker-independent features.
+steps/align_fmllr_lats.sh: computing fMLLR transforms
