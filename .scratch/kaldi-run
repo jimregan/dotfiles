@@ -6,3 +6,9 @@ steps/align_fmllr_lats.sh: feature type is lda
 steps/align_fmllr_lats.sh: compiling training graphs
 steps/align_fmllr_lats.sh: aligning data in data/train_sp using exp/tri3b_ali/final.alimdl and speaker-independent features.
 steps/align_fmllr_lats.sh: computing fMLLR transforms
+steps/align_fmllr_lats.sh: generating lattices containing alternate pronunciations.
+steps/align_fmllr_lats.sh: done generating lattices from training transcripts.
+726 warnings in exp/chain/tri3b_ali_train_sp_lats/log/align_pass1.*.log
+53 warnings in exp/chain/tri3b_ali_train_sp_lats/log/fmllr.*.log
+109 warnings in exp/chain/tri3b_ali_train_sp_lats/log/generate_lattices.*.log
+./local_clarin/clarin_chain_tdnn.sh: exp/chain/tree_a_sp/final.mdl already exists, refusing to overwrite it.

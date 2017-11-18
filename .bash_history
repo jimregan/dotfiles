@@ -1,21 +1,4 @@
 config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-less .scratch/chromium-tabs 
-cp .scratch/chromium-tabs .scratch/jsgf
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
 less .scratch/chromium-tabs 
 python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
 config add .bash_history .scratch/chromium-tabs 
@@ -1998,3 +1981,20 @@ less ./chain/tdnn_7b/configs/layer7.config
 for i in ./chain/tdnn_7b/configs/*config ;do echo $i; cat $i;done
 for i in ./chain/tdnn_7b/configs/*config ;do echo "==================================" echo $i; cat $i;done
 for i in ./chain/tdnn_7b/configs/*config ;do echo "=================================="; echo $i; cat $i;echo;done
+lynx google.ie
+which sphinxtrain
+man sphinxtrain
+sphinxtrain -h
+mkdir sphinxtrain
+cd sphinxtrain/
+sphinxtrain -t clarinpl setup
+ls
+less etc/feat.params 
+less etc/sphinx_train.cfg 
+lynx google.ie
+find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'
+find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'
+find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'|tr '/' '_'
+find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|while read i; fn=$(echo "$i"|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'|tr '/' '_'); cat $i | awk -v "n=$fn" '{print "<s>" $0 "</s> (" n ")"}'; done
+find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|while read i; do fn=$(echo "$i"|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'|tr '/' '_'); cat $i | awk -v "n=$fn" '{print "<s>" $0 "</s> (" n ")"}'; done
+find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|while read i; do fn=$(echo "$i"|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'|tr '/' '_'); cat $i | awk -v "n=$fn" '{print "<s> " $0 " </s> (" n ")"}'; done
