@@ -1,313 +1,3 @@
-config commit -m more
-less .scratch/chromium-tabs 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-ssh jimregan
-ping jimregan
-ssh jimregan
-ping jimregan
-ssh 192.168.1.11
-ping 192.168.1.11
-ping jimregan
-ssh 192.168.1.11
-ls
-ls -al sjp
-ls -al sjp.warc.gz.warc.gz 
-less sjp.warc.gz.warc.gz 
-cd sjp/
-ls
-less sjp.warc.gz 
-ls
-ls -al
-rm -rf ~/Playing/kaldi/egs/pwr_polish/s5/data/AM_Train_sng_male/
-rm -rf ~/Playing/kaldi/egs/pwr_polish/s5/data/SWD/
-df
-less sjp.pl/oldschool 
-grep '<br />2' sjp.pl/a*
-find ~ -name '*.log'
-find ~/[A-Za-z]* -name '*.log'
-find ~/[A-Za-z]* -name '*.log'|less
-less ~/Playing/kaldi/egs/clarinpl/local_clarin/clarin_pl_data_prep.sh 
-find /tmp/ -name '*log'
-cat /tmp/asd/inp.log 
-rm ~/Downloads/0001_aspire_chain_model.tar.gz 
-df
-killall ssh
-ls
-df
-cd ~/Playing/ClarinStudioKaldi/
-ls
-grep spn local_clarin/*
-less local_clarin/model.fst.gz 
-less local_clarin/model.fst
-less local_clarin/arpa.lm.gz 
-ls
-du -m
-ls
-git status
-rm run-ctd.sh 
-ls -al
-git status
-git pull origin master
-vi run.sh 
-less path.sh 
-git diff
-git branch
-find exp -name '*.log'|xargs grep -i unknown
-find exp -name '*.log'|xargs grep -i 'not covered'
-find exp -name '*.log'|xargs grep -i phone
-find exp -name '*.log'|xargs grep -i 'phone [0-9]'
-find exp -name '*.log'|xargs grep -i 'phone 0'
-find exp -name '*.log'|xargs grep -i 'phone 1'
-find exp -name '*.log'|xargs grep -i '[0-9]'
-find . -name '*_phones*'
-less exp/tri3b_denlats/lang/phones.txt 
-less exp/tri3b_denlats/lang/phones/word_boundary.txt 
-find . -name '*lexi*'
-less exp/tri2a/graph/phones/align_lexicon.int 
-less local_clarin/lexicon.txt 
-
-sh run.sh 
-ls -al audio/
-sh run.sh 
-man md5sum
-cat audio/audio.md5sum 
-cd audio/
-md5sum audio.md5sum 
-md5sum -c  audio.md5sum  || echo nope
-sh run.sh 
-cd ...
-cd ..
-sh run.sh 
-ls
-ls data
-git status
-less utils/validate_data_dir.sh
-touch empty
-if [ -s empty ] ; then echo zer ; fi
-if [ -z empty ] ; then echo zer ; fi
-man if
-help test
-ls
-rm -rf data/
-sh run.sh 
-find . -name '*.sh' |xargs grep 'Generating spk2utt'
-less local_clarin/clarin_pl_data_prep.sh 
-less data/train/utt2spk 
-grep utt2spk local_clarin/*
-grep utt2sp run.sh 
-git status
-find . -name 'utt2spk'
-find . -name 'utt2spk' -exec ls -al {} \;
-find . -name spk2utt -exec ls -al {} \;
-git checkout master
-git checkout -b skip-md5sum-download
-ls -al
-git status
-tar ztvf audio/audio.tar.gz 
-git branch
-git checkout local-changes 
-git log
-git checkout skip-md5sum-download 
-git log
-git cherry-pick f7f8f5ddbce3c333578eca30d1a617034b3bd00a
-git push mine skip-md5sum-download 
-git push mine master
-ls
-ls audio/audio/
-find audio -type f
-cd audio/
-rm -rf audio
-cd ..
-grep utt2sp run.sh 
-./run.sh 
-sh run.sh 
-ls
-git checkout local-changes 
-sh run.sh 
-vi run.sh 
-man set
-help set
-vi run.sh 
-sh run.sh 
-vi run.sh 
-sh run.sh 
-rm -rf ex
-rm -rf exp
-df
-cp audio/audio.tar.gz /media/jim/TOSHIBA/
-rm file:///media/jim/TOSHIBA/audio.tar.gz
-rm /media/jim/TOSHIBA/audio.tar.gz
-git branch
-vi run.sh 
-ls exp/tri1/
-ls exp/
-ls
-df
-vi run.sh 
-rm audio/audio.tar.gz 
-df
-sh run.sh 
-df
-tail ~/.scratch/kaldi-run 
-cat exp/tri3b_mmi/log/acc.0.*.log
-sudo apt-get remove atom
-sudo apt-get remove netbeans
-ls ~/Downloads/*deb
-sudo apt-get remove projectlibre
-sudo apt-get remove code
-df
-ls
-du -k data/
-du -k exp/
-du -m exp/
-du -m data/
-ls data/lang_test/tmp/
-ls -al data/lang_test/tmp/
-ls exp/
-cat exp/tri3b_mmi/log/acc.0.*.log
-tail ~/.scratch/kaldi-run 
-rm -rf exp/tri3b_mmi/
-df
-tail ~/.scratch/kaldi-run 
-less ~/.scratch/kaldi-run 
-df
-ls exp/
-vi run.sh 
-git diff
-cat exp/tri3b_ali/log/*log
-sh run.sh 
-vi run.sh 
-sh run.sh 
-vi run.sh 
-less ./local/nnet3/run_ivector_common.sh
-vi ~/.scratch/kaldi-run 
-less ~/.scratch/kaldi-run 
-clear
-sh run.sh 
-ls ~/bi
-ls ~
-ls ~/bitext
-rm ~/bitext/en-ga-train.t7.gz
-rm ~/bitext/onmt_enga-4-1000-600_checkpoint.t7.gz 
-df
-grep steps/nnet3/get_egs.sh run.sh 
-less run.sh 
-less ./local_clarin/clarin_tdnn.sh
-less run.sh 
-less ./local/nnet3/run_ivector_common.sh
-less run.sh 
-less ./local_clarin/clarin_chain_tdnn.sh
-less ./local/nnet3/run_ivector_common.sh
-find . -name '*.sh'|xargs grep get_egs
-find local -type f|xargs grep get_egs
-find steps -type f|xargs grep get_egs
-find local_clarin -type f|xargs grep get_egs
-ls local_clarin/
-vi run.sh 
-less local_clarin/clarin_tdnn.sh 
-df
-sh run.sh 
-du -m exp/nnet3/tdnn1a_sp/egs/
-ls exp/nnet3/tdnn1a_sp/egs/
-ls -al exp/nnet3/tdnn1a_sp/egs/
-dupes -r  exp/nnet3/tdnn1a_sp/egs/
-ddupes -r  exp/nnet3/tdnn1a_sp/egs/
-fdupes -r  exp/nnet3/tdnn1a_sp/egs/
-rm -rf  exp/nnet3/tdnn1a_sp/egs/
-df
-du ~/Downloads/
-ls -al ~/Downloads/
-rm ~/Downloads/msu_ru_nsh_clunits-0.5.tar.bz2 
-ls -al ~/Download
-rm ~/Downloads/cmusphinx-ru-5.2.tar.gz 
-rm ~/Downloads/cmu_haitian_bdmw_lexicon.scm 
-history -a
-less LICENSE
-less LICENSE-COMMERCIAL-USE 
-less LICENSE
-cd ..
-ls
-docker run eclipse/che
-docker run -it eclipse/che start
-vi ~/tmp/foo/spid 
-cd Chromagnon/
-ls
-python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-cd
-config add .scratch/chromium-tabs .bash_history 
-config status
-config add .config/gtkrc .config/gtkrc-2.0 .kde/share/config/kdeglobals .kde/share/config/kdialogrc 
-config add .config/kglobalshortcutsrc 
-config status
-config add .config/gtk-2.0/gtkfilechooser.ini 
-config commit -m more
-cd -
-python chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-#python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-cd 
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config push origin slow-crash
-config pull origin
-config checkout misc2
-config branch -D slow-crash
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m more
-ls
-mv GADDAG.java .scratch/
-less festival-to-text.pl 
-mv festival-to-text.pl scripts/
-config add scripts/festival-to-text.pl .scratch/GADDAG.java 
-config commit -m more
-less notes-now 
-mv notes-* .scratch/
-less sample
-less sample.gle 
-less xml.pl 
-cp xml.pl .scratch/
-config add .scratch/*
-config commit -m more
-config add .scratch/xml.pl 
-config commit -m more
-less xml.pl 
-ls
-less moses-ptb-extract.txt 
-mv moses-ptb-extract.txt .scratch/
-ls scripts/
-config add .scratch/*
-config commit -m more
-ls
-less adj-rule-sketch 
-mv adj-rule-sketch .scratch/
-less dissertation-notes-tagging.tex 
-mv dissertation-notes-tagging.tex .scratch/
-ls
-less design-notes 
-mv design-notes en-* .scratch/
-config add .scratch/*
-config commit -m more
-ls
-ls nltk_data/
-ls nltk_data/tokenizers/
-ls nltk_data/tokenizers/punkt
-ls nltk_data/tokenizers/punkt/polish.pickle 
-less nltk_data/tokenizers/punkt/polish.pickle 
 python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
 config diff
 config add .bash_history 
@@ -1998,3 +1688,313 @@ find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|sed -e 's#/home/ji
 find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|while read i; fn=$(echo "$i"|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'|tr '/' '_'); cat $i | awk -v "n=$fn" '{print "<s>" $0 "</s> (" n ")"}'; done
 find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|while read i; do fn=$(echo "$i"|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'|tr '/' '_'); cat $i | awk -v "n=$fn" '{print "<s>" $0 "</s> (" n ")"}'; done
 find /home/jim/Playing/kaldi/egs/clarinpl/audio -name '*.txt'|while read i; do fn=$(echo "$i"|sed -e 's#/home/jim/Playing/kaldi/egs/clarinpl/audio/audio/##'|tr '/' '_'); cat $i | awk -v "n=$fn" '{print "<s> " $0 " </s> (" n ")"}'; done
+less .scratch/kaldi-run 
+cd Playing/
+git clone https://github.com/alumae/gst-kaldi-nnet2-online.git
+cd gst-kaldi-nnet2-online/
+ls
+less README.md 
+ls
+cd src/
+ls
+make
+KALDI_ROOT=/home/jim/Playing/kaldi/ make
+ls
+les Makefile 
+less Makefile 
+make kaldimarshal.h
+KALDI_ROOT=/home/jim/Playing/kaldi/ make kaldimarshal
+KALDI_ROOT=/home/jim/Playing/kaldi/ make kaldimarshal.h
+ls
+rm kaldimarshal.o 
+KALDI_ROOT=/home/jim/Playing/kaldi/ make 
+apt-cache search jansson
+sudo apt-get install libjansson-dev 
+KALDI_ROOT=/home/jim/Playing/kaldi/ make 
+ls
+GST_PLUGIN_PATH=. gst-inspect-1.0 kaldinnet2onlinedecoder
+cd ../demo/
+ls
+sh prepare-models.sh 
+bash prepare-models.sh 
+ls
+bash transcribe-audio.sh 
+bash transcribe-audio.sh dr_strangelove.mp3 
+ffplay dr_strangelove.mp3 
+less transcribe-audio.sh 
+ls ivector_extractor/
+git status
+less words.txt 
+less gui-demo.py 
+less transcribe-audio.sh 
+GST_PLUGIN_PATH=. gst-inspect-1.0 kaldinnet2onlinedecoder
+GST_PLUGIN_PATH=../src/ gst-inspect-1.0 kaldinnet2onlinedecoder
+less transcribe-audio.sh 
+tmux
+ls
+cd Playing/kaldi/
+ls
+cd src/
+ls
+less tfrnnlm/tensorflow-rnnlm.cc 
+less tfrnnlm/tensorflow-rnnlm.h 
+less fstbin/fstcomposecontext.cc 
+less fstbin/fstmakecontextfst.cc 
+less fstbin/fsts-to-transcripts.cc 
+less fstbin/fstcopy.cc 
+less fstbin/fsttablecompose.cc 
+ls
+less decoder/lattice-faster-decoder.cc 
+cd Playing/kaldi/src/cudamatrix/
+./cu-array-test 
+./cu-array-test -h
+cd ~
+config add .scratch/kaldi-run 
+config status
+config diff
+config add .bash_history 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config add .scratch/kaldi-run 
+config commit -m blah
+less .scratch/kaldi-run 
+config status
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config add .scratch/kaldi-run 
+config commit -m blah
+less .scratch/kaldi-run 
+top
+ls Playing/kaldi/egs/clarinpl/exp/
+ls Playing/kaldi/egs/clarinpl/exp/chain/
+df
+dftop
+top
+config diff
+config add .scratch/kaldi-run 
+config commit -m failed
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+git diff
+config diff
+config add .scratch/kaldi-run 
+config commit -m restart
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -more
+top
+ls
+man -k sphinx
+man sphinx_cont_seg
+man sphinx_cont_seg.1 
+man sphinx_cepview
+man sphinx_pitch
+man sphinx_fe
+lynx http://cmusphinx.sourceforge.net/wiki/tutorialam
+ls
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -more
+config log
+top
+man nvidia-smi 
+nvidia-smi 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+nvidia-smi 
+clear
+nvidia-smi 
+top
+nvidia-smi 
+top
+nvidia-smi 
+top
+nvidia-smi 
+top
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -more
+git push origin misc2
+config push origin misc2
+less .scratch/kaldi-run 
+to
+top
+nvidia-smi 
+top
+df
+nvidia-smi -c 3
+nvidia-smi 
+sudo nvidia-smi -c 3
+nvidia-smi 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -m again
+top
+ls Playing/kaldi/egs/clarinpl/exp/chain/tree_a_sp/final.mdl
+ls -al Playing/kaldi/egs/clarinpl/exp/chain/tree_a_sp/final.mdl
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config commit -m more
+config add .scratch/kaldi-run 
+config commit -m more
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -m 'delete exp/chain/tree_a_sp/final.mdl and restart'
+top
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -m failed\ again
+config log
+lsof
+lsof|grep kald
+lsof|grep kald|grep clarin
+df
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -m start\ again
+top
+nvidia-smi 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -m more
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -m 'no stats'
+top
+ls -al Playing/kaldi/egs/clarinpl/exp/chain/tree_a_sp/
+cat Playing/kaldi/egs/clarinpl/exp/chain/tree_a_sp/log/*
+nvidia-smi 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config commit -m nearly\ neural
+config add .scratch/kaldi-run 
+config commit -m nearly\ neural
+top
+nvidia-smi 
+top
+less ~/Playing/kaldi/src/latbin/lattice-align-words.cc 
+top
+nvidia-smi 
+top
+nvidia-smi 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config add .scratch/kaldi-run 
+config commit -m failed
+less .scratch/kaldi-run 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config diff
+config add .scratch/kaldi-run 
+config commit -m start\ again
+less .scratch/kaldi-run 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config add .scratch/kaldi-run 
+config commit -m latest\ failure
+less data/train_sp_hires/utt2uniq
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config add .scratch/kaldi-run 
+config commit -m start\ again
+less data/train_sp_hires/utt2uniq
+less .scratch/kaldi-run 
+top
+nvidia-smi 
+top
+nvidia-smi 
+top
+nvidia-smi 
+cp ~/Playing/kaldi/egs/clarinpl/nohup.out .scratch/kaldi-run 
+config add .scratch/kaldi-run 
+config commit -m done\!
+tail nohup.out 
+less nohup.out 
+less .scratch/kaldi-run 
+nvidia-smi 
+cd Playing/kaldi/egs/clarinpl
+nohup sh run.sh &
+tail -f nohup.out 
+cp nohup.out ~/.scratch/kaldi-run 
+tail -f nohup.out 
+mv nohup.out ~/.scratch/kaldi-run 
+vi run.sh 
+git diff run.sh 
+git add run.sh
+git commit -m 'to here'
+mv nohup.out ~/.scratch/kaldi-run 
+nohup sh run.sh &
+tail -f nohup.out 
+less run.sh 
+./steps/oracle_wer.sh data/test_hires data/lang exp/chain/tdnn1f_sp/decode
+less run.sh 
+tail nohup.out 
+find exp/chain/ -name '*.mdl'
+less run.sh 
+less ./local_clarin/clarin_chain_tdnn.sh #
+less run.sh 
+tail nohup.out 
+less ./local_clarin/clarin_chain_tdnn.sh 
+tail nohup.out 
+grep -i warning exp/chain/tri3b_ali_train_sp_lats/log/generate_lattices.*.log
+ls
+rm -rf exp/chain/
+less run.sh 
+sh run.sh 
+less exp/chain/tdnn1f_sp/log/train.1.2.log
+sudo nvidia-smi -c 3
+nohup sh run.sh &
+tail -f nohup.out 
+rm exp/chain/tree_a_sp/final.mdl
+rm nohup.out 
+nohup sh run.sh &
+tail -f nohup.out 
+ls exp/chain/tree_a_sp/final.mdl
+ls -la exp/chain/tree_a_sp/final.mdl
+rm exp/chain/tree_a_sp/final.mdl
+rm nohup.out 
+ls exp/chain/tri3b_ali_train_sp_lats/
+rm -rf exp/chain/tri3b_ali_train_sp_lats/
+nohup sh run.sh &
+tail -f nohup.out 
+find  . -name lat.9.gz
+tail -f nohup.out 
+ls exp/chain/tri3b_ali_train_sp_lats/
+ls -al exp/chain/tri3b_ali_train_sp_lats/
+date
+top
+tail -f nohup.out 
+cat exp/chain/tdnn1f_sp/log/train.0.1.log
+sudo nvidia-smi -c 1
+sudo nvidia-smi 
+cat exp/chain/tdnn1f_sp/log/train.0.1.log
+cat exp/chain/tdnn1f_sp/log/train.0.1.log|less
+clear
+cat exp/chain/tdnn1f_sp/log/train.0.1.log|less
+tail nohup.out 
+less local_clarin/clarin_chain_tdnn.sh 
+less run.sh 
+less local_clarin/clarin_chain_tdnn.sh 
+vi local_clarin/clarin_chain_tdnn.sh 
+vi run.sh 
+git diff
+git add run.sh  local_clarin/clarin_chain_tdnn.sh 
+git commit -m 'limit to number of gpus'
+#rm exp/chain/tree_a_sp/
+nohup sh run.sh &
+tail -f nohup.out 
+cat exp/chain/tdnn1f_sp/log/train.9.1.log
+less exp/chain/tdnn1f_sp/log/train.9.1.log
+vi run.sh 
+vi local_clarin/clarin_chain_tdnn.sh 
+git add local_clarin/clarin_chain_tdnn.sh 
+git commit -m 'try this (minibatch size?)'
+rm nohup.out 
+nohup sh run.sh &
+tail -f nohup.out 
+top
+sudo reboot
