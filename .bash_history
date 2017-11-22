@@ -1,20 +1,3 @@
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .bash_history 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m more
-wget http://orka2.sejm.gov.pl/StenoInter7.nsf/0/BA288D7557897950C1257EA00045BCC5/%24File/ZN_6_08_2015_ksiazka2.pdf
-pdftotext ZN_6_08_2015_ksiazka2.pdf 
-less ZN_6_08_2015_ksiazka2.txt 
-grep youtube .scratch/chromium-tabs 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config diff|grep yout
 config diff|grep yout|awk '{print $NF}''
 config diff|grep yout|awk '{print $NF}'
 config add .scratch/chromium-tabs 
@@ -1998,3 +1981,20 @@ nohup sh run.sh &
 tail -f nohup.out 
 top
 sudo reboot
+cd ~/Playing/gst-kaldi-nnet2-online/
+ls
+cd demo/
+ls
+cp transcribe-audio.sh transcribe-polish.sh 
+vi transcribe-polish.sh 
+less prepare-models.sh 
+cat /home/jim/Playing/kaldi/egs/clarinpl/exp/nnet3/ivectors_train_sp_hires/conf/ivector_extractor.conf
+cat prepare-models.sh 
+sh transcribe-polish.sh 
+sh transcribe-polish.sh d
+cd ~/Playing/tesseract-gle-uncial/
+ls
+ls pages/
+ls generated/
+ls tessdata/
+ls scripts/
