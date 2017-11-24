@@ -148,6 +148,7 @@
 ; (gtk_accel_path "<Actions>/GeditDocinfoPluginActions/DocumentStatistics" "")
 ; (gtk_accel_path "<Actions>/FileBrowserWidgetActionGroup/FilterBinary" "")
 ; (gtk_accel_path "<Actions>/LanguagesActions/dtd" "")
+; (gtk_accel_path "<Actions>/DocumentsListActions/Active_Tab_1" "<Primary>2")
 ; (gtk_accel_path "<Actions>/LanguagesActions/systemverilog" "")
 ; (gtk_accel_path "<Actions>/FileBrowserWidgetActionGroup/FilterHidden" "")
 ; (gtk_accel_path "<Actions>/LanguagesActions/haskell-literate" "")
