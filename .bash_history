@@ -1,34 +1,3 @@
-config diff|grep yout|awk '{print $NF}''
-config diff|grep yout|awk '{print $NF}'
-config add .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff|grep yout|awk '{print $NF}'
-config add .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m more
-config log
-config revert 88219b400dc94eba431169ee0c0fc191eff13569
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m more
-config branch
-config checkout -b misc2a
-config add .config/konsolerc .bash_history 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
 config commit -m more
 config push origin misc2a
 config checkout misc
@@ -1998,3 +1967,34 @@ ls pages/
 ls generated/
 ls tessdata/
 ls scripts/
+cd tmp/sync/
+grep screenshot_20170615-141902.png verify*/unsorted*
+grep screenshot_20170615-143738.png verify*/unsorted*
+grep screenshot_20170615-190910.png verify*/unsorted*
+grep screenshot_20170615-143542.png verify*/unsorted*
+grep screenshot_20170615-143532.png verify*/unsorted*
+grep screenshot_20170615-131614.png verify*/unsorted*
+grep screenshot_20170614-212604.png verify*/unsorted*
+grep screenshot_20170610-162207.png verify*/unsorted*
+grep screenshot_20170611-123725.png verify*/unsorted*
+grep screenshot_20170611-135036.png verify*/unsorted*
+grep screenshot_20170611-135818.png verify*/unsorted*
+grep screenshot_20170611-162036.png verify*/unsorted*
+grep screenshot_20170611-180833.png verify*/unsorted*
+grep screenshot_20170614-080756.png verify*/unsorted*
+grep screenshot_20170613-073054.png verify*/unsorted*
+grep screenshot_20170612-235704.png verify*/unsorted*
+grep screenshot_20170612-235558.png verify*/unsorted*
+grep screenshot_20170612-234927.png verify*/unsorted*
+grep screenshot_20170612-154823.png verify*/unsorted*
+grep screenshot_20170612-154616.png verify*/unsorted*
+grep screenshot_20170612-154637.png verify*/unsorted*
+grep screenshot_20170611-223158.png verify*/unsorted*
+grep https://www.instagram.com/p/BV2JOVLDftW/?taken-by=tanya_dv verify*/unsorted*
+ls
+grep https://www.instagram.com/p/BV2JOVLDftW/?taken-by=tanya_dv tock/unsorted-*
+less tock/unsorted-triples-20171106_c.nt
+grep https://image.ibb.co/ffZFik/132.jpg tock/*
+less tock/unsorted-triples-20171106_c.nt
+cd -
+ls
