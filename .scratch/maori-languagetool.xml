@@ -1,0 +1,20 @@
+<rule id="KI_A_AHAU" name="ki a ahau">
+  <pattern>
+    <token regexp="yes">ki|i|kei|hei</token>
+    <marker>
+      <token>a</token>
+      <token>ahau</token>
+    </marker>
+  </pattern>
+  <message>You should use <suggestion>a au</suggestion> or <suggestion>ahau</suggestion>.</message>
+</rule>
+<rule id="KI_AU" name="ki au">
+  <pattern>
+    <token regexp="yes">ki|i|kei|hei</token>
+    <marker>
+      <token>ahau</token>
+    </marker>
+  </pattern>
+  <message>You should use <suggestion>a au</suggestion> or <suggestion>ahau</suggestion>.</message>
+</rule>
+

@@ -1,0 +1,65 @@
+<!--
+#REMOVE (Verb) IF (0 ("bí")) (NOT -1 ("<nach>" Cop) OR (Part Vb Rel Indirect) OR (Prep Rel));
+REMOVE (Verb) IF (0 ("<fuil>")) (NOT -1 ("<nach>" Cop) OR (Part Vb Rel Indirect) OR (Prep Rel));
+SELECT (Verb) IF (0 ("<bhí>")) (NOT -1 (Art));
+SELECT (Verb) IF (0 ("<Bhí>")) (NOT -1 (Art));
+REMOVE (Verb Neg) IF (NOT -1 (Part Vb Neg)) (NOT 0 ("<níl>") OR ("<Níl>"));
+REMOVE (Verb PresSubj Neg) IF ( NOT -1 ("ná") OR ("nár")) ;
+REMOVE (Verb PresSubj) IF ( NOT -1 ("ná") OR ("go")) ;
+REMOVE (Verb NegQ) IF (NOT -1 (Part Vb NegQ));
+-->
+<!-- SELECT (Verb) IF (0 ("<bhí>") OR ("<Bhí">)) (-1 (Art)); -->
+<rulegroup name="rule_1">
+<rule>
+  <pattern mark="1">
+    <token postag="Art"></token>
+    <and>
+      <token postag="Verb"></token>
+      <token>bhí</token>
+    </and>
+  </pattern>
+  <disambig postag="Verb"/>
+</rule>
+<rule>
+  <pattern mark="1">
+    <token postag="Art"></token>
+    <and>
+      <token postag="Verb"></token>
+      <token postag=""<Bhí">"></token>
+    </and>
+  </pattern>
+  <disambig postag="Verb"/>
+</rule>
+</rulegroup>
+<!-- REMOVE (Verb Neg) IF (-1 (Part Vb Neg)) (0 ("<níl>") OR ("<Níl>")); -->
+<rule id="rule_1" name="rule_2">
+  <pattern mark="1">
+    <token postag="Part:Vb:Neg.*" postag_regexp="yes"></token>
+    <and>
+      <token postag="Verb:Neg.*" postag_regexp="yes"></token>
+      <token regexp="yes">Níl|níl</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb:Neg.*"/></disambig>
+</rule>
+<!-- REMOVE (Verb PresSubj Neg) IF ( -1 ("ná") OR ("nár")) ; -->
+<rule id="rule_2" name="rule_3">
+  <regexp mark="0">
+    <token inflected="yes" regexp="yes">ná|nár</token>
+    <token postag="Verb:PresSubj:Neg.*" postag_regexp="yes"></token>
+  <disambig action="remove"><wd pos="Verb:PresSubj:Neg.*"/></disambig>
+</rule>
+<!-- REMOVE (Verb PresSubj) IF ( -1 ("ná") OR ("go")) ; -->
+<rule id="rule_3" name="rule_4">
+  <regexp mark="0">
+    <token inflected="yes" regexp="yes">go|ná</token>
+    <token postag="Verb:PresSubj.*" postag_regexp="yes"></token>
+  <disambig action="remove"><wd pos="Verb:PresSubj.*"/></disambig>
+</rule>
+<!-- REMOVE (Verb NegQ) IF (-1 (Part Vb NegQ)); -->
+<rule id="rule_4" name="rule_5">
+  <regexp mark="0">
+    <token postag="Part:Vb:NegQ.*" postag_regexp="yes"></token>
+    <token postag="Verb:NegQ.*" postag_regexp="yes"></token>
+  <disambig action="remove"><wd pos="Verb:NegQ.*"/></disambig>
+</rule>

@@ -111,7 +111,7 @@ contrast=4
 
 [KFileDialog Settings]
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -124,7 +124,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=335
+Speedbar Width=368
 View Style=Detail
 detailedViewIconSize=0
 listViewIconSize=0

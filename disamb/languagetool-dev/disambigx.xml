@@ -1,0 +1,284 @@
+<!-- SELECT (Noun Fem Com) IF (0 ("uain")) (-2 ("tar")) (-1 (Det Poss)); -->
+<rule id="rule_0" name="rule_0">
+  <pattern mark="2">
+    <token inflected="yes">tar</token>
+    <token postag="Det:Poss.*" postag_regexp="yes"></token>
+    <and>
+      <token postag="Noun:Fem:Com.*" postag_regexp="yes"></token>
+      <token inflected="yes">uain</token>
+    </and>
+  </pattern>
+  <disambig postag="Noun:Fem:Com.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Fem Com) IF (0 ("uain")) (-1 ("faigh")); -->
+<rule id="rule_1" name="rule_1">
+  <pattern mark="1">
+    <token inflected="yes">faigh</token>
+    <and>
+      <token postag="Noun:Fem:Com.*" postag_regexp="yes"></token>
+      <token inflected="yes">uain</token>
+    </and>
+  </pattern>
+  <disambig postag="Noun:Fem:Com.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Fem Com) IF (0 ("uain")) (-2 ("faigh")) (-1 (Pers Pron)); -->
+<rule id="rule_2" name="rule_2">
+  <pattern mark="2">
+    <token inflected="yes">faigh</token>
+    <token postag="Pers:Pron.*" postag_regexp="yes"></token>
+    <and>
+      <token postag="Noun:Fem:Com.*" postag_regexp="yes"></token>
+      <token inflected="yes">uain</token>
+    </and>
+  </pattern>
+  <disambig postag="Noun:Fem:Com.*" postag_regexp="yes"/>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("<timpeall>")) (1C (Pron Prep)); -->
+<rule id="rule_3" name="rule_3">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun"></token>
+      <token>timpeall</token>
+    </and>
+    <token postag="Pron:Prep.*" postag_regexp="yes"><exception postag="Pron:Prep.*" postag_regexp="yes" negate_pos="yes"/></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("<timpeall>")) (-1C (Verbal Noun)); -->
+<rule id="rule_4" name="rule_4">
+  <pattern mark="1">
+    <token postag="Verbal:Noun.*" postag_regexp="yes"><exception postag="Verbal:Noun.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <and>
+      <token postag="Noun"></token>
+      <token>timpeall</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (-2 ("bí")) (-1 (Pron Pers)); -->
+<rule id="rule_5" name="rule_5">
+  <regexp mark="1">
+    <token inflected="yes">bí</token>
+    <token postag="Pron:Pers.*" postag_regexp="yes"></token>
+    <token postag="Noun"></token>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (-2 ("bí")) (-1 (Prop Noun)); -->
+<rule id="rule_6" name="rule_6">
+  <regexp mark="1">
+    <token inflected="yes">bí</token>
+    <token postag="Prop:Noun.*" postag_regexp="yes"></token>
+    <token postag="Noun"></token>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (-3 ("bí")) (-2 (Art)) (-1 (Noun)); -->
+<rule id="rule_7" name="rule_7">
+  <regexp mark="2">
+    <token inflected="yes">bí</token>
+    <token postag="Art"></token>
+    <token postag="Noun"></token>
+    <token postag="Noun"></token>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("aon")) ( 1 (Noun)); -->
+<rule id="rule_8" name="rule_8">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun"></token>
+      <token inflected="yes">aon</token>
+    </and>
+    <token postag="Noun"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Num Card) IF (0 ("aon")) (1C (Noun Pl)); -->
+<rule id="rule_9" name="rule_9">
+  <pattern mark="0">
+    <and>
+      <token postag="Num:Card.*" postag_regexp="yes"></token>
+      <token inflected="yes">aon</token>
+    </and>
+    <token postag="Noun:Pl.*" postag_regexp="yes"><exception postag="Noun:Pl.*" postag_regexp="yes" negate_pos="yes"/></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Num:Card.*"/></disambig>
+</rule>
+<!-- SELECT (Noun Gen) IF (-1 GEN-SIMP-PREP); -->
+<rule id="rule_10" name="rule_10">
+  <regexp mark="0">
+    <token inflected="yes" regexp="yes">cois|chun|dála|timpeall|trasna|fearacht</token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Gen) IF (-1 (Art Def)) (-2 GEN-SIMP-PREP); -->
+<rule id="rule_11" name="rule_11">
+  <regexp mark="1">
+    <token inflected="yes" regexp="yes">cois|chun|dála|timpeall|trasna|fearacht</token>
+    <token postag="Art:Def.*" postag_regexp="yes"></token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Gen) IF (-1 GEN-PART); -->
+<rulegroup name="rule_13">
+<rule>
+  <regexp mark="0">
+    <token inflected="yes" regexp="yes">beagán|omarca|lán|beagáinín|cineál|oinnt|saghas|mórán|dosaen|scór|méid|sórt|péire|deamhan|puinn|cuid</token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+<rule>
+  <regexp mark="0">
+    <token regexp="yes">mó|lú</token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+</rulegroup>
+<!-- SELECT (Noun Gen) IF (-2 GEN-PART) (-1 (Adj)); -->
+<rulegroup name="rule_15">
+<rule>
+  <regexp mark="1">
+    <token inflected="yes" regexp="yes">beagán|omarca|lán|beagáinín|cineál|oinnt|saghas|mórán|dosaen|scór|méid|sórt|péire|deamhan|puinn|cuid</token>
+    <token postag="Adj"></token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+<rule>
+  <regexp mark="1">
+    <token regexp="yes">mó|lú</token>
+    <token postag="Adj"></token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+</rulegroup>
+<!-- SELECT (Noun Gen) IF (-1 (Prep Cmpd)); -->
+<rule id="rule_14" name="rule_16">
+  <regexp mark="0">
+    <token postag="Prep:Cmpd.*" postag_regexp="yes"></token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Gen) IF (-1 (Art Def)) (-2 (Prep Cmpd)); -->
+<rule id="rule_15" name="rule_17">
+  <regexp mark="1">
+    <token postag="Prep:Cmpd.*" postag_regexp="yes"></token>
+    <token postag="Art:Def.*" postag_regexp="yes"></token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun) IF (-1C (Prep)); -->
+<rule id="rule_16" name="rule_18">
+  <pattern mark="1">
+    <token postag="Prep"><exception postag="Prep" negate_pos="yes"/></token>
+    <token postag="Noun"></token>
+  </pattern>
+  <disambig postag="Noun"/>
+</rule>
+<!-- SELECT (Noun Fem) IF (0C (Noun)) (1 (Adj Fem)); -->
+<rule id="rule_17" name="rule_19">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun:Fem.*" postag_regexp="yes"></token>
+      <token postag="Noun"><exception postag="Noun" negate_pos="yes"/></token>
+    </and>
+    <token postag="Adj:Fem.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Fem.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Masc) IF (0C (Noun)) (1 (Adj Masc)); -->
+<rule id="rule_18" name="rule_20">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun:Masc.*" postag_regexp="yes"></token>
+      <token postag="Noun"><exception postag="Noun" negate_pos="yes"/></token>
+    </and>
+    <token postag="Adj:Masc.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Masc.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Sg) IF (0C (Noun)) (1 (Adj Sg)); -->
+<rule id="rule_19" name="rule_21">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun:Sg.*" postag_regexp="yes"></token>
+      <token postag="Noun"><exception postag="Noun" negate_pos="yes"/></token>
+    </and>
+    <token postag="Adj:Sg.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Sg.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Pl) IF (0C (Noun)) (1 (Adj Pl)); -->
+<rule id="rule_20" name="rule_22">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun:Pl.*" postag_regexp="yes"></token>
+      <token postag="Noun"><exception postag="Noun" negate_pos="yes"/></token>
+    </and>
+    <token postag="Adj:Pl.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Pl.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Com) IF (0C (Noun)) (1 (Adj Com)); -->
+<rule id="rule_21" name="rule_23">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun:Com.*" postag_regexp="yes"></token>
+      <token postag="Noun"><exception postag="Noun" negate_pos="yes"/></token>
+    </and>
+    <token postag="Adj:Com.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Com.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Gen) IF (0C (Noun)) (1 (Adj Gen)); -->
+<rule id="rule_22" name="rule_24">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+      <token postag="Noun"><exception postag="Noun" negate_pos="yes"/></token>
+    </and>
+    <token postag="Adj:Gen.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Voc) IF (0C (Noun)) (1 (Adj Voc)); -->
+<rule id="rule_23" name="rule_25">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun:Voc.*" postag_regexp="yes"></token>
+      <token postag="Noun"><exception postag="Noun" negate_pos="yes"/></token>
+    </and>
+    <token postag="Adj:Voc.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Voc.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Fem Gen Sg) IF (-1C (Art Gen Fem)); -->
+<rule id="rule_24" name="rule_26">
+  <pattern mark="1">
+    <token postag="Art:Gen:Fem.*" postag_regexp="yes"><exception postag="Art:Gen:Fem.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Noun:Fem:Gen:Sg.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Fem:Gen:Sg.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Sg) IF (-1C (Art Sg)); -->
+<rule id="rule_25" name="rule_27">
+  <pattern mark="1">
+    <token postag="Art:Sg.*" postag_regexp="yes"><exception postag="Art:Sg.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Noun:Sg.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Sg.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Pl) IF (-1C (Art Pl)); -->
+<rule id="rule_26" name="rule_28">
+  <pattern mark="1">
+    <token postag="Art:Pl.*" postag_regexp="yes"><exception postag="Art:Pl.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Noun:Pl.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Pl.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Noun Gen) IF (-1C (Noun Com)) (-2C (Prep Simp)); -->
+<rule id="rule_27" name="rule_29">
+  <pattern mark="2">
+    <token postag="Prep:Simp.*" postag_regexp="yes"><exception postag="Prep:Simp.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Noun:Com.*" postag_regexp="yes"><exception postag="Noun:Com.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Noun:Gen.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Noun:Gen.*" postag_regexp="yes"/>
+</rule>

@@ -1,0 +1,21 @@
+# cite: Apertium
+Apertium is a shallow-transfer rule-based open source Machine Translation platform.
+Originally designed for the romance languages of Spain, it has been extended to
+support more divergent language pairs, such as Basque to English. # self-cite
+
+\subsection{Apertium's text stream}
+
+The various components of Apertium operate on two fundamental types of input:
+tokens, and blanks. The first component of the Apertium pipeline serves to
+normalise formatting details, by encapsulating them in so-called ``superblanks'':
+that is, the formatting information is enclosed within square brackets, whose 
+contents are treated by later components as though they were simple spaces.
+
+As an example, the HTML fragment \texttt{the <b>third</b> man}, where ``third''
+has been marked up with the HTML \texttt{<b>} element, to cause the text to
+be rendered in boldface, would be ``deformatted'' by Apertium's HTML component
+as \texttt{the[ <b>]third[<\/b> ]man}.
+
+Tokens, the other fundamental type, can differ depending on the stage of pipeline.
+The common elements of each type of token are the token boundary characters: \texttt{^}
+to mark the start of the token, and \texttt{\$} to mark its end; and 
