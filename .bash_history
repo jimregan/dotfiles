@@ -1,166 +1,3 @@
-config commit -m more
-config push origin misc2a
-config checkout misc
-config checkout misc2
-config pull origin misc2
-config status
-vi .bash_history 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config add .bash_history 
-config push origin misc2
-config pull origin misc2
-config status
-config commit -m mbasfd
-config push origin misc2
-config checkout misc2a
-config merge misc2
-vi .bash_history 
-config add .bash_history 
-config commit -m mbasfd
-config push origin misc2a
-config rm -rf .e/
-config branch
-config checkout misc2
-config status
-config commit -m foo
-config pull origin misc2
-config push origin misc2
-config rm .octave_hist 
-config rm -rf .tuxguitar-1.2/
-config commit -m rm
-config push origin misc2
-config merge misc2a
-config push origin misc2
-ls
-rm plasmashell-20170725-094722.kcrash.txt 
-config rm .kde/share/config/kilerc
-config commit -m rm
-config push origin misc2
-config log
-config revert ee582f0edac3a576f3b9009a29efa2ea3a6c33c6
-config push origin misc2
-less .config/katerc
-config rm .config/katerc
-config commit -m rm
-config push origin misc2
-config rm .config/gtkrc
-config rm .config/gtkrc-2.0 
-config rm .config/gtk-2.0/gtkfilechooser.ini 
-config commit -m rm
-config push origin misc2
-echo '.config/enchant/*.dic'  >> .gitignore 
-config add .gitignore 
-config commit -m a
-config push origin misc2
-git branch
-config branch
-config branch -D misc2a
-config branch -D more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m a
-config status
-config diff
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-ls /tmp/proc/
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-less ~/.scratch/chromium-tabs 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs 
-config commit -m a
-config add .scratch/chromium-tabs 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-less 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-less .scratch/chromium-tabs 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs 
-config commit -m a
-less .scratch/chromium-tabs 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config commit -m a
-config add .scratch/chromium-tabs 
-config commit -m a
-less .scratch/chromium-tabs 
-vi open-tabs-reopen 
-echo '.config/enchant/*.dic'  >> .gitignore 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-less .scratch/chromium-tabs 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-less .scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config add .gitignore .kde/share/config/kdeglobals 
-config add .gitignore .kde/share/config/kdialogrc 
-config commit -m a
 python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
 config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
 config commit -m a
@@ -179,217 +16,6 @@ python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\
 config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
 config commit -m a
 less .scratch/chromium-tabs 
-ls
-vi foo.cc
-cat test.h
-ls
-vi foo.cc
-echo fst > foo.txt
-g++ foo.cc 
-vi foo.cc
-g++ foo.cc 
-vi foo.cc
-g++ foo.cc 
-g++ -std=c++11 foo.cc 
-vi foo.cc
-g++ -std=c++11 foo.cc 
-vi foo.cc
-g++ -std=c++11 foo.cc 
-vi foo.cc
-g++ -std=c++11 foo.cc 
-vi foo.cc
-g++ -std=c++11 foo.cc 
-./a.out 
-vi foo.cc
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config diff
-echo .kde/share/config/kdialogrc >> .gitignore 
-echo .kde/share/config/kdeglobals >> .gitignore 
-less .kde/share/config/kdeglobals 
-less .kde/share/config/kdialogrc 
-vi .gitignore 
-config rm .kde/share/config/kdialogrc 
-config rm -f .kde/share/config/kdialogrc 
-config add .gitignore 
-config add .kde/share/config/kdeglobals 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .kde/share/config/kdeglobals 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config add .kde/share/config/kdeglobals 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config status
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-df
-rm ~/Downloads/ideaIC-2017.2.*
-df
-ls /tmp/
-rm /tmp/*mp4
-vi open-tabs-reopen 
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-df
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-df -m
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-df -m
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-df -m
-du -m
-ls
-du -m Downloads/
-ls -al Downloads/
-rm Downloads/srilm-1.7.2.tar.gz 
-rm Downloads/Scott\ Meyers\ Effective\ Modern\ C++\ 42\ Specific\ Ways\ to\ Improve\ Your\ Use\ of\ C++11\ and\ C++14\ \(1\).pdf 
-rm Downloads/Ross\ O\'Carroll-Kelly\ -\ Rhino\ What\ You\ Did\ Last\ Summer\ \(epub\).*
-rm Downloads/Ross\ O\'Carroll-Kelly\ -\ The\ Oh\ My\ God\ Delusion\ \(retail\)\ \(epub\).*
-rm Downloads/Ross\ O\'Carroll-Kelly\ -\ The\ Curious\ Incident\ of\ the\ Dog\ in\ the\ Nightdress\ \(retail\)\ \(epub\).*
-rm Downloads/cudnn-8.0-linux-x64-v6.0.tgz 
-rm Downloads/tuxguitar-1.4-linux-x86_64.tar.gz 
-rm Downloads/sempar.flow 
-rm Downloads/SearchOok_results_for__*
-rm Downloads/rm1_cepstra.tar.gz 
-du -m Downloads/
-ls -al Downloads/
-rm Downloads/NKJP-PodkorpusMilionowy-1.0.tgz 
-du -m Downloads/
-unzip -l Downloads/Kyiv.zip 
-rm Downloads/Kyiv.zip 
-du -m Downloads/
-ls -al Downloads/
-ls -al Downloads/|awk '{$1=$2=$3=$4="";print}'
-ls -al Downloads/|awk '{$1=$2=$3=$4="";print}'|sort -nr
-ls -al Downloads/|awk '{$1=$2=$3=$4="";print}'|sort -nr|head
-rm Downloads/meteor-1.5.tar.gz 
-rm Downloads/New_English_File_Advanced_CD1.rar 
-rm Downloads/netbeans-8.2-cpp-linux-x64.sh 
-rm Downloads/data.n3 
-rm Downloads/prosynth_20010809.tar.gz Downloads/atom-amd64.deb 
-du -m Downloads/
-df -m
-du -m Playing/
-du -m Playing/|sort -nr |head -n 10
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-du -m Playing/|sort -nr |head -n 10
-config commit -m a
-killall chromium-browser
-ps aux|grep chrom
-pkill -o chromium-browser
-ps aux|grep chrom
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs 
-config diff
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-config add .scratch/chromium-tabs  open-tabs-reopen .bash_history 
-config commit -m a
-unzip -l ~/Downloads/PLL_8MB.zip 
-df
-cd ~/Playing/kaldi/
-ls
-cd egs/
-git branch
-git checkout master
-git log
-git reset --hard HEAD^
-git pull origin master
-ls
-mkdir pwr_polish
-git checkout -b pwr_polish
-ls librispeech/
-less librispeech/README.txt 
-less babel/s5/RE
-less babel/s5/README.txt 
-ls -al mini_librispeech/
-ls -al mini_librispeech/s5/
-cd pwr_polish/
-mkdir s5
-cd s5/
-less ../../mini_librispeech/s5/cmd.sh 
-less ../../clarinpl/cmd.sh 
-less ../../clarinpl/run.sh 
-ls
-less ../../clarinpl/run.sh 
-less ../../clarinpl/LICENSE
-less ../../clarinpl/LICENSE.audio 
-ln -s steps ../../wsj/s5/steps/
-ln -s utils ../../wsj/s5/utils/
-git add steps utils
-ls
-ls -al
-ls -al ../../wsj/s5/steps/
-man ln
-git ln
-man ln
-ln -s  ../../wsj/s5/utils/ utils
-ln -s  ../../wsj/s5/steps/ steps
-git add steps utils
-ls -al
-git status
-ls
-ls -al ../../mini_librispeech/s5/
-kess ../../mini_librispeech/s5/path.sh 
-less ../../mini_librispeech/s5/path.sh 
-cp ../../mini_librispeech/s5/path.sh .
-cp ../../mini_librispeech/s5/cmd.sh .
-less ../../mini_librispeech/s5/run.sh 
-less ../../mini_librispeech/s5/local/download_and_untar.sh 
-ls
-git add path.sh 
-vi cmd.sh 
-less ../../mini_librispeech/s5/utils/run.pl 
-find ../.. -name 'cmd.sh'
-find ../.. -name 'cmd.sh'|xargs grep run.pl
-cp ../../tedlium/s5/run.sh .
-less run.sh 
-rm run.sh 
-cp ../../tedlium/s5/cmd.sh .
-less cmd.sh 
-git status
-git add cmd.sh 
-less ../../tedlium/s5/local/download_data.sh
-less ../../tedlium/s5/local/prepare_data.sh 
-vi spid
-cat spid |awk '{print "http://web.archive.org/save/" $0}' > spid2
-sh ~/scripts/spider.sh spid
 sh ~/scripts/spider.sh spid2
 tail -f spid.log 
 less spid.log 
@@ -1968,33 +1594,333 @@ ls generated/
 ls tessdata/
 ls scripts/
 cd tmp/sync/
-grep screenshot_20170615-141902.png verify*/unsorted*
-grep screenshot_20170615-143738.png verify*/unsorted*
-grep screenshot_20170615-190910.png verify*/unsorted*
-grep screenshot_20170615-143542.png verify*/unsorted*
-grep screenshot_20170615-143532.png verify*/unsorted*
-grep screenshot_20170615-131614.png verify*/unsorted*
-grep screenshot_20170614-212604.png verify*/unsorted*
-grep screenshot_20170610-162207.png verify*/unsorted*
-grep screenshot_20170611-123725.png verify*/unsorted*
-grep screenshot_20170611-135036.png verify*/unsorted*
-grep screenshot_20170611-135818.png verify*/unsorted*
-grep screenshot_20170611-162036.png verify*/unsorted*
-grep screenshot_20170611-180833.png verify*/unsorted*
-grep screenshot_20170614-080756.png verify*/unsorted*
-grep screenshot_20170613-073054.png verify*/unsorted*
-grep screenshot_20170612-235704.png verify*/unsorted*
-grep screenshot_20170612-235558.png verify*/unsorted*
-grep screenshot_20170612-234927.png verify*/unsorted*
-grep screenshot_20170612-154823.png verify*/unsorted*
-grep screenshot_20170612-154616.png verify*/unsorted*
-grep screenshot_20170612-154637.png verify*/unsorted*
-grep screenshot_20170611-223158.png verify*/unsorted*
-grep https://www.instagram.com/p/BV2JOVLDftW/?taken-by=tanya_dv verify*/unsorted*
+ls /Volumes/Playing/wolne-lektury-audio-corpus/audio
+ls /Volumes/Playing/wolne-lektury-audio-corpus/audio > wl-audio
+ls /Volumes/Playing/wolne-lektury-audio-corpus/text/ > wl-text
+less wl-audio 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt 
+echo 'asdk..,,asd;' |perl -e 'tr/[\.,;]//;print'
+echo 'asdk..,,asd;' |perl -ane 'tr/[\.,;]//;print'
+echo 'asdk..,,asd;' |perl -ane 'tr /[\.,;]//;print'
+echo 'asdk..,,asd;' |perl -ane 'tr /[\.,;]//;print;'
+echo 'asdk..,,asd;' |perl -ane 's/[\.,;]//;print;'
+echo 'asdk..,,asd;' |perl -ane 's/[\.,;]//g;print;'
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+grep '^Rozczi' /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+grep '^Rozdzi' /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+cpan Lingua::Sentence
+sudo cpan Lingua::Sentence
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl 
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |less
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl|tr ' ' '\n'
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl|tr ' ' '\n'|sort|uniq
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl|tr ' ' '\n'|sort|uniq > calineczka-voc
+cat calineczka-voc |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
+cat calineczka-voc |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' >> calineczka-voc-ipa
+paste calineczka-voc calineczka-voc-ipa 
+paste calineczka-voc calineczka-voc-ipa |grep '\-'
+paste calineczka-voc calineczka-voc-ipa > ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+rm calineczka-voc
+rm calineczka-voc-ipa 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' >> /tmp/right
+paste /tmp/left /tmp/right 
+paste /tmp/left /tmp/right  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/bogacz-i-zebrak.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left
+less /tmp/left 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/aniol-pasterzom-mowil.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left
+less /tmp/left 
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' >> /tmp/right
+rm /tmp/right 
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right
+cat /tmp/right 
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right
+paste /tmp/left /tmp/right  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+paste /tmp/left /tmp/right |sed -e 's/ *$//'  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left ; }
+vi /tmp/left 
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right
+paste /tmp/left /tmp/right |sed -e 's/ *$//'  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+addvocab () { paste /tmp/left /tmp/right |sed -e 's/ *$//'  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv ; }
+mkright() { cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right ; }
+mkinn() { cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn ; }
+mkleft () {  cat  $1 |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left ; }
+mkleft /Volumes/Playing/wolne-lektury-audio-corpus/text/zwiersciadlo-podchlebne.txt
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing/wolne-lektury-audio-corpus/text/zwierzeta-i-niedzwiedz.txt
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/akslop.txt 
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aniol-pasterzom-mowil.txt 
+mkinn 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/atlas-i-kitaj.txt 
+mkinn 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/atlas-i-kitaj.txt 
+mkinn 
+mkright 
+addvocab 
+mkinn 
+cp /tmp/inn /tmp/left
+mkinn 
+cp /tmp/inn /tmp/left
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkinn 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkinn 
+less /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkright 
+addvocab 
+less /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkdir wolnelektury
+cd wolnelektury/
+cp /Volumes/Playing-1/wolne-lektury-audio-corpus/text/*.txt .
 ls
-grep https://www.instagram.com/p/BV2JOVLDftW/?taken-by=tanya_dv tock/unsorted-*
-less tock/unsorted-triples-20171106_c.nt
-grep https://image.ibb.co/ffZFik/132.jpg tock/*
-less tock/unsorted-triples-20171106_c.nt
-cd -
+rm aptekarzowa.txt zwiersciadlo-podchlebne.txt akslop.txt atlas-i-kitaj.txt zwierzeta-i-niedzwiedz.txt 
+rm aniol-pasterzom-mowil.txt z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
+ls|wc
 ls
+cat wyszydzajacy.txt 
+ls /Users/jim/wolnelektury/wyszydzajacy.txt 
+mkleft /Users/jim/wolnelektury/wyszydzajacy.txt
+mkinn 
+mkright 
+addvocab 
+rm wyszydzajacy.txt 
+ls
+mkleft sonety-krymskie-bakczysaraj.txt
+mkinn
+mkright 
+addvocab 
+rm sonety-krymskie-bakczysaraj.txt 
+less zaczarowana-krolewna.txt 
+mkleft zaczarowana-krolewna.txt
+mkinn
+mkright 
+addvocab 
+rm zaczarowana-krolewna.txt 
+ls
+less zarcik.txt
+mkleft zarcik.txt
+mkinn
+mkright 
+addvocab 
+rm zarcik.txt 
+ls
+cat wol-i-mrowki.txt 
+mkleft wol-i-mrowki.txt 
+mkinn 
+mkright 
+addvocab 
+rm wol-i-mrowki.txt 
+ls
+less treny-tren-i.txt 
+mkleft treny-tren-i.txt
+mkinn
+less treny-tren-i.txt
+mkright 
+addvocab 
+mkleft treny-tren-iI.txt
+mkleft treny-tren-ii.txt
+reset
+mkinn 
+less treny-tren-ii.txt
+mkright 
+addvocab 
+less treny-tren-ii.txt
+grep drugiemi *
+less treny-tren-ii.txt
+grep ' sie ' *txt
+history
+history|less
+ls /Volumes/Playing/wolne-lektury-audio-corpus/audio
+ls /Volumes/Playing/wolne-lektury-audio-corpus/audio > wl-audio
+ls /Volumes/Playing/wolne-lektury-audio-corpus/text/ > wl-text
+less wl-audio 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt 
+echo 'asdk..,,asd;' |perl -e 'tr/[\.,;]//;print'
+echo 'asdk..,,asd;' |perl -ane 'tr/[\.,;]//;print'
+echo 'asdk..,,asd;' |perl -ane 'tr /[\.,;]//;print'
+echo 'asdk..,,asd;' |perl -ane 'tr /[\.,;]//;print;'
+echo 'asdk..,,asd;' |perl -ane 's/[\.,;]//;print;'
+echo 'asdk..,,asd;' |perl -ane 's/[\.,;]//g;print;'
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+grep '^Rozczi' /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+grep '^Rozdzi' /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/don-kichot-z-la-manchy.txt 
+cpan Lingua::Sentence
+sudo cpan Lingua::Sentence
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl 
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |less
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl|tr ' ' '\n'
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl|tr ' ' '\n'|sort|uniq
+cat /Volumes/Playing/wolne-lektury-audio-corpus/text/calineczka.txt |perl ~/Playing/wolnelektury-audio-corpus/clean.pl|tr ' ' '\n'|sort|uniq > calineczka-voc
+cat calineczka-voc |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
+cat calineczka-voc |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$'
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' >> calineczka-voc-ipa
+paste calineczka-voc calineczka-voc-ipa 
+paste calineczka-voc calineczka-voc-ipa |grep '\-'
+paste calineczka-voc calineczka-voc-ipa > ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv
+less /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+rm calineczka-voc
+rm calineczka-voc-ipa 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/filozof.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' >> /tmp/right
+paste /tmp/left /tmp/right 
+paste /tmp/left /tmp/right  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/bogacz-i-zebrak.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left
+less /tmp/left 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/aniol-pasterzom-mowil.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left
+less /tmp/left 
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' >> /tmp/right
+rm /tmp/right 
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right
+cat /tmp/right 
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right
+paste /tmp/left /tmp/right  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+paste /tmp/left /tmp/right |sed -e 's/ *$//'  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+cat  /Volumes/Playing/wolne-lektury-audio-corpus/text/z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left ; }
+vi /tmp/left 
+cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn
+cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right
+paste /tmp/left /tmp/right |sed -e 's/ *$//'  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv 
+addvocab () { paste /tmp/left /tmp/right |sed -e 's/ *$//'  >> ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv ; }
+mkright() { cat /tmp/inn|gsed -e 's/IPA/\nIPA/g'|awk -F':' '{print $2}'|sed -e 's/^ //'|grep -v '^$' > /tmp/right ; }
+mkinn() { cat /tmp/left |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/inn ; }
+mkleft () {  cat  $1 |perl ~/Playing/wolnelektury-audio-corpus/split-sentence.pl |perl ~/Playing/wolnelektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl ~/Playing/wolnelektury-audio-corpus/filter-dict.pl ~/Playing/wolnelektury-audio-corpus/pron-data/gen.tsv > /tmp/left ; }
+mkleft /Volumes/Playing/wolne-lektury-audio-corpus/text/zwiersciadlo-podchlebne.txt
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing/wolne-lektury-audio-corpus/text/zwierzeta-i-niedzwiedz.txt
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/akslop.txt 
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aniol-pasterzom-mowil.txt 
+mkinn 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/atlas-i-kitaj.txt 
+mkinn 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/atlas-i-kitaj.txt 
+mkinn 
+mkright 
+addvocab 
+mkinn 
+cp /tmp/inn /tmp/left
+mkinn 
+cp /tmp/inn /tmp/left
+mkinn 
+mkright 
+addvocab 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkinn 
+mkleft /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkinn 
+less /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkright 
+addvocab 
+less /Volumes/Playing-1/wolne-lektury-audio-corpus/text/aptekarzowa.txt 
+mkdir wolnelektury
+cd wolnelektury/
+cp /Volumes/Playing-1/wolne-lektury-audio-corpus/text/*.txt .
+ls
+rm aptekarzowa.txt zwiersciadlo-podchlebne.txt akslop.txt atlas-i-kitaj.txt zwierzeta-i-niedzwiedz.txt 
+rm aniol-pasterzom-mowil.txt z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
+ls|wc
+ls
+cat wyszydzajacy.txt 
+ls /Users/jim/wolnelektury/wyszydzajacy.txt 
+mkleft /Users/jim/wolnelektury/wyszydzajacy.txt
+mkinn 
+mkright 
+addvocab 
+rm wyszydzajacy.txt 
+ls
+mkleft sonety-krymskie-bakczysaraj.txt
+mkinn
+mkright 
+addvocab 
+rm sonety-krymskie-bakczysaraj.txt 
+less zaczarowana-krolewna.txt 
+mkleft zaczarowana-krolewna.txt
+mkinn
+mkright 
+addvocab 
+rm zaczarowana-krolewna.txt 
+ls
+less zarcik.txt
+mkleft zarcik.txt
+mkinn
+mkright 
+addvocab 
+rm zarcik.txt 
+ls
+cat wol-i-mrowki.txt 
+mkleft wol-i-mrowki.txt 
+mkinn 
+mkright 
+addvocab 
+rm wol-i-mrowki.txt 
+ls
+less treny-tren-i.txt 
+mkleft treny-tren-i.txt
+mkinn
+less treny-tren-i.txt
+mkright 
+addvocab 
+mkleft treny-tren-iI.txt
+mkleft treny-tren-ii.txt
+reset
+mkinn 
+less treny-tren-ii.txt
+mkright 
+addvocab 
+less treny-tren-ii.txt
+grep drugiemi *
+less treny-tren-ii.txt
+grep ' sie ' *txt
+history
+history|less
