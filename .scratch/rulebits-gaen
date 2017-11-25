@@ -1,0 +1,21 @@
+ADV || "on"<pr> DAY "the"<det><def> NUMth "of"<pr> MONTH YEAR || "Dé"<n><sg> LÁ[gen] UIMH MÍ+","<cm> BLIAN || On Monday the 8th of April 2011 || Dé Luain 8 Aibreán, 2011
+
+ADV || ON DAY THE NUMth || DÉ LÁ UIMHú || On Monday the 8th || Dé Luain 8ú
+
+ADV || ON NUM MONTH || AR AN UIMHú DE MÍ || On 8 April || ar an 6ú de Aibreáin
+ADV || ON NUM MONTH || AR AN UIMHú DE "mí"[gen] MÍ || On 8 April || ar an 6ú de mhí Aibreáin
+
+NP || ADJ NOM || NOM ADJ || long trip || turas fada
+
+NP || DET(the) ADJ NOM || DET NOM ADJ || the long trip || an turas fada
+NP || DET(this/that) ADJ NOM || DET NOM ADJ DET || this long trip || an turas fada seo
+NP || DET(a) ADJ NOM || NOM ADJ || a long trip || turas fada 
+
+NP || DET(the) NOM || DET NOM || the long trip || an turas
+NP || DET(this/that) NOM || DET NOM DET || this trip || an turas seo
+NP || DET(a) NOM || NOM || a long trip || turas 
+
+NP || DET DET NOM || DET DET NOM || my first book || mo chéad leabhar
+(all? all your friends, etc.)
+
+

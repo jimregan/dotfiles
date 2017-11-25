@@ -62,6 +62,10 @@ showToolTips=false
 immutability=1
 plugin=org.kde.plasma.systemtray
 
+[Containments][1][Applets][5][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][1][Applets][5][Configuration][Containments][12]
 formfactor=2
 location=4
@@ -109,6 +113,10 @@ plugin=org.kde.ktp-contactlist
 [Containments][1][Applets][5][Configuration][Containments][12][Applets][45]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][1][Applets][5][Configuration][Containments][12][Applets][46]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
 
 [Containments][1][Applets][5][Configuration][General]
 extraItems=org.kde.plasma.mediacontroller,org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.bluetooth,org.kde.ktp-contactlist,org.kde.kdeconnect,org.kde.plasma.clipboard,org.kde.plasma.volume

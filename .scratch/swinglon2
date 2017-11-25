@@ -1,0 +1,129 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix str: <http://nlp2rdf.lod2.eu/schema/string/> .
+@prefix scms: <http://ns.aksw.org/scms/> .
+@prefix spotlight: <http://dbpedia.org/spotlight/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix nerd: <http://nerd.eurecom.fr/ontology#> .
+
+<http://prefix.given.by/theClient#offset_0_118_Swinging+London+is+a> rdf:type str:Document ,
+                                                                              str:OffsetBasedString ;
+                                                                     str:sourceString "Swinging London is a catch-all term applied to the fashion and cultural scene that flourished in London in the 1960s.	" ;
+                                                                     str:subString <http://prefix.given.by/theClient#offset_0_15_Swinging+London> ,
+                                                                                   <http://prefix.given.by/theClient#offset_31_35_term> ,
+                                                                                   <http://prefix.given.by/theClient#offset_36_43_applied> ,
+                                                                                   <http://prefix.given.by/theClient#offset_51_58_fashion> ,
+                                                                                   <http://prefix.given.by/theClient#offset_63_71_cultural> ,
+                                                                                   <http://prefix.given.by/theClient#offset_72_77_scene> ,
+                                                                                   <http://prefix.given.by/theClient#offset_83_93_flourished> ,
+                                                                                   <http://prefix.given.by/theClient#offset_111_116_1960s> .
+
+<http://prefix.given.by/theClient#offset_0_15_Swinging+London> rdf:type str:OffsetBasedString ;
+                                                               str:anchorOf "Swinging London" ;
+                                                               scms:means <http://dbpedia.org/resource/Swinging_London> ;
+                                                               str:beginIndex "0" ;
+                                                               str:endIndex "15" ;
+                                                               spotlight:support "118" ;
+                                                               spotlight:surfaceForm "Swinging London" ;
+                                                               spotlight:offset "0" ;
+                                                               spotlight:similarityScore "0.28845059871673584" ;
+                                                               spotlight:percentageOfSecondRank "-1.0" ;
+                                                               spotlight:URI "http://dbpedia.org/resource/Swinging_London" ;
+                                                               spotlight:types "Freebase:/film/film_subject,Freebase:/film" .
+
+<http://prefix.given.by/theClient#offset_31_35_term> rdf:type str:OffsetBasedString ,
+                                                              dbo:TopicalConcept ;
+                                                     str:anchorOf "term" ;
+                                                     scms:means <http://dbpedia.org/resource/Terminology> ;
+                                                     str:beginIndex "31" ;
+                                                     str:endIndex "35" ;
+                                                     spotlight:support "255" ;
+                                                     spotlight:surfaceForm "term" ;
+                                                     spotlight:offset "31" ;
+                                                     spotlight:similarityScore "0.07964608818292618" ;
+                                                     spotlight:percentageOfSecondRank "0.6141281078234752" ;
+                                                     spotlight:URI "http://dbpedia.org/resource/Terminology" ;
+                                                     spotlight:types "DBpedia:TopicalConcept" .
+
+<http://prefix.given.by/theClient#offset_36_43_applied> rdf:type str:OffsetBasedString ,
+                                                                 dbo:TopicalConcept ;
+                                                        str:anchorOf "applied" ;
+                                                        scms:means <http://dbpedia.org/resource/Research> ;
+                                                        str:beginIndex "36" ;
+                                                        str:endIndex "43" ;
+                                                        spotlight:support "2252" ;
+                                                        spotlight:surfaceForm "applied" ;
+                                                        spotlight:offset "36" ;
+                                                        spotlight:similarityScore "0.09075145423412323" ;
+                                                        spotlight:percentageOfSecondRank "-1.0" ;
+                                                        spotlight:URI "http://dbpedia.org/resource/Research" ;
+                                                        spotlight:types "Freebase:/media_common/quotation_subject,Freebase:/media_common,Freebase:/education/school_type,Freebase:/education,Freebase:/book/book_subject,Freebase:/book,Freebase:/architecture/building_function,Freebase:/architecture,Freebase:/book/periodical_subject,Freebase:/business/industry,Freebase:/business,Freebase:/organization/organization_type,Freebase:/organization,Freebase:/business/job_title,DBpedia:TopicalConcept" .
+
+<http://prefix.given.by/theClient#offset_51_58_fashion> rdf:type str:OffsetBasedString ,
+                                                                 dbo:TopicalConcept ;
+                                                        str:anchorOf "fashion" ;
+                                                        scms:means <http://dbpedia.org/resource/Fashion> ;
+                                                        str:beginIndex "51" ;
+                                                        str:endIndex "58" ;
+                                                        spotlight:support "1315" ;
+                                                        spotlight:surfaceForm "fashion" ;
+                                                        spotlight:offset "51" ;
+                                                        spotlight:similarityScore "0.1585676372051239" ;
+                                                        spotlight:percentageOfSecondRank "0.32505983294888763" ;
+                                                        spotlight:URI "http://dbpedia.org/resource/Fashion" ;
+                                                        spotlight:types "Freebase:/conferences/conference_subject,Freebase:/conferences,Freebase:/internet/website_category,Freebase:/internet,Freebase:/exhibitions/exhibition_subject,Freebase:/exhibitions,Freebase:/tv/tv_genre,Freebase:/tv,Freebase:/media_common/quotation_subject,Freebase:/media_common,Freebase:/organization/organization_sector,Freebase:/organization,Freebase:/book/book_subject,Freebase:/book,Freebase:/tv/tv_subject,Freebase:/book/periodical_subject,Freebase:/media_common/media_genre,Freebase:/broadcast/genre,Freebase:/broadcast,DBpedia:TopicalConcept" .
+
+<http://prefix.given.by/theClient#offset_63_71_cultural> rdf:type str:OffsetBasedString ,
+                                                                  dbo:TopicalConcept ;
+                                                         str:anchorOf "cultural" ;
+                                                         scms:means <http://dbpedia.org/resource/Culture> ;
+                                                         str:beginIndex "63" ;
+                                                         str:endIndex "71" ;
+                                                         spotlight:support "2944" ;
+                                                         spotlight:surfaceForm "cultural" ;
+                                                         spotlight:offset "63" ;
+                                                         spotlight:similarityScore "0.12623748183250427" ;
+                                                         spotlight:percentageOfSecondRank "-1.0" ;
+                                                         spotlight:URI "http://dbpedia.org/resource/Culture" ;
+                                                         spotlight:types "Freebase:/projects/project_focus,Freebase:/projects,Freebase:/media_common/quotation_subject,Freebase:/media_common,Freebase:/organization/organization_sector,Freebase:/organization,Freebase:/exhibitions/exhibition_subject,Freebase:/exhibitions,Freebase:/architecture/type_of_museum,Freebase:/architecture,Freebase:/education/field_of_study,Freebase:/education,Freebase:/internet/website_category,Freebase:/internet,Freebase:/book/book_subject,Freebase:/book,DBpedia:TopicalConcept" .
+
+<http://prefix.given.by/theClient#offset_72_77_scene> rdf:type str:OffsetBasedString ,
+                                                               dbo:Band ,
+                                                               dbo:Organisation ,
+                                                               nerd:Band ,
+                                                               nerd:Organization ;
+                                                      str:anchorOf "scene" ;
+                                                      scms:means <http://dbpedia.org/resource/Ocean_Colour_Scene> ;
+                                                      str:beginIndex "72" ;
+                                                      str:endIndex "77" ;
+                                                      spotlight:support "234" ;
+                                                      spotlight:surfaceForm "scene" ;
+                                                      spotlight:offset "72" ;
+                                                      spotlight:similarityScore "0.13593626022338867" ;
+                                                      spotlight:percentageOfSecondRank "0.43276537490485095" ;
+                                                      spotlight:URI "http://dbpedia.org/resource/Ocean_Colour_Scene" ;
+                                                      spotlight:types "DBpedia:Band,DBpedia:Organisation,Schema:Organization,Schema:MusicGroup,Freebase:/internet/social_network_user,Freebase:/internet,Freebase:/music/producer,Freebase:/music,Freebase:/music/musical_group,Freebase:/music/artist" .
+
+<http://prefix.given.by/theClient#offset_83_93_flourished> rdf:type str:OffsetBasedString ;
+                                                           str:anchorOf "flourished" ;
+                                                           scms:means <http://dbpedia.org/resource/Floruit> ;
+                                                           str:beginIndex "83" ;
+                                                           str:endIndex "93" ;
+                                                           spotlight:support "1966" ;
+                                                           spotlight:surfaceForm "flourished" ;
+                                                           spotlight:offset "83" ;
+                                                           spotlight:similarityScore "0.09831225126981735" ;
+                                                           spotlight:percentageOfSecondRank "-1.0" ;
+                                                           spotlight:URI "http://dbpedia.org/resource/Floruit" .
+
+<http://prefix.given.by/theClient#offset_111_116_1960s> rdf:type str:OffsetBasedString ;
+                                                        str:anchorOf "1960s" ;
+                                                        scms:means <http://dbpedia.org/resource/1960s> ;
+                                                        str:beginIndex "111" ;
+                                                        str:endIndex "116" ;
+                                                        spotlight:support "1006" ;
+                                                        spotlight:surfaceForm "1960s" ;
+                                                        spotlight:offset "111" ;
+                                                        spotlight:similarityScore "0.08922600746154785" ;
+                                                        spotlight:percentageOfSecondRank "-1.0" ;
+                                                        spotlight:URI "http://dbpedia.org/resource/1960s" ;
+                                                        spotlight:types "Freebase:/film/film_subject,Freebase:/film,Freebase:/time/event,Freebase:/time,Freebase:/automotive/generation,Freebase:/automotive,Freebase:/book/book_subject,Freebase:/book,Freebase:/media_common/quotation_subject,Freebase:/media_common" .
