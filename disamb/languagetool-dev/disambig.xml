@@ -1,0 +1,7 @@
+<!-- REMOVE (Verb) IF (-1 ("<nach>" Cop)); -->
+<rule id="rule_0" name="rule_0">
+  <regexp mark="0">
+    <token postag="Cop.*" postag_regexp="yes">nach</token>
+    <token postag="Verb"></token>
+  <disambig action="remove"><wd pos="Verb"/></disambig>
+</rule>

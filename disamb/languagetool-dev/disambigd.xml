@@ -1,0 +1,194 @@
+<!-- REMOVE (Verb) IF (0 ("<cumann>")) (NOT 1 (CUMANN-PRON) OR (Prop Noun) OR (Def Art)); -->
+<rule id="rule_0" name="rule_0">
+  <pattern mark="0">
+    <and>
+      <token postag="Verb"></token>
+      <token>cumann</token>
+    </and>
+    <token postag="CUMANN-PRON|Prop:Noun.*|Def:Art.*" postag_regexp="yes" negate_pos="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb"/></disambig>
+</rule>
+<!-- REMOVE (Verb) IF (0 ("<chumann>")) (NOT -1 (Part Vb Rel Direct)) (NOT 1 (CUMANN-PRON) OR (Prop Noun) OR (Def Art)); -->
+<rule id="rule_1" name="rule_1">
+  <pattern mark="1">
+    <token postag="Part:Vb:Rel:Direct.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Verb"></token>
+      <token>chumann</token>
+    </and>
+    <token postag="CUMANN-PRON|Def:Art.*|Prop:Noun.*" postag_regexp="yes" negate_pos="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb"/></disambig>
+</rule>
+<!-- REMOVE (Verb) IF (0 ("<gcumann>")) (NOT -1 (Part Vb Rel Indirect) OR (Conj Sub) OR (Prep Rel)) (NOT 1 (CUMANN-PRON) OR (Prop Noun) OR (Def Art)); -->
+<rule id="rule_2" name="rule_2">
+  <pattern mark="1">
+    <token postag="Part:Vb:Rel:Indirect.*|Conj:Sub.*|Prep:Rel.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Verb"></token>
+      <token>gcumann</token>
+    </and>
+    <token postag="CUMANN-PRON|Prop:Noun.*|Def:Art.*" postag_regexp="yes" negate_pos="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb"/></disambig>
+</rule>
+<!-- REMOVE (Verb Len) IF (Not -1 (Part Vb))(0 (Verb PresInd)); -->
+<rule id="rule_3" name="rule_3">
+  <pattern mark="1">
+    <token postag="Part:Vb.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Verb:Len.*" postag_regexp="yes"></token>
+      <token postag="Verb:PresInd.*" postag_regexp="yes"></token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb:Len.*"/></disambig>
+</rule>
+<!-- REMOVE (Verb Ecl) IF (Not -1 (Part Vb))(0 (Verb PresInd)); -->
+<rule id="rule_4" name="rule_4">
+  <pattern mark="1">
+    <token postag="Part:Vb.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Verb:Ecl.*" postag_regexp="yes"></token>
+      <token postag="Verb:PresInd.*" postag_regexp="yes"></token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb:Ecl.*"/></disambig>
+</rule>
+<!-- REMOVE (Verb) IF (0 ("<chumas>")) (-1 ("ar")); -->
+<rule id="rule_5" name="rule_5">
+  <pattern mark="1">
+    <token inflected="yes">ar</token>
+    <and>
+      <token postag="Verb"></token>
+      <token>chumas</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb"/></disambig>
+</rule>
+<!-- SELECT (Sbj) IF (-1C (Verb)) (NOT 1 (Noun) OR NUM-COUNT); -->
+<rulegroup name="rule_7">
+<rule>
+  <pattern mark="1">
+    <token postag="Verb"><exception postag="Verb" negate_pos="yes"/></token>
+    <token postag="Sbj"></token>
+    <token regexp="yes" negate="yes">cúig|dó|Deich|deich|seacht|hocht|Sé|Ceathair|haon|Trí|Seacht|Cúig|ceathair|hOcht|trí|naoi|Naoi|hAon|Dó|sé</token>
+  </pattern>
+  <disambig postag="Sbj"/>
+</rule>
+<rule>
+  <pattern mark="1">
+    <token postag="Verb"><exception postag="Verb" negate_pos="yes"/></token>
+    <token postag="Sbj"></token>
+    <token postag="Noun" negate_pos="yes"></token>
+  </pattern>
+  <disambig postag="Sbj"/>
+</rule>
+</rulegroup>
+<!-- SELECT (Sbj) IF (-1C (Verb)) (1 (Pron Prep)); -->
+<rule id="rule_7" name="rule_8">
+  <pattern mark="1">
+    <token postag="Verb"><exception postag="Verb" negate_pos="yes"/></token>
+    <token postag="Sbj"></token>
+    <token postag="Pron:Prep.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Sbj"/>
+</rule>
+<!-- SELECT (Sbj) IF (-1C (Verb)) (1 (Pron)); -->
+<rule id="rule_8" name="rule_9">
+  <pattern mark="1">
+    <token postag="Verb"><exception postag="Verb" negate_pos="yes"/></token>
+    <token postag="Sbj"></token>
+    <token postag="Pron"></token>
+  </pattern>
+  <disambig postag="Sbj"/>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("beo")) (NOT -1 (Prep)); -->
+<rule id="rule_9" name="rule_10">
+  <pattern mark="1">
+    <token postag="Prep" negate_pos="yes"></token>
+    <and>
+      <token postag="Noun"></token>
+      <token inflected="yes">beo</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("beo")) (NOT -1 (Prep Poss)); -->
+<rule id="rule_10" name="rule_11">
+  <pattern mark="1">
+    <token postag="Prep:Poss.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Noun"></token>
+      <token inflected="yes">beo</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("beo")) (NOT -1 (Det Poss)); -->
+<rule id="rule_11" name="rule_12">
+  <pattern mark="1">
+    <token postag="Det:Poss.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Noun"></token>
+      <token inflected="yes">beo</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("beo")) (NOT -1 (Def Art)); -->
+<rule id="rule_12" name="rule_13">
+  <pattern mark="1">
+    <token postag="Def:Art.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Noun"></token>
+      <token inflected="yes">beo</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("eil")) (NOT -1 (Art Gen Sg Def Fem) OR (Noun)); -->
+<rule id="rule_13" name="rule_14">
+  <pattern mark="1">
+    <token postag="Noun|Art:Gen:Sg:Def:Fem.*" postag_regexp="yes" negate_pos="yes"></token>
+    <and>
+      <token postag="Noun"></token>
+      <token inflected="yes">eil</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Adv) IF (0 ("trá")) (NOT -1 ("<Cidh>") OR ("<cidh>")); -->
+<rule id="rule_14" name="rule_15">
+  <pattern mark="1">
+    <token regexp="yes" negate="yes">cidh|Cidh</token>
+    <and>
+      <token postag="Adv"></token>
+      <token inflected="yes">trá</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Adv"/></disambig>
+</rule>
+<!-- REMOVE (Conj) IF (0 ("trá")) (NOT -1 ("<Cidh>") OR ("<cidh>")); -->
+<rule id="rule_15" name="rule_16">
+  <pattern mark="1">
+    <token regexp="yes" negate="yes">Cidh|cidh</token>
+    <and>
+      <token postag="Conj"></token>
+      <token inflected="yes">trá</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Conj"/></disambig>
+</rule>
+<!-- REMOVE (Noun Masc) IF (0 ("breac")) (-1 ("bí")) (-2 (Part Vb Rel)); -->
+<rule id="rule_16" name="rule_17">
+  <pattern mark="2">
+    <token postag="Part:Vb:Rel.*" postag_regexp="yes"></token>
+    <token inflected="yes">bí</token>
+    <and>
+      <token postag="Noun:Masc.*" postag_regexp="yes"></token>
+      <token inflected="yes">breac</token>
+    </and>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun:Masc.*"/></disambig>
+</rule>

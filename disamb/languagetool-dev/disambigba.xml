@@ -1,0 +1,248 @@
+<!-- SELECT (Cop) IF  (1 ("maith")) (2 ("le")) ; -->
+<rule id="rule_0" name="rule_0">
+  <regexp mark="-1">
+    <token postag="Cop"></token>
+    <token inflected="yes">maith</token>
+    <token inflected="yes">le</token>
+  <disambig postag="Cop"/>
+</rule>
+<!-- SELECT (Prep Simp) IF (0 ("<ar>")) (1 ("<éigin>") OR ("<éigean>")); -->
+<rule id="rule_1" name="rule_1">
+  <pattern mark="0">
+    <and>
+      <token postag="Prep:Simp.*" postag_regexp="yes"></token>
+      <token>ar</token>
+    </and>
+    <token regexp="yes">éigean|éigin</token>
+  </pattern>
+  <disambig postag="Prep:Simp.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Pron Pers) IF (0 ("<Í>") OR ("<í>")); -->
+<rule id="rule_2" name="rule_2">
+  <pattern mark="0">
+    <and>
+      <token postag="Pron:Pers.*" postag_regexp="yes"></token>
+      <token regexp="yes">í|Í</token>
+    </and>
+  </pattern>
+  <disambig postag="Pron:Pers.*" postag_regexp="yes"/>
+</rule>
+<!-- REMOVE (Noun) IF (0 ("os"))(1 ("ard"));# Labhair sé os ard. -->
+<rule id="rule_3" name="rule_3">
+  <pattern mark="0">
+    <and>
+      <token postag="Noun"></token>
+      <token inflected="yes">os</token>
+    </and>
+    <token inflected="yes">ard</token>
+  </pattern>
+  <disambig action="remove"><wd pos="Noun"/></disambig>
+</rule>
+<!-- REMOVE (Part Vb Rel Pro) IF (-2 ("<Cé>") OR ("<cé>") OR ("<Cad>") OR ("<cad>") OR ("<Céard>") OR ("<céard>"))(-1 (Pron Prep))(2* (Punct Fin Q)); -->
+<rule id="rule_4" name="rule_4">
+  <pattern mark="2">
+    <token regexp="yes">Cad|céard|Cé|cad|Céard|cé</token>
+    <token postag="Pron:Prep.*" postag_regexp="yes"></token>
+    <token postag="Part:Vb:Rel:Pro.*" postag_regexp="yes"></token>
+    <token skip="-1"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Part:Vb:Rel:Pro.*"/></disambig>
+</rule>
+<!-- REMOVE (Part Vb Rel Pro) IF (-3 ("<Cé>") OR ("<cé>"))(-1 ("<áit>") OR ("<chaoi>") OR ("<dóigh>") OR ("<fáth>") OR ("<tslí>") OR ("<mhéad>"))(2* (Punct Fin Q)); -->
+<rule id="rule_5" name="rule_5">
+  <pattern mark="3">
+    <token regexp="yes">cé|Cé</token>
+    <token></token>
+    <token regexp="yes">chaoi|tslí|fáth|dóigh|mhéad|áit</token>
+    <token postag="Part:Vb:Rel:Pro.*" postag_regexp="yes"></token>
+    <token skip="-1"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Part:Vb:Rel:Pro.*"/></disambig>
+</rule>
+<!-- REMOVE (Part Vb Rel Pro) IF (-2 ("<Cén>") OR ("<cén>"))(-1 ("<áit>") OR ("<fhad>") OR ("<uair>") OR ("<chaoi>") OR ("<dóigh>") OR ("<fáth>") OR ("<tslí>"))(2* (Punct Fin Q)); -->
+<rule id="rule_6" name="rule_6">
+  <pattern mark="2">
+    <token regexp="yes">cén|Cén</token>
+    <token regexp="yes">chaoi|áit|tslí|fhad|fáth|uair|dóigh</token>
+    <token postag="Part:Vb:Rel:Pro.*" postag_regexp="yes"></token>
+    <token skip="-1"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Part:Vb:Rel:Pro.*"/></disambig>
+</rule>
+<!-- REMOVE (Part Vb Rel Pro) IF (-2 ("<Cá>") OR ("<cá>"))(-1 ("<háit>") OR ("<fhad>") OR ("<mhéad>") OR ("<huair>"))(2* (Punct Fin Q)); -->
+<rule id="rule_7" name="rule_7">
+  <pattern mark="2">
+    <token regexp="yes">Cá|cá</token>
+    <token regexp="yes">mhéad|fhad|huair|háit</token>
+    <token postag="Part:Vb:Rel:Pro.*" postag_regexp="yes"></token>
+    <token skip="-1"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Part:Vb:Rel:Pro.*"/></disambig>
+</rule>
+<!-- REMOVE (Part Vb Rel Pro) IF (-1 ("<Cathain>") OR ("<cathain>") OR ("<Conas>") OR ("<conas>"))(1* (Punct Fin Q)); -->
+<rule id="rule_8" name="rule_8">
+  <pattern mark="1">
+    <token regexp="yes">conas|Conas|cathain|Cathain</token>
+    <token skip="-1" postag="Part:Vb:Rel:Pro.*" postag_regexp="yes"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Part:Vb:Rel:Pro.*"/></disambig>
+</rule>
+<!-- SELECT (Part Vb Rel Indirect) IF (-3 ("<Cé>") OR ("<cé>"))(-1 ("<áit>") OR ("<chaoi>") OR ("<dóigh>") OR ("<fáth>") OR ("<tslí>"))(2* (Punct Fin Q)); -->
+<rule id="rule_9" name="rule_9">
+  <pattern mark="3">
+    <token regexp="yes">cé|Cé</token>
+    <token></token>
+    <token regexp="yes">tslí|áit|dóigh|chaoi|fáth</token>
+    <token postag="Part:Vb:Rel:Indirect.*" postag_regexp="yes"></token>
+    <token skip="-1"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Part:Vb:Rel:Indirect.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Part Vb Rel Direct) IF (-2 ("<Cé>") OR ("<cé>"))(-1 ("<mhéad>"))(1* (Punct Fin Q)); -->
+<rule id="rule_10" name="rule_10">
+  <pattern mark="2">
+    <token regexp="yes">cé|Cé</token>
+    <token>mhéad</token>
+    <token skip="-1" postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Part Vb Rel Direct) IF (-2 ("<Cá>") OR ("<cá>"))(-1 ("<mhéad>") OR ("<huair>"))(1* (Punct Fin Q)); -->
+<rule id="rule_11" name="rule_11">
+  <pattern mark="2">
+    <token regexp="yes">Cá|cá</token>
+    <token regexp="yes">mhéad|huair</token>
+    <token skip="-1" postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Part Vb Rel Direct) IF (-2 ("<Cén>") OR ("<cén>"))(-1 ("<fhad>") OR ("<uair>"))(1* (Punct Fin Q)); -->
+<rule id="rule_12" name="rule_12">
+  <pattern mark="2">
+    <token regexp="yes">cén|Cén</token>
+    <token regexp="yes">fhad|uair</token>
+    <token skip="-1" postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"/>
+</rule>
+<!-- REMOVE (Part Vb Rel Indirect) IF (-1 ("cathain") OR ("conas") OR ("mar") OR ("nuair")); -->
+<rule id="rule_13" name="rule_13">
+  <regexp mark="0">
+    <token inflected="yes" regexp="yes">conas|mar|cathain|nuair</token>
+    <token postag="Part:Vb:Rel:Indirect.*" postag_regexp="yes"></token>
+  <disambig action="remove"><wd pos="Part:Vb:Rel:Indirect.*"/></disambig>
+</rule>
+<!-- SELECT (Part Vb Rel Direct) IF (-4 ("<Cé>") OR ("<cé>"))(-3 ("chomh"))(-2 ("minic"))(-1 ("is"))(1* (Punct Fin Q)); -->
+<rule id="rule_14" name="rule_14">
+  <pattern mark="4">
+    <token regexp="yes">Cé|cé</token>
+    <token inflected="yes">chomh</token>
+    <token inflected="yes">minic</token>
+    <token inflected="yes">s</token>
+    <token skip="-1" postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Part:Vb:Rel:Direct.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Part Vb Rel Indirect) IF (-2 ("<Cén>") OR ("<cén>"))(-1 ("<áit>") OR ("<chaoi>") OR ("<dóigh>") OR ("<fáth>") OR ("<tslí>"))(2* (Punct Fin Q)); -->
+<rule id="rule_15" name="rule_15">
+  <pattern mark="2">
+    <token regexp="yes">Cén|cén</token>
+    <token regexp="yes">tslí|áit|fáth|dóigh|chaoi</token>
+    <token postag="Part:Vb:Rel:Indirect.*" postag_regexp="yes"></token>
+    <token skip="-1"></token>
+    <token postag="Punct:Fin:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Part:Vb:Rel:Indirect.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Verb) IF (0 ("bí" Ecl)) (-1 (Part Vb Q) OR (Part Vb NegQ) OR (Part Vb Neg Rel) OR (Part Vb Rel Indirect) OR (Prep Rel) OR (Conj Subord) OR (Adv Q)); -->
+<rule id="rule_16" name="rule_16">
+  <pattern mark="1">
+    <token postag="Part:Vb:Q.*|Adv:Q.*|Part:Vb:NegQ.*|Part:Vb:Rel:Indirect.*|Part:Vb:Neg:Rel.*|Prep:Rel.*|Conj:Subord.*" postag_regexp="yes"></token>
+    <and>
+      <token postag="Verb"></token>
+      <token inflected="yes" postag="Ecl.*" postag_regexp="yes">bí</token>
+    </and>
+  </pattern>
+  <disambig postag="Verb"/>
+</rule>
+<!-- SELECT (Verb) IF (0 ("<Bhfuil>")); -->
+<rule id="rule_17" name="rule_17">
+  <pattern mark="0">
+    <and>
+      <token postag="Verb"></token>
+      <token>Bhfuil</token>
+    </and>
+  </pattern>
+  <disambig postag="Verb"/>
+</rule>
+<!-- SELECT (Verb) IF (0 ("<fuil>")) (-1 ("ná" Conj)); -->
+<rule id="rule_18" name="rule_18">
+  <pattern mark="1">
+    <token inflected="yes" postag="Conj.*" postag_regexp="yes">ná</token>
+    <and>
+      <token postag="Verb"></token>
+      <token>fuil</token>
+    </and>
+  </pattern>
+  <disambig postag="Verb"/>
+</rule>
+<!-- SELECT (Verb) IF (0 ("<raibh>")) (-1 (Part Vb)); -->
+<rule id="rule_19" name="rule_19">
+  <pattern mark="1">
+    <token postag="Part:Vb.*" postag_regexp="yes"></token>
+    <and>
+      <token postag="Verb"></token>
+      <token>raibh</token>
+    </and>
+  </pattern>
+  <disambig postag="Verb"/>
+</rule>
+<!-- SELECT (Verb) IF (1 (Sbj)); -->
+<rule id="rule_20" name="rule_20">
+  <regexp mark="-1">
+    <token postag="Verb"></token>
+    <token postag="Sbj"></token>
+  <disambig postag="Verb"/>
+</rule>
+<!-- REMOVE (Verb Auto) IF (1C (Sbj)); -->
+<rule id="rule_21" name="rule_21">
+  <pattern mark="0">
+    <token postag="Verb:Auto.*" postag_regexp="yes"></token>
+    <token postag="Sbj"><exception postag="Sbj" negate_pos="yes"/></token>
+  </pattern>
+  <disambig action="remove"><wd pos="Verb:Auto.*"/></disambig>
+</rule>
+<!-- SELECT (Verb Neg) IF (-1C (Part Vb Neg)); -->
+<rule id="rule_22" name="rule_22">
+  <pattern mark="1">
+    <token postag="Part:Vb:Neg.*" postag_regexp="yes"><exception postag="Part:Vb:Neg.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Verb:Neg.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Verb:Neg.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Verb Q) IF (-1C (Adv Q) OR (Part Q)); -->
+<rule id="rule_23" name="rule_23">
+  <pattern mark="1">
+    <token postag="Part:Q.*|Adv:Q.*" postag_regexp="yes"><exception postag="Part:Q.*|Adv:Q.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Verb:Q.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Verb:Q.*" postag_regexp="yes"/>
+</rule>
+<!-- SELECT (Verb NegQ) IF (-1C (Part NegQ)); -->
+<rule id="rule_24" name="rule_24">
+  <pattern mark="1">
+    <token postag="Part:NegQ.*" postag_regexp="yes"><exception postag="Part:NegQ.*" postag_regexp="yes" negate_pos="yes"/></token>
+    <token postag="Verb:NegQ.*" postag_regexp="yes"></token>
+  </pattern>
+  <disambig postag="Verb:NegQ.*" postag_regexp="yes"/>
+</rule>

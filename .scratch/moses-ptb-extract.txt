@@ -1,0 +1,4 @@
+n | plate || pláta | m4
+n | glass || gloine | f4
+n | plate glass | nn | plátghloine | pfx_n:pfx[plát],f4[gloine]
+n | registration plate | nn | pláta clárúcháin | nn:m4,m1[clárúchán]
