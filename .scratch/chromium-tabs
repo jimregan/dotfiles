@@ -162,3 +162,12 @@ SelectedNavigationInTab - Tab: 991, Index: 0, Time: 13156903047021678
 UpdateTabNavigation - Tab: 991, Index: 0, Url: https://github.com/moses-smt/mosesdecoder/blob/master/moses2/TranslationModel/ProbingPT.cpp
 SelectedNavigationInTab - Tab: 992, Index: 0, Time: 13156903047021683
 UpdateTabNavigation - Tab: 992, Index: 0, Url: https://github.com/moses-smt/mosesdecoder/blob/master/moses2/TranslationModel/PhraseTable.cpp
+SelectedNavigationInTab - Tab: 994, Index: 1, Time: 13156903069817367
+UpdateTabNavigation - Tab: 994, Index: 0, Url: https://github.com/EdinburghNLP/nematus
+UpdateTabNavigation - Tab: 994, Index: 1, Url: https://github.com/EdinburghNLP/nematus
+SelectedNavigationInTab - Tab: 995, Index: 4, Time: 13156903069817390
+UpdateTabNavigation - Tab: 995, Index: 0, Url: https://github.com/nyu-dl/dl4mt-tutorial
+UpdateTabNavigation - Tab: 995, Index: 1, Url: https://github.com/nyu-dl/dl4mt-tutorial/tree/master/session0
+UpdateTabNavigation - Tab: 995, Index: 2, Url: https://github.com/nyu-dl/dl4mt-tutorial
+UpdateTabNavigation - Tab: 995, Index: 3, Url: https://github.com/nyu-dl/dl4mt-tutorial/tree/master/session3
+UpdateTabNavigation - Tab: 995, Index: 4, Url: https://github.com/nyu-dl/dl4mt-tutorial/blob/master/session3/nmt.py
