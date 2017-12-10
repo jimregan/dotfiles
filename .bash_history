@@ -213,3 +213,66 @@ ls 1290862567001_004a8d57-8d7f-43c1-a39e-842c05892619.vtt\?pubId=1290862567001\&
 cd ../apertium-en-es/
 echo I |apertium -d . en-es-chunker
 echo he |apertium -d . en-es-chunker
+cd Playing/
+ls
+ls *mxnet*
+git clone https://github.com/apache/incubator-mxnet.git
+cd incubator-mxnet/
+ls
+sudo apt-get install libopenblas-dev 
+ls
+cd ..
+rm -rf incubator-mxnet/
+git clone --recursive https://github.com/apache/incubator-mxnet.git mxnet --branch 0.12.0
+cd mxnet/
+ls
+which nproc 
+cd ${MXNET_HOME}/perl-package/AI-NNVMCAPI/
+cd ../..
+cd ${MXNET_HOME}/perl-package/AI-NNVMCAPI/
+cd -
+make scalapkg 
+apt-cache search cblas
+sudo apt-get install libgsl-dev 
+make scalapkg 
+sudo apt-get libblas-dev
+sudo apt-get install libblas-dev
+sudo ldconfig
+make scalapkg 
+apt-cache search atlas
+sido apt-get install libatlas-dev
+sudo apt-get install libatlas-dev
+make scalapkg 
+locate libcblas
+sudo ln -s /usr/lib/libcblas.so /usr/lib/libcblas.so.3 
+ls -al /usr/lib/libcblas.so 
+sudo ln -s /usr/lib/libcblas.so.3 /usr/lib/libcblas.so
+make scalapkg 
+USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1 make scalapkg 
+rm /home/jim/Playing/mxnet/scala-package/init-native/linux-x86_64/target/libmxnet-init-scala-linux-x86_64.so 
+USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1 make scalapkg 
+ls /home/jim/Playing/mxnet/scala-package/init-native/linux-x86_64/target/
+rm -rf /home/jim/Playing/mxnet/scala-package/init-native/linux-x86_64/target/libmxnet-init-scala-linux-x86_64.so
+USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1 make scalapkg 
+make scalapkg -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+less Makefile 
+mvn clean
+find . -name pom.xml
+cd  scala-package/
+ls
+mvn clean
+cd ..
+git status
+make scalapkg -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+find /usr/local/ -name  libcudart.so.8.0
+make scalapkg -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda-8.0 USE_CUDNN=1
+rm -rf /home/jim/Playing/mxnet/scala-package/init-native/linux-x86_64/target/
+make scalapkg -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda-8.0 USE_CUDNN=1
+ls /usr/local/cuda
+rm -rf /home/jim/Playing/mxnet/scala-package/init-native/linux-x86_64/target/
+make scalapkg -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda-8.0/ USE_CUDNN=1
+less Makefile 
+make scalapkg -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda-8.0/ USE_CUDNN=1 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib/:/usr/local/cuda-8.0/lib64/
+make scalainstall -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda-8.0/ USE_CUDNN=1 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib/:/usr/local/cuda-8.0/lib64/
+vi /tmp/asd/spide
+history -a
