@@ -201,3 +201,15 @@ cd pron/
 cat munster.tsv 
 cat munster.tsv |sort |uniq > tmp
 wc -l tmp 
+cd ../irishfst-1/
+grep Aegéach src/ad*
+less src/adj-lex-stems
+less src/adj-lex-stems.txt 
+grep aigeach src/ad*
+grep each src/ad*
+grep each src/ad*|grep -v Adj1-3
+grep solas src/*
+ls 1290862567001_004a8d57-8d7f-43c1-a39e-842c05892619.vtt\?pubId=1290862567001\&videoId=5537750827001*
+cd ../apertium-en-es/
+echo I |apertium -d . en-es-chunker
+echo he |apertium -d . en-es-chunker
