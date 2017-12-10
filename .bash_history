@@ -287,3 +287,83 @@ nproc
 rm ~/Downloads/23939969537_c9affb6c90_o.png 
 ls /tmp/proc/
 less ~/bin/convert-mp3.sh 
+cd ~/Playing/apertium-en-es/
+echo "John doesn't understand"|apertium -d . en-es-chunker
+echo "John didn't understand"|apertium -d . en-es-chunker
+echo "John wouldn't understand"|apertium -d . en-es-chunker
+echo "John couldn't understand"|apertium -d . en-es-chunker
+echo "John couldn't be understood"|apertium -d . en-es-chunker
+echo the man who is sick|apertium -d . en-es-chunker
+echo the man that is sick|apertium -d . en-es-chunker
+echo the man whose son is sick|apertium -d . en-es-chunker
+less apertium-en-es.en-es.dix 
+less apertium-en-es.en-es.t1x 
+ssh jimregan
+ping jimregan
+ssh jimregan
+echo the man whose son is breaks the window|apertium -d . en-es-chunker
+echo the man whose son does not break the window|apertium -d . en-es-chunker
+ls dev/
+echo my man whose son does not break the window|apertium -d . en-es-chunker
+vi apertium-en-es.en.metadix 
+echo my man whose son does not break the window|apertium -d . en-es-chunker
+echo our man whose son does not break the window|apertium -d . en-es-chunker
+echo your man whose son does not break the window|apertium -d . en-es-chunker
+less apertium-en-es.en-es.t3x 
+echo your man whose son does not break the window|apertium -d . en-es-tagger
+less apertium-en-es.en-es.t1x 
+echo he|lt-proc en-ga.automorf.bin 
+echo you|lt-proc en-ga.automorf.bin 
+echo I|lt-proc en-ga.automorf.bin 
+echo mé|lt-proc ga-en.automorf.bin 
+make
+echo he saw the dog |apertium -d . en-ga
+less ../apertium-en-es/apertium-en-es.en-es.t1x 
+make
+echo he saw the dog |apertium -d . en-ga
+vi apertium-en-ga.en-ga.t2x 
+less apertium-en-ga.en-ga.dix 
+git add apertium-en-ga.*
+git commit -m more
+git add apertium-en-ga.*
+git svn dcommit
+less ../apertium-en-es/apertium-en-es.en-es.t1x 
+make
+echo he saw the dog |apertium -d . en-ga
+git status
+git add apertium-en-ga.en-ga.t1x 
+git commit -m 'dummy verb rule'
+git svn dcommit
+make
+echo he saw the dog |apertium -d . en-ga
+echo he ses the dog |apertium -d . en-ga
+echo he sees the dog |apertium -d . en-ga
+echo he sees the dog |apertium -d . en-ga-chunker
+make
+echo he sees the dog |apertium -d . en-ga-chunker
+git diff
+git add apertium-en-ga.en-ga.t1x 
+git commit -m 'missing attribute'
+git svn dcommit
+git diff
+git stash
+less apertium-en-ga.en-ga.t1x 
+git diff
+make
+echo the bigger dog | apertium -d . en-ga
+echo the biggest blue dog | apertium -d . en-ga
+git dif
+git diff
+git add apertium-en-ga.en-ga.t1x 
+git commit -m 'degree x 2'
+git svn dcommit
+git svn rebase
+git log
+git svn dcommit
+git log
+git status
+git push gh master
+df
+ls
+vi apertium-en-ga.en-ga.dix 
+vi apertium-en-ga.en-ga.t1x 
