@@ -367,3 +367,116 @@ df
 ls
 vi apertium-en-ga.en-ga.dix 
 vi apertium-en-ga.en-ga.t1x 
+cd ~/tmp/foo/
+ls
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'=' '{print $1}'); echo procimg $i $img;done
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'=' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ ;done
+. ../sourceme 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'=' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ ;done
+less fash-rdf-links 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'=' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ ;done
+vi fash-rdf-links 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ ;done
+vi fash-rdf-links 
+cat /tmp/galin |while read i;do grep $i fash-rdf-links || ( img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ );done
+vi fash-rdf-links 
+cat /tmp/galin |while read i;do grep $i fash-rdf-links || ( img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ );done
+vi fash-rdf-links 
+cat /tmp/galin |while read i;do grep $i fash-rdf-links || ( img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ );done
+vi fash-rdf-links 
+cat /tmp/galin |while read i;do grep $i fash-rdf-links || ( img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/24my01vfs/ );done
+ls
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/2mtvsbaae/ ;done
+filtfind |awk '{print "http://web.archive.org/save/" $0}' > /tmp/asd/inp
+ls
+sh ../wrap-exif.sh 
+less /tmp//exif.out 
+mv /tmp/exif.out ~/tmp/sync/exif-20171206-2.xml 
+fdupes -r . /tmp/proc
+fdupes -r . /tmp/proc|sed -e 's/^\//file:\/tmp\/sshots\//'
+fdupes -r . /tmp/proc|sed -e 's/^\//file:\/tmp\/sshots\//'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171206-1.nt
+filtfind |perl |
+filtfind |perl ~/scripts/ookdata.pl >> ~/tmp/sync/ookdata-20171206-1.nt
+less ~/tmp/sync/ookdata-20171206-1.nt
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171206-1.nt
+~/bin/blockhash $(filtfind ) >> ~/tmp/sync/bhash-20171206-2.tsv 
+filtfind |wc
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171206_215057.nt || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+ls -al ../sync/assumed-identical-20171*
+ls ../sync/*201712*
+rm /tmp/proc/*
+cat ../sync/bhash-20171206-2.tsv 
+cat ../sync/bhash-20171206-2.tsv |awk -F'\t' '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171206-2.tsv |awk -F'\t' '{print "https://" $2}' >> mrgs; grep $i ~/tmp/sync/bhash-20171206-1.tsv |awk -F'\t' '{print "file:/" $2}' >> mrgd;done
+rm mrg*
+cat ../sync/bhash-20171206-2.tsv |awk -F'\t' '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171206-2.tsv |awk -F'\t' '{print "https://" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171206-1.tsv |awk -F'\t' '{print "file:/" $2}' >> mrgd;done
+less mrgd 
+cat ../sync/bhash-20171206-2.tsv |awk -F'\t' '{print $1}'
+cat ../sync/bhash-20171206-2.tsv |awk  '{print $1}'
+cat ../sync/bhash-20171206-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171206-2.tsv |awk '{print "https://" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171206-1.tsv |awk '{print "file:/" $2}' >> mrgd;done
+less mrgd 
+rm mrgd 
+cat ../sync/bhash-20171206-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171206-2.tsv |awk '{print "https://" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171206-1.tsv |awk '{print "file:/" $2}' >> mrgd;done
+less mrgd 
+rm mrgd 
+cat ../sync/bhash-20171206-2.tsv |awk '{print $1}'|while read i;do echo >> mrgd; grep $i ~/tmp/sync/bhash-20171206-2.tsv |awk '{print "https://" $2}' >> mrgd; grep $i ~/tmp/sync/bhash-20171206-1.tsv |awk '{print "file:/tmp/sshots/" $2}' >> mrgd;done
+less mrgd 
+cat mrgd | perl ../fdupes-proc.pl e
+cat mrgd | perl ../fdupes-proc.pl e >> ~/tmp/sync/byte-for-byte-identical-20171206-2.nt 
+grep '<' ~/tmp/sync/byte-for-byte-identical-20171206-2.nt |wc
+less ~/tmp/sync/byte-for-byte-identical-20171206-2.nt 
+ls
+rm -rf s2.postimg.org/
+rm mrgd 
+ls
+grep 105020 fash-rdf-links 
+ls
+vi /tmp/cmd
+scp /tmp/cmd jimregan:/tmp
+cat /tmp/cmd 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/12462njua/ ;done
+find s8.postimg.org -type f|zip /tmp/fl.zip -@
+scp /tmp/fl.zip jimregan:/tmp
+vi /tmp/url
+scp /tmp/url jimregan:/tmp
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/266hhdw36/ ;done
+vi /tmp/galin 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1jc65loky/;done
+vi /tmp/galin 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/3bnijh1gy/;done
+vi /tmp/galin 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/3egkxsjw2/;done
+vi /tmp/galin 
+cat /tmp/galin |while read i;do img=$(lynx -dump $i|grep http|grep dl=|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img;doimg $img https://postimg.org/gallery/1rwvt1v3m/;done
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171206_215057.nt || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
+~/bin/blockhash $(filtfind ) >> ~/tmp/sync/bhash-20171207-2.tsv 
+fdupes -r . /tmp/proc|sed -e 's/^\//file:\/tmp\/sshots\//'|perl ~/tmp/fdupes-proc.pl >> ~/tmp/sync/byte-for-byte-identical-20171207-1.nt
+less ~/tmp/sync/byte-for-byte-identical-20171207-1.nt
+sh ../wrap-exif.sh 
+vi /tmp//exif.out 
+mv /tmp//exif.out ~/tmp/sync/exif-20171207-1.xml
+filtfind |perl ~/scripts/pipe-ook.pl >> ~/tmp/sync/ookdata-20171207-1.nt 
+ls
+tail /tmp//asd/inp.log 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+wc -l ../sync/assumed-identical-20171208_015434.nt 
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171208_015434.nt || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+filtfind |while read i;do grep $i ../sync/assumed-identical-20171208_015434.nt || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
+ls /tmp/proc/
+ls
+filtfind |while read i;do grep $i ../sync/assumed-identical-201712* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inpa;done
+ls
+cat /tmp/instain 
+cat /tmp/instain |grep -v '^$'
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');echo $a;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $2}'); echo $v ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); echo $v ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" -eq x"" ]; then out=$j; else out=$v;fi;echo $out ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo $out ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo $a;echo  $out ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo  $out ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out" ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done
+history -a
