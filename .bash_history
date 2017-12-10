@@ -276,3 +276,14 @@ make scalapkg -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PAT
 make scalainstall -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda-8.0/ USE_CUDNN=1 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib/:/usr/local/cuda-8.0/lib64/
 vi /tmp/asd/spide
 history -a
+cd ~/Playing/apertium-en-ga/
+cd dev/
+ls
+cat ~/Playing/wolne-lektury-audio-corpus/polimorf/all-polimorf-tags |perl mapper.pl 
+cat ~/Playing/wolne-lektury-audio-corpus/polimorf/all-polimorf-tags |perl mapper.pl |sed -e 's/, },$/},/'
+cat ~/Playing/wolne-lektury-audio-corpus/polimorf/all-polimorf-tags |perl mapper.pl |sed -e 's/, },$/},/' > /tmp/addin
+vi /tmp/addin 
+nproc 
+rm ~/Downloads/23939969537_c9affb6c90_o.png 
+ls /tmp/proc/
+less ~/bin/convert-mp3.sh 
