@@ -480,3 +480,54 @@ cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{p
 cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out" ;done
 cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done
 history -a
+cd Playing/language-resources/
+git branch
+cd third_party/cldr/
+ls
+cp /tmp/ba-ba_FONIPA.txt .
+git add ba-ba_FONIPA.txt 
+git commit -m 'Bashkir'
+git push origin translit 
+ls /tmp/
+ls ~
+less ba-ba_FONIPA.txt 
+ls
+cp /tmp/acr-acr_FONIPA.txt .
+git add acr-acr_FONIPA.txt 
+git commit -m Achi
+git push origin translit 
+ls
+vi acr-acr_FONIPA.txt 
+git diff
+git add acr-acr_FONIPA.txt 
+git commit -m 'also accented'
+git push origin translit 
+tail -f ../../../corpuscrawler/corpus/acr.txt 
+cd Playing/corpuscrawler/
+ls
+vi Lib/corpuscrawler/main.py
+les Lib/corpuscrawler/crawl_ae.py
+less Lib/corpuscrawler/crawl_ae.py
+cp Lib/corpuscrawler/crawl_ae.py Lib/corpuscrawler/crawl_acr.py
+vi Lib/corpuscrawler/crawl_acr.py
+./corpuscrawler --lang acr
+grep '1 CORINTIOS' cache-corpuscrawler/*
+ls cache-corpuscrawler/
+grep '1 CORINTIOS' cache-corpuscrawler/*
+less cache-corpuscrawler/fZmupfHgkE-FnM-X6V7F3CfKKIv81RqLAhQh6WUB_u8o=
+rm cache-corpuscrawler/fZmupfHgkE-FnM-X6V7F3CfKKIv81RqLAhQh6WUB_u8o=
+./corpuscrawler --lang acr
+less cache-corpuscrawler/fZmupfHgkE-FnM-X6V7F3CfKKIv81RqLAhQh6WUB_u8o=
+rm cache-corpuscrawler/fZmupfHgkE-FnM-X6V7F3CfKKIv81RqLAhQh6WUB_u8o=
+vi Lib/corpuscrawler/util.py
+git add Lib/corpuscrawler/util.py
+git diff
+./corpuscrawler --lang acr
+git status
+git commit -m 'continue if no text available; Achi bible has text in browser but not from crawler (or curl)'
+git branch 
+git push origin bible.is 
+git push mine  bible.is 
+tail -f corpus/uk.txt 
+ps aux|grep python
+tail -f corpus/bm.txt 
