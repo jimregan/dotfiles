@@ -1197,3 +1197,42 @@ ffplay 2xmBQTVjZ_Q.mp3-12.wav
 ffplay 2xmBQTVjZ_Q.mp3-15.wav 
 man pocketsphinx_batch 
 history -a
+cd ~/Playing/msf-asr/
+ls
+svn status
+git status
+git diff
+git add mickyd/2xmBQTVjZ_Q.txt
+git commit -m corrections
+cd mickyd/
+ls
+git add 2xmBQTVjZ_Q.aud.txt
+less 2xmBQTVjZ_Q.aud.txt
+git commit -m 'first pass'
+less 2xmBQTVjZ_Q.aud.txt2 
+cp 2xmBQTVjZ_Q.aud.txt2 2xmBQTVjZ_Q.aud.txt
+git diff
+git add 2xmBQTVjZ_Q.aud.txt
+git commit -m oops
+ls
+cp 2xmBQTVjZ_Q.aud2.txt 2xmBQTVjZ_Q.aud.txt
+git diff
+git add 2xmBQTVjZ_Q.aud.txt
+git commit -m 'more corrections'
+git diff
+ls
+git add 2xmBQTVjZ_Q.aud.txt
+git commit -m ffs
+git branch
+git diff
+git add 2xmBQTVjZ_Q.aud.txt
+git commit -m tweak
+ls
+less 5633455496001.txt 
+git status ../TG4/rosnarun/audacity/5633455496001.txt
+cp 5633455496001.txt ../TG4/rosnarun/audacity/
+cp 5537750827001-1.txt ../TG4/astroblast/audacity/
+grep RealB ..
+grep RealB ../*pl
+grep RealB ../scripts/*
+history -a
