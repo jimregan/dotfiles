@@ -850,3 +850,218 @@ paste /tmp/left1 /tmp/right1 >> ~/Playing/wolne-lektury-audio-corpus/pron-data/g
 paste /tmp/pa-l /tmp/pa-r
 paste /tmp/pa-l /tmp/pa-r >> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
 praat
+cd ../clarinpl/
+ls
+df
+ls ~/Playing/kaldi/egs/clarinpl
+ls ~/Playing/kaldi/egs/clarinpl/audio/
+ls ~/Playing/kaldi/egs/clarinpl/audio/audio
+ln -sd ~/Playing/kaldi/egs/clarinpl/audio/audio/ wav
+ls
+find wav -name '*.txt'
+find ~/Playing/kaldi/egs/clarinpl/audio/audio/ -name '*txt'
+find ~/Playing/kaldi/egs/clarinpl/audio/audio/ -name '*txt'|less
+cat /home/jim/Playing/kaldi/egs/clarinpl/audio/audio/SES0543/sent09.txt
+less ~/Playing/kaldi/egs/clarinpl/data/lang/words.txt 
+less ~/Playing/kaldi/egs/clarinpl/data/train/wav.scp 
+less ~/Playing/kaldi/egs/clarinpl/data/train/cmvn.scp 
+less ~/Playing/kaldi/egs/clarinpl/data/train/text 
+cat ~/Playing/kaldi/egs/clarinpl/data/train/text 
+cat ~/Playing/kaldi/egs/clarinpl/data/train/text perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";'
+cat ~/Playing/kaldi/egs/clarinpl/data/train/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";'
+cat ~/Playing/kaldi/egs/clarinpl/data/train/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";' > etc/clarinpl_train.transcription
+cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";' 
+cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";' > etc/clarinpl_test.transcription 
+find wav
+find wav/ -type f
+find wav/ -type f|grep 'wav$'
+find wav/ -type f|grep 'wav$'|sed -e 's#wav/##;s/\.wav$//'
+find wav/ -type f|grep 'wav$'|sed -e 's#wav/##;s/\.wav$//' > etc/clarinpl.fileids
+vi etc/sphinx_train.cfg 
+cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";' 
+cat ~/Playing/kaldi/egs/clarinpl/data/(test|train)/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";' 
+cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";' 
+cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";'  >> lmtext
+cat ~/Playing/kaldi/egs/clarinpl/data/train/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";'  >> lmtext
+cat lmtext |sort|uniq
+cat lmtext |sort|uniq > lmsort
+wc -l lm*
+irstlm
+irstlm help
+irstlm build-lm
+irstlm build-lm -n 3 -i lmsort -o lmtxt
+ls
+gzip -d lmtxt.gz 
+sphinx_lm_convert 
+sphinx_lm_convert -i lmtxt -o etc/clarinpl.lm.DMP
+ls -al etc/clarinpl*
+vi etc/sphinx_train.cfg 
+less ~/Playing/kaldi/egs/clarinpl/local_clarin/lexicon.txt 
+find ~/Playing/kaldi/egs/clarinpl/ -name 'lex*'
+less /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join("\n", @a);'
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a);'|sort|uniq
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
+cp ~/Playing/msf-asr/teanglann/convlex.pl .
+less convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr '
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq|tr 'A-Z' 'a-z' |sort|uniq -c
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq|tr 'A-Z' 'a-z' |sort|uniq -c|grep -v ' 1 '
+ls
+vi convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
+vi convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
+vi convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
+vi convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
+less etc/clarinpl.dic 
+vi convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
+less etc/clarinpl.dic 
+vi convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
+less etc/clarinpl.dic 
+vi etc/sphinx_train.cfg 
+less etc/clarinpl.dic 
+less etc/clarinpl.filler
+vi etc/clarinpl.filler
+vi etc/sphinx_train.cfg 
+sphinxtrain run
+cat etc/clarinpl |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'
+cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'
+cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
+cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq > etc/clarinpl.phone
+sphinxtrain run
+vi etc/clarinpl.phone 
+vi etc/clarinpl.dic 
+grep SPOKEN etc/clarinpl.dic 
+grep unk etc/clarinpl.dic 
+grep '<unk' etc/clarinpl.dic 
+vi convlex.pl 
+sphinxtrain run
+vi convlex.pl 
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
+cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq > etc/clarinpl.phone
+cat etc/clarinpl.phone 
+sphinxtrain run
+grep SIL etc/*trans*
+grep '<unk>' etc/*trans*
+vi etc/clarinpl.dic 
+grep '<[Ss]' etc/*trans*
+grep '<[Ss][Pp]' etc/*trans*
+vi etc/clarinpl.phone 
+sphinxtrain run
+vi etc/clarinpl.phone 
+vi etc/clarinpl.dic 
+grep -i spn etc/clarinpl.dic 
+sphinxtrain run
+vi etc/clarinpl.dic 
+ls etc/*ds
+cat etc/clarinpl.fileids 
+ls
+ls logdir/
+rm -rf logdir/
+sphinxtrain run
+vi etc/clarinpl_train.transcription 
+cd wav/
+ls
+cd ..
+ls
+cd feat/
+ls
+ls *
+for i in *;for j in $i/*mfc;do echo mv $j bar;done;done
+for i in *;do for j in $i/*mfc;do echo mv $j bar;done;done
+for i in *;do for j in $i/*mfc;do echo mv $j $(echo $j|tr '/' '_'_;done;done
+for i in *;do for j in $i/*mfc;do echo mv $j $(echo $j|tr '/' '_');done;done
+for i in *;do for j in $i/*mfc;do mv $j $(echo $j|tr '/' '_');done;done
+cd ..
+vi etc/sphinx_train.cfg 
+sphinxtrain run
+vi etc/clarinpl_train.fileids 
+vi etc/clarinpl_test.fileids 
+sphinxtrain run
+vi etc/clarinpl.phone 
+sphinxtrain run
+vi etc/sphinx_train.cfg 
+sphinxtrain run
+vi etc/clarinpl.dic 
+vi etc/clarinpl.phone 
+vi etc/clarinpl_train.transcription 
+sphinxtrain run
+vi etc/clarinpl_train.transcription 
+sphinxtrain run
+vi etc/clarinpl_train.transcription 
+vi etc/clarinpl.dic 
+sphinxtrain run
+vi etc/clarinpl_train.transcription 
+vi etc/clarinpl.dic 
+vi etc/clarinpl_train.transcription 
+sphinxtrain run
+grep -v '<s>' etc/clarinpl_train.transcription 
+grep -v '</s>' etc/clarinpl_train.transcription 
+grep -v '</s>' etc/clarinpl_test.transcription 
+grep -v '<s>' etc/clarinpl_test.transcription 
+find . -name '*.dic'
+vi etc/clarinpl.dic 
+sphinxtrain run
+cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
+vi etc/clarinpl.dic 
+sphinxtrain run
+ls
+rm -rf bwaccumdir/
+rm -rf logdir/
+sphinxtrain run
+vi etc/clarinpl.phone 
+sphinxtrain run
+ls
+ls bwaccumdir/
+ls logdir/000.comp_feat/clarinpl.train-1-1.log 
+less logdir/000.comp_feat/clarinpl.train-1-1.log 
+cd wav
+ls
+for i in *;do for j in $i/*wav;do ln -s $j $(echo $j|tr '/' '_');done;done
+ls
+cd ..
+sphinxtrain run
+vi etc/sphinx_train.cfg 
+less logdir/000.comp_feat/clarinpl.train-1-1.log 
+ls
+ls bwaccumdir/
+vi etc/clarinpl.fil
+vi etc/clarinpl.filler 
+sphinxtrain run
+vi etc/clarinpl.phone 
+sphinxtrain run
+vi etc/clarinpl.phone 
+vi etc/clarinpl.dic 
+sphinxtrain run
+vi etc/clarinpl.phone 
+vi etc/clarinpl.filler 
+sphinxtrain run
+ls
+ls feat/
+ls
+ls result/
+ls result/clarinpl.align 
+less result/clarinpl.align 
+find . -name mdef
+less result/clarinpl.align 
+less result/clarinpl-1-1.match 
+less result/clarinpl.match 
+du .
+ls
+less result/clarinpl.match 
+less result/clarinpl.align 
+man tar
+less /usr/share/doc/pocketsphinx-en-us/copyright 
+sudo apt-get install dh-make
+ls
