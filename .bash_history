@@ -770,3 +770,31 @@ git push mine cmusphinx
 history -a
 ssh jimregan
 history -a
+cd
+config add .bash_history 
+python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+cd ~/Playing/msf-asr/
+git add scripts/abair-simplify-map.tsv 
+git commit -m 'phoneset simplification'
+cat scripts/abair-simplify-map.tsv |sort|uniq > tmp
+less tmp 
+cat scripts/abair-simplify-map.tsv |perl -C7 -ane 'BEGIN{%seen=();}{@l=split/\t/;if(!exists $seen{$l[0]}){print;$seen{$l[0]}=$l[1];}'
+cat scripts/abair-simplify-map.tsv |perl -C7 -ane 'BEGIN{%seen=();}{@l=split/\t/;if(!exists $seen{$l[0]}){print;$seen{$l[0]}=$l[1];}}'
+cat scripts/abair-simplify-map.tsv |perl -C7 -ane 'BEGIN{%seen=();}{@l=split/\t/;if(!exists $seen{$l[0]}){print;$seen{$l[0]}=$l[1];}}' > tmp 
+mv tmp scripts/abair-simplify-map.tsv 
+git diff
+git add scripts/abair-simplify-map.tsv 
+git commit -m dedup
+git diff
+git add scripts/abair-simplify-map.tsv 
+git commit -m sort
+ls
+history -a
