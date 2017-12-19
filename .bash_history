@@ -1089,3 +1089,26 @@ top
 . ~/tmp/sourceme 
 doinstain 
 top
+ls
+cat logdir/01.lda_train/clarinpl.*
+cat logdir/01.lda_train/clarinpl.*|less
+grep  SES0083_sent026 etc/*trans*
+ffplay wav/SES0083_sent026.wav  
+ffplay wav/SES0083/sent026.wav  
+ffplay wav/SES0083/sent025.wav  
+ffplay wav/SES0083/sent026.wav  
+ls logdir/01.lda_train/clarinpl.normmean_cihmm.log 
+less logdir/01.lda_train/clarinpl.normmean_cihmm.log 
+less logdir/01.lda_train/clarinpl.normvar_cihmm.log 
+less logdir/01.lda_train/clarinpl.1.norm.log 
+less logdir/01.lda_train/clarinpl.2.norm.log 
+less logdir/01.lda_train/clarinpl.2-1.bw.log 
+find logdir -type f|xargs grep ERROR
+ffplay wav/SES0073/sent013.wav 
+ssh jimregan
+tail -f logdir/decode/clarinpl-1-1.log 
+less logdir/decode/clarinpl-1-1.log 
+grep ' done ' logdir/decode/clarinpl-1-1.log 
+grep ' done ' logdir/decode/clarinpl-1-1.log |wc
+tail -f  logdir/decode/clarinpl-1-1.log 
+ls
