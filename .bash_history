@@ -1704,3 +1704,101 @@ sh ~/scripts/spider.sh spna
 tail -f spna.log 
 tail -f tosp.log 
 history -a
+cd ../text/
+cat doktor-piotr.txt 
+ls ../
+less ../clean.pl 
+less ../split-sentence.pl 
+cat doktor-piotr.txt |perl ../split-sentence.pl 
+less ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;print;'
+cat doktor-piotr.txt |perl ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;print;'
+cat doktor-piotr.txt |perl ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;s/— ([A-Z])/—\n$1/;print;'
+cat doktor-piotr.txt |perl ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;s/— ([A-Z])/\n— $1/;print;'
+cat doktor-piotr.txt |perl ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;s/— ([A-Z])/\n— $1/;print;'|grep -v '^$'
+cat doktor-piotr.txt |perl ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;s/— ([A-Z])/\n— $1/g;print;'|grep -v '^$'
+cat doktor-piotr.txt |perl ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;s/— ([A-Z])/\n— $1/g;print;'|grep -v '^$' > doktor-piotr.txt.sent
+less doktor-piotr.txt.sent 
+vi run-aeneas.sh
+sh run-aeneas.sh ../audio/stefan-zeromski-doktor-piotr.mp3 doktor-piotr.txt.sent 
+vi run-aeneas.sh
+sh run-aeneas.sh ../audio/stefan-zeromski-doktor-piotr.mp3 doktor-piotr.txt.sent 
+vi run-aeneas.sh
+sh run-aeneas.sh ../audio/stefan-zeromski-doktor-piotr.mp3 doktor-piotr.txt.sent 
+less doktor-piotr.txt.sent.aud 
+vi ../pron-data/pronounce-as.tsv 
+vi ../specific-norms.tsv 
+git diff
+cat doktor-piotr.txt
+perl ../norm-text.pl doktor-piotr.txt
+less ../norm-text.pl 
+grep specific ../*pl
+perl ../apply-specific.pl doktor-piotr.txt
+less ../apply-specific.pl 
+grep Real ../*pl
+cd ..
+perl apply-specific.pl text/doktor-piotr.txt
+less apply-specific.pl 
+less text/doktor-piotr.txt
+vi apply-specific.pl 
+perl apply-specific.pl text/doktor-piotr.txt
+less text/doktor-piotr.txt
+cd text/
+perl ../apply-specific.pl doktor-piotr.txt
+vi ../apply-specific.pl 
+ls *.bak
+diff -u doktor-piotr.txt.bak doktor-piotr.txt
+git diff
+git diff doktor-piotr.txt
+cat doktor-piotr.txt |perl ../split-sentence.pl |perl -C7 -ane 's/… ([A-Z])/…\n$1/g;s/— ([A-Z])/\n— $1/g;print;'|grep -v '^$' > doktor-piotr.txt.sent
+less doktor-piotr.txt.sent
+cat doktor-piotr.txt.sent|perl ../clean.pl 
+cat doktor-piotr.txt.sent|perl ../clean.pl |tr ' ' '\n'|sort|uniq
+cat doktor-piotr.txt.sent|perl ../clean.pl |tr ' ' '\n'|sort|uniq|perl ../filter-dict.pl 
+less ../filter-dict.pl 
+cat doktor-piotr.txt.sent|perl ../clean.pl |tr ' ' '\n'|sort|uniq|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
+cat doktor-piotr.txt.sent|perl ../clean.pl |tr ' ' '\n'|sort|uniq|wc
+cat doktor-piotr.txt.sent|perl ../clean.pl |tr ' ' '\n'|sort|uniq|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv |wc
+cat doktor-piotr.txt.sent|perl ../clean.pl |tr ' ' '\n'|sort|uniq|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv > /tmp/vocab-add
+grep left ../*
+cat /tmp/vocab-add 
+grep pl-IPA ../*(
+grep pl-IPA ../*
+less ../in-chk 
+ls ..
+find ../*.sh
+find ../ -name '*.sh'
+cat /tmp//vocab-add 
+cat /tmp//vocab-add |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
+cat /tmp//vocab-add |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/in
+cd ..
+git status
+git add apply-specific.pl normalisations.tsv pron-data/pronounce-as.tsv pron-data/gen.tsv specific-norms.tsv 
+git commit -m update
+git branch
+git push origin lexicon 
+vi pron-data/gen.tsv 
+git diff pron-data/gen.tsv 
+git add pron-data/gen.tsv 
+git commit -m cleaner
+git diff
+vi pron-data/pronounce-as.tsv 
+vi pron-data/gen.tsv 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+vi pron-data/pronounce-as.tsv 
+less /tmp/in
+ls ~/Playing/sjp/
+find /home/jim/Playing/sjp/sjp.pl -type f
+find /home/jim/Playing/sjp/sjp.pl -type f|xargs grep '[czytaj'
+find /home/jim/Playing/sjp/sjp.pl -type f|xargs grep '\[czytaj'
+find /home/jim/Playing/sjp/sjp.pl -type f|xargs grep -i '\[czytaj'
+find /home/jim/Playing/sjp/sjp.pl -type f|xargs grep -i '\[czytaj'|grep Cha
+find /home/jim/Playing/sjp/sjp.pl -type f|while read i;do grep -i '\[czytaj' $i && echo $i;done
+git diff
+vi pron-data/pronounce-as.tsv 
+git add pron-data/pronounce-as.tsv 
+git commit -m add
+less /tmp/cmusphinx-ru-5.2/ru.dic 
+less ~/Playing/msf-asr/TG4/rosnarun/5633455496001.vtt 
+history -a
