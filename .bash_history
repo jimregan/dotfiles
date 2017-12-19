@@ -1188,3 +1188,12 @@ svn diff videos.tsv |grep '^\+'
 svn diff videos.tsv |grep '^\+' > vdiff5
 ls /tmp//asd/
 history -a
+cd /tmp
+ls
+ffplay 2xmBQTVjZ_Q.mp3-01.wav 
+ffplay 2xmBQTVjZ_Q.mp3-05.wav 
+ffplay 2xmBQTVjZ_Q.mp3-08.wav 
+ffplay 2xmBQTVjZ_Q.mp3-12.wav 
+ffplay 2xmBQTVjZ_Q.mp3-15.wav 
+man pocketsphinx_batch 
+history -a
