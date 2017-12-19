@@ -1492,3 +1492,39 @@ dh_make -p 0.1
 man dh_make 
 ssh jimregan
 history -a
+ls
+dh_make -i -e 'jaoregan@tcd.ie' -c apache -p pocketsphinx-hmm-pl-clarinpl_0.1
+ls
+cd ..
+rm -rf cmusphinx-clarinpl/
+ls
+cp ../cmusphinx-clarinpl-0.1.tar.gz .
+dh_make -i -e 'jaoregan@tcd.ie' -c apache -p pocketsphinx-hmm-pl-clarinpl_0.1 -f cmusphinx-clarinpl-0.1.tar.gz 
+ls
+cd debian/
+ls
+ls -al
+less compat 
+less copyright 
+less README.
+less README.Debian 
+vi control 
+vi copyright 
+ls
+rm manpage.*
+rm menu.ex init.d.ex 
+less rules 
+. ~/tmp/sourceme 
+doinstain 
+ls
+doinstain 
+less /tmp/cmusphinx-ru-5.2/ru.dic 
+cat /tmp/cmusphinx-ru-5.2/ru.dic |perl -ane 'chomp;@a=split/ /;shift@a;print join("\n",@a). "\n";'
+cat /tmp/cmusphinx-ru-5.2/ru.dic |perl -ane 'chomp;@a=split/ /;shift@a;print join("\n",@a). "\n";'|sort|uniq
+less /tmp/cmusphinx-ru-5.2/ru.dic 
+. ~/img/so
+. ~/tmp/sourceme 
+doinstain 
+ls
+doinstain 
+history -a
