@@ -642,3 +642,34 @@ svn add ../astroblast/5556524703001.*
 cd ..
 svn ci -m more
 history -a
+ls
+less README.md 
+./corpuscrawler --lang=ace
+ls
+less corpus/ace.txt 
+git checkout -b ace
+git add Lib/corpuscrawler/main.py Lib/corpuscrawler/crawl_ace.py 
+git commit -m 'basic crawler for Aceh'
+git push mine ace 
+git push mine master 
+python
+./corpuscrawler --lang=ace
+less corpus/ace.txt 
+wc -l  corpus/ace.txt 
+grep Location  corpus/ace.txt 
+less  corpus/ace.txt 
+./corpuscrawler --lang=ace
+grep Location  corpus/ace.txt |tail
+less corpus/uk.txt 
+./corpuscrawler --lang=uk
+less corpus/uk.txt 
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "procimg https://www.instagram.com/stories/$a"  $out";  done
+done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "procimg https://www.instagram.com/stories/$a $out";  done
+done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "procimg https://www.instagram.com/stories/$a $out"; done
+vi ~/tmp/sourceme 
+. ~/tmp/sourceme 
+doinstain 
+tail ~/tmp/sourceme 
+history -a
