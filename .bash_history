@@ -1236,3 +1236,77 @@ grep RealB ..
 grep RealB ../*pl
 grep RealB ../scripts/*
 history -a
+cd ../TG4/`
+cd ../TG4/
+cd rosnarun/
+svn status
+svn diff
+svn ci -m 'some changes I do not remember'
+svn diff
+svn ci -m tweak
+svn diff
+svn ci -m more
+cd ../astroblast/
+mv audacity/5537750827001-1.txt audacity/5537750827001.txt 
+svn add audacity/5537750827001.txt 
+svn add audacity/
+svn ci -m edits
+cd ../scripts/
+ls
+tail vdiff4
+tail videos.tsv 
+svn diff videos.tsv 
+svn diff videos.tsv |grep '^\+'
+svn diff videos.tsv |grep '^\+' > vdiff6
+less vdiff5
+diff vdiff5 vdiff6
+rm vdiff6
+vi vdiff5
+cat vdiff5|awk -F'\t'
+cat vdiff5|awk -F'\t' '{print $6}'
+cat vdiff5|awk -F'\t' '{print $5}'
+cat vdiff5|awk -F'\t' '{print $5 "\n" $6}'
+cat vdiff5|awk -F'\t' '{print $5 "\n" $6}'|awk '{print "http://web.archive.org/save/" $0}' > /tmp//asd/spid
+cat vdiff5|awk -F'\t' '{print $5 "\n" $6}'|grep vtt
+cat vdiff5|awk -F'\t' '{print $5 "\n" $6}'|grep vtt|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
+cat vdiff5|awk -F'\t' '{print $5 "\n" $6}'|grep mp4|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.mp4;done
+for i in *mp4;do sh ~/bin/convert-mp3.sh $i;done
+ls
+rm *.mp4
+ls
+for i in *.wav;do mv $i $(basename .mp4.wav).wav;done
+ls
+ls -al
+rm .mp4.wav.wav 
+cat vdiff5|awk -F'\t' '{print $5 "\n" $6}'|grep mp4|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.mp4;done
+#for i in *.wav;do mv $i $(basename $i .mp4.wav).wav;done
+for i in *mp4;do sh ~/bin/convert-mp3.sh $i;done
+ls
+for i in *.wav;do echo mv $i $(basename $i .mp4.wav).wav;done
+for i in *.wav;do mv $i $(basename $i .mp4.wav).wav;done
+ls
+grep 5569168138001 videos.tsv 
+mv 5569168138001.wav ../catahata/
+rm *.mp4
+ls
+grep 5569155154001 videos.tsv 
+mv 5569155154001.wav ../catahata/
+grep 5566269800001 videos.tsv 
+grep 5565441333001 videos.tsv 
+grep 5410712898001 videos.tsv 
+mv 5410712898001.wav ../garfield/
+mv 556* ../gearoidnagaisce/
+cd ..
+svn status
+svn add catahata/5569155154001.wav catahata/5569168138001.wav garfield/5410712898001.wav gearoidnagaisce/5565441333001.wav gearoidnagaisce/5566269800001.wav
+svn ci -m audio
+ls
+ls */*wav
+for i in */*wav;do soxi -D $i;done
+for i in */*wav;do soxi -D $i;done|awk 'BEGIN{total=0.0}{total += $0}END{print total}'
+perl -e 'print 282979 / 3600)
+perl -e 'print 282979 / 3600'
+soxi -D */*wav
+soxi -d */*wav
+perl -e 'print 282979 / 3600'
+history -a
