@@ -673,3 +673,98 @@ vi ~/tmp/sourceme
 doinstain 
 tail ~/tmp/sourceme 
 history -a
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme
+scp /tmp/copyme jimregan:/tmp
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme
+scp /tmp/copyme jimregan:/tmp
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme
+scp /tmp/copyme jimregan:/tmp
+tail -f corpus/ace.txt 
+git branch
+git pull origin master
+git branch
+git log
+git diff
+git add Lib/corpuscrawler/crawl_ace.py 
+git commit -m 'bible crawl'
+git log
+git checkout master 
+git log
+git pull origin master 
+git checkout -b ace2
+git log
+git remote show 
+git branch
+git push mine master 
+git checkout master 
+git log
+git checkout ace2
+git log
+git cherry-pick 848a686154da582e9bcec9d8052934ed8a9ab886
+git log
+git push mine ace2 
+ls 
+ls Lib/corpuscrawler/
+tail -f corpus/ace.txt 
+ls
+less Lib/corpuscrawler/crawl_uk.py
+git checkout master
+git diff
+git add Lib/corpuscrawler/util.py 
+git add Lib/corpuscrawler/crawl_ace.py 
+git add Lib/corpuscrawler/crawl_uk.py 
+git commit -m 'move crawl_bibleis to util; add for Ukrainian'
+git log
+git checkout master 
+git pull origin master 
+git checkout -b bible.is
+git cherry-pick 2be28c4a2199a41cb2fecc83f9d213ec60fbcd9b
+git push mine master 
+git push mine bible.is 
+tail -f corpus/uk.txt 
+vi Lib/corpuscrawler/crawl_am.py
+git add Lib/corpuscrawler/crawl_am.py
+git commit -m 'Add Amharic'
+git diff
+vi Lib/corpuscrawler/crawl_am.py
+./corpuscrawler --lang am
+./corpuscrawler --lang uk
+less Lib/corpuscrawler/main.py
+vi Lib/corpuscrawler/crawl_ba.py
+git diff
+git add Lib/corpuscrawler/crawl_ba.py
+git commit -m 'Bashkir'
+less Lib/corpuscrawler/main.py
+vi Lib/corpuscrawler/crawl_be.py
+git add Lib/corpuscrawler/crawl_be.py
+less Lib/corpuscrawler/main.py
+vi Lib/corpuscrawler/crawl_bg.py
+git add Lib/corpuscrawler/crawl_bg.py
+less Lib/corpuscrawler/main.py
+vi Lib/corpuscrawler/crawl_bm.py
+git add Lib/corpuscrawler/crawl_bm.py
+#git commit -m 'Belarusian, Bulgarian, 
+less Lib/corpuscrawler/main.py
+git commit -m 'Belarusian, Bulgarian, Bambara'
+git push mine bible.is 
+tail -f corpus/bm.txt 
+tail -f corpus/uk.txt 
+less Lib/corpuscrawler/main.py
+less ~/aceh.translit 
+ssh jimregan
+cd ../ClarinStudioKaldi/
+ls
+git status
+git checkout master
+git checkout -b cmusphinx
+ls
+mkdir etc
+cp ../spinx/clarinpl/etc/sphinx_train.cfg etc/
+cp ../spinx/clarinpl/convlex.pl .
+cp ../spinx/clarinpl/etc/clarinpl.filler etc/
+git status
+git add convlex.pl etc/*
+git commit -m sphinx
+git push mine cmusphinx 
+history -a
