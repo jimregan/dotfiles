@@ -1569,3 +1569,138 @@ echo "It's a dense crowd in two distinct ways. The fruit of a figg tree is apple
 java -cp sphinx4/sphinx4-core/target/sphinx4-core-1.0-SNAPSHOT.jar edu.cmu.sphinx.tools.aligner.Aligner cmusphinx-en-us-5.2/ sphinx4-5prealpha-src/sphinx4-data/src/main/resources/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict sample.wav "$(cat sample.txt)"
 wget http://downloads.sourceforge.net/project/cmusphinx/Acoustic%20and%20Language%20Models/US%20English%20Generic%20Acoustic%20Model/cmusphinx-en-us-5.2.tar.gz
 history -a
+cd ~
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs 
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs  > ~/.scratch/chromium-tabs 
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config commit -m foo
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs  > ~/.scratch/chromium-tabs 
+config add .bash_history .scratch/chromium-tabs 
+config commit -m foo
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme 
+scp /tmp/copyme  jimregan:/tmp
+cd /tmp//asd
+ls
+cat spid.log 
+cat spid.log |perl ~/bin/wget-http.pl 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}'
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep mp4 >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+less ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+ls
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+rm spid
+rm spid.log 
+cat bmaud2.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat bmaud3.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+less bmaud3.log 
+less bmaud3
+rm bmaud*
+less list 
+rm list 
+ls
+rm nohup.out 
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep mp4 >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+rm spid
+rm spid.log 
+ls
+rm nohup.out 
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep mp4 >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+rm spid
+rm spid.log 
+grep m3u spid 
+grep m3u spid |awk -F'/web/' '{print $2}'
+grep m3u spid |awk -F'/web/' '{print $2}' > m3u
+vi spid 
+sh ~/scripts/spider.sh spid
+ls
+sh ~/scripts/grab-logged.sh m3u
+tail -f m3u.log 
+cat m3u.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+ls
+ls ~/Playing/msf-asr/d8ef75d57178d079eb252096584e36e2/
+mv c.brightcove.com/services/mobile/streaming/index/rendition.m3u8\?assetId\=5* ~/Playing/msf-asr/d8ef75d57178d079eb252096584e36e2/
+cd ~/Playing/msf-asr/d8ef75d57178d079eb252096584e36e2/
+git status
+git add rendition.m3u8\?assetId\=5664316461001\&pubId\=1290862567001\&videoId\=5551437712001 
+git push origin master
+ls
+git rm rendition.m3u8\?assetId\=5* *.vtt*
+git status
+git commit -m add
+git rm rendition.m3u8\?assetId\=5* *.vtt*
+git commit -m rm
+git push origin master 
+ls
+git status
+ls rend/
+rmdir rend/
+ls
+less 5537750827001.speaker-notes 
+cd /tmp/asd/
+ls
+sh ~/scripts/grab-logged.sh m3u
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep mp4 >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+rm spid
+rm spid.log 
+ls
+tail -f m3u.log 
+cat c.brightcove.com/services/mobile/streaming/index/rendition.m3u8\?assetId\=5*
+cat c.brightcove.com/services/mobile/streaming/index/rendition.m3u8\?assetId\=5*|grep http
+cat c.brightcove.com/services/mobile/streaming/index/rendition.m3u8\?assetId\=5*|grep http|awk '{print "http://web.archive.org/web/" $0}' > spid
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+vi zlba
+sh ~/scripts/spider.sh zlba
+tail -f zlba.log 
+cat zlba.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+rm zlba
+rm zlba.log 
+ls
+tail m3u.log 
+cat m3u.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+rm m3u
+rm m3u.log 
+less spid.log 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+#cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+ls
+ps aux|grep wget
+tail -f spid.log 
+killall wget
+rm spid.log 
+cat spid 
+cat spid |awk -F'/web/' '{print $2}'
+cat spid |awk -F'/web/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/web/$i >> tosp;done
+ls
+wc -l *
+sh ~/scripts/spider.sh tosp
+rm spid 
+ls
+rm -rf c.brightcove.com/
+ls
+tail -f tosp.log 
+ls
+sh ~/scripts/spider.sh spn
+tail -f spn.log 
+head -n 2 spn > spna
+sh ~/scripts/spider.sh spna
+tail -f spna.log 
+tail -f tosp.log 
+history -a
