@@ -1115,3 +1115,31 @@ ls
 tail -f stefan-zeromski-doktor-piotr.mp3.txt 
 less ../text/doktor-piotr.txt
 history -a
+cd ~/Playing/wolne-lektury-audio-corpus/
+ls
+cd audio/
+ls
+pocketsphinx_batch -h
+pocketsphinx_batch 
+pocketsphinx_continuous 
+pocketsphinx_batch 
+pocketsphinx_batch -hmm /tmp/cmusphinx-clarinpl/ -dic /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP 
+pocketsphinx_batch -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP -time yes teofil-lenartowicz-mizerna-cicha.mp3.wav 
+pocketsphinx_batch -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP teofil-lenartowicz-mizerna-cicha.mp3.wav 
+pocketsphinx_batch -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP 
+pocketsphinx_batch 
+pocketsphinx_batch 
+pocketsphinx_continuous -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP 
+pocketsphinx_continuous -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP -infile teofil-lenartowicz-mizerna-cicha.mp3.wav 
+pocketsphinx_continuous -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP -infile teofil-lenartowicz-mizerna-cicha.mp3.wav  -time yes
+cat ../text/mizerna-cicha.txt 
+ffplay teofil-lenartowicz-mizerna-cicha.mp3
+rm teofil-lenartowicz-mizerna-cicha.mp3
+rm teofil-lenartowicz-mizerna-cicha.mp3.wav 
+ls
+ffplay stefan-zeromski-doktor-piotr.mp3 
+sh ~/bin/convert-mp3.sh stefan-zeromski-doktor-piotr.mp3 
+pocketsphinx_continuous -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP -infile stefan-zeromski-doktor-piotr.mp3.wav  -time yes
+pocketsphinx_continuous -hmm /tmp/cmusphinx-clarinpl/ -dict /tmp/cmusphinx-clarinpl/pl.dic -lm /tmp/cmusphinx-clarinpl/pl.lm.DMP -infile stefan-zeromski-doktor-piotr.mp3.wav  -time yes > stefan-zeromski-doktor-piotr.mp3.txt
+ffplay stefan-zeromski-doktor-piotr.mp3
+history -a
