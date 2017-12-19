@@ -1310,3 +1310,25 @@ soxi -D */*wav
 soxi -d */*wav
 perl -e 'print 282979 / 3600'
 history -a
+cd ../scripts/
+ls
+cat vdiff5
+mv 5566269800001.vtt ../gearoidnagaisce/
+mv 5565441333001.vtt ../gearoidnagaisce/
+mv 5569168138001.vtt ../catahata/
+mv 5569155154001.vtt ../catahata/
+mv 5410712898001.vtt ../garfield/
+ls
+cd ..
+svn ci -m weekend
+svn status
+svn add gearoidnagaisce/5565441333001.vtt gearoidnagaisce/5566269800001.vtt garfield/5410712898001.vtt catahata/5569168138001.vtt catahata/5569155154001.vtt
+svn ci -m weekend
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme
+scp /tmp/copyme jimregan:/tmp
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme
+scp /tmp/copyme jimregan:/tmp
+ls /tmp/
+rm /tmp/*.wav
+ls /tmp/
+history -a
