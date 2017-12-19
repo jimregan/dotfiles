@@ -768,3 +768,5 @@ git add convlex.pl etc/*
 git commit -m sphinx
 git push mine cmusphinx 
 history -a
+ssh jimregan
+history -a
