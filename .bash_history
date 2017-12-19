@@ -1440,3 +1440,33 @@ svn add ../catahata/557*
 cd ..
 svn ci -m nwe
 history -a
+cd ~/Playing/spinx
+mkdir ~/Playing/spinx
+cd ~/Playing/spinx
+ls
+sphinxtrain -t clarinpl setup
+sphinxtrain -t teanglann setup
+ls
+rm -rf etc/
+mkdir teanglann
+cd teanglann/
+sphinxtrain -t teanglann setup
+cd ..
+mkdir clarinpl
+cd clarinpl/
+sphinxtrain -t clarinpl setup
+cd ../teanglann/
+ls
+cp ~/Playing/msf-asr/teanglann/etc/* etc/
+ls
+cp ~/Playing/msf-asr/teanglann/teanglann.dic etc/
+less etc/teanglann.dic 
+less ~/Playing/msf-asr/teanglann/mktranscripts.sh 
+less ~/Playing/msf-asr/pron/ulster.tsv 
+perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a 1);'
+perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 1);'
+perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 0, $#a-1);'
+perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 0, $#a);'
+perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 1, $#a);'
+perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 0, $#a);'
+history -a
