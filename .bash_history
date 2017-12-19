@@ -1332,3 +1332,5 @@ ls /tmp/
 rm /tmp/*.wav
 ls /tmp/
 history -a
+ssh jimregan
+history -a
