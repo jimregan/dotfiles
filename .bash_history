@@ -1112,3 +1112,6 @@ grep ' done ' logdir/decode/clarinpl-1-1.log
 grep ' done ' logdir/decode/clarinpl-1-1.log |wc
 tail -f  logdir/decode/clarinpl-1-1.log 
 ls
+tail -f stefan-zeromski-doktor-piotr.mp3.txt 
+less ../text/doktor-piotr.txt
+history -a
