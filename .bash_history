@@ -1470,3 +1470,25 @@ perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 0, $#a);'
 perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 1, $#a);'
 perl -e '@a=(1, 2, 3, 4);print join(" ", splice @a, 0, $#a);'
 history -a
+cd /tmp/
+tar Jxvf ~/Downloads/pocketsphinx_0.8-5.debian.tar.xz 
+cd debian/
+ls
+less pocketsphinx.manpages 
+less README.source 
+less changelog 
+ls source/
+less source/format 
+ls
+cd ..
+mkdir deppkh
+cd deppkh/
+ls
+tar zxvf /tmp/cmusphinx-clarinpl-0.1.tar.gz 
+dh_make
+ls
+cd cmusphinx-clarinpl/
+dh_make -p 0.1
+man dh_make 
+ssh jimregan
+history -a
