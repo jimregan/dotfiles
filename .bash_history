@@ -531,3 +531,114 @@ git push mine  bible.is
 tail -f corpus/uk.txt 
 ps aux|grep python
 tail -f corpus/bm.txt 
+ls ~/Downloads/*gz
+ls ~/Downloads/*ru*gz
+tar ztvf ~/Downloads/cmusphinx-ru-5.2.tar.gz 
+cd /tmp/
+tar zxvf ~/Downloads/cmusphinx-ru-5.2.tar.gz 
+cd cmusphinx-ru-5.2/
+ls
+less ru.dic 
+less dictionary.py 
+ls
+ls -al
+less README 
+less mdef 
+less variances 
+less feature_transform 
+less ru.lm 
+ls ~/Playing/spinx/clarinpl/model_parameters/clarinpl.cd_cont_3000/
+ls
+ls ~/Playing/spinx/clarinpl/model_parameters/clarinpl.cd_cont_3000/
+less ~/Playing/spinx/clarinpl/model_parameters/clarinpl.cd_cont_3000/noisedict 
+less ~/Playing/spinx/clarinpl/model_parameters/clarinpl.cd_cont_3000/feat.params 
+less ~/Playing/spinx/clarinpl/model_parameters/clarinpl.cd_cont_3000/mdef 
+mkdir /tmp/cmusphinx-clarinpl
+cp ~/Playing/spinx/clarinpl/model_parameters/clarinpl.cd_cont_3000/* /tmp/cmusphinx-clarinpl/
+less ~/Playing/spinx/clarinpl/lmtxt 
+cp ~/Playing/spinx/clarinpl/lmtxt /tmp/cmusphinx-clarinpl/pl.lm
+cp ~/Playing/spinx/clarinpl/etc/clarinpl.dic /tmp/cmusphinx-clarinpl/pl.dic
+cp ~/Playing/spinx/clarinpl/etc/clarinpl.lm.DMP /tmp/cmusphinx-clarinpl/pl.lm.DMP
+ls
+ls ../cmusphinx-clarinpl/
+vi ../cmusphinx-clarinpl/README
+vi ../cmusphinx-clarinpl/LICENSE
+cd ..
+find cmusphinx-clarinpl -type f
+find cmusphinx-clarinpl -type f|tar cvf cmusphinx-clarinpl-0.1.tar
+tar cvf cmusphinx-clarinpl-0.1.tar cmusphinx-clarinpl/*
+tar tvf cmusphinx-clarinpl-0.1.tar 
+gzip cmusphinx-clarinpl-0.1.tar 
+ls -al cmusphinx-clarinpl-0.1.tar.gz 
+cd Playing/msf-asr/
+cd TG4/
+cd scripts/
+svn status
+ls
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676023306001&teideal=WAC&series=WAC&dlft=35'
+svn revert *.tsv
+grep Garf v
+grep Garf videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5410712898001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5569155154001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5569168138001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+svn diff
+rm vdiff6 
+cat vdiff2
+vi vdiff2 
+cat vdiff2 |awk -F'\t' '{print $5 "\n" $6}'
+cat vdiff2 |awk -F'\t' '{print $6}'|while read i;do grep $i wayback-subs.txt ;doen
+cat vdiff2 |awk -F'\t' '{print $6}'|while read i;do grep $i wayback-subs.txt ;done
+cat vdiff2 |awk -F'\t' '{print $5 "\n" $6}'|awk '{print "http://web.archive.org/web/" $0}' >> /tmp/asd/spid
+less /tmp/asd/spid
+rm vdiff2 
+ls
+svn diff
+cat vdiff
+cat vdiff |awk -F'\t' '{print $6}'|while read i;do grep $i wayback-subs.txt ;done
+cat vdiff |awk -F'\t' '{print $5}'|while read i;do grep $i wayback-video.txt ;done
+cat vdiff3 |awk -F'\t' '{print $5}'|while read i;do grep $i wayback-video.txt ;done
+cat vdiff4 |awk -F'\t' '{print $5}'|while read i;do grep $i wayback-video.txt ;done
+cat vdiff3 
+cat vdiff4 
+rm vdiff*
+ls
+less wayback-video.txt 
+cat videos.tsv 
+cat videos.tsv |awk -F'\t' '{print $6}'
+cat videos.tsv |awk -F'\t' '{print $6}'|grep http|while read i;do grep $i wayback-subs.txt || echo http://web.archive.org/web/$i >> /tmp//asd/spid;done
+cat videos.tsv |awk -F'\t' '{print $5}'|grep http|while read i;do grep $i wayback-video.txt || echo http://web.archive.org/web/$i >> /tmp//asd/spid;done
+wc -l wayback-*
+svn diff
+svn ci -m 'more wayback video'
+curl https://postimg.org/image/toizr9ds3/
+lynx -dump https://postimg.org/image/toizr9ds3/
+lynx -dump https://postimg.org/image/6ztsrpbtv/
+lynx -dump https://postimg.org/image/823za9a2r/
+ls
+tail videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5556524703001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5591968894001&teideal=Olivia&series=Olivia&dlft=30'
+svn diff
+tail -n 2 videos.tsv 
+tail -n 2 videos.tsv |awk -F'\t' '{print $5 "\n" $6}'
+tail -n 2 videos.tsv |awk -F'\t' '{print $5 "\n" $6}'|awk '{print "http://web.archive.org/save/" $0}' > /tmp//asd/spn
+tail -n 2 videos.tsv |awk -F'\t' '{print $5 "\n" $6}'|grep vtt
+tail -n 2 videos.tsv |awk -F'\t' '{print $5 "\n" $6}'|grep vtt|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
+tail -n 2 videos.tsv |awk -F'\t' '{print $5 "\n" $6}'|grep mp4|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.mp4;done
+ls
+for i in *mp4;do sh ~/bin/convert-mp3.sh $i;done
+ls
+mv 5556524703001.mp4.wav 5556524703001.wav
+ls
+mv 5591968894001.mp4.wav 5591968894001.wav
+ls
+rm *.mp4
+tail videos.tsv 
+mv 5591968894001.* ../olivia/
+svn add ../olivia/5591968894001.*
+mv 5556524703001.* ../astroblast/
+svn add ../astroblast/5556524703001.*
+cd ..
+svn ci -m more
+history -a
