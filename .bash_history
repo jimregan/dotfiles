@@ -1528,3 +1528,44 @@ doinstain
 ls
 doinstain 
 history -a
+cd ~/Playing/msf-asr/
+vi pron-todo
+cd ../
+mkdir sphinx-alignment
+cd sphinx-alignment/
+git clone git clone https://github.com/cmusphinx/sphinx4
+git clone https://github.com/cmusphinx/sphinx4
+cd sphinx4/
+ls
+sudo apt-get install gradle
+gradle
+find . -name '*,jar'
+ls
+gradle build
+ls
+gradle deploy
+gradle install
+sudo gradle install
+cd ..
+git clone https://github.com/JoshData/cmusphinx-alignment-example.git
+cd cmusphinx-alignment-example/
+ls
+wget http://downloads.sourceforge.net/project/opencsv/opencsv/3.3/opencsv-3.3.jar
+ls
+mv opencsv-3.3.jar ..
+cd ..
+javac -cp sphinx4/sphinx4-core/target/sphinx4-core-1.0-SNAPSHOT.jar:opencsv-3.3.jar Aligner.java 
+cd -
+javac -cp ../sphinx4/sphinx4-core/target/sphinx4-core-1.0-SNAPSHOT.jar:../opencsv-3.3.jar Aligner.java 
+find ../sphinx4 -name '*.jar'
+javac -cp ../sphinx4/sphinx4-core/target/sphinx4-core-5prealpha-SNAPSHOT.jar:../opencsv-3.3.jar Aligner.java 
+cp ../opencsv-3.3.jar .
+cp ../sphinx4/sphinx4-core/target/sphinx4-core-5prealpha-SNAPSHOT.jar .
+javac -cp ../sphinx4/sphinx4-core/build/libs/sphinx4-core-5prealpha-SNAPSHOT.jar:../opencsv-3.3.jar Aligner.java 
+wget -O sample_original.wav http://hawksoft.com/hawkvoice/samples/ulaw.wav
+wget -O sample_original.wav http://web.archive.org/web/http://hawksoft.com/hawkvoice/samples/ulaw.wav
+sox sample_original.wav -b 16 sample.wav channels 1 rate 16k
+echo "It's a dense crowd in two distinct ways. The fruit of a figg tree is apple shaped." > sample.txt
+java -cp sphinx4/sphinx4-core/target/sphinx4-core-1.0-SNAPSHOT.jar edu.cmu.sphinx.tools.aligner.Aligner cmusphinx-en-us-5.2/ sphinx4-5prealpha-src/sphinx4-data/src/main/resources/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict sample.wav "$(cat sample.txt)"
+wget http://downloads.sourceforge.net/project/cmusphinx/Acoustic%20and%20Language%20Models/US%20English%20Generic%20Acoustic%20Model/cmusphinx-en-us-5.2.tar.gz
+history -a
