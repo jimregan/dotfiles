@@ -798,3 +798,55 @@ git add scripts/abair-simplify-map.tsv
 git commit -m sort
 ls
 history -a
+echo t̺|native2ascii -encoding utf8
+echo n̩|native2ascii -encoding utf8
+echo tʰ|native2ascii -encoding utf8
+t\u033a\u02b0 | native2ascii -encoding utf8 -reverse
+echo t\u033a\u02b0 | native2ascii -encoding utf8 -reverse
+man native2ascii 
+echo t\u033a\u02b0 | native2ascii -reverse -encoding utf8 
+echo 't\u033a\u02b0' | native2ascii -reverse -encoding utf8 
+echo 'n\u0369' | native2ascii -reverse -encoding utf8 
+echo ʲ|native2ascii -encoding utf8
+echo 'd\u02B1' | native2ascii -reverse -encoding utf8 
+echo ë|native2ascii -encoding utf8
+cd Playing/corpuscrawler/
+git pull origin master
+git status
+git diff
+git branch
+git stash
+git status
+git diff
+less README.md 
+ls
+rm Lib/corpuscrawler/crawl_mi.py
+git checkout -- Lib/corpuscrawler/crawl_mi.py
+git status
+git diff
+git reset hard --HEAD
+git reset --hard HEAD
+git checkout master
+git pull origin master
+vi Lib/corpuscrawler/crawl_ace.py
+cp Lib/corpuscrawler/crawl_mi.py Lib/corpuscrawler/crawl_ace.py
+vi Lib/corpuscrawler/crawl_ace.py
+vi test
+python
+git diff
+cat /tmp/left |awk -F'|' '{print $2}'
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//'
+cat /tmp/right |sed -e 's/IPA(key): /\n/g'
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+paste /tmp/left1 /tmp/right1 
+vi /tmp/right1 
+paste /tmp/left1 /tmp/right1 
+paste /tmp/left1 /tmp/right1 >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+vi /tmp/right1 
+paste /tmp/left1 /tmp/right1 >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+paste /tmp/pa-l /tmp/pa-r
+paste /tmp/pa-l /tmp/pa-r >> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+praat
