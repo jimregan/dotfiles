@@ -1065,3 +1065,27 @@ man tar
 less /usr/share/doc/pocketsphinx-en-us/copyright 
 sudo apt-get install dh-make
 ls
+cd ~/Playing/kaldi/
+ls
+cd egs/
+cd clarinpl
+ls
+ls data/
+ls data//train/wav.scp 
+cat data//train/wav.scp 
+cat data//train/wav.scp |awk -F'/' '{print $8 "/" $7}'
+cat data//train/wav.scp |awk -F'/' '{print $8 "/" $0}'
+cat data//train/wav.scp |awk -F'/' '{print $8 "/" $9}'
+cat data//train/wav.scp |awk -F'/' '{print $8 "/" $9}'|grep -v wav
+cat data//train/wav.scp |awk -F'/' '{print $8 "/" $9}'|sed -e 's/\.wav$//' > ~/Playing/spinx/clarinpl/etc/clarinpl_train.fileids
+cat data//test/wav.scp |awk -F'/' '{print $8 "/" $9}'|sed -e 's/\.wav$//' > ~/Playing/spinx/clarinpl/etc/clarinpl_test.fileids
+less ~/Playing/spinx/clarinpl/etc/clarinpl_test.fileids
+top
+ps aux|grep sph
+top
+ls
+ffplay audio/audio/SES0083/sent026.wav 
+top
+. ~/tmp/sourceme 
+doinstain 
+top
