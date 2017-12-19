@@ -1150,3 +1150,41 @@ cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{p
 scp /tmp/copyme  jimregan:/tmp
 cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme 
 cat /tmp/copyme 
+cd 
+#python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > 
+pwd
+ls
+config status
+#python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
+python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
+config diff
+config add .scratch/chromium-tabs 
+config commit -m asd
+python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
+config diff
+config add .scratch/chromium-tabs 
+config commit -m asd
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme 
+scp /tmp/copyme  jimregan:/tmp
+ssh jimregan
+cd Playing/msf-asr/TG4/
+ls
+cd scripts/
+svn diff
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676191055001&teideal=Dinosaur%20Train&series=Dinosaur%20Train&dlft=35'
+
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5566269800001&teideal=Gear%C3%B3id%20na%20Gaisce&series=Gear%C3%B3id%20na%20Gaisce&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676054611001&teideal=Dinosaur%20Train&series=Dinosaur%20Train&dlft=34'
+vi videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5565441333001&teideal=Gear%C3%B3id%20na%20Gaisce&series=Gear%C3%B3id%20na%20Gaisce&dlft=34'
+grep WAC videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676023306001&teideal=WAC&series=WAC&dlft=34'
+vi videos.tsv 
+grep Garf videos.tsv 
+svn diff videos.tsv 
+ls
+svn diff videos.tsv |grep '^\+'
+svn diff videos.tsv |grep '^\+' > vdiff5
+ls /tmp//asd/
+history -a
