@@ -1334,3 +1334,109 @@ ls /tmp/
 history -a
 ssh jimregan
 history -a
+cd ..
+ls
+cd ..
+ls
+less teanglann/etc/teanglann.filler 
+less teanglann/etc/sphinx_train.cfg 
+ssh jimregan
+vi mappings
+mkdir mappings
+cd mappings/
+mkdir cmusphinx-ru_ipa
+rmdir cmusphinx-ru_ipa
+vi cmusphinx-ru_ipa.tsv
+git add cmusphinx-ru_ipa.tsv
+git commit -m 'mapping'
+cd ..
+git mv mappings/ scripts/
+git commit -m mv
+git add scripts/abair-to-russian.tsv 
+git commit -m add
+git diff
+git add scripts/abair-to-russian.tsv 
+git commit -m small
+less scripts/mappings/cmusphinx-ru_ipa.tsv 
+git diff
+git add scripts/abair-to-russian.tsv 
+git commit -m 'guess for test run'
+cat teanglann/teanglann.dic 
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl 
+cat teanglann/teanglann.dic 
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl 
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl |sort|uniq
+ls *pl
+less filter-pron.pl 
+less filter.pl 
+less teanglann/convlex.
+less teanglann/convlex.pl 
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl |sort|uniq |perl teanglann/convlex.pl 
+vi teanglann/convlex.pl 
+cp teanglann/convlex.pl number-dic.pl
+vi number-dic.pl 
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl |sort|uniq |perl teanglann/convlex.pl 
+vi number-dic.pl 
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl |sort|uniq |perl number-dic.pl 
+mv number-dic.pl scripts/
+git add scripts/number-dic.pl scripts/map-to-russian.pl 
+git commit -m add
+git status
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl |sort|uniq |perl number-dic.pl > ga-ru.dic
+less ga-ru.dic 
+cat teanglann/teanglann.dic |perl scripts/map-to-russian.pl |sort|uniq |perl scripts/number-dic.pl > ga-ru.dic
+less ga-ru.dic 
+cd TG4/scripts/
+svn status
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5677794882001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5411983344001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5574825343001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5573828595001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5551660571001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+less videos.tsv 
+svn diff videos.tsv 
+svn diff videos.tsv |grep '^\+' > vdiff6
+svn ci -m newest
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676191055001&teideal=Dinosaur%20Train&series=Dinosaur%20Train&dlft=34'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5624571068001&teideal=Alvinnn%20!!!%20agus%20na%20Chipmunks&series=Alvinnn%20!!!%20agus%20na%20Chipmunks&dlft=13'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5677868218001&teideal=Fangbone&series=Fangbone&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5596803676001&teideal=Winston%20Steinburger%20&%20Sir%20Dudley%20Ding%20Dong&series=Winston%20Steinburger%20&%20Sir%20Dudley%20Ding%20Dong&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5677849265001&teideal=D%C3%B3nall%20D%C3%A1na&series=D%C3%B3nall%20D%C3%A1na&dlft=35'
+svn revert videos.tsv 
+svn diff
+vi vdiff6 
+ls /tmp//asd/
+rm vdiff5 
+cat vdiff6
+cat vdiff6|awk -F'\t' '{print $5 "\t" $6}'
+cat vdiff6|awk -F'\t' '{print $5 "\n" $6}'
+cat vdiff6|awk -F'\t' '{print $5 "\n" $6}'|awk '{print "http://web.archive.org/save/" $0}' > /tmp//asd/spid
+cat vdiff6|awk -F'\t' '{print $6}'
+cat vdiff6|awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'
+cat vdiff6|awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
+cat vdiff6|awk -F'\t' '{print $5}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.mp4;done
+ls
+for i in *mp4;do sh ~/bin/convert-mp3.sh $i;done
+ls
+for i in *wav;do mv $i $(basename $i ".mp4.wav").wav; done
+ls
+rm *.mp4
+ls
+grep Whiz vdiff6
+mv 5677794882001.* ../whizsachistin/
+svn add ../whizsachistin/5677794882001.*
+ls
+grep As vdiff6
+mv 5551660571001.* ../astroblast/
+svn add ../astroblast/5551660571001.*
+ls
+less vdiff6
+grep Garf vdiff6
+mv 5411983344001.* ../garfield/
+svn add ../garfield/5411983344001.*
+ls
+mv 557* ../catahata/
+svn add ../catahata/557*
+cd ..
+svn ci -m nwe
+history -a
