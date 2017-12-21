@@ -1,105 +1,3 @@
-git pull origin master
-git status
-git diff
-git branch
-git stash
-git status
-git diff
-less README.md 
-ls
-rm Lib/corpuscrawler/crawl_mi.py
-git checkout -- Lib/corpuscrawler/crawl_mi.py
-git status
-git diff
-git reset hard --HEAD
-git reset --hard HEAD
-git checkout master
-git pull origin master
-vi Lib/corpuscrawler/crawl_ace.py
-cp Lib/corpuscrawler/crawl_mi.py Lib/corpuscrawler/crawl_ace.py
-vi Lib/corpuscrawler/crawl_ace.py
-vi test
-python
-git diff
-cat /tmp/left |awk -F'|' '{print $2}'
-cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//'
-cat /tmp/right |sed -e 's/IPA(key): /\n/g'
-cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
-cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
-paste /tmp/left1 /tmp/right1 
-vi /tmp/right1 
-paste /tmp/left1 /tmp/right1 
-paste /tmp/left1 /tmp/right1 >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
-cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
-vi /tmp/right1 
-paste /tmp/left1 /tmp/right1 >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-paste /tmp/pa-l /tmp/pa-r
-paste /tmp/pa-l /tmp/pa-r >> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-praat
-cd ../clarinpl/
-ls
-df
-ls ~/Playing/kaldi/egs/clarinpl
-ls ~/Playing/kaldi/egs/clarinpl/audio/
-ls ~/Playing/kaldi/egs/clarinpl/audio/audio
-ln -sd ~/Playing/kaldi/egs/clarinpl/audio/audio/ wav
-ls
-find wav -name '*.txt'
-find ~/Playing/kaldi/egs/clarinpl/audio/audio/ -name '*txt'
-find ~/Playing/kaldi/egs/clarinpl/audio/audio/ -name '*txt'|less
-cat /home/jim/Playing/kaldi/egs/clarinpl/audio/audio/SES0543/sent09.txt
-less ~/Playing/kaldi/egs/clarinpl/data/lang/words.txt 
-less ~/Playing/kaldi/egs/clarinpl/data/train/wav.scp 
-less ~/Playing/kaldi/egs/clarinpl/data/train/cmvn.scp 
-less ~/Playing/kaldi/egs/clarinpl/data/train/text 
-cat ~/Playing/kaldi/egs/clarinpl/data/train/text 
-cat ~/Playing/kaldi/egs/clarinpl/data/train/text perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";'
-cat ~/Playing/kaldi/egs/clarinpl/data/train/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";'
-cat ~/Playing/kaldi/egs/clarinpl/data/train/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";' > etc/clarinpl_train.transcription
-cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";' 
-cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s> ($f)\n";' > etc/clarinpl_test.transcription 
-find wav
-find wav/ -type f
-find wav/ -type f|grep 'wav$'
-find wav/ -type f|grep 'wav$'|sed -e 's#wav/##;s/\.wav$//'
-find wav/ -type f|grep 'wav$'|sed -e 's#wav/##;s/\.wav$//' > etc/clarinpl.fileids
-vi etc/sphinx_train.cfg 
-cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";' 
-cat ~/Playing/kaldi/egs/clarinpl/data/(test|train)/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";' 
-cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";' 
-cat ~/Playing/kaldi/egs/clarinpl/data/test/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";'  >> lmtext
-cat ~/Playing/kaldi/egs/clarinpl/data/train/text |perl -ane 'chomp; @w=split/ /;$f=shift @w;print "<s> "  . join(" ", @w) . " </s>\n";'  >> lmtext
-cat lmtext |sort|uniq
-cat lmtext |sort|uniq > lmsort
-wc -l lm*
-irstlm
-irstlm help
-irstlm build-lm
-irstlm build-lm -n 3 -i lmsort -o lmtxt
-ls
-gzip -d lmtxt.gz 
-sphinx_lm_convert 
-sphinx_lm_convert -i lmtxt -o etc/clarinpl.lm.DMP
-ls -al etc/clarinpl*
-vi etc/sphinx_train.cfg 
-less ~/Playing/kaldi/egs/clarinpl/local_clarin/lexicon.txt 
-find ~/Playing/kaldi/egs/clarinpl/ -name 'lex*'
-less /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join("\n", @a);'
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a);'|sort|uniq
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
-cp ~/Playing/msf-asr/teanglann/convlex.pl .
-less convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr '
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq|tr 'A-Z' 'a-z' |sort|uniq -c
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq|tr 'A-Z' 'a-z' |sort|uniq -c|grep -v ' 1 '
-ls
 vi convlex.pl 
 cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
 vi convlex.pl 
@@ -1998,3 +1896,105 @@ git diff
 git add pron-data/gen.tsv 
 git commit -m more
 git diff
+./corpuscrawler --lang uk
+vi Lib/corpuscrawler/crawl_uk.py
+./corpuscrawler --lang uk
+tail -f corpus/am.txt 
+git push mine bible.is 
+./corpuscrawler bm
+./corpuscrawler --lang bm
+less corpus/bm.txt 
+grep Audio corpus/bm.txt 
+grep Audio corpus/bm.txt |awk '{print "http://web.archive.org/web/http:" $3}'
+grep Audio corpus/bm.txt |awk '{print "http://web.archive.org/web/http:" $3}' > /tmp/asd/bmaud
+cd /tmp/asd/
+sh ~/scripts/spider.sh bmaud
+tail -f bmaud.log 
+ls
+tail bmaud2.log 
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done
+vi /tmp/instain 
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme 
+cat /tmp/copyme 
+scp /tmp/copyme  jimregan:/tmp
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme 
+cat /tmp/copyme 
+cat /tmp/instain |grep -v '^$'|while read i;do a=$(echo "$i"|awk -F'title="' '{print $2}'|awk -F'"' '{print $1}');v=$(echo "$i"|awk -F'<source src="' '{print $2}'|awk -F'"' '{print $1}'); j=$(echo "$i"|awk -F'1080w" src="' '{print $2}'|awk -F'"' '{print $1}'); if [ x"$v" = x"" ]; then out=$j; else out=$v;fi;echo "#$a";echo "wget -x -c --no-check-certificate  $out"; echo "lmdepict $out pic" ;done > /tmp/copyme 
+cat /tmp/copyme 
+scp /tmp/copyme  jimregan:/tmp
+ls
+sh ~/scripts/spider.sh spid
+tail bmaud2.log 
+tail bmaud2.log |perl ~/bin/wget-http.pl 
+cat bmaud2.log |perl ~/bin/wget-http.pl 
+cat bmaud2.log |perl ~/bin/wget-http.pl |grep 'web/2' > list
+cat bmaud2.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt
+tail -f spid.log 
+cat bmaud2
+cat bmaud2|awk -F'/save/' '{print $2}'
+cat bmaud2|awk -F'/save/' '{print $2}'|while read i;do grep $i list ||echo http://web.archive.org/save/$i >> bmaud3;done
+sh ~/scripts/spider.sh bmaud3
+tail -f bmaud3.log 
+less bmaud3
+cat bmaud2|awk -F'/save/' '{print $2}'
+cat bmaud2|awk -F'/save/' '{print $2}'|sort
+mkdir ~/Playing/universal
+cat bmaud2|awk -F'/save/' '{print $2}'
+cat bmaud2|awk -F'/save/' '{print $2}' > ~/Playing/universal/bm
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+vi /tmp/right1 
+paste /tmp/left1 /tmp/right1 
+paste /tmp/left1 /tmp/right1 >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+vi /tmp/right
+vi /tmp/right1 
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+vi /tmp/right1 
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+vi /tmp/right1 
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+cat /tmp/right1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left |awk -F'|' '{print $2}'|sed -e 's/}}//' > /tmp/left1
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
+paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
