@@ -1,20 +1,3 @@
-vi convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
-vi convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
-vi convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
-vi convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
-less etc/clarinpl.dic 
-vi convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
-less etc/clarinpl.dic 
-vi convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
-less etc/clarinpl.dic 
-vi etc/sphinx_train.cfg 
 less etc/clarinpl.dic 
 less etc/clarinpl.filler
 vi etc/clarinpl.filler
@@ -1998,3 +1981,20 @@ cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
 paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
 cat /tmp/right |sed -e 's/IPA(key): /\n/g' > /tmp/right1
 paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cd ~/Playing/kaldi/egs/clarinpl
+cat path.sh 
+export KALDI_ROOT=~/apps/kaldi
+export PATH=$PWD/utils/:$KALDI_ROOT/tools/openfst/bin:$PWD:$PATH
+phonetisaurus_apply --model local_clarin/model.fst --lexicon local_clarin/lexicon.txt --word_list /tmp/wlist -p 0.8
+phonetisaurus-apply --model local_clarin/model.fst --lexicon local_clarin/lexicon.txt --word_list /tmp/wlist -p 0.8
+phonetisaurus-apply --model local_clarin/model.fst --lexicon local_clarin/lexicon.txt --word_list /tmp/wlist -p 0.8 > /tmp/phonet-out
+less /tmp/phonet-out 
+phonetisaurus-apply --model local_clarin/model.fst --lexicon local_clarin/lexicon.txt --word_list /tmp/wlist -p 0.6 > /tmp/phonet-out2
+less /tmp/phonet-out2 
+phonetisaurus-apply -h
+phonetisaurus-apply --model local_clarin/model.fst --lexicon local_clarin/lexicon.txt --word_list /tmp/wlist -n 6 > /tmp/phonet-out3
+less /tmp/phonet-out3 
+grep accionę local_clarin/lexicon.txt 
+grep adobe local_clarin/lexicon.txt 
+grep abramsa local_clarin/lexicon.txt 
+grep '^[aA]' /tmp/clarinwl.f 
