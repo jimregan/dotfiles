@@ -1,20 +1,3 @@
-less etc/clarinpl.dic 
-less etc/clarinpl.filler
-vi etc/clarinpl.filler
-vi etc/sphinx_train.cfg 
-sphinxtrain run
-cat etc/clarinpl |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'
-cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'
-cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq
-cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq > etc/clarinpl.phone
-sphinxtrain run
-vi etc/clarinpl.phone 
-vi etc/clarinpl.dic 
-grep SPOKEN etc/clarinpl.dic 
-grep unk etc/clarinpl.dic 
-grep '<unk' etc/clarinpl.dic 
-vi convlex.pl 
-sphinxtrain run
 vi convlex.pl 
 cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
 cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq > etc/clarinpl.phone
@@ -1998,3 +1981,20 @@ grep accionę local_clarin/lexicon.txt
 grep adobe local_clarin/lexicon.txt 
 grep abramsa local_clarin/lexicon.txt 
 grep '^[aA]' /tmp/clarinwl.f 
+top
+ps aux|grep chromium
+kill -9 31992
+ps aux|grep chromium
+kill -9 32664
+ps aux|grep 32644
+kill -9 32644
+ps aux|grep 31123
+kill -9 31123
+kill -9 30775
+kill -9 30594
+ps aux|grep chromium
+kill -9 29881
+killall chromium-browser
+top
+kill -9 28562
+top
