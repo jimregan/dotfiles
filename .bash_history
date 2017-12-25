@@ -1,24 +1,3 @@
-vi convlex.pl 
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
-cat etc/clarinpl.dic |perl -ane 'chomp;@a=split/ /;shift @a;print join(" ", @a). "\n";'|sort|uniq|tr ' ' '\n'|sort|uniq > etc/clarinpl.phone
-cat etc/clarinpl.phone 
-sphinxtrain run
-grep SIL etc/*trans*
-grep '<unk>' etc/*trans*
-vi etc/clarinpl.dic 
-grep '<[Ss]' etc/*trans*
-grep '<[Ss][Pp]' etc/*trans*
-vi etc/clarinpl.phone 
-sphinxtrain run
-vi etc/clarinpl.phone 
-vi etc/clarinpl.dic 
-grep -i spn etc/clarinpl.dic 
-sphinxtrain run
-vi etc/clarinpl.dic 
-ls etc/*ds
-cat etc/clarinpl.fileids 
-ls
-ls logdir/
 rm -rf logdir/
 sphinxtrain run
 vi etc/clarinpl_train.transcription 
@@ -1998,3 +1977,24 @@ killall chromium-browser
 top
 kill -9 28562
 top
+cd /tmp
+wget http://homepages.inf.ed.ac.uk/jyamagis/release/EnglishHTSVoices-ver1.0.tar.gz
+tar ztvf EnglishHTSVoices-ver1.0.tar.gz 
+tar zxvf EnglishHTSVoices-ver1.0.tar.gz 
+cd EnglishHTSVoices/
+ls
+less do_build 
+tar zxvf hts_voice_cstr_uk_female-1.0.tar.gz 
+cd hts_voice_cstr_uk_female-1.0/
+ls
+less COPYRIGHT 
+ls
+less tree-mgc.inf 
+ls
+cd ..
+ls
+less do_build 
+less runvoice.sh 
+scp /tmp/tocopy jimregan:/tmp
+. ~/tmp/sourceme 
+doinstain 
