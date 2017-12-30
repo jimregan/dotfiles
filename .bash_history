@@ -1,81 +1,3 @@
-rm -rf logdir/
-sphinxtrain run
-vi etc/clarinpl_train.transcription 
-cd wav/
-ls
-cd ..
-ls
-cd feat/
-ls
-ls *
-for i in *;for j in $i/*mfc;do echo mv $j bar;done;done
-for i in *;do for j in $i/*mfc;do echo mv $j bar;done;done
-for i in *;do for j in $i/*mfc;do echo mv $j $(echo $j|tr '/' '_'_;done;done
-for i in *;do for j in $i/*mfc;do echo mv $j $(echo $j|tr '/' '_');done;done
-for i in *;do for j in $i/*mfc;do mv $j $(echo $j|tr '/' '_');done;done
-cd ..
-vi etc/sphinx_train.cfg 
-sphinxtrain run
-vi etc/clarinpl_train.fileids 
-vi etc/clarinpl_test.fileids 
-sphinxtrain run
-vi etc/clarinpl.phone 
-sphinxtrain run
-vi etc/sphinx_train.cfg 
-sphinxtrain run
-vi etc/clarinpl.dic 
-vi etc/clarinpl.phone 
-vi etc/clarinpl_train.transcription 
-sphinxtrain run
-vi etc/clarinpl_train.transcription 
-sphinxtrain run
-vi etc/clarinpl_train.transcription 
-vi etc/clarinpl.dic 
-sphinxtrain run
-vi etc/clarinpl_train.transcription 
-vi etc/clarinpl.dic 
-vi etc/clarinpl_train.transcription 
-sphinxtrain run
-grep -v '<s>' etc/clarinpl_train.transcription 
-grep -v '</s>' etc/clarinpl_train.transcription 
-grep -v '</s>' etc/clarinpl_test.transcription 
-grep -v '<s>' etc/clarinpl_test.transcription 
-find . -name '*.dic'
-vi etc/clarinpl.dic 
-sphinxtrain run
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/local/dict/lexicon.txt |perl convlex.pl > etc/clarinpl.dic
-vi etc/clarinpl.dic 
-sphinxtrain run
-ls
-rm -rf bwaccumdir/
-rm -rf logdir/
-sphinxtrain run
-vi etc/clarinpl.phone 
-sphinxtrain run
-ls
-ls bwaccumdir/
-ls logdir/000.comp_feat/clarinpl.train-1-1.log 
-less logdir/000.comp_feat/clarinpl.train-1-1.log 
-cd wav
-ls
-for i in *;do for j in $i/*wav;do ln -s $j $(echo $j|tr '/' '_');done;done
-ls
-cd ..
-sphinxtrain run
-vi etc/sphinx_train.cfg 
-less logdir/000.comp_feat/clarinpl.train-1-1.log 
-ls
-ls bwaccumdir/
-vi etc/clarinpl.fil
-vi etc/clarinpl.filler 
-sphinxtrain run
-vi etc/clarinpl.phone 
-sphinxtrain run
-vi etc/clarinpl.phone 
-vi etc/clarinpl.dic 
-sphinxtrain run
-vi etc/clarinpl.phone 
-vi etc/clarinpl.filler 
 sphinxtrain run
 ls
 ls feat/
@@ -1998,3 +1920,81 @@ less runvoice.sh
 scp /tmp/tocopy jimregan:/tmp
 . ~/tmp/sourceme 
 doinstain 
+cd Playing/corpuscrawler/
+tail -f corpus/ga.txt
+less corpus/ga.txt
+grep blogspot Lib/corpuscrawler/*
+tail -f corpus/ga.txt
+curl www.ainm.ie/robots.txt
+curl https://www.ainm.ie/robots.txt
+vi Lib/corpuscrawler/crawl_ga.py
+git diff
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m 'small fixes'
+vi Lib/corpuscrawler/crawl_ga.py
+tail -f corpus/ga.txt
+vi Lib/corpuscrawler/crawl_ga.py
+less https://tuairisc.ie/robots.txt
+curl https://tuairisc.ie/robots.txt
+vi Lib/corpuscrawler/util.py
+git add Lib/corpuscrawler/util.py
+git commit -m 'simple fix for the broken sitemaps on the tuairisc site. This comes from a wordpress plugin, so my be relatively common'
+git diff
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m 'tuairisc crawler'
+git branch
+git push mine gaeltacht21 
+vi Lib/corpuscrawler/util.py
+vi Lib/corpuscrawler/crawl_ga.py
+tail -f corpus/ga.txt
+git diff
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m 'missing pieces'
+git push mine gaeltacht21 
+tail -f corpus/ga.txt
+top
+tail -f corpus/ga.txt
+ls -al corpus/ga.txt
+cat corpus/ga.txt|grep -v '^#'|wc
+ls
+vi Lib/corpuscrawler/crawl_ga.py
+git log
+git checkout master
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m reorder
+git format-patch -1
+cp 0001-reorder.patch /tmp/corpuscrawler/
+grep '<sitemapindex' cache-corpuscrawler/*
+tail -f corpus/ga.txt
+cd Playing/corpuscrawler/
+git pull origin master 
+git branch
+git checkout master 
+git pull origin master 
+git branch -D ga-chg 
+git branch -D ga-sitemap 
+git pull mine
+git push mine master 
+git checkout gaeltacht21 
+./corpuscrawler --lang ga
+git pull mine gaeltacht21 
+./corpuscrawler --lang ga
+git pull mine gaeltacht21 
+./corpuscrawler --lang ga
+git pull mine gaeltacht21 
+./corpuscrawler --lang ga
+git pull mine gaeltacht21 
+vi Lib/corpuscrawler/crawl_ga.py
+./corpuscrawler --lang ga
+git diff
+git stash
+git pull mine gaeltacht21 
+./corpuscrawler --lang ga
+vi Lib/corpuscrawler/crawl_ga.py
+./corpuscrawler --lang ga
+vi Lib/corpuscrawler/crawl_ga.py
+./corpuscrawler --lang ga
+vi Lib/corpuscrawler/crawl_ga.py
+./corpuscrawler --lang ga
+vi Lib/corpuscrawler/crawl_ga.py
+./corpuscrawler --lang ga
