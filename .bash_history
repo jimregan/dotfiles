@@ -1,38 +1,3 @@
-cat fialek-i-trawa.txt >> /tmp/safe
-cat  madry-i-glupi-ii.txt
-cat madry-i-glupi-ii.txt >> /tmp/safe
-cat  madry-i-glupi.txt
-cat madry-i-glupi.txt >> /tmp/safe
-cat  dab-i-dynia.txt
-cat  derwisz-i-uczen.txt
-cat  przygody-tomka-sawyera.txt-25.txt
-cat  wszechwiedzacy-doktor.txt
-cat wszechwiedzacy-doktor.txt >> /tmp/safe
-vi /tmp/safe 
-cat but-w-butonierce-cafe.txt
-cat krol-zab.txt
-cat legendy-warszawskie-zlota-kaczka.txt
-cat bema-pamieci-zalobny-rapsod.txt
-cat jezus-malusienki.txt
-vi jezus-malusienki.txt
-cat jezus-malusienki.txt >> /tmp/safe
-wc -l *|sort -nr |grep ' 1 '
-wc -l *|sort -nr |grep ' 1 '|awk '{print $2}'
-cat $(wc -l *|sort -nr |grep ' 1 '|awk '{print $2}' )
-wc -l *|sort -nr |grep ' 1 '|awk '{print $2}'
-wc -l *|sort -nr |grep ' 1 '|awk '{print $2}'|while read i;do echo $i; cat $i;done
-cat $(wc -l *|sort -nr |grep ' 1 '|awk '{print $2}' ) > /tmp/safe
-vi /tmp/safe 
-cat $(wc -l *|sort -nr |grep ' 2 '|awk '{print $2}' ) 
-cat $(wc -l *|sort -nr |grep ' 2 '|awk '{print $2}' )  > /tmp/cand
-vi /tmp/safe 
-less text/balzac-komedia-ludzka-corka-ewy.txt
-grep 'Pani de Vandenesse, która widocznie' text/balzac-komedia-ludzka-corka-ewy.txt
-grep '^Pani de Vandenesse,' text/balzac-komedia-ludzka-corka-ewy.txt
-less text/balzac-komedia-ludzka-corka-ewy.txt
-grep 'Były to niebezpieczne krewniaczki' text/balzac-komedia-ludzka-corka-ewy.txt
-less text/balzac-komedia-ludzka-corka-ewy.txt
-grep 'Tak więc, podczas gdy biedna Ewa,' text/balzac-komedia-ludzka-corka-ewy.txt
 aspell
 aspell dump
 aspell dump dicts
@@ -1998,3 +1963,38 @@ svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data
 svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/
 svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/irrt0007_spk2
 svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/comhra/irrt0007_spk2
+less local_clarin/lexicon.txt
+less /tmp/cmusphinx-clarinpl/pl.dic 
+grep aborcji ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+grep aborc ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat local_clarin/lexicon.txt
+cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'
+cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq
+cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |wc
+cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |less
+cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/clarinwl
+vi /tmp/clarinwl 
+cat /tmp/clarinwl |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/polimorf/polimorf.tab 
+cp ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl .
+vi filter-dict.pl 
+cat /tmp/clarinwl |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/polimorf/polimorf.tab 
+cat /tmp/clarinwl |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/polimorf/polimorf.tab  > /tmp/clarinwl.f
+less /tmp/clarinwl.f 
+cat /tmp/clarinwl.f |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+cat /tmp/clarinwl.f |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/clarinwl.f2
+less /tmp/clarinwl.f2
+wc -l /tmp/clarinwl*
+less /tmp/clarinwl.f2 
+cat /tmp/clarinwl.f |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/clarinwl.f2
+wc -l /tmp/clarinwl*
+less /tmp/clarinwl.f2 
+vi ck
+cat ck|sed -e 's/, /\n/g' |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+cat ck|sed -e 's/, /\n/g' |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/left1 
+grep J ck 
+grep J ck |sed -e 's/, //'
+grep J ck |sed -e 's/, /\n/'
+grep J ck |sed -e 's/, /\n/g'
+grep J ck |sed -e 's/, /\n/g' >> /tmp/pa-l 
+grep J ck |sed -e 's/, /\n/g'|sed -e 's/J/dż/g' >> /tmp/pa-r
