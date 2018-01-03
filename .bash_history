@@ -1,173 +1,3 @@
-wc -l candff 
-less candff 
-cat tofix 
-wc -l tofix
-cat tofix
-cat tofix|sed -e 's/ął/ęł/' > lbig
-less text/but-w-butonierce-zygajace-posagi.txt
-vi specific-norms.tsv 
-less text/but-w-butonierce-zygajace-posagi.txt
-less text/but-w-butonierce-cafe.txt
-less text/but-w-butonierce-dedykacja.txt
-less text/but-w-butonierce-deszcz.txt
-cd text/
-git diff
-grep ż-ż-ż-ż *
-grep -i ż-ż-ż-ż *txt
-less dramat.txt
-perl ../apply-specific.pl 
-git diff
-perl ../apply-specific.pl 
-git diff
-git status
-git add but-w-butonierce-* dramat.txt sonety-odeskie-do-m.txt 
-git statys
-git status
-git commit -m update
-less robinson-crusoe.txt-14.txt
-less robinson-crusoe.txt-13.txt
-perl ../apply-specific.pl 
-git diff
-ls
-git add robinson-crusoe.txt-*.txt
-git commit -m add
-grep '[0-9]' *
-grep '[0-9]' *txt
-less wspomnienia-niebieskiego-mundurka.txt
-perl ../header-replace.pl wspomnienia-niebieskiego-mundurka.txt
-perl ../header-replace.pl wspomnienia-niebieskiego-mundurka.txt|less
-perl ../header-replace.pl wspomnienia-niebieskiego-mundurka.txt > tmp
-mv tmp wspomnienia-niebieskiego-mundurka.txt
-git diff
-git add wspomnienia-niebieskiego-mundurka.txt 
-git commit -m 'header replace'
-less wspomnienia-niebieskiego-mundurka.txt|
-less wspomnienia-niebieskiego-mundurka.txt
-perl ../norm-roman-by-text.pl wspomnienia-niebieskiego-mundurka.txt
-perl ../norm-roman-by-text.pl wspomnienia-niebieskiego-mundurka.txt > tmp
-mv tmp wspomnienia-niebieskiego-mundurka.txt
-git diff
-git add wspomnienia-niebieskiego-mundurka.txt 
-git commit -m n
-less wspomnienia-niebieskiego-mundurka.txt
-perl ../splitter.pl wspomnienia-niebieskiego-mundurka.txt
-ls wspomnienia-niebieskiego-mundurka.txt-00.txt 
-less wspomnienia-niebieskiego-mundurka.txt-00.txt 
-less wspomnienia-niebieskiego-mundurka.txt-01.txt 
-less wspomnienia-niebieskiego-mundurka.txt-18.txt 
-ls *wybor-narzeczonej*
-less powiesci-fantastyczne-wybor-narzeczonej.txt
-perl ../header-replace.pl powiesci-fantastyczne-wybor-narzeczonej.txt > tmp
-mv tmp powiesci-fantastyczne-wybor-narzeczonej.txt
-git diff
-git add powiesci-fantastyczne-wybor-narzeczonej.txt 
-git commit -m n
-perl ../splitter.pl powiesci-fantastyczne-wybor-narzeczonej.txt
-less powiesci-fantastyczne-wybor-narzeczonej.txt-01.txt 
-less powiesci-fantastyczne-wybor-narzeczonej.txt-02.txt 
-git add powiesci-fantastyczne-wybor-narzeczonej.txt-0*txt
-git commit -m split
-less powiesci-fantastyczne-wybor-narzeczonej.txt-01.txt 
-less powiesci-fantastyczne-wybor-narzeczonej.txt-02.txt 
-perl ../apply-specific.pl 
-git diff
-git add powiesci-fantastyczne-wybor-narzeczonej.txt-0*txt
-git commit -m apply
-perl ../apply-specific.pl 
-git diff
-git add powiesci-fantastyczne-wybor-narzeczonej.txt-0*txt
-git commit -m apply
-less powiesci-fantastyczne-wybor-narzeczonej.txt-02.txt 
-vi /tmp/left1 
-less powiesci-fantastyczne-wybor-narzeczonej.txt-02.txt 
-git rm wyspa-skarbow.txt 
-ls
-git rm robinson-crusoe.txt
-git rm wspomnienia-niebieskiego-mundurka.txt 
-git add robinson-crusoe.txt-*txt
-git commit -m 'replace split'
-ls
-rm *.aud
-rm *.sent
-ls
-git status
-git add wspomnienia-niebieskiego-mundurka.txt-* 
-git commit -m 'replace split'
-rm zwierzeta-i-niedzwiedz.txt.*
-git status
-git add wyspa-skarbow.txt-0*
-rm *.bak
-git status
-git commit -m 'replace split'
-rm przygody-tomka-sawyera.txt-06.txt 
-less pairs.tsv 
-cp pairs.tsv ..
-perl ../splitter.pl golem.txt 
-ls golem.txt-01.txt 
-less golem.txt-01.txt 
-perl ../splitter.pl golem.txt 
-ls
-rm golem.txt-*
-perl ../splitter.pl golem.txt 
-ls
-less golem.txt-01.txt 
-less golem.txt-02.txt 
-less golem.txt-03.txt 
-rm golem.txt-*
-perl ../splitter.pl golem.txt 
-ls
-less golem.txt-20.txt 
-ls ../audio/*golem*
-less golem.txt-20.txt 
-git add golem.txt-*
-git rm golem.txt
-git commit -m split
-less balzac-komedia-ludzka-corka-ewy.txt
-perl ../splitter.pl balzac-komedia-ludzka-corka-ewy.txt
-ls 
-ls balzac-komedia-ludzka-*
-less balzac-komedia-ludzka-corka-ewy.txt-01.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-02.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-03.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-04.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-05.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-06.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-05.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-06.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-07.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-06.txt 
-perl ../splitter.pl balzac-komedia-ludzka-corka-ewy.txt
-ls balzac-komedia-ludzka-&
-ls balzac-komedia-ludzka-*
-perl ../splitter.pl balzac-komedia-ludzka-corka-ewy.txt
-less balzac-komedia-ludzka-corka-ewy.txt-01.txt 
-less balzac-komedia-ludzka-corka-ewy.txt
-perl ../splitter.pl balzac-komedia-ludzka-corka-ewy.txt
-less balzac-komedia-ludzka-corka-ewy.txt-01.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-02.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-03.txt 
-less balzac-komedia-ludzka-corka-ewy.txt-09.txt 
-git add balzac-komedia-ludzka-corka-ewy.txt-0*
-git commit -m split
-cat balzac-komedia-ludzka-*
-less balzac-komedia-ludzka-bank-nucingena.txt 
-perl ../header-replace.pl balzac-komedia-ludzka-bank-nucingena.txt 
-perl ../header-replace.pl balzac-komedia-ludzka-bank-nucingena.txt > tmp
-mv tmp balzac-komedia-ludzka-bank-nucingena.txt 
-git diff
-git add balzac-komedia-ludzka-bank-nucingena.txt 
-git commit -m header
-less balzac-komedia-ludzka-bank-nucingena.txt 
-perl ../apply-specific.pl 
-git diff
-git add powiesci-fantastyczne-wybor-narzeczonej.txt-02.txt balzac-komedia-ludzka-bank-nucingena.txt 
-git commit -m norm
-vi ../apply-specific.pl 
-ls
-ls *.bak
-for i in *bak; f=$(echo $i|sed -e 's/\.bak//');if [ ! -e $f ];then echo $i;fi;done
-for i in *bak; do f=$(echo $i|sed -e 's/\.bak//');if [ ! -e $f ];then echo $i;fi;done
-find  . -size 0
 rm przygody-tomka-sawyera.txt-06.txt 
 less przygody-tomka-sawyera.txt 
 less pairs.tsv 
@@ -1998,3 +1828,173 @@ ls ../audio/*drzew*
 grep West ../specific-norms.tsv 
 vi ../pron-data/pronounce-as.tsv 
 git diff
+cd scripts/
+ls
+svn diff
+grep Garf videos.tsv 
+grep Garf videos.tsv |sort|uniq
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687427692001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=7'
+grep Harv videos.tsv 
+echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2347/1290862567001_a3953467-7ab2-492d-afca-a431b9889bfa.vtt?pubId=1290862567001&videoId=5687427692001' > /tmp//asd/in
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2347/1290862567001_a3953467-7ab2-492d-afca-a431b9889bfa.vtt?pubId=1290862567001&videoId=5687427692001' -O ../harveybeaks/5687427692001.vtt
+svn add ../harveybeaks/5687427692001.vtt
+curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5687438347001&pubId=1290862567001&videoId=5687427692001'|grep http >> /tmp/asd/in 
+echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5687438347001&pubId=1290862567001&videoId=5687427692001' |sh run.sh 
+mv 5687427692001.wav ../harveybeaks/
+svn add ../harveybeaks/5687427692001.wav
+cd ..
+svn ci -m another
+ls -al harveybeaks/
+cat */*.vtt
+cat */*.vtt|grep -v '\-\->'
+cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP
+cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'
+cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'|grep -v '^$'
+cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'|grep -v '^$'|tr -d '\r'
+cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'|grep -v '^$'|tr -d '\r' > all.txt
+less all.txt 
+ls ../
+less ../scripts/normalise.pl 
+cat all.txt|perl ../scripts/normalise.pl 
+cat all.txt|perl ../scripts/normalise.pl |sed -e 's/-//g'
+cat all.txt|perl ../scripts/normalise.pl |sed -e 's/-//g'|tr ' ' '\n'
+cat all.txt|perl ../scripts/normalise.pl |sed -e 's/-//g'|tr ' ' '\n'|sort|uniq
+cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq 
+cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'
+cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'|sort|uniq
+cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'|sort|uniq|wc
+cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'|sort|uniq > all.words.new
+#cat all.words |perl ../filter-pron.pl 
+less ../filter-pron.pl 
+less ../filter.pl 
+cat all.words |perl ../filter-pron.pl ../pron/munster.tsv ../pron/pronounce-as.tsv 
+cat all.words |perl ../filter-pron.pl ../pron/munster.tsv 
+less ../pron/pronounce-as.tsv 
+less ../filter.pl 
+cat all.words |perl ../filter-pron.pl ../pron/munster.tsv 
+less ../filter.pl 
+cat all.words |perl ../filter-pron.pl ../pron/munster.tsv 
+cat all.words
+cat all.words |perl ../filter-pron.pl ../pron/ulster.tsv 
+vi ../filter-pron.pl 
+cat all.words |perl ../filter.pl ../pron/ulster.tsv 
+cat all.words.new |perl ../filter.pl ../pron/ulster.tsv 
+cat all.words.new |perl ../filter.pl ../pron/ulster.tsv |wc
+cat all.words.new |wc
+cat all.words.new |perl ../filter.pl ../pron/ulster.tsv > /tmp/missing
+less /tmp/missing 
+vi /tmp/missing 
+cat /tmp/missing |grep "^d'"
+cat /tmp/missing |grep "^d'"|sed -e "s/^d'//"
+cat /tmp/missing |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv 
+vi ../to-norm
+vi ../to-pron
+find .. -name '*tsv'
+vi ../scripts/normalisations.tsv 
+grep compord ../pron/munster.tsv 
+grep compord ../pron/munster.tsv >> ../tmp 
+vi ../tmp 
+cat ../tmp >> ../pron/munster.tsv 
+grep dfhéadfá */*vtt
+grep -i dfhéadfá */*vtt
+echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001' |sh ru
+cd scripts/
+echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001' |sh run.sh 
+svn diff
+mv 5689475790001.wav ../lurgan2k17/
+svn add ../lurgan2k17/5689475790001.wav 
+mv 5689301324001.wav ../harveybeaks/
+svn add ../harveybeaks/5689301324001.wav 
+svn diff
+cd ..
+svn stat
+svn ci -m more
+mkdir english-only
+cd english-only/
+perl ../scripts/tg4-scrape.pl http://www.tg4.ie/ga/player/baile/?pid=5688090228001&teideal=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&series=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&dlft=35
+cat *
+rm *
+ls
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5688090228001&teideal=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&series=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&dlft=35'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689750874001&teideal=Punca%C3%AD&series=Punca%C3%AD&dlft=34'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686667369001&teideal=Coranna%20&series=Coranna%20&dlft=32'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5560784381001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=35'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5688240218001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=35'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5528754226001&teideal=Spillane%20an%20F%C3%A1na%C3%AD&series=Spillane%20an%20F%C3%A1na%C3%AD&dlft=35'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5521972095001&teideal=Spillane%20an%20F%C3%A1na%C3%AD&series=Spillane%20an%20F%C3%A1na%C3%AD&dlft=34'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5512227357001&teideal=Spillane%20an%20F%C3%A1na%C3%AD&series=Spillane%20an%20F%C3%A1na%C3%AD&dlft=33'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5559915270001&teideal=Poc%20na%20nGael&series=Poc%20na%20nGael&dlft=34'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5573222031001&teideal=Ar%20an%20Aer&series=Ar%20an%20Aer&dlft=35'
+less videos.tsv 
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5556574963001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=34'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5549246625001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=33'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5541825369001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=32'
+cat videos.tsv 
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687550754001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=34'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687345878001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=33'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687204476001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=32'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686557681001&teideal=An%20B%C3%A9al%20Bocht&series=An%20B%C3%A9al%20Bocht&dlft=31'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686667369001&teideal=Coranna%20&series=Coranna%20&dlft=32'
+tail videos.tsv 
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686746992001&teideal=Rocky%20Ros%20Muc&series=Rocky%20Ros%20Muc&dlft=31'
+cat videos.tsv 
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689575827001&teideal=Anseo%20i%20l%C3%A1r%20an%20Ghleanna&series=Anseo%20i%20l%C3%A1r%20an%20Ghleanna&dlft=33'
+cat subtitles.tsv 
+curl '
+ls
+tail videos.tsv 
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5409116153001&teideal=O%C3%ADche%20Chaillte%20an%20tSeancha%C3%AD&series=O%C3%ADche%20Chaillte%20an%20tSeancha%C3%AD&dlft=32'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686756158001&teideal=Siar%20an%20B%C3%B3thar&series=Siar%20an%20B%C3%B3thar&dlft=32'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687370896001&teideal=S%C3%A9%20Mo%20Laoch%20Speisialta%20-%20Matt%20Molloy&series=S%C3%A9%20Mo%20Laoch%20Speisialta%20-%20Matt%20Molloy&dlft=31'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5688092378001&teideal=Siar%20an%20B%C3%B3thar&series=Siar%20an%20B%C3%B3thar&dlft=31'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5680131550001&teideal=Nollaig%20na%20Maggies&series=Nollaig%20na%20Maggies&dlft=35'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5569001218001&teideal=Tony%20Keady%20-%20RIP&series=Laochra%20Gael&dlft=30'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679194921001&teideal=Bing%20Crosby%20-%20Guth%20&series=Guth%20&dlft=29'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679171889001&teideal=An%20Nollaig%20Fad%C3%B3%20&series=An%20Nollaig%20Fad%C3%B3%20&dlft=28'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689689998001&teideal=C%C3%BAl%20St%C3%A1itse%20-%20Oireachtas%202017&series=C%C3%BAl%20St%C3%A1itse%20-%20Oireachtas%202017&dlft=28'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679036713001&teideal=F%C3%ADorsc%C3%A9al&series=F%C3%ADorsc%C3%A9al&dlft=27'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679045227001&teideal=Fir,%20Mar%C3%BA%20agus%20Gr%C3%A1&series=Fir,%20Mar%C3%BA%20agus%20Gr%C3%A1&dlft=27'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678972519001&teideal=Bus%20Ghlasch%C3%BA&series=Bus%20Ghlasch%C3%BA&dlft=27'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679025034001&teideal=Comhr%C3%A1&series=Comhr%C3%A1&dlft=27'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5418935020001&teideal=Timpeall%20an%20T%C3%A1bla&series=Timpeall%20an%20T%C3%A1bla&dlft=26'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678303890001&teideal=I%20mB%C3%A9al%20na%20Stoirme&series=I%20mB%C3%A9al%20na%20Stoirme&dlft=26'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5486420062001&teideal=Ar%20Mhuin%20na%20Muice%20agus%20na%20gCapall&series=Ar%20Mhuin%20na%20Muice%20agus%20na%20gCapall&dlft=26'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5115304203001&teideal=P%C3%A1id%C3%AD%20%C3%93%20S%C3%A9%20-%20R%C3%AD%20an%20Phar%C3%B3iste&series=P%C3%A1id%C3%AD%20%C3%93%20S%C3%A9%20-%20R%C3%AD%20an%20Phar%C3%B3iste&dlft=24'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5677825171001&teideal=Juliet%20Murphy&series=Laochra%20Gael&dlft=24'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5525891365001&teideal=Saol%20R%C3%BAnda%20faoi%20Thalamh&series=Saol%20R%C3%BAnda%20faoi%20Thalamh&dlft=23'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597795855001&teideal=Anthony%20Tohill&series=Laochra%20Gael&dlft=23'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676204259001&teideal=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&series=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&dlft=22'
+ls
+cat descriptions.tsv 
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676091319001&teideal=The%20Beatles:%20Guth%20&series=Guth%20&dlft=22'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5486301065001&teideal=Miche%C3%A1l%20%C3%93%20Muircheartaigh&series=Miche%C3%A1l%20%C3%93%20Muircheartaigh&dlft=21'
+lynx -dump http://www.tg4.ie/ga/player/faisneis/?pageCnt=3
+grep ' class="prog-panel">' /tmp/instain 
+grep ' class="prog-panel">' /tmp/instain |wc
+grep ' class="prog-panel">' /tmp/instain |wc|awk -F'"' '{print $2}'
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g'
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g'|while read i;do perl ../scripts/tg4-scrape.pl "$i";done
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do perl ../scripts/tg4-scrape.pl $i;done
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do echo  perl ../scripts/tg4-scrape.pl $i;done
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do echo  perl ../scripts/tg4-scrape.pl "$i";done
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do perl ../scripts/tg4-scrape.pl "$i";done
+ls
+cat subtitles.tsv 
+cat subtitles.tsv |awk -F'\t' '{print $4}'
+cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'
+cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'|grep http
+cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'|grep http |awk '{print "http://web.archive.org/save/" $0 }' > /tmp/asd/spid
+wget -x -c $(cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'|grep http )
+find tgfour-a.akamaihd.net -type f
+find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done
+find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT
+find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT|grep -v TIMESTAMP
+find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT|grep -v TIMESTAMP|grep -v '\-\->'
+find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT|grep -v TIMESTAMP|grep -v '\-\->'|wc
+find tgfour-a.akamaihd.net -type f|xargs grep Viagra
+grep 5492281383001 videos.tsv 
+ls
+wc -l videos.tsv 
+grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do perl ../scripts/tg4-scrape.pl "$i";done
+ls
