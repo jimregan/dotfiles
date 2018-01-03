@@ -1,339 +1,3 @@
-cat text/gloria-victis-panna-roza.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-cat text/gloria-victis-panna-roza.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq > /tmp/safe 
-vi /tmp//safe 
-cat text/gloria-victis-panna-roza.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-grep itd text/gloria-victis-panna-roza.txt 
-grep sic text/gloria-victis-panna-roza.txt 
-grep ke text/gloria-victis-panna-roza.txt 
-less text/gloria-victis-panna-roza.txt 
-vi pron-data/non-words.txt
-vi notes.txt
-vi pron-data/non-words.txt
-git add pron-data/non-words.txt 
-git commit -m 'French written phonetically, will probably want to delete'
-vi notes.txt
-cat text/gloria-victis-panna-roza.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-git diff
-git add specific-norms.tsv 
-echo ktościś >> pron-data/non-words.txt 
-git diff
-git add pron-data/non-words.txt 
-cat text/gloria-victis-panna-roza.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-git add pron-data/non-words.txt 
-cat text/gloria-victis-panna-roza.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-cat text/gloria-victis-panna-roza.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq > /tmp/safe
-vi pron-data/gen.tsv 
-grep -i dance pron-data/*
-less NumberNorm.pm 
-perl NumberNorm.pm expand_year 12 
-perl NumberNorm.pm expand_year 12 gen
-perl NumberNorm.pm expand_year 1745 gen
-perl NumberNorm.pm expand_year 1 gen
-perl NumberNorm.pm expand_year 1 
-perl NumberNorm.pm expand_year 2
-perl NumberNorm.pm expand_year 3
-perl NumberNorm.pm expand_year 7
-perl NumberNorm.pm expand_year 8
-perl NumberNorm.pm expand_year 6
-perl NumberNorm.pm expand_year 1
-perl NumberNorm.pm expand_year 2
-perl NumberNorm.pm expand_year 3
-perl NumberNorm.pm expand_year 4
-perl NumberNorm.pm expand_year 5
-perl NumberNorm.pm expand_year 9
-perl NumberNorm.pm expand_year 10
-perl NumberNorm.pm expand_year 11
-perl NumberNorm.pm expand_year 12
-perl NumberNorm.pm expand_year 13
-perl NumberNorm.pm expand_year 14
-perl NumberNorm.pm expand_year 15
-perl NumberNorm.pm expand_year 16
-perl NumberNorm.pm expand_year 17
-perl NumberNorm.pm expand_year 18
-perl NumberNorm.pm expand_year 19
-perl NumberNorm.pm expand_year 20
-perl NumberNorm.pm expand_year 21
-perl NumberNorm.pm expand_year 22
-perl NumberNorm.pm expand_year 23
-perl NumberNorm.pm expand_year 24
-perl NumberNorm.pm expand_year 25
-perl NumberNorm.pm expand_year 26
-perl NumberNorm.pm expand_year 27
-perl NumberNorm.pm expand_year 28
-perl NumberNorm.pm expand_year 29
-perl NumberNorm.pm expand_year 30
-perl NumberNorm.pm expand_year 31
-perl NumberNorm.pm expand_year 32
-perl NumberNorm.pm expand_year 33
-git diff
-git add normalisations.tsv specific-norms.tsv 
-git commit -m more
-cat text/wyspa-skarbow.txt-0* |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-cat text/wyspa-skarbow.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-cat pron-data/gen.tsv |awk '{print $1}' > /tmp/plwlist
-grep wsch pron-data/gen.tsv 
-grep wsch pron-data/gen.tsv |sort|less
-ls
-mkdir /tmp/words
-mkdir /tmp/words/text
-for i in text/*.txt;do cat $i |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq > /tmp/words/$i;done
-git add specific-norms.tsv 
-git commit -m more
-cat text/kim.txt-00.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-ls audio/*kim*|wc
-ls audio/*kim*
-cat text/kim.txt-00.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq 
-cat text/kim.txt-00.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  > /tmp/safe 
-cat text/kim.txt-00.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  
-cat text/kim.txt-00.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  > /tmp/safe
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-cat text/kim.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  
-head -n 5 text/kim.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  
-head -n 7 text/kim.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  
-head -n 11 text/kim.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  
-grep  -i delhi pron-data/gen.tsv 
-head -n 11 text/kim.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq  
-head -n 11 text/kim.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq   > /tmp/safe
-ffplay audio/ignacy-krasicki-bajki-i-przypowiesci-przyjaciel.mp3 
-ls audio/*tulipan*
-ffplay audio/ignacy-krasicki-bajki-i-przypowiesci-tulipan-i-fialek.mp3 
-ffplay audio/ignacy-krasicki-bajki-i-przypowiesci-trzcina-i-chmiel.mp3 
-head -n 11 text/przygody-tomka-sawyera.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq   
-cat text/przygody-tomka-sawyera.txt-01.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq   
-cat text/przygody-tomka-sawyera.txt-05.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq   
-cat text/przygody-tomka-sawyera.txt-05.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq    >> /tmp/safe
-cat text/przygody-tomka-sawyera.txt-05.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq    
-for i in text/*.txt;do cat $i |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq > /tmp/words/$i;done
-echo przydziesz >> pron-data/non-words.txt 
-grep wsporsze pron-data/gen.tsv 
-ls
-tail -f aspell-rec 
-cat aspell-rec |awk '{print $2}'
-cat aspell-rec |awk '{print $2}'|sort|uniq
-cat aspell-rec |awk '{print $2}'|sort|uniq|wc
-cat aspell-rec |awk '{print $2}'|sort|uniq > tock
-less tock 
-grep '^a[a-r]' tock 
-grep '^a[a-r]' tock  > /tmp/bigl
-wc -l /tmp/bigl 
-vi lbig
-mv lbig /tmp/
-less text/reduta-ordona.txt
-grep yji pron-data/gen.tsv 
-grep yji normalisations.tsv 
-grep yji vocab.all
-vi normalisations.tsv 
-less text/reduta-ordona.tx
-less text/sonety-krymskie-burza.txt
-less text/sonety-krymskie-cisza-morska.txt
-vi normalisations.tsv 
-git diff
-git add normalisations.tsv 
-git commit -m add
-cat normalisations.tsv|awk -F'\t' '{print $2}'|tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-grep każd.m text/*
-grep każd.m text/*|grep -v dym
-grep każd.m text/*|grep -v dym|grep d.m
-less text/sonety-odeskie-do-m.txt
-vi specific-norms.tsv 
-less text/sonety-odeskie-do-m.txt
-vi specific-norms.tsv 
-less text/sonety-odeskie-do-m.txt
-grep -i wtém text/*
-vi specific-norms.tsv 
-grep moj normalisations.tsv 
-grep moj normalisations.tsv  >> specific-norms.tsv 
-vi normalisations.tsv 
-vi specific-norms.tsv 
-git diff
-git add normalisations.tsv specific-norms.tsv 
-git commit -m more
-less vocab.all
-grep 000 text/*
-grep 000 text/*txt
-ls audio/*jak-in*
-ffplay audio/bruno-jasienski-but-w-butonierce-tomik-jak-introdukcja.mp3 
-ffplay audio/bruno-jasienski-but-w-butonierce-tomik-zygajace-posagi.mp3 
-ffplay audio/bruno-jasienski-but-w-butonierce-tomik-cafe.mp3 
-ffplay audio/bruno-jasienski-but-w-butonierce-tomik-deszcz.mp3 
-vi additions.sh
-sh additions.sh 
-git add additions.sh 
-git commit -m 'additions'
-git diff
-git add normalisations.tsv specific-norms.tsv 
-git commit -m norms
-ffplay audio/anton-czechow-dramat.mp3 
-ffplay audio/14-daniel-defoe-robinson-crusoe.mp3 
-ffplay audio/00-wiktor-teofil-gomulicki-wspomnienia-niebieskiego-mundurka-wstep.mp3 
-ffplay audio/01-wiktor-teofil-gomulicki-wspomnienia-niebieskiego-mundurka-dzwonek-szkolny.mp3 
-grep rozdz *
-grep rozdz *pl
-less norm-roman-by-text.pl 
-git diff
-ls audio/*wybor-narzeczonej*
-ffplay audio/01-e-t-a-hoffmann-powiesci-fantastyczne-wybor-narzeczonej.mp3
-ffplay audio/02-e-t-a-hoffmann-powiesci-fantastyczne-wybor-narzeczonej.mp3
-ls audio/*golem*
-ls audio/*ewy*
-ffplay audio/04-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/01-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/02-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/01-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/05-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/06-honore-de-balzac-corka-ewy.mp3 
-echo ffplay audio/0*-honore-de-balzac-corka-ewy.mp3 
-echo ffplay audio/07-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/07-honore-de-balzac-corka-ewy.mp3 
-git diff
-ffplay audio/08-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/09-honore-de-balzac-corka-ewy.mp3 
-ffplay audio/01-honore-de-balzac-corka-ewy.mp3 
-less header-replace.pl 
-ffplay audio/honore-de-balzac-bank-nucingena.mp3 
-ffplay audio/jan-kochanowski-treny-tren-i.mp3 
-ffplay audio/jan-kochanowski-treny-tren-ii.mp3 
-less text/treny-tren-iii.txt 
-less text/treny-tren-iv.txt 
-less text/treny-tren-v.txt 
-ffplay audio/jan-kochanowski-treny-treny-motto-i-dedykacja.mp3 
-ls audio/*zajac*
-ffplay audio/jacob-i-wilhelm-grimm-zajac-i-jez.mp3 
-ls audio/*miasto*
-ffplay audio/bruno-jasienski-but-w-butonierce-tomik-miasto.mp3 
-ls audio/*panna*
-ffplay audio/eliza-orzeszkowa-gloria-victis-tom-opowiadan-panna-roza.mp3 
-ffmpeg -i audio/eliza-orzeszkowa-gloria-victis-tom-opowiadan-panna-roza.mp3 
-ffplay -ss 01:22:00 audio/eliza-orzeszkowa-gloria-victis-tom-opowiadan-panna-roza.mp3 
-ffplay -ss 01:22:00 audio/01-robert-louis-stevenson-wyspa-skarbow.mp3 
-ffplay -ss 01:16:00 audio/01-robert-louis-stevenson-wyspa-skarbow.mp3 
-ffplay -ss 01:16:00 audio/02-robert-louis-stevenson-wyspa-skarbow.mp3 
-ffplay audio/02-robert-louis-stevenson-wyspa-skarbow.mp3 
-ffplay audio/jan-kasprowicz-z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczynach.mp3 
-ffplay audio/00-rudyard-kipling-kim-wstep.mp3 
-ffplay audio/01-rudyard-kipling-kim-wstep.mp3 
-ffplay audio/01-rudyard-kipling-kim.mp3 
-ls audio/*-mark-twain-przygody-tomka-sawyera.mp3 
-ffplay audio/01-mark-twain-przygody-tomka-sawyera.mp3
-ffplay audio/02-mark-twain-przygody-tomka-sawyera.mp3
-ffplay audio/01mark-twain-przygody-tomka-sawyera.mp3
-ffplay audio/01-mark-twain-przygody-tomka-sawyera.mp3
-ffplay audio/05-mark-twain-przygody-tomka-sawyera.mp3
-ls audio/*staro*
-ffplay audio/jan-kochanowski-fraszki-ksiegi-pierwsze-na-starosc.mp3 
-cat text/ru
-cat text/run-aeneas.sh 
-cp text/run-aeneas.sh .
-vi run-aeneas.sh 
-ls text/
-less text/reduta-ordona.txt 
-#less text/
-grep zwie pairs.tsv 
-ls audio/*niedz*
-vi run-aeneas.sh 
-tail pairs.tsv 
-vi pairs.tsv 
-vi run-aeneas.sh 
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3 zwierzeta-i-niedzwiedz.txt
-less ./--presets-word 
-rm ./--presets-word 
-vi run-aeneas.sh 
-ls *.aud
-tail pairs.tsv 
-git diff
-git add specific-norms.tsv 
-git diff
-git add pairs.tsv 
-git commit -m more
-vi run-aeneas.sh 
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3 zwierzeta-i-niedzwiedz.txt
-vi run-aeneas.sh 
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3 zwierzeta-i-niedzwiedz.txt
-vi run-aeneas.sh 
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3 zwierzeta-i-niedzwiedz.txt
-less zwierzeta-i-niedzwiedz.txt.aud 
-vi run-aeneas.sh 
-cat text/zwierzeta-i-niedzwiedz.txt 
-cat text/zwierzeta-i-niedzwiedz.txt |grep -v '^$'|perl -ane 'print "$_\n";
-cat text/zwierzeta-i-niedzwiedz.txt |grep -v '^$'|perl -ane 'print "$_\n"'
-cat text/zwierzeta-i-niedzwiedz.txt |grep -v '^$'|perl -ane 'print "$_\n"' > text/zwierzeta-i-niedzwiedz.txt.th
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3 zwierzeta-i-niedzwiedz.txt.th
-cat zwierzeta-i-niedzwiedz.txt.th.aud 
-vi pairs.tsv 
-git diff
-cat run-aeneas.sh 
-python -m aeneas.tools.execute_task --list-values
-python -m aeneas.tools.execute_task audio/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3 text/zwierzeta-i-niedzwiedz.txt.th "task_language=pol|os_task_file_format=json|is_text_type=mplain" foo.json --presets-word
-less foo.json 
-mv zwierzeta-i-niedzwiedz.txt.th.aud zwierzeta-i-niedzwiedz.txt
-cat zwierzeta-i-niedzwiedz.txt
-ls
-less zwierzeta-i-niedzwiedz.txt
-mv zwierzeta-i-niedzwiedz.txt audacity/
-rm zwierzeta-i-niedzwiedz.txt*
-vi pairs.tsv 
-less text/robinson-crusoe.txt-01.txt
-cat text/robinson-crusoe.txt-01.txt|perl split-sentence.pl 
-cat text/robinson-crusoe.txt-01.txt|perl split-sentence.pl > robinson-crusoe.txt-01.txt
-cat robinson-crusoe.txt-01.txt
-python -m aeneas.tools.execute_task audio/01-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-01.txt "task_language=pol|os_task_file_format=aud|is_text_type=mplain" robinson-crusoe.txt-01.txt.aud.txt --presets-word
-python -m aeneas.tools.execute_task audio/01-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-01.txt "task_language=pol|os_task_file_format=aud|is_text_type=plain" robinson-crusoe.txt-01.txt.aud2.txt --presets-word
-diff -u robinson-crusoe.txt-01.txt.aud.txt robinson-crusoe.txt-01.txt.aud2.txt 
-find . -name 'robinson-crusoe.txt-01.txt.aud*'
-vi ~/robinson-crusoe.txt-01.txt.aud3 
-head -n 16 ~/robinson-crusoe.txt-01.txt.aud3 
-head -n 16 ~/robinson-crusoe.txt-01.txt.aud3 >> audacity/robinson-crusoe.txt-01.txt
-git diff
-git add specific-norms.tsv 
-git add audacity/*
-git commit -m more
-vi ~/robinson-crusoe.txt-01.txt.aud3 
-vi pron-data/pronounce-as.tsv 
-cd ~
-python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
-config add .scratch/chromium-tabs .bash_history 
-config commit -m bldfds
-python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
-config add .scratch/chromium-tabs .bash_history 
-config commit -m bldfds
-config add .scratch/chromium-tabs .bash_history 
-config commit -m bldfds
-python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
-config add .scratch/chromium-tabs .bash_history 
-config commit -m bldfds
-config add .scratch/chromium-tabs .bash_history 
-config commit -m bldfds
-python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
-config add .scratch/chromium-tabs .bash_history 
-config commit -m bldfds
-cd /tmp/
-tail -f candf 
-cat candff |awk '{print $0 "\n" $0 "m\n" $0 "ś"}'
-cat candff |awk '{print $0 "\n" $0 "m\n" $0 "ś"}' |wc
-cat candff |awk '{print $0 "\n" $0 "m\n" $0 "ś"}' > lbig 
-rm candf
-rm candff 
-less cand 
-cat cand |sed -e 's/li$/ły/'
-cat cand |sed -e 's/li$/ły/' |awk '{print $0 "\n" $0 "m\n" $0 "ś"}' > lbig 
-wc -l lbig 
-cat lbig |sort|uniq
-cat lbig |sort|uniq|wc
-wc -l candff 
-wc -l candf
-cat candf
-cat candf|awk '{print $0 "em\n"  $0 "eś"}' > candfm
-cat candff >> candfm 
-wc -l candfm 
-cat candfm 
-less candfm 
-wc -l candff 
-less candff 
-cat candff |sort|uniq > candf
-wc -l candf
-less candf
 wc -l candff 
 less candff 
 cat tofix 
@@ -1998,3 +1662,339 @@ ls text/*swiet*
 less text/boy-swietoszek.txt
 vi pron-data/pronounce-as.tsv 
 less text/boy-swietoszek.txt
+git diff
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv 
+git commit -m add
+git diff
+git stash
+vi /tmp/right1 
+git diff
+vi /tmp/right1 
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv 
+git commit -m add
+grep -i phi text/doktor-piotr.txt
+grep -i phi text/doktor-piotr.txt.sent
+grep -i phi text/doktor-piotr.txt.sent.aud 
+git diff
+git add pron-data/gen.tsv 
+git commit -m add
+vi pron-data/pronounce-as.tsv 
+git diff
+git add pron-data/pronounce-as.tsv 
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv 
+git commit -m more
+vi pron-data/gen.tsv 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+vi specific-norms.tsv 
+grep -i uzd text/doktor-piotr.txt.sent.aud 
+perl -e 'print 2213 / 60'
+grep -i phy text/doktor-piotr.txt.sent.aud 
+perl -e 'print 2510 / 60'
+perl -e 'print 2213 / 60'
+perl -e 'print 2510 / 60'
+grep -i phy text/doktor-piotr.txt.sent.aud 
+vi specific-norms.tsv 
+grep -i phi text/doktor-piotr.txt.sent.aud 
+perl -e 'print 4100 / 60'
+vi specific-norms.tsv 
+perl apply-specific.pl text/doktor-piotr.txt
+less text/doktor-piotr.txt
+cd text/
+perl ../apply-specific.pl doktor-piotr.txt
+less doktor-piotr.txt
+ls
+less fortepian-chopina.txt 
+ffplay ../audio/cyprian-kamil-norwid-fortepian-chopina.mp3 
+less fortepian-chopina.txt 
+vi ../clean.pl 
+cat fortepian-chopina.txt |perl ../clean.pl 
+less fortepian-chopina.txt 
+ls ../*pl
+less ../header-replace.pl 
+less przesolil.txt
+less fortepian-chopina.txt 
+perl ../apply-specific.pl 
+git diff fortepian-chopina.txt
+git stash fortepian-chopina.txt
+git checkout -- fortepian-chopina.txt
+perl ../apply-specific.pl 
+git diff
+git diff fortepian-chopina.txt
+git checkout -- fortepian-chopina.txt
+perl ../apply-specific.pl 
+git diff fortepian-chopina.txt
+vi fortepian-chopina.txt
+cat fortepian-chopina.txt |perl ../header-replace.pl 
+perl ../header-replace.pl fortepian-chopina.txt
+perl ../header-replace.pl fortepian-chopina.txt|less
+perl ../header-replace.pl fortepian-chopina.txt > tmp
+mv tmp fortepian-chopina.txt
+git diff
+git diff fortepian-chopina.txt
+git add fortepian-chopina.txt
+git commit -m ok
+git diff
+git add aptekarzowa.txt
+git diff
+git add abuzei-i-tair.txt akslop.txt aniol-pasterzom-mowil.txt antek.txt 
+git diff
+git add atlas-i-kitaj.txt bajki-i-przypowiesci-dwa-zolwie.txt 
+git add bajki-i-przypowiesci-kulawy-i-slepy.txt 
+git diff 
+git add wyspa-skarbow.txt
+git status
+git commit -m ok
+git diff
+#git add bajki-i-przypowiesci-lew-i-zwierzeta.txt ballada-z-tamtej-strony-
+git diff
+git add bajki-i-przypowiesci-lew-i-zwierzeta.txt ballada-z-tamtej-strony-*
+git diff
+git add ballady-i-romanse-*
+echo '*.bak' >> .gitignore
+git diff
+git add cora-albionu.txt 
+git commit -m ok
+git diff
+git add z[l-z]*
+git commit -m ok
+git format-patch -1
+less 0001-ok.patch 
+rm 0001-ok.patch 
+git status
+git add .gitignore 
+echo .DS_Store >> .gitignore 
+echo '*.sent' >> .gitignore 
+echo '*.aud' >> .gitignore 
+git status
+git diff 
+git add balzac-komedia-ludzka-bank-nucingena.txt 
+git commit -m ok
+git diff
+git add balzac-komedia-ludzka-*
+git status
+git diff
+git add baran-dany-na-ofiare.txt bartek-zwyciezca.txt 
+git diff
+git add bema-pamieci-zalobny-rapsod.txt 
+git diff
+ls ../audio/*becz*
+ffplay ../audio/edgar-allan-poe-beczka-amontillada.mp3 
+git add berenice.txt beczka-amontillada.txt 
+git diff
+git add .gitignore 
+git add bezbronna-istota.txt 
+ffplay ../audio/*bialosnie*
+git add bialosniezka-i-rozanka.txt 
+git diff
+git add biedny-mlynarczyk-i-kotek.txt bogacz-i-zebrak.txt bogurodzica.txt 
+git diff
+ls ../audio/*swietos*
+less boy-swietoszek.txt 
+ffplay ../audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
+head boy-swietoszek.txt 
+ffplay ../audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
+less boy-swietoszek.txt 
+cat boy-swietoszek.txt 
+ffplay ../audio/42-moliere-molier-swietoszek-akt-05-scena-05.mp3 
+less boy-swietoszek.txt 
+ffplay ../audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
+less boy-swietoszek.txt 
+ffplay ../audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
+less boy-swietoszek.txt 
+ffplay ../audio/08-moliere-molier-swietoszek-artyzm-swietoszka.mp3 
+less boy-swietoszek.txt 
+ls ../audio/*molier*
+ffplay ../audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
+ffplay ../audio/03-moliere-molier-swietoszek-podloze-swietoszka.mp3 
+ffplay ../audio/09-moliere-molier-swietoszek-przedmowa.mp3 
+ffplay ../audio/08-moliere-molier-swietoszek-artyzm-swietoszka.mp3 
+ls boy-swietoszek.txt 
+less boy-swietoszek.txt 
+git diff
+git add boy-swietoszek.txt bracia-patrzcie-jeno.txt bryla-lodu-i-krysztal.txt 
+git diff
+git add b*
+git add c*
+git diff
+git add dab*
+git commit -m ok
+git diff
+git status
+git status|grep modified
+git status|grep modified|awk '{print $2}'
+git status|grep modified|awk '{print $2}'|grep txt
+git add $(git status|grep modified|awk '{print $2}'|grep txt)s
+git add $(git status|grep modified|awk '{print $2}'|grep txt)
+git status
+git commit -m ok
+git status
+ls
+rm *.bak
+ls
+for i in *.txt;do cat $i|perl ../split-sentence.pl > $i.sent;done
+ls
+find . -size 0
+rm przygody-tomka-sawyera.txt*
+git status
+git checkout -- przygody-tomka-sawyera.txt
+git status
+ls
+ls ../audio/*furman*
+sh run-aeneas.sh ../audio/ignacy-krasicki-bajki-i-przypowiesci-konie-i-furman.mp3 konie-i-furman.txt.sent 
+less konie-i-furman.txt.sent.aud 
+less hop-frog.txt
+echo sh run-aeneas.sh ../audio/edgar-allan-poe-hop-frog.mp3 hop-frog.txt
+sh run-aeneas.sh ../audio/edgar-allan-poe-hop-frog.mp3 hop-frog.txt.sent 
+vi pairs.tsv 
+cp pairs.tsv ..
+ls
+ls ../audio/*furman*
+chmod a+x run-aeneas.sh 
+ls ../audio/*motyl*
+./run-aeneas.sh ../audio/ignacy-krasicki-bajki-i-przypowiesci-furman-i-motyl.mp3 furman-i-motyl.txt.sent 
+ls ../*wyspa&
+ls ../audio/*wyspa*
+for i in 1 2 3 4 5 6 ;do ./run-aeneas.sh ../audio/0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent;done
+vi pairs.tsv 
+cp pairs.tsv ..
+grep 'w XVII w. olbrzymia' *
+ls
+ls ../*robinson*
+ls ../audio/*robinson*
+less robinson-crusoe.txt
+ffplay ../audio/01-daniel-defoe-robinson-crusoe.mp3 
+less robinson-crusoe.txt
+perl ../splitter.pl robinson-crusoe.txt
+ls robinson-crusoe.txt-14.txt 
+less robinson-crusoe.txt-14.txt 
+less robinson-crusoe.txt-01.txt 
+ffplay ../audio/01-daniel-defoe-robinson-crusoe.mp3 
+for i in robinson-crusoe.txt*.txt;do cat $i|perl ../split-sentence.pl > $i.sent;done
+ls
+for i in $(seq 01 14) ;do ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+for i in $(seq 01 14) ;do echo ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+for i in $(seq 1 14) ;do a=$(printf "%02d" $i) ; echo ./run-aeneas.sh ../audio/$a-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+#for i in $(seq 1 14) ;do a=$(printf "%02d" $i) ;  ./run-aeneas.sh ../audio/$a-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+vi pairs.tsv 
+for i in $(seq 1 14) ;do a=$(printf "%02d" $i) ;  ./run-aeneas.sh ../audio/$a-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+vi pairs.tsv 
+cp ../pairs.tsv .
+vi run-aeneas.sh 
+ls
+ls robinson-crusoe.txt*
+for i in $(seq 01 14) ;do echo  ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+for a in $(seq 01 14) ;do i=$(printf "%02d" $a); echo  ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+for a in $(seq 01 14) ;do i=$(printf "%02d" $a); ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
+ls
+less robinson-crusoe.txt-01.txt.sent.aud 
+cat robinson-crusoe.txt
+perl ../apply-specific.pl 
+git diff
+git add boy-swietoszek.txt 
+git commit -m up
+perl ../apply-specific.pl 
+git diff
+less robinson-crusoe.txt-01.txt
+vi ../pron-data/pronounce-as.tsv 
+vi ../pron-data/pronounce-as.gen.tsv 
+cat robinson-crusoe.txt | perl ../clean.pl 
+cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'
+cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv 
+cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |wc
+cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |less
+vi ../pron-data/pronounce-as.tsv 
+vi ../pron-data/pronounce-as.gen.tsv 
+cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |less
+grep 30-go robinson-crusoe.txt*
+grep XXX ../*pl
+cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |less
+grep 1 robinson-crusoe.txt
+grep 1 robinson-crusoe.txt*sent
+grep 1 robinson-crusoe.txt*aud
+grep ' 1 ' robinson-crusoe.txt*aud
+perl -e 'print 402 / 60'
+grep '[0-9]' robinson-crusoe.txt-01.txt
+grep '[0-9]' robinson-crusoe.txt-02.txt
+grep 1632 robinson-crusoe.txt*aud
+perl ../testnum.pl 
+vi ../testnum.pl 
+perl ../testnum.pl 
+grep '[0-9]' robinson-crusoe.txt-02.txt
+vi ../testnum.pl 
+perl ../testnum.pl 
+grep '[0-9]' robinson-crusoe.txt-03.txt
+ls -al /tmp/phonet-out*
+. ~/tmp/sourceme 
+doinstain 
+paste /tmp/pa-l /tmp/pa-r 
+paste /tmp/pa-l /tmp/pa-r  >> ../pron-data/pronounce-as.tsv 
+ls
+cat zwierzeta-i-niedzwiedz.txt.sent 
+cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |tr ' ' '\n'
+cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |tr ' ' '\n'|sort|uniq
+cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |tr ' ' '\n'|sort|uniq|perl ../filter-dict.pl ../pron-data/gen.tsv 
+cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl 
+cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl > zwierzeta-i-niedzwiedz.txt.clean
+irstlm help
+irstlm build-lm 
+#irstlm build-lm -i zwierzeta-i-niedzwiedz.txt.clean 
+cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |awk '{print "<s> " $0 " </s>"}' > zwierzeta-i-niedzwiedz.txt.clean
+less zwierzeta-i-niedzwiedz.txt.clean 
+irstlm build-lm -i zwierzeta-i-niedzwiedz.txt.clean -o zwierzeta-i-niedzwiedz.txt.lm
+gzip -d zwierzeta-i-niedzwiedz.txt.lm.gz 
+ls ../audio/*zwierzeta-i-niedzwiedz*
+sh ~/bin/convert-mp3.sh ../audio/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3
+mv ../audio/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/
+cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl > zwierzeta-i-niedzwiedz.txt.clean
+cp zwierzeta-i-niedzwiedz.txt.clean /tmp/
+less zwierzeta-i-niedzwiedz.txt
+cat /tmp/zwierzeta-i-niedzwiedz.txt.clean 
+doinstain 
+vi ../specific-norms.tsv 
+vi ../pron-data/pronounce-as.tsv 
+vi ../pron-data/pronounce-as.gen.tsv 
+cat but-w-butonierce-nic.txt 
+ls *mlodo*
+cat fraszki-ksiegi-pierwsze-na-mlodosc.txt
+mkdir ../done-aud
+mv ~/fraszki-ksiegi-pierwsze-na-mlodosc.txt ../done-aud/
+mv ~/but-w-butonierce-nic.txt ../done-aud/
+cat fraszki-ksiegi-pierwsze-na-
+cat fraszki-ksiegi-pierwsze-na-mlodosc.txt 
+cat fraszki-ksiegi-pierwsze-do-milosci-chyba-w-serce-milosci-pro.txt 
+mv ~/fraszki-ksiegi-pierwsze-do-milosci-chyba-w-serce-milosci-pro.txt ../done-aud/
+cat fraszki-ksiegi-pierwsze-na-matusza.txt 
+mv ~/fraszki-ksiegi-pierwsze-na-matusza.txt ../done-aud/
+cat fraszki-ksiegi-pierwsze-o-milosci-prozno-uciec-prozno-sie-pr.txt 
+mv ~/fraszki-ksiegi-pierwsze-o-milosci-prozno-uciec-prozno-sie-pr.txt ../done-aud/
+cat ../done-aud/*
+cat fraszki-ksiegi-pierwsze-na-starosc.txt 
+grep Frasz ../audiobooks.tsv 
+grep rasz ../audiobooks.tsv 
+mv ~/fraszki-ksiegi-pierwsze-na-starosc.txt ../done-aud/
+cat fraszki-ksiegi-pierwsze-na-konrata.txt 
+mv ~/fraszki-ksiegi-pierwsze-na-konrata.txt ../done-aud/
+ls ../done-aud/
+cat fraszki-ksiegi-pierwsze-na-nabozna.txt 
+vi ../specific-norms.tsv 
+cat but-w-butonierce-intermezzo-czy-widzieliscie.txt 
+vi ../pron-data/pronounce-as.tsv 
+ls *drzewo*
+cat drzewo.txt 
+mv ~/but-w-butonierce-intermezzo-czy-widzieliscie.txt ../pron-data/
+mv ~/drzewo.txt ../pron-data/
+mv ~/fraszki-ksiegi-pierwsze-na-nabozna.txt ../pron-data/
+ls ../pron-data/
+mv ../pron-data/fraszki-ksiegi-pierwsze-na-nabozna.txt ../done-aud/
+mv ../pron-data/drzewo.txt ../done-aud/
+mv ../pron-data/but-w-butonierce-intermezzo-czy-widzieliscie.txt ../done-aud/
+ls
+ls ../audio/*drzew*
+grep West ../specific-norms.tsv 
+vi ../pron-data/pronounce-as.tsv 
+git diff
