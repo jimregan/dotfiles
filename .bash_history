@@ -1,135 +1,3 @@
-head -n 31 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 33 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 35 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 37 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 37 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-vi /tmp/safe-to-add 
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe
-head -n 43 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe
-cat text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-grep '[0-9]' text/balzac-komedia-ludzka-bank-nucingena.txt 
-head -n 116 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe
-head -n 116 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 60 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-grep dywidend pron-data/gen.tsv 
-grep dywidend pron-data/gen.tsv |awk '{print "pseudo-" $1 "\tpsɛw.dɔ." $2}'
-grep dywidend pron-data/gen.tsv |awk '{print "pseudo-" $1 "\tpsɛw.dɔ." $2}' > tmp 
-cat tmp >> pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-rm tmp 
-grep eks pron-data/gen.tsv 
-grep '^eks' pron-data/gen.tsv 
-grep '^bankier' pron-data/gen.tsv 
-grep eks pron-data/gen.tsv |awk '{print "eks" $1 "\tɛks." $2}' > tmp
-cat tmp 
-grep '^bankier' pron-data/gen.tsv |awk '{print "eks" $1 "\tɛks." $2}' > tmp
-cat tmp 
-cat tmp >> pron-data/gen.tsv 
-rm tmp 
-grep '^eks' pron-data/gen.tsv |less
-grep '^bednarz' pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-head -n 60 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-grep tryumf pron-data/gen.tsv 
-grep triumf pron-data/gen.tsv 
-grep tryumf vocab.all.f2 
-grep tryumf vocab.all.f2 > tr
-cat tr|sed -e 's/try/tri/'
-cat tr|sed -e 's/try/tri/' > trr
-paste tr trr
-paste tr trr >> normalisations.tsv 
-git diff
-mv trr /tmp/lbig
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 43 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 45 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 45 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 47 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 47 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 49 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 51 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 53 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 55 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 57 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 45 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe 
-head -n 47 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe 
-head -n 49 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 51 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 53 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 55 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 57 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 57 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe 
-head -n 59 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 61 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 61 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp//safe 
-head -n 63 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 63 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe 
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 37 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 41 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 40 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 39 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 43 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 43 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  >> /tmp/safe 
-head -n 53 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 51 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 55 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 55 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv   > /tmp/safe
-head -n 59 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-a=foo
-echo ${a}a
-head -n 59 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 61 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 63 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 65 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 65 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  >> /tmp/safe
-head -n 65 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 67 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 71 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 71 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/safe
-head -n 75 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 79 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 79 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/safe
-head -n 79 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 83 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 83 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/safe
-head -n 85 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 87 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 89 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 91 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 93 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 97 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-cat text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 101 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 101 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/safe
-head -n 101 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 103 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 105 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 105 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/safe
-head -n 105 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 109 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 111 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 113 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-head -n 121 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 119 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 113 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 113 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe
-head -n 119 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe
-cat /tmp/safe 
-head -n 121 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 125 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 123 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 125 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe
-head -n 127 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 129 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
 head -n 131 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
 head -n 133 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
 head -n 135 text/balzac-komedia-ludzka-bank-nucingena.txt |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
@@ -1998,3 +1866,135 @@ ls
 grep 5555995052001 videos.tsv 
 mv 5555995052001.wav ../bealoideasbeo/
 svn add ../bealoideasbeo/*
+cd ~/Playing/spinx/
+ls
+cd ../sphinx-alignment/
+ls
+cd cmusphinx-alignment-example/
+ls
+cat align.sh 
+ls
+find ../sphinx4 -name '*.jar'
+cp ../sphinx4/sphinx4-core/build/libs/sphinx4-core-5prealpha-SNAPSHOT.jar .
+ls
+vi align.sh 
+tar zxvf /tmp/cmusphinx-clarinpl-0.1.tar.gz 
+vi align.sh 
+sh align.sh 
+ls /tmp/
+sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
+vi cmusphinx-clarinpl/pl.dic 
+sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
+ls
+cat cmusphinx-clarinpl/pl.dic 
+cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'
+cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq
+cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/'/;s/$/'/g'
+cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/'/;s/$/'/g"
+cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/'/;s/$/',/g"
+cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/=> '/;s/$/',/g"
+cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/    '' => '/;s/$/',/g"
+less ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+grep ęk cmusphinx-clarinpl/pl.dic 
+less ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |head -n 1|perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
+vim ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
+vim -b ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+less dict-add.txt 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+less 
+less ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+less dict-add.txt 
+grep owi cmusphinx-clarinpl/pl.
+grep owi cmusphinx-clarinpl/pl.dic 
+ls
+grep średniowieczni dict-add.txt 
+grep łowią dict-add.txt 
+grep mia cmusphinx-clarinpl/pl.dic 
+grep śmiałych dict-add.txt 
+grep śmiałych ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+grep zrozumiałymi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+grep wielki cmusphinx-clarinpl/pl.dic 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+less dict-add.txt 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+less dict-add.txt 
+grep iego cmusphinx-clarinpl/pl.dic 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+less dict-add.txt 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+less dict-add.txt 
+cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic 
+cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic > toadd
+less toadd 
+cat toadd >> cmusphinx-clarinpl/pl.dic 
+sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
+grep listkowi cmusphinx-clarinpl/pl.dic 
+grep my @a = split/[ \t]/;
+my @a = split/[ \t]/;
+grep listkowi toadd 
+grep listkowi dict-add.txt 
+grep listkowi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+vi cmusphinx-clarinpl/pl.dic 
+vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' (NF != 2){print}'
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
+vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
+vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
+vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
+cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic > toadd
+cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
+cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic > toadd
+less toadd 
+cat toadd >> cmusphinx-clarinpl/pl.dic 
+sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
+cat /tmp/zwierzeta-i-niedzwiedz.txt.clean |awk '{print "<s> " $0 " </s>" }' > test.txt
+sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav test.txt
+cat test.txt 
+ls
+less README.md 
+sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav test.txt > test.txt.fa
+less test.txt.fa 
+cat test.txt.fa 
+cat test.txt.fa |awk -F',' '{print $5 "\t" $6 "\t" $1}'
+cat test.txt.fa |awk -F',' '{print $5 "\t" $6 "\t" $1}'|tr -d '"'
+cat test.txt.fa |awk -F',' '{printf "%.03f\t%.03f\t%s", $5/1000, $6/1000,  $1}'
+cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s", $5/1000, $6/1000,  $1}'
+cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}'
+cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}' > /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.txt
+cat test.txt
+sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean > zw.out
+cat zw.out 
+cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}' > /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.txt
+cat zw.out|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}' > /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.txt
+#perl ~/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
+ls
+perl ~/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl /tmp/zwierzeta-i-niedzwiedz.txt.clean zw.out 
+cat zw.out 
+perl ~/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl /tmp/zwierzeta-i-niedzwiedz.txt.clean zw.out 
+cat /tmp/zwierzeta-i-niedzwiedz.txt.clean 
+less ~/Playing/kaldi/egs/clarinpl/data/train/wav.scp 
+ls
+ls /tmp/
+ls
+tar ztvf ~/Downloads/cmusphinx-ru-5.2.tar.gz 
+tar zxvf ~/Downloads/cmusphinx-ru-5.2.tar.gz 
+ls /tmp/cmusphinx-ru-5.2/
+ls ~/Playing/msf-asr/
+ls ~/Playing/msf-asr/ga-ru.dic 
+less ~/Playing/msf-asr/ga-ru.dic 
+cp ~/Playing/msf-asr/ga-ru.dic .
+ls
+cp align.sh align-ruga.sh 
+vi align-ruga.sh 
+sh align-ruga.sh /tmp/5258123925001.wav /tmp/5258123925001.txt 
+ls
+less align.sh 
