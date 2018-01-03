@@ -1,24 +1,3 @@
-cat przesolil.txt
-cat treny-tren-i.txt
-cat treny-tren-iv.txt
-cat trzcina-i-chmiel.txt
-git diff
-git add *txt
-git commit -m update
-git rm przygody-tomka-sawyera.txt kim.txt
-git commit -m rm
-ls
-wc -l *|sort -nr > /tmp/wcount
-cat koniec.txt
-cat koniec.txt >> /tmp/safe
-cat furman-i-motyl.txt
-cat furman-i-motyl.txt >> /tmp/safe
-cat fraszki-ksiegi-pierwsze-na-nieslownego.txt
-cat fraszki-ksiegi-pierwsze-na-nieslownego.txt >> /tmp/safe
-cat fraszki-ksiegi-pierwsze-na-nabozna.txt
-cat  fraszki-ksiegi-pierwsze-na-konrata.txt
-cat fraszki-ksiegi-pierwsze-na-konrata.txt >> /tmp/safe
-cat  fialek-i-trawa.txt
 cat fialek-i-trawa.txt >> /tmp/safe
 cat  madry-i-glupi-ii.txt
 cat madry-i-glupi-ii.txt >> /tmp/safe
@@ -1998,3 +1977,24 @@ git diff
 git add specific-norms.tsv 
 git commit -m more
 git push origin lexicon 
+ssh jimregan
+ls
+rm list-5689*
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689503845001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=7'
+tail -n 1 videos.tsv 
+svn diff
+svn ci -m '+1  - out of disk space, no wav'
+cd ..
+ls
+cat all.lc.clean 
+grep yo-de-lay-hee-hoo */*vtt
+svn info
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/TG4
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/asr_data_irish
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/comhra
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/irrt0007_spk2
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/comhra/irrt0007_spk2
