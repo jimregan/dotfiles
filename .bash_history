@@ -1,38 +1,3 @@
-git commit -m fix
-vi pron-data/gen.tsv 
-git diff
-vi pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m fix
-vi pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-cat /tmp/lbig|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |sort|uniq > /tmp/candnoew
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-cat pron-data/gen.tsv |sort|uniq > tmp 
-mv tmp pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m sort\|uniq
-git push origin lexicon 
-cat vocab.all.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > vocab.all.f2
-wc -l vocab.all*
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
 git diff
 git add pron-data/gen.tsv 
 git commit -m more
@@ -1998,3 +1963,38 @@ ls
 grep zud-szi text/*txt
 grep -i zud-szi text/*txt
 grep -i żud-szi text/*txt
+tail -f vifax-pdf 
+ls
+cat nope 
+grep 20101123bun *
+ls
+rm *.1
+cat vifax-pdf |sort|uniq
+wget $(cat vifax-pdf |sort|uniq)
+ls
+rm *.1
+ls
+pdfinfo 20130305mean.pdf
+pdftotext -f 4 20130305mean.pdf
+cat 20130305mean.txt 
+ffplay 20130305mean.mp4 
+grep RealBin ../scripts/*
+ls
+cd ..
+git add vifax/normalisations.tsv vifax/speakers.tsv vifax/remove-headlines.tsv 
+git add vifax/stop-patterns.tsv 
+git commit -m add
+git branch
+git push origin lexicon 
+git add vifax/extract-text.sh 
+git commit -m 'just adjusting pdf name to mp4 for the moment'
+less ~/Playing/wolne-lektury-audio-corpus/apply-specific.pl 
+ls
+cd vifax/
+ls
+pdfinfo 20101005ard.pdf
+pdftotext -f 7 20101005ard.pdf
+less 20101005ard.txt 
+cat 20101005ard.txt 
+ffplay 20101005ard.mp4 
+ls
