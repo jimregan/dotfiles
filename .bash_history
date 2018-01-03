@@ -1,71 +1,3 @@
-ls
-ls -al
-cat krol-i-pisarze.txt 
-cat lis-i-wilk.txt 
-ls -al
-cat przygody-tomka-sawyera.txt
-ls -al
-cat rolnik.txt 
-cat rolnik.txt >> /tmp/safe
-cat slowka-zbior-zdarzenie-prawdziwe.txt 
-ls -al
-cat wol-minister.txt 
-cat wol-minister.txt >> /tmp/safe 
-cat slon-i-pszczola.txt
-cat slon-i-pszczola.txt >> /tmp/safe 
-ls -al
-cat z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
-echo > z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
-ls -al
-rm z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
-touch z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
-find . -size 0
-cat treny-tren-i.txt
-cat syn-i-ojciec.txt
-cat syn-i-ojciec.txt >> /tmp/safe 
-ls
-ls -al
-cat zrebiec-i-kon-stary.txt 
-cat zrebiec-i-kon-stary.txt  >> /tmp/safe
-cat z-legend-dawnego-egiptu.txt 
-cat z-legend-dawnego-egiptu.txt > /tmp/safe
-l
-ls -al
-cat wol-minister.txt 
-cat woly-krnabrne.txt 
-cat woly-krnabrne.txt > /tmp/safe
-cat treny-tren-xi.txt 
-ls -al
-cat strumyk-i-fontanny.txt
-cat strumyk-i-fontanny.txt >> /tmp/safe 
-cat slon-i-pszczola.txt
-cat piesn-o-narodzeniu-panskim.txt
-cat wino-i-woda.txt 
-cat /tmp/safe 
-cat wino-i-woda.txt >> /tmp/safe 
-cat zarcik.txt 
-cat wsrod-nocnej-ciszy.txt 
-cat trzej-bracia.txt 
-ls
-cat robinson-crusoe.txt-*
-find . -size 0
-find . -size 0|sed -e 's/\.\///'
-ls
-rm przygody-tomka-sawyera.txt-06.txt 
-git init .
-git add *txt
-git commit -m add
-git  diff
-git diff
-find . -size 0
-ls
-ls -la
-ls -la|grep ' 1 '
-ls -la|grep ' 1 Dec'
-cat treny-tren-i.txt 
-cat treny-tren-i.txt |hexdump
-cat wsrod-nocnej-ciszy.txt
-cat wsrod-nocnej-ciszy.txt >> /tmp/safe
 rm wsrod-nocnej-ciszy.txt 
 touch wsrod-nocnej-ciszy.txt 
 cat zrebiec-i-kon-stary.txt 
@@ -1998,3 +1930,71 @@ ffplay wav/0038538.wav
 grep 0038538 etc/teanglann_train.transcription 
 ffplay wav/0038538.wav 
 less result/teanglann.align 
+doinstain 
+df
+cd ~/Playing/wolne-lektury-audio-corpus/
+ls
+rm doktor-piotr.txt
+rm doktor-piotr.txt.bak dziewczynka-z-zapalkami.txt 
+ls
+git status
+git diff
+ls
+rm balzac-komedia-ludzka-bank-nucingena.txt
+rm balzac-komedia-ludzka-bank-nucingena.txt.bak 
+rm przygody-tomka-sawyera.txt-06.txt
+rm przygody-tomka-sawyera.txt-06.txt.bak 
+ls
+git  status
+rm aptekarzowa.txt
+rm aptekarzowa.txt.bak 
+less komedia-ludzka.pl 
+rm komedia-ludzka.pl 
+ls
+less install-gpu.sh 
+rm install-gpu.sh 
+ls
+less filt-out 
+rm filt-out 
+ls
+rm zarcik.txt
+rm zarcik.txt.bak 
+ls
+cd text/
+ls
+rm *.bak
+ls
+ls ../audio/
+ls ../audio/|wc
+ls *txt
+ls ../audio/*txt
+less doktor-piotr.txt 
+cd ..
+git status
+git add audacity/fraszki-ksiegi-pierwsze-na-* audacity/ballada-z-tamtej-strony-imieniny.txt 
+less audacity/15-moliere-molier-swietoszek-akt-01-scena-03.txt 
+git add audacity/15-moliere-molier-swietoszek-akt-01-scena-03.txt 
+less ~/15-moliere-molier-swietoszek-akt-01-scena-03.spk 
+mv ~/15-moliere-molier-swietoszek-akt-01-scena-03.spk audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
+less audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
+git commit -m more
+git add audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
+git commit -m more
+git status
+git diff
+git add header-replace.pl pairs.tsv 
+git commit -m more
+ffplay audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
+ffplay audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
+ffplay audio/03-moliere-molier-swietoszek-podloze-swietoszka.mp3 
+ffplay audio/04-moliere-molier-swietoszek-stosunek-moliera-do-swego-tematu.mp3 
+ffplay audio/05-moliere-molier-swietoszek-zdobycze-komedii-moliera.mp3 
+ffplay audio/08-moliere-molier-swietoszek-zdobycze-komedii-moliera.mp3 
+ffplay audio/08-moliere-molier-swietoszek-artyzm-swietoszka.mp3 
+ffplay audio/09-moliere-molier-swietoszek-przedmowa.mp3 
+ffplay audio/10-moliere-molier-swietoszek-pierwsze-podanie.mp3 
+ffplay audio/11-moliere-molier-swietoszek-drugie-podanie.mp3 
+ffplay audio/12-moliere-molier-swietoszek-trzecie-podanie.mp3 
+ffplay audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
+ffplay audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
+ffplay audio/03-moliere-molier-swietoszek-podloze-swietoszka.mp3 
