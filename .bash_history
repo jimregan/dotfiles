@@ -1,90 +1,3 @@
-git diff
-git add mkverb.sh pron-data/pronounce-as.gen.tsv 
-git commit -m more
-cat pron-data/gen.tsv |sort|uniq > tmp 
-mv tmp pron-data/gen.tsv 
-git diff
-git add mkverb.sh pron-data/gen.tsv 
-git commit -m sort\|uniq
-git push origin lexicon 
-git diff
-git add mkverb.sh pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add mkverb.sh pron-data/gen.tsv 
-git commit -m more
-perl NumberNorm.pm expand_year 1863
-git diff
-git add mkverb.sh pron-data/gen.tsv header-replace.pl specific-norms.tsv 
-git commit -m more
-git diff
-git add mkverb.sh pron-data/gen.tsv header-replace.pl specific-norms.tsv 
-git commit -m more
-git diff
-git add mkverb.sh pron-data/gen.tsv header-replace.pl specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git add pron-data/gen.tsv 
-git commit -m more
-git format-patch -1
-less 0001-more.patch 
-rm 000*
-git status
-git diff
-git add pron-data/gen.tsv 
-less 0001-more.patch 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-wget http://www.platform.ai/files/nbs/lesson1.ipynb
-less lesson1.ipynb 
-rm lesson1.ipynb 
-apt-cache search jupyter
-apt-cache search ipython
-wget https://github.com/fastai/courses/blob/master/setup/install-gpu.sh
-less install-gpu.sh 
-sudo apt-get --assume-yes upgrade
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git commit -m more
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
 git commit -m more
 perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
 git diff
@@ -1998,3 +1911,90 @@ rm spidb.log
 ls
 sh ~/scripts/spider.sh spid
 tail -f spid.log 
+tail videos.tsv 
+svn status
+ls
+tail videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5559500044001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5623690749001&teideal=Olivia&series=Olivia&dlft=30'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5418686075001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577177404001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577169734001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597948926001&teideal=Astroblast!&series=Astroblast!&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5526006245001&teideal=Olivia&series=Olivia&dlft=29'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686659553001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=34'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5416347428001&teideal=Garfield&series=Garfield&dlft=34'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577127362001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=34'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577137733001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=34'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678995343001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
+svn diff
+svn diff videos.tsv |grep '^\+'|grep http > vdiff
+ls
+rm list-55*
+ls
+cat vdiff 
+cat vdiff |awk -F'\t' '{print $6}'
+cat vdiff |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
+cat vdiff |awk -F'\t' '{print "http://web.archive.org/save/" $6}' > /tmp//asd/nsub
+cat vdiff |awk -F'\t' '{print "http://web.archive.org/save/" $5}' |grep mp4 >> /tmp//asd/nvid
+cat vdiff |awk -F'\t' '{print "http://web.archive.org/save/" $5}' |grep mp4 
+grep mp4 vdiff 
+wget 'https://tgfour-a.akamaihd.net/rtmp_uds/1290862567001/201712/3805/1290862567001_5686706995001_5686659553001.mp4?pubId=1290862567001&videoId=5686659553001' -O 5686659553001.mp4
+sh ~/bin/convert-mp3.sh 5686659553001.mp4 
+grep 5686659553001 videos.tsv 
+mv 5686659553001.* ../whizsachistin/
+svn add ../whizsachistin/5686659553001.*
+svn rm ../whizsachistin/5686659553001.mp4
+svn rm --force ../whizsachistin/5686659553001.mp4
+svn mv ../whizsachistin/5686659553001.mp4.wav ../whizsachistin/5686659553001.wav
+cd ..
+svn status
+svn ci -m +1
+ls scripts/*wav
+grep 5559500044001 scripts/videos.tsv 
+mv scripts/5559500044001.* astroblast/
+svn add astroblast/5559500044001.* 
+ls scripts/*wav
+grep 5623690749001 scripts/videos.tsv 
+mv scripts/5623690749001.* olivia/
+svn add olivia/5623690749001.*
+svn ci -m +2
+ls scripts/*wav
+grep 5418686075001 scripts/videos.tsv 
+mv scripts/5418686075001.* garfield/
+svn add garfield/5418686075001.*
+grep 5577169734001 scripts/videos.tsv 
+mv scripts/5577169734001.* catahata/
+svn add catahata/5577169734001.*
+grep 5577177404001 scripts/videos.tsv 
+mv scripts/5577177404001.* catahata/
+svn add catahata/5577177404001.*
+svn ci -m more
+ls scripts/*wav
+grep 5416347428001 scripts/videos.tsv 
+mv scripts/5416347428001.* garfield/
+svn add garfield/5416347428001.* 
+grep 5526006245001 scripts/videos.tsv 
+rm scripts/5526006245001.*
+grep 5577127362001 scripts/videos.tsv 
+mv scripts/5577127362001.* catahata/
+svn add catahata/5577127362001.* 
+grep 5577137733001 scripts/videos.tsv 
+mv scripts/5577137733001.* catahata/
+svn add catahata/5577137733001.* 
+grep 5597948926001 scripts/videos.tsv 
+mv scripts/5597948926001.* astroblast/
+svn add astroblast/5597948926001.* 
+ls scripts/*wav
+svn ci -m more
+ls /tmp/proc
+mkdir /tmp/proc
+cd ..
+perl abair-scrape.pl 
+grep compordach pron/*tsv
+perl abair-scrape.pl > tmp
+vi tmp 
+cat tmp >> pron/munster.tsv 
+git diff
+less ~/Downloads/Welcome\ to\ Spark\ with\ Scala.ipynb 
+vi /tmp/htmout 
