@@ -1,7 +1,3 @@
-ls audio/*reduta*
-ffplay audio/adam-mickiewicz-reduta-ordona.mp3 
-vi normalisations.tsv 
-git diff
 grep niém text/*
 ffplay audio/adam-mickiewicz-sonety-krymskie-burza.mp3 
 grep niém text/*
@@ -1998,3 +1994,7 @@ unzip ~/Downloads/polish_g2p.zip
 ls
 rm -rf PL/
 mv ../plwlist .
+ls
+cd /tmp/
+ls
+tar zxvf pocketsphinx-hmm-pl-clarinpl_0.1.orig.tar.gz 
