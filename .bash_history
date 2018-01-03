@@ -1,83 +1,3 @@
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-ls
-cat vocab.all.f2 |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > vocab.all.f
-wc -l vocab.all.f*
-less vocab.all.f
-grep -i '\btp\b' text/*txt
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv splitter.pl 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv splitter.pl 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-tail pron-data/gen.tsv 
-echo shamlegański >> pron-data/non-words.txt 
-#git add pron-data/non-words.txt 
-git diff
-git add pron-data/non-words.txt 
-git diff
-git add pron-data/non-words.txt 
-git commit -m more
-git add pron-data/gen.tsv specific-norms.tsv splitter.pl 
-git commit -m more
-git diff
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv specific-norms.tsv splitter.pl 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv specific-norms.tsv splitter.pl 
-git commit -m more
-git push origin lexicon 
-cat pron-data/gen.tsv |sort|uniq > tmp 
-mv tmp pron-data/gen.tsv 
-git commit -m sort\|uniq
-git add pron-data/gen.tsv specific-norms.tsv splitter.pl 
-git commit -m sort\|uniq
-git push origin lexicon 
-git diff
-git diff|grep '^\+'
-git diff|grep '^\+'|grep -v tsv
-git diff|grep '^\+'|grep -v tsv > thing
-cp thing /tmp/lbig
-git diff|grep '^\+'|grep -v tsv |awk -F'\t' '{print $2}'> /tmp/lbig
-cat thing|grep '^\+'|grep -v tsv|awk -F'\t' '{print $1}'|tr -d '+' > /tmp/left1
-git diff
-git add pron-data/pronounce-as.*
-git commit -m more
-git push origin lexicon 
-git status
-cat apply-norms.pl 
-git add apply-norms.pl 
-git commit -m add
-ls
-git status
-cat zau 
-rm zau thing 
-ls
-git status
 rm wyspa-skarbow.txt-0*
 git checkout master
 git log
@@ -1998,3 +1918,83 @@ cat tmp >> pron/munster.tsv
 git diff
 less ~/Downloads/Welcome\ to\ Spark\ with\ Scala.ipynb 
 vi /tmp/htmout 
+cd /tmp
+ls
+rm ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.*
+rm *wav
+ls
+df
+tar zxvf ~/Downloads/montreal-forced-aligner_linux.tar.gz 
+cd  montreal-forced-aligner/
+ls
+ls pretrained_models/
+mv ~/Downloads/polish.zip pretrained_models/
+mv ~/Downloads/ukrainian.zip pretrained_models/
+mv ~/Downloads/russian.zip pretrained_models/
+ls
+less pretrained_models/README.md 
+ls
+unzip -l pretrained_models/polish.zip 
+unzip -l pretrained_models/english.zip 
+unzip -l pretrained_models/russian.zip 
+ls
+ls bin/
+bin/mfa_align 
+bin/mfa_train_and_align 
+ls
+ls lib/thirdparty/bin/phonetisaurus-g2pfst 
+lib/thirdparty/bin/phonetisaurus-g2pfst 
+ls /usr/local/
+cd ..
+sudo mv montreal-forced-aligner/ /usr/local/
+/usr/local/montreal-forced-aligner/bin/mfa_train_and_align 
+/usr/local/montreal-forced-aligner/bin/mfa_align 
+/usr/local/montreal-forced-aligner/lib/
+ls /usr/local/montreal-forced-aligner/lib/
+ls /usr/local/montreal-forced-aligner/lib/thirdparty/
+ls /usr/local/montreal-forced-aligner/lib/thirdparty/bin/
+find /usr/local/montreal-forced-aligner -name libkaldi-hmm.so
+cd /usr/local/montreal-forced-aligner/bin/
+ls
+cd ../../lib/
+ls
+cd ..
+cd
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/plwlist 
+#/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/plwlist 
+mkdir /tmp/plout
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/plwlist /tmp/plout/
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary /tmp/pl/ /tmp/plwlist /tmp/plout/
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/plout/
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
+less /tmp/polishout 
+less /tmp/pl/plwlist 
+mv /tmp/pl/plwlist /tmp/pl/plwlist.txt
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
+less /tmp/polishout 
+cat /tmp/polishout 
+mv /tmp/pl/plwlist.txt /tmp/pl/plwlist.lab
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
+less /tmp/polishout 
+less /tmp/pl/plwlist.lab 
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary 
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary -h
+less ~/Documents/MFA/corpus/logging/corpus.log 
+less ~/Documents/MFA/G2P/polish_g2p/words.txt 
+less ~/Documents/MFA/G2P/polish_g2p/logging/g2p.log 
+cat /tmp/pl/plwlist.lab 
+cat /tmp/pl/plwlist.lab |sed -e 's/\n/ /g'
+cat /tmp/pl/plwlist.lab | tr -d '\n'
+cat /tmp/pl/plwlist.lab |sed -e 's/^/ /'| tr -d '\n'
+cat /tmp/pl/plwlist.lab |sed -e 's/^/ /'| tr -d '\n' > /tmp/pl/one.lab 
+touch /tmp/pl/one.wav
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
+cp ~/Playing/msf-asr/TG4/garfield/5416347428001.wav /tmp/pl/one.wav 
+/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
+less /tmp/polishout 
+wc -l /tmp/polishou
+wc -l /tmp/polishout 
+less /tmp/polishout 
+wget https://wolnelektury.pl/katalog/zip/mp3/fraszki-ksiegi-pierwsze-raki.zip
+unzip -l fraszki-ksiegi-pierwsze-raki.zip 
+rm fraszki-ksiegi-pierwsze-raki.zip 
