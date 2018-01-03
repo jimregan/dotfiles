@@ -1,31 +1,3 @@
-cat /tmp/piin|while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
-. ../sourceme 
-cat /tmp/piin|while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
-scp fash-rdf-links jimregan:/tmp/
-ls
-sh ~/scripts/spider.sh spid
-filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/in
-ls
-tail spid.log 
-mv spid* /tmp/asd/
-ls
-rm nohup.out 
-cat /tmp/asd/in.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-less ../sync/assumed-identical-20180103_000337.nt 
-wc -l ../sync/assumed-identical-20180103_000337.nt 
-less ../sync/assumed-identical-20180103_000337.nt 
-ls
-rm -rf s17.postimg.org/
-ls
-cd /tmp/words/text/
-ls
-ls -al
-cat abuzei-i-tair.txt 
-cat ballada-z-tamtej-strony-ballada-z-tamtej-strony.txt 
-cat antek.txt 
-ls
-ls -al
-less don-kichot-z-la-manchy.txt 
 ls
 ls -al
 cat krol-i-pisarze.txt 
@@ -1998,3 +1970,31 @@ mkdir ../bealoideasbeo
 svn add ../bealoideasbeo
 curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
 echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
+ssh jimregan
+ls
+ls -al
+cd ..
+ls
+cd ~/Playing/spinx/
+ls
+ls clarinpl/
+ls clarinpl/feat/
+du clarinpl/feat/
+ls
+ls -al clarinpl/
+rm -rf ~/Playing/kaldi/egs/clarinpl/audio/
+df
+ls
+ls clarinpl/
+cd teanglann/
+ls
+ls logdir/
+less logdir/decode/
+ls logdir/decode/
+less logdir/decode/teanglann-1-1.log 
+ls
+less result/teanglann.align 
+ffplay wav/0038538.wav 
+grep 0038538 etc/teanglann_train.transcription 
+ffplay wav/0038538.wav 
+less result/teanglann.align 
