@@ -1,91 +1,3 @@
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git stash
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-cat pron-data/gen.tsv |awk '{print $1}'
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąła$'
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąłaś$'
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąłaś$' > /tmp/tofix
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąła$' >> /tmp/tofix
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąłam$' >> /tmp/tofix
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąły$' >> /tmp/tofix
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąłyście$' >> /tmp/tofix
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'ąłyśmy$' >> /tmp/tofix
-less /tmp/tofix 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-vi deleter.pl
-#cat pron-data/gen.tsv |perl deleter.pl /tmp/tofix
-less /tmp/tofix
-cat pron-data/gen.tsv |perl deleter.pl /tmp/tofix
-cat pron-data/gen.tsv |perl deleter.pl /tmp/tofix > tmp
-#mv tmp pron-data/gen.tsv 
-git diff
-mv tmp pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m 'delete badly generated entries'
-git diff
-git add pron-data/gen.tsv 
-git commit -m regenerate
-cat pron-data/gen.tsv |sort|uniq > tmp 
-mv tmp pron-data/gen.tsv 
-git diff
-git commit -m sort\|uniq
-git add pron-data/gen.tsv 
-git commit -m sort\|uniq
-git push origin lexicon 
-grep achnąłeś pron-data/gen.tsv 
-git checkout master 
-git branch -D lexicon 
-git pull origin master
-wc -l pron-data/gen.tsv 
-cat vocab.all.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > vocab.all.f2
-wc -l pron-data/gen.tsv 
-wc -l vocab.all*
 less vocab.all.f2 
 grep -i amtsrath text/*
 rm vocab.all
@@ -1998,3 +1910,91 @@ less 20101005ard.txt
 cat 20101005ard.txt 
 ffplay 20101005ard.mp4 
 ls
+df
+cd ~/Playing/
+git clone https://github.com/michmech/BuNaMo
+cd BuNaMo/
+ls
+cat noun/camfar_masc1.xml 
+find noun -type f
+find noun -type f -exec grep default {} \;
+find noun -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}'
+find noun -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
+find verb -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
+find adjective -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
+find preposition -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
+find nounPhrase -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
+find verb -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' 
+cd ~/Playing/corpuscrawler/
+git pull origin master
+git diff
+git stash
+git branch
+git checkout master
+git pull origin master 
+git push mine master 
+git checkout -b irish-more
+./corpuscrawler --lang ga
+less corpus/ga.txt
+./corpuscrawler --lang ga
+python
+./corpuscrawler --lang ga
+less corpus/ga.txt
+./corpuscrawler --lang ga
+vi Lib/corpuscrawler/util.py
+./corpuscrawler --lang ga
+git diff
+./corpuscrawler --lang ga
+less corpus/ga.txt
+./corpuscrawler --lang ga
+less corpus/ga.txt
+vi Lib/corpuscrawler/util.py
+./corpuscrawler --lang ga
+less Lib/corpuscrawler/twi.translit 
+cd ..
+cd language-resources/
+ls
+cd third_party/
+cd cldr/
+ls
+cp ~/Playing/corpuscrawler/Lib/corpuscrawler/twi.translit tw-tw_FONIPA.txt
+git add tw-tw_FONIPA.txt 
+git commit -m Twi
+git branch
+git push origin translit 
+ls
+ls /tmp/*tran*
+ls /tmp/*txt
+ls ~/*tran*
+less ace-ace_FONIPA.txt 
+less ~/aceh.translit 
+less tw-tw_FONIPA.txt 
+cd ~/Playing/corpuscrawler/
+ps aux|grep corpusc
+./corpuscrawler --lang ga
+less corpus/ga.txt
+cat corpus/ga.txt
+cat corpus/ga.txt|grep -v '^#'
+cat corpus/ga.txt|grep -v '^#'|wc
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//'
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';' -d ','
+man tr
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:'
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!'
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!"'
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!"()[]'
+cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!"()[]'|sort|uniq > ga.wl
+less ga.wl 
+wc -l ga.wl 
+less ga.wl 
+cat ga.wl-nonum 
+grep Zubizaretta corpus/ga.txt
+ls
+df
+less adjective/carrach_adj1.xml 
+less verb/bruith_verb.xml 
+tail -f /tmp/bunamo 
+wc -l /tmp/bunamo 
+less /tmp/bunamo 
