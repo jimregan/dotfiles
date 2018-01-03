@@ -1,113 +1,3 @@
-grep niém text/*
-ffplay audio/adam-mickiewicz-sonety-krymskie-burza.mp3 
-grep niém text/*
-ffplay audio/adam-mickiewicz-sonety-krymskie-cisza-morska.mp3 
-ls audio/*do-m*
-ffplay audio/adam-mickiewicz-sonety-odeskie-do-m.mp3 
-less text/but-w-butonierce-jak-introdukcja.txt
-grep vis-a-vis  pron-data/pronounce-as.tsv 
-vi  pron-data/pronounce-as.tsv 
-less text/but-w-butonierce-jak-introdukcja.txt
-vi  pron-data/pronounce-as.tsv 
-less text/but-w-butonierce-jak-introdukcja.txt
-vi specific-norms.tsv 
-git diff
-vi specific-norms.tsv 
-vi  pron-data/pronounce-as.tsv 
-less vocab.all
-head -n 309 vocab.all
-head -n 309 vocab.all > shit
-cat shit |while read i;do grep -i  " $i " text/*.txt; done
-cat shit |while read i;do grep -i  " $i " text/*.txt; done|less
-vi shit 
-cat shit |while read i;do grep -i  " $i " text/*.txt; done|less
-vi  specific-norms.tsv 
-git diff
-git add specific-norms.tsv 
-git commit -m more
-git dif
-git status
-git add header-replace.pl 
-git commit -m +1
-git diff
-git add norm-roman-by-text.pl 
-git commit -m +1
-git add splitter.pl 
-git commit -m +1
-cat shit |while read i;do grep -i  " $i " text/*.txt; done|less
-git status
-git add header-replace.pl 
-git commit -m +1
-cat shit |while read i;do grep -i  " $i " text/*.txt; done|less
-git diff
-git add pairs.tsv 
-git commit -m more
-grep ł vocab.all.f 
-grep ł vocab.all.f > /tmp/ck
-vi /tmp/ck 
-cat vocab.all|aspell -a -l pl |grep '^\+' > aspell-rec
-cat vocab.all.f|aspell -a -l pl |grep '^\+' > aspell-rec
-cat /tmp/left-big |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/lbig 
-wc -l /tmp/lbig 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-cat /tmp/tofix|aspell -a -l pl > /tmp/tofix-spell1
-less /tmp/tofix-spell1 
-cat /tmp/tofix-spell1 |grep '^\+'
-cat /tmp/tofix|sed -e 's/ął/ęł/'  |aspell -a -l pl > /tmp/tofix-spell1
-less /tmp/tofix-spell1 
-less text/golem.txt 
-git diff
-git add splitter.pl 
-git commit -m fixed
-git branch
-git log
-git push origin master 
-grep Monnier pron-data/pronounce-as.tsv 
-cat text/balzac-komedia-ludzka-bank-nucingena.txt 
-cat text/balzac-komedia-ludzka-bank-nucingena.txt |tr ' ' '\n'
-cat text/balzac-komedia-ludzka-bank-nucingena.txt |tr ' ' '\n'|grep '[A-Z]'
-grep "Very'ego" pron-data/pronounce-as.tsv 
-head -n 5 text/balzac-komedia-ludzka-bank-nucingena.txt |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 5 text/balzac-komedia-ludzka-bank-nucingena.txt|perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 5 text/balzac-komedia-ludzka-bank-nucingena.txt|perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  >> /tmp/safe-to-add
-head -n 7 text/balzac-komedia-ludzka-bank-nucingena.txt|perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 7 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 7 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 9 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 9 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe-to-add 
-head -n 11 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 11 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 13 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 13 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-vi /tmp/safe-to-add 
-head -n 15 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 17 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 19 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 19 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 21 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 23 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 24 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 24 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 25 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 27 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 27 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 29 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-head -n 29 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
-head -n 31 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
 head -n 31 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv >> /tmp/safe-to-add 
 head -n 33 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
 head -n 35 text/balzac-komedia-ludzka-bank-nucingena.txt |tail -n 2 |perl clean.pl |tr ' ' '\n' |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
@@ -1998,3 +1888,113 @@ ls
 cd /tmp/
 ls
 tar zxvf pocketsphinx-hmm-pl-clarinpl_0.1.orig.tar.gz 
+cd scripts/
+ls
+grep Garf videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5413626562001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5575081884001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5575074305001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+svn diff
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678205801001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
+df
+ls
+svn diff|grep '^\+'
+svn diff videos.tsv|grep '^\+'
+svn diff videos.tsv|grep '^\+'|grep htt
+svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $5}'
+svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $5}' > /tmp/asd/raw
+svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $6}' > /tmp/asd/raw2
+cat /tmp/asd/raw
+cat /tmp/asd/raw|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.mp4;done
+ls
+ls ../*/5678205801001.*
+grep 5678205801001 videos.tsv 
+cat /tmp/asd/raw2|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.vtt;done
+for i in *.mp4;do sh ~/bin/convert-mp3.sh $i;done
+for i in *wav;do mv $i $(basename $i .mp4.wav).wav;done
+ls
+rm *.mp4
+grep Ros videos.tsv 
+mv 5678205801001.* ../rosnarun/
+svn add ../rosnarun/5678205801001.*
+ls
+grep 5575081884001 videos.tsv 
+ls
+grep 5575074305001 videos.tsv 
+grep 5413626562001 videos.tsv 
+mv 5413626562001.* ../garfield/
+svn add ../garfield/5413626562001.*
+ls
+mv 55750* ../catahata/
+svn add ../catahata/55750*
+cd ..
+svn ci -m yesterday
+svn status
+ls catahata/5575074305001.*
+svn add catahata/5413626562001*
+ls scripts/
+find . -name '5575074305001.*;
+find . -name '5575074305001.*'
+cd scripts/
+tail videos.tsv 
+svn log ../catahata/5413626562001.vtt
+svn log ../catahata/5575074305001.vtt 
+svn log ../catahata/5575074305001.wav 
+grep 5575074305001 videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5557388967001&teideal=Astroblast!%20&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5590432547001&teideal=Olivia&series=Olivia&dlft=30'
+svn diff
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5590432547001&teideal=Olivia&series=Olivia&dlft=30'
+svn diff
+svn ci -m more
+cat vdiff 
+cat vdiff |grep m3u|awk '{print $5}'
+cat vdiff |grep '{print $5}'
+cat vdiff |grep -F'\t' '{print $5}'
+cat vdiff |awk -F'\t' '{print $5}'
+cat vdiff |awk -F'\t' '{print $5}'|grep m3u
+cat vdiff |awk -F'\t' '{print $5}'|grep m3u > /tmp//asd/m3u
+cat vdiff |awk -F'\t' '{print $5}'|grep m3u > m3u
+cat m3u |while read i;do echo $i|sh run.sh ;done
+ls
+grep 5678995343001 videos.tsv 
+mv 5678995343001.* ../rosnarun/
+svn add ../rosnarun/5678995343001.* 
+ls
+rm list-5*
+ls
+cat m3u 
+rm m3u 
+ls
+svn diff
+svn ci -m more
+ls
+rm vdiff 
+ls
+svn diff
+ls
+vi ../../to-pron 
+vi ../../scripts/normalisations.tsv 
+git diff
+vi ../../scripts/normalisations.tsv 
+grep Garf videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689301324001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=7'
+tail videos.tsv 
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2645/1290862567001_dceb3088-6bfd-4d2c-9261-5bf54f40b15b.vtt?pubId=1290862567001&videoId=5689301324001' -O ../harveybeaks/5689301324001.vtt
+svn add ../harveybeaks/5689301324001.vtt
+echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2645/1290862567001_dceb3088-6bfd-4d2c-9261-5bf54f40b15b.vtt?pubId=1290862567001&videoId=5689301324001' $(curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001'|grep http) |awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
+less /tmp/asd/spid
+echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2645/1290862567001_dceb3088-6bfd-4d2c-9261-5bf54f40b15b.vtt?pubId=1290862567001&videoId=5689301324001'  |awk '{print "http://web.archive.org/save/" $0}' > /tmp/asd/spid
+curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001'|grep http |awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
+less /tmp/asd/spid
+svn diff
+svn diff|less
+ls ../bealoideasbeo/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/788/1290862567001_348d8ac6-4b50-4312-a523-3a835e4769b1.vtt?pubId=1290862567001&videoId=5555995052001' -O ../bealoideasbeo/5555995052001.vtt
+svn add ../bealoideasbeo/5555995052001.vtt
+tail videos.tsv 
+echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |while read i;do echo $i|sh run.sh ;done
+ls
+grep 5555995052001 videos.tsv 
+mv 5555995052001.wav ../bealoideasbeo/
+svn add ../bealoideasbeo/*
