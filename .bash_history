@@ -1,189 +1,3 @@
-less vocab.all.f2 
-grep -i amtsrath text/*
-rm vocab.all
-rm vocab.all.f
-grep '\-' vocab.all.f2 
-grep '\-' vocab.all.f2 |wc
-grep "'" vocab.all.f2 
-grep "'" vocab.all.f2 |wc
-grep "'" vocab.all.f2 |while read i;do grep -i $i text/*txt;done
-grep "'" vocab.all.f2 |while read i;do grep -i $i text/*txt;done > contexts
-less contexts 
-ls audio/*golem*
-less text/golem.txt 
-ffplay audio/01-gustav-meyrink-golem-sen.mp3 
-ffplay audio/02-gustav-meyrink-golem-dzien.mp3 
-ffplay audio/01-gustav-meyrink-golem-sen.mp3 
-git add splitter.pl 
-git commit -m update
-git diff
-git add splitter.pl 
-git commit -m buggy
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git branch
-git checkout -b lexicon 
-git diff
-git add header-replace.pl 
-git commit -m space
-git diff
-git status
-git push origin lexicon 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-grep ekswłaściciel pron-data/p*
-grep właściciel pron-data/gen.tsv 
-grep eks pron-data/gen.tsv 
-grep właściciel pron-data/gen.tsv 
-grep współwłaściciel pron-data/gen.tsv 
-grep współwłaściciel pron-data/gen.tsv |sed -e 's/współ/eks/;s/fspuw/ɛks/'
-grep współwłaściciel pron-data/gen.tsv |sed -e 's/współ/eks/;s/fspuw/ɛks/' > tmp
-cat tmp >> pron-data/gen.tsv 
-git diff
-git add specific-norms.tsv pron-data/gen.tsv 
-git commit -m more
-git diff
-git add normalisations.tsv pron-data/gen.tsv 
-git commit -m more
-grep normalisations.tsv *pl
-ls
-git diff
-git add normalisations.tsv pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add normalisations.tsv pron-data/gen.tsv 
-git commit -m more
-vi mkverb.sh
-git diff
-git add mkverb.sh pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m rm
-cat pron-data/gen.tsv |awk '{print $1}'
-cat pron-data/gen.tsv |awk '{print $1}'|grep 'łem$'
-git diff
-git log
-git revert d645fe7e9f41284797f3401f8fde72165c1f5b8c
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-git diff
-git add specific-norms.tsv pron-data/pronounce-as.tsv 
-git commit -m more
-git diff
-git stash
-git diff
-git add mkverb.sh pron-data/gen.tsv 
-git format-patch -2
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add mkverb.sh pron-data/gen.tsv 
-git commit -m more
-less 0001-more.patch 
-rm 0001-more.patch 
-cat 0002-more.patch 
-vi 0002-more.patch 
-cat 0002-more.patch|grep '^\+'|grep -v tsv|awk -F'\t' '{print $1}'|tr -d '+' > /tmp/left1
-cat /tmp/left1 
-cat 0002-more.patch|awk -F'\t' '{print $2}' > /tmp/lbig
-git diff
-git add mkverb.sh pron-data/pronounce-as.gen.tsv 
-git commit -m more
-git diff
-git add mkverb.sh pron-data/gen.tsv 
-git commit -m more
-git add mkverb.sh pron-data/gen.tsv 
-git commit -m more
-git diff
-git add specific-norms.tsv pron-data/pronounce-as.tsv 
-git commit -m more
-git stash
 git diff
 git add mkverb.sh pron-data/pronounce-as.gen.tsv 
 git commit -m more
@@ -1998,3 +1812,189 @@ less verb/bruith_verb.xml
 tail -f /tmp/bunamo 
 wc -l /tmp/bunamo 
 less /tmp/bunamo 
+tail -f spn.log 
+tail -f tosp.log 
+cat tosp.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat tosp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat tosp |awk -F'/web/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/web/$i >> tospa;done
+ls
+less tospa 
+sh ~/scripts/spider.sh tospa
+tail -f tospa.log 
+cp tospa tospb
+vi tospb 
+sh ~/scripts/spider.sh tospb
+tail -f tospb.log 
+cat tospa.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat tospb.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+ls
+cat tospb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat tospb |awk -F'/web/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/web/$i >> tospc;done
+ls
+cat tospb |awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/web/$i >> tospc;done
+ls
+cat tospc 
+vi tospc 
+sh ~/scripts/spider.sh tospc
+tail -f tospc.log 
+cat tospc.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat tospc.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+ls
+cat tosp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spn.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spn.log |perl ~/bin/wget-http.pl 
+cat spna.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spna.log |perl ~/bin/wget-http.pl 
+rm tosp*
+ls
+cat spn.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spna.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spna.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spn.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+rm spn*
+ls
+rm nohup.out 
+vi /tmp/left1 
+cat /tmp/left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
+cat /tmp/left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+vi /tmp//left1 
+cat /tmp/left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+ls
+cat raw
+cat raw*|awk '{print "http://web.archive.org/web/" $0}' > spid
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+ls
+sh ~/scripts/spider.sh nvid
+sh ~/scripts/spider.sh nsub
+tail -f nvid.log 
+tail -f spid.log 
+cat spid.log 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+rm spid
+rm spid.log 
+ls
+tail -f nsub.log 
+cat nsub.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat nsub.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+rm nsub
+rm nsub.log 
+tail nvid.log 
+cat nvid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat nvid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+rm nvid
+rm nvid.log 
+ls
+cat m3u 
+cat m3u |while read i;do curl $i|grep http|awk '{print "http://web.archive.org/save/" $0}' >> spid;done
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid
+cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spida;done
+ls
+cat spida 
+sh ~/scripts/spider.sh spida
+tail -f spida.log 
+cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+ls
+rm *
+ls
+cat in 
+cat in |awk '{print "http://web.archive.org/save/" $0}' > spid
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+#cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+tail -f spid.log 
+tail spid
+tail -f spid.log 
+tail spid
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spida;done
+ls
+cat spida 
+sh ~/scripts/spider.sh spida
+tail -f spida.log 
+cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+rm spid* in nohup.out 
+ls
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+ls
+echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3013/1290862567001_82c49921-198b-48f1-adf3-06849cd4ba32.vtt?pubId=1290862567001&videoId=5689475790001' >> spida
+less spida 
+sh ~/scripts/spider.sh spida
+tail -f spid.log 
+tail -f spida.log 
+cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+less spida.log 
+less spid.log 
+less spida.log 
+less spida
+head -n 1 spida
+head -n 1 spida|awk '{print "http://web.archive.org/save/" $0}' > spidb
+sh ~/scripts/spider.sh spidb
+tail -f spidb.log 
+cat spidb.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spidb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+rm spidb
+rm spidb.log 
+tail spid.log 
+cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
+cat spidb|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
+rm spidb 
+cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
+cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
+less spidb 
+sh ~/scripts/spider.sh spidb
+tail -f spidb.log 
+less spidb.log 
+less spida
+cat spida
+cat spidb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+rm spid*
+ls
+rm nohup.out 
+ls
+cat spida 
+sh ~/scripts/spider.sh spida
+tail -f spida.log 
+cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
+cat spidb 
+rm spidb 
+cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+less ~/tmp/sync/http-misc-20171217-1.nt 
+rm spida
+rm spida.log 
+rm nohup.out 
+ls
+i='http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001'| echo http://web.archive.org/save/$i >> spidb
+cat spidb 
+i='http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001'; echo http://web.archive.org/save/$i > spidb
+cat spidb 
+sh ~/scripts/spider.sh spidb
+tail -f spidb.log 
+i='https://tgfour-a.akamaihd.net/pd/1290862567001/201712/788/1290862567001_348d8ac6-4b50-4312-a523-3a835e4769b1.vtt?pubId=1290862567001&videoId=5555995052001'; echo http://web.archive.org/save/$i > spidb
+sh ~/scripts/spider.sh spidb
+tail -f spidb.log 
+cat spidb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spidb.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
+rm spidb
+rm spidb.log 
+ls
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
