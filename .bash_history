@@ -1,143 +1,3 @@
-rm wyspa-skarbow.txt-0*
-git checkout master
-git log
-git reset --hard 0a0d8190c2bbadb9d370d3c608ddc3273ef902ef
-git log
-git pull origin master
-git log
-git branch -D lexicon 
-git checkout -b lexicon 
-for i in /tmp/words/text/*;do cat $i |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/curtmp; mv /tmp/curtmp $i;done
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl NumberNorm.pm expand_year 1876
-less NumberNorm.pm 
-git diff
-git add header-replace.pl specific-norms.tsv splitter.pl 
-git commit -m mre
-cat text/przygody-tomka-sawyera.txt-01.txt |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-git diff
-git add header-replace.pl specific-norms.tsv pron-data/gen.tsv 
-git commit -m mre
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add header-replace.pl specific-norms.tsv pron-data/gen.tsv 
-git commit -m more
-git diff
-git add header-replace.pl specific-norms.tsv pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add header-replace.pl specific-norms.tsv pron-data/gen.tsv 
-git commit -m mre
-git diff
-git add header-replace.pl specific-norms.tsv pron-data/gen.tsv 
-git commit -m more
-git add header-replace.pl specific-norms.tsv pron-data/non-words.txt 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/left-big
-git diff
-git add header-replace.pl specific-norms.tsv pron-data/gen.tsv 
-git commit -m more
-cat /tmp/cand |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/safe
-git diff
-git diff pron-data/pronounce-as.tsv
-git diff pron-data/pronounce-as.tsv|grep '^\+'
-git diff pron-data/pronounce-as.tsv|grep '^\+'|grep -b b/p
-git diff pron-data/pronounce-as.tsv|grep '^\+'|grep -v b/p
-git diff pron-data/pronounce-as.tsv|grep '^\+'|grep -v b/p|tr -d '+'
-git diff pron-data/pronounce-as.tsv|grep '^\+'|grep -v b/p|tr -d '+' > toad
-cat toad |awk -F'\t' '{print "{{pl-IPA-auto|"$2"}}"}'
-cat toad |awk -F'\t' '{print $1}' > /tmp/left1 
-git diff
-vi pron-data/pronounce-as.gen.tsv 
-git add pron-data/pronounce-as.*
-git commit -m more
-git diff
-git add pron-data/pronounce-as.tsv 
-git commit -m more
-git diff
-git log
-git push origin lexicon 
-less ~/Downloads/aa.hld 
-less ~/Downloads/21c 
-less ~/Downloads/parameter.doc 
-less ~/test-extract.klatt 
-less ~/test-extract.formants 
-less ~/test-extract-saveas 
-cd ..
-cd msf-asr/
-mkdir vifax
-cd vifax/
-lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/
-lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep mp4
-lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep mp4|grep http|awk '{print $2}'
-lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep mp4|grep http|awk '{print $2}' >> vifax-mp4
-lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep pdf|grep http|awk '{print $2}' >> vifax-pdf
-cat vifax-*
-dopdf() { lynx -dump $1|grep pdf|grep http|awk '{print $2}' >> vifax-pdf ; }
-domp4() { lynx -dump $1|grep mp4|grep http|awk '{print $2}' >> vifax-mp4 ; }
-for i in http://vifax.maynoothuniversity.ie/cartlann/bia/ http://vifax.maynoothuniversity.ie/cartlann/muir/ http://vifax.maynoothuniversity.ie/cartlann/slainte/ http://vifax.maynoothuniversity.ie/cartlann/eaglais/ http://vifax.maynoothuniversity.ie/cartlann/polaitiocht/ http://vifax.maynoothuniversity.ie/cartlann/gaeilge/ http://vifax.maynoothuniversity.ie/cartlann/oideachas/ http://vifax.maynoothuniversity.ie/cartlann/geilleagar/ http://vifax.maynoothuniversity.ie/cartlann/comhshaol/ http://vifax.maynoothuniversity.ie/cartlann/tubaist/ http://vifax.maynoothuniversity.ie/cartlann/gaeltacht/ http://vifax.maynoothuniversity.ie/cartlann/sport/ http://vifax.maynoothuniversity.ie/cartlann/dli/ http://vifax.maynoothuniversity.ie/cartlann/siamsaiocht/ ;do domp4 $i;dopdf $i;done
-cat vifax-mp4 
-cat vifax-mp4 |sed -e 's/mp4/pdf/' | while read i;do grep $i vifax-pdf || echo "Nope $i";done
-cat vifax-mp4 |sed -e 's/mp4/pdf/' | while read i;do grep $i vifax-pdf || echo $i >> nope;done
-cat nope 
-grep 20101123 *
-wget -i vifax-mp4 
-ls
-#vi extract-text.sh
-cat nope 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-sh extract-text.sh 
-vi extract-text.sh
-cd -
-python Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
-cd ~
-python Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
-config add .scratch/chromium-tabs
-config commit -m more
-man pdftotext 
-ls
-cd ~/tmp/foo/
-ls
-rm nohup.out 
-less ../sync/unsorted-triples-20171226-1.nt 
-vi /tmp/piin
-# https://postimg.org/gallery/qmzuwygc/
-vi spid
-wc -l /tmp/piin 
-lynx -dump https://postimg.org/image/8xmgmmsob/
-lynx -dump https://postimg.org/image/8xmgmmsob/|grep dl
-cat /tmp/piin;while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
 cat /tmp/piin|while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
 . ../sourceme 
 cat /tmp/piin|while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
@@ -1998,3 +1858,143 @@ less /tmp/polishout
 wget https://wolnelektury.pl/katalog/zip/mp3/fraszki-ksiegi-pierwsze-raki.zip
 unzip -l fraszki-ksiegi-pierwsze-raki.zip 
 rm fraszki-ksiegi-pierwsze-raki.zip 
+svn diff
+svn ci -m 'all video parts for those that came in pieces. All should be recreatable now'
+svn diff
+svn ci -m 'and those from earlier today'
+svn diff
+ls scripts/
+cd scripts/
+svn diff videos.tsv 
+svn diff videos.tsv |grep '\+'
+svn diff videos.tsv |grep '^\+'
+svn diff videos.tsv |grep '^\+'|grep http
+svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 "\n" $6}'
+svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 "\n" $6}' |awk '{print "http://web.archive.org/save/" $0}' > /tmp/asd/spidb
+svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 }' 
+svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 }' | sh run.sh 
+ls
+svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 }'|tail -n 1 | sh run.sh 
+ls
+cd ..
+ls
+less garfield/5410712898001.vtt 
+less garfield/5397304565001.vtt 
+ffplay garfield/5397304565001.wav 
+less garfield/5397304565001.vtt 
+grep */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|wc
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's\.\.\.//'
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\.//'
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|uniq
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq|wc
+cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq > all.words
+vi all.words 
+cat */*.vtt|tr -d '\r'|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq > all.words
+wc -l all.
+wc -l all.words 
+less all.words 
+cat */*.vtt|tr -d '\r'|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|tr -d '"'|tr -d '!'|uniq > all.words
+wc -l all.words 
+less all.words 
+grep Bhlá-fá-má-zéin */*vtt
+grep Znerd */*vtt
+grep wú-tríleach */*.vtt
+ffplay catahata/5566610353001.wav 
+vi ../pron/pronounce-as.tsv
+svn diff
+. ~/tmp/sourceme 
+doinstain 
+cd ..
+perl abair-scrape.pl 
+perl abair-scrape.pl  > tmp 
+cat tmp >> pron/connacht.tsv 
+vi tmp 
+cat tmp >> pron/connacht.tsv 
+vi tmp 
+cat tmp >> pron/connacht.tsv 
+vi pron/connacht.tsv 
+vi pron/munster.tsv 
+vi /tmp/htmout 
+perl abair-scrape.pl  > tmp 
+vi tmp 
+cat tmp >> pron/ulster.tsv 
+vi tmp 
+cat tmp >> pron/ulster.tsv 
+vi tmp 
+cat tmp >> pron/ulster.tsv 
+git diff
+vi scripts/normalisations.tsv 
+git add scripts/normalisations.tsv pron/ulster.tsv pron/munster.tsv pron/connacht.tsv 
+git branch
+git checkout -b lexicon
+git status
+git reset TG4/catahata/5686647581001.wav
+git reset TG4/toirbeir/5680586501001.wav
+git status
+git commit -m more
+git log
+cat to-pron 
+cat to-pron  |awk '{print $0" ."}'
+vi /tmp/htmout 
+perl abair-scrape.pl  
+perl abair-scrape.pl  |sed -e 's/\t\t/\t/'
+perl abair-scrape.pl  |sed -e 's/\t\t/\t/' >> pron/munster.tsv 
+vi /tmp/htmout 
+perl abair-scrape.pl  |sed -e 's/\t\t/\t/' >> pron/connacht.tsv 
+vi /tmp/htmout 
+perl abair-scrape.pl  |sed -e 's/\t\t/\t/' >> pron/ulster.tsv 
+git diff
+git add pron/*.tsv
+git commit -m more
+vi pron/ulster.tsv 
+git diff
+vi pron/ulster.tsv 
+git diff
+vi pron/connacht.tsv 
+vi pron/munster.tsv 
+git add pron/*.tsv
+git commit -m 'leading spaces'
+vi abair-scrape.pl 
+vi /tmp/missing 
+cat /tmp/missing |sort|uniq > /tmp/mmm
+mv /tmp/mmm /tmp/missing 
+grep -i bhuigín-bhuí-fhada TG4/*/*.vtt
+less TG4/catahata/5566610353001.vtt 
+grep -i bicycle TG4/*/*.vtt
+less TG4/rosnarun/5686651673001.vtt
+grep -i t-sean TG4/*/*.vtt
+vi scripts/normalisations.tsv 
+vi to-pron 
+vi scripts/normalisations.tsv 
+vi pron/pronounce-as.tsv 
+git add pron/pronounce-as.tsv 
+git commit -m moore
+vi pron/pronounce-as.tsv 
+git diff
+doinstain 
+cd TG4/
+ls
+cd scripts/
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689475790001&teideal=Lurgan%202K17&series=Lurgan%202K17&dlft=35'
+tail videos.tsv 
+mkdir ../lurgan2k17
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3013/1290862567001_82c49921-198b-48f1-adf3-06849cd4ba32.vtt?pubId=1290862567001&videoId=5689475790001' -O ../lurgan2k17/5689475790001.vtt
+svn add ../lurgan2k17/
+curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689492431001&pubId=1290862567001&videoId=5689475790001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
+echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689492431001&pubId=1290862567001&videoId=5689475790001' |sh run.sh 
+svn diff
+perl tg4-scrape.pl \<div class="player-mod-wrap">
+<div class="player-mod-wrap">
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5555995052001&teideal=B%C3%A9aloideas%20Beo&series=B%C3%A9aloideas%20Beo&dlft=27'
+svn diff
+mkdir ../bealoideasbeo
+svn add ../bealoideasbeo
+curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
+echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
