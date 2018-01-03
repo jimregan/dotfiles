@@ -1,70 +1,3 @@
-rm wsrod-nocnej-ciszy.txt 
-touch wsrod-nocnej-ciszy.txt 
-cat zrebiec-i-kon-stary.txt 
-cat zrebiec-i-kon-stary.txt >> /tmp/safe 
-git diff
-vi /tmp//safe 
-ls
-cat ptaki-i-osiel.txt 
-cat przyjaciel.txt 
-vi przyjaciel.txt 
-cat przyjaciel.txt >> /tmp/safe 
-ls -al
-cat wilk-pokutujacy.txt 
-cat wilk-pokutujacy.txt  >> /tmp/safe 
-cat tulipan-i-fialek.txt 
-cat tulipan-i-fialek.txt  >> /tmp/safe 
-cat ukradziony-grosik.txt
-cat ukradziony-grosik.txt >> /tmp/safe 
-rm ukradziony-grosik.txt 
-touch ukradziony-grosik.txt 
-rm tulipan-i-fialek.txt 
-touch tulipan-i-fialek.txt 
-git diff
-cat bajki-i-przypowiesci-kulawy-i-slepy.txt 
-vi bajki-i-przypowiesci-kulawy-i-slepy.txt 
-cat bajki-i-przypowiesci-kulawy-i-slepy.txt > /tmp/safe
-rm bajki-i-przypowiesci-kulawy-i-slepy.txt 
-touch bajki-i-przypowiesci-kulawy-i-slepy.txt s
-git diff
-wc -l *
-wc -l *|sort -nr
-cat s
-rm s
-ls
-wc -l *|sort -nr
-cat ballada-z-tamtej-strony-imieniny.txt 
-cat po-pniu-i-po-bocianie.txt
-cat po-pniu-i-po-bocianie.txt > /tmp/safe
-vi /tmp/safe
-cat bogacz-i-zebrak.txt 
-cat zarcik.txt 
-cat chleb-i-szabla.txt 
-cat chleb-i-szabla.txt >> /tmp/safe 
-wc -l *|sort -nr > /tmp/wcount
-cat bogacz-i-zebrak.txt
-cat bogacz-i-zebrak.txt >> /tmp/safe 
-cat but-w-butonierce-dedykacja.txt
-vi but-w-butonierce-dedykacja.txt
-cat but-w-butonierce-dedykacja.txt >> /tmp/safe 
-cat fraszki-ksiegi-pierwsze-do-milosci-chyba-w-serce-milosci-pro.txt
-cat fraszki-ksiegi-pierwsze-na-starosc.txt
-cat krol-i-pisarze.txt
-cat regestr >> /tmp/safe 
-echo regestr >> /tmp/safe 
-cat napoj-cienisty-ludzie.txt
-cat napoj-cienisty-wiedza.txt
-cat napoj-cienisty-wiedza.txt >> /tmp/safe
-cat ojciec-lakomy.txt
-cat orzel-i-jastrzab.txt
-cat orzel-i-jastrzab.txt >> /tmp//safe 
-cat pan-i-kotka.txt
-cat pan-i-kotka.txt >> /tmp//safe 
-cat pan-i-pies.txt
-cat pan-i-pies.txt >> 
-cat pan-i-pies.txt >> /tmp/safe 
-cat potok-i-rzeka-ii.txt
-cat potok-i-rzeka-ii.txt >> /tmp/safe 
 cat przesolil.txt
 cat treny-tren-i.txt
 cat treny-tren-iv.txt
@@ -1998,3 +1931,70 @@ ffplay audio/12-moliere-molier-swietoszek-trzecie-podanie.mp3
 ffplay audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
 ffplay audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
 ffplay audio/03-moliere-molier-swietoszek-podloze-swietoszka.mp3 
+cd ..
+grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep '[xv]'
+grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]'
+grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]' |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
+grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]' |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+grep '^[Bb]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]' |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+ls *tsv
+vi pairs.tsv 
+cd text/
+perl ../apply-specific.pl 
+git diff
+git stash
+vi ../normalisations.tsv 
+vi ../pron-data/pronounce-as.tsv 
+vi ../pron-data/pronounce-as.gen.tsv 
+vi ../normalisations.tsv 
+cd ..
+git diff
+vi specific-norms.tsv 
+git diff
+git add specific-norms.tsv pron-data/pronounce-as.gen.tsv pairs.tsv 
+git commit -m wrong
+git branch 
+git push origin lexicon 
+cd text/
+ls *na-uc*
+cat fraszki-ksiegi-pierwsze-na-uczte.txt 
+cat fraszki-ksiegi-pierwsze-na-nieslownego.txt 
+ls *imien*
+cat ballada-z-tamtej-strony-imieniny.txt
+ls ../audio/*imien*
+cat fraszki-ksiegi-pierwsze-na-slase.txt 
+ls *swieto*
+less boy-swietoszek.txt
+grep swieto ../audiobooks.tsv 
+cp ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.txt ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
+cat ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
+cat ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk
+#perl ../NumberNorm.pm 
+less ../NumberNorm.pm 
+perl ../NumberNorm.pm expand_year 1669 gen
+perl ../NumberNorm.pm expand_year 5 gen
+perl ../NumberNorm.pm expand_year 14 gen
+perl ../NumberNorm.pm expand_year 3 nom
+perl ../NumberNorm.pm expand_year 2 nom
+perl ../NumberNorm.pm expand_year 8 gen
+perl ../NumberNorm.pm expand_year 1664 gen
+perl ../NumberNorm.pm expand_year 12 gen
+perl ../NumberNorm.pm expand_year 1658 loc
+less ../NumberNorm.pm 
+perl ../NumberNorm.pm num2text 20
+perl NumberNorm.pm num2text 26
+cd ..
+git diff
+git add specific-norms.tsv 
+git commit -m more
+git push origin lexicon 
+perl NumberNorm.pm expand_year 1665 loc
+perl NumberNorm.pm expand_year 1667 gen
+perl NumberNorm.pm expand_year 5 gen
+perl NumberNorm.pm expand_year 1669 gen
+perl NumberNorm.pm expand_year 17 loc
+git diff
+git add specific-norms.tsv 
+git commit -m more
+git push origin lexicon 
