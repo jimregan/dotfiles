@@ -1,273 +1,3 @@
-mv xbh left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbi left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbj left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbk left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbl left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbm left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbn left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbo left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbp left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbq left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbr left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-cat left-big |sort|uniq > lbig
-wc -l lbig 
-split -l 1000 lbig 
-mv xaa left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xab left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xac left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xad left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xad left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-mv xae left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-cat left-big |sort|uniq > lbig
-wc -l lbig 
-mv lbig left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-vi lbig
-mv lbig left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-vi lbig
-mv lbig left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-vi lbig
-mv lbig left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-vi lbig
-mv lbig left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-cat left-big |sort|uniq > lbig
-wc -l lbig 
-less lbig 
-split -l 1000 lbig 
-mv xaa left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xab left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xac left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xad left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xae left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaf left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv lbig left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-mv xag left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xah left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xai left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaj left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xak left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xal left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xam left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xan left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xao left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xap left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaq left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xar left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xas left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xat left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xau left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xav left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaw left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-cat left-big |sort|uniq > lbig
-wc -l lbig 
-split -l 1000 lbig 
-mv xaa left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xab left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xac left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-cat left-big |sort|uniq > lbig
-wc -l lbig 
-mv lbig left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv bigl left-big 
-cat left-big |sort|uniq > lbig
-wc -l lbig 
-split -l 1000 lbig 
-mv xaa left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xab left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xac left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xad left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xae left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-wc -l xaf
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaf left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-cat left-big |sort|uniq > lbig
-wc -l lbig 
-split -l 1000 lbig 
-mv xaa left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-phonetisaurus_apply --model local_clarin/model.fst --lexicon local_clarin/lexicon.txt --word_list /tmp/wlist -p 0.8
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xda left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xdb left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xab left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xac left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xad left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xae left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaf left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xag left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xah left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xai left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaj left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xak left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xal left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xam left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xan left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xao left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xap left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaq left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xar left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xas left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xat left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xau left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xav left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaw left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xax left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xay left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xaz left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xba left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbb left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbc left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbd left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbc left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-mv xbe left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-mv xbc left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbf left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbg left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbh left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbi left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbj left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbk left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbl left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbm left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbn left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbo left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbp left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbq left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbr left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbs left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbt left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbu left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbv left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbw left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbx left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xby left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xbz left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xca left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xcb left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xcc left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-vi xcd
-mv xcd left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xce left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xcf left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xcg left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xch left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xci left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
-grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
-mv xcj left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
 grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
 mv xck left1 && cat left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > left
 grep IPA /tmp/right|sed -e 's/IPA(key): //' |sed -e 's/IPA(key): /\n/g' > /tmp/right1 && paste /tmp/left1 /tmp/right1 |sed -e 's/ $//' >> ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv
@@ -1998,3 +1728,273 @@ less ~/Downloads/parameter.doc
 less ~/test-extract.klatt 
 less ~/test-extract.formants 
 less ~/test-extract-saveas 
+cd ..
+cd msf-asr/
+mkdir vifax
+cd vifax/
+lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/
+lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep mp4
+lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep mp4|grep http|awk '{print $2}'
+lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep mp4|grep http|awk '{print $2}' >> vifax-mp4
+lynx -dump http://vifax.maynoothuniversity.ie/cartlann/aimsir/|grep pdf|grep http|awk '{print $2}' >> vifax-pdf
+cat vifax-*
+dopdf() { lynx -dump $1|grep pdf|grep http|awk '{print $2}' >> vifax-pdf ; }
+domp4() { lynx -dump $1|grep mp4|grep http|awk '{print $2}' >> vifax-mp4 ; }
+for i in http://vifax.maynoothuniversity.ie/cartlann/bia/ http://vifax.maynoothuniversity.ie/cartlann/muir/ http://vifax.maynoothuniversity.ie/cartlann/slainte/ http://vifax.maynoothuniversity.ie/cartlann/eaglais/ http://vifax.maynoothuniversity.ie/cartlann/polaitiocht/ http://vifax.maynoothuniversity.ie/cartlann/gaeilge/ http://vifax.maynoothuniversity.ie/cartlann/oideachas/ http://vifax.maynoothuniversity.ie/cartlann/geilleagar/ http://vifax.maynoothuniversity.ie/cartlann/comhshaol/ http://vifax.maynoothuniversity.ie/cartlann/tubaist/ http://vifax.maynoothuniversity.ie/cartlann/gaeltacht/ http://vifax.maynoothuniversity.ie/cartlann/sport/ http://vifax.maynoothuniversity.ie/cartlann/dli/ http://vifax.maynoothuniversity.ie/cartlann/siamsaiocht/ ;do domp4 $i;dopdf $i;done
+cat vifax-mp4 
+cat vifax-mp4 |sed -e 's/mp4/pdf/' | while read i;do grep $i vifax-pdf || echo "Nope $i";done
+cat vifax-mp4 |sed -e 's/mp4/pdf/' | while read i;do grep $i vifax-pdf || echo $i >> nope;done
+cat nope 
+grep 20101123 *
+wget -i vifax-mp4 
+ls
+#vi extract-text.sh
+cat nope 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+sh extract-text.sh 
+vi extract-text.sh
+cd -
+python Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
+cd ~
+python Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs 
+config add .scratch/chromium-tabs
+config commit -m more
+man pdftotext 
+ls
+cd ~/tmp/foo/
+ls
+rm nohup.out 
+less ../sync/unsorted-triples-20171226-1.nt 
+vi /tmp/piin
+# https://postimg.org/gallery/qmzuwygc/
+vi spid
+wc -l /tmp/piin 
+lynx -dump https://postimg.org/image/8xmgmmsob/
+lynx -dump https://postimg.org/image/8xmgmmsob/|grep dl
+cat /tmp/piin;while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
+cat /tmp/piin|while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
+. ../sourceme 
+cat /tmp/piin|while read i;do img=$(lynx -dump $i|grep dl|awk '{print $2}'|awk -F'?' '{print $1}'); procimg $i $img; doimg $img https://postimg.org/gallery/qmzuwygc/; done
+scp fash-rdf-links jimregan:/tmp/
+ls
+sh ~/scripts/spider.sh spid
+filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/in
+ls
+tail spid.log 
+mv spid* /tmp/asd/
+ls
+rm nohup.out 
+cat /tmp/asd/in.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+less ../sync/assumed-identical-20180103_000337.nt 
+wc -l ../sync/assumed-identical-20180103_000337.nt 
+less ../sync/assumed-identical-20180103_000337.nt 
+ls
+rm -rf s17.postimg.org/
+ls
+cd /tmp/words/text/
+ls
+ls -al
+cat abuzei-i-tair.txt 
+cat ballada-z-tamtej-strony-ballada-z-tamtej-strony.txt 
+cat antek.txt 
+ls
+ls -al
+less don-kichot-z-la-manchy.txt 
+ls
+ls -al
+cat krol-i-pisarze.txt 
+cat lis-i-wilk.txt 
+ls -al
+cat przygody-tomka-sawyera.txt
+ls -al
+cat rolnik.txt 
+cat rolnik.txt >> /tmp/safe
+cat slowka-zbior-zdarzenie-prawdziwe.txt 
+ls -al
+cat wol-minister.txt 
+cat wol-minister.txt >> /tmp/safe 
+cat slon-i-pszczola.txt
+cat slon-i-pszczola.txt >> /tmp/safe 
+ls -al
+cat z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
+echo > z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
+ls -al
+rm z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
+touch z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
+find . -size 0
+cat treny-tren-i.txt
+cat syn-i-ojciec.txt
+cat syn-i-ojciec.txt >> /tmp/safe 
+ls
+ls -al
+cat zrebiec-i-kon-stary.txt 
+cat zrebiec-i-kon-stary.txt  >> /tmp/safe
+cat z-legend-dawnego-egiptu.txt 
+cat z-legend-dawnego-egiptu.txt > /tmp/safe
+l
+ls -al
+cat wol-minister.txt 
+cat woly-krnabrne.txt 
+cat woly-krnabrne.txt > /tmp/safe
+cat treny-tren-xi.txt 
+ls -al
+cat strumyk-i-fontanny.txt
+cat strumyk-i-fontanny.txt >> /tmp/safe 
+cat slon-i-pszczola.txt
+cat piesn-o-narodzeniu-panskim.txt
+cat wino-i-woda.txt 
+cat /tmp/safe 
+cat wino-i-woda.txt >> /tmp/safe 
+cat zarcik.txt 
+cat wsrod-nocnej-ciszy.txt 
+cat trzej-bracia.txt 
+ls
+cat robinson-crusoe.txt-*
+find . -size 0
+find . -size 0|sed -e 's/\.\///'
+ls
+rm przygody-tomka-sawyera.txt-06.txt 
+git init .
+git add *txt
+git commit -m add
+git  diff
+git diff
+find . -size 0
+ls
+ls -la
+ls -la|grep ' 1 '
+ls -la|grep ' 1 Dec'
+cat treny-tren-i.txt 
+cat treny-tren-i.txt |hexdump
+cat wsrod-nocnej-ciszy.txt
+cat wsrod-nocnej-ciszy.txt >> /tmp/safe
+rm wsrod-nocnej-ciszy.txt 
+touch wsrod-nocnej-ciszy.txt 
+cat zrebiec-i-kon-stary.txt 
+cat zrebiec-i-kon-stary.txt >> /tmp/safe 
+git diff
+vi /tmp//safe 
+ls
+cat ptaki-i-osiel.txt 
+cat przyjaciel.txt 
+vi przyjaciel.txt 
+cat przyjaciel.txt >> /tmp/safe 
+ls -al
+cat wilk-pokutujacy.txt 
+cat wilk-pokutujacy.txt  >> /tmp/safe 
+cat tulipan-i-fialek.txt 
+cat tulipan-i-fialek.txt  >> /tmp/safe 
+cat ukradziony-grosik.txt
+cat ukradziony-grosik.txt >> /tmp/safe 
+rm ukradziony-grosik.txt 
+touch ukradziony-grosik.txt 
+rm tulipan-i-fialek.txt 
+touch tulipan-i-fialek.txt 
+git diff
+cat bajki-i-przypowiesci-kulawy-i-slepy.txt 
+vi bajki-i-przypowiesci-kulawy-i-slepy.txt 
+cat bajki-i-przypowiesci-kulawy-i-slepy.txt > /tmp/safe
+rm bajki-i-przypowiesci-kulawy-i-slepy.txt 
+touch bajki-i-przypowiesci-kulawy-i-slepy.txt s
+git diff
+wc -l *
+wc -l *|sort -nr
+cat s
+rm s
+ls
+wc -l *|sort -nr
+cat ballada-z-tamtej-strony-imieniny.txt 
+cat po-pniu-i-po-bocianie.txt
+cat po-pniu-i-po-bocianie.txt > /tmp/safe
+vi /tmp/safe
+cat bogacz-i-zebrak.txt 
+cat zarcik.txt 
+cat chleb-i-szabla.txt 
+cat chleb-i-szabla.txt >> /tmp/safe 
+wc -l *|sort -nr > /tmp/wcount
+cat bogacz-i-zebrak.txt
+cat bogacz-i-zebrak.txt >> /tmp/safe 
+cat but-w-butonierce-dedykacja.txt
+vi but-w-butonierce-dedykacja.txt
+cat but-w-butonierce-dedykacja.txt >> /tmp/safe 
+cat fraszki-ksiegi-pierwsze-do-milosci-chyba-w-serce-milosci-pro.txt
+cat fraszki-ksiegi-pierwsze-na-starosc.txt
+cat krol-i-pisarze.txt
+cat regestr >> /tmp/safe 
+echo regestr >> /tmp/safe 
+cat napoj-cienisty-ludzie.txt
+cat napoj-cienisty-wiedza.txt
+cat napoj-cienisty-wiedza.txt >> /tmp/safe
+cat ojciec-lakomy.txt
+cat orzel-i-jastrzab.txt
+cat orzel-i-jastrzab.txt >> /tmp//safe 
+cat pan-i-kotka.txt
+cat pan-i-kotka.txt >> /tmp//safe 
+cat pan-i-pies.txt
+cat pan-i-pies.txt >> 
+cat pan-i-pies.txt >> /tmp/safe 
+cat potok-i-rzeka-ii.txt
+cat potok-i-rzeka-ii.txt >> /tmp/safe 
+cat przesolil.txt
+cat treny-tren-i.txt
+cat treny-tren-iv.txt
+cat trzcina-i-chmiel.txt
+git diff
+git add *txt
+git commit -m update
+git rm przygody-tomka-sawyera.txt kim.txt
+git commit -m rm
+ls
+wc -l *|sort -nr > /tmp/wcount
+cat koniec.txt
+cat koniec.txt >> /tmp/safe
+cat furman-i-motyl.txt
+cat furman-i-motyl.txt >> /tmp/safe
+cat fraszki-ksiegi-pierwsze-na-nieslownego.txt
+cat fraszki-ksiegi-pierwsze-na-nieslownego.txt >> /tmp/safe
+cat fraszki-ksiegi-pierwsze-na-nabozna.txt
+cat  fraszki-ksiegi-pierwsze-na-konrata.txt
+cat fraszki-ksiegi-pierwsze-na-konrata.txt >> /tmp/safe
+cat  fialek-i-trawa.txt
+cat fialek-i-trawa.txt >> /tmp/safe
+cat  madry-i-glupi-ii.txt
+cat madry-i-glupi-ii.txt >> /tmp/safe
+cat  madry-i-glupi.txt
+cat madry-i-glupi.txt >> /tmp/safe
+cat  dab-i-dynia.txt
+cat  derwisz-i-uczen.txt
+cat  przygody-tomka-sawyera.txt-25.txt
+cat  wszechwiedzacy-doktor.txt
+cat wszechwiedzacy-doktor.txt >> /tmp/safe
+vi /tmp/safe 
+cat but-w-butonierce-cafe.txt
+cat krol-zab.txt
+cat legendy-warszawskie-zlota-kaczka.txt
+cat bema-pamieci-zalobny-rapsod.txt
+cat jezus-malusienki.txt
+vi jezus-malusienki.txt
+cat jezus-malusienki.txt >> /tmp/safe
+wc -l *|sort -nr |grep ' 1 '
+wc -l *|sort -nr |grep ' 1 '|awk '{print $2}'
+cat $(wc -l *|sort -nr |grep ' 1 '|awk '{print $2}' )
+wc -l *|sort -nr |grep ' 1 '|awk '{print $2}'
+wc -l *|sort -nr |grep ' 1 '|awk '{print $2}'|while read i;do echo $i; cat $i;done
+cat $(wc -l *|sort -nr |grep ' 1 '|awk '{print $2}' ) > /tmp/safe
+vi /tmp/safe 
+cat $(wc -l *|sort -nr |grep ' 2 '|awk '{print $2}' ) 
+cat $(wc -l *|sort -nr |grep ' 2 '|awk '{print $2}' )  > /tmp/cand
+vi /tmp/safe 
