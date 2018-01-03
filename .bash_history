@@ -1,16 +1,3 @@
-aspell
-aspell dump
-aspell dump dicts
-cat text/*txt|aspell -a -l pl
-cat vocab.all|aspell -a -l pl
-cat vocab.all|aspell -a -l pl |grep '^\+'
-cat vocab.all|less
-cat vocab.all|aspell -a -l pl |grep '^\+'
-cat vocab.all|aspell -a -l pl |grep '^\+' > aspell-rec
-grep anglez text/*txt
-grep mojém text/*
-grep ni.m text/*
-grep mojém text/*
 ls audio/*reduta*
 ffplay audio/adam-mickiewicz-reduta-ordona.mp3 
 vi normalisations.tsv 
@@ -1998,3 +1985,16 @@ grep J ck |sed -e 's/, /\n/'
 grep J ck |sed -e 's/, /\n/g'
 grep J ck |sed -e 's/, /\n/g' >> /tmp/pa-l 
 grep J ck |sed -e 's/, /\n/g'|sed -e 's/J/dż/g' >> /tmp/pa-r
+cd ~/Playing/corpuscrawler/
+ls
+less Lib/corpuscrawler/util.py
+grep wordpress Lib/corpuscrawler/*
+less Lib/corpuscrawler/crawl_dz.py
+less Lib/corpuscrawler/crawl_sn.py
+cd /tmp/
+mkdir pl
+cd pl
+unzip ~/Downloads/polish_g2p.zip 
+ls
+rm -rf PL/
+mv ../plwlist .
