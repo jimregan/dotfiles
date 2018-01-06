@@ -163,6 +163,9 @@ WINE REGISTRY Version 2
 [Software\\Classes\\.wri] 1509320725
 @="wrifile"
 
+[Software\\Classes\\.wsn] 1514714891
+@="wsnfile"
+
 [Software\\Classes\\.xbm] 1509320721
 "Content Type"="image/x-xbitmap"
 
@@ -30650,6 +30653,9 @@ WINE REGISTRY Version 2
 [Software\\Classes\\WScript.Shell.1\\CLSID] 1509320770
 @="{72C24DD5-D70A-438B-8A42-98424B88AFB8}"
 
+[Software\\Classes\\wsnfile\\shell\\open\\command] 1514714929
+@=str(2):"C:\\Program Files (x86)\\Wsno\\wsno.exe \"%1\""
+
 [Software\\Classes\\xbmfile] 1509320721
 @="XBM Image"
 
@@ -31781,7 +31787,7 @@ WINE REGISTRY Version 2
 "CommonPictures"=str(2):"%ALLUSERSPROFILE%\\Pictures"
 "CommonVideo"=str(2):"%ALLUSERSPROFILE%\\Videos"
 
-[Software\\Microsoft\\Windows\\CurrentVersion\\Fonts] 1509488535
+[Software\\Microsoft\\Windows\\CurrentVersion\\Fonts] 1514714925
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
@@ -31884,8 +31890,11 @@ WINE REGISTRY Version 2
 "DejaVu Serif Condensed Bold Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerifCondensed-BoldItalic.ttf"
 "DejaVu Serif Condensed Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerifCondensed-Italic.ttf"
 "DejaVu Serif Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerif-Italic.ttf"
+"Denemo"="Z:\\usr\\share\\fonts\\truetype\\denemo\\Denemo.ttf"
+"Emmentaler-26"="Z:\\usr\\share\\fonts\\truetype\\denemo\\emmentaler.ttf"
 "esint10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\esint10.ttf"
 "eufm10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\eufm10.ttf"
+"feta25.2"="Z:\\usr\\share\\fonts\\truetype\\denemo\\feta.ttf"
 "FreeMono"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMono.ttf"
 "FreeMono Bold"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMonoBold.ttf"
 "FreeMono Bold Oblique"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMonoBoldOblique.ttf"
@@ -32059,6 +32068,7 @@ WINE REGISTRY Version 2
 "MS Serif"="serife.fon"
 "msam10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\msam10.ttf"
 "msbm10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\msbm10.ttf"
+"MScore for scores"="Z:\\usr\\share\\fonts\\opentype\\mscore.otf"
 "NanumBarunGothic"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumBarunGothic.ttf"
 "NanumBarunGothic Bold"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumBarunGothicBold.ttf"
 "NanumGothic"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumGothic.ttf"
@@ -35853,7 +35863,7 @@ WINE REGISTRY Version 2
 
 [Software\\Microsoft\\Windows NT\\CurrentVersion\\FontMapper] 1509320725
 
-[Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts] 1509488535
+[Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts] 1514714925
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
@@ -35956,8 +35966,11 @@ WINE REGISTRY Version 2
 "DejaVu Serif Condensed Bold Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerifCondensed-BoldItalic.ttf"
 "DejaVu Serif Condensed Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerifCondensed-Italic.ttf"
 "DejaVu Serif Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerif-Italic.ttf"
+"Denemo"="Z:\\usr\\share\\fonts\\truetype\\denemo\\Denemo.ttf"
+"Emmentaler-26"="Z:\\usr\\share\\fonts\\truetype\\denemo\\emmentaler.ttf"
 "esint10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\esint10.ttf"
 "eufm10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\eufm10.ttf"
+"feta25.2"="Z:\\usr\\share\\fonts\\truetype\\denemo\\feta.ttf"
 "FreeMono"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMono.ttf"
 "FreeMono Bold"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMonoBold.ttf"
 "FreeMono Bold Oblique"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMonoBoldOblique.ttf"
@@ -36133,6 +36146,7 @@ WINE REGISTRY Version 2
 "MS Serif"="serife.fon"
 "msam10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\msam10.ttf"
 "msbm10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\msbm10.ttf"
+"MScore for scores"="Z:\\usr\\share\\fonts\\opentype\\mscore.otf"
 "NanumBarunGothic"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumBarunGothic.ttf"
 "NanumBarunGothic Bold"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumBarunGothicBold.ttf"
 "NanumGothic"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumGothic.ttf"
@@ -37275,6 +37289,14 @@ WINE REGISTRY Version 2
 [Software\\Wow6432Node\\Fios Feasa\\Drochl\xe1 Ruair\xed\\1.00.000] 1509320873
 
 [Software\\Wow6432Node\\Fios Feasa\\Seanfhocail\\1.0] 1509322224
+
+[Software\\Wow6432Node\\LORIA\\Wsno] 1514714891
+"WsnoDirectory"="C:\\Program Files (x86)\\Wsno"
+
+[Software\\Wow6432Node\\LORIA\\Wsno\\1.34] 1514714891
+
+[Software\\Wow6432Node\\LORIA\\Wsno\\Settings] 1514714891
+"Path"="C:\\Program Files (x86)\\Wsno"
 
 [Software\\Wow6432Node\\Microsoft\\.NETFramework] 1509320720
 "InstallRoot"="C:\\windows\\Microsoft.NET\\Framework\\"
@@ -38745,7 +38767,7 @@ WINE REGISTRY Version 2
 "MinLevel"=dword:00012000
 "RecommendedLevel"=dword:00012000
 
-[Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Capture\\{25DA76D0-033C-4235-9002-19F48894AC6F}] 1509320897
+[Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Capture\\{25DA76D0-033C-4235-9002-19F48894AC6F}] 1514714929
 "DeviceState"=dword:00000001
 
 [Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Capture\\{25DA76D0-033C-4235-9002-19F48894AC6F}\\Properties] 1509320789
@@ -38759,7 +38781,7 @@ WINE REGISTRY Version 2
   05,00,08,00,20,00,16,00,20,00,03,00,00,00,03,00,00,00,00,00,10,00,80,00,00,\
   aa,00,38,9b,71
 
-[Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Render\\{FD47D9CC-4218-4135-9CE2-0C195C87405B}] 1509320897
+[Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Render\\{FD47D9CC-4218-4135-9CE2-0C195C87405B}] 1514714929
 "DeviceState"=dword:00000001
 
 [Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Render\\{FD47D9CC-4218-4135-9CE2-0C195C87405B}\\Properties] 1509320789
@@ -40534,6 +40556,22 @@ WINE REGISTRY Version 2
 [Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Seanfhocail] 1509322224
 "DisplayName"="Seanfhocail"
 "UninstallString"="C:\\windows\\IsUninst.exe -f\"c:\\Program Files\\Fios Feasa\\Seanfhocail\\uninst.isu\""
+
+[Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\WinSnoori_is1] 1514714891
+"DisplayIcon"="C:\\Program Files (x86)\\Wsno\\wsno.exe"
+"DisplayName"="WinSnoori 1.34-08"
+"Inno Setup: App Path"="C:\\Program Files (x86)\\Wsno"
+"Inno Setup: Deselected Tasks"=""
+"Inno Setup: Icon Group"="WinSnoori"
+"Inno Setup: Selected Tasks"="desktopicon"
+"Inno Setup: Setup Version"="5.3.6 (a)"
+"Inno Setup: User"="jim"
+"InstallDate"="20171231"
+"InstallLocation"="C:\\Program Files (x86)\\Wsno\\"
+"NoModify"=dword:00000001
+"NoRepair"=dword:00000001
+"QuietUninstallString"="\"C:\\Program Files (x86)\\Wsno\\unins000.exe\" /SILENT"
+"UninstallString"="\"C:\\Program Files (x86)\\Wsno\\unins000.exe\""
 
 [Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{348C4E18-555F-4228-8924-15DDED955D0C}] 1509320774
 "AuthorizedCDFPrefix"=""
