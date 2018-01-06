@@ -1,19 +1,3 @@
-rm przygody-tomka-sawyera.txt-06.txt 
-less przygody-tomka-sawyera.txt 
-less pairs.tsv 
-cat hop-frog.txt 
-ffplay ../audio/edgar-allan-poe-hop-frog.mp3 
-less balzac-komedia-ludzka-bank-nucingena.txt 
-vi ../apply-specific.pl 
-perl ../apply-specific.pl 
-git diff
-less balzac-komedia-ludzka-bank-nucingena.txt 
-grep -i tryumf *txt
-mv ~/apply-norms.pl ..
-cat balzac-komedia-ludzka-bank-nucingena.txt|perl ../apply-norms.pl 
-mv ~/apply-norms.pl ..
-cat balzac-komedia-ludzka-bank-nucingena.txt|perl ../apply-norms.pl 
-cat balzac-komedia-ludzka-bank-nucingena.txt|perl ../apply-norms.pl > tmp
 git diff
 diff -u balzac-komedia-ludzka-bank-nucingena.txt tmp |less
 rm przygody-tomka-sawyera.txt-06.txt 
@@ -1998,3 +1982,19 @@ ls
 wc -l videos.tsv 
 grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do perl ../scripts/tg4-scrape.pl "$i";done
 ls
+cd /tmp
+mkdir mill
+cd mill/
+unzip ~/Downloads/Who\ Want\'s\ to\ be\ a\ millionaire.zip 
+clamscan The\ Game/Millionaire.iso 
+mkdir cd
+mount -t iso9660 The\ Game/Millionaire.iso cd/
+sudo mount -t iso9660 The\ Game/Millionaire.iso cd/
+clamscan -r cd
+cd cd/
+ls
+wine Setup.exe 
+cd ..
+sudo umount cd
+rm -rf The\ Game/
+rm ~/Downloads/Who\ Want\'s\ to\ be\ a\ millionaire.zip 
