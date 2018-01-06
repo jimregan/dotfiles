@@ -159,6 +159,9 @@ http://www.siopa.ie/siopa_files/PDFs/Extract/Sliocht_Idir_Dha_Thir.pdf
 https://www.cic.ie/
 http://www.leabhar.com/
 http://www.eabhloid.com/
+https://www.gaois.ie/blg/ga/obair-na-bliana-2017/
+https://www.duchas.ie/en
+http://www.ranganna.com/Ceim.aspx?ID=4496&lang=en
 
 
 
@@ -250,4 +253,12 @@ https://github.com/tensorflow/models/tree/master/research/skip_thoughts
 https://github.com/tensorflow/models/tree/master/research/adversarial_text
 https://medium.com/@LeonFedden/comparative-audio-analysis-with-wavenet-mfccs-umap-t-sne-and-pca-cb8237bfce2f
 http://www-lium.univ-lemans.fr/diarization/doku.php/single-show_diarization
+
+https://github.com/Miffyli/im2latex-dataset
+http://lstm.seas.harvard.edu/latex/
+https://github.com/harvardnlp/im2markup
+
+https://github.com/facebookresearch/StarSpace
+https://github.com/facebookresearch/SentEval
+https://github.com/facebookresearch/wav2letter/tree/master/speech
 
