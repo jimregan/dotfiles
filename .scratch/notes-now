@@ -1,0 +1,188 @@
+jim@HG658c:/tmp/apache-opennlp-1.8.1$ ./bin/opennlp TokenNameFinderEvaluator -model ga-ner-person-word2vec-brown50.bin -nameTypes person -data ~/Playing/ainm-ner-corpus/all-ner.txt 
+Loading Token Name Finder model ... done (0.199s)
+current: 2097.9 sent/s avg: 2097.9 sent/s total: 2100 sent
+current: 3225.2 sent/s avg: 2661.5 sent/s total: 5323 sent
+current: 3311.3 sent/s avg: 2877.0 sent/s total: 8631 sent
+current: 3455.5 sent/s avg: 3024.8 sent/s total: 12205 sent
+current: 3442.5 sent/s avg: 3105.6 sent/s total: 15528 sent
+current: 3509.5 sent/s avg: 3172.5 sent/s total: 19035 sent
+current: 3419.4 sent/s avg: 3207.6 sent/s total: 22453 sent
+current: 3690.7 sent/s avg: 3267.5 sent/s total: 26140 sent
+current: 3530.5 sent/s avg: 3296.3 sent/s total: 29667 sent
+current: 3403.4 sent/s avg: 3306.8 sent/s total: 33068 sent
+current: 3526.5 sent/s avg: 3326.5 sent/s total: 36591 sent
+current: 3623.6 sent/s avg: 3351.0 sent/s total: 40212 sent
+current: 3708.7 sent/s avg: 3378.2 sent/s total: 43917 sent
+current: 3535.5 sent/s avg: 3389.3 sent/s total: 47450 sent
+current: 3424.4 sent/s avg: 3391.5 sent/s total: 50872 sent
+current: 3538.5 sent/s avg: 3400.5 sent/s total: 54408 sent
+
+
+Average: 3404.5 sent/s 
+Total: 57658 sent
+Runtime: 16.936s
+
+Evaluated 57657 samples with 14631 entities; found: 13838 entities; correct: 12702.
+       TOTAL: precision:   91.79%;  recall:   86.82%; F1:   89.23%.
+      person: precision:   91.79%;  recall:   86.82%; F1:   89.23%. [target: 14631; tp: 12702; fp: 1136]
+
+Brown et al. 1990; Brown et al. 1993; Berger et
+al. 1994
+
+
+http://www.mitpressjournals.org/doi/pdf/10.1162/0891201042544884
+2. Log-Linear Models for Statistical Machine Translation
+We are given a source (French) sentence
+f
+=
+f
+J
+1
+=
+f
+1
+,
+...
+,
+f
+j
+,
+...
+,
+f
+J
+, which is to be trans-
+lated  into  a  target  (English)  sentence
+e
+=
+e
+I
+1
+=
+e
+1
+,
+...
+,
+e
+i
+,
+...
+,
+e
+I
+.
+Among  all  possible
+target sentences, we will choose the sentence with the highest probability:
+2
+ˆ
+e
+I
+1
+=
+argmax
+e
+I
+1
+{
+Pr
+(
+e
+I
+1
+|
+f
+J
+1
+)
+}
+(1)
+
+
+3.3 Bilingual Contiguous Phrases
+
+####
+http://www.statmt.org/moses/?n=moses.background
+BP(f1J,e1J,A) = { ( fjj+m,eii+n ) }: forall (i',j') in A : j <= j' <= j+m <-> i <= i' <= i+n
+
+
+ Core Algorithm
+
+The phrase-based decoder we developed employs a beam search algorithm, similar to the one used by Jelinek (book "Statistical Methods for Speech Recognition", 1998) for speech recognition. 
+
+###
+
+ven the basic formulas are
+identical except for a change in the letters that designate the variables:
+̂
+E
+=
+arg max
+E
+P
+(
+F
+|
+E
+)
+P
+(
+E
+
+
+p. 492
+http://www.mitpressjournals.org/doi/pdf/10.1162/coli.2009.35.4.35401
+
+
+
+Two bundle types have shown statistically significant overuse (on the other
+hand) and underuse (in the context of) on the part of the non-native group.
+(Biber et al., 2004,
+
+
+Biber, D., Conrad, S., &amp; Cortes, V. (2004). If you look at ...: Lexical bundles in university
+teaching and textbooks. Applied Linguistics, 25(3), 371–405. doi:
+10.1093/applin/25.3.371
+
+
+@article{SanchezCartagena201546,
+title = "A generalised alignment template formalism and its application to the inference of shallow-transfer machine translation rules from scarce bilingual corpora ",
+journal = "Computer Speech & Language ",
+volume = "32",
+number = "1",
+pages = "46 - 90",
+year = "2015",
+issn = "0885-2308",
+doi = "http://dx.doi.org/10.1016/j.csl.2014.10.003",
+url = "http://www.sciencedirect.com/science/article/pii/S0885230814001028",
+author = "Víctor M. Sánchez-Cartagena and Juan Antonio Pérez-Ortiz and Felipe Sánchez-Martínez",
+}
+
+
+b32b5a4119859f3dc757614369548cae7355ec4e
+
+
+
+In the year of 1997, Ramon Neco and Mikel Forcada came up with the idea of using “encoder-decoder” structure to do machine translations [2]
+A few years later in 2003, a group of researchers at the University of Montreal led by Yoshua Bengio developed a language model based on neural networks [3]
+
+In 2013, Nal Kalchbrenner and Phil Blunsom proposed a new end-to-end encoder-decoder structure for machine translation [4]. This model will encode a given source text into a continuous vector using Convolutional Neural Network (CNN), and then use Recurrent Neural Network (RNN) as the decoder to transform the state vector into the target language. Their work can be treated as the birth of the Neural Machine Translation (NMT)
+
+In addition, the RNN is supposed to be capable of capturing information behind an infinite length of sentences and solving the problem of “long distance reordering” [29]. However, the problem of “exploding/vanishing gradient” [28] 
+
+Sutskever et al. and Cho et al. developed a method called sequence to sequence (seq2seq) learning using RNN for both encoder and decoder [5][6], and introduced the Long Short-Term Memory (LSTM, a variety of RNN) for NMT
+
+The problem of “fixed-length vector” started to be solved since Yoshua Bengio’s group introduced the “attention” mechanism to NMT [7] in 2014. The attention mechanism was originally proposed by DeepMind for image classification [23], which “enables the neural network to focus on relevant parts of input more than irrelevant parts when doing a prediction task” [24]. 
+
+Compared with SMT, NMT can train multiple features jointly and does not need prior domain knowledge, which enables zero-shot translation [32]. 
+
+On the other side, there are still problems and challenges of NMT need to be tackled: The training and decoding process is quite slow; the style of translation can be inconsistent for the same word; there exists an “out-of-vocabulary” problem on the translation results; the “black-box” neural network mechanism leads to poor interpretability; thus the parameters for training are mostly picked based on experience.
+
+ Google Translate [8]. The NMT they deployed is named Google Neural Machine Translation (GNMT), and a paper was published at the same time to explain that model in details [9]. In just one year (2017), Facebook AI Research (FAIR) announced their way of implementing NMT with CNN, which can achieve a similar performance as the RNN-based NMT [10][11] while running nine times faster. In response, Google released a solely attention-based NMT model in June which used neither CNN nor RNN and purely based on the “attention” mechanism [12].
+ 
+ 
+@article{gough2004robust,
+  title={Robust large-scale EBMT with marker-based segmentation},
+  author={Gough, Nano and Way, Andy},
+  year={2004}
+}
