@@ -31787,7 +31787,7 @@ WINE REGISTRY Version 2
 "CommonPictures"=str(2):"%ALLUSERSPROFILE%\\Pictures"
 "CommonVideo"=str(2):"%ALLUSERSPROFILE%\\Videos"
 
-[Software\\Microsoft\\Windows\\CurrentVersion\\Fonts] 1514714925
+[Software\\Microsoft\\Windows\\CurrentVersion\\Fonts] 1515011307
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
@@ -35863,7 +35863,7 @@ WINE REGISTRY Version 2
 
 [Software\\Microsoft\\Windows NT\\CurrentVersion\\FontMapper] 1509320725
 
-[Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts] 1514714925
+[Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts] 1515011307
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
@@ -37263,8 +37263,9 @@ WINE REGISTRY Version 2
 
 [Software\\Registered Applications] 1509320725
 
-[Software\\Wine\\Drives] 1509320725
+[Software\\Wine\\Drives] 1515011294
 "e:"="cdrom"
+"g:"="cdrom"
 
 [Software\\Wine\\MSHTML\\2.21] 1509320723
 "GeckoPath"="C:\\windows\\system32\\gecko\\2.21\\wine_gecko\\"

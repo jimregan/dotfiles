@@ -668,11 +668,11 @@ WINE REGISTRY Version 2
 "OpenWithIcon"="7765_winebrowser.0"
 "ProgID"="xmlfile"
 
-[Software\\Wine\\Fonts] 1514714925
+[Software\\Wine\\Fonts] 1515011297
 "Codepages"="1252,850"
 "LogPixels"=dword:00000060
 
-[Software\\Wine\\Fonts\\External Fonts] 1514714925
+[Software\\Wine\\Fonts\\External Fonts] 1515011307
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
