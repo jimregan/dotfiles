@@ -482,3 +482,715 @@ https://www.google.ie/search?q=tensorflow+c%2B%2B&oq=tensorflow+c%2B%2B&aqs=chro
 https://github.com/jhjin/tensorflow-cpp/blob/master/app.cc
 
 https://arxiv.org/pdf/1703.08864.pdf
+
+https://www.theguardian.com/news/2017/oct/27/the-war-against-pope-francis?CMP=fb_gu
+
+http://www.perlmonks.org/?node_id=388423
+@sorted = sort { length $a <=> length $b } @elements
+
+https://github.com/googlei18n/language-resources/tree/master/festus
+https://github.com/googlei18n/language-resources/blob/master/si/textnorm/classifier/date.grm
+
+https://github.com/rwsproat/text-normalization-data
+https://arxiv.org/pdf/1611.00068.pdf
+
+https://github.com/CSTR-Edinburgh/merlin/
+
+https://github.com/danijel3/SpeechToolsWorkers/blob/master/tasks/emu/segmentation.py
+
+https://en.wikisource.org/wiki/Author:George_W._Bush/Presidential_radio_addresses
+https://georgewbush-whitehouse.archives.gov/news/releases/2009/01/20090117.html
+
+https://ukrainian.voanews.com/a/ofis-sanktsiyna-polityka/4088746.html
+
+http://mowa.clarin-pl.eu/korpusy
+https://github.com/danijel3/ClarinStudioKaldi/blob/master/local_clarin/compute-oov.sh
+https://github.com/AdolfVonKleist/Phonetisaurus
+https://github.com/danijel3/ClarinSpeechToolsWeb/blob/master/web/util/get_transcription.php
+https://github.com/danijel3/CTMtoEMU
+
+https://github.com/google/sparrowhawk/blob/master/documentation/README.md
+https://github.com/google/sparrowhawk
+https://github.com/googlei18n/language-resources
+
+https://github.com/googlei18n/language-resources/tree/master/festus
+https://github.com/googlei18n/language-resources/tree/master/af/merlin
+
+https://github.com/CSTR-Edinburgh/merlin/
+
+https://github.com/apache/opennlp/commit/a800c6ae0dc4e6badcbc9f3812a69422f86314df
+
+https://github.com/apache/opennlp
+https://github.com/apache/opennlp/commits/master
+
+https://www.youtube.com/watch?v=qyvlt7kiQoI&feature=youtu.be
+https://cloud.google.com/blog/big-data/2017/01/learn-tensorflow-and-deep-learning-without-a-phd
+
+https://pmpml.github.io/PMPML16/papers/PMPML16_paper_20.pdf
+
+https://sourceforge.net/p/libwps/code/ci/master/tree/src/lib/DosWord.cpp
+https://winworldpc.com/product/professional-write/plus-1x
+https://en.wikipedia.org/wiki/Pfs:Write
+https://winworldpc.com/product/amipro/3x
+http://www.techrepublic.com/blog/classics-rock/ancient-word-processors-highlight-the-lack-of-modern-software-diversity/
+https://fr.wikipedia.org/wiki/Calamus_Publisher
+https://www.google.ie/search?q=locoscript+converter&client=ubuntu&hs=iHW&ei=Gj7yWan8BeebgAbSm5HACQ&start=10&sa=N&biw=1920&bih=900
+http://www.seasip.info/Unix/PSF/index.html
+http://www.chiark.greenend.org.uk/~jacobn/cpm/mdaspec.html
+http://www.seasip.info/Unix/Joyce/ls1frm.html
+
+https://drill.apache.org/docs/hive-to-drill-data-type-mapping/
+https://arrow.apache.org/docs/cpp/md_tutorials_row_wise_conversion.html
+https://github.com/apache/pdfbox/blob/trunk/tools/src/main/java/org/apache/pdfbox/tools/ExtractText.java
+
+https://github.com/BVLC/caffe/blob/master/docs/install_apt_debian.md
+https://github.com/BVLC/caffe/blob/master/examples/cpp_classification/classification.cpp
+https://docs.opencv.org/3.2.0/d5/de7/tutorial_dnn_googlenet.html
+https://docs.opencv.org/3.1.0/d5/de7/tutorial_dnn_googlenet.html#gsc.tab=0
+https://packages.debian.org/source/sid/caffe
+http://newdocs.readthedocs.io/en/latest/build.html
+
+https://github.com/apache/incubator-mxnet
+http://neuralnetworksanddeeplearning.com/chap1.html
+
+https://research.google.com/pubs/pub44822.html
+https://eprint.iacr.org/2017/281
+https://arxiv.org/abs/1602.05629
+https://research.googleblog.com/2017/04/federated-learning-collaborative.html
+
+https://github.com/google/sling/tree/88771ebb771d2e32a2f481d3523c4747303047e0/tools
+
+https://github.com/jimregan/dotfiles/commit/634169bb0c0e6c4f7d1c6d58990894add66764eb
+https://github.com/jimregan/dotfiles/commit/c0ae532f464f7fc39793c232204f5162e85bc7cf
+https://github.com/jimregan/dotfiles/commit/8b7493693403e32e93cafcf5e4e7a2206ba1dcb8
+https://github.com/jimregan/dotfiles/commit/4ec92bb600caea37347d6d1701989da78d1f9df9
+https://github.com/jimregan/dotfiles/commit/b90c4215e2ddaabf0fd3d84fc080f4085ff208db
+https://github.com/jimregan/dotfiles/commit/e6b037a35c33f25f6f8ea1a916a3ee538e21b526
+https://github.com/jimregan/dotfiles/commit/b5dbc6eaecab8a3c68807c27d630f32b28981592
+
+http://storm.apache.org/releases/2.0.0-SNAPSHOT/index.html
+http://storm.apache.org/releases/2.0.0-SNAPSHOT/Multilang-protocol.html
+https://en.wikipedia.org/wiki/Storm_(event_processor)
+http://www.wallaroolabs.com/
+https://en.wikipedia.org/wiki/Apache_Spark#Spark_Streaming
+https://github.com/twitter/heron
+https://twitter.github.io/heron/docs/developers/java/streamlet-api/
+https://twitter.github.io/heron/docs/migrate-storm-to-heron/
+https://github.com/streamlio/heron-java-streamlet-api-example/blob/master/src/main/java/io/streaml/heron/streamlet/WindowedWordCount.java
+https://github.com/streamlio
+
+https://www.google.ie/search?q=anymalign&oq=anymalign&aqs=chrome..69i57j69i65.7615j0j4&client=ubuntu&sourceid=chrome&ie=UTF-8
+
+https://github.com/pombredanne/anymalign/blob/master/anymalign.py
+https://anymalign.limsi.fr/
+
+https://saki.siit.tu.ac.th/snlp2013/app/webroot/downloads/snlp2013_proceeding.pdf
+
+http://www.storm-project.net/
+https://twitter.github.io/heron/docs/concepts/topologies/
+https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
+https://www.tutorialspoint.com/hadoop/hadoop_hdfs_operations.htm
+https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
+https://stackoverflow.com/questions/30228764/how-can-we-pass-listtext-as-mapper-output
+http://hadoop.apache.org/docs/r2.4.1/api/org/apache/hadoop/io/ArrayWritable.html
+
+https://dzone.com/articles/word-count-hello-word-program-in-mapreduce
+https://github.com/apache/storm/blob/master/examples/storm-starter/src/jvm/org/apache/storm/starter/spout/RandomIntegerSpout.java
+https://github.com/apache/storm/blob/master/examples/storm-starter/src/jvm/org/apache/storm/starter/SlidingWindowTopology.java
+https://github.com/apache/storm/blob/master/examples/storm-starter/src/jvm/org/apache/storm/starter/WordCountTopology.java
+https://github.com/apache/storm/blob/master/examples/storm-starter/src/jvm/org/apache/storm/starter/WordCountTopologyNode.java
+
+https://github.com/yandex/ClickHouse
+https://github.com/yandex/CMICOT
+https://github.com/yandex/faster-rnnlm
+https://github.com/yandex/dep_tregex/blob/master/dep_tregex/tree_pattern.py
+https://yandex.github.io/dep_tregex/tregex_tutorial.html
+https://github.com/yandex/tomita-parser
+https://github.com/yandex/sdch_module
+https://github.com/yandex/rep
+https://github.com/yandex/segnet-torch
+https://arxiv.org/abs/1511.00561
+https://github.com/yandex/mms/blob/master/example.cpp
+
+http://www.haroldnguyen.com/blog/2015/01/setting-up-storm-and-running-your-first-topology/
+https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-storm-develop-java-topology
+http://www.corejavaguru.com/bigdata/storm/word-count-topology
+http://boost-spirit.com/home/wp-content/uploads/2010/05/A_Framework_for_RAD_Spirit.pdf
+https://github.com/fragglet/c-algorithms/blob/master/src/trie.c
+
+https://en.wikipedia.org/wiki/LBR_(file_format)
+https://web.archive.org/web/20100111065846/http://web.ukonline.co.uk/cliff.lawson/
+http://amstrad.cpc.free.fr/article.php?sid=21
+
+https://winworldpc.com/product/ibm-writing-assistan/100
+https://sourceforge.net/p/libmwaw/wiki/Home/
+https://sourceforge.net/projects/libwpd/
+https://sourceforge.net/p/libwps/code/ci/master/tree/src/lib/
+https://sourceforge.net/p/libwps/mailman/libwps-devel/
+https://sourceforge.net/p/libwpg/code/ci/master/tree/src/lib/WPGXParser.cpp
+https://sourceforge.net/u/dtardon/profile/
+https://sourceforge.net/p/librvngabw/code/ci/master/tree/src/ABWGenerator.cxx
+http://libwpd.sourceforge.net/
+https://winworldpc.com/product/pfswrite/axx
+http://www.luxsoft.demon.co.uk/lux/lconv.html
+http://www.genesis8bit.fr/amstrad/links/linkpcw.php
+http://www.seasip.info/Cpm/software/amstrad.html
+https://cpcrulez.fr/applications_bureau-locoscript_2.htm
+https://cpcrulez.fr/applications_bureau-write_hand_man.htm
+https://cpcrulez.fr/applications_bureau-locoscript_4.htm
+https://cpcrulez.fr/applications_bureau_locoscript-all_you_ever_need_to_know.htm
+https://cpcrulez.fr/applications_coding-basic-locomotive.htm
+https://cpcrulez.fr/applications_CPM-util-locofile_POPU.htm
+https://archive.org/stream/pcw-today-09/PCW_Today_n09.djvuconvert#page/n29/mode/2up
+http://www.cpctech.org.uk/docs/dsk.html
+http://www.seasip.info/Cpm/format14.html
+
+https://wiki.documentfoundation.org/WikiAction/history/DLP/Libraries
+https://github.com/diazbastian/softmakeroffice-sample-documents
+http://www.documentliberation.org/projects/
+https://github.com/fosnola/libstaroffice
+https://wiki.documentfoundation.org/DLP/Libraries/libcdr
+http://www.softmaker.com/en/
+https://github.com/diazbastian/softmakeroffice-sample-documents
+http://userpage.fu-berlin.de/iseler/papers/index.html
+https://wiki.documentfoundation.org/index.php?title=DLP/Libraries&diff=139455&oldid=138757
+https://wiki.documentfoundation.org/index.php?title=DLP/Libraries&oldid=92189
+
+https://www.google.ie/search?q=open+source+screenplay+software&oq=opensource+screenplay&aqs=chrome.1.69i57j0l4j69i64.6287j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+https://fountain.io/_downloads/Big%20Fish.pdf
+https://github.com/oskusalerma/trelby/blob/master/src/myimport.py
+https://sourceforge.net/p/openscrfmt/wiki/Home/
+http://www.trelby.org/
+https://www.celtx.com/index.html
+https://fountain.io/_downloads/Big-Fish.fountain
+https://fountain.io/_downloads/Big%20Fish.fdx
+file:///home/jim/Downloads/OSF-2.0.xml
+
+http://www.jfree.org/jworkbook/download/gnumeric-xml.pdf
+https://www.abisource.com/wiki/AbiWord
+https://github.com/GNOME/gnumeric/blob/master/gnumeric.xsd
+
+http://www.boost.org/doc/libs/1_50_0/libs/iostreams/doc/classes/mapped_file.html
+
+http://www.retroarchive.org/cpm/cdrom/CPM/
+http://www.retroarchive.org/cpm/cdrom/CPM/MISC/
+http://www.retroarchive.org/cpm/cdrom/CPM/UTILS/TXTUTL/
+http://www.caliban.org/pcw_cc9.html
+http://www.retroisle.com/general/locomotive.php
+
+http://speech.com.ua/english.html
+http://www.speech.com.ua/Kyiv.zip
+http://www.speech.com.ua/Nizhyn.zip
+http://www.speech.com.ua/Lviv.zip
+
+https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/steps/nnet3/multilingual/combine_egs.sh
+https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/steps/nnet2/train_multilang2.sh
+https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/steps/nnet2/train_more2.sh
+https://sourceforge.net/p/kaldi/discussion/1355348/thread/bc270732/?limit=25
+https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/steps/nnet2/train_more.sh
+https://github.com/kaldi-asr/kaldi/tree/master/egs/swahili
+
+http://speech.com.ua/developers.html
+http://www.speech.com.ua/dialog.txt
+https://uk.wiktionary.org/wiki/%D0%B0%D0%B1%D0%B0%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9
+https://fr.wiktionary.org/wiki/%D0%B0%D0%B1%D0%B0%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9
+https://fr.wiktionary.org/wiki/%D0%B0%D0%B1%D0%B0%D1%82%D1%81%D1%8C%D0%BA%D0%B8%D0%B9
+
+https://github.com/ALIZE-Speaker-Recognition/android-alize
+https://github.com/ALIZE-Speaker-Recognition/LIA_RAL
+
+
+http://speech.com.ua/english.html
+https://en.wiktionary.org/wiki/Special:WhatLinksHere/Module:uk-pronunciation
+https://en.wiktionary.org/wiki/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0
+https://en.wiktionary.org/wiki/Category:Ukrainian_terms_with_IPA_pronunciation
+
+https://github.com/irmen/Pyrolite/blob/master/java/src/main/java/net/razorvine/pickle/Unpickler.java
+
+
+http://opengrm.org/
+https://www.cs.jhu.edu/~jason/465/hw-ofst/hw-ofst.pdf
+
+https://cwiki.apache.org/confluence/pages/viewrecentblogposts.action?key=JOSHUA
+
+https://engineering.jhu.edu/clsp/wp-content/uploads/sites/75/2016/06/Building-Speech-Recognition-Systems-with-the-Kaldi-Toolkit.pdf
+
+https://github.com/wslihgt/separateLeadStereo
+https://github.com/MTG/DeepConvSep
+https://github.com/craigsapp/midifile
+
+https://venturebeat.com/2016/01/12/the-internet-archives-new-project-preserves-political-tv-ads-so-journalists-can-see-whos-lying/
+https://github.com/dpwe/elene4896
+https://github.com/dpwe/audfprint
+https://archive.org/details/us_congress_archive
+https://archive.org/details/tv
+http://politicaladarchive.org/ad/PolAd_DonaldTrump_5rk9i
+https://www.forbes.com/sites/kalevleetaru/2017/01/06/the-internet-archives-new-donald-trump-and-white-house-archives-transparency-and-history-as-data/#eca4c4135a7a
+https://archive.org/post/1026229/audio-fingerprinting-using-docker
+https://blog.archive.org/2017/01/05/internet-archives-trump-archive-launches-today/
+
+http://www.danielpovey.com/files/2017_interspeech_dropout.pdf
+http://www.danielpovey.com/files/2017_icassp_reverberation.pdf
+http://www.danielpovey.com/files/2017_icassp_diarization_embeddings.pdf
+http://www.danielpovey.com/files/2015_interspeech_augmentation.pdf
+http://www.danielpovey.com/files/2015_icassp_librispeech.pdf
+http://www.danielpovey.com/files/2013_icassp_quantifying.pdf
+
+https://sourceforge.net/p/kaldi/mailman/message/33229487/
+https://chrisearch.wordpress.com/2017/03/11/speech-recognition-using-kaldi-extending-and-using-the-aspire-model/
+http://codingandlearning.blogspot.ie/2014/01/kaldi-lattices.html
+https://github.com/kaldi-asr/kaldi/blob/master/src/lat/kaldi-lattice.cc
+http://kaldi-asr.org/doc/graph.html
+http://senarvi.github.io/2016/12/15/kaldi-lattices
+https://github.com/
+https://github.com/wiseodd/generative-models
+https://github.com/kaldi-asr/kaldi/issues/720
+https://github.com/danpovey/pocolm/blob/master/src/perturb-counts.cc
+http://vpanayotov.blogspot.ie/2012/06/kaldi-decoding-graph-construction.html
+
+https://github.com/aalto-speech/finnish-parliament-scripts/blob/master/extract/elan_wav_extractor.py
+
+https://github.com/CSTR-Edinburgh/merlin/issues/18
+ train new voice #18 
+
+https://github.com/kaitai-io/kaitai_struct_formats
+https://github.com/kaitai-io/kaitai_struct/tree/master/runtime
+
+https://www.clarin.eu/content/participating-consortia
+http://slowadnia.clarin-pl.eu/#/default/1177/true
+https://github.com/clarin-eric
+https://github.com/bansp?tab=repositories
+https://github.com/LingSIG/TEI
+https://github.com/laurentromary/stdfSpec/pull/19
+https://github.com/laurentromary?tab=repositories
+https://www.clarin.eu/content/depositing-services
+https://www.kielipankki.fi/tools/
+http://metashare.csc.fi/repository/browse/proto-indo-european-lexicon/bb1beaf2d90911e4a1e7005056be118e14c201b88da748f591a220e365dc3bb1/
+https://www.kielipankki.fi/corpora/
+http://metashare.csc.fi/repository/browse/the-newspaper-and-periodical-ocr-corpus-of-the-national-library-of-finland-1771-1874/b8aa5526f86f11e4b854005056be118e90b1181e447d45b1a8b81b5a2f5b61d8/
+http://metashare.csc.fi/repository/browse/digital-morphology-archives/68f89f52fccc11e18b49005056be118e78f177f6db994d2798dfbddf7eb08496/
+https://korp.csc.fi/?mode=other_languages#?lang=en&prequery_within=sentence&cqp=%5B%5D
+https://github.com/aalto-speech/AaltoASR/tree/develop/decoder/src
+https://codereview.stackexchange.com/questions/102374/boost-spirit-utf-8-string-literal-parser-with-escape-support
+
+http://www.boost.org/doc/libs/1_51_0/libs/spirit/doc/html/spirit/qi/reference/operator/optional.html
+ftp://ftp.umiacs.umd.edu/pub/hiren/Hiren/Tools/bedops-2.4.2/third-party/boost/boost/spirit/home/lex/tokenize_and_parse.hpp
+https://www.codeproject.com/articles/1130262/cplusplus-string-view-conversion-to-integral-types
+
+http://fileformats.archiveteam.org/wiki/FrameMaker
+http://fileformats.archiveteam.org/wiki/Element_Definition_Document
+https://help.adobe.com/en_US/FrameMaker/8.0/help.html?content=Chap2-FrameMaker-Basics_098.html
+https://help.adobe.com/en_US/framemaker/mifreference/mifref.pdf
+# framemaker MIF reference
+
+http://www.logos.ic.i.u-tokyo.ac.jp/~tsuruoka/lapos/
+Lookahead Part-Of-Speech Tagger
+https://github.com/cltk/lapos
+
+
+https://github.com/behnam/graphite
+"Smart font"
+
+https://github.com/XifengGuo/CapsNet-Keras
+https://github.com/AaronLeong/CapsNet_Mxnet
+https://github.com/llSourcell/capsule_networks
+https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc
+
+https://github.com/danijel3?tab=repositories
+https://github.com/danijel3/CTMtoEMU/blob/master/CTM.py
+https://cran.r-project.org/web/packages/wrassp/index.html
+https://github.com/danijel3?tab=stars
+https://github.com/Kyubyong/tacotron
+http://www.audiotreasure.com/webindex.htm
+https://github.com/kailashahirwar/cheatsheets-ai
+https://github.com/JDaren/subtitleConverter
+https://github.com/mmorise/tusk/tree/master/src
+https://github.com/mmorise/tusk/blob/master/src/generate_pulsetrain_from_f0_contour.m
+https://github.com/basveeling/wavenet
+https://github.com/IDSIA/sacred
+https://github.com/dialogflow/asr-server/blob/master/src/Nnet3LatgenFasterDecoder.cc
+https://github.com/danijel3/ASRDemos/blob/master/notebooks/HMM_FST.ipynb
+http://www.ee.columbia.edu/~dpwe/e6820/papers/Rabiner89-hmm.pdf
+https://github.com/danijel3/PSO_lecture/blob/master/1_Wprowadzenie.ipynb
+https://github.com/danijel3/ClarinSpeechWebsite
+https://github.com/kailashahirwar/cheatsheets-ai/blob/master/All%20Cheat%20Sheets.pdf
+
+
+https://github.com/Zeta36/tensorflow-image-wavenet
+https://github.com/tomlepaine/fast-wavenet/blob/master/wavenet/models.py
+https://hackernoon.com/supervised-deep-learning-in-image-classification-for-noobs-part-1-9f831b6d430d
+https://arxiv.org/pdf/1502.03044.pdf
+http://cs.stanford.edu/people/karpathy/deepimagesent/
+https://github.com/kelvinxu/arctic-captions/blob/master/generate_caps.py
+http://lstm.seas.harvard.edu/latex/
+https://github.com/harvardnlp/im2markup/commits/master
+https://openreview.net/forum?id=HJWLfGWRb&noteId=HJWLfGWRb
+https://arxiv.org/abs/1710.09829
+https://en.wikipedia.org/wiki/B-tree
+http://cis.stvincent.edu/html/tutorials/swd/btree/btree.html
+https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
+https://dasg.ac.uk/text/68.txt
+https://cpcrulez.fr/applications_CPM-util-locofile_POPU.htm
+https://cpcrulez.fr/applications_CPM-util-cardbox__ACU.htm
+http://www.cpcwiki.eu/forum/software-related/locoscript-error-%27not-a-locoscript-document%27/
+http://www.scipy-lectures.org/
+http://www.boost.org/doc/libs/1_65_1/libs/graph/doc/index.html
+https://www.ibm.com/developerworks/aix/library/au-aix-boost-graph/index.html
+http://www.technical-recipes.com/2015/getting-started-with-the-boost-graph-library/
+http://www.boost.org/doc/libs/1_57_0/libs/graph/doc/graph_concepts.html
+http://kaldi-asr.org/doc/lattice-confidence_8cc_source.html
+http://www.openfst.org/twiki/bin/view/FST/FstExamples
+http://www.openfst.org/twiki/bin/view/FST/ComposeDoc
+
+https://github.com/paulot/uva2/blob/master/10660.cpp
+https://github.com/paulot/uva/blob/master/10550.cpp
+https://www.educative.io/collection/5642554087309312/5679846214598656
+https://www.educative.io/collection/page/5642554087309312/5679846214598656/240002
+https://www.educative.io/collection/5668639101419520/5649050225344512
+https://www.educative.io/collection/5642554087309312/5679846214598656/experthelp/5737014913662976
+https://stackoverflow.com/questions/610883/how-to-know-if-an-object-has-an-attribute-in-python
+http://www.openfst.org/twiki/bin/view/FST/IntersectDoc
+http://white.ucc.asn.au/Kaldi-Notes/fst-example/
+http://idiom.ucsd.edu/~rlevy/teaching/2015winter/lign165/lectures/lecture10/lecture10_working_with_OpenFst.pdf
+http://www.edobashira.com/2010/08/openfst-12.html
+http://www.umiacs.umd.edu/~hollingk/tutorials/JHU_tutorial.html
+https://pyfst.github.io/user_guide.html
+http://tylerpalsulich.com/post/introduction-to-finite-state-transducers/
+http://tylerpalsulich.com/post/levenshtein-edit-distance-with-fsts/
+https://github.com/tbpalsulich
+https://williamhartmann.wordpress.com/2014/02/02/converting-a-language-model-to-a-finite-state-transducer/
+https://github.com/hartmannw/BlogCode/blob/master/2014/FSMConversion/convert_lm_to_fst.py
+
+
+https://en.wikisource.org/wiki/Help:Match_and_split
+
+https://github.com/Tencent/libco
+# c/c++ coroutines
+https://github.com/Tencent/mars
+https://github.com/Tencent/paxosstore
+# distributed database
+https://github.com/Tencent/TscanCode
+https://github.com/Tencent/ncnn
+https://github.com/Tencent/rapidjson/blob/master/doc/tutorial.md
+https://github.com/Tencent/angel
+parameter server
+https://github.com/Tencent/wcdb
+https://github.com/Tencent/wcdb
+https://github.com/Tencent/Tars/blob/master/README.en.md
+
+https://github.com/facebookresearch/ParlAI
+https://github.com/facebookresearch/StarSpace
+# not open source
+https://github.com/facebookresearch/faiss
+
+http://www.gitxiv.com/posts/FqWSa2CexrKDyMhgQ/learning-asymmetric-recurrent-neural-networks-thru
+https://github.com/anirudh9119/walkback_nips17
+https://arxiv.org/abs/1711.02282
+
+http://www.gitxiv.com/posts/J5MeRzFnHsRDxpHSC/decoupled-neural-interfaces-using-synthetic-gradients
+https://github.com/1adrianb/face-alignment/blob/master/face_alignment/models.py
+https://github.com/1adrianb/binary-human-pose-estimation
+https://github.com/1adrianb/bnn.torch/blob/3f588a3d607c01a71fd176f1aaef4f0cacc34585/BinarySpatialConvolution.cu
+https://github.com/1adrianb/optimize-net/tree/b4c872cfc90c4f04f62fc8a8931219aeb16858bb
+https://github.com/cnclabs/proNet-core
+https://github.com/chihming/awesome-network-embedding
+https://dl.acm.org/citation.cfm?id=3098061
+struc2vec: Learning Node Representations from Structural Identity
+
+https://github.com/iamaaditya/neural-paraphrase-generation
+
+https://www.codeproject.com/Articles/20027/JSON-Spirit-A-C-JSON-Parser-Generator-Implemented
+http://rapidjson.org/md_doc_tutorial.html
+https://github.com/Tencent/rapidjson/blob/master/doc/tutorial.md
+
+http://www.martinbroadhurst.com/context-free-grammar-in-c.html
+http://www.martinbroadhurst.com/ungers-method-in-c.html
+https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#C.2B.2B
+unsigned int levenshtein_distance(const std::string& s1, const std::string& s2) 
+{
+	const std::size_t len1 = s1.size(), len2 = s2.size();
+	std::vector<unsigned int> col(len2+1), prevCol(len2+1);
+	
+	for (unsigned int i = 0; i < prevCol.size(); i++)
+		prevCol[i] = i;
+	for (unsigned int i = 0; i < len1; i++) {
+		col[0] = i+1;
+		for (unsigned int j = 0; j < len2; j++)
+                        // note that std::min({arg1, arg2, arg3}) works only in C++11,
+                        // for C++98 use std::min(std::min(arg1, arg2), arg3)
+			col[j+1] = std::min({ prevCol[1 + j] + 1, col[j] + 1, prevCol[j] + (s1[i]==s2[j] ? 0 : 1) });
+		col.swap(prevCol);
+	}
+	return prevCol[len2];
+}
+
+O(min(m,n))
+int levenshtein_distance(const std::string &s1, const std::string &s2)
+{
+	// To change the type this function manipulates and returns, change
+	// the return type and the types of the two variables below.
+	int s1len = s1.size();
+	int s2len = s2.size();
+	
+	auto column_start = (decltype(s1len))1;
+	
+	auto column = new decltype(s1len)[s1len + 1];
+	std::iota(column + column_start, column + s1len + 1, column_start);
+	
+	for (auto x = column_start; x <= s2len; x++) {
+		column[0] = x;
+		auto last_diagonal = x - column_start;
+		for (auto y = column_start; y <= s1len; y++) {
+			auto old_diagonal = column[y];
+			auto possibilities = {
+				column[y] + 1,
+				column[y - 1] + 1,
+				last_diagonal + (s1[y - 1] == s2[x - 1]? 0 : 1)
+			};
+			column[y] = std::min(possibilities);
+			last_diagonal = old_diagonal;
+		}
+	}
+	auto result = column[s1len];
+	delete[] column;
+	return result;
+}
+
+https://gist.github.com/TheRayTracer/2644387
+https://github.com/Martinsos/edlib/tree/master/edlib
+
+http://zverovich.net/2013/09/07/integer-to-string-conversion-in-cplusplus.html
+https://github.com/fmtlib/fmt
+https://github.com/scylladb/seastar
+https://github.com/scylladb/seastar/blob/master/json/json2code.py
+http://dpdk.org/
+https://github.com/scylladb/seastar/blob/master/doc/mini-tutorial.md
+https://www.reddit.com/r/cpp/comments/4vm6rs/which_parts_of_boost_do_you_use_with_c11/
+https://stackoverflow.com/questions/9354806/c-will-you-choose-boostdate-time-or-icudate-time-library
+https://github.com/taocpp/PEGTL
+https://github.com/Tencent/rapidjson
+https://github.com/Tencent/rapidjson/blob/master/doc/tutorial.md
+http://en.cppreference.com/w/cpp/io/basic_stringbuf
+
+https://github.com/dbpedia/extraction-framework
+https://github.com/dbpedia/extraction-framework/tree/master/wiktionary/src/main/scala/org/dbpedia/extraction/mappings/wikitemplate/wiktionary/bindinghandler
+https://github.com/dbpedia/Dockerized-DBpedia/tree/master/docker
+https://github.com/dbpedia/table-extractor/blob/master/table_extractor/HtmlTableParser.py
+https://github.com/nausheenfatma/embeddings/tree/master/gsoc2017-nausheen
+https://github.com/nausheenfatma?tab=repositories
+https://github.com/nausheenfatma/Spell-Check-Using-Bigram-Language-Modelling/blob/master/BigramModelSpellCheck.py
+https://github.com/nausheenfatma/KB2E
+https://github.com/nausheenfatma/QuestionClassification
+https://github.com/nausheenfatma/embeddings/blob/master/gsoc2017-nausheen/contribution_patch.patch
+https://github.com/mnick/holographic-embeddings/blob/master/kg/base.py
+https://github.com/dbpedia/extraction-framework/blob/master/wiktionary/src/main/scala/org/dbpedia/extraction/mappings/wikitemplate/WiktionaryUtils.scala
+https://github.com/jbrekle/jbrekle-master-thesis/blob/master/master.pdf
+https://github.com/jbrekle/jbrekle-master-thesis
+http://www.carlgibbs.co.uk/blog/?p=243
+https://stackoverflow.com/questions/22386882/why-have-unary-function-binary-function-been-removed-from-c11
+http://blog.madhukaraphatak.com/functional-programming-in-c++/
+http://www.boost.org/doc/libs/1_54_0/libs/range/doc/html/range/reference/algorithms/introduction.html
+https://github.com/mrange/cpplinq
+
+https://github.com/wikimedia/mediawiki-extensions-Math/tree/master/math
+https://github.com/wikimedia/mediawiki-extensions-Math/blob/master/math/texutil.mli
+https://github.com/mzur/pretty-formula/tree/master/src/de/uni_bielefeld/cebitec/mzurowie/pretty_formula/main
+https://github.com/mzur/pretty-formula/blob/master/src/de/uni_bielefeld/cebitec/mzurowie/pretty_formula/antlr/VanesaFormula.g4
+
+http://openframeworks.cc/documentation/
+https://github.com/micknoise/Maximilian/blob/master/RtAudio.cpp
+https://github.com/micknoise/Maximilian/tree/master/openFrameworks
+https://github.com/micknoise/Maximilian/blob/master/maximilian_examples/18.DrumMachine.cpp
+https://github.com/micknoise/Maximilian/blob/master/maximilian_examples/13.Advanced-Filters.cpp
+https://github.com/google/pindrop
+
+https://github.com/spectralmind
+
+https://github.com/facebookresearch/faiss
+
+https://github.com/facebookresearch/loop/blob/master/train.py
+# not open source
+https://arxiv.org/pdf/1707.06588.pdf
+
+https://arxiv.org/pdf/1705.08947.pdf
+https://github.com/philipperemy/deep-speaker
+https://github.com/baidu-research
+https://github.com/baidu-research/deep-voice/blob/master/scripts/f0-script.praat
+https://github.com/philipperemy/deep-speaker/blob/master/models_train.py
+https://github.com/philipperemy?tab=repositories
+
+https://github.com/rushter/MLAlgorithms
+https://github.com/eriklindernoren/ML-From-Scratch
+
+
+SelectedNavigationInTab - Tab: 1776, Index: 0, Time: 13154806511524233
+UpdateTabNavigation - Tab: 1776, Index: 0, Url: https://github.com/facebookresearch/faiss
+SelectedNavigationInTab - Tab: 1777, Index: 1, Time: 13154806553061484
+UpdateTabNavigation - Tab: 1777, Index: 0, Url: https://arxiv.org/abs/1707.06588
+UpdateTabNavigation - Tab: 1777, Index: 1, Url: https://arxiv.org/pdf/1707.06588.pdf
+SelectedNavigationInTab - Tab: 1778, Index: 3, Time: 13154806566428011
+UpdateTabNavigation - Tab: 1778, Index: 0, Url: https://www.google.ie/search?q=DV2+(Arik&oq=DV2+(Arik&aqs=chrome..69i57&client=ubuntu&sourceid=chrome&ie=UTF-8
+UpdateTabNavigation - Tab: 1778, Index: 1, Url: https://www.google.ie/search?client=ubuntu&hs=zBI&ei=MJkDWvDNIoT6apjBgcgN&q=Deep+Voice+2+Arik&oq=Deep+Voice+2+Arik&gs_l=psy-ab.3...9654.12753.0.12913.10.10.0.0.0.0.98.555.10.10.0....0...1.1.64.psy-ab..1.0.0....0.mg47hGJGnQA
+UpdateTabNavigation - Tab: 1778, Index: 2, Url: https://arxiv.org/abs/1705.08947
+UpdateTabNavigation - Tab: 1778, Index: 3, Url: https://arxiv.org/pdf/1705.08947.pdf
+SelectedNavigationInTab - Tab: 1779, Index: 1, Time: 13154806582389488
+UpdateTabNavigation - Tab: 1779, Index: 0, Url: https://www.google.ie/search?q=Deep+speaker%3A+an+end-to-end+neural+speaker+embedding+system&oq=Deep+speaker%3A+an+end-to-end+neural+speaker+embedding+system&aqs=chrome..69i57&client=ubuntu&sourceid=chrome&ie=UTF-8
+UpdateTabNavigation - Tab: 1779, Index: 1, Url: https://github.com/philipperemy/deep-speaker
+UpdateTabNavigation - Tab: 1779, Index: 2, Url: https://github.com/philipperemy/deep-speaker/blob/master/models.py
+SelectedNavigationInTab - Tab: 1780, Index: 5, Time: 13154806646076812
+UpdateTabNavigation - Tab: 1780, Index: 0, Url: https://github.com/facebookresearch/loop
+UpdateTabNavigation - Tab: 1780, Index: 1, Url: https://github.com/facebookresearch/loop/tree/master/scripts
+UpdateTabNavigation - Tab: 1780, Index: 2, Url: https://github.com/facebookresearch/loop
+UpdateTabNavigation - Tab: 1780, Index: 3, Url: https://github.com/facebookresearch/loop/blob/master/train.py
+UpdateTabNavigation - Tab: 1780, Index: 4, Url: https://github.com/facebookresearch/loop
+UpdateTabNavigation - Tab: 1780, Index: 5, Url: https://github.com/facebookresearch/loop/blob/master/LICENSE
+SelectedNavigationInTab - Tab: 1781, Index: 0, Time: 13154806683804985
+UpdateTabNavigation - Tab: 1781, Index: 0, Url: https://github.com/baidu-research/ba-dls-deepspeech
+SelectedNavigationInTab - Tab: 1782, Index: 0, Time: 13154806685388564
+UpdateTabNavigation - Tab: 1782, Index: 0, Url: https://github.com/baidu-research/deep-voice
+SelectedNavigationInTab - Tab: 1783, Index: 4, Time: 13154806688052907
+UpdateTabNavigation - Tab: 1783, Index: 0, Url: https://www.google.ie/search?q=Baidu+Research&oq=Baidu+Research&aqs=chrome..69i57j69i60l3j69i64&client=ubuntu&sourceid=chrome&ie=UTF-8
+UpdateTabNavigation - Tab: 1783, Index: 1, Url: https://github.com/baidu-research
+UpdateTabNavigation - Tab: 1783, Index: 2, Url: https://github.com/baidu-research/persistent-rnn
+UpdateTabNavigation - Tab: 1783, Index: 3, Url: https://github.com/baidu-research/persistent-rnn/tree/master/src
+UpdateTabNavigation - Tab: 1783, Index: 4, Url: https://github.com/baidu-research/persistent-rnn/blob/master/src/persistent_rnn.cpp
+SelectedNavigationInTab - Tab: 1784, Index: 0, Time: 13154806689191639
+UpdateTabNavigation - Tab: 1784, Index: 0, Url: https://github.com/baidu-research/ba-dls-deepspeech
+SelectedNavigationInTab - Tab: 1785, Index: 2, Time: 13154806693245214
+UpdateTabNavigation - Tab: 1785, Index: 0, Url: https://github.com/baidu-research/deep-voice
+UpdateTabNavigation - Tab: 1785, Index: 1, Url: https://github.com/baidu-research/deep-voice/tree/master/scripts
+UpdateTabNavigation - Tab: 1785, Index: 2, Url: https://github.com/baidu-research/deep-voice/blob/master/scripts/f0-script.praat
+SelectedNavigationInTab - Tab: 1786, Index: 0, Time: 13154806697841362
+UpdateTabNavigation - Tab: 1786, Index: 0, Url: https://github.com/philipperemy/deep-speaker/blob/master/models_train.py
+SelectedNavigationInTab - Tab: 1787, Index: 1, Time: 13154806701514525
+UpdateTabNavigation - Tab: 1787, Index: 0, Url: https://github.com/philipperemy
+UpdateTabNavigation - Tab: 1787, Index: 1, Url: https://github.com/philipperemy?tab=repositories
+SelectedNavigationInTab - Tab: 1788, Index: 0, Time: 13154806884114387
+UpdateTabNavigation - Tab: 1788, Index: 0, Url: https://mxnet.incubator.apache.org/community/contribute.html
+SelectedNavigationInTab - Tab: 1789, Index: 0, Time: 13154807356409293
+UpdateTabNavigation - Tab: 1789, Index: 0, Url: https://github.com/rushter/MLAlgorithms
+UpdateTabNavigation - Tab: 1789, Index: 1, Url: https://github.com/rushter/MLAlgorithms/tree/master/mla
+UpdateTabNavigation - Tab: 1789, Index: 2, Url: https://github.com/rushter/MLAlgorithms/blob/master/mla/linear_models.py
+SelectedNavigationInTab - Tab: 1790, Index: 0, Time: 13154807553343137
+UpdateTabNavigation - Tab: 1790, Index: 0, Url: https://caffe2.ai/docs/AI-Camera-demo-android
+SelectedNavigationInTab - Tab: 1791, Index: 5, Time: 13154815143924508
+UpdateTabNavigation - Tab: 1791, Index: 0, Url: https://caffe2.ai/docs/caffe-migration.html
+UpdateTabNavigation - Tab: 1791, Index: 1, Url: https://github.com/facebook/fb-caffe-exts#torch2caffe
+UpdateTabNavigation - Tab: 1791, Index: 2, Url: https://github.com/facebook
+UpdateTabNavigation - Tab: 1791, Index: 3, Url: https://github.com/facebook/nuclide
+UpdateTabNavigation - Tab: 1791, Index: 4, Url: https://www.google.ie/search?q=atom+based+ide&oq=atom+based+ide&aqs=chrome..69i57.2255j0j4&client=ubuntu&sourceid=chrome&ie=UTF-8
+UpdateTabNavigation - Tab: 1791, Index: 5, Url: https://atom.io/packages/platformio-ide
+SelectedNavigationInTab - Tab: 1792, Index: 0, Time: 13154815307054791
+UpdateTabNavigation - Tab: 1792, Index: 0, Url: http://docs.platformio.org/en/latest/ide/atom.html
+SelectedNavigationInTab - Tab: 1793, Index: 0, Time: 13154815403957455
+UpdateTabNavigation - Tab: 1793, Index: 0, Url: https://nuclide.io/docs/languages/flow/
+SelectedNavigationInTab - Tab: 1794, Index: 1, Time: 13154815405053778
+UpdateTabNavigation - Tab: 1794, Index: 0, Url: https://www.google.ie/search?q=run+atom+in+browser&oq=run+atom+in+bro&aqs=chrome.0.0j69i57j0l2.3495j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+UpdateTabNavigation - Tab: 1794, Index: 1, Url: https://github.com/facebook-atom/atom-in-orbit
+SelectedNavigationInTab - Tab: 1795, Index: 2, Time: 13154815406717649
+UpdateTabNavigation - Tab: 1795, Index: 0, Url: chrome://newtab/
+UpdateTabNavigation - Tab: 1795, Index: 1, Url: https://www.google.ie/search?q=oculus+opengl+example&oq=oculus+opengl&aqs=chrome.1.69i57j0l5.5615j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+UpdateTabNavigation - Tab: 1795, Index: 2, Url: https://github.com/kondrak/oculusvr_samples
+SelectedNavigationInTab - Tab: 1796, Index: 0, Time: 13154815412613961
+UpdateTabNavigation - Tab: 1796, Index: 0, Url: https://github.com/tensorflow/deepmath
+SelectedNavigationInTab - Tab: 1797, Index: 0, Time: 13154815418509441
+UpdateTabNavigation - Tab: 1797, Index: 0, Url: https://github.com/tensorflow/ecosystem
+SelectedNavigationInTab - Tab: 1798, Index: 0, Time: 13154815444143054
+UpdateTabNavigation - Tab: 1798, Index: 0, Url: https://github.com/apache/incubator-mxnet
+SelectedNavigationInTab - Tab: 1799, Index: 3, Time: 13154815467205268
+UpdateTabNavigation - Tab: 1799, Index: 0, Url: http://cmusatyalab.github.io/openface/
+UpdateTabNavigation - Tab: 1799, Index: 1, Url: https://github.com/aybassiouny/OpenFaceCpp
+UpdateTabNavigation - Tab: 1799, Index: 2, Url: https://github.com/aybassiouny/OpenFaceCpp/tree/master/src
+UpdateTabNavigation - Tab: 1799, Index: 3, Url: https://github.com/aybassiouny/OpenFaceCpp/blob/master/src/NativeDLib.cpp
+SelectedNavigationInTab - Tab: 1800, Index: 0, Time: 13154815491224435
+UpdateTabNavigation - Tab: 1800, Index: 0, Url: https://github.com/eriklindernoren/ML-From-Scratch/blob/master/mlfromscratch/supervised_learning/support_vector_machine.py
+SelectedNavigationInTab - Tab: 1801, Index: 0, Time: 13154815494541026
+UpdateTabNavigation - Tab: 1801, Index: 0, Url: https://github.com/eriklindernoren/ML-From-Scratch
+SelectedNavigationInTab - Tab: 1802, Index: 6, Time: 13154815591835505
+UpdateTabNavigation - Tab: 1802, Index: 1, Url: https://caffe2.ai/docs/applications-of-deep-learning.html
+UpdateTabNavigation - Tab: 1802, Index: 2, Url: https://caffe2.ai/docs/cplusplus_tutorial.html
+UpdateTabNavigation - Tab: 1802, Index: 3, Url: https://caffe2.ai/docs/api-intro.html
+UpdateTabNavigation - Tab: 1802, Index: 4, Url: https://caffe2.ai/docs/tutorials
+UpdateTabNavigation - Tab: 1802, Index: 5, Url: https://caffe2.ai/docs/cplusplus_tutorial.html
+UpdateTabNavigation - Tab: 1802, Index: 6, Url: https://caffe2.ai/docs/RNNs-and-LSTM-networks.html
+UpdateTabNavigation - Tab: 1802, Index: 7, Url: https://caffe2.ai/doxygen-c/html/classes.html
+UpdateTabNavigation - Tab: 1802, Index: 8, Url: https://caffe2.ai/doxygen-c/html/classcaffe2_1_1DAGNet.html
+SelectedNavigationInTab - Tab: 1803, Index: 0, Time: 13154815764202206
+UpdateTabNavigation - Tab: 1803, Index: 0, Url: http://musictechfest.net/toolkit/
+SelectedNavigationInTab - Tab: 1804, Index: 1, Time: 13154816161045747
+UpdateTabNavigation - Tab: 1804, Index: 0, Url: https://www.idmt.fraunhofer.de/en/business_units/m2d/musicbricks.html
+UpdateTabNavigation - Tab: 1804, Index: 1, Url: https://www.idmt.fraunhofer.de/en/business_units/m2d/musicbricks/terms.html
+SelectedNavigationInTab - Tab: 1805, Index: 0, Time: 13154816342572395
+UpdateTabNavigation - Tab: 1805, Index: 0, Url: https://softwarerecs.stackexchange.com/questions/19500/tool-to-read-data-from-google-chrome-snss-files
+SelectedNavigationInTab - Tab: 1806, Index: 1, Time: 13154816344862065
+UpdateTabNavigation - Tab: 1806, Index: 0, Url: chrome://newtab/
+UpdateTabNavigation - Tab: 1806, Index: 1, Url: https://www.google.ie/search?q=osx+x+windows+remote&oq=osx+x+windows+remote+&aqs=chrome..69i57j0l5.9109j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+SelectedNavigationInTab - Tab: 1807, Index: 1, Time: 13154816345398147
+UpdateTabNavigation - Tab: 1807, Index: 0, Url: chrome://newtab/
+UpdateTabNavigation - Tab: 1807, Index: 1, Url: https://www.google.ie/search?q=decode+chrome+current+tabs+file&oq=decode+chrome+current+tabs+file&aqs=chrome..69i57.5999j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+SelectedNavigationInTab - Tab: 1808, Index: 1, Time: 13154816349678019
+UpdateTabNavigation - Tab: 1808, Index: 0, Url: chrome://newtab/
+UpdateTabNavigation - Tab: 1808, Index: 1, Url: https://www.google.ie/search?q=projectlibre&oq=project+libre&aqs=chrome.1.69i57j0l5.3279j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+
+https://github.com/XifengGuo/CapsNet-Keras
+https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc
+https://hackernoon.com/supervised-deep-learning-in-image-classification-for-noobs-part-1-9f831b6d430d
+http://cis.stvincent.edu/html/tutorials/swd/btree/btree.html
+https://www.ibm.com/developerworks/aix/library/au-aix-boost-graph/index.html
+
+https://github.com/Kyubyong/tensorflow-exercises/blob/master/Audio_Processing.ipynb
+http://en.cppreference.com/w/cpp/links/libs
+http://aquila-dsp.org/
+https://github.com/cbeck88/spirit-po/tree/master/include/spirit_po
+https://github.com/cbeck88/spirit-po/blob/master/include/spirit_po/spirit_po.hpp
+http://spek.cc/
+https://github.com/spectralmind/smafe
+https://github.com/micknoise/Maximilian/blob/master/RtAudio.cpp
+https://github.com/trending/cuda
+https://github.com/ArchaeaSoftware/cudahandbook
+https://github.com/trending/c++
+https://github.com/trending/c
+https://github.com/baidu-research/warp-ctc
+https://github.com/baidu-research/warp-ctc/blob/master/torch_binding/TUTORIAL.md
+https://github.com/vlfeat/matconvnet
+https://github.com/udacity/cs344
+https://github.com/akrizhevsky/cuda-convnet2
+https://github.com/TorontoDeepLearning/convnet
+https://github.com/NervanaSystems/deepspeech/tree/master/src/transforms/warp-ctc
+http://neon.nervanasys.com/docs/latest/tutorials.html
+https://github.com/JRBANCEL/Chromagnon
+
+http://www.martinbroadhurst.com/tag/c11
+http://www.martinbroadhurst.com/ungers-method-in-c.html
+http://www.martinbroadhurst.com/context-free-grammar-in-c.html
+http://www.martinbroadhurst.com/tag/graph-theory
+http://www.martinbroadhurst.com/tag/linked-list
+http://www.martinbroadhurst.com/tag/data-structures
+http://www.martinbroadhurst.com/tag/boost
+http://www.boost.org/doc/libs/master/libs/iterator/doc/filter_iterator.html
+http://www.martinbroadhurst.com/tag/binary-tree
+http://www.martinbroadhurst.com/tag/dynamic-programming
+http://www.martinbroadhurst.com/tag/parsing
+http://www.martinbroadhurst.com/tag/permutations
+http://www.martinbroadhurst.com/tag/linked-list
+http://www.martinbroadhurst.com/generating-production-trees-from-a-grammar-in-c.html
+http://www.martinbroadhurst.com/generating-sentences-from-a-grammar-in-c.html
+http://www.martinbroadhurst.com/counting-nodes-in-a-binary-tree-recursively.html#comment-1654
+https://www.google.ie/search?q=re2+spirit.qi&oq=re2+spirit.qi&aqs=chrome..69i57.5120j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+https://stackoverflow.com/questions/40554513/boost-spirit-grammar-to-detect-login-failure
+http://coliru.stacked-crooked.com/a/8fd48d8899d654b0
+https://github.com/google/re2
+http://www.boost.org/doc/libs/1_51_0/libs/spirit/doc/html/spirit/karma/tutorials/karma_easier_complex.html
+http://www.boost.org/doc/libs/1_65_1/libs/locale/doc/html/index.html
+http://cppcms.com/wikipp/en/page/main
+http://www.boost.org/doc/libs/1_65_1/libs/locale/doc/html/locale_gen.html
+http://www.boost.org/doc/libs/1_65_1/libs/locale/doc/html/conversions.html
+http://www.boost.org/doc/libs/1_65_1/libs/locale/doc/html/formatting_and_parsing.html
+http://en.cppreference.com/w/cpp/io/basic_stringstream
+http://www.boost.org/doc/libs/1_61_0/doc/html/circular_buffer/examples.html
+http://www.boost.org/doc/libs/1_61_0/libs/circular_buffer/example/circular_buffer_bound_example.cpp
+https://github.com/Tencent/rapidjson/blob/master/doc/tutorial.md
+https://stackoverflow.com/questions/5279051/how-can-i-create-cartesian-product-of-vector-of-vectors
+http://stevehanov.ca/blog/index.php?id=130
+http://zork.net/~st/jottings/sais.html
+

@@ -1,0 +1,36 @@
+Token: ó
+
+Lemma: ó
+
+Dependency Analysis for ó
+ó+Prep+Simp+@PP_ADVL
+
+Token: aois
+
+Lemma: aois
+
+Dependency Analysis for aois
+aois+Noun+Fem+Com+Sg+Len+@P<
+
+Token: óg
+
+Lemma: óg
+
+Dependency Analysis for óg
+óg+Adj+Fem+Com+Sg+Len+@N<
+
+
+(PP (IN from)
+    (NP (DT a) (JJ young) (NN age)))
+
+[PP ó ó+Prep+Simp+@PP_ADVL 
+[NP aois aois+Noun+Fem+Com+Sg+Len+@P< óg óg+Adj+Fem+Com+Sg+Len+@N< NP] PP]
+
+==
+
+a Shéain Uí Bhriain 
+
+[S 
+[NP a a+Part+Voc+@>N Shéain Shéain+Guess+Prop+Noun+Masc+Com+Sg+@NP Uí uí+Part+Pat+@>N Bhriain Briain+Prop+Noun+Fem+Gen+Sg+@N< NP] S]
+
+

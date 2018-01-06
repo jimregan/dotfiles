@@ -1,0 +1,194 @@
+http://web.mysites.ntu.edu.sg/fcbond/open/pubs/2012-gwc-wn-license.pdf
+A Survey of WordNets and their Licenses
+
+
+digithum.uoc.edu/ojs/index.php/digithum/article/download/n14-oliver-climent/1242
+Using Wikipedia to develop
+language resources: WordNet 3.0
+in Catalan and Spanish
+
+
+
+GermaNet
+http://www.sfs.uni-tuebingen.de/lsd/documents/ili/interLingualIndex_DE-EN.zip
+http://www.sfs.uni-tuebingen.de/lsd/documents/wiktionary/Henrich-et-al_GN-WKN-Mapping_data.zip
+
+
+http://aclweb.org/anthology-new/P/P10/P10-1154.pdf
+Knowledge-rich Word Sense Disambiguation Rivaling Supervised Systems
+
+, it has been argued that the ﬁne
+granularity of WordNet is one of the main obstacles to accurate WSD (cf. the discussion in Navigli (2009b));
+Roberto Navigli. 2009b. Word Sense Disambiguation: A survey. ACM Computing Surveys, 41(2):1–69.
+
+http://promethee.philo.ulg.ac.be/engdep1/download/bacIII/ACM_Survey_2009_Navigli.pdf
+
+
+
+http://www.cl.uni-heidelberg.de/~ponzetto/wikitax2wn/
+GFDL
+
+
+
+http://www.mt-archive.info/LREC-2010-Wong.pdf
+Semantic Evaluation of Machine Translation
+
+WordNet has been argued for the granularity of sense 
+distinctions  which are too fine-grained (Navigli, 2006; 
+Snow et al., 2007),
+Snow, R., Prakash, S., Jurafsky, D. & Ng, A.Y. (2007). 
+Learning to Merge Word Senses. In Proceedings of the 
+2007 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural 
+Language Learning (EMNLP-CoNLL), Prague, Czech 
+Republic, pages 1005-1014.
+
+Navigli, R. (2006). Meaningful Clustering of Senses 
+Helps Boost Word Sense Disambiguation Performance.
+In Proceedings of the 44th Annual Meeting of the Association for Computational Linguistics joint with the 
+21st International Conference on Computational Linguistics (COLING-ACL 2006), Sydney, Australia, 
+pages 105-112.
+
+http://www.mt-archive.info/EMNLP-2009-Davidov.pdf
+Enhancement of Lexical Concepts Using Cross-lingual Web Mining
+
+http://www.mt-archive.info/Coling-2010-Davidov.pdf
+Automated Translation of Semantic Relationships
+
+Recently, with the development of practical applications which utilize WN-like databases in dozens
+of languages, great effort has been made to manually construct and interconnect such databases for
+different languages (Pease et al, 2008; Charoenporn et al., 2007). Some studies (e.g., (Amasyali,
+2005)) use semi-automated methods based on
+language-speciﬁc heuristics and dictionaries
+
+Adam Pease, Christiane Fellbaum, Piek Vossen, 2008.
+Building the Global WordNet Grid. CIL18.
+Thatsanee Charoenporn, Virach Sornlertlamvanich,
+Chumpol Mokarat, and Hitoshi Isahara, 2008.
+Semi-automatic Compilation of Asian WordNet.
+Proceedings of the 14th NLP-2008, University of
+Tokyo, Komaba Campus, Japan.
+Amasyali Fatih, 2005. Automatic Construction of
+Turkish Wordnet. Signal Processing and Communications Applications Conference.
+
+
+http://clipdemos.umiacs.umd.edu/chinlcslex/papers/CS-TR-3933.pdf
+Lexical Selection for Cross-Language. Applications: Combining LCS with WordNet
+
+---
+http://www.mt-archive.info/MTS-2011-Anwarus-Salam.pdf
+Example-Based Machine Translation for Low-Resource Language Using 
+Chunk-String Templates 
+4.5 Generalize CST Using WordNet  
+For 
+each proper nouns we search in WordNet. If available we replace that NNP with <lexical filename> 
+returned from the WordNet. For example WordNet 
+return <noun.communication>  for “Bangla”.  For 
+cardinal number we simply CDs together to 
+<noun.quantity>. We show example generalized 
+CSTs produced using WordNet in Table 5.
+
+---
+http://www.mt-archive.info/LREC-2012-Niemi.pdf
+Representing the Translation Relation in a Bilingual Wordnet
+(linking FiWN<>PWN)
+
+
+---
+http://www.mt-archive.info/LREC-2010-Bhattacharyya.pdf
+IndoWordnet 
+
+---
+http://www.cs.vu.nl/~guus/papers/Assem06a.pdf
+Conversion of WordNet to a standard RDF/OWL representation
+
+---
+Synset assignment for bi-lingual dictionary with limited resource
+www.mt-archive.info/IJCNLP-2008-Sornlertlamvanich-1.pdf
+
+---
+www.mt-archive.info/IJCNLP-2008-Sornlertlamvanich-1.pdf
+ai.stanford.edu/~dvickrey/wordtrans_final.pdf
+
+In many
+cases, WordNet is overly “speciﬁc”, deﬁning senses
+which are very similar and hard to distinguish.
+---
+http://www.mt-archive.info/Coling-2004-Tufis.pdf
+Fine-Grained Word Sense Disambiguation Based on Parallel Corpora,  
+Word Alignment, Word Clustering and Aligned Wordnets 
+---
+http://www.mt-archive.info/Coling-2004-Bentivogli-2.pdf
+Revising the WORDNET DOMAINS Hierarchy: semantics, coverage and balancing
+?
+---
+http://www.mt-archive.info/ICON-2007-Mohanty.pdf
+Semantically Relatable Sequences 
+in the  
+Context of Interlingua Based Machine Translation
+---
+lpg.uoc.edu/files/cicling2012_cameraready.pdf
+Parallel corpora for WordNet construction:
+machine translation vs. automatic sense tagging
+---
+Example Based English-Bengali Machine Translation
+Using WordNet
+crblp.bracu.ac.bd/papers/2009/paper_Trisai2009_MT.pdf
+---
+Target Word Selection Using WordNet and
+Data-Driven Models in Machine Translation
+bi.snu.ac.kr/Publications/Journals/International/LNAI2417_Kim.pdf
+---
+www.aclweb.org/anthology/C10-2097
+Automatic Persian WordNet Construction
+---
+http://www.dialog-21.ru/digests/dialog2006/materials/html/Lipatov.htm
+
+
+
+#Polish Aspect
+@article{mlynarczyk2004aspectual,
+  title={Aspectual pairing in Polish},
+  author={Mlynarczyk, A.K.},
+  year={2004}
+}
+
+http://igitur-archive.library.uu.nl/dissertations/2004-0309-140804/inhoud.htm
+
+http://igitur-archive.library.uu.nl/dissertations/2004-0309-140804/c4.pdf
+http://igitur-archive.library.uu.nl/dissertations/2004-0309-140804/c3.pdf
+
+##
+
+@article{rabiega2011semantic,
+  title={Semantic Relations between Verbs in Polish Wordnet 2.0},
+  author={Rabiega-Wi{\'s}niewska, J. and Szpakowicz, S. and Maziarz, M. and Piasecki, M. and Hojka, B.},
+  journal={{\'E}tudes Cognitives/Studia Kognitywne},
+  number={11},
+  pages={183--200},
+  year={2011}
+}
+
+@article{MMSJB2011,
+  author="Maziarz Marek and Piasecki Maciej and Szpakowicz Stanis\l{}aw and Rabiega-Wi{\'s}niewska Joanna and Hojka Bo{\.z}ena",
+  title = "SEMANTIC RELATIONS BETWEEN VERBS IN POLISH WORDNET 2.0",
+  journal = "Cognitive Studies / Etudes Cognitives; until 2008: Studia Kognitywne (Cognitive Studies)",
+  number = "11",
+  year = "2011",
+  pages = "183--200",
+  publisher = "Slavic Editorial Center of the Institute of Slavic Studies, Polish Academy of Sciences; http://www.ispan.waw.pl; sow-ispan@wp.pl",
+}
+http://nlp.pwr.wroc.pl/ltg/attachments/article/36/Maziarz_et_al_CS2011b.pdf
+
+
+
+##
+MCR
+
+http://adimen.si.ehu.es/~rigau/publications/gwc12-glr.pdf
+
+http://adimen.si.ehu.es/web/MCR
+
+##
+http://wordnet.princeton.edu/glosstag.shtml
+
+

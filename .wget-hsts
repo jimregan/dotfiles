@@ -1,0 +1,13 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>[:<port>]	<incl. subdomains>	<created>	<max-age>
+separatedchildrenservice.ie	0	0	1498787282	86400
+www.dropbox.com	0	1	1491236305	15552000
+upload.wikimedia.org	0	1	1505517090	106384710
+raw.githubusercontent.com	0	0	1489667472	31536000
+sourceforge.net	0	0	1490282464	31536000
+separatedchildrensservice.wordpress.com	0	0	1498787282	15552000
+dumps.wikimedia.org	0	1	1491822602	31536000
+www.separatedchildrenservice.ie	0	0	1498787282	86400
+accounts.google.com	0	1	1514198403	31536000
+github.com	0	1	1489667668	31536000

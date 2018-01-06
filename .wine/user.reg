@@ -137,6 +137,8 @@ WINE REGISTRY Version 2
 [Keyboard Layout\\Preload] 1509320709
 "1"="00001809"
 
+[Software\\LORIA\\Wsno] 1514714891
+
 [Software\\Microsoft\\Installer\\Features\\0298D54E857A88046B6C13BD2B6799E2] 1509320720
 "wine_mono"=""
 
@@ -261,7 +263,10 @@ WINE REGISTRY Version 2
 
 [Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced] 1509488552
 
-[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedMRU] 1509488552
+[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedMRU] 1514715158
+"a"=hex:77,00,73,00,6e,00,6f,00,2e,00,65,00,78,00,65,00,00,00,5a,00,3a,00,5c,\
+  00,68,00,6f,00,6d,00,65,00,5c,00,6a,00,69,00,6d,00,00,00
+"MRUList"="a"
 
 [Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders] 1509320713
 "AppData"="C:\\users\\jim\\Application Data"
@@ -649,6 +654,13 @@ WINE REGISTRY Version 2
 "OpenWithIcon"="2EF4_wordpad.0"
 "ProgID"="wrifile"
 
+[Software\\Wine\\FileOpenAssociations\\.wsn] 1514714926
+"AppName"="Program Files"
+"DesktopFile"="/home/jim/.local/share/applications/wine-extension-wsn.desktop"
+"MimeType"="application/x-wine-extension-wsn"
+"OpenWithIcon"="CCAD_Program Files.0"
+"ProgID"="wsnfile"
+
 [Software\\Wine\\FileOpenAssociations\\.xml] 1509322180
 "AppName"="winebrowser"
 "DesktopFile"="/home/jim/.local/share/applications/wine-extension-xml.desktop"
@@ -656,11 +668,11 @@ WINE REGISTRY Version 2
 "OpenWithIcon"="7765_winebrowser.0"
 "ProgID"="xmlfile"
 
-[Software\\Wine\\Fonts] 1509488528
+[Software\\Wine\\Fonts] 1514714925
 "Codepages"="1252,850"
 "LogPixels"=dword:00000060
 
-[Software\\Wine\\Fonts\\External Fonts] 1509488535
+[Software\\Wine\\Fonts\\External Fonts] 1514714925
 "@IPAexGothic"="Z:\\usr\\share\\fonts\\opentype\\ipaexfont-gothic\\ipaexg.ttf"
 "@IPAexMincho"="Z:\\usr\\share\\fonts\\truetype\\fonts-japanese-mincho.ttf"
 "@IPAGothic"="Z:\\usr\\share\\fonts\\opentype\\ipafont-gothic\\ipag.ttf"
@@ -762,8 +774,11 @@ WINE REGISTRY Version 2
 "DejaVu Serif Condensed Bold Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerifCondensed-BoldItalic.ttf"
 "DejaVu Serif Condensed Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerifCondensed-Italic.ttf"
 "DejaVu Serif Italic"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerif-Italic.ttf"
+"Denemo"="Z:\\usr\\share\\fonts\\truetype\\denemo\\Denemo.ttf"
+"Emmentaler-26"="Z:\\usr\\share\\fonts\\truetype\\denemo\\emmentaler.ttf"
 "esint10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\esint10.ttf"
 "eufm10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\eufm10.ttf"
+"feta25.2"="Z:\\usr\\share\\fonts\\truetype\\denemo\\feta.ttf"
 "FreeMono"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMono.ttf"
 "FreeMono Bold"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMonoBold.ttf"
 "FreeMono Bold Oblique"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMonoBoldOblique.ttf"
@@ -935,6 +950,7 @@ WINE REGISTRY Version 2
 "mry_KacstQurn"="Z:\\usr\\share\\fonts\\truetype\\kacst\\mry_KacstQurn.ttf"
 "msam10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\msam10.ttf"
 "msbm10"="Z:\\usr\\share\\fonts\\truetype\\lyx\\msbm10.ttf"
+"MScore for scores"="Z:\\usr\\share\\fonts\\opentype\\mscore.otf"
 "NanumBarunGothic"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumBarunGothic.ttf"
 "NanumBarunGothic Bold"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumBarunGothicBold.ttf"
 "NanumGothic"="Z:\\usr\\share\\fonts\\truetype\\nanum\\NanumGothic.ttf"
@@ -1356,8 +1372,14 @@ WINE REGISTRY Version 2
 "\x65b0\x7d30\x660e\x9ad4"="WenQuanYi Micro Hei"
 "\xff2d\xff33\xff30\x30b4\x30b7\x30c3\x30af"="Ume P Gothic"
 
-[Software\\Wine\\MenuFiles] 1509322225
+[Software\\Wine\\MenuFiles] 1514714891
 "/home/jim/.config/menus/applications-merged/wine-Programs-Fios Feasa-Drochl\xe1 Ruair\xed.menu"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/Fios Feasa/Drochl\xe1 Ruair\xed.lnk"
 "/home/jim/.config/menus/applications-merged/wine-Programs-Fios Feasa-Irish Proverbs.menu"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/Fios Feasa/Irish Proverbs.lnk"
+"/home/jim/.config/menus/applications-merged/wine-Programs-WinSnoori-Help.menu"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/WinSnoori/Help.lnk"
+"/home/jim/.config/menus/applications-merged/wine-Programs-WinSnoori-WinSnoori.menu"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/WinSnoori/WinSnoori.lnk"
+"/home/jim/.config/menus/applications-merged/wine-WinSnoori.menu"="/home/jim/.wine/dosdevices/c:/users/jim/Start Menu/WinSnoori.lnk"
 "/home/jim/.local/share/applications/wine/Programs/Fios Feasa/Drochl\xe1 Ruair\xed.desktop"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/Fios Feasa/Drochl\xe1 Ruair\xed.lnk"
 "/home/jim/.local/share/applications/wine/Programs/Fios Feasa/Irish Proverbs.desktop"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/Fios Feasa/Irish Proverbs.lnk"
+"/home/jim/.local/share/applications/wine/Programs/WinSnoori/Help.desktop"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/WinSnoori/Help.lnk"
+"/home/jim/.local/share/applications/wine/Programs/WinSnoori/WinSnoori.desktop"="/home/jim/.wine/dosdevices/c:/users/Public/Start Menu/Programs/WinSnoori/WinSnoori.lnk"
+"/home/jim/.local/share/applications/wine/WinSnoori.desktop"="/home/jim/.wine/dosdevices/c:/users/jim/Start Menu/WinSnoori.lnk"
