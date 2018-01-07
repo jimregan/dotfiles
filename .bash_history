@@ -1,7 +1,3 @@
-grep '^[XVI]' wyspa-skarbow.txt-05.txt
-grep '^[XVI]' wyspa-skarbow.txt-03.txt
-grep '^[XVI]' wyspa-skarbow.txt-04.txt
-grep '^[XVI]' wyspa-skarbow.txt-05.txt
 grep '^[XVI]' wyspa-skarbow.txt-06.txt
 perl ../apply-specific.pl 
 git diff
@@ -1998,3 +1994,7 @@ git commit -m bump
 cd  ../../../../../../../
 mvn install
 unzip -l /home/jim/.m2/repository/io/github/jimregan/languagetool-ga-dicts/0.02-SNAPSHOT/languagetool-ga-dicts-0.02-SNAPSHOT.jar
+cd ../msf-asr/
+git diff
+git stash
+ls
