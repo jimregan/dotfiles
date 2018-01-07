@@ -1,126 +1,3 @@
-less boy-swietoszek.txt 
-ls ../audio/*molier*
-ffplay ../audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
-ffplay ../audio/03-moliere-molier-swietoszek-podloze-swietoszka.mp3 
-ffplay ../audio/09-moliere-molier-swietoszek-przedmowa.mp3 
-ffplay ../audio/08-moliere-molier-swietoszek-artyzm-swietoszka.mp3 
-ls boy-swietoszek.txt 
-less boy-swietoszek.txt 
-git diff
-git add boy-swietoszek.txt bracia-patrzcie-jeno.txt bryla-lodu-i-krysztal.txt 
-git diff
-git add b*
-git add c*
-git diff
-git add dab*
-git commit -m ok
-git diff
-git status
-git status|grep modified
-git status|grep modified|awk '{print $2}'
-git status|grep modified|awk '{print $2}'|grep txt
-git add $(git status|grep modified|awk '{print $2}'|grep txt)s
-git add $(git status|grep modified|awk '{print $2}'|grep txt)
-git status
-git commit -m ok
-git status
-ls
-rm *.bak
-ls
-for i in *.txt;do cat $i|perl ../split-sentence.pl > $i.sent;done
-ls
-find . -size 0
-rm przygody-tomka-sawyera.txt*
-git status
-git checkout -- przygody-tomka-sawyera.txt
-git status
-ls
-ls ../audio/*furman*
-sh run-aeneas.sh ../audio/ignacy-krasicki-bajki-i-przypowiesci-konie-i-furman.mp3 konie-i-furman.txt.sent 
-less konie-i-furman.txt.sent.aud 
-less hop-frog.txt
-echo sh run-aeneas.sh ../audio/edgar-allan-poe-hop-frog.mp3 hop-frog.txt
-sh run-aeneas.sh ../audio/edgar-allan-poe-hop-frog.mp3 hop-frog.txt.sent 
-vi pairs.tsv 
-cp pairs.tsv ..
-ls
-ls ../audio/*furman*
-chmod a+x run-aeneas.sh 
-ls ../audio/*motyl*
-./run-aeneas.sh ../audio/ignacy-krasicki-bajki-i-przypowiesci-furman-i-motyl.mp3 furman-i-motyl.txt.sent 
-ls ../*wyspa&
-ls ../audio/*wyspa*
-for i in 1 2 3 4 5 6 ;do ./run-aeneas.sh ../audio/0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent;done
-vi pairs.tsv 
-cp pairs.tsv ..
-grep 'w XVII w. olbrzymia' *
-ls
-ls ../*robinson*
-ls ../audio/*robinson*
-less robinson-crusoe.txt
-ffplay ../audio/01-daniel-defoe-robinson-crusoe.mp3 
-less robinson-crusoe.txt
-perl ../splitter.pl robinson-crusoe.txt
-ls robinson-crusoe.txt-14.txt 
-less robinson-crusoe.txt-14.txt 
-less robinson-crusoe.txt-01.txt 
-ffplay ../audio/01-daniel-defoe-robinson-crusoe.mp3 
-for i in robinson-crusoe.txt*.txt;do cat $i|perl ../split-sentence.pl > $i.sent;done
-ls
-for i in $(seq 01 14) ;do ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-for i in $(seq 01 14) ;do echo ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-for i in $(seq 1 14) ;do a=$(printf "%02d" $i) ; echo ./run-aeneas.sh ../audio/$a-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-#for i in $(seq 1 14) ;do a=$(printf "%02d" $i) ;  ./run-aeneas.sh ../audio/$a-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-vi pairs.tsv 
-for i in $(seq 1 14) ;do a=$(printf "%02d" $i) ;  ./run-aeneas.sh ../audio/$a-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-vi pairs.tsv 
-cp ../pairs.tsv .
-vi run-aeneas.sh 
-ls
-ls robinson-crusoe.txt*
-for i in $(seq 01 14) ;do echo  ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-for a in $(seq 01 14) ;do i=$(printf "%02d" $a); echo  ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-for a in $(seq 01 14) ;do i=$(printf "%02d" $a); ./run-aeneas.sh ../audio/$i-daniel-defoe-robinson-crusoe.mp3 robinson-crusoe.txt-$i.txt.sent;done
-ls
-less robinson-crusoe.txt-01.txt.sent.aud 
-cat robinson-crusoe.txt
-perl ../apply-specific.pl 
-git diff
-git add boy-swietoszek.txt 
-git commit -m up
-perl ../apply-specific.pl 
-git diff
-less robinson-crusoe.txt-01.txt
-vi ../pron-data/pronounce-as.tsv 
-vi ../pron-data/pronounce-as.gen.tsv 
-cat robinson-crusoe.txt | perl ../clean.pl 
-cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'
-cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv 
-cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |wc
-cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |less
-vi ../pron-data/pronounce-as.tsv 
-vi ../pron-data/pronounce-as.gen.tsv 
-cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |less
-grep 30-go robinson-crusoe.txt*
-grep XXX ../*pl
-cat robinson-crusoe.txt | perl ../clean.pl |tr ' ' '\n'|sort|uniq |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.gen.tsv |less
-grep 1 robinson-crusoe.txt
-grep 1 robinson-crusoe.txt*sent
-grep 1 robinson-crusoe.txt*aud
-grep ' 1 ' robinson-crusoe.txt*aud
-perl -e 'print 402 / 60'
-grep '[0-9]' robinson-crusoe.txt-01.txt
-grep '[0-9]' robinson-crusoe.txt-02.txt
-grep 1632 robinson-crusoe.txt*aud
-perl ../testnum.pl 
-vi ../testnum.pl 
-perl ../testnum.pl 
-grep '[0-9]' robinson-crusoe.txt-02.txt
-vi ../testnum.pl 
-perl ../testnum.pl 
-grep '[0-9]' robinson-crusoe.txt-03.txt
-ls -al /tmp/phonet-out*
-. ~/tmp/sourceme 
 doinstain 
 paste /tmp/pa-l /tmp/pa-r 
 paste /tmp/pa-l /tmp/pa-r  >> ../pron-data/pronounce-as.tsv 
@@ -1998,3 +1875,126 @@ cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud.txt2
 less 2xmBQTVjZ_Q.aud.txt2 
 cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud2.txt
 less 2xmBQTVjZ_Q.aud2.txt 
+ls
+ffplay 10023_in.wav 
+ffplay 10023_out.wav 
+cd ~
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+cd /tmp/
+unzip ~/Downloads/KorpusStaropolski.zip 
+cd KorpusStaropolski/
+ls
+cd ..
+mkdir asia
+cd asia/
+ls ~/Downloads/*docx
+cp ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(1\).docx .
+mv Kozicka_Joanna_grudzień_2017\ \(1\).docx Kozicka_Joanna_grudzień_2017.docx 
+ls
+unzip Kozicka_Joanna_grudzień_2017.docx 
+ls -al Kozicka_Joanna_grudzień_2017.docx 
+ls
+rm -rf *
+cp ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx .
+mv Kozicka_Joanna_grudzień_2017\ \(2\).docx Kozicka_Joanna_grudzień_2017.docx 
+unzip Kozicka_Joanna_grudzień_2017.docx 
+jpeg-recompress
+for i in word/media/*jpeg;do jpeg-recompress $i;done
+for i in word/media/*jpeg;do jpeg-recompress $i $i.tmp.jpg;mv $i.tmp.jpg $i;done
+tree
+ls
+mv Kozicka_Joanna_grudzień_2017.docx ..
+find . -type f
+find . -type f|zip ../pack.zip -@
+mv ../pack.zip ../pack.docx
+ls -al ../pack.docx 
+ls -al ../pack.docx ../Kozicka_Joanna_grudzień_2017.docx 
+apt-cache search optipng
+sudo apt-get install optipng
+optipng -h
+for i in word/media/*png;do optipng -clobber -o7 $i;done
+find . -type f
+find . -type f|zip ../pack.zip -@
+mv ../pack.zip ../squash.docx
+ls -al ../squash.docx 
+ls -al ../*docx
+ls -alk ../*docx
+ls -al word/media/image*gif
+optipng -h
+for i in word/media/*gif;do optipng -clobber -o7 $i;done
+find . -type f|zip ../pack.zip -@
+mv ../pack.zip ../squash2.docx
+ls -al ../*docx
+cd ..
+tar zxvf ~/Downloads/SEJF-1.1-Slownik.tar.gz 
+less Slownik 
+rm Slownik 
+tar zxvf ~/Downloads/SEJF-1.1.tar.gz 
+cd SEJF-1.1/
+ls
+less SEJF-1.1-dlc.dic 
+cd ../asia/
+for i in word/media/*gif;do optipng -clobber -o7 $i;done
+for i in word/media/*gif;do optipng -clobber -snip -o7 $i;done
+ls -al word/media/*
+cd ~
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
