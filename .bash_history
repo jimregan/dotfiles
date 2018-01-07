@@ -1,10 +1,3 @@
-grep '^[XVI]' wyspa-skarbow.txt-06.txt
-perl ../apply-specific.pl 
-git diff
-git add wyspa-skarbow.txt-0*txt
-git commit -m norm
-ls
-rm *.bak
 git diff
 less z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
 perl ../apply-specific.pl 
@@ -1998,3 +1991,10 @@ cd ../msf-asr/
 git diff
 git stash
 ls
+cd ~/Playing/irishfst-1/
+git remote show
+git pull elaine master
+git log
+git branch
+ls
+make
