@@ -1,78 +1,3 @@
-perl ../header-replace.pl fortepian-chopina.txt > tmp
-mv tmp fortepian-chopina.txt
-git diff
-git diff fortepian-chopina.txt
-git add fortepian-chopina.txt
-git commit -m ok
-git diff
-git add aptekarzowa.txt
-git diff
-git add abuzei-i-tair.txt akslop.txt aniol-pasterzom-mowil.txt antek.txt 
-git diff
-git add atlas-i-kitaj.txt bajki-i-przypowiesci-dwa-zolwie.txt 
-git add bajki-i-przypowiesci-kulawy-i-slepy.txt 
-git diff 
-git add wyspa-skarbow.txt
-git status
-git commit -m ok
-git diff
-#git add bajki-i-przypowiesci-lew-i-zwierzeta.txt ballada-z-tamtej-strony-
-git diff
-git add bajki-i-przypowiesci-lew-i-zwierzeta.txt ballada-z-tamtej-strony-*
-git diff
-git add ballady-i-romanse-*
-echo '*.bak' >> .gitignore
-git diff
-git add cora-albionu.txt 
-git commit -m ok
-git diff
-git add z[l-z]*
-git commit -m ok
-git format-patch -1
-less 0001-ok.patch 
-rm 0001-ok.patch 
-git status
-git add .gitignore 
-echo .DS_Store >> .gitignore 
-echo '*.sent' >> .gitignore 
-echo '*.aud' >> .gitignore 
-git status
-git diff 
-git add balzac-komedia-ludzka-bank-nucingena.txt 
-git commit -m ok
-git diff
-git add balzac-komedia-ludzka-*
-git status
-git diff
-git add baran-dany-na-ofiare.txt bartek-zwyciezca.txt 
-git diff
-git add bema-pamieci-zalobny-rapsod.txt 
-git diff
-ls ../audio/*becz*
-ffplay ../audio/edgar-allan-poe-beczka-amontillada.mp3 
-git add berenice.txt beczka-amontillada.txt 
-git diff
-git add .gitignore 
-git add bezbronna-istota.txt 
-ffplay ../audio/*bialosnie*
-git add bialosniezka-i-rozanka.txt 
-git diff
-git add biedny-mlynarczyk-i-kotek.txt bogacz-i-zebrak.txt bogurodzica.txt 
-git diff
-ls ../audio/*swietos*
-less boy-swietoszek.txt 
-ffplay ../audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
-head boy-swietoszek.txt 
-ffplay ../audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
-less boy-swietoszek.txt 
-cat boy-swietoszek.txt 
-ffplay ../audio/42-moliere-molier-swietoszek-akt-05-scena-05.mp3 
-less boy-swietoszek.txt 
-ffplay ../audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
-less boy-swietoszek.txt 
-ffplay ../audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
-less boy-swietoszek.txt 
-ffplay ../audio/08-moliere-molier-swietoszek-artyzm-swietoszka.mp3 
 less boy-swietoszek.txt 
 ls ../audio/*molier*
 ffplay ../audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
@@ -1998,3 +1923,78 @@ head -n 29 ~/Label\ Track.txt >> audacity/doktor-piotr.txt
 git diff
 git add audacity/doktor-piotr.txt 
 git commit -m more
+cd scripts/
+perl tg4-scrape.pl 'http://www.tg4.ie/en/player/home/?pid=5672484350001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
+#perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5561171901001&teideal=Olivia&series=Olivia&dlft=30'
+grep Olivia videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5561171901001&teideal=Olivia&series=Olivia&dlft=30'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5550482676001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=7'
+svn dif
+svn diff
+svn diff videos.tsv 
+svn diff videos.tsv |grep '^\+'
+svn diff videos.tsv |grep '^\+' > vdiff4
+vi vdiff3
+vi vdiff4 
+cat vdiff4 |head -n 1
+cat vdiff4 |head -n 1|awk -F'\t' '{print $6}'
+cat vdiff4 |head -n 1|awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../rosnarun/$id.vtt; done
+#cat vdiff4 |head -n 2|tail -n 1 |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../rosnarun/$id.vtt; done
+cat vdiff4 |head -n 2|tail -n 1 
+cat vdiff4 |head -n 2|tail -n 1 |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../olivia/$id.vtt; done
+cat vdiff4 |head -n 3|tail -n 1 
+cat vdiff4 |head -n 3|tail -n 1 |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../astroblast/$id.vtt; done
+cat videos.tsv |awk -F'\t' '{print $5}'
+cat vdiff4 |awk -F'\t' '{print $5}'
+cat vdiff4 |awk -F'\t' '{print $5}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.mp4;done
+cat ~/bin/convert-mp3.sh 
+for i in *mp4;do echo $i;done
+for i in *mp4;do ffmpeg -i $i -acodec pcm_s16le -ac 1 -ar 16000 $(basename $i .mp4).wav;done
+ls -la
+cat vdiff4
+mv 5550482676001.wav ../astroblast/
+svn add ../astroblast/5550482676001.wav 
+mv 5561171901001.wav ../olivia/
+svn add ../olivia/5561171901001.wav 
+mv 5672484350001.wav ../rosnarun/
+svn add ../rosnarun/5672484350001.wav 
+ls
+rm *.mp4
+cd ..
+svn ci -m audio
+svn diff
+svn ci -m 'add wayback urls for redoability'
+cd ..
+ls
+cd mickyd/
+ls
+vi vid
+mv vid 2xmBQTVjZ_Q.txt
+git status
+git add 2xmBQTVjZ_Q.txt 
+git commit -m 'youtube'
+git diff
+git add 2xmBQTVjZ_Q.txt 
+git commit -m corrections
+git diff
+git add 2xmBQTVjZ_Q.txt 
+git commit -m 'some of the Irish actually matches the official transcript'
+mv ~/Downloads/Address\ by\ President\ Higgins\ at\ the\ unveiling\ of\ ‘Dearcán\ na\ nDaoine\ –\ The\ People’s\ Acorn’.mp3 2xmBQTVjZ_Q.mp3
+#sh ~/bin/convert-mp3.sh 
+sh ~/bin/convert-mp3.sh 2xmBQTVjZ_Q.mp3 
+ls
+less audio2srt.py 
+less ../TG4/whizsachistin/audacity/5633414133001.txt
+ls
+cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt 
+ls
+cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt 
+cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud.txt
+audacity &
+apt-cache search flite
+apt-cache search hts
+apt-cache search festival
+cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud.txt2
+less 2xmBQTVjZ_Q.aud.txt2 
+cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud2.txt
+less 2xmBQTVjZ_Q.aud2.txt 
