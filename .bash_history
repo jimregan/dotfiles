@@ -1,65 +1,3 @@
-git diff
-less z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git add z-wichrow-i-hal-z-tatr-krzak-dzikiej-rozy-w-ciemnych-smreczy.txt 
-git commit -m norm
-grep dychtowne zrebiec-i-kon-stary.txt 
-grep -i St\. *tx
-grep -i St\. *txt
-grep -i St. *txt
-grep -i St\. *txt
-grep -i 'St\.' *txt
-grep 'St\.' *txt
-grep 'św\.' *txt
-ls ../audio/0*
-ls ../audio/*kim*
-less kim.txt 
-perl ../splitter.pl kim.txt 
-less kim.txt-00.txt 
-less kim.txt-01.txt 
-less kim.txt-00.txt 
-perl ../apply-specific.pl 
-perl ../splitter.pl kim.txt 
-git add kim.txt-*txt
-git rm kim.txt
-git commit -m split
-perl ../apply-specific.pl 
-git diff
-git add kim.txt-*txt
-git commit -m norm
-less kim.txt-00.txt 
-perl ../apply-specific.pl 
-git diff
-git add kim.txt-*txt
-git commit -m norm
-less kim.txt-00.txt 
-perl ../apply-specific.pl 
-git diff
-git add kim.txt-*txt
-git commit -m norm
-less kim.txt-01.txt 
-perl ../apply-specific.pl 
-git diff
-git add kim.txt-*txt
-git commit -m norm
-less kim.txt-01.txt 
-less mendel-gdanski.txt 
-less przyjaciel.txt 
-less tulipan-i-fialek.txt 
-rm trzcina-i-chmiel.txt 
-git diff
-git checkout -- trzcina-i-chmiel.txt 
-git status
-rm przygody-tomka-sawyera.txt-06.txt
-less przygody-tomka-sawyera.txt
-perl ../header-replace.pl przygody-tomka-sawyera.txt|less
-perl ../header-replace.pl przygody-tomka-sawyera.txt > tmp
-mv tmp przygody-tomka-sawyera.txt
-git diff
 git add przygody-tomka-sawyera.txt 
 git commit -m header
 less przygody-tomka-sawyera.txt
@@ -1998,3 +1936,65 @@ git log
 git branch
 ls
 make
+cd ~
+config diff
+config add .bash_history .wget-hsts .config/kded_device_automounterrc 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs
+config commit -m more
+config branch
+config push origin desktop
+config checkout master
+config diff
+config add .wine/system.reg .wine/user.reg 
+config commit -m blah
+config checkout master
+config diff
+less .kde/share/config/kdeglobals 
+config add .kde/share/config/kdeglobals 
+config commit -m bla
+config checkout master
+config pull origin master
+config pull origin desktop
+git log
+config log
+config revert 9045ae794a9a6c8dd82ec5c978d109cea27d4d43
+config revert -m 1 9045ae794a9a6c8dd82ec5c978d109cea27d4d43
+config log
+config revert HEAD -m 1
+config log
+config revert -m 1
+config revert HEAD -m 1
+config log
+config reset --hard 9045ae794a9a6c8dd82ec5c978d109cea27d4d43
+config log
+config reset --hard HEAD~1
+config log
+config push origin desktop
+config checkout desktop
+config pull origin desktop
+config push origin desktop
+config merge master
+vi .wine/user.reg 
+git add .wine/user.reg 
+config add .wine/user.reg 
+vi .wine/system.reg 
+config add .wine/system.reg 
+config status
+config rm .kde/share/config/kdeglobals
+config status
+config commit -m mrg
+config status
+config push origin desktop
+config checkout master
+config pull origin master
+config log
+less .scratch/wget.nt 
+cat .scratch/wget.nt >> ~/tmp/sync/http-misc-20180105-1.nt
+config rm .scratch/wget.nt 
+config commit -m rm
+cd Playing/
+git clone github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition
+git clone github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/
+git clone https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/
