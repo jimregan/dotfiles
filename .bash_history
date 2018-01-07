@@ -1,66 +1,3 @@
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
-vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
-vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
-vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
-cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic > toadd
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic > toadd
-less toadd 
-cat toadd >> cmusphinx-clarinpl/pl.dic 
-sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
-cat /tmp/zwierzeta-i-niedzwiedz.txt.clean |awk '{print "<s> " $0 " </s>" }' > test.txt
-sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav test.txt
-cat test.txt 
-ls
-less README.md 
-sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav test.txt > test.txt.fa
-less test.txt.fa 
-cat test.txt.fa 
-cat test.txt.fa |awk -F',' '{print $5 "\t" $6 "\t" $1}'
-cat test.txt.fa |awk -F',' '{print $5 "\t" $6 "\t" $1}'|tr -d '"'
-cat test.txt.fa |awk -F',' '{printf "%.03f\t%.03f\t%s", $5/1000, $6/1000,  $1}'
-cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s", $5/1000, $6/1000,  $1}'
-cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}'
-cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}' > /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.txt
-cat test.txt
-sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean > zw.out
-cat zw.out 
-cat test.txt.fa|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}' > /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.txt
-cat zw.out|tr -d '"' |awk -F',' '{printf "%.03f\t%.03f\t%s\n", $5/1000, $6/1000,  $1}' > /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.txt
-#perl ~/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
-ls
-perl ~/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl /tmp/zwierzeta-i-niedzwiedz.txt.clean zw.out 
-cat zw.out 
-perl ~/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl /tmp/zwierzeta-i-niedzwiedz.txt.clean zw.out 
-cat /tmp/zwierzeta-i-niedzwiedz.txt.clean 
-less ~/Playing/kaldi/egs/clarinpl/data/train/wav.scp 
-ls
-ls /tmp/
-ls
-tar ztvf ~/Downloads/cmusphinx-ru-5.2.tar.gz 
-tar zxvf ~/Downloads/cmusphinx-ru-5.2.tar.gz 
-ls /tmp/cmusphinx-ru-5.2/
-ls ~/Playing/msf-asr/
-ls ~/Playing/msf-asr/ga-ru.dic 
-less ~/Playing/msf-asr/ga-ru.dic 
-cp ~/Playing/msf-asr/ga-ru.dic .
-ls
-cp align.sh align-ruga.sh 
-vi align-ruga.sh 
-sh align-ruga.sh /tmp/5258123925001.wav /tmp/5258123925001.txt 
-ls
-less align.sh 
-cat ../pron-data/gen.tsv |awk -F'\t' '{print $1}'
-cat ../pron-data/gen.tsv |awk -F'\t' '{print $1}' > /tmp/wla
-cat ../pron-data/gen.tsv |awk -F'\t' '{print $1}' |perl ../filter-dict.pl ~/Playing/kaldi/egs/clarinpl/local_clarin/lexicon.txt 
-cat ../pron-data/gen.tsv |awk -F'\t' '{print $1}' |perl ../filter-dict.pl ~/Playing/kaldi/egs/clarinpl/local_clarin/lexicon.txt  > /tmp/wlist
-less /tmp/wlist 
-ls
-cd ..
-ls
 grep doktor *tsv
 grep Peszek *tsv
 cat ~/Label\ Track.txt 
@@ -1998,3 +1935,66 @@ cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|whi
 cat 1.norm.filt 
 cat caighdean/MSF_chapter_3.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 3.norm.filt ;done
 cat 3.norm.filt 
+cd Playing/msf-asr/
+cat pron/ulster.tsv scripts/aspell-expander.pl 
+cat pron/ulster.tsv |perl scripts/aspell-expander.pl 
+cat pron/ulster.tsv |perl scripts/aspell-expander.pl |less
+echo ˈ|hexdump
+cat pron/ulster.tsv |perl scripts/aspell-expander.pl |less
+cat pron/ulster.tsv |perl scripts/aspell-expander.pl > pron/ulster-exp.tsv
+git add scripts/aspell-expander.pl pron/ulster-exp.tsv 
+cat pron/munster.tsv |perl scripts/aspell-expander.pl > pron/munster-exp.tsv
+git add pron/munster-exp.tsv 
+less pron/munster-exp.tsv 
+cat pron/connacht.tsv |perl scripts/aspell-expander.pl > pron/connacht-exp.tsv
+git add pron/connacht-exp.tsv 
+git commit -m 'expand with aspell'
+git push origin lexicon 
+cat pron/ulster*tsv|sort|uniq|wc 
+less scripts/normalise.pl 
+cat ~/Playing/corpuscrawler/corpus/ga.txt | perl scripts/brute-filter-by-language.pl 
+cat ~/Playing/corpuscrawler/corpus/ga.txt | perl scripts/brute-filter-by-language.pl > /tmp/allcorpus
+wc -l /tmp/allcorpus 
+cat /tmp/allcorpus |awk -F'\t' '($1 == en){print}'|wc
+cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|wc
+cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|less
+cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|grep Sc
+cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|grep Scan
+less /tmp/allcorpus 
+git add scripts/brute-filter-by-language.pl 
+git commit -m 'brutish English vs Irish check'
+git push origin lexicon 
+cat /tmp/allcorpus |awk -F'\t' '($1 == "ga"){print $2}'
+cat /tmp/allcorpus |awk -F'\t' '($1 == "ga"){print $2}' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv 
+cat /tmp/allcorpus |awk -F'\t' '($1 == "ga"){print $2}' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv |sort|uniq > /tmp/newinlist
+less /tmp/newinlist 
+less ~/Playing/language-resources/third_party/cldr/ta-ta_FONIPA.txt 
+cat /tmp/newinlist |uconv -x '::NFC();'
+cat /tmp/newinlist |uconv -x '::NFC();'|sort|uniq
+cat /tmp/newinlist |uconv -x '::NFC();' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv |sort|uniq > /tmp/newinlist2
+diff -u /tmp/newinlist /tmp/newinlist2
+mv /tmp/newinlist2 /tmp/newinlist
+vi /tmp/newinlist 
+echo 'thuismitheoirí́
+echo 'thuismitheoirí́ '|hexdump
+echo 'thuismitheoirí́ '|uconv '::NFC();'
+echo 'thuismitheoirí́ '|uconv -x '::NFC();'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();::NFC();'
+echo 'thuismitheoirí́ '|native2ascii -encoding utf8
+echo 'thuismitheoirí́ '|uconv -x '::NFD();::NFC();\u0301 -> ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();::NFC(); \u0301 -> ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC();'
+echo 'thuismitheoirí́ ' |native2ascii -encoding utf8
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> "";'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> \  ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> \@ ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> ' ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> " ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); A -> a ;'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC();'
+echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 > ;'
+cat /tmp/newinlist |uconv -x '::NFD();;::NFC(); \u0301 > ;' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv |sort|uniq > /tmp/newinlist2
+diff -u /tmp/newinlist /tmp/newinlist2 
+grep '[vxz]' /tmp/newinlist2 
