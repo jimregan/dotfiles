@@ -1,68 +1,3 @@
-grep doktor *tsv
-grep Peszek *tsv
-cat ~/Label\ Track.txt 
-find /home/jim/Playing/kaldi/egs/clarinpl/ -name wav.scp
-cat /home/jim/Playing/kaldi/egs/clarinpl/data/test/split40/15/wav.scp
-grep Peszek *tsv
-less audiobooks.tsv 
-ls audio/bruno-jasienski-but-w-butonierce-tomik-*
-ls -l audio/bruno-jasienski-but-w-butonierce-tomik-*
-ls -l audio/bruno-jasienski-but-w-butonierce-tomik-*|awk -F/ '{print $NF}'
-ls -l text/*but-w-butonierce-tomik-*|awk -F/ '{print $NF}'
-ls -l text/*but-w-butonierce*|awk -F/ '{print $NF}'
-ls -l text/*fraszki*|awk -F/ '{print $NF}'
-ls text/*fraszki*
-ls -l audio/*fraszki*|awk -F/ '{print $NF}'
-ls text/*fraszki*
-ls -l audio/*fraszki*|awk -F/ '{print $NF}'
-ls -l text/*fraszki*|awk -F/ '{print $NF}'
-cat text/fraszki-ksiegi-pierwsze-raki.txt 
-ffplay audio/01-jan-kochanowski-fraszki-ksiegi-pierwsze-raki.mp3 
-ffplay audio/02-jan-kochanowski-fraszki-ksiegi-pierwsze-raki-na-wspak.mp3 
-ls text/*raki*
-grep 'na wspak' text/*
-grep -i raki audiobooks.tsv 
-grep -i frasz audiobooks.tsv 
-grep -i frasz audiobooks.tsv |grep Katarz
-curl https://wolnelektury.pl/media/book/txt/fraszki-ksiegi-pierwsze-raki.txt
-ffplay audio/02-jan-kochanowski-fraszki-ksiegi-pierwsze-raki-na-wspak.mp3 
-cat text/fraszki-ksiegi-pierwsze-raki.txt 
-git diff
-vi pron-data/pronounce-as.gen.tsv 
-git add pron-data/pronounce-as.gen.tsv 
-git commit -m correction
-git diff
-git add pairs.tsv 
-git commit -m more
-git diff
-git add specific-norms.tsv 
-git commit -m more
-mkdir missing
-vi missing/raki-na-wspak.txt
-git add missing/raki-na-wspak.txt 
-git commit -m 'missing text'
-git diff
-git add pairs.tsv 
-git commit -m missing
-ffplay audio/bruno-jasienski-but-w-butonierce-tomik-but-w-butonierce.mp3
-less text/but-w-butonierce-but-w-butonierce.txt 
-mv ~/raki-na-wspak.txt done-aud/
-ls done-aud/
-mv done-aud/ audacity
-git add audacity/
-git commit -m done
-ls ~/*.txt
-ls
-ls text/*swiet*
-less text/boy-swietoszek.txt
-vi pron-data/pronounce-as.tsv 
-less text/boy-swietoszek.txt
-git diff
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv 
-git commit -m add
-git diff
-git stash
 vi /tmp/right1 
 git diff
 vi /tmp/right1 
@@ -1998,3 +1933,68 @@ echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 > ;'
 cat /tmp/newinlist |uconv -x '::NFD();;::NFC(); \u0301 > ;' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv |sort|uniq > /tmp/newinlist2
 diff -u /tmp/newinlist /tmp/newinlist2 
 grep '[vxz]' /tmp/newinlist2 
+cd 
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs
+config commit -m more
+python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config diff
+config add .wine/system.reg
+config diff
+config add .config/ksmserverrc
+config diff
+config .kde/share/config/amarokrc .wine/user.reg
+config add .kde/share/config/amarokrc .wine/user.reg
+config commit -m more
+apt-cache search clam
+sudo apt-get install clamav
