@@ -1,176 +1,3 @@
-grep 5526006245001 scripts/videos.tsv 
-rm scripts/5526006245001.*
-grep 5577127362001 scripts/videos.tsv 
-mv scripts/5577127362001.* catahata/
-svn add catahata/5577127362001.* 
-grep 5577137733001 scripts/videos.tsv 
-mv scripts/5577137733001.* catahata/
-svn add catahata/5577137733001.* 
-grep 5597948926001 scripts/videos.tsv 
-mv scripts/5597948926001.* astroblast/
-svn add astroblast/5597948926001.* 
-ls scripts/*wav
-svn ci -m more
-ls /tmp/proc
-mkdir /tmp/proc
-cd ..
-perl abair-scrape.pl 
-grep compordach pron/*tsv
-perl abair-scrape.pl > tmp
-vi tmp 
-cat tmp >> pron/munster.tsv 
-git diff
-less ~/Downloads/Welcome\ to\ Spark\ with\ Scala.ipynb 
-vi /tmp/htmout 
-cd /tmp
-ls
-rm ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.*
-rm *wav
-ls
-df
-tar zxvf ~/Downloads/montreal-forced-aligner_linux.tar.gz 
-cd  montreal-forced-aligner/
-ls
-ls pretrained_models/
-mv ~/Downloads/polish.zip pretrained_models/
-mv ~/Downloads/ukrainian.zip pretrained_models/
-mv ~/Downloads/russian.zip pretrained_models/
-ls
-less pretrained_models/README.md 
-ls
-unzip -l pretrained_models/polish.zip 
-unzip -l pretrained_models/english.zip 
-unzip -l pretrained_models/russian.zip 
-ls
-ls bin/
-bin/mfa_align 
-bin/mfa_train_and_align 
-ls
-ls lib/thirdparty/bin/phonetisaurus-g2pfst 
-lib/thirdparty/bin/phonetisaurus-g2pfst 
-ls /usr/local/
-cd ..
-sudo mv montreal-forced-aligner/ /usr/local/
-/usr/local/montreal-forced-aligner/bin/mfa_train_and_align 
-/usr/local/montreal-forced-aligner/bin/mfa_align 
-/usr/local/montreal-forced-aligner/lib/
-ls /usr/local/montreal-forced-aligner/lib/
-ls /usr/local/montreal-forced-aligner/lib/thirdparty/
-ls /usr/local/montreal-forced-aligner/lib/thirdparty/bin/
-find /usr/local/montreal-forced-aligner -name libkaldi-hmm.so
-cd /usr/local/montreal-forced-aligner/bin/
-ls
-cd ../../lib/
-ls
-cd ..
-cd
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/plwlist 
-#/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/plwlist 
-mkdir /tmp/plout
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/plwlist /tmp/plout/
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary /tmp/pl/ /tmp/plwlist /tmp/plout/
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/plout/
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
-less /tmp/polishout 
-less /tmp/pl/plwlist 
-mv /tmp/pl/plwlist /tmp/pl/plwlist.txt
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
-less /tmp/polishout 
-cat /tmp/polishout 
-mv /tmp/pl/plwlist.txt /tmp/pl/plwlist.lab
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
-less /tmp/polishout 
-less /tmp/pl/plwlist.lab 
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary 
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary -h
-less ~/Documents/MFA/corpus/logging/corpus.log 
-less ~/Documents/MFA/G2P/polish_g2p/words.txt 
-less ~/Documents/MFA/G2P/polish_g2p/logging/g2p.log 
-cat /tmp/pl/plwlist.lab 
-cat /tmp/pl/plwlist.lab |sed -e 's/\n/ /g'
-cat /tmp/pl/plwlist.lab | tr -d '\n'
-cat /tmp/pl/plwlist.lab |sed -e 's/^/ /'| tr -d '\n'
-cat /tmp/pl/plwlist.lab |sed -e 's/^/ /'| tr -d '\n' > /tmp/pl/one.lab 
-touch /tmp/pl/one.wav
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
-cp ~/Playing/msf-asr/TG4/garfield/5416347428001.wav /tmp/pl/one.wav 
-/usr/local/montreal-forced-aligner/bin/mfa_generate_dictionary ~/Downloads/polish_g2p.zip /tmp/pl/ /tmp/polishout
-less /tmp/polishout 
-wc -l /tmp/polishou
-wc -l /tmp/polishout 
-less /tmp/polishout 
-wget https://wolnelektury.pl/katalog/zip/mp3/fraszki-ksiegi-pierwsze-raki.zip
-unzip -l fraszki-ksiegi-pierwsze-raki.zip 
-rm fraszki-ksiegi-pierwsze-raki.zip 
-svn diff
-svn ci -m 'all video parts for those that came in pieces. All should be recreatable now'
-svn diff
-svn ci -m 'and those from earlier today'
-svn diff
-ls scripts/
-cd scripts/
-svn diff videos.tsv 
-svn diff videos.tsv |grep '\+'
-svn diff videos.tsv |grep '^\+'
-svn diff videos.tsv |grep '^\+'|grep http
-svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 "\n" $6}'
-svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 "\n" $6}' |awk '{print "http://web.archive.org/save/" $0}' > /tmp/asd/spidb
-svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 }' 
-svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 }' | sh run.sh 
-ls
-svn diff videos.tsv |grep '^\+'|grep http|awk '{print $5 }'|tail -n 1 | sh run.sh 
-ls
-cd ..
-ls
-less garfield/5410712898001.vtt 
-less garfield/5397304565001.vtt 
-ffplay garfield/5397304565001.wav 
-less garfield/5397304565001.vtt 
-grep */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|wc
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's\.\.\.//'
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\.//'
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|uniq
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq|wc
-cat */*.vtt|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq > all.words
-vi all.words 
-cat */*.vtt|tr -d '\r'|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|uniq > all.words
-wc -l all.
-wc -l all.words 
-less all.words 
-cat */*.vtt|tr -d '\r'|grep -v X-TIMESTAMP|grep -v '\-\->' |grep -v WEBVTT|tr ' ' '\n'|sed -e 's/\.\.\./\n/'|sort|uniq|tr -d '?'|tr -d ','|tr -d ';' |tr -d ':'|tr -d '.'|tr -d '"'|tr -d '!'|uniq > all.words
-wc -l all.words 
-less all.words 
-grep Bhlá-fá-má-zéin */*vtt
-grep Znerd */*vtt
-grep wú-tríleach */*.vtt
-ffplay catahata/5566610353001.wav 
-vi ../pron/pronounce-as.tsv
-svn diff
-. ~/tmp/sourceme 
-doinstain 
-cd ..
-perl abair-scrape.pl 
-perl abair-scrape.pl  > tmp 
-cat tmp >> pron/connacht.tsv 
-vi tmp 
-cat tmp >> pron/connacht.tsv 
-vi tmp 
-cat tmp >> pron/connacht.tsv 
-vi pron/connacht.tsv 
-vi pron/munster.tsv 
-vi /tmp/htmout 
-perl abair-scrape.pl  > tmp 
-vi tmp 
-cat tmp >> pron/ulster.tsv 
-vi tmp 
-cat tmp >> pron/ulster.tsv 
 vi tmp 
 cat tmp >> pron/ulster.tsv 
 git diff
@@ -1998,3 +1825,176 @@ git status
 git push origin master
 git push origin lexicon
 wget https://corkirish.files.wordpress.com/2014/11/msf-full-draft.pdf
+cd ~
+config branch 
+config branch -D desktop
+config checkout -b desktop
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs
+config commit -m new
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs
+config commit -m new
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs
+config commit -m new
+vi .scratch/chromium-tabs-trim 
+config add .scratch/chromium-tabs-trim 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs-trim 
+config add .scratch/chromium-tabs
+config commit -m more
+vi .scratch/chromium-tabs-trim 
+config add .scratch/chromium-tabs*
+config commit -m more
+vi .scratch/chromium-tabs-trim 
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs*
+config commit -m more
+vi .scratch/chromium-tabs-trim 
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs*
+config commit -m more
+vi .scratch/chromium-tabs-trim 
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs*
+config commit -m more
+vi .scratch/chromium-tabs-trim 
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs*
+config commit -m more
+vi .scratch/chromium-tabs-trim 
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs*
+config commit -m more
+vi .scratch/chromium-tabs-trim 
+python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs*
+config commit -m more
+cd /tmp/
+ls
+unrar l ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar 
+cd Level3-Linux-x86-x86_64_Data/
+ls
+ls Managed/
+cd ..
+ls
+unrar l ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar |less
+./Level3-Linux-x86-x86_64.x86_64 
+chmod a+x ./Level3-Linux-x86-x86_64.x86_64 
+./Level3-Linux-x86-x86_64.x86_64 
+vi ~/Playing/languagetool/languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
+man pocketsphinx_continuous 
+man pocketsphinx_batch 
+echo babysitting | espeak --ipa
+echo Aurelia | espeak --ipa
+echo Arlene | espeak --ipa
+espeak -l
+espeak --list
+espeak 
+espeak -h
+espeak -v
+espeak --voices
+echo Arlene | espeak --ipa -v en_us
+echo Arlene | espeak --ipa -v en-us
+echo Artie | espeak --ipa -v en-us
+echo Art | espeak --ipa -v en-us
+ipa () { echo $1 | espeak --ipa -v en-us ; }
+ipa Alfred
+ipa Alfredo
+ipa Alfred
+ipa red
+ipa all
+ipa angelica
+ipa Ayers
+ipa barker
+ipa BMW
+gaipa () { echo $1 | espeak --ipa -v ga ; }
+gaipa bí
+gaipa em
+gaipa dabaldhiú
+gaipa blaec
+gaipa biongó
+ipa bicycles
+ipa Blanch
+ipa bleach
+ipa Blenheim
+cat ~/Playing/msf-asr/pron/pronounce-as.tsv 
+cat ~/Playing/msf-asr/pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print}'
+cat ~/Playing/msf-asr/pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print}' > /tmp/todolistl
+cat /tmp/todolistl |while read i;do ipa $i >> /tmp/todolistr;done
+ipa v.i.p
+ipa voila
+ipa wow
+ipa yea
+ipa yeah
+ipa ya
+ipa yah
+ipa ya
+ipa a
+ipa ah
+ipa A.A.A
+ipa Aurelia
+ipa Awrelia
+ipa Awrehlia
+ipa BMW
+ipa Bordeaux
+ipa boom
+ipa body
+espeak --ipa body
+espeak --ipa bond
+espeak --ipa bonkers
+ipa bonkers
+ipa bored
+ipa boss
+ipa bratwurst
+ipa cardamom
+ipa Carney
+ipa carol
+vi ~/Playing/languagetool/languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/placenames.txt 
+ipa cannelloni
+ipa cancelation
+cat ~/Playing/msf-asr/pron/pronounce-as.tsv |awk -F'\t' '(NF==3){print $3 "."}'
+unzip ~/Downloads/LUNA-WOZ.PL.zip 
+cd ZNIZKI/
+ls
+cd M/
+ls
+cd 10023_in/
+ls
+less 10023_in.trs 
+less 10023_attvalue.xml 
+less 10023_chunks.xml 
+less 10023_words.xml 
+less 10023_turns.xml 
+less 10023_in.trs 
+cd ..
+ls
+less 20104_in/20104_in.trs 
+ffplay 20104_in/20104_in.wav 
+cd ..
+ls
+r, =rf ZNIZKI/
+rm -rf ZNIZKI/
+cd JAKDOJECHAC/
+ls
+cd  F/
+ls
+less 00083_in/00083_in.trs 
+ffplay 00083_in/00083_in.wav 
+cd ..
+rm -rf JAKDOJECHAC/
+unzip ~/Downloads/PolDiLemma_vrt.zip 
+less 94778/vrt/DIGSTDR000026_0028.vrt 
+less 94778/vrt/DIGSTDR000026_0001.vrt 
+unzip ~/Downloads/poldilemma-tool.zip 
+tar zxvf ~/Downloads/PL.tgz 
+cd PL/
+ls
+less LICENSE.txt 
+less README.md 
+ls
+less train.conllu 
+less train.conllu 
+wc train.conllu 
