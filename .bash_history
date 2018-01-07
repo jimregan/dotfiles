@@ -1,49 +1,3 @@
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5590432547001&teideal=Olivia&series=Olivia&dlft=30'
-svn diff
-svn ci -m more
-cat vdiff 
-cat vdiff |grep m3u|awk '{print $5}'
-cat vdiff |grep '{print $5}'
-cat vdiff |grep -F'\t' '{print $5}'
-cat vdiff |awk -F'\t' '{print $5}'
-cat vdiff |awk -F'\t' '{print $5}'|grep m3u
-cat vdiff |awk -F'\t' '{print $5}'|grep m3u > /tmp//asd/m3u
-cat vdiff |awk -F'\t' '{print $5}'|grep m3u > m3u
-cat m3u |while read i;do echo $i|sh run.sh ;done
-ls
-grep 5678995343001 videos.tsv 
-mv 5678995343001.* ../rosnarun/
-svn add ../rosnarun/5678995343001.* 
-ls
-rm list-5*
-ls
-cat m3u 
-rm m3u 
-ls
-svn diff
-svn ci -m more
-ls
-rm vdiff 
-ls
-svn diff
-ls
-vi ../../to-pron 
-vi ../../scripts/normalisations.tsv 
-git diff
-vi ../../scripts/normalisations.tsv 
-grep Garf videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689301324001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=7'
-tail videos.tsv 
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2645/1290862567001_dceb3088-6bfd-4d2c-9261-5bf54f40b15b.vtt?pubId=1290862567001&videoId=5689301324001' -O ../harveybeaks/5689301324001.vtt
-svn add ../harveybeaks/5689301324001.vtt
-echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2645/1290862567001_dceb3088-6bfd-4d2c-9261-5bf54f40b15b.vtt?pubId=1290862567001&videoId=5689301324001' $(curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001'|grep http) |awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
-less /tmp/asd/spid
-echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2645/1290862567001_dceb3088-6bfd-4d2c-9261-5bf54f40b15b.vtt?pubId=1290862567001&videoId=5689301324001'  |awk '{print "http://web.archive.org/save/" $0}' > /tmp/asd/spid
-curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001'|grep http |awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
-less /tmp/asd/spid
-svn diff
-svn diff|less
-ls ../bealoideasbeo/
 wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/788/1290862567001_348d8ac6-4b50-4312-a523-3a835e4769b1.vtt?pubId=1290862567001&videoId=5555995052001' -O ../bealoideasbeo/5555995052001.vtt
 svn add ../bealoideasbeo/5555995052001.vtt
 tail videos.tsv 
@@ -1998,3 +1952,49 @@ cat spid.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171217-1.nt
 rm spid
 rm spid.log 
 ssh jimregan
+tail -f corpus/ga.txt
+git status
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m 'Irish Times'
+git push mine irish-more 
+vi Lib/corpuscrawler/crawl_ga.py
+git add Lib/corpuscrawler/crawl_ga.py
+git commit -m 'remove comment'
+git push mine irish-more 
+tail -f corpus/ga.txt
+git checkout master
+git add Lib/corpuscrawler/crawl_ga.py 
+git commit -m 'CHG crawler'
+git log
+git checkout master
+git pull origin master 
+git push mine master 
+git checkout -b ga-chg
+git cherry-pick 29ecb76d4744b05546eeab7b94a1828a6668b804
+git log
+git push mine ga-chg 
+tail -f corpus/ga.txt
+ls -al corpus/ga.txt
+. ~/tmp/sourceme 
+doinstain 
+less ~/Downloads/en-pl.txt 
+doinstain 
+rm ~/Pictures/Screenshot_2017*
+doinstain 
+ls /tmp//proc/
+rm /tmp/proc/*
+cd /tmp/proc/
+ls
+for i in 2*;do mv $i $(echo $i|awk -F'?' '{print $1}');done
+ls
+doinstain 
+cat ~/Downloads/wget.nt.txt >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm ~/Downloads/wget.nt.txt 
+cat ~/Downloads/scratch.nt.txt 
+cat ~/Downloads/scratch.nt.txt  >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm ~/Downloads/scratch.nt.txt  
+mv ~/Downloads/scratch.txt /tmp/instain 
+doinstain 
+cat ~/Downloads/wget.nt.txt >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm ~/Downloads/wget.nt.txt 
+doinstain 
