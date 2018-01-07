@@ -1,67 +1,3 @@
-vi /tmp/right1 
-git diff
-vi /tmp/right1 
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv 
-git commit -m add
-grep -i phi text/doktor-piotr.txt
-grep -i phi text/doktor-piotr.txt.sent
-grep -i phi text/doktor-piotr.txt.sent.aud 
-git diff
-git add pron-data/gen.tsv 
-git commit -m add
-vi pron-data/pronounce-as.tsv 
-git diff
-git add pron-data/pronounce-as.tsv 
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv 
-git commit -m more
-vi pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-vi specific-norms.tsv 
-grep -i uzd text/doktor-piotr.txt.sent.aud 
-perl -e 'print 2213 / 60'
-grep -i phy text/doktor-piotr.txt.sent.aud 
-perl -e 'print 2510 / 60'
-perl -e 'print 2213 / 60'
-perl -e 'print 2510 / 60'
-grep -i phy text/doktor-piotr.txt.sent.aud 
-vi specific-norms.tsv 
-grep -i phi text/doktor-piotr.txt.sent.aud 
-perl -e 'print 4100 / 60'
-vi specific-norms.tsv 
-perl apply-specific.pl text/doktor-piotr.txt
-less text/doktor-piotr.txt
-cd text/
-perl ../apply-specific.pl doktor-piotr.txt
-less doktor-piotr.txt
-ls
-less fortepian-chopina.txt 
-ffplay ../audio/cyprian-kamil-norwid-fortepian-chopina.mp3 
-less fortepian-chopina.txt 
-vi ../clean.pl 
-cat fortepian-chopina.txt |perl ../clean.pl 
-less fortepian-chopina.txt 
-ls ../*pl
-less ../header-replace.pl 
-less przesolil.txt
-less fortepian-chopina.txt 
-perl ../apply-specific.pl 
-git diff fortepian-chopina.txt
-git stash fortepian-chopina.txt
-git checkout -- fortepian-chopina.txt
-perl ../apply-specific.pl 
-git diff
-git diff fortepian-chopina.txt
-git checkout -- fortepian-chopina.txt
-perl ../apply-specific.pl 
-git diff fortepian-chopina.txt
-vi fortepian-chopina.txt
-cat fortepian-chopina.txt |perl ../header-replace.pl 
-perl ../header-replace.pl fortepian-chopina.txt
-perl ../header-replace.pl fortepian-chopina.txt|less
 perl ../header-replace.pl fortepian-chopina.txt > tmp
 mv tmp fortepian-chopina.txt
 git diff
@@ -1998,3 +1934,67 @@ config add .kde/share/config/amarokrc .wine/user.reg
 config commit -m more
 apt-cache search clam
 sudo apt-get install clamav
+cd ../../wolne-lektury-audio-corpus/
+ls audacity/
+less audacity/robinson-crusoe.txt-01.txt 
+cd text/
+git diff
+git add boy-swietoszek.txt 
+git commit -m header
+perl ../apply-specific.pl 
+git diff
+git add robinson-crusoe.txt-01.txt przygody-tomka-sawyera.txt-36.txt 
+git diff
+git add fraszki-ksiegi-pierwsze-na-nabozna.txt przygody-tomka-sawyera.txt-01.txt 
+git add przygody-tomka-sawyera.txt-05.txt 
+git diff
+git add przygody-tomka-sawyera.txt-13.txt 
+git add przygody-tomka-sawyera.txt-33.txt 
+git add przygody-tomka-sawyera.txt-15.txt 
+git diff
+svn ci -m more
+git commit -m more
+ls
+perl ../apply-specific.pl 
+git diff
+find . -size 0
+cat boy-swietoszek.txt-03.txt
+find . -size 0 -delete
+git status
+rm zwierzeta-i-niedzwiedz.txt.th 
+rm *.bal
+rm *.bak
+ls ../audacity/
+grep West ../pron-data/pronounce-as.tsv 
+less doktor-piotr.txt 
+head -n 76 ~/Label\ Track.txt
+head -n 76 ~/Label\ Track.txt >> ../audacity/doktor-piotr.txt 
+cd ..
+git diff
+git add specific-norms.tsv 
+git add audacity/doktor-piotr.txt 
+git commit -m more
+cat audacity/doktor-piotr.txt 
+cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'
+cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl 
+less text/doktor-piotr.txt 
+vi audacity/doktor-piotr.txt 
+git add audacity/doktor-piotr.txt 
+git commit -m fix
+cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl 
+cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'
+cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'|sort|uniq
+cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+vi audacity/doktor-piotr.txt 
+cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+vi audacity/doktor-piotr.txt 
+git diff
+git add audacity/doktor-piotr.txt 
+git commit -m more
+less text/doktor-piotr.txt 
+head -n 28 ~/Label\ Track.txt 
+head -n 29 ~/Label\ Track.txt 
+head -n 29 ~/Label\ Track.txt >> audacity/doktor-piotr.txt 
+git diff
+git add audacity/doktor-piotr.txt 
+git commit -m more
