@@ -1,24 +1,3 @@
-cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-rm spid* in nohup.out 
-ls
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-ls
-echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3013/1290862567001_82c49921-198b-48f1-adf3-06849cd4ba32.vtt?pubId=1290862567001&videoId=5689475790001' >> spida
-less spida 
-sh ~/scripts/spider.sh spida
-tail -f spid.log 
-tail -f spida.log 
-cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-less spida.log 
-less spid.log 
-less spida.log 
-less spida
-head -n 1 spida
 head -n 1 spida|awk '{print "http://web.archive.org/save/" $0}' > spidb
 sh ~/scripts/spider.sh spidb
 tail -f spidb.log 
@@ -1998,3 +1977,24 @@ wc -l pron/*tsv
 less ~/Downloads/emacs 
 less ~/Downloads/156096-en_h4w_rc.scenario 
 apt-cache search simon
+cd ~/Playing/
+git clone https://github.com/danielgtaylor/jpeg-archive.git
+cd jpeg-archive/
+ls
+make
+ls
+less README.md 
+sudo apt-get install build-essential autoconf pkg-config nasm libtool
+make
+sudo make install
+vi Makefile 
+make
+sudo make install
+cd /tmp/
+mkdir orig
+cd orig/
+unzip ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx 
+ls -al word/media/
+ls -al word/media/|wc
+cp word/media/* ../aorig/word/media/
+ls -al word/media/
