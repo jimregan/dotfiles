@@ -1,22 +1,3 @@
-git add przygody-tomka-sawyera.txt 
-git commit -m header
-less przygody-tomka-sawyera.txt
-perl ../splitter.pl przygody-tomka-sawyera.txt
-less przygody-tomka-sawyera.txt-01.txt 
-git add przygody-tomka-sawyera.txt-*txt
-git rm przygody-tomka-sawyera.txt
-git commit -m split
-ls ../audio/*sawyer*
-grep '[0-9]' przygody-tomka-sawyera.txt-*
-less przygody-tomka-sawyera.txt-02.txt 
-perl ../apply-specific.pl 
-git diff
-git add przygody-tomka-sawyera.txt-0*
-git commit -m norm
-less przygody-tomka-sawyera.txt-01.txt
-grep 'St\.' przyg&
-grep 'St\.' przyg*
-perl ../apply-specific.pl 
 git diff
 less przygody-tomka-sawyera.txt-01.txt
 less przygody-tomka-sawyera.txt-05.txt
@@ -1998,3 +1979,22 @@ cd Playing/
 git clone github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition
 git clone github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/
 git clone https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/
+cd /tmp/
+git clone https://github.com/jimregan/dotfiles
+cd dotfiles/
+git pull origin
+git checkout labpc
+ls
+cd .scratch/
+ls
+git pull origin labpc 
+git pull origin 
+git fetch origin
+cd ..
+git merge desktop
+git merge origin/desktop
+git rm .bash_history .wget-hsts 
+git status
+git commit -m merge
+git push origin master 
+git push origin labpc 
