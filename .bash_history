@@ -1,37 +1,3 @@
-sh ~/bin/convert-mp3.sh 5686659553001.mp4 
-grep 5686659553001 videos.tsv 
-mv 5686659553001.* ../whizsachistin/
-svn add ../whizsachistin/5686659553001.*
-svn rm ../whizsachistin/5686659553001.mp4
-svn rm --force ../whizsachistin/5686659553001.mp4
-svn mv ../whizsachistin/5686659553001.mp4.wav ../whizsachistin/5686659553001.wav
-cd ..
-svn status
-svn ci -m +1
-ls scripts/*wav
-grep 5559500044001 scripts/videos.tsv 
-mv scripts/5559500044001.* astroblast/
-svn add astroblast/5559500044001.* 
-ls scripts/*wav
-grep 5623690749001 scripts/videos.tsv 
-mv scripts/5623690749001.* olivia/
-svn add olivia/5623690749001.*
-svn ci -m +2
-ls scripts/*wav
-grep 5418686075001 scripts/videos.tsv 
-mv scripts/5418686075001.* garfield/
-svn add garfield/5418686075001.*
-grep 5577169734001 scripts/videos.tsv 
-mv scripts/5577169734001.* catahata/
-svn add catahata/5577169734001.*
-grep 5577177404001 scripts/videos.tsv 
-mv scripts/5577177404001.* catahata/
-svn add catahata/5577177404001.*
-svn ci -m more
-ls scripts/*wav
-grep 5416347428001 scripts/videos.tsv 
-mv scripts/5416347428001.* garfield/
-svn add garfield/5416347428001.* 
 grep 5526006245001 scripts/videos.tsv 
 rm scripts/5526006245001.*
 grep 5577127362001 scripts/videos.tsv 
@@ -1998,3 +1964,37 @@ df
 ls
 rm -rf cmusphinx-*
 df
+cd ..
+git diff
+git status
+cd scripts/
+git status
+git diff brute-filter-by-language.pl
+mv brute-filter-by-language.pl ..
+git diff
+mv ../brute-filter-by-language.pl .
+git diff
+cat ../TG4/*/*.vtt
+cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME
+cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME|perl brute-filter-by-language.pl 
+cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME|perl brute-filter-by-language.pl |wc
+cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME|perl brute-filter-by-language.pl > /tmp/all-tg4
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print}'
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print}'|wc
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq|wc
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq >>
+cat /tmp/all-tg4 |wc
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|wc
+rm ~/Downloads/Untitled\ presentation*
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq
+cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq >> ../pron/pronounce-as.tsv 
+cd ..
+git add pron/pronounce-as.tsv 
+git commit -m todo
+git status
+git push origin master
+git push origin lexicon
+wget https://corkirish.files.wordpress.com/2014/11/msf-full-draft.pdf
