@@ -1,29 +1,3 @@
-git pull origin master 
-git push mine master 
-git checkout -b irish-more
-./corpuscrawler --lang ga
-less corpus/ga.txt
-./corpuscrawler --lang ga
-python
-./corpuscrawler --lang ga
-less corpus/ga.txt
-./corpuscrawler --lang ga
-vi Lib/corpuscrawler/util.py
-./corpuscrawler --lang ga
-git diff
-./corpuscrawler --lang ga
-less corpus/ga.txt
-./corpuscrawler --lang ga
-less corpus/ga.txt
-vi Lib/corpuscrawler/util.py
-./corpuscrawler --lang ga
-less Lib/corpuscrawler/twi.translit 
-cd ..
-cd language-resources/
-ls
-cd third_party/
-cd cldr/
-ls
 cp ~/Playing/corpuscrawler/Lib/corpuscrawler/twi.translit tw-tw_FONIPA.txt
 git add tw-tw_FONIPA.txt 
 git commit -m Twi
@@ -1998,3 +1972,29 @@ ls
 cd ..
 rm -rf word2vec
 rm word2vec.tar.gz 
+cd ../../wolne-lektury-audio-corpus/
+less ~/robinson-crusoe.txt-01.txt
+head -n 20 ~/robinson-crusoe.txt-01.txt
+head -n 20 ~/robinson-crusoe.txt-01.txt >> audacity/robinson-crusoe.txt-01.txt 
+less audacity/robinson-crusoe.txt-01.txt 
+git diff
+git add specific-norms.tsv audacity/robinson-crusoe.txt-01.txt 
+git commit -m more
+head -n 2 ~/robinson-crusoe.txt-01.txt 
+head -n 2 ~/robinson-crusoe.txt-01.txt >> audacity/robinson-crusoe.txt-01.txt 
+git diff
+less ~/robinson-crusoe.txt-01.txt
+less audacity/robinson-crusoe.txt-01.txt 
+less ~/robinson-crusoe.txt-01.txt
+less audacity/robinson-crusoe.txt-01.txt 
+less ~/robinson-crusoe.txt-01.txt
+vi ~/robinson-crusoe.txt-01.txt
+head -n 22 ~/robinson-crusoe.txt-01.txt
+head -n 21 ~/robinson-crusoe.txt-01.txt
+head -n 21 ~/robinson-crusoe.txt-01.txt >> audacity/robinson-crusoe.txt-01.txt 
+git diff
+git add specific-norms.tsv audacity/robinson-crusoe.txt-01.txt 
+git commit -m more
+git diff
+git add specific-norms.tsv audacity/robinson-crusoe.txt-01.txt 
+git commit -m more
