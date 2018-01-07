@@ -1,190 +1,3 @@
-git diff
-diff -u balzac-komedia-ludzka-bank-nucingena.txt tmp |less
-rm przygody-tomka-sawyera.txt-06.txt 
-for i in *.txt;do cat $i | perl ../apply-norms.pl > $i.bak;done
-find . -size 0
-for i in *.txt;do mv $i.bak $i;done
-git diff
-git status
-git add *.txt
-git commit -m norm
-less balzac-komedia-ludzka-bank-nucingena.txt 
-perl ../apply-specific.pl 
-git diff
-git add balzac-komedia-ludzka-bank-nucingena.txt 
-git commit -m norm
-less balzac-komedia-ludzka-bank-nucingena.txt 
-perl ../apply-specific.pl 
-git diff
-less balzac-komedia-ludzka-bank-nucingena.txt 
-less treny-tren-i.txt 
-ls treny-*
-ls treny-* |sort
-less treny-tren-i.txt 
-less treny-tren-ii.txt 
-less treny-tren-iii.txt 
-less ../NumberNorm.pm 
-less treny-tren-xix-albo-sen.txt 
-less treny-epitafium-hannie-kochanowskiej.txt 
-less treny-motto-i-dedykacja.txt 
-perl ../apply-specific.pl 
-git diff
-git stash
-less ../NumberNorm.pm 
-perl ../apply-specific.pl 
-git diff
-git add treny-tren-*
-git add balzac-komedia-ludzka-bank-nucingena.txt 
-git commit -m norm
-ls
-less treny-tren-ii.txt 
-vi treny-tren-ii.txt 
-less treny-tren-iv.txt 
-perl ../apply-specific.pl 
-git diff
-git add treny-tren-i*
-git commit -m norm
-ls
-grep -i tłumaczenie *txt
-cat zajac-i-jez.txt 
-less zajac-i-jez.txt 
-grep '[0-9]' *.txt
-less but-w-butonierce-miasto.txt
-perl ../apply-specific.pl 
-git diff
-git add but-w-butonierce-miasto.txt 
-git commit -m norm
-less but-w-butonierce-miasto.txt
-perl ../apply-specific.pl 
-git diff
-git add but-w-butonierce-miasto.txt 
-git commit -m norm
-less gloria-victis-dziwna-historia.txt 
-less gloria-victis-gloria-victis.txt 
-perl ../header-replace.pl gloria-victis-gloria-victis.txt 
-perl ../header-replace.pl gloria-victis-gloria-victis.txt > tmp
-less tmp 
-mv tmp gloria-victis-gloria-victis.txt 
-git diff
-git add gloria-victis-gloria-victis.txt 
-git commit -m header
-grep '[0-9]' gloria-victis-gloria-victis.txt 
-less gloria-victis-gloria-victis.txt 
-perl ../apply-specific.pl 
-git diff
-git add gloria-victis-gloria-victis.txt 
-git commit -m norm
-less gloria-victis-gloria-victis.txt 
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-perl ../apply-specific.pl 
-git status
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git stash
-vim -b ../specific-norms.tsv 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git add gloria-victis-gloria-victis.txt 
-git commit -m norm
-perl ../apply-specific.pl 
-git diff
-perl ../apply-specific.pl 
-git diff
-perl ../apply-specific.pl 
-git diff
-less gloria-victis-gloria-victis.txt 
-git log
-git reset --hard 0f5781d8f67c908b504dfd086adc6d1e0904a293
-git status
-perl ../apply-specific.pl 
-git diff
-git diff gloria-victis-gloria-victis.txt
-grep Wicher gloria-victis-gloria-victis.txt
-perl ../apply-specific.pl 
-git diff gloria-victis-gloria-victis.txt
-git add *txt
-git commit -m norm
-git rm przygody-tomka-sawyera.txt-06.txt 
-git commit -m rm
-less gloria-victis-gloria-victis.txt 
-less gloria-victis-panna-roza.txt 
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-git diff
-perl ../apply-specific.pl 
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git diff|grep itd
-git stash
-perl ../apply-specific.pl 
-git stash
-perl ../apply-specific.pl 
-git stash
-perl ../apply-specific.pl 
-git diff
-less gloria-victis-panna-roza.txt 
-perl ../apply-specific.pl 
-git diff
-git add gloria-victis-panna-roza.txt 
-git commit -m norm
-less gloria-victis-panna-roza.txt 
-perl ../apply-specific.pl 
-git diff
-git add gloria-victis-panna-roza.txt 
-git commit -m norm
-less gloria-victis-panna-roza.txt 
-grep '[0-9]' *txt
-less wyspa-skarbow.txt-01.txt
-perl ../apply-specific.pl 
-git diff
-git add wyspa-skarbow.txt-01.txt 
-git commit -m norm
-cat wyspa-skarbow.txt-01.txt|perl ../split-sentence.pl 
-cat wyspa-skarbow.txt-01.txt|perl ../split-sentence.pl |less
-ls wyspa-skarbow.txt-02.txt
-less wyspa-skarbow.txt-02.txt
-less wyspa-skarbow.txt-01.txt
-grep '^[XVI]' wyspa-skarbow.txt-02.txt
-grep '^[XVI]' wyspa-skarbow.txt-03.txt
-grep '^[XVI]' wyspa-skarbow.txt-04.txt
 grep '^[XVI]' wyspa-skarbow.txt-05.txt
 grep '^[XVI]' wyspa-skarbow.txt-03.txt
 grep '^[XVI]' wyspa-skarbow.txt-04.txt
@@ -1998,3 +1811,190 @@ cd ..
 sudo umount cd
 rm -rf The\ Game/
 rm ~/Downloads/Who\ Want\'s\ to\ be\ a\ millionaire.zip 
+cd languagetool
+ls
+git branch
+git checkout master 
+git remote show
+git pull upstream master
+git diff
+vi languagetool-office-extension/src/main/resources/Linguistic.xcu
+git add languagetool-office-extension/src/main/resources/Linguistic.xcu
+git diff
+vi languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
+git diff
+vi languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
+git diff
+git add languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
+git commit -m merge
+git checkout irish 
+git merge master
+git push origin master 
+git push origin irish 
+git branch -a
+git branch -u upstream/master usmaster
+git branch -u upstream/master 
+git branch -u irish 
+git branch
+git checkout maori
+ls
+git pull upstream master
+git push origin maori 
+git checkout irish 
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
+git diff
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
+git commit -m _2
+git push origin irish 
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/people.txt 
+les languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/people.txt 
+less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/people.txt 
+less languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/people.txt 
+less languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-replace.txt
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-replace.txt
+mv languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-replace.txt languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
+git diff
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
+git commit -m more
+git push origin irish 
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
+git commit -m more
+cat ~/Playing/msf-asr/scripts/normalisations.tsv|awk 'BEGIN{FS="\t";OFS="="}{print}' > languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
+less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
+cat ~/Playing/msf-asr/scripts/normalisations.tsv|awk 'BEGIN{FS="\t";OFS="="}{print $0}' > languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
+less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
+cat ~/Playing/msf-asr/scripts/normalisations.tsv|awk -F'\t' '{print $1"="$2}' > languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
+less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
+git commit -m more
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
+git commit -m more
+ls
+vi languagetool-language-modules/en/pom.xml 
+vi languagetool-language-modules/ga/pom.xml 
+mvn compile
+mvn compile -rf :language-ga
+less pom.xml 
+vi languagetool-language-modules/ga/pom.xml 
+git diff
+git add languagetool-language-modules/ga/pom.xml 
+git commit -m 'bump version'
+git push origin irish 
+mvn install
+git checkout master
+git diff
+git stash
+git checkout master
+git log
+git rebase -i
+git rebase --abort
+git log
+git remote show
+git checkout -B master upstream/master 
+git log
+git push origin master --force
+git checkout -b irishnew
+git cherry-pick d378610b84eb594b828f50a1b1bd32d389385503
+git status
+vi languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
+git cherry-pick --abort
+git checkout irish
+cp languagetool-core/src/main/resources/org/languagetool/resource/segment.srx languagetool-office-extension/src/main/resources/Linguistic.xcu /tmp/
+git checkout irishnew 
+git cherry-pick d378610b84eb594b828f50a1b1bd32d389385503
+cp /tmp/Linguistic.xcu languagetool-office-extension/src/main/resources/Linguistic.xcu
+cp /tmp/segment.srx languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
+git diff
+git add languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
+git status
+git add languagetool-office-extension/src/main/resources/Linguistic.xcu
+git commit -m '[ga] add support for Irish'
+git cherry-pick 0f121d025ad62b0a11ca6bd5c404a97fc16ca52f
+git log
+git cherry-pick 590aa8393dcf6563e1b5c918104f4a55fe8ce36e
+git cherry-pick 9856721ba1396b9f9fbef3d5e5c91e21d92456d6
+git push origin irishnew 
+git checkout irish
+git merge -s ours irishnew 
+git push origin irish
+cd ../languagetool-ga-dicts/
+ls
+git branch
+git branch -a
+git checkout next-version 
+ls
+find . -type f
+cd src/main/resources/org/languagetool/resource/ga/hunspell/
+ls
+less ga_IE.dict 
+cd ..
+ls
+less rebuild-dicts.sh 
+sh rebuild-dicts.sh 
+less rebuild-dicts.sh 
+vi rebuild-dicts.sh 
+ls
+less tsv2tsv.pl 
+git diff
+sh rebuild-dicts.sh 
+bash rebuild-dicts.sh 
+ls
+cat pairs.tsv |perl tsv2tsv.pl 
+cat pairs.tsv |perl tsv2tsv.pl > tmp
+grep NoGen tmp 
+grep Gen tmp 
+less tmp 
+less ~/Playing/dissertation-data/tagging/irishfst-to-opennlp.pl 
+ls
+less rebuild-dicts.sh 
+vi tsv2tsv.pl 
+cat pairs.tsv |perl tsv2tsv.pl > tmp
+grep XML pairs.tsv 
+grep XML tmp 
+grep Event pairs.tsv 
+grep Event tmp 
+cat tmp 
+cat tmp |awk -F'\t' '{print $3}'|tr '+' '\n'
+cat tmp |awk -F'\t' '{print $3}'|tr '+' '\n'|sort|uniq
+less tmp 
+vi tsv2tsv.pl 
+cat tmp |perl -C7 -ane 'chomp;@l=split/\t/;$l[2]=~s/\+//;$l[2]=~s/\+/:/g;print join("\t", @l)."\n";'
+cat tmp |perl -C7 -ane 'chomp;@l=split/\t/;$l[2]=~s/\+//;$l[2]=~s/\+/:/g;print join("\t", @l)."\n";' > indic
+#java -cp ~/Playing/languagetool/languagetool-core/target/
+find ~/Playing/languagetool -name '*jar'
+find ~/Playing/languagetool -name '*jar'|grep languagetool
+java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar 
+java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder 
+java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder -i indic -info irish.info -o irish.dict 
+less indic 
+vi indic 
+java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder -i indic -info irish.info -o irish.dict 
+grep Num:Op indic 
+vi indic 
+java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder -i indic -info irish.info -o irish.dict 
+java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.SynthDictionaryBuilder -i indic -info irish_synth.info -o irish_synth.dict 
+cp ~/Playing/languagetool/languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/filter-archaic.txt /home/jim/Playing/languagetool-ga-dicts/src/main/resources/org/languagetool/resource/ga/filter-archaic.txt
+git status
+git add filter-archaic.txt 
+git diff
+git add tsv2tsv.pl rebuild-dicts.sh 
+git status
+git add irish.dict 
+java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.SynthDictionaryBuilder -i indic -info irish_synth.info -o irish_synth.dict 
+git add irish_synth.dict 
+git commit -m update
+ls
+vi ../../
+vi ../../../../../../../pom.xml 
+git add  ../../../../../../../pom.xml 
+git commit -m bump
+cd  ../../../../../../../
+mvn install
+unzip -l /home/jim/.m2/repository/io/github/jimregan/languagetool-ga-dicts/0.02-SNAPSHOT/languagetool-ga-dicts-0.02-SNAPSHOT.jar
