@@ -1,22 +1,3 @@
-git diff
-less przygody-tomka-sawyera.txt-01.txt
-less przygody-tomka-sawyera.txt-05.txt
-grep przydziesz *
-less fraszki-ksiegi-pierwsze-na-starosc.txt
-grep jesli *
-grep szerść *
-vi speaker-gender-map.tsv 
-cat speaker-gender-map.tsv |awk -F'\t' '{print $3}'|sort|uniq -c |grep ' 2 '
-grep WL speaker-gender-map.tsv 
-grep MK speaker-gender-map.tsv 
-grep MW speaker-gender-map.tsv 
-vi speaker-gender-map.tsv 
-cat speaker-gender-map.tsv |awk -F'\t' '{print $3}'|sort|uniq -c |grep ' 2 '
-grep AS speaker-gender-map.tsv 
-grep AW speaker-gender-map.tsv 
-grep WL speaker-gender-map.tsv 
-ls
-git add speaker-gender-map.tsv 
 git commit -m 'abbreviations for speaker; normalises names'
 git branch
 git push origin lexicon 
@@ -1998,3 +1979,22 @@ git status
 git commit -m merge
 git push origin master 
 git push origin labpc 
+cd ../lium-diarization/
+ls
+find . -name MANIFEST.MF
+cat lib-class/META-INF/MANIFEST.MF 
+ls
+less build
+less build.xml 
+cat lib-class/META-INF/MANIFEST.MF 
+find . -name MANIFEST.MF
+ls
+less build.xml 
+less lium-diarization.iml 
+git status
+ls
+mkdir src/META-ING
+mkdir src/META-INF
+rmdir src/META-ING
+cp lib-class/META-INF/MANIFEST.MF src/META-INF/
+ant
