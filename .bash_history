@@ -1,88 +1,3 @@
-head -n 1 spida|awk '{print "http://web.archive.org/save/" $0}' > spidb
-sh ~/scripts/spider.sh spidb
-tail -f spidb.log 
-cat spidb.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spidb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-rm spidb
-rm spidb.log 
-tail spid.log 
-cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
-cat spidb|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
-rm spidb 
-cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
-cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
-less spidb 
-sh ~/scripts/spider.sh spidb
-tail -f spidb.log 
-less spidb.log 
-less spida
-cat spida
-cat spidb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-rm spid*
-ls
-rm nohup.out 
-ls
-cat spida 
-sh ~/scripts/spider.sh spida
-tail -f spida.log 
-cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep ts >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidb;done
-cat spidb 
-rm spidb 
-cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-less ~/tmp/sync/http-misc-20171217-1.nt 
-rm spida
-rm spida.log 
-rm nohup.out 
-ls
-i='http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001'| echo http://web.archive.org/save/$i >> spidb
-cat spidb 
-i='http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001'; echo http://web.archive.org/save/$i > spidb
-cat spidb 
-sh ~/scripts/spider.sh spidb
-tail -f spidb.log 
-i='https://tgfour-a.akamaihd.net/pd/1290862567001/201712/788/1290862567001_348d8ac6-4b50-4312-a523-3a835e4769b1.vtt?pubId=1290862567001&videoId=5555995052001'; echo http://web.archive.org/save/$i > spidb
-sh ~/scripts/spider.sh spidb
-tail -f spidb.log 
-cat spidb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spidb.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-rm spidb
-rm spidb.log 
-ls
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-tail videos.tsv 
-svn status
-ls
-tail videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5559500044001&teideal=Astroblast!&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5623690749001&teideal=Olivia&series=Olivia&dlft=30'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5418686075001&teideal=Garfield&series=Garfield&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577177404001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577169734001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597948926001&teideal=Astroblast!&series=Astroblast!&dlft=6'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5526006245001&teideal=Olivia&series=Olivia&dlft=29'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686659553001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=34'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5416347428001&teideal=Garfield&series=Garfield&dlft=34'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577127362001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=34'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577137733001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=34'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678995343001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
-svn diff
-svn diff videos.tsv |grep '^\+'|grep http > vdiff
-ls
-rm list-55*
-ls
-cat vdiff 
-cat vdiff |awk -F'\t' '{print $6}'
-cat vdiff |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
-cat vdiff |awk -F'\t' '{print "http://web.archive.org/save/" $6}' > /tmp//asd/nsub
-cat vdiff |awk -F'\t' '{print "http://web.archive.org/save/" $5}' |grep mp4 >> /tmp//asd/nvid
-cat vdiff |awk -F'\t' '{print "http://web.archive.org/save/" $5}' |grep mp4 
-grep mp4 vdiff 
-wget 'https://tgfour-a.akamaihd.net/rtmp_uds/1290862567001/201712/3805/1290862567001_5686706995001_5686659553001.mp4?pubId=1290862567001&videoId=5686659553001' -O 5686659553001.mp4
 sh ~/bin/convert-mp3.sh 5686659553001.mp4 
 grep 5686659553001 videos.tsv 
 mv 5686659553001.* ../whizsachistin/
@@ -1998,3 +1913,88 @@ ls -al word/media/
 ls -al word/media/|wc
 cp word/media/* ../aorig/word/media/
 ls -al word/media/
+cd ../
+git clone git clone https://github.com/mozilla/mozjpeg.git
+git clone https://github.com/mozilla/mozjpeg.git
+cd mozjpeg/
+autoreconf -fiv
+./configure --with-jpeg8
+make -j 8
+sudo make install
+sudo ldconfig
+cd /tmp/asia/
+ls
+ls -al word/media/
+cp word/media/* /tmp/
+cd ..
+mkdir aorig
+cd aorig/
+ls
+ls ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx 
+unzip ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx 
+apt-cache search pngcrush
+for i in word/media/*png;do pngcrush $i;done
+sudo apt-get install pngcrush
+sudo apt-get install gifsicle
+man gifsicle
+gifsicle --batch --optimize=3 word/media/*gif
+ls -al word/media/
+man pngcrush
+for i in word/media/*png;do pngcrush -brute -f 0  $i;done
+for i in word/media/*png;do pngcrush -brute -f 0  $i $i.out.png;mv $i.out.png $i;done
+ls -al word/media/
+for i in word/media/*jpeg;do jpeg-recompress $i $i.tmp.jpg;mv $i.tmp.jpg $i;done
+for i in word/media/*gif;do optipng -clobber -o7 $i;done
+ls -al word/media/
+ls -al word/media/|wc
+rm word/media/*
+for i in word/media/*jpeg;do jpeg-recompress $i $i.tmp.jpg;mv $i.tmp.jpg $i;done
+ls -al word/media/
+for i in word/media/*png;do optipng -clobber -o7 $i;done
+gifsicle --batch --optimize=3 word/media/*gif
+ls -al word/media/
+gifsicle --batch --optimize=9 word/media/*gif
+ls -al word/media/
+ls
+find . -type f|zip ../pack.zip -@
+ls -la ../*docx ../pack.zip 
+ls -al file:///tmp/image26.gif
+ls -al /tmp/image26.gif
+ls
+find . -type f
+find . -type f|grep xml|while read i;do grep gif $i;done
+ls
+jpegoptim --max=90 --dest=opt
+sudo apt-get install jpegoptim 
+for i in word/media/*jpeg;do jpegoptim --max=90 --dest=opt $i;done
+man jpegoptim
+for i in word/media/*jpeg;do jpegoptim --max=50 $i;done
+tree
+find . -type f|zip ../pack1.zip -@
+ls -al ../pack* ../*docx
+mv ../pack1.zip ../squash3.docx
+zless ~/Downloads/entities.txt.gz 
+df
+rm ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar 
+df
+unzip ~/Downloads/walenty_20160418-TEI.zip 
+ls
+cd ..
+rm -rf ao
+ls
+rm *dict
+df
+rm -rf orig
+df
+ls
+rm *jpg
+ls
+rm image*
+ls
+df
+ls proc/
+mv proc/ ~/tmp/
+df
+ls
+rm -rf cmusphinx-*
+df
