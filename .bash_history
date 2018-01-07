@@ -1,36 +1,3 @@
-vi tmp 
-cat tmp >> pron/ulster.tsv 
-git diff
-vi scripts/normalisations.tsv 
-git add scripts/normalisations.tsv pron/ulster.tsv pron/munster.tsv pron/connacht.tsv 
-git branch
-git checkout -b lexicon
-git status
-git reset TG4/catahata/5686647581001.wav
-git reset TG4/toirbeir/5680586501001.wav
-git status
-git commit -m more
-git log
-cat to-pron 
-cat to-pron  |awk '{print $0" ."}'
-vi /tmp/htmout 
-perl abair-scrape.pl  
-perl abair-scrape.pl  |sed -e 's/\t\t/\t/'
-perl abair-scrape.pl  |sed -e 's/\t\t/\t/' >> pron/munster.tsv 
-vi /tmp/htmout 
-perl abair-scrape.pl  |sed -e 's/\t\t/\t/' >> pron/connacht.tsv 
-vi /tmp/htmout 
-perl abair-scrape.pl  |sed -e 's/\t\t/\t/' >> pron/ulster.tsv 
-git diff
-git add pron/*.tsv
-git commit -m more
-vi pron/ulster.tsv 
-git diff
-vi pron/ulster.tsv 
-git diff
-vi pron/connacht.tsv 
-vi pron/munster.tsv 
-git add pron/*.tsv
 git commit -m 'leading spaces'
 vi abair-scrape.pl 
 vi /tmp/missing 
@@ -1998,3 +1965,36 @@ ls
 less train.conllu 
 less train.conllu 
 wc train.conllu 
+cd ../TG4/
+cd WA
+cd wac
+ls
+grep Sydney *
+grep Sydney *vtt
+less 5664283638001.vtt
+less 5667149239001.vtt
+less 5661130310001.vtt
+less 5464465742001.vtt
+less 5638160958001.vtt
+less 5646046096001.vtt
+less 5646162216001.vtt
+less 5653812279001.vtt
+less 5653928032001.vtt
+cd ..
+grep Sydney */*.vtt
+grep cancellation */*.vtt
+grep manor */*.vtt
+ls
+ls /var/lib/docker/
+sudo ls /var/lib/docker/
+sudo ls /var/lib/docker/volumes
+sudo ls /var/lib/docker/containers/
+sudo tree /var/lib/docker/containers/
+sudo tree /var/lib/docker/
+sudo tree /var/lib/docker/|less
+df
+cat ../pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print}'
+cat ../pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print "[[" $0 "]]"}'
+tail -f /tmp/todolistr 
+vi /tmp/todolistr 
+paste /tmp/todolistl /tmp/todolistr 
