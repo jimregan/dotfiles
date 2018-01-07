@@ -1,281 +1,3 @@
-less TG4/rosnarun/5686651673001.vtt
-grep -i t-sean TG4/*/*.vtt
-vi scripts/normalisations.tsv 
-vi to-pron 
-vi scripts/normalisations.tsv 
-vi pron/pronounce-as.tsv 
-git add pron/pronounce-as.tsv 
-git commit -m moore
-vi pron/pronounce-as.tsv 
-git diff
-doinstain 
-cd TG4/
-ls
-cd scripts/
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689475790001&teideal=Lurgan%202K17&series=Lurgan%202K17&dlft=35'
-tail videos.tsv 
-mkdir ../lurgan2k17
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3013/1290862567001_82c49921-198b-48f1-adf3-06849cd4ba32.vtt?pubId=1290862567001&videoId=5689475790001' -O ../lurgan2k17/5689475790001.vtt
-svn add ../lurgan2k17/
-curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689492431001&pubId=1290862567001&videoId=5689475790001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
-echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689492431001&pubId=1290862567001&videoId=5689475790001' |sh run.sh 
-svn diff
-perl tg4-scrape.pl \<div class="player-mod-wrap">
-<div class="player-mod-wrap">
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5555995052001&teideal=B%C3%A9aloideas%20Beo&series=B%C3%A9aloideas%20Beo&dlft=27'
-svn diff
-mkdir ../bealoideasbeo
-svn add ../bealoideasbeo
-curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
-echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spida 
-ssh jimregan
-ls
-ls -al
-cd ..
-ls
-cd ~/Playing/spinx/
-ls
-ls clarinpl/
-ls clarinpl/feat/
-du clarinpl/feat/
-ls
-ls -al clarinpl/
-rm -rf ~/Playing/kaldi/egs/clarinpl/audio/
-df
-ls
-ls clarinpl/
-cd teanglann/
-ls
-ls logdir/
-less logdir/decode/
-ls logdir/decode/
-less logdir/decode/teanglann-1-1.log 
-ls
-less result/teanglann.align 
-ffplay wav/0038538.wav 
-grep 0038538 etc/teanglann_train.transcription 
-ffplay wav/0038538.wav 
-less result/teanglann.align 
-doinstain 
-df
-cd ~/Playing/wolne-lektury-audio-corpus/
-ls
-rm doktor-piotr.txt
-rm doktor-piotr.txt.bak dziewczynka-z-zapalkami.txt 
-ls
-git status
-git diff
-ls
-rm balzac-komedia-ludzka-bank-nucingena.txt
-rm balzac-komedia-ludzka-bank-nucingena.txt.bak 
-rm przygody-tomka-sawyera.txt-06.txt
-rm przygody-tomka-sawyera.txt-06.txt.bak 
-ls
-git  status
-rm aptekarzowa.txt
-rm aptekarzowa.txt.bak 
-less komedia-ludzka.pl 
-rm komedia-ludzka.pl 
-ls
-less install-gpu.sh 
-rm install-gpu.sh 
-ls
-less filt-out 
-rm filt-out 
-ls
-rm zarcik.txt
-rm zarcik.txt.bak 
-ls
-cd text/
-ls
-rm *.bak
-ls
-ls ../audio/
-ls ../audio/|wc
-ls *txt
-ls ../audio/*txt
-less doktor-piotr.txt 
-cd ..
-git status
-git add audacity/fraszki-ksiegi-pierwsze-na-* audacity/ballada-z-tamtej-strony-imieniny.txt 
-less audacity/15-moliere-molier-swietoszek-akt-01-scena-03.txt 
-git add audacity/15-moliere-molier-swietoszek-akt-01-scena-03.txt 
-less ~/15-moliere-molier-swietoszek-akt-01-scena-03.spk 
-mv ~/15-moliere-molier-swietoszek-akt-01-scena-03.spk audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
-less audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
-git commit -m more
-git add audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
-git commit -m more
-git status
-git diff
-git add header-replace.pl pairs.tsv 
-git commit -m more
-ffplay audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
-ffplay audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
-ffplay audio/03-moliere-molier-swietoszek-podloze-swietoszka.mp3 
-ffplay audio/04-moliere-molier-swietoszek-stosunek-moliera-do-swego-tematu.mp3 
-ffplay audio/05-moliere-molier-swietoszek-zdobycze-komedii-moliera.mp3 
-ffplay audio/08-moliere-molier-swietoszek-zdobycze-komedii-moliera.mp3 
-ffplay audio/08-moliere-molier-swietoszek-artyzm-swietoszka.mp3 
-ffplay audio/09-moliere-molier-swietoszek-przedmowa.mp3 
-ffplay audio/10-moliere-molier-swietoszek-pierwsze-podanie.mp3 
-ffplay audio/11-moliere-molier-swietoszek-drugie-podanie.mp3 
-ffplay audio/12-moliere-molier-swietoszek-trzecie-podanie.mp3 
-ffplay audio/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3 
-ffplay audio/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3 
-ffplay audio/03-moliere-molier-swietoszek-podloze-swietoszka.mp3 
-cd ..
-grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep '[xv]'
-grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]'
-grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]' |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
-grep '^[aA]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]' |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-grep '^[Bb]' /tmp/clarinwl.f |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |grep -v '[xv]' |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-ls *tsv
-vi pairs.tsv 
-cd text/
-perl ../apply-specific.pl 
-git diff
-git stash
-vi ../normalisations.tsv 
-vi ../pron-data/pronounce-as.tsv 
-vi ../pron-data/pronounce-as.gen.tsv 
-vi ../normalisations.tsv 
-cd ..
-git diff
-vi specific-norms.tsv 
-git diff
-git add specific-norms.tsv pron-data/pronounce-as.gen.tsv pairs.tsv 
-git commit -m wrong
-git branch 
-git push origin lexicon 
-cd text/
-ls *na-uc*
-cat fraszki-ksiegi-pierwsze-na-uczte.txt 
-cat fraszki-ksiegi-pierwsze-na-nieslownego.txt 
-ls *imien*
-cat ballada-z-tamtej-strony-imieniny.txt
-ls ../audio/*imien*
-cat fraszki-ksiegi-pierwsze-na-slase.txt 
-ls *swieto*
-less boy-swietoszek.txt
-grep swieto ../audiobooks.tsv 
-cp ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.txt ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
-cat ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk.txt 
-cat ../audacity/15-moliere-molier-swietoszek-akt-01-scena-03.spk
-#perl ../NumberNorm.pm 
-less ../NumberNorm.pm 
-perl ../NumberNorm.pm expand_year 1669 gen
-perl ../NumberNorm.pm expand_year 5 gen
-perl ../NumberNorm.pm expand_year 14 gen
-perl ../NumberNorm.pm expand_year 3 nom
-perl ../NumberNorm.pm expand_year 2 nom
-perl ../NumberNorm.pm expand_year 8 gen
-perl ../NumberNorm.pm expand_year 1664 gen
-perl ../NumberNorm.pm expand_year 12 gen
-perl ../NumberNorm.pm expand_year 1658 loc
-less ../NumberNorm.pm 
-perl ../NumberNorm.pm num2text 20
-perl NumberNorm.pm num2text 26
-cd ..
-git diff
-git add specific-norms.tsv 
-git commit -m more
-git push origin lexicon 
-perl NumberNorm.pm expand_year 1665 loc
-perl NumberNorm.pm expand_year 1667 gen
-perl NumberNorm.pm expand_year 5 gen
-perl NumberNorm.pm expand_year 1669 gen
-perl NumberNorm.pm expand_year 17 loc
-git diff
-git add specific-norms.tsv 
-git commit -m more
-git push origin lexicon 
-ssh jimregan
-ls
-rm list-5689*
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689503845001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=7'
-tail -n 1 videos.tsv 
-svn diff
-svn ci -m '+1  - out of disk space, no wav'
-cd ..
-ls
-cat all.lc.clean 
-grep yo-de-lay-hee-hoo */*vtt
-svn info
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/TG4
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/asr_data_irish
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/comhra
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/irrt0007_spk2
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish/data/comhra/irrt0007_spk2
-less local_clarin/lexicon.txt
-less /tmp/cmusphinx-clarinpl/pl.dic 
-grep aborcji ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-grep aborc ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat local_clarin/lexicon.txt
-cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'
-cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq
-cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |wc
-cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |less
-cat local_clarin/lexicon.txt|awk -F'\t' '{print $1}'|uniq|perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/clarinwl
-vi /tmp/clarinwl 
-cat /tmp/clarinwl |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/polimorf/polimorf.tab 
-cp ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl .
-vi filter-dict.pl 
-cat /tmp/clarinwl |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/polimorf/polimorf.tab 
-cat /tmp/clarinwl |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/polimorf/polimorf.tab  > /tmp/clarinwl.f
-less /tmp/clarinwl.f 
-cat /tmp/clarinwl.f |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-cat /tmp/clarinwl.f |perl filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/clarinwl.f2
-less /tmp/clarinwl.f2
-wc -l /tmp/clarinwl*
-less /tmp/clarinwl.f2 
-cat /tmp/clarinwl.f |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/clarinwl.f2
-wc -l /tmp/clarinwl*
-less /tmp/clarinwl.f2 
-vi ck
-cat ck|sed -e 's/, /\n/g' |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-cat ck|sed -e 's/, /\n/g' |perl ~/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv > /tmp/left1 
-grep J ck 
-grep J ck |sed -e 's/, //'
-grep J ck |sed -e 's/, /\n/'
-grep J ck |sed -e 's/, /\n/g'
-grep J ck |sed -e 's/, /\n/g' >> /tmp/pa-l 
-grep J ck |sed -e 's/, /\n/g'|sed -e 's/J/dż/g' >> /tmp/pa-r
-cd ~/Playing/corpuscrawler/
-ls
-less Lib/corpuscrawler/util.py
-grep wordpress Lib/corpuscrawler/*
-less Lib/corpuscrawler/crawl_dz.py
-less Lib/corpuscrawler/crawl_sn.py
-cd /tmp/
-mkdir pl
-cd pl
-unzip ~/Downloads/polish_g2p.zip 
-ls
-rm -rf PL/
-mv ../plwlist .
-ls
-cd /tmp/
-ls
-tar zxvf pocketsphinx-hmm-pl-clarinpl_0.1.orig.tar.gz 
-cd scripts/
-ls
-grep Garf videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5413626562001&teideal=Garfield&series=Garfield&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5575081884001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5575074305001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-svn diff
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678205801001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
-df
-ls
-svn diff|grep '^\+'
-svn diff videos.tsv|grep '^\+'
 svn diff videos.tsv|grep '^\+'|grep htt
 svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $5}'
 svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $5}' > /tmp/asd/raw
@@ -1998,3 +1720,281 @@ cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171217-1.nt
 ls
 rm -rf web.archive.org/
 rm *
+cd ..
+git diff
+git add pron/*.tsv
+git commit -m 'some English words'
+git branch
+git log
+git push origin master
+less abair-scrape.pl 
+perl abair-scrape.pl 
+perl abair-scrape.pl >> pron/ulster.tsv 
+perl abair-scrape.pl >> pron/connacht.tsv 
+perl abair-scrape.pl >> pron/munster.tsv 
+git diff
+cat TG4/all.lc.clean 
+cp TG4/all.lc.clean /tmp/
+grep abaile TG4/*/*vtt
+less TG4/gearoidnagaisce/5650041418001.vtt
+grep abalta TG4/*/*vtt
+less TG4/catahata/5616261058001.vtt
+grep abhar TG4/*/*vtt
+grep Abhar TG4/*/*vtt
+less TG4/olivia/5532176117001.vtt
+cd TG4/
+cd scripts/
+svn diff
+grep Beak videos.tsv 
+ls
+rm list-5*
+ls
+clear
+reset
+ls
+tail videos.tsv 
+tail videos.tsv |awk -F'\t' '{print $6}'
+tail videos.tsv |awk -F'\t' '{print $6}'|while read i;do grep $i wayback-subs.txt || echo $i >> /tmp//asd/todo;done
+tail videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); ls ../*/$id.vtt ../*/$id.wav;done
+grep 5686448376001 videos.tsv 
+grep 'https://tgfour-a.akamaihd.net/rtmp_uds/1290862567001/201712/2698/1290862567001_5686655610001_5686448376001.mp4?pubId=1290862567001&videoId=5686448376001' wayback-video.txt 
+grep 5453024478001 videos.tsv 
+grep 'https://tgfour-a.akamaihd.net/rtmp_uds/1290862567001/201712/1668/1290862567001_5686488576001_5453024478001.mp4?pubId=1290862567001&videoId=5453024478001' wayback-video.txt 
+grep 5686585473001 wayback-video.txt 
+grep 5686585473001 videos.tsv 
+svn diff
+cd ..
+svn stat
+svn add harveybeaks/5679993716001.wav 
+svn add scripts/proc_mp4.sh 
+svn ci -m add
+svn status
+grep 5453024478001 scripts/videos.tsv 
+mv scripts/5453024478001.wav garfield/
+svn add garfield/5453024478001.wav 
+grep 5686448376001 scripts/videos.tsv 
+mv scripts/5686448376001.wav niko/
+svn add niko/5686448376001.wav 
+svn ci -m more
+svn status
+grep 5454441643001 scripts/videos.tsv 
+#rm scripts/5454441643001.wav 
+rm scripts/5454441643001.wav 
+ls scripts/*wav
+grep 5686738549001 scripts/videos.tsv 
+mv scripts/5686738549001.wav harveybeaks/
+svn add harveybeaks/5686738549001.wav 
+ls harveybeaks/
+ls scripts/*wav
+grep 5686585473001 scripts/videos.tsv 
+mv scripts/5686585473001.wav harveybeaks/
+svn add harveybeaks/5686585473001.wav 
+grep 5686631164001 scripts/videos.tsv 
+mv scripts/5686631164001.wav qpootle/
+svn add qpootle/5686631164001.wav 
+mkdir teg
+cd teg/
+wget http://www.teg.ie/_fileupload/pdf/teagasc/B1/12_script.pdf
+pdftotext 12_script.pdf 
+less 12_script.txt 
+pdftohtml 12_script.pdf 
+ls
+rm *png
+ls
+lynx -dump 12_script.html 
+lynx -dump 12_scripts.html 
+ls
+rm *html
+ls
+less 12_script.
+less 12_script.txt 
+wget http://vifax.maynoothuniversity.ie/wp-content/uploads/2017/10/20110215ard.pdf
+pdftotext 20110215ard.pdf 
+less 20110215ard.txt 
+vi ../../scripts/normalisations.tsv 
+man aspell
+cat /tmp/missing|aspell clean
+cat /tmp/missing|aspell -l ga clean
+cat /tmp/missing|aspell clean -l ga
+man aspell
+cat /tmp/missing|aspell -a -l ga clean
+cat /tmp/missing|aspell -a -l ga clean|less
+cat /tmp/missing|aspell 
+cat /tmp/missing|aspell -a -l ga --sug-mode
+cat /tmp/missing|aspell -a -l ga --sug-mode normal
+man aspell
+aspell -l ga -c /tmp/missing
+man aspell
+aspell -l ga list /tmp/missing
+cat /tmp/missing|aspell -l ga list 
+cat /tmp/missing|aspell -l ga list  > /tmp/missing.aspell
+cat /tmp/missing |perl ../../filter.pl /tmp/missing.aspell 
+cat /tmp/missing |perl ../../filter.pl /tmp/missing.aspell |less
+cat /tmp/missing |perl ../../filter.pl /tmp/missing.aspell > /tmp/almost-correct
+vi /tmp/almost-correct 
+grep '\-' /tmp/almost-correct 
+cat /tmp/almost-correct |awk '{print $0 " ."}'
+cat /tmp/almost-correct |awk '{print $0 " ."}' > /tmp/topaste
+cd ,,
+ls 
+cd ..
+mkdir prontmp
+cd prontmp/
+split -l 200 /tmp/topaste 
+ls -al 
+split -l 180 /tmp/topaste 
+ls -al 
+split -l 150 /tmp/topaste 
+ls -al 
+cat /tmp/almost-correct |perl ../filter.pl 
+cat /tmp/almost-correct |perl ../filter.pl ../pron/ulster.tsv 
+cat /tmp/almost-correct |perl ../filter.pl ../pron/ulster.tsv |less
+cat /tmp/almost-correct |perl ../filter.pl ../pron/ulster.tsv |awk '{print $0 " ."}' > /tmp/topaste
+ls
+rm *
+split -l 150 /tmp/topaste 
+ls
+ls -al
+ls
+mv xab xaa
+mv xac xaa
+mv xad xaa
+mv xae xaa
+ls
+mv xaf xaa
+grep z *
+mv xag xaa
+mv xah xaa
+mv xai xaa
+ls
+ls|wc
+mv xaj xaa|
+mv xaj xaa
+cat xaa 
+ls
+mv xak xaa
+grep "'" /tmp/topaste 
+grep "'" /tmp/topaste |less
+less xaa 
+grep "'" /tmp/topaste |less
+vi xaa
+cat xaa |sed -e 's/ \.$//'
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+mv xal xaa
+grep "'" xal
+grep "'" xaa
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+mv xam xaa 
+for i in x*;do grep "'" $i;done
+grep olivia *
+vi xbc 
+grep '\-' /tmp/topaste 
+grep '\-' /tmp/topaste |less
+less /tmp/topaste 
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+mv xan xaa 
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+vi /tmp/gal 
+ls
+mv xao xaa
+grep "'" xao
+grep "'" xaa
+for i in x*;do grep "'" $i && echo $i;done
+vi xbg 
+mv xap xaa
+ls
+mv xaq xaa 
+ls|wc
+grep "'" xaa
+grep "'" xar
+grep "'" xas
+grep "'" xat
+grep "'" xau
+grep "'" xav
+grep "'" xaw
+mv xar xaa 
+mv xas xaa 
+ls|wc
+mv xat xaa 
+tail xaa
+mv xau xaa 
+mv xav xaa 
+mv xaw xaa 
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+mv xax xaa 
+grep "'" xaa
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+mv xay xaa 
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+grep , *
+mv xaz xaa 
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+mv xba xaa 
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+mv xbb xaa 
+cat xaa |sed -e 's/ \.$//' > /tmp/gal
+ls
+perl ~/mech.pl u xbc > /tmp/htmout 
+perl ~/mech.pl u xbc 
+perl ~/mech.pl c xbc && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv 
+perl ~/mech.pl m xbc && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/munster.tsv 
+\perl ~/mech.pl u xbc && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/ulster.tsv 
+rm xbc xaa 
+ls
+for i in xb*;do perl ~/mech.pl u $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/ulster.tsv ;sleep 2;done
+for i in xb*;do perl ~/mech.pl c $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv ;sleep 2;done
+for i in xb*;do perl ~/mech.pl m $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/munster.tsv ;sleep 2;done
+ls
+cat *not-c
+cat *not-c|sort|uniq
+cat *not-c|sort|uniq|grep -v ' '
+cat *not-c|sort|uniq|grep -v ' '|wc
+cat *not-c|sort|uniq|grep -v ' ' > doc
+split -l 150 doc
+for i in xa*;do perl ~/mech.pl c $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv ;sleep 2;done
+cat m-not-c
+vi m-not-c
+for i in m-not-c;do perl ~/mech.pl c $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv ;sleep 2;done
+cat u-not-c
+rm m-not-c u-not-c 
+ls
+cat c-not-u 
+cat [cm]-not-u |sort|uniq
+rm c-not-u m-not-u 
+ls
+cat [cu]-not-m |sort|uniq
+wc -l z-words 
+rm z-words 
+ls
+cp /tmp/tobeadded .
+vi tobeadded 
+grep -i x tobeadded 
+grep -i x tobeadded |grep \-
+grep -i x tobeadded |grep \- > xhyph
+grep -i x tobeadded |grep -v \- 
+grep -i x tobeadded |grep -v \- > otherx
+vi tobeadded 
+grep '\-' tobeadded 
+grep '\-' tobeadded > hyphens
+vi tobeadded 
+wc -l hyphens 
+less hyphens 
+split -l 150 hyphens 
+ls
+for i in xa[a-z]; do perl ~/mech.pl u $i && perl ../abair-scrape.pl >> ../pron/ulster.tsv ;done
+for i in xa[a-z]; do perl ~/mech.pl m $i && perl ../abair-scrape.pl >> mhyph ;done
+for i in xa[a-z]; do perl ~/mech.pl c $i && perl ../abair-scrape.pl >> chyph ;done
+ls
+rm xa*
+ls
+mkdir todo
+mv chyph vwords xhyph otherx mhyph todo/
+ls
+mv uhyph hyphens todo/
+ls
+split -l 150 tobeadded 
+ls
+for j in u m c;do for i in x*; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
+for j in u ;do for i in utodo]12; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
+for j in u ;do for i in utodo[12]; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-wordsm ;done;done
+for j in u m c;do for i in x*; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
