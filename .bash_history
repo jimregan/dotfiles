@@ -1,30 +1,3 @@
-ls
-grep 5575081884001 videos.tsv 
-ls
-grep 5575074305001 videos.tsv 
-grep 5413626562001 videos.tsv 
-mv 5413626562001.* ../garfield/
-svn add ../garfield/5413626562001.*
-ls
-mv 55750* ../catahata/
-svn add ../catahata/55750*
-cd ..
-svn ci -m yesterday
-svn status
-ls catahata/5575074305001.*
-svn add catahata/5413626562001*
-ls scripts/
-find . -name '5575074305001.*;
-find . -name '5575074305001.*'
-cd scripts/
-tail videos.tsv 
-svn log ../catahata/5413626562001.vtt
-svn log ../catahata/5575074305001.vtt 
-svn log ../catahata/5575074305001.wav 
-grep 5575074305001 videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5557388967001&teideal=Astroblast!%20&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5590432547001&teideal=Olivia&series=Olivia&dlft=30'
-svn diff
 perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5590432547001&teideal=Olivia&series=Olivia&dlft=30'
 svn diff
 svn ci -m more
@@ -1998,3 +1971,30 @@ docker build
 docker build Dockerfile 
 ls 
 docker build .
+cd ~/tmp/foo/
+ls
+vi /tmp/inf
+cat /tmp/in
+cat /tmp/inf
+lynx -dump https://postimg.org/image/chjr7t7cl/
+lynx -dump https://postimg.org/image/chjr7t7cl/|grep dl=1
+lynx -dump https://postimg.org/image/chjr7t7cl/|grep dl=1|awk '{print $2}'
+#cat /tmp/inf|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'); 
+. ../sourceme 
+cat /tmp/inf|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'); procimg $i $img;doimg $img https://postimg.org/gallery/1pxv7eo2u/;done
+ls
+grep https://postimg.org/gallery/1pxv7eo2u/ fash-rdf-links 
+grep https://postimg.org/gallery/1pxv7eo2u/ fash-rdf-links > /tmp/tocp
+scp /tmp/tocp jimregan:/tmp
+ls
+rm -rf s10.postimg.org/
+less fash-rdf-links 
+mv fash-rdf-links ../sync/unsorted-triples-20171226-1.nt 
+ls
+vi spid
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171217-1.nt 
+rm spid
+rm spid.log 
+ssh jimregan
