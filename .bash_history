@@ -1,11 +1,3 @@
-git commit -m 'leading spaces'
-vi abair-scrape.pl 
-vi /tmp/missing 
-cat /tmp/missing |sort|uniq > /tmp/mmm
-mv /tmp/mmm /tmp/missing 
-grep -i bhuigín-bhuí-fhada TG4/*/*.vtt
-less TG4/catahata/5566610353001.vtt 
-grep -i bicycle TG4/*/*.vtt
 less TG4/rosnarun/5686651673001.vtt
 grep -i t-sean TG4/*/*.vtt
 vi scripts/normalisations.tsv 
@@ -1998,3 +1990,11 @@ cat ../pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print "[[" $0 "]]"}'
 tail -f /tmp/todolistr 
 vi /tmp/todolistr 
 paste /tmp/todolistl /tmp/todolistr 
+cd /tmp/asd/
+sh ~/scripts/grab-logged.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171217-1.nt 
+ls
+rm -rf web.archive.org/
+rm *
