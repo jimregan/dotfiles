@@ -1,39 +1,3 @@
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/788/1290862567001_348d8ac6-4b50-4312-a523-3a835e4769b1.vtt?pubId=1290862567001&videoId=5555995052001' -O ../bealoideasbeo/5555995052001.vtt
-svn add ../bealoideasbeo/5555995052001.vtt
-tail videos.tsv 
-echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5679177654001&pubId=1290862567001&videoId=5555995052001' |while read i;do echo $i|sh run.sh ;done
-ls
-grep 5555995052001 videos.tsv 
-mv 5555995052001.wav ../bealoideasbeo/
-svn add ../bealoideasbeo/*
-cd ~/Playing/spinx/
-ls
-cd ../sphinx-alignment/
-ls
-cd cmusphinx-alignment-example/
-ls
-cat align.sh 
-ls
-find ../sphinx4 -name '*.jar'
-cp ../sphinx4/sphinx4-core/build/libs/sphinx4-core-5prealpha-SNAPSHOT.jar .
-ls
-vi align.sh 
-tar zxvf /tmp/cmusphinx-clarinpl-0.1.tar.gz 
-vi align.sh 
-sh align.sh 
-ls /tmp/
-sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
-vi cmusphinx-clarinpl/pl.dic 
-sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
-ls
-cat cmusphinx-clarinpl/pl.dic 
-cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'
-cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq
-cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/'/;s/$/'/g'
-cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/'/;s/$/'/g"
-cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/'/;s/$/',/g"
-cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/=> '/;s/$/',/g"
-cat cmusphinx-clarinpl/pl.dic |perl -ane '@a=split/ /;shift @a;print join("\n", @a);'|sort|uniq|sed -e "s/^/    '' => '/;s/$/',/g"
 less ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
 grep ęk cmusphinx-clarinpl/pl.dic 
 less ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
@@ -1998,3 +1962,39 @@ doinstain
 cat ~/Downloads/wget.nt.txt >> ~/tmp/sync/http-misc-20180105-1.nt 
 rm ~/Downloads/wget.nt.txt 
 doinstain 
+cd /
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish
+cd tmp/
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish
+cd asr_data_irish/
+ls
+tree
+ls
+cd data/
+less ../README.txt 
+ls
+less spk2gender 
+ls
+less NOTES 
+less seanchas_rann_na_feirste/fngcf_seanchas_rann_na_feirste/corpusfile.txt 
+ls
+ls mul_mo_sceal_fein/corpusfile.txt 
+less mul_mo_sceal_fein/corpusfile.txt 
+ls
+less synthesis_recordings/apm_an_punk/README.txt 
+less synthesis_recordings/apm_an_punk/import.sh 
+less synthesis_recordings/apm_an_punk/corpusfile.txt 
+ls
+less synthesis_recordings/apm_an_punk/corpusfile.txt 
+less synthesis_recordings/apm_an_punk/README.txt 
+ls
+find . -name 'corpusfile.txt'
+less ./comhra/ifri0001_spk4/corpusfile.txt
+less ./mul_mo_sceal_fein/corpusfile.txt
+cat ./mul_mo_sceal_fein/corpusfile.txt
+cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'
+cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'|tr ' ' '\n'
+cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'|tr ' ' '\n'|aspell -a --lang ga
+cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'
+cat ./mul_mo_sceal_fein/corpusfile.txt
+cat ./mul_mo_sceal_fein/corpusfile.txt|less
