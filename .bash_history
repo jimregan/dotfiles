@@ -1,17 +1,3 @@
-svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $6}' > /tmp/asd/raw2
-cat /tmp/asd/raw
-cat /tmp/asd/raw|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.mp4;done
-ls
-ls ../*/5678205801001.*
-grep 5678205801001 videos.tsv 
-cat /tmp/asd/raw2|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.vtt;done
-for i in *.mp4;do sh ~/bin/convert-mp3.sh $i;done
-for i in *wav;do mv $i $(basename $i .mp4.wav).wav;done
-ls
-rm *.mp4
-grep Ros videos.tsv 
-mv 5678205801001.* ../rosnarun/
-svn add ../rosnarun/5678205801001.*
 ls
 grep 5575081884001 videos.tsv 
 ls
@@ -1998,3 +1984,17 @@ for j in u m c;do for i in x*; do perl ~/mech.pl $j $i && perl ../abair-scrape.p
 cd ..
 cd ~/Playing/
 git clone https://github.com/cmusatyalab/openface.git
+cd /tmp
+unrar ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar 
+cd ~/Playing/openface/
+ls
+python setup.py install
+sudo python setup.py install
+ls
+less README.md 
+ls
+docker build/
+docker build
+docker build Dockerfile 
+ls 
+docker build .
