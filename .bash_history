@@ -1,153 +1,3 @@
-cp ~/Playing/corpuscrawler/Lib/corpuscrawler/twi.translit tw-tw_FONIPA.txt
-git add tw-tw_FONIPA.txt 
-git commit -m Twi
-git branch
-git push origin translit 
-ls
-ls /tmp/*tran*
-ls /tmp/*txt
-ls ~/*tran*
-less ace-ace_FONIPA.txt 
-less ~/aceh.translit 
-less tw-tw_FONIPA.txt 
-cd ~/Playing/corpuscrawler/
-ps aux|grep corpusc
-./corpuscrawler --lang ga
-less corpus/ga.txt
-cat corpus/ga.txt
-cat corpus/ga.txt|grep -v '^#'
-cat corpus/ga.txt|grep -v '^#'|wc
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//'
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';' -d ','
-man tr
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:'
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!'
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!"'
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!"()[]'
-cat corpus/ga.txt|grep -v '^#'|tr ' ' '\n'|sed -e "s/^'//;s/'$//"|tr -d ';,:.?!"()[]'|sort|uniq > ga.wl
-less ga.wl 
-wc -l ga.wl 
-less ga.wl 
-cat ga.wl-nonum 
-grep Zubizaretta corpus/ga.txt
-ls
-df
-less adjective/carrach_adj1.xml 
-less verb/bruith_verb.xml 
-tail -f /tmp/bunamo 
-wc -l /tmp/bunamo 
-less /tmp/bunamo 
-tail -f spn.log 
-tail -f tosp.log 
-cat tosp.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat tosp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat tosp |awk -F'/web/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/web/$i >> tospa;done
-ls
-less tospa 
-sh ~/scripts/spider.sh tospa
-tail -f tospa.log 
-cp tospa tospb
-vi tospb 
-sh ~/scripts/spider.sh tospb
-tail -f tospb.log 
-cat tospa.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat tospb.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-ls
-cat tospb.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat tospb |awk -F'/web/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/web/$i >> tospc;done
-ls
-cat tospb |awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/web/$i >> tospc;done
-ls
-cat tospc 
-vi tospc 
-sh ~/scripts/spider.sh tospc
-tail -f tospc.log 
-cat tospc.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat tospc.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-ls
-cat tosp.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spn.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spn.log |perl ~/bin/wget-http.pl 
-cat spna.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spna.log |perl ~/bin/wget-http.pl 
-rm tosp*
-ls
-cat spn.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spna.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spna.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spn.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-rm spn*
-ls
-rm nohup.out 
-vi /tmp/left1 
-cat /tmp/left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
-cat /tmp/left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-vi /tmp//left1 
-cat /tmp/left1 |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-ls
-cat raw
-cat raw*|awk '{print "http://web.archive.org/web/" $0}' > spid
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-ls
-sh ~/scripts/spider.sh nvid
-sh ~/scripts/spider.sh nsub
-tail -f nvid.log 
-tail -f spid.log 
-cat spid.log 
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-rm spid
-rm spid.log 
-ls
-tail -f nsub.log 
-cat nsub.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat nsub.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.vtt' >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-rm nsub
-rm nsub.log 
-tail nvid.log 
-cat nvid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat nvid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.mp4' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-rm nvid
-rm nvid.log 
-ls
-cat m3u 
-cat m3u |while read i;do curl $i|grep http|awk '{print "http://web.archive.org/save/" $0}' >> spid;done
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid
-cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spida;done
-ls
-cat spida 
-sh ~/scripts/spider.sh spida
-tail -f spida.log 
-cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
-ls
-rm *
-ls
-cat in 
-cat in |awk '{print "http://web.archive.org/save/" $0}' > spid
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-#cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt 
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep vtt >> ~/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-tail -f spid.log 
-tail spid
-tail -f spid.log 
-tail spid
-cat spid.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spida;done
-ls
-cat spida 
-sh ~/scripts/spider.sh spida
-tail -f spida.log 
 cat spida.log |perl ~/bin/wget-http.pl |grep '/source>' |grep 'web/2'|awk -F'[<>]' '{print $6}' |grep '.ts' >> ~/Playing/msf-asr/TG4/scripts/wayback-video.txt 
 cat spid.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
 cat spida.log |perl ~/bin/wget-http.pl >> ~/tmp/sync/http-misc-20171217-1.nt 
@@ -1998,3 +1848,153 @@ git commit -m more
 git diff
 git add specific-norms.tsv audacity/robinson-crusoe.txt-01.txt 
 git commit -m more
+tail -f m-words 
+mv /tmp/stefan-zeromski-doktor-piotr.aiff /tmp/stefan-zeromski-doktor-piotr.wav
+ffplay /tmp/stefan-zeromski-doktor-piotr.wav 
+tail -f m-words 
+tail -f c-words 
+cat /tmp/missing |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv  > utodo
+less todo/
+less utodo 
+cat u-words |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv  > utodo
+wc -l utodo 
+cat u-words |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv  
+cat u-words |perl ../filter.pl ../pron/ulster.tsv  
+cat u-words |perl ../filter.pl ../pron/ulster.tsv  > utodo
+wc -l utodo 
+cat tobeadded |perl ../filter.pl u-words  > utodo
+less utodo 
+wc -l utodo 
+less utodo 
+cat tobeadded |perl ../filter.pl m-words  > mtodo
+less mtodo 
+vi mtodo 
+head -n 151 utodo 
+head -n 151 utodo  |wc
+head -n 151 utodo  > utodo1
+tail -n 150 utodo  > utodo2
+less utodo1 
+less utodo2
+tail -f c-words 
+vi /tmp//asd//spid
+tail -f c-words 
+cat m-words >> ../pron/munster.tsv 
+cd ..
+git add pron/munster.tsv 
+git commit -m 'same as last, but munster'
+git log
+less pron/munster
+less pron/munster.tsv 
+cat pron/munster.tsv |grep '^[aouáúó]'
+cat pron/munster.tsv |grep '^[aouáúó]' > /tmp/vownmunst
+cat pron/munster.tsv |grep '^fh[aouáóú]' >> /tmp/vownmunst
+less /tmp/vownmunst 
+cat /tmp/vownmunst |awk '{print "n-" $1}'
+cat /tmp/vownmunst |awk '{print "n-" $1}'|aspell -a clean
+cat /tmp/vownmunst |awk '{print "n-" $1}'|aspell -a clean|less
+apt-cache search aspell
+sudo apt-get install libtext-aspell-perl 
+perl -e 'print 0.3 * 7 * 5.825'
+perl -e 'print 0.3 * 7 * 5.825 / 100'
+perl -e 'print 0.3 * 7 * (5.825 / 100)'
+perl -e 'print 0.3 * 7 * (5.825 / 100) * 30'
+perl -e 'print 0.3 * 7 * (18.41 / 100) * 30'
+perl -e 'print 2 * 7 * (18.41 / 100) * 30'
+perl -e 'print 0.5 * 7 * (18.41 / 100) * 30'
+tail -f c-words 
+cd -
+tail -f c-words 
+ls
+ls todo/
+grep '[xzv]' /tmp/newinlist2 
+grep '[xzv]' /tmp/newinlist2 > todo/corpus-todo
+vi /tmp/newinlist2 
+grep '[XZV]' /tmp/newinlist2 >> todo/corpus-todo
+vi /tmp/newinlist2 
+wc -l /tmp/newinlist2 
+less /tmp/newinlist2 
+grep '[0-9]' /tmp/newinlist2 
+grep '[jky]' /tmp/newinlist2 
+grep -i '[jky]' /tmp/newinlist2 
+grep -i '[sc]h' /tmp/newinlist2 
+tail -f c-words 
+cat tobeadded |perl ../filter.pl c-words  > ctodo
+cat ctodo 
+vi ctodo 
+ls
+cat c-words >> ../pron/connacht.tsv 
+cd ..
+git diff
+git add pron/connacht.tsv 
+git commit -m 'and connacht'
+cat prontmp/u-wordsm 
+cat prontmp/u-wordsm >> pron/ulster.tsv 
+git add pron/ulster.tsv 
+git commit -m 'missed'
+git push origin lexicon 
+cd prontmp/
+ls
+rm x*
+ls
+rm utodo* u-wordsm 
+ls
+rm tobeadded 
+ls
+rm u-words c-words 
+ls
+rm m-words 
+cat ctodo |perl ../filter.pl ../pron/connacht.tsv 
+rm ctodo 
+rm mtodo 
+ls
+ls todo/o
+ls todo/
+ls /tmp/newinlist2 
+less /tmp/newinlist2 
+split -l 150 /tmp/newinlist2 
+ls
+mv /tmp/newinlist2 .
+ls
+tail -f u-words 
+grep tófú ../pron/*
+echo tófú >> tobedone
+grep súisí ../pron/*
+echo tófú >> tobedone 
+echo súisí >> tobedone 
+vi tobedone 
+ls
+tail -f m-words 
+ls
+cat u-words >> ../pron/ulster.tsv 
+cat m-words >> ../pron/munster.tsv 
+cat c-words >> ../pron/connacht.tsv 
+cd ..
+git diff
+git add pron/*tsv
+git commit -m 'corpus additions'
+git format-patch -1
+less 0001-corpus-additions.patch 
+git log
+git revert a67b5868b905e00832b418bcb670a007056dec9f
+git diff
+git add scripts/normalisations.tsv pron/pronounce-as.tsv 
+git commit -m add
+cd prontmp/
+ls
+wc -l c-words newinlist2 
+cat c-words |awk -F'\t' '{print $2}' > cl
+paste newinlist2 cl
+paste newinlist2 cl >> ../pron/connacht.tsv 
+cat m-words |awk -F'\t' '{print $2}' > ml
+cat u-words |awk -F'\t' '{print $2}' > ul
+paste newinlist2 ml >> ../pron/munster.tsv 
+paste newinlist2 ul >> ../pron/ulster.tsv 
+cd ..
+git diff
+git add pron/*tsv
+git commit -m 'corpus words, with apostrophes'
+git push origin lexicon 
+wc -l pron/*tsv
+less ~/Downloads/emacs 
+less ~/Downloads/156096-en_h4w_rc.scenario 
+apt-cache search simon
