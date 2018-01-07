@@ -1,52 +1,3 @@
-less ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-grep ęk cmusphinx-clarinpl/pl.dic 
-less ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |head -n 1|perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
-vim ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
-vim -b ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-less dict-add.txt 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-less 
-less ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-less dict-add.txt 
-grep owi cmusphinx-clarinpl/pl.
-grep owi cmusphinx-clarinpl/pl.dic 
-ls
-grep średniowieczni dict-add.txt 
-grep łowią dict-add.txt 
-grep mia cmusphinx-clarinpl/pl.dic 
-grep śmiałych dict-add.txt 
-grep śmiałych ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-grep zrozumiałymi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-grep wielki cmusphinx-clarinpl/pl.dic 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-less dict-add.txt 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-less dict-add.txt 
-grep iego cmusphinx-clarinpl/pl.dic 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-less dict-add.txt 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv |perl ~/Playing/wolne-lektury-audio-corpus/ipa-to-cmu.pl > dict-add.txt
-less dict-add.txt 
-cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic 
-cat dict-add.txt |perl ~/Playing/wolne-lektury-audio-corpus/extract-new.pl cmusphinx-clarinpl/pl.dic > toadd
-less toadd 
-cat toadd >> cmusphinx-clarinpl/pl.dic 
-sh align.sh /tmp/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/zwierzeta-i-niedzwiedz.txt.clean
-grep listkowi cmusphinx-clarinpl/pl.dic 
-grep my @a = split/[ \t]/;
-my @a = split/[ \t]/;
-grep listkowi toadd 
-grep listkowi dict-add.txt 
-grep listkowi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-vi cmusphinx-clarinpl/pl.dic 
-vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' (NF != 2){print}'
 cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
 vi ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
 cat ~/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv |awk -F'\t' '(NF != 2){print}'
@@ -1998,3 +1949,52 @@ cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'|tr ' ' '\n'|aspel
 cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'
 cat ./mul_mo_sceal_fein/corpusfile.txt
 cat ./mul_mo_sceal_fein/corpusfile.txt|less
+cd ~/Playing/msf-asr/
+ls
+cd json/
+ls
+cd ..
+ls
+ls data/
+ls data/train/
+ls data/train/text 
+less data/train/text 
+ls caighdean/
+cat raw-text/MSF_chapter_*
+cd ..
+ls
+cd msf-asr/
+ls
+less scripts/normalise.pl 
+cat raw-text/MSF_chapter_1.txt |perl scripts/normalise.pl 
+cat raw-text/MSF_chapter_1.txt 
+cat raw-text/MSF_chapter_1.txt |perl scripts/normalise.pl 
+clear
+cat raw-text/MSF_chapter_1.txt |perl scripts/normalise.pl 
+cat MSF_chapter_1.txt.norm
+ls
+ls caighdean/
+grep cruinnithe caighdean/MSF_chapter_1.pairs 
+less caighdean/MSF_chapter_1.pairs 
+cat caighdean/MSF_chapter_1.pairs 
+cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 == $2){print}'
+cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print}'
+cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'
+cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep $i scripts/normalisations.tsv ;done
+cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv ;done
+cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 1.norm.filt ;done
+cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 2.norm.filt ;done
+less 2.norm.filt 
+cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i > 2.norm.filt ;done
+less 2.norm.filt 
+rm 2.norm.filt 
+cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 2.norm.filt ;done
+less 2.norm.filt 
+rm 2.norm.filt 
+cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 2.norm.filt ;done
+cat 2.norm.filt 
+rm 1.norm.filt 
+cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 1.norm.filt ;done
+cat 1.norm.filt 
+cat caighdean/MSF_chapter_3.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 3.norm.filt ;done
+cat 3.norm.filt 
