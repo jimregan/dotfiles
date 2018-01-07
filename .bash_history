@@ -1,78 +1,3 @@
-git commit -m 'abbreviations for speaker; normalises names'
-git branch
-git push origin lexicon 
-grep '[0-9]' *.txt
-ls *.tsv
-less audiobooks.tsv 
-ls audio/*gloria*
-ffplay audio/eliza-orzeszkowa-gloria-victis-tom-opowiadan-gloria-victis.mp3 
-cat vocab.all.f2 |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-cat vocab.all.f2 |perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > tmp
-mv tmp vocab.all.f2 
-wc -l vocab.all.f2 
-less vocab.all.f2 
-grep ztąd text/*txt
-vi normalisations.tsv 
-ls
-grep zud-szi text/*txt
-grep -i zud-szi text/*txt
-grep -i żud-szi text/*txt
-tail -f vifax-pdf 
-ls
-cat nope 
-grep 20101123bun *
-ls
-rm *.1
-cat vifax-pdf |sort|uniq
-wget $(cat vifax-pdf |sort|uniq)
-ls
-rm *.1
-ls
-pdfinfo 20130305mean.pdf
-pdftotext -f 4 20130305mean.pdf
-cat 20130305mean.txt 
-ffplay 20130305mean.mp4 
-grep RealBin ../scripts/*
-ls
-cd ..
-git add vifax/normalisations.tsv vifax/speakers.tsv vifax/remove-headlines.tsv 
-git add vifax/stop-patterns.tsv 
-git commit -m add
-git branch
-git push origin lexicon 
-git add vifax/extract-text.sh 
-git commit -m 'just adjusting pdf name to mp4 for the moment'
-less ~/Playing/wolne-lektury-audio-corpus/apply-specific.pl 
-ls
-cd vifax/
-ls
-pdfinfo 20101005ard.pdf
-pdftotext -f 7 20101005ard.pdf
-less 20101005ard.txt 
-cat 20101005ard.txt 
-ffplay 20101005ard.mp4 
-ls
-df
-cd ~/Playing/
-git clone https://github.com/michmech/BuNaMo
-cd BuNaMo/
-ls
-cat noun/camfar_masc1.xml 
-find noun -type f
-find noun -type f -exec grep default {} \;
-find noun -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}'
-find noun -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
-find verb -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
-find adjective -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
-find preposition -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
-find nounPhrase -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' >> /tmp/bunamo
-find verb -type f -exec grep default {} \;|awk -F'default="' '{print $2}'|awk -F'"' '{print $1}' 
-cd ~/Playing/corpuscrawler/
-git pull origin master
-git diff
-git stash
-git branch
-git checkout master
 git pull origin master 
 git push mine master 
 git checkout -b irish-more
@@ -1998,3 +1923,78 @@ mkdir src/META-INF
 rmdir src/META-ING
 cp lib-class/META-INF/MANIFEST.MF src/META-INF/
 ant
+cd /tmp/
+git clone https://github.com/StevenLOL/LIUM.git
+cd LIUM/
+ls
+less go.sh 
+cp ~/Playing/msf-asr/TG4/astroblast/5548023299001.wav test_wav/
+sh go.sh 
+ls
+ls test_out/
+ls test_out/5548023299001/
+cat test_out/5548023299001/5548023299001.*
+file test_out/5548023299001/5548023299001.*
+less test_out/5548023299001/5548023299001.h.3.seg 
+less test_out/5548023299001/5548023299001.s.seg 
+less test_out/5548023299001/5548023299001.pms.seg 
+ls
+grep inputDesc *sh
+grep Diar *sh
+ls mat/
+ls
+java -jar LIUM_SpkDiarization-8.4.1.jar 
+java -jar LIUM_SpkDiarization-8.4.1.jar --sOutputFormat ctl test_wav/5548023299001.wav 
+sphinx_fe 
+sphinx_fe -mswav test_wav/5548023299001.wav 
+sphinx_fe -mswav -i test_wav/5548023299001.wav -o test_wav/5548023299001.wav.mfcc
+sphinx_fe -mswav test_wav/5548023299001.wav -o test_wav/5548023299001.wav.mfcc
+sphinx_fe -mswav yes -i test_wav/5548023299001.wav -o test_wav/5548023299001.wav.mfcc
+java -jar LIUM_SpkDiarization-8.4.1.jar --sOutputFormat ctl test_wav/5548023299001.wav 
+java -jar LIUM_SpkDiarization-8.4.1.jar --sOutputFormat ctl test_wav/5548023299001.wav.mfcc 
+java -jar LIUM_SpkDiarization-8.4.1.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
+ls
+less 5548023299001.out.seg 
+ls test_wav/
+java -jar ~/Playing/LIUM_SpkDiarization.script.v3.9/LIUM_SpkDiarization-3.9.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
+ls
+less 5548023299001.out.seg 
+rm 5548023299001.out.seg 
+java -jar ~/Playing/LIUM_SpkDiarization.script.v3.9/LIUM_SpkDiarization-3.9.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
+java -jar LIUM_SpkDiarization-8.4.1.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
+java -jar ~/Playing/LIUM_SpkDiarization.script.v3.9/LIUM_SpkDiarization-3.9.jar 
+java -jar LIUM_SpkDiarization-8.4.1.jar 
+cd ..
+git clone https://github.com/ahmetaa/lium-diarization.git
+cd lium-diarization/
+ls
+ant
+cd -
+cd LIUM/
+java -jar /tmp/lium-diarization/lium-diarization-full.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
+java -jar /tmp/lium-diarization/lium-diarization.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
+find /tmp/lium-diarization -name '*jar'
+java -jar /tmp/lium-diarization/lium-diarization.jar 
+unzip -l /tmp/lium-diarization/lium-diarization.jar 
+unzip -l /tmp/lium-diarization/lium-diarization.jar |less
+mkdir tmp
+cd tmp/
+unzip  /tmp/lium-diarization/lium-diarization.jar 
+ls
+less META-INF/MANIFEST.MF 
+wget https://fscs.hhu.de/languagetool/word2vec.tar.gz
+tar ztvf word2vec.tar.gz 
+tar zxvf word2vec.tar.gz 
+cd word2vec/
+ls
+less en/LICENSE 
+less de/LICENSE 
+less en/final_embeddings.txt 
+less en/dictionary.txt 
+less en/neuralnetwork/buy_by/W_fc1.txt 
+less en/neuralnetwork/buy_by/job_batch_eng.bash.394057.hpc-batch14.log 
+less en/neuralnetwork/buy_by/b_fc1.txt 
+ls
+cd ..
+rm -rf word2vec
+rm word2vec.tar.gz 
