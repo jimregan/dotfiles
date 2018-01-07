@@ -1,6 +1,3 @@
-svn diff videos.tsv|grep '^\+'|grep htt
-svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $5}'
-svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $5}' > /tmp/asd/raw
 svn diff videos.tsv|grep '^\+'|grep htt|awk -F'\t' '{print $6}' > /tmp/asd/raw2
 cat /tmp/asd/raw
 cat /tmp/asd/raw|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.mp4;done
@@ -1998,3 +1995,6 @@ for j in u m c;do for i in x*; do perl ~/mech.pl $j $i && perl ../abair-scrape.p
 for j in u ;do for i in utodo]12; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
 for j in u ;do for i in utodo[12]; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-wordsm ;done;done
 for j in u m c;do for i in x*; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
+cd ..
+cd ~/Playing/
+git clone https://github.com/cmusatyalab/openface.git
