@@ -1,1619 +1,3 @@
-doinstain 
-paste /tmp/pa-l /tmp/pa-r 
-paste /tmp/pa-l /tmp/pa-r  >> ../pron-data/pronounce-as.tsv 
-ls
-cat zwierzeta-i-niedzwiedz.txt.sent 
-cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |tr ' ' '\n'
-cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |tr ' ' '\n'|sort|uniq
-cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |tr ' ' '\n'|sort|uniq|perl ../filter-dict.pl ../pron-data/gen.tsv 
-cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl 
-cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl > zwierzeta-i-niedzwiedz.txt.clean
-irstlm help
-irstlm build-lm 
-#irstlm build-lm -i zwierzeta-i-niedzwiedz.txt.clean 
-cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl |awk '{print "<s> " $0 " </s>"}' > zwierzeta-i-niedzwiedz.txt.clean
-less zwierzeta-i-niedzwiedz.txt.clean 
-irstlm build-lm -i zwierzeta-i-niedzwiedz.txt.clean -o zwierzeta-i-niedzwiedz.txt.lm
-gzip -d zwierzeta-i-niedzwiedz.txt.lm.gz 
-ls ../audio/*zwierzeta-i-niedzwiedz*
-sh ~/bin/convert-mp3.sh ../audio/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3
-mv ../audio/ignacy-krasicki-bajki-i-przypowiesci-zwierzeta-i-niedzwiedz.mp3.wav /tmp/
-cat zwierzeta-i-niedzwiedz.txt.sent |perl ../clean.pl > zwierzeta-i-niedzwiedz.txt.clean
-cp zwierzeta-i-niedzwiedz.txt.clean /tmp/
-less zwierzeta-i-niedzwiedz.txt
-cat /tmp/zwierzeta-i-niedzwiedz.txt.clean 
-doinstain 
-vi ../specific-norms.tsv 
-vi ../pron-data/pronounce-as.tsv 
-vi ../pron-data/pronounce-as.gen.tsv 
-cat but-w-butonierce-nic.txt 
-ls *mlodo*
-cat fraszki-ksiegi-pierwsze-na-mlodosc.txt
-mkdir ../done-aud
-mv ~/fraszki-ksiegi-pierwsze-na-mlodosc.txt ../done-aud/
-mv ~/but-w-butonierce-nic.txt ../done-aud/
-cat fraszki-ksiegi-pierwsze-na-
-cat fraszki-ksiegi-pierwsze-na-mlodosc.txt 
-cat fraszki-ksiegi-pierwsze-do-milosci-chyba-w-serce-milosci-pro.txt 
-mv ~/fraszki-ksiegi-pierwsze-do-milosci-chyba-w-serce-milosci-pro.txt ../done-aud/
-cat fraszki-ksiegi-pierwsze-na-matusza.txt 
-mv ~/fraszki-ksiegi-pierwsze-na-matusza.txt ../done-aud/
-cat fraszki-ksiegi-pierwsze-o-milosci-prozno-uciec-prozno-sie-pr.txt 
-mv ~/fraszki-ksiegi-pierwsze-o-milosci-prozno-uciec-prozno-sie-pr.txt ../done-aud/
-cat ../done-aud/*
-cat fraszki-ksiegi-pierwsze-na-starosc.txt 
-grep Frasz ../audiobooks.tsv 
-grep rasz ../audiobooks.tsv 
-mv ~/fraszki-ksiegi-pierwsze-na-starosc.txt ../done-aud/
-cat fraszki-ksiegi-pierwsze-na-konrata.txt 
-mv ~/fraszki-ksiegi-pierwsze-na-konrata.txt ../done-aud/
-ls ../done-aud/
-cat fraszki-ksiegi-pierwsze-na-nabozna.txt 
-vi ../specific-norms.tsv 
-cat but-w-butonierce-intermezzo-czy-widzieliscie.txt 
-vi ../pron-data/pronounce-as.tsv 
-ls *drzewo*
-cat drzewo.txt 
-mv ~/but-w-butonierce-intermezzo-czy-widzieliscie.txt ../pron-data/
-mv ~/drzewo.txt ../pron-data/
-mv ~/fraszki-ksiegi-pierwsze-na-nabozna.txt ../pron-data/
-ls ../pron-data/
-mv ../pron-data/fraszki-ksiegi-pierwsze-na-nabozna.txt ../done-aud/
-mv ../pron-data/drzewo.txt ../done-aud/
-mv ../pron-data/but-w-butonierce-intermezzo-czy-widzieliscie.txt ../done-aud/
-ls
-ls ../audio/*drzew*
-grep West ../specific-norms.tsv 
-vi ../pron-data/pronounce-as.tsv 
-git diff
-cd scripts/
-ls
-svn diff
-grep Garf videos.tsv 
-grep Garf videos.tsv |sort|uniq
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687427692001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=7'
-grep Harv videos.tsv 
-echo 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2347/1290862567001_a3953467-7ab2-492d-afca-a431b9889bfa.vtt?pubId=1290862567001&videoId=5687427692001' > /tmp//asd/in
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2347/1290862567001_a3953467-7ab2-492d-afca-a431b9889bfa.vtt?pubId=1290862567001&videoId=5687427692001' -O ../harveybeaks/5687427692001.vtt
-svn add ../harveybeaks/5687427692001.vtt
-curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5687438347001&pubId=1290862567001&videoId=5687427692001'|grep http >> /tmp/asd/in 
-echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5687438347001&pubId=1290862567001&videoId=5687427692001' |sh run.sh 
-mv 5687427692001.wav ../harveybeaks/
-svn add ../harveybeaks/5687427692001.wav
-cd ..
-svn ci -m another
-ls -al harveybeaks/
-cat */*.vtt
-cat */*.vtt|grep -v '\-\->'
-cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP
-cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'
-cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'|grep -v '^$'
-cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'|grep -v '^$'|tr -d '\r'
-cat */*.vtt|grep -v '\-\->'|grep -v WEBVTT|grep -v X-TIMESTAMP|grep -v 'Fotheidil le'|grep -v '^$'|tr -d '\r' > all.txt
-less all.txt 
-ls ../
-less ../scripts/normalise.pl 
-cat all.txt|perl ../scripts/normalise.pl 
-cat all.txt|perl ../scripts/normalise.pl |sed -e 's/-//g'
-cat all.txt|perl ../scripts/normalise.pl |sed -e 's/-//g'|tr ' ' '\n'
-cat all.txt|perl ../scripts/normalise.pl |sed -e 's/-//g'|tr ' ' '\n'|sort|uniq
-cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq 
-cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'
-cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'|sort|uniq
-cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'|sort|uniq|wc
-cat all.txt|perl ../scripts/normalise.pl |tr ' ' '\n'|sort|uniq |sed -e 's/^-//'|sort|uniq > all.words.new
-#cat all.words |perl ../filter-pron.pl 
-less ../filter-pron.pl 
-less ../filter.pl 
-cat all.words |perl ../filter-pron.pl ../pron/munster.tsv ../pron/pronounce-as.tsv 
-cat all.words |perl ../filter-pron.pl ../pron/munster.tsv 
-less ../pron/pronounce-as.tsv 
-less ../filter.pl 
-cat all.words |perl ../filter-pron.pl ../pron/munster.tsv 
-less ../filter.pl 
-cat all.words |perl ../filter-pron.pl ../pron/munster.tsv 
-cat all.words
-cat all.words |perl ../filter-pron.pl ../pron/ulster.tsv 
-vi ../filter-pron.pl 
-cat all.words |perl ../filter.pl ../pron/ulster.tsv 
-cat all.words.new |perl ../filter.pl ../pron/ulster.tsv 
-cat all.words.new |perl ../filter.pl ../pron/ulster.tsv |wc
-cat all.words.new |wc
-cat all.words.new |perl ../filter.pl ../pron/ulster.tsv > /tmp/missing
-less /tmp/missing 
-vi /tmp/missing 
-cat /tmp/missing |grep "^d'"
-cat /tmp/missing |grep "^d'"|sed -e "s/^d'//"
-cat /tmp/missing |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv 
-vi ../to-norm
-vi ../to-pron
-find .. -name '*tsv'
-vi ../scripts/normalisations.tsv 
-grep compord ../pron/munster.tsv 
-grep compord ../pron/munster.tsv >> ../tmp 
-vi ../tmp 
-cat ../tmp >> ../pron/munster.tsv 
-grep dfhéadfá */*vtt
-grep -i dfhéadfá */*vtt
-echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001' |sh ru
-cd scripts/
-echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689310448001&pubId=1290862567001&videoId=5689301324001' |sh run.sh 
-svn diff
-mv 5689475790001.wav ../lurgan2k17/
-svn add ../lurgan2k17/5689475790001.wav 
-mv 5689301324001.wav ../harveybeaks/
-svn add ../harveybeaks/5689301324001.wav 
-svn diff
-cd ..
-svn stat
-svn ci -m more
-mkdir english-only
-cd english-only/
-perl ../scripts/tg4-scrape.pl http://www.tg4.ie/ga/player/baile/?pid=5688090228001&teideal=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&series=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&dlft=35
-cat *
-rm *
-ls
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5688090228001&teideal=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&series=Litir%20%C3%B3%20Mh%C3%A1irt%C3%ADn%20Jaimsie&dlft=35'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689750874001&teideal=Punca%C3%AD&series=Punca%C3%AD&dlft=34'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686667369001&teideal=Coranna%20&series=Coranna%20&dlft=32'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5560784381001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=35'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5688240218001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=35'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5528754226001&teideal=Spillane%20an%20F%C3%A1na%C3%AD&series=Spillane%20an%20F%C3%A1na%C3%AD&dlft=35'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5521972095001&teideal=Spillane%20an%20F%C3%A1na%C3%AD&series=Spillane%20an%20F%C3%A1na%C3%AD&dlft=34'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5512227357001&teideal=Spillane%20an%20F%C3%A1na%C3%AD&series=Spillane%20an%20F%C3%A1na%C3%AD&dlft=33'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5559915270001&teideal=Poc%20na%20nGael&series=Poc%20na%20nGael&dlft=34'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5573222031001&teideal=Ar%20an%20Aer&series=Ar%20an%20Aer&dlft=35'
-less videos.tsv 
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5556574963001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=34'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5549246625001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=33'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5541825369001&teideal=Hollywood%20in%20%C3%89irinn&series=Hollywood%20in%20%C3%89irinn&dlft=32'
-cat videos.tsv 
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687550754001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=34'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687345878001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=33'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687204476001&teideal=Ar%20Scoil%20Ar%C3%ADs&series=Ar%20Scoil%20Ar%C3%ADs&dlft=32'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686557681001&teideal=An%20B%C3%A9al%20Bocht&series=An%20B%C3%A9al%20Bocht&dlft=31'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686667369001&teideal=Coranna%20&series=Coranna%20&dlft=32'
-tail videos.tsv 
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686746992001&teideal=Rocky%20Ros%20Muc&series=Rocky%20Ros%20Muc&dlft=31'
-cat videos.tsv 
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689575827001&teideal=Anseo%20i%20l%C3%A1r%20an%20Ghleanna&series=Anseo%20i%20l%C3%A1r%20an%20Ghleanna&dlft=33'
-cat subtitles.tsv 
-curl '
-ls
-tail videos.tsv 
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5409116153001&teideal=O%C3%ADche%20Chaillte%20an%20tSeancha%C3%AD&series=O%C3%ADche%20Chaillte%20an%20tSeancha%C3%AD&dlft=32'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5686756158001&teideal=Siar%20an%20B%C3%B3thar&series=Siar%20an%20B%C3%B3thar&dlft=32'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5687370896001&teideal=S%C3%A9%20Mo%20Laoch%20Speisialta%20-%20Matt%20Molloy&series=S%C3%A9%20Mo%20Laoch%20Speisialta%20-%20Matt%20Molloy&dlft=31'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5688092378001&teideal=Siar%20an%20B%C3%B3thar&series=Siar%20an%20B%C3%B3thar&dlft=31'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5680131550001&teideal=Nollaig%20na%20Maggies&series=Nollaig%20na%20Maggies&dlft=35'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5569001218001&teideal=Tony%20Keady%20-%20RIP&series=Laochra%20Gael&dlft=30'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679194921001&teideal=Bing%20Crosby%20-%20Guth%20&series=Guth%20&dlft=29'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679171889001&teideal=An%20Nollaig%20Fad%C3%B3%20&series=An%20Nollaig%20Fad%C3%B3%20&dlft=28'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689689998001&teideal=C%C3%BAl%20St%C3%A1itse%20-%20Oireachtas%202017&series=C%C3%BAl%20St%C3%A1itse%20-%20Oireachtas%202017&dlft=28'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679036713001&teideal=F%C3%ADorsc%C3%A9al&series=F%C3%ADorsc%C3%A9al&dlft=27'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679045227001&teideal=Fir,%20Mar%C3%BA%20agus%20Gr%C3%A1&series=Fir,%20Mar%C3%BA%20agus%20Gr%C3%A1&dlft=27'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678972519001&teideal=Bus%20Ghlasch%C3%BA&series=Bus%20Ghlasch%C3%BA&dlft=27'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5679025034001&teideal=Comhr%C3%A1&series=Comhr%C3%A1&dlft=27'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5418935020001&teideal=Timpeall%20an%20T%C3%A1bla&series=Timpeall%20an%20T%C3%A1bla&dlft=26'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5678303890001&teideal=I%20mB%C3%A9al%20na%20Stoirme&series=I%20mB%C3%A9al%20na%20Stoirme&dlft=26'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5486420062001&teideal=Ar%20Mhuin%20na%20Muice%20agus%20na%20gCapall&series=Ar%20Mhuin%20na%20Muice%20agus%20na%20gCapall&dlft=26'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5115304203001&teideal=P%C3%A1id%C3%AD%20%C3%93%20S%C3%A9%20-%20R%C3%AD%20an%20Phar%C3%B3iste&series=P%C3%A1id%C3%AD%20%C3%93%20S%C3%A9%20-%20R%C3%AD%20an%20Phar%C3%B3iste&dlft=24'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5677825171001&teideal=Juliet%20Murphy&series=Laochra%20Gael&dlft=24'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5525891365001&teideal=Saol%20R%C3%BAnda%20faoi%20Thalamh&series=Saol%20R%C3%BAnda%20faoi%20Thalamh&dlft=23'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597795855001&teideal=Anthony%20Tohill&series=Laochra%20Gael&dlft=23'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676204259001&teideal=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&series=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&dlft=22'
-ls
-cat descriptions.tsv 
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5676091319001&teideal=The%20Beatles:%20Guth%20&series=Guth%20&dlft=22'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5486301065001&teideal=Miche%C3%A1l%20%C3%93%20Muircheartaigh&series=Miche%C3%A1l%20%C3%93%20Muircheartaigh&dlft=21'
-lynx -dump http://www.tg4.ie/ga/player/faisneis/?pageCnt=3
-grep ' class="prog-panel">' /tmp/instain 
-grep ' class="prog-panel">' /tmp/instain |wc
-grep ' class="prog-panel">' /tmp/instain |wc|awk -F'"' '{print $2}'
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g'
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g'|while read i;do perl ../scripts/tg4-scrape.pl "$i";done
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do perl ../scripts/tg4-scrape.pl $i;done
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do echo  perl ../scripts/tg4-scrape.pl $i;done
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do echo  perl ../scripts/tg4-scrape.pl "$i";done
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do perl ../scripts/tg4-scrape.pl "$i";done
-ls
-cat subtitles.tsv 
-cat subtitles.tsv |awk -F'\t' '{print $4}'
-cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'
-cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'|grep http
-cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'|grep http |awk '{print "http://web.archive.org/save/" $0 }' > /tmp/asd/spid
-wget -x -c $(cat subtitles.tsv |awk -F'\t' '{print $4 "\n" $5}'|grep http )
-find tgfour-a.akamaihd.net -type f
-find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done
-find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT
-find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT|grep -v TIMESTAMP
-find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT|grep -v TIMESTAMP|grep -v '\-\->'
-find tgfour-a.akamaihd.net -type f|while read i;do echo $i; cat $i;done|grep -v VTT|grep -v TIMESTAMP|grep -v '\-\->'|wc
-find tgfour-a.akamaihd.net -type f|xargs grep Viagra
-grep 5492281383001 videos.tsv 
-ls
-wc -l videos.tsv 
-grep ' class="prog-panel">' /tmp/instain |awk -F'"' '{print $2}'|sed -e 's/amp;//g;s/ /%20/g'|while read i;do perl ../scripts/tg4-scrape.pl "$i";done
-ls
-cd /tmp
-mkdir mill
-cd mill/
-unzip ~/Downloads/Who\ Want\'s\ to\ be\ a\ millionaire.zip 
-clamscan The\ Game/Millionaire.iso 
-mkdir cd
-mount -t iso9660 The\ Game/Millionaire.iso cd/
-sudo mount -t iso9660 The\ Game/Millionaire.iso cd/
-clamscan -r cd
-cd cd/
-ls
-wine Setup.exe 
-cd ..
-sudo umount cd
-rm -rf The\ Game/
-rm ~/Downloads/Who\ Want\'s\ to\ be\ a\ millionaire.zip 
-cd languagetool
-ls
-git branch
-git checkout master 
-git remote show
-git pull upstream master
-git diff
-vi languagetool-office-extension/src/main/resources/Linguistic.xcu
-git add languagetool-office-extension/src/main/resources/Linguistic.xcu
-git diff
-vi languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
-git diff
-vi languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
-git diff
-git add languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
-git commit -m merge
-git checkout irish 
-git merge master
-git push origin master 
-git push origin irish 
-git branch -a
-git branch -u upstream/master usmaster
-git branch -u upstream/master 
-git branch -u irish 
-git branch
-git checkout maori
-ls
-git pull upstream master
-git push origin maori 
-git checkout irish 
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
-git diff
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
-git commit -m _2
-git push origin irish 
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/people.txt 
-les languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/people.txt 
-less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/people.txt 
-less languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/people.txt 
-less languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-replace.txt
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-replace.txt
-mv languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-replace.txt languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
-git diff
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
-git commit -m more
-git push origin irish 
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace.txt 
-git commit -m more
-cat ~/Playing/msf-asr/scripts/normalisations.tsv|awk 'BEGIN{FS="\t";OFS="="}{print}' > languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
-less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
-cat ~/Playing/msf-asr/scripts/normalisations.tsv|awk 'BEGIN{FS="\t";OFS="="}{print $0}' > languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
-less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
-cat ~/Playing/msf-asr/scripts/normalisations.tsv|awk -F'\t' '{print $1"="$2}' > languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
-less languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/rules/ga/replace-prestandard.txt
-git commit -m more
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
-git commit -m more
-ls
-vi languagetool-language-modules/en/pom.xml 
-vi languagetool-language-modules/ga/pom.xml 
-mvn compile
-mvn compile -rf :language-ga
-less pom.xml 
-vi languagetool-language-modules/ga/pom.xml 
-git diff
-git add languagetool-language-modules/ga/pom.xml 
-git commit -m 'bump version'
-git push origin irish 
-mvn install
-git checkout master
-git diff
-git stash
-git checkout master
-git log
-git rebase -i
-git rebase --abort
-git log
-git remote show
-git checkout -B master upstream/master 
-git log
-git push origin master --force
-git checkout -b irishnew
-git cherry-pick d378610b84eb594b828f50a1b1bd32d389385503
-git status
-vi languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
-git cherry-pick --abort
-git checkout irish
-cp languagetool-core/src/main/resources/org/languagetool/resource/segment.srx languagetool-office-extension/src/main/resources/Linguistic.xcu /tmp/
-git checkout irishnew 
-git cherry-pick d378610b84eb594b828f50a1b1bd32d389385503
-cp /tmp/Linguistic.xcu languagetool-office-extension/src/main/resources/Linguistic.xcu
-cp /tmp/segment.srx languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
-git diff
-git add languagetool-core/src/main/resources/org/languagetool/resource/segment.srx
-git status
-git add languagetool-office-extension/src/main/resources/Linguistic.xcu
-git commit -m '[ga] add support for Irish'
-git cherry-pick 0f121d025ad62b0a11ca6bd5c404a97fc16ca52f
-git log
-git cherry-pick 590aa8393dcf6563e1b5c918104f4a55fe8ce36e
-git cherry-pick 9856721ba1396b9f9fbef3d5e5c91e21d92456d6
-git push origin irishnew 
-git checkout irish
-git merge -s ours irishnew 
-git push origin irish
-cd ../languagetool-ga-dicts/
-ls
-git branch
-git branch -a
-git checkout next-version 
-ls
-find . -type f
-cd src/main/resources/org/languagetool/resource/ga/hunspell/
-ls
-less ga_IE.dict 
-cd ..
-ls
-less rebuild-dicts.sh 
-sh rebuild-dicts.sh 
-less rebuild-dicts.sh 
-vi rebuild-dicts.sh 
-ls
-less tsv2tsv.pl 
-git diff
-sh rebuild-dicts.sh 
-bash rebuild-dicts.sh 
-ls
-cat pairs.tsv |perl tsv2tsv.pl 
-cat pairs.tsv |perl tsv2tsv.pl > tmp
-grep NoGen tmp 
-grep Gen tmp 
-less tmp 
-less ~/Playing/dissertation-data/tagging/irishfst-to-opennlp.pl 
-ls
-less rebuild-dicts.sh 
-vi tsv2tsv.pl 
-cat pairs.tsv |perl tsv2tsv.pl > tmp
-grep XML pairs.tsv 
-grep XML tmp 
-grep Event pairs.tsv 
-grep Event tmp 
-cat tmp 
-cat tmp |awk -F'\t' '{print $3}'|tr '+' '\n'
-cat tmp |awk -F'\t' '{print $3}'|tr '+' '\n'|sort|uniq
-less tmp 
-vi tsv2tsv.pl 
-cat tmp |perl -C7 -ane 'chomp;@l=split/\t/;$l[2]=~s/\+//;$l[2]=~s/\+/:/g;print join("\t", @l)."\n";'
-cat tmp |perl -C7 -ane 'chomp;@l=split/\t/;$l[2]=~s/\+//;$l[2]=~s/\+/:/g;print join("\t", @l)."\n";' > indic
-#java -cp ~/Playing/languagetool/languagetool-core/target/
-find ~/Playing/languagetool -name '*jar'
-find ~/Playing/languagetool -name '*jar'|grep languagetool
-java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar 
-java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder 
-java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder -i indic -info irish.info -o irish.dict 
-less indic 
-vi indic 
-java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder -i indic -info irish.info -o irish.dict 
-grep Num:Op indic 
-vi indic 
-java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.POSDictionaryBuilder -i indic -info irish.info -o irish.dict 
-java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.SynthDictionaryBuilder -i indic -info irish_synth.info -o irish_synth.dict 
-cp ~/Playing/languagetool/languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/filter-archaic.txt /home/jim/Playing/languagetool-ga-dicts/src/main/resources/org/languagetool/resource/ga/filter-archaic.txt
-git status
-git add filter-archaic.txt 
-git diff
-git add tsv2tsv.pl rebuild-dicts.sh 
-git status
-git add irish.dict 
-java -cp /home/jim/Playing/languagetool/languagetool-tools/target/languagetool-tools-4.1-SNAPSHOT-jar-with-dependencies.jar org.languagetool.tools.SynthDictionaryBuilder -i indic -info irish_synth.info -o irish_synth.dict 
-git add irish_synth.dict 
-git commit -m update
-ls
-vi ../../
-vi ../../../../../../../pom.xml 
-git add  ../../../../../../../pom.xml 
-git commit -m bump
-cd  ../../../../../../../
-mvn install
-unzip -l /home/jim/.m2/repository/io/github/jimregan/languagetool-ga-dicts/0.02-SNAPSHOT/languagetool-ga-dicts-0.02-SNAPSHOT.jar
-cd ../msf-asr/
-git diff
-git stash
-ls
-cd ~/Playing/irishfst-1/
-git remote show
-git pull elaine master
-git log
-git branch
-ls
-make
-cd ~
-config diff
-config add .bash_history .wget-hsts .config/kded_device_automounterrc 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs
-config commit -m more
-config branch
-config push origin desktop
-config checkout master
-config diff
-config add .wine/system.reg .wine/user.reg 
-config commit -m blah
-config checkout master
-config diff
-less .kde/share/config/kdeglobals 
-config add .kde/share/config/kdeglobals 
-config commit -m bla
-config checkout master
-config pull origin master
-config pull origin desktop
-git log
-config log
-config revert 9045ae794a9a6c8dd82ec5c978d109cea27d4d43
-config revert -m 1 9045ae794a9a6c8dd82ec5c978d109cea27d4d43
-config log
-config revert HEAD -m 1
-config log
-config revert -m 1
-config revert HEAD -m 1
-config log
-config reset --hard 9045ae794a9a6c8dd82ec5c978d109cea27d4d43
-config log
-config reset --hard HEAD~1
-config log
-config push origin desktop
-config checkout desktop
-config pull origin desktop
-config push origin desktop
-config merge master
-vi .wine/user.reg 
-git add .wine/user.reg 
-config add .wine/user.reg 
-vi .wine/system.reg 
-config add .wine/system.reg 
-config status
-config rm .kde/share/config/kdeglobals
-config status
-config commit -m mrg
-config status
-config push origin desktop
-config checkout master
-config pull origin master
-config log
-less .scratch/wget.nt 
-cat .scratch/wget.nt >> ~/tmp/sync/http-misc-20180105-1.nt
-config rm .scratch/wget.nt 
-config commit -m rm
-cd Playing/
-git clone github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition
-git clone github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/
-git clone https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/
-cd /tmp/
-git clone https://github.com/jimregan/dotfiles
-cd dotfiles/
-git pull origin
-git checkout labpc
-ls
-cd .scratch/
-ls
-git pull origin labpc 
-git pull origin 
-git fetch origin
-cd ..
-git merge desktop
-git merge origin/desktop
-git rm .bash_history .wget-hsts 
-git status
-git commit -m merge
-git push origin master 
-git push origin labpc 
-cd ../lium-diarization/
-ls
-find . -name MANIFEST.MF
-cat lib-class/META-INF/MANIFEST.MF 
-ls
-less build
-less build.xml 
-cat lib-class/META-INF/MANIFEST.MF 
-find . -name MANIFEST.MF
-ls
-less build.xml 
-less lium-diarization.iml 
-git status
-ls
-mkdir src/META-ING
-mkdir src/META-INF
-rmdir src/META-ING
-cp lib-class/META-INF/MANIFEST.MF src/META-INF/
-ant
-cd /tmp/
-git clone https://github.com/StevenLOL/LIUM.git
-cd LIUM/
-ls
-less go.sh 
-cp ~/Playing/msf-asr/TG4/astroblast/5548023299001.wav test_wav/
-sh go.sh 
-ls
-ls test_out/
-ls test_out/5548023299001/
-cat test_out/5548023299001/5548023299001.*
-file test_out/5548023299001/5548023299001.*
-less test_out/5548023299001/5548023299001.h.3.seg 
-less test_out/5548023299001/5548023299001.s.seg 
-less test_out/5548023299001/5548023299001.pms.seg 
-ls
-grep inputDesc *sh
-grep Diar *sh
-ls mat/
-ls
-java -jar LIUM_SpkDiarization-8.4.1.jar 
-java -jar LIUM_SpkDiarization-8.4.1.jar --sOutputFormat ctl test_wav/5548023299001.wav 
-sphinx_fe 
-sphinx_fe -mswav test_wav/5548023299001.wav 
-sphinx_fe -mswav -i test_wav/5548023299001.wav -o test_wav/5548023299001.wav.mfcc
-sphinx_fe -mswav test_wav/5548023299001.wav -o test_wav/5548023299001.wav.mfcc
-sphinx_fe -mswav yes -i test_wav/5548023299001.wav -o test_wav/5548023299001.wav.mfcc
-java -jar LIUM_SpkDiarization-8.4.1.jar --sOutputFormat ctl test_wav/5548023299001.wav 
-java -jar LIUM_SpkDiarization-8.4.1.jar --sOutputFormat ctl test_wav/5548023299001.wav.mfcc 
-java -jar LIUM_SpkDiarization-8.4.1.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
-ls
-less 5548023299001.out.seg 
-ls test_wav/
-java -jar ~/Playing/LIUM_SpkDiarization.script.v3.9/LIUM_SpkDiarization-3.9.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
-ls
-less 5548023299001.out.seg 
-rm 5548023299001.out.seg 
-java -jar ~/Playing/LIUM_SpkDiarization.script.v3.9/LIUM_SpkDiarization-3.9.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
-java -jar LIUM_SpkDiarization-8.4.1.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
-java -jar ~/Playing/LIUM_SpkDiarization.script.v3.9/LIUM_SpkDiarization-3.9.jar 
-java -jar LIUM_SpkDiarization-8.4.1.jar 
-cd ..
-git clone https://github.com/ahmetaa/lium-diarization.git
-cd lium-diarization/
-ls
-ant
-cd -
-cd LIUM/
-java -jar /tmp/lium-diarization/lium-diarization-full.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
-java -jar /tmp/lium-diarization/lium-diarization.jar --fInputDesc sphinx --sOutputFormat ctl test_wav/5548023299001.wav
-find /tmp/lium-diarization -name '*jar'
-java -jar /tmp/lium-diarization/lium-diarization.jar 
-unzip -l /tmp/lium-diarization/lium-diarization.jar 
-unzip -l /tmp/lium-diarization/lium-diarization.jar |less
-mkdir tmp
-cd tmp/
-unzip  /tmp/lium-diarization/lium-diarization.jar 
-ls
-less META-INF/MANIFEST.MF 
-wget https://fscs.hhu.de/languagetool/word2vec.tar.gz
-tar ztvf word2vec.tar.gz 
-tar zxvf word2vec.tar.gz 
-cd word2vec/
-ls
-less en/LICENSE 
-less de/LICENSE 
-less en/final_embeddings.txt 
-less en/dictionary.txt 
-less en/neuralnetwork/buy_by/W_fc1.txt 
-less en/neuralnetwork/buy_by/job_batch_eng.bash.394057.hpc-batch14.log 
-less en/neuralnetwork/buy_by/b_fc1.txt 
-ls
-cd ..
-rm -rf word2vec
-rm word2vec.tar.gz 
-cd ../../wolne-lektury-audio-corpus/
-less ~/robinson-crusoe.txt-01.txt
-head -n 20 ~/robinson-crusoe.txt-01.txt
-head -n 20 ~/robinson-crusoe.txt-01.txt >> audacity/robinson-crusoe.txt-01.txt 
-less audacity/robinson-crusoe.txt-01.txt 
-git diff
-git add specific-norms.tsv audacity/robinson-crusoe.txt-01.txt 
-git commit -m more
-head -n 2 ~/robinson-crusoe.txt-01.txt 
-head -n 2 ~/robinson-crusoe.txt-01.txt >> audacity/robinson-crusoe.txt-01.txt 
-git diff
-less ~/robinson-crusoe.txt-01.txt
-less audacity/robinson-crusoe.txt-01.txt 
-less ~/robinson-crusoe.txt-01.txt
-less audacity/robinson-crusoe.txt-01.txt 
-less ~/robinson-crusoe.txt-01.txt
-vi ~/robinson-crusoe.txt-01.txt
-head -n 22 ~/robinson-crusoe.txt-01.txt
-head -n 21 ~/robinson-crusoe.txt-01.txt
-head -n 21 ~/robinson-crusoe.txt-01.txt >> audacity/robinson-crusoe.txt-01.txt 
-git diff
-git add specific-norms.tsv audacity/robinson-crusoe.txt-01.txt 
-git commit -m more
-git diff
-git add specific-norms.tsv audacity/robinson-crusoe.txt-01.txt 
-git commit -m more
-tail -f m-words 
-mv /tmp/stefan-zeromski-doktor-piotr.aiff /tmp/stefan-zeromski-doktor-piotr.wav
-ffplay /tmp/stefan-zeromski-doktor-piotr.wav 
-tail -f m-words 
-tail -f c-words 
-cat /tmp/missing |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv  > utodo
-less todo/
-less utodo 
-cat u-words |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv  > utodo
-wc -l utodo 
-cat u-words |grep "^d'"|sed -e "s/^d'//" |perl ../filter.pl ../pron/ulster.tsv  
-cat u-words |perl ../filter.pl ../pron/ulster.tsv  
-cat u-words |perl ../filter.pl ../pron/ulster.tsv  > utodo
-wc -l utodo 
-cat tobeadded |perl ../filter.pl u-words  > utodo
-less utodo 
-wc -l utodo 
-less utodo 
-cat tobeadded |perl ../filter.pl m-words  > mtodo
-less mtodo 
-vi mtodo 
-head -n 151 utodo 
-head -n 151 utodo  |wc
-head -n 151 utodo  > utodo1
-tail -n 150 utodo  > utodo2
-less utodo1 
-less utodo2
-tail -f c-words 
-vi /tmp//asd//spid
-tail -f c-words 
-cat m-words >> ../pron/munster.tsv 
-cd ..
-git add pron/munster.tsv 
-git commit -m 'same as last, but munster'
-git log
-less pron/munster
-less pron/munster.tsv 
-cat pron/munster.tsv |grep '^[aouáúó]'
-cat pron/munster.tsv |grep '^[aouáúó]' > /tmp/vownmunst
-cat pron/munster.tsv |grep '^fh[aouáóú]' >> /tmp/vownmunst
-less /tmp/vownmunst 
-cat /tmp/vownmunst |awk '{print "n-" $1}'
-cat /tmp/vownmunst |awk '{print "n-" $1}'|aspell -a clean
-cat /tmp/vownmunst |awk '{print "n-" $1}'|aspell -a clean|less
-apt-cache search aspell
-sudo apt-get install libtext-aspell-perl 
-perl -e 'print 0.3 * 7 * 5.825'
-perl -e 'print 0.3 * 7 * 5.825 / 100'
-perl -e 'print 0.3 * 7 * (5.825 / 100)'
-perl -e 'print 0.3 * 7 * (5.825 / 100) * 30'
-perl -e 'print 0.3 * 7 * (18.41 / 100) * 30'
-perl -e 'print 2 * 7 * (18.41 / 100) * 30'
-perl -e 'print 0.5 * 7 * (18.41 / 100) * 30'
-tail -f c-words 
-cd -
-tail -f c-words 
-ls
-ls todo/
-grep '[xzv]' /tmp/newinlist2 
-grep '[xzv]' /tmp/newinlist2 > todo/corpus-todo
-vi /tmp/newinlist2 
-grep '[XZV]' /tmp/newinlist2 >> todo/corpus-todo
-vi /tmp/newinlist2 
-wc -l /tmp/newinlist2 
-less /tmp/newinlist2 
-grep '[0-9]' /tmp/newinlist2 
-grep '[jky]' /tmp/newinlist2 
-grep -i '[jky]' /tmp/newinlist2 
-grep -i '[sc]h' /tmp/newinlist2 
-tail -f c-words 
-cat tobeadded |perl ../filter.pl c-words  > ctodo
-cat ctodo 
-vi ctodo 
-ls
-cat c-words >> ../pron/connacht.tsv 
-cd ..
-git diff
-git add pron/connacht.tsv 
-git commit -m 'and connacht'
-cat prontmp/u-wordsm 
-cat prontmp/u-wordsm >> pron/ulster.tsv 
-git add pron/ulster.tsv 
-git commit -m 'missed'
-git push origin lexicon 
-cd prontmp/
-ls
-rm x*
-ls
-rm utodo* u-wordsm 
-ls
-rm tobeadded 
-ls
-rm u-words c-words 
-ls
-rm m-words 
-cat ctodo |perl ../filter.pl ../pron/connacht.tsv 
-rm ctodo 
-rm mtodo 
-ls
-ls todo/o
-ls todo/
-ls /tmp/newinlist2 
-less /tmp/newinlist2 
-split -l 150 /tmp/newinlist2 
-ls
-mv /tmp/newinlist2 .
-ls
-tail -f u-words 
-grep tófú ../pron/*
-echo tófú >> tobedone
-grep súisí ../pron/*
-echo tófú >> tobedone 
-echo súisí >> tobedone 
-vi tobedone 
-ls
-tail -f m-words 
-ls
-cat u-words >> ../pron/ulster.tsv 
-cat m-words >> ../pron/munster.tsv 
-cat c-words >> ../pron/connacht.tsv 
-cd ..
-git diff
-git add pron/*tsv
-git commit -m 'corpus additions'
-git format-patch -1
-less 0001-corpus-additions.patch 
-git log
-git revert a67b5868b905e00832b418bcb670a007056dec9f
-git diff
-git add scripts/normalisations.tsv pron/pronounce-as.tsv 
-git commit -m add
-cd prontmp/
-ls
-wc -l c-words newinlist2 
-cat c-words |awk -F'\t' '{print $2}' > cl
-paste newinlist2 cl
-paste newinlist2 cl >> ../pron/connacht.tsv 
-cat m-words |awk -F'\t' '{print $2}' > ml
-cat u-words |awk -F'\t' '{print $2}' > ul
-paste newinlist2 ml >> ../pron/munster.tsv 
-paste newinlist2 ul >> ../pron/ulster.tsv 
-cd ..
-git diff
-git add pron/*tsv
-git commit -m 'corpus words, with apostrophes'
-git push origin lexicon 
-wc -l pron/*tsv
-less ~/Downloads/emacs 
-less ~/Downloads/156096-en_h4w_rc.scenario 
-apt-cache search simon
-cd ~/Playing/
-git clone https://github.com/danielgtaylor/jpeg-archive.git
-cd jpeg-archive/
-ls
-make
-ls
-less README.md 
-sudo apt-get install build-essential autoconf pkg-config nasm libtool
-make
-sudo make install
-vi Makefile 
-make
-sudo make install
-cd /tmp/
-mkdir orig
-cd orig/
-unzip ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx 
-ls -al word/media/
-ls -al word/media/|wc
-cp word/media/* ../aorig/word/media/
-ls -al word/media/
-cd ../
-git clone git clone https://github.com/mozilla/mozjpeg.git
-git clone https://github.com/mozilla/mozjpeg.git
-cd mozjpeg/
-autoreconf -fiv
-./configure --with-jpeg8
-make -j 8
-sudo make install
-sudo ldconfig
-cd /tmp/asia/
-ls
-ls -al word/media/
-cp word/media/* /tmp/
-cd ..
-mkdir aorig
-cd aorig/
-ls
-ls ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx 
-unzip ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx 
-apt-cache search pngcrush
-for i in word/media/*png;do pngcrush $i;done
-sudo apt-get install pngcrush
-sudo apt-get install gifsicle
-man gifsicle
-gifsicle --batch --optimize=3 word/media/*gif
-ls -al word/media/
-man pngcrush
-for i in word/media/*png;do pngcrush -brute -f 0  $i;done
-for i in word/media/*png;do pngcrush -brute -f 0  $i $i.out.png;mv $i.out.png $i;done
-ls -al word/media/
-for i in word/media/*jpeg;do jpeg-recompress $i $i.tmp.jpg;mv $i.tmp.jpg $i;done
-for i in word/media/*gif;do optipng -clobber -o7 $i;done
-ls -al word/media/
-ls -al word/media/|wc
-rm word/media/*
-for i in word/media/*jpeg;do jpeg-recompress $i $i.tmp.jpg;mv $i.tmp.jpg $i;done
-ls -al word/media/
-for i in word/media/*png;do optipng -clobber -o7 $i;done
-gifsicle --batch --optimize=3 word/media/*gif
-ls -al word/media/
-gifsicle --batch --optimize=9 word/media/*gif
-ls -al word/media/
-ls
-find . -type f|zip ../pack.zip -@
-ls -la ../*docx ../pack.zip 
-ls -al file:///tmp/image26.gif
-ls -al /tmp/image26.gif
-ls
-find . -type f
-find . -type f|grep xml|while read i;do grep gif $i;done
-ls
-jpegoptim --max=90 --dest=opt
-sudo apt-get install jpegoptim 
-for i in word/media/*jpeg;do jpegoptim --max=90 --dest=opt $i;done
-man jpegoptim
-for i in word/media/*jpeg;do jpegoptim --max=50 $i;done
-tree
-find . -type f|zip ../pack1.zip -@
-ls -al ../pack* ../*docx
-mv ../pack1.zip ../squash3.docx
-zless ~/Downloads/entities.txt.gz 
-df
-rm ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar 
-df
-unzip ~/Downloads/walenty_20160418-TEI.zip 
-ls
-cd ..
-rm -rf ao
-ls
-rm *dict
-df
-rm -rf orig
-df
-ls
-rm *jpg
-ls
-rm image*
-ls
-df
-ls proc/
-mv proc/ ~/tmp/
-df
-ls
-rm -rf cmusphinx-*
-df
-cd ..
-git diff
-git status
-cd scripts/
-git status
-git diff brute-filter-by-language.pl
-mv brute-filter-by-language.pl ..
-git diff
-mv ../brute-filter-by-language.pl .
-git diff
-cat ../TG4/*/*.vtt
-cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME
-cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME|perl brute-filter-by-language.pl 
-cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME|perl brute-filter-by-language.pl |wc
-cat ../TG4/*/*.vtt|grep -v '\-\->'|grep -v VTT|grep -v X-TIME|perl brute-filter-by-language.pl > /tmp/all-tg4
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print}'
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print}'|wc
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq|wc
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq >>
-cat /tmp/all-tg4 |wc
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|wc
-rm ~/Downloads/Untitled\ presentation*
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq
-cat /tmp/all-tg4 |awk -F'\t' '($1=="en"){print $2}'|sort|uniq >> ../pron/pronounce-as.tsv 
-cd ..
-git add pron/pronounce-as.tsv 
-git commit -m todo
-git status
-git push origin master
-git push origin lexicon
-wget https://corkirish.files.wordpress.com/2014/11/msf-full-draft.pdf
-cd ~
-config branch 
-config branch -D desktop
-config checkout -b desktop
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs
-config commit -m new
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs
-config commit -m new
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs
-config commit -m new
-vi .scratch/chromium-tabs-trim 
-config add .scratch/chromium-tabs-trim 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs-trim 
-config add .scratch/chromium-tabs
-config commit -m more
-vi .scratch/chromium-tabs-trim 
-config add .scratch/chromium-tabs*
-config commit -m more
-vi .scratch/chromium-tabs-trim 
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs*
-config commit -m more
-vi .scratch/chromium-tabs-trim 
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs*
-config commit -m more
-vi .scratch/chromium-tabs-trim 
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs*
-config commit -m more
-vi .scratch/chromium-tabs-trim 
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs*
-config commit -m more
-vi .scratch/chromium-tabs-trim 
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs*
-config commit -m more
-vi .scratch/chromium-tabs-trim 
-python ~/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs*
-config commit -m more
-cd /tmp/
-ls
-unrar l ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar 
-cd Level3-Linux-x86-x86_64_Data/
-ls
-ls Managed/
-cd ..
-ls
-unrar l ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar |less
-./Level3-Linux-x86-x86_64.x86_64 
-chmod a+x ./Level3-Linux-x86-x86_64.x86_64 
-./Level3-Linux-x86-x86_64.x86_64 
-vi ~/Playing/languagetool/languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
-man pocketsphinx_continuous 
-man pocketsphinx_batch 
-echo babysitting | espeak --ipa
-echo Aurelia | espeak --ipa
-echo Arlene | espeak --ipa
-espeak -l
-espeak --list
-espeak 
-espeak -h
-espeak -v
-espeak --voices
-echo Arlene | espeak --ipa -v en_us
-echo Arlene | espeak --ipa -v en-us
-echo Artie | espeak --ipa -v en-us
-echo Art | espeak --ipa -v en-us
-ipa () { echo $1 | espeak --ipa -v en-us ; }
-ipa Alfred
-ipa Alfredo
-ipa Alfred
-ipa red
-ipa all
-ipa angelica
-ipa Ayers
-ipa barker
-ipa BMW
-gaipa () { echo $1 | espeak --ipa -v ga ; }
-gaipa bí
-gaipa em
-gaipa dabaldhiú
-gaipa blaec
-gaipa biongó
-ipa bicycles
-ipa Blanch
-ipa bleach
-ipa Blenheim
-cat ~/Playing/msf-asr/pron/pronounce-as.tsv 
-cat ~/Playing/msf-asr/pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print}'
-cat ~/Playing/msf-asr/pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print}' > /tmp/todolistl
-cat /tmp/todolistl |while read i;do ipa $i >> /tmp/todolistr;done
-ipa v.i.p
-ipa voila
-ipa wow
-ipa yea
-ipa yeah
-ipa ya
-ipa yah
-ipa ya
-ipa a
-ipa ah
-ipa A.A.A
-ipa Aurelia
-ipa Awrelia
-ipa Awrehlia
-ipa BMW
-ipa Bordeaux
-ipa boom
-ipa body
-espeak --ipa body
-espeak --ipa bond
-espeak --ipa bonkers
-ipa bonkers
-ipa bored
-ipa boss
-ipa bratwurst
-ipa cardamom
-ipa Carney
-ipa carol
-vi ~/Playing/languagetool/languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/placenames.txt 
-ipa cannelloni
-ipa cancelation
-cat ~/Playing/msf-asr/pron/pronounce-as.tsv |awk -F'\t' '(NF==3){print $3 "."}'
-unzip ~/Downloads/LUNA-WOZ.PL.zip 
-cd ZNIZKI/
-ls
-cd M/
-ls
-cd 10023_in/
-ls
-less 10023_in.trs 
-less 10023_attvalue.xml 
-less 10023_chunks.xml 
-less 10023_words.xml 
-less 10023_turns.xml 
-less 10023_in.trs 
-cd ..
-ls
-less 20104_in/20104_in.trs 
-ffplay 20104_in/20104_in.wav 
-cd ..
-ls
-r, =rf ZNIZKI/
-rm -rf ZNIZKI/
-cd JAKDOJECHAC/
-ls
-cd  F/
-ls
-less 00083_in/00083_in.trs 
-ffplay 00083_in/00083_in.wav 
-cd ..
-rm -rf JAKDOJECHAC/
-unzip ~/Downloads/PolDiLemma_vrt.zip 
-less 94778/vrt/DIGSTDR000026_0028.vrt 
-less 94778/vrt/DIGSTDR000026_0001.vrt 
-unzip ~/Downloads/poldilemma-tool.zip 
-tar zxvf ~/Downloads/PL.tgz 
-cd PL/
-ls
-less LICENSE.txt 
-less README.md 
-ls
-less train.conllu 
-less train.conllu 
-wc train.conllu 
-cd ../TG4/
-cd WA
-cd wac
-ls
-grep Sydney *
-grep Sydney *vtt
-less 5664283638001.vtt
-less 5667149239001.vtt
-less 5661130310001.vtt
-less 5464465742001.vtt
-less 5638160958001.vtt
-less 5646046096001.vtt
-less 5646162216001.vtt
-less 5653812279001.vtt
-less 5653928032001.vtt
-cd ..
-grep Sydney */*.vtt
-grep cancellation */*.vtt
-grep manor */*.vtt
-ls
-ls /var/lib/docker/
-sudo ls /var/lib/docker/
-sudo ls /var/lib/docker/volumes
-sudo ls /var/lib/docker/containers/
-sudo tree /var/lib/docker/containers/
-sudo tree /var/lib/docker/
-sudo tree /var/lib/docker/|less
-df
-cat ../pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print}'
-cat ../pron/pronounce-as.tsv |awk -F'\t' '(NF==1){print "[[" $0 "]]"}'
-tail -f /tmp/todolistr 
-vi /tmp/todolistr 
-paste /tmp/todolistl /tmp/todolistr 
-cd /tmp/asd/
-sh ~/scripts/grab-logged.sh spid
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20171217-1.nt 
-ls
-rm -rf web.archive.org/
-rm *
-cd ..
-git diff
-git add pron/*.tsv
-git commit -m 'some English words'
-git branch
-git log
-git push origin master
-less abair-scrape.pl 
-perl abair-scrape.pl 
-perl abair-scrape.pl >> pron/ulster.tsv 
-perl abair-scrape.pl >> pron/connacht.tsv 
-perl abair-scrape.pl >> pron/munster.tsv 
-git diff
-cat TG4/all.lc.clean 
-cp TG4/all.lc.clean /tmp/
-grep abaile TG4/*/*vtt
-less TG4/gearoidnagaisce/5650041418001.vtt
-grep abalta TG4/*/*vtt
-less TG4/catahata/5616261058001.vtt
-grep abhar TG4/*/*vtt
-grep Abhar TG4/*/*vtt
-less TG4/olivia/5532176117001.vtt
-cd TG4/
-cd scripts/
-svn diff
-grep Beak videos.tsv 
-ls
-rm list-5*
-ls
-clear
-reset
-ls
-tail videos.tsv 
-tail videos.tsv |awk -F'\t' '{print $6}'
-tail videos.tsv |awk -F'\t' '{print $6}'|while read i;do grep $i wayback-subs.txt || echo $i >> /tmp//asd/todo;done
-tail videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); ls ../*/$id.vtt ../*/$id.wav;done
-grep 5686448376001 videos.tsv 
-grep 'https://tgfour-a.akamaihd.net/rtmp_uds/1290862567001/201712/2698/1290862567001_5686655610001_5686448376001.mp4?pubId=1290862567001&videoId=5686448376001' wayback-video.txt 
-grep 5453024478001 videos.tsv 
-grep 'https://tgfour-a.akamaihd.net/rtmp_uds/1290862567001/201712/1668/1290862567001_5686488576001_5453024478001.mp4?pubId=1290862567001&videoId=5453024478001' wayback-video.txt 
-grep 5686585473001 wayback-video.txt 
-grep 5686585473001 videos.tsv 
-svn diff
-cd ..
-svn stat
-svn add harveybeaks/5679993716001.wav 
-svn add scripts/proc_mp4.sh 
-svn ci -m add
-svn status
-grep 5453024478001 scripts/videos.tsv 
-mv scripts/5453024478001.wav garfield/
-svn add garfield/5453024478001.wav 
-grep 5686448376001 scripts/videos.tsv 
-mv scripts/5686448376001.wav niko/
-svn add niko/5686448376001.wav 
-svn ci -m more
-svn status
-grep 5454441643001 scripts/videos.tsv 
-#rm scripts/5454441643001.wav 
-rm scripts/5454441643001.wav 
-ls scripts/*wav
-grep 5686738549001 scripts/videos.tsv 
-mv scripts/5686738549001.wav harveybeaks/
-svn add harveybeaks/5686738549001.wav 
-ls harveybeaks/
-ls scripts/*wav
-grep 5686585473001 scripts/videos.tsv 
-mv scripts/5686585473001.wav harveybeaks/
-svn add harveybeaks/5686585473001.wav 
-grep 5686631164001 scripts/videos.tsv 
-mv scripts/5686631164001.wav qpootle/
-svn add qpootle/5686631164001.wav 
-mkdir teg
-cd teg/
-wget http://www.teg.ie/_fileupload/pdf/teagasc/B1/12_script.pdf
-pdftotext 12_script.pdf 
-less 12_script.txt 
-pdftohtml 12_script.pdf 
-ls
-rm *png
-ls
-lynx -dump 12_script.html 
-lynx -dump 12_scripts.html 
-ls
-rm *html
-ls
-less 12_script.
-less 12_script.txt 
-wget http://vifax.maynoothuniversity.ie/wp-content/uploads/2017/10/20110215ard.pdf
-pdftotext 20110215ard.pdf 
-less 20110215ard.txt 
-vi ../../scripts/normalisations.tsv 
-man aspell
-cat /tmp/missing|aspell clean
-cat /tmp/missing|aspell -l ga clean
-cat /tmp/missing|aspell clean -l ga
-man aspell
-cat /tmp/missing|aspell -a -l ga clean
-cat /tmp/missing|aspell -a -l ga clean|less
-cat /tmp/missing|aspell 
-cat /tmp/missing|aspell -a -l ga --sug-mode
-cat /tmp/missing|aspell -a -l ga --sug-mode normal
-man aspell
-aspell -l ga -c /tmp/missing
-man aspell
-aspell -l ga list /tmp/missing
-cat /tmp/missing|aspell -l ga list 
-cat /tmp/missing|aspell -l ga list  > /tmp/missing.aspell
-cat /tmp/missing |perl ../../filter.pl /tmp/missing.aspell 
-cat /tmp/missing |perl ../../filter.pl /tmp/missing.aspell |less
-cat /tmp/missing |perl ../../filter.pl /tmp/missing.aspell > /tmp/almost-correct
-vi /tmp/almost-correct 
-grep '\-' /tmp/almost-correct 
-cat /tmp/almost-correct |awk '{print $0 " ."}'
-cat /tmp/almost-correct |awk '{print $0 " ."}' > /tmp/topaste
-cd ,,
-ls 
-cd ..
-mkdir prontmp
-cd prontmp/
-split -l 200 /tmp/topaste 
-ls -al 
-split -l 180 /tmp/topaste 
-ls -al 
-split -l 150 /tmp/topaste 
-ls -al 
-cat /tmp/almost-correct |perl ../filter.pl 
-cat /tmp/almost-correct |perl ../filter.pl ../pron/ulster.tsv 
-cat /tmp/almost-correct |perl ../filter.pl ../pron/ulster.tsv |less
-cat /tmp/almost-correct |perl ../filter.pl ../pron/ulster.tsv |awk '{print $0 " ."}' > /tmp/topaste
-ls
-rm *
-split -l 150 /tmp/topaste 
-ls
-ls -al
-ls
-mv xab xaa
-mv xac xaa
-mv xad xaa
-mv xae xaa
-ls
-mv xaf xaa
-grep z *
-mv xag xaa
-mv xah xaa
-mv xai xaa
-ls
-ls|wc
-mv xaj xaa|
-mv xaj xaa
-cat xaa 
-ls
-mv xak xaa
-grep "'" /tmp/topaste 
-grep "'" /tmp/topaste |less
-less xaa 
-grep "'" /tmp/topaste |less
-vi xaa
-cat xaa |sed -e 's/ \.$//'
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-mv xal xaa
-grep "'" xal
-grep "'" xaa
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-mv xam xaa 
-for i in x*;do grep "'" $i;done
-grep olivia *
-vi xbc 
-grep '\-' /tmp/topaste 
-grep '\-' /tmp/topaste |less
-less /tmp/topaste 
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-mv xan xaa 
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-vi /tmp/gal 
-ls
-mv xao xaa
-grep "'" xao
-grep "'" xaa
-for i in x*;do grep "'" $i && echo $i;done
-vi xbg 
-mv xap xaa
-ls
-mv xaq xaa 
-ls|wc
-grep "'" xaa
-grep "'" xar
-grep "'" xas
-grep "'" xat
-grep "'" xau
-grep "'" xav
-grep "'" xaw
-mv xar xaa 
-mv xas xaa 
-ls|wc
-mv xat xaa 
-tail xaa
-mv xau xaa 
-mv xav xaa 
-mv xaw xaa 
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-mv xax xaa 
-grep "'" xaa
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-mv xay xaa 
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-grep , *
-mv xaz xaa 
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-mv xba xaa 
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-mv xbb xaa 
-cat xaa |sed -e 's/ \.$//' > /tmp/gal
-ls
-perl ~/mech.pl u xbc > /tmp/htmout 
-perl ~/mech.pl u xbc 
-perl ~/mech.pl c xbc && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv 
-perl ~/mech.pl m xbc && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/munster.tsv 
-\perl ~/mech.pl u xbc && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/ulster.tsv 
-rm xbc xaa 
-ls
-for i in xb*;do perl ~/mech.pl u $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/ulster.tsv ;sleep 2;done
-for i in xb*;do perl ~/mech.pl c $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv ;sleep 2;done
-for i in xb*;do perl ~/mech.pl m $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/munster.tsv ;sleep 2;done
-ls
-cat *not-c
-cat *not-c|sort|uniq
-cat *not-c|sort|uniq|grep -v ' '
-cat *not-c|sort|uniq|grep -v ' '|wc
-cat *not-c|sort|uniq|grep -v ' ' > doc
-split -l 150 doc
-for i in xa*;do perl ~/mech.pl c $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv ;sleep 2;done
-cat m-not-c
-vi m-not-c
-for i in m-not-c;do perl ~/mech.pl c $i && perl ~/Playing/msf-asr/abair-scrape.pl  >> ~/Playing/msf-asr/pron/connacht.tsv ;sleep 2;done
-cat u-not-c
-rm m-not-c u-not-c 
-ls
-cat c-not-u 
-cat [cm]-not-u |sort|uniq
-rm c-not-u m-not-u 
-ls
-cat [cu]-not-m |sort|uniq
-wc -l z-words 
-rm z-words 
-ls
-cp /tmp/tobeadded .
-vi tobeadded 
-grep -i x tobeadded 
-grep -i x tobeadded |grep \-
-grep -i x tobeadded |grep \- > xhyph
-grep -i x tobeadded |grep -v \- 
-grep -i x tobeadded |grep -v \- > otherx
-vi tobeadded 
-grep '\-' tobeadded 
-grep '\-' tobeadded > hyphens
-vi tobeadded 
-wc -l hyphens 
-less hyphens 
-split -l 150 hyphens 
-ls
-for i in xa[a-z]; do perl ~/mech.pl u $i && perl ../abair-scrape.pl >> ../pron/ulster.tsv ;done
-for i in xa[a-z]; do perl ~/mech.pl m $i && perl ../abair-scrape.pl >> mhyph ;done
-for i in xa[a-z]; do perl ~/mech.pl c $i && perl ../abair-scrape.pl >> chyph ;done
-ls
-rm xa*
-ls
-mkdir todo
-mv chyph vwords xhyph otherx mhyph todo/
-ls
-mv uhyph hyphens todo/
-ls
-split -l 150 tobeadded 
-ls
-for j in u m c;do for i in x*; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
-for j in u ;do for i in utodo]12; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
-for j in u ;do for i in utodo[12]; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-wordsm ;done;done
-for j in u m c;do for i in x*; do perl ~/mech.pl $j $i && perl ../abair-scrape.pl >> $j-words ;done;done
-cd ..
-cd ~/Playing/
-git clone https://github.com/cmusatyalab/openface.git
-cd /tmp
-unrar ~/Downloads/ZombieApocaplypse-Level3-Linux-x86-x86_64.rar 
-cd ~/Playing/openface/
-ls
-python setup.py install
-sudo python setup.py install
-ls
-less README.md 
-ls
-docker build/
-docker build
-docker build Dockerfile 
-ls 
-docker build .
-cd ~/tmp/foo/
-ls
-vi /tmp/inf
-cat /tmp/in
-cat /tmp/inf
-lynx -dump https://postimg.org/image/chjr7t7cl/
-lynx -dump https://postimg.org/image/chjr7t7cl/|grep dl=1
-lynx -dump https://postimg.org/image/chjr7t7cl/|grep dl=1|awk '{print $2}'
-#cat /tmp/inf|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'); 
-. ../sourceme 
-cat /tmp/inf|while read i;do img=$(lynx -dump $i|grep dl=1|awk '{print $2}'); procimg $i $img;doimg $img https://postimg.org/gallery/1pxv7eo2u/;done
-ls
-grep https://postimg.org/gallery/1pxv7eo2u/ fash-rdf-links 
-grep https://postimg.org/gallery/1pxv7eo2u/ fash-rdf-links > /tmp/tocp
-scp /tmp/tocp jimregan:/tmp
-ls
-rm -rf s10.postimg.org/
-less fash-rdf-links 
-mv fash-rdf-links ../sync/unsorted-triples-20171226-1.nt 
-ls
-vi spid
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20171217-1.nt 
-rm spid
-rm spid.log 
-ssh jimregan
-tail -f corpus/ga.txt
-git status
-git add Lib/corpuscrawler/crawl_ga.py 
-git commit -m 'Irish Times'
-git push mine irish-more 
-vi Lib/corpuscrawler/crawl_ga.py
-git add Lib/corpuscrawler/crawl_ga.py
-git commit -m 'remove comment'
-git push mine irish-more 
-tail -f corpus/ga.txt
-git checkout master
-git add Lib/corpuscrawler/crawl_ga.py 
-git commit -m 'CHG crawler'
-git log
-git checkout master
-git pull origin master 
-git push mine master 
-git checkout -b ga-chg
-git cherry-pick 29ecb76d4744b05546eeab7b94a1828a6668b804
-git log
-git push mine ga-chg 
-tail -f corpus/ga.txt
-ls -al corpus/ga.txt
-. ~/tmp/sourceme 
-doinstain 
-less ~/Downloads/en-pl.txt 
-doinstain 
-rm ~/Pictures/Screenshot_2017*
-doinstain 
-ls /tmp//proc/
-rm /tmp/proc/*
-cd /tmp/proc/
-ls
-for i in 2*;do mv $i $(echo $i|awk -F'?' '{print $1}');done
-ls
-doinstain 
-cat ~/Downloads/wget.nt.txt >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm ~/Downloads/wget.nt.txt 
-cat ~/Downloads/scratch.nt.txt 
-cat ~/Downloads/scratch.nt.txt  >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm ~/Downloads/scratch.nt.txt  
-mv ~/Downloads/scratch.txt /tmp/instain 
-doinstain 
-cat ~/Downloads/wget.nt.txt >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm ~/Downloads/wget.nt.txt 
-doinstain 
-cd /
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish
-cd tmp/
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora/asr_data_irish
-cd asr_data_irish/
-ls
-tree
-ls
-cd data/
-less ../README.txt 
-ls
-less spk2gender 
-ls
-less NOTES 
-less seanchas_rann_na_feirste/fngcf_seanchas_rann_na_feirste/corpusfile.txt 
-ls
-ls mul_mo_sceal_fein/corpusfile.txt 
-less mul_mo_sceal_fein/corpusfile.txt 
-ls
-less synthesis_recordings/apm_an_punk/README.txt 
-less synthesis_recordings/apm_an_punk/import.sh 
-less synthesis_recordings/apm_an_punk/corpusfile.txt 
-ls
-less synthesis_recordings/apm_an_punk/corpusfile.txt 
-less synthesis_recordings/apm_an_punk/README.txt 
-ls
-find . -name 'corpusfile.txt'
-less ./comhra/ifri0001_spk4/corpusfile.txt
-less ./mul_mo_sceal_fein/corpusfile.txt
-cat ./mul_mo_sceal_fein/corpusfile.txt
-cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'
-cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'|tr ' ' '\n'
-cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'|tr ' ' '\n'|aspell -a --lang ga
-cat ./mul_mo_sceal_fein/corpusfile.txt|awk -F'\t' '{print $4}'
-cat ./mul_mo_sceal_fein/corpusfile.txt
-cat ./mul_mo_sceal_fein/corpusfile.txt|less
-cd ~/Playing/msf-asr/
-ls
-cd json/
-ls
-cd ..
-ls
-ls data/
-ls data/train/
-ls data/train/text 
-less data/train/text 
-ls caighdean/
-cat raw-text/MSF_chapter_*
-cd ..
-ls
-cd msf-asr/
-ls
-less scripts/normalise.pl 
-cat raw-text/MSF_chapter_1.txt |perl scripts/normalise.pl 
-cat raw-text/MSF_chapter_1.txt 
-cat raw-text/MSF_chapter_1.txt |perl scripts/normalise.pl 
-clear
-cat raw-text/MSF_chapter_1.txt |perl scripts/normalise.pl 
-cat MSF_chapter_1.txt.norm
-ls
-ls caighdean/
-grep cruinnithe caighdean/MSF_chapter_1.pairs 
-less caighdean/MSF_chapter_1.pairs 
-cat caighdean/MSF_chapter_1.pairs 
-cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 == $2){print}'
-cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print}'
-cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'
-cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep $i scripts/normalisations.tsv ;done
-cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv ;done
-cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 1.norm.filt ;done
-cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 2.norm.filt ;done
-less 2.norm.filt 
-cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i > 2.norm.filt ;done
-less 2.norm.filt 
-rm 2.norm.filt 
-cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 2.norm.filt ;done
-less 2.norm.filt 
-rm 2.norm.filt 
-cat caighdean/MSF_chapter_2.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 2.norm.filt ;done
-cat 2.norm.filt 
-rm 1.norm.filt 
-cat caighdean/MSF_chapter_1.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 1.norm.filt ;done
-cat 1.norm.filt 
-cat caighdean/MSF_chapter_3.pairs |awk -F' => ' '($1 != $2){print $1"\t"$2}'|while read i;do grep "$i" scripts/normalisations.tsv || echo $i >> 3.norm.filt ;done
-cat 3.norm.filt 
-cd Playing/msf-asr/
-cat pron/ulster.tsv scripts/aspell-expander.pl 
-cat pron/ulster.tsv |perl scripts/aspell-expander.pl 
-cat pron/ulster.tsv |perl scripts/aspell-expander.pl |less
-echo ˈ|hexdump
-cat pron/ulster.tsv |perl scripts/aspell-expander.pl |less
 cat pron/ulster.tsv |perl scripts/aspell-expander.pl > pron/ulster-exp.tsv
 git add scripts/aspell-expander.pl pron/ulster-exp.tsv 
 cat pron/munster.tsv |perl scripts/aspell-expander.pl > pron/munster-exp.tsv
@@ -1998,3 +382,1619 @@ config commit -m more
 python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
 config add ~/.scratch/chromium-tabs* .bash_history 
 config commit -m more
+kwin
+config add .bash_history 
+config commit -m more
+python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
+config add ~/.scratch/chromium-tabs* .bash_history 
+config commit -m more
+df
+config status
+config diff
+config stash
+ps aux|grep kde
+ps aux|grep X
+vi mxnet.pl
+pdl
+cd Playing/mxnet/
+ls
+cd perl-package/
+ls
+cd AI-MXNet
+ls
+make
+sudo make install
+pdl
+ls
+perl Makefile.PL 
+make 
+sudo make install
+pdl
+cd ..
+make
+ls
+cd AI-NNVMCAPI/
+ls
+sudo make install
+sudo make 
+sudo make install
+cd ../AI-MXNetCAPI/
+ls
+make
+sudo make install
+perl Makefile.PL 
+make
+sudo make install
+cd ../AI-NNVMCAPI/
+perl Makefile.PL 
+make
+sudo make
+sudo make install
+pdf
+pdl
+less wyspa-skarbow.txt-01.txt 
+cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/text/run-aeneas.sh .
+ls
+less run-aeneas.sh 
+less /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pairs.tsv 
+#for i in 1 2 3 4 5 6;do sh run-aeneas.sh ; echo wyspa-skarbow.txt-0$i.
+less /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pairs.tsv 
+for i in 1 2 3 4 5 6;do sh run-aeneas.sh wyspa-skarbow.txt-0$i.wav wyspa-skarbow.txt-0$i.txt;done
+audacity 
+sudo apt-get install gparted
+gparted
+sudo gparted
+cd Playing/
+ls
+ls -al
+sudo chown -R jim.jim .
+df
+cd /tmp/
+mkdir mnt
+cd mnt/
+mkdir 3
+sudo mount -t ext4 /dev/sda3 3
+ls  3/
+ls  3/home/
+ls  3/home/mark/
+ls  3/home/mark/Public/
+ls  3/home/mark/Pictures/
+ls  3/home/mark/Music/
+ls  3/home/mark/Documents/
+ls  3/home/mark/Desktop/
+ls  3/home/mark/Videos/
+find  3/home/mark/ -type f
+mkdir 2
+sudo mount -t ntfs /dev/sda2 2
+sudo mount -t ntfs -o ro /dev/sda2 2
+ls 2
+ls 2/Documents\ and\ Settings
+ls 2/Documents\ and\ Settings/Default\ User
+ls 2/Documents\ and\ Settings/Default\ User/My\ Documents
+ls 2/Documents\ and\ Settings/Default\ User/My\ Documents/My\ Pictures
+find 2/Documents\ and\ Settings/Default\ User/ -type f
+find 2/Documents\ and\ Settings/Mark/ -type f
+cd ..
+sudo umount 2
+sudo umount 3
+mount
+sudo umount /dev/sda3
+sudo umount /dev/sda2
+ls
+cd mnt/
+ls
+sudo mount -t ext4 /dev/sda1 3
+ls 3
+cd 3
+mkdir Playing
+ls -al
+cd ..
+chmod a+rwx 3
+sudo chmod a+rwx 3
+cd 3
+ls
+mkdir Playing
+cd Playing/
+ls
+cd ..
+mkdir Diss
+cd Diss/
+mv ~/Corpora/ .
+ls
+ls ~
+mv ~/gd.zip .
+mv ~/20171109\ d* .
+cd ..
+ls
+rmdir Playing/
+mv ~/Playing/ .
+ls
+cd Playing/
+ls
+cd ..
+ls
+cd desktop/
+ls
+mv ~/tmp/ .
+ls ~/Playing/
+tree ~/Playing/
+ls
+cd ../Playing/
+lls
+ls
+rsync -zvh /home/jim/Playing/ .
+ls
+rsync -zvh /home/jim/Playing/ .
+cd ..
+rsync -zvh /home/jim/Playing/ Playing
+rsync -azvh /home/jim/Playing/ Playing
+ls
+cd Playing/
+ls
+fdupes -r . ~/Playing/
+cd /tmp/mnt/3/Playing/
+ls
+ls
+mkdir desktop
+cd desktop/
+mkdir Downloads
+cd Downloads/
+mv ~/Downloads/* .
+ls ~/Documents/
+ls
+cd ..
+ls
+cd ~
+cd -
+ls ~
+mv ~/en-es-t1 .
+mv ~/ga-multiwords .
+mv ~/gd.txt .
+ls ~/logs/
+ls ~/cmusphinx/
+ls ~/bitext/
+mv ~/bitext/ .
+ls
+ls ~/Videos/
+perl -e 'print 1 << 0'
+perl -e 'print 1 << 1'
+perl -e 'print 1 << 2'
+ls ../Laptop/
+ls
+cd ../Laptop/
+ls
+cd Playing/
+ls
+cd ..
+ls
+find . -type f|grep -v tg4
+cd Playing/
+cd tg4-files/
+ls
+for i in [b-d]* [gr]*txt;do echo $i;done
+for i in [b-d]* [gr]*txt;do cat $i|awk -v "f=$i" '{print f "\t" $0}';done
+for i in [b-d]* [gr]*txt;do cat $i|awk -v "f=$i" '{print f "\t" $0}';done > /tmp/tg4
+ls
+ls
+cd ../
+cd ../Laptop/
+du .
+tree .cpan/build/
+cd ../
+ls
+cd Playing/
+ls
+cd Corpora/
+svn stat
+ls -al
+du .
+cd ../msf-asr/TG4/
+ls
+svn stat
+svn revert toirbeir
+svn stat
+svn revert saolfaoishraid niko lurgan2k17
+svn stat
+svn revert toirbeir/5680586501001.vtt toirbeir/5680586501001.wav 
+svn stat
+svn revert lurgan2k17/5689475790001.vtt lurgan2k17/5689475790001.wav niko/5686448376001.vtt niko/5686448376001.wav saolfaoishraid/5387551832001.vtt saolfaoishraid/5387551832001.wav saolfaoishraid/5387555696001.vtt saolfaoishraid/5387555696001.wav saolfaoishraid/5387560759001.vtt saolfaoishraid/5387560759001.wav saolfaoishraid/5387561674001.vtt saolfaoishraid/5387561674001.wav saolfaoishraid/5387564196001.vtt 
+ls
+svn up
+grep 5470849233001 scripts/videos.tsv 
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3696/1290862567001_7409189e-eafa-449e-b128-aadc577ee45f.vtt?pubId=1290862567001&videoId=5470849233001'  -O garfield/5470849233001.vtt
+cd garfield/
+fdupes -r .
+grep 5322948697001 ../scripts/videos.tsv 
+grep 5416347428001 ../scripts/videos.tsv 
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2164/1290862567001_854408f2-9b8d-432c-9ca7-7abf91999fbb.vtt?pubId=1290862567001&videoId=5416347428001' -O 5416347428001.vtt 
+svn diff
+grep 5469256654001 ../scripts/videos.tsv 
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/1336/1290862567001_4c9bec36-151b-481f-b9e6-b926dc4ee074.vtt?pubId=1290862567001&videoId=5469256654001'  -O 5469256654001.vtt
+fdupes -r .
+less 5469256654001.vtt 
+ffplay 5469256654001.wav 
+less 5469256654001.vtt 
+ffplay 5311422984001.wav 
+grep 5413626562001 ../scripts/videos.tsv 
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3077/1290862567001_e309d881-5ea3-45ea-a005-19940311136e.vtt?pubId=1290862567001&videoId=5413626562001' -O 5413626562001.vtt
+fdupes -r .
+svn status
+svn add 5413626562001.vtt 5469256654001.vtt 5470849233001.vtt
+svn ci -m replacements
+cd ..
+cd catahata/
+grep 5566610317001 ../scripts/videos.tsv 
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/249/1290862567001_1023934b-fa71-49e9-8985-d4a991340c5b.vtt?pubId=1290862567001&videoId=5566610317001' -O 5566610317001.vtt
+fdupes -r .
+fdupes .
+svn status
+rm add 5566610317001.vtt 
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/249/1290862567001_1023934b-fa71-49e9-8985-d4a991340c5b.vtt?pubId=1290862567001&videoId=5566610317001' -O 5566610317001.vtt
+svn add 5566610317001.vtt 
+svn ci -m replacement
+cd ..
+ls
+ls unsorted-march/*wav
+svn mv unsorted-march/WCL058117_gle.vtt\?1488763465 rosnarun/5324368948001.vtt
+svn mv unsorted-march/5324368948001.wav rosnarun/
+svn mv unsorted-march/WCL058117_eng.vtt\?1488763465 rosnarun/5324368948001.e.vtt
+svn mv unsorted-march/5325602815001.wav dinotrain/
+svn mv unsorted-march/WCL009923_gle.vtt\?1488760515 dinotrain/5325602815001.vtt
+svn mv unsorted-march/5325713778001.wav dinotrain/
+svn mv unsorted-march/WCL009956_gle.vtt\?1488760431 dinotrain/5325713778001.vtt 
+svn mv unsorted-march/5325760957001.wav dinotrain/
+svn mv unsorted-march/WCL009958_gle.vtt\?1488760340  dinotrain/5325760957001.vtt 
+svn mv unsorted-march/5334153054001.wav dinotrain/
+svn mv unsorted-march/WCL009960_gle.vtt\?1488759905 dinotrain/5334153054001.vtt 
+svn ci -m sort
+ls unsorted-march/*wav
+svn mv unsorted-march/5334369491001.wav dinotrain/
+svn mv unsorted-march/WCL011805_gle.vtt\?1488759867 dinotrain/5334369491001.vtt 
+svn mv unsorted-march/5337642327001.wav garfield/
+svn status
+svn ci -m sort
+curl 'http://web.archive.org/web/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/2529/1290862567001_bdbc5e24-cf9a-4327-a701-17dfc154ae23.vtt?pubId=1290862567001&videoId=5337642327001'
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201702/2529/1290862567001_bdbc5e24-cf9a-4327-a701-17dfc154ae23.vtt?pubId=1290862567001&videoId=5337642327001' -O garfield/5337642327001.vtt
+svn add garfield/5337642327001.vtt
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/450/1290862567001_42bc084b-0c22-4995-9e6c-fbb0d8fd3120.vtt?pubId=1290862567001&videoId=5341752727001' -O garfield/5341752727001.vtt
+ls unsorted-march/5341752727001.wav
+svn mv unsorted-march/5341752727001.wav garfield/
+svn add garfield/5341752727001.vtt 
+svn ci -m 'sort/add subtitles that are still available'
+curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5331547175001&pubId=1290862567001&videoId=5331516079001'
+ls unsorted-march/*wav
+ls unsorted-march/*wav|awk -F/ '{print $2}'
+ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
+ls
+mkdir costa
+svn add costa/
+svn mv unsorted-march/5341799685001.* costa/
+less costa/5341799685001.vtt 
+ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
+svn mv unsorted-march/5344003543001.* rosnarun/
+less rosnarun/5344003543001.vtt 
+wget 'http://web.archive.org/web/20170305152056/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/861/1290862567001_57821653-2d2a-4c4a-8f81-50c2d2a794cb.vtt?pubId=1290862567001&videoId=5344003543001' -O rosnarun/5344003543001.e.vtt
+svn add rosnarun/5344003543001.e.vtt
+svn status
+svn ci -m 'sort/add'
+ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
+svn mv unsorted-march/5344228050001.wav garfield/
+#svn mv unsorted-march/WCL045618_gle.vtt\?1488751116 garfield/5344228050001.vtt 
+diff -u unsorted-march/WCL045618_gle.vtt\?148875*
+svn mv unsorted-march/WCL045618_gle.vtt\?1488751116 garfield/5344228050001.vtt 
+svn rm unsorted-march/WCL045618_gle.vtt\?1488757146 
+svn mv unsorted-march/5345367059001.wav dinotrain/
+svn mv unsorted-march/WCL011809_gle.vtt\?1488759608 dinotrain/5345367059001.vtt 
+svn mv unsorted-march/5345379358001.wav dinotrain/
+svn mv unsorted-march/WCL011810_gle.vtt\?1488759568 dinotrain/5345379358001.vtt 
+svn ci -m sort
+svn mv unsorted-march/5345585075001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1923/1290862567001_d3e88e73-dc6b-4dac-8144-e53e7f1a53fa.vtt?pubId=1290862567001&videoId=5345585075001' -O  garfield/5345585075001.vtt
+svn add  garfield/5345585075001.vtt
+ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
+svn mv unsorted-march/5346540050001.wav dinotrain/
+svn mv unsorted-march/WCL011812_gle.vtt\?1488730945 dinotrain/5346540050001.vtt
+svn mv unsorted-march/5346540094001.wav dinotrain/
+svn mv unsorted-march/WCL011811_gle.vtt\?1488731494 dinotrain/5346540094001.vtt
+svn mv unsorted-march/5349675406001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2804/1290862567001_9b4f6e9a-cbc5-4d99-b92e-b4503be03668.vtt?pubId=1290862567001&videoId=5349675406001' -O garfield/5349675406001.vtt
+svn add garfield/5349675406001.vtt
+svn ci -m more
+ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
+svn mv unsorted-march/5361980924001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1889/1290862567001_077334a9-a7d6-41e6-91be-0aa80fedc720.vtt?pubId=1290862567001&videoId=5361980924001' -O unsorted-march/5361980924001.vtt
+mv unsorted-march/5361980924001.vtt garfield/
+svn add garfield/5361980924001.vtt 
+svn status
+mkdir wordlists
+mv *.wlist wordlists/
+ls
+mv all.* filt.out* wordlist wordlists/
+ls
+svn ci -m +1
+cat ../../../Laptop/Playing/tg4-files/garfield1.txt 
+cat ../../../Laptop/Playing/tg4-files/garfield1.txt |grep vtt
+cat ../../../Laptop/Playing/tg4-files/garfield1.txt |grep vtt|grep tgfour
+cat ../../../Laptop/Playing/tg4-files/garfield1.txt |grep vtt|grep tgfour|awk '{print "http://web.archive.org/web/" $0}' > /tmp/asd/spid
+svn diff
+ls
+ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
+svn mv unsorted-march/5350916549001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1836/1290862567001_4e5f22d4-94a6-4510-9c38-819cddf8a250.vtt?pubId=1290862567001&videoId=5350916549001' -O garfield/5350916549001.vtt
+svn add garfield/5350916549001.vtt
+svn mv unsorted-march/5357691668001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2078/1290862567001_9a3a14de-6e58-4dd2-b236-b9813a10a9ed.vtt?pubId=1290862567001&videoId=5357691668001' -O garfield/5357691668001.vtt
+svn add garfield/5357691668001.vtt
+svn mv unsorted-march/5359044879001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1606/1290862567001_bad13b1b-95e1-45cb-8934-2211a81516e1.vtt?pubId=1290862567001&videoId=5359044879001' -O garfield/5359044879001.vtt 
+svn add  garfield/5359044879001.vtt 
+svn mv unsorted-march/5360471332001.wav unsorted-march/
+svn mv unsorted-march/5360471332001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/3583/1290862567001_a2ff50bd-9dc9-40e9-a501-fa5f745a2522.vtt?pubId=1290862567001&videoId=5360471332001' -O garfield/5360471332001.vtt
+svn add  garfield/5360471332001.vtt
+svn mv unsorted-march/5360530025001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1993/1290862567001_41972aa9-f74b-4dd4-a444-891bb846185c.vtt?pubId=1290862567001&videoId=5360530025001' -O garfield/5360530025001.vtt
+svn add garfield/5360530025001.vtt
+ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
+svn mv unsorted-march/5360591393001.wav garfield/
+wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1335/1290862567001_1687ef75-6958-4ae1-9caa-cf92af80aceb.vtt?pubId=1290862567001&videoId=5360591393001' -O garfield/5360591393001.vtt
+svn add  garfield/5360591393001.vtt
+svn ci -m 'remainder of what I have notes for'
+ls
+cd unsorted-march/
+ls
+svn mv WCL009921_gle.vtt\?1488760591 5322838421001.vtt
+ls
+svn mv WCL009922_gle.vtt\?1488760553 5324347217001.vtt
+ls
+svn ci -m 'match to names in case more of the video is recoverable'
+ls
+svn mv WCL009924_gle.vtt\?1488760046 5289204109001.vtt
+svn mv WCL009925_gle.vtt\?1488760013 5289181086001.vtt
+svn mv WCL009926_gle.vtt\?1488759981 5289249394001.vtt
+svn mv WCL009950_gle.vtt\?1488743814 5309228962001.vtt
+svn ci -m more
+ls
+cd ..
+ls
+less /tmp/mnt/3/Laptop/Playing/audio-corpus/czytamy-sluchajac.pl 
+cd scripts/
+tail videos.tsv 
+grep Garf videos.tsv |grep 16
+grep Harv videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5702751375001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=7'
+grep Cat videos.tsv 
+grep Cat videos.tsv |grep 13
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5702703092001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5701642607001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=5'
+grep Cat videos.tsv |grep 12
+grep Cat videos.tsv |grep 11
+grep Ros videos.tsv 
+grep Beo videos.tsv 
+ls
+cd no-transcript/
+ls
+cd ..
+ls
+cd english-only/
+ls
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689521068001&teideal=Sinatra%20:%20Guth%20na%20Meala&series=Sinatra%20:%20Guth%20na%20Meala&dlft=2'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5602668103001&teideal=Deargdh%C3%BAil:%20D%C3%A1nta%20Mh%C3%A1ire%20Mhac%20an%20tSaoi&series=Deargdh%C3%BAil:%20D%C3%A1nta%20Mh%C3%A1ire%20Mhac%20an%20tSaoi&dlft=35'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5641946908001&teideal=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&series=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&dlft=14'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5573271836001&teideal=Ar%20an%20Aer&series=Ar%20an%20Aer&dlft=34'
+perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5536589016001&teideal=Seirbh%C3%ADs%20Bhus%20na%20h%C3%89irne&series=Bealach%20na%20mBusanna&dlft=35'
+less videos.tsv 
+cd /tmp/asd/
+ls
+cat spid 
+vi spid 
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl http://web.archive.org/web/20180107221034/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/1184/1290862567001_3e852d10-53e7-4fdd-bf1b-ee2d933d8bb7.vtt?pubId=1290862567001&videoId=5331516079001
+http://web.archive.org/web/20180107220817/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/450/1290862567001_42bc084b-0c22-4995-9e6c-fbb0d8fd3120.vtt?pubId=1290862567001&videoId=5341752727001
+http://web.archive.org/web/20180107220701/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/2529/1290862567001_bdbc5e24-cf9a-4327-a701-17dfc154ae23.vtt?pubId=1290862567001&videoId=5337642327001
+http://web.archive.org/web/20170306005305/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2670/1290862567001_32ad7fb9-41d5-47c0-8965-db31b5889008.vtt?pubId=1290862567001&videoId=5341799685001
+http://web.archive.org/web/20170306005307/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2670/1290862567001_3b8be3be-74fd-4711-b91b-64fa8f231a65.vtt?pubId=1290862567001&videoId=5341799685001
+http://web.archive.org/web/20170305152056/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/861/1290862567001_57821653-2d2a-4c4a-8f81-50c2d2a794cb.vtt?pubId=1290862567001&videoId=5344003543001
+http://web.archive.org/web/20170305152059/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/861/1290862567001_5f5327ef-a0ce-4822-b3e2-d189f8ab60c9.vtt?pubId=1290862567001&videoId=5344003543001
+http://web.archive.org/web/20180107221034/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/1184/1290862567001_3e852d10-53e7-4fdd-bf1b-ee2d933d8bb7.vtt?pubId=1290862567001&videoId=5331516079001
+http://web.archive.org/web/20180107222248/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1923/1290862567001_d3e88e73-dc6b-4dac-8144-e53e7f1a53fa.vtt?pubId=1290862567001&videoId=5345585075001
+http://web.archive.org/web/20180107222620/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2804/1290862567001_9b4f6e9a-cbc5-4d99-b92e-b4503be03668.vtt?pubId=1290862567001&videoId=5349675406001
+ls
+cat spid.log|perl ~/bin/wget-http.pl 
+cat spid.log|perl ~/bin/wget-http.pl  >> /tmp/mnt/3/desktop/tmp/sync/http-misc-20180105-1.nt 
+cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'
+cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep wget/2
+cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep web/2
+cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep web/2 >> /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid |awk -F'/web/'|while read i;do grep $i /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt || echo http://web.archive.org/save/$i >> asp;done
+cat spid |awk -F'/web/' '{print $2}'|while read i;do grep $i /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt || echo http://web.archive.org/save/$i >> asp;done
+cat asp 
+vi asp 
+sh ~/scripts/spider.sh asp
+tail -f asp.log 
+cat asp.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep web/2 >> /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat asp.log|perl ~/bin/wget-http.pl  >> /tmp/mnt/3/desktop/tmp/sync/http-misc-20180105-1.nt 
+less /tmp/mnt/3/desktop/tmp/sync/http-misc-20180105-1.nt 
+ls
+rm *
+cd /tmp/
+ls
+unzip -l ~/Downloads/SPPAS-1.9.3.zip 
+mkdir spass
+cd spass/
+unzip ~/Downloads/SPPAS-1.9.3.zip 
+ls
+less sppas
+less sppas.command 
+./sppas.
+./sppas.command 
+apt-cache search wxpy
+sudo apt-get install python-wxtools
+./sppas.command 
+sudo apt-get install  python-wxgtk-media3.0 
+./sppas.command 
+ls
+cd thing/
+ls
+rm wyspa-skarbow.txt-0*
+ls
+rm cand*
+rm pairs.tsv Annotations-sppas.log 
+ls
+ls
+ls samples/
+less samples/samples-pol/0003.txt 
+less samples/samples-pol/0003.TextGrid 
+less samples/samples-pol/0004.TextGrid 
+less samples/samples-pol/0001.TextGrid 
+less samples/samples-pol/0001.txt 
+mkdir thing
+cd thing/
+ls
+ls /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/*rudyard-kipling*
+ls /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/*wyspa*
+ls ~/bin
+cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/*wyspa* .
+cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/text/wyspa-skarbow.txt-0* .
+ls
+for i in 1 2 3 4 5 6;do mv 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.mp3;done
+ls
+for i in *mp3;do sh ~/bin/convert-mp3.sh $i;done
+ls
+rm *.mp3
+for i in *.wav;do mv $i $(basename $i .mp3.wav).wav;done
+ls
+less wyspa-skarbow.txt-01.wav.log 
+ls
+less wyspa-skarbow.txt-03-phon.xra 
+ls
+ls *log
+less wyspa-skarbow.txt-01.wav.log 
+less wyspa-skarbow.txt-03-palign.xra 
+ls
+praat
+less wyspa-skarbow.txt-03-palign.srt 
+ls -al
+less
+less wyspa-skarbow.txt-01-token.xra 
+less wyspa-skarbow.txt-01-phon.xra 
+less wyspa-skarbow.txt-01-merge.TextGrid 
+less wyspa-skarbow.txt-03-merge.TextGrid 
+ls
+ls -al
+less wyspa-skarbow.txt-03-token.srt
+ls
+cd thing/
+ls
+ls -al
+find . -size 108
+find . -size 0
+find . -size 0 -delete
+man find
+find . -size 108b
+find . -size 108
+man find
+find . -size 108c
+find . -size 108c -delete
+ls
+ls -al
+less wyspa-skarbow.txt-01-pho
+less wyspa-skarbow.txt-01.txt 
+ls -al
+tail -f wyspa-skarbow.txt-01.wav.log 
+grep -i brasę *aud
+grep -i Crossl *aud
+ls
+cp run-aeneas.sh aeneastg.sh
+vi aeneastg.sh 
+cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/01-robert-louis-stevenson-wyspa-skarbow.mp3 .
+cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/text/wyspa-skarbow.txt-01.txt .
+ls
+sh aeneastg.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-01.txt 
+less wyspa-skarbow.txt-01.txt.aud 
+mv wyspa-skarbow.txt-01.txt.aud wyspa-skarbow.txt-01.textgrid
+cat wyspa-skarbow.txt-01.txt |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/split-sentence.pl 
+cat wyspa-skarbow.txt-01.txt |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/split-sentence.pl > sent.txt
+sh aeneastg.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3 sent.txt
+less sent.txt.aud 
+cd /tmp/
+split -l 1500 aa 
+mv xaa leftin 
+split -l 1500 leftin 
+mv xaa leftin
+split -l 1500 leftin 
+mx xaa leftin 
+mv xaa leftin 
+split -l 1500 leftin 
+mv xaa leftin 
+split -l 1500 leftin 
+mv xaa leftin 
+split -l 1500 leftin 
+mv xaa leftin 
+split -l 1500 leftin 
+mv xaa leftin 
+grep Bil *
+grep -i dżor *
+grep króćset *aud
+echo 2009 / 60
+echo $((2009 / 60))
+less wyspa-skarbow.txt-01.txt.aud
+echo $((200 / 6))
+echo $((60 * 33))
+cat /tmp/toproc 
+cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n' | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n' | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |sort|uniq
+cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n' | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |sort|uniq > /tmp/leftin
+vi /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}'
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin 
+paste /tmp/leftin /tmp/rightin  >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+vi /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+grep -i aści *txt
+cat /tmp/leftin 
+cat /tmp/leftin |aspell --lang pl -a
+cat /tmp/leftin |aspell --lang pl -a|less
+grep -i biesowska *txt
+grep -i biesowska *aud
+cat /tmp/leftin |aspell --lang pl -a|less
+cat /tmp/left |awj -F'|' '{print $2}'|tr -d '}' |aspell --lang pl -a|less
+cat /tmp/left |awk -F'|' '{print $2}'|tr -d '}' |aspell --lang pl -a|less
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/left|awk -F'|' '{print $2}'|tr -d '}' > /tmp/leftin 
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/left|awk -F'|' '{print $2}'|tr -d '}' > /tmp/leftin 
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq 
+cat /tmp/leftin 
+cat /tmp/leftin |sort|uniq
+cat /tmp/leftin |sort|uniq|wc
+cat /tmp/leftin |sort|uniq > /tmp/aa
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xab /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xac /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xad /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xae /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xab /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xac /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xad /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xab /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xab /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xac /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xab /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xac /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xab /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+mv /tmp/xac /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
+wc -l /tmp/left
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+ls
+cat wyspa-skarbow.txt-0*txt
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl 
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |wc
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |less
+grep -i króćset *txt
+ffplay wyspa-skarbow.txt-01.
+ffplay wyspa-skarbow.txt-01.wav
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |wc
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+grep Black wyspa-skarbow.txt-01*aud
+minsec() { min=$(($1 / 60));sec=$(($1 - min));echo $min:$sec; }
+minsec 2443
+minsec() { min=$(($1 / 60));sec=$(($1 - (min * 60)));echo $min:$sec; }
+minsec 2443
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+grep Cross wyspa-skarbow.txt-01*aud
+minsec 2968
+echo — Jeżeli wam wszystkim dusza uciekła w pięty, to ja z Jimem okażemy więcej odwagi! Wracamy do domu tą samą drogą, którąśmy tu przyszli — obejdziemy się bez waszej łaski! Takie dryblasy, chłopy jak dęby, a serce mają jak zające! Otworzymy skrzynię, choćbyśmy mieli za to kipnąć! Pani Crossley, a do paniusi to się umizgnę o tę sakiewkę, żebym miała gdzie wrazić te pieniądze, co się nam z prawa przynależą.|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+echo — Jeżeli wam wszystkim dusza uciekła w pięty, to ja z Jimem okażemy więcej odwagi! Wracamy do domu tą samą drogą, którąśmy tu przyszli — obejdziemy się bez waszej łaski! Takie dryblasy, chłopy jak dęby, a serce mają jak zające! Otworzymy skrzynię, choćbyśmy mieli za to kipnąć! Pani Crossley, a do paniusi to się umizgnę o tę sakiewkę, żebym miała gdzie wrazić te pieniądze, co się nam z prawa przynależą.|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
+vi /tmp/leftin 
+minsec 3315
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+grep -i brudnosina *aud
+minsec 117
+echo Dokładnie, jakby to było wczoraj, pamiętam tę chwilę, gdy ów człowiek przywlókł się przed drzwi gospody, a za nim przytarabaniła się na wózku ręcznym jego skrzynia marynarska. Był to mężczyzna rosły, muskularny, ciężki, o orzechowobrunatnej twarzy. Na barki, przyodziane w brudny, niegdyś błękitny kubrak, spadał mu harcap jakby w dziegciu unurzany. Ręce chropowate i popękane kończyły się czarnymi i połamanymi paznokciami, w poprzek policzka blado przeświecała brudnosina kresa — znak od szabli. Pamiętam, jak rozglądał się dokoła po zatoce i według swego zwyczaju pogwizdywał, aż wybuchnął głośno starą piosenką żeglarską, którą później śpiewał tak często|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+echo Dokładnie, jakby to było wczoraj, pamiętam tę chwilę, gdy ów człowiek przywlókł się przed drzwi gospody, a za nim przytarabaniła się na wózku ręcznym jego skrzynia marynarska. Był to mężczyzna rosły, muskularny, ciężki, o orzechowobrunatnej twarzy. Na barki, przyodziane w brudny, niegdyś błękitny kubrak, spadał mu harcap jakby w dziegciu unurzany. Ręce chropowate i popękane kończyły się czarnymi i połamanymi paznokciami, w poprzek policzka blado przeświecała brudnosina kresa — znak od szabli. Pamiętam, jak rozglądał się dokoła po zatoce i według swego zwyczaju pogwizdywał, aż wybuchnął głośno starą piosenką żeglarską, którą później śpiewał tak często|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+grep -i dance *aud
+minsec 4117
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i muszli *aud
+grep -i Dogg *aud
+minsec 3210
+echo Silna woń tytoniu i dziegciu wionęła ze środka, lecz na wierzchu było widać jedynie zupełnie przyzwoity garnitur, bardzo starannie oczyszczony i poskładany. Matka wyraziła przypuszczenie, że kapitan nie miał go jeszcze nigdy na sobie. Pod spodem był istny groch z kapustą: kwadrant , blaszany kubek, kilka laseczek tytoniu, dwie pary nader pięknych pistoletów, sztaba lanego srebra, stary zegarek hiszpański i wiele innych świecidełek niezbyt wielkiej wartości i przeważnie wyrobu zagranicznego, para mosiężnych kompasów oraz pięć czy sześć osobliwych muszli z Indii Zachodnich. Często później zastanawiałem się nad tym, po co on te wszystkie rupiecie woził z sobą wszędzie w ciągu swego włóczęgowskiego, występnego i pełnego niebezpieczeństw życia.|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > /tmp/leftin 
+cat /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+minsec 4321
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i dirk wyspa-skarbow.txt-01*aud
+minsec 4034
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i joty wyspa-skarbow.txt-01*aud
+grep -i jogo wyspa-skarbow.txt-01*aud
+grep -i eee wyspa-skarbow.txt-01*aud
+minsec 4934
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i jogo wyspa-skarbow.txt-01*aud
+minsec 2602
+grep -i najniepoczytalniejszym wyspa-skarbow.txt-01*aud
+minsec 448
+echo Dirk > /tmp/leftin 
+echo najniepoczytalniejszym >> /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i obcas wyspa-skarbow.txt-01*aud
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
+echo wsch > /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+echo joty >> /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |aspell --lang pl -a
+grep -i zawrzasłem wyspa-skarbow.txt-01*aud
+minsec 2492
+echo zawrzasłem >> /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |aspell --lang pl -a |less
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+vi cand 
+cat cand |aspell --lang pl -a 
+cat cand |aspell --lang pl -a |less
+vi cand 
+grep -i przeokrutnego wyspa-skarbow.txt-01*aud
+minsec 4934
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+cat cand 
+grep -i trinid wyspa-skarbow.txt-01*aud
+grep -i taylo wyspa-skarbow.txt-01*aud
+grep -i sava wyspa-skarbow.txt-01*aud
+minsec 759
+minsec 2097
+minsec 4629
+echo Trinidad > /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+cat cand 
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+wc -l cand 
+less cand 
+grep -i harr wyspa-skarbow.txt-02*aud
+minsec 985
+grep Harry *txt
+grep -i harr wyspa-skarbow.txt-02*aud
+minsec 1017
+echo Morgan > /tmp/leftin 
+echo Morganem >> /tmp/leftin 
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i pd wyspa-skarbow.txt-02*aud
+minsec 2822
+less cand 
+grep -i "kapitana'" wyspa-skarbow.txt-02*aud
+grep -i "kapitana'" wyspa-skarbow.txt-02*txt
+grep -i "kapitana" wyspa-skarbow.txt-02*txt
+grep -i davis wyspa-skarbow.txt-02*aud
+minsec 3022
+echo Kasandrą > /tmp/leftin 
+grep -i kidd wyspa-skarbow.txt-02*aud
+minsec 4019
+grep Kidd *txt
+minsec 3022
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+head cand 
+grep -i Dick wyspa-skarbow.txt-02*aud
+grep -i Bail wyspa-skarbow.txt-02*aud
+grep -i Bland wyspa-skarbow.txt-02*aud
+grep -i Credo wyspa-skarbow.txt-02*aud
+grep -i Arr wyspa-skarbow.txt-02*aud
+minsec 3763
+minsec 2311
+minsec 2029
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i Arrowa wyspa-skarbow.txt-02*aud
+minsec 1893
+grep -i Bail wyspa-skarbow.txt-02*aud
+minsec 1168
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i Blan wyspa-skarbow.txt-02*aud
+minsec 405
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i hola wyspa-skarbow.txt-02*aud
+minsec 2099
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+grep -i portob wyspa-skarbow.txt-02*aud
+minsec 2596
+grep -i hands wyspa-skarbow.txt-02*aud
+minsec 2404
+minsec 3372
+minsec 4483
+less cand 
+cat cand |aspell --lang pl -a |less
+grep -i piłat wyspa-skarbow.txt-02*aud
+minsec 3662
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+grep -i toma wyspa-skarbow.txt-02*aud
+grep -i toast wyspa-skarbow.txt-02*aud
+vi cand 
+cat cand |aspell --lang pl -a |less
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+cat cand 
+grep -i goa wyspa-skarbow.txt-02*aud
+grep -i toast wyspa-skarbow.txt-02*aud
+grep -i Jobo wyspa-skarbow.txt-02*aud
+grep -i grog wyspa-skarbow.txt-02*aud
+grep -i ongi wyspa-skarbow.txt-02*aud
+minsec 1211
+vi cand 
+minsec 2596
+minsec 1388
+minsec 3800
+minsec 4195
+minsec 2759
+vi cand 
+grep -i mociu wyspa-skarbow.txt-02*aud
+minsec 325
+vi cand 
+grep -i gnaci wyspa-skarbow.txt-02*aud
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-03.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+grep Hispanlola *aud
+vi cand 
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+wc -l cand 
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand5
+cat wyspa-skarbow.txt-06.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand6
+wc -l cand*
+less cand6 
+less cand
+grep -i abe wyspa-skarbow.txt-02*aud
+grep -i abe wyspa-skarbow.txt-03*aud
+grep -i abe wyspa-skarbow.txt-04*aud
+cat wyspa-skarbow.txt-03.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand3
+cat cand3
+grep -i gunn wyspa-skarbow.txt-03*aud
+minsec 1987
+less cand
+grep -i abe wyspa-skarbow.txt-04*aud
+minsec 3064
+grep -i Gray wyspa-skarbow.txt-04*aud
+minsec 3671
+grep -i Grayu wyspa-skarbow.txt-04*aud
+minsec 557
+cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+grep -i David wyspa-skarbow.txt-04*aud
+grep -i Cumb wyspa-skarbow.txt-04*aud
+less cand
+cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+grep -i david wyspa-skarbow.txt-04*aud
+grep -i roger wyspa-skarbow.txt-04*aud
+minsec 1737
+minsec 2056
+less cand
+cat cand |aspell --lang pl -a |less
+grep -i kręgielki wyspa-skarbow.txt-04*aud
+minsec 982
+cat cand |aspell --lang pl -a |less
+grep -i prawdobodobnie wyspa-skarbow.txt-04*aud
+minsec 1679
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+cat cand |aspell --lang pl -a |less
+grep -i szpygat wyspa-skarbow.txt-05*aud
+minsec 2242
+less cand
+grep -i brasę wyspa-skarbow.txt-05*aud
+minsec 2162
+cat cand |aspell --lang pl -a |less
+vi cand
+echo starczało|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
+vi cand
+grep -i brasę wyspa-skarbow.txt-05*aud
+grep -i dziewięcio- wyspa-skarbow.txt-05*aud
+less cand
+grep -i bryto wyspa-skarbow.txt-05*aud
+vi cand
+grep -i cove wyspa-skarbow.txt-05*aud
+minsec 3739
+vi cand
+grep -i eee wyspa-skarbow.txt-05*aud
+vi cand
+grep -i brien wyspa-skarbow.txt-05*aud
+minsec 2661
+minsec 4181
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+grep -i hardo wyspa-skarbow.txt-05*aud
+less cand
+grep -i fansz wyspa-skarbow.txt-05*aud
+minsec 2620
+less cand
+cat cand |aspell --lang pl -a |less
+grep -i dziesięciocalowy wyspa-skarbow.txt-05*aud
+minsec 368
+minsec 3689
+cat cand |aspell --lang pl -a |less
+grep -i wychłustywałem wyspa-skarbow.txt-05*aud
+minsec 1683
+cat cand |aspell --lang pl -a |less
+less cand
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-06.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+wc -l cand
+less cand
+grep -i pd wyspa-skarbow.txt-06*aud
+minsec 3690
+grep -i pn wyspa-skarbow.txt-06*aud
+minsec 3408
+vi cand
+grep -i Graw wyspa-skarbow.txt-06*aud
+minsec 4144
+vi cand
+grep -i Darbym wyspa-skarbow.txt-06*aud
+minsec 4211
+vi cand
+grep -i mahon wyspa-skarbow.txt-06*aud
+grep -i Johns wyspa-skarbow.txt-06*aud
+minsec 455
+vi cand
+grep -i aa wyspa-skarbow.txt-06*aud
+minsec 2064
+vi cand
+grep -i Merry wyspa-skarbow.txt-06*aud
+minsec 4892
+vi cand
+grep -i św wyspa-skarbow.txt-06*aud
+grep -i św\, wyspa-skarbow.txt-06*aud
+grep -i św\. wyspa-skarbow.txt-06*aud
+grep -i 'św\.' wyspa-skarbow.txt-06*aud
+minsec 1898
+vi cand
+grep -i wet wyspa-skarbow.txt-06*aud
+minsec 902
+vi cand
+cat cand |aspell --lang pl -a |less
+grep -i krawiecczyzna wyspa-skarbow.txt-06*aud
+minsec 1548
+cat cand |aspell --lang pl -a |less
+grep -i zatern wyspa-skarbow.txt-06*aud
+minsec 240
+vi cand
+grep -i zahuczęliśmy wyspa-skarbow.txt-06*aud
+grep -i zabobonnosć wyspa-skarbow.txt-06*aud
+grep -i ptasiu wyspa-skarbow.txt-06*aud
+minsec 173
+minsec 52009
+minsec 5209
+minsec 5304
+vi cand
+mv cand /tmp/leftin 
+ks
+ls
+df
+pwd
+ls
+mkdir Laptop
+ls
+mv Laptop/ ..
+cd ..
+ls
+ls Laptop/
+ls
+ls Playing/
+ls Laptop/
+pwd
+ls Laptop/
+ls Laptop/French/
+ls Laptop/French/three_musketeers/
+df
+ls
+ls Playing/
+ls Laptop/
+ls Laptop/Hailstorm/
+ls Laptop/Hadoop/
+ls Laptop/Blacklists/
+ls Laptop/Blacklists/porn/
+ls Laptop/Apertium/
+ls Laptop/Blacklists/porn/
+ls Playing/
+cd desktop/tmp/
+ls
+mkdir fashq1
+cd fashq1
+ls
+. ../sourceme 
+procimg https://www.instagram.com/p/BckoIefg2kT/?taken-by=skysoulmate
+rm fash-rdf-links 
+ogimageproc https://www.instagram.com/p/BckoIefg2kT/?taken-by=skysoulmate
+ogimageproc https://www.instagram.com/p/BcxXWDlgiXY/?taken-by=skysoulmate
+ogimageproc https://www.instagram.com/p/Bc5V8yAABYy/?taken-by=skysoulmate
+ogimageproc https://www.instagram.com/p/BdXtdGJgvy7/?taken-by=skysoulmate
+ogimageproc https://www.instagram.com/p/BdhtdZUAgPq/?taken-by=skysoulmate
+grep skysoul ../../../Laptop/Library/Application\ Support/Google/Picasa3/contacts/contacts.xml 
+doinstain 
+procimg https://www.instagram.com/stories/ofitial https://scontent-lhr3-1.cdninstagram.com/vp/c83eeabb3736234ac005c34e93b8cd08/5A5473BD/t51.12442-15/e35/25025609_2118670818369019_3282886938784169984_n.jpg
+procimg https://www.instagram.com/stories/shipilovaks https://scontent-lhr3-1.cdninstagram.com/vp/ad93abef0cab7d59395fd1de06463eee/5A53B690/t50.12441-16/26193749_505007426551648_1371314960906321920_n.mp4
+lmdepict  https://scontent-lhr3-1.cdninstagram.com/vp/ad93abef0cab7d59395fd1de06463eee/5A53B690/t50.12441-16/26193749_505007426551648_1371314960906321920_n.mp4 pic66154a3e24ffcb8
+procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/1407c1e57b961cc3b5ab7261ddfc1984/5A53E237/t58.9793-16/14224038_391971687918223_5185015383089741824_n.mp4
+procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/8b48091e1608ef7872ee3285f33d16d7/5A53C4B9/t58.9793-16/17406938_564308467237589_3824025377534115840_n.mp4
+procimg https://www.instagram.com/stories/ushakova_ https://scontent-lhr3-1.cdninstagram.com/vp/bd184cd9d0ab2fed44a3005908e5e7ce/5A53ADEC/t51.12442-15/e35/26066190_145952589520947_2572979486714757120_n.jpg
+procimg https://www.instagram.com/stories/babybratzzzz https://scontent-lhr3-1.cdninstagram.com/vp/593bc292ebdefe06aff30e0aa04f80d7/5A5478DE/t50.12441-16/26085136_143916899656143_4096468072381022208_n.mp4
+procimg https://www.instagram.com/stories/kulakova_elizaveta https://scontent-lhr3-1.cdninstagram.com/vp/360cde5ad946a9bca8b6c332c69d6f16/5A53CACC/t51.12442-15/e35/26323231_1627548350638572_452855123987660800_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/alina_akilova https://scontent-lhr3-1.cdninstagram.com/vp/dba6fde4cbf075d6f6a8c829a73ae6ff/5A53D797/t51.12442-15/e35/25026208_761484120720153_3365521864746074112_n.jpg
+procimg https://www.instagram.com/stories/alina_akilova https://scontent-lhr3-1.cdninstagram.com/vp/b38b8b09565f7630f89e0a326599d472/5A53CD10/t51.12442-15/e35/25035855_171336473479938_9039898412723470336_n.jpg
+procimg https://www.instagram.com/stories/svetabily https://scontent-lhr3-1.cdninstagram.com/vp/797465be601c07d720a34578b263c2f0/5A53E9C0/t51.12442-15/e35/25026097_138888423456094_602748146883231744_n.jpg
+procimg https://www.instagram.com/stories/chiarabransi https://scontent-lhr3-1.cdninstagram.com/vp/e8e708848d078c73b4399ed372c88680/5A53B889/t50.12441-16/26162190_172533026835656_2349447140700323840_n.mp4
+procimg https://www.instagram.com/stories/kalujina https://scontent-lhr3-1.cdninstagram.com/vp/79e24191a7ae3160e88c699acbe39e86/5A53F76B/t51.12442-15/e35/26187661_538318499874279_2106393025864269824_n.jpg
+procimg https://www.instagram.com/stories/kalujina https://scontent-lhr3-1.cdninstagram.com/vp/3f00e9c78c3db68c53fc9d0b06faaf04/5A53E103/t51.12442-15/e35/25037004_136255723712223_1915087881056026624_n.jpg
+procimg https://www.instagram.com/stories/lilly.marchel https://scontent-lhr3-1.cdninstagram.com/vp/bc34ea20b0e79ac4b86a364116b30bba/5A5475E3/t50.12441-16/26188946_2065943200353124_1786600842019733504_n.mp4
+procimg https://www.instagram.com/stories/_liliyapetrova_ https://scontent-lhr3-1.cdninstagram.com/vp/87377cb21f4b8d18de9c64cd6eb6ee6a/5A53F745/t50.12441-16/26215183_192027781537454_1542358004790198272_n.mp4
+ogimageproc https://www.instagram.com/p/BdchqLVgmf_/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/BdYgETfgqed/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/Bdi4TEVAVFQ/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/BdlNyS1gHOO/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/BdnZSc8gh5N/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/BdkPnDIAyqH/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/BdA4EoiAr_F/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/BcswsJvFmGC/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/Bb_93a-lS7c/?taken-by=ania839
+ogimageproc https://www.instagram.com/p/BYoHDwolFDG/?taken-by=ania839
+doinstain 
+procimg https://www.instagram.com/stories/olgakulikova707 https://scontent-lhr3-1.cdninstagram.com/vp/31ff0d5b8ef3e67f44a7718d795be279/5A53D908/t58.9792-15/e35/24970208_1559049357525648_5174644385689632768_n.jpg
+procimg https://www.instagram.com/stories/ola_wanserska https://scontent-lhr3-1.cdninstagram.com/vp/af0d701404bc2dc0b569ce87fd8b9a78/5A547BFD/t51.12442-15/e35/26281675_840627392786231_8039882257864851456_n.jpg
+procimg https://www.instagram.com/stories/i.s.nesquik https://scontent-lhr3-1.cdninstagram.com/vp/e4b0fa5ee99be67c57cd58b1e16c22be/5A53CE67/t51.12442-15/e35/26071501_363351034135734_7781678732518883328_n.jpg
+procimg https://www.instagram.com/stories/i.s.nesquik https://scontent-lhr3-1.cdninstagram.com/vp/4a362f4f006a9bd812767997d8384a4a/5A53CDA3/t51.12442-15/e35/25036958_1850046598619559_1030558238531125248_n.jpg
+procimg https://www.instagram.com/stories/monika.chmielecka https://scontent-lhr3-1.cdninstagram.com/vp/6d34b4439ceb89750ee5e1db580f2899/5A53E6F9/t51.12442-15/e35/26182597_950111705139463_2462621109497888768_n.jpg
+procimg https://www.instagram.com/stories/sofia_official_ https://scontent-lhr3-1.cdninstagram.com/vp/12cd2892d429102803f943cca5ebd370/5A541F69/t50.12441-16/26685022_1573916279360948_5062743432313700352_n.mp4
+procimg https://www.instagram.com/stories/ola_ciupa https://scontent-lhr3-1.cdninstagram.com/vp/97046660320ea95d9ed4ff6d8a15d03c/5A53F756/t51.12442-15/e35/26268883_159826374656736_7065264636924264448_n.jpg
+procimg https://www.instagram.com/stories/ola_ciupa https://scontent-lhr3-1.cdninstagram.com/vp/7b8c4b255a79de2beeaf6dcc9cac2dba/5A53CE00/t51.12442-15/e35/25038702_901212496718600_4078306854709493760_n.jpg
+procimg https://www.instagram.com/stories/ola_ciupa https://scontent-lhr3-1.cdninstagram.com/vp/38d0412d217b9c816123e038390d0458/5A53C368/t51.12442-15/e35/26184395_152697095375607_8125351372615843840_n.jpg
+procimg https://www.instagram.com/stories/ola_ciupa https://scontent-lhr3-1.cdninstagram.com/vp/19f7d38e02d2e14e3d444a6fe396275a/5A53D8F9/t51.12442-15/e35/26153844_521106411596918_8949207283460472832_n.jpg
+procimg https://www.instagram.com/stories/ola_ciupa https://scontent-lhr3-1.cdninstagram.com/vp/4859ede5b3e67d62137677137c14cbe9/5A53CB4A/t51.12442-15/e35/26066934_511006229270973_2662659073870135296_n.jpg
+procimg https://www.instagram.com/stories/ola_ciupa https://scontent-lhr3-1.cdninstagram.com/vp/62a369daa20e2fd20d428bbf82c7ad44/5A53CAC9/t51.12442-15/e35/26073144_1904999923147704_3848430893538476032_n.jpg
+procimg https://www.instagram.com/stories/dmitrievna_555 https://scontent-lhr3-1.cdninstagram.com/vp/2499871f46edad6f4e4aa4a26539fb7b/5A5419BE/t51.12442-15/e35/26278466_1832144790416363_2834850055138050048_n.jpg
+ogimageproc https://www.instagram.com/p/Bdp62fnn2Vr/?taken-by=natasha_mankovskaya
+ogimageproc https://www.instagram.com/p/Bdo1mO1ARA2/?taken-by=_lesya_novikova_
+ogimageproc https://www.instagram.com/p/BdnSJZYA4-Q/?taken-by=_lesya_novikova_
+ogimageproc https://www.instagram.com/p/Bdd33yFAfdr/?taken-by=oly_a_lexandrovna
+ogimageproc https://www.instagram.com/p/BdpvlbuHluE/?taken-by=sofia_official_
+ogimageproc https://www.instagram.com/p/BdpHL72H2ff/?taken-by=sofia_official_
+doinstain 
+procimg https://www.instagram.com/stories/vscovseza100 https://scontent-lhr3-1.cdninstagram.com/vp/7837093654f45d7c6b7861f318c55369/5A53DEFC/t51.12442-15/e35/25037920_1872425629684629_5115931852040830976_n.jpg
+procimg https://www.instagram.com/stories/vscovseza100 https://scontent-lhr3-1.cdninstagram.com/vp/df89932af14feb3f7df533c72f0605bc/5A53C12C/t51.12442-15/e35/26153101_733441893522069_2911171052757319680_n.jpg
+procimg https://www.instagram.com/stories/karolinaaaka https://scontent-lhr3-1.cdninstagram.com/vp/425914c5393d4a3f3c2f1e3ec2388ce1/5A547F54/t51.12442-15/e35/26151564_140433393289327_8424166034243584_n.jpg
+procimg https://www.instagram.com/stories/mariyafishman https://scontent-lhr3-1.cdninstagram.com/vp/2c5ffdfdd235191613244833d14f5a5e/5A53F5F5/t51.12442-15/e35/25024199_2008163176173371_5948951436388728832_n.jpg
+procimg https://www.instagram.com/stories/di_melison https://scontent-lhr3-1.cdninstagram.com/vp/9f42c9be61d544dea973befbdd73bbfa/5A53E6CC/t51.12442-15/e35/26224004_184563398794182_8979784109123436544_n.jpg
+procimg https://www.instagram.com/stories/joannaannamarianna https://scontent-lhr3-1.cdninstagram.com/vp/e662fcd331b1f8459e6aff5ab4e7d362/5A53D72D/t51.12442-15/e35/26182788_921670231342614_3452523230554750976_n.jpg
+ogimageproc https://www.instagram.com/p/BdnrOItFsf7/?taken-by=mariyafishman
+doinstain 
+procimg https://www.instagram.com/stories/2121kk___k https://scontent-lhr3-1.cdninstagram.com/vp/8ab2fddb94a3f68cee9d0c872ac33304/5A53E6B6/t51.12442-15/e35/26068605_1295649277208443_8880017791273402368_n.jpg
+procimg https://www.instagram.com/stories/gradek_justyna https://scontent-lhr3-1.cdninstagram.com/vp/0b61b9727c65c7b138fe0a90a8573f0f/5A53EDA5/t51.12442-15/e35/26307821_794176527437373_1617909782356688896_n.jpg
+procimg https://www.instagram.com/stories/trishka92 https://scontent-lhr3-1.cdninstagram.com/vp/de376201a346e89344a27d7df678d572/5A547832/t50.12441-16/26218402_194991181080846_1394459305699869981_n.mp4
+procimg https://www.instagram.com/stories/misslilan https://scontent-lhr3-1.cdninstagram.com/vp/e6db1331d0b47401a4b21dbb7f3ec074/5A53F397/t51.12442-15/e35/25023540_172749583332478_3117792952886231040_n.jpg
+procimg https://www.instagram.com/stories/misslilan https://scontent-lhr3-1.cdninstagram.com/vp/300bcd5f8c29a807a1f57ad3db8c7d2c/5A53EC94/t51.12442-15/e35/25038972_180837799329628_4220842800490479616_n.jpg
+procimg https://www.instagram.com/stories/anikina95 https://scontent-lhr3-1.cdninstagram.com/vp/7c4c708a4ee33efcddef275cfcb9582f/5A53DED0/t51.12442-15/e35/25024927_1351846558274251_3547872024216993792_n.jpg
+ogimageproc https://www.instagram.com/p/BdpFyWilprT/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BdkGXuqFAW0/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BdmcjzXlX-W/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/Bdhb6p-F5zW/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/BdpapzsByn1/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BdqAvYllkO3/?taken-by=lilia_gold
+ogimageproc https://www.instagram.com/p/BdnK1frhHGj/?taken-by=misslilan
+ogimageproc https://www.instagram.com/p/BdfeDarBbRr/?taken-by=misslilan
+doinstain 
+procimg https://www.instagram.com/stories/_____diva_diva https://scontent-lhr3-1.cdninstagram.com/vp/89f9c9e9fd7df9907de83be138953945/5A544760/t50.12441-16/26162541_146402726141956_4359878438119538688_n.mp4
+procimg https://www.instagram.com/stories/katesytsevich https://scontent-lhr3-1.cdninstagram.com/vp/5ead00403dcde89a15ffc976401912d3/5A545BE7/t51.12442-15/e35/26153454_2015837581765535_5648957144813273088_n.jpg
+procimg https://www.instagram.com/stories/_alenamills_ https://scontent-lhr3-1.cdninstagram.com/vp/133ee55c50bf053c004c43f300e47465/5A543DE3/t50.12441-16/26087523_1692409510780227_304887410376835072_n.mp4
+procimg https://www.instagram.com/stories/2121kk___k https://scontent-lhr3-1.cdninstagram.com/vp/5137790e21af16c9bc47ee5e6819246b/5A5431B2/t51.12442-15/e35/26066006_376409646154282_2470340119211540480_n.jpg
+procimg https://www.instagram.com/stories/ewastaniszewska https://scontent-lhr3-1.cdninstagram.com/vp/43f1e6e911c6149f6fbac99d769b901e/5A546007/t51.12442-15/e35/26153724_242146169656804_8599801098246553600_n.jpg
+mkdir /tmp/asd
+. ../sourceme 
+filtfind 
+filtfind |awk '{print "http://web.archive.org/save/https://" $0}' > /tmp//asd/inp
+cd /tmp//asd/inp
+cd /tmp//asd/
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+mkdir -p ~/tmp/sync
+tail -f inp.log 
+cd -
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
+cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20180105-1.nt 
+less ../sync/http-misc-20180105-1.nt 
+rm /tmp//asd/inp
+rm /tmp//asd/inp.log 
+rm -rf /tmp//asd/web.archive.org/
+ogimageproc https://www.instagram.com/p/BdTCNTIn40K/?taken-by=irene10_06
+ogimageproc https://www.instagram.com/p/Bc0J6O2H55m/?taken-by=irene10_06
+ogimageproc https://www.instagram.com/p/BdqI9ZAHr9c/?taken-by=irene10_06
+ogimageproc https://www.instagram.com/p/BdpubR9nVa4/?taken-by=2121kk___k
+ogimageproc https://www.instagram.com/p/BdqFyniHlJl/?taken-by=2121kk___k
+ogimageproc https://www.instagram.com/p/BdpkcYIDkew/?taken-by=ushakova_
+ogimageproc https://www.instagram.com/p/Bdph4uXhzod/?taken-by=_alenamills_
+ogimageproc https://www.instagram.com/p/BdpekqYl-T6/?taken-by=liberateme.1
+ogimageproc https://www.instagram.com/p/BdnRTFpljYl/?taken-by=liberateme.1
+ogimageproc https://www.instagram.com/p/BdqSwRfHUIf/?taken-by=piskorekatarzyna
+ogimageproc https://www.instagram.com/p/Bdp4GjunuP1/?taken-by=piskorekatarzyna
+ogimageproc https://www.instagram.com/p/BcNgc4tgJQn/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/Bb7fNJZgZsw/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/BcDGXDLgTFq/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/BcxVCFdAuZc/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/BdpvhFMA1iI/?taken-by=anella_miller
+ogimageproc https://www.instagram.com/p/BdppVYolHS8/?taken-by=galina_dub
+ogimageproc https://www.instagram.com/p/Bc-D0QOFeBa/?taken-by=galina_dub
+ogimageproc https://www.instagram.com/p/Bc4tlqllZW3/?taken-by=galina_dub
+ogimageproc https://www.instagram.com/p/BckPBeQFyIH/?taken-by=galina_dub
+ogimageproc https://www.instagram.com/p/BdqbcvXHNqZ/?taken-by=sandra_traczyk
+ogimageproc https://www.instagram.com/p/Bdk4ZO6nreu/?taken-by=sandra_traczyk
+ogimageproc https://www.instagram.com/p/BdnhYgsDgNC/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/Bdfqoo2jwz6/?taken-by=zuueva
+ogimageproc https://www.instagram.com/p/BdqSdhQDFSf/?taken-by=vikunciy1991
+ogimageproc https://www.instagram.com/p/BdmHyfwD7wD/?taken-by=vikunciy1991
+ogimageproc https://www.instagram.com/p/Bdm9KqWFnOA/?taken-by=viki_odintcova
+cd ../aeneas/
+ls
+git pull origin master
+git log
+ls
+cd /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/
+git diff
+vi pron-data/gen.tsv 
+git diff
+git branch 
+git add pron-data/gen.tsv 
+git add specific-norms.tsv 
+git commit -m more
+ls
+less expand-with-polimorf.pl 
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab 
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/leftin 
+less /tmp/leftin 
+grep Kain /tmp/leftin 
+grep Kain /tmp/leftin  > /tmp/tmm
+echo Kain >> /tmp/tmm 
+paste /tmp/tmm /tmp/tmm 
+paste /tmp/tmm /tmp/tmm >> pron-data/pronounce-as.tsv 
+vi pron-data/pronounce-as.tsv 
+cat /tmp/tmm |sed -e 's/ai/aj/' > /tmp/tmm2
+paste /tmp/tmm /tmp/tmm2 |sort|uniq 
+paste /tmp/tmm /tmp/tmm2 |sort|uniq  >> pron-data/pronounce-as.tsv 
+git diff
+grep ee pron-data/gen.tsv 
+grep eę pron-data/gen.tsv 
+grep eę pron-data/gen.tsv > /tmp/tmm
+cat /tmp/tmm|awk -F'\t' '{print $1}'
+cat /tmp/tmm|awk -F'\t' '{print $1}' > /tmp/tmp1
+cat /tmp/tmm|awk -F'\t' '{print $1}' |sed -e 's/eę/ę/' > /tmp/tmp2
+paste /tmp/tmp1 /tmp/tmp2 
+paste /tmp/tmp1 /tmp/tmp2 >> pron-data/pronounce-as.tsv 
+paste /tmp/tmp1 /tmp/tmp2 |sed -e 's/ę/e/g' >> pron-data/pronounce-as.tsv 
+git diff
+vi /tmp/tmm
+cat /tmp/tmm >> pron-data/pronounce-as.gen.tsv 
+cat /tmp/tmm |sed -e 's/ę/e/' >> pron-data/pronounce-as.gen.tsv 
+git diff
+cat /tmp/tmm1
+cat /tmp/tmm
+cat /tmp/tmm2
+vi /tmp/leftin 
+vi /tmp/left
+paste /tmp/left /tmp/rightin 
+paste /tmp/left /tmp/rightin |sed -e 's/ $//'
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//'
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//' >> pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.*
+git commit -m more
+git diff
+vi pron-data/gen.tsv 
+git diff
+git add splitter.pl 
+git commit -m 'incomplete; need to stash'
+git stash
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/pronounce-as.tsv 
+git commit -m more
+git stash
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mv /tmp/xab /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mv /tmp/xac /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mv /tmp/xad /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mv /tmp/xae /tmp/leftin 
+wc -l /tmp/xaf 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mv /tmp/xaf /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git push origin lexicon 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git add specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/left
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+grep ii pron-data/gen.tsv 
+grep ii pron-data/gen.tsv |grep '\.i$'
+grep ii pron-data/gen.tsv |grep '\.i$'|sed -e 's/\.i$//'
+grep ii pron-data/gen.tsv |grep '\.i$'|sed -e 's/\.i$//' >> pron-data/gen.tsv 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv 
+git diff
+git add specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+wc -l pron-data/pronounce-as.*
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+ls
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+wc -l pron-data/pronounce-as.*
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+cat pron-data/pronounce-as.tsv |awk -F'\t' '{print $2}' > /tmp/leftin 
+cat pron-data/pronounce-as.tsv |awk -F'\t' '{print $1}' > /tmp/left
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//' |sort|uniq > /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//' > /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.tsv 
+git commit -m more
+git stash
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//' > /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.gen.tsv 
+git commit -m regen
+git diff
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+git diff
+vi pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.*
+git commit -m +1
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+vi pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.*
+git commit -m +1
+wc -l /tmp/left
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  
+git commit -m more
+git diff
+git stash
+git diff
+git add pron-data/gen.tsv  
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/lefti
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git diff pron-data/pronounce-as.tsv > /tmp/pronas
+git add pron-data/pronounce-as.tsv 
+git commit -m more
+git diff
+git stash
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+vi /tmp/pronas 
+cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftin 
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git stash
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git stash
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+cat /tmp/pronas |awk -F'\t' '{print $1}' > /tmp/left
+vi pron-data/pronounce-as.gen.tsv 
+paste /tmp/left /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.gen.tsv 
+git commit -m fix
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
+wc -l /tmp/leftin 
+git diff
+git add pron-data/gen.tsv  specific-norms.tsv 
+git commit -m more
+cat /tmp/pronas |awk -F'\t' '{print $1}' > /tmp/lefta
+cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftb
+cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftin
+less pron-data/pronounce-as.gen.tsv 
+git diff pron-data/pronounce-as.tsv > /tmp/pronas
+vi /tmp/pronas 
+cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftin
+cat /tmp/pronas |awk -F'\t' '{print $1}' > /tmp/lefta
+paste /tmp/lefta /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.tsv 
+git commit -m more
+git stash
+paste /tmp/lefta /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.gen.tsv 
+git commit -m more
+git push origin lexicon 
+cat pron-data/gen.tsv |sort|uniq > tmp
+mv tmp pron-data/gen.tsv 
+git diff
+git add pron-data/gen.tsv  
+git commit -m 'sort|uniq'
+git push origin lexicon 
+grep Trelawn specific-norms.tsv 
+grep Trelawney text/wyspa-skarbow.txt-0*
+grep Trelawneya text/wyspa-skarbow.txt-0*
+grep Trelawneye text/wyspa-skarbow.txt-0*
+grep Trelawneyo text/wyspa-skarbow.txt-0*
+grep Trelawneyu text/wyspa-skarbow.txt-0*
+grep Hispanlo text/wyspa-skarbow.txt-0*
