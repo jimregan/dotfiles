@@ -1,21 +1,3 @@
-cat cand |aspell --lang pl -a |less
-grep -i krawiecczyzna wyspa-skarbow.txt-06*aud
-minsec 1548
-cat cand |aspell --lang pl -a |less
-grep -i zatern wyspa-skarbow.txt-06*aud
-minsec 240
-vi cand
-grep -i zahuczęliśmy wyspa-skarbow.txt-06*aud
-grep -i zabobonnosć wyspa-skarbow.txt-06*aud
-grep -i ptasiu wyspa-skarbow.txt-06*aud
-minsec 173
-minsec 52009
-minsec 5209
-minsec 5304
-vi cand
-mv cand /tmp/leftin 
-ks
-ls
 df
 pwd
 ls
@@ -1998,3 +1980,21 @@ cd ..
 wget https://github.com/mozilla/DeepSpeech/releases/download/v0.1.0/deepspeech-0.1.0-models.tar.gz
 tar ztvf deepspeech-0.1.0-models.tar.gz 
 rm deepspeech-0.1.0-models.tar.gz 
+cd ../..
+ls
+cd ..
+ls
+cd desktop/Downloads/
+mv ~/Downloads/cv_corpus_v1.tar.gz .
+tar ztvf cv_corpus_v1.tar.gz 
+tar zxvf cv_corpus_v1.tar.gz 
+ls
+cd cv_corpus_v1/
+ls
+less cv-valid-train.csv 
+cat cv-valid-train.csv |awk -F, '{print $7}
+cat cv-valid-train.csv |awk -F, '{print $7}'
+cat cv-valid-train.csv |awk -F, '{print $7}'|grep ire
+cat cv-valid-train.csv |awk -F, '{print $7}'|grep ire|wc
+cat cv-valid-train.csv |awk -F, '($7=="ireland"){print}'
+cat cv-valid-train.csv |awk -F, '($7=="ireland"){print}'|grep male|grep thirt
