@@ -1,17 +1,3 @@
-vi cand
-grep -i brasę wyspa-skarbow.txt-05*aud
-grep -i dziewięcio- wyspa-skarbow.txt-05*aud
-less cand
-grep -i bryto wyspa-skarbow.txt-05*aud
-vi cand
-grep -i cove wyspa-skarbow.txt-05*aud
-minsec 3739
-vi cand
-grep -i eee wyspa-skarbow.txt-05*aud
-vi cand
-grep -i brien wyspa-skarbow.txt-05*aud
-minsec 2661
-minsec 4181
 cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
 less cand
 grep -i hardo wyspa-skarbow.txt-05*aud
@@ -1998,3 +1984,17 @@ less wyspa-skarbow.txt-01.txt.sent.json
 less wyspa-skarbow.txt-01.txt.sent.tmp 
 less wyspa-skarbow.txt-01.txt.sent.aud 
 less ~/5623564641001.aud.edt.txt 
+cd ../..
+cd harald_kaldi_stuff/
+ls
+git pull origin master 
+got diff
+git diff
+git stash
+git pull origin master 
+less make_DS_csv_files.py 
+find . -type f|xargs grep aeneas
+cd ../Corpora/
+ls
+cd scripts/
+ls
