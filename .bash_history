@@ -1,11 +1,3 @@
-cat /tmp/left|awk -F'|' '{print $2}'|tr -d '}' > /tmp/leftin 
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq 
-cat /tmp/leftin 
-cat /tmp/leftin |sort|uniq
-cat /tmp/leftin |sort|uniq|wc
 cat /tmp/leftin |sort|uniq > /tmp/aa
 cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
 cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
@@ -1998,3 +1990,11 @@ svn ci -m ocr
 cd ..
 svn ci -m ocr
 killall telnet
+cd 
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs 
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+vi /tmp/asd/spib
+ffplay /tmp/foo.wav 
+ls
