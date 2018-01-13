@@ -1,153 +1,3 @@
-less sppas
-less sppas.command 
-./sppas.
-./sppas.command 
-apt-cache search wxpy
-sudo apt-get install python-wxtools
-./sppas.command 
-sudo apt-get install  python-wxgtk-media3.0 
-./sppas.command 
-ls
-cd thing/
-ls
-rm wyspa-skarbow.txt-0*
-ls
-rm cand*
-rm pairs.tsv Annotations-sppas.log 
-ls
-ls
-ls samples/
-less samples/samples-pol/0003.txt 
-less samples/samples-pol/0003.TextGrid 
-less samples/samples-pol/0004.TextGrid 
-less samples/samples-pol/0001.TextGrid 
-less samples/samples-pol/0001.txt 
-mkdir thing
-cd thing/
-ls
-ls /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/*rudyard-kipling*
-ls /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/*wyspa*
-ls ~/bin
-cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/*wyspa* .
-cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/text/wyspa-skarbow.txt-0* .
-ls
-for i in 1 2 3 4 5 6;do mv 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.mp3;done
-ls
-for i in *mp3;do sh ~/bin/convert-mp3.sh $i;done
-ls
-rm *.mp3
-for i in *.wav;do mv $i $(basename $i .mp3.wav).wav;done
-ls
-less wyspa-skarbow.txt-01.wav.log 
-ls
-less wyspa-skarbow.txt-03-phon.xra 
-ls
-ls *log
-less wyspa-skarbow.txt-01.wav.log 
-less wyspa-skarbow.txt-03-palign.xra 
-ls
-praat
-less wyspa-skarbow.txt-03-palign.srt 
-ls -al
-less
-less wyspa-skarbow.txt-01-token.xra 
-less wyspa-skarbow.txt-01-phon.xra 
-less wyspa-skarbow.txt-01-merge.TextGrid 
-less wyspa-skarbow.txt-03-merge.TextGrid 
-ls
-ls -al
-less wyspa-skarbow.txt-03-token.srt
-ls
-cd thing/
-ls
-ls -al
-find . -size 108
-find . -size 0
-find . -size 0 -delete
-man find
-find . -size 108b
-find . -size 108
-man find
-find . -size 108c
-find . -size 108c -delete
-ls
-ls -al
-less wyspa-skarbow.txt-01-pho
-less wyspa-skarbow.txt-01.txt 
-ls -al
-tail -f wyspa-skarbow.txt-01.wav.log 
-grep -i brasę *aud
-grep -i Crossl *aud
-ls
-cp run-aeneas.sh aeneastg.sh
-vi aeneastg.sh 
-cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/audio/01-robert-louis-stevenson-wyspa-skarbow.mp3 .
-cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/text/wyspa-skarbow.txt-01.txt .
-ls
-sh aeneastg.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-01.txt 
-less wyspa-skarbow.txt-01.txt.aud 
-mv wyspa-skarbow.txt-01.txt.aud wyspa-skarbow.txt-01.textgrid
-cat wyspa-skarbow.txt-01.txt |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/split-sentence.pl 
-cat wyspa-skarbow.txt-01.txt |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/split-sentence.pl > sent.txt
-sh aeneastg.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3 sent.txt
-less sent.txt.aud 
-cd /tmp/
-split -l 1500 aa 
-mv xaa leftin 
-split -l 1500 leftin 
-mv xaa leftin
-split -l 1500 leftin 
-mx xaa leftin 
-mv xaa leftin 
-split -l 1500 leftin 
-mv xaa leftin 
-split -l 1500 leftin 
-mv xaa leftin 
-split -l 1500 leftin 
-mv xaa leftin 
-split -l 1500 leftin 
-mv xaa leftin 
-grep Bil *
-grep -i dżor *
-grep króćset *aud
-echo 2009 / 60
-echo $((2009 / 60))
-less wyspa-skarbow.txt-01.txt.aud
-echo $((200 / 6))
-echo $((60 * 33))
-cat /tmp/toproc 
-cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n' | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n' | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |sort|uniq
-cat /tmp/toproc |perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n' | perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |sort|uniq > /tmp/leftin
-vi /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}'
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin 
-paste /tmp/leftin /tmp/rightin  >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-vi /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-grep -i aści *txt
-cat /tmp/leftin 
-cat /tmp/leftin |aspell --lang pl -a
-cat /tmp/leftin |aspell --lang pl -a|less
-grep -i biesowska *txt
-grep -i biesowska *aud
-cat /tmp/leftin |aspell --lang pl -a|less
-cat /tmp/left |awj -F'|' '{print $2}'|tr -d '}' |aspell --lang pl -a|less
-cat /tmp/left |awk -F'|' '{print $2}'|tr -d '}' |aspell --lang pl -a|less
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/left|awk -F'|' '{print $2}'|tr -d '}' > /tmp/leftin 
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
 cat /tmp/left|awk -F'|' '{print $2}'|tr -d '}' > /tmp/leftin 
 paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
 cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
@@ -1998,3 +1848,153 @@ svn ci -m rest
 ping 178.62.77.24
 telnet 178.62.77.24 8080
 telnet 178.62.77.24 80
+cd coislife/ibiotsa/
+ls
+vi 01-b-otsa_dl-thph-irt-ocht-na.txt
+svn add 01-b-otsa_dl-thph-irt-ocht-na.
+svn add 01-b-otsa_dl-thph-irt-ocht-na.txt 
+svn ci -m text
+ls
+cp ../../../../wolne-lektury-audio-corpus/run-aeneas.sh .
+less run-aeneas.sh 
+sh run-aeneas.sh 01-b-otsa_dl-thph-irt-ocht-na.mp3 01-b-otsa_dl-thph-irt-ocht-na.txt 
+vi run-aeneas.sh 
+sh run-aeneas.sh 01-b-otsa_dl-thph-irt-ocht-na.mp3 01-b-otsa_dl-thph-irt-ocht-na.txt 
+vi lex.tsv
+less ~/ibiotsa.txt
+cp ~/ibiotsa.txt 01-b-otsa_dl-thph-irt-ocht-na.aud.txt
+vi 01-b-otsa_dl-thph-irt-ocht-na.aud.txt 
+svn add 01-b-otsa_dl-thph-irt-ocht-na.aud.txt 
+vi 01-b-otsa_dl-thph-irt-ocht-na.edit.tsv
+svn add 01-b-otsa_dl-thph-irt-ocht-na.edit.tsv
+mkdir ../../../cl
+cp 01-b-otsa_dl-thph-irt-ocht-na.edit.tsv ../../../cl/
+ls
+svn status
+svn ci -m add
+ping phoneticsrv3.lcs.tcd.ie
+ping phoneticsrv2.lcs.tcd.ie
+ping phoneticsrv.lcs.tcd.ie
+ping phoneticsrv1.lcs.tcd.ie
+ping lcs.tcd.ie
+ping www.tcd.ie
+ping google.ie
+ls
+vi 01-b-otsa_dl-thph-irt-ocht-na.txt
+less ~/ibiotsa.txt
+vi lex.tsv 
+cd ../../scripts/
+ls
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/03-b-otsa_dalladh 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA4OTB9fX1dfQ__&Signature=TaRtdZVayMD0mz2LOXIXGolD2d-mxDZtmMxCPsM6e13oNuFrHSU5COm1zTkqoEySugpuT9t-AR2gBTbKL7vhIyuXZyDsa1l5aMVQOroKOkqApEtEbsbYoN2ok8Zqpb3UnPqsByBk6LM0Hx4eBhaV1~2A9OE8ZIBdk3UjKzQ1zleAgPD7Q~IWfaA8TdJKYxNJWn04mSVOKIe4IP5AOB9lpmJmPig0Eof8WrswBHJeqWk1SiFsEY7Wo6d7GcSIOq4MBX7-TX3aPwnECm-jjIAJX3nerndGI9PBGucda~VgVZRMlfy9YhmNksX~qnbwb6XxOQtxRSLb1MZUT7DWRRQJfw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls
+#sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat' 
+sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat' 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzEwNzB9fX1dfQ__&Signature=vwtSYuN6IYQMHzs6Ixd08MpIAfmXRoFWKsnSVZwB8mScAkTfu-sVbwrWq8YOjSuZ-Ty6vhPTL~NpY8rCjHrv8Rpd3h7fF-U6pzogLX43BfsgmD-K6eqcsaiZ1Zwq0Efsrhk41UL5SXfvbOBu16sS7SH1DPmJz2fri1pBx6AYtPWlLt5btlFvJa6w7FEuYEzrxW6~YEU-0KAXxjcK9fyzl2p-BZify~EjndckHQo86laO3wx-NBq-QtgJF0R1MzhZN0xT-9H4CXNs4hWMkQmDhbbkb~i2NVuQ~HnNAO8BZw94oFlx6aYEBG6GbC~qkkgqugJf2MI~zeZLDgWgVv4bzg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/05-b-otsa_pl-s-an-il 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExODV9fX1dfQ__&Signature=IvCBbB07hSD4JK5fWYmj~tdAb4Z95Zqcxy7Q7RVtvqVfNhmLRsM7JWaddhGN2ak-7kxeBAANqR2KuMQOJjma3l2ZuWzxn4MViICOKHQcMhIQQ05EyzW1vnyYUBCYa00CWxNW0y5ehL3MbbQErODwKehPWp7o~j9peq8RIk2KZx-PuyCDQdJwocbFgWa02HqKHKeGxYQ3I~T06f60khHZajD6EkxYSHVJ5ujO0GyxDxeKXPqjDpbSacc2lxLAqGwlIcLd6VECoTdOHVGLg8x4k9biVTmUm7lptxE6UDl76j-lp7M90FWCh~A-BpYPIuqyuLZ2kz1nPRh2tDg2CU3ScA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay 03-b-otsa_dalladh.mp3 
+rm 03-b-otsa_dalladh.*
+ffplay 04-b-otsa_tat.mp3 
+rm 04-b-otsa_tat.*
+rm 05-b-otsa_pl-s-an-il.*
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/05-b-otsa_pl-s-an-il 'https://cf-hls-media.sndcdn.com/playlist/QC6nAXGuvjHc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1FDNm5BWEd1dmpIYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA5ODl9fX1dfQ__&Signature=x5VatnUQHQ4oXl0OXrQiLHtMpY6TUPW2Cm1Thd8k2un7LeZmtKL~~jBjiObj0cbQMhKH5kLXB09H95RFClbljPquPslXnXHTi9EhCwyrRHsfGLQ0YU9m47gt9lCNtm~0YuKbm0r~R70IyCKp-SAji0~lH4~U5S0evPMFdOZOf0QtV5O23jStGYAC2jyZ-ew3DC78-Q~AbFAG~3S3a0JIVUq8vcE~8dHVgLxFXY1Uvx2w5jm9kAty2zpCHW1nsMgbQ2WczngGaEPYYoJQt9FgnNhwia25QYmsmO8MT3uzBSh38dRR~rc9DBIZiQXQqYpv-mIrLB7bX2JjHBbiWrdYPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay 05-b-otsa_pl-s-an-il.mp3 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExOTB9fX1dfQ__&Signature=FlC0FczXJN6Bl4guzty2wUj60tXHKPxibpf99ZBkx5j~vtWoOvKcIqIXCZMpNkrYJDYTO2mjRaU8rw5zxtifuO3aLAixXYq2M6afUvEdqyLIj3Ihlh9EXKC6lSMYcfk66PmRUK89F6Kz05MsmrVg63j8ZkTAvetisvgeuq9wx6Kmwxj4VB8TSm5GFA3mbD4CBesq6ZdTeacc1ScmGUzEYkuqlVRs3ih~1Q~9lf6ZOH5MkrddhhZqDGc6lUrxAeaIuQvb70JWkUbtrsGvBuOtzPOM4iH02YabedUg83K9zdsuKwEnsYl9kZHE9r5T8XiLSLfXjW9sYNraRyoBy7o48Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ#
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExOTB9fX1dfQ__&Signature=FlC0FczXJN6Bl4guzty2wUj60tXHKPxibpf99ZBkx5j~vtWoOvKcIqIXCZMpNkrYJDYTO2mjRaU8rw5zxtifuO3aLAixXYq2M6afUvEdqyLIj3Ihlh9EXKC6lSMYcfk66PmRUK89F6Kz05MsmrVg63j8ZkTAvetisvgeuq9wx6Kmwxj4VB8TSm5GFA3mbD4CBesq6ZdTeacc1ScmGUzEYkuqlVRs3ih~1Q~9lf6ZOH5MkrddhhZqDGc6lUrxAeaIuQvb70JWkUbtrsGvBuOtzPOM4iH02YabedUg83K9zdsuKwEnsYl9kZHE9r5T8XiLSLfXjW9sYNraRyoBy7o48Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay 04-b-otsa_tat.wav 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/03-b-otsa_dalladh 'https://cf-hls-media.sndcdn.com/playlist/XJhmgDkI4eit.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1hKaG1nRGtJNGVpdC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA2Njh9fX1dfQ__&Signature=J-P0F3KmfNZjuyV2KmstLwBmlz30PaUwk3XYFT-1bypUypBZPrKNsKAq7QFqeyAd5uyZpJQ5w437y7rcBrMKr3H4fkfsyoucXFq7eXt6OyE0NabzT8IAtvwYpxgaF~tcqRRHAQQ42bEyyhdi2ozHZ~z8moD9xFvab~gaa4A-DDJpPaJbVcMExqpcmw9bvEqApDvnbVkuLTAhLvuH2N-m3zcIXQItlzX2xlBDSDkK251PncX1Uuzz-wFKDj03~DowY5O3kfM-gktdaxAcFcG4HOiyhg1XCqh9C3YWjieTExz~T8B5~5OlP5L0oI3Xu6V4-sz5Qa-ODfU5kdVJquPneA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay 03-b-otsa_dalladh.
+ffplay 03-b-otsa_dalladh.wav 
+ls
+mv 0* ../coislife/ibiotsa/
+ls
+rm list-0*
+vi soundcloud.sh 
+cp soundclouda.sh 
+cp soundcloud.sh soundclouda.sh 
+history |grep soundcloud
+vi soundclouda.sh 
+sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/03-b-otsa_dalladh 'https://cf-hls-media.sndcdn.com/playlist/XJhmgDkI4eit.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1hKaG1nRGtJNGVpdC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA2Njh9fX1dfQ__&Signature=J-P0F3KmfNZjuyV2KmstLwBmlz30PaUwk3XYFT-1bypUypBZPrKNsKAq7QFqeyAd5uyZpJQ5w437y7rcBrMKr3H4fkfsyoucXFq7eXt6OyE0NabzT8IAtvwYpxgaF~tcqRRHAQQ42bEyyhdi2ozHZ~z8moD9xFvab~gaa4A-DDJpPaJbVcMExqpcmw9bvEqApDvnbVkuLTAhLvuH2N-m3zcIXQItlzX2xlBDSDkK251PncX1Uuzz-wFKDj03~DowY5O3kfM-gktdaxAcFcG4HOiyhg1XCqh9C3YWjieTExz~T8B5~5OlP5L0oI3Xu6V4-sz5Qa-ODfU5kdVJquPneA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/01-b-otsa_dl-thph-irt-ocht-na 'https://cf-hls-media.sndcdn.com/playlist/1OVqMfTQ17Io.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzFPVnFNZlRRMTdJby4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3MzJ9fX1dfQ__&Signature=trOC-nUEc9qd3UtEMy5zH~J6TGZJtb9V4M1z99dFAvWFkq4ZBBhaLhCq8LsqC8ngUfUBCq2v5jVWxtq7rJaxMHgcle1GARMmSGL9rY89d1OzgTY8YuRPGVH6m-qORTwWiYiEUoiuo~c9rkYcm6f~uIMoPrfrVWIqlns-rIjxrxEoF4MMH13P-TSM3vpLimvCFvGU1U12-qOJilzH6Fbq7dHodeUiDFvjhKaSxhcM2ij6vpFkK982MD8D88OVGctysRTNA0k74MgLP30YV~3sa9JOHOmwxlIGzGUVguaCfvVYeFRrbvsGxFSpJ~8cPu7W7hXJHkhZsKyeRNXUWhyg3A__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+vi soundcloud.tsv 
+sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/02-b-otsa_cuairt-ghairid 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3NzV9fX1dfQ__&Signature=rU2jPLy3bqYgPaqyhyzIIRio0iCC1Bm5vzcLMMIEjiYLfeIZM7aHCJI-KJGFCd~POSijQFLMCLE6h4ZMonfJzPFEQdkbhX8RtOry4-F2DboHbdCuclwSCqPVSAw3rOBsak2XmcYMpNKuwhJ9T1ePGiejKSDut1LeSayJKCnpc-DK2Uco1ZoFC2ACydbSoY6pB0cmiRHOT02fNnpf66hckb9UpvOHf7MCDvqoEB1rYLsGMTHCF4HPPt5eQODuPNOF-yIbZJDsGYtDK2ufLpVhC4q-bYhgoYeQhwLH-~BhfvlSP2iEqdyyu0IBDy3GKoQcNX59~gSEFlvug84jbLPX4Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+vi soundcloud.tsv 
+sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3ODh9fX1dfQ__&Signature=XMMVUJSCN9xVFPMKizXxrdkm~CRvib67kBDz72fsQ~nAsUoBD1BK8iXX~Bbsl~GPUZlpvVLcyLtxPLB4VYQB~K7T8Q0OGUy1LVfzT3lTWIvTftO0dP6XH96-eEW0OqTip2d0wT87yt-TW-gZlMXfNIuJlI~2XUdh4VVC1SZesLbCtd7dCqRESUHVR-p1TVGMpg6RnnRqvRXRMx4iJ1HDu0zLMPAZ9m4MbfYswPQa-R0Dtuo5zD6e4mp2EbKDhbDBhpJUUO5vuUnIOmWi1ZRAJdjvyjdi1xKd8d393aW-kbLcMTaCrWmnuZW6uq0gnNjZKo4iqQ~BbSJG42QpADnTIA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/05-b-otsa_pl-s-an-il 'https://cf-hls-media.sndcdn.com/playlist/QC6nAXGuvjHc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1FDNm5BWEd1dmpIYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE2NzB9fX1dfQ__&Signature=LZUkqMryaO~bYGEFKLki7fCGlwyQ8rDBVBVJcehAcQV-gtVhxc~KT-CfRm~-GYkK2xpjmJ41HY4xJFv~R7qjAAtCYNhGQyx--ABQzsqoWaQ3F8UqEBKf3FQ5JtzhYHnkC0b7bJHDZVGjwAKsLBYZ72jbroG1Ro552gytECbPQrGQxnoUJ8x5Gtks1URfejs0KvhiOzHrGVVVmLlSrLszaGhxXRs8oRLoS941KZD-S7HQVzICE9d9dtuNxnfDyq-17z21lJSEkr7Mk93WhxhsaIq2-k-5yu5YuvZemhx7aVOcngeaV1ofnjcK66x~6JemfWZ~MKYEcfXvvZVcDn51NA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/06-b-otsa_r-ndiamhair-san 'https://cf-hls-media.sndcdn.com/playlist/clyU9WzLOQCn.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L2NseVU5V3pMT1FDbi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE5OTd9fX1dfQ__&Signature=RfZaQxu9BuVg2bXx6ZJ6Hnbrg6PtLEILGQ-qHl0bGWpG~ZNBxrTb2ffKc5sCs~EU8oNipidqqbCncLnA6u38XmmjF7cMBto3M1t149e7Ikz47s9wZoPAV71FFQQZmyLls8byM0Cl8c~qojMwrS~zEkLk~XvRE4dkd0oWmMdDUWtgyjjKPqPbkezpDrm1oQUBHu5Fz5KjXoRiFawulSN0vj2gr~0FWc3Au9zFwvGEFOXoypF0OHTJp7Uxo5DJ4bfMEnYqANqpzH8FDVJS8IGYm3Mob4M-gtvOzcOpLp-rZHGHTAxoe07kkTdoWceS27MXhkNRzeAshKVf8U6tXX65MA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay 06-b-otsa_r-ndiamhair-san.mp3 
+#sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/07-b-otsa_pluais-an-tobac 
+vi soundcloud.sh 
+rm soundclouda.sh 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/07-b-otsa_pluais-an-tobac 'https://cf-hls-media.sndcdn.com/playlist/EfsIqtNC3aXE.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0Vmc0lxdE5DM2FYRS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4NzR9fX1dfQ__&Signature=vo~~vCmWeXoa9pcgabQysvYghvwuX4hqBXSea4oJsmp81h8KbEsLBB~1hPB70kE1GxwUabjSVF1bHSdnJWxk1t8J-g5KICgpOQfcdDSSWpiTKriPrbaDYo94GHlcu5EVFEeOd9DCs5GbIfyDeGMuSowTPcaERSIqk2hLuaBe2VGq8JoCM8wBHEqc-9~iT55KedUN~G0DVDYrg4qEm5FXAQDYXhDPKehrGICzrmDMDx9Sw~B~sgrN54me2tfdhefVfufalCqel1RVDgn3o4t7Fa5bfuK3ZV4pmySst2sUh1a6XMfaTj5RHl8C73fHKEK1k9yk0MRpDIngU5h44rUCOQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay 07-b-otsa_pluais-an-tobac.mp3 
+sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm?in=cois-life-teoranta/sets/ibiotsa' 'https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3Mzh9fX1dfQ__&Signature=g386tzV1BPWkkD7s~ubFC44eUUPdsL7Hr3K39TgEHl5nVRhpcJ7cAGHVn6V7UXCSze7~xJhxGjWek06Ye~f3eHglS56-khh9LbR2MrbmIveKVRJygKdsXVyXvZG~um8KMoArjqaepNoCONGMD-lUpOqIHJrnv~4PedOwVydOoLjkqzYkfNEIpRQ4knpjEpMaRSw59P4B2U2r0hnfeXft~QB7l584FPE0uuAvfhXU~pmxDpmv2WF-pec07pdA34zgM8g7BCUh3mp6kVQL~g0nBiVNXhZqsKAq9g1jowLRgjy6FdAtt7hsGW3cedIYSCz6rPC~8sVKU5DlwdM2AfkkPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls
+less soundcloud.tsv 
+#sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm 'https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls
+ffplay ibiotsa.mp3 
+mv ibiotsa.mp3 08-b-otsa_an-mhaidhm.mp3
+mv ibiotsa.wav 08-b-otsa_an-mhaidhm.wav
+ls
+tail soundcloud.tsv 
+echo "https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm\thttps://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ"
+echo "https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhmhttps://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ"
+echo "https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ" >> soundcloud.tsv 
+vi soundcloud.tsv 
+svn add soundcloud.tsv 
+#sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/09-b-otsa_seanchomr-daithe 'https://cf-hls-media.sndcdn.com/playlist/sDgheS0HrWzz.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3NEZ2hlUzBIcld6ei4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzIxNDB9fX1dfQ__&Signature=HaJ-EKAhEZPtJOxcETcBR0AF7FBEr7CwF1ZF2IYc1EH8xBx2z~0mRsRCWWtkPScvqb4WS7jjwP7NEjJIG79GafN~WtwNbDDZ-TSaDc5qX6FmKHrE51s539I1uPFBhUPZbiayuoG3kEVzUR8VwJKPXnAcNAYKdx3nXjTorCJxYFsiS3cYYCv3seFu2gSBjiIYv1olsNe1uENLIVGgSX0wwN3MD6jMRfk9w11MWbg9HmxEEatQixJjDzOPYQTFEtkiwhh6RTHseWVKU5LNBP2GJuImqP-Xucj9sG1t4JKsvPpMTCjJsvtuh-tf5ofjApra~0X2hcB3W5YhObdJiDfevw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/09-b-otsa_seanchomr-daithe 'https://cf-hls-media.sndcdn.com/playlist/sDgheS0HrWzz.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3NEZ2hlUzBIcld6ei4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzIxNDB9fX1dfQ__&Signature=HaJ-EKAhEZPtJOxcETcBR0AF7FBEr7CwF1ZF2IYc1EH8xBx2z~0mRsRCWWtkPScvqb4WS7jjwP7NEjJIG79GafN~WtwNbDDZ-TSaDc5qX6FmKHrE51s539I1uPFBhUPZbiayuoG3kEVzUR8VwJKPXnAcNAYKdx3nXjTorCJxYFsiS3cYYCv3seFu2gSBjiIYv1olsNe1uENLIVGgSX0wwN3MD6jMRfk9w11MWbg9HmxEEatQixJjDzOPYQTFEtkiwhh6RTHseWVKU5LNBP2GJuImqP-Xucj9sG1t4JKsvPpMTCjJsvtuh-tf5ofjApra~0X2hcB3W5YhObdJiDfevw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay 09-b-otsa_seanchomr-daithe.mp3 
+apt-cache search calibre
+sudo apt-get install calibre
+cd ..
+svn status
+svn ci -m rest
+svn ci -m 'next book'
+svn ci -m 'front matter from the soundcloud page'
+ls scripts/
+ffplay scripts/hata-zu-mhamo-caibidil-5-10-000001.mp3 
+ffplay scripts/hata-zu-mhamo-caibidil-5-10-000002.mp3 
+ffplay scripts/hata-zu-mhamo-caibidil-5-10-000003.mp3 
+ffplay scripts/hata-zu-mhamo-caibidil-5-10-000005.mp3 
+ffplay scripts/hata-zu-mhamo-caibidil-5-10-000004.mp3 
+ffplay scripts/hata-zu-mhamo-caibidil-5-10-000001.mp3 
+ffplay scripts/hata-zu-mhamo-caibidil-11-15-000001.mp3 
+svn add coislife/hatazumhamo/*
+svn ci -m rest
+ffplay scripts/aois-fir-1-26-000001.mp3 
+ffplay scripts/aois-fir-caibidl-5-9-000001.mp3 
+ffplay scripts/aois-fir-c-000001.mp3 
+ffplay scripts/aois-fir-c-000002.mp3 
+ffplay scripts/aois-fir-d-000002.mp3 
+ffplay scripts/aois-fir-d-000001.mp3 
+ffplay scripts/aois-fir-d-000002.mp3 
+svn ci -m 'Aois Fir'
+ls coislife/
+cd scripts/
+svn diff
+ls
+rm nSKOzVgjbqxi.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9uU0tPelZnamJxeGkuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3OTg5Mn19fV19\&Signature\=I 
+ls
+cat todo 
+grep Ros videos.tsv 
+ls
+grep 5425987409001 videos.tsv 
+mv 5425987409001.* ../garfield/
+svn add ../garfield/5425987409001.* 
+grep 5428434993001 videos.tsv 
+svn add ../garfield/5428434993001.* 
+mv 5428434993001.* ../garfield/
+svn add ../garfield/5428434993001.* 
+ls
+mkdir ../lm-data/ga-books/2010
+mv '/home/jim/Downloads/Mac a’ Bhaird, Proinsias - Rún an Bhonnáin .txt' ../lm-data/ga-books/2010/macabhaird.txt
+svn add ../lm-data/ga-books/2010/macabhaird.txt
+svn add ../lm-data/ga-books/2010
+mkdir ../lm-data/ga-books/2016/
+cp /tmp/iris ../lm-data/ga-books/2016/nicphaidin.txt
+svn add ../lm-data/ga-books/2016/nicphaidin.txt
+svn add ../lm-data/ga-books/2016/
+svn ci -m ocr
+cd ..
+svn ci -m ocr
+killall telnet
