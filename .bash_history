@@ -1,50 +1,3 @@
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689521068001&teideal=Sinatra%20:%20Guth%20na%20Meala&series=Sinatra%20:%20Guth%20na%20Meala&dlft=2'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5602668103001&teideal=Deargdh%C3%BAil:%20D%C3%A1nta%20Mh%C3%A1ire%20Mhac%20an%20tSaoi&series=Deargdh%C3%BAil:%20D%C3%A1nta%20Mh%C3%A1ire%20Mhac%20an%20tSaoi&dlft=35'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5641946908001&teideal=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&series=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&dlft=14'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5573271836001&teideal=Ar%20an%20Aer&series=Ar%20an%20Aer&dlft=34'
-perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5536589016001&teideal=Seirbh%C3%ADs%20Bhus%20na%20h%C3%89irne&series=Bealach%20na%20mBusanna&dlft=35'
-less videos.tsv 
-cd /tmp/asd/
-ls
-cat spid 
-vi spid 
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-cat spid.log |perl http://web.archive.org/web/20180107221034/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/1184/1290862567001_3e852d10-53e7-4fdd-bf1b-ee2d933d8bb7.vtt?pubId=1290862567001&videoId=5331516079001
-http://web.archive.org/web/20180107220817/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/450/1290862567001_42bc084b-0c22-4995-9e6c-fbb0d8fd3120.vtt?pubId=1290862567001&videoId=5341752727001
-http://web.archive.org/web/20180107220701/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/2529/1290862567001_bdbc5e24-cf9a-4327-a701-17dfc154ae23.vtt?pubId=1290862567001&videoId=5337642327001
-http://web.archive.org/web/20170306005305/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2670/1290862567001_32ad7fb9-41d5-47c0-8965-db31b5889008.vtt?pubId=1290862567001&videoId=5341799685001
-http://web.archive.org/web/20170306005307/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2670/1290862567001_3b8be3be-74fd-4711-b91b-64fa8f231a65.vtt?pubId=1290862567001&videoId=5341799685001
-http://web.archive.org/web/20170305152056/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/861/1290862567001_57821653-2d2a-4c4a-8f81-50c2d2a794cb.vtt?pubId=1290862567001&videoId=5344003543001
-http://web.archive.org/web/20170305152059/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/861/1290862567001_5f5327ef-a0ce-4822-b3e2-d189f8ab60c9.vtt?pubId=1290862567001&videoId=5344003543001
-http://web.archive.org/web/20180107221034/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/1184/1290862567001_3e852d10-53e7-4fdd-bf1b-ee2d933d8bb7.vtt?pubId=1290862567001&videoId=5331516079001
-http://web.archive.org/web/20180107222248/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1923/1290862567001_d3e88e73-dc6b-4dac-8144-e53e7f1a53fa.vtt?pubId=1290862567001&videoId=5345585075001
-http://web.archive.org/web/20180107222620/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2804/1290862567001_9b4f6e9a-cbc5-4d99-b92e-b4503be03668.vtt?pubId=1290862567001&videoId=5349675406001
-ls
-cat spid.log|perl ~/bin/wget-http.pl 
-cat spid.log|perl ~/bin/wget-http.pl  >> /tmp/mnt/3/desktop/tmp/sync/http-misc-20180105-1.nt 
-cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'
-cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep wget/2
-cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep web/2
-cat spid.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep web/2 >> /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid |awk -F'/web/'|while read i;do grep $i /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt || echo http://web.archive.org/save/$i >> asp;done
-cat spid |awk -F'/web/' '{print $2}'|while read i;do grep $i /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt || echo http://web.archive.org/save/$i >> asp;done
-cat asp 
-vi asp 
-sh ~/scripts/spider.sh asp
-tail -f asp.log 
-cat asp.log|perl ~/bin/wget-http.pl  |awk -F'[<>]' '{print $6}'|grep web/2 >> /tmp/mnt/3/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat asp.log|perl ~/bin/wget-http.pl  >> /tmp/mnt/3/desktop/tmp/sync/http-misc-20180105-1.nt 
-less /tmp/mnt/3/desktop/tmp/sync/http-misc-20180105-1.nt 
-ls
-rm *
-cd /tmp/
-ls
-unzip -l ~/Downloads/SPPAS-1.9.3.zip 
-mkdir spass
-cd spass/
-unzip ~/Downloads/SPPAS-1.9.3.zip 
-ls
 less sppas
 less sppas.command 
 ./sppas.
@@ -1998,3 +1951,50 @@ wget http://www.siopa.ie/siopa_files/PDFs/Extract/I_dtir_mhilis_na_mbeo_.pdf
 mv I_dtir_mhilis_na_mbeo_.pdf coislife/idirmhilisnambeo/
 mv ~/oconaire.txt ~/ga-books/2008/
 cp ~/oceallachain.txt coislife/idirmhilisnambeo/I_dtir_mhilis_na_mbeo_.txt
+cd ../../..
+git add cl/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
+cp TG4/coislife/ibiotsa/lex.tsv cl/
+git commit -m add
+git branch
+git add cl/lex.tsv 
+vi cl/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
+git add cl/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
+git commit -m lex
+svn status
+cd TG4/
+svn status
+svn diff
+svn ci -m more
+mv coislife/ibiotsa/01-b-otsa_dl-thph-irt-ocht-na.aud coislife/ibiotsa/01-b-otsa_dl-thph-irt-ocht-na.aud.txt 
+svn diff
+svn ci -m 'all available text'
+vi coislife/ibiotsa/lex.tsv 
+vi coislife/ibiotsa/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
+cd scripts/
+ls
+ffplay 09-b-otsa_seanchomr-daithe.wav 
+mv 0* ../coislife/ibiotsa/
+svn add ../coislife/ibiotsa/0*
+svn ci -m more
+cd ..
+svn ci -m more
+ls
+cd scripts/
+ls
+grep 5485696369001 videos.tsv 
+mv 5485696369001.* ../garfield/
+svn add ../garfield/5485696369001.* 
+grep 5564672953001 videos.tsv 
+mv 5564672953001.* ../astroblast/
+svn add ../astroblast/5564672953001.* 
+grep 5705986186001 videos.tsv 
+mv 5705986186001.* ../olivia/
+svn add ../olivia/5705986186001.*
+cd ..
+svn ci -m more
+sudo mv ~/Downloads/gle.traineddata /usr/local/share/tessdata/
+ls
+svn ci -m rest
+ping 178.62.77.24
+telnet 178.62.77.24 8080
+telnet 178.62.77.24 80
