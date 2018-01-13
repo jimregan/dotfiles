@@ -1,10 +1,3 @@
-minsec 985
-grep Harry *txt
-grep -i harr wyspa-skarbow.txt-02*aud
-minsec 1017
-echo Morgan > /tmp/leftin 
-echo Morganem >> /tmp/leftin 
-cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
 less cand 
 grep -i pd wyspa-skarbow.txt-02*aud
 minsec 2822
@@ -1998,3 +1991,10 @@ pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict cmu
 less pserr 
 less cmusphinx-clarinpl/pl.dic
 pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > psout 2> pserr
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/leftin |sort|uniq |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
+paste /tmp/lefta /tmp/rightin |sed -e 's/ *$//' >> ../pron-data/gen.tsv 
+paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> ../pron-data/gen.tsv 
+man -k align
+ls
