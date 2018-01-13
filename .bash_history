@@ -1,36 +1,3 @@
-grep -i Grayu wyspa-skarbow.txt-04*aud
-minsec 557
-cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand
-grep -i David wyspa-skarbow.txt-04*aud
-grep -i Cumb wyspa-skarbow.txt-04*aud
-less cand
-cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand
-grep -i david wyspa-skarbow.txt-04*aud
-grep -i roger wyspa-skarbow.txt-04*aud
-minsec 1737
-minsec 2056
-less cand
-cat cand |aspell --lang pl -a |less
-grep -i kręgielki wyspa-skarbow.txt-04*aud
-minsec 982
-cat cand |aspell --lang pl -a |less
-grep -i prawdobodobnie wyspa-skarbow.txt-04*aud
-minsec 1679
-cat cand |aspell --lang pl -a |less
-vi cand 
-cat cand |aspell --lang pl -a |less
-vi cand 
-mv cand /tmp/leftin 
-cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand
-cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand
-cat cand |aspell --lang pl -a |less
-grep -i szpygat wyspa-skarbow.txt-05*aud
-minsec 2242
-less cand
 grep -i brasę wyspa-skarbow.txt-05*aud
 minsec 2162
 cat cand |aspell --lang pl -a |less
@@ -1998,3 +1965,36 @@ less psout
 grep 1.00 psout 
 grep 1.00 psout |awk '{print $2 "\t" $3 "\t" $1}' > psout.aud.txt
 audacity 
+less wyspa-skarbow.txt-01.txt.sent 
+ls
+find ../../ -name 'run*aen*sh'
+cp ../../wolne-lektury-audio-corpus/text/run-aeneas.sh .
+vi run-aeneas.sh 
+for i in 1 2 3 4 5 6;do sh run-aeneas.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent; done
+ls
+cp run-aeneas.sh run-aeneas-json.sh 
+vi run-aeneas.sh 
+for i in 1 2 3 4 5 6;do sh run-aeneas.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent; done
+echo rm *.sent.aud
+vi run-aeneas.sh 
+for i in 1 2 3 4 5 6;do sh run-aeneas.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent; done
+less wyspa-skarbow.txt-01.txt.sent.json 
+ls
+ls *mp3.txt
+mkdir ../../wolne-lektury-audio-corpus/audacity-sound-finder
+mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
+ls
+ls ../../wolne-lektury-audio-corpus/audacity-sound-finder/
+less ../../wolne-lektury-audio-corpus/audacity-sound-finder/01-robert-louis-stevenson-wyspa-skarbow.mp3.txt 
+mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
+ls ../../wolne-lektury-audio-corpus/audacity-sound-finder/
+less ../../wolne-lektury-audio-corpus/audacity-sound-finder/boleslaw-lesmian-napoj-cienisty-spojrzystosc-cykl-trupiegi.mp3.txt 
+less ../../wolne-lektury-audio-corpus/text/napoj-cienisty-trupiegi.txt 
+mv napoj-cienisty-trupiegi.txt ../../wolne-lektury-audio-corpus/audacity/
+less ../../wolne-lektury-audio-corpus/audacity/napoj-cienisty-trupiegi.txt 
+tar ztvf ~/Downloads/cv_corpus_v1.tar.gz 
+df
+ls
+mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
+less ../../wolne-lektury-audio-corpus/audacity-sound-finder/00-stefan-zeromski-przedwiosnie-rodowod.mp3.txt 
+ls
