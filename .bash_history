@@ -1,89 +1,3 @@
-svn mv unsorted-march/5346540050001.wav dinotrain/
-svn mv unsorted-march/WCL011812_gle.vtt\?1488730945 dinotrain/5346540050001.vtt
-svn mv unsorted-march/5346540094001.wav dinotrain/
-svn mv unsorted-march/WCL011811_gle.vtt\?1488731494 dinotrain/5346540094001.vtt
-svn mv unsorted-march/5349675406001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2804/1290862567001_9b4f6e9a-cbc5-4d99-b92e-b4503be03668.vtt?pubId=1290862567001&videoId=5349675406001' -O garfield/5349675406001.vtt
-svn add garfield/5349675406001.vtt
-svn ci -m more
-ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
-svn mv unsorted-march/5361980924001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1889/1290862567001_077334a9-a7d6-41e6-91be-0aa80fedc720.vtt?pubId=1290862567001&videoId=5361980924001' -O unsorted-march/5361980924001.vtt
-mv unsorted-march/5361980924001.vtt garfield/
-svn add garfield/5361980924001.vtt 
-svn status
-mkdir wordlists
-mv *.wlist wordlists/
-ls
-mv all.* filt.out* wordlist wordlists/
-ls
-svn ci -m +1
-cat ../../../Laptop/Playing/tg4-files/garfield1.txt 
-cat ../../../Laptop/Playing/tg4-files/garfield1.txt |grep vtt
-cat ../../../Laptop/Playing/tg4-files/garfield1.txt |grep vtt|grep tgfour
-cat ../../../Laptop/Playing/tg4-files/garfield1.txt |grep vtt|grep tgfour|awk '{print "http://web.archive.org/web/" $0}' > /tmp/asd/spid
-svn diff
-ls
-ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
-svn mv unsorted-march/5350916549001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1836/1290862567001_4e5f22d4-94a6-4510-9c38-819cddf8a250.vtt?pubId=1290862567001&videoId=5350916549001' -O garfield/5350916549001.vtt
-svn add garfield/5350916549001.vtt
-svn mv unsorted-march/5357691668001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/2078/1290862567001_9a3a14de-6e58-4dd2-b236-b9813a10a9ed.vtt?pubId=1290862567001&videoId=5357691668001' -O garfield/5357691668001.vtt
-svn add garfield/5357691668001.vtt
-svn mv unsorted-march/5359044879001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1606/1290862567001_bad13b1b-95e1-45cb-8934-2211a81516e1.vtt?pubId=1290862567001&videoId=5359044879001' -O garfield/5359044879001.vtt 
-svn add  garfield/5359044879001.vtt 
-svn mv unsorted-march/5360471332001.wav unsorted-march/
-svn mv unsorted-march/5360471332001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/3583/1290862567001_a2ff50bd-9dc9-40e9-a501-fa5f745a2522.vtt?pubId=1290862567001&videoId=5360471332001' -O garfield/5360471332001.vtt
-svn add  garfield/5360471332001.vtt
-svn mv unsorted-march/5360530025001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1993/1290862567001_41972aa9-f74b-4dd4-a444-891bb846185c.vtt?pubId=1290862567001&videoId=5360530025001' -O garfield/5360530025001.vtt
-svn add garfield/5360530025001.vtt
-ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
-svn mv unsorted-march/5360591393001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1335/1290862567001_1687ef75-6958-4ae1-9caa-cf92af80aceb.vtt?pubId=1290862567001&videoId=5360591393001' -O garfield/5360591393001.vtt
-svn add  garfield/5360591393001.vtt
-svn ci -m 'remainder of what I have notes for'
-ls
-cd unsorted-march/
-ls
-svn mv WCL009921_gle.vtt\?1488760591 5322838421001.vtt
-ls
-svn mv WCL009922_gle.vtt\?1488760553 5324347217001.vtt
-ls
-svn ci -m 'match to names in case more of the video is recoverable'
-ls
-svn mv WCL009924_gle.vtt\?1488760046 5289204109001.vtt
-svn mv WCL009925_gle.vtt\?1488760013 5289181086001.vtt
-svn mv WCL009926_gle.vtt\?1488759981 5289249394001.vtt
-svn mv WCL009950_gle.vtt\?1488743814 5309228962001.vtt
-svn ci -m more
-ls
-cd ..
-ls
-less /tmp/mnt/3/Laptop/Playing/audio-corpus/czytamy-sluchajac.pl 
-cd scripts/
-tail videos.tsv 
-grep Garf videos.tsv |grep 16
-grep Harv videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5702751375001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=7'
-grep Cat videos.tsv 
-grep Cat videos.tsv |grep 13
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5702703092001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=6'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5701642607001&teideal=Harvey%20Beaks&series=Harvey%20Beaks&dlft=5'
-grep Cat videos.tsv |grep 12
-grep Cat videos.tsv |grep 11
-grep Ros videos.tsv 
-grep Beo videos.tsv 
-ls
-cd no-transcript/
-ls
-cd ..
-ls
-cd english-only/
-ls
 perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689521068001&teideal=Sinatra%20:%20Guth%20na%20Meala&series=Sinatra%20:%20Guth%20na%20Meala&dlft=2'
 perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5602668103001&teideal=Deargdh%C3%BAil:%20D%C3%A1nta%20Mh%C3%A1ire%20Mhac%20an%20tSaoi&series=Deargdh%C3%BAil:%20D%C3%A1nta%20Mh%C3%A1ire%20Mhac%20an%20tSaoi&dlft=35'
 perl ../scripts/tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5641946908001&teideal=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&series=Na%C3%ADon%C3%A1in%20an%20Z%C3%BA&dlft=14'
@@ -1998,3 +1912,89 @@ ffplay 01-b-otsa_dl-thph-irt-ocht-na.mp3
 ffplay 01-b-otsa_dl-thph-irt-ocht-na.wav 
 mv 01-b-otsa_dl-thph-irt-ocht-na.* ../coislife/ibiotsa/
 svn add ../coislife/ soundcloud.sh 
+tail -n 3 videos.tsv 
+tail -n 3 videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../harveybeaks/$id.vtt;done
+svn add ../harveybeaks/5702751375001.vtt ../harveybeaks/5702703092001.vtt ../harveybeaks/5701642607001.vtt
+grep Garf videos.tsv 
+grep Garf videos.tsv |grep 39
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5420430886001&teideal=Garfield&series=Garfield&dlft=35'
+grep Cat 
+grep Cat videos.tsv |grep 22
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5580933662001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+grep Cat videos.tsv |grep 15
+grep Cat videos.tsv |grep 22
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703136012001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5560860342001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5561167152001&teideal=Olivia&series=Olivia&dlft=30'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5704464177001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=34'
+grep Cat videos.tsv |grep 21
+grep Garf videos.tsv |grep 38
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5420275582001&teideal=Garfield&series=Garfield&dlft=34'
+grep Cat videos.tsv |grep 14
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703027186001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5559779921001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703016234001&teideal=Olivia&series=Olivia&dlft=29'
+grep Harv videos.tsv 
+grep Ros videos.tsv 
+sh proc_mp4.sh 'https://tgfour-a.akamaihd.net/rtmp_uds/1290862567001/201801/2322/1290862567001_5702718197001_5702703092001.mp4?pubId=1290862567001&videoId=5702703092001' 
+ls
+mv 5702703092001.wav ../harveybeaks/
+svn add ../harveybeaks/5702703092001.wav 
+tail -n 10 videos.tsv |awk -F'\t' '{print $6}'
+tail -n 10 videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.vtt;done
+less 5703027186001.vtt
+ls
+tail -n 10 videos.tsv > cur
+cat cur 
+grep Astro cur 
+grep Astro cur |awk -F'videoId=' '{print $NF}'
+grep Astro cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../astroblast/;svn add ../astroblast/$i.vtt;done
+grep Cat cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../catahata/;svn add ../catahata/$i.vtt;done
+grep Oliv cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../olivia/;svn add ../olivia/$i.vtt;done
+grep Garf cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../garfield/;svn add ../garfield/$i.vtt;done
+grep Whiz cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../whizsachistin/;svn add ../whizsachistin/$i.vtt;done
+grep Garf cur|tail -n 1 |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../garfield/;svn add ../garfield/$i.vtt;done
+cd ..
+svn status
+cat */5703027186001.vtt
+echo */5703027186001.vtt
+svn ci -m more
+svn diff
+grep Garf cur|tail -n 1 |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../garfield/;svn add ../garfield/$i.wav;done
+cd scripts/
+grep Garf cur|tail -n 1 |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../garfield/;svn add ../garfield/$i.wav;done
+grep Cat cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../catahata/;svn add ../catahata/$i.wav;done
+grep Oliv cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../olivia/;svn add ../olivia/$i.wav;done
+grep Astro cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../astroblast/;svn add ../astroblast/$i.wav;done
+ls
+grep 5420430886001 videos.tsv 
+grep 5704464177001 videos.tsv 
+grep Whiz cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../whizsachistin/;svn add ../whizsachistin/$i.wav;done
+rm 5420430886001.wav 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703122531001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5700775958001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=30'
+ls ../rosnarun/
+tail videos.tsv 
+tail -n 2 videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../rosnarun/$id.vtt;done
+svn add ../rosnarun/5703122531001.vtt ../rosnarun/5700775958001.vtt
+cd ..
+svn ci -m more
+svn ci -m 'There are a few Cois Life audiobooks about. No text yet, but it at least exists'
+mv ~/Downloads/Ibiotsa_Sliocht_Caib1.pdf coislife/ibiotsa/
+svn add coislife/ibiotsa/Ibiotsa_Sliocht_Caib1.pdf 
+git commit -m 'excerpt from Ibiotsa'
+svn commit -m 'excerpt from Ibiotsa'
+pdftohtml coislife/ibiotsa/Ibiotsa_Sliocht_Caib1.pdf 
+less coislife/ibiotsa/Ibiotsa_Sliocht_Caib1.html 
+less coislife/ibiotsa/Ibiotsa_Sliocht_Caib1s.html 
+less ~/ibiotsa.txt 
+ffplay scripts/caibidil-2-000001.mp3 
+mkdir ~/ga-books
+mkdir ~/ga-books/2008
+mv ~/jenkinson.txt ~/ga-books/2008/
+mkdir ~/ga-books/2017
+mkdir coislife/idirmhilisnambeo
+wget http://www.siopa.ie/siopa_files/PDFs/Extract/I_dtir_mhilis_na_mbeo_.pdf
+mv I_dtir_mhilis_na_mbeo_.pdf coislife/idirmhilisnambeo/
+mv ~/oconaire.txt ~/ga-books/2008/
+cp ~/oceallachain.txt coislife/idirmhilisnambeo/I_dtir_mhilis_na_mbeo_.txt
