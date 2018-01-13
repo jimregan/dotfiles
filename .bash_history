@@ -1,77 +1,3 @@
-svn status
-svn add 5413626562001.vtt 5469256654001.vtt 5470849233001.vtt
-svn ci -m replacements
-cd ..
-cd catahata/
-grep 5566610317001 ../scripts/videos.tsv 
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/249/1290862567001_1023934b-fa71-49e9-8985-d4a991340c5b.vtt?pubId=1290862567001&videoId=5566610317001' -O 5566610317001.vtt
-fdupes -r .
-fdupes .
-svn status
-rm add 5566610317001.vtt 
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/249/1290862567001_1023934b-fa71-49e9-8985-d4a991340c5b.vtt?pubId=1290862567001&videoId=5566610317001' -O 5566610317001.vtt
-svn add 5566610317001.vtt 
-svn ci -m replacement
-cd ..
-ls
-ls unsorted-march/*wav
-svn mv unsorted-march/WCL058117_gle.vtt\?1488763465 rosnarun/5324368948001.vtt
-svn mv unsorted-march/5324368948001.wav rosnarun/
-svn mv unsorted-march/WCL058117_eng.vtt\?1488763465 rosnarun/5324368948001.e.vtt
-svn mv unsorted-march/5325602815001.wav dinotrain/
-svn mv unsorted-march/WCL009923_gle.vtt\?1488760515 dinotrain/5325602815001.vtt
-svn mv unsorted-march/5325713778001.wav dinotrain/
-svn mv unsorted-march/WCL009956_gle.vtt\?1488760431 dinotrain/5325713778001.vtt 
-svn mv unsorted-march/5325760957001.wav dinotrain/
-svn mv unsorted-march/WCL009958_gle.vtt\?1488760340  dinotrain/5325760957001.vtt 
-svn mv unsorted-march/5334153054001.wav dinotrain/
-svn mv unsorted-march/WCL009960_gle.vtt\?1488759905 dinotrain/5334153054001.vtt 
-svn ci -m sort
-ls unsorted-march/*wav
-svn mv unsorted-march/5334369491001.wav dinotrain/
-svn mv unsorted-march/WCL011805_gle.vtt\?1488759867 dinotrain/5334369491001.vtt 
-svn mv unsorted-march/5337642327001.wav garfield/
-svn status
-svn ci -m sort
-curl 'http://web.archive.org/web/https://tgfour-a.akamaihd.net/pd/1290862567001/201702/2529/1290862567001_bdbc5e24-cf9a-4327-a701-17dfc154ae23.vtt?pubId=1290862567001&videoId=5337642327001'
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201702/2529/1290862567001_bdbc5e24-cf9a-4327-a701-17dfc154ae23.vtt?pubId=1290862567001&videoId=5337642327001' -O garfield/5337642327001.vtt
-svn add garfield/5337642327001.vtt
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/450/1290862567001_42bc084b-0c22-4995-9e6c-fbb0d8fd3120.vtt?pubId=1290862567001&videoId=5341752727001' -O garfield/5341752727001.vtt
-ls unsorted-march/5341752727001.wav
-svn mv unsorted-march/5341752727001.wav garfield/
-svn add garfield/5341752727001.vtt 
-svn ci -m 'sort/add subtitles that are still available'
-curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5331547175001&pubId=1290862567001&videoId=5331516079001'
-ls unsorted-march/*wav
-ls unsorted-march/*wav|awk -F/ '{print $2}'
-ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
-ls
-mkdir costa
-svn add costa/
-svn mv unsorted-march/5341799685001.* costa/
-less costa/5341799685001.vtt 
-ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
-svn mv unsorted-march/5344003543001.* rosnarun/
-less rosnarun/5344003543001.vtt 
-wget 'http://web.archive.org/web/20170305152056/https://tgfour-a.akamaihd.net/pd/1290862567001/201703/861/1290862567001_57821653-2d2a-4c4a-8f81-50c2d2a794cb.vtt?pubId=1290862567001&videoId=5344003543001' -O rosnarun/5344003543001.e.vtt
-svn add rosnarun/5344003543001.e.vtt
-svn status
-svn ci -m 'sort/add'
-ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
-svn mv unsorted-march/5344228050001.wav garfield/
-#svn mv unsorted-march/WCL045618_gle.vtt\?1488751116 garfield/5344228050001.vtt 
-diff -u unsorted-march/WCL045618_gle.vtt\?148875*
-svn mv unsorted-march/WCL045618_gle.vtt\?1488751116 garfield/5344228050001.vtt 
-svn rm unsorted-march/WCL045618_gle.vtt\?1488757146 
-svn mv unsorted-march/5345367059001.wav dinotrain/
-svn mv unsorted-march/WCL011809_gle.vtt\?1488759608 dinotrain/5345367059001.vtt 
-svn mv unsorted-march/5345379358001.wav dinotrain/
-svn mv unsorted-march/WCL011810_gle.vtt\?1488759568 dinotrain/5345379358001.vtt 
-svn ci -m sort
-svn mv unsorted-march/5345585075001.wav garfield/
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201703/1923/1290862567001_d3e88e73-dc6b-4dac-8144-e53e7f1a53fa.vtt?pubId=1290862567001&videoId=5345585075001' -O  garfield/5345585075001.vtt
-svn add  garfield/5345585075001.vtt
-ls unsorted-march/*wav|awk -F/ '{print $2}'|sed -e 's/\.wav//'
 svn mv unsorted-march/5346540050001.wav dinotrain/
 svn mv unsorted-march/WCL011812_gle.vtt\?1488730945 dinotrain/5346540050001.vtt
 svn mv unsorted-march/5346540094001.wav dinotrain/
@@ -1998,3 +1924,77 @@ perl ../apply-specific.pl
 git diff
 git add dlugi-jezyk.txt 
 git commit -m tweak
+cd ..
+cd msf-asr/TG4/
+ls
+cd scripts/
+tail videos.tsv 
+tail -n 3 videos.tsv 
+tail -n 3 videos.tsv |awk -F'\t' '{print $5}'|while read i;do sh run.sh $i;done
+tail -n 3 videos.tsv |awk -F'\t' '{print $5}'|while read i;do echo $i|sh run.sh ;done
+less run.sh 
+ls
+curl $(tail -n 3 videos.tsv |awk -F'\t' '{print $5}')
+curl $(tail -n 3 videos.tsv 
+tail -n 3 videos.tsv 
+tail -n 3 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}' >> /tmp/asd/spid
+tail -n 3 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $6}' >> /tmp/asd/spid
+ls
+less proc_mp4.sh 
+tail -n 3 videos.tsv |awk -F'\t' '{print $5}'|while read i;do sh proc_mp4.sh $i;done
+ls
+mv 570* ../harveybeaks/
+cd ..
+svn status
+svn add harveybeaks/5701642607001.wav harveybeaks/5702751375001.wav
+svn ci -m more
+cd scripts/
+ls
+tail videos.tsv 
+less videos.tsv 
+tail -n 10 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $6}' >> /tmp/asd/spid
+tail -n 10 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}'|grep mp4 >> /tmp/asd/spid
+curl $(tail -n 10 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}'|grep m3u)|grep http >> /tmp/asd/spid
+tail -n 10 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}'|grep m3u
+tail -n 10 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}'|grep mp4
+tail -n 10 videos.tsv 
+tail -n 11 videos.tsv 
+sh proc_mp4.sh $(tail -n 10 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}')
+ls
+tail -n 2 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}'|grep mp4 >> /tmp/asd/spid
+tail -n 2 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $6}' >> /tmp/asd/spid
+sh proc_mp4.sh $(tail -n 2 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $5}')
+ls
+for i in 570*;do mv $i ../rosnarun/;svn add ../rosnarun/$i;done
+ls
+cp run.sh soundcloud.sh
+vi soundcloud.sh 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/02-b-otsa_cuairt-ghairid 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg2NjR9fX1dfQ__&Signature=aSFNbYsP0pL70loNdhvcADycBh486NGn1ZpUPuHpSZNodAEbba~JSS2FUQx4UeIgsCoUMrIfm1CanixZm70PRvYdD148VVKXqhdWdE7KiIAP2ZWFmPBzHzkvPz-zaibOS5XqbJW9iClLYSKOicwmwjY6wrF2NOPAXpJuQPPCDPZMjG0kiJXX9o4F~nbchnaWqVqb8wKWI6ryaMWN0iYxk16alN~YR253vNY3n~bXNSBnmpXhOZFoxmZ-SHWWp02ReT7wm9Gi55HjolZnvxL-Edkwl-1tmmGplqp688aVKBPlN6mK8kiW2bIc--7u855PF6XJL~qAC3lxiFLvD~XaRw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+vi soundcloud.sh 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/02-b-otsa_cuairt-ghairid 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg2NjR9fX1dfQ__&Signature=aSFNbYsP0pL70loNdhvcADycBh486NGn1ZpUPuHpSZNodAEbba~JSS2FUQx4UeIgsCoUMrIfm1CanixZm70PRvYdD148VVKXqhdWdE7KiIAP2ZWFmPBzHzkvPz-zaibOS5XqbJW9iClLYSKOicwmwjY6wrF2NOPAXpJuQPPCDPZMjG0kiJXX9o4F~nbchnaWqVqb8wKWI6ryaMWN0iYxk16alN~YR253vNY3n~bXNSBnmpXhOZFoxmZ-SHWWp02ReT7wm9Gi55HjolZnvxL-Edkwl-1tmmGplqp688aVKBPlN6mK8kiW2bIc--7u855PF6XJL~qAC3lxiFLvD~XaRw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls
+ffplay 02-b-otsa_cuairt-ghairid-000001.mp3 
+vi soundcloud.sh 
+id=02-b-otsa_cuairt-ghairid
+vi soundcloud.sh 
+ffmpeg -i $id.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -f wav $id.wav
+ffplay 02-b-otsa_cuairt-ghairid.wav 
+vi soundcloud.sh 
+mkdir ../coislife
+mkdir ../coislife/ibiotsa/
+ls
+rm 02-b-otsa_cuairt-ghairid-000*
+ls
+mv 02-b-otsa_cuairt-ghairid.* ../coislife/ibiotsa/
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/01-b-otsa_dl-thph-irt-ocht-na 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg5NTd9fX1dfQ__&Signature=Ax4JsPg~Ihmn-KlLRmtaE8F6-D6g-LLD-9g4XbqIbSUeC~TSqR9P25bzYcvFi-CJb8ClKwq7ph3lqOmDqMBYxqtCihedpahIs-GxprSFdOFEHf2xqAZphJ9DS~vEOw-f6Fy41-OqFugc9Y8vflFIAOyvQvHpepR5T37tTbAxhQw8oO1Xf2CTK~3ai0bAs1lZSqSi~v8Mvq1AZq~Xh3Eo6InA~TZ7~uehDRjpUh646SDrdKhUew1Q~PTVZIyMJUSo1SBaXarsktcXuo3i9kKPrhmnjgACBarfUJFw3JXSaG3JdOvgSdMe3JprJZkFPbyzX6bP4uSDnWo2N6sgNP5qMw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls
+ffplay 01-b-otsa_dl-thph-irt-ocht-na.
+ffplay 01-b-otsa_dl-thph-irt-ocht-na.wav 
+rm 01-b-otsa_dl-thph-irt-ocht-na.*
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/01-b-otsa_dl-thph-irt-ocht-na 'https://cf-hls-media.sndcdn.com/playlist/1OVqMfTQ17Io.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzFPVnFNZlRRMTdJby4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODk0Mzd9fX1dfQ__&Signature=OpBwxIAS715p7WNumU41dH-7pJb~-ewQNgNjxjNb1P2Ew7Bicf1OAcP5nTNUYVqvVZ2XwSyoqn4ccQ2mOSC4QE1weMF19JTQBg~s1FxUJp4tPJmIF9qdsRUNKweIt6J2B~GL-ECKD83tJ8TV3W44bp4JFCR50lTDs3KwY4ulbb~8PFDk~hGX6SWBmN18QsRk-L9AcXO~biHfvORE0tngoCziFexNTM7PdnbGGUSXuzzF~9H3butHOXaFT8ZUpJRaUAfFZ6yE-VKTUsu7~oT4~VmygMGo1PC2Uw2~WC4njEvau2MZMTbzLLcGJ93~KoYxiM4KNRkSeDzD6fLzGkeW1w__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls -al 01*
+ffplay 01-b-otsa_dl-thph-irt-ocht-na.
+ffplay 01-b-otsa_dl-thph-irt-ocht-na.mp3 
+ffplay 01-b-otsa_dl-thph-irt-ocht-na.wav 
+mv 01-b-otsa_dl-thph-irt-ocht-na.* ../coislife/ibiotsa/
+svn add ../coislife/ soundcloud.sh 
