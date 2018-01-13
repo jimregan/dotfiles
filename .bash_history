@@ -1,5 +1,3 @@
-grep -i toast wyspa-skarbow.txt-02*aud
-vi cand 
 cat cand |aspell --lang pl -a |less
 mv cand /tmp/leftin 
 cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
@@ -1998,3 +1996,5 @@ ls -al dis
 ls -al disk/
 ls
 cat spoken-like*
+mkdir disk
+man 5 fstab
