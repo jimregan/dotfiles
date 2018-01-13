@@ -1,11 +1,3 @@
-ls
-cat wyspa-skarbow.txt-0*txt
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl 
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |wc
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv |less
 grep -i króćset *txt
 ffplay wyspa-skarbow.txt-01.
 ffplay wyspa-skarbow.txt-01.wav
@@ -1998,3 +1990,11 @@ ls
 mv 5705* ../astroblast/
 svn add ../astroblast/5705* 
 svn diff
+ls ../
+ls ../*pl
+ls ../scripts/
+ls /tmp/*wav
+which bw
+find /usr -name bw
+cat bealoideasbeo/5555995052001.vtt |perl ../scripts/vtt-to-audacity.pl 
+cat bealoideasbeo/5555995052001.vtt |perl ../scripts/vtt-to-audacity.pl > bealoideasbeo/5555995052001.aud.txt
