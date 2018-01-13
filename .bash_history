@@ -1,172 +1,3 @@
-cat /tmp/leftin |sort|uniq > /tmp/aa
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xab /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xac /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xad /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xae /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xab /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xac /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xad /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xab /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xab /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xac /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xab /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xac /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xab /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-mv /tmp/xac /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' |sort|uniq >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv 
-wc -l /tmp/left
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
 ls
 cat wyspa-skarbow.txt-0*txt
 cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl 
@@ -1998,3 +1829,172 @@ config commit -m more
 vi /tmp/asd/spib
 ffplay /tmp/foo.wav 
 ls
+praat
+ls /tmp//asd/
+curl 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA4OTB9fX1dfQ__&Signature=TaRtdZVayMD0mz2LOXIXGolD2d-mxDZtmMxCPsM6e13oNuFrHSU5COm1zTkqoEySugpuT9t-AR2gBTbKL7vhIyuXZyDsa1l5aMVQOroKOkqApEtEbsbYoN2ok8Zqpb3UnPqsByBk6LM0Hx4eBhaV1~2A9OE8ZIBdk3UjKzQ1zleAgPD7Q~IWfaA8TdJKYxNJWn04mSVOKIe4IP5AOB9lpmJmPig0Eof8WrswBHJeqWk1SiFsEY7Wo6d7GcSIOq4MBX7-TX3aPwnECm-jjIAJX3nerndGI9PBGucda~VgVZRMlfy9YhmNksX~qnbwb6XxOQtxRSLb1MZUT7DWRRQJfw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' |grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spidb
+cat catahata/5623564641001.vtt |perl ../scripts/vtt-to-audacity.pl 
+cat catahata/5623564641001.vtt |perl ../scripts/vtt-to-audacity.pl > 5623564641001.aud.txt
+ffplay /tmp/5623564641001.wav 
+less scripts/videos.tsv 
+grep Cat scripts/videos.tsv 
+grep Cat scripts/videos.tsv |grep 24
+cd scripts/
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5595752260001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+grep 5623564641001 videos.tsv 
+grep Cat videos.tsv |grep 17
+ffplay /tmp/foo.wav 
+ls
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/hata-zu-mhamo-caibidil-1-4 'https://cf-hls-media.sndcdn.com/playlist/59hWRjCFvPTM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzU5aFdSakNGdlBUTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzI4NTV9fX1dfQ__&Signature=r-3oQaJKsm7v4OHV0Ogsft9nz0-ux2Zai9yVWCsKlY2h~AwQPuAE5flOPwRmEoNoRHxiWGRnvRoMldt2OwGTGYcvBJf~9C8-wjcVwwPwtUtBmxZMhzSDzZhQ5VjF2lZUDHWwh-Ubm~fLNlBedDfQKX5-wRHOHwG4ckaXu7~1K02rag1QLjsXvq8pm5W2FJkqQz1O0suNcbHGRUxSidvm65csJEuU1cC5SF403I68gRHP40tqwpbLI3XJlvogBmfZQ~yAqXfS4r4dTAfiCTnYwhh8z2YBbfjt2QeIwTRfTy4AVVLp6Hy-1d3fJ-0dtzltwn5wkowNeAt~8h43kIKMgw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay hata-zu-mhamo-caibidil-1-4.mp3 
+mkdir ../coislife/hatazumhamo
+mv hata-zu-mhamo-caibidil-1-4.* ../coislife/hatazumhamo/
+svn add ../coislife/hatazumhamo/
+mv ~/hata.txt ../coislife/hatazumhamo/hata-zu-mhamo-caibidil-1-4.aud
+svn add ../coislife/hatazumhamo/hata-zu-mhamo-caibidil-1-4.aud
+sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/hata-zu-mhamo-caibidil-5-10' 'https://cf-hls-media.sndcdn.com/playlist/ritBiO2yUmuo.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3JpdEJpTzJ5VW11by4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzYzMTB9fX1dfQ__&Signature=G7PF-OubHNXiWkXswd~JW82ve828ehyRA12kvygK-ZanwPh~xuXXEaD8MJbBgmr7SDXKtKisDCx3P89kYSgm-rTtOuz7FJNbk~WwEV8z15VMEyVrfJoYmZYow~crdAtkUr4ub0JIIlb9szyDpp2b3ojZjBNr83MGUCCbA~E5Vhl8we0VpDmbyff-2R1oxvrwMOz1Qx7lbQKU-WK3ZuX4uqt~M~m1u4yiKnF8jSEwtNercDGbEtSwuNS9W7CRPaKbdj3iQZHGfR~DwsOZJxpp4qdV1dPt9g-H9tuKYtW0Yc55YHceDA4K1P0F1TTXfcl3qwO8ZDWgtEv7jXredN5BLQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+vi soundcloud.tsv 
+ls
+rm *mp3
+ls
+sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/hata-zu-mhamo-caibidil-5-10' 'https://cf-hls-media.sndcdn.com/playlist/uYmMYLFROQK2.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3VZbU1ZTEZST1FLMi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzQyNjl9fX1dfQ__&Signature=vmtOoXW7Iops6OSL9qY4IWueJLAa0tyGxoX3StLcFH0tcLU4yj8qiPCTe07kWmOl6O0LA~8qZuirukCmBmMlyL5BYPD8s14yRXBDgSIXgfFlyhRRx1en4v0Xgtxc3Q29u8-7JD~9NxAeTmB~T8FG69mkGFhiV8w2BePrQEa0mfd~WS80cfa6fOm3kLeFxp1YxIheRRqsAAFeVajqmjUeF3d4a5vSpGwJYUFnlBZpidzTFQkzqLEXZ~jErmbQYN2GbZIa6gv5S3IMr9NhIv00BejbnsfT6SQ8m1X-pkUBzb723ipUE36rGYbZfsYnaMrHJt28q5MYZm8uRxQsHZcX3g__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay hata-zu-mhamo-caibidil-5-10.mp3 
+rm hata-zu-mhamo-caibidil-5-10.*
+sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/hata-zu-mhamo-caibidil-5-10' 'https://cf-hls-media.sndcdn.com/playlist/uYmMYLFROQK2.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3VZbU1ZTEZST1FLMi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzQyNjl9fX1dfQ__&Signature=vmtOoXW7Iops6OSL9qY4IWueJLAa0tyGxoX3StLcFH0tcLU4yj8qiPCTe07kWmOl6O0LA~8qZuirukCmBmMlyL5BYPD8s14yRXBDgSIXgfFlyhRRx1en4v0Xgtxc3Q29u8-7JD~9NxAeTmB~T8FG69mkGFhiV8w2BePrQEa0mfd~WS80cfa6fOm3kLeFxp1YxIheRRqsAAFeVajqmjUeF3d4a5vSpGwJYUFnlBZpidzTFQkzqLEXZ~jErmbQYN2GbZIa6gv5S3IMr9NhIv00BejbnsfT6SQ8m1X-pkUBzb723ipUE36rGYbZfsYnaMrHJt28q5MYZm8uRxQsHZcX3g__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+rm hata-zu-mhamo-caibidil-5-10.*
+vi soundcloud.tsv 
+curl 'https://cf-hls-media.sndcdn.com/playlist/uYmMYLFROQK2.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3VZbU1ZTEZST1FLMi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzQyNjl9fX1dfQ__&Signature=vmtOoXW7Iops6OSL9qY4IWueJLAa0tyGxoX3StLcFH0tcLU4yj8qiPCTe07kWmOl6O0LA~8qZuirukCmBmMlyL5BYPD8s14yRXBDgSIXgfFlyhRRx1en4v0Xgtxc3Q29u8-7JD~9NxAeTmB~T8FG69mkGFhiV8w2BePrQEa0mfd~WS80cfa6fOm3kLeFxp1YxIheRRqsAAFeVajqmjUeF3d4a5vSpGwJYUFnlBZpidzTFQkzqLEXZ~jErmbQYN2GbZIa6gv5S3IMr9NhIv00BejbnsfT6SQ8m1X-pkUBzb723ipUE36rGYbZfsYnaMrHJt28q5MYZm8uRxQsHZcX3g__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|wg
+curl 'https://cf-hls-media.sndcdn.com/playlist/uYmMYLFROQK2.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3VZbU1ZTEZST1FLMi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzQyNjl9fX1dfQ__&Signature=vmtOoXW7Iops6OSL9qY4IWueJLAa0tyGxoX3StLcFH0tcLU4yj8qiPCTe07kWmOl6O0LA~8qZuirukCmBmMlyL5BYPD8s14yRXBDgSIXgfFlyhRRx1en4v0Xgtxc3Q29u8-7JD~9NxAeTmB~T8FG69mkGFhiV8w2BePrQEa0mfd~WS80cfa6fOm3kLeFxp1YxIheRRqsAAFeVajqmjUeF3d4a5vSpGwJYUFnlBZpidzTFQkzqLEXZ~jErmbQYN2GbZIa6gv5S3IMr9NhIv00BejbnsfT6SQ8m1X-pkUBzb723ipUE36rGYbZfsYnaMrHJt28q5MYZm8uRxQsHZcX3g__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|wc
+vi soundcloud.tsv 
+sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/hata-zu-mhamo-caibidil-5-10' 'https://cf-hls-media.sndcdn.com/playlist/uYmMYLFROQK2.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3VZbU1ZTEZST1FLMi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzQyNjl9fX1dfQ__&Signature=vmtOoXW7Iops6OSL9qY4IWueJLAa0tyGxoX3StLcFH0tcLU4yj8qiPCTe07kWmOl6O0LA~8qZuirukCmBmMlyL5BYPD8s14yRXBDgSIXgfFlyhRRx1en4v0Xgtxc3Q29u8-7JD~9NxAeTmB~T8FG69mkGFhiV8w2BePrQEa0mfd~WS80cfa6fOm3kLeFxp1YxIheRRqsAAFeVajqmjUeF3d4a5vSpGwJYUFnlBZpidzTFQkzqLEXZ~jErmbQYN2GbZIa6gv5S3IMr9NhIv00BejbnsfT6SQ8m1X-pkUBzb723ipUE36rGYbZfsYnaMrHJt28q5MYZm8uRxQsHZcX3g__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+mv hata-zu-mhamo-caibidil-5-10.* ../coislife/hatazumhamo/
+vi soundcloud.tsv 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/hata-zu-mhamo-caibidil-11-15 'https://cf-hls-media.sndcdn.com/playlist/J9bYQLXezgYk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0o5YllRTFhlemdZay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzQ0Mzd9fX1dfQ__&Signature=nh5d9-gsUcnH3s2ID1-cVHSggUea9f~0Ibr-Rs4Im1aOtu8wZv1p5VQAXasJSZHpBeUonwuBzGtSJ~eeI1DXRCIPuYTEnwmuEO5QIn1rHePFHLe5cO00QMT2txFrl421t~CfsmbalifyBjAEZlxxkNE5CUd0~~jNoUZtvb-hLVDA6oyWlBuZ6qtNaDh45ukrscfdK5U6EzMxNzj-MMm6Qnvx6ywGhwBh~27BZ~DIpQpeLaDZm1iNccUbTl53fBx2cMSLIN~KZahQQ9PIoAicLpTcRqbQDiZ2NOXoIp--qNR2Zv8PwykUb3sM73eOJofbQBvsdyJ444G-hKJy0Qh6LQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+mv hata-zu-mhamo-caibidil-11-15.* ../coislife/hatazumhamo/
+sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/aois-fir-1-26' 'https://cf-hls-media.sndcdn.com/playlist/Zf4VCkgBwGyR.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1pmNFZDa2dCd0d5Ui4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzU5ODB9fX1dfQ__&Signature=iNOShMfVqBBpe3VbKC0x9q25rcZ7sbwzYqLp8S0GBSr1IiZVTd9Qoox4CHr03pohPZmy~L04hKr~0xvy7XvFIkzN49S5I1yCkxKbbwTbgxtesP9ffQQIAOZdrJxbRiObfz-EPqiytPSAxwmKI-YShK~ytpyFX3wfLOTNmes0sHoDFHRfqMKugm1Rl6l64h15C8r4uLt9aTUA-G3JyYn5QSDcHpd8aCLw95tPEn2PPsbXHxARRXT0bXMM5KmzW9viINu9bDhk~Bal2vCrBZkm3lJmFqg4MMSs2ezJPRXOsBlKYt7EpHkjtoKMy9OdS-ZPgaSUU1TxDBNx-L-opSRXQw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+mkdir ../coislife/aoisfir
+mv aois-fir-1-26.* ../coislife/aoisfir/
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/aois-fir-caibidl-5-9 'https://cf-hls-media.sndcdn.com/playlist/IDVK6pqiHKtw.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0lEVks2cHFpSEt0dy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzY3MjJ9fX1dfQ__&Signature=qLNih8JPQ8qGpLMKoUvNg2TYrf0iHQrDCTjVUXRi7-HQ7pnEbTn9oc3O78a96eLPv~kIsTQEeReSN807bfDRJ~wPCvggrUxSN0psfA0cXBT3OgUfeLEruLgPyDamqOJKgKMJXLmvoJgwOWpaa3Yigsi3tc8nRUUK3rJqWE-oh8JtfEhm2kIvjvOxVNj5pjiQpuv9IJ95QG9GJnEH0aXlThu3U~8HFMiT64e5sZVcO23OMTsbJESyrOkRR~yKRPaMV0h99C8NxyaywM55RpaTgsIXObF1MQse-W1COgAlaD9i5D81IR6DPeM598SbG2Uu-Yuo6BnPLdp8vInkQdudhQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls
+mv aois-fir-caibidl-5-9.* ../coislife/aoisfir/
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/aois-fir-c 'https://cf-hls-media.sndcdn.com/playlist/cOlTlVRmt8s4.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L2NPbFRsVlJtdDhzNC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzY2NTZ9fX1dfQ__&Signature=ZRenlX84I3JqMBKJb2jCVF7oF~S9p4NuDEb7CLiBK9D968gxz8~l9CkedZ2pzVWdgmLf9dIiSDBzVKpWyJCcMoDUDsqUljZ1~gUKshqvzGYnNUC4Nf4ns5U1aOxNuC63ATsk7X~Pu~taNgtB1uqvGd7E4nAW1Ky4-~J2KisEYF5ban0lli5ql-~~11SC4GP5965FK3NFk5ztcfok9XH5CR4cMFNY7jwlOXCuf3iS2erZZ-66K~3YzgOZqs9kF6ctRGtZdjMPBoFUPHRa5HGQSPVmnjsJs4s73W~Ge7kJCf5Fke3OxdWOUYVjoHWFBfTZkteYuLCnDNRzps8Xdkyq6w__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay aois-fir-c.mp3 
+rm aois-fir-c.*
+vi soundcloud.
+vi soundcloud.tsv 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/aois-fir-c 'https://cf-hls-media.sndcdn.com/playlist/LCJoaQzaFjyy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0xDSm9hUXphRmp5eS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3Nzc4MTF9fX1dfQ__&Signature=k8Q4KNe8CZEys1xa9ZHp8Kgs604ShzpeS2-Wwirytd3AKOqDensnrnyvu1w4WSMHmCo2hvZwBGMDD7mrDOHLXG6eD3cNgZQZnuxAkfmyQJdjtj5W3tLrvPY5sOIinf7V30iiXf625S28BoGI3UTgdv2bLJv64lZIYtNrRtnYWc6xRqnLo7kjVnrc99T-aV0EDBPa6a01Zi9RzdqFl~sEiULHiSa6UxNWwd~H7wxQOzAIrcSY4~g29FlMQK6UvkXp0Vbm~IIMzSXBUrioNzXTCBU2LcEJ6LW3rZMjMCenyReou2Sbj1zv2ffm4Ur7rFg~xtAMD~okOpdGVcTcKK44QA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+mv aois-fir-c.* ../coislife/aoisfir/
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/aois-fir-d 'https://cf-hls-media.sndcdn.com/playlist/Zf4VCkgBwGyR.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1pmNFZDa2dCd0d5Ui4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3Nzg0Nzh9fX1dfQ__&Signature=fQawGdR~76RpR2w2C9z81fr6UsTBUFM~MEiOnbPzmuB6ZLgQri26JwuNszvXevEXzvIKt6gGtbpB8r4PrecIVXcLz7mNsLRoH9FAz9YfZSTwn5rtfdfFp6Oos6amsYWGT5VKkIeEHXDB-qdOd3IkwoZikkdNs6NSmtuzHZVJ0btwmZyMuPoKxJJO4QbCVyGjx-~w1v3Knx7L9wlDfVuaN4Fg3RNZbw2~-1D9xku-StSz0J8owPyfOg7xcgJ3e-oGI6fkeQNwWifBAhrn0Y3fUvne7t-nXib8ZQQATAVS4Wllj5Mg1Z54iY9J1HYXtwBVtOiV1CHZLRTB1VPsDowdzQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay aois-fir-d.mp3 
+vi soundcloud.tsv 
+wget https://cf-hls-media.sndcdn.com/media/0/31762/EqJYgNrDmCjc.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9FcUpZZ05yRG1DamMuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3NzY5NX19fV19&Signature=rpYUp0Vmti~dVzoPTvpJt0azjAsrBu5bdaFaD5~iLI4Xkh23yF6gIwSxXmw6xRQpZRG3d6pMTx7Yk837V7Qr~p-5V7p72BrMyHDCY35q2AYaeXDvudP63RJ6T0sFttO3BLEp0VZI9l03pe5AJMd9QSzcazpKR5MHgCT3pV7QULteaKgF2dtkEi07Dtzejb0Vi5fsKVErGvHdVo9M-V1vwaRaHLfk0YT8o802lxHUPTsUno7Va~rGSxKA4VLdqRAi-ktS0B5Duses3X6qZbguLhjoiWP8E8F0r26mcNHPCU6OLgWbhwduoWVZWop3OtRekLlbi64cGcA~t9FTNVWBQg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ
+wget 'https://cf-hls-media.sndcdn.com/media/0/31762/EqJYgNrDmCjc.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9FcUpZZ05yRG1DamMuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3NzY5NX19fV19&Signature=rpYUp0Vmti~dVzoPTvpJt0azjAsrBu5bdaFaD5~iLI4Xkh23yF6gIwSxXmw6xRQpZRG3d6pMTx7Yk837V7Qr~p-5V7p72BrMyHDCY35q2AYaeXDvudP63RJ6T0sFttO3BLEp0VZI9l03pe5AJMd9QSzcazpKR5MHgCT3pV7QULteaKgF2dtkEi07Dtzejb0Vi5fsKVErGvHdVo9M-V1vwaRaHLfk0YT8o802lxHUPTsUno7Va~rGSxKA4VLdqRAi-ktS0B5Duses3X6qZbguLhjoiWP8E8F0r26mcNHPCU6OLgWbhwduoWVZWop3OtRekLlbi64cGcA~t9FTNVWBQg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ
+'
+wget 'https://cf-hls-media.sndcdn.com/media/0/31762/EqJYgNrDmCjc.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9FcUpZZ05yRG1DamMuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3NzY5NX19fV19&Signature=rpYUp0Vmti~dVzoPTvpJt0azjAsrBu5bdaFaD5~iLI4Xkh23yF6gIwSxXmw6xRQpZRG3d6pMTx7Yk837V7Qr~p-5V7p72BrMyHDCY35q2AYaeXDvudP63RJ6T0sFttO3BLEp0VZI9l03pe5AJMd9QSzcazpKR5MHgCT3pV7QULteaKgF2dtkEi07Dtzejb0Vi5fsKVErGvHdVo9M-V1vwaRaHLfk0YT8o802lxHUPTsUno7Va~rGSxKA4VLdqRAi-ktS0B5Duses3X6qZbguLhjoiWP8E8F0r26mcNHPCU6OLgWbhwduoWVZWop3OtRekLlbi64cGcA~t9FTNVWBQg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay EqJYgNrDmCjc.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9FcUpZZ05yRG1DamMuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3NzY5NX19fV19\&Signature\=r 
+rm EqJYgNrDmCjc.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9FcUpZZ05yRG1DamMuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3NzY5NX19fV19\&Signature\=r 
+rm aois-fir-d.*
+wget 'https://cf-hls-media.sndcdn.com/media/0/31762/LCJoaQzaFjyy.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9MQ0pvYVF6YUZqeXkuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3Nzk4MX19fV19&Signature=lhG4ISWo4IEDVDfv5RcrAZjmODcTJjHFph4ZcF1DjAlezTTJtPheXxpUy1OYc~~azAA0GLpyhd4TA3VwFqEFf3ZuLjdxU~KirJ1V~7-xADIoMknnAJpG2GOZbMQju9BxsvdUqxC8xASCjwV422Xm91XDdvByPRDasQbopDMUbQle3EKRXgGOAqHFwSxGXKfKadeMyz66lWrPYVPeJbTEVUS2wK9osppvMBfZZDj4UwYP23mWpqNPBFUMi~-F-VglrLf3jsy55HpcIakWIgBiMszTn25CQkEb-RHX0ZX2K~3-4gHGH-EZHUt9HrDpxRK690iBBa1Mq3I1NmdJmGOROg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay LCJoaQzaFjyy.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9MQ0pvYVF6YUZqeXkuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3Nzk4MX19fV19\&Signature\=l 
+rm LCJoaQzaFjyy.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9MQ0pvYVF6YUZqeXkuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3Nzk4MX19fV19\&Signature\=l 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/aois-fir-d 'https://cf-hls-media.sndcdn.com/playlist/LCJoaQzaFjyy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0xDSm9hUXphRmp5eS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3Nzc5ODB9fX1dfQ__&Signature=ZkVm33NvMRW7TXf0tLZBkWdhSFmPDxnev3SF-Z~fdM0PHDGVzO8nqzfIRacLujY8bZXZjAw~lSg9I~CqLdg0ikj-nYG7Xw842fQ3Dq3X2~rzy1OjylTlqpkiKLaEf9KdoI-zOIuBBBkoaZw1CrtOUn2viH23QKkZxiaN0LROY5iNCAwEV5-4LhxLehwcDMuFOvB7o-2W~ALRW2Lva7NmCUn8-YeLOZ~rZTKHPNp1gKO0ks~COSRcinyh3MDL-psUMYPwuQ~C4FSLJTu25cfbrerPhQQ0gHh1fqiGjEHOoGB-oDtosxZDAN7UQwrbYhaHLx1qHprnYUWRT6oTxvHHfA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay aois-fir-d.mp3 
+mv aois-fir-d.* ../coislife/aoisfir/
+svn add ../coislife/aoisfir/
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/caibidil-1-an-tiriseoir 'https://cf-hls-media.sndcdn.com/playlist/1Sj3WwUrBkhr.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzFTajNXd1VyQmtoci4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3Nzc5MTd9fX1dfQ__&Signature=Fy9oa~oKAeDcjiBwRZtUN87laBTm4a5~vgcQkBmynRVQNSCOwhknXNvUbQsB7ZAOvicWYfMwAo7ZofkZ9oi~4Im7Rm~CEkP-hGQpZ~VKQB8o4KqMoCl6jnxPDRmo2lvQcFes~iIUvJAkKwc~FNn26isnR4WxkvchdERJufrzUiIAi-NQ-gbp50V1bjrBehdcjdvOKzDZ760yTgtxGIkprHDX0GVdKhDYNjT3QE-TDvmNZ0mpwPOo4AEMNZflcbV8l6Mam~Y3b3G2Rl3MjJRalvepxRvqbi3TU-2yAEM6UA-cb6ojzuITLAfslhpZlJVOR-HgBMyC1H8PRnYk54pKeQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+mv caibidil-1-an-tiriseoir.* ../coislife/antiriseoir/
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/caibidil-2 'https://cf-hls-media.sndcdn.com/playlist/2fyVQl5BeD5I.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzJmeVZRbDVCZUQ1SS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3NzgxNzF9fX1dfQ__&Signature=WdX~l99Htr7RuLuGo5EZbNrd8hxCJjdNiXuyRKHXmHFqolT5v2VbnmhZR69fwnXF-7SEbj-QK-xFdgjVz5IYOAiJwyaTsvsQAVULE2yPcrhzQ~d5ihgbaqNLUtaP9cmWWSDFURVQEn8Umsma29WM0lit7ZYDxkJ24k3oUGrUk2jzQ~27ludSzS2BaeQ0PiScYQ1Luo~3tXI1NRRwzRyutSW7JsM9ZzHIWkXxjMKo0T3-xAq2LQ59WKlwRZSGaxrNJp~eLcOFXJEnoSQJZNNhcxmCtJfMjXcnOX9sPsbTF8HiZHDlvtrurID0ZxlJsv4PEIKyggLoyjXkDBJcpfopmg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+mv caibidil-2.* ../coislife/antiriseoir/
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/caibidil-3 
+vi soundcloud.tsv 
+wget 'https://cf-hls-media.sndcdn.com/media/0/31762/nSKOzVgjbqxi.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9uU0tPelZnamJxeGkuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3OTg5Mn19fV19&Signature=Iu4-dZOC4Q3eyIcySi9C6mWPq81e-IA6okrZ3MvAb2f1ziI6PsDJ5nAPHo614N~1fF2MLTZl2wiMeH9vw28H9olPExmzSxeGPjZW0XAKRwUElME-0zTqd2L7ea5-BFlSJR6xOjA375aURJA3V8SngxPYUsWmS6F-XN8RRgd8ZEexedGDvUtpoHfWW4x1Y9VJeCztMfsONBcQID92JQHJ-lEi~Hx6Zhsxkhk9Pu38Bnz8ru6DfAsLh94zdAORweZLgXnXMk4uAE0WEZVg6bGCSpxZdQWqkMBX8Uz38xskq4Vz8g~zVN7yK1hYyLmSGOTH-hXbtKTvpwc804UNRjTYIA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ffplay nSKOzVgjbqxi.128.mp3\?Policy\=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9uU0tPelZnamJxeGkuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTUxNTc3OTg5Mn19fV19\&Signature\=I 
+sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/caibidil-3 'https://cf-hls-media.sndcdn.com/playlist/nSKOzVgjbqxi.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25TS096VmdqYnF4aS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU3Nzk4OTJ9fX1dfQ__&Signature=M6k4iuZweDs-3MeZkiBOjdNPsktPVqTii9r9sDFMpkxGiWq0Sbo4o0Znf-CWqC27FNiN4filjrZmcVeJc08uydKsXabF7OYfHWbohvNiAsg~ZnQfBVVpXu76OdcGiShTULEDbpAVxTZSFAx2IC29BlpqQiXi4BHb7icTns-FmdC5grpq90WQgJAgaKGgtp9pNGo5C8cghVGDSRLeCshEUEvpLndieJvrMY53MSvu0cEHFvidifzH8gR5aN88wn01Z7j7Bni4MwqlIaJyARIKWR7~k3aHFTj5KTrQibHdwhy1cv4qEvy~r7Jv8ghj6uM7XIhP~lfudI1Ek-QriFJdhw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+mv caibidil-3.* ../coislife/antiriseoir/
+svn diff
+perl tg4-scrape.pl 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5706154681001&teideal=Lurgan%202K17&series=Lurgan%202K17&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689415637001&teideal=Lurgan%202K17&series=Lurgan%202K17&dlft=22'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689475790001&teideal=Lurgan%202K17&series=Lurgan%202K17&dlft=21'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5689395125001&teideal=Lurgan%202K17&series=Lurgan%202K17&dlft=14'
+perl tg4-scrape.pl ''
+vi videos.tsv 
+tail videos.tsv 
+echo 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689492431001&pubId=1290862567001&videoId=5689475790001' |sh run.sh 
+mv 5689475790001.wav ../lurgan2k17/
+svn add ../lurgan2k17/5689475790001.wav 
+ls ../lurgan2k17/
+grep Garf videos.tsv 
+grep Garf videos.tsv |grep 41
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5425987409001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl http://www.tg4.ie/ga/player/baile/?pid=5428434993001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5428434993001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5485696369001&teideal=Garfield&series=Garfield&dlft=33'
+grep Cat videos.tsv 
+grep |Ast videos.tsv 
+grep Ast videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5705940218001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5564672953001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5705986186001&teideal=Olivia&series=Olivia&dlft=30'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5705947792001&teideal=WAC&series=WAC&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5596724032001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+grep Cat videos.tsv 
+grep Cat videos.tsv |grep 18
+grep Ast videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5705797881001&teideal=Astroblast!&series=Astroblast!&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5564672940001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5565446636001&teideal=Olivia&series=Olivia&dlft=29'
+grep Whiz videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5706122904001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=33'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5595778285001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=33'
+grep Ros videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703122531001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=32'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5705187031001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=34'
+svn diff videos.tsv 
+ls ../*/*.wav
+ls ../*/*.wav ../*/*.vtt
+ls ../*/*.wav ../*/*.vtt|awk -F'/' '{print $NF}'
+ls ../*/*.wav ../*/*.vtt|awk -F'/' '{print $NF}'|awk -F'.' '{print $1}'|sort|uniq
+ls ../*/*.wav ../*/*.vtt|awk -F'/' '{print $NF}'|awk -F'.' '{print $1}'|sort|uniq > /tmp/ids
+svn diff videos.tsv 
+svn diff videos.tsv |awk -F'\t' '(NF==6){print}['
+svn diff videos.tsv |awk -F'\t' '(NF==6){print}'
+svn diff videos.tsv |awk -F'\t' '(NF==6){print}'|while read i;do id=$(echo "$i"|awk -F'videoId=' '{print $NF}');grep id /tmp/ids && echo "$i" >> todo;done
+svn diff videos.tsv |awk -F'\t' '(NF==6){print}'|while read i;do id=$(echo "$i"|awk -F'videoId=' '{print $NF}');echo $id;done
+svn diff videos.tsv |awk -F'\t' '(NF==6){print}'|while read i;do id=$(echo "$i"|awk -F'videoId=' '{print $NF}');grep $id /tmp/ids && echo "$i" >> todo;done
+cat todo 
+svn diff videos.tsv |awk -F'\t' '(NF==6){print}'|while read i;do id=$(echo "$i"|awk -F'videoId=' '{print $NF}');grep $id /tmp/ids || echo "$i" >> todo;done
+rm todo 
+svn diff videos.tsv |awk -F'\t' '(NF==6){print}'|while read i;do id=$(echo "$i"|awk -F'videoId=' '{print $NF}');grep $id /tmp/ids || echo "$i" >> todo;done
+cat todo 
+cat todo |awk -F'\t' '{print "http://web.archive.org/save/" $5}' >> /tmp/asd/newv
+cat todo |awk -F'\t' '{print "http://web.archive.org/save/" $6}' >> /tmp/asd/newv
+grep 5689475790001 videos.tsv |awk -F'\t' '{print "http://web.archive.org/save/" $6}' >> /tmp/asd/newv
+cat todo 
+cat todo |awk -F'\t' '{print $NF}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.vtt;done
+cat todo |awk -F'\t' '{print $5}'
+sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
+telnet 163.172.27.213 3128
+ls
+grep 5564672940001 videos.tsv 
+mv 5564672940001.* ../astroblast/
+svn add ../astroblast/5564672940001.* 
+grep 5565446636001 videos.tsv 
+mv 5565446636001.* ../olivia/
+svn add ../olivia/5565446636001.* 
+grep 5596724032001 videos.tsv 
+mv 5596724032001.* ../catahata/
+svn add ../catahata/5596724032001.* 
+ls
+grep 5705187031001 videos.tsv 
+grep 5705797881001 videos.tsv 
+grep 5705940218001 videos.tsv 
+grep 5705947792001 videos.tsv 
+mv 5705947792001.* ../wac/
+svn add ../wac/5705947792001.* 
+grep 5705187031001 videos.tsv 
+mv 5705187031001.* ../rosnarun/
+svn add ../rosnarun/5705187031001.* 
+ls
+mv 5705* ../astroblast/
+svn add ../astroblast/5705* 
+svn diff
