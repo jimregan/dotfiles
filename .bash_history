@@ -1,10 +1,3 @@
-grep -i króćset *txt
-ffplay wyspa-skarbow.txt-01.
-ffplay wyspa-skarbow.txt-01.wav
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat wyspa-skarbow.txt-0*txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |wc
 cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
 grep Black wyspa-skarbow.txt-01*aud
 minsec() { min=$(($1 / 60));sec=$(($1 - min));echo $min:$sec; }
@@ -1998,3 +1991,10 @@ which bw
 find /usr -name bw
 cat bealoideasbeo/5555995052001.vtt |perl ../scripts/vtt-to-audacity.pl 
 cat bealoideasbeo/5555995052001.vtt |perl ../scripts/vtt-to-audacity.pl > bealoideasbeo/5555995052001.aud.txt
+cd ..
+git clone https://github.com/JuliusKunze/speechless/
+cd speechless/
+ls
+less README.md 
+curl 'https://vod-sub-uk-live.akamaized.net/iplayer/subtitles/ng/modav/p05sbjdx_b09m62x7_1515800091051.xml?__gda__=1515827630_8520611a0c540d71f2b76459480bb637'
+less ~/Downloads/www.bbc.co.uk.har 
