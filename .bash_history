@@ -1,53 +1,3 @@
-cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand
-grep -i hardo wyspa-skarbow.txt-05*aud
-less cand
-grep -i fansz wyspa-skarbow.txt-05*aud
-minsec 2620
-less cand
-cat cand |aspell --lang pl -a |less
-grep -i dziesięciocalowy wyspa-skarbow.txt-05*aud
-minsec 368
-minsec 3689
-cat cand |aspell --lang pl -a |less
-grep -i wychłustywałem wyspa-skarbow.txt-05*aud
-minsec 1683
-cat cand |aspell --lang pl -a |less
-less cand
-mv cand /tmp/leftin 
-cat wyspa-skarbow.txt-06.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-wc -l cand
-less cand
-grep -i pd wyspa-skarbow.txt-06*aud
-minsec 3690
-grep -i pn wyspa-skarbow.txt-06*aud
-minsec 3408
-vi cand
-grep -i Graw wyspa-skarbow.txt-06*aud
-minsec 4144
-vi cand
-grep -i Darbym wyspa-skarbow.txt-06*aud
-minsec 4211
-vi cand
-grep -i mahon wyspa-skarbow.txt-06*aud
-grep -i Johns wyspa-skarbow.txt-06*aud
-minsec 455
-vi cand
-grep -i aa wyspa-skarbow.txt-06*aud
-minsec 2064
-vi cand
-grep -i Merry wyspa-skarbow.txt-06*aud
-minsec 4892
-vi cand
-grep -i św wyspa-skarbow.txt-06*aud
-grep -i św\, wyspa-skarbow.txt-06*aud
-grep -i św\. wyspa-skarbow.txt-06*aud
-grep -i 'św\.' wyspa-skarbow.txt-06*aud
-minsec 1898
-vi cand
-grep -i wet wyspa-skarbow.txt-06*aud
-minsec 902
-vi cand
 cat cand |aspell --lang pl -a |less
 grep -i krawiecczyzna wyspa-skarbow.txt-06*aud
 minsec 1548
@@ -1998,3 +1948,53 @@ cd ../Corpora/
 ls
 cd scripts/
 ls
+cd ..
+git clone https://github.com/jimregan/ngramtool.git
+cd ngramtool/
+ls
+./configure 
+make
+ls
+ls src/
+ls tools/
+jam
+bjam
+ls
+./ccdv 
+make
+vi ls
+ls
+find . -name 'mapf(
+find . -name 'mapf*'
+find . -name 'map*'
+cd src/
+ls
+jam
+ls
+cd ..
+vi src/mmapfile.c 
+make
+less src/ngramstat.tcc 
+less src/ngramstat.hpp 
+less src/ngramstat.tcc 
+less src/mmapfile.hpp 
+vi src/text2ngram.cpp
+make#
+make
+vi src/ngramstat.tcc 
+vi src/ngramstat.hpp 
+vi src/mmapfile.hpp 
+vi src/ngramstat.hpp 
+vi src/ngramstat.tcc 
+clear
+make
+vi src/ngramstat.tcc
+make 2> err
+less err 
+make > err
+less err 
+df
+cd ..
+wget https://github.com/mozilla/DeepSpeech/releases/download/v0.1.0/deepspeech-0.1.0-models.tar.gz
+tar ztvf deepspeech-0.1.0-models.tar.gz 
+rm deepspeech-0.1.0-models.tar.gz 
