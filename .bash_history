@@ -1,3 +1,333 @@
+grep -i muszli *aud
+grep -i Dogg *aud
+minsec 3210
+echo Silna woń tytoniu i dziegciu wionęła ze środka, lecz na wierzchu było widać jedynie zupełnie przyzwoity garnitur, bardzo starannie oczyszczony i poskładany. Matka wyraziła przypuszczenie, że kapitan nie miał go jeszcze nigdy na sobie. Pod spodem był istny groch z kapustą: kwadrant , blaszany kubek, kilka laseczek tytoniu, dwie pary nader pięknych pistoletów, sztaba lanego srebra, stary zegarek hiszpański i wiele innych świecidełek niezbyt wielkiej wartości i przeważnie wyrobu zagranicznego, para mosiężnych kompasów oraz pięć czy sześć osobliwych muszli z Indii Zachodnich. Często później zastanawiałem się nad tym, po co on te wszystkie rupiecie woził z sobą wszędzie w ciągu swego włóczęgowskiego, występnego i pełnego niebezpieczeństw życia.|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > /tmp/leftin 
+cat /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
+minsec 4321
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i dirk wyspa-skarbow.txt-01*aud
+minsec 4034
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i joty wyspa-skarbow.txt-01*aud
+grep -i jogo wyspa-skarbow.txt-01*aud
+grep -i eee wyspa-skarbow.txt-01*aud
+minsec 4934
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i jogo wyspa-skarbow.txt-01*aud
+minsec 2602
+grep -i najniepoczytalniejszym wyspa-skarbow.txt-01*aud
+minsec 448
+echo Dirk > /tmp/leftin 
+echo najniepoczytalniejszym >> /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+grep -i obcas wyspa-skarbow.txt-01*aud
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
+echo wsch > /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
+echo joty >> /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |aspell --lang pl -a
+grep -i zawrzasłem wyspa-skarbow.txt-01*aud
+minsec 2492
+echo zawrzasłem >> /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |aspell --lang pl -a |less
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+vi cand 
+cat cand |aspell --lang pl -a 
+cat cand |aspell --lang pl -a |less
+vi cand 
+grep -i przeokrutnego wyspa-skarbow.txt-01*aud
+minsec 4934
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+cat cand 
+grep -i trinid wyspa-skarbow.txt-01*aud
+grep -i taylo wyspa-skarbow.txt-01*aud
+grep -i sava wyspa-skarbow.txt-01*aud
+minsec 759
+minsec 2097
+minsec 4629
+echo Trinidad > /tmp/leftin 
+cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+cat cand 
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+wc -l cand 
+less cand 
+grep -i harr wyspa-skarbow.txt-02*aud
+minsec 985
+grep Harry *txt
+grep -i harr wyspa-skarbow.txt-02*aud
+minsec 1017
+echo Morgan > /tmp/leftin 
+echo Morganem >> /tmp/leftin 
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i pd wyspa-skarbow.txt-02*aud
+minsec 2822
+less cand 
+grep -i "kapitana'" wyspa-skarbow.txt-02*aud
+grep -i "kapitana'" wyspa-skarbow.txt-02*txt
+grep -i "kapitana" wyspa-skarbow.txt-02*txt
+grep -i davis wyspa-skarbow.txt-02*aud
+minsec 3022
+echo Kasandrą > /tmp/leftin 
+grep -i kidd wyspa-skarbow.txt-02*aud
+minsec 4019
+grep Kidd *txt
+minsec 3022
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+head cand 
+grep -i Dick wyspa-skarbow.txt-02*aud
+grep -i Bail wyspa-skarbow.txt-02*aud
+grep -i Bland wyspa-skarbow.txt-02*aud
+grep -i Credo wyspa-skarbow.txt-02*aud
+grep -i Arr wyspa-skarbow.txt-02*aud
+minsec 3763
+minsec 2311
+minsec 2029
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i Arrowa wyspa-skarbow.txt-02*aud
+minsec 1893
+grep -i Bail wyspa-skarbow.txt-02*aud
+minsec 1168
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i Blan wyspa-skarbow.txt-02*aud
+minsec 405
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+grep -i hola wyspa-skarbow.txt-02*aud
+minsec 2099
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+grep -i portob wyspa-skarbow.txt-02*aud
+minsec 2596
+grep -i hands wyspa-skarbow.txt-02*aud
+minsec 2404
+minsec 3372
+minsec 4483
+less cand 
+cat cand |aspell --lang pl -a |less
+grep -i piłat wyspa-skarbow.txt-02*aud
+minsec 3662
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+grep -i toma wyspa-skarbow.txt-02*aud
+grep -i toast wyspa-skarbow.txt-02*aud
+vi cand 
+cat cand |aspell --lang pl -a |less
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+cat cand 
+grep -i goa wyspa-skarbow.txt-02*aud
+grep -i toast wyspa-skarbow.txt-02*aud
+grep -i Jobo wyspa-skarbow.txt-02*aud
+grep -i grog wyspa-skarbow.txt-02*aud
+grep -i ongi wyspa-skarbow.txt-02*aud
+minsec 1211
+vi cand 
+minsec 2596
+minsec 1388
+minsec 3800
+minsec 4195
+minsec 2759
+vi cand 
+grep -i mociu wyspa-skarbow.txt-02*aud
+minsec 325
+vi cand 
+grep -i gnaci wyspa-skarbow.txt-02*aud
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-03.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+grep Hispanlola *aud
+vi cand 
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand 
+wc -l cand 
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand5
+cat wyspa-skarbow.txt-06.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand6
+wc -l cand*
+less cand6 
+less cand
+grep -i abe wyspa-skarbow.txt-02*aud
+grep -i abe wyspa-skarbow.txt-03*aud
+grep -i abe wyspa-skarbow.txt-04*aud
+cat wyspa-skarbow.txt-03.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand3
+cat cand3
+grep -i gunn wyspa-skarbow.txt-03*aud
+minsec 1987
+less cand
+grep -i abe wyspa-skarbow.txt-04*aud
+minsec 3064
+grep -i Gray wyspa-skarbow.txt-04*aud
+minsec 3671
+grep -i Grayu wyspa-skarbow.txt-04*aud
+minsec 557
+cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+grep -i David wyspa-skarbow.txt-04*aud
+grep -i Cumb wyspa-skarbow.txt-04*aud
+less cand
+cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+grep -i david wyspa-skarbow.txt-04*aud
+grep -i roger wyspa-skarbow.txt-04*aud
+minsec 1737
+minsec 2056
+less cand
+cat cand |aspell --lang pl -a |less
+grep -i kręgielki wyspa-skarbow.txt-04*aud
+minsec 982
+cat cand |aspell --lang pl -a |less
+grep -i prawdobodobnie wyspa-skarbow.txt-04*aud
+minsec 1679
+cat cand |aspell --lang pl -a |less
+vi cand 
+cat cand |aspell --lang pl -a |less
+vi cand 
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+cat cand |aspell --lang pl -a |less
+grep -i szpygat wyspa-skarbow.txt-05*aud
+minsec 2242
+less cand
+grep -i brasę wyspa-skarbow.txt-05*aud
+minsec 2162
+cat cand |aspell --lang pl -a |less
+vi cand
+echo starczało|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
+vi cand
+grep -i brasę wyspa-skarbow.txt-05*aud
+grep -i dziewięcio- wyspa-skarbow.txt-05*aud
+less cand
+grep -i bryto wyspa-skarbow.txt-05*aud
+vi cand
+grep -i cove wyspa-skarbow.txt-05*aud
+minsec 3739
+vi cand
+grep -i eee wyspa-skarbow.txt-05*aud
+vi cand
+grep -i brien wyspa-skarbow.txt-05*aud
+minsec 2661
+minsec 4181
+cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+less cand
+grep -i hardo wyspa-skarbow.txt-05*aud
+less cand
+grep -i fansz wyspa-skarbow.txt-05*aud
+minsec 2620
+less cand
+cat cand |aspell --lang pl -a |less
+grep -i dziesięciocalowy wyspa-skarbow.txt-05*aud
+minsec 368
+minsec 3689
+cat cand |aspell --lang pl -a |less
+grep -i wychłustywałem wyspa-skarbow.txt-05*aud
+minsec 1683
+cat cand |aspell --lang pl -a |less
+less cand
+mv cand /tmp/leftin 
+cat wyspa-skarbow.txt-06.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
+wc -l cand
+less cand
+grep -i pd wyspa-skarbow.txt-06*aud
+minsec 3690
+grep -i pn wyspa-skarbow.txt-06*aud
+minsec 3408
+vi cand
+grep -i Graw wyspa-skarbow.txt-06*aud
+minsec 4144
+vi cand
+grep -i Darbym wyspa-skarbow.txt-06*aud
+minsec 4211
+vi cand
+grep -i mahon wyspa-skarbow.txt-06*aud
+grep -i Johns wyspa-skarbow.txt-06*aud
+minsec 455
+vi cand
+grep -i aa wyspa-skarbow.txt-06*aud
+minsec 2064
+vi cand
+grep -i Merry wyspa-skarbow.txt-06*aud
+minsec 4892
+vi cand
+grep -i św wyspa-skarbow.txt-06*aud
+grep -i św\, wyspa-skarbow.txt-06*aud
+grep -i św\. wyspa-skarbow.txt-06*aud
+grep -i 'św\.' wyspa-skarbow.txt-06*aud
+minsec 1898
+vi cand
+grep -i wet wyspa-skarbow.txt-06*aud
+minsec 902
+vi cand
+cat cand |aspell --lang pl -a |less
+grep -i krawiecczyzna wyspa-skarbow.txt-06*aud
+minsec 1548
+cat cand |aspell --lang pl -a |less
+grep -i zatern wyspa-skarbow.txt-06*aud
+minsec 240
+vi cand
+grep -i zahuczęliśmy wyspa-skarbow.txt-06*aud
+grep -i zabobonnosć wyspa-skarbow.txt-06*aud
+grep -i ptasiu wyspa-skarbow.txt-06*aud
+minsec 173
+minsec 52009
+minsec 5209
+minsec 5304
+vi cand
+mv cand /tmp/leftin 
+ks
+ls
+df
+pwd
+ls
+mkdir Laptop
+ls
+mv Laptop/ ..
+cd ..
+ls
+ls Laptop/
+ls
+ls Playing/
+ls Laptop/
+pwd
+ls Laptop/
+ls Laptop/French/
+ls Laptop/French/three_musketeers/
+df
+ls
+ls Playing/
+ls Laptop/
+ls Laptop/Hailstorm/
+ls Laptop/Hadoop/
+ls Laptop/Blacklists/
+ls Laptop/Blacklists/porn/
+ls Laptop/Apertium/
+ls Laptop/Blacklists/porn/
+ls Playing/
+cd desktop/tmp/
+ls
+mkdir fashq1
+cd fashq1
+ls
+. ../sourceme 
 procimg https://www.instagram.com/p/BckoIefg2kT/?taken-by=skysoulmate
 rm fash-rdf-links 
 ogimageproc https://www.instagram.com/p/BckoIefg2kT/?taken-by=skysoulmate
@@ -1668,333 +1998,3 @@ grep
 grep '\-\->' TG4/bealoideasbeo/5555995052001.vtt |head -n 20|awk '{print $1}'
 cat TG4/bealoideasbeo/5555995052001.aud.txt|head -n 20
 killall telnet
-cd 
-man ln
-ls
-cd tmp/
-ls
-ls sync/
-mv sync/assumed-identical-20180107_211454.nt ~/disk/desktop/tmp/sync/
-cd ..
-rm -rf tmp/
-ln -sd tmp ~/disk/desktop/tmp/
-ls
-cd tmp
-ls -al disk/
-ls -al disk/desktop/tmp/
-rm  disk/desktop/tmp/tmp 
-man lb
-man ln
-ln -s disk/desktop/tmp tmp
-cd tmp
-ls
-cd fashq1
-ls -al
-. ../sourceme 
-doinstain 
-procimg https://www.instagram.com/stories/helga_model https://scontent-lht6-1.cdninstagram.com/vp/d0f40ef0cce91d65d989c52faac313b0/5A55CAE6/t50.12441-16/26085674_162568467800766_7683431497356804096_n.mp4                                                                    
-procimg https://www.instagram.com/stories/a.zimny https://scontent-lht6-1.cdninstagram.com/vp/af1c6292e43e392489884d29b266495e/5A5574FF/t50.12441-16/26192882_942084085930015_7320143582705221632_n.mp4                                                                        
-procimg https://www.instagram.com/stories/miss.saldar https://scontent-lht6-1.cdninstagram.com/vp/7e049b154f94ad9365fd7fb7486b4a4b/5A551EB3/t51.12442-15/e35/26156285_1494695947294348_2166871624295383040_n.jpg                                                               
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lht6-1.cdninstagram.com/vp/d35e6edbaf86e5fe630f7cae7ed5fe5f/5A55C89D/t58.9793-16/15300385_505287616537280_6184004735821938688_n.mp4                                                                     
-procimg https://www.instagram.com/stories/lilia_gold https://scontent-lht6-1.cdninstagram.com/vp/8507ddbfdc6eb047eaba2c5f7d48d1aa/5A55690A/t51.12442-15/e35/26070219_139732123377915_1298900360596815872_n.jpg
-procimg https://www.instagram.com/stories/2121kk___k https://scontent-lht6-1.cdninstagram.com/vp/988119f641eb6dd9ecdef450e31e2006/5A55CC9E/t51.12442-15/e35/26065665_196942200861977_2538499768435343360_n.jpg
-procimg https://www.instagram.com/stories/_____diva_diva https://scontent-lht6-1.cdninstagram.com/vp/754108bbe61ba9936f1f68438c23bb1f/5A55C084/t50.12441-16/26691615_207735913121926_5592306938495893504_n.mp4
-procimg https://www.instagram.com/stories/popova__l https://scontent-lht6-1.cdninstagram.com/vp/ccb78d6ec4d33292653dabb96bcd4c11/5A55223B/t51.12442-15/e35/25037556_139674623390610_4742190188854247424_n.jpg
-procimg https://www.instagram.com/stories/trofimova.svet https://scontent-lht6-1.cdninstagram.com/vp/4132c639ca60dbe03b29659e6944ee13/5A5529B0/t51.12442-15/e35/25036851_378377379289774_4544041868358320128_n.jpg
-procimg https://www.instagram.com/stories/alesiaasta https://scontent-lht6-1.cdninstagram.com/vp/910d3ed805edf84ca1ada29beede0d0f/5A558B53/t51.12442-15/e35/25038396_1551943484860581_6920285937083613184_n.jpg
-procimg https://www.instagram.com/stories/alesiaasta https://scontent-lht6-1.cdninstagram.com/vp/d72bfe5993205e120eef49fe087d9c59/5A556FFA/t51.12442-15/e35/26071333_949482408536481_171743402725998592_n.jpg
-procimg https://www.instagram.com/stories/jagoda_urban https://scontent-lht6-1.cdninstagram.com/vp/c474286432eb12e208709acc886139e0/5A55636E/t51.12442-15/e35/26157296_180605662529090_4550808748246958080_n.jpg
-procimg https://www.instagram.com/stories/k.maciag https://scontent-lht6-1.cdninstagram.com/vp/3916b91a67f2c33abb17ab994354682a/5A55699D/t51.12442-15/e35/26065691_2060778827500867_1481442539465605120_n.jpg
-procimg https://www.instagram.com/stories/karri_official_ https://scontent-lht6-1.cdninstagram.com/vp/e6e29d6feccac182c8de0c82cdc6bb18/5A55CC99/t58.9792-15/e35/15500204_979816795490448_4150539833736953856_n.jpg
-\procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lht6-1.cdninstagram.com/vp/71582e25ccefbb80c4099261da33b19b/5A55C19D/t51.12442-15/e35/25024188_1999296200283834_285893179503280128_n.jpg
-procimg https://www.instagram.com/stories/maryhockings https://scontent-lht6-1.cdninstagram.com/vp/0f653da623d9c66516b0f832ba24682d/5A556451/t51.12442-15/e35/26154244_193044274608139_2380853174224289792_n.jpg
-procimg https://www.instagram.com/stories/svetabily https://scontent-lht6-1.cdninstagram.com/vp/c8bc77e4df60b6af8e990ea1aaaaabda/5A552909/t51.12442-15/e35/26153974_1912349228982661_4626769492599373824_n.jpg
-procimg https://www.instagram.com/stories/olgakulikova707 https://scontent-lht6-1.cdninstagram.com/vp/5fbf6d627e12325956b7aa3884fb189b/5A55AA80/t58.9792-15/e35/23866618_934978586671204_6482176453730369536_n.jpg
-procimg https://www.instagram.com/stories/samweaving https://scontent-lht6-1.cdninstagram.com/vp/a51b3bf2518fa83dda84ae5af95fc58d/5A55877F/t50.12441-16/26245908_1811678429124913_422751964497969152_n.mp4
-procimg https://www.instagram.com/stories/ssweet.girl https://scontent-lht6-1.cdninstagram.com/vp/c97f91619a1ae8d7f40865cda8fa73a2/5A557509/t50.12441-16/26687878_531721630559656_5995445896181972992_n.mp4
-procimg https://www.instagram.com/stories/polina___cher https://scontent-lht6-1.cdninstagram.com/vp/07f1b06c744b9ab57890bbc956d42d42/5A55AB0E/t51.12442-15/e35/26156003_160635464557895_2986901715711688704_n.jpg
-procimg https://www.instagram.com/stories/ola_ciupa https://scontent-lht6-1.cdninstagram.com/vp/eb7b7da40c6a5534965a46aaa248b256/5A55BA23/t51.12442-15/e35/26066557_345695305913413_5694794281336700928_n.jpg
-procimg https://www.instagram.com/stories/misslilan https://scontent-lht6-1.cdninstagram.com/vp/bb4fc6d777007516c19db84a3a3128f4/5A5564DC/t51.12442-15/e35/26151974_174729253130907_4232193827823157248_n.jpg
-procimg https://www.instagram.com/stories/paulatumala https://scontent-lht6-1.cdninstagram.com/vp/83849d3769323d1d3049a6dd84361de1/5A55A524/t51.12442-15/e35/26065245_351787991957318_8592320643901423616_n.jpg
-procimg https://www.instagram.com/stories/efremovaluba https://scontent-lht6-1.cdninstagram.com/vp/f09627c6c0bcfceccc6a2ed5081159e2/5A5586F1/t51.12442-15/e35/26070330_2077440449207450_1066357817440468992_n.jpg
-procimg https://www.instagram.com/stories/rolchikova_a https://scontent-lht6-1.cdninstagram.com/vp/d8179b557d3c75077ff33650c588f462/5A557920/t51.12442-15/e35/25037754_318573631963656_3361456703970213888_n.jpg
-procimg https://www.instagram.com/stories/alenaluckyone https://scontent-lht6-1.cdninstagram.com/vp/27dda31718ba89eb83c5679624da5bac/5A556E7C/t51.12442-15/e35/26222277_395623984183805_5539527451194949632_n.jpg
-procimg https://www.instagram.com/stories/furaeva_tatyana https://scontent-lht6-1.cdninstagram.com/vp/6f131e06d7e8cc0ff50aaf0f20d98315/5A557E85/t51.12442-15/e35/26067356_266896117177905_1897677101545291776_n.jpg
-ls
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cd /tmp//asd/
-ls
-sh ~/scripts/grab-logged.sh inp
-ls
-cd -
-ls
-doinstain 
-procimg https://www.instagram.com/stories/lazarenkoyuliya https://scontent-lht6-1.cdninstagram.com/vp/a4730859b074b08b70795ee8abc09da1/5A55C4F5/t50.12441-16/26260733_164431670948476_7108085967671525376_n.mp4
-procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lht6-1.cdninstagram.com/vp/da8f6ce24cca30e26b04b3a1dd31363a/5A5570C7/t51.12442-15/e35/26183419_1550807154966571_5883089757877043200_n.jpg
-procimg https://www.instagram.com/stories/natali_danish https://scontent-lht6-1.cdninstagram.com/vp/eac0bc6d3b7503287125483b11d1d5f1/5A559E48/t51.12442-15/e35/26070177_155533481758849_8269593133377912832_n.jpg
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ls ../sync/
-wc -l ../sync/assumed-identical-20180108_204924.nt 
-wc -l /tmp/asd/inp
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20180105-1.nt 
-rm -rf /tmp/asd/
-mkdir /tmp/asd
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cd -
-ls
-sh ~/scripts/grab-logged.sh inp
-cd -
-ogimageproc https://www.instagram.com/p/BdsSaLlAoO7/?taken-by=paulatumala
-ogimageproc https://www.instagram.com/p/BdrySNRn1Nf/?taken-by=milevskate
-tail -f /tmp//asd/inp,
-tail -f /tmp//asd/inp.log 
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20180105-1.nt 
-rm -rf /tmp/asd/
-mkdir /tmp/asd
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cd -
-sh ~/scripts/grab-logged.sh inp
-cat inp
-tail -f inp.log 
-cd -
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20180105-1.nt 
-rm -rf /tmp/asd/
-mkdir /tmp/asd
-ogimageproc https://twitter.com/inalpu/status/918467388747722753
-procimg https://metinalista.si/meta-phodcast-zapisi-23-sara-moze-jezikoslovka/ https://metinalista.si/wp-content/uploads/sara_moze.png
-procimg https://metinalista.si/meta-phodcast-zapisi-23-sara-moze-jezikoslovka/ https://metinalista.si/wp-content/uploads/Slika-1-1.jpg
-ogimageproc https://www.instagram.com/p/Bdr0kE2BJNh/?taken-by=maryhockings
-ogimageproc https://www.instagram.com/p/BduzPSFh_qj/?taken-by=maryhockings
-doinstain 
-procimg https://www.instagram.com/stories/galina_dub https://scontent-lht6-1.cdninstagram.com/vp/3bad3e1f58e8e6fcbb1648378aaa9cbc/5A56FDC0/t50.12441-16/26683908_112033706269672_712302347308498944_n.mp4
-procimg https://www.instagram.com/stories/julia__yaroshenko https://scontent-lht6-1.cdninstagram.com/vp/c1ca9f45fc6756fac20dffa9e4253f73/5A570C1C/t51.12442-15/e35/26065768_2006490412962340_1897716065488601088_n.jpg
-procimg https://www.instagram.com/stories/_____diva_diva https://scontent-lht6-1.cdninstagram.com/vp/3faac6248a73d6ab4cb01e1d35ad1c59/5A56BBB9/t51.12442-15/e35/25037867_511080202618792_7571894903236460544_n.jpg
-procimg https://www.instagram.com/stories/adamskaannaa https://scontent-lht6-1.cdninstagram.com/vp/08177436ba87a52bf414f163441160a4/5A5716B4/t51.12442-15/e35/25039524_791504187724371_7299080646473809920_n.jpg
-procimg https://www.instagram.com/stories/adamskaannaa https://scontent-lht6-1.cdninstagram.com/vp/c02a4989194bb3dd53e4519c28125995/5A56E30C/t51.12442-15/e35/26154296_530959440606701_3952205463847698432_n.jpg
-procimg https://www.instagram.com/stories/lubimaya_yulya https://scontent-lht6-1.cdninstagram.com/vp/a2b5548ffd0af74793ba7057e650b83c/5A56BC22/t51.12442-15/e35/26155373_170090560388814_2284481766028738560_n.jpg
-procimg https://www.instagram.com/stories/anella_miller https://scontent-lht6-1.cdninstagram.com/vp/4d573042e0c11612ad1ccedd4dba2fa8/5A5719EA/t50.12441-16/26201915_1613213518772889_8093486447606104064_n.mp4
-procimg https://www.instagram.com/stories/martynakepa https://scontent-lht6-1.cdninstagram.com/vp/7e64fceff23c4b0dcf650e9afba887fd/5A57081D/t51.12442-15/e35/26066346_1914038145578823_1208366405662015488_n.jpg
-procimg https://www.instagram.com/stories/alina_akilova https://scontent-lht6-1.cdninstagram.com/vp/b91a65fd38b05dc9f3f3db3181ff798f/5A56E23B/t51.12442-15/e35/26073727_2022961411320139_5269475579958132736_n.jpg
-procimg https://www.instagram.com/stories/alina_akilova https://scontent-lht6-1.cdninstagram.com/vp/0044d9ce91588a9c2fe531c42351f1f8/5A56C422/t51.12442-15/e35/26070302_1479680108806912_763953916067971072_n.jpg
-procimg https://www.instagram.com/stories/alina_akilova https://scontent-lht6-1.cdninstagram.com/vp/f44f44c4ff10f0a9926e9ca76b35494c/5A56D372/t51.12442-15/e35/26070798_524043241310387_4711238730373922816_n.jpg
-procimg https://www.instagram.com/stories/alina_akilova https://scontent-lht6-1.cdninstagram.com/vp/44235761f1b38e48ec821636a663d028/5A57147A/t51.12442-15/e35/26183454_1785192998165618_4904654065629134848_n.jpg
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lht6-1.cdninstagram.com/vp/8eeef0c7fccbb691b100c3884bf4301d/5A56E0CD/t58.9793-16/19147274_1785430621750731_6866621592030412800_n.mp4
-procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lht6-1.cdninstagram.com/vp/f94fd6d089ff988c5e2f41f6b9f81a76/5A571F06/t50.12441-16/26085692_1955253911401779_492175518672040559_n.mp4
-procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lht6-1.cdninstagram.com/vp/8afde3af17e0719e836713422052a006/5A56D380/t50.12441-16/26146773_203536800203692_7185234870892821031_n.mp4
-procimg https://www.instagram.com/stories/ola_wanserska https://scontent-lht6-1.cdninstagram.com/vp/60c87667ba66ff8736d2ac5072bcf34d/5A57161E/t51.12442-15/e35/26155634_188843271857149_137500878310473728_n.jpg
-procimg https://www.instagram.com/stories/olgakulikova707 https://scontent-lht6-1.cdninstagram.com/vp/26b81cc8cc8b289462a24ab7ca541088/5A56791E/t58.9792-15/e35/21969479_529098844127640_3660687547928936448_n.jpg
-procimg https://www.instagram.com/stories/olgakulikova707 https://scontent-lht6-1.cdninstagram.com/vp/7d3418c416e0a3a8b882136d8865342e/5A56DD73/t58.9792-15/e35/18517013_1576775695751753_3132292689463083008_n.jpg
-procimg https://www.instagram.com/stories/ola_wanserska https://scontent-lht6-1.cdninstagram.com/vp/5f8ffabccc9e80e3cecc4d3e3b2755cb/5A5723A8/t51.12442-15/e35/26267059_1672838082798895_8147237173041561600_n.jpg
-procimg https://www.instagram.com/stories/justyna.jalowiecka https://scontent-lht6-1.cdninstagram.com/vp/fb6c0664b91dbd538d5f00521dfdc1fe/5A56B5F5/t51.12442-15/e35/26156084_140831696606960_7189074512409788416_n.jpg
-procimg https://www.instagram.com/stories/justyna.jalowiecka https://scontent-lht6-1.cdninstagram.com/vp/4e52eedf5da1e7333a0dc53ac36c47ec/5A56D9BB/t51.12442-15/e35/26303790_140618869958638_4972869459233472512_n.jpg
-procimg https://www.instagram.com/stories/zuueva https://scontent-lht6-1.cdninstagram.com/vp/782bea81f23f0e854007e496aef93389/5A570E0C/t51.12442-15/e35/26065885_145143752858004_7130945115060699136_n.jpg
-procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lht6-1.cdninstagram.com/vp/c8cc0156c1554c552a910fbc07edc090/5A56E208/t50.12441-16/26684530_210570886184924_128838942886723584_n.mp4
-procimg https://www.instagram.com/stories/patrycjadyska https://scontent-lht6-1.cdninstagram.com/vp/56d8873a8deb230fed05743acd1a4aa1/5A5705D7/t51.12442-15/e35/25038473_1596801993744380_8741768987358003200_n.jpg
-procimg https://www.instagram.com/stories/maryhockings https://scontent-lht6-1.cdninstagram.com/vp/328a262b8427827445492d4d555d972a/5A570B4E/t51.12442-15/e35/26068426_536343826734690_7868958077200891904_n.jpg
-procimg https://www.instagram.com/stories/katekirienko https://scontent-lht6-1.cdninstagram.com/vp/0d46c8ad6d040a2125e424cfec2e7f90/5A571B50/t51.12442-15/e35/26155151_163847690918264_5165541674952163328_n.jpg
-procimg https://www.instagram.com/stories/diana_dryn https://scontent-lht6-1.cdninstagram.com/vp/9f685277a6e55cc8d2bb2ed1111585b2/5A56C07D/t51.12442-15/e35/25038655_146769512690772_6188250242274557952_n.jpg
-procimg https://www.instagram.com/stories/_daria___igorevna_ https://scontent-lht6-1.cdninstagram.com/vp/6dd8c49eed4dad69caf9d8bf57e24c49/5A5706FB/t51.12442-15/e35/26155726_321490581698323_6002363765645901824_n.jpg
-procimg https://www.instagram.com/stories/nikola_lach https://scontent-lht6-1.cdninstagram.com/vp/1b0eb8b206f63f7fc4345f171a036fd4/5A5711CC/t51.12442-15/e35/25036170_933715176781282_7328627362885533696_n.jpg
-procimg https://www.instagram.com/stories/dmitrievna_555 https://scontent-lht6-1.cdninstagram.com/vp/632c5e0ca499a9afba8904727f534a58/5A56BB5F/t51.12442-15/e35/26155540_279364139258317_4850127853783613440_n.jpg
-procimg https://www.instagram.com/stories/paulatumala https://scontent-lht6-1.cdninstagram.com/vp/68990bc3332f71cf237b18bb69cf413b/5A5718E1/t51.12442-15/e35/26266514_151224358869474_9017841771383619584_n.jpg
-procimg https://www.instagram.com/stories/rolchikova_a https://scontent-lht6-1.cdninstagram.com/vp/76441bb9183fca57b9743247ee61cb34/5A56BB72/t51.12442-15/e35/26221514_160804214558881_2920098064972644352_n.jpg
-procimg https://www.instagram.com/stories/lerazhuravleva https://scontent-lht6-1.cdninstagram.com/vp/b95f49a338e0b664ee6c4ed930073edf/5A56C3D7/t50.12441-16/26260942_363580574113891_5368472261143560192_n.mp4
-procimg https://www.instagram.com/stories/marta_karpinska_wodzianka https://scontent-lht6-1.cdninstagram.com/vp/13df9968569509ea86637c913b498967/5A570A20/t50.12441-16/26164496_557312237961939_7693270495451308702_n.mp4
-procimg https://www.instagram.com/stories/trishka92 https://scontent-lht6-1.cdninstagram.com/vp/21521fcfe6c756f057e3aebc42de76a8/5A56CD16/t51.12442-15/e35/26158496_314425869046327_3793937160235646976_n.jpg
-procimg https://www.instagram.com/stories/sandrapodbielska https://scontent-lht6-1.cdninstagram.com/vp/c6504c86a103bd0bfad6b2dce6e59008/5A56C699/t51.12442-15/e35/25039267_207235376516933_8382834503097253888_n.jpg
-procimg https://www.instagram.com/stories/anastasiasergeevaaaaa https://scontent-lht6-1.cdninstagram.com/vp/9299d5b7bfbe49c6f75f5189feca21e6/5A56B762/t51.12442-15/e35/26185587_983776538446989_2534803493810601984_n.jpg
-ogimageproc https://www.instagram.com/p/BdvVTvIAMAs/?taken-by=anella_miller
-ogimageproc https://www.instagram.com/p/Bdur020hIro/?taken-by=_liliyapetrova_
-doinstain 
-procimg https://www.instagram.com/stories/nazarovamur https://scontent-lht6-1.cdninstagram.com/vp/ee45205ee32972c1ebe72b277f227ea7/5A56F108/t51.12442-15/e35/26181591_1980577048931167_4395740736436305920_n.jpg
-procimg https://www.instagram.com/stories/the_wall_of_baddies https://scontent-lht6-1.cdninstagram.com/vp/d1d3cb0264412e797f2c088fe463236b/5A57083E/t50.12441-16/26085329_1789754071324940_3760352738953616488_n.mp4
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ogimageproc https://www.instagram.com/p/BduWSkWjGMs/?taken-by=trofimova.svet
-ogimageproc https://www.instagram.com/p/BduWwTWgClK/?taken-by=_lesya_novikova_
-ogimageproc https://www.instagram.com/p/BdrL0fjgtGE/?taken-by=_lesya_novikova_
-ogimageproc https://www.instagram.com/p/BdvU4dijQWX/?taken-by=justyna.jalowiecka
-ogimageproc https://www.instagram.com/p/BdrMOMMnCpW/?taken-by=julia__yaroshenko
-ogimageproc https://www.instagram.com/p/BdujoKIHoGr/?taken-by=milevskate
-ogimageproc https://www.instagram.com/p/Bdt8LLlAmg7/?taken-by=olgakulikova707
-tail -f /tmp//asd/inp.log 
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ogimageproc https://www.instagram.com/p/BdvkbpEnH4-/?taken-by=sandra_traczyk
-ls 
-ogimageproc https://www.instagram.com/p/BdujWE8n-a0/?taken-by=summerlovesummerl
-doinstain 
-procimg https://www.instagram.com/stories/efremovaluba https://scontent-lht6-1.cdninstagram.com/vp/c5cdece523eb28d153c28d6c0f638de4/5A56E06F/t51.12442-15/e35/26072245_1568185616601710_7187181350955253760_n.jpg
-procimg https://www.instagram.com/stories/julia__yaroshenko https://scontent-lht6-1.cdninstagram.com/vp/f1acc75d163162c36f78e7dfaf260945/5A5714CB/t51.12442-15/e35/25039061_1668164759965160_1202763041003798528_n.jpg
-procimg https://www.instagram.com/stories/tolloczkoklaudia https://scontent-lht6-1.cdninstagram.com/vp/fb88eb86cd1bd069c5175b8be6ce4d5b/5A57000E/t58.9792-15/e35/17477460_1983289845225847_3150647764778483712_n.jpg
-procimg https://www.instagram.com/stories/tolloczkoklaudia https://scontent-lht6-1.cdninstagram.com/vp/6e65f0a485e762fb09aeb7dae7e23cdd/5A56D3A6/t58.9792-15/e35/16640081_285724735286564_4425516679547584512_n.jpg
-procimg https://www.instagram.com/stories/chiarabransi https://scontent-lht6-1.cdninstagram.com/vp/d56ff66d799b762377d7642e6d228921/5A5704A0/t51.12442-15/e35/26066306_209800792920106_8182726410498998272_n.jpg
-procimg https://www.instagram.com/stories/oly_a_lexandrovna https://scontent-lht6-1.cdninstagram.com/vp/8a143139f3878d08d8664f543761bb0b/5A57110F/t51.12442-15/e35/26065786_1808909982515331_8495873794605318144_n.jpg
-procimg https://www.instagram.com/stories/vkusnaya91 https://scontent-lht6-1.cdninstagram.com/vp/4124663c326595838074427172fa293e/5A56D832/t58.9792-15/e35/25151809_248751648995424_7414244546634055680_n.jpg
-procimg https://www.instagram.com/stories/i.s.nesquik https://scontent-lht6-1.cdninstagram.com/vp/c2ca554810c85398bcee366e044fffd4/5A571390/t51.12442-15/e35/25038100_1407888352671758_7513618330243039232_n.jpg
-procimg https://www.instagram.com/stories/i.s.nesquik https://scontent-lht6-1.cdninstagram.com/vp/c31667711538ed0ae7540e818d98f420/5A571B2E/t50.12441-16/26203536_1491206910987270_9014485529319702528_n.mp4
-ogimageproc https://www.instagram.com/p/Bdv2P5ugYoa/?taken-by=olgakulikova707
-ogimageproc https://www.instagram.com/p/BdtRsLUnq1c/?taken-by=piskorekatarzyna
-ogimageproc https://www.instagram.com/p/BdtRPaKHKz4/?taken-by=piskorekatarzyna
-ogimageproc https://www.instagram.com/p/BdspRDUHGCE/?taken-by=piskorekatarzyna
-ogimageproc https://www.instagram.com/p/BdsCewdHAlT/?taken-by=piskorekatarzyna
-ogimageproc https://www.instagram.com/p/BdsCBz3HhHt/?taken-by=alenaluckyone
-ogimageproc https://www.instagram.com/p/BdnwXFanZ_O/?taken-by=alenaluckyone
-ogimageproc https://www.instagram.com/p/BdvvlZrhWJw/?taken-by=tolloczkoklaudia
-ogimageproc https://www.instagram.com/p/BduHW7gnpzb/?taken-by=anikina95
-ogimageproc https://www.instagram.com/p/Bdo9MBcnP4U/?taken-by=anikina95
-ogimageproc https://www.instagram.com/p/Bdu8FiXFG_8/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BdtWginHYby/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/BdqiGrOHwsZ/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/Bdqigmen5ji/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/BdmvBJ-HCgA/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/BbQxppCHvds/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/Bah5Y-qnmJ4/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/Bdsvg7iAdEaQK-t_6LZGLFFjUh9JerAO3GXJ-A0/?taken-by=raabiosa
-ogimageproc https://www.instagram.com/p/Bdt_iBIFVjv/?taken-by=katya_parshina
-ogimageproc https://www.instagram.com/p/Bdt_PtoFTEZ/?taken-by=katya_parshina
-ogimageproc https://www.instagram.com/p/BdqqCPCHIwC/?taken-by=sandrakubicka
-ogimageproc https://www.instagram.com/p/BdsLjtenZRi/?taken-by=popova__l
-ogimageproc https://www.instagram.com/p/BduaFQkDiKv/?taken-by=asyashilovaaa
-ogimageproc https://www.instagram.com/p/Bduwz_Lgoo0/?taken-by=galina.dub
-procimg https://www.instagram.com/p/Bdsvg7iAdEaQK-t_6LZGLFFjUh9JerAO3GXJ-A0/?taken-by=raabiosa https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/26070513_191281591612431_5753002362486652928_n.jpg
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ogimageproc https://www.instagram.com/p/BdumPLqgb61/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/BdpQXRrA6WL/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/BdkyKCmg0Zg/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/Bda8NEgAJCX/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/BcuLh8UgQ24/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/BcuGM8pgKA4/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/BcuDDSqA3Td/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/BcshMKzAck1/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/BcsJJ28gLvv/?taken-by=tatyana.pfr
-ogimageproc https://www.instagram.com/p/Bcrfy9zAZ18/?taken-by=tatyana.pfr
-doinstain 
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/2eada6be97b6c548a392830f52615fbd/5A579D36/t58.9793-16/18321917_2047388562171703_7537387959159357440_n.mp4
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/76fcd5caa1fe95e8e787fea3465fc49e/5A5775EA/t58.9792-15/e35/23974212_162305861069820_8854163050224156672_n.jpg
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/9ac3828df6b46d25b4960a76fd4d9b70/5A57A73F/t58.9793-16/26314365_2111132405782151_2624329265302208512_n.mp4
-procimg https://www.instagram.com/stories/julia__yaroshenko https://scontent-lhr3-1.cdninstagram.com/vp/bd69375e5f41992bd1c5a0d71e070a73/5A57B07C/t51.12442-15/e35/26354303_144837746226077_1211230577617797120_n.jpg
-procimg https://www.instagram.com/stories/viki_odintcova https://scontent-lhr3-1.cdninstagram.com/vp/afa3934cd3fc0d47e2001e0a25f5ebcf/5A57B354/t50.12441-16/26819650_190876131652474_4516476884216709120_n.mp4
-procimg https://www.instagram.com/stories/olgakulikova707 https://scontent-lhr3-1.cdninstagram.com/vp/279eb9b5e4b313c4298129d73e630c21/5A576AD7/t58.9792-15/e35/17478632_769398549924575_6663908795040661504_n.jpg
-procimg https://www.instagram.com/stories/olgakulikova707 https://scontent-lhr3-1.cdninstagram.com/vp/041f4e98ed9421013ae6a1bafb866160/5A57537E/t58.9792-15/e35/25151695_1552535754842090_513758687957876736_n.jpg
-procimg https://www.instagram.com/stories/madelinekate.b https://scontent-lhr3-1.cdninstagram.com/vp/14486ef1b1105f00ed1da1774c2684ee/5A5804A3/t50.12441-16/26256458_2086620684960813_2575888863201329152_n.mp4
-procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/16540dfe1364e524f0b16967044085b6/5A5754D0/t50.12441-16/26691199_1980098685589873_6174647758842082515_n.mp4
-procimg https://www.instagram.com/stories/alesiaasta https://scontent-lhr3-1.cdninstagram.com/vp/768a45b2b2870e18db2dff9b66d14162/5A5797D9/t51.12442-15/e35/26070106_328986250949883_5041945839161835520_n.jpg
-procimg https://www.instagram.com/stories/2121kk___k https://scontent-lhr3-1.cdninstagram.com/vp/97434dcc9a6facbc33549eaa6b9f50e4/5A57A251/t51.12442-15/e35/26343831_1977977729191055_4293217642287726592_n.jpg
-procimg https://www.instagram.com/stories/victoriabonya https://scontent-lhr3-1.cdninstagram.com/vp/2421092da2f3d6fc533758491258c063/5A57573E/t51.12442-15/e35/26158345_266780043852272_4512683650705260544_n.jpg
-procimg https://www.instagram.com/stories/_yangi_ https://scontent-lhr3-1.cdninstagram.com/vp/cc303eb7647c904313e8cc511abf25c9/5A57468F/t51.12442-15/e35/26067614_147173905882370_5241854447709061120_n.jpg
-procimg https://www.instagram.com/stories/kristinasobko https://scontent-lhr3-1.cdninstagram.com/vp/fdf955a453cc89d5e617aba806651728/5A575B2D/t51.12442-15/e35/26383408_146358489410211_8494309249688535040_n.jpg
-ogimageproc https://www.instagram.com/p/BdwpmEagZdr/?taken-by=vasilisa_beautiful_
-ogimageproc https://www.instagram.com/p/Bdw2L96lmhM/?taken-by=i.s.nesquik
-ogimageproc https://www.instagram.com/p/BdvpYP0F1gq/?taken-by=i.s.nesquik
-ogimageproc https://www.instagram.com/p/BdvenujFu-_/?taken-by=i.s.nesquik
-ogimageproc https://www.instagram.com/p/Bdw-_QZnvBD/?taken-by=sofia_official_
-ogimageproc https://www.instagram.com/p/BdwfH4jBbgO/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/BduP1vmhDi-/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/Bdu0NXjAi2z/?taken-by=anetasnake
-ogimageproc https://www.instagram.com/p/Bdk00vPAcAd/?taken-by=anetasnake
-ogimageproc https://www.instagram.com/p/Bds7JPUDU_U/?taken-by=lilly.marchel
-ogimageproc https://www.instagram.com/p/BdwT-7RFekz/?taken-by=katya_parshina
-ogimageproc https://www.instagram.com/p/Bdwa59ynHgo/?taken-by=summerlovesummerl
-ogimageproc https://www.instagram.com/p/BdvSI2WFYEp/?taken-by=trishka92
-ogimageproc https://www.instagram.com/p/BduvwefDgNh/?taken-by=ngizerskaya
-ogimageproc https://www.instagram.com/p/BdsRYU0jIXJ/?taken-by=ngizerskaya
-ogimageproc https://www.instagram.com/p/BdvWHPDlnsT/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BdvBg8qggsA/?taken-by=ekaterinakoba
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-less ~/Downloads/train-v1.1.json 
-wc -l ~/Downloads/train-v1.1.json 
-less ~/Downloads/train-v1.1.json 
-cat ~/Downloads/train-v1.1.json |tr ',' '\n'
-cat ~/Downloads/train-v1.1.json |tr ',' '\n'|grep question
-cat ~/Downloads/train-v1.1.json |tr ',' '\n'|grep question|wc
-cat ~/Downloads/train-v1.1.json |tr ',' '\n'|grep question|less
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ogimageproc https://www.instagram.com/p/Bd0TbSTn0_C/?taken-by=natasha_mankovskaya
-ogimageproc https://www.instagram.com/p/BdxrRJYnuOa/?taken-by=natasha_mankovskaya
-ogimageproc https://www.instagram.com/p/BdvDgfwHPAo/?taken-by=natasha_mankovskaya
-ogimageproc https://www.instagram.com/p/BdseH1bHcPu/?taken-by=natasha_mankovskaya
-doinstain 
-procimg https://www.instagram.com/stories/katesytsevich https://scontent-lhr3-1.cdninstagram.com/vp/b07bbf7b0f0cbc346e726c7ba2c2fb0c/5A597C92/t51.12442-15/e35/26073912_525181594525375_5253876980293566464_n.jpg
-procimg https://www.instagram.com/stories/julia__yaroshenko https://scontent-lhr3-1.cdninstagram.com/vp/7816caf6cd01bc556057cb06fe1a3604/5A59C53D/t51.12442-15/e35/26073007_524911877901789_5692665738494476288_n.jpg
-procimg https://www.instagram.com/stories/julia__yaroshenko https://scontent-lhr3-1.cdninstagram.com/vp/38daebd6b7689cf61aea9bf6934618a2/5A596432/t51.12442-15/e35/25038756_1934714546790424_792254645287256064_n.jpg
-procimg https://www.instagram.com/stories/natasha_mankovskaya https://scontent-lhr3-1.cdninstagram.com/vp/927552e9337b74c382a5ad645c81ee28/5A596C10/t51.12442-15/e35/26151549_168146200619073_1655694752848281600_n.jpg
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/7743cfeb0f190bc99ba50ccd8ba48f02/5A59BE6D/t58.9793-16/25151057_351696801964565_4222394069663350784_n.mp4
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/8fe217a91f9c72523e30be60bb7d484e/5A596A6E/t58.9792-15/e35/26312269_1947195238865405_6568694627128311808_n.jpg
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/2fd17faf678697715b002b77586d3957/5A59952A/t58.9792-15/e35/13194664_1902172886778770_4013406170835320832_n.jpg
-procimg https://www.instagram.com/stories/_liliyapetrova_ https://scontent-lhr3-1.cdninstagram.com/vp/2b97d421fc1701074eea862d9f3098a9/5A5987FD/t51.12442-15/e35/26067701_1927773950873981_3008120503421370368_n.jpg
-procimg https://www.instagram.com/stories/shipilovaks https://scontent-lhr3-1.cdninstagram.com/vp/74076d419a3e6ed7597a0ad6f1f08f94/5A59B6AD/t51.12442-15/e35/26394474_1993198547609749_1244916658955354112_n.jpg
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ogimageproc https://www.instagram.com/p/BdziiEhF7La/?taken-by=maria_domark
-ogimageproc https://www.instagram.com/p/BdhjGkhFyti/?taken-by=maria_domark
-ogimageproc https://www.instagram.com/p/BdkKCi0Fcr6/?taken-by=maria_domark
-ogimageproc https://www.instagram.com/p/BdxcqE7BVSs/?taken-by=maryhockings
-ogimageproc https://www.instagram.com/p/Bdr0kE2BJNh/?taken-by=maryhockings
-ogimageproc https://www.instagram.com/p/Bdz20vmlZV2/?taken-by=galina_dub
-ogimageproc https://www.instagram.com/p/BdppVYolHS8/?taken-by=galina_dub
-ogimageproc https://www.instagram.com/p/BdyUNqvHT3g/?taken-by=ofitial
-ogimageproc https://www.instagram.com/p/Bdc8lWsHV4Y/?taken-by=ofitial
-doinstain 
-procimg https://www.instagram.com/stories/alexandra.one https://scontent-lhr3-1.cdninstagram.com/vp/ab6ab4e11be4d659506b1317a7be47c6/5A5998AE/t51.12442-15/e35/26228525_336038110212424_2363546818253422592_n.jpg
-procimg https://www.instagram.com/stories/liberateme.1 https://scontent-lhr3-1.cdninstagram.com/vp/0bcabd8b87ce6e245691eeb8e3c4a0a5/5A5986EA/t50.12441-16/26686727_1951712971755610_3742469469775253052_n.mp4
-procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/3ce4bf3acc97d5e9781c17c472b5a5a7/5A599632/t51.12442-15/e35/26287653_762507377275112_3934791823888744448_n.jpg
-procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/6bb79b3025ded1cf9154470725caebfd/5A599424/t51.12442-15/e35/26065338_194738204442311_1500681656489476096_n.jpg
-procimg https://www.instagram.com/stories/viki_odintcova https://scontent-lhr3-1.cdninstagram.com/vp/01392ba821de42ed3816d380f065e7ec/5A599459/t51.12442-15/e35/26067726_177273139671593_7043383599617277952_n.jpg
-procimg https://www.instagram.com/stories/paulatumala https://scontent-lhr3-1.cdninstagram.com/vp/2c988dad1964ee06c1758660c7c762cf/5A5981FB/t51.12442-15/e35/25038103_246528779217722_5311105332158660608_n.jpg
-procimg https://www.instagram.com/stories/svetabily https://scontent-lhr3-1.cdninstagram.com/vp/53c4e6f5a058b3ae4e6e22aea30bfd76/5A595C6B/t51.12442-15/e35/26309173_509893406077481_1441110966900097024_n.jpg
-procimg https://www.instagram.com/stories/svetabily https://scontent-lhr3-1.cdninstagram.com/vp/5182f55d99ed9955c810e1c50bf67638/5A595A5A/t51.12442-15/e35/26342921_563432810675188_8279456276665073664_n.jpg
-procimg https://www.instagram.com/stories/_supermasik_ https://scontent-lhr3-1.cdninstagram.com/vp/ac5adf10d6d0237ae2ed78bb10da112d/5A59AE36/t50.12441-16/26823100_1495523173893773_4352037000363114496_n.mp4
-procimg https://www.instagram.com/stories/diana_dryn https://scontent-lhr3-1.cdninstagram.com/vp/e3145bf37fba7b2ec6bf3de30e869b41/5A5974F5/t51.12442-15/e35/26187532_1514843121945922_295537498501677056_n.jpg
-procimg https://www.instagram.com/stories/sofia_official_ https://scontent-lhr3-1.cdninstagram.com/vp/c9bf68aebbabd9093cdb62c8e80c6bc6/5A596CAD/t50.12441-16/26212785_1661258743917297_9154264106096656384_n.mp4
-procimg https://www.instagram.com/stories/sofia_official_ https://scontent-lhr3-1.cdninstagram.com/vp/63c6fd247d8726ba7a01ad27545a85d5/5A5984DA/t50.12441-16/26679688_177819742971607_8102448953431162880_n.mp4
-procimg https://www.instagram.com/stories/kalujina https://scontent-lhr3-1.cdninstagram.com/vp/4bef94b615606fbdf8062a4fbec164be/5A59ADB6/t50.12441-16/26686962_1984268961785053_9145866543089844224_n.mp4
-procimg https://www.instagram.com/stories/popova__l https://scontent-lhr3-1.cdninstagram.com/vp/eaae7c81541cb3a390af47a2dd67db8f/5A598E49/t51.12442-15/e35/26070923_132752467522725_7740153275009204224_n.jpg
-procimg https://www.instagram.com/stories/space_margo https://scontent-lhr3-1.cdninstagram.com/vp/6e86ca8e0610fbfdb2b50d76b9cd76bf/5A59A0F9/t51.12442-15/e35/25039044_138836110132251_2112012273311547392_n.jpg
-procimg https://www.instagram.com/stories/ivettamakarova https://scontent-lhr3-1.cdninstagram.com/vp/5771655b3f0526f53a0c6205344194ea/5A59AF23/t51.12442-15/e35/26356681_775365755982400_6520849799552434176_n.jpg
-procimg https://www.instagram.com/stories/ivettamakarova https://scontent-lhr3-1.cdninstagram.com/vp/2a1352d2be43cd6dd0b9140307af1aaa/5A59B4C4/t51.12442-15/e35/26361612_161446607817465_6632911565093863424_n.jpg
-procimg https://www.instagram.com/stories/ola_wanserska https://scontent-lhr3-1.cdninstagram.com/vp/05e05a0311385b3335a9e61d4130b954/5A5977BA/t51.12442-15/e35/26152349_122959675063873_5138974158310342656_n.jpg
-procimg https://www.instagram.com/stories/shipilovaks https://scontent-lhr3-1.cdninstagram.com/vp/26af84901ee623a01e392b83f04de3cb/5A599F55/t51.12442-15/e35/26066487_527228764312751_6247821017763282944_n.jpg
-procimg https://www.instagram.com/stories/ola_wanserska https://scontent-lhr3-1.cdninstagram.com/vp/5c6b7a628805643db52c3e04ee0c4aa5/5A599E66/t50.12441-16/26256761_570616496617977_6705264824680448000_n.mp4
-procimg https://www.instagram.com/stories/marta_karpinska_wodzianka https://scontent-lhr3-1.cdninstagram.com/vp/d6a0d409ae5035dbdf9f1faccf338d19/5A596AD6/t51.12442-15/e35/26404553_1972873909703178_2514202601570959360_n.jpg
-procimg https://www.instagram.com/stories/misslilan https://scontent-lhr3-1.cdninstagram.com/vp/a3933468a9a18ba6927f55af9a152e38/5A59AFB0/t51.12442-15/e35/26066852_1849879661899474_1796156813540851712_n.jpg
-procimg https://www.instagram.com/stories/karri_official_ https://scontent-lhr3-1.cdninstagram.com/vp/6f8ccd209b69911b2024315b6d1cc39a/5A597B6D/t51.12442-15/e35/26155357_380291009098943_6290177001688924160_n.jpg
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-ogimageproc https://www.instagram.com/p/Bdx1e9InZaf/?taken-by=milevskate
-ogimageproc https://www.instagram.com/p/Bdz1BRdFt-G/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/BdpFyWilprT/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/Bdzyw11FGCP/?taken-by=katekirienko
-ogimageproc https://www.instagram.com/p/BdSGzQ0l_Da/?taken-by=katekirienko
-ogimageproc https://www.instagram.com/p/BdyTBR4FES6/?taken-by=katekirienko
-ogimageproc https://www.instagram.com/p/BceIcL_j6yY/?taken-by=katekirienko
-ogimageproc https://www.instagram.com/p/BdzdObnAW1b/?taken-by=_lesya_novikova_
-ogimageproc https://www.instagram.com/p/Bdy4XhfgqJi/?taken-by=_lesya_novikova_
-ogimageproc https://www.instagram.com/p/BduWwTWgClK/?taken-by=_lesya_novikova_
-ogimageproc https://www.instagram.com/p/Bdz01G_ASYk/?taken-by=jagoda_urban
-ogimageproc https://www.instagram.com/p/BdzlWMQl6fF/?taken-by=k.maciag
-ogimageproc https://www.instagram.com/p/Bd0Xl57FLEd/?taken-by=k.maciag
-ogimageproc https://www.instagram.com/p/BdiKlkil79l/?taken-by=k.maciag
-ogimageproc https://www.instagram.com/p/BdzkJiIgRKn/?taken-by=snow_cherry
-ogimageproc https://www.instagram.com/p/Bdw8BKdA4lP/?taken-by=snow_cherry
-ogimageproc https://www.instagram.com/p/Bd0vPXrBbMu/?taken-by=nazarovamur
-ogimageproc https://www.instagram.com/p/Bd0Yp2inqkC/?taken-by=sandra_traczyk
-ogimageproc https://www.instagram.com/p/BdzekzKBzI1/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BdoBT85hvSH/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/BdiFudVhTf4/?taken-by=veronika_chachyna
-ogimageproc https://www.instagram.com/p/Bdz3kezBPqr/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/Bdx4oi7FJ0W/?taken-by=letovayana26
-ogimageproc https://www.instagram.com/p/BdqBqW2ltXL/?taken-by=letovayana26
-ogimageproc https://www.instagram.com/p/BdQh3YxFvFp/?taken-by=letovayana26
-ogimageproc https://www.instagram.com/p/Bc2GJE2lOLS/?taken-by=letovayana26
-ls
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
-vi ~/ibiotsa.txt
-mv ~/ibiotsa.txt ~/disk/Playing/msf-asr/TG4/coislife/ibiotsa/01-b-otsa_dl-thph-irt-ocht-na.aud
-cp ~/oceallachain.txt ~/ga-books/2017/
-cat /tmp//asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-ogimageproc 'https://www.gettyimages.co.uk/pictures/first-aid-kit--band-10534724#first-aid-kit-perform-on-day-2-of-the-glastonbury-festival-2017-at-picture-id803063088'
-cat /tmp/instain 
-cat /tmp/instain |while read i;do ogimageproc $i;done
-filtfind |while read i;do grep $i ~/tmp/sync/assumed-identical-2018* || echo http://web.archive.org/save/https://$i >> /tmp//asd/inp;done
