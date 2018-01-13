@@ -1,194 +1,3 @@
-cat pron/ulster.tsv |perl scripts/aspell-expander.pl > pron/ulster-exp.tsv
-git add scripts/aspell-expander.pl pron/ulster-exp.tsv 
-cat pron/munster.tsv |perl scripts/aspell-expander.pl > pron/munster-exp.tsv
-git add pron/munster-exp.tsv 
-less pron/munster-exp.tsv 
-cat pron/connacht.tsv |perl scripts/aspell-expander.pl > pron/connacht-exp.tsv
-git add pron/connacht-exp.tsv 
-git commit -m 'expand with aspell'
-git push origin lexicon 
-cat pron/ulster*tsv|sort|uniq|wc 
-less scripts/normalise.pl 
-cat ~/Playing/corpuscrawler/corpus/ga.txt | perl scripts/brute-filter-by-language.pl 
-cat ~/Playing/corpuscrawler/corpus/ga.txt | perl scripts/brute-filter-by-language.pl > /tmp/allcorpus
-wc -l /tmp/allcorpus 
-cat /tmp/allcorpus |awk -F'\t' '($1 == en){print}'|wc
-cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|wc
-cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|less
-cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|grep Sc
-cat /tmp/allcorpus |awk -F'\t' '($1 == "en"){print}'|grep Scan
-less /tmp/allcorpus 
-git add scripts/brute-filter-by-language.pl 
-git commit -m 'brutish English vs Irish check'
-git push origin lexicon 
-cat /tmp/allcorpus |awk -F'\t' '($1 == "ga"){print $2}'
-cat /tmp/allcorpus |awk -F'\t' '($1 == "ga"){print $2}' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv 
-cat /tmp/allcorpus |awk -F'\t' '($1 == "ga"){print $2}' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv |sort|uniq > /tmp/newinlist
-less /tmp/newinlist 
-less ~/Playing/language-resources/third_party/cldr/ta-ta_FONIPA.txt 
-cat /tmp/newinlist |uconv -x '::NFC();'
-cat /tmp/newinlist |uconv -x '::NFC();'|sort|uniq
-cat /tmp/newinlist |uconv -x '::NFC();' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv |sort|uniq > /tmp/newinlist2
-diff -u /tmp/newinlist /tmp/newinlist2
-mv /tmp/newinlist2 /tmp/newinlist
-vi /tmp/newinlist 
-echo 'thuismitheoirí́
-echo 'thuismitheoirí́ '|hexdump
-echo 'thuismitheoirí́ '|uconv '::NFC();'
-echo 'thuismitheoirí́ '|uconv -x '::NFC();'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();::NFC();'
-echo 'thuismitheoirí́ '|native2ascii -encoding utf8
-echo 'thuismitheoirí́ '|uconv -x '::NFD();::NFC();\u0301 -> ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();::NFC(); \u0301 -> ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC();'
-echo 'thuismitheoirí́ ' |native2ascii -encoding utf8
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> "";'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> \  ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> \@ ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> ' ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 -> " ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); A -> a ;'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC();'
-echo 'thuismitheoirí́ '|uconv -x '::NFD();;::NFC(); \u0301 > ;'
-cat /tmp/newinlist |uconv -x '::NFD();;::NFC(); \u0301 > ;' |perl filter.pl pron/munster.tsv pron/munster-exp.tsv |sort|uniq > /tmp/newinlist2
-diff -u /tmp/newinlist /tmp/newinlist2 
-grep '[vxz]' /tmp/newinlist2 
-cd 
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs
-config commit -m more
-python Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config diff
-config add .wine/system.reg
-config diff
-config add .config/ksmserverrc
-config diff
-config .kde/share/config/amarokrc .wine/user.reg
-config add .kde/share/config/amarokrc .wine/user.reg
-config commit -m more
-apt-cache search clam
-sudo apt-get install clamav
-cd ../../wolne-lektury-audio-corpus/
-ls audacity/
-less audacity/robinson-crusoe.txt-01.txt 
-cd text/
-git diff
-git add boy-swietoszek.txt 
-git commit -m header
-perl ../apply-specific.pl 
-git diff
-git add robinson-crusoe.txt-01.txt przygody-tomka-sawyera.txt-36.txt 
-git diff
-git add fraszki-ksiegi-pierwsze-na-nabozna.txt przygody-tomka-sawyera.txt-01.txt 
-git add przygody-tomka-sawyera.txt-05.txt 
-git diff
-git add przygody-tomka-sawyera.txt-13.txt 
-git add przygody-tomka-sawyera.txt-33.txt 
-git add przygody-tomka-sawyera.txt-15.txt 
-git diff
-svn ci -m more
-git commit -m more
-ls
-perl ../apply-specific.pl 
-git diff
-find . -size 0
-cat boy-swietoszek.txt-03.txt
-find . -size 0 -delete
-git status
-rm zwierzeta-i-niedzwiedz.txt.th 
-rm *.bal
-rm *.bak
-ls ../audacity/
-grep West ../pron-data/pronounce-as.tsv 
-less doktor-piotr.txt 
-head -n 76 ~/Label\ Track.txt
-head -n 76 ~/Label\ Track.txt >> ../audacity/doktor-piotr.txt 
-cd ..
-git diff
-git add specific-norms.tsv 
-git add audacity/doktor-piotr.txt 
-git commit -m more
-cat audacity/doktor-piotr.txt 
-cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'
-cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl 
-less text/doktor-piotr.txt 
-vi audacity/doktor-piotr.txt 
-git add audacity/doktor-piotr.txt 
-git commit -m fix
-cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl 
-cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'
-cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'|sort|uniq
-cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-vi audacity/doktor-piotr.txt 
-cat audacity/doktor-piotr.txt |awk -F'\t' '{print $3}'|perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-vi audacity/doktor-piotr.txt 
-git diff
-git add audacity/doktor-piotr.txt 
-git commit -m more
-less text/doktor-piotr.txt 
-head -n 28 ~/Label\ Track.txt 
-head -n 29 ~/Label\ Track.txt 
-head -n 29 ~/Label\ Track.txt >> audacity/doktor-piotr.txt 
-git diff
-git add audacity/doktor-piotr.txt 
-git commit -m more
-cd scripts/
-perl tg4-scrape.pl 'http://www.tg4.ie/en/player/home/?pid=5672484350001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
-#perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5561171901001&teideal=Olivia&series=Olivia&dlft=30'
-grep Olivia videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5561171901001&teideal=Olivia&series=Olivia&dlft=30'
 perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5550482676001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=7'
 svn dif
 svn diff
@@ -1998,3 +1807,194 @@ grep Trelawneye text/wyspa-skarbow.txt-0*
 grep Trelawneyo text/wyspa-skarbow.txt-0*
 grep Trelawneyu text/wyspa-skarbow.txt-0*
 grep Hispanlo text/wyspa-skarbow.txt-0*
+plasmashell 
+df
+cd disk/
+ls
+cd desktop/
+ls
+cd tmp/
+cd fashq1
+. ../sourceme 
+doinstain 
+procimg https://www.instagram.com/stories/julia__yaroshenko https://scontent-lhr3-1.cdninstagram.com/vp/2c63c2eb04f7b2977f0796fb16e747f9/5A5ABFE5/t50.12441-16/26199271_121566858648954_5449790474686562304_n.mp4
+procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/9edc20631379ee986243e68eb964f8cb/5A5ACC05/t58.9792-15/e35/17612954_1991812084439746_409714234788675584_n.jpg
+procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/14a3d01d49fb0302ced71faf6a442654/5A5B8947/t58.9793-16/17432305_151787662144215_5882271351858790400_n.mp4
+doinstain 
+procimg https://www.instagram.com/stories/anella_miller https://scontent-lhr3-1.cdninstagram.com/vp/249cfdc8e5d8b8aa38e8844af4053e0a/5A5AF0F2/t51.12442-15/e35/26355344_212979502592603_5324517174994272256_n.jpg
+procimg https://www.instagram.com/stories/ofitial https://scontent-lhr3-1.cdninstagram.com/vp/f60aeb469ad701d6e606dce9d27dd67d/5A5AD25A/t51.12442-15/e35/26276991_1168764409922908_4675245787741945856_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/anella_miller https://scontent-lhr3-1.cdninstagram.com/vp/a161f919902052ab1fecb9e00e58f232/5A5B2EA5/t51.12442-15/e35/26343648_744476132417114_6303462349147734016_n.jpg
+procimg https://www.instagram.com/stories/lilia_gold https://scontent-lhr3-1.cdninstagram.com/vp/9fdfcd582d3f36c9b615d554f4bcf09d/5A5AE0D0/t51.12442-15/e35/26377363_186597725408598_339265818967670784_n.jpg
+procimg https://www.instagram.com/stories/ofitial https://scontent-lhr3-1.cdninstagram.com/vp/2fbe71dbbdceba3e56e246d19ee5b510/5A5AF830/t51.12442-15/e35/26066015_1591432907570074_8397678610151899136_n.jpg
+procimg https://www.instagram.com/stories/ofitial https://scontent-lhr3-1.cdninstagram.com/vp/0f8245e7b43fcf19002e28a710ad1e2b/5A5B7BC9/t51.12442-15/e35/26065811_395204644262863_2273837879291543552_n.jpg
+procimg https://www.instagram.com/stories/lilly.marchel https://scontent-lhr3-1.cdninstagram.com/vp/b08a51b859ad1377d292a1961a1aa3ec/5A5B2DB3/t51.12442-15/e35/26067225_1965290350354453_2618763966939136000_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/nazarovamur https://scontent-lhr3-1.cdninstagram.com/vp/ce99772fad0b9d5edc2e7d4bb8c67cac/5A5AD945/t50.12441-16/26816780_205611356666921_6624889357664139604_n.mp4
+doinstain 
+procimg https://www.instagram.com/stories/nazarovamur https://scontent-lhr3-1.cdninstagram.com/vp/fa3feb84803cc0ca4546e7c7bee9c213/5A5B1D12/t50.12441-16/26826304_2012670029055249_1588235135387233976_n.mp4
+procimg https://www.instagram.com/stories/alesiaasta https://scontent-lhr3-1.cdninstagram.com/vp/6d1a02e89e4023a6b64579ebac01f0d6/5A5B8D79/t51.12442-15/e35/26366922_674739252916199_264354262111223808_n.jpg
+procimg https://www.instagram.com/stories/alesiaasta https://scontent-lhr3-1.cdninstagram.com/vp/3b1681940403c65d1cb1b8080790c1df/5A5B2582/t51.12442-15/e35/26066901_180025612747384_8415657167159296000_n.jpg
+procimg https://www.instagram.com/stories/karolina_pisarek https://scontent-lhr3-1.cdninstagram.com/vp/0672197017a366ed65b7a531e2305e54/5A5ACBD6/t50.12441-16/26085093_1525907450811998_8804300975680702514_n.mp4
+procimg https://www.instagram.com/stories/alina_akilova https://scontent-lhr3-1.cdninstagram.com/vp/bc538b4d20f56957ddd72935acb73d31/5A5AEAD0/t51.12442-15/e35/26072232_180915022504934_721488079763800064_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/alina_akilova https://scontent-lhr3-1.cdninstagram.com/vp/91ade9ea4c459172661265f3d9f8aa25/5A5AE2EC/t51.12442-15/e35/26321688_259895314543496_1739040006271401984_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/_liliyapetrova_ https://scontent-lhr3-1.cdninstagram.com/vp/9920f16a7956a861465f65e716349f29/5A5AE11E/t51.12442-15/e35/26151344_319999405186789_7072513863115079680_n.jpg
+procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/6a12ce15b8f2fe118d369164c3ec5f77/5A5B2333/t50.12441-16/26159751_723036274569796_4189358705935908864_n.mp4
+procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/b327e987c891012bdb134bdefd9880d2/5A5AD24B/t50.12441-16/26247810_1498339290264313_7903915863995056128_n.mp4
+procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/b7144f0c510057eadad3bd0fcfbcf78d/5A5AC13F/t50.12441-16/26815898_180267719387330_7668947055158493184_n.mp4
+doinstain 
+procimg https://www.instagram.com/stories/2121kk___k https://scontent-lhr3-1.cdninstagram.com/vp/0481b88fde945aa3c7a0706891a82916/5A5B062E/t51.12442-15/e35/26371065_129691227834705_2798133393336827904_n.jpg
+procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/119d7cc47f7661b721f42c90025624f7/5A5AE30A/t50.12441-16/26691487_1555559774524614_3271890537047639503_n.mp4
+procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/fe4eb7c1d89bdbcbc7c94096fa46d6ad/5A5B8B0F/t50.12441-16/26682726_1891358384509070_2519197443569170176_n.mp4
+procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/da19f2bb4f801042025d8833e8069aa4/5A5ACA69/t51.12442-15/e35/26073581_180181995907048_6935710908400271360_n.jpg
+procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/efc9564f66f2bfa4b9cc13f1e1a887e2/5A5B7B8A/t50.12441-16/26161304_1845665879057009_5443411718249324818_n.mp4
+procimg https://www.instagram.com/stories/___love.me__ https://scontent-lhr3-1.cdninstagram.com/vp/188f0533c859e8ff4a7ec78da63f950c/5A5ACCDE/t58.9793-16/14761316_190024805068752_4422306277393170432_n.mp4
+doinstain 
+procimg https://www.instagram.com/stories/paulatumala https://scontent-lhr3-1.cdninstagram.com/vp/fa0d3148bbcf33b8d41d2a8f0e2642eb/5A5AE090/t50.12441-16/26246545_208615863020725_4555731410378815716_n.mp4
+procimg https://www.instagram.com/stories/viki_odintcova https://scontent-lhr3-1.cdninstagram.com/vp/0b140008567c8c6dd282034b1e595522/5A5AC332/t50.12441-16/26259744_1192355294232326_8859124987286519808_n.mp4
+procimg https://www.instagram.com/stories/viki_odintcova https://scontent-lhr3-1.cdninstagram.com/vp/11c1bf868de0b722514410e4bdc789ad/5A5AE934/t50.12441-16/26218512_1921884004781147_617627696008003584_n.mp4
+procimg https://www.instagram.com/stories/jot.kaaaaa https://scontent-lhr3-1.cdninstagram.com/vp/b918b096c5ebd6a545ff58508918ee57/5A5B8849/t51.12442-15/e35/26272742_369284126870415_2720240360377810944_n.jpg
+procimg https://www.instagram.com/stories/k.maciag https://scontent-lhr3-1.cdninstagram.com/vp/44ca804c09f0d665656019d55b8615df/5A5AD157/t51.12442-15/e35/26153499_1775133382780215_535112719892742144_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/dagmaramalus https://scontent-lhr3-1.cdninstagram.com/vp/7a2d900c9315a74ca6d32c2cafee3b70/5A5ACDA8/t58.9793-16/26314356_1959186714335151_1503228855057610823_n.mp4
+procimg https://www.instagram.com/stories/efremovaluba https://scontent-lhr3-1.cdninstagram.com/vp/2ee97bfe201b78723ce02c698bcee221/5A5B89DE/t50.12441-16/26190860_2014477325437034_7525211744055066624_n.mp4
+procimg https://www.instagram.com/stories/efremovaluba https://scontent-lhr3-1.cdninstagram.com/vp/9ebb7c555661a428c304b829b0983b8a/5A5AE810/t51.12442-15/e35/26427615_289620311563304_555633906129305600_n.jpg
+procimg https://www.instagram.com/stories/efremovaluba https://scontent-lhr3-1.cdninstagram.com/vp/f61f020b12d83c486f514a12a89e5ac4/5A5B83B8/t50.12441-16/26818348_180832175998472_7456444649016655872_n.mp4
+doinstain 
+procimg https://www.instagram.com/stories/asiicca https://scontent-lhr3-1.cdninstagram.com/vp/a115dfe5ad8fefbf34d2622aac042bd2/5A5B2284/t50.12441-16/26684445_557639974568514_416290452489109504_n.mp4
+procimg https://www.instagram.com/stories/dashamart https://scontent-lhr3-1.cdninstagram.com/vp/a414f371e956d794cf8e3e7807f8c049/5A5B848F/t51.12442-15/e35/26068172_1540385632706577_4297536008565555200_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/chiara.rui https://scontent-lhr3-1.cdninstagram.com/vp/8dffbae93cc74b45778267b92b3a6551/5A5ACC60/t51.12442-15/e35/26181200_1523544534359431_8433881413475893248_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/_alena_alena_ https://scontent-lhr3-1.cdninstagram.com/vp/28b2657911b2a8f231ba46997da29c24/5A5B2D82/t51.12442-15/e35/26152163_2033470860269852_961871777208729600_n.jpg
+procimg https://www.instagram.com/stories/_alena_alena_ https://scontent-lhr3-1.cdninstagram.com/vp/a682a8cdae2a9c4b48f8047fe52c7284/5A5B7DBB/t51.12442-15/e35/26341949_146062019427846_3270491048987590656_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/rimmula_007 https://scontent-lhr3-1.cdninstagram.com/vp/070ed9688e549e3ed480ad74fd644f9a/5A5AE298/t51.12442-15/e35/26155009_1748286765478513_3512691620677943296_n.jpg
+procimg https://www.instagram.com/stories/alenashishkova.92 https://scontent-lhr3-1.cdninstagram.com/vp/8b648ed6bec92d03544b9a609d4bf1c7/5A5B82A4/t51.12442-15/e35/26187714_1783589751682937_2302246047117737984_n.jpg
+procimg https://www.instagram.com/stories/anna.kondra https://scontent-lhr3-1.cdninstagram.com/vp/3329b03369c3ef0173c86e6a23db5e2a/5A5B25C2/t51.12442-15/e35/26072040_391975477874528_5394844721845633024_n.jpg
+procimg https://www.instagram.com/stories/kraseczka https://scontent-lhr3-1.cdninstagram.com/vp/0f4ffdb34eb64ae5bdc389369fe440cd/5A5B2919/t50.12441-16/26243965_2066569570284358_7822426017268209307_n.mp4
+doinstain 
+procimg https://www.instagram.com/stories/tak.ta.paula https://scontent-lhr3-1.cdninstagram.com/vp/61659c1786960999c7b35ace3dfb1134/5A5AF427/t58.9792-15/e35/25128905_579562565724930_6381354338429698048_n.jpg
+procimg https://www.instagram.com/stories/missalena.92 https://scontent-lhr3-1.cdninstagram.com/vp/7747a8a5e8cbc6502901a89fc8f0870f/5A5AD667/t50.12441-16/26247693_1511020972284374_1215975051921143588_n.mp4
+doinstain 
+procimg https://www.instagram.com/stories/trishka92 https://scontent-lhr3-1.cdninstagram.com/vp/46f561856d11a463a35217cbae49e163/5A5B01B8/t51.12442-15/e35/26068327_365588733910759_415321026830794752_n.jpg
+doinstain 
+procimg https://www.instagram.com/stories/miss_medis_ https://scontent-lhr3-1.cdninstagram.com/vp/6da21b6d4cc0ceabf6abec0b5b21c5b0/5A5B2CD2/t51.12442-15/e35/26152055_310291252812937_9031698212053843968_n.jpg
+procimg https://www.instagram.com/stories/miss_medis_ https://scontent-lhr3-1.cdninstagram.com/vp/3015b3ce08e0ade9a7ed4045d0f3673c/5A5AF776/t51.12442-15/e35/26073208_398175190634668_5904809145499910144_n.jpg
+ogimageproc https://www.instagram.com/p/Bd2zAhFAm4L/?taken-by=dagmaramalus
+ogimageproc https://www.instagram.com/p/Bd2a5H-FwhR/?taken-by=k.maciag
+ogimageproc https://www.instagram.com/p/BdzlWMQl6fF/?taken-by=k.maciag
+ogimageproc https://www.instagram.com/p/Bd2Ok6BntN_/?taken-by=ofitial
+ogimageproc https://www.instagram.com/p/BdyUNqvHT3g/?taken-by=ofitial
+ogimageproc https://www.instagram.com/p/Bd3j4pjgsv6/?taken-by=samweaving
+ogimageproc https://www.instagram.com/p/Bd1k09lgsYY/?taken-by=_lesya_novikova_
+ogimageproc https://www.instagram.com/p/BdzdObnAW1b/?taken-by=_lesya_novikova_
+ogimageproc https://www.instagram.com/p/Bd3LbkFndDQ/?taken-by=sandrakubicka
+ogimageproc https://www.instagram.com/p/Bd0P-zynOGo/?taken-by=sandrakubicka
+ogimageproc https://www.instagram.com/p/Bd0Do5JnOys/?taken-by=sandrakubicka
+ogimageproc https://www.instagram.com/p/Bd2Y5llhjq8/?taken-by=_liliyapetrova_
+ogimageproc https://www.instagram.com/p/Bd2qqcrhONy/?taken-by=_alenamills_
+ogimageproc https://www.instagram.com/p/Bd3hEe3BDoP/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/Bd2ds95hCT2/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BdxIRrDBhey/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/BdyGe4YhTRb/?taken-by=tolloczkoklaudia
+ogimageproc https://www.instagram.com/p/Bd2yBFOldJh/?taken-by=trishka92
+ogimageproc https://www.instagram.com/p/Bd16zh3BdI7/?taken-by=nazarovamur
+ogimageproc https://www.instagram.com/p/Bd0sJ5dHjcR/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/Bd0VSTvHMMo/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/Bd0qmZXHtzX/?taken-by=bitch_soul_
+ogimageproc https://www.instagram.com/p/Bd21_3SBNoa/?taken-by=asiicca
+ogimageproc https://www.instagram.com/p/Bd2HBHKgCGt/?taken-by=jagoda_urban
+ogimageproc https://www.instagram.com/p/Bd3Q5iklRkK/?taken-by=i.s.nesquik
+ogimageproc https://www.instagram.com/p/BdzmVv_Dn2e/?taken-by=justyna.jalowiecka
+ogimageproc https://www.instagram.com/p/BdvU4dijQWX/?taken-by=justyna.jalowiecka
+ogimageproc https://www.instagram.com/p/Bd2gtcPgBS2/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/Bd0AQPSAa93/?taken-by=galina.dub
+ogimageproc https://www.instagram.com/p/Bd1fpqiHdEh/?taken-by=julia__yaroshenko
+ogimageproc https://www.instagram.com/p/BdwaY_ZnfhZ/?taken-by=julia__yaroshenko
+ogimageproc https://www.instagram.com/p/BdrMOMMnCpW/?taken-by=julia__yaroshenko
+ogimageproc https://www.instagram.com/p/Bd1_3xolS2e/?taken-by=mariyafishman
+ogimageproc https://www.instagram.com/p/Bd2UhuHhDRx/?taken-by=alenashishkova.92
+ogimageproc https://www.instagram.com/p/Bd2Sfkjh9YT/?taken-by=alina_akilova
+ogimageproc https://www.instagram.com/p/Bd3ak22jpr2/?taken-by=tak.ta.paula
+ogimageproc https://www.instagram.com/p/Bd2w8T1glDB/?taken-by=efremovaluba
+cd ~
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs
+config commit -m more
+vi ~/5555995052001.aud 
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+git diff
+config diff
+config add .bash_history .scratch/chromium-tabs 
+config status
+config add 
+config commit -m more
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+top
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .bash_history .scratch/chromium-tabs 
+config commit -m more
+pdftotext '/home/jim/Downloads/Mac a’ Bhaird, Proinsias - Rún an Bhonnáin .pdf'
+pdftotext '/home/jim/Downloads/Pelévin, Viktor & Ó Fionnáin, Mark - AMÓN-RÁ (2012, COISCÉIM).pdf'
+pdftotext '/home/jim/Downloads/Tolkien, J. R. R. - An Hobad .pdf'
+wget 'http://93.174.95.27/foreignfiction/get.php?md5=f32a98a159af80efdc01cb9492a60a78&key=5R0SV8CO0M2YCETL'
+telnet 46.101.49.108 8118
+mv get.php\?md5\=f32a98a159af80efdc01cb9492a60a78\&key\=5R0SV8CO0M2YCETL ~/Downloads/ga-narnia.pdf
+cd tmp/fashq1
+. ../sourceme 
+ogimageproc https://www.instagram.com/p/Bd00zzMAHF9/?taken-by=efremovaluba
+ogimageproc https://www.instagram.com/p/Bd3P-1FnUCV/?taken-by=karri_official_
+ogimageproc https://www.instagram.com/p/BdsWQ4eH3BS/?taken-by=karri_official_
+ogimageproc https://www.instagram.com/p/Bd2e4kqlVyd/?taken-by=nataliazasadzka
+ogimageproc https://www.instagram.com/p/BdxT9gdFM7U/?taken-by=nataliazasadzka
+ogimageproc https://www.instagram.com/p/Bd0V7-fg4Go/?taken-by=lilly.marchel
+ogimageproc https://www.instagram.com/p/Bdxop1CjgSu/?taken-by=lilly.marchel
+ogimageproc https://www.instagram.com/p/Bd2rzcCl0uw/?taken-by=_alena_alena_
+ogimageproc https://www.instagram.com/p/Bd2tqjwlWOb/?taken-by=_____diva_diva
+ogimageproc https://www.instagram.com/p/Bd2lC_sHUiD/?taken-by=popova__l
+ogimageproc https://www.instagram.com/p/Bd1xAv_FNgP/?taken-by=_supermasik_
+ogimageproc https://www.instagram.com/p/BdzNLBwlDrF/?taken-by=_supermasik_
+ogimageproc https://www.instagram.com/p/Bd2qqcrhONy/?taken-by=_alenamills_
+cd ~/disk/Playing/sphinx-alignment/
+ls
+cd cmusphinx-alignment-example/
+ls
+ls cmusphinx-clarinpl/
+less cmusphinx-clarinpl/README 
+less cmusphinx-clarinpl/variances 
+less cmusphinx-clarinpl/mixture_weights 
+ls
+tree ../../spinx/teanglann/
+tree ../../spinx/teanglann/|less
+tree ../../spinx/clarinpl/|less
+find ../../spinx/clarinpl/ -name mixture_weights
+ls
+ls cmusphinx-clarinpl/
