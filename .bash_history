@@ -1,78 +1,3 @@
-git commit -m 'youtube'
-git diff
-git add 2xmBQTVjZ_Q.txt 
-git commit -m corrections
-git diff
-git add 2xmBQTVjZ_Q.txt 
-git commit -m 'some of the Irish actually matches the official transcript'
-mv ~/Downloads/Address\ by\ President\ Higgins\ at\ the\ unveiling\ of\ ‘Dearcán\ na\ nDaoine\ –\ The\ People’s\ Acorn’.mp3 2xmBQTVjZ_Q.mp3
-#sh ~/bin/convert-mp3.sh 
-sh ~/bin/convert-mp3.sh 2xmBQTVjZ_Q.mp3 
-ls
-less audio2srt.py 
-less ../TG4/whizsachistin/audacity/5633414133001.txt
-ls
-cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt 
-ls
-cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt 
-cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud.txt
-audacity &
-apt-cache search flite
-apt-cache search hts
-apt-cache search festival
-cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud.txt2
-less 2xmBQTVjZ_Q.aud.txt2 
-cat 2xmBQTVjZ_Q.txt |perl youtube2audacity.txt > 2xmBQTVjZ_Q.aud2.txt
-less 2xmBQTVjZ_Q.aud2.txt 
-ls
-ffplay 10023_in.wav 
-ffplay 10023_out.wav 
-cd ~
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-cd /tmp/
-unzip ~/Downloads/KorpusStaropolski.zip 
-cd KorpusStaropolski/
-ls
-cd ..
-mkdir asia
-cd asia/
-ls ~/Downloads/*docx
-cp ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(1\).docx .
-mv Kozicka_Joanna_grudzień_2017\ \(1\).docx Kozicka_Joanna_grudzień_2017.docx 
-ls
-unzip Kozicka_Joanna_grudzień_2017.docx 
-ls -al Kozicka_Joanna_grudzień_2017.docx 
-ls
-rm -rf *
-cp ~/Downloads/Kozicka_Joanna_grudzień_2017\ \(2\).docx .
-mv Kozicka_Joanna_grudzień_2017\ \(2\).docx Kozicka_Joanna_grudzień_2017.docx 
-unzip Kozicka_Joanna_grudzień_2017.docx 
-jpeg-recompress
-for i in word/media/*jpeg;do jpeg-recompress $i;done
-for i in word/media/*jpeg;do jpeg-recompress $i $i.tmp.jpg;mv $i.tmp.jpg $i;done
-tree
-ls
-mv Kozicka_Joanna_grudzień_2017.docx ..
-find . -type f
-find . -type f|zip ../pack.zip -@
-mv ../pack.zip ../pack.docx
-ls -al ../pack.docx 
-ls -al ../pack.docx ../Kozicka_Joanna_grudzień_2017.docx 
-apt-cache search optipng
-sudo apt-get install optipng
-optipng -h
-for i in word/media/*png;do optipng -clobber -o7 $i;done
-find . -type f
-find . -type f|zip ../pack.zip -@
-mv ../pack.zip ../squash.docx
-ls -al ../squash.docx 
-ls -al ../*docx
-ls -alk ../*docx
-ls -al word/media/image*gif
-optipng -h
-for i in word/media/*gif;do optipng -clobber -o7 $i;done
 find . -type f|zip ../pack.zip -@
 mv ../pack.zip ../squash2.docx
 ls -al ../*docx
@@ -1998,3 +1923,78 @@ vi /tmp/leftin
 cat /tmp/leftin 
 cat /tmp/leftin  >> ../pron-data/gen.tsv 
 vi ../pron-data/gen.tsv 
+cd ../
+perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/leftin 
+git diff
+git add specific-norms.tsv 
+git commit -m more
+git stash
+vi /tmp/leftin 
+cat /tmp/leftin |sort|uniq > /tmp/asddd
+mv /tmp/asddd /tmp/leftin 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+ls *cm*
+less ipa-to-cmu.pl 
+tail pron-data/pronounce-as.gen.tsv 
+tail pron-data/pronounce-as.tsv 
+cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |perl ipa-to-cmu.pl > ../sphinx-alignment/cmusphinx-alignment-example/pldic.new
+less ../sphinx-alignment/cmusphinx-alignment-example/pldic.new
+grep enson pron-data/pronounce-as.tsv 
+ffplay /tmp/11.wav 
+ffplay /tmp/12.wav 
+minsec () { min=$(($1 / 60));sec=$(($1 - ($min * 60)));print $min:$sec;}
+minsec 939
+minsec () { min=$(($1 / 60));sec=$(($1 - ($min * 60)));echo $min:$sec;}
+minsec 939
+cd text/
+ls
+fir i in *txt; do ls ../audio/*$(basename $i .txt)*;done
+for i in *txt; do ls ../audio/*$(basename $i .txt)*;done
+for i in *txt; do echo; echo $i; ls ../audio/*$(basename $i .txt)*;done
+for i in *txt; do echo; echo $i; ls ../audio/*$(basename $i .txt)*;done > ../candidate-pairs
+ls *przed*
+less przedwiosnie.txt 
+ls ../audio/*przedwiosnie*
+less przedwiosnie.txt 
+ffplay ../audio/00-stefan-zeromski-przedwiosnie-rodowod.mp3
+grep abuzei-i-tair.txt ../pairs.tsv 
+vi ../pairs.tsv 
+less antek.txt
+cd ..
+git diff
+git add apply-specific.pl specific-norms.tsv 
+git commit -m 'more, but something breaks'
+git add apply-specific.pl specific-norms.tsv 
+git commit -m ok
+git add apply-specific.pl specific-norms.tsv 
+git commit -m 'work now'
+git status 
+git add audacity/dlugi-jezyk.txt audacity/napoj-cienisty-trupiegi.txt 
+git commit -m add
+less audacity/napoj-cienisty-trupiegi.txt 
+git add audacity-sound-finder/
+git commit -m add
+cat text/pairs.tsv 
+tail pairs.tsv 
+cat text/pairs.tsv >> pairs.tsv 
+git diff
+git add pairs.tsv 
+git commit -m more
+less pron-data/gen.tsv 
+git push origin lexicon 
+git checkout master 
+git pull origin master 
+git branch -D lexicon 
+git checkout -b lexicon
+ls
+cd audacity
+ls
+for i in *;do vi $i;done
+git diff
+ls
+git add *
+git commit -m 'tweak'
+cd ..
+ls
