@@ -1,30 +1,3 @@
-cat cand |aspell --lang pl -a |less
-mv cand /tmp/leftin 
-cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-cat cand 
-grep -i goa wyspa-skarbow.txt-02*aud
-grep -i toast wyspa-skarbow.txt-02*aud
-grep -i Jobo wyspa-skarbow.txt-02*aud
-grep -i grog wyspa-skarbow.txt-02*aud
-grep -i ongi wyspa-skarbow.txt-02*aud
-minsec 1211
-vi cand 
-minsec 2596
-minsec 1388
-minsec 3800
-minsec 4195
-minsec 2759
-vi cand 
-grep -i mociu wyspa-skarbow.txt-02*aud
-minsec 325
-vi cand 
-grep -i gnaci wyspa-skarbow.txt-02*aud
-mv cand /tmp/leftin 
-cat wyspa-skarbow.txt-03.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand 
-cat cand |aspell --lang pl -a |less
-vi cand 
-grep Hispanlola *aud
 vi cand 
 mv cand /tmp/leftin 
 cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
@@ -1998,3 +1971,30 @@ ls
 cat spoken-like*
 mkdir disk
 man 5 fstab
+cd disk/Playing/
+ls
+cd spinx/
+ls
+cd ../sphinx-alignment/
+ls
+cd cmusphinx-alignment-example/
+ls
+less align.sh 
+ls
+mv cmusphinx-clarinpl/pl.dic cmusphinx-clarinpl/pl.dic.old
+mv pldic.new cmusphinx-clarinpl/pl.dic
+ls
+cp ~/disk/Playing/wolne-lektury-audio-corpus/audio/0*-robert-louis-stevenson-wyspa-skarbow.mp3 .
+cp ~/disk/Playing/wolne-lektury-audio-corpus/text/wyspa-skarbow.txt-0*txt .
+for i in  *mp3;do bash ~/bin/convert-mp3.sh $i;done
+ls
+less align.sh 
+./align.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav 
+./align.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav wyspa-skarbow.txt-01.txt 
+for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl ;done
+for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl |perl ../../wolne-lektury-audio-corpus/clean.pl ;done
+for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl |perl ../../wolne-lektury-audio-corpus/clean.pl > $i.sent ;done
+ls
+grep '<sil>' cmusphinx-clarinpl/pl.dic.old 
+grep '<sil>' cmusphinx-clarinpl/pl.dic.old >> cmusphinx-clarinpl/pl.dic
+for i in 1 2 3 4 5 6;do sh align.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3.wav wyspa-skarbow.txt-0$i.txt.sent > $i.out 2> $i.err;done
