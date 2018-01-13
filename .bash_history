@@ -1,45 +1,3 @@
-less cand 
-grep -i pd wyspa-skarbow.txt-02*aud
-minsec 2822
-less cand 
-grep -i "kapitana'" wyspa-skarbow.txt-02*aud
-grep -i "kapitana'" wyspa-skarbow.txt-02*txt
-grep -i "kapitana" wyspa-skarbow.txt-02*txt
-grep -i davis wyspa-skarbow.txt-02*aud
-minsec 3022
-echo Kasandrą > /tmp/leftin 
-grep -i kidd wyspa-skarbow.txt-02*aud
-minsec 4019
-grep Kidd *txt
-minsec 3022
-cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-head cand 
-grep -i Dick wyspa-skarbow.txt-02*aud
-grep -i Bail wyspa-skarbow.txt-02*aud
-grep -i Bland wyspa-skarbow.txt-02*aud
-grep -i Credo wyspa-skarbow.txt-02*aud
-grep -i Arr wyspa-skarbow.txt-02*aud
-minsec 3763
-minsec 2311
-minsec 2029
-cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand 
-grep -i Arrowa wyspa-skarbow.txt-02*aud
-minsec 1893
-grep -i Bail wyspa-skarbow.txt-02*aud
-minsec 1168
-cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand 
-grep -i Blan wyspa-skarbow.txt-02*aud
-minsec 405
-cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand 
-grep -i hola wyspa-skarbow.txt-02*aud
-minsec 2099
-vi cand 
-cat cand |aspell --lang pl -a |less
-vi cand 
-cat cand |aspell --lang pl -a |less
 grep -i portob wyspa-skarbow.txt-02*aud
 minsec 2596
 grep -i hands wyspa-skarbow.txt-02*aud
@@ -1997,4 +1955,46 @@ cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > 
 paste /tmp/lefta /tmp/rightin |sed -e 's/ *$//' >> ../pron-data/gen.tsv 
 paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> ../pron-data/gen.tsv 
 man -k align
+ls
+cd ../../wolne-lektury-audio-corpus/
+cd text/
+perl ../apply-specific.pl 
+git diff
+got add wyspa-skarbow.txt-0*txt
+git add wyspa-skarbow.txt-0*txt
+git commit -m more
+git diff
+git add doktor-piotr.txt 
+git commit -m more
+cat wyspa-skarbow.txt-0*txt
+cat wyspa-skarbow.txt-0*txt|perl ../clean.pl 
+cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
+cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
+grep -i kapitana wyspa-skarbow.txt-0*txt
+grep -i kapitana wyspa-skarbow.txt-0*txt|grep "'"
+vi ../specific-norms.tsv 
+perl ../apply-specific.pl 
+git diff
+cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
+cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv |sort|uniq
+cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv |sort|uniq > /tmp/leftin 
+less ../ipa-to-cmu.pl 
+less ../merge-forced-alignment.pl 
+cd ..
+ls
+cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl 
+less ../msf-asr/gaipa-to-arpabet.pl 
+ls ../msf-asr/scripts/
+less ../msf-asr/scripts/fix-dictionary-pronunciations.pl 
+less ../msf-asr/scripts/abair-to-russian.tsv 
+less ../msf-asr/scripts/cnaglar.pl 
+ls ../msf-asr/scripts/*pl
+less ../msf-asr/scripts/abair-norm-dict.pl 
+less ../msf-asr/scripts/map-to-russian.pl 
+grep sene ../msf-asr/scripts/*pl
+grep seen ../msf-asr/scripts/*pl
+cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl 
+cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl |grep ')'
+cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl > ../sphinx-alignment/cmusphinx-alignment-example/plps.dic
+less ~/ibiotsa.txt
 ls
