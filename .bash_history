@@ -1,33 +1,3 @@
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5550482676001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=7'
-svn dif
-svn diff
-svn diff videos.tsv 
-svn diff videos.tsv |grep '^\+'
-svn diff videos.tsv |grep '^\+' > vdiff4
-vi vdiff3
-vi vdiff4 
-cat vdiff4 |head -n 1
-cat vdiff4 |head -n 1|awk -F'\t' '{print $6}'
-cat vdiff4 |head -n 1|awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../rosnarun/$id.vtt; done
-#cat vdiff4 |head -n 2|tail -n 1 |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../rosnarun/$id.vtt; done
-cat vdiff4 |head -n 2|tail -n 1 
-cat vdiff4 |head -n 2|tail -n 1 |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../olivia/$id.vtt; done
-cat vdiff4 |head -n 3|tail -n 1 
-cat vdiff4 |head -n 3|tail -n 1 |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../astroblast/$id.vtt; done
-cat videos.tsv |awk -F'\t' '{print $5}'
-cat vdiff4 |awk -F'\t' '{print $5}'
-cat vdiff4 |awk -F'\t' '{print $5}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.mp4;done
-cat ~/bin/convert-mp3.sh 
-for i in *mp4;do echo $i;done
-for i in *mp4;do ffmpeg -i $i -acodec pcm_s16le -ac 1 -ar 16000 $(basename $i .mp4).wav;done
-ls -la
-cat vdiff4
-mv 5550482676001.wav ../astroblast/
-svn add ../astroblast/5550482676001.wav 
-mv 5561171901001.wav ../olivia/
-svn add ../olivia/5561171901001.wav 
-mv 5672484350001.wav ../rosnarun/
-svn add ../rosnarun/5672484350001.wav 
 ls
 rm *.mp4
 cd ..
@@ -1998,3 +1968,33 @@ tree ../../spinx/clarinpl/|less
 find ../../spinx/clarinpl/ -name mixture_weights
 ls
 ls cmusphinx-clarinpl/
+cd ../..
+cd ..
+git clone https://github.com/apprenticeharper/DeDRM_tools.git
+cd DeDRM_tools/
+ls
+cd Obok_calibre_plugin/
+ls
+less obok_plugin
+less obok_plugin_ReadMe.txt 
+ls
+calibr
+calibre
+cd ..
+mkdir asia_sports
+cd asia_sports/
+vi pairs.tsv
+cat pairs.tsv |tr '\t' '\n'
+cat pairs.tsv |tr '\t' '\n' |while read i;do lynx -dump $i;done
+cat pairs.tsv 
+u=$(cat pairs.tsv )
+lynx -dump https://www.pzpn.pl/reprezentacje/reprezentacja-a/sztab-szkoleniowy > pl
+lynx -dump https://www.pzpn.pl/en/national-teams/national-team-a/coaching-staff > en
+vi pl 
+vi en 
+paste pl en
+paste pl en|grep -v ']'
+paste pl en|grep -v ']'|grep '^ '
+vi init-voc
+cat p
+cat pairs.tsv 
