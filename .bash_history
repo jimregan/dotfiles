@@ -1,25 +1,3 @@
-vi cand 
-mv cand /tmp/leftin 
-cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-less cand 
-wc -l cand 
-cat wyspa-skarbow.txt-05.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand5
-cat wyspa-skarbow.txt-06.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand6
-wc -l cand*
-less cand6 
-less cand
-grep -i abe wyspa-skarbow.txt-02*aud
-grep -i abe wyspa-skarbow.txt-03*aud
-grep -i abe wyspa-skarbow.txt-04*aud
-cat wyspa-skarbow.txt-03.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand3
-cat cand3
-grep -i gunn wyspa-skarbow.txt-03*aud
-minsec 1987
-less cand
-grep -i abe wyspa-skarbow.txt-04*aud
-minsec 3064
-grep -i Gray wyspa-skarbow.txt-04*aud
-minsec 3671
 grep -i Grayu wyspa-skarbow.txt-04*aud
 minsec 557
 cat wyspa-skarbow.txt-04.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
@@ -1998,3 +1976,25 @@ ls
 grep '<sil>' cmusphinx-clarinpl/pl.dic.old 
 grep '<sil>' cmusphinx-clarinpl/pl.dic.old >> cmusphinx-clarinpl/pl.dic
 for i in 1 2 3 4 5 6;do sh align.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3.wav wyspa-skarbow.txt-0$i.txt.sent > $i.out 2> $i.err;done
+tail -f pserr 
+less psout 
+tail -f psout 
+less psout 
+tail -f pserr 
+less pserr 
+tail -f psout 
+less psout 
+grep -v 1.00 psout 
+grep -v 1.00 psout  > tsty
+diff -u wyspa-skarbow.txt-01.txt.sent tsty 
+diff -u wyspa-skarbow.txt-01.txt.sent tsty |less
+ls
+less 1.out 
+less psout 
+less 1.out 
+less psout 
+less 1.out 
+less psout 
+grep 1.00 psout 
+grep 1.00 psout |awk '{print $2 "\t" $3 "\t" $1}' > psout.aud.txt
+audacity 
