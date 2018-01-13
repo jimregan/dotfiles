@@ -1,20 +1,3 @@
-grep -i portob wyspa-skarbow.txt-02*aud
-minsec 2596
-grep -i hands wyspa-skarbow.txt-02*aud
-minsec 2404
-minsec 3372
-minsec 4483
-less cand 
-cat cand |aspell --lang pl -a |less
-grep -i piłat wyspa-skarbow.txt-02*aud
-minsec 3662
-vi cand 
-cat cand |aspell --lang pl -a |less
-vi cand 
-cat cand |aspell --lang pl -a |less
-vi cand 
-cat cand |aspell --lang pl -a |less
-grep -i toma wyspa-skarbow.txt-02*aud
 grep -i toast wyspa-skarbow.txt-02*aud
 vi cand 
 cat cand |aspell --lang pl -a |less
@@ -1998,3 +1981,20 @@ cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu
 cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl > ../sphinx-alignment/cmusphinx-alignment-example/plps.dic
 less ~/ibiotsa.txt
 ls
+config add .bash_history 
+config commit -m masd
+less .bash_history 
+sudo umount /tmp/mnt/3 
+lsof
+sudo umount /tmp/mnt/3 
+vi /etc/fstab 
+blkid 
+vi /etc/fstab 
+sudo vi /etc/fstab 
+mount disk
+sudo vi /etc/mtab 
+sudo mount disk
+ls -al dis
+ls -al disk/
+ls
+cat spoken-like*
