@@ -1998,3 +1998,279 @@ cat cv-valid-train.csv |awk -F, '{print $7}'|grep ire
 cat cv-valid-train.csv |awk -F, '{print $7}'|grep ire|wc
 cat cv-valid-train.csv |awk -F, '($7=="ireland"){print}'
 cat cv-valid-train.csv |awk -F, '($7=="ireland"){print}'|grep male|grep thirt
+cd /tmp//asd/
+ls
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid
+vi spid
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+ls
+rm *
+wc -l spid 
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+ls
+sh ~/scripts/grab-logged.sh inp
+tail spid.log 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+rm spid.log 
+tail -n 4 spid 
+tail -n 4 spid  > ssss
+mv ssss spid 
+sh ~/scripts/spider.sh spid
+cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+less ~/tmp/sync/http-misc-20180105-1.nt 
+rm inp
+rm inp.log 
+rm -rf web.archive.org/
+ls
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+less ~/tmp/sync/http-misc-20180105-1.nt 
+rm spid
+rm spid.log 
+ls
+rm nohup.out 
+ls
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cd -
+cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+less ~/tmp/sync/http-misc-20180105-1.nt 
+ls
+rm -rf web.archive.org/
+rm *
+ls
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+ls
+cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+less ~/tmp/sync/http-misc-20180105-1.nt 
+ls
+rm -rf *
+ls
+curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg2NjR9fX1dfQ__&Signature=aSFNbYsP0pL70loNdhvcADycBh486NGn1ZpUPuHpSZNodAEbba~JSS2FUQx4UeIgsCoUMrIfm1CanixZm70PRvYdD148VVKXqhdWdE7KiIAP2ZWFmPBzHzkvPz-zaibOS5XqbJW9iClLYSKOicwmwjY6wrF2NOPAXpJuQPPCDPZMjG0kiJXX9o4F~nbchnaWqVqb8wKWI6ryaMWN0iYxk16alN~YR253vNY3n~bXNSBnmpXhOZFoxmZ-SHWWp02ReT7wm9Gi55HjolZnvxL-Edkwl-1tmmGplqp688aVKBPlN6mK8kiW2bIc--7u855PF6XJL~qAC3lxiFLvD~XaRw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg2NjR9fX1dfQ__&Signature=aSFNbYsP0pL70loNdhvcADycBh486NGn1ZpUPuHpSZNodAEbba~JSS2FUQx4UeIgsCoUMrIfm1CanixZm70PRvYdD148VVKXqhdWdE7KiIAP2ZWFmPBzHzkvPz-zaibOS5XqbJW9iClLYSKOicwmwjY6wrF2NOPAXpJuQPPCDPZMjG0kiJXX9o4F~nbchnaWqVqb8wKWI6ryaMWN0iYxk16alN~YR253vNY3n~bXNSBnmpXhOZFoxmZ-SHWWp02ReT7wm9Gi55HjolZnvxL-Edkwl-1tmmGplqp688aVKBPlN6mK8kiW2bIc--7u855PF6XJL~qAC3lxiFLvD~XaRw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http |awk '{print "http://web.archive.org/save/" $0}' > spid
+sh ~/scripts/spider.sh spid
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl  |less
+ls
+rm *
+curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg5NTd9fX1dfQ__&Signature=Ax4JsPg~Ihmn-KlLRmtaE8F6-D6g-LLD-9g4XbqIbSUeC~TSqR9P25bzYcvFi-CJb8ClKwq7ph3lqOmDqMBYxqtCihedpahIs-GxprSFdOFEHf2xqAZphJ9DS~vEOw-f6Fy41-OqFugc9Y8vflFIAOyvQvHpepR5T37tTbAxhQw8oO1Xf2CTK~3ai0bAs1lZSqSi~v8Mvq1AZq~Xh3Eo6InA~TZ7~uehDRjpUh646SDrdKhUew1Q~PTVZIyMJUSo1SBaXarsktcXuo3i9kKPrhmnjgACBarfUJFw3JXSaG3JdOvgSdMe3JprJZkFPbyzX6bP4uSDnWo2N6sgNP5qMw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http
+curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg5NTd9fX1dfQ__&Signature=Ax4JsPg~Ihmn-KlLRmtaE8F6-D6g-LLD-9g4XbqIbSUeC~TSqR9P25bzYcvFi-CJb8ClKwq7ph3lqOmDqMBYxqtCihedpahIs-GxprSFdOFEHf2xqAZphJ9DS~vEOw-f6Fy41-OqFugc9Y8vflFIAOyvQvHpepR5T37tTbAxhQw8oO1Xf2CTK~3ai0bAs1lZSqSi~v8Mvq1AZq~Xh3Eo6InA~TZ7~uehDRjpUh646SDrdKhUew1Q~PTVZIyMJUSo1SBaXarsktcXuo3i9kKPrhmnjgACBarfUJFw3JXSaG3JdOvgSdMe3JprJZkFPbyzX6bP4uSDnWo2N6sgNP5qMw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spid
+sh ~/scripts/spider.sh spid
+curl 'https://cf-hls-media.sndcdn.com/playlist/1OVqMfTQ17Io.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzFPVnFNZlRRMTdJby4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODk0Mzd9fX1dfQ__&Signature=OpBwxIAS715p7WNumU41dH-7pJb~-ewQNgNjxjNb1P2Ew7Bicf1OAcP5nTNUYVqvVZ2XwSyoqn4ccQ2mOSC4QE1weMF19JTQBg~s1FxUJp4tPJmIF9qdsRUNKweIt6J2B~GL-ECKD83tJ8TV3W44bp4JFCR50lTDs3KwY4ulbb~8PFDk~hGX6SWBmN18QsRk-L9AcXO~biHfvORE0tngoCziFexNTM7PdnbGGUSXuzzF~9H3butHOXaFT8ZUpJRaUAfFZ6yE-VKTUsu7~oT4~VmygMGo1PC2Uw2~WC4njEvau2MZMTbzLLcGJ93~KoYxiM4KNRkSeDzD6fLzGkeW1w__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spida
+less spid
+less spida
+ls
+sh ~/scripts/spider.sh spida
+sh ~/scripts/spider.sh spidb
+less spid.log 
+cat spid.log |perl ~/bin/wget-http.pl  > out
+cat spid|awk -F'/save/' '{print $2}'
+cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidc;done
+ls
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm spid
+rm spid.log 
+sh ~/scripts/spider.sh spib
+ls
+rm out 
+curl 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzEwNzB9fX1dfQ__&Signature=vwtSYuN6IYQMHzs6Ixd08MpIAfmXRoFWKsnSVZwB8mScAkTfu-sVbwrWq8YOjSuZ-Ty6vhPTL~NpY8rCjHrv8Rpd3h7fF-U6pzogLX43BfsgmD-K6eqcsaiZ1Zwq0Efsrhk41UL5SXfvbOBu16sS7SH1DPmJz2fri1pBx6AYtPWlLt5btlFvJa6w7FEuYEzrxW6~YEU-0KAXxjcK9fyzl2p-BZify~EjndckHQo86laO3wx-NBq-QtgJF0R1MzhZN0xT-9H4CXNs4hWMkQmDhbbkb~i2NVuQ~HnNAO8BZw94oFlx6aYEBG6GbC~qkkgqugJf2MI~zeZLDgWgVv4bzg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spidc
+sh ~/scripts/spider.sh spidc
+mksaver () { curl $1|grep http|awk '{print "http://web.archive.org/save/" $0}' ; }
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzEwNzB9fX1dfQ__&Signature=vwtSYuN6IYQMHzs6Ixd08MpIAfmXRoFWKsnSVZwB8mScAkTfu-sVbwrWq8YOjSuZ-Ty6vhPTL~NpY8rCjHrv8Rpd3h7fF-U6pzogLX43BfsgmD-K6eqcsaiZ1Zwq0Efsrhk41UL5SXfvbOBu16sS7SH1DPmJz2fri1pBx6AYtPWlLt5btlFvJa6w7FEuYEzrxW6~YEU-0KAXxjcK9fyzl2p-BZify~EjndckHQo86laO3wx-NBq-QtgJF0R1MzhZN0xT-9H4CXNs4hWMkQmDhbbkb~i2NVuQ~HnNAO8BZw94oFlx6aYEBG6GbC~qkkgqugJf2MI~zeZLDgWgVv4bzg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
+ls
+lsls
+ls
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExODV9fX1dfQ__&Signature=IvCBbB07hSD4JK5fWYmj~tdAb4Z95Zqcxy7Q7RVtvqVfNhmLRsM7JWaddhGN2ak-7kxeBAANqR2KuMQOJjma3l2ZuWzxn4MViICOKHQcMhIQQ05EyzW1vnyYUBCYa00CWxNW0y5ehL3MbbQErODwKehPWp7o~j9peq8RIk2KZx-PuyCDQdJwocbFgWa02HqKHKeGxYQ3I~T06f60khHZajD6EkxYSHVJ5ujO0GyxDxeKXPqjDpbSacc2lxLAqGwlIcLd6VECoTdOHVGLg8x4k9biVTmUm7lptxE6UDl76j-lp7M90FWCh~A-BpYPIuqyuLZ2kz1nPRh2tDg2CU3ScA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidd
+ls
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/QC6nAXGuvjHc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1FDNm5BWEd1dmpIYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA5ODl9fX1dfQ__&Signature=x5VatnUQHQ4oXl0OXrQiLHtMpY6TUPW2Cm1Thd8k2un7LeZmtKL~~jBjiObj0cbQMhKH5kLXB09H95RFClbljPquPslXnXHTi9EhCwyrRHsfGLQ0YU9m47gt9lCNtm~0YuKbm0r~R70IyCKp-SAji0~lH4~U5S0evPMFdOZOf0QtV5O23jStGYAC2jyZ-ew3DC78-Q~AbFAG~3S3a0JIVUq8vcE~8dHVgLxFXY1Uvx2w5jm9kAty2zpCHW1nsMgbQ2WczngGaEPYYoJQt9FgnNhwia25QYmsmO8MT3uzBSh38dRR~rc9DBIZiQXQqYpv-mIrLB7bX2JjHBbiWrdYPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidd
+less spidd 
+sh ~/scripts/spider.sh spidd
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExOTB9fX1dfQ__&Signature=FlC0FczXJN6Bl4guzty2wUj60tXHKPxibpf99ZBkx5j~vtWoOvKcIqIXCZMpNkrYJDYTO2mjRaU8rw5zxtifuO3aLAixXYq2M6afUvEdqyLIj3Ihlh9EXKC6lSMYcfk66PmRUK89F6Kz05MsmrVg63j8ZkTAvetisvgeuq9wx6Kmwxj4VB8TSm5GFA3mbD4CBesq6ZdTeacc1ScmGUzEYkuqlVRs3ih~1Q~9lf6ZOH5MkrddhhZqDGc6lUrxAeaIuQvb70JWkUbtrsGvBuOtzPOM4iH02YabedUg83K9zdsuKwEnsYl9kZHE9r5T8XiLSLfXjW9sYNraRyoBy7o48Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spide
+sh ~/scripts/spider.sh spide
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/XJhmgDkI4eit.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1hKaG1nRGtJNGVpdC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA2Njh9fX1dfQ__&Signature=J-P0F3KmfNZjuyV2KmstLwBmlz30PaUwk3XYFT-1bypUypBZPrKNsKAq7QFqeyAd5uyZpJQ5w437y7rcBrMKr3H4fkfsyoucXFq7eXt6OyE0NabzT8IAtvwYpxgaF~tcqRRHAQQ42bEyyhdi2ozHZ~z8moD9xFvab~gaa4A-DDJpPaJbVcMExqpcmw9bvEqApDvnbVkuLTAhLvuH2N-m3zcIXQItlzX2xlBDSDkK251PncX1Uuzz-wFKDj03~DowY5O3kfM-gktdaxAcFcG4HOiyhg1XCqh9C3YWjieTExz~T8B5~5OlP5L0oI3Xu6V4-sz5Qa-ODfU5kdVJquPneA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidf
+sh ~/scripts/spider.sh spidf
+ls -al
+tail -f spib.log 
+cat spib.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spib
+rm spib
+rm spib.log 
+tail spida.log 
+less spida.log 
+less spidb.log 
+ps aux|grep wget
+cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spida.log |perl ~/bin/wget-http.pl  > out
+cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
+vi out 
+cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2'  > out
+cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
+cat spidredo 
+cat spidb.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spidb.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out
+cat spidb|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
+rm spida
+rm spida.log 
+rm spidb
+rm spidb.log 
+ls
+ps aux|grep wget
+cat spidc.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spidc.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out
+cat spidc|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
+mv spidredo spida
+sh ~/scripts/spider.sh spida
+ls
+rm spidc
+rm spidc.log 
+ps aux|grep wget
+ls
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/clyU9WzLOQCn.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L2NseVU5V3pMT1FDbi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE5OTd9fX1dfQ__&Signature=RfZaQxu9BuVg2bXx6ZJ6Hnbrg6PtLEILGQ-qHl0bGWpG~ZNBxrTb2ffKc5sCs~EU8oNipidqqbCncLnA6u38XmmjF7cMBto3M1t149e7Ikz47s9wZoPAV71FFQQZmyLls8byM0Cl8c~qojMwrS~zEkLk~XvRE4dkd0oWmMdDUWtgyjjKPqPbkezpDrm1oQUBHu5Fz5KjXoRiFawulSN0vj2gr~0FWc3Au9zFwvGEFOXoypF0OHTJp7Uxo5DJ4bfMEnYqANqpzH8FDVJS8IGYm3Mob4M-gtvOzcOpLp-rZHGHTAxoe07kkTdoWceS27MXhkNRzeAshKVf8U6tXX65MA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidg
+sh ~/scripts/spider.sh spidg
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/EfsIqtNC3aXE.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0Vmc0lxdE5DM2FYRS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4NzR9fX1dfQ__&Signature=vo~~vCmWeXoa9pcgabQysvYghvwuX4hqBXSea4oJsmp81h8KbEsLBB~1hPB70kE1GxwUabjSVF1bHSdnJWxk1t8J-g5KICgpOQfcdDSSWpiTKriPrbaDYo94GHlcu5EVFEeOd9DCs5GbIfyDeGMuSowTPcaERSIqk2hLuaBe2VGq8JoCM8wBHEqc-9~iT55KedUN~G0DVDYrg4qEm5FXAQDYXhDPKehrGICzrmDMDx9Sw~B~sgrN54me2tfdhefVfufalCqel1RVDgn3o4t7Fa5bfuK3ZV4pmySst2sUh1a6XMfaTj5RHl8C73fHKEK1k9yk0MRpDIngU5h44rUCOQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidh
+sh ~/scripts/spider.sh spidh
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3Mzh9fX1dfQ__&Signature=g386tzV1BPWkkD7s~ubFC44eUUPdsL7Hr3K39TgEHl5nVRhpcJ7cAGHVn6V7UXCSze7~xJhxGjWek06Ye~f3eHglS56-khh9LbR2MrbmIveKVRJygKdsXVyXvZG~um8KMoArjqaepNoCONGMD-lUpOqIHJrnv~4PedOwVydOoLjkqzYkfNEIpRQ4knpjEpMaRSw59P4B2U2r0hnfeXft~QB7l584FPE0uuAvfhXU~pmxDpmv2WF-pec07pdA34zgM8g7BCUh3mp6kVQL~g0nBiVNXhZqsKAq9g1jowLRgjy6FdAtt7hsGW3cedIYSCz6rPC~8sVKU5DlwdM2AfkkPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidi
+sh ~/scripts/spider.sh spidi
+mksaver 'https://cf-hls-media.sndcdn.com/playlist/sDgheS0HrWzz.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3NEZ2hlUzBIcld6ei4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzIxNDB9fX1dfQ__&Signature=HaJ-EKAhEZPtJOxcETcBR0AF7FBEr7CwF1ZF2IYc1EH8xBx2z~0mRsRCWWtkPScvqb4WS7jjwP7NEjJIG79GafN~WtwNbDDZ-TSaDc5qX6FmKHrE51s539I1uPFBhUPZbiayuoG3kEVzUR8VwJKPXnAcNAYKdx3nXjTorCJxYFsiS3cYYCv3seFu2gSBjiIYv1olsNe1uENLIVGgSX0wwN3MD6jMRfk9w11MWbg9HmxEEatQixJjDzOPYQTFEtkiwhh6RTHseWVKU5LNBP2GJuImqP-Xucj9sG1t4JKsvPpMTCjJsvtuh-tf5ofjApra~0X2hcB3W5YhObdJiDfevw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidj
+sh ~/scripts/spider.sh spidj
+ps aux|grep wget
+ls
+cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out
+cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
+ckredo () { cat $1.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt ; cat $1.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out ; cat $1 |awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo ; }
+ckredo () { cat $1.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt ; cat $1.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out ; cat $1 |awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo ; done ; }
+ls
+ps aux|grep wget
+ckredo spidd
+ckredo spide
+ps aux|grep wget
+ckredo spidf
+ckredo spidg
+ckredo spidh
+ps aux|grep wget
+ckredo spidi
+ls
+rm out nohup.out 
+ps aux|grep wget
+tail -f spidj.log 
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm inp
+rm inp.log 
+ls
+ckredo spidd
+ls
+ckredo spida
+ls
+ckredo spide
+ckredo spidf
+ckredo spidg
+ckredo spidh
+ckredo spidi
+ckredo spidj
+wc -l spidredo 
+ls
+mv spidredo foo
+rm nohup.out spid*
+rm -rf web.archive.org/
+sh ~/scripts/spider.sh foo
+tail -f foo.log 
+sh ~/scripts/grab-logged.sh inp
+tail -f inp.log 
+cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm -rf web.archive.org/
+rm inp
+rm inp.log 
+ls
+tail -f foo.log 
+ckredo foo
+ls
+rm out 
+ckredo foo
+ls
+rm out 
+ckredo foo
+ckredo () { cat $1.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt ; cat $1.log |perl ~/bin/wget-http.pl |grep 'web/2' |grep -v Forbidden  >> out ; cat $1 |awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo ; done ; }
+rm out 
+ckredo foo
+ls
+rm foo
+rm foo.log 
+rm out nohup.out 
+ls
+cat inp 
+sh ~/scripts/grab-logged.sh inp
+zless ~/Downloads/conceptnet-assertions-5.5.5.csv.gz 
+zgrep '/ga/' ~/Downloads/conceptnet-assertions-5.5.5.csv.gz 
+zgrep '/ga/' ~/Downloads/conceptnet-assertions-5.5.5.csv.gz |wc
+curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689492431001&pubId=1290862567001&videoId=5689475790001'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spiii
+sh ~/scripts/spider.sh spiii
+ls
+less inp.log 
+ckredo inp
+ls
+rm inp*
+sh ~/scripts/spider.sh spidredo
+rm -rf web.archive.org/
+ls
+sh ~/scripts/spider.sh newv
+tail -f spiii.log 
+tail -f spidredo.log 
+mv spidredo spaa
+mv spidredo.log spaa.log
+ckredo spiii
+ckredo spaa
+ls
+wc -l spidredo spaa
+sh ~/scripts/spider.sh spaa
+cat spiii.log 
+cat spiii.log |perl ~/bin/wget-http.pl 
+cat spiii.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}'
+cat spiii.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+rm spiii
+rm spiii.log nohup.out spidredo out 
+ls
+tail -f newv.log 
+less spaa.log 
+rm spaa
+rm spaa.log 
+ls
+tail -f newv.log 
+cat newv.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat newv.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+ckredo newv
+ls
+rm *
+ls
+sh ~/scripts/grab-logged.sh inp
+vi ~/kaldi-new-eg-pull
+vi ~/irish-books
+vi ~/irish-audiobooks
+lls
+tail -f inp.log 
+ls
+cd -
+history -a
