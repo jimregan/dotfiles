@@ -1,8 +1,3 @@
-grep -i brasę wyspa-skarbow.txt-05*aud
-minsec 2162
-cat cand |aspell --lang pl -a |less
-vi cand
-echo starczało|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
 vi cand
 grep -i brasę wyspa-skarbow.txt-05*aud
 grep -i dziewięcio- wyspa-skarbow.txt-05*aud
@@ -1998,3 +1993,8 @@ ls
 mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
 less ../../wolne-lektury-audio-corpus/audacity-sound-finder/00-stefan-zeromski-przedwiosnie-rodowod.mp3.txt 
 ls
+ls
+less wyspa-skarbow.txt-01.txt.sent.json 
+less wyspa-skarbow.txt-01.txt.sent.tmp 
+less wyspa-skarbow.txt-01.txt.sent.aud 
+less ~/5623564641001.aud.edt.txt 
