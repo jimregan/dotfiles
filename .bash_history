@@ -1,26 +1,3 @@
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-grep Black wyspa-skarbow.txt-01*aud
-minsec() { min=$(($1 / 60));sec=$(($1 - min));echo $min:$sec; }
-minsec 2443
-minsec() { min=$(($1 / 60));sec=$(($1 - (min * 60)));echo $min:$sec; }
-minsec 2443
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-grep Cross wyspa-skarbow.txt-01*aud
-minsec 2968
-echo — Jeżeli wam wszystkim dusza uciekła w pięty, to ja z Jimem okażemy więcej odwagi! Wracamy do domu tą samą drogą, którąśmy tu przyszli — obejdziemy się bez waszej łaski! Takie dryblasy, chłopy jak dęby, a serce mają jak zające! Otworzymy skrzynię, choćbyśmy mieli za to kipnąć! Pani Crossley, a do paniusi to się umizgnę o tę sakiewkę, żebym miała gdzie wrazić te pieniądze, co się nam z prawa przynależą.|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-echo — Jeżeli wam wszystkim dusza uciekła w pięty, to ja z Jimem okażemy więcej odwagi! Wracamy do domu tą samą drogą, którąśmy tu przyszli — obejdziemy się bez waszej łaski! Takie dryblasy, chłopy jak dęby, a serce mają jak zające! Otworzymy skrzynię, choćbyśmy mieli za to kipnąć! Pani Crossley, a do paniusi to się umizgnę o tę sakiewkę, żebym miała gdzie wrazić te pieniądze, co się nam z prawa przynależą.|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
-vi /tmp/leftin 
-minsec 3315
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-grep -i brudnosina *aud
-minsec 117
-echo Dokładnie, jakby to było wczoraj, pamiętam tę chwilę, gdy ów człowiek przywlókł się przed drzwi gospody, a za nim przytarabaniła się na wózku ręcznym jego skrzynia marynarska. Był to mężczyzna rosły, muskularny, ciężki, o orzechowobrunatnej twarzy. Na barki, przyodziane w brudny, niegdyś błękitny kubrak, spadał mu harcap jakby w dziegciu unurzany. Ręce chropowate i popękane kończyły się czarnymi i połamanymi paznokciami, w poprzek policzka blado przeświecała brudnosina kresa — znak od szabli. Pamiętam, jak rozglądał się dokoła po zatoce i według swego zwyczaju pogwizdywał, aż wybuchnął głośno starą piosenką żeglarską, którą później śpiewał tak często|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-echo Dokładnie, jakby to było wczoraj, pamiętam tę chwilę, gdy ów człowiek przywlókł się przed drzwi gospody, a za nim przytarabaniła się na wózku ręcznym jego skrzynia marynarska. Był to mężczyzna rosły, muskularny, ciężki, o orzechowobrunatnej twarzy. Na barki, przyodziane w brudny, niegdyś błękitny kubrak, spadał mu harcap jakby w dziegciu unurzany. Ręce chropowate i popękane kończyły się czarnymi i połamanymi paznokciami, w poprzek policzka blado przeświecała brudnosina kresa — znak od szabli. Pamiętam, jak rozglądał się dokoła po zatoce i według swego zwyczaju pogwizdywał, aż wybuchnął głośno starą piosenką żeglarską, którą później śpiewał tak często|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-grep -i dance *aud
-minsec 4117
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
 grep -i muszli *aud
 grep -i Dogg *aud
 minsec 3210
@@ -1998,3 +1975,26 @@ ls
 less README.md 
 curl 'https://vod-sub-uk-live.akamaized.net/iplayer/subtitles/ng/modav/p05sbjdx_b09m62x7_1515800091051.xml?__gda__=1515827630_8520611a0c540d71f2b76459480bb637'
 less ~/Downloads/www.bbc.co.uk.har 
+cd disk/Playing/
+cd msf-asr/
+ls
+ls audacity/
+ls vtt-patches/
+less vtt-patches/5537750827001.mod 
+less vtt-patches/5532176117001.edt 
+less ~/5555995052001.aud 
+find TG4 -name '5555995052001*'
+less TG4/bealoideasbeo/5555995052001.aud.txt
+less vtt-patches/5537750827001.mod 
+cat TG4/bealoideasbeo/5555995052001.aud.txt|awk -F'\t' '{print $1}'
+cat TG4/bealoideasbeo/5555995052001.aud.txt|awk -F'\t' '{print $1}' |head
+cat TG4/bealoideasbeo/5555995052001.aud.txt|awk -F'\t' '{print $1}' |head -n 20
+less ~/5555995052001.aud 
+less vtt-patches/5537750827001.mod 
+less ~/5555995052001.aud 
+cat TG4/bealoideasbeo/5555995052001.aud.txt|head -n 20
+less vtt-patches/5537750827001.mod 
+grep 
+grep '\-\->' TG4/bealoideasbeo/5555995052001.vtt |head -n 20|awk '{print $1}'
+cat TG4/bealoideasbeo/5555995052001.aud.txt|head -n 20
+killall telnet
