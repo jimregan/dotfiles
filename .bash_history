@@ -1,63 +1,3 @@
-grep -i muszli *aud
-grep -i Dogg *aud
-minsec 3210
-echo Silna woń tytoniu i dziegciu wionęła ze środka, lecz na wierzchu było widać jedynie zupełnie przyzwoity garnitur, bardzo starannie oczyszczony i poskładany. Matka wyraziła przypuszczenie, że kapitan nie miał go jeszcze nigdy na sobie. Pod spodem był istny groch z kapustą: kwadrant , blaszany kubek, kilka laseczek tytoniu, dwie pary nader pięknych pistoletów, sztaba lanego srebra, stary zegarek hiszpański i wiele innych świecidełek niezbyt wielkiej wartości i przeważnie wyrobu zagranicznego, para mosiężnych kompasów oraz pięć czy sześć osobliwych muszli z Indii Zachodnich. Często później zastanawiałem się nad tym, po co on te wszystkie rupiecie woził z sobą wszędzie w ciągu swego włóczęgowskiego, występnego i pełnego niebezpieczeństw życia.|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > /tmp/leftin 
-cat /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |less
-minsec 4321
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
-grep -i dirk wyspa-skarbow.txt-01*aud
-minsec 4034
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
-grep -i joty wyspa-skarbow.txt-01*aud
-grep -i jogo wyspa-skarbow.txt-01*aud
-grep -i eee wyspa-skarbow.txt-01*aud
-minsec 4934
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
-grep -i jogo wyspa-skarbow.txt-01*aud
-minsec 2602
-grep -i najniepoczytalniejszym wyspa-skarbow.txt-01*aud
-minsec 448
-echo Dirk > /tmp/leftin 
-echo najniepoczytalniejszym >> /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
-grep -i obcas wyspa-skarbow.txt-01*aud
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq 
-echo wsch > /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |head
-echo joty >> /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |aspell --lang pl -a
-grep -i zawrzasłem wyspa-skarbow.txt-01*aud
-minsec 2492
-echo zawrzasłem >> /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq |aspell --lang pl -a |less
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-vi cand 
-cat cand |aspell --lang pl -a 
-cat cand |aspell --lang pl -a |less
-vi cand 
-grep -i przeokrutnego wyspa-skarbow.txt-01*aud
-minsec 4934
-cat cand |aspell --lang pl -a |less
-vi cand 
-cat cand |aspell --lang pl -a |less
-vi cand 
-mv cand /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-cat cand 
-grep -i trinid wyspa-skarbow.txt-01*aud
-grep -i taylo wyspa-skarbow.txt-01*aud
-grep -i sava wyspa-skarbow.txt-01*aud
-minsec 759
-minsec 2097
-minsec 4629
-echo Trinidad > /tmp/leftin 
-cat wyspa-skarbow.txt-01.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-cat cand 
-cat wyspa-skarbow.txt-02.txt|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/clean.pl |tr ' ' '\n'|sort|uniq|perl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/filter-dict.pl /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv  |sort|uniq > cand
-wc -l cand 
-less cand 
-grep -i harr wyspa-skarbow.txt-02*aud
 minsec 985
 grep Harry *txt
 grep -i harr wyspa-skarbow.txt-02*aud
@@ -1998,3 +1938,63 @@ grep
 grep '\-\->' TG4/bealoideasbeo/5555995052001.vtt |head -n 20|awk '{print $1}'
 cat TG4/bealoideasbeo/5555995052001.aud.txt|head -n 20
 killall telnet
+tail -f 1.err 
+less 1.err 
+tail -f 1.err 
+ls
+less 1.out 
+tail wyspa-skarbow.txt-01.txt.sent 
+less 1.out 
+grep '"r"' 1.
+grep '"r"' 1.*
+less wyspa-skarbow.txt-01.txt.sent 
+less 1.out 
+less wyspa-skarbow.txt-01.txt.sent 
+less 1.out 
+less wyspa-skarbow.txt-01.txt.sent 
+less 1.out 
+less cmusphinx-clarinpl/pl.dic
+less 1.out 
+less 1.err 
+less ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
+perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out 
+perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out |less
+less wyspa-skarbow.txt-01.txt.sent 
+less ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
+perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out |less
+perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out > al1.txt
+audacity 
+less 2.out 
+wc -l 2.out 
+cat wyspa-skarbow.txt-02.txt.sent |tr  ' ' '\n'|wc
+ls
+tail -f 6.err 
+less 6.out 
+wc -l 1.out 
+cat wyspa-skarbow.txt-01.txt.sent |tr  ' ' '\n'|wc
+less ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
+perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent 
+perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent  > 1.jsgf
+less 1.jsgf 
+sphinx_jsgf2fsg 1.jsgf 
+sphinx_jsgf2fsg -h
+sphinx_jsgf2fsg 
+sphinx_jsgf2fsg -jsgf 1.jsgf -fsg 1.fsg
+less 1.fsg 
+less 1.jsgf 
+less 1.fsg 
+perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent  > 1.jsgf
+less 1.jsgf 
+sphinx_jsgf2fsg -jsgf 1.jsgf -fsg 1.fsg
+less 1.jsgf 
+perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent  > 1.jsgf
+sphinx_jsgf2fsg -jsgf 1.jsgf -fsg 1.fsg
+less 1.fsg 
+pocketsphinx_batch 
+pocketsphinx_continuous 
+pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict cmusphinx-clarinpl/pl.dic
+pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict cmusphinx-clarinpl/pl.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav 
+pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict cmusphinx-clarinpl/pl.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > psout 2> pserr
+less pserr 
+less cmusphinx-clarinpl/pl.dic
+pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > psout 2> pserr
