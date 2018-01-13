@@ -1,313 +1,3 @@
-find . -type f|zip ../pack.zip -@
-mv ../pack.zip ../squash2.docx
-ls -al ../*docx
-cd ..
-tar zxvf ~/Downloads/SEJF-1.1-Slownik.tar.gz 
-less Slownik 
-rm Slownik 
-tar zxvf ~/Downloads/SEJF-1.1.tar.gz 
-cd SEJF-1.1/
-ls
-less SEJF-1.1-dlc.dic 
-cd ../asia/
-for i in word/media/*gif;do optipng -clobber -o7 $i;done
-for i in word/media/*gif;do optipng -clobber -snip -o7 $i;done
-ls -al word/media/*
-cd ~
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-kwin
-config add .bash_history 
-config commit -m more
-python ~/Playing/Chromagnon/chromagnonTab.py ~/.config/chromium/Default/Current\ Tabs > ~/.scratch/chromium-tabs
-config add ~/.scratch/chromium-tabs* .bash_history 
-config commit -m more
-df
-config status
-config diff
-config stash
-ps aux|grep kde
-ps aux|grep X
-vi mxnet.pl
-pdl
-cd Playing/mxnet/
-ls
-cd perl-package/
-ls
-cd AI-MXNet
-ls
-make
-sudo make install
-pdl
-ls
-perl Makefile.PL 
-make 
-sudo make install
-pdl
-cd ..
-make
-ls
-cd AI-NNVMCAPI/
-ls
-sudo make install
-sudo make 
-sudo make install
-cd ../AI-MXNetCAPI/
-ls
-make
-sudo make install
-perl Makefile.PL 
-make
-sudo make install
-cd ../AI-NNVMCAPI/
-perl Makefile.PL 
-make
-sudo make
-sudo make install
-pdf
-pdl
-less wyspa-skarbow.txt-01.txt 
-cp /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/text/run-aeneas.sh .
-ls
-less run-aeneas.sh 
-less /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pairs.tsv 
-#for i in 1 2 3 4 5 6;do sh run-aeneas.sh ; echo wyspa-skarbow.txt-0$i.
-less /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pairs.tsv 
-for i in 1 2 3 4 5 6;do sh run-aeneas.sh wyspa-skarbow.txt-0$i.wav wyspa-skarbow.txt-0$i.txt;done
-audacity 
-sudo apt-get install gparted
-gparted
-sudo gparted
-cd Playing/
-ls
-ls -al
-sudo chown -R jim.jim .
-df
-cd /tmp/
-mkdir mnt
-cd mnt/
-mkdir 3
-sudo mount -t ext4 /dev/sda3 3
-ls  3/
-ls  3/home/
-ls  3/home/mark/
-ls  3/home/mark/Public/
-ls  3/home/mark/Pictures/
-ls  3/home/mark/Music/
-ls  3/home/mark/Documents/
-ls  3/home/mark/Desktop/
-ls  3/home/mark/Videos/
-find  3/home/mark/ -type f
-mkdir 2
-sudo mount -t ntfs /dev/sda2 2
-sudo mount -t ntfs -o ro /dev/sda2 2
-ls 2
-ls 2/Documents\ and\ Settings
-ls 2/Documents\ and\ Settings/Default\ User
-ls 2/Documents\ and\ Settings/Default\ User/My\ Documents
-ls 2/Documents\ and\ Settings/Default\ User/My\ Documents/My\ Pictures
-find 2/Documents\ and\ Settings/Default\ User/ -type f
-find 2/Documents\ and\ Settings/Mark/ -type f
-cd ..
-sudo umount 2
-sudo umount 3
-mount
-sudo umount /dev/sda3
-sudo umount /dev/sda2
-ls
-cd mnt/
-ls
-sudo mount -t ext4 /dev/sda1 3
-ls 3
-cd 3
-mkdir Playing
-ls -al
-cd ..
-chmod a+rwx 3
-sudo chmod a+rwx 3
-cd 3
-ls
-mkdir Playing
-cd Playing/
-ls
-cd ..
-mkdir Diss
-cd Diss/
-mv ~/Corpora/ .
-ls
-ls ~
-mv ~/gd.zip .
-mv ~/20171109\ d* .
-cd ..
-ls
-rmdir Playing/
-mv ~/Playing/ .
-ls
-cd Playing/
-ls
-cd ..
-ls
-cd desktop/
-ls
-mv ~/tmp/ .
-ls ~/Playing/
-tree ~/Playing/
-ls
-cd ../Playing/
-lls
-ls
-rsync -zvh /home/jim/Playing/ .
-ls
-rsync -zvh /home/jim/Playing/ .
-cd ..
-rsync -zvh /home/jim/Playing/ Playing
-rsync -azvh /home/jim/Playing/ Playing
-ls
-cd Playing/
-ls
-fdupes -r . ~/Playing/
-cd /tmp/mnt/3/Playing/
-ls
-ls
-mkdir desktop
-cd desktop/
-mkdir Downloads
-cd Downloads/
-mv ~/Downloads/* .
-ls ~/Documents/
-ls
-cd ..
-ls
-cd ~
-cd -
-ls ~
-mv ~/en-es-t1 .
-mv ~/ga-multiwords .
-mv ~/gd.txt .
-ls ~/logs/
-ls ~/cmusphinx/
-ls ~/bitext/
-mv ~/bitext/ .
-ls
-ls ~/Videos/
-perl -e 'print 1 << 0'
-perl -e 'print 1 << 1'
-perl -e 'print 1 << 2'
-ls ../Laptop/
-ls
-cd ../Laptop/
-ls
-cd Playing/
-ls
-cd ..
-ls
-find . -type f|grep -v tg4
-cd Playing/
-cd tg4-files/
-ls
-for i in [b-d]* [gr]*txt;do echo $i;done
-for i in [b-d]* [gr]*txt;do cat $i|awk -v "f=$i" '{print f "\t" $0}';done
-for i in [b-d]* [gr]*txt;do cat $i|awk -v "f=$i" '{print f "\t" $0}';done > /tmp/tg4
-ls
-ls
-cd ../
-cd ../Laptop/
-du .
-tree .cpan/build/
-cd ../
-ls
-cd Playing/
-ls
-cd Corpora/
-svn stat
-ls -al
-du .
-cd ../msf-asr/TG4/
-ls
-svn stat
-svn revert toirbeir
-svn stat
-svn revert saolfaoishraid niko lurgan2k17
-svn stat
-svn revert toirbeir/5680586501001.vtt toirbeir/5680586501001.wav 
-svn stat
-svn revert lurgan2k17/5689475790001.vtt lurgan2k17/5689475790001.wav niko/5686448376001.vtt niko/5686448376001.wav saolfaoishraid/5387551832001.vtt saolfaoishraid/5387551832001.wav saolfaoishraid/5387555696001.vtt saolfaoishraid/5387555696001.wav saolfaoishraid/5387560759001.vtt saolfaoishraid/5387560759001.wav saolfaoishraid/5387561674001.vtt saolfaoishraid/5387561674001.wav saolfaoishraid/5387564196001.vtt 
-ls
-svn up
-grep 5470849233001 scripts/videos.tsv 
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3696/1290862567001_7409189e-eafa-449e-b128-aadc577ee45f.vtt?pubId=1290862567001&videoId=5470849233001'  -O garfield/5470849233001.vtt
-cd garfield/
-fdupes -r .
-grep 5322948697001 ../scripts/videos.tsv 
-grep 5416347428001 ../scripts/videos.tsv 
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/2164/1290862567001_854408f2-9b8d-432c-9ca7-7abf91999fbb.vtt?pubId=1290862567001&videoId=5416347428001' -O 5416347428001.vtt 
-svn diff
-grep 5469256654001 ../scripts/videos.tsv 
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/1336/1290862567001_4c9bec36-151b-481f-b9e6-b926dc4ee074.vtt?pubId=1290862567001&videoId=5469256654001'  -O 5469256654001.vtt
-fdupes -r .
-less 5469256654001.vtt 
-ffplay 5469256654001.wav 
-less 5469256654001.vtt 
-ffplay 5311422984001.wav 
-grep 5413626562001 ../scripts/videos.tsv 
-wget 'https://tgfour-a.akamaihd.net/pd/1290862567001/201712/3077/1290862567001_e309d881-5ea3-45ea-a005-19940311136e.vtt?pubId=1290862567001&videoId=5413626562001' -O 5413626562001.vtt
-fdupes -r .
 svn status
 svn add 5413626562001.vtt 5469256654001.vtt 5470849233001.vtt
 svn ci -m replacements
@@ -1998,3 +1688,313 @@ git add *
 git commit -m 'tweak'
 cd ..
 ls
+less przedwiosnie.txt 
+ls ../audio/*przedwiosnie*
+less przedwiosnie.txt 
+perl ../header-replace.pl przedwiosnie.txt 
+perl ../header-replace.pl przedwiosnie.txt  > tmp
+mv tmp przedwiosnie.txt 
+git diff
+git add przedwiosnie.txt 
+git commit -m header
+perl ../splitter.pl przedwiosnie.txt  
+ls przedwiosnie.txt*
+ls ../audio/*przedwiosnie*
+less przedwiosnie.txt-00.txt 
+less przedwiosnie.txt-01.txt 
+less przedwiosnie.txt-02.txt 
+less przedwiosnie.txt-03.txt 
+less przedwiosnie.txt-04.txt 
+ls ../audio/*przedwiosnie*
+rm /tmp/03-stefan-zeromski-przedwiosnie-cz-iii-1-*
+git rm przedwiosnie.txt
+git add przedwiosnie.txt-0*
+git commit -m split
+less przedwiosnie.txt-04.txt
+grep '[0-9]' przedwiosnie.txt-0*
+less ../NumberNorm.pm 
+perl ../NumberNorm.pm  expand_year 21
+perl ../NumberNorm.pm  expand_year 21 gen
+perl ../NumberNorm.pm  expand_year 1924 gen
+grep przedwiosnie ../audiobooks.tsv 
+ls ../*sh
+vi ../additions.sh 
+echo 'Czytał Jacek Rozenek' >> przedwiosnie.txt-04.txt 
+git diff
+git add przedwiosnie.txt-04.txt 
+git commit -m add
+perl ../apply-specific.pl 
+find . -size 0
+find . -size 0 -delete
+git diff
+grep '[0-9]' przedwiosnie.txt-0*
+find . -name '*bak' -delete
+grep '[0-9]' przedwiosnie.txt-0*
+less pairs.tsv 
+cat pairs.tsv 
+cat ../pairs.tsv 
+vi run-aeneas.sh 
+ls przedwiosnie.txt-0*
+less run-aeneas.sh 
+vi run-aeneas.sh 
+ls ../audio/*przedw*
+sh run-aeneas.sh 01-stefan-zeromski-przedwiosnie-cz-i.mp3 przedwiosnie.txt-01.txt
+sh run-aeneas.sh 02-stefan-zeromski-przedwiosnie-cz-ii.mp3 przedwiosnie.txt-02.txt
+sh run-aeneas.sh 03-stefan-zeromski-przedwiosnie-cz-iii-1.mp3 przedwiosnie.txt-03.txt
+sh run-aeneas.sh 04-stefan-zeromski-przedwiosnie-cz-iii-2.mp3 przedwiosnie.txt-04.txt
+ls
+tail -n 5 pa
+tail -n 5 pairs.tsv 
+tail -n 5 pairs.tsv  >> pairs.tsv 
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-abuzei-i-tair.mp3 abuzei-i-tair.txt
+cat abuzei-i-tair.txt.aud 
+cat abuzei-i-tair.txt
+vi run-aeneas.sh 
+ls *aud
+rm *aud
+tail -n 6 pairs.tsv 
+tail -n 6 pairs.tsv |while read i;do echo sh run-aeneas.sh $i;done
+tail -n 6 pairs.tsv |while read i;do sh run-aeneas.sh $i;done
+tail -n 6 pairs.tsv |while read i;do sh run-aeneas.sh "$i";done
+tail -n 6 pairs.tsv |awk '{print "sh run-aeneas.sh " $0}'
+tail -n 6 pairs.tsv |awk '{print "sh run-aeneas.sh " $0}'|while read i;do ($i);done
+vi run-aeneas.sh 
+less pairs.tsv 
+rm *sent
+rm *aud
+ls
+tail -n 6 pairs.tsv |awk '{print "sh run-aeneas.sh " $0}'|while read i;do (PYTHONIOENCODING=UTF-8 $i);done
+rm pairs.tsv 
+sh run-aeneas.sh milosz-biedrzycki-akslop.mp3 akslop.txt
+less akslop.txt
+sh run-aeneas.sh autor-nieznany-aniol-pasterzom-mowil.mp3 aniol-pasterzom-mowil.txt
+sh run-aeneas.sh boleslaw-prus-antek.mp3 antek.txt
+less antek.txt.aud 
+sh run-aeneas.sh anton-czechow-aptekarzowa.mp3 aptekarzowa.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-atlas-i-kitaj.mp3 atlas-i-kitaj.txt
+less atlas-i-kitaj.txt.aud 
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dwa-zolwie.mp3 bajki-i-przypowiesci-dwa-zolwie.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-kulawy-i-slepy.mp3 bajki-i-przypowiesci-kulawy-i-slepy.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-lilje.mp3 ballady-i-romanse-lilje.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-pani-twardowska.mp3 ballady-i-romanse-pani-twardowska.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-powrot-taty.mp3 ballady-i-romanse-powrot-taty.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-rekawiczka.mp3 ballady-i-romanse-rekawiczka.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-romantycznosc.mp3 ballady-i-romanse-romantycznosc.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-rybka.mp3 ballady-i-romanse-rybka.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-switezianka.mp3 ballady-i-romanse-switezianka.txt
+sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-switez.mp3 ballady-i-romanse-switez.txt
+sh run-aeneas.sh edgar-allan-poe-beczka-amontillada.mp3 beczka-amontillada.txt
+sh run-aeneas.sh cyprian-kamil-norwid-bema-pamieci-zalobny-rapsod.mp3 bema-pamieci-zalobny-rapsod.txt
+sh run-aeneas.sh edgar-allan-poe-berenice.mp3 berenice.txt
+sh run-aeneas.sh anton-czechow-bezbronna-istota.mp3 bezbronna-istota.txt
+sh run-aeneas.sh jacob-i-wilhelm-grimm-bialosniezka-i-rozanka.mp3 bialosniezka-i-rozanka.txt
+sh run-aeneas.sh jacob-i-wilhelm-grimm-biedny-mlynarczyk-i-kotek.mp3 biedny-mlynarczyk-i-kotek.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-bogacz-i-zebrak.mp3 bogacz-i-zebrak.txt
+sh run-aeneas.sh autor-nieznany-bogurodzica.mp3 bogurodzica.txt
+sh run-aeneas.sh autor-nieznany-bracia-patrzcie-jeno.mp3 bracia-patrzcie-jeno.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-bryla-lodu-i-krysztal.mp3 bryla-lodu-i-krysztal.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-brytan-w-obrozy.mp3 brytan-w-obrozy.txt
+less brytan-w-obrozy.txt.aud 
+sh run-aeneas.sh hans-christian-andersen-brzydkie-kaczatko_1.mp3 brzydkie-kaczatko.txt
+sh run-aeneas.sh hans-christian-andersen-calineczka.mp3 calineczka.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-chart-i-kotka.mp3 chart-i-kotka.txt
+sh run-aeneas.sh jacob-i-wilhelm-grimm-chata-w-lesie.mp3 chata-w-lesie.txt
+less chart-i-kotka.txt
+less chart-i-kotka.txt.aud 
+cat pairs.tsv 
+cat pairs.tsv  >> pairs.tsv 
+cd ..
+git diff
+git add specific-norms.tsv pairs.tsv splitter.pl additions.sh 
+git diff
+git add header-replace.pl 
+ls
+cd -
+vi pairs.tsv 
+cat pairs.tsv |wc
+cat pairs.tsv |sort|uniq|wc
+cat pairs.tsv >> ../pairs.tsv 
+cd ..
+git add pairs.tsv 
+git commit -m more
+less pairs.tsv 
+cd text/
+rm pairs.tsv 
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-chleb-i-szabla.mp3 chleb-i-szabla.txt
+sh run-aeneas.sh joseph-mohr-cicha-noc.mp3 cicha-noc.txt
+sh run-aeneas.sh anton-czechow-cora-albionu.mp3 cora-albionu.txt
+sh run-aeneas.sh cyprian-kamil-norwid-cos-ty-atenom-zrobil-sokratesie.mp3 cos-ty-atenom-zrobil-sokratesie.txt
+sh run-aeneas.sh jan-andrzej-morsztyn-cuda-milosci-karmie-frasunkiem-milosc-i-mysleniem.mp3 cuda-milosci-karmie-frasunkiem-milosc-i-mysleniem.txt
+sh run-aeneas.sh jan-andrzej-morsztyn-cuda-milosci-przebog-jak-zyje-serca-juz-nie-majac.mp3 cuda-milosci-przebog-jak-zyje-serca-juz-nie-majac.txt
+sh run-aeneas.sh edgar-allan-poe-czarny-kot.mp3 czarny-kot.txt
+sh run-aeneas.sh anton-czechow-zemsta.mp3 czechow-zemsta.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-suknia.mp3 czlowiek-i-suknia.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-wilk.mp3 czlowiek-i-wilk.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-zdrowie.mp3 czlowiek-i-zdrowie.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-zwierciadla.mp3 czlowiek-i-zwierciadla.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dab-i-dynia.mp3 dab-i-dynia.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dab-i-male-drzewka.mp3 dab-i-male-drzewka.txt
+sh run-aeneas.sh maria-dabrowska-boze-narodzenie.mp3 dabrowska-boze-narodzenie.txt
+sh run-aeneas.sh maria-dabrowska-dzikie-ziele.mp3 dabrowska-dzikie-ziele.txt
+sh run-aeneas.sh anton-czechow-damy.mp3 damy.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-daremna-praca.mp3 daremna-praca.txt
+sh run-aeneas.sh adam-asnyk-daremne-zale_1.mp3 daremne-zale.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-derwisz-i-uczen.mp3 derwisz-i-uczen.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dewotka.mp3 dewotka.txt
+sh run-aeneas.sh edgar-allan-poe-diabel-na-wiezy.mp3 diabel-na-wiezy.txt
+sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-diament-i-krysztal.mp3 diament-i-krysztal.txt
+sh run-aeneas.sh anton-czechow-dlugi-jezyk.mp3 dlugi-jezyk.txt
+less dlugi-jezyk.txt
+ffplay /tmp/foo.wav 
+mv ~/dlugi-jezyk.txt ../audacity/
+less ../audacity/dlugi-jezyk.txt 
+less dlugi-jezyk.txt
+less ../audacity/dlugi-jezyk.txt 
+less dlugi-jezyk.txt
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+vi ../apply-specific.pl 
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git add przedwiosnie.txt-04.txt 
+git commit -m more
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git stash
+less dlugi-jezyk.txt
+perl ../apply-specific.pl 
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git diff
+git stash
+perl ../apply-specific.pl 
+git diff
+git add dlugi-jezyk.txt 
+git commit -m tweak
