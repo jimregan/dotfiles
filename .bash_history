@@ -1,549 +1,3 @@
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/left
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-grep ii pron-data/gen.tsv 
-grep ii pron-data/gen.tsv |grep '\.i$'
-grep ii pron-data/gen.tsv |grep '\.i$'|sed -e 's/\.i$//'
-grep ii pron-data/gen.tsv |grep '\.i$'|sed -e 's/\.i$//' >> pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv 
-git diff
-git add specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-wc -l pron-data/pronounce-as.*
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-ls
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-wc -l pron-data/pronounce-as.*
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-cat pron-data/pronounce-as.tsv |awk -F'\t' '{print $2}' > /tmp/leftin 
-cat pron-data/pronounce-as.tsv |awk -F'\t' '{print $1}' > /tmp/left
-paste /tmp/left /tmp/rightin |sed -e 's/ *$//' |sort|uniq > /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-paste /tmp/left /tmp/rightin |sed -e 's/ *$//' > /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.tsv 
-git commit -m more
-git stash
-paste /tmp/left /tmp/rightin |sed -e 's/ *$//' > /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.gen.tsv 
-git commit -m regen
-git diff
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-git diff
-vi pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.*
-git commit -m +1
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-vi pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.*
-git commit -m +1
-wc -l /tmp/left
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  
-git commit -m more
-git diff
-git stash
-git diff
-git add pron-data/gen.tsv  
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/lefti
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git diff pron-data/pronounce-as.tsv > /tmp/pronas
-git add pron-data/pronounce-as.tsv 
-git commit -m more
-git diff
-git stash
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-vi /tmp/pronas 
-cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftin 
-paste /tmp/left /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git stash
-paste /tmp/left /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git stash
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-cat /tmp/pronas |awk -F'\t' '{print $1}' > /tmp/left
-vi pron-data/pronounce-as.gen.tsv 
-paste /tmp/left /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.gen.tsv 
-git commit -m fix
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab |sort|uniq > /tmp/leftin 
-wc -l /tmp/leftin 
-git diff
-git add pron-data/gen.tsv  specific-norms.tsv 
-git commit -m more
-cat /tmp/pronas |awk -F'\t' '{print $1}' > /tmp/lefta
-cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftb
-cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftin
-less pron-data/pronounce-as.gen.tsv 
-git diff pron-data/pronounce-as.tsv > /tmp/pronas
-vi /tmp/pronas 
-cat /tmp/pronas |awk -F'\t' '{print $2}' > /tmp/leftin
-cat /tmp/pronas |awk -F'\t' '{print $1}' > /tmp/lefta
-paste /tmp/lefta /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.tsv 
-git commit -m more
-git stash
-paste /tmp/lefta /tmp/rightin |sed -e 's/ *$//' >> /tmp/mnt/3/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.gen.tsv 
-git commit -m more
-git push origin lexicon 
-cat pron-data/gen.tsv |sort|uniq > tmp
-mv tmp pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv  
-git commit -m 'sort|uniq'
-git push origin lexicon 
-grep Trelawn specific-norms.tsv 
-grep Trelawney text/wyspa-skarbow.txt-0*
-grep Trelawneya text/wyspa-skarbow.txt-0*
-grep Trelawneye text/wyspa-skarbow.txt-0*
-grep Trelawneyo text/wyspa-skarbow.txt-0*
-grep Trelawneyu text/wyspa-skarbow.txt-0*
-grep Hispanlo text/wyspa-skarbow.txt-0*
-plasmashell 
-df
-cd disk/
-ls
-cd desktop/
-ls
-cd tmp/
-cd fashq1
-. ../sourceme 
-doinstain 
-procimg https://www.instagram.com/stories/julia__yaroshenko https://scontent-lhr3-1.cdninstagram.com/vp/2c63c2eb04f7b2977f0796fb16e747f9/5A5ABFE5/t50.12441-16/26199271_121566858648954_5449790474686562304_n.mp4
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/9edc20631379ee986243e68eb964f8cb/5A5ACC05/t58.9792-15/e35/17612954_1991812084439746_409714234788675584_n.jpg
-procimg https://www.instagram.com/stories/snow_cherry https://scontent-lhr3-1.cdninstagram.com/vp/14a3d01d49fb0302ced71faf6a442654/5A5B8947/t58.9793-16/17432305_151787662144215_5882271351858790400_n.mp4
-doinstain 
-procimg https://www.instagram.com/stories/anella_miller https://scontent-lhr3-1.cdninstagram.com/vp/249cfdc8e5d8b8aa38e8844af4053e0a/5A5AF0F2/t51.12442-15/e35/26355344_212979502592603_5324517174994272256_n.jpg
-procimg https://www.instagram.com/stories/ofitial https://scontent-lhr3-1.cdninstagram.com/vp/f60aeb469ad701d6e606dce9d27dd67d/5A5AD25A/t51.12442-15/e35/26276991_1168764409922908_4675245787741945856_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/anella_miller https://scontent-lhr3-1.cdninstagram.com/vp/a161f919902052ab1fecb9e00e58f232/5A5B2EA5/t51.12442-15/e35/26343648_744476132417114_6303462349147734016_n.jpg
-procimg https://www.instagram.com/stories/lilia_gold https://scontent-lhr3-1.cdninstagram.com/vp/9fdfcd582d3f36c9b615d554f4bcf09d/5A5AE0D0/t51.12442-15/e35/26377363_186597725408598_339265818967670784_n.jpg
-procimg https://www.instagram.com/stories/ofitial https://scontent-lhr3-1.cdninstagram.com/vp/2fbe71dbbdceba3e56e246d19ee5b510/5A5AF830/t51.12442-15/e35/26066015_1591432907570074_8397678610151899136_n.jpg
-procimg https://www.instagram.com/stories/ofitial https://scontent-lhr3-1.cdninstagram.com/vp/0f8245e7b43fcf19002e28a710ad1e2b/5A5B7BC9/t51.12442-15/e35/26065811_395204644262863_2273837879291543552_n.jpg
-procimg https://www.instagram.com/stories/lilly.marchel https://scontent-lhr3-1.cdninstagram.com/vp/b08a51b859ad1377d292a1961a1aa3ec/5A5B2DB3/t51.12442-15/e35/26067225_1965290350354453_2618763966939136000_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/nazarovamur https://scontent-lhr3-1.cdninstagram.com/vp/ce99772fad0b9d5edc2e7d4bb8c67cac/5A5AD945/t50.12441-16/26816780_205611356666921_6624889357664139604_n.mp4
-doinstain 
-procimg https://www.instagram.com/stories/nazarovamur https://scontent-lhr3-1.cdninstagram.com/vp/fa3feb84803cc0ca4546e7c7bee9c213/5A5B1D12/t50.12441-16/26826304_2012670029055249_1588235135387233976_n.mp4
-procimg https://www.instagram.com/stories/alesiaasta https://scontent-lhr3-1.cdninstagram.com/vp/6d1a02e89e4023a6b64579ebac01f0d6/5A5B8D79/t51.12442-15/e35/26366922_674739252916199_264354262111223808_n.jpg
-procimg https://www.instagram.com/stories/alesiaasta https://scontent-lhr3-1.cdninstagram.com/vp/3b1681940403c65d1cb1b8080790c1df/5A5B2582/t51.12442-15/e35/26066901_180025612747384_8415657167159296000_n.jpg
-procimg https://www.instagram.com/stories/karolina_pisarek https://scontent-lhr3-1.cdninstagram.com/vp/0672197017a366ed65b7a531e2305e54/5A5ACBD6/t50.12441-16/26085093_1525907450811998_8804300975680702514_n.mp4
-procimg https://www.instagram.com/stories/alina_akilova https://scontent-lhr3-1.cdninstagram.com/vp/bc538b4d20f56957ddd72935acb73d31/5A5AEAD0/t51.12442-15/e35/26072232_180915022504934_721488079763800064_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/alina_akilova https://scontent-lhr3-1.cdninstagram.com/vp/91ade9ea4c459172661265f3d9f8aa25/5A5AE2EC/t51.12442-15/e35/26321688_259895314543496_1739040006271401984_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/_liliyapetrova_ https://scontent-lhr3-1.cdninstagram.com/vp/9920f16a7956a861465f65e716349f29/5A5AE11E/t51.12442-15/e35/26151344_319999405186789_7072513863115079680_n.jpg
-procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/6a12ce15b8f2fe118d369164c3ec5f77/5A5B2333/t50.12441-16/26159751_723036274569796_4189358705935908864_n.mp4
-procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/b327e987c891012bdb134bdefd9880d2/5A5AD24B/t50.12441-16/26247810_1498339290264313_7903915863995056128_n.mp4
-procimg https://www.instagram.com/stories/sandrakubicka https://scontent-lhr3-1.cdninstagram.com/vp/b7144f0c510057eadad3bd0fcfbcf78d/5A5AC13F/t50.12441-16/26815898_180267719387330_7668947055158493184_n.mp4
-doinstain 
-procimg https://www.instagram.com/stories/2121kk___k https://scontent-lhr3-1.cdninstagram.com/vp/0481b88fde945aa3c7a0706891a82916/5A5B062E/t51.12442-15/e35/26371065_129691227834705_2798133393336827904_n.jpg
-procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/119d7cc47f7661b721f42c90025624f7/5A5AE30A/t50.12441-16/26691487_1555559774524614_3271890537047639503_n.mp4
-procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/fe4eb7c1d89bdbcbc7c94096fa46d6ad/5A5B8B0F/t50.12441-16/26682726_1891358384509070_2519197443569170176_n.mp4
-procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/da19f2bb4f801042025d8833e8069aa4/5A5ACA69/t51.12442-15/e35/26073581_180181995907048_6935710908400271360_n.jpg
-procimg https://www.instagram.com/stories/_lesya_novikova_ https://scontent-lhr3-1.cdninstagram.com/vp/efc9564f66f2bfa4b9cc13f1e1a887e2/5A5B7B8A/t50.12441-16/26161304_1845665879057009_5443411718249324818_n.mp4
-procimg https://www.instagram.com/stories/___love.me__ https://scontent-lhr3-1.cdninstagram.com/vp/188f0533c859e8ff4a7ec78da63f950c/5A5ACCDE/t58.9793-16/14761316_190024805068752_4422306277393170432_n.mp4
-doinstain 
-procimg https://www.instagram.com/stories/paulatumala https://scontent-lhr3-1.cdninstagram.com/vp/fa0d3148bbcf33b8d41d2a8f0e2642eb/5A5AE090/t50.12441-16/26246545_208615863020725_4555731410378815716_n.mp4
-procimg https://www.instagram.com/stories/viki_odintcova https://scontent-lhr3-1.cdninstagram.com/vp/0b140008567c8c6dd282034b1e595522/5A5AC332/t50.12441-16/26259744_1192355294232326_8859124987286519808_n.mp4
-procimg https://www.instagram.com/stories/viki_odintcova https://scontent-lhr3-1.cdninstagram.com/vp/11c1bf868de0b722514410e4bdc789ad/5A5AE934/t50.12441-16/26218512_1921884004781147_617627696008003584_n.mp4
-procimg https://www.instagram.com/stories/jot.kaaaaa https://scontent-lhr3-1.cdninstagram.com/vp/b918b096c5ebd6a545ff58508918ee57/5A5B8849/t51.12442-15/e35/26272742_369284126870415_2720240360377810944_n.jpg
-procimg https://www.instagram.com/stories/k.maciag https://scontent-lhr3-1.cdninstagram.com/vp/44ca804c09f0d665656019d55b8615df/5A5AD157/t51.12442-15/e35/26153499_1775133382780215_535112719892742144_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/dagmaramalus https://scontent-lhr3-1.cdninstagram.com/vp/7a2d900c9315a74ca6d32c2cafee3b70/5A5ACDA8/t58.9793-16/26314356_1959186714335151_1503228855057610823_n.mp4
-procimg https://www.instagram.com/stories/efremovaluba https://scontent-lhr3-1.cdninstagram.com/vp/2ee97bfe201b78723ce02c698bcee221/5A5B89DE/t50.12441-16/26190860_2014477325437034_7525211744055066624_n.mp4
-procimg https://www.instagram.com/stories/efremovaluba https://scontent-lhr3-1.cdninstagram.com/vp/9ebb7c555661a428c304b829b0983b8a/5A5AE810/t51.12442-15/e35/26427615_289620311563304_555633906129305600_n.jpg
-procimg https://www.instagram.com/stories/efremovaluba https://scontent-lhr3-1.cdninstagram.com/vp/f61f020b12d83c486f514a12a89e5ac4/5A5B83B8/t50.12441-16/26818348_180832175998472_7456444649016655872_n.mp4
-doinstain 
-procimg https://www.instagram.com/stories/asiicca https://scontent-lhr3-1.cdninstagram.com/vp/a115dfe5ad8fefbf34d2622aac042bd2/5A5B2284/t50.12441-16/26684445_557639974568514_416290452489109504_n.mp4
-procimg https://www.instagram.com/stories/dashamart https://scontent-lhr3-1.cdninstagram.com/vp/a414f371e956d794cf8e3e7807f8c049/5A5B848F/t51.12442-15/e35/26068172_1540385632706577_4297536008565555200_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/chiara.rui https://scontent-lhr3-1.cdninstagram.com/vp/8dffbae93cc74b45778267b92b3a6551/5A5ACC60/t51.12442-15/e35/26181200_1523544534359431_8433881413475893248_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/_alena_alena_ https://scontent-lhr3-1.cdninstagram.com/vp/28b2657911b2a8f231ba46997da29c24/5A5B2D82/t51.12442-15/e35/26152163_2033470860269852_961871777208729600_n.jpg
-procimg https://www.instagram.com/stories/_alena_alena_ https://scontent-lhr3-1.cdninstagram.com/vp/a682a8cdae2a9c4b48f8047fe52c7284/5A5B7DBB/t51.12442-15/e35/26341949_146062019427846_3270491048987590656_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/rimmula_007 https://scontent-lhr3-1.cdninstagram.com/vp/070ed9688e549e3ed480ad74fd644f9a/5A5AE298/t51.12442-15/e35/26155009_1748286765478513_3512691620677943296_n.jpg
-procimg https://www.instagram.com/stories/alenashishkova.92 https://scontent-lhr3-1.cdninstagram.com/vp/8b648ed6bec92d03544b9a609d4bf1c7/5A5B82A4/t51.12442-15/e35/26187714_1783589751682937_2302246047117737984_n.jpg
-procimg https://www.instagram.com/stories/anna.kondra https://scontent-lhr3-1.cdninstagram.com/vp/3329b03369c3ef0173c86e6a23db5e2a/5A5B25C2/t51.12442-15/e35/26072040_391975477874528_5394844721845633024_n.jpg
-procimg https://www.instagram.com/stories/kraseczka https://scontent-lhr3-1.cdninstagram.com/vp/0f4ffdb34eb64ae5bdc389369fe440cd/5A5B2919/t50.12441-16/26243965_2066569570284358_7822426017268209307_n.mp4
-doinstain 
-procimg https://www.instagram.com/stories/tak.ta.paula https://scontent-lhr3-1.cdninstagram.com/vp/61659c1786960999c7b35ace3dfb1134/5A5AF427/t58.9792-15/e35/25128905_579562565724930_6381354338429698048_n.jpg
-procimg https://www.instagram.com/stories/missalena.92 https://scontent-lhr3-1.cdninstagram.com/vp/7747a8a5e8cbc6502901a89fc8f0870f/5A5AD667/t50.12441-16/26247693_1511020972284374_1215975051921143588_n.mp4
-doinstain 
-procimg https://www.instagram.com/stories/trishka92 https://scontent-lhr3-1.cdninstagram.com/vp/46f561856d11a463a35217cbae49e163/5A5B01B8/t51.12442-15/e35/26068327_365588733910759_415321026830794752_n.jpg
-doinstain 
-procimg https://www.instagram.com/stories/miss_medis_ https://scontent-lhr3-1.cdninstagram.com/vp/6da21b6d4cc0ceabf6abec0b5b21c5b0/5A5B2CD2/t51.12442-15/e35/26152055_310291252812937_9031698212053843968_n.jpg
-procimg https://www.instagram.com/stories/miss_medis_ https://scontent-lhr3-1.cdninstagram.com/vp/3015b3ce08e0ade9a7ed4045d0f3673c/5A5AF776/t51.12442-15/e35/26073208_398175190634668_5904809145499910144_n.jpg
-ogimageproc https://www.instagram.com/p/Bd2zAhFAm4L/?taken-by=dagmaramalus
-ogimageproc https://www.instagram.com/p/Bd2a5H-FwhR/?taken-by=k.maciag
-ogimageproc https://www.instagram.com/p/BdzlWMQl6fF/?taken-by=k.maciag
-ogimageproc https://www.instagram.com/p/Bd2Ok6BntN_/?taken-by=ofitial
-ogimageproc https://www.instagram.com/p/BdyUNqvHT3g/?taken-by=ofitial
-ogimageproc https://www.instagram.com/p/Bd3j4pjgsv6/?taken-by=samweaving
-ogimageproc https://www.instagram.com/p/Bd1k09lgsYY/?taken-by=_lesya_novikova_
-ogimageproc https://www.instagram.com/p/BdzdObnAW1b/?taken-by=_lesya_novikova_
-ogimageproc https://www.instagram.com/p/Bd3LbkFndDQ/?taken-by=sandrakubicka
-ogimageproc https://www.instagram.com/p/Bd0P-zynOGo/?taken-by=sandrakubicka
-ogimageproc https://www.instagram.com/p/Bd0Do5JnOys/?taken-by=sandrakubicka
-ogimageproc https://www.instagram.com/p/Bd2Y5llhjq8/?taken-by=_liliyapetrova_
-ogimageproc https://www.instagram.com/p/Bd2qqcrhONy/?taken-by=_alenamills_
-ogimageproc https://www.instagram.com/p/Bd3hEe3BDoP/?taken-by=tolloczkoklaudia
-ogimageproc https://www.instagram.com/p/Bd2ds95hCT2/?taken-by=tolloczkoklaudia
-ogimageproc https://www.instagram.com/p/BdxIRrDBhey/?taken-by=tolloczkoklaudia
-ogimageproc https://www.instagram.com/p/BdyGe4YhTRb/?taken-by=tolloczkoklaudia
-ogimageproc https://www.instagram.com/p/Bd2yBFOldJh/?taken-by=trishka92
-ogimageproc https://www.instagram.com/p/Bd16zh3BdI7/?taken-by=nazarovamur
-ogimageproc https://www.instagram.com/p/Bd0sJ5dHjcR/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/Bd0VSTvHMMo/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/Bd0qmZXHtzX/?taken-by=bitch_soul_
-ogimageproc https://www.instagram.com/p/Bd21_3SBNoa/?taken-by=asiicca
-ogimageproc https://www.instagram.com/p/Bd2HBHKgCGt/?taken-by=jagoda_urban
-ogimageproc https://www.instagram.com/p/Bd3Q5iklRkK/?taken-by=i.s.nesquik
-ogimageproc https://www.instagram.com/p/BdzmVv_Dn2e/?taken-by=justyna.jalowiecka
-ogimageproc https://www.instagram.com/p/BdvU4dijQWX/?taken-by=justyna.jalowiecka
-ogimageproc https://www.instagram.com/p/Bd2gtcPgBS2/?taken-by=galina.dub
-ogimageproc https://www.instagram.com/p/Bd0AQPSAa93/?taken-by=galina.dub
-ogimageproc https://www.instagram.com/p/Bd1fpqiHdEh/?taken-by=julia__yaroshenko
-ogimageproc https://www.instagram.com/p/BdwaY_ZnfhZ/?taken-by=julia__yaroshenko
-ogimageproc https://www.instagram.com/p/BdrMOMMnCpW/?taken-by=julia__yaroshenko
-ogimageproc https://www.instagram.com/p/Bd1_3xolS2e/?taken-by=mariyafishman
-ogimageproc https://www.instagram.com/p/Bd2UhuHhDRx/?taken-by=alenashishkova.92
-ogimageproc https://www.instagram.com/p/Bd2Sfkjh9YT/?taken-by=alina_akilova
-ogimageproc https://www.instagram.com/p/Bd3ak22jpr2/?taken-by=tak.ta.paula
-ogimageproc https://www.instagram.com/p/Bd2w8T1glDB/?taken-by=efremovaluba
-cd ~
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs
-config commit -m more
-vi ~/5555995052001.aud 
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-git diff
-config diff
-config add .bash_history .scratch/chromium-tabs 
-config status
-config add 
-config commit -m more
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-top
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .bash_history .scratch/chromium-tabs 
-config commit -m more
-pdftotext '/home/jim/Downloads/Mac a’ Bhaird, Proinsias - Rún an Bhonnáin .pdf'
-pdftotext '/home/jim/Downloads/Pelévin, Viktor & Ó Fionnáin, Mark - AMÓN-RÁ (2012, COISCÉIM).pdf'
-pdftotext '/home/jim/Downloads/Tolkien, J. R. R. - An Hobad .pdf'
-wget 'http://93.174.95.27/foreignfiction/get.php?md5=f32a98a159af80efdc01cb9492a60a78&key=5R0SV8CO0M2YCETL'
-telnet 46.101.49.108 8118
-mv get.php\?md5\=f32a98a159af80efdc01cb9492a60a78\&key\=5R0SV8CO0M2YCETL ~/Downloads/ga-narnia.pdf
-cd tmp/fashq1
-. ../sourceme 
-ogimageproc https://www.instagram.com/p/Bd00zzMAHF9/?taken-by=efremovaluba
-ogimageproc https://www.instagram.com/p/Bd3P-1FnUCV/?taken-by=karri_official_
-ogimageproc https://www.instagram.com/p/BdsWQ4eH3BS/?taken-by=karri_official_
-ogimageproc https://www.instagram.com/p/Bd2e4kqlVyd/?taken-by=nataliazasadzka
-ogimageproc https://www.instagram.com/p/BdxT9gdFM7U/?taken-by=nataliazasadzka
-ogimageproc https://www.instagram.com/p/Bd0V7-fg4Go/?taken-by=lilly.marchel
-ogimageproc https://www.instagram.com/p/Bdxop1CjgSu/?taken-by=lilly.marchel
-ogimageproc https://www.instagram.com/p/Bd2rzcCl0uw/?taken-by=_alena_alena_
-ogimageproc https://www.instagram.com/p/Bd2tqjwlWOb/?taken-by=_____diva_diva
-ogimageproc https://www.instagram.com/p/Bd2lC_sHUiD/?taken-by=popova__l
-ogimageproc https://www.instagram.com/p/Bd1xAv_FNgP/?taken-by=_supermasik_
-ogimageproc https://www.instagram.com/p/BdzNLBwlDrF/?taken-by=_supermasik_
-ogimageproc https://www.instagram.com/p/Bd2qqcrhONy/?taken-by=_alenamills_
-cd ~/disk/Playing/sphinx-alignment/
-ls
-cd cmusphinx-alignment-example/
-ls
-ls cmusphinx-clarinpl/
-less cmusphinx-clarinpl/README 
-less cmusphinx-clarinpl/variances 
-less cmusphinx-clarinpl/mixture_weights 
-ls
-tree ../../spinx/teanglann/
-tree ../../spinx/teanglann/|less
-tree ../../spinx/clarinpl/|less
-find ../../spinx/clarinpl/ -name mixture_weights
-ls
-ls cmusphinx-clarinpl/
-cd ../..
-cd ..
-git clone https://github.com/apprenticeharper/DeDRM_tools.git
-cd DeDRM_tools/
-ls
-cd Obok_calibre_plugin/
-ls
-less obok_plugin
-less obok_plugin_ReadMe.txt 
-ls
-calibr
-calibre
-cd ..
-mkdir asia_sports
-cd asia_sports/
-vi pairs.tsv
-cat pairs.tsv |tr '\t' '\n'
-cat pairs.tsv |tr '\t' '\n' |while read i;do lynx -dump $i;done
-cat pairs.tsv 
-u=$(cat pairs.tsv )
-lynx -dump https://www.pzpn.pl/reprezentacje/reprezentacja-a/sztab-szkoleniowy > pl
-lynx -dump https://www.pzpn.pl/en/national-teams/national-team-a/coaching-staff > en
-vi pl 
-vi en 
-paste pl en
-paste pl en|grep -v ']'
-paste pl en|grep -v ']'|grep '^ '
-vi init-voc
-cat p
-cat pairs.tsv 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-vi /tmp/leftin 
-grep lnoc wys&
-grep lnoc wys*
-vi wyspa-skarbow.txt-06.txt
-grep lnoc wys*
-rm *.bak
-git diff
-git add wyspa-skarbow.txt-0*
-git commit -m more
-vi /tmp/leftin 
-cat /tmp/leftin 
-cat /tmp/leftin  >> ../pron-data/gen.tsv 
-vi ../pron-data/gen.tsv 
-cd ../
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/leftin 
-git diff
-git add specific-norms.tsv 
-git commit -m more
-git stash
-vi /tmp/leftin 
-cat /tmp/leftin |sort|uniq > /tmp/asddd
-mv /tmp/asddd /tmp/leftin 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-ls *cm*
-less ipa-to-cmu.pl 
-tail pron-data/pronounce-as.gen.tsv 
-tail pron-data/pronounce-as.tsv 
-cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |perl ipa-to-cmu.pl > ../sphinx-alignment/cmusphinx-alignment-example/pldic.new
-less ../sphinx-alignment/cmusphinx-alignment-example/pldic.new
-grep enson pron-data/pronounce-as.tsv 
-ffplay /tmp/11.wav 
-ffplay /tmp/12.wav 
-minsec () { min=$(($1 / 60));sec=$(($1 - ($min * 60)));print $min:$sec;}
-minsec 939
-minsec () { min=$(($1 / 60));sec=$(($1 - ($min * 60)));echo $min:$sec;}
-minsec 939
-cd text/
-ls
-fir i in *txt; do ls ../audio/*$(basename $i .txt)*;done
-for i in *txt; do ls ../audio/*$(basename $i .txt)*;done
-for i in *txt; do echo; echo $i; ls ../audio/*$(basename $i .txt)*;done
-for i in *txt; do echo; echo $i; ls ../audio/*$(basename $i .txt)*;done > ../candidate-pairs
-ls *przed*
-less przedwiosnie.txt 
-ls ../audio/*przedwiosnie*
-less przedwiosnie.txt 
-ffplay ../audio/00-stefan-zeromski-przedwiosnie-rodowod.mp3
-grep abuzei-i-tair.txt ../pairs.tsv 
-vi ../pairs.tsv 
-less antek.txt
-cd ..
-git diff
-git add apply-specific.pl specific-norms.tsv 
-git commit -m 'more, but something breaks'
-git add apply-specific.pl specific-norms.tsv 
-git commit -m ok
-git add apply-specific.pl specific-norms.tsv 
-git commit -m 'work now'
-git status 
-git add audacity/dlugi-jezyk.txt audacity/napoj-cienisty-trupiegi.txt 
-git commit -m add
-less audacity/napoj-cienisty-trupiegi.txt 
-git add audacity-sound-finder/
-git commit -m add
-cat text/pairs.tsv 
-tail pairs.tsv 
-cat text/pairs.tsv >> pairs.tsv 
-git diff
-git add pairs.tsv 
-git commit -m more
-less pron-data/gen.tsv 
-git push origin lexicon 
-git checkout master 
-git pull origin master 
-git branch -D lexicon 
-git checkout -b lexicon
-ls
-cd audacity
-ls
-for i in *;do vi $i;done
-git diff
-ls
-git add *
-git commit -m 'tweak'
-cd ..
-ls
-less przedwiosnie.txt 
-ls ../audio/*przedwiosnie*
-less przedwiosnie.txt 
-perl ../header-replace.pl przedwiosnie.txt 
-perl ../header-replace.pl przedwiosnie.txt  > tmp
-mv tmp przedwiosnie.txt 
-git diff
-git add przedwiosnie.txt 
-git commit -m header
-perl ../splitter.pl przedwiosnie.txt  
-ls przedwiosnie.txt*
-ls ../audio/*przedwiosnie*
-less przedwiosnie.txt-00.txt 
-less przedwiosnie.txt-01.txt 
-less przedwiosnie.txt-02.txt 
-less przedwiosnie.txt-03.txt 
 less przedwiosnie.txt-04.txt 
 ls ../audio/*przedwiosnie*
 rm /tmp/03-stefan-zeromski-przedwiosnie-cz-iii-1-*
@@ -1998,3 +1452,549 @@ wget -x -c https://i.pinimg.com/736x/d6/97/d5/d697d58432fd2c03322cccd8f63fa215--
 cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
 cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20180105-1.nt 
 rm -rf /tmp/asd/
+cd /tmp/
+wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-4.jpg
+tesseract -l gle Iriseoir-4.jpg 
+tesseract -l gle Iriseoir-4.jpg Iriseoir-4
+wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-5.jpg
+wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-6.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-7.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-8.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-9.jpg 
+wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-10.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-11.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-12.jpg
+ls
+for i in Iriseoir-*;do tesseract -l gle $i;done
+for i in Iriseoir-*;do tesseract -l gle $i $i.txt;done
+ls
+cat Iriseoir-[4-9].txt.txt
+cat Iriseoir-[4-9].jpg.txt.txt
+cat Iriseoir-[4-9].jpg.txt.txt > iris
+cat Iriseoir-1*.jpg.txt.txt >> iris
+cd 
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+config add .bash_history 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config log
+config revert a199bbbf07b0a08e47098d52b9e39231439274b4
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
+config add .scratch/chromium-tabs .bash_history 
+config commit -m more
+cd disk/Playing/msf-asr/
+ls
+cd TG4/
+ls
+du lm-data/
+du -m lm-data/
+loginctl unlock-sessions
+sudo reboot
+pip3 install jupyter
+sudo pip3 install jupyter
+sudo apt install libzmq3-dev 
+cpanm --build-args 'OTHERLDFLAGS=' ZMQ::LibZMQ3;
+sudo cpanm --build-args 'OTHERLDFLAGS=' ZMQ::LibZMQ3;
+sudo apt install jupyter-console jupyter-notebook
+cpanm Devel::IPerl
+cpanm Devel::IPerl Markdown::Pod
+cpanm Markdown::Pod
+sudo cpanm Markdown::Pod
+less /home/jim/.cpanm/work/1515789684.8953/build.log 
+sudo cpanm --force Markdown::Pod
+sudo cpanm Devel::IPerl 
+cd disk/Playing/
+mkdir cling-run
+cd cling-run/
+wget https://raw.github.com/karies/cling-all-in-one/master/clone.sh
+chmod a+x clone.sh 
+sh clone.sh 
+bash clone.sh 
+./inst/bin/cling 
+apt-cache search iperl
+sudo apt-get install libapp-repl-perl
+cd disk/Playing/msf-asr/
+ls
+cd TG4/
+ls
+mkdir lm-data
+cd lm-data/
+ls
+cp -r ~/disk/Playing/corpuscrawler/ .
+ls
+cd corpuscrawler/
+rm -rf .git
+ls
+less ga.wl
+rm tmp.zip 
+rm corpus/rm-*
+rm corpus/uk.txt 
+rm corpus/gd.txt corpus/[ab]*
+ls corpus
+rm corpus/mi.txt
+rm corpus/mi.txt.gz 
+mkdir tmp
+cp corpus/* tmp/
+rm corpus/ga.txt
+rm corpus/ga.txt.1.gz 
+gzip -d corpus/ga.txt.gz 
+mv tmp/ /tmp/
+cd ../..
+mv ~/ga-books/ lm-data/
+ls lm-data/ga-books/
+svn add lm-data/
+gzip -d /tmp/tmp/ga.txt.1.gz 
+mv /tmp/tmp/ga.txt.1 lm-data/corpuscrawler/corpus/ga.txt 
+cd lm-data/
+svn ci -m 'think this is the latest version'
+svn status
+rm -rf corpuscrawler/cache-corpuscrawler/
+svn rm
+svn rm -rf corpuscrawler/cache-corpuscrawler/
+svn rm -f corpuscrawler/cache-corpuscrawler/
+svn rm corpuscrawler/cache-corpuscrawler/
+svn ci -m 'lm data'
+mv /tmp/tmp/ga.txt corpuscrawler/corpus/ga.txt 
+svn ci -m 'latest version'
+less corpuscrawler/corpus/ga.txt 
+grep Publication-Date: corpuscrawler/corpus/ga.txt 
+grep Publication-Date: corpuscrawler/corpus/ga.txt |less
+less corpuscrawler/corpus/ga.txt 
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /\n/g'
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|less
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /{print "$1\n";}'
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /{print "$1\n";}'
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq|wc
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq|wc
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq > /tmp/names
+vi /tmp/names 
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq > /tmp/names
+vi /tmp/names 
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua |Beag |Bean )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq > /tmp/names
+vi /tmp/names 
+grep 'Nóra Bean Mhic Ghiolla' corpuscrawler/corpus/ga.txt
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua |Beag |Bean )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+)\b/){print "$1\n";}'|sort|uniq > /tmp/names
+vi /tmp/names 
+grep 'Nóra Bean Mhic Ghiolla' corpuscrawler/corpus/ga.txt
+grep 'Uí Mac Coille' corpuscrawler/corpus/ga.txt
+grep 'Uí Mjic Coille' corpuscrawler/corpus/ga.txt
+grep 'Uí Mhic Coille' corpuscrawler/corpus/ga.txt
+cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua |Beag |Bean )?(?:Ó|Ní|Nic|Ua|Mac|Mhic|de) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+)\b/){print "$1\n";}'|sort|uniq > /tmp/names
+vi /tmp/names 
+less ~/Downloads/\[DownSub.com\]\ Pewność\ Siebie\ a\ Mowa\ Ciała\ -\ Jak\ Szybko\ Zbudować\ Pewność\ Siebie.srt 
+cd disk/Playing/
+mkdir youtube-pl
+cd youtube-pl/
+ls
+sudo apt-get install youtube-dl 
+youtube-dl --sub-lang https://www.youtube.com/watch?v=NJGVh99ZrrM
+youtube-dl https://www.youtube.com/watch?v=NJGVh99ZrrM
+ls
+rm Pewność\ Siebie\ a\ Mowa\ Ciała\ -\ Jak\ Szybko\ Zbudować\ Pewność\ Siebie-NJGVh99ZrrM.f247.webm.part 
+man youtube-dl 
+youtube-dl --list-sub-lang https://www.youtube.com/watch?v=NJGVh99ZrrM
+man youtube-dl 
+youtube-dl --list-subs https://www.youtube.com/watch?v=NJGVh99ZrrM
+man youtube-dl 
+youtube-dl --sub-lang=pl  https://www.youtube.com/watch?v=NJGVh99ZrrM
+ls
+rm Pewność\ Siebie\ a\ Mowa\ Ciała\ -\ Jak\ Szybko\ Zbudować\ Pewność\ Siebie-NJGVh99ZrrM.mkv 
+youtube-dl --sub-lang=pl -x --audio-format flac --sub-format=vtt -o NJGVh99ZrrM  NJGVh99ZrrM
+youtube-dl --sub-lang=pl -x --audio-format flac --sub-format=vtt -o 'NJGVh99ZrrM.%(ext)s'  NJGVh99ZrrM
+youtube-dl --sub-lang=pl -x --audio-format flac --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
+youtube-dl --sub-lang=pl -x --audio-format=flac --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
+youtube-dl --sub-lang=pl -x --audio-format=ogg --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
+youtube-dl --sub-lang=pl -x --audio-format=best --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
+ls
+file %\(ext\)s 
+cat %\(ext\)s 
+rm %\(ext\)s 
+youtube-dl --sub-lang=pl -x --audio-format=best --sub-format=vtt -o '%(id).%(ext)'  NJGVh99ZrrM
+rm %\(ext\) 
+youtube-dl --sub-lang=pl -x --audio-format=best --sub-format=vtt -o '%(id)s.%(ext)s'  NJGVh99ZrrM
+ls
+file NJGVh99ZrrM.m4a 
+ffplay NJGVh99ZrrM.m4a 
+youtube-dl -x --audio-format=best --sub-lang=pl  --sub-format=ttml -o '%(id)s.%(ext)s'  NJGVh99ZrrM
+youtube-dl -x --audio-format=best --sub-lang=pl --embed-subs=no  --sub-format=ttml -o '%(id)s.%(ext)s'  NJGVh99ZrrM
+youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=ttml -o '%(id)s.%(ext)s'  NJGVh99ZrrM
+ls
+less NJGVh99ZrrM.
+less NJGVh99ZrrM.t
+less NJGVh99ZrrM.pl.ttml 
+youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=vtt -o '%(id)s.%(ext)s'  NJGVh99ZrrM
+ls
+less NJGVh99ZrrM.pl.vtt 
+vi dl.sh
+sh dl.sh 0OHeUvgpDiE
+ls
+file 0OHeUvgpDiE.opus 
+ffplay 0OHeUvgpDiE.
+ffplay 0OHeUvgpDiE.opus 
+less 0OHeUvgpDiE.pl.vtt 
+ffplay 0OHeUvgpDiE.opus 
+youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=vtt -o '%(id)s.%(ext)s'  https://www.youtube.com/watch?v=FONXwPE_3Go
+youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=vtt -o '%(id)s.%(ext)s'  https://www.youtube.com/watch?v=MW-Dmu64fgg
+ls
+rm FONXwPE_3Go.opus 
+sh dl.sh https://www.youtube.com/channel/UCR-B4vIp1OqaDwMQEn_rskA/videos
+sh dl.sh https://www.youtube.com/channel/UCR-B4vIp1OqaDwMQEn_rskA/
+sh dl.sh https://www.youtube.com/user/CzasGentlemanow/videos
+ls
+mkdir nope
+mv 0OHeUvgpDiE.* nope/
+mv MW-Dmu64fgg.* nope/
+ls
+mv NJGVh99ZrrM.* nope/
+sh dl.sh https://www.youtube.com/watch?v=WNPzwWabgQQ
+ls
+sh dl.sh https://www.youtube.com/watch?v=VH83iiWDra0
+sh dl.sh https://www.youtube.com/watch?v=1H4QQ4_LNHM
+ls
+for i in https://www.youtube.com/watch?v=H0ECuFl6s2w  https://www.youtube.com/watch?v=w_7SzFpsT4A https://www.youtube.com/watch?v=rJ0yQYQP0pE https://www.youtube.com/watch?v=-0sWQFpLm4I https://www.youtube.com/watch?v=6MDz75PxkVA https://www.youtube.com/watch?v=8Hzw6gRpR_Y https://www.youtube.com/watch?v=hw7BtH4_6Ok   ;do wget $i; sh dl.sh $i;done
+ls
+mkdir UC3urWQ2XJxw2OfNWjgJpYBA
+ls
+mv *opus *vtt watch\?v\=* *m4a UC3urWQ2XJxw2OfNWjgJpYBA/
+mv *m4a UC3urWQ2XJxw2OfNWjgJpYBA/
+ls
+mv *vtt UC3urWQ2XJxw2OfNWjgJpYBA/
+ls
+mv watch\?v\=* UC3urWQ2XJxw2OfNWjgJpYBA/
+l
+ls
+mv *opus UC3urWQ2XJxw2OfNWjgJpYBA/
+mv ./*opus UC3urWQ2XJxw2OfNWjgJpYBA/
+ls
+mv ./*vtt UC3urWQ2XJxw2OfNWjgJpYBA/
+ls
+mkdir UC5BzFlIJQJUX2frWOr-ckYA
+cd UC5BzFlIJQJUX2frWOr-ckYA/
+ls
+vi ../dl.sh 
+for i in https://www.youtube.com/watch?v=eWnnDwemzps https://www.youtube.com/watch?v=e01h6P1zI1M https://www.youtube.com/watch?v=eWnnDwemzps https://www.youtube.com/watch?v=x6LLoad7myA https://www.youtube.com/watch?v=ay_XA4NTd7A https://www.youtube.com/watch?v=FFsazi9TgWk https://www.youtube.com/watch?v=iwq_4KDzhdc https://www.youtube.com/watch?v=1rXVDqwwvbc https://www.youtube.com/watch?v=ldObSVcpyZw https://www.youtube.com/watch?v=tSDevXSVaIA https://www.youtube.com/watch?v=uzjAldqVDVE https://www.youtube.com/watch?v=oyCbqdLAXXw https://www.youtube.com/watch?v=bPFQ53BOV_4 https://www.youtube.com/watch?v=Q1ptGeUf3oE https://www.youtube.com/watch?v=tSDevXSVaIA;do sh ../dl.sh $i;done
+ls
+cd ..
+mkdir UCdxQkHxvxKDsspB5pFPtYkA
+cd UCdxQkHxvxKDsspB5pFPtYkA/
+ls
+for i in https://www.youtube.com/watch?v=dbZwqoGJgJA;do sh ../dl.sh $i;done
+ls
+for i in https://www.youtube.com/watch?v=sSmbkPXvLxk https://www.youtube.com/watch?v=4Nd8eK0l0yY https://www.youtube.com/watch?v=Zq5Q_yaPss0 https://www.youtube.com/watch?v=CySiFM362tg https://www.youtube.com/watch?v=JcyZpfA8Ku8 https://www.youtube.com/watch?v=L1_vB77vj-w https://www.youtube.com/watch?v=B1lqOYl7LEA https://www.youtube.com/watch?v=NK03ighplAs https://www.youtube.com/watch?v=USbB3gYs_VE https://www.youtube.com/watch?v=MR5ji_2WUZ4 https://www.youtube.com/watch?v=NYjWnAFQRfU https://www.youtube.com/watch?v=XI-x2HQlEPA https://www.youtube.com/watch?v=9YZUGMt2Mi0 https://www.youtube.com/watch?v=4Jv7Al_SuwQ https://www.youtube.com/watch?v=XDsQ3loUCXY https://www.youtube.com/watch?v=4bbizxh7534 https://www.youtube.com/watch?v=1xB5nq7L6Oo https://www.youtube.com/watch?v=uJCI6MmpvP0 https://www.youtube.com/watch?v=nr7T2Y-7iQs ;do sh ../dl.sh $i;done
+ls
+cd ..
+ls
+cd free-nosubs/
+ls
+wget https://www.youtube.com/watch?v=Q_MBxpgJU9w
+youtube-dl https://www.youtube.com/watch?v=Q_MBxpgJU9w
+ls *Uf1eCznOxsQ*
+cd ..
+ls
+mkdir misc
+cd misc/
+sh ../dl.sh https://www.youtube.com/watch?v=UgC02ts-Jaw
+ls
+cd ..
+mkdir UCCrNTrYVU6U2VtzPvmV3U3g
+cd UCCrNTrYVU6U2VtzPvmV3U3g/
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=r5jJDAK4KfU
+sh ../dl.sh https://www.youtube.com/watch?v=XB0NT124_6Y
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=Z-JQOp52s-4
+sh ../dl.sh https://www.youtube.com/watch?v=c7qAtJpnvWU
+sh ../dl.sh https://www.youtube.com/watch?v=tKITtavMNr4
+sh ../dl.sh https://www.youtube.com/watch?v=c-q6tixE_JA
+sh ../dl.sh https://www.youtube.com/watch?v=GQa9LzSMdAc
+sh ../dl.sh https://www.youtube.com/watch?v=4t9IEq0m3xw
+sh ../dl.sh https://www.youtube.com/watch?v=rzFZXNVBxsc
+sh ../dl.sh https://www.youtube.com/watch?v=uhuceDZ6PqY
+sh ../dl.sh https://www.youtube.com/watch?v=K2TQA4PH7SQ
+sh ../dl.sh https://www.youtube.com/watch?v=LprvCzqzpuY
+sh ../dl.sh https://www.youtube.com/watch?v=tSZjrfPwfbM
+sh ../dl.sh https://www.youtube.com/watch?v=-3W30fo0omE
+sh ../dl.sh https://www.youtube.com/watch?v=unI5KOYXPTg
+sh ../dl.sh https://www.youtube.com/watch?v=K2TQA4PH7SQ
+cd ..
+cd lipread/
+ls
+mkdir UCWngcK-tLzUKQ-H5wftdahA
+cd UCWngcK-tLzUKQ-H5wftdahA/
+vi list
+less ../dl.sh 
+grep http list |sh ../dl.sh
+ls
+cat list 
+cd ..
+ls
+cd ..
+cd signed/
+ls
+mkdir UCdXt2JT4VLVSaXVgiss9YcA
+cd UCdXt2JT4VLVSaXVgiss9YcA
+vi list
+cat list |  sh ../dl.sh 
+ls
+wget https://www.youtube.com/watch?v=VH83iiWDra0 https://www.youtube.com/watch?v=1H4QQ4_LNHM https://www.youtube.com/watch?v=WNPzwWabgQQ&t=207s
+ls
+grep License watch\?v\=*
+less watch?v=WNPzwWabgQQ
+mkdir UCjc3C8pOIhSKlPVXnDsne-Q
+ls
+cd UCjc3C8pOIhSKlPVXnDsne-Q/
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=NC3SB_K4rkk
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=2GT7Eiu7IC8
+sh ../dl.sh https://www.youtube.com/watch?v=Q6IYoNmKFfE
+ls
+for i in *opus;do ffmpeg -i $i;done
+sh ../dl.sh https://www.youtube.com/watch?v=dOePu47dvnE
+sh ../dl.sh https://www.youtube.com/watch?v=s8CMHcTOyqE
+sh ../dl.sh https://www.youtube.com/watch?v=a00mf6Z6RFA
+sh ../dl.sh https://www.youtube.com/watch?v=KkiyvxibEY8
+sh ../dl.sh https://www.youtube.com/watch?v=rqfUS-wKTdM
+sh ../dl.sh https://www.youtube.com/watch?v=aQynbR4G9lg
+sh ../dl.sh https://www.youtube.com/watch?v=YWogplxCrcA
+sh ../dl.sh https://www.youtube.com/watch?v=h1xa-vnhfOg
+sh ../dl.sh https://www.youtube.com/watch?v=x1YRFTFPskA
+sh ../dl.sh https://www.youtube.com/watch?v=_Y8FrIkIyVg
+sh ../dl.sh https://www.youtube.com/watch?v=J8A8qo_B9tw
+cat ../dl.sh 
+ls
+cd ..
+ls
+mkdir free-nosubs
+cd free-nosubs/
+youtube-dl https://www.youtube.com/watch?v=rnUxqkIHwHQ
+wget https://www.youtube.com/watch?v=rnUxqkIHwHQ
+youtube-dl https://www.youtube.com/watch?v=dt1dP97TZxU
+wget 
+ls
+file *
+wget https://www.youtube.com/watch?v=_JVogYj5z3A
+youtube-dl https://www.youtube.com/watch?v=_JVogYj5z3A
+youtube-dl https://www.youtube.com/watch?v=Rsw6a1rUOf4
+wget https://www.youtube.com/watch?v=Rsw6a1rUOf4
+ls
+wget https://www.youtube.com/watch?v=9EppIGM0QNg
+youtube-dl https://www.youtube.com/watch?v=9EppIGM0QNg
+wget https://www.youtube.com/watch?v=JQ4ufWNJcB8
+youtube-dl https://www.youtube.com/watch?v=JQ4ufWNJcB8
+wget https://www.youtube.com/watch?v=iO6b4J9QaQc
+youtube-dl https://www.youtube.com/watch?v=iO6b4J9QaQc
+wget https://www.youtube.com/watch?v=Uf1eCznOxsQ
+youtube-dl https://www.youtube.com/watch?v=Uf1eCznOxsQ
+wget https://www.youtube.com/watch?v=Uf1eCznOxsQ
+wget https://www.youtube.com/watch?v=89WBj27TR5I
+youtube-dl https://www.youtube.com/watch?v=89WBj27TR5I
+grep 'Creative Commons' watch\?v\=*
+grep 'Creative Commons Attribution license (reuse allowed)' watch\?v\=*
+mkdir LekarzMedycynyPracy
+cd LekarzMedycynyPracy
+cat /tmp/panel 
+cat /tmp/panel |grep '?watch'
+cat /tmp/panel |grep '\?watch'
+cat /tmp/panel |grep '/?watch'
+cat /tmp/panel |grep 'watch'
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|sort|uniq
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|sort|uniq|wc
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|uniq
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|uniq|less
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|wc
+\cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|while read i;do url=https://www.youtube.com/$i; wget $url; grep 'Creative Commons
+#cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|while read i;do url=https://www.youtube.com/$i; wget $url; grep 'Creative Commons
+cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|while read i;do url=https://www.youtube.com/$i; wget $url; grep 'Creative Commons Attribution license (reuse allowed)' $i && youtube-dl $url;done
+ls
+ffplay What\ should\ you\ do\ after\ losing\ a\ sanitary\ health\ certificate_booklet_\ in\ Poland-iQNujLJWlJQ.mkv 
+ls
+cat ../../dl.sh 
+man youtube-dl 
+for i in watch\?v\=*;do id=$(echo $i|awk -F'=' '{print $NF}'); youtube-dl --write-sub --sub-lang=pl  --sub-format=vtt $id;done
+grep Creative watch\?v\=*
+cd /tmp
+tar xvf ~/Downloads/s1.tar 
+cd align/
+less swbi7a.align 
+git clone https://github.com/rizkiarm/LipNet.git
+cd ..
+mkdir UCRHC9jxI9fhU_NQYtRCiC3Q
+cd UCRHC9jxI9fhU_NQYtRCiC3Q/
+vi list
+echo https://www.youtube.com/watch?v=aKlkc2KEmKQ|sh ../dl.sh 
+vi list
+cat list | sh ../dl.sh 
+ls
+cd ..
+vi english-subtitles
+mkdir UC7nnculccfROWQueO2fmuJg
+cd UC7nnculccfROWQueO2fmuJg/
+ls
+echo https://www.youtube.com/watch?v=GosLSUpZ0XE | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=SfhC9VbkszE | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=29C_AQz50dM | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=3pdgYF1_fVA | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=WWKKcyIBVeA | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=jm3NVQD1674 | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=IMshqRVsorE | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=ISZ9644dbWw | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=6BAY5qX-y18 | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=esGnftR6xmI | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=3x6-Yj3kG8M | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=D71stnhbKCc | sh ../dl.sh 
+cd ..
+ls
+cd ../
+ls
+mkdir zachowajrownowage
+cd zachowajrownowage
+vi links
+cd ..
+mv zachowajrownowage/ lipread/
+ls
+cd misc/
+ls
+wget https://www.youtube.com/watch?v=Bq0fLxioFiQ
+sh ../dl.sh https://www.youtube.com/watch?v=Bq0fLxioFiQ
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=Bq0fLxioFiQ
+cd ../lipread/UC7nnculccfROWQueO2fmuJg/
+ls
+echo https://www.youtube.com/watch?v=h7a5gmWJMyY | sh ../dl.sh 
+echo https://www.youtube.com/watch?v=upX_oQuKrz0 | sh ../dl.sh 
+cd ../..
+mkdir signed
+cd signed/
+mkdir UCWngcK-tLzUKQ-H5wftdahA
+cd UCWngcK-tLzUKQ-H5wftdahA/
+cp ../../lipread/dl.sh ..
+echo https://www.youtube.com/watch?v=oYTyCABUKfg|sh ../dl.sh 
+cd ..
+vi non-free
+cd ..
+ls
+cd lipread/
+ls
+mkdir UCdXt2JT4VLVSaXVgiss9YcA
+cd UCdXt2JT4VLVSaXVgiss9YcA
+ls
+vi list
+cat list |sh ../dl.sh 
+cd ..
+mkdir SaryuszWolski
+cd SaryuszWolski
+vi list
+cd ..
+mkdir dsnopek
+cd dsnopek
+echo 'English L1' > non-native.txt
+ls
+vi list
+ls
+cp ../../dl.sh ..
+vi ../dl.sh 
+cat list 
+cat list |sh ../dl.sh 
+ls
+LS
+CD ../..
+ls
+cd ..
+ls
+mkdir ../lipread
+mv UC7nnculccfROWQueO2fmuJg/ ../lipread/
+ls UCRHC9jxI9fhU_NQYtRCiC3Q/
+mv UCRHC9jxI9fhU_NQYtRCiC3Q/ ../lipread/
+ls
+ls SaryuszWolski/
+cd SaryuszWolski/
+ls
+cd ..
+mv SaryuszWolski/ ../lipread/
+cp dl.sh ../lipread/
+cd ..
+ls
+cd misc/
+sh ../dl.sh https://www.youtube.com/watch?v=VZeW630-jGQ
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=Bi2CrWARIpY
+ls
+cd ../UCdxQkHxvxKDsspB5pFPtYkA/
+ls
+file *m4a
+ls
+t
+ls
+vi list
+ls
+cp ../../dl.sh ..
+vi ../dl.sh 
+cat list 
+cat list |sh ../dl.sh 
+ls
