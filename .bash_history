@@ -1,17 +1,3 @@
-ls
-rm *.mp4
-cd ..
-svn ci -m audio
-svn diff
-svn ci -m 'add wayback urls for redoability'
-cd ..
-ls
-cd mickyd/
-ls
-vi vid
-mv vid 2xmBQTVjZ_Q.txt
-git status
-git add 2xmBQTVjZ_Q.txt 
 git commit -m 'youtube'
 git diff
 git add 2xmBQTVjZ_Q.txt 
@@ -1998,3 +1984,17 @@ paste pl en|grep -v ']'|grep '^ '
 vi init-voc
 cat p
 cat pairs.tsv 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
+vi /tmp/leftin 
+grep lnoc wys&
+grep lnoc wys*
+vi wyspa-skarbow.txt-06.txt
+grep lnoc wys*
+rm *.bak
+git diff
+git add wyspa-skarbow.txt-0*
+git commit -m more
+vi /tmp/leftin 
+cat /tmp/leftin 
+cat /tmp/leftin  >> ../pron-data/gen.tsv 
+vi ../pron-data/gen.tsv 
