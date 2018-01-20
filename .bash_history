@@ -2089,3 +2089,99 @@ ls parrots/
 cat /tmp/todo|sh RobertMarchelTV/dl.sh 
 ls
 history -a
+ls -al
+ls -al|head
+cd ..
+ls
+ffplay Eksperyment\ \ kognitywistyczny\ cz.\ 2-dt1dP97TZxU.mp4 
+ls
+find . -name '3895zWffyQo*'
+cd ..
+find . -name '3895zWffyQo*'
+find . -name links |xargs grep '3895zWffyQo'
+find . -name CentrumZamenhofa
+ls
+cd lipread/UCWngcK-tLzUKQ-H5wftdahA/
+ls
+vi list 
+cat list |sort|uniq | sh ../dl.sh 
+ls
+rm *.1
+ls
+cd ../..
+ls
+cd free-nosubs/
+ls
+mv Kulturoznawstwo\ na\ KUL\!-rnUxqkIHwHQ.mp4 rnUxqkIHwHQ.mp4
+mv ~/kulturoznawstwo.txt rnUxqkIHwHQ.aud
+rm ~/kulturosnawstwo.txt 
+ls
+mv Eksperyment\ \ kognitywistyczny\ cz.\ 1-Uf1eCznOxsQ.mp4 Uf1eCznOxsQ.mp4
+mv ~/Uf1eCznOxsQ.txt .
+ls
+mv Eksperyment\ \ kognitywistyczny\ cz.\ 2-dt1dP97TZxU.mp4 dt1dP97TZxU.mp4
+mv Eksperyment\ \ kognitywistyczny\ cz.\ 3-89WBj27TR5I.mp4 89WBj27TR5I.mp4
+ls
+ls -al *mp4
+less rnUxqkIHwHQ.aud 
+vi rnUxqkIHwHQ.lex
+mv ~/dt1dP97TZxU.txt .
+ls
+mv Żywa\ Biblioteka\,\ spotkanie\ z\ Muhamedem-Rsw6a1rUOf4.mp4 Rsw6a1rUOf4.mp4
+mv ~/Rsw6a1rUOf4.txt .
+vi Rsw6a1rUOf4.txt-todo
+cd ..
+ls
+cd nope/
+ls
+vi list
+vi list-maybepd-lipread
+vi list-maybepd-signed
+vi list-maybepd-lipread
+vi list-maybepd-signed
+vi list-maybepd-lipread
+vi list-maybepd
+vi list-maybepd-lipread 
+vi list-maybepd
+vi list-maybepd-lipread 
+vi list-maybepd
+vi list-maybepd-lipread 
+vi list-maybepd
+vi list-maybepd-lipread 
+vi list-maybepd
+ls
+vi list-maybepd-lipread 
+vi list-maybepd
+vi list-maybepd-lipread 
+vi list-maybepd
+vi list-maybepd-lipread 
+vi list-maybepd
+vi list-maybepd-lipread 
+vi list-maybepd
+vi list-maybepd-lipread 
+ls
+vi list-maybepd
+vi list-maybepd-lipread 
+ls
+tail -n 6 list-maybepd-lipread > list-lipread
+tail -n 1 list-maybepd >> list
+vi list-maybepd-lipread 
+vi list-maybepd
+ls
+for i in watch\?v\=*;do id=$(echo $i|awk -F= '{print $2}');grep $id ../closed.tsv || echo $i >> tocheck;done
+ls
+cat tocheck 
+grep https://www.youtube.com/watch?v=-DoMhirlZiE ../closed.tsv 
+grep watch?v=-ElDmONrLAU ../closed.tsv 
+grep v=-kTVT1VQg8o ../closed.tsv 
+grep watch?v=QzFPfme5FwU ../closed.tsv 
+grep watch?v=-U4IyIfZCTM ../closed.tsv 
+grep https://www.youtube.com/channel/UCWdNHp2fsu1v23Nf_kvN1bA ../closed.tsv 
+grep https://www.youtube.com/watch?v=WGY7gcSYfns ../closed.tsv 
+man youtube-dl
+youtube-dl --flat-playlist https://www.youtube.com/user/KhanAcademyPolski
+vi ../open.tsv
+ls
+cat *.vtt
+cat ./*.vtt
+history -a
