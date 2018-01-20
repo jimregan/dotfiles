@@ -2010,3 +2010,82 @@ cat ./03dgWFKBEHk.pl.vtt.vocab
 cat ./093UCY4KEqQ.pl.vtt.vocab 
 ls
 history -a
+cd ..
+find . -name 'oUDIglmGLDQ*'
+find  . -name UCdXt2JT4VLVSaXVgiss9YcA
+mkdir UCdXt2JT4VLVSaXVgiss9YcA
+cd UCdXt2JT4VLVSaXVgiss9YcA
+sh ../dl.sh https://www.youtube.com/watch?v=oUDIglmGLDQ
+ls
+cd ..
+ls
+cd nope/
+ls
+cd RobertMarchelTV/
+ls
+for i in *vtt;do echo $(basename $i .pl.vtt)|awk '{print "https://www.youtube.com/watch?v=" $0 "\thttps://www.youtube.com/channel/UCZyC5Ix9Dw_gBP-I68w1uJw\tRobert Marchel\t1\t0"}'
+for i in *vtt;do echo $(basename $i .pl.vtt);done|awk '{print "https://www.youtube.com/watch?v=" $0 "\thttps://www.youtube.com/channel/UCZyC5Ix9Dw_gBP-I68w1uJw\tRobert Marchel\t1\t0"}'
+cd ..
+ls
+cd parrots/
+ls
+cd ..
+ls
+ls *vtt
+ls ./*vtt
+find . -name '*.vtt'
+find . -name '*.vtt'|sed -e 's/\.\///'
+find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /
+find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /|sed -e 's/\.pl\.vtt//'
+find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /|sed -e 's/\.pl\.vtt//'|while read i;do grep $i ../closed.tsv ;done
+find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /|sed -e 's/\.pl\.vtt//'|while read i;do grep $i ../closed.tsv || echo https://www.youtube.com/watch?v=$i ;done
+ls
+ls ..
+ls misc
+ls
+grep https://www.youtube.com/watch?v=g1JLG4uFMHY ../closed.tsv 
+grep https://www.youtube.com/watch?v=8N3ohjW3PP4 ../closed.tsv 
+grep https://www.youtube.com/watch?v=uZnpq9L6euo ../closed.tsv 
+grep https://www.youtube.com/watch?v=G9zTK90ZNXQ ../closed.tsv 
+grep https://www.youtube.com/watch?v=a1KcQR5LLWw ../closed.tsv 
+grep https://www.youtube.com/watch?v=t14CFztvnFM ../closed.tsv 
+grep https://www.youtube.com/watch?v=ty0cngyACj8 ../closed.tsv 
+cat altkom.tsv 
+cat altkom.tsv |awk -F'\t' '{print $1 "\thttps://www.youtube.com/channel/UCvSkBmTA0m9GlbqAaXae1dw\t" $2 "\t1\t0"}'
+cat altkom.tsv |awk -F'\t' '{print $1 "\thttps://www.youtube.com/channel/UCvSkBmTA0m9GlbqAaXae1dw\t" $2 "\t1\t0"}' >> ../closed.tsv 
+ls
+cat /tmp/parrots 
+cat /tmp/parrots |sed -e 's/href="/\nhref="/g'
+cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'
+cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'
+cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq|while read i;do grep $i ../closed.tsv ;done
+cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq|while read i;do grep $i ../closed.tsv || echo $i >> parrots/list;done
+cd parrots/
+ls
+cat list |sh ../RobertMarchelTV/dl.sh 
+ls
+for i in watch\?v\=*;do grep $i ../../closed.tsv ;done
+ls *vtt
+ls ./*vtt|wc
+ls /tmp/
+less /tmp/ciek 
+ls
+cd ..
+ls
+cat ../closed.tsv 
+cat ../closed.tsv |awk -F'\t' '{print $1}'
+cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e $p and ! -e parrots/$p and ! -e RobertMarchelTV/$p ] ;then echo $i;fi;done
+ls
+cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e $p ] ;then echo $i;fi;done
+cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done
+cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done|grep ' '
+cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done
+cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done|less
+cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done > /tmp/todo
+cat /tmp/todo|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e RobertMarchelTV/"$p" ] ;then echo $i;fi;done > /tmp/todo2
+cat /tmp/todo2|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e parrots/"$p" ] ;then echo $i;fi;done > /tmp/todo
+wc -l /tmp/todo*
+ls parrots/
+cat /tmp/todo|sh RobertMarchelTV/dl.sh 
+ls
+history -a
