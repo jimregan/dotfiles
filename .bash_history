@@ -2000,3 +2000,13 @@ grep LKkNs6276xo ../closed.tsv  >> ../open.tsv
 vi ../closed.tsv 
 gr/-ZXfhlLJXcc.pl.vtt 
 for i in ./*.vtt;do  cat $i|grep -v '^WEBVTT'|grep -v '^Kind:';done
+mkdir parrots
+cd parrots/
+vi ../../open-english.tsv 
+cd ..
+ls
+ls ./*vocab
+cat ./03dgWFKBEHk.pl.vtt.vocab
+cat ./093UCY4KEqQ.pl.vtt.vocab 
+ls
+history -a
