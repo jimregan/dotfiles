@@ -2185,3 +2185,28 @@ ls
 cat *.vtt
 cat ./*.vtt
 history -a
+cd ..
+ls
+cd SaryuszWolski/
+ls
+cat list |sh ../dl.sh 
+ls
+cd ..
+ls
+cd ..
+ls
+cd misc/
+ls
+cat ../dl.sh 
+sh ../dl.sh https://www.youtube.com/watch?v=ZAWu-uWRQPA ; sh ../dl.sh https://www.youtube.com/watch?v=cNbgC02YnoM
+ls
+cd ..
+ls
+cd signed/
+ls
+mkdir UCLUSM7sbFDJD4EeLCegPB1Q
+cd UCLUSM7sbFDJD4EeLCegPB1Q/
+ls
+vi links
+cat links |sh ../dl.sh 
+history -a
