@@ -2210,3 +2210,20 @@ ls
 vi links
 cat links |sh ../dl.sh 
 history -a
+cd disk/Playing/
+ls
+cd youtube-pl/
+df
+du .
+ls
+cd lipread/
+ls
+cd UCdXt2JT4VLVSaXVgiss9YcA/
+ls
+cat list |sh ../dl.sh 
+ls
+grep Creative watch\?v\=33hpx6a0SU4
+rm 33hpx6a0SU4*
+grep 33hpx6a0SU4 list |sh ../dl.sh 
+ls
+history -a
