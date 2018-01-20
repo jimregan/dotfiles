@@ -1,35 +1,3 @@
-less przedwiosnie.txt-04.txt 
-ls ../audio/*przedwiosnie*
-rm /tmp/03-stefan-zeromski-przedwiosnie-cz-iii-1-*
-git rm przedwiosnie.txt
-git add przedwiosnie.txt-0*
-git commit -m split
-less przedwiosnie.txt-04.txt
-grep '[0-9]' przedwiosnie.txt-0*
-less ../NumberNorm.pm 
-perl ../NumberNorm.pm  expand_year 21
-perl ../NumberNorm.pm  expand_year 21 gen
-perl ../NumberNorm.pm  expand_year 1924 gen
-grep przedwiosnie ../audiobooks.tsv 
-ls ../*sh
-vi ../additions.sh 
-echo 'Czytał Jacek Rozenek' >> przedwiosnie.txt-04.txt 
-git diff
-git add przedwiosnie.txt-04.txt 
-git commit -m add
-perl ../apply-specific.pl 
-find . -size 0
-find . -size 0 -delete
-git diff
-grep '[0-9]' przedwiosnie.txt-0*
-find . -name '*bak' -delete
-grep '[0-9]' przedwiosnie.txt-0*
-less pairs.tsv 
-cat pairs.tsv 
-cat ../pairs.tsv 
-vi run-aeneas.sh 
-ls przedwiosnie.txt-0*
-less run-aeneas.sh 
 vi run-aeneas.sh 
 ls ../audio/*przedw*
 sh run-aeneas.sh 01-stefan-zeromski-przedwiosnie-cz-i.mp3 przedwiosnie.txt-01.txt
@@ -1998,3 +1966,35 @@ vi ../dl.sh
 cat list 
 cat list |sh ../dl.sh 
 ls
+cd tmp/fashq1
+. ../sourceme 
+ogimageproc https://www.instagram.com/p/BdxT9gdFM7U/?taken-by=nataliazasadzka
+ogimageproc https://www.instagram.com/p/BeAOIDJldkZ/?taken-by=nataliazasadzka
+ogimageproc https://www.instagram.com/p/BeAl5s2nhni/?taken-by=lazarenkoyuliya
+ogimageproc https://www.instagram.com/p/Bd97jaPH9eF/?taken-by=lazarenkoyuliya
+ogimageproc https://www.instagram.com/p/BdxPKGGnqPr/?taken-by=lazarenkoyuliya
+ogimageproc https://www.instagram.com/p/BeA18RKDjdo/?taken-by=ngizerskaya
+ogimageproc https://www.instagram.com/p/Bd5HvPhjuFb/?taken-by=ngizerskaya
+ogimageproc https://www.instagram.com/p/Bd-D1Gxjz6o/?taken-by=ngizerskaya
+ogimageproc https://www.instagram.com/p/BeAoI5ODcqW/?taken-by=diana_dryn
+ogimageproc https://www.instagram.com/p/Bd45AhmjDJI/?taken-by=diana_dryn
+ogimageproc https://www.instagram.com/p/Bdk_EfPjf2N/?taken-by=diana_dryn
+ogimageproc https://www.instagram.com/p/Bd5dLKanMNn/?taken-by=natali_danish
+ogimageproc https://www.instagram.com/p/Bd8msDmHmGe/?taken-by=natali_danish
+ogimageproc https://www.instagram.com/p/BeA50tfnMaj/?taken-by=kristinarudy
+ogimageproc https://www.instagram.com/p/Bd39rc9HLN2/?taken-by=kristinarudy
+ogimageproc https://www.instagram.com/p/BeBcq78Dq12/?taken-by=katrina_sarkisyan
+ogimageproc https://www.instagram.com/p/BeBZ-JAlmvs/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/Bd-1s8wFCOQ/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/Bd-CXMplVLM/?taken-by=chiarabransi
+ogimageproc https://www.instagram.com/p/BeBFgPrBClm/?taken-by=forsurprise
+ogimageproc https://www.instagram.com/p/BeAmB_KBiRE/?taken-by=forsurprise
+ogimageproc https://www.instagram.com/p/BeBIHTeBwF7/?taken-by=maryhockings
+ogimageproc https://www.instagram.com/p/BeBIKMnne9e/?taken-by=natasha_mankovskaya
+ogimageproc https://www.instagram.com/p/Bd0TbSTn0_C/?taken-by=natasha_mankovskaya
+ogimageproc https://www.instagram.com/p/BdxrRJYnuOa/?taken-by=natasha_mankovskaya
+procimg https://www.instagram.com/p/BeBIKMnne9e/?taken-by=natasha_mankovskaya https://www.instagram.com/p/BeBNS3JFNKN/?taken-by=trishka92
+ogimageproc https://www.instagram.com/p/BeBNS3JFNKN/?taken-by=trishka92
+ogimageproc https://www.instagram.com/p/Bd-ifBvFn0o/?taken-by=trishka92
+ogimageproc https://www.instagram.com/p/Bd2yBFOldJh/?taken-by=trishka92
+grep https://www.instagram.com/p/BeBIHTeBwF7/ fash-rdf-links 
