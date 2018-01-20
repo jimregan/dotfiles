@@ -1,138 +1,3 @@
-vi run-aeneas.sh 
-ls ../audio/*przedw*
-sh run-aeneas.sh 01-stefan-zeromski-przedwiosnie-cz-i.mp3 przedwiosnie.txt-01.txt
-sh run-aeneas.sh 02-stefan-zeromski-przedwiosnie-cz-ii.mp3 przedwiosnie.txt-02.txt
-sh run-aeneas.sh 03-stefan-zeromski-przedwiosnie-cz-iii-1.mp3 przedwiosnie.txt-03.txt
-sh run-aeneas.sh 04-stefan-zeromski-przedwiosnie-cz-iii-2.mp3 przedwiosnie.txt-04.txt
-ls
-tail -n 5 pa
-tail -n 5 pairs.tsv 
-tail -n 5 pairs.tsv  >> pairs.tsv 
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-abuzei-i-tair.mp3 abuzei-i-tair.txt
-cat abuzei-i-tair.txt.aud 
-cat abuzei-i-tair.txt
-vi run-aeneas.sh 
-ls *aud
-rm *aud
-tail -n 6 pairs.tsv 
-tail -n 6 pairs.tsv |while read i;do echo sh run-aeneas.sh $i;done
-tail -n 6 pairs.tsv |while read i;do sh run-aeneas.sh $i;done
-tail -n 6 pairs.tsv |while read i;do sh run-aeneas.sh "$i";done
-tail -n 6 pairs.tsv |awk '{print "sh run-aeneas.sh " $0}'
-tail -n 6 pairs.tsv |awk '{print "sh run-aeneas.sh " $0}'|while read i;do ($i);done
-vi run-aeneas.sh 
-less pairs.tsv 
-rm *sent
-rm *aud
-ls
-tail -n 6 pairs.tsv |awk '{print "sh run-aeneas.sh " $0}'|while read i;do (PYTHONIOENCODING=UTF-8 $i);done
-rm pairs.tsv 
-sh run-aeneas.sh milosz-biedrzycki-akslop.mp3 akslop.txt
-less akslop.txt
-sh run-aeneas.sh autor-nieznany-aniol-pasterzom-mowil.mp3 aniol-pasterzom-mowil.txt
-sh run-aeneas.sh boleslaw-prus-antek.mp3 antek.txt
-less antek.txt.aud 
-sh run-aeneas.sh anton-czechow-aptekarzowa.mp3 aptekarzowa.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-atlas-i-kitaj.mp3 atlas-i-kitaj.txt
-less atlas-i-kitaj.txt.aud 
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dwa-zolwie.mp3 bajki-i-przypowiesci-dwa-zolwie.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-kulawy-i-slepy.mp3 bajki-i-przypowiesci-kulawy-i-slepy.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-lilje.mp3 ballady-i-romanse-lilje.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-pani-twardowska.mp3 ballady-i-romanse-pani-twardowska.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-powrot-taty.mp3 ballady-i-romanse-powrot-taty.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-rekawiczka.mp3 ballady-i-romanse-rekawiczka.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-romantycznosc.mp3 ballady-i-romanse-romantycznosc.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-rybka.mp3 ballady-i-romanse-rybka.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-switezianka.mp3 ballady-i-romanse-switezianka.txt
-sh run-aeneas.sh adam-mickiewicz-ballady-i-romanse-switez.mp3 ballady-i-romanse-switez.txt
-sh run-aeneas.sh edgar-allan-poe-beczka-amontillada.mp3 beczka-amontillada.txt
-sh run-aeneas.sh cyprian-kamil-norwid-bema-pamieci-zalobny-rapsod.mp3 bema-pamieci-zalobny-rapsod.txt
-sh run-aeneas.sh edgar-allan-poe-berenice.mp3 berenice.txt
-sh run-aeneas.sh anton-czechow-bezbronna-istota.mp3 bezbronna-istota.txt
-sh run-aeneas.sh jacob-i-wilhelm-grimm-bialosniezka-i-rozanka.mp3 bialosniezka-i-rozanka.txt
-sh run-aeneas.sh jacob-i-wilhelm-grimm-biedny-mlynarczyk-i-kotek.mp3 biedny-mlynarczyk-i-kotek.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-bogacz-i-zebrak.mp3 bogacz-i-zebrak.txt
-sh run-aeneas.sh autor-nieznany-bogurodzica.mp3 bogurodzica.txt
-sh run-aeneas.sh autor-nieznany-bracia-patrzcie-jeno.mp3 bracia-patrzcie-jeno.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-bryla-lodu-i-krysztal.mp3 bryla-lodu-i-krysztal.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-brytan-w-obrozy.mp3 brytan-w-obrozy.txt
-less brytan-w-obrozy.txt.aud 
-sh run-aeneas.sh hans-christian-andersen-brzydkie-kaczatko_1.mp3 brzydkie-kaczatko.txt
-sh run-aeneas.sh hans-christian-andersen-calineczka.mp3 calineczka.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-chart-i-kotka.mp3 chart-i-kotka.txt
-sh run-aeneas.sh jacob-i-wilhelm-grimm-chata-w-lesie.mp3 chata-w-lesie.txt
-less chart-i-kotka.txt
-less chart-i-kotka.txt.aud 
-cat pairs.tsv 
-cat pairs.tsv  >> pairs.tsv 
-cd ..
-git diff
-git add specific-norms.tsv pairs.tsv splitter.pl additions.sh 
-git diff
-git add header-replace.pl 
-ls
-cd -
-vi pairs.tsv 
-cat pairs.tsv |wc
-cat pairs.tsv |sort|uniq|wc
-cat pairs.tsv >> ../pairs.tsv 
-cd ..
-git add pairs.tsv 
-git commit -m more
-less pairs.tsv 
-cd text/
-rm pairs.tsv 
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-chleb-i-szabla.mp3 chleb-i-szabla.txt
-sh run-aeneas.sh joseph-mohr-cicha-noc.mp3 cicha-noc.txt
-sh run-aeneas.sh anton-czechow-cora-albionu.mp3 cora-albionu.txt
-sh run-aeneas.sh cyprian-kamil-norwid-cos-ty-atenom-zrobil-sokratesie.mp3 cos-ty-atenom-zrobil-sokratesie.txt
-sh run-aeneas.sh jan-andrzej-morsztyn-cuda-milosci-karmie-frasunkiem-milosc-i-mysleniem.mp3 cuda-milosci-karmie-frasunkiem-milosc-i-mysleniem.txt
-sh run-aeneas.sh jan-andrzej-morsztyn-cuda-milosci-przebog-jak-zyje-serca-juz-nie-majac.mp3 cuda-milosci-przebog-jak-zyje-serca-juz-nie-majac.txt
-sh run-aeneas.sh edgar-allan-poe-czarny-kot.mp3 czarny-kot.txt
-sh run-aeneas.sh anton-czechow-zemsta.mp3 czechow-zemsta.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-suknia.mp3 czlowiek-i-suknia.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-wilk.mp3 czlowiek-i-wilk.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-zdrowie.mp3 czlowiek-i-zdrowie.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-czlowiek-i-zwierciadla.mp3 czlowiek-i-zwierciadla.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dab-i-dynia.mp3 dab-i-dynia.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dab-i-male-drzewka.mp3 dab-i-male-drzewka.txt
-sh run-aeneas.sh maria-dabrowska-boze-narodzenie.mp3 dabrowska-boze-narodzenie.txt
-sh run-aeneas.sh maria-dabrowska-dzikie-ziele.mp3 dabrowska-dzikie-ziele.txt
-sh run-aeneas.sh anton-czechow-damy.mp3 damy.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-daremna-praca.mp3 daremna-praca.txt
-sh run-aeneas.sh adam-asnyk-daremne-zale_1.mp3 daremne-zale.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-derwisz-i-uczen.mp3 derwisz-i-uczen.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-dewotka.mp3 dewotka.txt
-sh run-aeneas.sh edgar-allan-poe-diabel-na-wiezy.mp3 diabel-na-wiezy.txt
-sh run-aeneas.sh ignacy-krasicki-bajki-i-przypowiesci-diament-i-krysztal.mp3 diament-i-krysztal.txt
-sh run-aeneas.sh anton-czechow-dlugi-jezyk.mp3 dlugi-jezyk.txt
-less dlugi-jezyk.txt
-ffplay /tmp/foo.wav 
-mv ~/dlugi-jezyk.txt ../audacity/
-less ../audacity/dlugi-jezyk.txt 
-less dlugi-jezyk.txt
-less ../audacity/dlugi-jezyk.txt 
-less dlugi-jezyk.txt
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
-git diff
-git stash
-vi ../apply-specific.pl 
-perl ../apply-specific.pl 
-git stash
-perl ../apply-specific.pl 
-git diff
-git add przedwiosnie.txt-04.txt 
-git commit -m more
-perl ../apply-specific.pl 
-git diff
-git stash
-perl ../apply-specific.pl 
 git diff
 git stash
 perl ../apply-specific.pl 
@@ -1998,3 +1863,140 @@ ogimageproc https://www.instagram.com/p/BeBNS3JFNKN/?taken-by=trishka92
 ogimageproc https://www.instagram.com/p/Bd-ifBvFn0o/?taken-by=trishka92
 ogimageproc https://www.instagram.com/p/Bd2yBFOldJh/?taken-by=trishka92
 grep https://www.instagram.com/p/BeBIHTeBwF7/ fash-rdf-links 
+cd ..
+ls
+cd signed/
+ls
+mkdir INSPROmedia
+cd INSPROmedia/
+ls
+cat ../dl.sh 
+echo https://www.youtube.com/watch?v=WGY7gcSYfns |sh ../dl.sh 
+ls
+cd ../../
+ls
+cd nope/
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=QzFPfme5FwU
+ls
+cd ..
+ls
+cd signed/
+ls
+mkdir nospeech
+cd nospeech/
+mkdir UCgvywbxAcsgJr_gfpqKLXXw
+cd UCgvywbxAcsgJr_gfpqKLXXw
+ls
+vi list
+vi nonfree
+cd ..
+cd lipread/
+ls
+cd ..
+cd nope/
+ls
+mkdir RobertMarchelTV
+cd RobertMarchelTV
+vi list
+cp ../../lipread/dl.sh .
+vi dl.sh 
+cat list |sh dl.sh 
+ls
+cd ..
+ls
+cat list*|sort|uniq|grep http |sh RobertMarchelTV/dl.sh 
+ls
+ls parrots/
+grep 'Creative Commons' watch\?v\=*
+for i in watch\?v\=*;do grep 'Creative Commons' $i && grep 'BY-ND' $i;done
+for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'BY-ND' $i || echo $i >> chkcc) ;done
+cat chkcc 
+rm chkcc 
+for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'NC-BY-SA' $i || echo $i >> chkcc) ;done
+cat chkcc 
+grep LKkNs6276xo ../closed
+grep LKkNs6276xo ../closed.tsv 
+#grep LKkNs6276xo ../closed.tsv  >> 
+less ../open.tsv 
+grep LKkNs6276xo ../closed.tsv  >> ../open.tsv 
+vi ../closed.tsv 
+grep WGY7gcSYfns ../closed.tsv  >> ../open.tsv 
+vi ../closed.tsv 
+ls ../
+ks ../free-nosubs/
+ls ../free-nosubs/
+mkdir ../open
+mv WGY7gcSYfns.* ../open/
+mv LKkNs6276xo.* ../open/
+mv watch\?v\=LKkNs6276xo ../open/
+mv watch\?v\=WGY7gcSYfns ../open/
+ls
+less chkcc 
+cat chkcc 
+rm chkcc 
+ls
+for i in ./*.vtt;do  cat $i;done
+ls
+less ./-ZXfhlLJXcc.pl.vtt 
+for i in ./*.vtt;do  cat $i|grep -v '^WEBVTT'|grep -v '^Kind:';done
+cd ..
+ls
+cd signed/
+ls
+mkdir INSPROmedia
+cd INSPROmedia/
+ls
+cat ../dl.sh 
+echo https://www.youtube.com/watch?v=WGY7gcSYfns |sh ../dl.sh 
+ls
+cd ../../
+ls
+cd nope/
+ls
+sh ../dl.sh https://www.youtube.com/watch?v=QzFPfme5FwU
+ls
+cd ..
+ls
+cd signed/
+ls
+mkdir nospeech
+cd nospeech/
+mkdir UCgvywbxAcsgJr_gfpqKLXXw
+cd UCgvywbxAcsgJr_gfpqKLXXw
+ls
+vi list
+vi nonfree
+cd ..
+cd lipread/
+ls
+cd ..
+cd nope/
+ls
+mkdir RobertMarchelTV
+cd RobertMarchelTV
+vi list
+cp ../../lipread/dl.sh .
+vi dl.sh 
+cat list |sh dl.sh 
+ls
+cd ..
+ls
+cat list*|sort|uniq|grep http |sh RobertMarchelTV/dl.sh 
+ls
+ls parrots/
+grep 'Creative Commons' watch\?v\=*
+for i in watch\?v\=*;do grep 'Creative Commons' $i && grep 'BY-ND' $i;done
+for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'BY-ND' $i || echo $i >> chkcc) ;done
+cat chkcc 
+rm chkcc 
+for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'NC-BY-SA' $i || echo $i >> chkcc) ;done
+cat chkcc 
+grep LKkNs6276xo ../closed
+grep LKkNs6276xo ../closed.tsv 
+#grep LKkNs6276xo ../closed.tsv  >> 
+less ../open.tsv 
+grep LKkNs6276xo ../closed.tsv  >> ../open.tsv 
+vi ../closed.tsv 
+gr/-ZXfhlLJXcc.pl.vtt 
+for i in ./*.vtt;do  cat $i|grep -v '^WEBVTT'|grep -v '^Kind:';done
