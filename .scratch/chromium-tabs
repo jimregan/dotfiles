@@ -157,3 +157,13 @@ SelectedNavigationInTab - Tab: 3134, Index: 2, Time: 13161035867164750
 UpdateTabNavigation - Tab: 3134, Index: 0, Url: http://clarin.pelcra.pl/apidocs/spokes
 UpdateTabNavigation - Tab: 3134, Index: 1, Url: http://clarin.pelcra.pl/apidocs/spokes#Utterances
 UpdateTabNavigation - Tab: 3134, Index: 2, Url: http://clarin.pelcra.pl/apidocs/spokes#Utterances-GET-Utterance-details
+SelectedNavigationInTab - Tab: 3135, Index: 3, Time: 13161035939290906
+UpdateTabNavigation - Tab: 3135, Index: 0, Url: chrome://newtab/
+UpdateTabNavigation - Tab: 3135, Index: 1, Url: https://www.google.ie/search?q=iris+machine+translation+galway&oq=iris+machine+translation+galway&aqs=chrome..69i57j69i64l3.6687j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+UpdateTabNavigation - Tab: 3135, Index: 2, Url: http://server1.nlp.insight-centre.org/iris/about.html
+UpdateTabNavigation - Tab: 3135, Index: 3, Url: http://server1.nlp.insight-centre.org/iris/rest_service.html
+SelectedNavigationInTab - Tab: 3136, Index: 1, Time: 13161035977026122
+UpdateTabNavigation - Tab: 3136, Index: 0, Url: chrome://newtab/
+UpdateTabNavigation - Tab: 3136, Index: 1, Url: https://www.google.ie/search?q=lium+speaker+diarization+ivector&oq=lium+speaker+diarization+iv&aqs=chrome.1.69i57j35i39.11450j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+SelectedNavigationInTab - Tab: 3137, Index: 0, Time: 13161035989554256
+UpdateTabNavigation - Tab: 3137, Index: 0, Url: https://groups.google.com/forum/#!topic/kaldi-help/VfB00bNScek
