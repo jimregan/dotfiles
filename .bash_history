@@ -1,22 +1,3 @@
-ffplay 07-b-otsa_pluais-an-tobac.mp3 
-sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm?in=cois-life-teoranta/sets/ibiotsa' 'https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3Mzh9fX1dfQ__&Signature=g386tzV1BPWkkD7s~ubFC44eUUPdsL7Hr3K39TgEHl5nVRhpcJ7cAGHVn6V7UXCSze7~xJhxGjWek06Ye~f3eHglS56-khh9LbR2MrbmIveKVRJygKdsXVyXvZG~um8KMoArjqaepNoCONGMD-lUpOqIHJrnv~4PedOwVydOoLjkqzYkfNEIpRQ4knpjEpMaRSw59P4B2U2r0hnfeXft~QB7l584FPE0uuAvfhXU~pmxDpmv2WF-pec07pdA34zgM8g7BCUh3mp6kVQL~g0nBiVNXhZqsKAq9g1jowLRgjy6FdAtt7hsGW3cedIYSCz6rPC~8sVKU5DlwdM2AfkkPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ls
-less soundcloud.tsv 
-#sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm 'https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ls
-ffplay ibiotsa.mp3 
-mv ibiotsa.mp3 08-b-otsa_an-mhaidhm.mp3
-mv ibiotsa.wav 08-b-otsa_an-mhaidhm.wav
-ls
-tail soundcloud.tsv 
-echo "https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm\thttps://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ"
-echo "https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhmhttps://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ"
-echo "https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4MzF9fX1dfQ__&Signature=X8WkIJ6B7K-ht3wIHb7wxrIQVEiJhKIBBE6ZgSocHZXHmUeptbFZKfQJhxgqBqzv6QrDsk4GYgoYQEXfG1ChyU5-gRaMPacG-LsZ8cxervTec3bMfCYKHdz48~LsldHJ3ZVyy~RNE6frbcCY2cexs8Ng48pePxklUGtCVDTqVTFj5B0CYdiBzUXn50MmX1VWKNii-QbReNBZ0fF8U3okAR2P4XCEa7seG-qJlXEHJbzVbDqM8gP1T9RopOHQDIxdamzVZrZ-yLa2AZ4ytxT2zTx8QCeVfhhSYonB-75~3f6e0nBhL3DcNRO9n4YIlTmtQE189HTqjBDF~mUTb9GVww__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ" >> soundcloud.tsv 
-vi soundcloud.tsv 
-svn add soundcloud.tsv 
-#sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/09-b-otsa_seanchomr-daithe 'https://cf-hls-media.sndcdn.com/playlist/sDgheS0HrWzz.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3NEZ2hlUzBIcld6ei4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzIxNDB9fX1dfQ__&Signature=HaJ-EKAhEZPtJOxcETcBR0AF7FBEr7CwF1ZF2IYc1EH8xBx2z~0mRsRCWWtkPScvqb4WS7jjwP7NEjJIG79GafN~WtwNbDDZ-TSaDc5qX6FmKHrE51s539I1uPFBhUPZbiayuoG3kEVzUR8VwJKPXnAcNAYKdx3nXjTorCJxYFsiS3cYYCv3seFu2gSBjiIYv1olsNe1uENLIVGgSX0wwN3MD6jMRfk9w11MWbg9HmxEEatQixJjDzOPYQTFEtkiwhh6RTHseWVKU5LNBP2GJuImqP-Xucj9sG1t4JKsvPpMTCjJsvtuh-tf5ofjApra~0X2hcB3W5YhObdJiDfevw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/09-b-otsa_seanchomr-daithe 'https://cf-hls-media.sndcdn.com/playlist/sDgheS0HrWzz.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3NEZ2hlUzBIcld6ei4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzIxNDB9fX1dfQ__&Signature=HaJ-EKAhEZPtJOxcETcBR0AF7FBEr7CwF1ZF2IYc1EH8xBx2z~0mRsRCWWtkPScvqb4WS7jjwP7NEjJIG79GafN~WtwNbDDZ-TSaDc5qX6FmKHrE51s539I1uPFBhUPZbiayuoG3kEVzUR8VwJKPXnAcNAYKdx3nXjTorCJxYFsiS3cYYCv3seFu2gSBjiIYv1olsNe1uENLIVGgSX0wwN3MD6jMRfk9w11MWbg9HmxEEatQixJjDzOPYQTFEtkiwhh6RTHseWVKU5LNBP2GJuImqP-Xucj9sG1t4JKsvPpMTCjJsvtuh-tf5ofjApra~0X2hcB3W5YhObdJiDfevw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ffplay 09-b-otsa_seanchomr-daithe.mp3 
 apt-cache search calibre
 sudo apt-get install calibre
 cd ..
@@ -1998,3 +1979,22 @@ ffmpeg -i GgCpRQIA4Tw.mp4  -acodec pcm_s16le -ac 1 -ar 16000 -ss 565.36 -t 1.14 
 ffplay /tmp/test.wav 
 less ../closed
 less ../closed.tsv 
+du -k .
+df
+ls
+less ../closed.tsv 
+ls -al 
+file xX70iOIl49g.f136.mp4.part
+less YxjozDArTgw.pl.vtt 
+less YYwAN5qT6b0.pl.vtt 
+cat *.vtt
+cat ./*.vtt|grep -v 'WEBVTT'
+cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'
+cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Type:'
+cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'
+cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'|grep -v '^$'
+cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'|grep -v '^$'|wc
+cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'|grep -v '^$' > /tmp/closed-text
+less /tmp/closed-text.words 
+echo $(((22 * 60))
+echo $((22 * 60))
