@@ -1,4 +1,3 @@
-cat cur 
 grep Astro cur 
 grep Astro cur |awk -F'videoId=' '{print $NF}'
 grep Astro cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../astroblast/;svn add ../astroblast/$i.vtt;done
@@ -1997,4 +1996,5 @@ grep 'Creative Commons' *
 grep 'Creative Commons' watch\?v\=*
 rm *.1
 ;s
+ls
 ls
