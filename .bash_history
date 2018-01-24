@@ -1,49 +1,3 @@
-ls
-vi 01-b-otsa_dl-thph-irt-ocht-na.txt
-less ~/ibiotsa.txt
-vi lex.tsv 
-cd ../../scripts/
-ls
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/03-b-otsa_dalladh 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA4OTB9fX1dfQ__&Signature=TaRtdZVayMD0mz2LOXIXGolD2d-mxDZtmMxCPsM6e13oNuFrHSU5COm1zTkqoEySugpuT9t-AR2gBTbKL7vhIyuXZyDsa1l5aMVQOroKOkqApEtEbsbYoN2ok8Zqpb3UnPqsByBk6LM0Hx4eBhaV1~2A9OE8ZIBdk3UjKzQ1zleAgPD7Q~IWfaA8TdJKYxNJWn04mSVOKIe4IP5AOB9lpmJmPig0Eof8WrswBHJeqWk1SiFsEY7Wo6d7GcSIOq4MBX7-TX3aPwnECm-jjIAJX3nerndGI9PBGucda~VgVZRMlfy9YhmNksX~qnbwb6XxOQtxRSLb1MZUT7DWRRQJfw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ls
-#sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat' 
-sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat' 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzEwNzB9fX1dfQ__&Signature=vwtSYuN6IYQMHzs6Ixd08MpIAfmXRoFWKsnSVZwB8mScAkTfu-sVbwrWq8YOjSuZ-Ty6vhPTL~NpY8rCjHrv8Rpd3h7fF-U6pzogLX43BfsgmD-K6eqcsaiZ1Zwq0Efsrhk41UL5SXfvbOBu16sS7SH1DPmJz2fri1pBx6AYtPWlLt5btlFvJa6w7FEuYEzrxW6~YEU-0KAXxjcK9fyzl2p-BZify~EjndckHQo86laO3wx-NBq-QtgJF0R1MzhZN0xT-9H4CXNs4hWMkQmDhbbkb~i2NVuQ~HnNAO8BZw94oFlx6aYEBG6GbC~qkkgqugJf2MI~zeZLDgWgVv4bzg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/05-b-otsa_pl-s-an-il 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExODV9fX1dfQ__&Signature=IvCBbB07hSD4JK5fWYmj~tdAb4Z95Zqcxy7Q7RVtvqVfNhmLRsM7JWaddhGN2ak-7kxeBAANqR2KuMQOJjma3l2ZuWzxn4MViICOKHQcMhIQQ05EyzW1vnyYUBCYa00CWxNW0y5ehL3MbbQErODwKehPWp7o~j9peq8RIk2KZx-PuyCDQdJwocbFgWa02HqKHKeGxYQ3I~T06f60khHZajD6EkxYSHVJ5ujO0GyxDxeKXPqjDpbSacc2lxLAqGwlIcLd6VECoTdOHVGLg8x4k9biVTmUm7lptxE6UDl76j-lp7M90FWCh~A-BpYPIuqyuLZ2kz1nPRh2tDg2CU3ScA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ffplay 03-b-otsa_dalladh.mp3 
-rm 03-b-otsa_dalladh.*
-ffplay 04-b-otsa_tat.mp3 
-rm 04-b-otsa_tat.*
-rm 05-b-otsa_pl-s-an-il.*
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/05-b-otsa_pl-s-an-il 'https://cf-hls-media.sndcdn.com/playlist/QC6nAXGuvjHc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1FDNm5BWEd1dmpIYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA5ODl9fX1dfQ__&Signature=x5VatnUQHQ4oXl0OXrQiLHtMpY6TUPW2Cm1Thd8k2un7LeZmtKL~~jBjiObj0cbQMhKH5kLXB09H95RFClbljPquPslXnXHTi9EhCwyrRHsfGLQ0YU9m47gt9lCNtm~0YuKbm0r~R70IyCKp-SAji0~lH4~U5S0evPMFdOZOf0QtV5O23jStGYAC2jyZ-ew3DC78-Q~AbFAG~3S3a0JIVUq8vcE~8dHVgLxFXY1Uvx2w5jm9kAty2zpCHW1nsMgbQ2WczngGaEPYYoJQt9FgnNhwia25QYmsmO8MT3uzBSh38dRR~rc9DBIZiQXQqYpv-mIrLB7bX2JjHBbiWrdYPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ffplay 05-b-otsa_pl-s-an-il.mp3 
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExOTB9fX1dfQ__&Signature=FlC0FczXJN6Bl4guzty2wUj60tXHKPxibpf99ZBkx5j~vtWoOvKcIqIXCZMpNkrYJDYTO2mjRaU8rw5zxtifuO3aLAixXYq2M6afUvEdqyLIj3Ihlh9EXKC6lSMYcfk66PmRUK89F6Kz05MsmrVg63j8ZkTAvetisvgeuq9wx6Kmwxj4VB8TSm5GFA3mbD4CBesq6ZdTeacc1ScmGUzEYkuqlVRs3ih~1Q~9lf6ZOH5MkrddhhZqDGc6lUrxAeaIuQvb70JWkUbtrsGvBuOtzPOM4iH02YabedUg83K9zdsuKwEnsYl9kZHE9r5T8XiLSLfXjW9sYNraRyoBy7o48Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ#
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExOTB9fX1dfQ__&Signature=FlC0FczXJN6Bl4guzty2wUj60tXHKPxibpf99ZBkx5j~vtWoOvKcIqIXCZMpNkrYJDYTO2mjRaU8rw5zxtifuO3aLAixXYq2M6afUvEdqyLIj3Ihlh9EXKC6lSMYcfk66PmRUK89F6Kz05MsmrVg63j8ZkTAvetisvgeuq9wx6Kmwxj4VB8TSm5GFA3mbD4CBesq6ZdTeacc1ScmGUzEYkuqlVRs3ih~1Q~9lf6ZOH5MkrddhhZqDGc6lUrxAeaIuQvb70JWkUbtrsGvBuOtzPOM4iH02YabedUg83K9zdsuKwEnsYl9kZHE9r5T8XiLSLfXjW9sYNraRyoBy7o48Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ffplay 04-b-otsa_tat.wav 
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/03-b-otsa_dalladh 'https://cf-hls-media.sndcdn.com/playlist/XJhmgDkI4eit.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1hKaG1nRGtJNGVpdC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA2Njh9fX1dfQ__&Signature=J-P0F3KmfNZjuyV2KmstLwBmlz30PaUwk3XYFT-1bypUypBZPrKNsKAq7QFqeyAd5uyZpJQ5w437y7rcBrMKr3H4fkfsyoucXFq7eXt6OyE0NabzT8IAtvwYpxgaF~tcqRRHAQQ42bEyyhdi2ozHZ~z8moD9xFvab~gaa4A-DDJpPaJbVcMExqpcmw9bvEqApDvnbVkuLTAhLvuH2N-m3zcIXQItlzX2xlBDSDkK251PncX1Uuzz-wFKDj03~DowY5O3kfM-gktdaxAcFcG4HOiyhg1XCqh9C3YWjieTExz~T8B5~5OlP5L0oI3Xu6V4-sz5Qa-ODfU5kdVJquPneA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ffplay 03-b-otsa_dalladh.
-ffplay 03-b-otsa_dalladh.wav 
-ls
-mv 0* ../coislife/ibiotsa/
-ls
-rm list-0*
-vi soundcloud.sh 
-cp soundclouda.sh 
-cp soundcloud.sh soundclouda.sh 
-history |grep soundcloud
-vi soundclouda.sh 
-sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/03-b-otsa_dalladh 'https://cf-hls-media.sndcdn.com/playlist/XJhmgDkI4eit.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1hKaG1nRGtJNGVpdC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA2Njh9fX1dfQ__&Signature=J-P0F3KmfNZjuyV2KmstLwBmlz30PaUwk3XYFT-1bypUypBZPrKNsKAq7QFqeyAd5uyZpJQ5w437y7rcBrMKr3H4fkfsyoucXFq7eXt6OyE0NabzT8IAtvwYpxgaF~tcqRRHAQQ42bEyyhdi2ozHZ~z8moD9xFvab~gaa4A-DDJpPaJbVcMExqpcmw9bvEqApDvnbVkuLTAhLvuH2N-m3zcIXQItlzX2xlBDSDkK251PncX1Uuzz-wFKDj03~DowY5O3kfM-gktdaxAcFcG4HOiyhg1XCqh9C3YWjieTExz~T8B5~5OlP5L0oI3Xu6V4-sz5Qa-ODfU5kdVJquPneA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/01-b-otsa_dl-thph-irt-ocht-na 'https://cf-hls-media.sndcdn.com/playlist/1OVqMfTQ17Io.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzFPVnFNZlRRMTdJby4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3MzJ9fX1dfQ__&Signature=trOC-nUEc9qd3UtEMy5zH~J6TGZJtb9V4M1z99dFAvWFkq4ZBBhaLhCq8LsqC8ngUfUBCq2v5jVWxtq7rJaxMHgcle1GARMmSGL9rY89d1OzgTY8YuRPGVH6m-qORTwWiYiEUoiuo~c9rkYcm6f~uIMoPrfrVWIqlns-rIjxrxEoF4MMH13P-TSM3vpLimvCFvGU1U12-qOJilzH6Fbq7dHodeUiDFvjhKaSxhcM2ij6vpFkK982MD8D88OVGctysRTNA0k74MgLP30YV~3sa9JOHOmwxlIGzGUVguaCfvVYeFRrbvsGxFSpJ~8cPu7W7hXJHkhZsKyeRNXUWhyg3A__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-vi soundcloud.tsv 
-sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/02-b-otsa_cuairt-ghairid 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3NzV9fX1dfQ__&Signature=rU2jPLy3bqYgPaqyhyzIIRio0iCC1Bm5vzcLMMIEjiYLfeIZM7aHCJI-KJGFCd~POSijQFLMCLE6h4ZMonfJzPFEQdkbhX8RtOry4-F2DboHbdCuclwSCqPVSAw3rOBsak2XmcYMpNKuwhJ9T1ePGiejKSDut1LeSayJKCnpc-DK2Uco1ZoFC2ACydbSoY6pB0cmiRHOT02fNnpf66hckb9UpvOHf7MCDvqoEB1rYLsGMTHCF4HPPt5eQODuPNOF-yIbZJDsGYtDK2ufLpVhC4q-bYhgoYeQhwLH-~BhfvlSP2iEqdyyu0IBDy3GKoQcNX59~gSEFlvug84jbLPX4Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-vi soundcloud.tsv 
-sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/04-b-otsa_tat 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3ODh9fX1dfQ__&Signature=XMMVUJSCN9xVFPMKizXxrdkm~CRvib67kBDz72fsQ~nAsUoBD1BK8iXX~Bbsl~GPUZlpvVLcyLtxPLB4VYQB~K7T8Q0OGUy1LVfzT3lTWIvTftO0dP6XH96-eEW0OqTip2d0wT87yt-TW-gZlMXfNIuJlI~2XUdh4VVC1SZesLbCtd7dCqRESUHVR-p1TVGMpg6RnnRqvRXRMx4iJ1HDu0zLMPAZ9m4MbfYswPQa-R0Dtuo5zD6e4mp2EbKDhbDBhpJUUO5vuUnIOmWi1ZRAJdjvyjdi1xKd8d393aW-kbLcMTaCrWmnuZW6uq0gnNjZKo4iqQ~BbSJG42QpADnTIA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-sh soundclouda.sh https://soundcloud.com/cois-life-teoranta/05-b-otsa_pl-s-an-il 'https://cf-hls-media.sndcdn.com/playlist/QC6nAXGuvjHc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1FDNm5BWEd1dmpIYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE2NzB9fX1dfQ__&Signature=LZUkqMryaO~bYGEFKLki7fCGlwyQ8rDBVBVJcehAcQV-gtVhxc~KT-CfRm~-GYkK2xpjmJ41HY4xJFv~R7qjAAtCYNhGQyx--ABQzsqoWaQ3F8UqEBKf3FQ5JtzhYHnkC0b7bJHDZVGjwAKsLBYZ72jbroG1Ro552gytECbPQrGQxnoUJ8x5Gtks1URfejs0KvhiOzHrGVVVmLlSrLszaGhxXRs8oRLoS941KZD-S7HQVzICE9d9dtuNxnfDyq-17z21lJSEkr7Mk93WhxhsaIq2-k-5yu5YuvZemhx7aVOcngeaV1ofnjcK66x~6JemfWZ~MKYEcfXvvZVcDn51NA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/06-b-otsa_r-ndiamhair-san 'https://cf-hls-media.sndcdn.com/playlist/clyU9WzLOQCn.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L2NseVU5V3pMT1FDbi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE5OTd9fX1dfQ__&Signature=RfZaQxu9BuVg2bXx6ZJ6Hnbrg6PtLEILGQ-qHl0bGWpG~ZNBxrTb2ffKc5sCs~EU8oNipidqqbCncLnA6u38XmmjF7cMBto3M1t149e7Ikz47s9wZoPAV71FFQQZmyLls8byM0Cl8c~qojMwrS~zEkLk~XvRE4dkd0oWmMdDUWtgyjjKPqPbkezpDrm1oQUBHu5Fz5KjXoRiFawulSN0vj2gr~0FWc3Au9zFwvGEFOXoypF0OHTJp7Uxo5DJ4bfMEnYqANqpzH8FDVJS8IGYm3Mob4M-gtvOzcOpLp-rZHGHTAxoe07kkTdoWceS27MXhkNRzeAshKVf8U6tXX65MA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ffplay 06-b-otsa_r-ndiamhair-san.mp3 
-#sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/07-b-otsa_pluais-an-tobac 
-vi soundcloud.sh 
-rm soundclouda.sh 
-sh soundcloud.sh https://soundcloud.com/cois-life-teoranta/07-b-otsa_pluais-an-tobac 'https://cf-hls-media.sndcdn.com/playlist/EfsIqtNC3aXE.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0Vmc0lxdE5DM2FYRS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4NzR9fX1dfQ__&Signature=vo~~vCmWeXoa9pcgabQysvYghvwuX4hqBXSea4oJsmp81h8KbEsLBB~1hPB70kE1GxwUabjSVF1bHSdnJWxk1t8J-g5KICgpOQfcdDSSWpiTKriPrbaDYo94GHlcu5EVFEeOd9DCs5GbIfyDeGMuSowTPcaERSIqk2hLuaBe2VGq8JoCM8wBHEqc-9~iT55KedUN~G0DVDYrg4qEm5FXAQDYXhDPKehrGICzrmDMDx9Sw~B~sgrN54me2tfdhefVfufalCqel1RVDgn3o4t7Fa5bfuK3ZV4pmySst2sUh1a6XMfaTj5RHl8C73fHKEK1k9yk0MRpDIngU5h44rUCOQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
 ffplay 07-b-otsa_pluais-an-tobac.mp3 
 sh soundcloud.sh 'https://soundcloud.com/cois-life-teoranta/08-b-otsa_an-mhaidhm?in=cois-life-teoranta/sets/ibiotsa' 'https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3Mzh9fX1dfQ__&Signature=g386tzV1BPWkkD7s~ubFC44eUUPdsL7Hr3K39TgEHl5nVRhpcJ7cAGHVn6V7UXCSze7~xJhxGjWek06Ye~f3eHglS56-khh9LbR2MrbmIveKVRJygKdsXVyXvZG~um8KMoArjqaepNoCONGMD-lUpOqIHJrnv~4PedOwVydOoLjkqzYkfNEIpRQ4knpjEpMaRSw59P4B2U2r0hnfeXft~QB7l584FPE0uuAvfhXU~pmxDpmv2WF-pec07pdA34zgM8g7BCUh3mp6kVQL~g0nBiVNXhZqsKAq9g1jowLRgjy6FdAtt7hsGW3cedIYSCz6rPC~8sVKU5DlwdM2AfkkPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
 ls
@@ -1998,3 +1952,49 @@ less Uf1eCznOxsQ.txt
 less rnUxqkIHwHQ.aud 
 ls
 vi ../open.tsv 
+man ffplay
+ffplay -ss 13.352 -t 5.561  2Na77jcxMyA.mkv 
+ffplay -ss 12.299 -t 1.053  2Na77jcxMyA.mkv 
+ffplay -ss 13 -t 1.053  2Na77jcxMyA.mkv 
+ffplay -ss 14 -t 1.053  2Na77jcxMyA.mkv 
+ffplay -ss 15 -t 1.053  2Na77jcxMyA.mkv 
+ffplay -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
+ffmpeg -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
+ffplay -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
+ffmpeg -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 12.299 -t 5.561  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss  18.913 -t 2.306  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 12.299 -t 1.053  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 11.246 -t 1.053  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 12.299 -t 5.561  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1323.113 -t 7.133  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1329.193 -t 7.133  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1329.193 -t 7.133  /tmp/test.wav
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1322.06.193 -t 7.133  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1322.06 -t 7.133  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1322.56 -t 7.133  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 11.8 -t 1.053  /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 11.3 -t 1.053  /tmp/test.wav
+ffplay /tmp/test.wav 
+ls ./*vtt
+less GgCpRQIA4Tw.pl.vtt 
+ffmpeg -i GgCpRQIA4Tw.mp4  -acodec pcm_s16le -ac 1 -ar 16000 -ss 2.04 -t 5.56  /tmp/test.wav
+ffplay /tmp/test.wav 
+less GgCpRQIA4Tw.pl.vtt 
+ffmpeg -i GgCpRQIA4Tw.mp4  -acodec pcm_s16le -ac 1 -ar 16000 -ss 565.36 -t 1.14  /tmp/test.wav
+ffplay /tmp/test.wav 
+less ../closed
+less ../closed.tsv 
