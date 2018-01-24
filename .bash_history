@@ -1,48 +1,3 @@
-grep 5564672953001 videos.tsv 
-mv 5564672953001.* ../astroblast/
-svn add ../astroblast/5564672953001.* 
-grep 5705986186001 videos.tsv 
-mv 5705986186001.* ../olivia/
-svn add ../olivia/5705986186001.*
-cd ..
-svn ci -m more
-sudo mv ~/Downloads/gle.traineddata /usr/local/share/tessdata/
-ls
-svn ci -m rest
-ping 178.62.77.24
-telnet 178.62.77.24 8080
-telnet 178.62.77.24 80
-cd coislife/ibiotsa/
-ls
-vi 01-b-otsa_dl-thph-irt-ocht-na.txt
-svn add 01-b-otsa_dl-thph-irt-ocht-na.
-svn add 01-b-otsa_dl-thph-irt-ocht-na.txt 
-svn ci -m text
-ls
-cp ../../../../wolne-lektury-audio-corpus/run-aeneas.sh .
-less run-aeneas.sh 
-sh run-aeneas.sh 01-b-otsa_dl-thph-irt-ocht-na.mp3 01-b-otsa_dl-thph-irt-ocht-na.txt 
-vi run-aeneas.sh 
-sh run-aeneas.sh 01-b-otsa_dl-thph-irt-ocht-na.mp3 01-b-otsa_dl-thph-irt-ocht-na.txt 
-vi lex.tsv
-less ~/ibiotsa.txt
-cp ~/ibiotsa.txt 01-b-otsa_dl-thph-irt-ocht-na.aud.txt
-vi 01-b-otsa_dl-thph-irt-ocht-na.aud.txt 
-svn add 01-b-otsa_dl-thph-irt-ocht-na.aud.txt 
-vi 01-b-otsa_dl-thph-irt-ocht-na.edit.tsv
-svn add 01-b-otsa_dl-thph-irt-ocht-na.edit.tsv
-mkdir ../../../cl
-cp 01-b-otsa_dl-thph-irt-ocht-na.edit.tsv ../../../cl/
-ls
-svn status
-svn ci -m add
-ping phoneticsrv3.lcs.tcd.ie
-ping phoneticsrv2.lcs.tcd.ie
-ping phoneticsrv.lcs.tcd.ie
-ping phoneticsrv1.lcs.tcd.ie
-ping lcs.tcd.ie
-ping www.tcd.ie
-ping google.ie
 ls
 vi 01-b-otsa_dl-thph-irt-ocht-na.txt
 less ~/ibiotsa.txt
@@ -1998,3 +1953,48 @@ cat /tmp/ciek|sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print $2}'
 cat /tmp/ciek|sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'|sort|uniq > list
 cat list |sh ../dl.sh 
 ls
+man youtube-dl 
+vi ../dl.sh 
+ls
+find . -size 0
+cd ..
+ls
+cd ../lipread/UC7nnculccfROWQueO2fmuJg/
+ls
+echo https://www.youtube.com/watch?v=xaXI2PQXmTE |sh ../dl.sh 
+ls
+for i in *.pl.vtt;do id=$(basename $i .pl.vtt);cp watch\?v=$id $id.html;done
+ls
+rm watch\?v\=*
+ls
+vi README
+ls
+for i in *html;do grep 'Creative Commons' $i || echo $i;done
+for i in *.vtt;do cat $i |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl > $i.aud;done
+ls
+vi speakers.tsv
+ls
+ls ~/*.aud
+mv ~/29C_AQz50dM.aud .
+mv ~/3pdgYF1_fVA.aud .
+mv ~/6BAY5qX-y18.aud .
+mv ~/[A-Za-z]*.aud .
+ls
+cd ..
+ls
+ls UC*
+ls UC*/*aud
+ls
+ls UC*/*txt
+ls
+cd ..
+ls
+cd free-nosubs/
+ls
+less dt1dP97TZxU.
+less dt1dP97TZxU.txt 
+less Rsw6a1rUOf4.txt
+less Uf1eCznOxsQ.txt 
+less rnUxqkIHwHQ.aud 
+ls
+vi ../open.tsv 
