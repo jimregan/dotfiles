@@ -1,8 +1,3 @@
-tail -n 10 videos.tsv |awk -F'\t' '{print $6}'
-tail -n 10 videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O $id.vtt;done
-less 5703027186001.vtt
-ls
-tail -n 10 videos.tsv > cur
 cat cur 
 grep Astro cur 
 grep Astro cur |awk -F'videoId=' '{print $NF}'
@@ -1998,3 +1993,8 @@ rm 33hpx6a0SU4*
 grep 33hpx6a0SU4 list |sh ../dl.sh 
 ls
 history -a
+grep 'Creative Commons' *
+grep 'Creative Commons' watch\?v\=*
+rm *.1
+;s
+ls
