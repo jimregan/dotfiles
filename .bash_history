@@ -1,5 +1,3 @@
-apt-cache search calibre
-sudo apt-get install calibre
 cd ..
 svn status
 svn ci -m rest
@@ -1998,3 +1996,5 @@ cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:
 less /tmp/closed-text.words 
 echo $(((22 * 60))
 echo $((22 * 60))
+ls ./*vocab
+cat ./kaQWt2BSgfs.pl.vtt.vocab
