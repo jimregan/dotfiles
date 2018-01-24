@@ -1,14 +1,3 @@
-cd ..
-svn status
-svn ci -m rest
-svn ci -m 'next book'
-svn ci -m 'front matter from the soundcloud page'
-ls scripts/
-ffplay scripts/hata-zu-mhamo-caibidil-5-10-000001.mp3 
-ffplay scripts/hata-zu-mhamo-caibidil-5-10-000002.mp3 
-ffplay scripts/hata-zu-mhamo-caibidil-5-10-000003.mp3 
-ffplay scripts/hata-zu-mhamo-caibidil-5-10-000005.mp3 
-ffplay scripts/hata-zu-mhamo-caibidil-5-10-000004.mp3 
 ffplay scripts/hata-zu-mhamo-caibidil-5-10-000001.mp3 
 ffplay scripts/hata-zu-mhamo-caibidil-11-15-000001.mp3 
 svn add coislife/hatazumhamo/*
@@ -1998,3 +1987,14 @@ echo $(((22 * 60))
 echo $((22 * 60))
 ls ./*vocab
 cat ./kaQWt2BSgfs.pl.vtt.vocab
+ls *vtt|wc
+ls ./*vtt|wc
+ls
+less ./-ZXfhlLJXcc.
+less ./-ZXfhlLJXcc.pl.vtt 
+ls
+grep Marcin *vtt
+grep Marcin ./*vtt
+grep Jakub ./*vtt
+grep Anna ./*vtt
+less ./2Na77jcxMyA.pl.vtt
