@@ -1,88 +1,3 @@
-grep Astro cur 
-grep Astro cur |awk -F'videoId=' '{print $NF}'
-grep Astro cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../astroblast/;svn add ../astroblast/$i.vtt;done
-grep Cat cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../catahata/;svn add ../catahata/$i.vtt;done
-grep Oliv cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../olivia/;svn add ../olivia/$i.vtt;done
-grep Garf cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../garfield/;svn add ../garfield/$i.vtt;done
-grep Whiz cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../whizsachistin/;svn add ../whizsachistin/$i.vtt;done
-grep Garf cur|tail -n 1 |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.vtt ../garfield/;svn add ../garfield/$i.vtt;done
-cd ..
-svn status
-cat */5703027186001.vtt
-echo */5703027186001.vtt
-svn ci -m more
-svn diff
-grep Garf cur|tail -n 1 |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../garfield/;svn add ../garfield/$i.wav;done
-cd scripts/
-grep Garf cur|tail -n 1 |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../garfield/;svn add ../garfield/$i.wav;done
-grep Cat cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../catahata/;svn add ../catahata/$i.wav;done
-grep Oliv cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../olivia/;svn add ../olivia/$i.wav;done
-grep Astro cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../astroblast/;svn add ../astroblast/$i.wav;done
-ls
-grep 5420430886001 videos.tsv 
-grep 5704464177001 videos.tsv 
-grep Whiz cur |awk -F'videoId=' '{print $NF}'|while read i;do mv $i.wav ../whizsachistin/;svn add ../whizsachistin/$i.wav;done
-rm 5420430886001.wav 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703122531001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5700775958001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=30'
-ls ../rosnarun/
-tail videos.tsv 
-tail -n 2 videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}'); wget $i -O ../rosnarun/$id.vtt;done
-svn add ../rosnarun/5703122531001.vtt ../rosnarun/5700775958001.vtt
-cd ..
-svn ci -m more
-svn ci -m 'There are a few Cois Life audiobooks about. No text yet, but it at least exists'
-mv ~/Downloads/Ibiotsa_Sliocht_Caib1.pdf coislife/ibiotsa/
-svn add coislife/ibiotsa/Ibiotsa_Sliocht_Caib1.pdf 
-git commit -m 'excerpt from Ibiotsa'
-svn commit -m 'excerpt from Ibiotsa'
-pdftohtml coislife/ibiotsa/Ibiotsa_Sliocht_Caib1.pdf 
-less coislife/ibiotsa/Ibiotsa_Sliocht_Caib1.html 
-less coislife/ibiotsa/Ibiotsa_Sliocht_Caib1s.html 
-less ~/ibiotsa.txt 
-ffplay scripts/caibidil-2-000001.mp3 
-mkdir ~/ga-books
-mkdir ~/ga-books/2008
-mv ~/jenkinson.txt ~/ga-books/2008/
-mkdir ~/ga-books/2017
-mkdir coislife/idirmhilisnambeo
-wget http://www.siopa.ie/siopa_files/PDFs/Extract/I_dtir_mhilis_na_mbeo_.pdf
-mv I_dtir_mhilis_na_mbeo_.pdf coislife/idirmhilisnambeo/
-mv ~/oconaire.txt ~/ga-books/2008/
-cp ~/oceallachain.txt coislife/idirmhilisnambeo/I_dtir_mhilis_na_mbeo_.txt
-cd ../../..
-git add cl/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
-cp TG4/coislife/ibiotsa/lex.tsv cl/
-git commit -m add
-git branch
-git add cl/lex.tsv 
-vi cl/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
-git add cl/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
-git commit -m lex
-svn status
-cd TG4/
-svn status
-svn diff
-svn ci -m more
-mv coislife/ibiotsa/01-b-otsa_dl-thph-irt-ocht-na.aud coislife/ibiotsa/01-b-otsa_dl-thph-irt-ocht-na.aud.txt 
-svn diff
-svn ci -m 'all available text'
-vi coislife/ibiotsa/lex.tsv 
-vi coislife/ibiotsa/01-b-otsa_dl-thph-irt-ocht-na.edit.tsv 
-cd scripts/
-ls
-ffplay 09-b-otsa_seanchomr-daithe.wav 
-mv 0* ../coislife/ibiotsa/
-svn add ../coislife/ibiotsa/0*
-svn ci -m more
-cd ..
-svn ci -m more
-ls
-cd scripts/
-ls
-grep 5485696369001 videos.tsv 
-mv 5485696369001.* ../garfield/
-svn add ../garfield/5485696369001.* 
 grep 5564672953001 videos.tsv 
 mv 5564672953001.* ../astroblast/
 svn add ../astroblast/5564672953001.* 
@@ -1997,4 +1912,89 @@ grep 'Creative Commons' watch\?v\=*
 rm *.1
 ;s
 ls
+ls
+cd ..
+ls
+cd UC3urWQ2XJxw2OfNWjgJpYBA/
+ls
+cd ..
+ls
+cd UC5BzFlIJQJUX2frWOr-ckYA/
+ls
+cd ..
+ls
+cd UCCrNTrYVU6U2VtzPvmV3U3g/
+ls
+cd ..
+ls
+cd UCdxQkHxvxKDsspB5pFPtYkA/
+ls
+cd ..
+ls
+cd UCjc3C8pOIhSKlPVXnDsne-Q/
+ls
+cd ..
+ls
+find . -name '*.vtt'
+cd free-nosubs/LekarzMedycynyPracy/
+ls
+cat /tmp/panel 
+cat /tmp/panel |grep watch
+cat /tmp/panel |grep watch|sed -e 's/href="/\nhref="/g'|grep '^href'
+cat /tmp/panel |grep watch|sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print $2}'
+cat /tmp/panel |grep watch|sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}' > list
+ls
+for i in *.mp4;do echo $i;done
+for i in *.mp4;do id=$(echo $i|awk -F'-' '{print $NF}');echo $id;done
+ls
+for i in *.mp4;do id=$(echo $i|awk -F'-' '(NF==2){print $NF}(NF==3){print $2"-"$3}'');echo $id;done
+for i in *.mp4;do id=$(echo $i|awk -F'-' '(NF==2){print $NF}(NF==3){print $2"-"$3}');echo $id;done
+cat list 
+ls
+rm *vtt *mp4 *mkv
+ls
+rm *part *webm
+ls
+vi ../dl.sh 
+cat list |sort|uniq|sh ../dl.sh 
+ls
+find . -size 0
+find . -size 0 -delete
+ls
+ls *part
+vi ../dl.sh 
+cat list 
+ls *.part
+ls *.part|awk -F'.' '{print $1}'
+ls *.part|awk -F'.' '{print "https://www.youtube.com/watch?v=" $1}'
+ls *.part|awk -F'.' '{print "https://www.youtube.com/watch?v=" $1}' | sh ../dl.sh 
+ls
+ls *part
+rm *.1
+rm *.2
+ls
+ls *.part|awk -F'.' '{print "https://www.youtube.com/watch?v=" $1}' | sh ../dl.sh 
+ls
+ls *.part
+ls xVl_wagyW6g*
+rm xVl_wagyW6g.*
+echo xVl_wagyW6g|awk  '{print "https://www.youtube.com/watch?v=" $1}' | sh ../dl.sh 
+ls
+cd ..
+ls
+mv LekarzMedycynyPracy/ ../lipread/
+mv dsnopek/ ../lipread/
+ls
+cd ..
+ls
+cd lipread/
+ls
+mkdir CiekawostkiOPoranku
+cd CiekawostkiOPoranku
+cat /tmp/ciek
+cat /tmp/ciek|sed -e 's/href="/\nhref="/g'
+cat /tmp/ciek|sed -e 's/href="/\nhref="/g'|grep '^href'
+cat /tmp/ciek|sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print $2}'
+cat /tmp/ciek|sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'|sort|uniq > list
+cat list |sh ../dl.sh 
 ls
