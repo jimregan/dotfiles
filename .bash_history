@@ -1,111 +1,3 @@
-cat TG4/bealoideasbeo/5555995052001.aud.txt|head -n 20
-less vtt-patches/5537750827001.mod 
-grep 
-grep '\-\->' TG4/bealoideasbeo/5555995052001.vtt |head -n 20|awk '{print $1}'
-cat TG4/bealoideasbeo/5555995052001.aud.txt|head -n 20
-killall telnet
-tail -f 1.err 
-less 1.err 
-tail -f 1.err 
-ls
-less 1.out 
-tail wyspa-skarbow.txt-01.txt.sent 
-less 1.out 
-grep '"r"' 1.
-grep '"r"' 1.*
-less wyspa-skarbow.txt-01.txt.sent 
-less 1.out 
-less wyspa-skarbow.txt-01.txt.sent 
-less 1.out 
-less wyspa-skarbow.txt-01.txt.sent 
-less 1.out 
-less cmusphinx-clarinpl/pl.dic
-less 1.out 
-less 1.err 
-less ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
-perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out 
-perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out |less
-less wyspa-skarbow.txt-01.txt.sent 
-less ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
-perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out |less
-perl ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl wyspa-skarbow.txt-01.txt.sent 1.out > al1.txt
-audacity 
-less 2.out 
-wc -l 2.out 
-cat wyspa-skarbow.txt-02.txt.sent |tr  ' ' '\n'|wc
-ls
-tail -f 6.err 
-less 6.out 
-wc -l 1.out 
-cat wyspa-skarbow.txt-01.txt.sent |tr  ' ' '\n'|wc
-less ~/disk/Playing/wolne-lektury-audio-corpus/merge-forced-alignment.pl 
-perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent 
-perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent  > 1.jsgf
-less 1.jsgf 
-sphinx_jsgf2fsg 1.jsgf 
-sphinx_jsgf2fsg -h
-sphinx_jsgf2fsg 
-sphinx_jsgf2fsg -jsgf 1.jsgf -fsg 1.fsg
-less 1.fsg 
-less 1.jsgf 
-less 1.fsg 
-perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent  > 1.jsgf
-less 1.jsgf 
-sphinx_jsgf2fsg -jsgf 1.jsgf -fsg 1.fsg
-less 1.jsgf 
-perl /tmp/mkjsfg.pl wyspa-skarbow.txt-01.txt.sent  > 1.jsgf
-sphinx_jsgf2fsg -jsgf 1.jsgf -fsg 1.fsg
-less 1.fsg 
-pocketsphinx_batch 
-pocketsphinx_continuous 
-pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict cmusphinx-clarinpl/pl.dic
-pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict cmusphinx-clarinpl/pl.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav 
-pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict cmusphinx-clarinpl/pl.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > psout 2> pserr
-less pserr 
-less cmusphinx-clarinpl/pl.dic
-pocketsphinx_continuous -time yes -jsgf 1.jsgf -hmm cmusphinx-clarinpl -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > psout 2> pserr
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/leftin |sort|uniq |awk '{print "{{pl-IPA-auto|"$0"}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;s/ $//'|grep -v '^$' > /tmp/rightin
-paste /tmp/lefta /tmp/rightin |sed -e 's/ *$//' >> ../pron-data/gen.tsv 
-paste /tmp/leftin /tmp/rightin |sed -e 's/ *$//' >> ../pron-data/gen.tsv 
-man -k align
-ls
-cd ../../wolne-lektury-audio-corpus/
-cd text/
-perl ../apply-specific.pl 
-git diff
-got add wyspa-skarbow.txt-0*txt
-git add wyspa-skarbow.txt-0*txt
-git commit -m more
-git diff
-git add doktor-piotr.txt 
-git commit -m more
-cat wyspa-skarbow.txt-0*txt
-cat wyspa-skarbow.txt-0*txt|perl ../clean.pl 
-cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
-cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
-grep -i kapitana wyspa-skarbow.txt-0*txt
-grep -i kapitana wyspa-skarbow.txt-0*txt|grep "'"
-vi ../specific-norms.tsv 
-perl ../apply-specific.pl 
-git diff
-cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
-cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv |sort|uniq
-cat wyspa-skarbow.txt-0*txt|perl ../clean.pl |tr ' ' '\n' |perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv |sort|uniq > /tmp/leftin 
-less ../ipa-to-cmu.pl 
-less ../merge-forced-alignment.pl 
-cd ..
-ls
-cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl 
-less ../msf-asr/gaipa-to-arpabet.pl 
-ls ../msf-asr/scripts/
-less ../msf-asr/scripts/fix-dictionary-pronunciations.pl 
-less ../msf-asr/scripts/abair-to-russian.tsv 
-less ../msf-asr/scripts/cnaglar.pl 
-ls ../msf-asr/scripts/*pl
-less ../msf-asr/scripts/abair-norm-dict.pl 
-less ../msf-asr/scripts/map-to-russian.pl 
 grep sene ../msf-asr/scripts/*pl
 grep seen ../msf-asr/scripts/*pl
 cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl 
@@ -1998,3 +1890,111 @@ less google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt
 perl merge-google-with-silences.pl silences/018-autor-nieznany-piesn-o-rolandzie.mp3.sil text/piesn-o-rolandzie.txt-18.txt google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
 less google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
 perl merge-google-with-silences.pl silences/018-autor-nieznany-piesn-o-rolandzie.mp3.sil text/piesn-o-rolandzie.txt-18.txt google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+cd ../text/
+ls
+ls *rolandzie*
+less piesn-o-rolandzie.txt 
+grep '^[CXVLI]+$' piesn-o-rolandzie.txt 
+grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt 
+grep XI *pl
+grep XI ../*pl
+perl ../NumberNorm.pm num2text 291
+a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt 
+a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk "{print \"        '\"$0\"',\"}"
+a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk "{print \"        '\" $0 \"',\"}"
+a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk '{print "        \"" $0 "\","}'
+grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk '{print "        \"" $0 "\","}'  > /tmp/fooo
+vi ../splitter.pl 
+less /tmp/fooo 
+vi ../splitter.pl 
+cd ,,
+cd ..
+git diff
+git add splitter.pl 
+git commit
+cd -
+less piesn-o-rolandzie.txt 
+perl ../header-replace.pl piesn-o-rolandzie.txt 
+perl ../header-replace.pl piesn-o-rolandzie.txt > tmp
+mv tmp piesn-o-rolandzie.txt 
+git diff
+git add piesn-o-rolandzie.txt 
+git commit -m header
+perl ../splitter.pl piesn-o-rolandzie.txt 
+ls piesn-o-rolandzie.txt*
+git rm piesn-o-rolandzie.txt 
+git add piesn-o-rolandzie.txt-*
+git commit -m split
+less piesn-o-rolandzie.txt-01.txt 
+less piesn-o-rolandzie.txt-02.txt 
+git log
+git revert d1f0463e1d82feb20c65666548cee4b968d8f49e
+grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt 
+a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf("piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
+a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf "piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
+less piesn-o-rolandzie.txt 
+a=1;grep '^[CXVLI][CXVLIH]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf "piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
+a=1;grep '^[CXVLI][CXVLIH]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf "piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done >> ../specific-norms.tsv 
+cd ..
+git diff
+git add splitter.pl specific-norms.tsv 
+git commit 
+git diff
+git add header-replace.pl 
+git commit -m more
+git branch
+git log
+less text/kim.txt-00.txt
+cd text/
+perl ../splitter.pl piesn-o-rolandzie.txt 
+less piesn-o-rolandzie.txt-01.txt 
+less piesn-o-rolandzie.txt-287.txt 
+less piesn-o-rolandzie.txt-02.txt 
+less piesn-o-rolandzie.txt-01.txt 
+grep '\r' piesn-o-rolandzie.txt-01.txt
+perl ../splitter.pl piesn-o-rolandzie.txt 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+less piesn-o-rolandzie.txt-01.txt 
+less /tmp/aout 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+less piesn-o-rolandzie.txt-01.txt 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+less piesn-o-rolandzie.txt-01.txt 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+less piesn-o-rolandzie.txt-01.txt 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less piesn-o-rolandzie.txt-01.txt 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less piesn-o-rolandzie.txt-01.txt 
+less /tmp/aout 
+perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
+less /tmp/aout 
+less piesn-o-rolandzie.txt-01.txt 
+less piesn-o-rolandzie.txt-02.txt 
+less piesn-o-rolandzie.txt-291.txt 
+git rm piesn-o-rolandzie.txt 
+git add piesn-o-rolandzie.txt-*
+git commit -m split
+cd ..
+git diff
+git add splitter.pl 
+git commit -m 'fix splitting for piesn o rolandzie'
+cd text/
+perl ../normalisations.tsv 
+perl ../apply-specific.pl 
+git diff
+git add piesn-o-rolandzie.txt-*
+git commit -m norms
+less piesn-o-rolandzie.txt-01.txt 
