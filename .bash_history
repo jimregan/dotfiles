@@ -1,30 +1,3 @@
-grep sene ../msf-asr/scripts/*pl
-grep seen ../msf-asr/scripts/*pl
-cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl 
-cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl |grep ')'
-cat pron-data/gen.tsv pron-data/pronounce-as.gen.tsv |sort|uniq |perl ipa-to-cmu.pl |perl ../msf-asr/scripts/number-dic.pl > ../sphinx-alignment/cmusphinx-alignment-example/plps.dic
-less ~/ibiotsa.txt
-ls
-config add .bash_history 
-config commit -m masd
-less .bash_history 
-sudo umount /tmp/mnt/3 
-lsof
-sudo umount /tmp/mnt/3 
-vi /etc/fstab 
-blkid 
-vi /etc/fstab 
-sudo vi /etc/fstab 
-mount disk
-sudo vi /etc/mtab 
-sudo mount disk
-ls -al dis
-ls -al disk/
-ls
-cat spoken-like*
-mkdir disk
-man 5 fstab
-cd disk/Playing/
 ls
 cd spinx/
 ls
@@ -1998,3 +1971,30 @@ git diff
 git add piesn-o-rolandzie.txt-*
 git commit -m norms
 less piesn-o-rolandzie.txt-01.txt 
+sudo apt-get install libsox2 libsox-dev libstdc++6 libgomp1 libpthread
+sudo apt-get install libsox2 libsox-dev libstdc++6 libgomp1 
+cd ../../
+ls
+git clone https://github.com/mozilla/DeepSpeech
+git clone https://github.com/mozilla/tensorflow/
+cd tensorflow/
+ls
+less README.Mozilla.md 
+less README.md 
+bazel
+bazel build
+ls
+ln -s ../DeepSpeech/native_client ./
+ls
+bazel build -c opt --copt=-O3 //tensorflow:libtensorflow_cc.so //tensorflow:libtensorflow_framework.so //native_client:deepspeech //native_client:deepspeech_utils //native_client:libctc_decoder_with_kenlm.so //native_client:generate_trie
+./configure 
+bazel build 
+rm -rf ~/.cache/bazel/
+./configure 
+bazel build -c opt --copt=-O3 //tensorflow:libtensorflow_cc.so //tensorflow:libtensorflow_framework.so //native_client:deepspeech //native_client:deepspeech_utils //native_client:libctc_decoder_with_kenlm.so //native_client:generate_trie
+rm -rf ~/.cache/bazel/
+./configure 
+bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+vi /home/jim/.cache/bazel/_bazel_jim/30c949345361fce562609ee36278d5c0/external/local_config_sycl/sycl/BUILD 
+bazel build --config=opt --config=cuda --config=opt --incompatible_load_argument_is_label=false  //tensorflow/tools/pip_package:build_pip_package
+bazel build --config=opt --config=cuda --config=opt --incompatible_load_argument_is_label=false   --copt=-O3 //tensorflow:libtensorflow_cc.so //tensorflow:libtensorflow_framework.so //native_client:deepspeech //native_client:deepspeech_utils //native_client:libctc_decoder_with_kenlm.so //native_client:generate_trie
