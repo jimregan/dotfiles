@@ -1,8 +1,4 @@
 ls
-cd spinx/
-ls
-cd ../sphinx-alignment/
-ls
 cd cmusphinx-alignment-example/
 ls
 less align.sh 
@@ -1998,3 +1994,7 @@ bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_
 vi /home/jim/.cache/bazel/_bazel_jim/30c949345361fce562609ee36278d5c0/external/local_config_sycl/sycl/BUILD 
 bazel build --config=opt --config=cuda --config=opt --incompatible_load_argument_is_label=false  //tensorflow/tools/pip_package:build_pip_package
 bazel build --config=opt --config=cuda --config=opt --incompatible_load_argument_is_label=false   --copt=-O3 //tensorflow:libtensorflow_cc.so //tensorflow:libtensorflow_framework.so //native_client:deepspeech //native_client:deepspeech_utils //native_client:libctc_decoder_with_kenlm.so //native_client:generate_trie
+vi 5CkxwcyJLvk.tt.xml
+vi NmvNner1ZU0.tt.xml.orig
+cp NmvNner1ZU0.tt.xml.orig NmvNner1ZU0.tt.xml
+vi NmvNner1ZU0.tt.xml
