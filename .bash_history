@@ -1,19 +1,3 @@
-grep https://www.youtube.com/watch?v=8N3ohjW3PP4 ../closed.tsv 
-grep https://www.youtube.com/watch?v=uZnpq9L6euo ../closed.tsv 
-grep https://www.youtube.com/watch?v=G9zTK90ZNXQ ../closed.tsv 
-grep https://www.youtube.com/watch?v=a1KcQR5LLWw ../closed.tsv 
-grep https://www.youtube.com/watch?v=t14CFztvnFM ../closed.tsv 
-grep https://www.youtube.com/watch?v=ty0cngyACj8 ../closed.tsv 
-cat altkom.tsv 
-cat altkom.tsv |awk -F'\t' '{print $1 "\thttps://www.youtube.com/channel/UCvSkBmTA0m9GlbqAaXae1dw\t" $2 "\t1\t0"}'
-cat altkom.tsv |awk -F'\t' '{print $1 "\thttps://www.youtube.com/channel/UCvSkBmTA0m9GlbqAaXae1dw\t" $2 "\t1\t0"}' >> ../closed.tsv 
-ls
-cat /tmp/parrots 
-cat /tmp/parrots |sed -e 's/href="/\nhref="/g'
-cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'
-cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'
-cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq|while read i;do grep $i ../closed.tsv ;done
-cat /tmp/parrots |sed -e 's/href="/\nhref="/g'|grep '^href'|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq|while read i;do grep $i ../closed.tsv || echo $i >> parrots/list;done
 cd parrots/
 ls
 cat list |sh ../RobertMarchelTV/dl.sh 
@@ -1998,3 +1982,19 @@ less wd-8
 for i in $(seq 8 291);do echo >> /tmp/allwd; cat wd-$i >> /tmp/allwd;done
 rm /tmp/allwd 
 for i in $(seq 8 291);do echo >> /tmp/allwd;echo $i >> /tmp/allwd  ; cat wd-$i >> /tmp/allwd;done
+cd ..
+less NumberNorm.pm 
+perl NumberNorm.pm inflect_ordinal CCXCI
+less NumberNorm.pm 
+\CCXCI 
+ls audio/*-autor-nieznany-piesn-o-rolandzie.mp3 
+ls audio/*piesn-o-rolandzie*
+ffplay audio/001-autor-nieznany-piesn-o-rolandzie.mp3 
+grep św\. text/piesn-o-rolandzie.txt-*
+ffplay audio/077-autor-nieznany-piesn-o-rolandzie.mp3 
+vi audio/transcribe.py 
+ffplay audio/008-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/009-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/010-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/011-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/012-autor-nieznany-piesn-o-rolandzie.mp3 
