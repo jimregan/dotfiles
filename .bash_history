@@ -1,538 +1,3 @@
-cat inp 
-sh ~/scripts/grab-logged.sh inp
-zless ~/Downloads/conceptnet-assertions-5.5.5.csv.gz 
-zgrep '/ga/' ~/Downloads/conceptnet-assertions-5.5.5.csv.gz 
-zgrep '/ga/' ~/Downloads/conceptnet-assertions-5.5.5.csv.gz |wc
-curl 'http://c.brightcove.com/services/mobile/streaming/index/rendition.m3u8?assetId=5689492431001&pubId=1290862567001&videoId=5689475790001'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spiii
-sh ~/scripts/spider.sh spiii
-ls
-less inp.log 
-ckredo inp
-ls
-rm inp*
-sh ~/scripts/spider.sh spidredo
-rm -rf web.archive.org/
-ls
-sh ~/scripts/spider.sh newv
-tail -f spiii.log 
-tail -f spidredo.log 
-mv spidredo spaa
-mv spidredo.log spaa.log
-ckredo spiii
-ckredo spaa
-ls
-wc -l spidredo spaa
-sh ~/scripts/spider.sh spaa
-cat spiii.log 
-cat spiii.log |perl ~/bin/wget-http.pl 
-cat spiii.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}'
-cat spiii.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-rm spiii
-rm spiii.log nohup.out spidredo out 
-ls
-tail -f newv.log 
-less spaa.log 
-rm spaa
-rm spaa.log 
-ls
-tail -f newv.log 
-cat newv.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat newv.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-ckredo newv
-ls
-rm *
-ls
-sh ~/scripts/grab-logged.sh inp
-vi ~/kaldi-new-eg-pull
-vi ~/irish-books
-vi ~/irish-audiobooks
-lls
-tail -f inp.log 
-ls
-cd -
-history -a
-kwin
-nohup kwin --replace &
-kwin --replace 
-sudo kwin --replace 
-cd -
-tail -f inp.log 
-. ../sourceme 
-ogimageproc https://www.pinterest.ie/pin/320740804704982614/
-procimg https://www.pinterest.ie/pin/320740804704982614/ https://i.pinimg.com/736x/81/59/ea/8159ea0ec0ed429ada59d8dc004e8052.jpg
-procimg https://www.gettyimages.co.uk/pictures/first-aid-kit--band-10534724 https://media.gettyimages.com/photos/first-aid-kit-perform-on-day-2-of-the-glastonbury-festival-2017-at-picture-id803063088
-procimg https://festivalflyer.com/photo/first-aid-kit-glastonbury-2017/ https://farm5.static.flickr.com/4242/34661992254_fe7d898dde_o.jpg
-wget -x -c https://i.pinimg.com/736x/d6/97/d5/d697d58432fd2c03322cccd8f63fa215--first-aid-kit-band-first-aid-kits.jpg
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl |perl ../check-size.pl 
-cat /tmp/asd/inp.log |perl ~/bin/wget-http.pl >> ../sync/http-misc-20180105-1.nt 
-rm -rf /tmp/asd/
-cd /tmp/
-wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-4.jpg
-tesseract -l gle Iriseoir-4.jpg 
-tesseract -l gle Iriseoir-4.jpg Iriseoir-4
-wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-5.jpg
-wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-6.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-7.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-8.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-9.jpg 
-wget http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-10.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-11.jpg http://www.coislife.ie/wp-content/uploads/2017/03/Iriseoir-12.jpg
-ls
-for i in Iriseoir-*;do tesseract -l gle $i;done
-for i in Iriseoir-*;do tesseract -l gle $i $i.txt;done
-ls
-cat Iriseoir-[4-9].txt.txt
-cat Iriseoir-[4-9].jpg.txt.txt
-cat Iriseoir-[4-9].jpg.txt.txt > iris
-cat Iriseoir-1*.jpg.txt.txt >> iris
-cd 
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-config add .bash_history 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config log
-config revert a199bbbf07b0a08e47098d52b9e39231439274b4
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-python disk/Playing/Chromagnon/chromagnonTab.py .config/chromium/Default/Current\ Tabs > .scratch/chromium-tabs
-config add .scratch/chromium-tabs .bash_history 
-config commit -m more
-cd disk/Playing/msf-asr/
-ls
-cd TG4/
-ls
-du lm-data/
-du -m lm-data/
-loginctl unlock-sessions
-sudo reboot
-pip3 install jupyter
-sudo pip3 install jupyter
-sudo apt install libzmq3-dev 
-cpanm --build-args 'OTHERLDFLAGS=' ZMQ::LibZMQ3;
-sudo cpanm --build-args 'OTHERLDFLAGS=' ZMQ::LibZMQ3;
-sudo apt install jupyter-console jupyter-notebook
-cpanm Devel::IPerl
-cpanm Devel::IPerl Markdown::Pod
-cpanm Markdown::Pod
-sudo cpanm Markdown::Pod
-less /home/jim/.cpanm/work/1515789684.8953/build.log 
-sudo cpanm --force Markdown::Pod
-sudo cpanm Devel::IPerl 
-cd disk/Playing/
-mkdir cling-run
-cd cling-run/
-wget https://raw.github.com/karies/cling-all-in-one/master/clone.sh
-chmod a+x clone.sh 
-sh clone.sh 
-bash clone.sh 
-./inst/bin/cling 
-apt-cache search iperl
-sudo apt-get install libapp-repl-perl
-cd disk/Playing/msf-asr/
-ls
-cd TG4/
-ls
-mkdir lm-data
-cd lm-data/
-ls
-cp -r ~/disk/Playing/corpuscrawler/ .
-ls
-cd corpuscrawler/
-rm -rf .git
-ls
-less ga.wl
-rm tmp.zip 
-rm corpus/rm-*
-rm corpus/uk.txt 
-rm corpus/gd.txt corpus/[ab]*
-ls corpus
-rm corpus/mi.txt
-rm corpus/mi.txt.gz 
-mkdir tmp
-cp corpus/* tmp/
-rm corpus/ga.txt
-rm corpus/ga.txt.1.gz 
-gzip -d corpus/ga.txt.gz 
-mv tmp/ /tmp/
-cd ../..
-mv ~/ga-books/ lm-data/
-ls lm-data/ga-books/
-svn add lm-data/
-gzip -d /tmp/tmp/ga.txt.1.gz 
-mv /tmp/tmp/ga.txt.1 lm-data/corpuscrawler/corpus/ga.txt 
-cd lm-data/
-svn ci -m 'think this is the latest version'
-svn status
-rm -rf corpuscrawler/cache-corpuscrawler/
-svn rm
-svn rm -rf corpuscrawler/cache-corpuscrawler/
-svn rm -f corpuscrawler/cache-corpuscrawler/
-svn rm corpuscrawler/cache-corpuscrawler/
-svn ci -m 'lm data'
-mv /tmp/tmp/ga.txt corpuscrawler/corpus/ga.txt 
-svn ci -m 'latest version'
-less corpuscrawler/corpus/ga.txt 
-grep Publication-Date: corpuscrawler/corpus/ga.txt 
-grep Publication-Date: corpuscrawler/corpus/ga.txt |less
-less corpuscrawler/corpus/ga.txt 
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /\n/g'
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|less
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /{print "$1\n";}'
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /{print "$1\n";}'
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ Ó [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) [A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq|wc
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq|wc
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq > /tmp/names
-vi /tmp/names 
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq > /tmp/names
-vi /tmp/names 
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua |Beag |Bean )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+) /){print "$1\n";}'|sort|uniq > /tmp/names
-vi /tmp/names 
-grep 'Nóra Bean Mhic Ghiolla' corpuscrawler/corpus/ga.txt
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua |Beag |Bean )?(?:Ó|Ní|Nic|Ua|Mac|Mhic) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+)\b/){print "$1\n";}'|sort|uniq > /tmp/names
-vi /tmp/names 
-grep 'Nóra Bean Mhic Ghiolla' corpuscrawler/corpus/ga.txt
-grep 'Uí Mac Coille' corpuscrawler/corpus/ga.txt
-grep 'Uí Mjic Coille' corpuscrawler/corpus/ga.txt
-grep 'Uí Mhic Coille' corpuscrawler/corpus/ga.txt
-cat corpuscrawler/corpus/ga.txt |sed -e 's/\. /.\n/g'|perl -C7 -ane 'use utf8;if (/ ([A-ZÁÉÓÍÚ][a-záóíéú]+ (?:Rua |Beag |Bean )?(?:Ó|Ní|Nic|Ua|Mac|Mhic|de) (?:Con |An |Giolla )?[A-ZÁÉÓÍÚ][a-záóíéú]+)\b/){print "$1\n";}'|sort|uniq > /tmp/names
-vi /tmp/names 
-less ~/Downloads/\[DownSub.com\]\ Pewność\ Siebie\ a\ Mowa\ Ciała\ -\ Jak\ Szybko\ Zbudować\ Pewność\ Siebie.srt 
-cd disk/Playing/
-mkdir youtube-pl
-cd youtube-pl/
-ls
-sudo apt-get install youtube-dl 
-youtube-dl --sub-lang https://www.youtube.com/watch?v=NJGVh99ZrrM
-youtube-dl https://www.youtube.com/watch?v=NJGVh99ZrrM
-ls
-rm Pewność\ Siebie\ a\ Mowa\ Ciała\ -\ Jak\ Szybko\ Zbudować\ Pewność\ Siebie-NJGVh99ZrrM.f247.webm.part 
-man youtube-dl 
-youtube-dl --list-sub-lang https://www.youtube.com/watch?v=NJGVh99ZrrM
-man youtube-dl 
-youtube-dl --list-subs https://www.youtube.com/watch?v=NJGVh99ZrrM
-man youtube-dl 
-youtube-dl --sub-lang=pl  https://www.youtube.com/watch?v=NJGVh99ZrrM
-ls
-rm Pewność\ Siebie\ a\ Mowa\ Ciała\ -\ Jak\ Szybko\ Zbudować\ Pewność\ Siebie-NJGVh99ZrrM.mkv 
-youtube-dl --sub-lang=pl -x --audio-format flac --sub-format=vtt -o NJGVh99ZrrM  NJGVh99ZrrM
-youtube-dl --sub-lang=pl -x --audio-format flac --sub-format=vtt -o 'NJGVh99ZrrM.%(ext)s'  NJGVh99ZrrM
-youtube-dl --sub-lang=pl -x --audio-format flac --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
-youtube-dl --sub-lang=pl -x --audio-format=flac --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
-youtube-dl --sub-lang=pl -x --audio-format=ogg --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
-youtube-dl --sub-lang=pl -x --audio-format=best --sub-format=vtt -o '%(id).%(ext)s'  NJGVh99ZrrM
-ls
-file %\(ext\)s 
-cat %\(ext\)s 
-rm %\(ext\)s 
-youtube-dl --sub-lang=pl -x --audio-format=best --sub-format=vtt -o '%(id).%(ext)'  NJGVh99ZrrM
-rm %\(ext\) 
-youtube-dl --sub-lang=pl -x --audio-format=best --sub-format=vtt -o '%(id)s.%(ext)s'  NJGVh99ZrrM
-ls
-file NJGVh99ZrrM.m4a 
-ffplay NJGVh99ZrrM.m4a 
-youtube-dl -x --audio-format=best --sub-lang=pl  --sub-format=ttml -o '%(id)s.%(ext)s'  NJGVh99ZrrM
-youtube-dl -x --audio-format=best --sub-lang=pl --embed-subs=no  --sub-format=ttml -o '%(id)s.%(ext)s'  NJGVh99ZrrM
-youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=ttml -o '%(id)s.%(ext)s'  NJGVh99ZrrM
-ls
-less NJGVh99ZrrM.
-less NJGVh99ZrrM.t
-less NJGVh99ZrrM.pl.ttml 
-youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=vtt -o '%(id)s.%(ext)s'  NJGVh99ZrrM
-ls
-less NJGVh99ZrrM.pl.vtt 
-vi dl.sh
-sh dl.sh 0OHeUvgpDiE
-ls
-file 0OHeUvgpDiE.opus 
-ffplay 0OHeUvgpDiE.
-ffplay 0OHeUvgpDiE.opus 
-less 0OHeUvgpDiE.pl.vtt 
-ffplay 0OHeUvgpDiE.opus 
-youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=vtt -o '%(id)s.%(ext)s'  https://www.youtube.com/watch?v=FONXwPE_3Go
-youtube-dl -x --audio-format=best --write-sub --sub-lang=pl  --sub-format=vtt -o '%(id)s.%(ext)s'  https://www.youtube.com/watch?v=MW-Dmu64fgg
-ls
-rm FONXwPE_3Go.opus 
-sh dl.sh https://www.youtube.com/channel/UCR-B4vIp1OqaDwMQEn_rskA/videos
-sh dl.sh https://www.youtube.com/channel/UCR-B4vIp1OqaDwMQEn_rskA/
-sh dl.sh https://www.youtube.com/user/CzasGentlemanow/videos
-ls
-mkdir nope
-mv 0OHeUvgpDiE.* nope/
-mv MW-Dmu64fgg.* nope/
-ls
-mv NJGVh99ZrrM.* nope/
-sh dl.sh https://www.youtube.com/watch?v=WNPzwWabgQQ
-ls
-sh dl.sh https://www.youtube.com/watch?v=VH83iiWDra0
-sh dl.sh https://www.youtube.com/watch?v=1H4QQ4_LNHM
-ls
-for i in https://www.youtube.com/watch?v=H0ECuFl6s2w  https://www.youtube.com/watch?v=w_7SzFpsT4A https://www.youtube.com/watch?v=rJ0yQYQP0pE https://www.youtube.com/watch?v=-0sWQFpLm4I https://www.youtube.com/watch?v=6MDz75PxkVA https://www.youtube.com/watch?v=8Hzw6gRpR_Y https://www.youtube.com/watch?v=hw7BtH4_6Ok   ;do wget $i; sh dl.sh $i;done
-ls
-mkdir UC3urWQ2XJxw2OfNWjgJpYBA
-ls
-mv *opus *vtt watch\?v\=* *m4a UC3urWQ2XJxw2OfNWjgJpYBA/
-mv *m4a UC3urWQ2XJxw2OfNWjgJpYBA/
-ls
-mv *vtt UC3urWQ2XJxw2OfNWjgJpYBA/
-ls
-mv watch\?v\=* UC3urWQ2XJxw2OfNWjgJpYBA/
-l
-ls
-mv *opus UC3urWQ2XJxw2OfNWjgJpYBA/
-mv ./*opus UC3urWQ2XJxw2OfNWjgJpYBA/
-ls
-mv ./*vtt UC3urWQ2XJxw2OfNWjgJpYBA/
-ls
-mkdir UC5BzFlIJQJUX2frWOr-ckYA
-cd UC5BzFlIJQJUX2frWOr-ckYA/
-ls
-vi ../dl.sh 
-for i in https://www.youtube.com/watch?v=eWnnDwemzps https://www.youtube.com/watch?v=e01h6P1zI1M https://www.youtube.com/watch?v=eWnnDwemzps https://www.youtube.com/watch?v=x6LLoad7myA https://www.youtube.com/watch?v=ay_XA4NTd7A https://www.youtube.com/watch?v=FFsazi9TgWk https://www.youtube.com/watch?v=iwq_4KDzhdc https://www.youtube.com/watch?v=1rXVDqwwvbc https://www.youtube.com/watch?v=ldObSVcpyZw https://www.youtube.com/watch?v=tSDevXSVaIA https://www.youtube.com/watch?v=uzjAldqVDVE https://www.youtube.com/watch?v=oyCbqdLAXXw https://www.youtube.com/watch?v=bPFQ53BOV_4 https://www.youtube.com/watch?v=Q1ptGeUf3oE https://www.youtube.com/watch?v=tSDevXSVaIA;do sh ../dl.sh $i;done
-ls
-cd ..
-mkdir UCdxQkHxvxKDsspB5pFPtYkA
-cd UCdxQkHxvxKDsspB5pFPtYkA/
-ls
-for i in https://www.youtube.com/watch?v=dbZwqoGJgJA;do sh ../dl.sh $i;done
-ls
-for i in https://www.youtube.com/watch?v=sSmbkPXvLxk https://www.youtube.com/watch?v=4Nd8eK0l0yY https://www.youtube.com/watch?v=Zq5Q_yaPss0 https://www.youtube.com/watch?v=CySiFM362tg https://www.youtube.com/watch?v=JcyZpfA8Ku8 https://www.youtube.com/watch?v=L1_vB77vj-w https://www.youtube.com/watch?v=B1lqOYl7LEA https://www.youtube.com/watch?v=NK03ighplAs https://www.youtube.com/watch?v=USbB3gYs_VE https://www.youtube.com/watch?v=MR5ji_2WUZ4 https://www.youtube.com/watch?v=NYjWnAFQRfU https://www.youtube.com/watch?v=XI-x2HQlEPA https://www.youtube.com/watch?v=9YZUGMt2Mi0 https://www.youtube.com/watch?v=4Jv7Al_SuwQ https://www.youtube.com/watch?v=XDsQ3loUCXY https://www.youtube.com/watch?v=4bbizxh7534 https://www.youtube.com/watch?v=1xB5nq7L6Oo https://www.youtube.com/watch?v=uJCI6MmpvP0 https://www.youtube.com/watch?v=nr7T2Y-7iQs ;do sh ../dl.sh $i;done
-ls
-cd ..
-ls
-cd free-nosubs/
-ls
-wget https://www.youtube.com/watch?v=Q_MBxpgJU9w
-youtube-dl https://www.youtube.com/watch?v=Q_MBxpgJU9w
-ls *Uf1eCznOxsQ*
-cd ..
-ls
-mkdir misc
-cd misc/
-sh ../dl.sh https://www.youtube.com/watch?v=UgC02ts-Jaw
-ls
-cd ..
-mkdir UCCrNTrYVU6U2VtzPvmV3U3g
-cd UCCrNTrYVU6U2VtzPvmV3U3g/
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=r5jJDAK4KfU
-sh ../dl.sh https://www.youtube.com/watch?v=XB0NT124_6Y
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=Z-JQOp52s-4
-sh ../dl.sh https://www.youtube.com/watch?v=c7qAtJpnvWU
-sh ../dl.sh https://www.youtube.com/watch?v=tKITtavMNr4
-sh ../dl.sh https://www.youtube.com/watch?v=c-q6tixE_JA
-sh ../dl.sh https://www.youtube.com/watch?v=GQa9LzSMdAc
-sh ../dl.sh https://www.youtube.com/watch?v=4t9IEq0m3xw
-sh ../dl.sh https://www.youtube.com/watch?v=rzFZXNVBxsc
-sh ../dl.sh https://www.youtube.com/watch?v=uhuceDZ6PqY
-sh ../dl.sh https://www.youtube.com/watch?v=K2TQA4PH7SQ
-sh ../dl.sh https://www.youtube.com/watch?v=LprvCzqzpuY
-sh ../dl.sh https://www.youtube.com/watch?v=tSZjrfPwfbM
-sh ../dl.sh https://www.youtube.com/watch?v=-3W30fo0omE
-sh ../dl.sh https://www.youtube.com/watch?v=unI5KOYXPTg
-sh ../dl.sh https://www.youtube.com/watch?v=K2TQA4PH7SQ
-cd ..
-cd lipread/
-ls
-mkdir UCWngcK-tLzUKQ-H5wftdahA
-cd UCWngcK-tLzUKQ-H5wftdahA/
-vi list
-less ../dl.sh 
-grep http list |sh ../dl.sh
-ls
-cat list 
-cd ..
-ls
-cd ..
-cd signed/
-ls
-mkdir UCdXt2JT4VLVSaXVgiss9YcA
-cd UCdXt2JT4VLVSaXVgiss9YcA
-vi list
-cat list |  sh ../dl.sh 
-ls
-wget https://www.youtube.com/watch?v=VH83iiWDra0 https://www.youtube.com/watch?v=1H4QQ4_LNHM https://www.youtube.com/watch?v=WNPzwWabgQQ&t=207s
-ls
-grep License watch\?v\=*
-less watch?v=WNPzwWabgQQ
-mkdir UCjc3C8pOIhSKlPVXnDsne-Q
-ls
-cd UCjc3C8pOIhSKlPVXnDsne-Q/
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=NC3SB_K4rkk
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=2GT7Eiu7IC8
-sh ../dl.sh https://www.youtube.com/watch?v=Q6IYoNmKFfE
-ls
-for i in *opus;do ffmpeg -i $i;done
-sh ../dl.sh https://www.youtube.com/watch?v=dOePu47dvnE
-sh ../dl.sh https://www.youtube.com/watch?v=s8CMHcTOyqE
-sh ../dl.sh https://www.youtube.com/watch?v=a00mf6Z6RFA
-sh ../dl.sh https://www.youtube.com/watch?v=KkiyvxibEY8
-sh ../dl.sh https://www.youtube.com/watch?v=rqfUS-wKTdM
-sh ../dl.sh https://www.youtube.com/watch?v=aQynbR4G9lg
-sh ../dl.sh https://www.youtube.com/watch?v=YWogplxCrcA
-sh ../dl.sh https://www.youtube.com/watch?v=h1xa-vnhfOg
-sh ../dl.sh https://www.youtube.com/watch?v=x1YRFTFPskA
-sh ../dl.sh https://www.youtube.com/watch?v=_Y8FrIkIyVg
-sh ../dl.sh https://www.youtube.com/watch?v=J8A8qo_B9tw
-cat ../dl.sh 
-ls
-cd ..
-ls
-mkdir free-nosubs
-cd free-nosubs/
-youtube-dl https://www.youtube.com/watch?v=rnUxqkIHwHQ
-wget https://www.youtube.com/watch?v=rnUxqkIHwHQ
-youtube-dl https://www.youtube.com/watch?v=dt1dP97TZxU
-wget 
-ls
-file *
-wget https://www.youtube.com/watch?v=_JVogYj5z3A
-youtube-dl https://www.youtube.com/watch?v=_JVogYj5z3A
-youtube-dl https://www.youtube.com/watch?v=Rsw6a1rUOf4
-wget https://www.youtube.com/watch?v=Rsw6a1rUOf4
-ls
-wget https://www.youtube.com/watch?v=9EppIGM0QNg
-youtube-dl https://www.youtube.com/watch?v=9EppIGM0QNg
-wget https://www.youtube.com/watch?v=JQ4ufWNJcB8
-youtube-dl https://www.youtube.com/watch?v=JQ4ufWNJcB8
-wget https://www.youtube.com/watch?v=iO6b4J9QaQc
-youtube-dl https://www.youtube.com/watch?v=iO6b4J9QaQc
-wget https://www.youtube.com/watch?v=Uf1eCznOxsQ
-youtube-dl https://www.youtube.com/watch?v=Uf1eCznOxsQ
-wget https://www.youtube.com/watch?v=Uf1eCznOxsQ
-wget https://www.youtube.com/watch?v=89WBj27TR5I
-youtube-dl https://www.youtube.com/watch?v=89WBj27TR5I
-grep 'Creative Commons' watch\?v\=*
-grep 'Creative Commons Attribution license (reuse allowed)' watch\?v\=*
-mkdir LekarzMedycynyPracy
-cd LekarzMedycynyPracy
-cat /tmp/panel 
-cat /tmp/panel |grep '?watch'
-cat /tmp/panel |grep '\?watch'
-cat /tmp/panel |grep '/?watch'
-cat /tmp/panel |grep 'watch'
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|sort|uniq
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|sort|uniq|wc
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|uniq
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|uniq|less
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|wc
-\cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|while read i;do url=https://www.youtube.com/$i; wget $url; grep 'Creative Commons
-#cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|while read i;do url=https://www.youtube.com/$i; wget $url; grep 'Creative Commons
-cat /tmp/panel |sed -e 's/href="/\n/g'|awk -F'"' '{print $1}'|grep '^/watch'|awk -F'&' '{print $1}'|sed -e 's/^\///'|uniq|while read i;do url=https://www.youtube.com/$i; wget $url; grep 'Creative Commons Attribution license (reuse allowed)' $i && youtube-dl $url;done
-ls
-ffplay What\ should\ you\ do\ after\ losing\ a\ sanitary\ health\ certificate_booklet_\ in\ Poland-iQNujLJWlJQ.mkv 
-ls
-cat ../../dl.sh 
-man youtube-dl 
-for i in watch\?v\=*;do id=$(echo $i|awk -F'=' '{print $NF}'); youtube-dl --write-sub --sub-lang=pl  --sub-format=vtt $id;done
-grep Creative watch\?v\=*
-cd /tmp
-tar xvf ~/Downloads/s1.tar 
-cd align/
-less swbi7a.align 
-git clone https://github.com/rizkiarm/LipNet.git
-cd ..
-mkdir UCRHC9jxI9fhU_NQYtRCiC3Q
-cd UCRHC9jxI9fhU_NQYtRCiC3Q/
-vi list
-echo https://www.youtube.com/watch?v=aKlkc2KEmKQ|sh ../dl.sh 
-vi list
-cat list | sh ../dl.sh 
-ls
-cd ..
-vi english-subtitles
-mkdir UC7nnculccfROWQueO2fmuJg
-cd UC7nnculccfROWQueO2fmuJg/
-ls
-echo https://www.youtube.com/watch?v=GosLSUpZ0XE | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=SfhC9VbkszE | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=29C_AQz50dM | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=3pdgYF1_fVA | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=WWKKcyIBVeA | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=jm3NVQD1674 | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=IMshqRVsorE | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=ISZ9644dbWw | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=6BAY5qX-y18 | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=esGnftR6xmI | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=3x6-Yj3kG8M | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=D71stnhbKCc | sh ../dl.sh 
-cd ..
-ls
-cd ../
-ls
-mkdir zachowajrownowage
-cd zachowajrownowage
-vi links
-cd ..
-mv zachowajrownowage/ lipread/
-ls
-cd misc/
 ls
 wget https://www.youtube.com/watch?v=Bq0fLxioFiQ
 sh ../dl.sh https://www.youtube.com/watch?v=Bq0fLxioFiQ
@@ -1998,3 +1463,538 @@ git commit -m 'some from youtube
 git commit -m 'some from youtube'
 git diff
 git add specific-norms.tsv 
+cd ..
+cat text/piesn-o-rolandzie.txt-*
+cd text/
+rm *.bak
+cd ..
+cat text/piesn-o-rolandzie.txt-*
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl 
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl 
+vi clean.pl 
+cp clean.pl clean-keepcase.pl
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl 
+vi clean-keepcase.pl 
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl 
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl |tr ' ' '\n'
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl |tr ' ' '\n'|sort|uniq
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |wc
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |less
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'|awk '{print $2}'
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'|awk '{print $2}' > roland-misspell
+less roland-misspell 
+grep saint audio/ts/*roland*
+grep san audio/ts/*roland*
+cat text/piesn-o-rolandzie.txt-111.txt 
+cat missing/
+cat roland-misspell 
+cat roland-misspell | while read i;do echo; echo $i; grep -i $i text/piesn-o-rolandzie.txt-*;done
+cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt |awk -F': ' '{print $2}'|awk -F',' '{print $1}'
+cat roland-misspell | while read i;do echo; echo $i; grep -i $i text/piesn-o-rolandzie.txt-*;done
+cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt |awk -F': ' '{print $2}'|awk -F',' '{print $1}'|less
+cat text/piesn-o-rolandzie.txt-216.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+grep proporce pron-data/*
+vi /tmp/leftin
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}'
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"'
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'|sed -e 's/ $//' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin 
+paste /tmp/leftin /tmp/rightin |sed -e 's/ $//'
+paste /tmp/leftin /tmp/rightin |sed -e 's/ $//' >> pron-data/gen.tsv 
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv 
+git commit -m more
+grep diuk roland-misspell 
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > roland-miss
+vi roland-miss
+cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl 
+cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/leftin 
+vi /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'|sed -e 's/ $//' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ $//' >> pron-data/gen.tsv 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+git add specific-norms.tsv 
+git commit -m more
+ffplay audio/002-autor-nieznany-piesn-o-rolandzie.mp3 
+cat text/piesn-o-rolandzie.txt-02.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/leftin 
+cat /tmp/leftin 
+vi /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'|sed -e 's/ $//' > /tmp/rightin
+paste /tmp/leftin /tmp/rightin |sed -e 's/ $//' >> pron-data/gen.tsv 
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv 
+git commit -m more
+ffplay audio/003-autor-nieznany-piesn-o-rolandzie.mp3 
+cat text/piesn-o-rolandzie.txt-03.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+vi /tmp/leftin 
+ffplay audio/003-autor-nieznany-piesn-o-rolandzie.mp3 
+grep pośpieszysz pron-data/gen.tsv 
+vi /tmp/leftin 
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+vi sourceme
+cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
+vi /tmp/leftin 
+vi sourceme 
+vi sourceme
+pwd
+vi sourceme
+. sourceme 
+mkrightin 
+addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+ffplay audio/004-autor-nieznany-piesn-o-rolandzie.mp3 
+mkleftin text/piesn-o-rolandzie.txt-04.txt 
+cat /tmp/leftin 
+mkleft
+mkrightin 
+addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+ffplay audio/005-autor-nieznany-piesn-o-rolandzie.mp3 
+mkleftin text/piesn-o-rolandzie.txt-05.txt && mkleft
+vi /tmp/leftin 
+mkleftin text/piesn-o-rolandzie.txt-05.txt && mkleft
+vi /tmp/leftin 
+ffplay audio/005-autor-nieznany-piesn-o-rolandzie.mp3 
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+ls
+perl expand-with-polimorf.pl polimorf/polimorf.tab 
+perl pron-data/gen.tsv  expand-with-polimorf.pl polimorf/polimorf.tab 
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab 
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp/expand 
+cat /tmp/expand 
+cp /tmp/expand /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m expand
+git push origin lexicon 
+ffplay audio/006-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/007-autor-nieznany-piesn-o-rolandzie.mp3 
+mkleftin text/piesn-o-rolandzie.txt-06.txt && mkleft
+mkrightin && addprons 
+mkleftin text/piesn-o-rolandzie.txt-07.txt && mkleft
+vi /tmp/leftin 
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+mkleftin text/piesn-o-rolandzie.txt-08.txt && mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+mkleftin text/piesn-o-rolandzie.txt-09.txt && mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+mkleftin text/piesn-o-rolandzie.txt-10.txt && mkleft
+cat text/piesn-o-rolandzie.txt-*txt|grep -i rękojmię
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+mkleftin text/piesn-o-rolandzie.txt-11.txt && mkleft
+cat text/piesn-o-rolandzie.txt-*txt|grep -i jutrzn
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+mkleftin text/piesn-o-rolandzie.txt-12.txt && mkleft
+cat text/piesn-o-rolandzie.txt-*txt|grep -i Ganelon
+cat text/piesn-o-rolandzie.txt-*txt|grep -i Acelin
+cat text/piesn-o-rolandzie.txt-*txt|grep -i Gaskon
+cat text/piesn-o-rolandzie.txt-*txt|grep -i Milon
+cat text/piesn-o-rolandzie.txt-*txt|grep -i Ogier
+cat text/piesn-o-rolandzie.txt-*txt|grep -i rejm
+cat text/piesn-o-rolandzie.txt-*txt|grep -i turpin
+cat text/piesn-o-rolandzie.txt-*txt|grep -i tyb
+vi /tmp/leftin 
+vi pron-data/gen.tsv 
+mkrightin && addprons 
+git diff
+mkrightin && addprons 
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+cat  /tmp/expand 
+mv /tmp/expand /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m expand
+mkleftin text/piesn-o-rolandzie.txt-13.txt && mkleft
+mkleftin text/piesn-o-rolandzie.txt-14.txt && mkleft
+ffplay audio/013-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/014-autor-nieznany-piesn-o-rolandzie.mp3 
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+ffplay audio/014-autor-nieznany-piesn-o-rolandzie.mp3 
+git diff
+tail pron-data/gen.tsv 
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+less /tmp/expand 
+cp /tmp/expand /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m expand
+ffplay audio/015-autor-nieznany-piesn-o-rolandzie.mp3 
+mkleft
+mkrightin && addprons 
+git diff
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp//expand 
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv specific-norms.tsv 
+git commit -m more
+vi okspell 
+vi sourceme 
+. sourceme 
+mkrightin 
+addpronsas 
+git diff
+vi pron-data/pronounce-as.gen.tsv 
+git add pron-data/pronounce-as.gen.tsv 
+git commit -m more
+git push origin lexicon 
+head -n 410 okspell 
+head -n 415 okspell  
+head -n 420 okspell  
+head -n 430 okspell  
+head -n 430 okspell  > /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp/expand 
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+vi okspell 
+git diff
+git add normalisations.tsv 
+git commit -m more
+vi okspell 
+head -n 270 okspell  > /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp/expand 
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv  
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   clean.pl 
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+vi okspell 
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mv okspell /tmp/leftin 
+mkleft
+wc -l /tmp/leftin 
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git status
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+git diff pron-data/pronounce-as.tsv
+git diff pron-data/pronounce-as.tsv > /tmp/pas
+mkrightin 
+addpronsas 
+git diff
+git add pron-data/pronounce-as.*
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+mkrightin && addprons 
+git commit -m more
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp/ex
+wc -l /tmp/expand 
+mkleft
+mkrightin && addprons 
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+grep windsurf pron-data/gen.tsv 
+vi pron-data/gen.tsv 
+git add pron-data/gen.tsv   
+git commit -m oops
+vi /tmp/leftin 
+mkrightin && addprons 
+git diff
+git add pron-data/gen.tsv   
+git commit -m more
+git diff
+grep surf pron-data/gen.tsv 
+git diff
+git diff pron-data/pronounce-as.tsv > /tmp/pas
+mkrightin 
+addpronsas 
+git diff 
+git add pron-data/pronounce-as.*
+git commit -m more
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'|awk '{print $2}' > roland-misspell
+less roland-misspell 
+cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl > roland-miss-all
+less roland-miss-all 
+mkleft
+mkrightin && addprons 
+git diff 
+git add pron-data/pronounce-as.*
+git add pron-data/gen.tsv   
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp/expand 
+mkleft
+mv /tmp/expand /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff 
+git add pron-data/gen.tsv   
+git commit -m more
+grep '^+' roland-miss-all 
+grep '^+' roland-miss-all |awk '{print $2}'
+grep '^+' roland-miss-all |awk '{print $2}'|sort|uniq
+grep '^+' roland-miss-all |awk '{print $2}'|sort|uniq > rolanda-should
+cat rolanda-should|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
+cat rolanda-should|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff 
+git add pron-data/gen.tsv   
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp/expand 
+mkleft
+mkrightin && addprons 
+git diff 
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+mkrightin && addprons 
+git diff 
+git add pron-data/gen.tsv   
+git commit -m more
+mkleft
+vi pron-data/gen.tsv 
+mkrightin && addprons 
+git diff 
+git add pron-data/gen.tsv   
+git commit -m more
+cat roland-miss|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > roland-miss.f
+less roland-miss.f 
+wc -l roland-miss*
+vi /tmp/leftin 
+less roland-miss.f 
+mkleft
+mkrightin && addprons 
+git diff 
+git add pron-data/gen.tsv   
+git commit -m more
+perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
+wc -l /tmp/expand 
+mv /tmp/expand /tmp/leftin 
+mkleft
+mkrightin && addprons 
+git diff 
+git add pron-data/gen.tsv   
+git commit -m more
+cat roland-miss|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > roland-miss.f
+wc -l roland-miss*
+less roland-miss.f 
