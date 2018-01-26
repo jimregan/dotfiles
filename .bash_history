@@ -1,63 +1,3 @@
-git diff
-cat text/piesn-o-rolandzie.txt-12.txt |grep -i piesn-o-rolandzie.txt-12.txt
-cat text/piesn-o-rolandzie.txt-12.txt |grep -i kordowę
-cat text/piesn-o-rolandzie.txt-*txt |grep -i kordowę
-vi /tmp/leftin 
-cat text/piesn-o-rolandzie.txt-*txt |grep -i anzeis
-vi /tmp/leftin 
-cat text/piesn-o-rolandzie.txt-*txt |grep -i gerier
-cat text/piesn-o-rolandzie.txt-*txt |grep -i geryn
-cat text/piesn-o-rolandzie.txt-*txt |grep -i sokolni
-cat text/piesn-o-rolandzie.txt-*txt |grep -i płoch
-cat text/piesn-o-rolandzie.txt-*txt |grep -i IPA(key): anˈzɛ.is IPA(key): ˈɡɛ.rʲɛr IPA(key): ˈɡɛ.rɨn IPA(key): ˈɡɔ.tfrɨt IPA(key): kɔrˈdɔ.vɛ IPA(key): ˈpwɔ.xa IPA(key): pɔˈkwɔ.ɲiˈlʲ.i IPA(key): rɨˈt͡sɛr.stfɔ IPA(key): sɔˈkɔl.ɲik IPA(key): varˈt͡sa.bɨ IPA(key): vwadˈnɔn.t͡sɨ
-cat text/piesn-o-rolandzie.txt-*txt |grep -i smyczy
-cat text/piesn-o-rolandzie.txt-*txt |grep -i 'w smak'
-cat text/piesn-o-rolandzie.txt-*txt |grep -i bazyl
-cat text/piesn-o-rolandzie.txt-*txt |grep -i pińsk
-cat text/piesn-o-rolandzie.txt-*txt |grep -i jakeś
-cat text/piesn-o-rolandzie.txt-*txt |grep -i IPA(key): baˈza.na IPA(key): baˈza.nax IPA(key): baˈza.naˈmʲ.i IPA(key): baˈza.nɛm IPA(key): baˈza.ɲɛ IPA(key): baˈza.nɔm IPA(key): baˈza.nuf IPA(key): baˈza.nɔˈvʲ.i IPA(key): ba.zaˈnɔ.vʲɛ IPA(key): ba.zɨˈlɛ.mu IPA(key): baˈzɨ.lʲix IPA(key): baˈzɨ.lʲim IPA(key): baˈzɨ.lʲiˈmʲ.i IPA(key): ba.zɨˈlɔ.vʲɛ IPA(key): waˈdɔv.ɲɛj IPA(key): na.jwaˈdɔv.ɲɛj IPA(key): ˈpʲiɲ.st͡sɨ IPA(key): ˈpʲiɲ.ska IPA(key): pʲiɲsˈkʲ.i IPA(key): ˈpʲiɲ.skʲix IPA(key): ˈpʲiɲ.skʲɛ IPA(key): pʲiɲˈskʲɛ.ɡɔ IPA(key): ˈpʲiɲ.skʲɛj IPA(key): pʲiɲˈskʲɛ.mu IPA(key): ˈpʲiɲ.skʲim IPA(key): ˈpʲiɲ.skʲiˈmʲ.i IPA(key): ˈra.jɛk IPA(key): ˈraj.ka IPA(key): ˈraj.kɔ̃ IPA(key): ˈraj.kax IPA(key): ˈraj.kaˈmʲ.i IPA(key): ˈraj.kɛ IPA(key): rajˈkʲ.i IPA(key): ˈraj.kɔ IPA(key): ˈraj.kɔm IPA(key): sa.raˈt͡sɛ.ɲa IPA(key): sa.raˈt͡sɛ.ɲɔ̃ IPA(key): sa.raˈt͡sɛ.ɲax IPA(key): sa.raˈt͡sɛ.ɲaˈmʲ.i IPA(key): sa.raˈt͡sɛ.ɲɛ IPA(key): sa.ra.t͡sɛˈɲi.i IPA(key): sa.raˈt͡sɛ.ɲij IPA(key): sa.raˈt͡sɛ.ɲɔ IPA(key): sa.raˈt͡sɛ.ɲɔm IPA(key): var.t͡saˈbɔ.va IPA(key): var.t͡saˈbɔ.vɔ̃ IPA(key): var.t͡saˈbɔ.vɛ IPA(key): var.t͡sa.bɔˈvɛ.ɡɔ IPA(key): var.t͡saˈbɔ.vɛj IPA(key): var.t͡sa.bɔˈvɛ.mu IPA(key): var.t͡saˈbɔ.vɨ IPA(key): var.t͡saˈbɔ.vɨx IPA(key): var.t͡saˈbɔ.vɨm IPA(key): var.t͡saˈbɔ.vɨˈmʲ.i IPA(key): ˈvwad.na IPA(key): ˈvwad.nɛ IPA(key): vwadˈnɛ.ɡɔ IPA(key): ˈvwad.nɛj IPA(key): vwadˈnɛ.mu IPA(key): vwatˈɲ.i IPA(key): ˈvwad.nɨ IPA(key): ˈvwad.nɨx IPA(key): ˈvwad.nɨm IPA(key): ˈvwad.nɨˈmʲ.i
-cat text/piesn-o-rolandzie.txt-*txt |grep -i siostrzanowi
-cd text/
-perl ../apply-specific.pl 
-git diff
-git add piesn-o-rolandzie.txt-*
-config commit -m more
-git commit -m more
-cd ..
-cat text/piesn-o-rolandzie.txt-*txt |grep -i siostrz
-grep -i siostrzan text/piesn-o-rolandzie.txt-*txt 
-cat /tmp/closed-text 
-cat /tmp/closed-text |perl clean.pl 
-cat /tmp/closed-text |perl clean.pl |tr ' ' '\n'
-cat /tmp/closed-text |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-vi clean.pl 
-cat /tmp/closed-text |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-cat /tmp/closed-text |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |wc
-cat /tmp/closed-text |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/closed-text.words
-less /tmp/closed-text.words 
-cat /tmp/closed-text.words |aspell -a --lang pl
-cat /tmp/closed-text.words |aspell -a --lang pl|grep '^\+'
-cat /tmp/closed-text.words |aspell -a --lang pl|grep '^\+' > okspell
-cat okspell |awk '{print $2}'
-cat okspell |awk '{print $2}'|sort|uniq > oks
-mv oks okspell 
-vi okspell 
-grep '^[a-g]' okspell 
-grep '^[a-g]' okspell|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  
-grep '^[a-g]' okspell|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv   > okrefilt
-mv okrefilt /tmp/leftin 
-git diff
-git add normalisations.tsv 
-git commit -m more
-git diff
-git diff pron-data/pronounce-as.tsv
-git diff pron-data/pronounce-as.tsv|grep '^\+' > /tmp/forpronas
-git add pron-data/pronounce-as.tsv 
-git commit -m more
-git diff
-git add normalisations.tsv 
-git commit -m more
-git diff
 git add normalisations.tsv 
 git commit -m more
 git diff
@@ -1998,3 +1938,63 @@ ffplay CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.mp3
 mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.aud
 svn add CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.aud
 svn ci -m 'text'
+cd ~/disk
+mkdir pwr-asr
+cd pwr-asr/
+wget https://www.ii.pwr.edu.pl/~sas/ASR/data/AM_Train_sng_male.zip
+wget https://www.ii.pwr.edu.pl/~sas/ASR/data/SWD.zip https://www.ii.pwr.edu.pl/~sas/ASR/data/VIUs.zip
+unzip AM_Train_sng_male.zip 
+less annotation.txt 
+cat annotation.txt |iconv -f latin2 -t utf8
+ls
+unzip -l SWD.zip 
+ls
+mkdir AM
+mv *.wav annotation.txt AM/
+ls
+mkdir SWD
+cd SWD/
+unzip ../SWD
+cd ..
+ls
+mkdir VIUs
+cd VIUs/
+unzip ../VIUs
+cd ..
+fdupes -r .
+less SWD/annotation_reduced.txt 
+less VIUs/annotation.txt 
+ffplay AM/*wav
+ffplay AM/123029.wav 
+ffplay AM/212500.wav 
+ffplay SWD/307646.wav 
+ffplay SWD/441198.wav 
+ffplay VIUs/530118.wav 
+ffplay VIUs/530371.wav 
+ffplay VIUs/530372.wav 
+ffplay VIUs/530373.wav 
+ffplay VIUs/530374.wav 
+ffplay VIUs/530383.wav 
+ls
+cat VIUs/annotation.txt 
+cat VIUs/annotation.txt |iconv -f cp1250 -t utf8
+ffplay VIUs/532348.wav
+ffplay VIUs/532347.wav
+ffplay VIUs/532346.wav
+ffplay VIUs/532345.wav
+ffplay VIUs/532344.wav
+ffplay VIUs/532343.wav
+ffplay VIUs/532342.wav
+ffplay VIUs/532341.wav
+ffplay VIUs/532340.wav
+ffplay VIUs/532339.wav
+ffplay VIUs/532331.wav
+ffplay VIUs/532332.wav
+ls AM
+ffplay AM/400905.wav 
+ffplay SWD/553894.wav 
+ls
+ls VIUs
+ls VIUs/annotation.txt 
+cat AM/annotation.txt 
+ls
