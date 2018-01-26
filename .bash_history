@@ -1,7 +1,3 @@
-ls
-less align.sh 
-./align.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav 
-./align.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav wyspa-skarbow.txt-01.txt 
 for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl ;done
 for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl |perl ../../wolne-lektury-audio-corpus/clean.pl ;done
 for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl |perl ../../wolne-lektury-audio-corpus/clean.pl > $i.sent ;done
@@ -1998,3 +1994,7 @@ find data/ -name '*txt'
 find data/ -name '*txt' -exec cat {} \;
 tail -f /tmp/lng-100k36_28lat 
 tail -f /tmp/lng-102k36_49lat 
+less less comhra_test/comhra/trs/irsd0036.trs 
+less comhra_test/comhra/trs/irsd0036.trs 
+less comhra_test/comhra/trs/idam0001.trs 
+less comhra_test/comhra/trs/irrt0003.trs 
