@@ -1,4 +1,3 @@
-for i in *.mp3;do (ffprobe $i|grep 'Duration: 00:00') && echo $i >> /tmp/sortlist;done
 ffprobe  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
 ffprobe -i  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
 ffprobe -i  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 
@@ -1998,3 +1997,4 @@ ls $LEXTRG
 less ./Software/Forced_Alignment/TexStuff/Earlier_versions_preFeb06/dict
 less ./Software/vocab/vocab/perldata/example/dict.data
 ffplay ./Software/comhra_test/comhra/audio/idic0002.mp3
+ffplay hiasynth/wav/RA_AE_hiasynth_supp1_0712.wav 
