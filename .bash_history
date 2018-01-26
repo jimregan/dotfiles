@@ -1,112 +1,3 @@
-ls
-grep Marcin *vtt
-grep Marcin ./*vtt
-grep Jakub ./*vtt
-grep Anna ./*vtt
-less ./2Na77jcxMyA.pl.vtt
-cd ..
-ls
-cd signed/
-ls
-mkdir INSPROmedia
-cd INSPROmedia/
-ls
-cat ../dl.sh 
-echo https://www.youtube.com/watch?v=WGY7gcSYfns |sh ../dl.sh 
-ls
-cd ../../
-ls
-cd nope/
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=QzFPfme5FwU
-ls
-cd ..
-ls
-cd signed/
-ls
-mkdir nospeech
-cd nospeech/
-mkdir UCgvywbxAcsgJr_gfpqKLXXw
-cd UCgvywbxAcsgJr_gfpqKLXXw
-ls
-vi list
-vi nonfree
-cd ..
-cd lipread/
-ls
-cd ..
-cd nope/
-ls
-mkdir RobertMarchelTV
-cd RobertMarchelTV
-vi list
-cp ../../lipread/dl.sh .
-vi dl.sh 
-cat list |sh dl.sh 
-ls
-cd ..
-ls
-cat list*|sort|uniq|grep http |sh RobertMarchelTV/dl.sh 
-ls
-ls parrots/
-grep 'Creative Commons' watch\?v\=*
-for i in watch\?v\=*;do grep 'Creative Commons' $i && grep 'BY-ND' $i;done
-for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'BY-ND' $i || echo $i >> chkcc) ;done
-cat chkcc 
-rm chkcc 
-for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'NC-BY-SA' $i || echo $i >> chkcc) ;done
-cat chkcc 
-grep LKkNs6276xo ../closed
-grep LKkNs6276xo ../closed.tsv 
-#grep LKkNs6276xo ../closed.tsv  >> 
-less ../open.tsv 
-grep LKkNs6276xo ../closed.tsv  >> ../open.tsv 
-vi ../closed.tsv 
-grep WGY7gcSYfns ../closed.tsv  >> ../open.tsv 
-vi ../closed.tsv 
-ls ../
-ks ../free-nosubs/
-ls ../free-nosubs/
-mkdir ../open
-mv WGY7gcSYfns.* ../open/
-mv LKkNs6276xo.* ../open/
-mv watch\?v\=LKkNs6276xo ../open/
-mv watch\?v\=WGY7gcSYfns ../open/
-ls
-less chkcc 
-cat chkcc 
-rm chkcc 
-ls
-for i in ./*.vtt;do  cat $i;done
-ls
-less ./-ZXfhlLJXcc.pl.vtt 
-for i in ./*.vtt;do  cat $i|grep -v '^WEBVTT'|grep -v '^Kind:';done
-less ./-ZXfhlLJXcc.pl.vtt 
-for i in ./*.vtt;do  cat $i|grep -v '^WEBVTT'|grep -v '^Kind:'|grep -v '^Language:'|grep -v '\-\->' |perl ~/disk/Playing/wolne-lektury-audio-corpus/clean.pl|tr ' ' '\n'|sort|uniq|perl ~/disk/Playing/wolne-lektury-audio-corpus/filter-dict.pl ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/gen.tsv ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv > $i.vocab  ;done
-ls
-cat ./*.vocab|sort|uniq
-cat ./*.vocab|sort|uniq|wc
-cat ./*.vocab|sort|uniq|less
-grep agile *
-grep agile ./*
-grep agile ./*vtt
-grep -i agile ./*vtt
-ffplay v5v7MIn2i0k.webm 
-cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt |awk -F': ' '{print $2}'|awk -F',' '{print $1}'|less
-ffplay audio/216-autor-nieznany-piesn-o-rolandzie.mp3 
-cat text/piesn-o-rolandzie.txt-77.txt 
-cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt |grep pójdę
-cat text/piesn-o-rolandzie.txt-77.txt |grep pójdę
-cp text/piesn-o-rolandzie.txt-* /tmp/comp/
-cat text/piesn-o-rolandzie.txt-12.txt |grep -i turb
-cat text/piesn-o-rolandzie.txt-12.txt |grep -i turp
-cd text/
-perl ../apply-specific.pl 
-git diff
-git add piesn-o-rolandzie.txt-*
-git commit -m norm
-cd ..
-ls
 git diff
 cat text/piesn-o-rolandzie.txt-12.txt |grep -i piesn-o-rolandzie.txt-12.txt
 cat text/piesn-o-rolandzie.txt-12.txt |grep -i kordowę
@@ -1998,3 +1889,112 @@ cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' 
 rm spida
 rm spida.log nohup.out 
 ls
+ls Playing/
+cd disk/Playing/msf-asr/
+ls
+cd TG4/
+ls
+cd scripts/
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708847188001&teideal=Dora&series=Dora&dlft=7'
+tail videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708848631001&teideal=Dora&series=Dora&dlft=6'
+mkdir ../dora
+grep Cat videos.tsv 
+grep Cat videos.tsv |grep 28
+grep Cat videos.tsv |grep 20
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708761765001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5570517202001&teideal=Olivia&series=Olivia&dlft=30'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708699944001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=35'
+tail videos.tsv 
+grep Gar videos.tsv 
+grep Gar videos.tsv |grep 45
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5431693254001&teideal=Garfield&series=Garfield&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708778634001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=8'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5705801554001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=3'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703180409001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=1'
+grep Sp videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5428899186001&teideal=Garfield&series=Garfield&dlft=34'
+grep Cat videos.tsv |grep 20
+grep Cat videos.tsv |grep 24
+grep Cat videos.tsv |grep 27
+grep Cat videos.tsv |grep 19
+grep Astr videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708674690001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5565208898001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=6'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5567875131001&teideal=Olivia&series=Olivia&dlft=29'
+grep Gar videos.tsv |grep 45
+grep Gar videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5429322106001&teideal=Garfield&series=Garfield&dlft=32'
+grep WAC videos.tsv 
+grep Ros videos.tsv 
+svn diff
+svn diff|grep '^\+' > todo 
+vi todo 
+cat todo 
+cat todo |awk -F'\t' '{print $6}'
+cat todo |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
+cat todo |awk -F'\t' '{print "http://web.archive.org/save/" $6}' > /tmp/asd/spida
+cat todo |awk -F'\t' '{print  $5}' 
+cat todo |awk -F'\t' '{print "http://web.archive.org/save/" $5}'|grep -v m3u > /tmp/asd/spidb
+cat todo |awk -F'\t' '{print $5}'|grep m3u 
+curl $(cat todo |awk -F'\t' '{print $5}'|grep m3u )|grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spidc
+cat todo |awk -F'\t' '{print $5}'|grep m3u 
+cat todo |awk -F'\t' '{print $5}'|grep m3u |sh run.sh 
+ls
+grep 5703180409001 videos.tsv 
+mkdir ../spongebob
+mv 5703180409001.* ../spongebob/
+svn add ../dora/ ../spongebob/
+cat todo |awk -F'\t' '{print $5}'|grep -v m3u
+less proc_mp4.sh 
+sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}'|grep -v m3u)
+ls
+grep 5428899186001 videos.tsv 
+mv 5428899186001.* ../garfield/
+svn add ../garfield/5428899186001.* 
+grep 5429322106001 videos.tsv 
+mv 5429322106001.* ../garfield/
+svn add ../garfield/5429322106001.* 
+grep 5431693254001 videos.tsv 
+mv 5431693254001.* ../garfield/
+svn add ../garfield/5431693254001.* 
+grep 5565208898001 videos.tsv 
+mv 5565208898001.* ../astroblast/
+svn  add ../astroblast/5565208898001.* 
+grep 5567875131001 videos.tsv 
+mv 5567875131001.* ../olivia/
+svn add ../olivia/5567875131001.* 
+grep 5570517202001 videos.tsv 
+mv 5570517202001.* ../olivia/
+svn add ../olivia/5570517202001.* 
+ls
+grep 5705801554001 videos.tsv 
+mv 5705801554001.* ../spongebob/
+svn add ../spongebob/5705801554001.*
+grep 5708674690001 videos.tsv 
+mv 5708674690001.* ../astroblast/
+svn add ../astroblast/5708674690001.* 
+grep 5708699944001 videos.tsv 
+mv 5708699944001.wav ../whizsachistin/
+svn add ../whizsachistin/5708699944001.wav 
+grep 5708761765001 videos.tsv 
+mv 5708761765001.* ../astroblast/
+svn add ../astroblast/5708761765001.* 
+ls
+grep 5708778634001 videos.tsv 
+mv 5708778634001.* ../spongebob/
+svn add ../spongebob/5708778634001.*
+ls
+grep 5708847188001 videos.tsv 
+grep 5708848631001 videos.tsv 
+mv 570884* ../dora/
+svn add ../dora/*
+cd ..
+svn ci -m more
+svn status
+ls CloIarChonnacht/
+ls CloIarChonnacht/*foca*
+ffplay CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.mp3 
+mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.aud
+svn add CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.aud
+svn ci -m 'text'
