@@ -1,9 +1,3 @@
-ls src/
-ls tools/
-jam
-bjam
-ls
-./ccdv 
 make
 vi ls
 ls
@@ -1998,3 +1992,9 @@ for i in ./*.vtt;do cat $i |perl ../../msf-asr/scripts/vtt-to-audacity.pl > $i.a
 less 017-autor-nieznany-piesn-o-rolandzie.mp3.sil 
 cat ~/bin/convert-mp3.sh 
 less 017-autor-nieznany-piesn-o-rolandzie.mp3.sil 
+cd ~
+cd disk/Playing/
+mkdir PLEC
+cd PLEC/
+wget http://pelcra.pl/plec/userfiles/errors_mp.xls http://pelcra.pl/plec/userfiles/plec_sp.tar.gz http://pelcra.pl/plec/userfiles/plec_sp_media.tgz http://pelcra.pl/plec/userfiles/errors.xls http://pelcra.pl/plec/userfiles/Phrases/Phrases-0.1.jar
+tar ztvf plec_sp_media.tgz 
