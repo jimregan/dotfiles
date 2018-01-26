@@ -1,16 +1,3 @@
-ffprobe  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
-ffprobe -i  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
-ffprobe -i  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 
-for i in *.mp3;do (ffprobe $i 2>&1 |grep 'Duration: 00:00') && echo $i >> /tmp/sortlist;done
-cat /tmp/sortlist.f|while read i;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
-for i in *.mp3;do (ffprobe $i 2>&1 |grep 'Duration: 00:0[1-9]') && echo $i >> /tmp/sortlist2;done
-wc -l /tmp/sortlist2
-vi transcribe.py 
-cat /tmp/sortlist2|while read i;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
-cat /tmp/sortlist2.f|while read i;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
-vi /tmp/ltodo
-cat /tmp/ltodo|tr ',' '\n'|tr -d ' '
-cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq
 cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq > lpst
 cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq |tr v w > /tmp/rpst
 paste lpst /tmp/rpst 
@@ -1998,3 +1985,16 @@ less ./Software/Forced_Alignment/TexStuff/Earlier_versions_preFeb06/dict
 less ./Software/vocab/vocab/perldata/example/dict.data
 ffplay ./Software/comhra_test/comhra/audio/idic0002.mp3
 ffplay hiasynth/wav/RA_AE_hiasynth_supp1_0712.wav 
+cd /tmp
+cp ~/Downloads/zestawy_maturalne.pdf .
+man pdftk
+sudo apt-get install pdftk
+pdftk zestawy_maturalne.pdf cat 7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41 out.pd
+pdftk zestawy_maturalne.pdf cat 7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41 output out.pdf
+man pdftk
+pdftk zestawy_maturalne.pdf cat 7-41odd output out.pdf
+ls -al out.pdf 
+mv out.pdf zestawy_maturalne-edit.pdf 
+less ~/Downloads/Wikisource-20180123224245.xml 
+sudo cpan MediaWiki::Bot
+sudo cpan -f MediaWiki::Bot
