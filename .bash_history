@@ -1,60 +1,3 @@
-export GOOGLE_APPLICATION_CREDENTIALS=/home/jim/Downloads/My\ First\ Project-fb0d9d863927.json
-cd disk/Playing/
-ls
-cd wolne-lektury-audio-corpus/
-ls
-cd audio/
-ls
-sh ~/bin/convert-mp3.sh tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3
-ls tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav 
-vi transcribe.py
-python transcribe.py #!/usr/bin/env python
-# Copyright 2017 Google Inc. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-"""Google Cloud Speech API sample that demonstrates word time offsets.
-
-Example usage:
-    python transcribe_word_time_offsets.py resources/audio.raw
-    python transcribe_word_time_offsets.py \
-        gs://cloud-samples-tests/speech/vr.flac
-"""
-import argparse
-python transcribe.py tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
-vi transcribe.py 
-export GOOGLE_APPLICATION_CREDENTIALS=/home/jim/Downloads/My\ First\ Project-fb0d9d863927.json
-ls
-less transcribe.py 
-python transcribe.py gs://foobyck/wlaud/tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
-vi transcribe.py 
-python transcribe.py gs://foobyck/wlaud/tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
-python3 transcribe.py gs://foobyck/wlaud/tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
-mkdir ts
-ls
-for i in *mp3;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
-vi transcribe.py 
-ffmpeg -i 001-autor-nieznany-piesn-o-rolandzie.mp3
-ls -al ts
-find ts -size 0 -delete
-rm ts/001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3.txt 
-rm ts/002-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3.txt 
-rm ts/002-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-02.mp3.txt 
-rm ts/003-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-03.mp3.txt 
-ls ts/
-ls -al ts/
-vi transcribe.py 
-ffprobe 001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3
-#for i in *.mp3;do ffprobe
 for i in *.mp3;do (ffprobe $i|grep 'Duration: 00:00') && echo $i >> /tmp/sortlist;done
 ffprobe  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
 ffprobe -i  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
@@ -1998,3 +1941,60 @@ ls
 less vtt-patcher.pl 
 ffplay /tmp/temp.wav 
 audacity &
+svn ls
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Voices
+rm -rf Voices/
+mkdir speech-syn
+cd speech-syn/
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Data
+ls
+cd Data/
+svn up
+svn cleanup
+svn up
+ls
+ls Test_Recordings/
+ls
+ls DIPHONE_CORPUS_26-02-07/
+ls DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt 
+less DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt 
+grep _e DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt 
+cat DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt |iconv -f latin1 -t utf8
+cat DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt |iconv -f latin1 -t utf8|grep _e
+cat DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt |iconv -f latin1 -t utf8|grep _e|wc
+find  . -name '*dict*'
+less DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict
+wc -l DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict*
+less Test_Recordings/AineNiBhreisleain_Annotated_Corpus/SayTimeAine/pron-dict_saytime 
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Tests
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Tests/pmc
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Tests/pmc/textprocessing
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software
+cd ..
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software
+less Software/tcdsynthesiser/cab/LTSRules.py
+less Software/tcdsynthesiser/gaothdobhair.xml
+less Software/tcdsynthesiser/cab/gaoth_dobhair_exceptions.txt 
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest_lexicon.dict
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/allophones.ga_MU.xml 
+tree Software/marytts-lang-ga/
+less Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
+wc -l Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
+wc -l Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon_130912.lts 
+less Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon_130912.lts 
+less Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon_130912.fst 
+#cp Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt ~/disk/Playing/msf-asr/
+mkdir  ~/disk/Playing/msf-asr/abair-lexica
+cp Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt ~/disk/Playing/msf-asr/abair-lexica/
+find . -name '*dic*'
+less ./Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest_lexicon.dict
+cp ./Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest_lexicon.dict ~/disk/Playing/msf-asr/abair-lexica/
+less ./Software/Forced_Alignment/hmmdefs_and_macros/Jan11th2006/htk_dict_Jan1106.txt
+export LEXTRG=~/disk/Playing/msf-asr/abair-lexica/
+cp ./Software/Forced_Alignment/hmmdefs_and_macros/Jan11th2006/htk_dict_Jan1106.txt $LEXTRG/
+ls $LEXTRG 
+less ./Software/Forced_Alignment/TexStuff/Earlier_versions_preFeb06/dict
+less ./Software/vocab/vocab/perldata/example/dict.data
+ffplay ./Software/comhra_test/comhra/audio/idic0002.mp3
