@@ -1,8 +1,3 @@
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp/expand 
-mkleft
 mkrightin && addprons 
 git diff
 git add pron-data/gen.tsv 
@@ -1998,3 +1993,8 @@ git commit -m more
 git status
 git branch 
 git push origin lexicon 
+cd ../
+mkdir pano
+cd pano/
+unzip ~/Downloads/takeout-20180123T191350Z-001.zip 
+identify Takeout/Panoramio/Saints\ Peter\ and\ Paul\ Church\,\ Kraków.jpg 
