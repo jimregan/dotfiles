@@ -1,12 +1,3 @@
-make
-vi ls
-ls
-find . -name 'mapf(
-find . -name 'mapf*'
-find . -name 'map*'
-cd src/
-ls
-jam
 ls
 cd ..
 vi src/mmapfile.c 
@@ -1998,3 +1989,12 @@ mkdir PLEC
 cd PLEC/
 wget http://pelcra.pl/plec/userfiles/errors_mp.xls http://pelcra.pl/plec/userfiles/plec_sp.tar.gz http://pelcra.pl/plec/userfiles/plec_sp_media.tgz http://pelcra.pl/plec/userfiles/errors.xls http://pelcra.pl/plec/userfiles/Phrases/Phrases-0.1.jar
 tar ztvf plec_sp_media.tgz 
+ls
+tar ztvf plec_sp.tar.gz 
+tar zxvf plec_sp.tar.gz 
+cd 720-3-PELCRA_72030200000
+ls
+find . -name '*eaf'
+less ./720-3-PELCRA_72030200000049/text.eaf
+less ./720-3-PELCRA_72030200000049/text_structure.xml 
+vi dl
