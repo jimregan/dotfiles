@@ -1,9 +1,3 @@
-perl expand-with-polimorf.pl polimorf/polimorf.tab 
-perl pron-data/gen.tsv  expand-with-polimorf.pl polimorf/polimorf.tab 
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab 
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp/expand 
-cat /tmp/expand 
 cp /tmp/expand /tmp/leftin 
 mkleft
 mkrightin && addprons 
@@ -1998,3 +1992,9 @@ git diff
 git add pron/connacht.tsv 
 git commit -m fix
 git branch
+less ~/disk/Playing/corpuscrawler/corpus/gd.txt 
+less ~/disk/Playing/corpuscrawler/Lib/corpuscrawler/crawl_gd.py
+svn info --show-item repos-root-url 
+cd TG4/
+svn info --show-item repos-root-url 
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
