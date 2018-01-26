@@ -1,10 +1,3 @@
-cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl 
-cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/leftin 
-vi /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'|sed -e 's/ $//' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ $//' >> pron-data/gen.tsv 
 git diff
 git add pron-data/gen.tsv 
 git commit -m more
@@ -1998,3 +1991,10 @@ vi /tmp/phmap
 cat  /tmp/phmap |awk -F'\t' '{print $2}' > /tmp/phmap2
 cat  /tmp/phmap |awk -F'\t' '{print "  \"" $2 "\" => "}' > /tmp/phmap2 
 cat /tmp/phmap2 
+cd ~/disk/Playing/
+git clone https://github.com/cmusphinx/cmudict.git
+cd cmudict/
+ls
+less cmudict.vp 
+less cmudict.dict 
+grep ' ia ' ../msf-asr/pron/*
