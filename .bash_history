@@ -1,29 +1,3 @@
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/XJhmgDkI4eit.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1hKaG1nRGtJNGVpdC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA2Njh9fX1dfQ__&Signature=J-P0F3KmfNZjuyV2KmstLwBmlz30PaUwk3XYFT-1bypUypBZPrKNsKAq7QFqeyAd5uyZpJQ5w437y7rcBrMKr3H4fkfsyoucXFq7eXt6OyE0NabzT8IAtvwYpxgaF~tcqRRHAQQ42bEyyhdi2ozHZ~z8moD9xFvab~gaa4A-DDJpPaJbVcMExqpcmw9bvEqApDvnbVkuLTAhLvuH2N-m3zcIXQItlzX2xlBDSDkK251PncX1Uuzz-wFKDj03~DowY5O3kfM-gktdaxAcFcG4HOiyhg1XCqh9C3YWjieTExz~T8B5~5OlP5L0oI3Xu6V4-sz5Qa-ODfU5kdVJquPneA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidf
-sh ~/scripts/spider.sh spidf
-ls -al
-tail -f spib.log 
-cat spib.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spib
-rm spib
-rm spib.log 
-tail spida.log 
-less spida.log 
-less spidb.log 
-ps aux|grep wget
-cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spida.log |perl ~/bin/wget-http.pl  > out
-cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
-vi out 
-cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2'  > out
-cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
-cat spidredo 
-cat spidb.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spidb.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out
-cat spidb|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
-rm spida
-rm spida.log 
-rm spidb
-rm spidb.log 
 ls
 ps aux|grep wget
 cat spidc.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
@@ -1998,3 +1972,29 @@ cd multi-speaker-tacotron-tensorflow/
 ls
 pip3 install -r requirements.txt
 sudo pip3 install -r requirements.txt
+cd sil/
+ls
+less 036-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-04-rozdzial-09.mp3.sil 
+less 03-antoni-lange-miranda.mp3.sil 
+less ../ts/017-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+cd ..
+ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 0.5 -t 0.9 /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 0.5 -t 1.1 /tmp/test.wav
+ffplay /tmp/test.wav 
+less ts/017-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.5 -t 1.2 /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.52 -t 1.2 /tmp/test.wav
+ffplay /tmp/test.wav 
+ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.53 -t 1.2 /tmp/test.wav
+ffplay /tmp/test.wav 
+rm /tmp/test.wav 
+ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.53 -t 1.2 /tmp/test.wav
+ffplay /tmp/test.wav 
+less ts/017-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 2.2 -t 1.2 /tmp/test.wav
+ffplay /tmp/test.wav 
+cd ..
+grep -i żyrfaret piesn-o-r*
+grep -i żyrfaret text/piesn-o-r*
