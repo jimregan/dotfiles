@@ -1,32 +1,3 @@
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=QzFPfme5FwU
-ls
-cd ..
-ls
-cd signed/
-ls
-mkdir nospeech
-cd nospeech/
-mkdir UCgvywbxAcsgJr_gfpqKLXXw
-cd UCgvywbxAcsgJr_gfpqKLXXw
-ls
-vi list
-vi nonfree
-cd ..
-cd lipread/
-ls
-cd ..
-cd nope/
-ls
-mkdir RobertMarchelTV
-cd RobertMarchelTV
-vi list
-cp ../../lipread/dl.sh .
-vi dl.sh 
-cat list |sh dl.sh 
-ls
-cd ..
-ls
 cat list*|sort|uniq|grep http |sh RobertMarchelTV/dl.sh 
 ls
 ls parrots/
@@ -1998,3 +1969,32 @@ mv xaa leftin
 mv xab leftin 
 mv xac leftin 
 vi leftin 
+cd ../
+mkdir mickyd
+cd mickyd/
+cat ../youtube-pl/dl.sh 
+youtube-dl -x --audio-format=best --write-sub --sub-lang=en-UK  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
+youtube-dl -x --audio-format=best --write-sub --sub-lang=en  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
+youtube-dl -x --audio-format=best --write-sub --sub-lang=en-GB  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
+less g72ucHVhPGQ.en-GB.ttml 
+youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
+ls
+youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=Ss9FxMS_vaE
+ls
+rm Ss9FxMS_vaE.*
+youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=V-Hmc-MRRiU
+youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=gOeMlTMyS_g
+youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=gOeMlTMyS_g
+ls
+less V-Hmc-MRRiU.ga.ttml 
+youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=V-Hmc-MRRiU
+ls
+youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=eQ0XB8Mnl1k
+youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=5CkxwcyJLvk
+ls
+youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=NmvNner1ZU0
+less NmvNner1ZU0.en-GB.ttml 
+ffplay /home/jim/Downloads/diana_arrives_at_monaghan_branch_library.mp3
+ffplay /home/jim/Downloads/dún_do_shúile.mp3 
+tar ztvf ~/disk/desktop/Downloads/0001_aspire_chain_model.tar.gz 
+svn info --show-item repos-root-url 
