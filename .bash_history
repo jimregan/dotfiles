@@ -1,9 +1,3 @@
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-rm spid.log 
-tail -n 4 spid 
-tail -n 4 spid  > ssss
-mv ssss spid 
-sh ~/scripts/spider.sh spid
 cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
 less ~/tmp/sync/http-misc-20180105-1.nt 
 rm inp
@@ -1998,3 +1992,9 @@ cat piesn-o-rolandzie.txt-41.txt.sil.aud
 cat piesn-o-rolandzie.txt-41.txt 
 cat piesn-o-rolandzie.txt-41.txt |perl ../split-sentence.pl 
 audacity 
+mkdir sil
+vi sil.sh
+sh sil.sh 021-autor-nieznany-piesn-o-rolandzie.mp3 
+less sil/021-autor-nieznany-piesn-o-rolandzie.mp3.sil 
+vi sil.sh
+for i in *mp3;do sh sil.sh $i;done
