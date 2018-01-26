@@ -1,90 +1,3 @@
-ls
-ps aux|grep wget
-cat spidc.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spidc.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out
-cat spidc|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
-mv spidredo spida
-sh ~/scripts/spider.sh spida
-ls
-rm spidc
-rm spidc.log 
-ps aux|grep wget
-ls
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/clyU9WzLOQCn.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L2NseVU5V3pMT1FDbi4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE5OTd9fX1dfQ__&Signature=RfZaQxu9BuVg2bXx6ZJ6Hnbrg6PtLEILGQ-qHl0bGWpG~ZNBxrTb2ffKc5sCs~EU8oNipidqqbCncLnA6u38XmmjF7cMBto3M1t149e7Ikz47s9wZoPAV71FFQQZmyLls8byM0Cl8c~qojMwrS~zEkLk~XvRE4dkd0oWmMdDUWtgyjjKPqPbkezpDrm1oQUBHu5Fz5KjXoRiFawulSN0vj2gr~0FWc3Au9zFwvGEFOXoypF0OHTJp7Uxo5DJ4bfMEnYqANqpzH8FDVJS8IGYm3Mob4M-gtvOzcOpLp-rZHGHTAxoe07kkTdoWceS27MXhkNRzeAshKVf8U6tXX65MA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidg
-sh ~/scripts/spider.sh spidg
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/EfsIqtNC3aXE.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0Vmc0lxdE5DM2FYRS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE4NzR9fX1dfQ__&Signature=vo~~vCmWeXoa9pcgabQysvYghvwuX4hqBXSea4oJsmp81h8KbEsLBB~1hPB70kE1GxwUabjSVF1bHSdnJWxk1t8J-g5KICgpOQfcdDSSWpiTKriPrbaDYo94GHlcu5EVFEeOd9DCs5GbIfyDeGMuSowTPcaERSIqk2hLuaBe2VGq8JoCM8wBHEqc-9~iT55KedUN~G0DVDYrg4qEm5FXAQDYXhDPKehrGICzrmDMDx9Sw~B~sgrN54me2tfdhefVfufalCqel1RVDgn3o4t7Fa5bfuK3ZV4pmySst2sUh1a6XMfaTj5RHl8C73fHKEK1k9yk0MRpDIngU5h44rUCOQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidh
-sh ~/scripts/spider.sh spidh
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/3X5NZaqWfDfM.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzNYNU5aYXFXZkRmTS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzE3Mzh9fX1dfQ__&Signature=g386tzV1BPWkkD7s~ubFC44eUUPdsL7Hr3K39TgEHl5nVRhpcJ7cAGHVn6V7UXCSze7~xJhxGjWek06Ye~f3eHglS56-khh9LbR2MrbmIveKVRJygKdsXVyXvZG~um8KMoArjqaepNoCONGMD-lUpOqIHJrnv~4PedOwVydOoLjkqzYkfNEIpRQ4knpjEpMaRSw59P4B2U2r0hnfeXft~QB7l584FPE0uuAvfhXU~pmxDpmv2WF-pec07pdA34zgM8g7BCUh3mp6kVQL~g0nBiVNXhZqsKAq9g1jowLRgjy6FdAtt7hsGW3cedIYSCz6rPC~8sVKU5DlwdM2AfkkPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidi
-sh ~/scripts/spider.sh spidi
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/sDgheS0HrWzz.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L3NEZ2hlUzBIcld6ei4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzIxNDB9fX1dfQ__&Signature=HaJ-EKAhEZPtJOxcETcBR0AF7FBEr7CwF1ZF2IYc1EH8xBx2z~0mRsRCWWtkPScvqb4WS7jjwP7NEjJIG79GafN~WtwNbDDZ-TSaDc5qX6FmKHrE51s539I1uPFBhUPZbiayuoG3kEVzUR8VwJKPXnAcNAYKdx3nXjTorCJxYFsiS3cYYCv3seFu2gSBjiIYv1olsNe1uENLIVGgSX0wwN3MD6jMRfk9w11MWbg9HmxEEatQixJjDzOPYQTFEtkiwhh6RTHseWVKU5LNBP2GJuImqP-Xucj9sG1t4JKsvPpMTCjJsvtuh-tf5ofjApra~0X2hcB3W5YhObdJiDfevw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidj
-sh ~/scripts/spider.sh spidj
-ps aux|grep wget
-ls
-cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out
-cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo;done
-ckredo () { cat $1.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt ; cat $1.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out ; cat $1 |awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo ; }
-ckredo () { cat $1.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt ; cat $1.log |perl ~/bin/wget-http.pl |grep 'web/2'  >> out ; cat $1 |awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo ; done ; }
-ls
-ps aux|grep wget
-ckredo spidd
-ckredo spide
-ps aux|grep wget
-ckredo spidf
-ckredo spidg
-ckredo spidh
-ps aux|grep wget
-ckredo spidi
-ls
-rm out nohup.out 
-ps aux|grep wget
-tail -f spidj.log 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm inp
-rm inp.log 
-ls
-ckredo spidd
-ls
-ckredo spida
-ls
-ckredo spide
-ckredo spidf
-ckredo spidg
-ckredo spidh
-ckredo spidi
-ckredo spidj
-wc -l spidredo 
-ls
-mv spidredo foo
-rm nohup.out spid*
-rm -rf web.archive.org/
-sh ~/scripts/spider.sh foo
-tail -f foo.log 
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm -rf web.archive.org/
-rm inp
-rm inp.log 
-ls
-tail -f foo.log 
-ckredo foo
-ls
-rm out 
-ckredo foo
-ls
-rm out 
-ckredo foo
-ckredo () { cat $1.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt ; cat $1.log |perl ~/bin/wget-http.pl |grep 'web/2' |grep -v Forbidden  >> out ; cat $1 |awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidredo ; done ; }
-rm out 
-ckredo foo
-ls
-rm foo
-rm foo.log 
-rm out nohup.out 
-ls
 cat inp 
 sh ~/scripts/grab-logged.sh inp
 zless ~/Downloads/conceptnet-assertions-5.5.5.csv.gz 
@@ -1998,3 +1911,90 @@ ffplay /tmp/test.wav
 cd ..
 grep -i żyrfaret piesn-o-r*
 grep -i żyrfaret text/piesn-o-r*
+cd ~
+\sudo mv Playing/ disk/Playing/Playing-remainder
+ls Playing/kaldi/tools/Phonetisaurus/
+sudo mv Playing/ disk/Playing/Playing-remainder
+export GOOGLE_APPLICATION_CREDENTIALS=/home/jim/Downloads/My\ First\ Project-fb0d9d863927.json
+cd disk/Playing/
+ls
+cd wolne-lektury-audio-corpus/
+ls
+cd audio/
+ls
+sh ~/bin/convert-mp3.sh tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3
+ls tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav 
+vi transcribe.py
+python transcribe.py #!/usr/bin/env python
+# Copyright 2017 Google Inc. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+"""Google Cloud Speech API sample that demonstrates word time offsets.
+
+Example usage:
+    python transcribe_word_time_offsets.py resources/audio.raw
+    python transcribe_word_time_offsets.py \
+        gs://cloud-samples-tests/speech/vr.flac
+"""
+import argparse
+python transcribe.py tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
+vi transcribe.py 
+export GOOGLE_APPLICATION_CREDENTIALS=/home/jim/Downloads/My\ First\ Project-fb0d9d863927.json
+ls
+less transcribe.py 
+python transcribe.py gs://foobyck/wlaud/tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
+vi transcribe.py 
+python transcribe.py gs://foobyck/wlaud/tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
+python3 transcribe.py gs://foobyck/wlaud/tadeusz-boy-zelenski-slowka-zbior-naszym-hymenografomanom.mp3.wav
+mkdir ts
+ls
+for i in *mp3;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
+vi transcribe.py 
+ffmpeg -i 001-autor-nieznany-piesn-o-rolandzie.mp3
+ls -al ts
+find ts -size 0 -delete
+rm ts/001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3.txt 
+rm ts/002-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3.txt 
+rm ts/002-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-02.mp3.txt 
+rm ts/003-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-03.mp3.txt 
+ls ts/
+ls -al ts/
+vi transcribe.py 
+ffprobe 001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3
+#for i in *.mp3;do ffprobe
+for i in *.mp3;do (ffprobe $i|grep 'Duration: 00:00') && echo $i >> /tmp/sortlist;done
+ffprobe  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
+ffprobe -i  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 | grep Dura
+ffprobe -i  001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3 
+for i in *.mp3;do (ffprobe $i 2>&1 |grep 'Duration: 00:00') && echo $i >> /tmp/sortlist;done
+cat /tmp/sortlist.f|while read i;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
+for i in *.mp3;do (ffprobe $i 2>&1 |grep 'Duration: 00:0[1-9]') && echo $i >> /tmp/sortlist2;done
+wc -l /tmp/sortlist2
+vi transcribe.py 
+cat /tmp/sortlist2|while read i;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
+cat /tmp/sortlist2.f|while read i;do python3 transcribe.py gs://foobyck/wlaud/$i.wav > ts/$i.txt;done
+vi /tmp/ltodo
+cat /tmp/ltodo|tr ',' '\n'|tr -d ' '
+cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq
+cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq > lpst
+cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq |tr v w > /tmp/rpst
+paste lpst /tmp/rpst 
+paste lpst /tmp/rpst >> ../pron-data/pronounce-as.tsv 
+rm lpst 
+cd ..
+git diff
+git add normalisations.tsv 
+git commit -m 'some from youtube
+git commit -m 'some from youtube'
+git diff
+git add specific-norms.tsv 
