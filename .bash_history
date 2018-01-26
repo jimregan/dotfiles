@@ -1,38 +1,3 @@
-cat cv-valid-train.csv |awk -F, '{print $7}
-cat cv-valid-train.csv |awk -F, '{print $7}'
-cat cv-valid-train.csv |awk -F, '{print $7}'|grep ire
-cat cv-valid-train.csv |awk -F, '{print $7}'|grep ire|wc
-cat cv-valid-train.csv |awk -F, '($7=="ireland"){print}'
-cat cv-valid-train.csv |awk -F, '($7=="ireland"){print}'|grep male|grep thirt
-cd /tmp//asd/
-ls
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid
-vi spid
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-ls
-rm *
-wc -l spid 
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-ls
-sh ~/scripts/grab-logged.sh inp
-tail spid.log 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
 cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
 rm spid.log 
 tail -n 4 spid 
@@ -1998,3 +1963,38 @@ roland 036
 roland 038
 roland 040
 ls
+ls|less
+mkdir ../../wlaud
+ffplay 023-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 024-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 027-autor-nieznany-piesn-o-rolandzie.mp3 
+cd ../text/
+perl ../apply-specific.pl 
+git diff
+git add piesn-o-rolandzie.txt-38.txt 
+git commit -m norm
+ls ../*tsv
+less ../pairs.tsv 
+ls ../audacity
+less pairs.tsv 
+rm pairs.tsv 
+ls
+vi run-aeneas.sh 
+less run-aeneas.sh 
+#sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
+cp run-aeneas.sh run-aeneas-harald.sh
+vi run-aeneas.sh 
+vi run-aeneas-harald.sh 
+sh run-aeneas.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
+sh run-aeneas-harald.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
+diff -u piesn-o-rolandzie.txt-41.txt*aud
+cat piesn-o-rolandzie.txt-41.txt.sil.aud
+vi run-aeneas.sh 
+vi run-aeneas-harald.sh 
+sh run-aeneas.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
+sh run-aeneas-harald.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
+diff -u piesn-o-rolandzie.txt-41.txt*aud
+cat piesn-o-rolandzie.txt-41.txt.sil.aud
+cat piesn-o-rolandzie.txt-41.txt 
+cat piesn-o-rolandzie.txt-41.txt |perl ../split-sentence.pl 
+audacity 
