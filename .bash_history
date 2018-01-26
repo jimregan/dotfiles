@@ -1,27 +1,3 @@
-ls
-cd RobertMarchelTV/
-ls
-for i in *vtt;do echo $(basename $i .pl.vtt)|awk '{print "https://www.youtube.com/watch?v=" $0 "\thttps://www.youtube.com/channel/UCZyC5Ix9Dw_gBP-I68w1uJw\tRobert Marchel\t1\t0"}'
-for i in *vtt;do echo $(basename $i .pl.vtt);done|awk '{print "https://www.youtube.com/watch?v=" $0 "\thttps://www.youtube.com/channel/UCZyC5Ix9Dw_gBP-I68w1uJw\tRobert Marchel\t1\t0"}'
-cd ..
-ls
-cd parrots/
-ls
-cd ..
-ls
-ls *vtt
-ls ./*vtt
-find . -name '*.vtt'
-find . -name '*.vtt'|sed -e 's/\.\///'
-find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /
-find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /|sed -e 's/\.pl\.vtt//'
-find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /|sed -e 's/\.pl\.vtt//'|while read i;do grep $i ../closed.tsv ;done
-find . -name '*.vtt'|sed -e 's/\.\///'|grep -v /|sed -e 's/\.pl\.vtt//'|while read i;do grep $i ../closed.tsv || echo https://www.youtube.com/watch?v=$i ;done
-ls
-ls ..
-ls misc
-ls
-grep https://www.youtube.com/watch?v=g1JLG4uFMHY ../closed.tsv 
 grep https://www.youtube.com/watch?v=8N3ohjW3PP4 ../closed.tsv 
 grep https://www.youtube.com/watch?v=uZnpq9L6euo ../closed.tsv 
 grep https://www.youtube.com/watch?v=G9zTK90ZNXQ ../closed.tsv 
@@ -1998,3 +1974,27 @@ less models/trie
 less models/alphabet.txt 
 ls
 deepspeech -h
+cd /tmp/comp/
+ls
+for i in seq 1 291;do wdiff $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt;done
+for i in $(seq 1 291);do wdiff $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt;done
+man wdiff
+for i in $(seq 1 291);do wdiff -i $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt > wd-$i ;done
+less wd-1
+less wd-2
+less wd-3
+less wd-4
+less wd-5
+less wd-6
+ls
+rm wd-*
+for i in piesn-o-rolandzie.txt-*;do cat $i |perl ~/disk/Playing/wolne-lektury-audio-corpus/clean.pl > tmp;mv tmp $i;done
+for i in $(seq 1 291);do wdiff -i $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt > wd-$i ;done
+less wd-6
+less wd-7
+less wd-6
+less wd-7
+less wd-8
+for i in $(seq 8 291);do echo >> /tmp/allwd; cat wd-$i >> /tmp/allwd;done
+rm /tmp/allwd 
+for i in $(seq 8 291);do echo >> /tmp/allwd;echo $i >> /tmp/allwd  ; cat wd-$i >> /tmp/allwd;done
