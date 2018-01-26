@@ -1,17 +1,3 @@
-cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq > lpst
-cat /tmp/ltodo|tr ',' '\n'|tr -d ' '|sort|uniq |tr v w > /tmp/rpst
-paste lpst /tmp/rpst 
-paste lpst /tmp/rpst >> ../pron-data/pronounce-as.tsv 
-rm lpst 
-cd ..
-git diff
-git add normalisations.tsv 
-git commit -m 'some from youtube
-git commit -m 'some from youtube'
-git diff
-git add specific-norms.tsv 
-cd ..
-cat text/piesn-o-rolandzie.txt-*
 cd text/
 rm *.bak
 cd ..
@@ -1998,3 +1984,17 @@ mv out.pdf zestawy_maturalne-edit.pdf
 less ~/Downloads/Wikisource-20180123224245.xml 
 sudo cpan MediaWiki::Bot
 sudo cpan -f MediaWiki::Bot
+cd ..
+svn ci -m more
+svn status
+svn add dora/5716770912001*
+svn ci -m more
+mv scripts/caibidil_a_1,_mír_a_1_cúpla_focal.txt CloIarChonnacht/
+vi CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
+svn add CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
+svn ci -m text
+mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
+svn diff
+svn ci -m rest
+mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
+svn ci -m fix
