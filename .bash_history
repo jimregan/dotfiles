@@ -1,10 +1,3 @@
-ls
-cd scripts/
-ls
-cd ..
-git clone https://github.com/jimregan/ngramtool.git
-cd ngramtool/
-ls
 ./configure 
 make
 ls
@@ -1998,3 +1991,10 @@ cp local/chain/*sh ../../snuv/s5/local/chain/
 diff -u ../../mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh  local/chain/tuning/run_tdnn_1a.sh 
 diff -u ../../mini_librispeech/s5/local/chain/compare_wer.sh  local/chain/compare_wer.sh 
 ls
+ls
+cd ../../youtube-pl/
+ls
+cd nope/
+ls
+for i in *.vtt;do cat $i |perl ../../msf-asr/scripts/vtt-to-audacity.pl > $i.aud;done
+for i in ./*.vtt;do cat $i |perl ../../msf-asr/scripts/vtt-to-audacity.pl > $i.aud;done
