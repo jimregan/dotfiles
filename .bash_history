@@ -1,150 +1,3 @@
-roland { ffplay $1-autor-nieznany-piesn-o-rolandzie.mp3 ; }
-roland() { ffplay $1-autor-nieznany-piesn-o-rolandzie.mp3 ; }
-roland 033
-roland 034
-roland 035
-roland 036
-roland 038
-roland 040
-ls
-ls|less
-mkdir ../../wlaud
-ffplay 023-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 024-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 027-autor-nieznany-piesn-o-rolandzie.mp3 
-cd ../text/
-perl ../apply-specific.pl 
-git diff
-git add piesn-o-rolandzie.txt-38.txt 
-git commit -m norm
-ls ../*tsv
-less ../pairs.tsv 
-ls ../audacity
-less pairs.tsv 
-rm pairs.tsv 
-ls
-vi run-aeneas.sh 
-less run-aeneas.sh 
-#sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
-cp run-aeneas.sh run-aeneas-harald.sh
-vi run-aeneas.sh 
-vi run-aeneas-harald.sh 
-sh run-aeneas.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
-sh run-aeneas-harald.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
-diff -u piesn-o-rolandzie.txt-41.txt*aud
-cat piesn-o-rolandzie.txt-41.txt.sil.aud
-vi run-aeneas.sh 
-vi run-aeneas-harald.sh 
-sh run-aeneas.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
-sh run-aeneas-harald.sh 041-autor-nieznany-piesn-o-rolandzie.mp3 piesn-o-rolandzie.txt-41.txt 
-diff -u piesn-o-rolandzie.txt-41.txt*aud
-cat piesn-o-rolandzie.txt-41.txt.sil.aud
-cat piesn-o-rolandzie.txt-41.txt 
-cat piesn-o-rolandzie.txt-41.txt |perl ../split-sentence.pl 
-audacity 
-mkdir sil
-vi sil.sh
-sh sil.sh 021-autor-nieznany-piesn-o-rolandzie.mp3 
-less sil/021-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-vi sil.sh
-for i in *mp3;do sh sil.sh $i;done
-cd ~/disk/Playing/wolne-lektury-audio-corpus/
-less NumberNorm.pm 
-perl NumberNorm.pm  num2text 15
-perl NumberNorm.pm  num2text 19
-perl NumberNorm.pm  num2text 115
-perl NumberNorm.pm  num2text 10
-ls
-cd audio/
-ls
-for i in *mp3;do sh ~/bin/convert-mp3.sh $i;done
-ls
-mv *.mp3.wav ../../wlaud/
-ls
-perl -e 'print 18.913  - 13.352   . "\n";'
-less ~/bin/convert-mp3.sh 
-perl -e 'print 21.219  - 18.913  . "\n";'
-perl -e 'print 13.352  - 12.299  . "\n";'
-perl -e 'print 12.299 - 1.053  . "\n";'
-perl -e 'print 1330.246 - 1323.113 - 1.053   . "\n";'
-perl -e 'print 1330.246 - 1323.113   . "\n";'
-perl -e 'print 1330.246 - 1.053   . "\n";'
-perl -e 'print 1323.113 - 1.053   . "\n";'
-echo $((22 * 60))
-perl -e 'print 1323.113 - 1.053   . "\n";'
-perl -e 'print 07.600 - 2.04   . "\n";'
-perl -e 'print 7.600 - 2.04   . "\n";'
-perl -e 'print 26.5 - 25.36   . "\n";'
-echo $((9 * 60))
-ffplay 015-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 016-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 017-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 018-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 019-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 020-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 021-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 022-autor-nieznany-piesn-o-rolandzie.mp3 
-ls
-cd ../text/
-perl ../apply-specific.pl 
-git diff
-ls
-git status
-less boy-swietoszek.txt-01.txt
-find . -size 0
-find . -size 0 -delete
-rm *.bak
-git log
-perl ../apply-specific.pl 
-find . -size 0 -delete
-rm *.bak
-git status
-git diff
-less piesn-o-rolandzie.txt-27.txt 
-less piesn-o-rolandzie.txt-15.txt 
-perl ../apply-specific.pl 
-git diff
-git add piesn-o-rolandzie.txt-27.txt 
-git commit -m norm
-cat piesn-o-rolandzie.txt-0[0-9].txt
-cat piesn-o-rolandzie.txt-0[0-9].txt|perl ../clean.pl 
-cat piesn-o-rolandzie.txt-0[0-9].txt|perl ../clean.pl |tr ' ' '\n'
-cat piesn-o-rolandzie.txt-0[0-9].txt|perl ../clean.pl |tr ' ' '\n'|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
-cat piesn-o-rolandzie.txt-1[0-9].txt|perl ../clean.pl |tr ' ' '\n'|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
-cat piesn-o-rolandzie.txt-1[0-9].txt|grep -i  turpin
-cat piesn-o-rolandzie.txt-2[0-7].txt|perl ../clean.pl |tr ' ' '\n'|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
-cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Pina
-cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Murg
-cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Ginm
-perl ~/toghabot.pl 
-cd ../
-git clone https://github.com/GSByeon/multi-speaker-tacotron-tensorflow
-cd multi-speaker-tacotron-tensorflow/
-ls
-pip3 install -r requirements.txt
-sudo pip3 install -r requirements.txt
-cd sil/
-ls
-less 036-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-04-rozdzial-09.mp3.sil 
-less 03-antoni-lange-miranda.mp3.sil 
-less ../ts/017-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-cd ..
-ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 0.5 -t 0.9 /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 0.5 -t 1.1 /tmp/test.wav
-ffplay /tmp/test.wav 
-less ts/017-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.5 -t 1.2 /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.52 -t 1.2 /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.53 -t 1.2 /tmp/test.wav
-ffplay /tmp/test.wav 
-rm /tmp/test.wav 
-ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 1.53 -t 1.2 /tmp/test.wav
-ffplay /tmp/test.wav 
-less ts/017-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-ffmpeg -i 017-autor-nieznany-piesn-o-rolandzie.mp3 -acodec pcm_s16le -ac 1 -ar 16000 -ss 2.2 -t 1.2 /tmp/test.wav
 ffplay /tmp/test.wav 
 cd ..
 grep -i żyrfaret piesn-o-r*
@@ -1998,3 +1851,150 @@ zless ~/Downloads/WktEN.nt.gz
 zgrep '@gle' ~/Downloads/WktEN.nt.gz 
 zgrep '@gle' ~/Downloads/WktEN.nt.gz |wc
 vi /tmp/wlck
+cat /tmp/snuv
+cat /tmp/snuv-toks 
+cat /tmp/snuv-toks |awk -F'\t' '(NF==2){print}'
+cat /tmp/snuv-toks |awk -F'\t' '(NF==2){print "    \""$1"\" => \""$2"\"."}'
+cat /tmp/snuv-toks |awk -F'\t' '(NF==2){print "    \""$1"\" => \""$2"\","}'
+ls
+grep 5436377395001 videos.tsv 
+mv 5436377395001.* ../garfield/
+svn add ../garfield/5436377395001.*
+grep 5437875805001 videos.tsv 
+mv 5437875805001.* ../garfield/
+svn add ../garfield/5437875805001.*
+grep 5440930726001 videos.tsv 
+mv 5440930726001.* ../garfield/
+svn add ../garfield/5440930726001.*
+grep 5528856864001 videos.tsv 
+mv 5528856864001.* ../astroblast/
+svn add ../astroblast/5528856864001.*
+cd ..
+svn ci -m 'some more'
+cd vid
+cd scripts/
+ls
+grep 5715414407001 videos.tsv 
+mv 5715414407001.* ../dora/
+svn add ../dora/5715414407001.*
+grep 5715152311001 videos.tsv 
+mv 5715152311001.* ../astroblast/
+svn add ../astroblast/5715152311001*
+grep 5713670507001 videos.tsv 
+mv 5713670507001.* ../dora/
+svn add ../dora/5713670507001*
+grep 5713630055001 videos.tsv 
+mv 5713630055001.* ../wac/
+svn add ../wav/5713630055001*
+svn add ../wac/5713630055001*
+ls
+grep 5580933662001 videos.tsv 
+mv 5580933662001.* ../catahata/
+svn add ../catahata/5580933662001*
+LS
+ls
+grep 5595778285001 videos.tsv 
+mv 5595778285001.wav ../catahata/
+svn add ../catahata/5595778285001*
+ls
+grep 5713032798001 videos.tsv 
+mv 5713032798001.* ../spongebob/
+svn add ../spongebob/5713032798001*
+ls
+grep 5529228568001 videos.tsv 
+mv 5529228568001.* ../astroblast/
+svn add ../astroblast/5529228568001*
+ls
+grep 5438160491001 videos.tsv 
+mv 5438160491001.* ../garfield/
+svn add ../garfield/5438160491001*
+ls
+grep 5530199738001 videos.tsv 
+mv 5530199738001.* ../astroblast/
+svn add ../astroblast/5530199738001.*
+#svn add ../astroblast/5530199738001.*
+grep 5567553024001 videos.tsv 
+mv 5567553024001.* ../astroblast/
+#svn add ../astroblast/5567553024001.*
+grep 5573942451001 videos.tsv 
+mv 5573942451001.* ../olivia/
+svn add ../olivia/5573942451001.*
+svn add ../astroblast/5567553024001.*
+svn add ../astroblast/5530199738001.*
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716672396001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
+tail -n 1 videos.tsv 
+tail -n 1 videos.tsv  > todo 
+ls
+grep 5712800619001 videos.tsv 
+mv 5712800619001.* ../astroblast/
+svn add ../astroblast/5712800619001.*
+grep 5712835415001 videos.tsv 
+mv 5712835415001.* ../dora/
+svn add ../dora/5712835415001.*
+grep 5711849664001 videos.tsv 
+mv 5711849664001.wav ../whizsachistin/
+svn add ../whizsachistin/5711849664001.wav 
+ls
+grep 5597977265001 videos.tsv 
+mv 5597977265001.* ../catahata/
+svn add ../catahata/5597977265001.*
+grep 5597836944001 videos.tsv 
+mv 5597836944001.* ../catahata/
+svn add ../catahata/5597836944001.* 
+grep 5597818074001 videos.tsv 
+mv 5597818074001.* ../catahata/
+svn add ../catahata/5597818074001.* 
+grep 5577237049001 videos.tsv 
+mv 5577237049001.* ../olivia/
+svn add ../olivia/5577237049001.* 
+ls
+mv 5438160491001.txt ../garfield/5438160491001.aud 
+grep 5575073958001 videos.tsv 
+mv 5575073958001.* ../olivia/
+svn add ../olivia/5575073958001.* 
+grep 5577127362001 videos.tsv 
+mv 5577127362001.* ../catahata/
+svn add ../catahata/5577127362001.* 
+grep 5577169734001 videos.tsv 
+ls
+grep 5577169734001 videos.tsv 
+mv 5577169734001.* ../catahata/
+cd ..
+svn diff
+svn diff|less
+cd scripts/
+ls
+cat todo |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
+cat todo |awk -F'\t' '{print $6}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
+cat todo |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O ../rosnarun/$id.vtt;done
+sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
+mv 5716672396001.wav ../rosnarun/
+svn add ../rosnarun/5716672396001.*
+svn diff
+grep Whiz videos.tsv 
+grep Garf videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5715167562001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=34'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5578865433001&teideal=Olivia&series=Olivia&dlft=30'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716701975001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5443567745001&teideal=Garfield&series=Garfield&dlft=35'
+grep Cat videos.tsv 
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597938721001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716770912001&teideal=Dora&series=Dora&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716687770001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5567674547001&teideal=Astroblast!&series=Astroblast!&dlft=7'
+less videos.tsv 
+tail -n 8 videos.tsv 
+tail -n 8 videos.tsv  > todo 
+#sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
+cat todo |awk -F'\t' '{print $6}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
+cat todo |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
+vi /tmp/asd/spida 
+cat todo|grep http |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
+sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
+ls
+grep 5716687770001 videos.tsv 
+mv 5716687770001.* ../astroblast/
+svn add ../astroblast/5716687770001.* 
+grep 5567674547001 videos.tsv 
+mv 5567674547001.* ../astroblast/
+svn add ../astroblast/5567674547001.*
