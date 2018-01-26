@@ -1,88 +1,3 @@
-mv Eksperyment\ \ kognitywistyczny\ cz.\ 1-Uf1eCznOxsQ.mp4 Uf1eCznOxsQ.mp4
-mv ~/Uf1eCznOxsQ.txt .
-ls
-mv Eksperyment\ \ kognitywistyczny\ cz.\ 2-dt1dP97TZxU.mp4 dt1dP97TZxU.mp4
-mv Eksperyment\ \ kognitywistyczny\ cz.\ 3-89WBj27TR5I.mp4 89WBj27TR5I.mp4
-ls
-ls -al *mp4
-less rnUxqkIHwHQ.aud 
-vi rnUxqkIHwHQ.lex
-mv ~/dt1dP97TZxU.txt .
-ls
-mv Żywa\ Biblioteka\,\ spotkanie\ z\ Muhamedem-Rsw6a1rUOf4.mp4 Rsw6a1rUOf4.mp4
-mv ~/Rsw6a1rUOf4.txt .
-vi Rsw6a1rUOf4.txt-todo
-cd ..
-ls
-cd nope/
-ls
-vi list
-vi list-maybepd-lipread
-vi list-maybepd-signed
-vi list-maybepd-lipread
-vi list-maybepd-signed
-vi list-maybepd-lipread
-vi list-maybepd
-vi list-maybepd-lipread 
-vi list-maybepd
-vi list-maybepd-lipread 
-vi list-maybepd
-vi list-maybepd-lipread 
-vi list-maybepd
-vi list-maybepd-lipread 
-vi list-maybepd
-ls
-vi list-maybepd-lipread 
-vi list-maybepd
-vi list-maybepd-lipread 
-vi list-maybepd
-vi list-maybepd-lipread 
-vi list-maybepd
-vi list-maybepd-lipread 
-vi list-maybepd
-vi list-maybepd-lipread 
-ls
-vi list-maybepd
-vi list-maybepd-lipread 
-ls
-tail -n 6 list-maybepd-lipread > list-lipread
-tail -n 1 list-maybepd >> list
-vi list-maybepd-lipread 
-vi list-maybepd
-ls
-for i in watch\?v\=*;do id=$(echo $i|awk -F= '{print $2}');grep $id ../closed.tsv || echo $i >> tocheck;done
-ls
-cat tocheck 
-grep https://www.youtube.com/watch?v=-DoMhirlZiE ../closed.tsv 
-grep watch?v=-ElDmONrLAU ../closed.tsv 
-grep v=-kTVT1VQg8o ../closed.tsv 
-grep watch?v=QzFPfme5FwU ../closed.tsv 
-grep watch?v=-U4IyIfZCTM ../closed.tsv 
-grep https://www.youtube.com/channel/UCWdNHp2fsu1v23Nf_kvN1bA ../closed.tsv 
-grep https://www.youtube.com/watch?v=WGY7gcSYfns ../closed.tsv 
-man youtube-dl
-youtube-dl --flat-playlist https://www.youtube.com/user/KhanAcademyPolski
-vi ../open.tsv
-ls
-cat *.vtt
-cat ./*.vtt
-history -a
-cd ..
-ls
-cd SaryuszWolski/
-ls
-cat list |sh ../dl.sh 
-ls
-cd ..
-ls
-cd ..
-ls
-cd misc/
-ls
-cat ../dl.sh 
-sh ../dl.sh https://www.youtube.com/watch?v=ZAWu-uWRQPA ; sh ../dl.sh https://www.youtube.com/watch?v=cNbgC02YnoM
-ls
-cd ..
 ls
 cd signed/
 ls
@@ -1998,3 +1913,88 @@ ffplay bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3
 ffprobe bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3 
 ffprobe bruno-jasienski-but-w-butonierce-tomik-nic_silence_2.mp3 
 cat mp3splt.log 
+ls ts/
+ls -al ts/
+less ts/001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3.txt 
+less ts/001-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+tail -f /tmp/sortlist 
+cat /tmp/sortlist |while read i;do if [ ! -e ts/$i.txt ];then echo $i >> /tmp/sortlist.f;fi;done
+diff -u /tmp/sortlist /tmp/sortlist.f 
+ls -al ts/
+rm -rf ../../wlaud/
+df
+ls -al ts/
+less ts/026-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+less ts/01-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-01-rozdzial-01.mp3.txt 
+less ../text/spowiedz-dzieciecia-wieku.txt 
+ls ts/|wc
+ls -al ts/
+less ts/bruno-jasienski-but-w-butonierce-tomik-nic.mp3.txt 
+cp bruno-jasienski-but-w-butonierce-tomik-nic.mp3 tmp/
+ls -al ts/
+ls
+ls -al ts/
+ls -al ts/|grep '17 1'
+cat ts/00-rudyard-kipling-kim-wstep.mp3.txt 
+rm ts/00-rudyard-kipling-kim-wstep.mp3.txt 
+ls -al ts/|grep '17 1'
+less ts/00-wiktor-teofil-gomulicki-wspomnienia-niebieskiego-mundurka-wstep.mp3.txt 
+ls -al ts/|grep '17 1'
+rm ts/01-henryk-sienkiewicz-bartek-zwyciezca.mp3.txt
+rm ts/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3.txt ts/02-e-t-a-hoffmann-dziadek-do-orzechow.mp3.txt 
+ls -al ts/|grep '17 1'
+rm ts/02-e-t-a-hoffmann-powiesci-fantastyczne-piaskun.mp3.txt 
+vi transcribe.py 
+ls -al ts/|grep '17 1'
+less ts/01-gustav-meyrink-golem-sen.mp3.txt 
+ls -al ts/|grep '17 1'
+ls -al ts/02-william-makepeace-thackeray-pierscien-i-roza.mp3.txt ts/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3.txt ts/03-e-t-a-hoffmann-dziadek-do-orzechow.mp3.txt ts/04-e-t-a-hoffmann-powiesci-fantastyczne-skrzypce-z-cremony-radca-crespel.mp3.txt ts/04-moliere-molier-swietoszek-stosunek-moliera-do-swego-tematu.mp3.txt ts/04-stefan-zeromski-wierna-rzeka-rozdzial-05.mp3.txt ts/04-william-makepeace-thackeray-pierscien-i-roza.mp3.txt 
+rm ts/02-william-makepeace-thackeray-pierscien-i-roza.mp3.txt ts/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3.txt ts/03-e-t-a-hoffmann-dziadek-do-orzechow.mp3.txt ts/04-e-t-a-hoffmann-powiesci-fantastyczne-skrzypce-z-cremony-radca-crespel.mp3.txt ts/04-moliere-molier-swietoszek-stosunek-moliera-do-swego-tematu.mp3.txt ts/04-stefan-zeromski-wierna-rzeka-rozdzial-05.mp3.txt ts/04-william-makepeace-thackeray-pierscien-i-roza.mp3.txt 
+ls -al ts/|grep '17 1'
+rm ts/05-honore-de-balzac-male-niedole-pozycia-malzenskiego-rozdzial-03.mp3.txt 
+ls -al ts/|grep '17 1'
+rm ts/05-moliere-molier-swietoszek-zdobycze-komedii-moliera.mp3.txt ts/060-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-05-rozdzial-09.mp3.txt ts/06-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-01-rozdzial-06.mp3.txt 
+less ts/066-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-05-rozdzial-15.mp3.txt 
+less ../text/don-kichot-z-la-manchy.txt 
+ls -al ts/|grep '17 1'
+vi transcribe.py 
+ls -al ts/|grep '17 1'
+rm ts/07-e-t-a-hoffmann-powiesci-fantastyczne-piaskun.mp3.txt ts/07-henryk-sienkiewicz-bartek-zwyciezca.mp3.txt ts/078-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-06-rozdzial-10.mp3.txt 
+ls -al ts/|grep '17 1'
+ls -al ts/
+ls -al ts/|grep '17 1'
+less /tmp/sortlist2 
+ls -al ts/|grep '17 1'
+less ts/16-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-03-rozdzial-01.mp3.txt 
+ls -al ts/|grep '17 1'
+find ts/ -size 37c
+find ts/ -size 37c -exec cat {} \;
+find ts/ -size 37c 
+ls -al ts/|grep '17 1'
+ffprobe anton-czechow-zarcik.mp3
+ffprobe anton-czechow-potwarz.mp3 
+ls -al ts/|grep '17 1'
+ffprobe autor-nieznany-hej-w-dzien-narodzenia.mp3 
+ls -al ts/|grep '17 1'
+ffplay autor-nieznany-jezus-malusienki.mp3 
+cat ts/autor-nieznany-jezus-malusienki.mp3.txt 
+ffplay autor-nieznany-jezus-malusienki.mp3 
+ls -al ts/|grep '17 1'
+mkdir /tmp/comp
+ls ts/*rolandz*
+for i in *rolandzie*;do grep Transcript $i;done
+for i in ts/*rolandzie*;do grep Transcript $i;done
+#for i in ts/*rolandzie*;do grep Transcript $i|sed -e 's/;done
+cd ts
+for i in *rolandzie*;do grep Transcript $i|sed -e 's/Transcript: //' > /tmp/comp/$i;done
+ls /tmp/comp/
+ls -al ts/|grep '17 1'
+cd ..
+ls -al ts/|grep '17 1'
+find ts/ -size 37c 
+find ts/ -size 37c -delete
+find ts/ -size 0
+cat /tmp/sortlist2 |while read i;do if [ ! -e ts/$i.txt ];then echo $i >> /tmp/sortlist2.f;fi;done
+less /tmp/sortlist2.f 
+ls -al ts/|grep '17 1'
+ps aux|grep pyth
