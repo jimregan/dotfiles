@@ -1,194 +1,3 @@
-a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf("piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
-a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf "piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
-less piesn-o-rolandzie.txt 
-a=1;grep '^[CXVLI][CXVLIH]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf "piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
-a=1;grep '^[CXVLI][CXVLIH]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf "piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done >> ../specific-norms.tsv 
-cd ..
-git diff
-git add splitter.pl specific-norms.tsv 
-git commit 
-git diff
-git add header-replace.pl 
-git commit -m more
-git branch
-git log
-less text/kim.txt-00.txt
-cd text/
-perl ../splitter.pl piesn-o-rolandzie.txt 
-less piesn-o-rolandzie.txt-01.txt 
-less piesn-o-rolandzie.txt-287.txt 
-less piesn-o-rolandzie.txt-02.txt 
-less piesn-o-rolandzie.txt-01.txt 
-grep '\r' piesn-o-rolandzie.txt-01.txt
-perl ../splitter.pl piesn-o-rolandzie.txt 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-less piesn-o-rolandzie.txt-01.txt 
-less /tmp/aout 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-less piesn-o-rolandzie.txt-01.txt 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-less piesn-o-rolandzie.txt-01.txt 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-less piesn-o-rolandzie.txt-01.txt 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less piesn-o-rolandzie.txt-01.txt 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less piesn-o-rolandzie.txt-01.txt 
-less /tmp/aout 
-perl ../splitter.pl piesn-o-rolandzie.txt 2> /tmp/aout
-less /tmp/aout 
-less piesn-o-rolandzie.txt-01.txt 
-less piesn-o-rolandzie.txt-02.txt 
-less piesn-o-rolandzie.txt-291.txt 
-git rm piesn-o-rolandzie.txt 
-git add piesn-o-rolandzie.txt-*
-git commit -m split
-cd ..
-git diff
-git add splitter.pl 
-git commit -m 'fix splitting for piesn o rolandzie'
-cd text/
-perl ../normalisations.tsv 
-perl ../apply-specific.pl 
-git diff
-git add piesn-o-rolandzie.txt-*
-git commit -m norms
-less piesn-o-rolandzie.txt-01.txt 
-sudo apt-get install libsox2 libsox-dev libstdc++6 libgomp1 libpthread
-sudo apt-get install libsox2 libsox-dev libstdc++6 libgomp1 
-cd ../../
-ls
-git clone https://github.com/mozilla/DeepSpeech
-git clone https://github.com/mozilla/tensorflow/
-cd tensorflow/
-ls
-less README.Mozilla.md 
-less README.md 
-bazel
-bazel build
-ls
-ln -s ../DeepSpeech/native_client ./
-ls
-bazel build -c opt --copt=-O3 //tensorflow:libtensorflow_cc.so //tensorflow:libtensorflow_framework.so //native_client:deepspeech //native_client:deepspeech_utils //native_client:libctc_decoder_with_kenlm.so //native_client:generate_trie
-./configure 
-bazel build 
-rm -rf ~/.cache/bazel/
-./configure 
-bazel build -c opt --copt=-O3 //tensorflow:libtensorflow_cc.so //tensorflow:libtensorflow_framework.so //native_client:deepspeech //native_client:deepspeech_utils //native_client:libctc_decoder_with_kenlm.so //native_client:generate_trie
-rm -rf ~/.cache/bazel/
-./configure 
-bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
-vi /home/jim/.cache/bazel/_bazel_jim/30c949345361fce562609ee36278d5c0/external/local_config_sycl/sycl/BUILD 
-bazel build --config=opt --config=cuda --config=opt --incompatible_load_argument_is_label=false  //tensorflow/tools/pip_package:build_pip_package
-bazel build --config=opt --config=cuda --config=opt --incompatible_load_argument_is_label=false   --copt=-O3 //tensorflow:libtensorflow_cc.so //tensorflow:libtensorflow_framework.so //native_client:deepspeech //native_client:deepspeech_utils //native_client:libctc_decoder_with_kenlm.so //native_client:generate_trie
-vi 5CkxwcyJLvk.tt.xml
-vi NmvNner1ZU0.tt.xml.orig
-cp NmvNner1ZU0.tt.xml.orig NmvNner1ZU0.tt.xml
-vi NmvNner1ZU0.tt.xml
-ls
-ls local/
-ls data/
-ls data/snuv/snuv_database/
-ls data/snuv/snuv_metadata/
-ls data/snuv/snuv_database/
-ls data/snuv/snuv_database/9k36_25lat/
-find data/ -name '*txt'
-find data/ -name '*txt' -exec cat {} \;
-tail -f /tmp/lng-100k36_28lat 
-tail -f /tmp/lng-102k36_49lat 
-less less comhra_test/comhra/trs/irsd0036.trs 
-less comhra_test/comhra/trs/irsd0036.trs 
-less comhra_test/comhra/trs/idam0001.trs 
-less comhra_test/comhra/trs/irrt0003.trs 
-cd Software/
-ls
-file anscealai_dev/anscealai 
-ls anscealai_dev/source/
-less anscealai_dev/source/files/check.d 
-less anscealai_dev/source/synth/synthesis.d 
-less anscealai_dev/voices/tcd_mun_test.htsvoice 
-ls
-ls letter_to_sound_rules/
-less letter_to_sound_rules/bor_irish_lts_rules_old/irish_lts_rules15-02-06.scm 
-ls
-cd ..
-cd Software/emily_sep16/
-ls
-less piarsach_wordlist_sorted_transcribed.txt 
-ls 
-less countSyllableTypes.pl 
-less an_toileanach_wordlist.txt 
-cd ..
-ls
-ls Forced_Alignment/
-ls Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/
-ls Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/30-08-05/
-ls Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/30-08-05/gulex.scm 
-less Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/30-08-05/gulex.scm 
-ls
-ls Drafts/
-ls AbairDocs/
-ls Praat_scripts/
-less Praat_scripts/Label_Gaeilge.man 
-ls
-ls NetBeansBackup/
-ls NetBeansBackup/Cluas/src/cluas/CluasApp.java 
-less NetBeansBackup/Cluas/src/cluas/CluasApp.java 
-ls
-ls letter_to_sound_rules/
-less letter_to_sound_rules/aevannes_lts_rule_program/CPP/LEX.CPP 
-ls
-cd ..
-ls
-cd Software/
-ls
-ls comhra_test/comhra/wav/
-ls comhra_test/comhra/trs/
-file comhra_test/comhra/trs/*
-less comhra_test/comhra/trs/irsd0036.trs
-less comhra_test/comhra/trs/irsd0036.trs 
-ffplay comhra_test/comhra/wav/irsd0036.wav 
-ffplay comhra_test/comhra/audio/idam0001.mp3 
-ffplay comhra_test/comhra/audio/irrt0003.mp3 
-cd ../../commonvoice/s5/
-ls
-cat RE
-cat README.txt 
-ls
-cp cmd.sh path.sh ../../snuv/s5/
-cp conf/* ../../snuv/s5/conf/
-ls local/
-ls local/chain/
-ls local/chain/tuning/
-less local/chain/tuning/
-less local/chain/tuning/run_tdnn_1a.sh 
-diff -u  local/chain/tuning/run_tdnn_1a.sh ../../egs/mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh
-diff -u  local/chain/tuning/run_tdnn_1a.sh ../../mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh
-diff -u ../../mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh  local/chain/tuning/run_tdnn_1a.sh 
-ls
-ls -al local/score.sh 
-grep score.sh run.sh 
-find . -name '*.sh'|xargs grep score
-less local/data_prep.pl 
-ls
-less local/nnet3/
-cp local/nnet3/* ../../snuv/s5/local/nnet3/
-cp local/chain/tuning/run_tdnn_1a.sh ../../snuv/s5/local/chain/tuning/
-cp local/chain/*sh ../../snuv/s5/local/chain/
-diff -u ../../mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh  local/chain/tuning/run_tdnn_1a.sh 
-diff -u ../../mini_librispeech/s5/local/chain/compare_wer.sh  local/chain/compare_wer.sh 
 ls
 ls
 cd ../../youtube-pl/
@@ -1998,3 +1807,194 @@ data=data
 ls -al data/snuv.tar.gz 
 file data/snuv.tar.gz 
 ls
+cd /tmp/
+mkdir proc
+cd proc/
+cp ../khan .
+man split
+man csplit 
+ls
+man csplit 
+csplit khan '<ytd-grid-video-renderer'
+man csplit 
+csplit khan '<ytd\-grid\-video\-renderer'
+csplit khan 'ytd\-grid\-video\-renderer'
+man csplit 
+csplit khan '/<ytd\-grid\-video\-renderer/'
+ls
+less xx01 
+rm xx0*
+csplit khan '/<ytd\-grid\-video\-renderer/g'
+man csplit 
+ls
+csplit khan '/<ytd\-grid\-video\-renderer/*'
+man csplit 
+csplit khan '/<ytd\-grid\-video\-renderer/{*}'
+ls
+man csplit 
+csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
+ls
+for i in x*;do grep 'Subtitles' $i;done
+mkdir good
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+ls
+rm x*
+ls
+ls good/|wc
+cat good/*|sed -e 's/href="/\nhref="/g'
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq >> /tmp/tocheck
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck; done
+head -n 70 /tmp/tocheck 
+head -n 70 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"
+head -n 70 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}'
+head -n 70 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' 
+head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+head -n 20 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+cat /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+ls
+cp ../khan .
+csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
+ls
+ls good/
+rm good/*
+rm xx*
+ls
+csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck; done
+head -n 10 /tmp/tocheck |awk '{print $0 https://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+head -n 10 /tmp/tocheck |awk '{print $0 "https://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+cp ../tocheck ~/disk/Playing/youtube-pl/closed-premier.txt
+ls
+rm *
+ls
+rm good/xx*
+ls
+cp ../sukces .
+csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
+csplit sukces '/<ytd\-grid\-video\-renderer/' '{*}'
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+ls
+rm (
+rm *
+ls
+ls good/
+ls good/|wc
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
+ls
+ls good/
+rm good/*
+cp ../sukces .
+csplit sukces '/<ytd\-grid\-video\-renderer/' '{*}'
+ls
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+ls
+rm xx*
+ls good/
+#cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
+rm /tmp/success 
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
+cat /tmp/success 
+rm /tmp/success 
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|awk -F'&' '{print $1}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
+head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
+perl -e 'print 300 * 60 / 4 * 0.006'
+perl -e 'print 1 * 60 / 4 * 0.006'
+ls
+less sukces 
+rm sukces 
+rm good/xx*
+cp /tmp/ciek .
+csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+ls
+less xx01
+grep CC xx*
+grep cc xx*
+rm xx*
+#head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCjc3C8pOIhSKlPVXnDsne-Q\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/open.tsv 
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
+cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/channel/UCjc3C8pOIhSKlPVXnDsne-Q\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/open.tsv 
+less ~/disk/Playing/youtube-pl/open.tsv 
+rm good/*
+rm ciek 
+ls
+cp /tmp/ciek .
+csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+ls
+rm xx*
+cd good/
+#for i in x*;do grep 'Creative Commons' $i || 
+mkdir closed
+for i in x*;do grep 'Creative Commons' $i || mv $i closed/;done
+ls
+less closed/xx1333 
+ls ..
+ls
+mv closed/* .
+ls
+grep Attribution *
+grep qxQvwD3HPD4 *
+less xx02 
+less xx03 
+ls
+rm * closed/*
+cd ..
+ls
+rm ciek 
+cp /tmp/ciek .
+grep Att ciek 
+csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
+ls
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+ls
+rm /tmp/tocheck2 
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
+less /tmp/tocheck2 
+cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/GABINET1964\tDarek Kraśnicki\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
+less ~/disk/Playing/youtube-pl/maybe-open.tsv 
+ls
+rm xx* good/*
+rmdir good/closed/
+ls
+rm ciek 
+cp /tmp/ciek .
+csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+rm /tmp/tocheck2 
+#cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/WideoMarketingOnline\tDarek Kraśnicki\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
+cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/WideoMarketingOnline\tDarek Kraśnicki\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
+less ~/disk/Playing/youtube-pl/maybe-open.tsv 
+rm xx* ciek good/*
+cp /tmp/tocheck ~/disk/Playing/youtube-pl/tocheck-kancelaria.txt
+vi ~/disk/Playing/youtube-pl/signed-channels
+ls
+ls good/
+cp /tmp/ciek .
+csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+rm /tmp/tocheck2 
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
+cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/channel/UCdXt2JT4VLVSaXVgiss9YcA\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
+less ~/disk/Playing/youtube-pl/maybe-open.tsv 
+ls
+rm xx* good/* /tmp/tocheck2 ciek 
+cp /tmp/ciek .
+csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
+for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
+cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
+cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/FileoPL\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
+less  ~/disk/Playing/youtube-pl/maybe-open.tsv 
+ls
+less xx00 
+less xx01
+less ~/disk/Playing/youtube-pl/maybe-open.tsv 
