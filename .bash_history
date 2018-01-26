@@ -1,31 +1,3 @@
-mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
-ls ../../wolne-lektury-audio-corpus/audacity-sound-finder/
-less ../../wolne-lektury-audio-corpus/audacity-sound-finder/boleslaw-lesmian-napoj-cienisty-spojrzystosc-cykl-trupiegi.mp3.txt 
-less ../../wolne-lektury-audio-corpus/text/napoj-cienisty-trupiegi.txt 
-mv napoj-cienisty-trupiegi.txt ../../wolne-lektury-audio-corpus/audacity/
-less ../../wolne-lektury-audio-corpus/audacity/napoj-cienisty-trupiegi.txt 
-tar ztvf ~/Downloads/cv_corpus_v1.tar.gz 
-df
-ls
-mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
-less ../../wolne-lektury-audio-corpus/audacity-sound-finder/00-stefan-zeromski-przedwiosnie-rodowod.mp3.txt 
-ls
-ls
-less wyspa-skarbow.txt-01.txt.sent.json 
-less wyspa-skarbow.txt-01.txt.sent.tmp 
-less wyspa-skarbow.txt-01.txt.sent.aud 
-less ~/5623564641001.aud.edt.txt 
-cd ../..
-cd harald_kaldi_stuff/
-ls
-git pull origin master 
-got diff
-git diff
-git stash
-git pull origin master 
-less make_DS_csv_files.py 
-find . -type f|xargs grep aeneas
-cd ../Corpora/
 ls
 cd scripts/
 ls
@@ -1998,3 +1970,31 @@ less comhra_test/comhra/trs/irsd0036.trs
 ffplay comhra_test/comhra/wav/irsd0036.wav 
 ffplay comhra_test/comhra/audio/idam0001.mp3 
 ffplay comhra_test/comhra/audio/irrt0003.mp3 
+cd ../../commonvoice/s5/
+ls
+cat RE
+cat README.txt 
+ls
+cp cmd.sh path.sh ../../snuv/s5/
+cp conf/* ../../snuv/s5/conf/
+ls local/
+ls local/chain/
+ls local/chain/tuning/
+less local/chain/tuning/
+less local/chain/tuning/run_tdnn_1a.sh 
+diff -u  local/chain/tuning/run_tdnn_1a.sh ../../egs/mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh
+diff -u  local/chain/tuning/run_tdnn_1a.sh ../../mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh
+diff -u ../../mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh  local/chain/tuning/run_tdnn_1a.sh 
+ls
+ls -al local/score.sh 
+grep score.sh run.sh 
+find . -name '*.sh'|xargs grep score
+less local/data_prep.pl 
+ls
+less local/nnet3/
+cp local/nnet3/* ../../snuv/s5/local/nnet3/
+cp local/chain/tuning/run_tdnn_1a.sh ../../snuv/s5/local/chain/tuning/
+cp local/chain/*sh ../../snuv/s5/local/chain/
+diff -u ../../mini_librispeech/s5/local/chain/tuning/run_tdnn_1e.sh  local/chain/tuning/run_tdnn_1a.sh 
+diff -u ../../mini_librispeech/s5/local/chain/compare_wer.sh  local/chain/compare_wer.sh 
+ls
