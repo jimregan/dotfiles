@@ -1,6 +1,3 @@
-./configure 
-make
-ls
 ls src/
 ls tools/
 jam
@@ -1998,3 +1995,6 @@ cd nope/
 ls
 for i in *.vtt;do cat $i |perl ../../msf-asr/scripts/vtt-to-audacity.pl > $i.aud;done
 for i in ./*.vtt;do cat $i |perl ../../msf-asr/scripts/vtt-to-audacity.pl > $i.aud;done
+less 017-autor-nieznany-piesn-o-rolandzie.mp3.sil 
+cat ~/bin/convert-mp3.sh 
+less 017-autor-nieznany-piesn-o-rolandzie.mp3.sil 
