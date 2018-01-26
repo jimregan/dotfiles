@@ -1,59 +1,3 @@
-cd parrots/
-ls
-cat list |sh ../RobertMarchelTV/dl.sh 
-ls
-for i in watch\?v\=*;do grep $i ../../closed.tsv ;done
-ls *vtt
-ls ./*vtt|wc
-ls /tmp/
-less /tmp/ciek 
-ls
-cd ..
-ls
-cat ../closed.tsv 
-cat ../closed.tsv |awk -F'\t' '{print $1}'
-cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e $p and ! -e parrots/$p and ! -e RobertMarchelTV/$p ] ;then echo $i;fi;done
-ls
-cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e $p ] ;then echo $i;fi;done
-cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done
-cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done|grep ' '
-cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done
-cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done|less
-cat ../closed.tsv |awk -F'\t' '{print $1}'|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e "$p" ] ;then echo $i;fi;done > /tmp/todo
-cat /tmp/todo|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e RobertMarchelTV/"$p" ] ;then echo $i;fi;done > /tmp/todo2
-cat /tmp/todo2|while read i;do p=$(echo $i|awk -F/ '{print $NF}');if [ ! -e parrots/"$p" ] ;then echo $i;fi;done > /tmp/todo
-wc -l /tmp/todo*
-ls parrots/
-cat /tmp/todo|sh RobertMarchelTV/dl.sh 
-ls
-history -a
-ls -al
-ls -al|head
-cd ..
-ls
-ffplay Eksperyment\ \ kognitywistyczny\ cz.\ 2-dt1dP97TZxU.mp4 
-ls
-find . -name '3895zWffyQo*'
-cd ..
-find . -name '3895zWffyQo*'
-find . -name links |xargs grep '3895zWffyQo'
-find . -name CentrumZamenhofa
-ls
-cd lipread/UCWngcK-tLzUKQ-H5wftdahA/
-ls
-vi list 
-cat list |sort|uniq | sh ../dl.sh 
-ls
-rm *.1
-ls
-cd ../..
-ls
-cd free-nosubs/
-ls
-mv Kulturoznawstwo\ na\ KUL\!-rnUxqkIHwHQ.mp4 rnUxqkIHwHQ.mp4
-mv ~/kulturoznawstwo.txt rnUxqkIHwHQ.aud
-rm ~/kulturosnawstwo.txt 
-ls
 mv Eksperyment\ \ kognitywistyczny\ cz.\ 1-Uf1eCznOxsQ.mp4 Uf1eCznOxsQ.mp4
 mv ~/Uf1eCznOxsQ.txt .
 ls
@@ -1998,3 +1942,59 @@ ffplay audio/009-autor-nieznany-piesn-o-rolandzie.mp3
 ffplay audio/010-autor-nieznany-piesn-o-rolandzie.mp3 
 ffplay audio/011-autor-nieznany-piesn-o-rolandzie.mp3 
 ffplay audio/012-autor-nieznany-piesn-o-rolandzie.mp3 
+less ts/01-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-01-rozdzial-01.mp3.txt 
+ls ts/
+ls -al ts/
+ls -al ts/|wc
+wc -l /tmp/sortlist
+ls *mp3|wc
+ls -al ts/|wc
+ls -al ts/
+less ts/09-e-t-a-hoffmann-powiesci-fantastyczne-piaskun.mp3.txt 
+ls -al ts/
+less ts/16-moliere-molier-swietoszek-akt-01-scena-04.mp3.txt 
+ls -al
+mkdir tmp
+cd tmp/
+cp ../mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 .
+sox -V3 mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 p.wav silence -l  0 1 0.5 0.1% : newfile : restart
+ls
+ffplay p001.wav 
+ffplay p002.wav 
+ffplay p003.wav 
+ffplay p004.wav 
+ffplay p005.wav 
+ffplay p006.wav 
+for i in *wav;do ffpmeg -i $i 2>&1 |grep Duration;done
+ls
+ls 1
+for i in *wav;do ffprobe $i 2>&1 |grep Duration;done
+apt-get install mp3splt
+sudo apt-get install mp3splt
+rm *wav
+ls
+mp3splt -A mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+mp3splt 
+ls
+mp3splt -A test.aud mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+mp3splt -A test.txt mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+mp3splt -lq mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+mp3splt -p mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+mp3splt -sp mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+mp3splt -P mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+mp3splt -sP mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+ls
+mp3splt -s mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
+ls
+less mp3splt.log 
+ls
+less mp3splt.log 
+mv mp3splt.log mendele-mojcher-sforim-podroze-beniamina-trzeciego-mp3splt.log
+mp3splt -s bruno-jasienski-but-w-butonierce-tomik-nic.mp3 
+cat mp3splt.log 
+ffplay bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3 
+ffplay bruno-jasienski-but-w-butonierce-tomik-nic_silence_2.mp3 
+ffplay bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3 
+ffprobe bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3 
+ffprobe bruno-jasienski-but-w-butonierce-tomik-nic_silence_2.mp3 
+cat mp3splt.log 
