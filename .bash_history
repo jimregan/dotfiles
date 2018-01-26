@@ -1,86 +1,3 @@
-mkleftin text/piesn-o-rolandzie.txt-08.txt && mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-mkleftin text/piesn-o-rolandzie.txt-09.txt && mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-mkleftin text/piesn-o-rolandzie.txt-10.txt && mkleft
-cat text/piesn-o-rolandzie.txt-*txt|grep -i rękojmię
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-mkleftin text/piesn-o-rolandzie.txt-11.txt && mkleft
-cat text/piesn-o-rolandzie.txt-*txt|grep -i jutrzn
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-mkleftin text/piesn-o-rolandzie.txt-12.txt && mkleft
-cat text/piesn-o-rolandzie.txt-*txt|grep -i Ganelon
-cat text/piesn-o-rolandzie.txt-*txt|grep -i Acelin
-cat text/piesn-o-rolandzie.txt-*txt|grep -i Gaskon
-cat text/piesn-o-rolandzie.txt-*txt|grep -i Milon
-cat text/piesn-o-rolandzie.txt-*txt|grep -i Ogier
-cat text/piesn-o-rolandzie.txt-*txt|grep -i rejm
-cat text/piesn-o-rolandzie.txt-*txt|grep -i turpin
-cat text/piesn-o-rolandzie.txt-*txt|grep -i tyb
-vi /tmp/leftin 
-vi pron-data/gen.tsv 
-mkrightin && addprons 
-git diff
-mkrightin && addprons 
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-cat  /tmp/expand 
-mv /tmp/expand /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m expand
-mkleftin text/piesn-o-rolandzie.txt-13.txt && mkleft
-mkleftin text/piesn-o-rolandzie.txt-14.txt && mkleft
-ffplay audio/013-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/014-autor-nieznany-piesn-o-rolandzie.mp3 
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-ffplay audio/014-autor-nieznany-piesn-o-rolandzie.mp3 
-git diff
-tail pron-data/gen.tsv 
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-less /tmp/expand 
-cp /tmp/expand /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m expand
-ffplay audio/015-autor-nieznany-piesn-o-rolandzie.mp3 
-mkleft
-mkrightin && addprons 
-git diff
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp//expand 
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
 mkleft
 mkrightin && addprons 
 git diff
@@ -1998,3 +1915,86 @@ top
 man djvu
 man djvutxt
 djvutxt --page=26 ~/Downloads/Ko_te_Paipera_Tapu_1868.djvu 
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
+ls
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Web
+cd Web/
+ls
+ls festival_server/
+ls html/
+less html/neasa_ceistneoir/results.txt 
+ls new_html/
+cd new_html/
+ls
+ls ceistneoir/
+ls ceistneoir/mp3s/
+ffplay ceistneoir/mp3s/1.mp3 
+tree
+tree|less
+ls
+less badwords_cm_V2.txt 
+less secret_synthesiser.php 
+ls api
+less api/readme.html 
+ls
+ls ebarnes/
+ls ebarnes/audiorecorder/
+less ebarnes/audiorecorder/index.html 
+less ebarnes/audiorecorder/js/recorderjs/recorder.js 
+ls
+find corpasbeagnamumhan -type f
+ffplay corpasbeagnamumhan/videos/digichaint_perception_3_45.mp4 
+find . -name '*.mp3'
+ffplay ./cabaire_test_20130514/MI0001RCPiarsachBairbre_0002.mp3
+ffplay ./sound/cuchulainn/007.mp3
+ls
+ls pandora/
+less pandora/taidhgin.php 
+less pandora/log.txt 
+ls
+ls pandora/
+less pandora/hemingway.php 
+less pandora/culabat.php 
+tree ceistneora/
+find ceistneora -name '*mp3'
+ffplay ceistneora/slate/mp3audio/abairt14.mp3 
+ls
+ls download
+ls downloads/
+ls downloads/users/
+ls nvda/
+ls Drafts/
+file Drafts/*
+ls
+ls sound/
+less sound/cuchulainn/024.mp3 
+ffplay sound/cuchulainn/024.mp3 
+ls
+ls corpasbeagnamumhan/Neasa_Taidhgin/
+ls corpasbeagnamumhan/pdfs/
+ls corpasbeagnamumhan/videos/
+ls corpasbeagnamumhan/index_daisy.htm
+less corpasbeagnamumhan/index_daisy.htm
+less corpasbeagnamumhan/pdfs/
+ls corpasbeagnamumhan/pdfs/
+ls
+ls muinteoiri/
+ls 
+ls dev/
+less apps/index.html 
+ls resources/
+ls voiceday/
+ls slate2015/
+find . -name '*mp4'
+find . -name '*jpg'
+ls cabaire
+ls cabaire/geoschol/
+find . -name '*epub*'
+cd ../../../Corpora
+ls
+ls cdroms/
+ls cdroms/dunchaochain/
+ls cdroms/dunchaochain/dunchaochain-to-tsv.pl 
+less cdroms/dunchaochain/dunchaochain-to-tsv.pl 
+less cdroms/dunchaochain/README 
+less cdroms/dunchaochain/text.tsv 
