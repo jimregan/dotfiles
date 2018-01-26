@@ -1,32 +1,3 @@
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-vi okspell 
-vi sourceme 
-. sourceme 
-mkrightin 
-addpronsas 
-git diff
-vi pron-data/pronounce-as.gen.tsv 
-git add pron-data/pronounce-as.gen.tsv 
-git commit -m more
-git push origin lexicon 
-head -n 410 okspell 
-head -n 415 okspell  
-head -n 420 okspell  
-head -n 430 okspell  
-head -n 430 okspell  > /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff
-vi pron-data/gen.tsv 
 git add pron-data/gen.tsv 
 git commit -m more
 perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
@@ -1998,3 +1969,32 @@ ls cdroms/dunchaochain/dunchaochain-to-tsv.pl
 less cdroms/dunchaochain/dunchaochain-to-tsv.pl 
 less cdroms/dunchaochain/README 
 less cdroms/dunchaochain/text.tsv 
+cd ..
+perl ga-to-cmudict.pl 
+less ~/IdeaProjects/dictionaryconverter/src/main/java/ie/tcd/slscs/itut/crosaire/Crosaire.java 
+perl -e '@a=([1,2],[2,3]);'
+perl -e '@in=([1,2],[2,3]);@a=(1,2);@b=(2,3);sub cartesian{'
+my ($a,$b) = @_;
+my @c = ();
+map {my $w=$_; push @c, map {“$w “.$_} @$b } @$a;
+perl -e '@in=([1,2],[2,3]);@a=(1,2);@b=(2,3);map {my $w=$_; push @c, map {“$w “.$_} @$b } @$a'
+perl -e '@in=([1,2],[2,3]);@a=(1,2);@b=(2,3);@c=();map {my $w=$_; push @c, map {"$w ".$_} @$b } @$a;print @c;'
+perl -e '@in=([1,2],[2,3]);@a=(1,2);@b=(2,3);@c=();map {my $w=$_; push @c, map {"$w ".$_} @$b } @$a;print @#c;'
+perl -e '@in=([1,2],[2,3]);@a=(1,2);@b=(2,3);@c=();map {my $w=$_; push @c, map {"$w ".$_} @$b } @$a;print $#c;'
+perl /tmp/test.
+perl /tmp/test.pl 
+echo 'tú t̪ˠ uː'  |perl ga-to-cmudict.pl 
+echo 'tú t̪ˠ uː t̪ˠ'  |perl ga-to-cmudict.pl 
+cat pron/ulster.tsv  |perl ga-to-cmudict.pl 
+cat pron/ulster.tsv pron/munster.tsv pron/connacht.tsv   |perl ga-to-cmudict.pl  2> mapping-errors
+git add ga-to-cmudict.pl 
+git commit -m 'map to cmudict'
+less mapping-errors 
+cat pron/ulster.tsv pron/munster.tsv pron/connacht.tsv   |perl ga-to-cmudict.pl  2> mapping-errors
+vi scripts/abair-simplify-map.tsv 
+git diff
+git add scripts/abair-simplify-map.tsv 
+git commit -m more
+git status
+git branch 
+git push origin lexicon 
