@@ -1,89 +1,3 @@
-git add normalisations.tsv 
-git commit -m more
-git diff
-ls audio/ts
-ls audio/ts/tadeusz-boy-zelenski-slowka-zbior-replika-kobiety-polskiej.mp3.txt 
-less audio/ts/tadeusz-boy-zelenski-slowka-zbior-replika-kobiety-polskiej.mp3.txt 
-ls
-rm ~/Pictures/Screenshot_201801*
-ls /tmp/
-cat /tmp/aaa 
-ls /tmp/
-. sourceme 
-cat sourceme 
-mkrightin 
-paste /tmp/leftin /tmp/rightin 
-mkleftin 
-less sourceme 
-mkleft
-mkrightin 
-addprons
-git diff
-git add pron-data/gen.tsv specific-norms.tsv normalisations.tsv 
-git commit -m more
-perl expand-with-polimorf.pl polimorf/polimorf.tab > /tmp/expand
-perl expand-with-polimorf.pl pron-data/gen.tsv polimorf/polimorf.tab > /tmp/expand
-wc -l /tmp/ex
-wc -l /tmp/expand 
-cat /tmp/expand |sort|uniq|wc
-cat /tmp/expand |sort|uniq > /tmp/leftin 
-mkleft
-mkrightin && addprons
-git diff
-git add pron-data/gen.tsv specific-norms.tsv normalisations.tsv 
-git commit -m more
-ls
-cp audio/transcribe.py .
-less transcribe.py 
-git add transcribe.py 
-git commit -m 'slightly modified version of the google example'
-mkdir google-asr
-cp audio/ts/* google-asr/
-mkdir silences
-cp audio/sil/* silences/
-cp audio/sil.sh .
-less sil.sh 
-git add sil.sh 
-git commit -m 'get silences from ffmpeg'
-git add silences/*
-git commit -m 'silence output'
-git add google-asr/*
-git commit -m 'google asr output'
-git branch
-git push origin lexicon
-ls
-vi run-aeneas.sh 
-ls
-cat google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-cd silences/
-ls
-cat 018-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cat 018-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '[silencedetect'
-cat 018-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '\[silencedetect'
-for i in *;do grep '\[silencedetect' $i > tmp;mv tmp $i;done
-git diff
-ls
-git add *.sil
-git commit -m trim
-cat 018-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '\[silencedetect'
-perl ../merge-google-with-silences.pl 018-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '\[silencedetect'
-perl ../merge-google-with-silences.pl 018-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-perl ../merge-google-with-silences.pl 018-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '\[silencedetect'
-perl ../merge-google-with-silences.pl 018-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cat 018-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '\[silencedetect'
-perl ../merge-google-with-silences.pl 018-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cat 018-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '\[silencedetect'
-perl ../merge-google-with-silences.pl 018-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-perl ../merge-google-with-silences.pl 029-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cat 029-autor-nieznany-piesn-o-rolandzie.mp3.sil |grep '\[silencedetect'
-perl ../merge-google-with-silences.pl 018-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cd ..
-ls
-less google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-less testnum.pl 
-less google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-perl merge-google-with-silences.pl silences/018-autor-nieznany-piesn-o-rolandzie.mp3.sil text/piesn-o-rolandzie.txt-18.txt google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-less google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
 perl merge-google-with-silences.pl silences/018-autor-nieznany-piesn-o-rolandzie.mp3.sil text/piesn-o-rolandzie.txt-18.txt google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
 cd ../text/
 ls
@@ -1998,3 +1912,89 @@ ls VIUs
 ls VIUs/annotation.txt 
 cat AM/annotation.txt 
 ls
+cd ~/disk/Playing/
+cd kaldi/
+cd egs/
+ls
+cd snuv/
+cd s5/
+ls
+vi run.sh 
+ls
+git add conf/*
+git status
+ls ../../pwr_polish/s5/wordlist
+ls ../../pwr_polish/s5/wordlist.ipa 
+less ../../pwr_polish/s5/wordlist.ipa 
+less ../../pwr_polish/s5/wordlist
+less ../../pwr_polish/s5/spid2
+less ../../pwr_polish/s5/spid2.log 
+ls
+ls local/
+less local/nnet3/run_ivector_common.sh 
+git add conf/*
+git status
+cat cmd.sh 
+less ../../clarinpl/run.sh 
+less ../../clarinpl/cmd.sh 
+vi cmd.sh 
+git add cmd.sh 
+git status
+less path.sh 
+cat path.sh 
+cat ../../clarinpl/run.sh 
+cat ../../clarinpl/path.sh 
+cat path.sh 
+vi path.sh 
+cat ../../clarinpl/path.sh 
+cat path.sh 
+git add path.sh 
+git status
+git commit -m 'basic setup'
+git branch
+git push mine snuv 
+git push mine master 
+find data -name '*txt'
+cat data/snuv/snuv_database/186k36_21lat/400_21lat.txt|perl local/fix_transcripts.pl 
+cat data/snuv/snuv_database/186k36_21lat/400_21lat.txt
+cat data/snuv/snuv_database/186k36_21lat/368_21lat.txt |perl local/fix_transcripts.pl 
+cat data/snuv/snuv_database/186k36_21lat/368_21lat.txt 
+cat data/snuv/snuv_database/186k36_21lat/272_21lat.txt 
+cat data/snuv/snuv_database/186k36_21lat/272_21lat.txt |perl local/fix_transcripts.pl
+cat /tmp/snuv-toks 
+cat /tmp/snuv-toks |awk -F'\t' '{print $1}'
+cat /tmp/snuv-toks |sed -e 's/źi/zi/g;s/ći/ci/g;s/ńi/ni/g;s/śi/si/g' |awk -F'\t' '(NF==2){print $2 "\t" $1}(NF==1){print $1"\t"$1}'
+cat /tmp/snuv-toks |sed -e 's/źi/zi/g;s/ći/ci/g;s/ńi/ni/g;s/śi/si/g' |awk -F'\t' '(NF==2){print $2 "\t" $1}(NF==1){print $1"\t"$1}' |awk -F'\t' '{print $1}' > /tmp/leftin 
+cat /tmp/snuv-toks |sed -e 's/źi/zi/g;s/ći/ci/g;s/ńi/ni/g;s/śi/si/g' |awk -F'\t' '(NF==2){print $2 "\t" $1}(NF==1){print $1"\t"$1}' |awk -F'\t' '{print "{{pl-IPA-auto|"$2"}}"}'  > /tmp/left
+cat /tmp/rightin 
+cat /tmp/rightin |uconv -x IPA-XSampa
+cat /tmp/rightin |uconv -x IPA-XSampa > /tmp/rightsampa
+paste /tmp/leftin /tmp/rightsampa 
+echo ʂ ɛ j s ɛ t |uconv -x IPA-XSampa 
+man paste
+paste -d' ' /tmp/leftin /tmp/rightsampa 
+paste -d' ' /tmp/leftin /tmp/rightsampa > local/lexicon
+vi local/lexicon 
+echo ʂ ɛ j s ɛ t |uconv -x IPA-XSampa 
+vi local/lexicon 
+cat local/lexicon |sort
+cat local/lexicon |sort > local/lexicon.txt
+wc -l local/lexicon.txt 
+git add local/lexicon.txt 
+git commit -m 'add lexicon (95 items only)'
+git add local/fix_transcripts.pl 
+git commit -m 'fix transcripts to use letters rather than the phonetic equivalent'
+git push mine snuv 
+sox data/snuv/snuv_database/186k36_21lat/272_21lat.wav -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p' 
+#sox $i -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p' 
+cd data/snuv/snuv_database/
+ls
+for j in *;do for i in $i/*wav;do sox $i -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p'  >> /tmp/lng-$j;done;done
+ls /tmp/
+less /tmp/lng-100k36_28lat 
+rm /tmp/lng-*
+ls 
+tree
+tree|head
+ls 100k36_28lat/
+for j in *;do for i in $j/*wav;do sox $i -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p'  >> /tmp/lng-$j;done;done
