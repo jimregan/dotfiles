@@ -1,205 +1,4 @@
 ls
-wget https://www.youtube.com/watch?v=Bq0fLxioFiQ
-sh ../dl.sh https://www.youtube.com/watch?v=Bq0fLxioFiQ
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=Bq0fLxioFiQ
-cd ../lipread/UC7nnculccfROWQueO2fmuJg/
-ls
-echo https://www.youtube.com/watch?v=h7a5gmWJMyY | sh ../dl.sh 
-echo https://www.youtube.com/watch?v=upX_oQuKrz0 | sh ../dl.sh 
-cd ../..
-mkdir signed
-cd signed/
-mkdir UCWngcK-tLzUKQ-H5wftdahA
-cd UCWngcK-tLzUKQ-H5wftdahA/
-cp ../../lipread/dl.sh ..
-echo https://www.youtube.com/watch?v=oYTyCABUKfg|sh ../dl.sh 
-cd ..
-vi non-free
-cd ..
-ls
-cd lipread/
-ls
-mkdir UCdXt2JT4VLVSaXVgiss9YcA
-cd UCdXt2JT4VLVSaXVgiss9YcA
-ls
-vi list
-cat list |sh ../dl.sh 
-cd ..
-mkdir SaryuszWolski
-cd SaryuszWolski
-vi list
-cd ..
-mkdir dsnopek
-cd dsnopek
-echo 'English L1' > non-native.txt
-ls
-vi list
-ls
-cp ../../dl.sh ..
-vi ../dl.sh 
-cat list 
-cat list |sh ../dl.sh 
-ls
-LS
-CD ../..
-ls
-cd ..
-ls
-mkdir ../lipread
-mv UC7nnculccfROWQueO2fmuJg/ ../lipread/
-ls UCRHC9jxI9fhU_NQYtRCiC3Q/
-mv UCRHC9jxI9fhU_NQYtRCiC3Q/ ../lipread/
-ls
-ls SaryuszWolski/
-cd SaryuszWolski/
-ls
-cd ..
-mv SaryuszWolski/ ../lipread/
-cp dl.sh ../lipread/
-cd ..
-ls
-cd misc/
-sh ../dl.sh https://www.youtube.com/watch?v=VZeW630-jGQ
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=Bi2CrWARIpY
-ls
-cd ../UCdxQkHxvxKDsspB5pFPtYkA/
-ls
-file *m4a
-ls
-t
-ls
-vi list
-ls
-cp ../../dl.sh ..
-vi ../dl.sh 
-cat list 
-cat list |sh ../dl.sh 
-ls
-cd tmp/fashq1
-. ../sourceme 
-ogimageproc https://www.instagram.com/p/BdxT9gdFM7U/?taken-by=nataliazasadzka
-ogimageproc https://www.instagram.com/p/BeAOIDJldkZ/?taken-by=nataliazasadzka
-ogimageproc https://www.instagram.com/p/BeAl5s2nhni/?taken-by=lazarenkoyuliya
-ogimageproc https://www.instagram.com/p/Bd97jaPH9eF/?taken-by=lazarenkoyuliya
-ogimageproc https://www.instagram.com/p/BdxPKGGnqPr/?taken-by=lazarenkoyuliya
-ogimageproc https://www.instagram.com/p/BeA18RKDjdo/?taken-by=ngizerskaya
-ogimageproc https://www.instagram.com/p/Bd5HvPhjuFb/?taken-by=ngizerskaya
-ogimageproc https://www.instagram.com/p/Bd-D1Gxjz6o/?taken-by=ngizerskaya
-ogimageproc https://www.instagram.com/p/BeAoI5ODcqW/?taken-by=diana_dryn
-ogimageproc https://www.instagram.com/p/Bd45AhmjDJI/?taken-by=diana_dryn
-ogimageproc https://www.instagram.com/p/Bdk_EfPjf2N/?taken-by=diana_dryn
-ogimageproc https://www.instagram.com/p/Bd5dLKanMNn/?taken-by=natali_danish
-ogimageproc https://www.instagram.com/p/Bd8msDmHmGe/?taken-by=natali_danish
-ogimageproc https://www.instagram.com/p/BeA50tfnMaj/?taken-by=kristinarudy
-ogimageproc https://www.instagram.com/p/Bd39rc9HLN2/?taken-by=kristinarudy
-ogimageproc https://www.instagram.com/p/BeBcq78Dq12/?taken-by=katrina_sarkisyan
-ogimageproc https://www.instagram.com/p/BeBZ-JAlmvs/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/Bd-1s8wFCOQ/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/Bd-CXMplVLM/?taken-by=chiarabransi
-ogimageproc https://www.instagram.com/p/BeBFgPrBClm/?taken-by=forsurprise
-ogimageproc https://www.instagram.com/p/BeAmB_KBiRE/?taken-by=forsurprise
-ogimageproc https://www.instagram.com/p/BeBIHTeBwF7/?taken-by=maryhockings
-ogimageproc https://www.instagram.com/p/BeBIKMnne9e/?taken-by=natasha_mankovskaya
-ogimageproc https://www.instagram.com/p/Bd0TbSTn0_C/?taken-by=natasha_mankovskaya
-ogimageproc https://www.instagram.com/p/BdxrRJYnuOa/?taken-by=natasha_mankovskaya
-procimg https://www.instagram.com/p/BeBIKMnne9e/?taken-by=natasha_mankovskaya https://www.instagram.com/p/BeBNS3JFNKN/?taken-by=trishka92
-ogimageproc https://www.instagram.com/p/BeBNS3JFNKN/?taken-by=trishka92
-ogimageproc https://www.instagram.com/p/Bd-ifBvFn0o/?taken-by=trishka92
-ogimageproc https://www.instagram.com/p/Bd2yBFOldJh/?taken-by=trishka92
-grep https://www.instagram.com/p/BeBIHTeBwF7/ fash-rdf-links 
-cd ..
-ls
-cd signed/
-ls
-mkdir INSPROmedia
-cd INSPROmedia/
-ls
-cat ../dl.sh 
-echo https://www.youtube.com/watch?v=WGY7gcSYfns |sh ../dl.sh 
-ls
-cd ../../
-ls
-cd nope/
-ls
-sh ../dl.sh https://www.youtube.com/watch?v=QzFPfme5FwU
-ls
-cd ..
-ls
-cd signed/
-ls
-mkdir nospeech
-cd nospeech/
-mkdir UCgvywbxAcsgJr_gfpqKLXXw
-cd UCgvywbxAcsgJr_gfpqKLXXw
-ls
-vi list
-vi nonfree
-cd ..
-cd lipread/
-ls
-cd ..
-cd nope/
-ls
-mkdir RobertMarchelTV
-cd RobertMarchelTV
-vi list
-cp ../../lipread/dl.sh .
-vi dl.sh 
-cat list |sh dl.sh 
-ls
-cd ..
-ls
-cat list*|sort|uniq|grep http |sh RobertMarchelTV/dl.sh 
-ls
-ls parrots/
-grep 'Creative Commons' watch\?v\=*
-for i in watch\?v\=*;do grep 'Creative Commons' $i && grep 'BY-ND' $i;done
-for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'BY-ND' $i || echo $i >> chkcc) ;done
-cat chkcc 
-rm chkcc 
-for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'NC-BY-SA' $i || echo $i >> chkcc) ;done
-cat chkcc 
-grep LKkNs6276xo ../closed
-grep LKkNs6276xo ../closed.tsv 
-#grep LKkNs6276xo ../closed.tsv  >> 
-less ../open.tsv 
-grep LKkNs6276xo ../closed.tsv  >> ../open.tsv 
-vi ../closed.tsv 
-grep WGY7gcSYfns ../closed.tsv  >> ../open.tsv 
-vi ../closed.tsv 
-ls ../
-ks ../free-nosubs/
-ls ../free-nosubs/
-mkdir ../open
-mv WGY7gcSYfns.* ../open/
-mv LKkNs6276xo.* ../open/
-mv watch\?v\=LKkNs6276xo ../open/
-mv watch\?v\=WGY7gcSYfns ../open/
-ls
-less chkcc 
-cat chkcc 
-rm chkcc 
-ls
-for i in ./*.vtt;do  cat $i;done
-ls
-less ./-ZXfhlLJXcc.pl.vtt 
-for i in ./*.vtt;do  cat $i|grep -v '^WEBVTT'|grep -v '^Kind:';done
-cd ..
-ls
-cd signed/
-ls
-mkdir INSPROmedia
-cd INSPROmedia/
-ls
-cat ../dl.sh 
-echo https://www.youtube.com/watch?v=WGY7gcSYfns |sh ../dl.sh 
-ls
-cd ../../
-ls
-cd nope/
-ls
 sh ../dl.sh https://www.youtube.com/watch?v=QzFPfme5FwU
 ls
 cd ..
@@ -1998,3 +1797,204 @@ git commit -m more
 cat roland-miss|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > roland-miss.f
 wc -l roland-miss*
 less roland-miss.f 
+cd /tmp/
+split -l 1500 expand 
+mv xaa leftin 
+mv xab leftin 
+mv xac leftin 
+cat pain
+cat pain|tr ',' '\n'|tr -d ' '
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e 's/keyboard/kibord/' > par
+paste pal par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal 
+cat pal |sed -e "s/dcor/dcore'/"
+cat pal |sed -e "s/dcor/dcore'/" > pam
+cat pal |sed -e "s/dcor/dkor/" > par
+paste pal pam
+paste pal pam >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+paste pam par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e "s/x/ks/" > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e "s/ea/i/" > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e "s/eas/iz/" > pam
+cat pal |sed -e "s/eas/iz-/" > pal
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal 
+cat pal |sed -e "s/eas/iz/" > pam
+cat pal |sed -e "s/eas/iz-/" > par
+less par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+paste pam pal >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
+vi forpronas 
+cat forpronas |awk -F'\t' '{print $1}' > leftin 
+cat forpronas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
+vi leftin 
+split -l 1500 expand 
+mv xaa leftin 
+mv xab leftin 
+mv xac leftin 
+mv xad leftin 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e "s/ai/ej/" > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+paste par pal >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e "s/ainsrea/ejnstri/" > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pal |sed -e "s/ainstrea/ejnstri/" > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+#majkrołsoftowy
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e "s/[Mm]icrosoft/majkrosoft/" > par
+paste pal par
+vi pal
+vi par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pal |sed -e "s/[Mm]icrosoft/majkrołsoft/" > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+split -l 1500 expand 
+vi xad
+vi xac
+mv xaa leftin 
+mv xab leftin 
+mv xac leftin 
+vi leftin 
+mv xad leftin 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
+cat pal |sed -e 's/newsletter/niusleter/' > par
+paste pal par
+vi pal
+vi par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/ck/k/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/v/w/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/ctav/ktaw/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/ff/f/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/outsid/ałtsajd/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/peerel/pe-er-el/' > par
+cat pal |sed -e 's/peerel/PRL-/' > pam
+paste pam par
+paste pam pal
+paste pam pal|grep -v nie
+paste pam pal|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
+paste pam pal|sed -e 's/R/S/;s/r/s/'|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
+paste pal par|sed -e 's/R/S/;s/r/s/'|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+paste pal par|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+paste pal par|sed -e 's/R/S/;s/r/s/'|grep nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+paste pal par|grep nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/oo/u/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/vid/wajd/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/qua/kła/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pal |sed -e 's/qua/kło/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/ad/łt/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/sh/sz/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/shell/szel/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/s/s-/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/s/s-/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/xi-s/ks-is-/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/s/s-/;s/oi/oj/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/ee/i/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/ea/i/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/th/t/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
+cp par leftin 
+vi leftin 
+wc -l ex
+wc -l expand 
+less expand 
+split -l 2000 expand 
+ls xa*|wc
+mv xaa leftin 
+mv xab leftin 
+vi pas 
+cat pas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
+cat pas |awk -F'\t' '{print $1 }' > leftin
+mv xac leftin 
+mv xad leftin 
+mv xae leftin 
+mv xaf leftin 
+mv xag leftin 
+mv xah leftin 
+wc -l xau
+mv xai leftin 
+mv xaj leftin 
+mv xak leftin 
+mv xal leftin 
+mv xam leftin 
+mv xan leftin 
+mv xao leftin 
+mv xap leftin 
+mv xaq leftin 
+mv xar leftin 
+mv xas leftin 
+mv xat leftin 
+mv xau leftin 
+split -l 2000 expand 
+mv xaa leftin 
+mv xab leftin 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/w/ł/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/windsurf/łindserf/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
+cat pal |sed -e 's/windows/łindołs/' > par
+paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
+cat pas |awk -F'\t' '{print $1 }' > leftin
+cat pas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
+vi pas
+cat pas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
+cat pas |awk -F'\t' '{print $1 }' > leftin
+vi leftin 
+split -l 2000 expand 
+mv xaa leftin 
+mv xab leftin 
+mv xac leftin 
+vi leftin 
