@@ -1,72 +1,3 @@
-cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-less ~/tmp/sync/http-misc-20180105-1.nt 
-rm inp
-rm inp.log 
-rm -rf web.archive.org/
-ls
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid.log |perl ~/bin/wget-http.pl  |grep 'web/2'|awk -F'[<>]' '{print $6}'|grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-less ~/tmp/sync/http-misc-20180105-1.nt 
-rm spid
-rm spid.log 
-ls
-rm nohup.out 
-ls
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-cd -
-cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-less ~/tmp/sync/http-misc-20180105-1.nt 
-ls
-rm -rf web.archive.org/
-rm *
-ls
-sh ~/scripts/grab-logged.sh inp
-tail -f inp.log 
-ls
-cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-less ~/tmp/sync/http-misc-20180105-1.nt 
-ls
-rm -rf *
-ls
-curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg2NjR9fX1dfQ__&Signature=aSFNbYsP0pL70loNdhvcADycBh486NGn1ZpUPuHpSZNodAEbba~JSS2FUQx4UeIgsCoUMrIfm1CanixZm70PRvYdD148VVKXqhdWdE7KiIAP2ZWFmPBzHzkvPz-zaibOS5XqbJW9iClLYSKOicwmwjY6wrF2NOPAXpJuQPPCDPZMjG0kiJXX9o4F~nbchnaWqVqb8wKWI6ryaMWN0iYxk16alN~YR253vNY3n~bXNSBnmpXhOZFoxmZ-SHWWp02ReT7wm9Gi55HjolZnvxL-Edkwl-1tmmGplqp688aVKBPlN6mK8kiW2bIc--7u855PF6XJL~qAC3lxiFLvD~XaRw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg2NjR9fX1dfQ__&Signature=aSFNbYsP0pL70loNdhvcADycBh486NGn1ZpUPuHpSZNodAEbba~JSS2FUQx4UeIgsCoUMrIfm1CanixZm70PRvYdD148VVKXqhdWdE7KiIAP2ZWFmPBzHzkvPz-zaibOS5XqbJW9iClLYSKOicwmwjY6wrF2NOPAXpJuQPPCDPZMjG0kiJXX9o4F~nbchnaWqVqb8wKWI6ryaMWN0iYxk16alN~YR253vNY3n~bXNSBnmpXhOZFoxmZ-SHWWp02ReT7wm9Gi55HjolZnvxL-Edkwl-1tmmGplqp688aVKBPlN6mK8kiW2bIc--7u855PF6XJL~qAC3lxiFLvD~XaRw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http |awk '{print "http://web.archive.org/save/" $0}' > spid
-sh ~/scripts/spider.sh spid
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl  |less
-ls
-rm *
-curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg5NTd9fX1dfQ__&Signature=Ax4JsPg~Ihmn-KlLRmtaE8F6-D6g-LLD-9g4XbqIbSUeC~TSqR9P25bzYcvFi-CJb8ClKwq7ph3lqOmDqMBYxqtCihedpahIs-GxprSFdOFEHf2xqAZphJ9DS~vEOw-f6Fy41-OqFugc9Y8vflFIAOyvQvHpepR5T37tTbAxhQw8oO1Xf2CTK~3ai0bAs1lZSqSi~v8Mvq1AZq~Xh3Eo6InA~TZ7~uehDRjpUh646SDrdKhUew1Q~PTVZIyMJUSo1SBaXarsktcXuo3i9kKPrhmnjgACBarfUJFw3JXSaG3JdOvgSdMe3JprJZkFPbyzX6bP4uSDnWo2N6sgNP5qMw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http
-curl 'https://cf-hls-media.sndcdn.com/playlist/YegqAE0fpNbk.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1llZ3FBRTBmcE5iay4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODg5NTd9fX1dfQ__&Signature=Ax4JsPg~Ihmn-KlLRmtaE8F6-D6g-LLD-9g4XbqIbSUeC~TSqR9P25bzYcvFi-CJb8ClKwq7ph3lqOmDqMBYxqtCihedpahIs-GxprSFdOFEHf2xqAZphJ9DS~vEOw-f6Fy41-OqFugc9Y8vflFIAOyvQvHpepR5T37tTbAxhQw8oO1Xf2CTK~3ai0bAs1lZSqSi~v8Mvq1AZq~Xh3Eo6InA~TZ7~uehDRjpUh646SDrdKhUew1Q~PTVZIyMJUSo1SBaXarsktcXuo3i9kKPrhmnjgACBarfUJFw3JXSaG3JdOvgSdMe3JprJZkFPbyzX6bP4uSDnWo2N6sgNP5qMw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spid
-sh ~/scripts/spider.sh spid
-curl 'https://cf-hls-media.sndcdn.com/playlist/1OVqMfTQ17Io.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0LzFPVnFNZlRRMTdJby4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU1ODk0Mzd9fX1dfQ__&Signature=OpBwxIAS715p7WNumU41dH-7pJb~-ewQNgNjxjNb1P2Ew7Bicf1OAcP5nTNUYVqvVZ2XwSyoqn4ccQ2mOSC4QE1weMF19JTQBg~s1FxUJp4tPJmIF9qdsRUNKweIt6J2B~GL-ECKD83tJ8TV3W44bp4JFCR50lTDs3KwY4ulbb~8PFDk~hGX6SWBmN18QsRk-L9AcXO~biHfvORE0tngoCziFexNTM7PdnbGGUSXuzzF~9H3butHOXaFT8ZUpJRaUAfFZ6yE-VKTUsu7~oT4~VmygMGo1PC2Uw2~WC4njEvau2MZMTbzLLcGJ93~KoYxiM4KNRkSeDzD6fLzGkeW1w__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spida
-less spid
-less spida
-ls
-sh ~/scripts/spider.sh spida
-sh ~/scripts/spider.sh spidb
-less spid.log 
-cat spid.log |perl ~/bin/wget-http.pl  > out
-cat spid|awk -F'/save/' '{print $2}'
-cat spid|awk -F'/save/' '{print $2}'|while read i;do grep $i out || echo http://web.archive.org/save/$i >> spidc;done
-ls
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm spid
-rm spid.log 
-sh ~/scripts/spider.sh spib
-ls
-rm out 
-curl 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzEwNzB9fX1dfQ__&Signature=vwtSYuN6IYQMHzs6Ixd08MpIAfmXRoFWKsnSVZwB8mScAkTfu-sVbwrWq8YOjSuZ-Ty6vhPTL~NpY8rCjHrv8Rpd3h7fF-U6pzogLX43BfsgmD-K6eqcsaiZ1Zwq0Efsrhk41UL5SXfvbOBu16sS7SH1DPmJz2fri1pBx6AYtPWlLt5btlFvJa6w7FEuYEzrxW6~YEU-0KAXxjcK9fyzl2p-BZify~EjndckHQo86laO3wx-NBq-QtgJF0R1MzhZN0xT-9H4CXNs4hWMkQmDhbbkb~i2NVuQ~HnNAO8BZw94oFlx6aYEBG6GbC~qkkgqugJf2MI~zeZLDgWgVv4bzg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'|grep http|awk '{print "http://web.archive.org/save/" $0}' > spidc
-sh ~/scripts/spider.sh spidc
-mksaver () { curl $1|grep http|awk '{print "http://web.archive.org/save/" $0}' ; }
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzEwNzB9fX1dfQ__&Signature=vwtSYuN6IYQMHzs6Ixd08MpIAfmXRoFWKsnSVZwB8mScAkTfu-sVbwrWq8YOjSuZ-Ty6vhPTL~NpY8rCjHrv8Rpd3h7fF-U6pzogLX43BfsgmD-K6eqcsaiZ1Zwq0Efsrhk41UL5SXfvbOBu16sS7SH1DPmJz2fri1pBx6AYtPWlLt5btlFvJa6w7FEuYEzrxW6~YEU-0KAXxjcK9fyzl2p-BZify~EjndckHQo86laO3wx-NBq-QtgJF0R1MzhZN0xT-9H4CXNs4hWMkQmDhbbkb~i2NVuQ~HnNAO8BZw94oFlx6aYEBG6GbC~qkkgqugJf2MI~zeZLDgWgVv4bzg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ'
-ls
-lsls
-ls
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/EqJYgNrDmCjc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L0VxSllnTnJEbUNqYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExODV9fX1dfQ__&Signature=IvCBbB07hSD4JK5fWYmj~tdAb4Z95Zqcxy7Q7RVtvqVfNhmLRsM7JWaddhGN2ak-7kxeBAANqR2KuMQOJjma3l2ZuWzxn4MViICOKHQcMhIQQ05EyzW1vnyYUBCYa00CWxNW0y5ehL3MbbQErODwKehPWp7o~j9peq8RIk2KZx-PuyCDQdJwocbFgWa02HqKHKeGxYQ3I~T06f60khHZajD6EkxYSHVJ5ujO0GyxDxeKXPqjDpbSacc2lxLAqGwlIcLd6VECoTdOHVGLg8x4k9biVTmUm7lptxE6UDl76j-lp7M90FWCh~A-BpYPIuqyuLZ2kz1nPRh2tDg2CU3ScA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidd
 ls
 mksaver 'https://cf-hls-media.sndcdn.com/playlist/QC6nAXGuvjHc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1FDNm5BWEd1dmpIYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA5ODl9fX1dfQ__&Signature=x5VatnUQHQ4oXl0OXrQiLHtMpY6TUPW2Cm1Thd8k2un7LeZmtKL~~jBjiObj0cbQMhKH5kLXB09H95RFClbljPquPslXnXHTi9EhCwyrRHsfGLQ0YU9m47gt9lCNtm~0YuKbm0r~R70IyCKp-SAji0~lH4~U5S0evPMFdOZOf0QtV5O23jStGYAC2jyZ-ew3DC78-Q~AbFAG~3S3a0JIVUq8vcE~8dHVgLxFXY1Uvx2w5jm9kAty2zpCHW1nsMgbQ2WczngGaEPYYoJQt9FgnNhwia25QYmsmO8MT3uzBSh38dRR~rc9DBIZiQXQqYpv-mIrLB7bX2JjHBbiWrdYPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidd
 less spidd 
@@ -1998,3 +1929,72 @@ sh sil.sh 021-autor-nieznany-piesn-o-rolandzie.mp3
 less sil/021-autor-nieznany-piesn-o-rolandzie.mp3.sil 
 vi sil.sh
 for i in *mp3;do sh sil.sh $i;done
+cd ~/disk/Playing/wolne-lektury-audio-corpus/
+less NumberNorm.pm 
+perl NumberNorm.pm  num2text 15
+perl NumberNorm.pm  num2text 19
+perl NumberNorm.pm  num2text 115
+perl NumberNorm.pm  num2text 10
+ls
+cd audio/
+ls
+for i in *mp3;do sh ~/bin/convert-mp3.sh $i;done
+ls
+mv *.mp3.wav ../../wlaud/
+ls
+perl -e 'print 18.913  - 13.352   . "\n";'
+less ~/bin/convert-mp3.sh 
+perl -e 'print 21.219  - 18.913  . "\n";'
+perl -e 'print 13.352  - 12.299  . "\n";'
+perl -e 'print 12.299 - 1.053  . "\n";'
+perl -e 'print 1330.246 - 1323.113 - 1.053   . "\n";'
+perl -e 'print 1330.246 - 1323.113   . "\n";'
+perl -e 'print 1330.246 - 1.053   . "\n";'
+perl -e 'print 1323.113 - 1.053   . "\n";'
+echo $((22 * 60))
+perl -e 'print 1323.113 - 1.053   . "\n";'
+perl -e 'print 07.600 - 2.04   . "\n";'
+perl -e 'print 7.600 - 2.04   . "\n";'
+perl -e 'print 26.5 - 25.36   . "\n";'
+echo $((9 * 60))
+ffplay 015-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 016-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 017-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 018-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 019-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 020-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 021-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 022-autor-nieznany-piesn-o-rolandzie.mp3 
+ls
+cd ../text/
+perl ../apply-specific.pl 
+git diff
+ls
+git status
+less boy-swietoszek.txt-01.txt
+find . -size 0
+find . -size 0 -delete
+rm *.bak
+git log
+perl ../apply-specific.pl 
+find . -size 0 -delete
+rm *.bak
+git status
+git diff
+less piesn-o-rolandzie.txt-27.txt 
+less piesn-o-rolandzie.txt-15.txt 
+perl ../apply-specific.pl 
+git diff
+git add piesn-o-rolandzie.txt-27.txt 
+git commit -m norm
+cat piesn-o-rolandzie.txt-0[0-9].txt
+cat piesn-o-rolandzie.txt-0[0-9].txt|perl ../clean.pl 
+cat piesn-o-rolandzie.txt-0[0-9].txt|perl ../clean.pl |tr ' ' '\n'
+cat piesn-o-rolandzie.txt-0[0-9].txt|perl ../clean.pl |tr ' ' '\n'|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
+cat piesn-o-rolandzie.txt-1[0-9].txt|perl ../clean.pl |tr ' ' '\n'|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
+cat piesn-o-rolandzie.txt-1[0-9].txt|grep -i  turpin
+cat piesn-o-rolandzie.txt-2[0-7].txt|perl ../clean.pl |tr ' ' '\n'|perl ../filter-dict.pl ../pron-data/gen.tsv ../pron-data/pronounce-as.tsv 
+cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Pina
+cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Murg
+cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Ginm
+perl ~/toghabot.pl 
