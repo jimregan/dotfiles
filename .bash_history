@@ -1,21 +1,3 @@
-cp /tmp/expand /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m expand
-git push origin lexicon 
-ffplay audio/006-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/007-autor-nieznany-piesn-o-rolandzie.mp3 
-mkleftin text/piesn-o-rolandzie.txt-06.txt && mkleft
-mkrightin && addprons 
-mkleftin text/piesn-o-rolandzie.txt-07.txt && mkleft
-vi /tmp/leftin 
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
 mkleftin text/piesn-o-rolandzie.txt-08.txt && mkleft
 mkrightin && addprons 
 git diff
@@ -1998,3 +1980,21 @@ svn info --show-item repos-root-url
 cd TG4/
 svn info --show-item repos-root-url 
 svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
+cd /tmp/
+wget https://dasg.ac.uk/text/68.txt
+wget --no-check-certificate https://dasg.ac.uk/text/68.txt
+vi 68.txt 
+less ~/Downloads/Wikisource-20180124202528.xml 
+perl -e 'print 3 % 1'
+perl -e 'print 3 % 2'
+perl -e 'print 4 % 2'
+perl -e 'print 3 % 2'
+perl -e 'print 5 % 2'
+perl -e 'print 15 % 2'
+perl -e 'print 2 % 2'
+perl -e 'print 4 % 2'
+cat /tmp/niamh |perl ~/niamhbot.pl 
+top
+man djvu
+man djvutxt
+djvutxt --page=26 ~/Downloads/Ko_te_Paipera_Tapu_1868.djvu 
