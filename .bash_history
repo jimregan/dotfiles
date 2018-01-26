@@ -1,30 +1,3 @@
-ls
-ls
-cd ../../youtube-pl/
-ls
-cd nope/
-ls
-for i in *.vtt;do cat $i |perl ../../msf-asr/scripts/vtt-to-audacity.pl > $i.aud;done
-for i in ./*.vtt;do cat $i |perl ../../msf-asr/scripts/vtt-to-audacity.pl > $i.aud;done
-less 017-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cat ~/bin/convert-mp3.sh 
-less 017-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cd ~
-cd disk/Playing/
-mkdir PLEC
-cd PLEC/
-wget http://pelcra.pl/plec/userfiles/errors_mp.xls http://pelcra.pl/plec/userfiles/plec_sp.tar.gz http://pelcra.pl/plec/userfiles/plec_sp_media.tgz http://pelcra.pl/plec/userfiles/errors.xls http://pelcra.pl/plec/userfiles/Phrases/Phrases-0.1.jar
-tar ztvf plec_sp_media.tgz 
-ls
-tar ztvf plec_sp.tar.gz 
-tar zxvf plec_sp.tar.gz 
-cd 720-3-PELCRA_72030200000
-ls
-find . -name '*eaf'
-less ./720-3-PELCRA_72030200000049/text.eaf
-less ./720-3-PELCRA_72030200000049/text_structure.xml 
-vi dl
-cd ..
 mkdir tilde-giza
 cd tilde-giza/
 mv ~/Downloads/archive.zip .
@@ -1998,3 +1971,30 @@ ls
 less xx00 
 less xx01
 less ~/disk/Playing/youtube-pl/maybe-open.tsv 
+cd ~/disk/Playing/
+git clone https://github.com/google-research-datasets/relation-extraction-corpus.git
+cd relation-extraction-corpus/
+ls
+less 20130403-institution.json 
+less 20130403-place_of_birth.json 
+cat 20130403-place_of_birth.json |awk -F'"evidences":[{"url":"' '{print $2}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":\[{"url":"' '{print $2}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":":"' '{print $2}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":"' '{print $2}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|wc
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|less
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|awk -F'/wiki/' '{print $NF}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|awk -F'/wiki/' '{print "[[" $NF "]]"}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|awk -F'/wiki/' '{print "[[" $NF "]]"}' > /tmp/aaa
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(echo $text|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(echo $text|grep //pl.wikipedia|awk '{print $2}');if [ x$pl != x ]; echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(echo $text|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; then  echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(echo $text|grep //pl.wikipedia|awk '{print $2}');if [ x$pl != x ]; then echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(echo $text|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; then  echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(echo $text|grep //pl.wikipedia|awk '{print $2}'|grep http);if [ x$pl != x ]; then echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
+rm pl-pages 
+ls
+cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(lynx -dump $i|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; then  echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(lynx -dump $i|grep //pl.wikipedia|awk '{print $2}'|grep http);if [ x$pl != x ]; then echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
+ls
+less ga-pages 
+wc -l ga-pages 
