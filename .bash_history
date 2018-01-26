@@ -1,16 +1,3 @@
-rm deepspeech-0.1.0-models.tar.gz 
-cd ../..
-ls
-cd ..
-ls
-cd desktop/Downloads/
-mv ~/Downloads/cv_corpus_v1.tar.gz .
-tar ztvf cv_corpus_v1.tar.gz 
-tar zxvf cv_corpus_v1.tar.gz 
-ls
-cd cv_corpus_v1/
-ls
-less cv-valid-train.csv 
 cat cv-valid-train.csv |awk -F, '{print $7}
 cat cv-valid-train.csv |awk -F, '{print $7}'
 cat cv-valid-train.csv |awk -F, '{print $7}'|grep ire
@@ -1998,3 +1985,16 @@ vi urls
 less ~/Downloads/text_0154.json 
 less ~/Downloads/Conversations.json 
 cat ~/Downloads/Conversations.json |sed -e 's/,/\n,/g'
+ls
+ffplay 030-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 031-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay 032-autor-nieznany-piesn-o-rolandzie.mp3 
+roland { ffplay $1-autor-nieznany-piesn-o-rolandzie.mp3 ; }
+roland() { ffplay $1-autor-nieznany-piesn-o-rolandzie.mp3 ; }
+roland 033
+roland 034
+roland 035
+roland 036
+roland 038
+roland 040
+ls
