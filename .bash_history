@@ -1,15 +1,4 @@
 ls
-cd cmusphinx-alignment-example/
-ls
-less align.sh 
-ls
-mv cmusphinx-clarinpl/pl.dic cmusphinx-clarinpl/pl.dic.old
-mv pldic.new cmusphinx-clarinpl/pl.dic
-ls
-cp ~/disk/Playing/wolne-lektury-audio-corpus/audio/0*-robert-louis-stevenson-wyspa-skarbow.mp3 .
-cp ~/disk/Playing/wolne-lektury-audio-corpus/text/wyspa-skarbow.txt-0*txt .
-for i in  *mp3;do bash ~/bin/convert-mp3.sh $i;done
-ls
 less align.sh 
 ./align.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav 
 ./align.sh 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav wyspa-skarbow.txt-01.txt 
@@ -1998,3 +1987,14 @@ vi 5CkxwcyJLvk.tt.xml
 vi NmvNner1ZU0.tt.xml.orig
 cp NmvNner1ZU0.tt.xml.orig NmvNner1ZU0.tt.xml
 vi NmvNner1ZU0.tt.xml
+ls
+ls local/
+ls data/
+ls data/snuv/snuv_database/
+ls data/snuv/snuv_metadata/
+ls data/snuv/snuv_database/
+ls data/snuv/snuv_database/9k36_25lat/
+find data/ -name '*txt'
+find data/ -name '*txt' -exec cat {} \;
+tail -f /tmp/lng-100k36_28lat 
+tail -f /tmp/lng-102k36_49lat 
