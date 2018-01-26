@@ -1,11 +1,3 @@
-ffplay /tmp/test.wav 
-cd ..
-grep -i żyrfaret piesn-o-r*
-grep -i żyrfaret text/piesn-o-r*
-cd ~
-\sudo mv Playing/ disk/Playing/Playing-remainder
-ls Playing/kaldi/tools/Phonetisaurus/
-sudo mv Playing/ disk/Playing/Playing-remainder
 export GOOGLE_APPLICATION_CREDENTIALS=/home/jim/Downloads/My\ First\ Project-fb0d9d863927.json
 cd disk/Playing/
 ls
@@ -1998,3 +1990,11 @@ svn add ../astroblast/5716687770001.*
 grep 5567674547001 videos.tsv 
 mv 5567674547001.* ../astroblast/
 svn add ../astroblast/5567674547001.*
+ls
+cat 5438160491001.vtt |perl ../../scripts/vtt-to-audacity.pl 
+cat 5438160491001.vtt |perl ../../scripts/vtt-to-audacity.pl  > 5438160491001.aud
+audacity &
+ls
+less vtt-patcher.pl 
+ffplay /tmp/temp.wav 
+audacity &
