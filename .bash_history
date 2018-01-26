@@ -1,41 +1,3 @@
-cat list*|sort|uniq|grep http |sh RobertMarchelTV/dl.sh 
-ls
-ls parrots/
-grep 'Creative Commons' watch\?v\=*
-for i in watch\?v\=*;do grep 'Creative Commons' $i && grep 'BY-ND' $i;done
-for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'BY-ND' $i || echo $i >> chkcc) ;done
-cat chkcc 
-rm chkcc 
-for i in watch\?v\=*;do grep 'Creative Commons' $i && (grep 'NC-BY-SA' $i || echo $i >> chkcc) ;done
-cat chkcc 
-grep LKkNs6276xo ../closed
-grep LKkNs6276xo ../closed.tsv 
-#grep LKkNs6276xo ../closed.tsv  >> 
-less ../open.tsv 
-grep LKkNs6276xo ../closed.tsv  >> ../open.tsv 
-vi ../closed.tsv 
-gr/-ZXfhlLJXcc.pl.vtt 
-for i in ./*.vtt;do  cat $i|grep -v '^WEBVTT'|grep -v '^Kind:';done
-mkdir parrots
-cd parrots/
-vi ../../open-english.tsv 
-cd ..
-ls
-ls ./*vocab
-cat ./03dgWFKBEHk.pl.vtt.vocab
-cat ./093UCY4KEqQ.pl.vtt.vocab 
-ls
-history -a
-cd ..
-find . -name 'oUDIglmGLDQ*'
-find  . -name UCdXt2JT4VLVSaXVgiss9YcA
-mkdir UCdXt2JT4VLVSaXVgiss9YcA
-cd UCdXt2JT4VLVSaXVgiss9YcA
-sh ../dl.sh https://www.youtube.com/watch?v=oUDIglmGLDQ
-ls
-cd ..
-ls
-cd nope/
 ls
 cd RobertMarchelTV/
 ls
@@ -1998,3 +1960,41 @@ ffplay /home/jim/Downloads/diana_arrives_at_monaghan_branch_library.mp3
 ffplay /home/jim/Downloads/dún_do_shúile.mp3 
 tar ztvf ~/disk/desktop/Downloads/0001_aspire_chain_model.tar.gz 
 svn info --show-item repos-root-url 
+cd ../../
+git clone https://github.com/mozilla/DeepSpeech
+cd DeepSpeech/
+ls
+cd native_client/
+ls
+less BUILD 
+less README.md 
+make bindings
+sudo make bindings
+ls
+less README.md 
+sudo make install
+sudo ldconfig
+sudo make install
+less README.md 
+sudo pip install dist/deepspeech*
+less README.md 
+cd native_client/javascript
+cd javascript/
+ls
+less ../README.md 
+make package
+less ../README.md 
+ls
+less Makefile 
+make package.json
+make npm-pack 
+cd ..
+ls
+less README.md 
+sudo pip install deepspeech
+wget -O - https://github.com/mozilla/DeepSpeech/releases/download/v0.1.0/deepspeech-0.1.0-models.tar.gz | tar xvfz -
+ls models/
+less models/trie 
+less models/alphabet.txt 
+ls
+deepspeech -h
