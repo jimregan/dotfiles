@@ -1,44 +1,3 @@
-perl merge-google-with-silences.pl silences/018-autor-nieznany-piesn-o-rolandzie.mp3.sil text/piesn-o-rolandzie.txt-18.txt google-asr/018-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-cd ../text/
-ls
-ls *rolandzie*
-less piesn-o-rolandzie.txt 
-grep '^[CXVLI]+$' piesn-o-rolandzie.txt 
-grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt 
-grep XI *pl
-grep XI ../*pl
-perl ../NumberNorm.pm num2text 291
-a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt 
-a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk "{print \"        '\"$0\"',\"}"
-a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk "{print \"        '\" $0 \"',\"}"
-a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk '{print "        \"" $0 "\","}'
-grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |awk '{print "        \"" $0 "\","}'  > /tmp/fooo
-vi ../splitter.pl 
-less /tmp/fooo 
-vi ../splitter.pl 
-cd ,,
-cd ..
-git diff
-git add splitter.pl 
-git commit
-cd -
-less piesn-o-rolandzie.txt 
-perl ../header-replace.pl piesn-o-rolandzie.txt 
-perl ../header-replace.pl piesn-o-rolandzie.txt > tmp
-mv tmp piesn-o-rolandzie.txt 
-git diff
-git add piesn-o-rolandzie.txt 
-git commit -m header
-perl ../splitter.pl piesn-o-rolandzie.txt 
-ls piesn-o-rolandzie.txt*
-git rm piesn-o-rolandzie.txt 
-git add piesn-o-rolandzie.txt-*
-git commit -m split
-less piesn-o-rolandzie.txt-01.txt 
-less piesn-o-rolandzie.txt-02.txt 
-git log
-git revert d1f0463e1d82feb20c65666548cee4b968d8f49e
-grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt 
 a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf("piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
 a=1;grep '^[CXVLI][CXVLI]*$' piesn-o-rolandzie.txt |while read i;do norm=$(perl ../NumberNorm.pm num2text $a); fnum=$(printf "%02d" $a);printf "piesn-o-rolandzie.txt-$fnum.txt\t$i\t$norm\n";a=$(($a + 1));done
 less piesn-o-rolandzie.txt 
@@ -1998,3 +1957,44 @@ tree
 tree|head
 ls 100k36_28lat/
 for j in *;do for i in $j/*wav;do sox $i -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p'  >> /tmp/lng-$j;done;done
+git log
+ls -al ~/Downloads/snuv.tar.gz 
+git status
+vi README
+ls
+git add README steps utils local/download_and_untar.sh 
+mkdir conf
+mkdir local/chain
+mkdir local/chain/tuning
+ls
+ls local/
+ls local/chain/
+ls local/chain/tuning/
+mkdir local/nnet3/
+find . -type f
+mkdir data
+data=data
+data_url=http://pelcra.pl/resources/spoken/snuv.tar.gz
+ls
+rm snuv.tar.gz 
+cp ~/Downloads/snuv.tar.gz .
+mv snuv.tar.gz data/
+git add README steps utils local/download_and_untar.sh 
+data=data
+data_url=http://pelcra.pl/resources/spoken/snuv.tar.gz
+ls
+rm snuv.tar.gz 
+echo $dataa
+echo $data
+ls
+ls data/
+url=$data_url 
+archivename=$(echo $url|awk -F/ '{print $NF}')
+echo $archivename 
+echo $(dirname $data)
+data=$PWD/data
+echo $(dirname $data)
+data=data
+ls -al data/snuv.tar.gz 
+file data/snuv.tar.gz 
+ls
