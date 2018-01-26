@@ -1,71 +1,3 @@
-ffplay -ss 14 -t 1.053  2Na77jcxMyA.mkv 
-ffplay -ss 15 -t 1.053  2Na77jcxMyA.mkv 
-ffplay -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
-ffmpeg -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
-ffplay -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
-ffmpeg -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561 -i 2Na77jcxMyA.mkv /tmp/test.wav
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 13.352 -t 5.561  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 12.299 -t 5.561  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss  18.913 -t 2.306  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 12.299 -t 1.053  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 11.246 -t 1.053  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 12.299 -t 5.561  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1323.113 -t 7.133  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1329.193 -t 7.133  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1329.193 -t 7.133  /tmp/test.wav
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1322.06.193 -t 7.133  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1322.06 -t 7.133  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 1322.56 -t 7.133  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 11.8 -t 1.053  /tmp/test.wav
-ffplay /tmp/test.wav 
-ffmpeg -i 2Na77jcxMyA.mkv  -acodec pcm_s16le -ac 1 -ar 16000 -ss 11.3 -t 1.053  /tmp/test.wav
-ffplay /tmp/test.wav 
-ls ./*vtt
-less GgCpRQIA4Tw.pl.vtt 
-ffmpeg -i GgCpRQIA4Tw.mp4  -acodec pcm_s16le -ac 1 -ar 16000 -ss 2.04 -t 5.56  /tmp/test.wav
-ffplay /tmp/test.wav 
-less GgCpRQIA4Tw.pl.vtt 
-ffmpeg -i GgCpRQIA4Tw.mp4  -acodec pcm_s16le -ac 1 -ar 16000 -ss 565.36 -t 1.14  /tmp/test.wav
-ffplay /tmp/test.wav 
-less ../closed
-less ../closed.tsv 
-du -k .
-df
-ls
-less ../closed.tsv 
-ls -al 
-file xX70iOIl49g.f136.mp4.part
-less YxjozDArTgw.pl.vtt 
-less YYwAN5qT6b0.pl.vtt 
-cat *.vtt
-cat ./*.vtt|grep -v 'WEBVTT'
-cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'
-cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Type:'
-cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'
-cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'|grep -v '^$'
-cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'|grep -v '^$'|wc
-cat ./*.vtt|grep -v 'WEBVTT'|grep -v '\-\->'|grep -v '^Kind:'|grep -v 'Language:'|grep -v '^$' > /tmp/closed-text
-less /tmp/closed-text.words 
-echo $(((22 * 60))
-echo $((22 * 60))
-ls ./*vocab
-cat ./kaQWt2BSgfs.pl.vtt.vocab
-ls *vtt|wc
-ls ./*vtt|wc
-ls
-less ./-ZXfhlLJXcc.
-less ./-ZXfhlLJXcc.pl.vtt 
 ls
 grep Marcin *vtt
 grep Marcin ./*vtt
@@ -1998,3 +1930,71 @@ ls
 rm 5*
 cat todo |awk -F'\t' '{print $6}'|grep http|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
 sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
+cd /tmp/asd
+ls
+sh ~/scripts/spider.sh spida
+sh ~/scripts/spider.sh spidb
+sh ~/scripts/spider.sh spidc
+tail -f spida.log 
+cat spida.log |perl ~/bin/wget-http.pl 
+cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spida.log |perl ~/bin/wget-http.pl  |grep web/2
+cat spida.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}'
+cat spida.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' |wc
+wc -l spida
+cat spida.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt || echo http://web.archive.org/save/$i >> spidaa;done
+less spidaa 
+tail spida
+rm spidaa 
+rm spida
+rm spida.log 
+ls
+tail -f spidb.log 
+cat spidb.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spidb.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spidb|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidaa;done
+ls
+rm spidb
+rm spidb.log 
+cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm -rf web.archive.org/
+ls
+rm inp
+tail inp.log .
+tail inp.log 
+rm inp.log 
+ls
+less inp 
+sh ~/scripts/grab-logged.sh inp
+ls
+tail -f spidc.log 
+cat spidc.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spidc.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spidc|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidaa;done
+ls
+rm spidc
+rm spidc.log 
+tail -f inp.log 
+ls
+sh ~/scripts/spider.sh spid
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid 
+sh ~/scripts/spider.sh spid
+tail cat spida 
+sh ~/scripts/spider.sh spida
+tail -f spid.log 
+cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+rm spid
+rm spid.log 
+tail -f spida.log 
+cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
+cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
+cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
+rm spida
+rm spida.log nohup.out 
+ls
