@@ -1,30 +1,3 @@
-ls
-cd ..
-vi src/mmapfile.c 
-make
-less src/ngramstat.tcc 
-less src/ngramstat.hpp 
-less src/ngramstat.tcc 
-less src/mmapfile.hpp 
-vi src/text2ngram.cpp
-make#
-make
-vi src/ngramstat.tcc 
-vi src/ngramstat.hpp 
-vi src/mmapfile.hpp 
-vi src/ngramstat.hpp 
-vi src/ngramstat.tcc 
-clear
-make
-vi src/ngramstat.tcc
-make 2> err
-less err 
-make > err
-less err 
-df
-cd ..
-wget https://github.com/mozilla/DeepSpeech/releases/download/v0.1.0/deepspeech-0.1.0-models.tar.gz
-tar ztvf deepspeech-0.1.0-models.tar.gz 
 rm deepspeech-0.1.0-models.tar.gz 
 cd ../..
 ls
@@ -1998,3 +1971,30 @@ find . -name '*eaf'
 less ./720-3-PELCRA_72030200000049/text.eaf
 less ./720-3-PELCRA_72030200000049/text_structure.xml 
 vi dl
+cd ..
+mkdir tilde-giza
+cd tilde-giza/
+mv ~/Downloads/archive.zip .
+unzip archive.zip 
+ls
+unzip -l archive.zip 
+less ga-en/license/Creative\ Commons\ —\ Attribution\ 3.0\ Unported\ —\ CC\ BY\ 3.0\ Deed.htm 
+vi urls
+mv ~/Downloads/archive.zip en-es
+mv en-es en-es.zip
+unzip -l en-es.zip 
+unzip en-es.zip 
+less es-en/en-esPivotBased.txt 
+less es-en/en-esTransliterationBased.txt 
+less es-en/lex.e2f 
+ls
+mv ~/Downloads/archive\ \(1\).zip pl-en.zip
+unzip -l pl-en.zip 
+mv ~/Downloads/archive.zip ga-en.zip
+ls
+unzip -l ga-en
+rm ga-en.zip 
+vi urls 
+less ~/Downloads/text_0154.json 
+less ~/Downloads/Conversations.json 
+cat ~/Downloads/Conversations.json |sed -e 's/,/\n,/g'
