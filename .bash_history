@@ -1,33 +1,3 @@
-mkdir tilde-giza
-cd tilde-giza/
-mv ~/Downloads/archive.zip .
-unzip archive.zip 
-ls
-unzip -l archive.zip 
-less ga-en/license/Creative\ Commons\ —\ Attribution\ 3.0\ Unported\ —\ CC\ BY\ 3.0\ Deed.htm 
-vi urls
-mv ~/Downloads/archive.zip en-es
-mv en-es en-es.zip
-unzip -l en-es.zip 
-unzip en-es.zip 
-less es-en/en-esPivotBased.txt 
-less es-en/en-esTransliterationBased.txt 
-less es-en/lex.e2f 
-ls
-mv ~/Downloads/archive\ \(1\).zip pl-en.zip
-unzip -l pl-en.zip 
-mv ~/Downloads/archive.zip ga-en.zip
-ls
-unzip -l ga-en
-rm ga-en.zip 
-vi urls 
-less ~/Downloads/text_0154.json 
-less ~/Downloads/Conversations.json 
-cat ~/Downloads/Conversations.json |sed -e 's/,/\n,/g'
-ls
-ffplay 030-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 031-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay 032-autor-nieznany-piesn-o-rolandzie.mp3 
 roland { ffplay $1-autor-nieznany-piesn-o-rolandzie.mp3 ; }
 roland() { ffplay $1-autor-nieznany-piesn-o-rolandzie.mp3 ; }
 roland 033
@@ -1998,3 +1968,33 @@ cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{
 ls
 less ga-pages 
 wc -l ga-pages 
+ls
+tail -f pl-pages 
+lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin
+lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep pl.wiki
+lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep //pl.wikiped
+tail -f pl-pages 
+lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep //pl.wikipedia
+lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep https://pl.wikipedia.org/
+lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep https://pl.wikipedia.org/|awk '{print $2}'
+text=$(lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin)
+echo $text
+text=$(lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep pl.wik)
+echo $text
+text=foo
+echo $text
+ls
+tail -f pl-pages 
+ls
+less ga-pages 
+ls
+tail -f pl-pages 
+tail -f ga-pages 
+grep Patrick_O 20130403-place_of_birth.json 
+zless ~/Downloads/ow_eng.nt.gz 
+zgrep '@gle' ~/Downloads/ow_eng.nt.gz 
+zgrep '@gle' ~/Downloads/ow_eng.nt.gz |wc
+zless ~/Downloads/WktEN.nt.gz 
+zgrep '@gle' ~/Downloads/WktEN.nt.gz 
+zgrep '@gle' ~/Downloads/WktEN.nt.gz |wc
+vi /tmp/wlck
