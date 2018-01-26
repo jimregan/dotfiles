@@ -1,9 +1,3 @@
-ls
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/QC6nAXGuvjHc.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1FDNm5BWEd1dmpIYy4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA5ODl9fX1dfQ__&Signature=x5VatnUQHQ4oXl0OXrQiLHtMpY6TUPW2Cm1Thd8k2un7LeZmtKL~~jBjiObj0cbQMhKH5kLXB09H95RFClbljPquPslXnXHTi9EhCwyrRHsfGLQ0YU9m47gt9lCNtm~0YuKbm0r~R70IyCKp-SAji0~lH4~U5S0evPMFdOZOf0QtV5O23jStGYAC2jyZ-ew3DC78-Q~AbFAG~3S3a0JIVUq8vcE~8dHVgLxFXY1Uvx2w5jm9kAty2zpCHW1nsMgbQ2WczngGaEPYYoJQt9FgnNhwia25QYmsmO8MT3uzBSh38dRR~rc9DBIZiQXQqYpv-mIrLB7bX2JjHBbiWrdYPg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidd
-less spidd 
-sh ~/scripts/spider.sh spidd
-mksaver 'https://cf-hls-media.sndcdn.com/playlist/npZIf6g62Ycy.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L25wWklmNmc2MlljeS4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzExOTB9fX1dfQ__&Signature=FlC0FczXJN6Bl4guzty2wUj60tXHKPxibpf99ZBkx5j~vtWoOvKcIqIXCZMpNkrYJDYTO2mjRaU8rw5zxtifuO3aLAixXYq2M6afUvEdqyLIj3Ihlh9EXKC6lSMYcfk66PmRUK89F6Kz05MsmrVg63j8ZkTAvetisvgeuq9wx6Kmwxj4VB8TSm5GFA3mbD4CBesq6ZdTeacc1ScmGUzEYkuqlVRs3ih~1Q~9lf6ZOH5MkrddhhZqDGc6lUrxAeaIuQvb70JWkUbtrsGvBuOtzPOM4iH02YabedUg83K9zdsuKwEnsYl9kZHE9r5T8XiLSLfXjW9sYNraRyoBy7o48Q__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spide
-sh ~/scripts/spider.sh spide
 mksaver 'https://cf-hls-media.sndcdn.com/playlist/XJhmgDkI4eit.128.mp3/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL3BsYXlsaXN0L1hKaG1nRGtJNGVpdC4xMjgubXAzL3BsYXlsaXN0Lm0zdTgiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MTU2NzA2Njh9fX1dfQ__&Signature=J-P0F3KmfNZjuyV2KmstLwBmlz30PaUwk3XYFT-1bypUypBZPrKNsKAq7QFqeyAd5uyZpJQ5w437y7rcBrMKr3H4fkfsyoucXFq7eXt6OyE0NabzT8IAtvwYpxgaF~tcqRRHAQQ42bEyyhdi2ozHZ~z8moD9xFvab~gaa4A-DDJpPaJbVcMExqpcmw9bvEqApDvnbVkuLTAhLvuH2N-m3zcIXQItlzX2xlBDSDkK251PncX1Uuzz-wFKDj03~DowY5O3kfM-gktdaxAcFcG4HOiyhg1XCqh9C3YWjieTExz~T8B5~5OlP5L0oI3Xu6V4-sz5Qa-ODfU5kdVJquPneA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ' >> spidf
 sh ~/scripts/spider.sh spidf
 ls -al
@@ -1998,3 +1992,9 @@ cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Pina
 cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Murg
 cat piesn-o-rolandzie.txt-2[0-9].txt|grep -i  Ginm
 perl ~/toghabot.pl 
+cd ../
+git clone https://github.com/GSByeon/multi-speaker-tacotron-tensorflow
+cd multi-speaker-tacotron-tensorflow/
+ls
+pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
