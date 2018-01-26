@@ -1,59 +1,3 @@
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-git add specific-norms.tsv 
-git commit -m more
-ffplay audio/002-autor-nieznany-piesn-o-rolandzie.mp3 
-cat text/piesn-o-rolandzie.txt-02.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/leftin 
-cat /tmp/leftin 
-vi /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'|sed -e 's/ $//' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin |sed -e 's/ $//' >> pron-data/gen.tsv 
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv 
-git commit -m more
-ffplay audio/003-autor-nieznany-piesn-o-rolandzie.mp3 
-cat text/piesn-o-rolandzie.txt-03.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-vi /tmp/leftin 
-ffplay audio/003-autor-nieznany-piesn-o-rolandzie.mp3 
-grep pośpieszysz pron-data/gen.tsv 
-vi /tmp/leftin 
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-vi sourceme
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-vi /tmp/leftin 
-vi sourceme 
-vi sourceme
-pwd
-vi sourceme
-. sourceme 
-mkrightin 
-addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-ffplay audio/004-autor-nieznany-piesn-o-rolandzie.mp3 
-mkleftin text/piesn-o-rolandzie.txt-04.txt 
-cat /tmp/leftin 
-mkleft
-mkrightin 
-addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-ffplay audio/005-autor-nieznany-piesn-o-rolandzie.mp3 
-mkleftin text/piesn-o-rolandzie.txt-05.txt && mkleft
-vi /tmp/leftin 
-mkleftin text/piesn-o-rolandzie.txt-05.txt && mkleft
-vi /tmp/leftin 
-ffplay audio/005-autor-nieznany-piesn-o-rolandzie.mp3 
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv specific-norms.tsv 
-git commit -m more
-ls
 perl expand-with-polimorf.pl polimorf/polimorf.tab 
 perl pron-data/gen.tsv  expand-with-polimorf.pl polimorf/polimorf.tab 
 perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab 
@@ -1998,3 +1942,59 @@ ls
 less cmudict.vp 
 less cmudict.dict 
 grep ' ia ' ../msf-asr/pron/*
+ls -al
+less mapping-errors 
+grep ' linn' pron/*
+vi pron/connacht.tsv 
+vi pron/munster.tsv 
+vi pron/ulster.tsv 
+git add pron/ulster.tsv 
+git add pron/connacht.tsv 
+git add pron/munster.tsv 
+less mapping-errors 
+grep 'dfj' pron/*
+ls
+vi scripts/abair-norm-dict.pl 
+vi scripts/abair-simplify-map.tsv 
+vi pron/connacht.tsv 
+git diff
+grep "auˈ" pron/*
+vi pron/ulster.tsv 
+grep m_e pron/*
+vi pron/ulster.tsv 
+git diff
+git add vifax/extract-text.sh scripts/vtt-patcher.pl scripts/normalisations.tsv 
+git commit -m 'changes I do not remember making'
+git status
+git diff
+git add ga-to-cmudict.pl 
+git commit -m 'map more'
+git diff
+git add pron/ulster.tsv pron/connacht.tsv scripts/abair-simplify-map.tsv 
+git commit -m 'some errors'
+grep Marshall pron/*
+grep None pron/*
+grep '@' pron/*
+grep 'xl' pron/*
+grep que pron/*
+vi pron/ulster.tsv 
+vi pron/munster.tsv 
+git add pron/munster.tsv 
+git commit -m 'missing'
+vi pron/munster.tsv 
+git diff
+git add pron/munster.tsv 
+git commit -m english
+git diff pron/ulster.tsv
+git add pron/ulster.tsv 
+vi pron/connacht.tsv 
+git add pron/connacht.tsv 
+git commit -m english
+git add pron/pronounce-as.tsv 
+git commit -m 'was in progress'
+vi scripts/abair-simplify-map.tsv 
+vi pron/connacht.tsv 
+git diff
+git add pron/connacht.tsv 
+git commit -m fix
+git branch
