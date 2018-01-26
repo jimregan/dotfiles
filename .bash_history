@@ -1,56 +1,3 @@
-cd text/
-rm *.bak
-cd ..
-cat text/piesn-o-rolandzie.txt-*
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl 
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl 
-vi clean.pl 
-cp clean.pl clean-keepcase.pl
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl 
-vi clean-keepcase.pl 
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl 
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl |tr ' ' '\n'
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl |tr ' ' '\n'|sort|uniq
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean-keepcase.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |wc
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |less
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'|awk '{print $2}'
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'|awk '{print $2}' > roland-misspell
-less roland-misspell 
-grep saint audio/ts/*roland*
-grep san audio/ts/*roland*
-cat text/piesn-o-rolandzie.txt-111.txt 
-cat missing/
-cat roland-misspell 
-cat roland-misspell | while read i;do echo; echo $i; grep -i $i text/piesn-o-rolandzie.txt-*;done
-cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt |awk -F': ' '{print $2}'|awk -F',' '{print $1}'
-cat roland-misspell | while read i;do echo; echo $i; grep -i $i text/piesn-o-rolandzie.txt-*;done
-cat audio/ts/216-autor-nieznany-piesn-o-rolandzie.mp3.txt |awk -F': ' '{print $2}'|awk -F',' '{print $1}'|less
-cat text/piesn-o-rolandzie.txt-216.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-grep proporce pron-data/*
-vi /tmp/leftin
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}'
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"'
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}'
-cat /tmp/leftin |awk '{print "{{pl-IPA-auto|" $0 "}}"}' > /tmp/left
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g;
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'
-cat /tmp/right |sed -e 's/IPA(key): //;s/IPA(key): /\n/g'|grep -v '^$'|sed -e 's/ $//' > /tmp/rightin
-paste /tmp/leftin /tmp/rightin 
-paste /tmp/leftin /tmp/rightin |sed -e 's/ $//'
-paste /tmp/leftin /tmp/rightin |sed -e 's/ $//' >> pron-data/gen.tsv 
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv 
-git commit -m more
-grep diuk roland-misspell 
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > roland-miss
-vi roland-miss
 cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
 cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl 
 cat text/piesn-o-rolandzie.txt-77.txt|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv > /tmp/leftin 
@@ -1998,3 +1945,56 @@ svn diff
 svn ci -m rest
 mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
 svn ci -m fix
+cd scripts/
+ls
+grep 5715167562001 videos.tsv 
+mv 5715167562001.wav ../whizsachistin/
+svn add ../whizsachistin/5715167562001.wav 
+ls
+grep 5578865433001 videos.tsv 
+mv 5578865433001.* ../olivia/
+svn add ../olivia/5578865433001.* 
+svn diff
+ls
+grep 5716701975001 videos.tsv 
+mv 5716701975001.* ../spongebob/
+svn add ../spongebob/5716701975001.* 
+grep 5443567745001 videos.tsv 
+mv 5443567745001.* ../garfield/
+svn add ../garfield/5443567745001.* 
+ls
+grep 5597938721001 videos.tsv 
+mv 5597938721001.* ../catahata/
+svn add ../catahata/5597938721001.* 
+ls
+grep 5716770912001 videos.tsv 
+mv 5716770912001.* ../dora/
+ls ../
+ls ../CloIarChonnacht/
+svn stat ../CloIarChonnacht/
+cd ../CloIarChonnacht/
+fdupes -r .
+rm sliocht_a_2_\(lgh_131-134\)\ \(1\).mp3 
+rm sliocht_a_1_\(lgh_72-74\)\ \(1\).mp3 
+ls
+svn status
+svn rm 'sliocht_a_1_(lgh_72-74) (1).mp3'
+svn rm 'sliocht_a_1_(lgh_72-74) (1).mp3' 'sliocht_a_2_(lgh_131-134) (1).mp3'
+ffplay sliocht_a_1_\(lgh_72-74\).mp3 
+ls
+ls *caoi*
+ffplay sliocht_as_Ó_thuaidh.mp3 
+ffplay sliocht_a_2_\(lgh_131-134\).mp3 
+ls
+lc caibidil_a_1,_mír_a_1_cúpla_focal.mp3 
+ffplay caibidil_a_1,_mír_a_1_cúpla_focal.mp3 
+wget http://www.siopa.ie/siopa_files/PDFs/Extract/Cupla_Focal_Caibidil_1.pdf
+svn add Cupla_Focal_Caibidil_1.pdf 
+svn rm 'sliocht_a_1_(lgh_72-74) (1).mp3' 'sliocht_a_2_(lgh_131-134) (1).mp3'
+svn add ../catahata/5597938721001.* 
+ls
+less ~/disk/Playing/kaldi/egs/aspire/s5/local/fisher_prepare_dict.sh 
+vi /tmp/phmap
+cat  /tmp/phmap |awk -F'\t' '{print $2}' > /tmp/phmap2
+cat  /tmp/phmap |awk -F'\t' '{print "  \"" $2 "\" => "}' > /tmp/phmap2 
+cat /tmp/phmap2 
