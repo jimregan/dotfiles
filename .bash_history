@@ -1,53 +1,3 @@
-for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl ;done
-for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl |perl ../../wolne-lektury-audio-corpus/clean.pl ;done
-for i in wyspa-skarbow.txt-0*;do cat $i|perl ../../wolne-lektury-audio-corpus/split-sentence.pl |perl ../../wolne-lektury-audio-corpus/clean.pl > $i.sent ;done
-ls
-grep '<sil>' cmusphinx-clarinpl/pl.dic.old 
-grep '<sil>' cmusphinx-clarinpl/pl.dic.old >> cmusphinx-clarinpl/pl.dic
-for i in 1 2 3 4 5 6;do sh align.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3.wav wyspa-skarbow.txt-0$i.txt.sent > $i.out 2> $i.err;done
-tail -f pserr 
-less psout 
-tail -f psout 
-less psout 
-tail -f pserr 
-less pserr 
-tail -f psout 
-less psout 
-grep -v 1.00 psout 
-grep -v 1.00 psout  > tsty
-diff -u wyspa-skarbow.txt-01.txt.sent tsty 
-diff -u wyspa-skarbow.txt-01.txt.sent tsty |less
-ls
-less 1.out 
-less psout 
-less 1.out 
-less psout 
-less 1.out 
-less psout 
-grep 1.00 psout 
-grep 1.00 psout |awk '{print $2 "\t" $3 "\t" $1}' > psout.aud.txt
-audacity 
-less wyspa-skarbow.txt-01.txt.sent 
-ls
-find ../../ -name 'run*aen*sh'
-cp ../../wolne-lektury-audio-corpus/text/run-aeneas.sh .
-vi run-aeneas.sh 
-for i in 1 2 3 4 5 6;do sh run-aeneas.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent; done
-ls
-cp run-aeneas.sh run-aeneas-json.sh 
-vi run-aeneas.sh 
-for i in 1 2 3 4 5 6;do sh run-aeneas.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent; done
-echo rm *.sent.aud
-vi run-aeneas.sh 
-for i in 1 2 3 4 5 6;do sh run-aeneas.sh 0$i-robert-louis-stevenson-wyspa-skarbow.mp3 wyspa-skarbow.txt-0$i.txt.sent; done
-less wyspa-skarbow.txt-01.txt.sent.json 
-ls
-ls *mp3.txt
-mkdir ../../wolne-lektury-audio-corpus/audacity-sound-finder
-mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
-ls
-ls ../../wolne-lektury-audio-corpus/audacity-sound-finder/
-less ../../wolne-lektury-audio-corpus/audacity-sound-finder/01-robert-louis-stevenson-wyspa-skarbow.mp3.txt 
 mv *.mp3.txt ../../wolne-lektury-audio-corpus/audacity-sound-finder/
 ls ../../wolne-lektury-audio-corpus/audacity-sound-finder/
 less ../../wolne-lektury-audio-corpus/audacity-sound-finder/boleslaw-lesmian-napoj-cienisty-spojrzystosc-cykl-trupiegi.mp3.txt 
@@ -1998,3 +1948,53 @@ less less comhra_test/comhra/trs/irsd0036.trs
 less comhra_test/comhra/trs/irsd0036.trs 
 less comhra_test/comhra/trs/idam0001.trs 
 less comhra_test/comhra/trs/irrt0003.trs 
+cd Software/
+ls
+file anscealai_dev/anscealai 
+ls anscealai_dev/source/
+less anscealai_dev/source/files/check.d 
+less anscealai_dev/source/synth/synthesis.d 
+less anscealai_dev/voices/tcd_mun_test.htsvoice 
+ls
+ls letter_to_sound_rules/
+less letter_to_sound_rules/bor_irish_lts_rules_old/irish_lts_rules15-02-06.scm 
+ls
+cd ..
+cd Software/emily_sep16/
+ls
+less piarsach_wordlist_sorted_transcribed.txt 
+ls 
+less countSyllableTypes.pl 
+less an_toileanach_wordlist.txt 
+cd ..
+ls
+ls Forced_Alignment/
+ls Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/
+ls Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/30-08-05/
+ls Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/30-08-05/gulex.scm 
+less Forced_Alignment/dictionaries\ lexicon\ and\ lts\ rule\ set/30-08-05/gulex.scm 
+ls
+ls Drafts/
+ls AbairDocs/
+ls Praat_scripts/
+less Praat_scripts/Label_Gaeilge.man 
+ls
+ls NetBeansBackup/
+ls NetBeansBackup/Cluas/src/cluas/CluasApp.java 
+less NetBeansBackup/Cluas/src/cluas/CluasApp.java 
+ls
+ls letter_to_sound_rules/
+less letter_to_sound_rules/aevannes_lts_rule_program/CPP/LEX.CPP 
+ls
+cd ..
+ls
+cd Software/
+ls
+ls comhra_test/comhra/wav/
+ls comhra_test/comhra/trs/
+file comhra_test/comhra/trs/*
+less comhra_test/comhra/trs/irsd0036.trs
+less comhra_test/comhra/trs/irsd0036.trs 
+ffplay comhra_test/comhra/wav/irsd0036.wav 
+ffplay comhra_test/comhra/audio/idam0001.mp3 
+ffplay comhra_test/comhra/audio/irrt0003.mp3 
