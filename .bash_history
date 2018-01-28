@@ -1,87 +1,3 @@
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-vi okspell 
-git diff
-git add normalisations.tsv 
-git commit -m more
-vi okspell 
-head -n 270 okspell  > /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp/expand 
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv  
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   clean.pl 
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-vi okspell 
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mv okspell /tmp/leftin 
-mkleft
-wc -l /tmp/leftin 
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git status
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-git diff pron-data/pronounce-as.tsv
-git diff pron-data/pronounce-as.tsv > /tmp/pas
-mkrightin 
-addpronsas 
-git diff
-git add pron-data/pronounce-as.*
-git commit -m more
 mkleft
 mkrightin && addprons 
 git diff
@@ -1998,3 +1914,87 @@ mkdir pano
 cd pano/
 unzip ~/Downloads/takeout-20180123T191350Z-001.zip 
 identify Takeout/Panoramio/Saints\ Peter\ and\ Paul\ Church\,\ Kraków.jpg 
+ls -al ~/Downloads/*.tar*
+tar tvf ~/Downloads/PSC-Senat.tar 
+tar ztvf ~/Downloads/snuv.tar.gz 
+cd /tmp/
+tar zxvf ~/Downloads/snuv_metadata.tar.gz 
+cd snuv_metadata/
+less speaker2012-12-13\ 15-08-01.sql 
+less file2012-12-13\ 15-07-25.sql 
+wc -l file2012-12-13\ 15-07-25.sql 
+less speaker2012-12-13\ 15-08-01.sql 
+ls /tmp/snuv-toks 
+ls -al /tmp/snuv-toks 
+cd disk/Playing/kaldi/
+git branch
+git checkout master
+git diff
+git add egs/teanglann/s5/local/prep_data.pl 
+git commit -m update
+git checkout master
+git pull origin master
+ls
+cd src/
+ls
+make
+ls
+cd ..
+ls
+cd src/
+ls
+sh ./configure
+./configure 
+make clean -j 8 && make depend -j 8 && make -j 8
+git branch
+git checkout -b snuv
+cd ../egs/
+ls
+mkdir snuv
+ls -al commonvoice/s5/
+cd commonvoice/
+mkdir s5
+ls
+cd ../snuv/
+mkdir s5
+cd s5/
+man ln
+ln -s ../../wsj/s5/steps/ steps
+ln -s ../../wsj/s5/utils utils
+ls -al
+git cp ../../commonvoice/s5/run.sh .
+cp ../../commonvoice/s5/run.sh .
+ls
+less run.sh 
+mkdir local
+cp ../../commonvoice/s5/local/download_and_untar.sh local/
+less local/download_and_untar.sh 
+git log
+ls
+vi run.sh 
+ls
+find data -name '*txt'
+cat data/snuv/snuv_database/157k36_38lat/175_38lat.txt
+find data -name '*txt' -exec cat {} \;|tr -d ')'|tr -d '('|tr ' ' '\n'|sort|uniq > /tmp/snuv-toks
+wc -l /tmp/snuv-toks 
+less /tmp/snuv-toks 
+cat /tmp/snuv-toks | uconv -x pl-pl_FONIPA
+cat /tmp/snuv-toks | uconv -x pl-pl_FONIPA|uconv -x ipa-sampa
+find /usr/local -name 'pl-pl_FONIPA*'
+echo pięd | uconv -x pl-pl_FONIPA
+echo piędź | uconv -x pl-pl_FONIPA
+echo pięć | uconv -x pl-pl_FONIPA
+echo pięt | uconv -x pl-pl_FONIPA
+echo piędź | uconv -x pl-pl_FONIPA
+echo pięb | uconv -x pl-pl_FONIPA
+echo ślizg | uconv -x pl-pl_FONIPA
+echo liczb | uconv -x pl-pl_FONIPA
+echo mógł | uconv -x pl-pl_FONIPA
+echo ślizg- | uconv -x pl-pl_FONIPA
+echo ślizga | uconv -x pl-pl_FONIPA
+echo liczp | uconv -x pl-pl_FONIPA
+echo liczb nową | uconv -x pl-pl_FONIPA
+echo zkąd | uconv -x pl-pl_FONIPA
+echo ee | uconv -x pl-pl_FONIPA
+cat /tmp/snuv-toks |uconv -x pl-pl_FONIPA
+cat /tmp/snuv-toks |uconv -x pl-pl_FONIPA|uconv -x IPA-XSampa
