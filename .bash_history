@@ -1,17 +1,3 @@
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-mkrightin && addprons 
-git commit -m more
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
 git diff
 git add pron-data/gen.tsv   
 git commit -m more
@@ -1998,3 +1984,17 @@ echo zkąd | uconv -x pl-pl_FONIPA
 echo ee | uconv -x pl-pl_FONIPA
 cat /tmp/snuv-toks |uconv -x pl-pl_FONIPA
 cat /tmp/snuv-toks |uconv -x pl-pl_FONIPA|uconv -x IPA-XSampa
+cd ~/disk/Playing/
+git clone https://github.com/cmu-mtlab/label-collapse.git
+cd label-collapse/
+ls
+sh build.sh 
+ls
+ls bin/
+less make-maps-example.sh 
+ls
+less src/ParallelTask.java 
+less src/InputReader.java 
+ls
+ls src/LabelCollapser.java 
+less src/LabelCollapser.java 
