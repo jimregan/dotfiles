@@ -1,9 +1,3 @@
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
 git add pron-data/gen.tsv   
 git commit -m more
 mkleft
@@ -1998,3 +1992,9 @@ less src/InputReader.java
 ls
 ls src/LabelCollapser.java 
 less src/LabelCollapser.java 
+cd /tmp/
+tar xvf ~/Downloads/s1.tar 
+cd align/
+ls
+less bgbb3a.align 
+ls
