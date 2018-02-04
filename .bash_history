@@ -1,12 +1,3 @@
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
 git diff
 git add pron-data/gen.tsv   
 git commit -m more
@@ -1998,3 +1989,12 @@ ls ../ocrodjvu/
 display 330.jpg 
 ls
 ls -al
+cd disk/
+cd Playing/
+mkdir isladeltesoro
+cd isladeltesoro/
+for i in $(seq 2 366);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
+for i in $(seq 323 366);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
+for i in $(seq 171 251);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
+for i in $(seq 232 251);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
+find . -size 0
