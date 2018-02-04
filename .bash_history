@@ -65,16 +65,6 @@ mkrightin && addprons
 git diff
 git add pron-data/gen.tsv   
 git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
 perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
 wc -l /tmp/ex
 wc -l /tmp/expand 
@@ -1998,3 +1988,13 @@ cd align/
 ls
 less bgbb3a.align 
 ls
+apt-cache search djvuocr
+apt-cache search ocr
+apt-cache search ocr|grep djvu
+sudo apt-get install ocrodjvu 
+ls ../ocrodjvu/
+../ocrodjvu/ocrodjvu 
+../ocrodjvu/ocrodjvu -h
+display 330.jpg 
+ls
+ls -al
