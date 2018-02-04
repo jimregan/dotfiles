@@ -215,3 +215,17 @@ UpdateTabNavigation - Tab: 6210, Index: 46, Url: https://mail.google.com/mail/u/
 UpdateTabNavigation - Tab: 6210, Index: 47, Url: https://mail.google.com/mail/u/1/#inbox/161563cb699c5403
 UpdateTabNavigation - Tab: 6210, Index: 48, Url: https://mail.google.com/mail/u/1/#inbox/161564df0fe51a48
 UpdateTabNavigation - Tab: 6210, Index: 49, Url: https://mail.google.com/mail/u/1/#inbox/161564df0fe51a48
+SelectedNavigationInTab - Tab: 6212, Index: 0, Time: 13162251834370921
+UpdateTabNavigation - Tab: 6212, Index: 0, Url: http://blog.dlib.net/
+SelectedNavigationInTab - Tab: 6213, Index: 0, Time: 13162251834370928
+UpdateTabNavigation - Tab: 6213, Index: 0, Url: http://dlib.net/train_shape_predictor_ex.cpp.html
+SelectedNavigationInTab - Tab: 6214, Index: 0, Time: 13162251834370933
+UpdateTabNavigation - Tab: 6214, Index: 0, Url: http://dlib.net/dnn_semantic_segmentation_ex.cpp.html
+SelectedNavigationInTab - Tab: 6215, Index: 0, Time: 13162251834370939
+UpdateTabNavigation - Tab: 6215, Index: 0, Url: https://github.com/davisking/dlib/blob/master/examples/dnn_metric_learning_ex.cpp
+SelectedNavigationInTab - Tab: 6216, Index: 0, Time: 13162251834370945
+UpdateTabNavigation - Tab: 6216, Index: 0, Url: https://github.com/davisking/dlib/blob/master/examples/dnn_face_recognition_ex.cpp
+SelectedNavigationInTab - Tab: 6217, Index: 0, Time: 13162251834370953
+UpdateTabNavigation - Tab: 6217, Index: 0, Url: https://github.com/davisking/dlib-models
+SelectedNavigationInTab - Tab: 6218, Index: 0, Time: 13162251834370959
+UpdateTabNavigation - Tab: 6218, Index: 0, Url: https://github.com/davisking/dlib/blob/master/tools/archive/train_face_5point_model.cpp
