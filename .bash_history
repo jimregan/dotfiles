@@ -1,57 +1,3 @@
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
 git diff
 git add pron-data/gen.tsv   
 git commit -m more
@@ -1998,3 +1944,57 @@ for i in $(seq 171 251);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?i
 for i in $(seq 232 251);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
 find . -size 0
 top
+file *
+file *|grep PNG
+file *|grep PNG|awk -F':' '{print $1}'
+file *|grep PNG|awk -F':' '{print $1}'|sed -e 's/\.jpg$//'|while read i;do mv $i.jpg $i.png; convert $i.png $i.pbm; cjb2 -clean $i.pbm $i.djvu;done
+for i in *jpg;do identify -format "%w x %h %x x %y"  $i;done
+for i in *jpg;do identify -format "%w x %h %x x %y\n"  $i;done
+ls
+for i in *jpg;do num=$(basename $i .jpg); c44 -dpi 300 $i;done
+djvm -c ../La_Isla_del_Tesoro_-_Caballero_1901.djvu *.djvu
+cp ../La_Isla_del_Tesoro_-_Caballero_1901.djvu .
+ls -al La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+sudo mv ~/Downloads/spa.traineddata /usr/local/share/tessdata/
+../ocrodjvu/
+../ocrodjvu/ocrodjvu 
+../ocrodjvu/ocrodjvu -h
+#../ocrodjvu/ocrodjvu -l spa
+../ocrodjvu/ocrodjvu -l spa La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+../ocrodjvu/ocrodjvu -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+../ocrodjvu/ocrodjvu -e tesseract -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+which tesseract
+tesseract -l
+tesseract --list-langs
+../ocrodjvu/ocrodjvu -e tesseract -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+../ocrodjvu/ocrodjvu -e tesseract -l gle --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+vi ../ocrodjvu/ocrodjvu
+vi ../ocrodjvu/lib/engines/tesseract.py
+find ../ocrodjvu -name '*py'|xargs grep 'selected lang'
+vi ../ocrodjvu/lib/errors.py
+find ../ocrodjvu -name '*py'|xargs grep MissingLanguagePack
+vi ../ocrodjvu/lib/engines/tesseract.py
+vi ../ocrodjvu/lib/iso639.py
+../ocrodjvu/ocrodjvu -e tesseract -l es --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+../ocrodjvu/ocrodjvu -e tesseract -l esp --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+../ocrodjvu/ocrodjvu -e tesseract -l eng --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+ls /usr/local/share/tessdata/
+../ocrodjvu/ocrodjvu -e tesseract -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
+cp La_Isla_del_Tesoro_-_Caballero_1901.djvu ..
+wget https://www.gutenberg.org/files/45438/45438-h/45438-h.htm
+wget https://www.gutenberg.org/files/45438/45438-h.zip
+unzip -l 45438-h.zip 
+unzip 45438-h.zip 
+mkdir imgup
+cp 45438-h/images/*_lg* imgup/
+ls imgup/
+cd imgup/
+for i in *;do mv $i La_Isla_del_Tesoro_-_Caballero_1901-$i;done
+ls
+cd ..
+ls
+vi 45438-h.htm 
+grep '<a' inpages 
+cat inpages |perl ~/niamhbot.pl 
+less inpages 
+cat inpages |perl ~/niamhbot.pl 
