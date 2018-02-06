@@ -1,10 +1,3 @@
-vi pron-data/gen.tsv 
-git add pron-data/gen.tsv   
-git commit -m oops
-vi /tmp/leftin 
-mkrightin && addprons 
-git diff
-git add pron-data/gen.tsv   
 git commit -m more
 git diff
 grep surf pron-data/gen.tsv 
@@ -1998,3 +1991,10 @@ cp /usr/local/share/tessdata/spa.traineddata .
 ./ocrodjvu --list-engines
 ./ocrodjvu -e tesseract --list-languages
 less lib/engines/tesseract.py
+ls
+apt-cache search any2djvu
+any2djvu -h
+ls
+tesseract
+tesseract -l as
+tesseract -l asasd
