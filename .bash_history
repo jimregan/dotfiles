@@ -1,15 +1,3 @@
-git diff
-git add pron-data/gen.tsv   
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp/ex
-wc -l /tmp/expand 
-mkleft
-mkrightin && addprons 
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-grep windsurf pron-data/gen.tsv 
 vi pron-data/gen.tsv 
 git add pron-data/gen.tsv   
 git commit -m oops
@@ -1998,3 +1986,15 @@ grep '<a' inpages
 cat inpages |perl ~/niamhbot.pl 
 less inpages 
 cat inpages |perl ~/niamhbot.pl 
+cd ../ocrodjvu/
+ls
+less lib/engines/tesseract.py
+./ocrodjvu 
+./ocrodjvu -h
+./ocrodjvu --list-languages
+find  . -name '*py' |xargs grep tessdata
+cp /usr/local/share/tessdata/spa.traineddata .
+./ocrodjvu --list-languages
+./ocrodjvu --list-engines
+./ocrodjvu -e tesseract --list-languages
+less lib/engines/tesseract.py
