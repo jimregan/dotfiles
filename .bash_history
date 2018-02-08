@@ -1,14 +1,3 @@
-git commit -m more
-git diff
-grep surf pron-data/gen.tsv 
-git diff
-git diff pron-data/pronounce-as.tsv > /tmp/pas
-mkrightin 
-addpronsas 
-git diff 
-git add pron-data/pronounce-as.*
-git commit -m more
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl|grep '^&'|awk '{print $2}' > roland-misspell
 less roland-misspell 
 cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl > roland-miss-all
 less roland-miss-all 
@@ -1998,3 +1987,14 @@ ls
 tesseract
 tesseract -l as
 tesseract -l asasd
+cd disk/Playing/
+mkdir jupyter-notebooks
+cd jupyter-notebooks/
+git clone https://github.com/spatialaudio/digital-signal-processing-lecture.git
+jupyter
+man jupyter
+jupyter -h
+jupyter-run 
+cd /tmp/
+unzip ~/Downloads/downsizing.\(2017\).eng.1cd.\(7243820\).zip 
+less Downsizing.2017.KORSUB.HDRip.x264-STUTTERSHIT.srt 
