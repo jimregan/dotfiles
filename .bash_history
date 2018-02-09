@@ -1,5 +1,3 @@
-mkrightin && addprons 
-git diff 
 git add pron-data/gen.tsv   
 git commit -m more
 cat roland-miss|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > roland-miss.f
@@ -1998,3 +1996,5 @@ git clone https://github.com/NYPL/transcript-editor
 ls jupyter-notebooks/
 cd jupyter-notebooks/
 jupyter notebook
+vi ~/current-tabs.txt 
+vi ~/current-tabs2
