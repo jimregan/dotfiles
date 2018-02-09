@@ -1,46 +1,3 @@
-less roland-misspell 
-cat text/piesn-o-rolandzie.txt-*|perl split-sentence.pl |perl clean.pl |tr ' ' '\n'|sort|uniq|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv |aspell -a --lang pl > roland-miss-all
-less roland-miss-all 
-mkleft
-mkrightin && addprons 
-git diff 
-git add pron-data/pronounce-as.*
-git add pron-data/gen.tsv   
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp/expand 
-mkleft
-mv /tmp/expand /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff 
-git add pron-data/gen.tsv   
-git commit -m more
-grep '^+' roland-miss-all 
-grep '^+' roland-miss-all |awk '{print $2}'
-grep '^+' roland-miss-all |awk '{print $2}'|sort|uniq
-grep '^+' roland-miss-all |awk '{print $2}'|sort|uniq > rolanda-should
-cat rolanda-should|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv 
-cat rolanda-should|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff 
-git add pron-data/gen.tsv   
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp/expand 
-mkleft
-mkrightin && addprons 
-git diff 
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-mkrightin && addprons 
-git diff 
-git add pron-data/gen.tsv   
-git commit -m more
-mkleft
-vi pron-data/gen.tsv 
 mkrightin && addprons 
 git diff 
 git add pron-data/gen.tsv   
@@ -1998,3 +1955,46 @@ jupyter-run
 cd /tmp/
 unzip ~/Downloads/downsizing.\(2017\).eng.1cd.\(7243820\).zip 
 less Downsizing.2017.KORSUB.HDRip.x264-STUTTERSHIT.srt 
+cd ..
+ls
+cd ../../Corpora
+ls
+svn up
+ls
+svn up
+cd asr_data_irish/
+ls
+ls data/
+cd data/
+ls
+find . -type f
+less ./comhra/ircl0002_spk2/corpusfile.txt
+ls ../../asr_data_irish/
+less ./comhra/ircl0002_spk2/corpusfile.txt
+ls ../..
+ls ../../cdroms/
+ls ../../cdroms/dunchaochain/
+less ./comhra/ircl0002_spk2/corpusfile.txt
+ls
+less spk2gender 
+ls
+less synthesis_recordings/apm_an_punk/README.txt 
+less synthesis_recordings/nnc_corpas_beag/README.txt 
+ls ../../ga_MU/nnc/corpas_beag_newLTS/wav
+ls ..
+ls ../..
+ffplay ../../ga_MU/nnc/corpas_beag_newLTS/ogg/CI0001CDArcticOne_1252.ogg 
+ffplay ../../ga_MU/nnc/corpas_beag_newLTS/ogg/CI0001CDArcticOne_1251.ogg 
+less synthesis_recordings/nnc_corpas_beag/README.txt 
+less synthesis_recordings/nnc_corpas_beag/import.sh 
+grep fst ~/disk/Playing/kaldi/egs/wsj/s5/steps/*
+ls ~/disk/Playing/kaldi/egs/wsj/s5/steps/*fst*
+ls ~/disk/Playing/kaldi/egs/wsj/s5/steps/*hclg*
+grep -i hclg ~/disk/Playing/kaldi/egs/wsj/s5/steps/*
+jupyter
+cd ../../
+cd ..
+git clone https://github.com/NYPL/transcript-editor
+ls jupyter-notebooks/
+cd jupyter-notebooks/
+jupyter notebook
