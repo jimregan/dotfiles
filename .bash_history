@@ -1,232 +1,3 @@
-git add pron-data/gen.tsv   
-git commit -m more
-cat roland-miss|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > roland-miss.f
-less roland-miss.f 
-wc -l roland-miss*
-vi /tmp/leftin 
-less roland-miss.f 
-mkleft
-mkrightin && addprons 
-git diff 
-git add pron-data/gen.tsv   
-git commit -m more
-perl expand-with-polimorf.pl pron-data/gen.tsv  polimorf/polimorf.tab |sort|uniq > /tmp/expand
-wc -l /tmp/expand 
-mv /tmp/expand /tmp/leftin 
-mkleft
-mkrightin && addprons 
-git diff 
-git add pron-data/gen.tsv   
-git commit -m more
-cat roland-miss|perl filter-dict.pl pron-data/gen.tsv pron-data/pronounce-as.tsv  > roland-miss.f
-wc -l roland-miss*
-less roland-miss.f 
-cd /tmp/
-split -l 1500 expand 
-mv xaa leftin 
-mv xab leftin 
-mv xac leftin 
-cat pain
-cat pain|tr ',' '\n'|tr -d ' '
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e 's/keyboard/kibord/' > par
-paste pal par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal 
-cat pal |sed -e "s/dcor/dcore'/"
-cat pal |sed -e "s/dcor/dcore'/" > pam
-cat pal |sed -e "s/dcor/dkor/" > par
-paste pal pam
-paste pal pam >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-paste pam par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e "s/x/ks/" > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e "s/ea/i/" > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e "s/eas/iz/" > pam
-cat pal |sed -e "s/eas/iz-/" > pal
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal 
-cat pal |sed -e "s/eas/iz/" > pam
-cat pal |sed -e "s/eas/iz-/" > par
-less par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-paste pam pal >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
-vi forpronas 
-cat forpronas |awk -F'\t' '{print $1}' > leftin 
-cat forpronas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
-vi leftin 
-split -l 1500 expand 
-mv xaa leftin 
-mv xab leftin 
-mv xac leftin 
-mv xad leftin 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e "s/ai/ej/" > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-paste par pal >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e "s/ainsrea/ejnstri/" > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pal |sed -e "s/ainstrea/ejnstri/" > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-#majkrołsoftowy
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e "s/[Mm]icrosoft/majkrosoft/" > par
-paste pal par
-vi pal
-vi par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pal |sed -e "s/[Mm]icrosoft/majkrołsoft/" > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-split -l 1500 expand 
-vi xad
-vi xac
-mv xaa leftin 
-mv xab leftin 
-mv xac leftin 
-vi leftin 
-mv xad leftin 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq > pal
-cat pal |sed -e 's/newsletter/niusleter/' > par
-paste pal par
-vi pal
-vi par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/ck/k/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/v/w/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/ctav/ktaw/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/ff/f/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/outsid/ałtsajd/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/peerel/pe-er-el/' > par
-cat pal |sed -e 's/peerel/PRL-/' > pam
-paste pam par
-paste pam pal
-paste pam pal|grep -v nie
-paste pam pal|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
-paste pam pal|sed -e 's/R/S/;s/r/s/'|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
-paste pal par|sed -e 's/R/S/;s/r/s/'|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-paste pal par|grep -v nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-paste pal par|sed -e 's/R/S/;s/r/s/'|grep nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-paste pal par|grep nie >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/oo/u/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/vid/wajd/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/qua/kła/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pal |sed -e 's/qua/kło/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/ad/łt/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/sh/sz/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/shell/szel/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/s/s-/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/s/s-/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/xi-s/ks-is-/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/s/s-/;s/oi/oj/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/ee/i/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/ea/i/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/th/t/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/normalisations.tsv 
-cp par leftin 
-vi leftin 
-wc -l ex
-wc -l expand 
-less expand 
-split -l 2000 expand 
-ls xa*|wc
-mv xaa leftin 
-mv xab leftin 
-vi pas 
-cat pas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
-cat pas |awk -F'\t' '{print $1 }' > leftin
-mv xac leftin 
-mv xad leftin 
-mv xae leftin 
-mv xaf leftin 
-mv xag leftin 
-mv xah leftin 
-wc -l xau
-mv xai leftin 
-mv xaj leftin 
-mv xak leftin 
-mv xal leftin 
-mv xam leftin 
-mv xan leftin 
-mv xao leftin 
-mv xap leftin 
-mv xaq leftin 
-mv xar leftin 
-mv xas leftin 
-mv xat leftin 
-mv xau leftin 
-split -l 2000 expand 
-mv xaa leftin 
-mv xab leftin 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/w/ł/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/windsurf/łindserf/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pain|tr ',' '\n'|tr -d ' '|sort|uniq |grep -v '^$'> pal
-cat pal |sed -e 's/windows/łindołs/' > par
-paste pal par >> ~/disk/Playing/wolne-lektury-audio-corpus/pron-data/pronounce-as.tsv 
-cat pas |awk -F'\t' '{print $1 }' > leftin
-cat pas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
-vi pas
-cat pas |awk -F'\t' '{print "{{pl-IPA-auto|" $2 "}}"}' > left
-cat pas |awk -F'\t' '{print $1 }' > leftin
-vi leftin 
-split -l 2000 expand 
-mv xaa leftin 
-mv xab leftin 
-mv xac leftin 
-vi leftin 
-cd ../
-mkdir mickyd
-cd mickyd/
-cat ../youtube-pl/dl.sh 
-youtube-dl -x --audio-format=best --write-sub --sub-lang=en-UK  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
 youtube-dl -x --audio-format=best --write-sub --sub-lang=en  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
 youtube-dl -x --audio-format=best --write-sub --sub-lang=en-GB  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
 less g72ucHVhPGQ.en-GB.ttml 
@@ -1998,3 +1769,232 @@ cd jupyter-notebooks/
 jupyter notebook
 vi ~/current-tabs.txt 
 vi ~/current-tabs2
+cd ../cling-run/
+ls
+cd cling-build/
+ls
+cd ..
+ls
+less cpt.py 
+find . -name '*[Cc][Mm]'
+find . -name '*[Cc][Mm]*'
+pip3 install miniconda
+python3 --version
+cd ~/disk/Playing/xeus-cling/
+ls
+cmake .
+cd ../xeus
+cmake .
+cd ..
+git clone https://github.com/zeromq/cppzmq.git
+cd cppzmq/
+ls
+make .
+mkdir build
+cd build/
+cmake ..
+make
+cd ..
+make
+cd build/
+l
+ls
+sudo make install
+cd ../../xeus
+cmake .
+apt-get install libzmq-dev
+sudo apt-get install libzmq-dev
+cd ..
+git clone https://github.com/zeromq/libzmq.git
+cd libzmq/
+ls
+cmake .
+rm CMakeCache.txt
+mkdir cmake-make ; cd cmake-make
+cmake ..
+make
+sudo make install
+cd ../..
+cd xeus
+cmake .
+cd ../cppzmq/
+ls
+git status
+ls build/
+rm -rf build/
+mkdir build
+git status
+cd build/
+cmake ..
+sudo make install
+cd ../../xeus
+cmake .
+cd ..
+git clone https://github.com/weidai11/cryptopp.git
+cd cryptopp/
+ls
+make -f GNUmakefile
+sudo make -f GNUmakefile install
+cd ../xeus
+ls
+cmake .
+cd ..
+git clone https://github.com/noloader/cryptopp-cmake.git
+cp cryptopp-cmake/CMakeLists.txt cryptopp/
+cp cryptopp-cmake/cryptopp-config.cmake cryptopp/
+cd cryptopp
+ls
+cmake .
+make -j 8
+make
+sudo make install
+cd ../xeus
+cmake .
+cd ../cryptopp
+ls
+make clean
+cmake .
+less Makefile 
+make
+make -f Makefile -j 8
+sudo make -f Makefile install
+cd ../xeus
+cmake .
+mkdir build
+cd build/
+ls
+cmake ..
+less ../CMakeFiles/CMakeOutput.log 
+cd ..
+git status
+rm CMakeCache.txt xeusConfig.cmake xeusConfigVersion.cmake 
+rm -rf CMakeFiles/
+mkdir build
+cd build/
+ls
+cmake ..
+cd ..
+git status
+vi CMakeLists.txt 
+cd build/
+cmake ..
+ls
+rm -rf *
+cd ..
+cmake .
+grep cxx_ CMakeLists.txt 
+git status
+git stash
+rm CMakeCache.txt xeusConfig.cmake
+rm xeusConfigVersion.cmake 
+rm -rf CMake
+rm -rf CMakeFiles/
+git status
+vi CMakeLists.txt 
+cmake .
+cmake -v
+cmake --version
+git status
+git stash
+rm CMakeCache.txt 
+rm -rf CMakeFiles/
+rm xeusConfig.cmake xeusConfigVersion.cmake 
+mkdir build
+cd build/
+ls
+cmake ..
+make
+ls
+rm -rf *
+vi ../CMakeLists.txt 
+cmake ..
+less ../CMakeLists.txt 
+apt-cache search libuuid
+sudo apt-get install uuid-dev
+ls
+rm -rf *
+cmake ..
+make
+ls
+rm -rf *
+vi ../CMakeLists.txt 
+ls
+cmake ..
+make
+rm -rf *
+vi ../CMakeLists.txt 
+cmake ..
+make
+vi ../CMakeLists.txt 
+grep 11 ../../xtl/CMakeLists.txt 
+grep _ ../../xtl/CMakeLists.txt 
+grep std_ ../../xtl/CMakeLists.txt 
+ls
+rm -rf *
+cmake ..
+make
+less Makefile 
+cmake
+ls
+make
+vi /home/jim/disk/Playing/xeus/src/xauthentication.cpp
+make
+vi /home/jim/disk/Playing/xeus/src/xauthentication.cpp
+mkae
+make
+sudo make install
+cd ../../xeus-cling/
+ls
+mkdir build
+cd build/
+cmake ..
+apt-cache search pugi
+sudo apt-get install libpugixml-dev
+cd ../..
+git clone https://github.com/zeux/pugixml.git
+cd pugixml/
+ls
+cmake .
+sudo make install
+cd ../xeus-cling/
+cmake .
+cd ~/disk/Playing/
+git clone https://github.com/QuantStack/xtensor.git
+cd xtensor/
+ls
+cmake .
+cd ..
+git clone https://github.com/QuantStack/xtl.git
+cd xtl/
+ls
+cmake .
+make
+sudo make install
+cd ../xtensor/
+cmake .
+make
+sudo make install
+cd ..
+git clone https://github.com/QuantStack/xsimd.git
+cd xsimd/
+cmake .
+cd ..
+git clone https://github.com/QuantStack/xeus-cling.git
+cd xeus-cling/
+ls
+cmake .
+cd ..
+git clone https://github.com/QuantStack/xeus.git
+cd xeus
+ls
+cmake .
+cd ..
+apt-cache search zmq
+sudo apt-get install 
+apt-cache search cppzmq
+apt-cache search cryptopp
+apt-cache search crypto++
+apt-cache search crypto++|grep dev
+man svn
+man subversion
+git clone https://github.com/santi-pdp/segan
