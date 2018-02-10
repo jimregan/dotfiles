@@ -1,12 +1,3 @@
-ls
-ffplay p001.wav 
-ffplay p002.wav 
-ffplay p003.wav 
-ffplay p004.wav 
-ffplay p005.wav 
-ffplay p006.wav 
-for i in *wav;do ffpmeg -i $i 2>&1 |grep Duration;done
-ls
 ls 1
 for i in *wav;do ffprobe $i 2>&1 |grep Duration;done
 apt-get install mp3splt
@@ -1998,3 +1989,12 @@ less readme.txt
 mkdir ~/disk/Playing/wikisource-texts
 ls
 less readme.txt 
+cd ~/disk/Playing/
+mkdir vctk-corpus
+cd vctk-corpus/
+wget http://homepages.inf.ed.ac.uk/jyamagis/release/VCTK-Corpus.tar.gz
+tar ztvf VCTK-Corpus.tar.gz 
+tar ztvf VCTK-Corpus.tar.gz |grep -v 'wav$'
+top
+ps aux|grep ld
+ls
