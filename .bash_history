@@ -1,22 +1,3 @@
-perl NumberNorm.pm inflect_ordinal CCXCI
-less NumberNorm.pm 
-\CCXCI 
-ls audio/*-autor-nieznany-piesn-o-rolandzie.mp3 
-ls audio/*piesn-o-rolandzie*
-ffplay audio/001-autor-nieznany-piesn-o-rolandzie.mp3 
-grep św\. text/piesn-o-rolandzie.txt-*
-ffplay audio/077-autor-nieznany-piesn-o-rolandzie.mp3 
-vi audio/transcribe.py 
-ffplay audio/008-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/009-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/010-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/011-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/012-autor-nieznany-piesn-o-rolandzie.mp3 
-less ts/01-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-01-rozdzial-01.mp3.txt 
-ls ts/
-ls -al ts/
-ls -al ts/|wc
-wc -l /tmp/sortlist
 ls *mp3|wc
 ls -al ts/|wc
 ls -al ts/
@@ -1998,3 +1979,22 @@ cling --help
 cling --help|grep 14
 cling -std=c++14
 cd ..
+zless train_v1.1.json.gz 
+zless ~/Downloads/cx-corpora.en2pl.html.json.gz 
+ls
+cd /tmp/
+wget https://celt.ucc.ie//Dinneen1.pdf
+pdftotext Dinneen1.pdf 
+less Dinneen1.
+less Dinneen1.txt 
+pdftohtml Dinneen1.pdf 
+less Dinneen1s.html 
+perl dinneen.pl 
+cat ~/doing 
+cat ~/doing |perl dinneen
+cat ~/doing |perl dinneen.pl 
+vi /tmp/dinn2 
+cat dinn2 |perl dinneen.pl 
+clear
+cat dinn2 |perl dinneen.pl 
+cat dinn2 |perl dinneen.pl > dinntmp
