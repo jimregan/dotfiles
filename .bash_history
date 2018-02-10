@@ -1,201 +1,3 @@
-ls 1
-for i in *wav;do ffprobe $i 2>&1 |grep Duration;done
-apt-get install mp3splt
-sudo apt-get install mp3splt
-rm *wav
-ls
-mp3splt -A mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-mp3splt 
-ls
-mp3splt -A test.aud mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-mp3splt -A test.txt mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-mp3splt -lq mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-mp3splt -p mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-mp3splt -sp mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-mp3splt -P mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-mp3splt -sP mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-ls
-mp3splt -s mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 
-ls
-less mp3splt.log 
-ls
-less mp3splt.log 
-mv mp3splt.log mendele-mojcher-sforim-podroze-beniamina-trzeciego-mp3splt.log
-mp3splt -s bruno-jasienski-but-w-butonierce-tomik-nic.mp3 
-cat mp3splt.log 
-ffplay bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3 
-ffplay bruno-jasienski-but-w-butonierce-tomik-nic_silence_2.mp3 
-ffplay bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3 
-ffprobe bruno-jasienski-but-w-butonierce-tomik-nic_silence_1.mp3 
-ffprobe bruno-jasienski-but-w-butonierce-tomik-nic_silence_2.mp3 
-cat mp3splt.log 
-ls ts/
-ls -al ts/
-less ts/001-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-01-rozdzial-01.mp3.txt 
-less ts/001-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-tail -f /tmp/sortlist 
-cat /tmp/sortlist |while read i;do if [ ! -e ts/$i.txt ];then echo $i >> /tmp/sortlist.f;fi;done
-diff -u /tmp/sortlist /tmp/sortlist.f 
-ls -al ts/
-rm -rf ../../wlaud/
-df
-ls -al ts/
-less ts/026-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-less ts/01-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-01-rozdzial-01.mp3.txt 
-less ../text/spowiedz-dzieciecia-wieku.txt 
-ls ts/|wc
-ls -al ts/
-less ts/bruno-jasienski-but-w-butonierce-tomik-nic.mp3.txt 
-cp bruno-jasienski-but-w-butonierce-tomik-nic.mp3 tmp/
-ls -al ts/
-ls
-ls -al ts/
-ls -al ts/|grep '17 1'
-cat ts/00-rudyard-kipling-kim-wstep.mp3.txt 
-rm ts/00-rudyard-kipling-kim-wstep.mp3.txt 
-ls -al ts/|grep '17 1'
-less ts/00-wiktor-teofil-gomulicki-wspomnienia-niebieskiego-mundurka-wstep.mp3.txt 
-ls -al ts/|grep '17 1'
-rm ts/01-henryk-sienkiewicz-bartek-zwyciezca.mp3.txt
-rm ts/01-moliere-molier-swietoszek-jak-poczela-sie-komedia-swietoszek.mp3.txt ts/02-e-t-a-hoffmann-dziadek-do-orzechow.mp3.txt 
-ls -al ts/|grep '17 1'
-rm ts/02-e-t-a-hoffmann-powiesci-fantastyczne-piaskun.mp3.txt 
-vi transcribe.py 
-ls -al ts/|grep '17 1'
-less ts/01-gustav-meyrink-golem-sen.mp3.txt 
-ls -al ts/|grep '17 1'
-ls -al ts/02-william-makepeace-thackeray-pierscien-i-roza.mp3.txt ts/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3.txt ts/03-e-t-a-hoffmann-dziadek-do-orzechow.mp3.txt ts/04-e-t-a-hoffmann-powiesci-fantastyczne-skrzypce-z-cremony-radca-crespel.mp3.txt ts/04-moliere-molier-swietoszek-stosunek-moliera-do-swego-tematu.mp3.txt ts/04-stefan-zeromski-wierna-rzeka-rozdzial-05.mp3.txt ts/04-william-makepeace-thackeray-pierscien-i-roza.mp3.txt 
-rm ts/02-william-makepeace-thackeray-pierscien-i-roza.mp3.txt ts/02-moliere-molier-swietoszek-wystawienie-swietoszka-i-walka-o-niego.mp3.txt ts/03-e-t-a-hoffmann-dziadek-do-orzechow.mp3.txt ts/04-e-t-a-hoffmann-powiesci-fantastyczne-skrzypce-z-cremony-radca-crespel.mp3.txt ts/04-moliere-molier-swietoszek-stosunek-moliera-do-swego-tematu.mp3.txt ts/04-stefan-zeromski-wierna-rzeka-rozdzial-05.mp3.txt ts/04-william-makepeace-thackeray-pierscien-i-roza.mp3.txt 
-ls -al ts/|grep '17 1'
-rm ts/05-honore-de-balzac-male-niedole-pozycia-malzenskiego-rozdzial-03.mp3.txt 
-ls -al ts/|grep '17 1'
-rm ts/05-moliere-molier-swietoszek-zdobycze-komedii-moliera.mp3.txt ts/060-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-05-rozdzial-09.mp3.txt ts/06-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-01-rozdzial-06.mp3.txt 
-less ts/066-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-05-rozdzial-15.mp3.txt 
-less ../text/don-kichot-z-la-manchy.txt 
-ls -al ts/|grep '17 1'
-vi transcribe.py 
-ls -al ts/|grep '17 1'
-rm ts/07-e-t-a-hoffmann-powiesci-fantastyczne-piaskun.mp3.txt ts/07-henryk-sienkiewicz-bartek-zwyciezca.mp3.txt ts/078-miguel-de-cervantes-saavedra-don-kichot-z-la-manchy-ksiega-06-rozdzial-10.mp3.txt 
-ls -al ts/|grep '17 1'
-ls -al ts/
-ls -al ts/|grep '17 1'
-less /tmp/sortlist2 
-ls -al ts/|grep '17 1'
-less ts/16-alfred-de-musset-spowiedz-dzieciecia-wieku-czesc-03-rozdzial-01.mp3.txt 
-ls -al ts/|grep '17 1'
-find ts/ -size 37c
-find ts/ -size 37c -exec cat {} \;
-find ts/ -size 37c 
-ls -al ts/|grep '17 1'
-ffprobe anton-czechow-zarcik.mp3
-ffprobe anton-czechow-potwarz.mp3 
-ls -al ts/|grep '17 1'
-ffprobe autor-nieznany-hej-w-dzien-narodzenia.mp3 
-ls -al ts/|grep '17 1'
-ffplay autor-nieznany-jezus-malusienki.mp3 
-cat ts/autor-nieznany-jezus-malusienki.mp3.txt 
-ffplay autor-nieznany-jezus-malusienki.mp3 
-ls -al ts/|grep '17 1'
-mkdir /tmp/comp
-ls ts/*rolandz*
-for i in *rolandzie*;do grep Transcript $i;done
-for i in ts/*rolandzie*;do grep Transcript $i;done
-#for i in ts/*rolandzie*;do grep Transcript $i|sed -e 's/;done
-cd ts
-for i in *rolandzie*;do grep Transcript $i|sed -e 's/Transcript: //' > /tmp/comp/$i;done
-ls /tmp/comp/
-ls -al ts/|grep '17 1'
-cd ..
-ls -al ts/|grep '17 1'
-find ts/ -size 37c 
-find ts/ -size 37c -delete
-find ts/ -size 0
-cat /tmp/sortlist2 |while read i;do if [ ! -e ts/$i.txt ];then echo $i >> /tmp/sortlist2.f;fi;done
-less /tmp/sortlist2.f 
-ls -al ts/|grep '17 1'
-ps aux|grep pyth
-cd ..
-svn status
-svn ci -m 'spongebob!'
-ls
-cd scripts/
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708768822001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
-ls
-tail videos.tsv 
-grep Cat videos.tsv 
-grep Cat videos.tsv |grep 21
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5589245085001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5711907443001&teideal=Dora&series=Dora&dlft=7'
-grep Oliv videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5711860397001&teideal=Astroblast!&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5565377914001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5572243484001&teideal=Olivia&series=Olivia&dlft=30'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708778634001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=7'
-grep Spon videos.tsv 
-svn diff videos.tsv > todo 
-vi todo 
-cat todo |awk -F'\t' '{print $5}'
-cat todo |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
-cat todo |awk -F'\t' '{print $6}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
-cat todo |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
-cat todo |awk -F'\t' '{print $5}'
-less proc_mp4.sh 
-sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
-svn diff
-ls
-grep 5565377914001 videos.tsv 
-mv 5565377914001.* ../astroblast/
-svn add ../astroblast/5565377914001.* 
-grep 5572243484001 videos.tsv 
-mv 5572243484001.* ../olivia/
-svn add ../olivia/5572243484001.*
-grep 5589245085001 videos.tsv 
-mv 5589245085001.* ../catahata/
-svn add ../catahata/5589245085001.*
-grep 5708768822001 videos.tsv 
-mv 5708768822001.* ../rosnarun/
-svn add ../rosnarun/5708768822001.*
-grep 5711860397001 videos.tsv 
-mv 5711860397001.* ../astroblast/
-svn add ../astroblast/5711860397001.*
-grep 5711907443001 videos.tsv 
-mv 5711907443001.* ../dora/
-svn add ../dora/5711907443001.*
-ls
-rm list-5*
-ls
-rm todo 
-tail videos.tsv 
-ls ../*/5708778634001*
-cd ..
-svn ci -m more
-cd scripts/
-grep Garf videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5434725951001&teideal=Garfield&series=Garfield&dlft=35'
-tail videos.tsv 
-ls /tmp//asd/
-rm /tmp//asd/*
-tail -n 1 videos.tsv |awk -F'\t' '{print $6}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
-tail -n 1 videos.tsv |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spid
-grep Cat videos.tsv 
-grep Cat videos.tsv |grep 29
-grep Cat videos.tsv |grep 28
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5596907054001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-tail -n 1 videos.tsv |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-tail -n 1 videos.tsv |awk -F'\t' '{print $6}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-tail -n 2 videos.tsv |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
-sh proc_mp4.sh $(tail -n 2 vid |awk -F'\t' '{print $5}')
-#sh proc_mp4.sh $(tail -n 2 vid |awk -F'\t' '{print $5}')
-#sh proc_mp4.sh $(tail -n 2 videos.tsv |awk -F'\t' '{print $5}')
-sh proc_mp4.sh $(tail -n 2 videos.tsv |awk -F'\t' '{print $5}')
-ls
-grep 559690705400 videos.tsv 
-mv 5596907054001.* ../catahata/
-svn add ../catahata/5596907054001.* 
-grep 5434725951001 videos.tsv 
-mv 5434725951001.* ../garfield/
-svn add ../garfield/5434725951001.*
-less videos.tsv 
 cd ..
 svn ci -m more
 ls
@@ -1998,3 +1800,201 @@ tar ztvf VCTK-Corpus.tar.gz |grep -v 'wav$'
 top
 ps aux|grep ld
 ls
+cd ~/disk/Playing/
+mkdir r9y9
+cd r9y9/
+git clone https://github.com/r9y9/wavenet_vocoder.git
+cd wavenet_vocoder/
+pip install -e ".[train]"
+sudo pip install -e ".[train]"
+wget https://www.dropbox.com/sh/b1p32sxywo6xdnb/AAB2TU2DGhPDJgUzNc38Cz75a?dl=0
+rm AAB2TU2DGhPDJgUzNc38Cz75a\?dl\=0 
+cd ..
+git clone https://github.com/r9y9/nnmnkwii.git
+git clone https://github.com/r9y9/deepvoice3_pytorch
+cd ..
+git clone https://github.com/ajbrock/Neural-Photo-Editor
+cd Neural-Photo-Editor/
+ls
+python NPE.py 
+apt-cache search tkinter
+#sudo apt-get install python-tk 
+apt-cache search tkColor
+apt-cache search tkColorChooser
+sudo apt-get install python-tk 
+python NPE.py 
+apt-cache search imagetk
+sudo apt-get install python-pil.imagetk
+python NPE.py 
+sudo pip install lasagna
+sudo pip install lasagne
+python NPE.py 
+sudo pip install downsample
+sudo pip install theano
+sudo pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
+python NPE.py 
+less GANcheckpoints.py
+sudo pip install path
+sudo pip install path.py
+python NPE.py 
+pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
+sudo pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
+pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+python NPE.py 
+ls
+grep conv3d2d *py
+grep dnn_conv3d *py
+grep dnn_conv2d *py
+grep dnn_pool *py
+grep dnn_batch_normalization_train *py
+grep sandbox *
+vi NPE.py 
+python NPE.py 
+ls
+file IAN_simple.npz 
+less IAN_simple.npz 
+apt-cache search lfs
+git lfs install
+git --version
+git pull origin master
+ls
+cd ..
+rm -rf Neural-Photo-Editor/
+git clone https://github.com/ajbrock/Neural-Photo-Editor
+git lfs install
+rm -rf Neural-Photo-Editor/
+git clone https://github.com/ajbrock/Neural-Photo-Editor
+cd Neural-Photo-Editor/
+git checkout -f HEAD
+cat .git/lfs/objects/logs/20180210T170350.632583872.log 
+cd ..
+mv Neural-Photo-Editor/ Neural-Photo-Editor.orig
+git clone https://github.com/spellrun/Neural-Photo-Editor
+cd Neural-Photo-Editor
+ls
+cat gan/assets/CelebAValid.npz 
+ls -al gan/assets/CelebAValid.npz 
+ls
+less README.md 
+ls npe
+python npe/main.py 
+sudo pip install pygame
+python npe/main.py 
+python npe/main.py -h
+python npe/main.py -w gan/assets/CelebAValid.npz .
+less npe/main.py 
+less gan/models/ian.py 
+ls
+find . -name '*config*'
+less npe/main.py 
+less gan/models/ian.py 
+less gan/models/__init__.py 
+less npe/main.py 
+less gan/api.py 
+python npe/main.py -w CelebAValid.npz gan/assets/
+ls
+less docker/npe-demo/Dockerfile 
+less docker/npe-demo/docker-entrypoint.sh 
+less docker/npe-demo/gdrive_dl.py 
+less docker/cuda-theano/Dockerfile 
+python npe/main.py 
+python npe/main.py --stub
+python npe/main.py -w CelebAValid.npz gan/assets/
+grep gan npe/nn_model.py
+less npe/nn_model.py
+grep from_tanh  gan/util/*
+lessgan/util/__init__.py 
+less gan/util/__init__.py 
+vi npe/nn_model.py
+python npe/main.py -w CelebAValid.npz gan/assets/
+ls
+cd npe
+ls
+python main.py 
+python main.py -w CelebAValid.npz gan/assets/
+vi nn_model.py
+python main.py -w CelebAValid.npz gan/assets/
+cd ..
+ls
+less README.md 
+cd npe
+vi nn_model.py
+python main.py -w CelebAValid.npz gan/assets/
+vi nn_model.py
+python main.py -w CelebAValid.npz gan/assets/
+ls
+cd ..
+export PYTHONPATH="$PYTHONPATH:$(pwd)"
+python npe/main.py -w CelebAValid.npz gan/assets/
+find . -name '*py'|xargs grep CFG
+python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
+vi npe/main.py 
+grep gpu gan/models/ian*
+vi gan/models/ianv1.py
+find . -name '*py'|xargs grep gpu|grep True
+find . -name '*py'|xargs grep gpu
+find . -name '*py'|xargs grep -i gpu
+vi npe/main.py 
+vi gan/models/ianv1.py
+ls
+less npe/nn_model.py
+less npe/util/assets.py
+python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
+vi npe/main.py
+python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
+vi gan/models/ianv1.py
+find . -name *py|xargs grep device
+find . -name *py|xargs grep gpu
+less npe/main.py 
+less gan/__init__.py
+less gan/models/ian.py 
+less gan/models/ianv1.py
+python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
+less gan/models/ianv1.py
+python npe/main.py -w CelebAValid.npz gan/models/ian.py 
+vi gan/models/ian.py
+vi gan/models/ian_simple.py 
+vi gan/models/ian.py
+vi gan/models/ianv1.py
+python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
+python npe/main.py -w CelebAValid.npz ianv1.py 
+python npe/main.py -w CelebAValid.npz gan/models/
+python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
+python npe/main.py -w CelebAValid.npz gan/models/ian.py 
+python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
+vi gan/models/ian_simple.py
+python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
+vi gan/models/ian_simple.py
+python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
+vi gan/models/ian_simple.py
+apt-cache search git-mediawiki
+sudo apt-get install git-mediawiki
+cd ../Neural-Photo-Editor
+cd ../Neural-Photo-Editor.orig/
+find . -name '*py'|xargs grep device
+find . -name '*py'|xargs grep -i gpu
+find . -name '*py'|xargs grep -i cpu
+find . -name '*py'|xargs grep True
+find . -name '*py'|xargs grep True|grep -i gpu
+less ~/.vim/.netrwhist 
+less ~/.viminfo 
+ls
+python NPE.py 
+vi NPE.py 
+python NPE.py 
+vi NPE.py 
+cd ../
+cd r9y9/
+ls
+cd ../../
+cd r9y9/
+ls
+git clone https://github.com/r9y9/tacotron_pytorch
+cd ~/disk/Playing/
+ls
+cd cling-run/
+ls
+wget https://raw.githubusercontent.com/root-project/cling/master/tools/packaging/cpt.py
+chmod +x cpt.py
+./cpt.py --check-requirements && ./cpt.py --create-dev-env Debug --with-workdir=./cling-build/
