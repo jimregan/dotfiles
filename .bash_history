@@ -1,50 +1,3 @@
-less README.md 
-cd native_client/javascript
-cd javascript/
-ls
-less ../README.md 
-make package
-less ../README.md 
-ls
-less Makefile 
-make package.json
-make npm-pack 
-cd ..
-ls
-less README.md 
-sudo pip install deepspeech
-wget -O - https://github.com/mozilla/DeepSpeech/releases/download/v0.1.0/deepspeech-0.1.0-models.tar.gz | tar xvfz -
-ls models/
-less models/trie 
-less models/alphabet.txt 
-ls
-deepspeech -h
-cd /tmp/comp/
-ls
-for i in seq 1 291;do wdiff $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt;done
-for i in $(seq 1 291);do wdiff $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt;done
-man wdiff
-for i in $(seq 1 291);do wdiff -i $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt > wd-$i ;done
-less wd-1
-less wd-2
-less wd-3
-less wd-4
-less wd-5
-less wd-6
-ls
-rm wd-*
-for i in piesn-o-rolandzie.txt-*;do cat $i |perl ~/disk/Playing/wolne-lektury-audio-corpus/clean.pl > tmp;mv tmp $i;done
-for i in $(seq 1 291);do wdiff -i $(printf "%03d" $i)-autor-nieznany-piesn-o-rolandzie.mp3.txt piesn-o-rolandzie.txt-$(printf "%02d" $i).txt > wd-$i ;done
-less wd-6
-less wd-7
-less wd-6
-less wd-7
-less wd-8
-for i in $(seq 8 291);do echo >> /tmp/allwd; cat wd-$i >> /tmp/allwd;done
-rm /tmp/allwd 
-for i in $(seq 8 291);do echo >> /tmp/allwd;echo $i >> /tmp/allwd  ; cat wd-$i >> /tmp/allwd;done
-cd ..
-less NumberNorm.pm 
 perl NumberNorm.pm inflect_ordinal CCXCI
 less NumberNorm.pm 
 \CCXCI 
@@ -1998,3 +1951,50 @@ grep True *py|grep -i gpu
 grep True *py|grep -i cpu
 grep False *py|grep -i cpu
 ls
+netstat
+ps aux|grep jupy
+ls
+mkdir test
+cd test/
+jupyter notebook
+cd ~/disk/Playing/cling-run/
+ls
+cd inst/
+ls
+ls bin/
+jupyter kernelspec install cling
+cd ..
+jupyter kernelspec install cling
+ls
+cd cling-build/
+ls
+jupyter kernelspec install cling
+ls
+ls builddir/
+ls builddir/bin/
+cd ..
+find . -name cling
+./inst/bin/cling
+export PATH=$PWD/inst/bin:$PATH
+cd inst/share/cling/Jupyter/kernel/
+ls
+pip3 install -e .
+sudo pip3 install -e .
+jupyter-kernelspec install cling-cpp11
+sudo jupyter-kernelspec install cling-cpp11
+sudo jupyter-kernelspec install cling-cpp17
+sudo jupyter-kernelspec install cling-cpp14
+sudo cpan Devel::IPerl
+iperl 
+iperl
+cpan Devel::IPerl
+iperl 
+iperl console
+sudo cpan ZMQ::LibZMQ3
+sudo apt install libzmq3-dev 
+cling 
+cling -h
+cling --help
+cling --help|grep 14
+cling -std=c++14
+cd ..
