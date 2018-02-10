@@ -1,24 +1,3 @@
-svn ci -m more
-ls
-mkdir CloIarChonnacht
-mv ~/Downloads/*.mp3 CloIarChonnacht/
-svn add CloIarChonnacht/
-file CloIarChonnacht/sliocht_as_taibhse_an_locha.mp3
-rm CloIarChonnacht/sliocht_as_taibhse_an_locha.mp3 
-ls -al ~/Downloads/sliocht_as_taibhse_an_locha.mp3 
-rm ~/Downloads/sliocht_as_taibhse_an_locha.mp3 
-svn ci -m 'audiobooks/excerpts from Cló Iar-Chonnacht (pt. 1) No text, but books are available in national library'
-svn rm CloIarChonnacht/sliocht_as_taibhse_an_locha.mp3 
-svn ci -m 'audiobooks/excerpts from Cló Iar-Chonnacht (pt. 1) No text, but books are available in national library'
-mkdir RnaG
-cp ~/Downloads/pod-v-dramaononecrenacille-pid0-6864072_audio.mp3 RnaG/
-cp ~/Downloads/Cre\ 2.pdf RnaG/
-svn add RnaG/
-svn ci -m 'RnaG production of Cré na Cille; pdf contains the opening monologue (needs to be trimmed down)'
-cp ~/Downloads/Cre\ 1.pdf RnaG/
-mv ~/crenacille.txt RnaG/
-svn add RnaG/Cre\ 1.pdf 
-svn ci -m 'this has first part of first dialogue'
 svn add RnaG/crenacille.txt 
 svn add 'edited text'
 svn add RnaG/crenacille.txt 
@@ -1998,3 +1977,24 @@ wget https://raw.githubusercontent.com/root-project/cling/master/tools/packaging
 chmod +x cpt.py
 ./cpt.py --check-requirements && ./cpt.py --create-dev-env Debug --with-workdir=./cling-build/
 wget http://www.openslr.org/resources/27/cantab-TEDLIUM-partial.tar.bz2
+ls
+cd ..
+mkdir chatbot
+cd chatbot/
+wget https://msmarco.blob.core.windows.net/msmarco/train_v1.1.json.gz
+zless train_v1.1.json.gz 
+wget https://msmarco.blob.core.windows.net/msmarco/dev_v1.1.json.gz
+cd ..
+mkdir modern-ga
+cd modern-ga/
+vi masalbeagdubh.in
+vi masalbeagdubh.out
+vi masalbeagdubh.in
+vi masalbeagdubh.out
+vi masalbeagdubh.in
+vi masalbeagdubh.out
+vi masalbeagdubh.in
+vi masalbeagdubh.out
+vi masalbeagdubh.in
+vi masalbeagdubh.out
+vi msf1.txt
