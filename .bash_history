@@ -1,14 +1,3 @@
-ls *mp3|wc
-ls -al ts/|wc
-ls -al ts/
-less ts/09-e-t-a-hoffmann-powiesci-fantastyczne-piaskun.mp3.txt 
-ls -al ts/
-less ts/16-moliere-molier-swietoszek-akt-01-scena-04.mp3.txt 
-ls -al
-mkdir tmp
-cd tmp/
-cp ../mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 .
-sox -V3 mendele-mojcher-sforim-podroze-beniamina-trzeciego.mp3 p.wav silence -l  0 1 0.5 0.1% : newfile : restart
 ls
 ffplay p001.wav 
 ffplay p002.wav 
@@ -1998,3 +1987,14 @@ cat dinn2 |perl dinneen.pl
 clear
 cat dinn2 |perl dinneen.pl 
 cat dinn2 |perl dinneen.pl > dinntmp
+cd ..
+mkdir hand_labels
+cd hand_labels/
+unzip ~/Downloads/hand_labels.zip 
+ls
+cd hand_labels/
+ls
+less readme.txt 
+mkdir ~/disk/Playing/wikisource-texts
+ls
+less readme.txt 
