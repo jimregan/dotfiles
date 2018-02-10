@@ -1,44 +1,3 @@
-youtube-dl -x --audio-format=best --write-sub --sub-lang=en  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
-youtube-dl -x --audio-format=best --write-sub --sub-lang=en-GB  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
-less g72ucHVhPGQ.en-GB.ttml 
-youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=g72ucHVhPGQ
-ls
-youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=Ss9FxMS_vaE
-ls
-rm Ss9FxMS_vaE.*
-youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=V-Hmc-MRRiU
-youtube-dl -x --audio-format=best --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=gOeMlTMyS_g
-youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=gOeMlTMyS_g
-ls
-less V-Hmc-MRRiU.ga.ttml 
-youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=V-Hmc-MRRiU
-ls
-youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=eQ0XB8Mnl1k
-youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=5CkxwcyJLvk
-ls
-youtube-dl  --all-subs  --sub-format=ttml -o '%(id)s.%(ext)s' https://www.youtube.com/watch?v=NmvNner1ZU0
-less NmvNner1ZU0.en-GB.ttml 
-ffplay /home/jim/Downloads/diana_arrives_at_monaghan_branch_library.mp3
-ffplay /home/jim/Downloads/dún_do_shúile.mp3 
-tar ztvf ~/disk/desktop/Downloads/0001_aspire_chain_model.tar.gz 
-svn info --show-item repos-root-url 
-cd ../../
-git clone https://github.com/mozilla/DeepSpeech
-cd DeepSpeech/
-ls
-cd native_client/
-ls
-less BUILD 
-less README.md 
-make bindings
-sudo make bindings
-ls
-less README.md 
-sudo make install
-sudo ldconfig
-sudo make install
-less README.md 
-sudo pip install dist/deepspeech*
 less README.md 
 cd native_client/javascript
 cd javascript/
@@ -1998,3 +1957,44 @@ apt-cache search crypto++|grep dev
 man svn
 man subversion
 git clone https://github.com/santi-pdp/segan
+cd /tmp/
+tar zxvf ~/Downloads/git-lfs-linux-amd64-2.3.4.tar.gz 
+cd git-lfs-2.3.4/
+sudo sh install.sh 
+sudo bash install.sh 
+git lfs install
+ls
+cd ../Neural-Photo-Editor.orig/
+ls
+less IAN.py 
+grep True *
+ls
+ls -al
+file CelebAValid.npz 
+unzip -l CelebAValid.npz 
+git pull origin master
+ls
+git status
+git reset HEAD .gitattributes
+git reset HEAD .gitignore
+git reset HEAD API.py
+git reset HEAD GANcheckpoints.py
+git reset HEAD *.py
+ls
+git status
+git reset HEAD train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IANv1.npz IAN_simple.py IAN_simple.npz
+ls
+ls -al
+git status
+git checkout -- train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IANv1.npz IAN_simple.py IAN_simple.npz
+ls -al
+git checkout -- train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IANv1.npz IAN_simple.py 
+git checkout -- train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IAN_simple.py 
+ls -al
+git status
+git checkout -- IAN_simple.npz
+grep True *py
+grep True *py|grep -i gpu
+grep True *py|grep -i cpu
+grep False *py|grep -i cpu
+ls
