@@ -1,4 +1,3 @@
-cd ..
 svn ci -m more
 ls
 mkdir CloIarChonnacht
@@ -1998,3 +1997,4 @@ ls
 wget https://raw.githubusercontent.com/root-project/cling/master/tools/packaging/cpt.py
 chmod +x cpt.py
 ./cpt.py --check-requirements && ./cpt.py --create-dev-env Debug --with-workdir=./cling-build/
+wget http://www.openslr.org/resources/27/cantab-TEDLIUM-partial.tar.bz2
