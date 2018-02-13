@@ -1,295 +1,3 @@
-git commit -m 'add lexicon (95 items only)'
-git add local/fix_transcripts.pl 
-git commit -m 'fix transcripts to use letters rather than the phonetic equivalent'
-git push mine snuv 
-sox data/snuv/snuv_database/186k36_21lat/272_21lat.wav -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p' 
-#sox $i -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p' 
-cd data/snuv/snuv_database/
-ls
-for j in *;do for i in $i/*wav;do sox $i -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p'  >> /tmp/lng-$j;done;done
-ls /tmp/
-less /tmp/lng-100k36_28lat 
-rm /tmp/lng-*
-ls 
-tree
-tree|head
-ls 100k36_28lat/
-for j in *;do for i in $j/*wav;do sox $i -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p'  >> /tmp/lng-$j;done;done
-git log
-ls -al ~/Downloads/snuv.tar.gz 
-git status
-vi README
-ls
-git add README steps utils local/download_and_untar.sh 
-mkdir conf
-mkdir local/chain
-mkdir local/chain/tuning
-ls
-ls local/
-ls local/chain/
-ls local/chain/tuning/
-mkdir local/nnet3/
-find . -type f
-mkdir data
-data=data
-data_url=http://pelcra.pl/resources/spoken/snuv.tar.gz
-ls
-rm snuv.tar.gz 
-cp ~/Downloads/snuv.tar.gz .
-mv snuv.tar.gz data/
-git add README steps utils local/download_and_untar.sh 
-data=data
-data_url=http://pelcra.pl/resources/spoken/snuv.tar.gz
-ls
-rm snuv.tar.gz 
-echo $dataa
-echo $data
-ls
-ls data/
-url=$data_url 
-archivename=$(echo $url|awk -F/ '{print $NF}')
-echo $archivename 
-echo $(dirname $data)
-data=$PWD/data
-echo $(dirname $data)
-data=data
-ls -al data/snuv.tar.gz 
-file data/snuv.tar.gz 
-ls
-cd /tmp/
-mkdir proc
-cd proc/
-cp ../khan .
-man split
-man csplit 
-ls
-man csplit 
-csplit khan '<ytd-grid-video-renderer'
-man csplit 
-csplit khan '<ytd\-grid\-video\-renderer'
-csplit khan 'ytd\-grid\-video\-renderer'
-man csplit 
-csplit khan '/<ytd\-grid\-video\-renderer/'
-ls
-less xx01 
-rm xx0*
-csplit khan '/<ytd\-grid\-video\-renderer/g'
-man csplit 
-ls
-csplit khan '/<ytd\-grid\-video\-renderer/*'
-man csplit 
-csplit khan '/<ytd\-grid\-video\-renderer/{*}'
-ls
-man csplit 
-csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
-ls
-for i in x*;do grep 'Subtitles' $i;done
-mkdir good
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-ls
-rm x*
-ls
-ls good/|wc
-cat good/*|sed -e 's/href="/\nhref="/g'
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq >> /tmp/tocheck
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck; done
-head -n 70 /tmp/tocheck 
-head -n 70 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"
-head -n 70 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}'
-head -n 70 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' 
-head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-head -n 20 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-cat /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCQYPNNQExri6AG5NmQjmvNg\t\t0\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-ls
-cp ../khan .
-csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
-ls
-ls good/
-rm good/*
-rm xx*
-ls
-csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck; done
-head -n 10 /tmp/tocheck |awk '{print $0 https://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-head -n 10 /tmp/tocheck |awk '{print $0 "https://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-cp ../tocheck ~/disk/Playing/youtube-pl/closed-premier.txt
-ls
-rm *
-ls
-rm good/xx*
-ls
-cp ../sukces .
-csplit khan '/<ytd\-grid\-video\-renderer/' '{*}'
-csplit sukces '/<ytd\-grid\-video\-renderer/' '{*}'
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-ls
-rm (
-rm *
-ls
-ls good/
-ls good/|wc
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
-ls
-ls good/
-rm good/*
-cp ../sukces .
-csplit sukces '/<ytd\-grid\-video\-renderer/' '{*}'
-ls
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-ls
-rm xx*
-ls good/
-#cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
-rm /tmp/success 
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
-cat /tmp/success 
-rm /tmp/success 
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|awk -F'&' '{print $1}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/success; done
-head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCFNTA9OJobnolDKH1EnZ66A\tBeata Szydło\t1\t0"}' >> ~/disk/Playing/youtube-pl/closed.tsv 
-perl -e 'print 300 * 60 / 4 * 0.006'
-perl -e 'print 1 * 60 / 4 * 0.006'
-ls
-less sukces 
-rm sukces 
-rm good/xx*
-cp /tmp/ciek .
-csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-ls
-less xx01
-grep CC xx*
-grep cc xx*
-rm xx*
-#head -n 10 /tmp/tocheck |awk '{print $0 "\thttps://www.youtube.com/channel/UCjc3C8pOIhSKlPVXnDsne-Q\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/open.tsv 
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
-cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/channel/UCjc3C8pOIhSKlPVXnDsne-Q\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/open.tsv 
-less ~/disk/Playing/youtube-pl/open.tsv 
-rm good/*
-rm ciek 
-ls
-cp /tmp/ciek .
-csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-ls
-rm xx*
-cd good/
-#for i in x*;do grep 'Creative Commons' $i || 
-mkdir closed
-for i in x*;do grep 'Creative Commons' $i || mv $i closed/;done
-ls
-less closed/xx1333 
-ls ..
-ls
-mv closed/* .
-ls
-grep Attribution *
-grep qxQvwD3HPD4 *
-less xx02 
-less xx03 
-ls
-rm * closed/*
-cd ..
-ls
-rm ciek 
-cp /tmp/ciek .
-grep Att ciek 
-csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
-ls
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-ls
-rm /tmp/tocheck2 
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
-less /tmp/tocheck2 
-cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/GABINET1964\tDarek Kraśnicki\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
-less ~/disk/Playing/youtube-pl/maybe-open.tsv 
-ls
-rm xx* good/*
-rmdir good/closed/
-ls
-rm ciek 
-cp /tmp/ciek .
-csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-rm /tmp/tocheck2 
-#cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/WideoMarketingOnline\tDarek Kraśnicki\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
-cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/WideoMarketingOnline\tDarek Kraśnicki\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
-less ~/disk/Playing/youtube-pl/maybe-open.tsv 
-rm xx* ciek good/*
-cp /tmp/tocheck ~/disk/Playing/youtube-pl/tocheck-kancelaria.txt
-vi ~/disk/Playing/youtube-pl/signed-channels
-ls
-ls good/
-cp /tmp/ciek .
-csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-rm /tmp/tocheck2 
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
-cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/channel/UCdXt2JT4VLVSaXVgiss9YcA\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
-less ~/disk/Playing/youtube-pl/maybe-open.tsv 
-ls
-rm xx* good/* /tmp/tocheck2 ciek 
-cp /tmp/ciek .
-csplit ciek '/<ytd\-grid\-video\-renderer/' '{*}'
-for i in xx*;do grep 'ytd-badge-supported-renderer">Subtitles</span>' $i && mv $i good/;done
-cat good/*|sed -e 's/href="/\nhref="/g'|grep href|awk -F'"' '{print "https://www.youtube.com" $2}'|uniq |while read i;do grep $i ~/disk/Playing/youtube-pl/closed.tsv || echo $i >> /tmp/tocheck2; done
-cat /tmp/tocheck2 |awk '{print $0 "\thttps://www.youtube.com/user/FileoPL\t\t1\t0"}' >> ~/disk/Playing/youtube-pl/maybe-open.tsv 
-less  ~/disk/Playing/youtube-pl/maybe-open.tsv 
-ls
-less xx00 
-less xx01
-less ~/disk/Playing/youtube-pl/maybe-open.tsv 
-cd ~/disk/Playing/
-git clone https://github.com/google-research-datasets/relation-extraction-corpus.git
-cd relation-extraction-corpus/
-ls
-less 20130403-institution.json 
-less 20130403-place_of_birth.json 
-cat 20130403-place_of_birth.json |awk -F'"evidences":[{"url":"' '{print $2}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":\[{"url":"' '{print $2}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":":"' '{print $2}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":"' '{print $2}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|wc
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|less
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|awk -F'/wiki/' '{print $NF}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|awk -F'/wiki/' '{print "[[" $NF "]]"}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|awk -F'/wiki/' '{print "[[" $NF "]]"}' > /tmp/aaa
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(echo $text|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(echo $text|grep //pl.wikipedia|awk '{print $2}');if [ x$pl != x ]; echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(echo $text|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; then  echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(echo $text|grep //pl.wikipedia|awk '{print $2}');if [ x$pl != x ]; then echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(echo $text|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; then  echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(echo $text|grep //pl.wikipedia|awk '{print $2}'|grep http);if [ x$pl != x ]; then echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
-rm pl-pages 
-ls
-cat 20130403-place_of_birth.json |awk -F'"evidences":' '{print $2}'|awk -F'"' '{print $4}'|while read i;do text=$(lynx -dump $i);ga=$(lynx -dump $i|grep //ga.wikipedia|awk '{print $2}');if [ x$ga != x ]; then  echo $i >> ga-pages; echo $ga >> ga-pages;echo >> ga-pages;fi ; pl=$(lynx -dump $i|grep //pl.wikipedia|awk '{print $2}'|grep http);if [ x$pl != x ]; then echo $i >> pl-pages; echo $pl >> pl-pages;echo >> pl-pages;fi ;done
-ls
-less ga-pages 
-wc -l ga-pages 
-ls
-tail -f pl-pages 
-lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin
-lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep pl.wiki
-lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep //pl.wikiped
-tail -f pl-pages 
-lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep //pl.wikipedia
-lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep https://pl.wikipedia.org/
-lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep https://pl.wikipedia.org/|awk '{print $2}'
-text=$(lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin)
-echo $text
-text=$(lynx -dump http://en.wikipedia.org/wiki/Peretz_Smolenskin|grep pl.wik)
-echo $text
-text=foo
-echo $text
-ls
 tail -f pl-pages 
 ls
 less ga-pages 
@@ -1998,3 +1706,295 @@ cat xx101 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Ji
 cat xx102 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F114.mw
 cat xx103 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F115.mw
 cat xx104 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F116.mw
+cd test-mw/w/
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F8.mw 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F9.mw 
+git commit -m git-mw
+git push
+git pull
+vi ponc.pl 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F1*
+git push
+git commit -m git-mw
+git push
+less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F16.mw 
+less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw 
+less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw 
+less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw 
+cp Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw 
+vi ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw 
+vi ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F1*
+git commit -m git-mw
+git push
+grep '"' *
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F21.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F20.mw 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F2*
+git commit -m git-mw
+git push
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw 
+vi ponc.pl 
+less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw 
+less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F24.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F25.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F26.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F25.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F27.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F28.mw 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F2*
+git commit -m git-mw
+git push
+ls
+cp Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F30.mw
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F30.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F31.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F30.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F2*
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F3*
+git commit -m git-mw
+git push
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F32.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F33.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F34.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F35.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F36.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F37.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F36.mw 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F3*
+git commit -m git-mw
+git push
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw 
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F39.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw 
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F39.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F40.mw 
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F40.mw 
+git commit -m git-mw
+git push
+ls
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F53.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F63.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F62.mw 
+cat Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F61.mw 
+vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F62.mw 
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F4* 
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F5* 
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F6* 
+git commit -m git-mw
+git push
+ls
+git diff
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F6* 
+git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7* 
+git commit -m git-mw
+git push
+vi s11
+ls
+git add Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F8.mw 
+rm Page\:Jimín_Mháire_Thaidhg.djvu%2F8.mw 
+cp ponc2.pl ponc-jimin.pl
+vi ponc-jimin.pl 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F9.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F9.mw 
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw 
+vi ponc-jimin.pl 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw 
+git commit -m git-mw
+git push
+git log
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F11.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F12.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F11.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F12.mw 
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F17.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F16.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F15.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F1*
+git commit -m git-mw
+git push
+vi ponc-jimin.pl 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F18.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F19.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F20.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F21.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F1*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F2*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F22
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F22.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F23.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F24.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F25.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F2*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F26.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F27.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F28.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F29.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F2*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F33.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F34.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F35.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F36.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F37.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F39.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F41.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F42.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F43.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
+git commit -m git-mw
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F45.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F44.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
+git commit -m git-mw
+git push
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F49.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F51.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F50.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F49.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F5*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F52.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F53.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F54.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F55.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F54.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F55.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F56.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F5*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F58.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F57.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F58.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F59.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F60.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F62.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F57.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F59.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F63.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F64.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F65.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F66.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F67.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F68.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F5*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F6*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F69.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F70.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F71.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F72.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F73.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F74.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F75.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F76.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F77.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F78.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F79.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F6*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F7*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F80.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F81.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F82.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F83.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F84.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F85.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F8*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F86.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F87.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F8*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F88.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F89.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F90.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F91.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F92.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F93.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F94.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F95.mw 
+rm Page\:Jimín_Mháire_Thaidhg.djvu%2F95.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F8*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F9*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F97.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F98.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F100.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F99.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F100.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F9*
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F10*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F101.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F102.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F103.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F104.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F105.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F106.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F107.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F108.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F107.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F109.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F10*
+git commit -m git-mw
+git push
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F110.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F111.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F112.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F113.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F114.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F115.mw 
+vi Page\:Jimín_Mháire_Thaidhg.djvu%2F116.mw 
+git add Page\:Jimín_Mháire_Thaidhg.djvu%2F11*
+git commit -m git-mw
+git push
+grep '\-$' Page\:Jimín_Mháire_Thaidhg.djvu%2F*
