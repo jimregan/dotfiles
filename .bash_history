@@ -1,7 +1,3 @@
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597836944001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=32'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5595778285001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=32'
-grep Astro videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5713670507001&teideal=Dora&series=Dora&dlft=4'
 perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5530199738001&teideal=Astroblast!&series=Astroblast!&dlft=4'
 perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5529228568001&teideal=Astroblast!&series=Astroblast!&dlft=4'
 perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5575073958001&teideal=Olivia&series=Olivia&dlft=27'
@@ -1998,3 +1994,7 @@ ffplay VCTK-Corpus/wav48/p283/p283_140.wav
 less VCTK-Corpus/speaker-info.txt 
 ffplay VCTK-Corpus/wav48/p351/p351_154.wav 
 ffplay VCTK-Corpus/wav48/p351/p351_119.wav 
+cd /tmp
+unzip ~/Downloads/mollys.game.\(2017\).eng.1cd.\(7232436\).zip 
+lsof
+vi /tmp/asd/spid
