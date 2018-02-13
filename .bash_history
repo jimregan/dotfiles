@@ -1,8 +1,3 @@
-ls
-grep 5597977265001 videos.tsv 
-mv 5597977265001.* ../catahata/
-svn add ../catahata/5597977265001.*
-grep 5597836944001 videos.tsv 
 mv 5597836944001.* ../catahata/
 svn add ../catahata/5597836944001.* 
 grep 5597818074001 videos.tsv 
@@ -1998,3 +1993,8 @@ cd ..
 git status
 ls
 cmake-gui 
+cd /tmp/
+cp ~/Downloads/IULA_Spanish_LSP_Treebank.rar .
+unrar x IULA_Spanish_LSP_Treebank.rar 
+unzip resource_IULA\ Spanish\ LSP\ Treebank.conll.zip 
+less IULA_Spanish_LSP_Treebank.conll 
