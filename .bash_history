@@ -1,100 +1,3 @@
-tail -f pl-pages 
-ls
-less ga-pages 
-ls
-tail -f pl-pages 
-tail -f ga-pages 
-grep Patrick_O 20130403-place_of_birth.json 
-zless ~/Downloads/ow_eng.nt.gz 
-zgrep '@gle' ~/Downloads/ow_eng.nt.gz 
-zgrep '@gle' ~/Downloads/ow_eng.nt.gz |wc
-zless ~/Downloads/WktEN.nt.gz 
-zgrep '@gle' ~/Downloads/WktEN.nt.gz 
-zgrep '@gle' ~/Downloads/WktEN.nt.gz |wc
-vi /tmp/wlck
-cat /tmp/snuv
-cat /tmp/snuv-toks 
-cat /tmp/snuv-toks |awk -F'\t' '(NF==2){print}'
-cat /tmp/snuv-toks |awk -F'\t' '(NF==2){print "    \""$1"\" => \""$2"\"."}'
-cat /tmp/snuv-toks |awk -F'\t' '(NF==2){print "    \""$1"\" => \""$2"\","}'
-ls
-grep 5436377395001 videos.tsv 
-mv 5436377395001.* ../garfield/
-svn add ../garfield/5436377395001.*
-grep 5437875805001 videos.tsv 
-mv 5437875805001.* ../garfield/
-svn add ../garfield/5437875805001.*
-grep 5440930726001 videos.tsv 
-mv 5440930726001.* ../garfield/
-svn add ../garfield/5440930726001.*
-grep 5528856864001 videos.tsv 
-mv 5528856864001.* ../astroblast/
-svn add ../astroblast/5528856864001.*
-cd ..
-svn ci -m 'some more'
-cd vid
-cd scripts/
-ls
-grep 5715414407001 videos.tsv 
-mv 5715414407001.* ../dora/
-svn add ../dora/5715414407001.*
-grep 5715152311001 videos.tsv 
-mv 5715152311001.* ../astroblast/
-svn add ../astroblast/5715152311001*
-grep 5713670507001 videos.tsv 
-mv 5713670507001.* ../dora/
-svn add ../dora/5713670507001*
-grep 5713630055001 videos.tsv 
-mv 5713630055001.* ../wac/
-svn add ../wav/5713630055001*
-svn add ../wac/5713630055001*
-ls
-grep 5580933662001 videos.tsv 
-mv 5580933662001.* ../catahata/
-svn add ../catahata/5580933662001*
-LS
-ls
-grep 5595778285001 videos.tsv 
-mv 5595778285001.wav ../catahata/
-svn add ../catahata/5595778285001*
-ls
-grep 5713032798001 videos.tsv 
-mv 5713032798001.* ../spongebob/
-svn add ../spongebob/5713032798001*
-ls
-grep 5529228568001 videos.tsv 
-mv 5529228568001.* ../astroblast/
-svn add ../astroblast/5529228568001*
-ls
-grep 5438160491001 videos.tsv 
-mv 5438160491001.* ../garfield/
-svn add ../garfield/5438160491001*
-ls
-grep 5530199738001 videos.tsv 
-mv 5530199738001.* ../astroblast/
-svn add ../astroblast/5530199738001.*
-#svn add ../astroblast/5530199738001.*
-grep 5567553024001 videos.tsv 
-mv 5567553024001.* ../astroblast/
-#svn add ../astroblast/5567553024001.*
-grep 5573942451001 videos.tsv 
-mv 5573942451001.* ../olivia/
-svn add ../olivia/5573942451001.*
-svn add ../astroblast/5567553024001.*
-svn add ../astroblast/5530199738001.*
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716672396001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=35'
-tail -n 1 videos.tsv 
-tail -n 1 videos.tsv  > todo 
-ls
-grep 5712800619001 videos.tsv 
-mv 5712800619001.* ../astroblast/
-svn add ../astroblast/5712800619001.*
-grep 5712835415001 videos.tsv 
-mv 5712835415001.* ../dora/
-svn add ../dora/5712835415001.*
-grep 5711849664001 videos.tsv 
-mv 5711849664001.wav ../whizsachistin/
-svn add ../whizsachistin/5711849664001.wav 
 ls
 grep 5597977265001 videos.tsv 
 mv 5597977265001.* ../catahata/
@@ -1998,3 +1901,100 @@ git add Page\:Jimín_Mháire_Thaidhg.djvu%2F11*
 git commit -m git-mw
 git push
 grep '\-$' Page\:Jimín_Mháire_Thaidhg.djvu%2F*
+cd ..
+ls
+mkdir helen
+cd helen/
+echo http://www.ifp.illinois.edu/~vuongle2/helen/ > url
+cat url 
+wget http://www.ifp.illinois.edu/~vuongle2/helen/data/annotation.zip
+unzip -l annotation.zip 
+unzip annotation.zip 
+less annotation/999.txt 
+wget http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_1.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_2.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_3.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_4.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_5.zip
+wget http://www.ifp.illinois.edu/~vuongle2/helen/data/trainnames.txt http://www.ifp.illinois.edu/~vuongle2/helen/data/testnames.txt
+ls
+unzip -l helen_1.zip 
+cd ..
+git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git
+cd openpose/
+less README.md 
+bash ubuntu/install_cmake.sh 
+vi ubuntu/install_cmake.sh 
+bash ubuntu/install_cmake.sh 
+ls
+rm cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb 
+cmake .
+less CMakeFiles/CMakeError.log 
+apt-cache search pthreads|grep dev
+sudo apt-get install libpthread-stubs0-dev 
+make
+ls
+cd src/
+ls
+cmake .
+cmake ..
+cd ..
+ls
+find . -name Makefile
+vi 3rdparty/caffe/Makefile
+cd 3rdparty/caffe/
+make
+cd ../..#
+cmake
+cmake .
+ls
+make
+ls
+cd ../..
+ls
+cd src/
+ls
+cmake .
+cd ..
+ls
+make
+cmake .
+cmake src
+less doc/installation
+less doc/installation.md 
+cd src/
+ls
+mkdir build
+cd build/
+cmake ..
+les ../../doc/installation.md 
+ls ../../doc/installation.md 
+less ../../doc/installation.md 
+cmake ..
+vi ../CMakeLists.txt 
+cmake ..
+vi ../CMakeLists.txt 
+cd ../openpose/
+ls
+mkdir build 
+cd build/
+cmake ..
+cd ..
+cmake .
+vi CMakeLists.txt 
+find ../.. -name 'Utils*'
+cd ..
+ls
+cd openpose/
+ls
+cp -r ../../cmake .
+cmake .
+rm -rf cmake/
+vi CMakeLists.txt 
+cd ..
+sudo apt-get install cmake-qt-gui
+cmake-gui 
+ls
+cd build/
+ls
+make
+cd ..
+git status
+ls
+cmake-gui 
