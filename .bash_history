@@ -1,341 +1,3 @@
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5530199738001&teideal=Astroblast!&series=Astroblast!&dlft=4'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5529228568001&teideal=Astroblast!&series=Astroblast!&dlft=4'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5575073958001&teideal=Olivia&series=Olivia&dlft=27'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5713032798001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=3'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5436377395001&teideal=Garfield&series=Garfield&dlft=31'
-grep Gar videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5596880186001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=31'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5580933662001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=31'
-vi videos.tsv 
-grep Dora videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5712835415001&teideal=Dora&series=Dora&dlft=3'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5528856864001&teideal=Astroblast!&series=Astroblast!&dlft=3'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5712800619001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=3'
-grep Oliv videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5573942451001&teideal=Olivia&series=Olivia&dlft=26'
-grep Oliv videos.tsv 
-grep Whiz videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5711849664001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=30'
-grep Whiz videos.tsv 
-grep Cat videos.tsv 
-grep Gar videos.tsv 
-ls
-svn diff videos.tsv |grep '^\+' > todo
-vi todo 
-cat todo |awk -F'\t' '{print $5}'
-cat todo |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-cat todo |awk -F'\t' '{print $6}'|grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-cat todo |awk -F'\t' '{print $6}'|grep http|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id;done
-ls
-rm 5*
-cat todo |awk -F'\t' '{print $6}'|grep http|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
-sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
-cd /tmp/asd
-ls
-sh ~/scripts/spider.sh spida
-sh ~/scripts/spider.sh spidb
-sh ~/scripts/spider.sh spidc
-tail -f spida.log 
-cat spida.log |perl ~/bin/wget-http.pl 
-cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spida.log |perl ~/bin/wget-http.pl  |grep web/2
-cat spida.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}'
-cat spida.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' |wc
-wc -l spida
-cat spida.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spida|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt || echo http://web.archive.org/save/$i >> spidaa;done
-less spidaa 
-tail spida
-rm spidaa 
-rm spida
-rm spida.log 
-ls
-tail -f spidb.log 
-cat spidb.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spidb.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spidb|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidaa;done
-ls
-rm spidb
-rm spidb.log 
-cat inp.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm -rf web.archive.org/
-ls
-rm inp
-tail inp.log .
-tail inp.log 
-rm inp.log 
-ls
-less inp 
-sh ~/scripts/grab-logged.sh inp
-ls
-tail -f spidc.log 
-cat spidc.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spidc.log |perl ~/bin/wget-http.pl  |grep web/2|awk -F'[<>]' '{print $6}' >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spidc|awk -F'/save/' '{print $2}'|while read i;do grep $i ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt || echo http://web.archive.org/save/$i >> spidaa;done
-ls
-rm spidc
-rm spidc.log 
-tail -f inp.log 
-ls
-sh ~/scripts/spider.sh spid
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid 
-sh ~/scripts/spider.sh spid
-tail cat spida 
-sh ~/scripts/spider.sh spida
-tail -f spid.log 
-cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-cat spid.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spid.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-rm spid
-rm spid.log 
-tail -f spida.log 
-cat spida.log |perl ~/bin/wget-http.pl  >> ~/tmp/sync/http-misc-20180105-1.nt 
-cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep vtt >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-subs.txt 
-cat spida.log |perl ~/bin/wget-http.pl |grep 'web/2' |awk -F'[<>]' '{print $6}' |grep mp4 >> ~/disk/Playing/msf-asr/TG4/scripts/wayback-video.txt 
-rm spida
-rm spida.log nohup.out 
-ls
-ls Playing/
-cd disk/Playing/msf-asr/
-ls
-cd TG4/
-ls
-cd scripts/
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708847188001&teideal=Dora&series=Dora&dlft=7'
-tail videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708848631001&teideal=Dora&series=Dora&dlft=6'
-mkdir ../dora
-grep Cat videos.tsv 
-grep Cat videos.tsv |grep 28
-grep Cat videos.tsv |grep 20
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708761765001&teideal=Astroblast!&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5570517202001&teideal=Olivia&series=Olivia&dlft=30'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708699944001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=35'
-tail videos.tsv 
-grep Gar videos.tsv 
-grep Gar videos.tsv |grep 45
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5431693254001&teideal=Garfield&series=Garfield&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708778634001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=8'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5705801554001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=3'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5703180409001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=1'
-grep Sp videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5428899186001&teideal=Garfield&series=Garfield&dlft=34'
-grep Cat videos.tsv |grep 20
-grep Cat videos.tsv |grep 24
-grep Cat videos.tsv |grep 27
-grep Cat videos.tsv |grep 19
-grep Astr videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5708674690001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=6'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5565208898001&teideal=Astroblast!%20%20&series=Astroblast!&dlft=6'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5567875131001&teideal=Olivia&series=Olivia&dlft=29'
-grep Gar videos.tsv |grep 45
-grep Gar videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5429322106001&teideal=Garfield&series=Garfield&dlft=32'
-grep WAC videos.tsv 
-grep Ros videos.tsv 
-svn diff
-svn diff|grep '^\+' > todo 
-vi todo 
-cat todo 
-cat todo |awk -F'\t' '{print $6}'
-cat todo |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
-cat todo |awk -F'\t' '{print "http://web.archive.org/save/" $6}' > /tmp/asd/spida
-cat todo |awk -F'\t' '{print  $5}' 
-cat todo |awk -F'\t' '{print "http://web.archive.org/save/" $5}'|grep -v m3u > /tmp/asd/spidb
-cat todo |awk -F'\t' '{print $5}'|grep m3u 
-curl $(cat todo |awk -F'\t' '{print $5}'|grep m3u )|grep http|awk '{print "http://web.archive.org/save/" $0}' >> /tmp//asd/spidc
-cat todo |awk -F'\t' '{print $5}'|grep m3u 
-cat todo |awk -F'\t' '{print $5}'|grep m3u |sh run.sh 
-ls
-grep 5703180409001 videos.tsv 
-mkdir ../spongebob
-mv 5703180409001.* ../spongebob/
-svn add ../dora/ ../spongebob/
-cat todo |awk -F'\t' '{print $5}'|grep -v m3u
-less proc_mp4.sh 
-sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}'|grep -v m3u)
-ls
-grep 5428899186001 videos.tsv 
-mv 5428899186001.* ../garfield/
-svn add ../garfield/5428899186001.* 
-grep 5429322106001 videos.tsv 
-mv 5429322106001.* ../garfield/
-svn add ../garfield/5429322106001.* 
-grep 5431693254001 videos.tsv 
-mv 5431693254001.* ../garfield/
-svn add ../garfield/5431693254001.* 
-grep 5565208898001 videos.tsv 
-mv 5565208898001.* ../astroblast/
-svn  add ../astroblast/5565208898001.* 
-grep 5567875131001 videos.tsv 
-mv 5567875131001.* ../olivia/
-svn add ../olivia/5567875131001.* 
-grep 5570517202001 videos.tsv 
-mv 5570517202001.* ../olivia/
-svn add ../olivia/5570517202001.* 
-ls
-grep 5705801554001 videos.tsv 
-mv 5705801554001.* ../spongebob/
-svn add ../spongebob/5705801554001.*
-grep 5708674690001 videos.tsv 
-mv 5708674690001.* ../astroblast/
-svn add ../astroblast/5708674690001.* 
-grep 5708699944001 videos.tsv 
-mv 5708699944001.wav ../whizsachistin/
-svn add ../whizsachistin/5708699944001.wav 
-grep 5708761765001 videos.tsv 
-mv 5708761765001.* ../astroblast/
-svn add ../astroblast/5708761765001.* 
-ls
-grep 5708778634001 videos.tsv 
-mv 5708778634001.* ../spongebob/
-svn add ../spongebob/5708778634001.*
-ls
-grep 5708847188001 videos.tsv 
-grep 5708848631001 videos.tsv 
-mv 570884* ../dora/
-svn add ../dora/*
-cd ..
-svn ci -m more
-svn status
-ls CloIarChonnacht/
-ls CloIarChonnacht/*foca*
-ffplay CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.mp3 
-mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.aud
-svn add CloIarChonnacht/caibidil_a_1,_mír_a_2_cúpla_focal.aud
-svn ci -m 'text'
-cd ~/disk
-mkdir pwr-asr
-cd pwr-asr/
-wget https://www.ii.pwr.edu.pl/~sas/ASR/data/AM_Train_sng_male.zip
-wget https://www.ii.pwr.edu.pl/~sas/ASR/data/SWD.zip https://www.ii.pwr.edu.pl/~sas/ASR/data/VIUs.zip
-unzip AM_Train_sng_male.zip 
-less annotation.txt 
-cat annotation.txt |iconv -f latin2 -t utf8
-ls
-unzip -l SWD.zip 
-ls
-mkdir AM
-mv *.wav annotation.txt AM/
-ls
-mkdir SWD
-cd SWD/
-unzip ../SWD
-cd ..
-ls
-mkdir VIUs
-cd VIUs/
-unzip ../VIUs
-cd ..
-fdupes -r .
-less SWD/annotation_reduced.txt 
-less VIUs/annotation.txt 
-ffplay AM/*wav
-ffplay AM/123029.wav 
-ffplay AM/212500.wav 
-ffplay SWD/307646.wav 
-ffplay SWD/441198.wav 
-ffplay VIUs/530118.wav 
-ffplay VIUs/530371.wav 
-ffplay VIUs/530372.wav 
-ffplay VIUs/530373.wav 
-ffplay VIUs/530374.wav 
-ffplay VIUs/530383.wav 
-ls
-cat VIUs/annotation.txt 
-cat VIUs/annotation.txt |iconv -f cp1250 -t utf8
-ffplay VIUs/532348.wav
-ffplay VIUs/532347.wav
-ffplay VIUs/532346.wav
-ffplay VIUs/532345.wav
-ffplay VIUs/532344.wav
-ffplay VIUs/532343.wav
-ffplay VIUs/532342.wav
-ffplay VIUs/532341.wav
-ffplay VIUs/532340.wav
-ffplay VIUs/532339.wav
-ffplay VIUs/532331.wav
-ffplay VIUs/532332.wav
-ls AM
-ffplay AM/400905.wav 
-ffplay SWD/553894.wav 
-ls
-ls VIUs
-ls VIUs/annotation.txt 
-cat AM/annotation.txt 
-ls
-cd ~/disk/Playing/
-cd kaldi/
-cd egs/
-ls
-cd snuv/
-cd s5/
-ls
-vi run.sh 
-ls
-git add conf/*
-git status
-ls ../../pwr_polish/s5/wordlist
-ls ../../pwr_polish/s5/wordlist.ipa 
-less ../../pwr_polish/s5/wordlist.ipa 
-less ../../pwr_polish/s5/wordlist
-less ../../pwr_polish/s5/spid2
-less ../../pwr_polish/s5/spid2.log 
-ls
-ls local/
-less local/nnet3/run_ivector_common.sh 
-git add conf/*
-git status
-cat cmd.sh 
-less ../../clarinpl/run.sh 
-less ../../clarinpl/cmd.sh 
-vi cmd.sh 
-git add cmd.sh 
-git status
-less path.sh 
-cat path.sh 
-cat ../../clarinpl/run.sh 
-cat ../../clarinpl/path.sh 
-cat path.sh 
-vi path.sh 
-cat ../../clarinpl/path.sh 
-cat path.sh 
-git add path.sh 
-git status
-git commit -m 'basic setup'
-git branch
-git push mine snuv 
-git push mine master 
-find data -name '*txt'
-cat data/snuv/snuv_database/186k36_21lat/400_21lat.txt|perl local/fix_transcripts.pl 
-cat data/snuv/snuv_database/186k36_21lat/400_21lat.txt
-cat data/snuv/snuv_database/186k36_21lat/368_21lat.txt |perl local/fix_transcripts.pl 
-cat data/snuv/snuv_database/186k36_21lat/368_21lat.txt 
-cat data/snuv/snuv_database/186k36_21lat/272_21lat.txt 
-cat data/snuv/snuv_database/186k36_21lat/272_21lat.txt |perl local/fix_transcripts.pl
-cat /tmp/snuv-toks 
-cat /tmp/snuv-toks |awk -F'\t' '{print $1}'
-cat /tmp/snuv-toks |sed -e 's/źi/zi/g;s/ći/ci/g;s/ńi/ni/g;s/śi/si/g' |awk -F'\t' '(NF==2){print $2 "\t" $1}(NF==1){print $1"\t"$1}'
-cat /tmp/snuv-toks |sed -e 's/źi/zi/g;s/ći/ci/g;s/ńi/ni/g;s/śi/si/g' |awk -F'\t' '(NF==2){print $2 "\t" $1}(NF==1){print $1"\t"$1}' |awk -F'\t' '{print $1}' > /tmp/leftin 
-cat /tmp/snuv-toks |sed -e 's/źi/zi/g;s/ći/ci/g;s/ńi/ni/g;s/śi/si/g' |awk -F'\t' '(NF==2){print $2 "\t" $1}(NF==1){print $1"\t"$1}' |awk -F'\t' '{print "{{pl-IPA-auto|"$2"}}"}'  > /tmp/left
-cat /tmp/rightin 
-cat /tmp/rightin |uconv -x IPA-XSampa
-cat /tmp/rightin |uconv -x IPA-XSampa > /tmp/rightsampa
-paste /tmp/leftin /tmp/rightsampa 
-echo ʂ ɛ j s ɛ t |uconv -x IPA-XSampa 
-man paste
-paste -d' ' /tmp/leftin /tmp/rightsampa 
-paste -d' ' /tmp/leftin /tmp/rightsampa > local/lexicon
-vi local/lexicon 
-echo ʂ ɛ j s ɛ t |uconv -x IPA-XSampa 
-vi local/lexicon 
-cat local/lexicon |sort
-cat local/lexicon |sort > local/lexicon.txt
-wc -l local/lexicon.txt 
-git add local/lexicon.txt 
 git commit -m 'add lexicon (95 items only)'
 git add local/fix_transcripts.pl 
 git commit -m 'fix transcripts to use letters rather than the phonetic equivalent'
@@ -1998,3 +1660,341 @@ cd /tmp
 unzip ~/Downloads/mollys.game.\(2017\).eng.1cd.\(7232436\).zip 
 lsof
 vi /tmp/asd/spid
+cd ~/disk/Playing/
+cd ga-wikibooks/
+ls
+vi cnocoille.txt
+man csplit
+csplit -h
+csplit --help
+csplit cnocoille.txt '/^<L [0-9]+>$/' '{*}'
+ls
+less xx00 
+vi cnocoille.txt 
+dos2unix cnocoille.txt 
+csplit cnocoille.txt '/<L [0-9]+>/' '{*}'
+ls
+rm xx00 
+man csplit 
+csplit cnocoille.txt '/<L [0-9]+>/{*}'
+csplit cnocoille.txt '/<L [0-9]+>/ {*}'
+csplit cnocoille.txt '/<L [0-9]+>/' '{*}'
+csplit cnocoille.txt '<L [0-9]+>' '{*}'
+csplit --help
+csplit cnocoille.txt '/<L \[0-9\]+>/' '{*}'
+csplit cnocoille.txt '/<L ([0-9])+>/' '{*}'
+csplit cnocoille.txt '/^<L [0-9]+>$/' '{*}'
+csplit cnocoille.txt '/^<L [0-9][0-9]*>$/' '{*}'
+ls
+less xx00 
+less xx01
+less xx02
+less xx03
+less xx69
+less xx68
+less xx67
+less xx66
+less xx65
+less xx64
+less xx63
+less xx62
+less xx63
+less xx61
+less xx60
+less xx61
+less xx01
+less xx31
+less xx21
+less xx26
+less xx24
+less xx01
+#mv xx01 test-mw/w/Page:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu
+ls test-mw/w/
+mv xx01 test-mw/w/Page:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw
+cd test-mw/w/
+git add \"Page\:Cn\\303\\263_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw\" 
+ls
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw 
+git commit -m git-mw
+git push
+less /tmp/dinneen.pl 
+vi ponc.pl
+cat Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw |perl ponc.pl 
+cat Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw |perl ponc.pl  > tmp
+mv tmp Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw 
+git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw 
+git commit -m ponc
+git push
+ls
+cd ..
+ls
+rm xx00 
+grep II xx*
+vi xx02 
+cat xx02 |perl test-mw/w/ponc.pl |sed -e "s/ ó'n / ó’n /g"
+cat xx02 |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"
+cat xx02 |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F8.mw 
+less xx03 
+cat xx03 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F9.mw 
+vi test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F9.mw 
+vi test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F8.mw 
+less xx04
+cat xx04 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F10.mw
+cat xx05 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F11.mw
+less xx05 
+cat xx06 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F12.mw
+less xx06
+cat xx07 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F13.mw
+cat xx08 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F14.mw
+cat xx09 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F15.mw
+cat xx10 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F16.mw
+cat xx11 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw
+cat xx12 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw
+cat xx12 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F19.mw
+less xx13
+less xx14
+less xx15
+less xx16
+less xx17
+less xx13
+cat xx13 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F20.mw
+cat xx14 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F21.mw
+less xx14
+less xx15
+less xx16
+less xx17
+cat xx15 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw
+cat xx16 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw
+cat xx17 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F24.mw
+less ~/niamhbot.pl 
+cat xx15 |grep -v '^<L ' |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw
+cat xx15 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw
+cat xx16 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw
+cat xx17 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F24.mw
+cat xx18 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F25.mw
+cat xx19 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F26.mw
+cat xx20 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F27.mw
+cat xx21 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F28.mw
+cat xx22 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw
+less xx22
+cat xx23 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F31.mw
+cat xx24 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F32.mw
+cat xx25 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F33.mw
+cat xx26 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F34.mw
+cat xx27 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F35.mw
+less xx27 
+cat xx28 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F36.mw
+less xx28
+cat xx29 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F37.mw
+cat xx30 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw
+cat xx31 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F39.mw
+cat xx32 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F40.mw
+less xx32 
+less xx33
+less xx34
+less xx35
+less xx36
+less xx37
+less xx38
+less xx39
+less xx40
+less xx41
+less xx42
+less xx43
+less xx44
+less xx45
+less xx46
+less xx47
+less xx48
+less xx47
+less xx48
+less xx49
+less xx50
+less xx51
+less xx52
+less xx53
+less xx54
+less xx53
+cp xx53 xx53a
+vi xx53
+vi xx53a
+for i in $(seq 33 53);do cat xx$i |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F$(($i + 8)).mw;done
+cat xx53a |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F62.mw
+less xx54 
+less xx55
+less xx56
+less xx57
+less xx58
+less xx57
+less xx59
+less xx58
+less xx59
+less xx60
+less xx61
+less xx62
+less xx63
+less xx62
+less xx64
+less xx62
+less xx63
+less xx64
+less xx65
+less xx66
+less xx67
+less xx68
+less xx69
+less xx70
+less xx69
+for i in $(seq 54 69);do cat xx$i |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F$(($i + 9)).mw;done
+vi cnuas
+grep '<L' cnuas 
+rm xx*
+csplit cnuas '/^<L [0-9][0-9]*>$/' '{*}'
+ls
+less xx51 
+less xx00 
+less xx01 
+for i in $(seq 1 51);do cat xx$(printf "%02d" $i) |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > Page:Cnuasacht_trágha_-_Sheehan.djvu%2F$(($i + 8)).mw;done
+ls
+less Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F10.mw 
+less Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F1.mw 
+ls
+less Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F9.mw 
+mv Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F* test-mw/w/
+vi jimin
+vi tt
+cat tt |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F8.mw
+vi jimin 
+csplit jimin '/^<L [0-9][0-9]*>$/' '{*}'
+rm xx*
+csplit jimin '/^<L [0-9][0-9]*>$/' '{*}'
+ls
+cat xx00 
+cat xx01
+cat xx01 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F9.mw
+cat xx02 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw
+cat xx02 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw
+less xx07 
+less xx06
+less xx05
+less xx04
+less xx06
+less jimin 
+cat xx03 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F11.mw
+cat xx04 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F12.mw
+less xx06
+cat xx06 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F15.mw
+cat xx07 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F16.mw
+cat xx08 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F17.mw
+cat xx09 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F18.mw
+less xx09 
+cat xx10 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F19.mw
+less xx10
+cat xx11 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F20.mw
+cat xx12 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F21.mw
+cat xx13 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F22.mw
+cat xx14 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F23.mw
+cat xx15 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F24.mw
+cat xx16 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F25.mw
+cat xx17 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F26.mw
+cat xx18 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F27.mw
+cat xx19 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F28.mw
+cat xx20 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F29.mw
+cat xx21 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F30.mw
+less xx22
+less xx23
+cat xx23 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F33.mw
+less xx22
+cat xx24 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F34.mw
+cat xx25 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F35.mw
+cat xx26 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F36.mw
+cat xx27 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F37.mw
+cat xx28 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F38.mw
+less xx29
+cat xx29 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F39.mw
+cat xx30 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F40.mw
+cat xx31 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F41.mw
+cat xx32 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F42.mw
+cat xx33 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F43.mw
+cat xx34 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F44.mw
+cat xx35 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F45.mw
+cat xx36 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F46.mw
+less xx38
+cat xx38 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F49.mw
+cat xx39 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F50.mw
+cat xx40 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F51.mw
+cat xx41 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F52.mw
+cat xx42 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F53.mw
+cat xx43 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F54.mw
+cat xx44 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F55.mw
+cat xx45 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F56.mw
+cat xx46 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F57.mw
+cat xx47 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F58.mw
+less xx46
+less xx47
+less xx46
+less xx47
+less xx48
+less xx49
+less xx50
+less xx51
+less xx50
+cat xx48 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F59.mw
+cat xx49 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F60.mw
+cat xx50 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw
+cat xx51 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F62.mw
+cat xx52 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F63.mw
+cat xx53 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F64.mw
+cat xx54 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F65.mw
+cat xx55 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F66.mw
+cat xx56 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F67.mw
+cat xx57 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F68.mw
+cat xx58 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F69.mw
+cat xx59 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F70.mw
+cat xx60 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F71.mw
+cat xx61 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F72.mw
+cat xx62 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F73.mw
+cat xx63 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F74.mw
+cat xx64 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F75.mw
+cat xx65 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F76.mw
+cat xx66 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F77.mw
+cat xx67 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F78.mw
+cat xx68 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F79.mw
+cat xx69 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F80.mw
+cat xx70 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F81.mw
+cat xx71 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F82.mw
+cat xx72 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F83.mw
+cat xx73 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F84.mw
+cat xx74 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F85.mw
+cat xx75 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F86.mw
+cat xx76 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F87.mw
+cat xx77 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F88.mw
+cat xx78 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F89.mw
+cat xx79 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F90.mw
+cat xx80 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F91.mw
+cat xx81 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F92.mw
+cat xx82 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F93.mw
+cat xx83 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F94.mw
+cat xx84 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F95.mw
+less xx85
+cat xx85 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F97.mw
+cat xx86 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F98.mw
+cat xx87 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F99.mw
+cat xx88 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F100.mw
+cat xx89 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F101.mw
+cat xx90 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F102.mw
+cat xx91 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F103.mw
+cat xx92 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F104.mw
+cat xx93 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F105.mw
+cat xx94 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F106.mw
+cat xx95 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F107.mw
+cat xx96 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F108.mw
+cat xx97 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F109.mw
+less xx98
+cat xx98 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F110.mw
+cat xx99 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F111.mw
+cat xx100 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F112.mw
+cat xx101 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F113.mw
+cat xx102 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F114.mw
+cat xx103 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F115.mw
+cat xx104 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F116.mw
