@@ -1,8 +1,3 @@
-svn add ../olivia/5575073958001.* 
-grep 5577127362001 videos.tsv 
-mv 5577127362001.* ../catahata/
-svn add ../catahata/5577127362001.* 
-grep 5577169734001 videos.tsv 
 ls
 grep 5577169734001 videos.tsv 
 mv 5577169734001.* ../catahata/
@@ -1998,3 +1993,8 @@ cd Corpora
 ls
 ls scripts/
 ls
+vi s0OZki_PuMg.txt
+ls
+vi s0OZki_PuMg.txt
+vo yD1yp9P6GdY.txt
+vi yD1yp9P6GdY.txt
