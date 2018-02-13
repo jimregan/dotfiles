@@ -1,29 +1,3 @@
-svn add RnaG/crenacille.txt 
-svn add 'edited text'
-svn add RnaG/crenacille.txt 
-svn ci -m 'edited text'
-cp ~/Downloads/1_split_Cré_na_Cille.pdf  RnaG/
-svn add RnaG/1_split_Cré_na_Cille.pdf 
-svn ci -m 'first part of book; scan, but good for reference
-svn ci -m 'first part of book; scan, but good for reference'
-cd scripts/
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5715167562001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=35'
-vi videos.tsv 
-grep Gar videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5440930726001&teideal=Garfield&series=Garfield&dlft=35'
-grep Cat videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597977265001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5715414407001&teideal=Dora&series=Dora&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5715152311001&teideal=Astroblast!&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5567553024001&teideal=Astroblast!&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577237049001&teideal=Olivia&series=Olivia&dlft=30'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577169734001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=34'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5438160491001&teideal=Garfield&series=Garfield&dlft=33'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597818074001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=33'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5577127362001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=33'
-grep Gar videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5713630055001&teideal=WAC&series=WAC&dlft=32'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5437875805001&teideal=Garfield&series=Garfield&dlft=32'
 perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597836944001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=32'
 perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5595778285001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=32'
 grep Astro videos.tsv 
@@ -1998,3 +1972,29 @@ vi masalbeagdubh.out
 vi masalbeagdubh.in
 vi masalbeagdubh.out
 vi msf1.txt
+cd ~/disk/Playing/vctk-corpus/
+ls
+tar jtvf cantab-TEDLIUM-partial.tar.bz2 
+tar zxvf VCTK-Corpus.tar.gz 
+file VCTK-Corpus/wav48/p376/p376_295.raw
+ls VCTK-Corpus
+less VCTK-Corpus/COPYING 
+less VCTK-Corpus/speaker-info.txt 
+ffplay VCTK-Corpus/wav48/p298/p298_204.wav 
+ffplay VCTK-Corpus/wav48/p298/p298_135.wav 
+ffplay VCTK-Corpus/wav48/p298/p298_140.wav 
+less VCTK-Corpus/speaker-info.txt 
+ffplay VCTK-Corpus/wav48/p295/p295_135.wav 
+ffplay VCTK-Corpus/wav48/p295/p295_140.wav 
+less VCTK-Corpus/speaker-info.txt 
+ffplay VCTK-Corpus/wav48/p245/p245_140.wav 
+ffplay VCTK-Corpus/wav48/p24
+less VCTK-Corpus/speaker-info.txt 
+ffplay VCTK-Corpus/wav48/p288/p288_140.wav 
+ffplay VCTK-Corpus/wav48/p288/p288_135.wav 
+less VCTK-Corpus/speaker-info.txt 
+ffplay VCTK-Corpus/wav48/p283/p283_135.wav 
+ffplay VCTK-Corpus/wav48/p283/p283_140.wav 
+less VCTK-Corpus/speaker-info.txt 
+ffplay VCTK-Corpus/wav48/p351/p351_154.wav 
+ffplay VCTK-Corpus/wav48/p351/p351_119.wav 
