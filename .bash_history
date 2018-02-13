@@ -1,15 +1,3 @@
-mv 5597836944001.* ../catahata/
-svn add ../catahata/5597836944001.* 
-grep 5597818074001 videos.tsv 
-mv 5597818074001.* ../catahata/
-svn add ../catahata/5597818074001.* 
-grep 5577237049001 videos.tsv 
-mv 5577237049001.* ../olivia/
-svn add ../olivia/5577237049001.* 
-ls
-mv 5438160491001.txt ../garfield/5438160491001.aud 
-grep 5575073958001 videos.tsv 
-mv 5575073958001.* ../olivia/
 svn add ../olivia/5575073958001.* 
 grep 5577127362001 videos.tsv 
 mv 5577127362001.* ../catahata/
@@ -1998,3 +1986,15 @@ cp ~/Downloads/IULA_Spanish_LSP_Treebank.rar .
 unrar x IULA_Spanish_LSP_Treebank.rar 
 unzip resource_IULA\ Spanish\ LSP\ Treebank.conll.zip 
 less IULA_Spanish_LSP_Treebank.conll 
+cd ../..
+ls
+cd Corpora/
+ls
+cd ..
+mv Corpora/ Corpora-old
+svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora
+ls
+cd Corpora
+ls
+ls scripts/
+ls
