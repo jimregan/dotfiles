@@ -1,175 +1,4 @@
 ls
-grep 5577169734001 videos.tsv 
-mv 5577169734001.* ../catahata/
-cd ..
-svn diff
-svn diff|less
-cd scripts/
-ls
-cat todo |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-cat todo |awk -F'\t' '{print $6}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-cat todo |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O ../rosnarun/$id.vtt;done
-sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
-mv 5716672396001.wav ../rosnarun/
-svn add ../rosnarun/5716672396001.*
-svn diff
-grep Whiz videos.tsv 
-grep Garf videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5715167562001&teideal=Whiz%20sa%20Chistin&series=Whiz%20sa%20Chistin&dlft=34'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5578865433001&teideal=Olivia&series=Olivia&dlft=30'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716701975001&teideal=Spongebob%20Squarepants&series=Spongebob%20Squarepants&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5443567745001&teideal=Garfield&series=Garfield&dlft=35'
-grep Cat videos.tsv 
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5597938721001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716770912001&teideal=Dora&series=Dora&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5716687770001&teideal=Astroblast!&series=Astroblast!&dlft=7'
-perl tg4-scrape.pl 'http://www.tg4.ie/ga/player/baile/?pid=5567674547001&teideal=Astroblast!&series=Astroblast!&dlft=7'
-less videos.tsv 
-tail -n 8 videos.tsv 
-tail -n 8 videos.tsv  > todo 
-#sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
-cat todo |awk -F'\t' '{print $6}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-cat todo |awk -F'\t' '{print $5}'|awk '{print "http://web.archive.org/save/" $0}' >> /tmp/asd/spida
-vi /tmp/asd/spida 
-cat todo|grep http |awk -F'\t' '{print $6}'|while read i;do id=$(echo $i|awk -F'videoId=' '{print $NF}');wget $i -O $id.vtt;done
-sh proc_mp4.sh $(cat todo |awk -F'\t' '{print $5}')
-ls
-grep 5716687770001 videos.tsv 
-mv 5716687770001.* ../astroblast/
-svn add ../astroblast/5716687770001.* 
-grep 5567674547001 videos.tsv 
-mv 5567674547001.* ../astroblast/
-svn add ../astroblast/5567674547001.*
-ls
-cat 5438160491001.vtt |perl ../../scripts/vtt-to-audacity.pl 
-cat 5438160491001.vtt |perl ../../scripts/vtt-to-audacity.pl  > 5438160491001.aud
-audacity &
-ls
-less vtt-patcher.pl 
-ffplay /tmp/temp.wav 
-audacity &
-svn ls
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Voices
-rm -rf Voices/
-mkdir speech-syn
-cd speech-syn/
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Data
-ls
-cd Data/
-svn up
-svn cleanup
-svn up
-ls
-ls Test_Recordings/
-ls
-ls DIPHONE_CORPUS_26-02-07/
-ls DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt 
-less DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt 
-grep _e DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt 
-cat DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt |iconv -f latin1 -t utf8
-cat DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt |iconv -f latin1 -t utf8|grep _e
-cat DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict_30-01-06.txt |iconv -f latin1 -t utf8|grep _e|wc
-find  . -name '*dict*'
-less DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict
-wc -l DIPHONE_CORPUS_26-02-07/hmms_and_dictionary/htk_dict*
-less Test_Recordings/AineNiBhreisleain_Annotated_Corpus/SayTimeAine/pron-dict_saytime 
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Tests
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Tests/pmc
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Tests/pmc/textprocessing
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software
-cd ..
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Software
-less Software/tcdsynthesiser/cab/LTSRules.py
-less Software/tcdsynthesiser/gaothdobhair.xml
-less Software/tcdsynthesiser/cab/gaoth_dobhair_exceptions.txt 
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest_lexicon.dict
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/allophones.ga_MU.xml 
-tree Software/marytts-lang-ga/
-less Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
-wc -l Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
-wc -l Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon_130912.lts 
-less Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon_130912.lts 
-less Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon_130912.fst 
-#cp Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt ~/disk/Playing/msf-asr/
-mkdir  ~/disk/Playing/msf-asr/abair-lexica
-cp Software/marytts-lang-ga/target/classes/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt ~/disk/Playing/msf-asr/abair-lexica/
-find . -name '*dic*'
-less ./Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest_lexicon.dict
-cp ./Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest_lexicon.dict ~/disk/Playing/msf-asr/abair-lexica/
-less ./Software/Forced_Alignment/hmmdefs_and_macros/Jan11th2006/htk_dict_Jan1106.txt
-export LEXTRG=~/disk/Playing/msf-asr/abair-lexica/
-cp ./Software/Forced_Alignment/hmmdefs_and_macros/Jan11th2006/htk_dict_Jan1106.txt $LEXTRG/
-ls $LEXTRG 
-less ./Software/Forced_Alignment/TexStuff/Earlier_versions_preFeb06/dict
-less ./Software/vocab/vocab/perldata/example/dict.data
-ffplay ./Software/comhra_test/comhra/audio/idic0002.mp3
-ffplay hiasynth/wav/RA_AE_hiasynth_supp1_0712.wav 
-cd /tmp
-cp ~/Downloads/zestawy_maturalne.pdf .
-man pdftk
-sudo apt-get install pdftk
-pdftk zestawy_maturalne.pdf cat 7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41 out.pd
-pdftk zestawy_maturalne.pdf cat 7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41 output out.pdf
-man pdftk
-pdftk zestawy_maturalne.pdf cat 7-41odd output out.pdf
-ls -al out.pdf 
-mv out.pdf zestawy_maturalne-edit.pdf 
-less ~/Downloads/Wikisource-20180123224245.xml 
-sudo cpan MediaWiki::Bot
-sudo cpan -f MediaWiki::Bot
-cd ..
-svn ci -m more
-svn status
-svn add dora/5716770912001*
-svn ci -m more
-mv scripts/caibidil_a_1,_mír_a_1_cúpla_focal.txt CloIarChonnacht/
-vi CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
-svn add CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
-svn ci -m text
-mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
-svn diff
-svn ci -m rest
-mv scripts/Label\ Track.txt CloIarChonnacht/caibidil_a_1,_mír_a_1_cúpla_focal.txt 
-svn ci -m fix
-cd scripts/
-ls
-grep 5715167562001 videos.tsv 
-mv 5715167562001.wav ../whizsachistin/
-svn add ../whizsachistin/5715167562001.wav 
-ls
-grep 5578865433001 videos.tsv 
-mv 5578865433001.* ../olivia/
-svn add ../olivia/5578865433001.* 
-svn diff
-ls
-grep 5716701975001 videos.tsv 
-mv 5716701975001.* ../spongebob/
-svn add ../spongebob/5716701975001.* 
-grep 5443567745001 videos.tsv 
-mv 5443567745001.* ../garfield/
-svn add ../garfield/5443567745001.* 
-ls
-grep 5597938721001 videos.tsv 
-mv 5597938721001.* ../catahata/
-svn add ../catahata/5597938721001.* 
-ls
-grep 5716770912001 videos.tsv 
-mv 5716770912001.* ../dora/
-ls ../
-ls ../CloIarChonnacht/
-svn stat ../CloIarChonnacht/
-cd ../CloIarChonnacht/
-fdupes -r .
-rm sliocht_a_2_\(lgh_131-134\)\ \(1\).mp3 
-rm sliocht_a_1_\(lgh_72-74\)\ \(1\).mp3 
-ls
-svn status
-svn rm 'sliocht_a_1_(lgh_72-74) (1).mp3'
-svn rm 'sliocht_a_1_(lgh_72-74) (1).mp3' 'sliocht_a_2_(lgh_131-134) (1).mp3'
-ffplay sliocht_a_1_\(lgh_72-74\).mp3 
-ls
 ls *caoi*
 ffplay sliocht_as_Ó_thuaidh.mp3 
 ffplay sliocht_a_2_\(lgh_131-134\).mp3 
@@ -1998,3 +1827,174 @@ ls
 vi s0OZki_PuMg.txt
 vo yD1yp9P6GdY.txt
 vi yD1yp9P6GdY.txt
+cd /tmp
+unzip ~/Downloads/re.zip 
+mkdir re
+cd re
+unzip ~/Downloads/re.zip 
+less FSA.cpp 
+vi Node.cpp 
+ls
+g++ Node.cpp -o Node.o
+vi Node.cpp 
+g++ Node.cpp -o Node.o
+less Node.h 
+vi Node.cpp 
+g++ Node.cpp -o Node.o
+g++ -c Node.cpp -o Node.o
+vi Node.cpp 
+unzip ~/Downloads/re.zip 
+#git add *.h *.cc
+git init .
+git add *.h *.cc
+git add *.h *.cpp
+git commit -m initial
+git diff
+git add Node.cpp 
+git commit -m update
+g++ -c FSA.cpp -o FSA.cpp 
+g++ -c FSA.cpp -o FSA.o
+ls
+g++ -c tester_pictures.cpp -o tester_pictures.o
+g++ -c tester.o -o tester.o
+g++ -c tester.cpp -o tester.o
+ls
+grep main *
+g++ -c tester.cpp -o tester
+./tester
+chmod a+x tester
+./tester 
+g++ tester.cpp -o tester
+g++ tester.cpp FSA.cpp -o tester
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester_pictures.cpp FSA.cpp Node.cpp -o tester_pictures
+./tester_pictures 
+less tester_pictures.cpp 
+grep gv *
+ls
+./tester 
+git diff
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ls /tmp/*ps
+ps2pdf /tmp/jim_fsa.ps 
+ls /tmp/*ps
+ls /tmp/*pdf
+file /tmp/jim_fsa.ps 
+man ps2pdf
+file /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+mv jim_fsa.pdf /tmp/
+ls
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+less tester.
+less tester.cpp 
+rm /tmp/jim_fsa.dot 
+rm /tmp/jim_fsa.ps 
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+./tester_pictures 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+less /tmp/jim_fsa.dot 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+rm /tmp/jim_fsa.*
+./tester 
+ls /tmp/jim_fsa.dot 
+less /tmp/jim_fsa.dot 
+dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
+vi /tmp/jim_fsa.dot 
+dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
+vi /tmp/jim_fsa.dot 
+dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
+vi /tmp/jim_fsa.dot 
+dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
+vi /tmp/jim_fsa.dot 
+dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
+vi /tmp/jim_fsa.dot 
+dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+vi /tmp/jim_fsa.dot 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+rm /tmp/jim_fsa.*
+./tester 
+ls /tmp/jim_fsa.*
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+rm /tmp/jim_fsa.*
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ls /tmp/jim_fsa.*
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+rm /tmp/jim_fsa.*
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ls /tmp/jim_fsa.*
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+rm /tmp/jim_fsa.*
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
+g++ tester.cpp FSA.cpp Node.cpp -o tester
+./tester 
+less Node.h 
