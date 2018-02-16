@@ -1,0 +1,431 @@
+to scrape
+https://comhar.ie/leabhair/
+https://nos.ie/
+
+questions
+http://snag.ie/imeachtai-agus-acmhainni/tnagc/
+http://snag.ie/wp-content/uploads/2017/01/Lamhleabhar-na-Seachtaine.pdf
+
+http://visualgenome.org/api/v0/api_home.html
+https://github.com/spandanagella/verse
+Visual Verb Sense Disambiguation
+
+
+http://mac.citi.sinica.edu.tw/GuitarTranscription/
+
+https://code.soundsoftware.ac.uk/projects/pyin
+https://code.soundsoftware.ac.uk/projects/tony
+
+https://github.com/mjhucla/Google_Refexp_toolbox
+Python toolbox for the Google Referring Expressions Dataset
+
+http://cs.brown.edu/~gen/cocottributes.html
+https://github.com/genp/cocottributes
+Code use to create COCO Attributes dataset and experiments in the associate ECCV 2016 paper.
+
+https://gowatchseries.io/star-trek-discovery-season-1-episode-13
+
+https://youtu.be/KoSu6AUC-7k?t=13m39s
+How to irritate people
+
+
+https://spacy.io/usage/training#section-tagger-parser
+https://explosion.ai/blog/pseudo-rehearsal-catastrophic-forgetting
+https://nlpers.blogspot.ie/2016/05/a-bad-optimizer-is-not-good-thing.html
+
+Annotating
+https://youtu.be/jsIGuXVdX9Y?t=1m27s
+Coláiste Choilm 2013 (St Columba's College 2013)
+
+https://youtu.be/ByjUwvMj5FI?t=1m50s
+Cleachtadh don Bhéaltriail 2015 (Leaving Cert Irish Oral 2015)
+
+
+https://www.youtube.com/user/bannistg/videos
+
+IULA Spanish LSP Treebank
+https://repositori.upf.edu/handle/10230/20048
+http://www.iula.upf.edu/recurs01_mpars_uk.htm
+
+https://www.fluentu.com/blog/bullet-journal-language-learning/?utm_source=FluentU+Language+Learning+Tips+and+Updates&utm_campaign=0a5ae3b49a-Spanish+Learner+Weekly_01_28_2018&utm_medium=email&utm_term=0_ee7f81dbad-0a5ae3b49a-90748777
+
+https://spacy.io/models/
+
+http://bosphorus.ee.boun.edu.tr/hand/login.aspx?ReturnUrl=%2fhand%2fdownload.aspx
+Hand database -- register again?
+
+Tasks
+# set up Spanish parsing, parse some books
+## Select more books
+## Missing section lables in treasure island
+## Find scan for wikisource?
+# Finish annotating sample files of non-natives, write tech report
+
+#wav2letter
+https://www.facebook.com/groups/717232008481207/?multi_permalinks=741739256030482&notif_id=1517287509786246&notif_t=group_activity&ref=notif
+Here's what I did: (1) Put audio files in the dev-clean folder, removed everything else. (2) Ran this 2 commands: (a) luajit ~/wav2letter/data/librispeech/create.lua ~/LibriSpeech ~/librispeech-proc
+(b) luajit ~/wav2letter/data/utils/create-sz.lua librispeech-proc/dev-clean (3) Modify letter.lst file in the librispeech folder to put 26 chars plus the chars | and '. (4) Finally ran this command: luajit ~/wav2letter/test.lua ~/librispeech-glu-highdropout-cpu.bin -progress -show -test dev-clean -save -datadir ~/librispeech-proc/ -dictdir ~/librispeech-proc/ -gfsai
+
+# Spanish books
+https://es.wikisource.org/wiki/Robinson_Crusoe:_001
+https://es.wikisource.org/wiki/Autor:Charles_Dickens
+https://es.wikisource.org/wiki/Autor:Fi%C3%B3dor_Dostoyevski
+https://es.wikisource.org/wiki/Autor:Arthur_Conan_Doyle
+https://es.wikisource.org/wiki/El_extra%C3%B1o_caso_del_Dr._Jekyll_y_Mr._Hyde
+https://es.wikisource.org/wiki/El_sabueso_de_los_Baskerville:_I
+
+https://es.wikisource.org/wiki/La_isla_del_tesoro
+https://en.wikisource.org/wiki/Treasure_Island_(1883)
+https://fr.wikisource.org/wiki/L%E2%80%99%C3%8Ele_au_tr%C3%A9sor_(trad._Varlet)
+https://sv.wikisource.org/wiki/Skattkammar%C3%B6n
+https://pl.wikisource.org/wiki/Wyspa_skarb%C3%B3w
+https://en.wikisource.org/wiki/Treasure_Island_(1911)
+replace spanish with:
+https://www.gutenberg.org/files/45438/45438-h/45438-h.htm
+
+la isla del tesoro
+https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=2;width=1360
+https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=3;width=1360
+
+https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=366;width=1360
+
+# polish, unsubbed,cc
+https://www.youtube.com/user/CentrumCyfrowe/videos
+https://www.youtube.com/watch?v=2kjoaflm4xk
+cc-by-sa
+
+https://www.youtube.com/watch?v=K0QqXZ8bJYk
+cc-by
+
+https://kulturaponadprawem.pl/
+cc-by-sa (unless otherwise noted), semi-accurate transcripts
+
+some/most? cc-by
+https://www.youtube.com/channel/UCZDi5aTYgGoi1Snmq-uoDeA/videos
+https://www.youtube.com/channel/UCfYPjDbhT01HYwvCIC29tVg/videos
+https://www.youtube.com/user/NowoczesnaPolska/videos
+
+
+## Polish mp3 bible: http://www.biblia-mp3.pl/
+
+#sentence embeddings
+https://github.com/facebookresearch/InferSent
+
+#hierarchical representations
+https://github.com/facebookresearch/poincare-embeddings
+
+https://github.com/deepmind/narrativeqa/blob/master/documents.csv
+https://github.com/yysijie/st-gcn
+Spatial Temporal Graph Convolutional Networks (ST-GCN) for Skeleton-Based Action Recognition in PyTorch
+signlanguage?
+
+https://github.com/rizkiarm/LipNet
+
+GRID audiovisual (lipreading)
+http://spandh.dcs.shef.ac.uk/gridcorpus/#docs
+
+https://github.com/astorfi/lip-reading-deeplearning
+
+
+https://gowatchseries.io/marvels-runaways-season-1-episode-10
+38:40
+
+# Tacotron, lots of background
+https://www.reddit.com/r/MachineLearning/comments/62c1on/r_tacotron_a_fully_endtoend_texttospeech/
+
+http://www.ee.columbia.edu/ln/LabROSA/doc/HTKBook21/node54.html
+
+http://web.stanford.edu/class/cs224s/reports/Pierce_Freeman.pdf
+Storytime - End to end neural networks for audiobooks
+
+
+
+# What Polish Women Think of Irish Men
+https://www.youtube.com/watch?v=HS2x7A5A_wc
+
+# room response/noise
+http://www.openslr.org/26/
+Simulated Room Impulse Response Database
+
+http://www.openslr.org/20/
+Aachen Impulse Response Database
+
+http://www.openslr.org/17/
+MUSAN
+  title = {{MUSAN}: {A} {M}usic, {S}peech, and {N}oise {C}orpus},
+
+http://www.openslr.org/13/
+RWCP Sound Scene Database
+
+http://www.openslr.org/28/
+Room Impulse Response and Noise Database
+
+https://freesound.org/browse/
+https://freesound.org/docs/api/
+https://blog.freesound.org/
+https://blog.freesound.org/?p=771 661 new hours
+https://freesound.org/search/?g=1&q=&f=%20license:%22Attribution%22
+https://freesound.org/search/?g=1&q=&f=%20license:%22Creative+Commons+0%22
+https://github.com/CrowdTruth/VU-Sound-Corpus
+^ based on freesound, adds labels
+http://soundbible.com/
+(MUSAN overlap)
+
+English?
+http://www.senate.mo.gov/2017-audio-archive/
+
+
+# https://lukeoakdenrayner.wordpress.com/2018/01/24/chexnet-an-in-depth-review/
+“Stanford algorithm can diagnose pneumonia better than radiologists”
+vs.
+“pneumonia is a clinical diagnosis!”
+
+# neural phrase-based MT
+https://arxiv.org/pdf/1706.05565.pdf
+https://github.com/posenhuang/NPMT/
+
+https://github.com/Kyubyong/nlp_tasks#automatic-speech-recognition
+NLP + neural
+
+https://github.com/Kyubyong/quasi-rnn
+
+https://github.com/Kyubyong/bytenet_translation/blob/master/results/model_epoch_15_gs_73590
+
+https://github.com/Kyubyong?tab=repositories
+
+https://github.com/Kyubyong/tacotron/commit/cd936b85b34298c0ad24e4ca721f50172166026e
+
+http://web.stanford.edu/class/cs224s/reports/Pierce_Freeman.pdf
+Storytime - End to end neural networks for audiobooks
+
+https://github.com/Kyubyong/deepvoice3
+https://github.com/Kyubyong/dc_tts
+
+#Paper writing 
+http://approximatelycorrect.com/2018/01/29/heuristics-technical-scientific-writing-machine-learning-perspective/
+
+
+https://www.reddit.com/r/MachineLearning/comments/33n77s/android_app_nipple_detection_using_convolutional/?st=jct6zq2h&sh=04e59cad
+https://github.com/ryanjay0/miles-deep
+Deep Learning Porn Video Classifier/Editor with Caffe
+
+https://github.com/cmu-mtlab/grex
+Extracts SCFG rules from pairs of parsed parallel sentences that have been word aligned
+
+https://github.com/cmu-mtlab/transcenter-live
+TransCenter Live: Web-based post-editing environment for use with Realtime (cdec)
+
+https://github.com/cmu-mtlab/grascore
+Scores, filters, prunes, and manipulates SCFG rules extracted with Grex. Code by Greg Hanneman (ghannema@cs.cmu.edu).
+
+https://github.com/cmu-mtlab/label-collapse
+Clusters monolingual SCFG labels based on their bilingual alignments in a grammar
+
+https://github.com/clab/dynet/commit/50e48b91c8696d4bc54433530f9ed39bff848674
+Transformer example in C++ (#1186)
+
+
+Neural crosswords
+https://transacl.org/ojs/index.php/tacl/article/view/711/168
+https://www.cl.cam.ac.uk/~fh295/
+http://45.55.181.170/defgen/
+http://www.crosswordmaestro.com/cmfree.php
+
+https://github.com/sfu-natlang/hmm-graphprop
+Constrain HMM with graph propagation
+
+https://github.com/sfu-natlang/HMM-Aligner
+This is the implementation of word aligner using Hidden Markov Model
+
+https://github.com/sfu-natlang/lrhiero
+Left to right decoding for Hiero Statistical Machine Translation
+
+https://github.com/sfu-natlang/neural-network-tagger
+A General Purpose Tagger for POS Tagging, NER Tagging, and Chunking.
+
+
+https://github.com/sadeepj/crfasrnn_keras
+https://github.com/torrvision/crfasrnn
+
+https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/
+
+https://github.com/astorfi/lip-reading-deeplearning/blob/master/code/lip_tracking/VisualizeLip.py
+https://astorfi.github.io/lip-reading-deeplearning/
+https://codeocean.com/2017/07/14/3d-convolutional-neural-networks-for-audio-visual-recognition/code
+
+https://github.com/Rayhane-mamah/Tacotron-2
+(tacotron 2, no wavenet)
+
+https://github.com/entn-at/tacotron2
+https://github.com/r9y9/wavenet_vocoder
+https://r9y9.github.io/wavenet_vocoder/
+
+https://github.com/ibab/tensorflow-wavenet
+https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+https://github.com/wy1iu/sphereface
+
+https://github.com/buriburisuri/speech-to-text-wavenet?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+https://medium.mybridge.co/30-amazing-machine-learning-projects-for-the-past-year-v-2018-b853b8621ac7
+
+
+https://hackernoon.com/how-to-use-detectron-facebooks-free-platform-for-object-detection-9d41e170bbcb
+
+
+https://www.psb.ugent.be/cbd/papers/gentxwarper/DTWalgorithm.htm
+https://en.wikipedia.org/wiki/Dynamic_time_warping
+https://github.com/rmaestre/FastDTW/blob/master/src/main/java/com/timeseries/TimeSeries.java
+https://code.google.com/archive/p/fastdtw/
+https://github.com/kamperh/speech_dtw
+
+https://github.com/felipeespic/merlin/tree/magphase_integration
+
+https://github.com/MycroftAI/mimic-cstr_upc_upm_spanish_hts
+http://homepages.inf.ed.ac.uk/jyamagis/software/page54/page54.html
+
+http://www.mngu0.org/
+
+https://datashare.is.ed.ac.uk/handle/10283/561
+Repeated Harvard Sentence Prompts corpus version 0.5
+The REHASP corpus contains sentence prompts repeated several times by a
+single talker. These recordings can be used to investigate the acoustic variability
+of natural speech. Version 0.5 of the corpus contains 30 different sentence
+prompts, each repeated 40 times, for a total of 1200 recordings, all freely available
+under a permissive license.
+
+http://homepages.inf.ed.ac.uk/jyamagis/page3/page57/page57.html
+This CSTR NAM TIMIT Plus corpus includes a parallel whispered speech recorded simultaneously via a non-audible murmu (NAM) microphone which uses urethane-elastomer to create a close contact with the skin and an omni-directional headset-mounted condenser microphone (a DPA 4035).
+
+
+http://homepages.inf.ed.ac.uk/jyamagis/page3/page41/page41.html
+Romanian speech synthesis (RSS) corpus
+http://www.romaniantts.com/new/index.php
+cc-by-sa???
+
+http://www.cstr.ed.ac.uk/research/projects/GlobalPhoneMLPs/
+https://www.era.lib.ed.ac.uk/handle/1842/5773
+http://www1.icsi.berkeley.edu/Speech/qn.html
+
+
+https://github.com/macournoyer/utterance_parser
+Extract intent and entities from natural language utterances
+
+
+https://github.com/wanasit/chrono/tree/master/src/parsers
+A natural language date parser in Javascript
+
+
+http://www.blog.labouardy.com/amazon-alexa-github-followers-counter/
+Creating an Alexa intent
+
+https://github.com/CSTR-Edinburgh/magphase
+vocoder
+https://github.com/CSTR-Edinburgh/merlin/tree/master/egs/voice_conversion/s2
+
+http://www.speech.zone/exercises/dtw-in-python/recap-of-how-dtw-works/
+http://www.speech.zone/courses/speech-synthesis/
+http://www.speech.zone/courses/speech-processing/
+http://www.speech.zone/courses/speech-processing-2016-17/
+
+https://github.com/CSTR-Edinburgh/merlin/tree/master/egs/build_your_own_voice/s1
+https://github.com/CSTR-Edinburgh/merlin/blob/master/egs/build_your_own_voice/s1/02_prepare_labels.sh
+https://github.com/CSTR-Edinburgh/merlin/tree/master/egs/voice_conversion/s2
+https://github.com/CSTR-Edinburgh/merlin/blob/master/misc/scripts/voice_conversion/dtw_aligner.py
+http://jrmeyer.github.io/tts/2017/02/14/Installing-Merlin.html
+https://cstr-edinburgh.github.io/merlin/getting-started/build-own-voice/
+https://github.com/CSTR-Edinburgh/merlin/tree/master/egs/build_your_own_voice/s1
+http://jrmeyer.github.io/tts/2017/02/14/Installing-Merlin.html
+https://github.com/CSTR-Edinburgh/merlin/tree/master/egs/voice_conversion/s2
+https://github.com/CSTR-Edinburgh/merlin/blob/master/egs/hybrid_synthesis/s1/conf/global_settings.cfg
+https://github.com/CSTR-Edinburgh/merlin/commit/b9bcea0cd03267fcf3116f76b6c190a3b80725d2
+https://github.com/CSTR-Edinburgh/merlin/pull/190
+https://github.com/CSTR-Edinburgh/merlin/pull/284
+
+https://github.com/gillesdegottex/pulsemodel
+
+https://github.com/CSTR-Edinburgh/mlpractical/blob/mlp2017-8/master/notebooks/02_Single_layer_models.ipynb
+
+https://github.com/yysijie/st-gcn
+A graph convolutional network for skeleton based action recognition.
+
+
+https://github.com/r9y9/wavenet_vocoder/issues/1
+
+
+https://clarin-pl.eu/dspace/handle/11321/236
+Clarin-PL Studio Corpus (EMU)
+https://clarin-pl.eu/dspace/handle/11321/317
+Cyfry
+https://clarin-pl.eu/dspace/handle/11321/237
+Clarin-PL Mobile Corpus (EMU)
+
+
+https://sites.google.com/site/shinnosuketakamichi/publication/jsut
+Japanese TTS corpus
+
+https://github.com/mjibson/go-dsp
+
+
+https://github.com/spro/pytorch-seq2seq-intent-parsing
+https://github.com/spro/torch-seq2seq-intent-parsing
+https://github.com/spro?tab=repositories
+https://github.com/spro/nalgene/blob/master/generate.py
+https://github.com/spro/RARNN
+https://github.com/spro/practical-pytorch/blob/master/seq2seq-translation/seq2seq-translation.ipynb
+https://github.com/spro/nalgene-js/blob/master/src/generate.coffee
+https://github.com/project-abigail/intent-parser/blob/master/test/parsers/action-parser-test.js
+https://github.com/macournoyer/utterance_parser/tree/master/lib/utterance_parser
+https://mycroft.ai/documentation/padatious/
+https://mycroft.ai/documentation/
+https://github.com/awslabs/sockeye/blob/master/sockeye/vocab.py
+
+https://github.com/r9y9?tab=repositories
+https://github.com/r9y9/wavenet_vocoder
+https://github.com/r9y9/wavenet_vocoder/issues/7
+https://github.com/r9y9/wavenet_vocoder/issues/7
+https://github.com/yunjey/pytorch-tutorial
+https://github.com/r9y9/deepvoice3_pytorch
+https://github.com/r9y9/nnmnkwii
+https://github.com/google/REAPER
+
+https://github.com/MhLiao/TextBoxes_plusplus
+https://github.com/bgshih/crnn
+
+
+
+https://www.doegen.ie/ga/LA_1139g1
+An Céideach mhac Rí na gCor
+^ scrape this site for a folk-tales mini-corpus?
+
+https://en.wikisource.org/wiki/The_Chronicles_of_Aunt_Minervy_Ann
+
+https://www.pgdp.net/c/project.php?id=projectID441361b771640&detail_level=3
+selections from ancient irish poetry
+
+https://archive.org/details/rossasrecollecti00odon
+https://www.pgdp.net/c/project.php?id=projectID4c7b9fb367ebd&detail_level=3
+rossa's recollections
+
+https://babel.hathitrust.org/cgi/pt?id=hvd.hwp516;view=1up;seq=350
+isla del tesoro
+http://www.getafe.es/wp-content/uploads/Stevenson-Robert-Louis-La-Isla-Del-Tesoro.pdf
+http://www.gutenberg.org/files/45438/45438-h/45438-h.htm
+https://issuu.com/freedifusion/docs/la_isla_del_tesoro
+http://www.ergowise.com.au/mr-307/la-isla-del-tesoro.pdf
+
+http://tamaraberg.com/visualmadlibs/overview.html
+http://www.visualqa.org/download.html
+http://cs.brown.edu/~gen/cocottributes.html
+http://www.vision.caltech.edu/~mronchi/projects/Cocoa/
+http://domedb.perception.cs.cmu.edu/handdb.html
+https://github.com/CMU-Perceptual-Computing-Lab/panoptic-toolbox
+https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/quick_start.md#quick-start
+http://domedb.perception.cs.cmu.edu/handdb.html
+
+https://code.soundsoftware.ac.uk/projects/tony/files
+music/melody transcription
+
+
+
+

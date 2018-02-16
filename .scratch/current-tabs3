@@ -1,0 +1,78 @@
+https://github.com/mixuala/colab_utils
+https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
+https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
+
+
+!apt-get install -y -qq software-properties-common python-software-properties module-init-tools
+!add-apt-repository -y ppa:alessandro-strada/ppa 2>&1 > /dev/null
+!apt-get update -qq 2>&1 > /dev/null
+!apt-get -y install -qq google-drive-ocamlfuse fuse
+from google.colab import auth
+auth.authenticate_user()
+from oauth2client.client import GoogleCredentials
+creds = GoogleCredentials.get_application_default()
+import getpass
+!google-drive-ocamlfuse -headless -id={creds.client_id} -secret={creds.client_secret} < /dev/null 2>&1 | grep URL
+vcode = getpass.getpass()
+!echo {vcode} | google-drive-ocamlfuse -headless -id={creds.client_id} -secret={creds.client_secret}
+
+https://colab.research.google.com/notebooks/snippets/importing_libraries.ipynb
+
+https://www.songsterr.com/a/wsa/carcass-incarnated-solvent-abuse-tab-s27930t0
+https://www.buzz.ie/weird/999-caller-ambulance-liveline-273197
+
+https://github.com/tiny-dnn
+
+https://github.com/r9y9/nnmnkwii/tree/master/nnmnkwii
+
+Spoken Wikipedia Corpus
+http://nats.gitlab.io/swc/
+https://www2.informatik.uni-hamburg.de/nats/pub/SWC/SWC_Dutch.tar
+https://www2.informatik.uni-hamburg.de/nats/pub/SWC/SWC_English.tar
+https://www2.informatik.uni-hamburg.de/nats/pub/SWC/SWC_German.tar
+
+http://arne.chark.eu/static/spoken-wp-corpus-collection.pdf
+https://bitbucket.org/natsuhh/swc
+(no licence)
+http://arne.chark.eu/2017/xml-vs-json/
+
+
+http://nats.gitlab.io/truducer/
+TrUDucer: Transforming to Universal Dependencies using tree transducers
+https://gitlab.com/nats/TrUDucer
+
+http://www.speech.cs.cmu.edu/sphinx/dictator/
+Open Source Dictation using Sphinx-4
+
+https://www.learngaelic.net/sol/episodes/55-72.jsp
+http://www.dwelly.info/index.aspx
+https://archive.org/details/illustratedgaeli01dweluoft
+
+https://news.ycombinator.com/item?id=14541853
+Voc: a physical model of the vocal tract, written in ANSI C (pbat.ch)
+http://pbat.ch/proj/voc/
+https://github.com/PaulBatchelor/voc/blob/master/data.w
+
+https://github.com/giuliomoro/pink-trombone
+
+
+https://github.com/drethage/speech-denoising-wavenet
+
+
+https://github.com/DanielSWolf/rhubarb-lip-sync
+
+http://my.smithmicro.com/papagayo.html
+https://github.com/LostMoho/Papagayo
+
+https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Lipsync_Importer
+
+https://sourceforge.net/p/jlipsync/wiki/Home/
+
+http://www.jordipons.me/apps/speech-denoising-wavenet/
+
+
+https://towardsdatascience.com/fast-ai-lesson-1-on-google-colab-free-gpu-d2af89f53604
+https://towardsdatascience.com/fast-ai-v2-lesson1-synopsis-tl-dr-4985bba9eea2
+https://towardsdatascience.com/a-beginner-introduction-to-tensorflow-part-1-6d139e038278
+https://towardsdatascience.com/aws-sagemaker-ais-next-game-changer-480d79e252a8
+
