@@ -1,42 +1,3 @@
-ls
-ls *caoi*
-ffplay sliocht_as_Ó_thuaidh.mp3 
-ffplay sliocht_a_2_\(lgh_131-134\).mp3 
-ls
-lc caibidil_a_1,_mír_a_1_cúpla_focal.mp3 
-ffplay caibidil_a_1,_mír_a_1_cúpla_focal.mp3 
-wget http://www.siopa.ie/siopa_files/PDFs/Extract/Cupla_Focal_Caibidil_1.pdf
-svn add Cupla_Focal_Caibidil_1.pdf 
-svn rm 'sliocht_a_1_(lgh_72-74) (1).mp3' 'sliocht_a_2_(lgh_131-134) (1).mp3'
-svn add ../catahata/5597938721001.* 
-ls
-less ~/disk/Playing/kaldi/egs/aspire/s5/local/fisher_prepare_dict.sh 
-vi /tmp/phmap
-cat  /tmp/phmap |awk -F'\t' '{print $2}' > /tmp/phmap2
-cat  /tmp/phmap |awk -F'\t' '{print "  \"" $2 "\" => "}' > /tmp/phmap2 
-cat /tmp/phmap2 
-cd ~/disk/Playing/
-git clone https://github.com/cmusphinx/cmudict.git
-cd cmudict/
-ls
-less cmudict.vp 
-less cmudict.dict 
-grep ' ia ' ../msf-asr/pron/*
-ls -al
-less mapping-errors 
-grep ' linn' pron/*
-vi pron/connacht.tsv 
-vi pron/munster.tsv 
-vi pron/ulster.tsv 
-git add pron/ulster.tsv 
-git add pron/connacht.tsv 
-git add pron/munster.tsv 
-less mapping-errors 
-grep 'dfj' pron/*
-ls
-vi scripts/abair-norm-dict.pl 
-vi scripts/abair-simplify-map.tsv 
-vi pron/connacht.tsv 
 git diff
 grep "auˈ" pron/*
 vi pron/ulster.tsv 
@@ -1998,3 +1959,42 @@ ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
 g++ tester.cpp FSA.cpp Node.cpp -o tester
 ./tester 
 less Node.h 
+cd /tmp
+curl https://ssaiplayback.eu-west-1.prod.boltdns.net/playback/once/redirect/v1/1555966122001/e5598c63-5ece-4cfa-9e2a-5981ca71677d/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/652e2dac-4472-4388-a414-b1a89e2b6954.vtt
+curl https://ssaiplayback.eu-west-1.prod.boltdns.net/playback/once/redirect/v1/1555966122001/e5598c63-5ece-4cfa-9e2a-5981ca71677d/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/36b852ce-4959-42bb-bfb2-99bc77728d12.vtt
+wget https://ssaiplayback.eu-west-1.prod.boltdns.net/playback/once/redirect/v1/1555966122001/e5598c63-5ece-4cfa-9e2a-5981ca71677d/xff/default_audio128_5/segment1.m4f
+file segment1.m4f 
+ffplay segment1.m4f 
+curl 'https://edge.api.brightcove.com/playback/v1/accounts/1555966122001/videos/5728266473001?ad_config_id=4930e2b4-d152-46c8-973c-864ad7afdca9' -H 'Origin: https://www.tg4.ie' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8,pl;q=0.6,ga;q=0.4' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' -H 'Accept: application/json;pk=BCpkADawqM1pRHCOi4Sw8JkhCRTU9HbqLss8_6quQNHHT3FRsdAUFrIhlowKqBWGl1snaDrSNIWZRNPIyDh02E_ufxntmXC3e71FvU1thO3EKHDouUUoSJZTkSSCEDhWz-c9vZbDcvSk4Y0h' -H 'Referer: https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed
+curl 'https://edge.api.brightcove.com/playback/v1/accounts/1555966122001/videos/5728266473001?ad_config_id=4930e2b4-d152-46c8-973c-864ad7afdca9' -H 'Origin: https://www.tg4.ie' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8,pl;q=0.6,ga;q=0.4' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' -H 'Accept: application/json;pk=BCpkADawqM1pRHCOi4Sw8JkhCRTU9HbqLss8_6quQNHHT3FRsdAUFrIhlowKqBWGl1snaDrSNIWZRNPIyDh02E_ufxntmXC3e71FvU1thO3EKHDouUUoSJZTkSSCEDhWz-c9vZbDcvSk4Y0h' -H 'Referer: https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed > edge-output
+curl 'https://ssaiplayback.prod.boltdns.net/playback/once/v1/vmap/dash/live-timeline/bccenc/1555966122001/4930e2b4-d152-46c8-973c-864ad7afdca9/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/content.vmap?bc_token=NWFhN2YwZThfNDk5Zjk5MTdmZmE2ZjAyMzUyM2IzMjMzZmM2OTE5ZjBkMWRmNzhhNjkxY2I0MmZmYmI2Y2E1NGNkNjZjODU1MA%3D%3D' -H 'origin: https://www.tg4.ie' -H 'accept-encoding: gzip, deflate, sdch' -H 'accept-language: en-US,en;q=0.8,pl;q=0.6,ga;q=0.4' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' -H 'accept: */*' -H 'cache-control: max-age=0' -H 'authority: ssaiplayback.prod.boltdns.net' -H 'referer: https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31' --compressed
+cd disk/PL
+cd disk/Playing/
+mkdir ga-wikibooks
+cd ga-wikibooks/
+ls
+mkdir test-mw
+cd test-mw/
+# https://wikisource.org/wiki/Page:Niamh_-_Peadar_Ua_Laoghaire.djvu/11
+git init .
+git clone -c remote.origin.pages='Page:Leabharsgeulaigh00hyde.djvu/12 Page:Leabharsgeulaigh00hyde.djvu/11' mediawiki::https://wikisource.org
+man git-mw
+git-mw
+git clone -c remote.origin.pages='Page:Leabharsgeulaigh00hyde.djvu/12 Page:Leabharsgeulaigh00hyde.djvu/11' mediawiki::https://wikisource.org/w
+ls
+git log
+ls -al
+ls w
+less w/Page\:Leabharsgeulaigh00hyde.djvu%2F11.mw 
+cd w/
+ls
+cat Page\:Leabharsgeulaigh00hyde.djvu%2F11.mw 
+cat Page\:Leabharsgeulaigh00hyde.djvu%2F12.mw 
+cp Page\:Leabharsgeulaigh00hyde.djvu%2F12.mw Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw
+vi Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw 
+git config remote.origin.mwLogin 'Jimregan'
+git config remote.origin.mwPassword 'lnnzh021'
+git add Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw 
+git commit -m 'trying out git-mw'
+git push 
+git log
