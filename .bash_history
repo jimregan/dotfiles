@@ -1,22 +1,3 @@
-git diff
-git add vifax/extract-text.sh scripts/vtt-patcher.pl scripts/normalisations.tsv 
-git commit -m 'changes I do not remember making'
-git status
-git diff
-git add ga-to-cmudict.pl 
-git commit -m 'map more'
-git diff
-git add pron/ulster.tsv pron/connacht.tsv scripts/abair-simplify-map.tsv 
-git commit -m 'some errors'
-grep Marshall pron/*
-grep None pron/*
-grep '@' pron/*
-grep 'xl' pron/*
-grep que pron/*
-vi pron/ulster.tsv 
-vi pron/munster.tsv 
-git add pron/munster.tsv 
-git commit -m 'missing'
 vi pron/munster.tsv 
 git diff
 git add pron/munster.tsv 
@@ -1998,3 +1979,22 @@ convert westirishfolktal00larmuoft_raw_0062.jpg -level 49% -type Grayscale tmp.j
 mv tmp.jpg westirishfolktal00larmuoft_raw_0062.jpg 
 convert westirishfolktal00larmuoft_raw_0062.jpg -level 70% -type Grayscale tmp.jpg
 mv tmp.jpg westirishfolktal00larmuoft_raw_0062.jpg 
+cd /tmp
+wget http://festvox.org/cmu_arctic/packed/cmu_us_rms_arctic.tar.bz2
+mkdir apwiki
+cd apwiki/
+git init .
+git clone mediawiki::http://wiki.apertium.org
+git pull
+git pull mediawiki::http://wiki.apertium.org
+ls
+cd wiki.apertium.org/
+ls
+git pull
+git log
+grep 'svn ' *
+grep 'svn ' *|wc
+git log
+cd ..
+ls
+mv wiki.apertium.org/ ~/disk/Playing/
