@@ -1,9 +1,4 @@
 git diff
-grep "auˈ" pron/*
-vi pron/ulster.tsv 
-grep m_e pron/*
-vi pron/ulster.tsv 
-git diff
 git add vifax/extract-text.sh scripts/vtt-patcher.pl scripts/normalisations.tsv 
 git commit -m 'changes I do not remember making'
 git status
@@ -1998,3 +1993,8 @@ git add Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw
 git commit -m 'trying out git-mw'
 git push 
 git log
+cd /tmp/wesht/
+convert westirishfolktal00larmuoft_raw_0062.jpg -level 49% -type Grayscale tmp.jpg
+mv tmp.jpg westirishfolktal00larmuoft_raw_0062.jpg 
+convert westirishfolktal00larmuoft_raw_0062.jpg -level 70% -type Grayscale tmp.jpg
+mv tmp.jpg westirishfolktal00larmuoft_raw_0062.jpg 
