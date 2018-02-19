@@ -1,82 +1,3 @@
-vi pron/munster.tsv 
-git diff
-git add pron/munster.tsv 
-git commit -m english
-git diff pron/ulster.tsv
-git add pron/ulster.tsv 
-vi pron/connacht.tsv 
-git add pron/connacht.tsv 
-git commit -m english
-git add pron/pronounce-as.tsv 
-git commit -m 'was in progress'
-vi scripts/abair-simplify-map.tsv 
-vi pron/connacht.tsv 
-git diff
-git add pron/connacht.tsv 
-git commit -m fix
-git branch
-less ~/disk/Playing/corpuscrawler/corpus/gd.txt 
-less ~/disk/Playing/corpuscrawler/Lib/corpuscrawler/crawl_gd.py
-svn info --show-item repos-root-url 
-cd TG4/
-svn info --show-item repos-root-url 
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
-cd /tmp/
-wget https://dasg.ac.uk/text/68.txt
-wget --no-check-certificate https://dasg.ac.uk/text/68.txt
-vi 68.txt 
-less ~/Downloads/Wikisource-20180124202528.xml 
-perl -e 'print 3 % 1'
-perl -e 'print 3 % 2'
-perl -e 'print 4 % 2'
-perl -e 'print 3 % 2'
-perl -e 'print 5 % 2'
-perl -e 'print 15 % 2'
-perl -e 'print 2 % 2'
-perl -e 'print 4 % 2'
-cat /tmp/niamh |perl ~/niamhbot.pl 
-top
-man djvu
-man djvutxt
-djvutxt --page=26 ~/Downloads/Ko_te_Paipera_Tapu_1868.djvu 
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
-ls
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Web
-cd Web/
-ls
-ls festival_server/
-ls html/
-less html/neasa_ceistneoir/results.txt 
-ls new_html/
-cd new_html/
-ls
-ls ceistneoir/
-ls ceistneoir/mp3s/
-ffplay ceistneoir/mp3s/1.mp3 
-tree
-tree|less
-ls
-less badwords_cm_V2.txt 
-less secret_synthesiser.php 
-ls api
-less api/readme.html 
-ls
-ls ebarnes/
-ls ebarnes/audiorecorder/
-less ebarnes/audiorecorder/index.html 
-less ebarnes/audiorecorder/js/recorderjs/recorder.js 
-ls
-find corpasbeagnamumhan -type f
-ffplay corpasbeagnamumhan/videos/digichaint_perception_3_45.mp4 
-find . -name '*.mp3'
-ffplay ./cabaire_test_20130514/MI0001RCPiarsachBairbre_0002.mp3
-ffplay ./sound/cuchulainn/007.mp3
-ls
-ls pandora/
-less pandora/taidhgin.php 
-less pandora/log.txt 
-ls
-ls pandora/
 less pandora/hemingway.php 
 less pandora/culabat.php 
 tree ceistneora/
@@ -1998,3 +1919,82 @@ git log
 cd ..
 ls
 mv wiki.apertium.org/ ~/disk/Playing/
+cd ~/disk/Playing/
+git clone https://github.com/UniversalDependencies/UD_Polish.git
+ls /tmp/*py
+less /tmp/spa.py 
+python3 /tmp/spa.py 
+ls
+cd /tmp/
+python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
+ls udpl/
+python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-dev.conllu /tmp/udpl/
+python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-test.conllu /tmp/udpl/
+#python3 -m spacy train pl 
+mkdir model
+python3 -m spacy train pl /tmp/model /tmp/data/train.json -n 5
+#python3 -m spacy train pl /tmp/model /tmp/data/train.json /tmp/data/dev -n 5
+ls udpl/
+#python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
+python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
+grep PREPCASE udpl/pl-ud-*
+grep -i PREPCASE udpl/pl-ud-*
+less udpl/pl-ud-train.json 
+python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
+less udpl/pl-ud-train.json 
+less udpl/pl-ud-dev.json 
+python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
+ls model/
+ls model/model-final/
+ls model/model-final/ner/cfg 
+less model/model-final/ner/cfg 
+less model/model-final/ner/upper_model 
+less model/model-final/tagger/tag_map 
+less model/model-final/tokenizer 
+less model/model-final/parser/cfg 
+less model/model-final/parser/upper_model 
+python3 /tmp/spa.py 
+vi /tmp/spa.py 
+python3 /tmp/spa.py 
+vi /tmp/spa.py 
+python3 /tmp/spa.py 
+vi /tmp/spa.py 
+python3 /tmp/spa.py 
+cd ~/disk/Playing/
+git clone https://github.com/UniversalDependencies/UD_Irish
+cd UD_Irish/
+git remote add mine https://github.com/jimregan/UD_Irish.git
+git push mine master
+git checkout -b fix-vocative-adjectives
+ls
+grep uaisle *conllu
+grep 'Plur|PartType=Voc' *conllu
+grep 'PartType=Voc' *conllu
+vi ga-ud-dev.conllu 
+vi ga-ud-test.conllu 
+vi ga-ud-train.conllu 
+git diff
+git add ga-ud-*
+git commit -m 'vocative case mislabeled as parttype'
+git branch
+git push mine fix-vocative-adjectives 
+vi ga-ud-train.conllu 
+vi ga-ud-dev.conllu 
+vi ga-ud-test.conllu 
+vi ga-ud-train.conllu 
+git diff
+vi ga-ud-train.conllu 
+git diff
+git checkout master
+git diff
+git checkout -b more-lemmatisation
+git add ga-ud-train.conllu 
+git commit -m 'more lemmatisation/proper noun misses'
+git push mine more-lemmatisation 
+cd /tmp/
+#python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
+mkdir model2
+python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
+ls -al model
+ls -al model/model-final/
+less model/model-final/tokenizer 
