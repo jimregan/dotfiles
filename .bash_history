@@ -1,24 +1,3 @@
-zless train_v1.1.json.gz 
-zless ~/Downloads/cx-corpora.en2pl.html.json.gz 
-ls
-cd /tmp/
-wget https://celt.ucc.ie//Dinneen1.pdf
-pdftotext Dinneen1.pdf 
-less Dinneen1.
-less Dinneen1.txt 
-pdftohtml Dinneen1.pdf 
-less Dinneen1s.html 
-perl dinneen.pl 
-cat ~/doing 
-cat ~/doing |perl dinneen
-cat ~/doing |perl dinneen.pl 
-vi /tmp/dinn2 
-cat dinn2 |perl dinneen.pl 
-clear
-cat dinn2 |perl dinneen.pl 
-cat dinn2 |perl dinneen.pl > dinntmp
-cd ..
-mkdir hand_labels
 cd hand_labels/
 unzip ~/Downloads/hand_labels.zip 
 ls
@@ -1998,3 +1977,24 @@ ls -al *vtt
 less '16RNC -187 Kennedy-Humphrey Debate, 1960 WV Primary-oFk7dgS8V18.en.vtt'
 less '16RNC -187 Kennedy-Humphrey Debate, 1960 WV Primary-oFk7dgS8V18.ga.vtt'
 less ~/Downloads/16RNC\ -187\ Kennedy-Humphrey\ Debate\,\ 1960\ WV\ Primary-oFk7dgS8V18.en\ \[SubtitleTools.com\].srt 
+go get -u github.com/minio/minio
+sudo apt-get install golang-go
+go get -u github.com/minio/minio
+go help gopath
+sudo go help gopath
+sudo go get -u github.com/minio/minio
+mkdir ~/disk/Playing/go-stuff
+export GOPATH=$HOME/disk/Playing/go-stuff
+go get -u github.com/minio/minio
+go get -u http://github.com/minio/minio
+go get -u github.com/minio/minio
+echo $GOROOT
+go get -v -u github.com/minio/minio
+sudo apt-get remove golang-go
+docker pull minio/minio
+docker run -p 9000:9000 minio/minio server /data
+man docker
+man docker run
+sudo docker run -p 9000:9000 minio/minio server /data
+sudo systemctl restart docker
+sudo docker run -p 9000:9000 minio/minio server /data
