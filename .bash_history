@@ -1,8 +1,3 @@
-cd vctk-corpus/
-wget http://homepages.inf.ed.ac.uk/jyamagis/release/VCTK-Corpus.tar.gz
-tar ztvf VCTK-Corpus.tar.gz 
-tar ztvf VCTK-Corpus.tar.gz |grep -v 'wav$'
-top
 ps aux|grep ld
 ls
 cd ~/disk/Playing/
@@ -1998,3 +1993,8 @@ find . -type f -exec ls -al {} \;
 less data/local/dict/lexicon.txt 
 ls
 rm -rf data/
+cd ../kaldi_stuff/
+ls
+less makeKaldiFiles.py 
+git pull origin master
+vi makeKaldiFiles.py 
