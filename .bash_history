@@ -1,22 +1,3 @@
-cd apwiki/
-git init .
-git clone mediawiki::http://wiki.apertium.org
-git pull
-git pull mediawiki::http://wiki.apertium.org
-ls
-cd wiki.apertium.org/
-ls
-git pull
-git log
-grep 'svn ' *
-grep 'svn ' *|wc
-git log
-cd ..
-ls
-mv wiki.apertium.org/ ~/disk/Playing/
-cd ~/disk/Playing/
-git clone https://github.com/UniversalDependencies/UD_Polish.git
-ls /tmp/*py
 less /tmp/spa.py 
 python3 /tmp/spa.py 
 ls
@@ -1998,3 +1979,22 @@ grep pn polimorf.tab |grep ponied
 grep itd polimorf.tab 
 grep w polimorf.tab 
 less polimorf.tab 
+youtube-dl https://www.youtube.com/watch?v=z_O84AgHLIw
+youtube-dl -h
+youtube-dl --list-extractors
+less ../../../youtube-pl/dl.sh 
+youtube-dl -x --audio-format=best https://www.youtube.com/watch?v=s0OZki_PuMg
+youtube-dl -x --audio-format=best yD1yp9P6GdY
+ls
+cd ..
+mkdir 
+acadamhghaothdobhair
+mkdir acadamhghaothdobhair
+cd acadamhghaothdobhair/
+youtube-dl https://www.youtube.com/watch?v=95WNJPgWqd8
+wget https://www.youtube.com/watch?v=95WNJPgWqd8
+wget https://www.youtube.com/watch?v=YaLlmGftPdA
+youtube-dl https://www.youtube.com/watch?v=YaLlmGftPdA
+wget https://www.youtube.com/watch?v=1zydx_rJIB0
+youtube-dl https://www.youtube.com/watch?v=1zydx_rJIB0
+mv AT\ Scoil\ agus\ brú\ Antoin\ xvid-1zydx_rJIB0.mp4 watch\?v\=1zydx_rJIB0 ../UC3oTt_tHTu8RoExaxhoChuA/
