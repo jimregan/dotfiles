@@ -2117,3 +2117,8 @@ perl -e '$l=5;print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";
 perl -e '$l=5;print "public <grm> = " . join " | ", map { local$_=$_;"<g$_>" } (1..$l) . ";\n"'
 perl -e 'print map { "<g$_>" } (1..10)'
 history -a
+perl -e '$l=5;print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}
+'
+perl -e '$l=5;print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}'
+history -a
