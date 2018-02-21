@@ -1,16 +1,3 @@
-#python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
-python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
-grep PREPCASE udpl/pl-ud-*
-grep -i PREPCASE udpl/pl-ud-*
-less udpl/pl-ud-train.json 
-python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
-less udpl/pl-ud-train.json 
-less udpl/pl-ud-dev.json 
-python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
-ls model/
-ls model/model-final/
-ls model/model-final/ner/cfg 
-less model/model-final/ner/cfg 
 less model/model-final/ner/upper_model 
 less model/model-final/tagger/tag_map 
 less model/model-final/tokenizer 
@@ -1998,3 +1985,16 @@ make
 cd disk/Playing/
 git clone https://github.com/zdevito/ATen
 lynx https://www.reddit.com/r/MachineLearning/comments/7xv4i2/d_any_updates_on_capsulnet/
+cd ~/disk/Playing/
+cd cmudict/
+grep tomato cmudict.dict 
+grep tuesday cmudict.dict 
+grep aluminum cmudict.dict 
+grep aluminium cmudict.dict 
+grep new cmudict.dict 
+grep vase cmudict.dict 
+grep leisure cmudict.dict 
+grep tuesday cmudict.dict 
+grep herb cmudict.dict 
+grep student cmudict.dict 
+grep stew cmudict.dict 
