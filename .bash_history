@@ -1,14 +1,3 @@
-cd hand_labels/
-unzip ~/Downloads/hand_labels.zip 
-ls
-cd hand_labels/
-ls
-less readme.txt 
-mkdir ~/disk/Playing/wikisource-texts
-ls
-less readme.txt 
-cd ~/disk/Playing/
-mkdir vctk-corpus
 cd vctk-corpus/
 wget http://homepages.inf.ed.ac.uk/jyamagis/release/VCTK-Corpus.tar.gz
 tar ztvf VCTK-Corpus.tar.gz 
@@ -1998,3 +1987,14 @@ man docker run
 sudo docker run -p 9000:9000 minio/minio server /data
 sudo systemctl restart docker
 sudo docker run -p 9000:9000 minio/minio server /data
+cd ../kaldi/egs/
+ls
+cd harald/
+ls
+tree
+less data/local/corpus.txt 
+find . -type f
+find . -type f -exec ls -al {} \;
+less data/local/dict/lexicon.txt 
+ls
+rm -rf data/
