@@ -1,34 +1,3 @@
-less src/InputReader.java 
-ls
-ls src/LabelCollapser.java 
-less src/LabelCollapser.java 
-cd /tmp/
-tar xvf ~/Downloads/s1.tar 
-cd align/
-ls
-less bgbb3a.align 
-ls
-apt-cache search djvuocr
-apt-cache search ocr
-apt-cache search ocr|grep djvu
-sudo apt-get install ocrodjvu 
-ls ../ocrodjvu/
-../ocrodjvu/ocrodjvu 
-../ocrodjvu/ocrodjvu -h
-display 330.jpg 
-ls
-ls -al
-cd disk/
-cd Playing/
-mkdir isladeltesoro
-cd isladeltesoro/
-for i in $(seq 2 366);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
-for i in $(seq 323 366);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
-for i in $(seq 171 251);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
-for i in $(seq 232 251);do wget "https://babel.hathitrust.org/cgi/imgsrv/image?id=hvd.hwp516;seq=$i;width=1360" -O $(printf "%03d" $i).jpg;done
-find . -size 0
-top
-file *
 file *|grep PNG
 file *|grep PNG|awk -F':' '{print $1}'
 file *|grep PNG|awk -F':' '{print $1}'|sed -e 's/\.jpg$//'|while read i;do mv $i.jpg $i.png; convert $i.png $i.pbm; cjb2 -clean $i.pbm $i.djvu;done
@@ -1998,3 +1967,34 @@ cd ..
 mkdir spotlight
 cd spotlight/
 wget https://dumps.wikimedia.org/plwiki/20180201/plwiki-20180201-pages-articles-multistream.xml.bz2
+cd ~/disk/Playing/
+cd languagetool
+git branch
+git log
+git checkout irishnew 
+git diff
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/placenames.txt
+git commit -m 'some more suggestions for English words'
+git checkout irishnew 
+git log
+git pull origin irishnew 
+git log
+git checkout master
+git pull upstream master 
+git checkout irish
+git log
+git checkout irishnew 
+git checkout -b more-irish
+git cherry-pick 9e6b87d390bdfe3359a970173d36a02a7de4f1e8
+git log
+git merge master
+git push origin more-irish 
+vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
+git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/placenames.txt
+git commit -m 'some more suggestions for English words'
+git push origin more-irish 
+git checkout irishnew 
+git pull origin irishnew 
+git log
+git merge master
+git push origin irishnew 
