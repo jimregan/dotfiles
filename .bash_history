@@ -1,7 +1,3 @@
-ls bin/
-less make-maps-example.sh 
-ls
-less src/ParallelTask.java 
 less src/InputReader.java 
 ls
 ls src/LabelCollapser.java 
@@ -1998,3 +1994,7 @@ git clone https://github.com/NYPL/transcript-editor
 cd transcript-editor/
 ls
 git pull origin master
+cd ..
+mkdir spotlight
+cd spotlight/
+wget https://dumps.wikimedia.org/plwiki/20180201/plwiki-20180201-pages-articles-multistream.xml.bz2
