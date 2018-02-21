@@ -1,33 +1,3 @@
-cat xx82 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F93.mw
-cat xx83 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F94.mw
-cat xx84 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F95.mw
-less xx85
-cat xx85 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F97.mw
-cat xx86 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F98.mw
-cat xx87 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F99.mw
-cat xx88 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F100.mw
-cat xx89 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F101.mw
-cat xx90 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F102.mw
-cat xx91 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F103.mw
-cat xx92 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F104.mw
-cat xx93 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F105.mw
-cat xx94 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F106.mw
-cat xx95 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F107.mw
-cat xx96 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F108.mw
-cat xx97 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F109.mw
-less xx98
-cat xx98 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F110.mw
-cat xx99 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F111.mw
-cat xx100 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F112.mw
-cat xx101 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F113.mw
-cat xx102 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F114.mw
-cat xx103 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F115.mw
-cat xx104 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F116.mw
-cd test-mw/w/
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F8.mw 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F9.mw 
-git commit -m git-mw
-git push
 git pull
 vi ponc.pl 
 git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F1*
@@ -1998,3 +1968,33 @@ cd ..
 ls
 svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Voices
 svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Daisy
+cd ..
+mkdir festival-pl
+cd festival-pl/
+wget http://dl.dropbox.com/u/2552069/blog/festival_polish_voice.tgz
+wget 'http://redirect.viglink.com/?format=go&jsonp=vglnk_151756730872212&key=e4fd14f5d7f2bb6d80b8f8da1354718c&libId=jd5sdrqw0102aiyv000DAk2jg8g37&subId=f3dcc2ecf5785220ee825877de9776c4&loc=http%3A%2F%2Fubuntu.pl%2Fforum%2Fviewtopic.php%3Ft%3D101832&v=1&out=http%3A%2F%2Frepository.slacky.eu%2Fslackware-11.0%2Futilities%2Ffestvox%2Fnon-mbrola%2Fpol%2Fsrc%2Ffestival_polish_voice.tgz&ref=https%3A%2F%2Fwww.google.ie%2F&title=festival_polish_voice.tgz%20gdzie%20znale%C5%BA%C4%87%20-%20Ubuntu.pl%20-%20Forum%20Ubuntu&txt=Albo%20odrazu%20plik'
+file index.html\?format\=go\&jsonp\=vglnk_151756730872212\&key\=e4fd14f5d7f2bb6d80b8f8da1354718c\&libId\=jd5sdrqw0102aiyv000DAk2jg8g37\&subId\=f3dcc2ecf5785220ee825877de9776c4\&loc\=http%3A%2F%2Fubuntu.pl%2Fforum%2Fviewtopic.php%3Ft%3D101832\&v\=1\&out\=htt 
+mv index.html\?format\=go\&jsonp\=vglnk_151756730872212\&key\=e4fd14f5d7f2bb6d80b8f8da1354718c\&libId\=jd5sdrqw0102aiyv000DAk2jg8g37\&subId\=f3dcc2ecf5785220ee825877de9776c4\&loc\=http%3A%2F%2Fubuntu.pl%2Fforum%2Fviewtopic.php%3Ft%3D101832\&v\=1\&out\=htt festival_polish_voice.tgz
+tar zxvf festival_polish_voice.tgz 
+cd cstr_pl_em_diphone/
+ls
+less group/emlpc.group 
+ls
+less festvox/diphlist.scm 
+less festvox/number_decl.scm 
+for i in festvox/*;do grep 'for research, educational and individual use only' $i;done
+for i in festvox/*;do grep 'for research, educational and individual use only' $i && echo $i;done
+less festvox/cstr_pl_phones.scm 
+less festvox/cstr_pl_token.scm 
+less festvox/cstr_pl_lts.scm 
+ls
+less README 
+ls
+less przeczytajto.txt 
+ls
+git init .
+git add przeczytajto.txt README group/ festvox/
+git status
+git commit -m 'original files'
+less festvox/number_decl.scm 
+less festvox/cstr_pl_em_diphone.scm 
