@@ -1,19 +1,3 @@
-git commit -m git-mw
-git push
-ls
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F53.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F63.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F62.mw 
-cat Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F61.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F62.mw 
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F4* 
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F5* 
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F6* 
-git commit -m git-mw
-git push
-ls
-git diff
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F6* 
 git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7* 
 git commit -m git-mw
 git push
@@ -1998,3 +1982,19 @@ less piesn-o-rolandzie.txt-41.txt.json
 perl ../json.pl 
 ls ../silences/041-autor-nieznany-piesn-o-rolandzie.mp3.sil 
 less ../silences/041-autor-nieznany-piesn-o-rolandzie.mp3.sil 
+cd ../../..
+cd wolne-lektury-audio-corpus/
+ls
+git branch
+git diff
+git add specific-norms.tsv 
+git commit -m more
+cp ~/algdiff.pl .
+git add algdiff.pl 
+git commit -m blh
+less testnum.pl 
+perl algdiff.pl 
+less testnum.pl 
+perl algdiff.pl 
+git add algdiff.pl merge-google-with-silences.pl 
+git commit -m blahh
