@@ -1,25 +1,3 @@
-rm -rf Neural-Photo-Editor/
-git clone https://github.com/ajbrock/Neural-Photo-Editor
-git lfs install
-rm -rf Neural-Photo-Editor/
-git clone https://github.com/ajbrock/Neural-Photo-Editor
-cd Neural-Photo-Editor/
-git checkout -f HEAD
-cat .git/lfs/objects/logs/20180210T170350.632583872.log 
-cd ..
-mv Neural-Photo-Editor/ Neural-Photo-Editor.orig
-git clone https://github.com/spellrun/Neural-Photo-Editor
-cd Neural-Photo-Editor
-ls
-cat gan/assets/CelebAValid.npz 
-ls -al gan/assets/CelebAValid.npz 
-ls
-less README.md 
-ls npe
-python npe/main.py 
-sudo pip install pygame
-python npe/main.py 
-python npe/main.py -h
 python npe/main.py -w gan/assets/CelebAValid.npz .
 less npe/main.py 
 less gan/models/ian.py 
@@ -1998,3 +1976,25 @@ ls text01
 ls named-entities/lab/
 ls named-entities/wav_trimmed/
 ls
+for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk&t=4s https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc
+for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc; 
+for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc; done
+for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc; do sh dl.sh $i;done
+ls
+cd ..
+git clone https://github.com/artetxem/vecmap
+ls
+ls msf-asr/scripts/
+ls msf-asr/
+less msf-asr/ga-to-cmudict.pl 
+less msf-asr/ga-ru.dic 
+less msf-asr/ga-std.pl 
+less find msf-asr -name '*pl'
+find msf-asr -name '*pl'
+ls wolne-lektury-audio-corpus/
+find wolne-lektury-audio-corpus -name '*pl'
+find wolne-lektury-audio-corpus -name '*pl' |xargs grep -i jsgf
+find wolne-lektury-audio-corpus -name '*pl' |xargs grep -i grammar
+find msf-asr/ -name '*pl' |xargs grep -i grammar
+vi ~/kashubian 
+vi ~/.scratch/current-tabs3
