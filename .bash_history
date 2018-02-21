@@ -1,36 +1,6 @@
 git commit -m git-mw
 git push
 ls
-cp Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F30.mw
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F30.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F31.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F30.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F2*
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F3*
-git commit -m git-mw
-git push
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F32.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F33.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F34.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F35.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F36.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F37.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F36.mw 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F3*
-git commit -m git-mw
-git push
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw 
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F39.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw 
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F39.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F40.mw 
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F40.mw 
-git commit -m git-mw
-git push
-ls
 vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F53.mw 
 vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F63.mw 
 vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F62.mw 
@@ -1998,3 +1968,33 @@ sh dl.sh j0vswwsG8kk
 sh dl.sh https://www.youtube.com/watch?v=j0vswwsG8kk
 ls
 grep 'Creative Comm' watch\?v\=*
+cd aud
+cd audio/
+ls *sh
+less sil
+ls ../run-aeneas.sh 
+cd ../text/
+less run-aeneas.sh 
+cp run-aeneas-harald.sh run-aeneas-harald-json.sh
+vi run-aeneas-harald-json.sh 
+cat pairs.tsv 
+cat pairs.tsv |uniq
+sh run-aeneas-harald-json.sh 041-autor-nieznany-piesn-o-rolandzie.mp3        piesn-o-rolandzie.txt-41.txt
+vi run-aeneas-harald-json.sh 
+sh run-aeneas-harald-json.sh 041-autor-nieznany-piesn-o-rolandzie.mp3        piesn-o-rolandzie.txt-41.txt
+rm piesn-o-rolandzie.txt-41.txt.sil.aud 
+less piesn-o-rolandzie.txt-41.txt.json 
+less piesn-o-rolandzie.txt-41.txt
+cat piesn-o-rolandzie.txt-41.txt|perl ../split-sentence.pl 
+cat piesn-o-rolandzie.txt-41.txt|sed -e 's/?”././'|perl ../split-sentence.pl 
+cat piesn-o-rolandzie.txt-41.txt|sed -e 's/?”././;s/„//'|perl ../split-sentence.pl 
+cat piesn-o-rolandzie.txt-41.txt|sed -e 's/?”././;s/„//g'|perl ../split-sentence.pl 
+vi ../split-sentence.pl 
+cat piesn-o-rolandzie.txt-41.txt|perl ../split-sentence.pl 
+sh run-aeneas-harald-json.sh 041-autor-nieznany-piesn-o-rolandzie.mp3        piesn-o-rolandzie.txt-41.txt
+less piesn-o-rolandzie.txt-41.txt.json 
+perl ../json.pl 
+less piesn-o-rolandzie.txt-41.txt.json 
+perl ../json.pl 
+ls ../silences/041-autor-nieznany-piesn-o-rolandzie.mp3.sil 
+less ../silences/041-autor-nieznany-piesn-o-rolandzie.mp3.sil 
