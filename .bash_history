@@ -1,114 +1,3 @@
-./tester_pictures 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-less /tmp/jim_fsa.dot 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-rm /tmp/jim_fsa.*
-./tester 
-ls /tmp/jim_fsa.dot 
-less /tmp/jim_fsa.dot 
-dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
-vi /tmp/jim_fsa.dot 
-dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
-vi /tmp/jim_fsa.dot 
-dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
-vi /tmp/jim_fsa.dot 
-dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
-vi /tmp/jim_fsa.dot 
-dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
-vi /tmp/jim_fsa.dot 
-dot -Tps /tmp/jim_fsa.dot -o /tmp/jim_fsa.ps
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-vi /tmp/jim_fsa.dot 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-rm /tmp/jim_fsa.*
-./tester 
-ls /tmp/jim_fsa.*
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-rm /tmp/jim_fsa.*
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ls /tmp/jim_fsa.*
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-rm /tmp/jim_fsa.*
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ls /tmp/jim_fsa.*
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-rm /tmp/jim_fsa.*
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-less Node.h 
-cd /tmp
-curl https://ssaiplayback.eu-west-1.prod.boltdns.net/playback/once/redirect/v1/1555966122001/e5598c63-5ece-4cfa-9e2a-5981ca71677d/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/652e2dac-4472-4388-a414-b1a89e2b6954.vtt
-curl https://ssaiplayback.eu-west-1.prod.boltdns.net/playback/once/redirect/v1/1555966122001/e5598c63-5ece-4cfa-9e2a-5981ca71677d/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/36b852ce-4959-42bb-bfb2-99bc77728d12.vtt
-wget https://ssaiplayback.eu-west-1.prod.boltdns.net/playback/once/redirect/v1/1555966122001/e5598c63-5ece-4cfa-9e2a-5981ca71677d/xff/default_audio128_5/segment1.m4f
-file segment1.m4f 
-ffplay segment1.m4f 
-curl 'https://edge.api.brightcove.com/playback/v1/accounts/1555966122001/videos/5728266473001?ad_config_id=4930e2b4-d152-46c8-973c-864ad7afdca9' -H 'Origin: https://www.tg4.ie' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8,pl;q=0.6,ga;q=0.4' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' -H 'Accept: application/json;pk=BCpkADawqM1pRHCOi4Sw8JkhCRTU9HbqLss8_6quQNHHT3FRsdAUFrIhlowKqBWGl1snaDrSNIWZRNPIyDh02E_ufxntmXC3e71FvU1thO3EKHDouUUoSJZTkSSCEDhWz-c9vZbDcvSk4Y0h' -H 'Referer: https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed
-curl 'https://edge.api.brightcove.com/playback/v1/accounts/1555966122001/videos/5728266473001?ad_config_id=4930e2b4-d152-46c8-973c-864ad7afdca9' -H 'Origin: https://www.tg4.ie' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8,pl;q=0.6,ga;q=0.4' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' -H 'Accept: application/json;pk=BCpkADawqM1pRHCOi4Sw8JkhCRTU9HbqLss8_6quQNHHT3FRsdAUFrIhlowKqBWGl1snaDrSNIWZRNPIyDh02E_ufxntmXC3e71FvU1thO3EKHDouUUoSJZTkSSCEDhWz-c9vZbDcvSk4Y0h' -H 'Referer: https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed > edge-output
-curl 'https://ssaiplayback.prod.boltdns.net/playback/once/v1/vmap/dash/live-timeline/bccenc/1555966122001/4930e2b4-d152-46c8-973c-864ad7afdca9/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/content.vmap?bc_token=NWFhN2YwZThfNDk5Zjk5MTdmZmE2ZjAyMzUyM2IzMjMzZmM2OTE5ZjBkMWRmNzhhNjkxY2I0MmZmYmI2Y2E1NGNkNjZjODU1MA%3D%3D' -H 'origin: https://www.tg4.ie' -H 'accept-encoding: gzip, deflate, sdch' -H 'accept-language: en-US,en;q=0.8,pl;q=0.6,ga;q=0.4' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' -H 'accept: */*' -H 'cache-control: max-age=0' -H 'authority: ssaiplayback.prod.boltdns.net' -H 'referer: https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31' --compressed
-cd disk/PL
-cd disk/Playing/
-mkdir ga-wikibooks
-cd ga-wikibooks/
-ls
-mkdir test-mw
-cd test-mw/
-# https://wikisource.org/wiki/Page:Niamh_-_Peadar_Ua_Laoghaire.djvu/11
-git init .
-git clone -c remote.origin.pages='Page:Leabharsgeulaigh00hyde.djvu/12 Page:Leabharsgeulaigh00hyde.djvu/11' mediawiki::https://wikisource.org
-man git-mw
-git-mw
-git clone -c remote.origin.pages='Page:Leabharsgeulaigh00hyde.djvu/12 Page:Leabharsgeulaigh00hyde.djvu/11' mediawiki::https://wikisource.org/w
-ls
-git log
-ls -al
-ls w
-less w/Page\:Leabharsgeulaigh00hyde.djvu%2F11.mw 
-cd w/
-ls
-cat Page\:Leabharsgeulaigh00hyde.djvu%2F11.mw 
-cat Page\:Leabharsgeulaigh00hyde.djvu%2F12.mw 
-cp Page\:Leabharsgeulaigh00hyde.djvu%2F12.mw Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw
-vi Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw 
-git config remote.origin.mwLogin 'Jimregan'
 git config remote.origin.mwPassword 'lnnzh021'
 git add Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw 
 git commit -m 'trying out git-mw'
@@ -1998,3 +1887,114 @@ git clone https://github.com/AI-TOOLKIT/VoiceBridge.git
 cd VoiceBridge/
 ls
 ls Redistributables/
+cd ~/disk/Playing/spaCy/
+git branch
+git checkout master
+git remote show 
+git pull origin master
+git push mine master 
+git push mine polish-tag-map
+git push mine polish-tag-map-train 
+git branch
+git checkout polish-tag-map-mrg
+git checkout polish-tag-map
+git checkout -b polish-tag-map-mrg
+git merge master
+ls
+less setup.py 
+python setup.py install
+sudo python setup.py install
+ls
+sudo python setup.py help
+sudo pip install -i requirements.txt 
+sudo -H pip install -i requirements.txt 
+sudo -H pip install -f requirements.txt 
+sudo -H pip install requirements.txt 
+sudo -H pip install $(cat requirements.txt )
+sudo python setup.py help
+sudo python setup.py install
+mkdir /tmp/udpl
+python -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
+ls /tmp/udpl/
+sudo python setup.py install
+python -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
+sudo -H pip3 install $(cat requirements.txt )
+sudo python3 setup.py install
+python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
+sudo python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
+less spacy/__init__.py
+less spacy/cli/info.py
+less spacy/util.py
+less spacy/symbols.pyx 
+less spacy/symbols.pyd
+less spacy/symbols.pxd 
+ls
+grep PREPCASE spacy/lang/pl/*
+git branch
+git log
+less spacy/morphology.pxd 
+find . -name '*.py' -or -name '*.pxd'
+ls
+ls spacy
+find . -name '*.py' -or -name '*.pxd' -or -name '*'pyx'
+find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'
+find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'|xargs grep PREPCASE
+find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'|xargs grep -i prepcase
+less spacy/symbols.pyx 
+less spacy/morphology.pyx 
+less spacy/symbols.pyx 
+less spacy/morphology.pyx 
+less spacy/symbols.pyx 
+less spacy/morphology.pyx 
+git diff
+sudo python3 setup.py install
+less spacy/morphology.pxd 
+sudo python3 setup.py install
+git diff
+grep -i animacy spacy/symbols.
+grep -i animacy spacy/symbols.*
+grep -i number spacy/symbols.*
+grep -i prepcase spacy/symbols.*
+grep -i gender spacy/symbols.*
+grep -i gender spacy/symbols.p*
+sudo python3 setup.py install
+git diff
+vi spacy/morphology.pxd 
+vi spacy/morphology.pyx 
+git checkout master
+git checkout -b animacy-morphology
+git add spacy/morphology.p*
+git commit -m 'fix typo/missing here too'
+git push mine animacy-morphology 
+less spacy/attrs.pxd 
+less spacy/attrs.pyx 
+less spacy/lang/pl/
+find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'|xargs grep -i prepcase
+less spacy/attrs.cpp 
+less spacy/attrs.pxd 
+less spacy/attrs.pyx 
+git diff
+git checkout master
+git pull origin master
+git checkout -b prepcase
+git add spacy/attrs.pyx 
+vi spacy/attrs.pxd 
+git commit -m 'missing PrepCase attribute'
+git push mine prepcase 
+sudo python3 setup.py install
+less /tmp/spa.py 
+sudo python3 setup.py install
+less /tmp/spa.py 
+git pull origin master
+git branch
+git checkout master
+git pull origin master
+git push mine master 
+sudo python3 setup.py install
+vi spacy/lang/pl/tokenizer_exceptions.py 
+git diff
+vi spacy/lang/pl/tokenizer_exceptions.py 
+vi spacy/lang/pl/tag_map.py 
+vi spacy/lang/pl/tokenizer_exceptions.py 
+git diff
+rm ~/Pictures/Screenshot_20180218_210057.png 
