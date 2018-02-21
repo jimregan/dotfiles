@@ -1,13 +1,3 @@
-less /tmp/spa.py 
-python3 /tmp/spa.py 
-ls
-cd /tmp/
-python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
-ls udpl/
-python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-dev.conllu /tmp/udpl/
-python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-test.conllu /tmp/udpl/
-#python3 -m spacy train pl 
-mkdir model
 python3 -m spacy train pl /tmp/model /tmp/data/train.json -n 5
 #python3 -m spacy train pl /tmp/model /tmp/data/train.json /tmp/data/dev -n 5
 ls udpl/
@@ -1998,3 +1988,13 @@ youtube-dl https://www.youtube.com/watch?v=YaLlmGftPdA
 wget https://www.youtube.com/watch?v=1zydx_rJIB0
 youtube-dl https://www.youtube.com/watch?v=1zydx_rJIB0
 mv AT\ Scoil\ agus\ brú\ Antoin\ xvid-1zydx_rJIB0.mp4 watch\?v\=1zydx_rJIB0 ../UC3oTt_tHTu8RoExaxhoChuA/
+cd /tmp/wesht/
+cp ~/Downloads/Westirishfolktal00larmuoft_raw_0095.jpg .
+cd ~/disk/Playing/
+git clone https://github.com/ufal/udpipe
+cd udpipe/
+ls
+less INSTALL 
+cd src
+ls
+make
