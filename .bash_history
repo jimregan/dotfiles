@@ -1,38 +1,3 @@
-git pull
-vi ponc.pl 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F1*
-git push
-git commit -m git-mw
-git push
-less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F16.mw 
-less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw 
-less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw 
-less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw 
-cp Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw 
-vi ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw 
-vi ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F1*
-git commit -m git-mw
-git push
-grep '"' *
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F21.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F20.mw 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F2*
-git commit -m git-mw
-git push
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw 
-vi ponc.pl 
-less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw 
-less Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F24.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F25.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F26.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F25.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F27.mw 
-vi Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F28.mw 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F2*
 git commit -m git-mw
 git push
 ls
@@ -1998,3 +1963,38 @@ git status
 git commit -m 'original files'
 less festvox/number_decl.scm 
 less festvox/cstr_pl_em_diphone.scm 
+cd ..
+mkdir merlin-etc
+cd merlin
+ls
+git pull origin master
+less misc/scripts/voice_conversion/dtw_aligner_festvox.py 
+less misc/scripts/voice_conversion/align_feats.py 
+less misc/scripts/voice_conversion/dtw_aligner.py 
+cd ..
+git clone https://github.com/CSTR-Edinburgh/magphase.git
+git clone https://github.com/google/REAPER.git
+cd REAPER/
+ls
+cmake .
+make
+ls
+#./reaper -i ../vctk-corpus/VCTK-Corpus/wav48/p
+less ../vctk-corpus/VCTK-Corpus/speaker-info.txt 
+./reaper -i ../vctk-corpus/VCTK-Corpus/wav48/p351/p351_140.wav -f p351_140.f0 -p p351_140.pm -a
+ls
+less p351_140.f0 
+less p351_140.pm 
+./reaper -h
+cd ..
+ls lip-r
+git clone https://github.com/astorfi/lip-reading-deeplearning
+ls
+mkdir micheal
+cd micheal/
+find .. -name dl.sh
+cp ../youtube-pl/dl.sh .
+sh dl.sh j0vswwsG8kk
+sh dl.sh https://www.youtube.com/watch?v=j0vswwsG8kk
+ls
+grep 'Creative Comm' watch\?v\=*
