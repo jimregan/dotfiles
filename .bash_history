@@ -1,70 +1,3 @@
-cmake ..
-ls
-rm -rf *
-cd ..
-cmake .
-grep cxx_ CMakeLists.txt 
-git status
-git stash
-rm CMakeCache.txt xeusConfig.cmake
-rm xeusConfigVersion.cmake 
-rm -rf CMake
-rm -rf CMakeFiles/
-git status
-vi CMakeLists.txt 
-cmake .
-cmake -v
-cmake --version
-git status
-git stash
-rm CMakeCache.txt 
-rm -rf CMakeFiles/
-rm xeusConfig.cmake xeusConfigVersion.cmake 
-mkdir build
-cd build/
-ls
-cmake ..
-make
-ls
-rm -rf *
-vi ../CMakeLists.txt 
-cmake ..
-less ../CMakeLists.txt 
-apt-cache search libuuid
-sudo apt-get install uuid-dev
-ls
-rm -rf *
-cmake ..
-make
-ls
-rm -rf *
-vi ../CMakeLists.txt 
-ls
-cmake ..
-make
-rm -rf *
-vi ../CMakeLists.txt 
-cmake ..
-make
-vi ../CMakeLists.txt 
-grep 11 ../../xtl/CMakeLists.txt 
-grep _ ../../xtl/CMakeLists.txt 
-grep std_ ../../xtl/CMakeLists.txt 
-ls
-rm -rf *
-cmake ..
-make
-less Makefile 
-cmake
-ls
-make
-vi /home/jim/disk/Playing/xeus/src/xauthentication.cpp
-make
-vi /home/jim/disk/Playing/xeus/src/xauthentication.cpp
-mkae
-make
-sudo make install
-cd ../../xeus-cling/
 ls
 mkdir build
 cd build/
@@ -1998,3 +1931,70 @@ grep ism cmudict.dict
 grep book cmudict.dict 
 grep sow cmudict.dict 
 grep source cmudict.dict 
+cd ../speech-syn/
+ls
+cd Software/
+ls
+cd hts/
+ls
+less tcd_gd_anb_hts/INSTALL 
+less tcd_gd_anb_hts/data/README 
+file tcd_gd_anb_hts/data/raw/tcd_gd_anb_0*
+play tcd_gd_anb_hts/data/raw/tcd_gd_anb_000.raw
+less tcd_gd_anb_hts/data/README 
+man play
+play -r 16k tcd_gd_anb_hts/data/raw/tcd_gd_anb_000.raw
+man play
+play -r 16k -e signed -b 8 -c 1 tcd_gd_anb_hts/data/raw/tcd_gd_anb_000.raw
+play -r 16k  -c 1 tcd_gd_anb_hts/data/raw/tcd_gd_anb_000.raw
+man play
+play -r 44100 -b 16 tcd_gd_anb_hts/data/raw/tcd_gd_anb_000.raw
+man play
+less tcd_gd_anb_hts/data/README 
+ls
+less convert_
+less convert_utts.pl 
+less convert_to_raw.pl 
+play -r 16000  tcd_gd_anb_hts/data/raw/tcd_gd_anb_000.raw
+less convert_to_raw.pl 
+less hts_commands 
+ls
+tree
+ls
+less tcd_gd_anb_hts/INSTALL 
+ls tcd_gd_anb_hts/
+ls tcd_gd_anb_hts/data/scp/train.scp 
+less tcd_gd_anb_hts/data/scp/train.scp 
+less tcd_gd_anb_hts/data/COPYING 
+less tcd_gd_anb_hts/data/utts/tcd_gd_anb_014.utt 
+tree tcd_gd_anb_hts/
+ls
+less hts_voices/tcd_gd_anb_000.lab 
+ls
+less tcd_ie_arctic_tim_hts/INSTALL 
+ls ..
+ls ../minimal_pairs/
+ls ../minimal_pairs/findMinimalPairs.py 
+less ../minimal_pairs/findMinimalPairs.py 
+less ../minimal_pairs/pmc.lex 
+less ../minimal_pairs/msf_cork.lex 
+less ../minimal_pairs/anb.lex 
+ls
+ls ..
+ls ../amelia_synth/
+less ../AmeliaThesisExperiments2011/clubs.xml 
+ls ../ltsserver2016/
+less ../ltsserver2016/source/input/jparser.d 
+less ../ltsserver2016/res/rules/lts/gaoth_dobhair.lts 
+less ../ltsserver2016/res/rules/syllabification/strength.txt 
+less ../ltsserver2016/res/rules/lts/conamara.lts 
+less ../ltsserver2016/res/rules/lts/corca_dhuibhne.lts 
+less ../ltsserver2016/res/dictionaries/ga_MU/lexicon_munster.txt 
+less ../ltsserver2016/res/dictionaries/ga_MU/lexicon_multiword_mu.txt 
+less ../ltsserver2016/res/dictionaries/cm/suffixes_list.txt 
+less ../ltsserver2016/res/dictionaries/cm/lexicon_multiword_cm.txt 
+less ../ltsserver2016/res/dictionaries/cm/lexicon_pseudo_comp_cm.txt 
+ls
+ls hts_voices/
+ls hts_voices/tcd_gd_anb_hts_108k/
+file hts_voices/tcd_gd_anb_hts_108k/*
