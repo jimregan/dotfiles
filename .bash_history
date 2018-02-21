@@ -1,12 +1,3 @@
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F114.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F115.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F116.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F11*
-git commit -m git-mw
-git push
-grep '\-$' Page\:Jimín_Mháire_Thaidhg.djvu%2F*
-cd ..
-ls
 mkdir helen
 cd helen/
 echo http://www.ifp.illinois.edu/~vuongle2/helen/ > url
@@ -1998,3 +1989,12 @@ git checkout -b lexicon
 grep "Tiery'ego" pron-data/pronounce-as.*
 vi pron-data/pronounce-as.
 vi pron-data/pronounce-as.tsv 
+cd ~/disk/Playing/kaldi
+cd egs/clarinpl
+ls
+tree
+less data/train_sp_hires/wav.scp 
+echo {a,b}
+echo foo/{a,b}
+echo foo/{,b}
+echo foo/{,b}/c
