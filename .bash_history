@@ -1,22 +1,3 @@
-mkdir helen
-cd helen/
-echo http://www.ifp.illinois.edu/~vuongle2/helen/ > url
-cat url 
-wget http://www.ifp.illinois.edu/~vuongle2/helen/data/annotation.zip
-unzip -l annotation.zip 
-unzip annotation.zip 
-less annotation/999.txt 
-wget http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_1.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_2.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_3.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_4.zip http://www.ifp.illinois.edu/~vuongle2/helen/data/helen_5.zip
-wget http://www.ifp.illinois.edu/~vuongle2/helen/data/trainnames.txt http://www.ifp.illinois.edu/~vuongle2/helen/data/testnames.txt
-ls
-unzip -l helen_1.zip 
-cd ..
-git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git
-cd openpose/
-less README.md 
-bash ubuntu/install_cmake.sh 
-vi ubuntu/install_cmake.sh 
-bash ubuntu/install_cmake.sh 
 ls
 rm cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb 
 cmake .
@@ -1998,3 +1979,22 @@ echo {a,b}
 echo foo/{a,b}
 echo foo/{,b}
 echo foo/{,b}/c
+tail -f tstout 
+tail -f tsterr 
+tail -f tstout 
+tail -f tsterr 
+tail -f tstout 
+less tstout 
+less 1.jsgf 
+less tstout 
+less 1.jsgf 
+less tstout 
+grep -v 1.000 tstout 
+grep -v 1.000 tstout |wc
+less 1.jsgf 
+less tstout 
+head -n 15 tstout 
+head -n 15 tstout |grep 1.0
+head -n 15 tstout |grep 1.0|awk '{print $2 "\t" $3 "\t" $1}'
+head -n 15 tstout |grep 1.0|awk '{print $2 "\t" $3 "\t" $1}' > thing.txt
+audacity 01-robert-louis-stevenson-wyspa-skarbow.mp3
