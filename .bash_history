@@ -1,79 +1,3 @@
-cd 3rdparty/caffe/
-make
-cd ../..#
-cmake
-cmake .
-ls
-make
-ls
-cd ../..
-ls
-cd src/
-ls
-cmake .
-cd ..
-ls
-make
-cmake .
-cmake src
-less doc/installation
-less doc/installation.md 
-cd src/
-ls
-mkdir build
-cd build/
-cmake ..
-les ../../doc/installation.md 
-ls ../../doc/installation.md 
-less ../../doc/installation.md 
-cmake ..
-vi ../CMakeLists.txt 
-cmake ..
-vi ../CMakeLists.txt 
-cd ../openpose/
-ls
-mkdir build 
-cd build/
-cmake ..
-cd ..
-cmake .
-vi CMakeLists.txt 
-find ../.. -name 'Utils*'
-cd ..
-ls
-cd openpose/
-ls
-cp -r ../../cmake .
-cmake .
-rm -rf cmake/
-vi CMakeLists.txt 
-cd ..
-sudo apt-get install cmake-qt-gui
-cmake-gui 
-ls
-cd build/
-ls
-make
-cd ..
-git status
-ls
-cmake-gui 
-cd /tmp/
-cp ~/Downloads/IULA_Spanish_LSP_Treebank.rar .
-unrar x IULA_Spanish_LSP_Treebank.rar 
-unzip resource_IULA\ Spanish\ LSP\ Treebank.conll.zip 
-less IULA_Spanish_LSP_Treebank.conll 
-cd ../..
-ls
-cd Corpora/
-ls
-cd ..
-mv Corpora/ Corpora-old
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Corpora
-ls
-cd Corpora
-ls
-ls scripts/
 ls
 vi s0OZki_PuMg.txt
 ls
@@ -1998,3 +1922,79 @@ ls
 less psout.aud.txt 
 less test.txt
 less test.txt.fa 
+git branch
+git checkout master 
+git checkout -b maori
+mkdir mri
+cd mri/
+ls
+ls ../gle
+less ../gle/gle.wordlist 
+ls
+less ../gle/gle.punc 
+less ../gle_uncial/gle_uncial.bigrams.clean 
+ls
+less mri.punc 
+less mri.bigrams.clean 
+grep '[^A-Za-z]' mri.bigrams.clean 
+vi mri.wordlist 
+vi mri.bigrams.clean 
+grep '[^A-Za-z]' mri.bigrams.clean 
+grep '[^A-Za-z]' mri.bigrams.clean |less
+mv mri.bigrams.clean mri.bigrams
+ls ../gle_uncial/
+less mri.numbers 
+ls
+git add mri.*
+git commit -m 'basic Maori data (wikipedia)'
+git push origin maori 
+cat mri.numbers /tmp/nums 
+cat mri.numbers /tmp/nums |sort|uniq
+cat mri.numbers /tmp/nums |sort|uniq > tmp
+mv tmp mri.numbers 
+git diff
+cat mri.punc /tmp/nums |sort|uniq > tmp
+mv tmp mri.punc 
+git diff
+cat mri.wordlist /tmp/nums |sort|uniq > tmp
+mv tmp mri.wordlist 
+git diff mri.wordlist
+vi mri.wordlist 
+cat mri.bigrams /tmp/nums |sort|uniq > tmp
+mv tmp mri.bigrams 
+git diff mri.bigrams
+git add mri.*
+git commit -m 'update with corpuscrawler-crawled data'
+git push origin maori 
+git log
+git checkout master
+git pull origin master
+cd ..
+git pull origin master
+git cherry-pick 3b6d3914d8f4f62260cdbff05d79fd5c8a3fd07d
+git push origin master
+ls /usr/share/fonts/
+less lit/lit.training_text
+less lit/desired_characters 
+less lit/lit.training_text
+cat lit/lit.training_text|tr ' ' '\n'
+cat lit/lit.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]'
+cat lit/lit.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+cat gle/gle.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+cat pol/pol.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+find . -name '*training_text'
+cat ita/ita.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+cat ron/ron.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+cat swe/swe.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+cat eng/eng.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+cat spa/spa.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
+cat /tmp/maori-extra |sort|uniq
+for i in a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ā Ā Ū Ī ī ū Ō ō Ē ē;do grep $i mri/mri.wordlist |head -n 10 >> /tmp/maori-extra ;done
+less /tmp/maori-extra 
+wc -l /tmp/maori-extra 
+cd mri/
+cp /tmp/maori.tt mri.training_text
+git add mri.training_text 
+git commit -m training_text
+less mri.training_text 
+git push origin master
