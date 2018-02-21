@@ -1,7 +1,3 @@
-rm /tmp/jim_fsa.ps 
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
 ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
 g++ tester.cpp FSA.cpp Node.cpp -o tester
 ./tester 
@@ -1998,3 +1994,7 @@ git clone https://github.com/WDAqua/Qanary
 wget https://www.logainm.ie/scoil/pdf/logainm.ie-scoil2-10-trath-na-gceist.pdf
 ls
 echo https://www.logainm.ie/scoil/pdf/logainm.ie-scoil2-10-trath-na-gceist.pdf >> urls 
+ls
+ls -al merrionstreet.*
+zless merrionstreet.warc.warc.gz 
+zless merrionstreet2.warc.gz 
