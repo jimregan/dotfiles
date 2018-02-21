@@ -1,316 +1,3 @@
-ls
-less npe/nn_model.py
-less npe/util/assets.py
-python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
-vi npe/main.py
-python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
-vi gan/models/ianv1.py
-find . -name *py|xargs grep device
-find . -name *py|xargs grep gpu
-less npe/main.py 
-less gan/__init__.py
-less gan/models/ian.py 
-less gan/models/ianv1.py
-python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
-less gan/models/ianv1.py
-python npe/main.py -w CelebAValid.npz gan/models/ian.py 
-vi gan/models/ian.py
-vi gan/models/ian_simple.py 
-vi gan/models/ian.py
-vi gan/models/ianv1.py
-python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
-python npe/main.py -w CelebAValid.npz ianv1.py 
-python npe/main.py -w CelebAValid.npz gan/models/
-python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
-python npe/main.py -w CelebAValid.npz gan/models/ian.py 
-python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
-vi gan/models/ian_simple.py
-python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
-vi gan/models/ian_simple.py
-python npe/main.py -w CelebAValid.npz gan/models/ian_simple.py 
-vi gan/models/ian_simple.py
-apt-cache search git-mediawiki
-sudo apt-get install git-mediawiki
-cd ../Neural-Photo-Editor
-cd ../Neural-Photo-Editor.orig/
-find . -name '*py'|xargs grep device
-find . -name '*py'|xargs grep -i gpu
-find . -name '*py'|xargs grep -i cpu
-find . -name '*py'|xargs grep True
-find . -name '*py'|xargs grep True|grep -i gpu
-less ~/.vim/.netrwhist 
-less ~/.viminfo 
-ls
-python NPE.py 
-vi NPE.py 
-python NPE.py 
-vi NPE.py 
-cd ../
-cd r9y9/
-ls
-cd ../../
-cd r9y9/
-ls
-git clone https://github.com/r9y9/tacotron_pytorch
-cd ~/disk/Playing/
-ls
-cd cling-run/
-ls
-wget https://raw.githubusercontent.com/root-project/cling/master/tools/packaging/cpt.py
-chmod +x cpt.py
-./cpt.py --check-requirements && ./cpt.py --create-dev-env Debug --with-workdir=./cling-build/
-wget http://www.openslr.org/resources/27/cantab-TEDLIUM-partial.tar.bz2
-ls
-cd ..
-mkdir chatbot
-cd chatbot/
-wget https://msmarco.blob.core.windows.net/msmarco/train_v1.1.json.gz
-zless train_v1.1.json.gz 
-wget https://msmarco.blob.core.windows.net/msmarco/dev_v1.1.json.gz
-cd ..
-mkdir modern-ga
-cd modern-ga/
-vi masalbeagdubh.in
-vi masalbeagdubh.out
-vi masalbeagdubh.in
-vi masalbeagdubh.out
-vi masalbeagdubh.in
-vi masalbeagdubh.out
-vi masalbeagdubh.in
-vi masalbeagdubh.out
-vi masalbeagdubh.in
-vi masalbeagdubh.out
-vi msf1.txt
-cd ~/disk/Playing/vctk-corpus/
-ls
-tar jtvf cantab-TEDLIUM-partial.tar.bz2 
-tar zxvf VCTK-Corpus.tar.gz 
-file VCTK-Corpus/wav48/p376/p376_295.raw
-ls VCTK-Corpus
-less VCTK-Corpus/COPYING 
-less VCTK-Corpus/speaker-info.txt 
-ffplay VCTK-Corpus/wav48/p298/p298_204.wav 
-ffplay VCTK-Corpus/wav48/p298/p298_135.wav 
-ffplay VCTK-Corpus/wav48/p298/p298_140.wav 
-less VCTK-Corpus/speaker-info.txt 
-ffplay VCTK-Corpus/wav48/p295/p295_135.wav 
-ffplay VCTK-Corpus/wav48/p295/p295_140.wav 
-less VCTK-Corpus/speaker-info.txt 
-ffplay VCTK-Corpus/wav48/p245/p245_140.wav 
-ffplay VCTK-Corpus/wav48/p24
-less VCTK-Corpus/speaker-info.txt 
-ffplay VCTK-Corpus/wav48/p288/p288_140.wav 
-ffplay VCTK-Corpus/wav48/p288/p288_135.wav 
-less VCTK-Corpus/speaker-info.txt 
-ffplay VCTK-Corpus/wav48/p283/p283_135.wav 
-ffplay VCTK-Corpus/wav48/p283/p283_140.wav 
-less VCTK-Corpus/speaker-info.txt 
-ffplay VCTK-Corpus/wav48/p351/p351_154.wav 
-ffplay VCTK-Corpus/wav48/p351/p351_119.wav 
-cd /tmp
-unzip ~/Downloads/mollys.game.\(2017\).eng.1cd.\(7232436\).zip 
-lsof
-vi /tmp/asd/spid
-cd ~/disk/Playing/
-cd ga-wikibooks/
-ls
-vi cnocoille.txt
-man csplit
-csplit -h
-csplit --help
-csplit cnocoille.txt '/^<L [0-9]+>$/' '{*}'
-ls
-less xx00 
-vi cnocoille.txt 
-dos2unix cnocoille.txt 
-csplit cnocoille.txt '/<L [0-9]+>/' '{*}'
-ls
-rm xx00 
-man csplit 
-csplit cnocoille.txt '/<L [0-9]+>/{*}'
-csplit cnocoille.txt '/<L [0-9]+>/ {*}'
-csplit cnocoille.txt '/<L [0-9]+>/' '{*}'
-csplit cnocoille.txt '<L [0-9]+>' '{*}'
-csplit --help
-csplit cnocoille.txt '/<L \[0-9\]+>/' '{*}'
-csplit cnocoille.txt '/<L ([0-9])+>/' '{*}'
-csplit cnocoille.txt '/^<L [0-9]+>$/' '{*}'
-csplit cnocoille.txt '/^<L [0-9][0-9]*>$/' '{*}'
-ls
-less xx00 
-less xx01
-less xx02
-less xx03
-less xx69
-less xx68
-less xx67
-less xx66
-less xx65
-less xx64
-less xx63
-less xx62
-less xx63
-less xx61
-less xx60
-less xx61
-less xx01
-less xx31
-less xx21
-less xx26
-less xx24
-less xx01
-#mv xx01 test-mw/w/Page:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu
-ls test-mw/w/
-mv xx01 test-mw/w/Page:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw
-cd test-mw/w/
-git add \"Page\:Cn\\303\\263_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw\" 
-ls
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw 
-git commit -m git-mw
-git push
-less /tmp/dinneen.pl 
-vi ponc.pl
-cat Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw |perl ponc.pl 
-cat Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw |perl ponc.pl  > tmp
-mv tmp Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw 
-git add ./Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7.mw 
-git commit -m ponc
-git push
-ls
-cd ..
-ls
-rm xx00 
-grep II xx*
-vi xx02 
-cat xx02 |perl test-mw/w/ponc.pl |sed -e "s/ ó'n / ó’n /g"
-cat xx02 |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"
-cat xx02 |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F8.mw 
-less xx03 
-cat xx03 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F9.mw 
-vi test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F9.mw 
-vi test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F8.mw 
-less xx04
-cat xx04 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F10.mw
-cat xx05 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F11.mw
-less xx05 
-cat xx06 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F12.mw
-less xx06
-cat xx07 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F13.mw
-cat xx08 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F14.mw
-cat xx09 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F15.mw
-cat xx10 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F16.mw
-cat xx11 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F17.mw
-cat xx12 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F18.mw
-cat xx12 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F19.mw
-less xx13
-less xx14
-less xx15
-less xx16
-less xx17
-less xx13
-cat xx13 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F20.mw
-cat xx14 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F21.mw
-less xx14
-less xx15
-less xx16
-less xx17
-cat xx15 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw
-cat xx16 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw
-cat xx17 |grep -v '^<L ' |perl test-mw/w/ponc.pl |sed -e "s/'/’/g"|tr '(' '[' |tr ')' ']' > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F24.mw
-less ~/niamhbot.pl 
-cat xx15 |grep -v '^<L ' |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw
-cat xx15 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F22.mw
-cat xx16 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F23.mw
-cat xx17 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F24.mw
-cat xx18 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F25.mw
-cat xx19 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F26.mw
-cat xx20 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F27.mw
-cat xx21 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F28.mw
-cat xx22 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F29.mw
-less xx22
-cat xx23 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F31.mw
-cat xx24 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F32.mw
-cat xx25 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F33.mw
-cat xx26 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F34.mw
-cat xx27 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F35.mw
-less xx27 
-cat xx28 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F36.mw
-less xx28
-cat xx29 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F37.mw
-cat xx30 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F38.mw
-cat xx31 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F39.mw
-cat xx32 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F40.mw
-less xx32 
-less xx33
-less xx34
-less xx35
-less xx36
-less xx37
-less xx38
-less xx39
-less xx40
-less xx41
-less xx42
-less xx43
-less xx44
-less xx45
-less xx46
-less xx47
-less xx48
-less xx47
-less xx48
-less xx49
-less xx50
-less xx51
-less xx52
-less xx53
-less xx54
-less xx53
-cp xx53 xx53a
-vi xx53
-vi xx53a
-for i in $(seq 33 53);do cat xx$i |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F$(($i + 8)).mw;done
-cat xx53a |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F62.mw
-less xx54 
-less xx55
-less xx56
-less xx57
-less xx58
-less xx57
-less xx59
-less xx58
-less xx59
-less xx60
-less xx61
-less xx62
-less xx63
-less xx62
-less xx64
-less xx62
-less xx63
-less xx64
-less xx65
-less xx66
-less xx67
-less xx68
-less xx69
-less xx70
-less xx69
-for i in $(seq 54 69);do cat xx$i |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F$(($i + 9)).mw;done
-vi cnuas
-grep '<L' cnuas 
-rm xx*
-csplit cnuas '/^<L [0-9][0-9]*>$/' '{*}'
-ls
-less xx51 
-less xx00 
-less xx01 
-for i in $(seq 1 51);do cat xx$(printf "%02d" $i) |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > Page:Cnuasacht_trágha_-_Sheehan.djvu%2F$(($i + 8)).mw;done
-ls
-less Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F10.mw 
-less Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F1.mw 
-ls
-less Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F9.mw 
 mv Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F* test-mw/w/
 vi jimin
 vi tt
@@ -1998,3 +1685,316 @@ echo ../*sphinx*
 ls ../sphinx-alignment/
 ls ../sphinx-alignment/cmusphinx-alignment-example/zw.out 
 less ../sphinx-alignment/cmusphinx-alignment-example/zw.out 
+less 46.txt 
+less 47.txt 
+ls
+ls -al
+cat 46.txt 
+grep '[' *
+grep '\[' *
+less 97.txt 
+less 99.txt 
+less 100.txt 
+rm 100.txt 
+grep '\[' *
+cat 111.txt 
+cat 112.txt 
+rm 111.txt 
+rm 112.txt 
+grep '\[' *
+less 270.txt 
+cat 270.txt |iconv -f latin1 -t utf8
+cat 270.txt |iconv -f latin1 -t utf8|sed -e 's/\[\)a\]/ă/g'
+cat 270.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
+rm 238.txt 
+ls
+grep '\[' *
+cat 270.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
+cat 238.txt 
+rm 270.txt 
+cat 269.txt 
+cat 269.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
+echo æ|native2ascii -encoding utf8
+echo "\u00e6\u0328"|native2ascii -reverse -encoding utf8
+cat 268.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
+reset
+cat 268.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
+cat 268.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g;s/\[)A\]/Ă/g;s/\[)E\]/Ĕ/g;s/\[)e\]/ĕ/g'
+vi chars.sed
+cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |sed -e 's/\.\.+ */ || /g'
+cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |sed -e 's/[.][.]+ */ || /g'
+cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -e 's/\.\.+ */ || /g;
+cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -ane 's/\.\.+ */ || /g;print'
+cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -ane 's/\.\.+ */ || /g;print'
+vi chars.sed 
+cat 268.txt 
+rm 268.txt 
+cat 269.txt 
+rm 269.txt 
+cat 267.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -ane 's/\.\.+ */ || /g;print'
+rm 271.txt 
+rm 267.txt 
+cat 272.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+cat 272.txt 
+cat 272.txt |iconv -f latin1 -t utf8
+rm 272.txt 
+cat 273.txt 
+cat 274.txt 
+cat 274.txt |iconv -f latin1 -t utf8
+cat 274.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+grep '\[' *
+cat 115.txt 
+rm 115.txt 
+grep '\[' *
+cat 116.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+rm 116.txt 
+grep '\[' *
+grep '\[' *txt
+cat 49.txt 
+rm 49.txt 
+grep '\[' *txt
+cat 77.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+cat 48.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+cat 47.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+cat 46.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
+rm 46.txt 
+rm 47.txt 
+rm 48.txt 
+rm 49.txt 
+ls
+grep '\*' *
+vi 63.txt 
+vi 78.txt 
+for i in *txt;do dos2unix $i;done
+vi 78.txt 
+grep '\*' *
+vi 143.txt 
+vi 144.txt 
+vi 241.txt 
+vi 53.txt 
+vi 54.txt 
+vi 58.txt 
+vi 63.txt 
+vi 65.txt 
+rm 65.txt 
+vi 66.txt 
+cat 67.txt 
+rm 67.txt 
+cat 68.txt 
+vi 69.txt 
+vi 70.txt 
+vi 71.txt 
+vi 72.txt 
+vi 73.txt 
+vi 74.txt 
+vi 78.txt 
+vi 80.txt 
+vi 82.txt 
+cat 81.txt 
+rm 81.txt 
+vi 83.txt 
+ls ~/*bot*pl
+cp ~/niamhbot.pl .
+vi niamhbot.pl 
+less ~/niamhbot.pl 
+ls 8*
+grep '\[' 80.txt 
+grep '\*' 80.txt 
+perl niamhbot.pl 80.txt 
+cat 80.txt 
+rm 80.t
+perl niamhbot.pl 82.txt 
+cat 82.txt 
+rm 82.txt 
+perl niamhbot.pl 50.txt 
+cat 50.txt 
+rm 50.txt 
+perl niamhbot.pl 51.txt 
+grep '\[' 5*
+grep '\*' 5*
+for i in $(seq 52 59);do perl niamhbot.pl $i;sleep 5;done
+for i in $(seq 52 59);do perl niamhbot.pl $i.txt;sleep 5;done
+grep '\[' 6*
+vi 61.txt 
+vi 60.txt 
+vi 62.txt 
+vi 63.txt 
+for i in $(seq 60 63);do perl niamhbot.pl $i.txt;sleep 5;done
+vi 64.txt 
+vi 65.txt 
+vi 66.txt 
+for i in 64 66;do perl niamhbot.pl $i.txt;sleep 5;done
+for i in 209;do perl niamhbot.pl $i.txt;sleep 5;done
+rm 209.txt 
+vi 208.txt 
+vi 207.txt 
+for i in 207 208;do perl niamhbot.pl $i.txt;sleep 5;done
+rm 207.txt 
+rm 208.txt 
+rm 209.txt 
+cat 69.txt 
+cat 68.txt 
+cat 67.txt 
+grep '\[' 7*
+for i in $(seq 68 79);do perl niamhbot.pl $i.txt;sleep 5;done
+#for i in $(seq 83 99);do perl niamhbot.pl $i.txt;sleep 5;done
+grep '\[' 8*
+vi 85.txt 
+vi 83.txt 
+vi 86.txt 
+vi 88.txt 
+echo '{{nop}}' >> 89.txt 
+vi 89.txt 
+echo '{{nop}}' >> 90.txt 
+echo '{{nop}}' >> 93.txt 
+echo '{{nop}}' >> 94.txt 
+vi 96.txt 
+for i in $(seq 83 99);do perl niamhbot.pl $i.txt;sleep 5;done
+vi 101.txt 
+perl niamhbot.pl 210.txt 
+rm 210.txt 
+ls
+vi 101.txt 
+perl niamhbot.pl 101.txt 
+perl niamhbot.pl 102.txt 
+perl niamhbot.pl 103.txt 
+tail 104.txt 
+vi 104.txt 
+perl niamhbot.pl 104.txt 
+vi 104.txt 
+perl niamhbot.pl 104.txt 
+perl niamhbot.pl 105.txt 
+less 106.txt 
+perl niamhbot.pl 106.txt 
+for i in $(seq 107 110);do perl niamhbot.pl $i.txt;sleep 5;done
+perl niamhbot.pl 108.txt 
+perl niamhbot.pl 109.txt 
+perl niamhbot.pl 113.txt 
+perl niamhbot.pl 114.txt 
+vi 117.txt 
+perl niamhbot.pl 117.txt 
+perl niamhbot.pl 118.txt 
+echo '{{nop}}' >> 119.txt 
+perl niamhbot.pl 119.txt 
+perl niamhbot.pl 120.txt 
+perl niamhbot.pl 121.txt 
+grep '\[' 12*
+grep '\[' 13*
+grep '\[' 14*
+vi 147.txt 
+grep '\[' 15*
+grep '\[' 17*
+grep '\[' 16*
+vi 166.txt 
+grep '\*' 1[4-6]*
+for i in $(seq 122 169);do perl niamhbot.pl $i.txt;sleep 5;done
+grep '\[' 17*
+vi 170.txt 
+vi 179.txt 
+grep '\*' 17*
+vi 172.txt 
+grep '\*' 18*
+vi 183.txt 
+vi 184.txt 
+grep '\[' 18*
+grep '\[' 19*
+grep '\*' 19*
+vi 193.txt 
+for i in $(seq 170 199);do perl niamhbot.pl $i.txt;sleep 5;done
+grep — 1*
+vi 232.txt 
+vi 264.txt 
+perl niamhbot.pl 264.txt 
+for i in $(seq 179 199);do perl niamhbot.pl $i.txt;sleep 5;done
+grep '\[' 2*
+grep '\*' 2*
+grep '\[' 20*
+grep '\*' 20*
+for i in $(seq 200 206);do perl niamhbot.pl $i.txt;sleep 5;done
+perl niamhbot.pl 289.txt 
+less 273.txt 
+perl niamhbot.pl 273.txt 
+perl niamhbot.pl 288.txt 
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page6-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 6.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page9-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 9.jpg
+grep '\*' 21*
+grep '\[' 21*
+vi 217.txt 
+for i in $(seq 211 219);do perl niamhbot.pl $i.txt;sleep 5;done
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page211-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 211.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page30-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 30.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page31-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 31.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page33-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 33.jpg
+vi 220.txt 
+perl niamhbot.pl 220.txt 
+for i in *jpg;do cp $i tmp.jpg; convert tmp.jpg -level 49% -type Grayscale $i;done
+ls
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page33-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 33.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page31-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 31.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page30-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 30.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page9-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 9.jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page6-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 211.jpg
+ls *jpg
+wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page211-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 211.jpg
+for i in *jpg;do cp $i tmp.jpg; convert $i -level 49% -type Grayscale West_Irish_folk-tales_and_romances_-_William_Larminie-ornament-p$i;done
+for i in *jpg;do cp $i tmp.jpg; convert $i  -level-colors 'rgb(40,40,40),rgb(180,180,160)' -type Grayscale West_Irish_folk-tales_and_romances_-_William_Larminie-ornament-p$i;done
+rm *jpg
+ls
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0006.jp2&ext=jpg' -O 6.jpg
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0009.jp2&ext=jpg' -O 9.jpg
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0030.jp2&ext=jpg' -O 30.jpg
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0031.jp2&ext=jpg' -O 31.jpg
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0033.jp2&ext=jpg' -O 33.jpg
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0270.jp2&ext=jpg' -O 270.jpg
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0041.jp2&ext=jpg' -O 41.jpg
+wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0042.jp2&ext=jpg' -O 42.jpg
+wget "https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0062.jp2&ext=jpg" -O 62.jpg
+wget "https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0063.jp2&ext=jpg" -O 63.jpg
+ls
+grep '\[' 21*
+grep '\[' 22*
+vi 229.txt 
+grep '\*' 22*
+for i in $(seq 221 229);do perl niamhbot.pl $i.txt;sleep 5;done
+grep '\*' 23*
+grep '\[' 23*
+vi 230.txt 
+vi 236.txt 
+for i in $(seq 230 239);do perl niamhbot.pl $i.txt;sleep 5;done
+grep '\[' 24*
+less 241.txt 
+perl niamhbot.pl 240.txt 
+less 241.txt 
+less 242.txt 
+vi 243.txt 
+grep '\[' 24*
+grep '\*' 24*
+vi 249.txt 
+vi 250.txt 
+vi 249.txt 
+grep '\*' 25*
+vi 253.txt 
+grep '\*' 25*
+vi 255.txt 
+grep '\[' 25*
+vi 251.txt 
+grep '\*' 26*
+grep '\[' 26*
+for i in $(seq 241 263);do perl niamhbot.pl $i.txt;sleep 5;done
+vi 265.txt 
+vi 266.txt 
+for i in 265 266;do perl niamhbot.pl $i.txt;sleep 5;done
+grep '\*' 27[5-9]*
+vi 276.txt 
+grep '\[' 27[5-9]*
+grep '\*' 27[5-9]*
+vi 277.txt 
+grep '\*' 28*
+vi 287.txt 
+vi 282.txt 
+for i in $(seq 274 287);do perl niamhbot.pl $i.txt;sleep 5;done
+cat dinneen |perl dinneen.pl 
+cat dinneen |perl dinneen.pl > dinout
+sudo apt-get install gimp
+wget "https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0067.jp2&ext=jpg" -O 67.jpg
