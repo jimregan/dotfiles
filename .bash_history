@@ -1,10 +1,3 @@
-cat /tmp/snuv-toks |uconv -x pl-pl_FONIPA|uconv -x IPA-XSampa
-cd ~/disk/Playing/
-git clone https://github.com/cmu-mtlab/label-collapse.git
-cd label-collapse/
-ls
-sh build.sh 
-ls
 ls bin/
 less make-maps-example.sh 
 ls
@@ -1998,3 +1991,10 @@ ls
 svn up
 find . -name tcd_rc_pmc_TEST_multisyn
 svn ls http://phoneticsrv3.lcs.tcd.ie/svn/
+cd ~/disk/Playing/
+ls
+git clone https://github.com/NYPL/oral-history.git
+git clone https://github.com/NYPL/transcript-editor
+cd transcript-editor/
+ls
+git pull origin master
