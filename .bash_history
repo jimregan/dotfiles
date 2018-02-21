@@ -1,16 +1,3 @@
-git config remote.origin.mwPassword 'lnnzh021'
-git add Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw 
-git commit -m 'trying out git-mw'
-git push 
-git log
-cd /tmp/wesht/
-convert westirishfolktal00larmuoft_raw_0062.jpg -level 49% -type Grayscale tmp.jpg
-mv tmp.jpg westirishfolktal00larmuoft_raw_0062.jpg 
-convert westirishfolktal00larmuoft_raw_0062.jpg -level 70% -type Grayscale tmp.jpg
-mv tmp.jpg westirishfolktal00larmuoft_raw_0062.jpg 
-cd /tmp
-wget http://festvox.org/cmu_arctic/packed/cmu_us_rms_arctic.tar.bz2
-mkdir apwiki
 cd apwiki/
 git init .
 git clone mediawiki::http://wiki.apertium.org
@@ -1998,3 +1985,16 @@ vi spacy/lang/pl/tag_map.py
 vi spacy/lang/pl/tokenizer_exceptions.py 
 git diff
 rm ~/Pictures/Screenshot_20180218_210057.png 
+cd ../
+cd spotlight/
+ls
+git clone https://github.com/dbpedia-spotlight/model-quickstarter
+git clone https://github.com/diffbot/wikistatsextractor
+cd ../wolne-lektury-audio-corpus/polimorf/
+ls
+grep pn\. polimorf.tab 
+grep pn. polimorf.tab 
+grep pn polimorf.tab |grep ponied
+grep itd polimorf.tab 
+grep w polimorf.tab 
+less polimorf.tab 
