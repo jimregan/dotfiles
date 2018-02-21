@@ -1,41 +1,3 @@
-mv Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F* test-mw/w/
-vi jimin
-vi tt
-cat tt |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F8.mw
-vi jimin 
-csplit jimin '/^<L [0-9][0-9]*>$/' '{*}'
-rm xx*
-csplit jimin '/^<L [0-9][0-9]*>$/' '{*}'
-ls
-cat xx00 
-cat xx01
-cat xx01 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F9.mw
-cat xx02 |perl test-mw/w/ponc2.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw
-cat xx02 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw
-less xx07 
-less xx06
-less xx05
-less xx04
-less xx06
-less jimin 
-cat xx03 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F11.mw
-cat xx04 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F12.mw
-less xx06
-cat xx06 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F15.mw
-cat xx07 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F16.mw
-cat xx08 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F17.mw
-cat xx09 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F18.mw
-less xx09 
-cat xx10 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F19.mw
-less xx10
-cat xx11 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F20.mw
-cat xx12 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F21.mw
-cat xx13 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F22.mw
-cat xx14 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F23.mw
-cat xx15 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F24.mw
-cat xx16 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F25.mw
-cat xx17 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F26.mw
-cat xx18 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F27.mw
 cat xx19 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F28.mw
 cat xx20 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F29.mw
 cat xx21 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F30.mw
@@ -1998,3 +1960,41 @@ cat dinneen |perl dinneen.pl
 cat dinneen |perl dinneen.pl > dinout
 sudo apt-get install gimp
 wget "https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0067.jp2&ext=jpg" -O 67.jpg
+cd ~/disk/Playing/wolne-lektury-audio-corpus/
+ls
+ffplay audio/042-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/043-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/044-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/047-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/048-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/049-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/050-autor-nieznany-piesn-o-rolandzie.mp3 
+grep hiacyntów text/*
+ffplay audio/051-autor-nieznany-piesn-o-rolandzie.mp3 
+less text/piesn-o-rolandzie.txt-51.txt
+ffplay audio/052-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/054-autor-nieznany-piesn-o-rolandzie.mp3 
+ls
+vi trbits/google-asr/
+vi trbits/google-asr/054-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+vi trbits/google-asr/055-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+ffplay audio/055-autor-nieznany-piesn-o-rolandzie.mp3 
+vi trbits/google-asr/056-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+ffplay audio/059-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/060-autor-nieznany-piesn-o-rolandzie.mp3 
+vi trbits/google-asr/060-autor-nieznany-piesn-o-rolandzie.mp3.txt 
+ffplay audio/061-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/063-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/064-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/065-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/285-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/068-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/069-autor-nieznany-piesn-o-rolandzie.mp3 
+ffplay audio/077-autor-nieznany-piesn-o-rolandzie.mp3 
+grep pójde text/*77*
+grep pójd text/*77*
+grep pójd text/piesn-o-rolandzie.txt-77.txt
+less text/piesn-o-rolandzie.txt-77.txt
+grep '[-pojadę-] {+pójdę+}' /tmp/allwd 
+grep '[\-pojadę\-] {+pójdę+}' /tmp/allwd 
+grep '\[\-pojadę\-\] {+pójdę+}' /tmp/allwd 
