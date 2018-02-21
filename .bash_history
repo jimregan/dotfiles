@@ -1,11 +1,3 @@
-cat xx26 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F36.mw
-cat xx27 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F37.mw
-cat xx28 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F38.mw
-less xx29
-cat xx29 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F39.mw
-cat xx30 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F40.mw
-cat xx31 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F41.mw
-cat xx32 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F42.mw
 cat xx33 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F43.mw
 cat xx34 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F44.mw
 cat xx35 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F45.mw
@@ -1998,3 +1990,11 @@ for i in $(seq 42 96);do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www
 for i in $(seq 97 285);do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=1"  -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,pl;q=0.8,ga;q=0.7' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.pgdp.net/c/tools/project_manager/page_detail.php?project=projectID5a08b57239bd1&show_image_size=0' -H 'Cookie: DP_Session=dqigirsd6962ilmgjr5cdj9976; phpbb3_5l338_u=137232; phpbb3_5l338_k=19ea6cbb8720b497; phpbb3_5l338_sid=5f3e69f6ca9c447dbb79eae285b6a0f4' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed | sed -e 's/--/—/g' > $pg.txt;done
 for i in $(seq 238);do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=1"  -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,pl;q=0.8,ga;q=0.7' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.pgdp.net/c/tools/project_manager/page_detail.php?project=projectID5a08b57239bd1&show_image_size=0' -H 'Cookie: DP_Session=dqigirsd6962ilmgjr5cdj9976; phpbb3_5l338_u=137232; phpbb3_5l338_k=19ea6cbb8720b497; phpbb3_5l338_sid=5f3e69f6ca9c447dbb79eae285b6a0f4' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed | sed -e 's/--/—/g' > $pg.txt;done
 for i in 234 238;do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=1"  -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,pl;q=0.8,ga;q=0.7' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.pgdp.net/c/tools/project_manager/page_detail.php?project=projectID5a08b57239bd1&show_image_size=0' -H 'Cookie: DP_Session=dqigirsd6962ilmgjr5cdj9976; phpbb3_5l338_u=137232; phpbb3_5l338_k=19ea6cbb8720b497; phpbb3_5l338_sid=5f3e69f6ca9c447dbb79eae285b6a0f4' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed | sed -e 's/--/—/g' > $pg.txt;done
+wget https://dumps.wikimedia.org/gawiki/20180201/gawiki-20180201-pages-articles-multistream.xml.bz2
+cd ../
+mkdir voxforge
+ls
+cd voxforge/
+ls
+echo http://goofy.zamia.org/voxforge/en/ >> models.dir
+wget http://goofy.zamia.org/voxforge/en/srilm-voxforge-en-r20171030.arpa.gz http://goofy.zamia.org/voxforge/en/sequitur-voxforge-en-r20171030.gz http://goofy.zamia.org/voxforge/en/kaldi-chain-voxforge-en-r20171129.tar.xz http://goofy.zamia.org/voxforge/en/cmusphinx-cont-voxforge-en-r20171030.tar.xz http://goofy.zamia.org/voxforge/en/cmusphinx-ptm-voxforge-en-r20171030.tar.xz 
