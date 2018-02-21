@@ -1,81 +1,3 @@
-git add Page\:Cnó_coilleadh_craobhaighe_-_Sheehan.djvu%2F7* 
-git commit -m git-mw
-git push
-vi s11
-ls
-git add Page\:Cnuasacht_trágha_-_Sheehan.djvu%2F*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F8.mw 
-rm Page\:Jimín_Mháire_Thaidhg.djvu%2F8.mw 
-cp ponc2.pl ponc-jimin.pl
-vi ponc-jimin.pl 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F9.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F9.mw 
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw 
-vi ponc-jimin.pl 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F10.mw 
-git commit -m git-mw
-git push
-git log
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F11.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F12.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F11.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F12.mw 
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F17.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F16.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F15.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F1*
-git commit -m git-mw
-git push
-vi ponc-jimin.pl 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F18.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F19.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F20.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F21.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F1*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F2*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F22
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F22.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F23.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F24.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F25.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F2*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F26.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F27.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F28.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F29.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F2*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F33.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F34.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F35.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F36.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F37.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F39.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F41.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F3*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
 git commit -m git-mw
 git push
 vi Page\:Jimín_Mháire_Thaidhg.djvu%2F42.mw 
@@ -1998,3 +1920,81 @@ less testnum.pl
 perl algdiff.pl 
 git add algdiff.pl merge-google-with-silences.pl 
 git commit -m blahh
+cd ..
+git clone https://github.com/tesseract-ocr/langdata.git
+cd langdata/
+ls
+git checkout -b ryanfb-update-lat master
+git pull https://github.com/ryanfb/langdata.git update-lat
+git status
+vi lat/lat.wordlist 
+cat lat/lat.wordlist |sort |uniq > tmp
+mv tmp lat/lat.wordlist 
+git diff
+git stash
+git diff
+vi lat/lat.wordlist 
+git status
+vi lat/lat.wordlist 
+git stash
+vi lat/lat.wordlist 
+git branch
+git pull https://github.com/ryanfb/langdata.git update-lat
+git diff
+git fsck --unreachable | grep commit | cut -d" "  -f3 | xargs git log 
+git fsck --unreachable | grep commit | cut -d" "  -f3 | xargs git log --no-walk --grep=WIP --grep="index on"
+git log
+git reset lat/lat.wordlist --
+git log
+git reset befed5697d5fd3cd94a08e88dfd80f74931c262a --
+git log
+git status
+git stash
+git log
+git branch
+git checkout master
+git branch -D ryanfb-update-lat 
+git pull origin master 
+git checkout -b ryanfb-update-lat master
+git pull https://github.com/ryanfb/langdata.git update-lat
+rm lat/lat.config 
+rm lat/lat.unicharset 
+rm lat/lat.unicharambigs 
+rm lat/lat.xheights 
+git pull https://github.com/ryanfb/langdata.git update-lat
+vi lat/lat.wordlist 
+git diff
+grep '<' lat/lat.wordlist 
+git add lat/lat.wordlist 
+git commit -m 'lazy merge res'
+git log
+git push origin ryanfb-update-lat
+cat lat/lat.wordlist |sort |uniq > tmp
+mv tmp lat/lat.wordlist 
+git diff
+vi lat/lat.wordlist 
+git add lat/lat.wordlist 
+git commit -m 'sort|uniq'
+git push origin ryanfb-update-lat
+git checkout master 
+git fetch origin
+git checkout -b gcode_issue1392 origin/gcode_issue1392
+git merge master
+git status
+git diff
+less git checkout -b gcode_issue1392 origin/gcode_issue1392
+less vie/vie.wordlist.clean
+vi vie/vie.wordlist.clean
+git add vie/vie.wordlist.clean
+git commit -m merge
+git log
+git branch
+git push origin gcode_issue1392 
+ls
+ls lit/lit.word.bigrams 
+less lit/lit.word.bigrams 
+ls ../tesseract
+ls ../tesseract/contrib/genlangdata.pl 
+less ../tesseract/contrib/genlangdata.pl 
+ks
+less ../tesseract/contrib/genlangdata.pl 
