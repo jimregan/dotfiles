@@ -1,8 +1,3 @@
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
 ./tester_pictures 
 ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
 g++ tester.cpp FSA.cpp Node.cpp -o tester
@@ -1998,3 +1993,8 @@ ls
 ls -al merrionstreet.*
 zless merrionstreet.warc.warc.gz 
 zless merrionstreet2.warc.gz 
+cd ~/disk/Playing/
+git clone https://github.com/AI-TOOLKIT/VoiceBridge.git
+cd VoiceBridge/
+ls
+ls Redistributables/
