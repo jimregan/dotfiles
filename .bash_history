@@ -1,7 +1,3 @@
-cling --help
-cling --help|grep 14
-cling -std=c++14
-cd ..
 zless train_v1.1.json.gz 
 zless ~/Downloads/cx-corpora.en2pl.html.json.gz 
 ls
@@ -1998,3 +1994,7 @@ cp ga_UL/seanchas_rann_na_feirste/corpus/wav/02_oireachtas_na_ndeise_dodm_00* as
 ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0001.wav 
 ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0002.wav 
 ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0003.wav 
+ls -al *vtt
+less '16RNC -187 Kennedy-Humphrey Debate, 1960 WV Primary-oFk7dgS8V18.en.vtt'
+less '16RNC -187 Kennedy-Humphrey Debate, 1960 WV Primary-oFk7dgS8V18.ga.vtt'
+less ~/Downloads/16RNC\ -187\ Kennedy-Humphrey\ Debate\,\ 1960\ WV\ Primary-oFk7dgS8V18.en\ \[SubtitleTools.com\].srt 
