@@ -1,17 +1,3 @@
-ls /tmp/*ps
-ps2pdf /tmp/jim_fsa.ps 
-ls /tmp/*ps
-ls /tmp/*pdf
-file /tmp/jim_fsa.ps 
-man ps2pdf
-file /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-ps2pdf /tmp/jim_fsa.ps /tmp/jim_fsa.pdf
-mv jim_fsa.pdf /tmp/
-ls
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-less tester.
-less tester.cpp 
-rm /tmp/jim_fsa.dot 
 rm /tmp/jim_fsa.ps 
 ./tester 
 g++ tester.cpp FSA.cpp Node.cpp -o tester
@@ -1998,3 +1984,17 @@ wget https://github.com/dialogflow/api-ai-english-asr-model/releases/download/1.
 unzip -l api.ai-kaldi-asr-model.zip 
 unzip api.ai-kaldi-asr-model.zip 
 less api.ai-kaldi-asr-model/LICENCE 
+cd ~/disk/Playing/
+mkdir ga-qa
+cd ga-qa/
+echo https://gaeilgelecheile.weebly.com/ceisteanna-traacuteth-na-gceist.html >> urls
+lynx -dump https://gaeilgelecheile.weebly.com/ceisteanna-traacuteth-na-gceist.html
+lynx -dump https://gaeilgelecheile.weebly.com/ceisteanna-traacuteth-na-gceist.html > 1.txt
+less 1.txt 
+git clone https://github.com/ag-sc/QALD
+git clone https://github.com/brmson/yodaqa
+git clone https://github.com/kusha/qas
+git clone https://github.com/WDAqua/Qanary
+wget https://www.logainm.ie/scoil/pdf/logainm.ie-scoil2-10-trath-na-gceist.pdf
+ls
+echo https://www.logainm.ie/scoil/pdf/logainm.ie-scoil2-10-trath-na-gceist.pdf >> urls 
