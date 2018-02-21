@@ -1,58 +1,3 @@
-python npe/main.py -w gan/assets/CelebAValid.npz .
-less npe/main.py 
-less gan/models/ian.py 
-ls
-find . -name '*config*'
-less npe/main.py 
-less gan/models/ian.py 
-less gan/models/__init__.py 
-less npe/main.py 
-less gan/api.py 
-python npe/main.py -w CelebAValid.npz gan/assets/
-ls
-less docker/npe-demo/Dockerfile 
-less docker/npe-demo/docker-entrypoint.sh 
-less docker/npe-demo/gdrive_dl.py 
-less docker/cuda-theano/Dockerfile 
-python npe/main.py 
-python npe/main.py --stub
-python npe/main.py -w CelebAValid.npz gan/assets/
-grep gan npe/nn_model.py
-less npe/nn_model.py
-grep from_tanh  gan/util/*
-lessgan/util/__init__.py 
-less gan/util/__init__.py 
-vi npe/nn_model.py
-python npe/main.py -w CelebAValid.npz gan/assets/
-ls
-cd npe
-ls
-python main.py 
-python main.py -w CelebAValid.npz gan/assets/
-vi nn_model.py
-python main.py -w CelebAValid.npz gan/assets/
-cd ..
-ls
-less README.md 
-cd npe
-vi nn_model.py
-python main.py -w CelebAValid.npz gan/assets/
-vi nn_model.py
-python main.py -w CelebAValid.npz gan/assets/
-ls
-cd ..
-export PYTHONPATH="$PYTHONPATH:$(pwd)"
-python npe/main.py -w CelebAValid.npz gan/assets/
-find . -name '*py'|xargs grep CFG
-python npe/main.py -w CelebAValid.npz gan/models/ianv1.py 
-vi npe/main.py 
-grep gpu gan/models/ian*
-vi gan/models/ianv1.py
-find . -name '*py'|xargs grep gpu|grep True
-find . -name '*py'|xargs grep gpu
-find . -name '*py'|xargs grep -i gpu
-vi npe/main.py 
-vi gan/models/ianv1.py
 ls
 less npe/nn_model.py
 less npe/util/assets.py
@@ -1998,3 +1943,58 @@ find wolne-lektury-audio-corpus -name '*pl' |xargs grep -i grammar
 find msf-asr/ -name '*pl' |xargs grep -i grammar
 vi ~/kashubian 
 vi ~/.scratch/current-tabs3
+cd ~/disk/Playing/
+mkdir 
+agfoghlaimgaeilge
+mkdir agfoghlaimgaeilge
+cd agfoghlaimgaeilge/
+ls
+less ../youtube-pl/dl.sh 
+cp ../youtube-pl/dl.sh .
+vi dl.sh 
+sh dl.sh https://www.youtube.com/watch?v=ntnwpHpssz4
+sh dl.sh https://www.youtube.com/watch?v=gvgkO40XcZw
+sh dl.sh https://www.youtube.com/watch?v=NbiGTCc7YaY
+ls
+grep 'href="/watch' /tmp/sraith
+grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print $1}'
+grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'
+grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'|sort|uniq
+grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'|sort|uniq|awk -F'&' '{print $1}'
+grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'|sort|uniq|awk -F'&' '{print $1}' > agfoghlaimgaeilge
+wget -i agfoghlaimgaeilge 
+ls *.1
+rm *.1
+ls
+cat agfoghlaimgaeilge 
+cat agfoghlaimgaeilge |awk -F= '{print $NF}'
+while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
+cat agfoghlaimgaeilge|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
+cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
+#cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
+vi dl.sh 
+#cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
+cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
+ls
+vi /tmp/spa.py
+python3 /tmp/spa.py
+python3 -m spacy download en_core_web_lg
+sudo python3 -m spacy download en_core_web_lg
+vi /tmp/spa.py
+sudo python3 -m spacy download en_core_web_lg
+python3 /tmp/spa.py
+ls
+vi 3BxFehcuHX4.txt
+echo _n8s47Wa5i4 >> copyrighted-original-text
+vi _n8s47Wa5i4.txt
+ls
+wget https://drive.google.com/file/d/0B22sjr42mrVKYi1RWjNTbUV2aHM/view
+rm view 
+ls
+mv ~/Downloads/Sraith\ Pictiúr\ 2015.pdf .
+ls
+man pocketsphinx_batch 
+echo ../*sphinx*
+ls ../sphinx-alignment/
+ls ../sphinx-alignment/cmusphinx-alignment-example/zw.out 
+less ../sphinx-alignment/cmusphinx-alignment-example/zw.out 
