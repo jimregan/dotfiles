@@ -1,60 +1,3 @@
-ls
-cmake .
-cd ..
-apt-cache search zmq
-sudo apt-get install 
-apt-cache search cppzmq
-apt-cache search cryptopp
-apt-cache search crypto++
-apt-cache search crypto++|grep dev
-man svn
-man subversion
-git clone https://github.com/santi-pdp/segan
-cd /tmp/
-tar zxvf ~/Downloads/git-lfs-linux-amd64-2.3.4.tar.gz 
-cd git-lfs-2.3.4/
-sudo sh install.sh 
-sudo bash install.sh 
-git lfs install
-ls
-cd ../Neural-Photo-Editor.orig/
-ls
-less IAN.py 
-grep True *
-ls
-ls -al
-file CelebAValid.npz 
-unzip -l CelebAValid.npz 
-git pull origin master
-ls
-git status
-git reset HEAD .gitattributes
-git reset HEAD .gitignore
-git reset HEAD API.py
-git reset HEAD GANcheckpoints.py
-git reset HEAD *.py
-ls
-git status
-git reset HEAD train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IANv1.npz IAN_simple.py IAN_simple.npz
-ls
-ls -al
-git status
-git checkout -- train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IANv1.npz IAN_simple.py IAN_simple.npz
-ls -al
-git checkout -- train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IANv1.npz IAN_simple.py 
-git checkout -- train_IAN_simple.py train_IAN.py sample_IAN.py pics/.gitignore  metrics_logging.py mask_generator.py layers.py discgen_utils.py README.md NPE.py LICENSE IANv1.py IAN_simple.py 
-ls -al
-git status
-git checkout -- IAN_simple.npz
-grep True *py
-grep True *py|grep -i gpu
-grep True *py|grep -i cpu
-grep False *py|grep -i cpu
-ls
-netstat
-ps aux|grep jupy
-ls
-mkdir test
 cd test/
 jupyter notebook
 cd ~/disk/Playing/cling-run/
@@ -1998,3 +1941,60 @@ ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg 2>&1 |grep Duratio
 ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_* 2>&1 |grep Duration
 for i in ./ga_UL/anb/named-entities/ogg/named-entities_*;do ffprobe $i 2>&1 |grep Duration; done
 for i in ./ga_UL/anb/named-entities/ogg/named-entities_*;do ffprobe $i 2>&1 |grep Duration; done >> /tmp/anb-durs
+ffplay ./tg4_foghlaim/spoirt-agus-slainte/corpus/wav/spoirt-agus-slainte_1_spoirt-agus-slainte_1_0005.wav
+ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0003.wav
+ffplay ./tg4_foghlaim/spoirt-agus-slainte/corpus/wav/spoirt-agus-slainte_1_spoirt-agus-slainte_1_0004.wav
+ls
+ls cdroms/
+ls cdroms/coisceim/
+ls cdroms/coisceim/Fuaim/
+ls cdroms/coisceim/Fuaim/1/fear1.wav 
+ffplay cdroms/coisceim/Fuaim/1/fear1.wav 
+ffplay cdroms/coisceim/Fuaim/1/fear2.wav 
+ffplay cdroms/coisceim/Fuaim/2/fear2.wav 
+ffplay cdroms/coisceim/Fuaim/3/fear2.wav 
+ffplay cdroms/coisceim/Fuaim/3/fear1.wav 
+ls
+ffplay saytime-anb/wav/saytime-gu_011.wav 
+ffplay saytime-anb/readme 
+less saytime-anb/readme 
+less saytime-anb/xml/
+less saytime-anb/xml/saytime-gu_011.xml 
+ffplay saytime-anb/wav/saytime-gu_011.wav 
+ls
+ls UISC
+tree UISC/
+find UISC -name '*.wav'|less
+less ~/Downloads/tg2lab-1.01.pl 
+ls
+less asr_data_irish/data/README.txt 
+less asr_data_irish/data/NOTES 
+ls asr_data_irish/README.txt 
+less asr_data_irish/README.txt 
+cat asr_data_irish/README.txt 
+cd asr_data_irish/
+ls
+mkdir scripts
+cp -r ~/disk/Playing/kaldi_stuff/ .
+ls 
+rmdir scripts/
+mv kaldi_stuff/ scripts
+python scripts/makeKaldiFiles.py harald data/dodm_seanchas_rann_na_feirste/corpusfile.txt
+python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
+find .. -name '*mo_bhaile_duchais_dodm*wav'
+ffplay ../ga_UL/seanchas_rann_na_feirste/corpus/wav/01_mo_bhaile_duchais_dodm_0034.wav
+python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
+ls ../..
+ls
+ls data/
+mkdir -p data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/../../audio/dodm_seanchas_rann_na_feirste
+python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
+mkdir -p data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/../../audio/dodm_seanchas_rann_na_feirste/wav
+python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
+less /home/jim/disk/Playing/kaldi/egs/harald/data/local/dict/lexicon.txt
+less /home/jim/disk/Playing/kaldi/egs/harald/data/train/wav.scp
+less /home/jim/disk/Playing/kaldi/egs/harald/data/train/text
+less data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
+less data/seanchas_rann_na_feirste/obmsm_seanchas_rann_na_feirste/corpusfile.txt 
+less data/seanchas_rann_na_feirste/fngcf_seanchas_rann_na_feirste/corpusfile.txt 
+less data/seanchas_rann_na_feirste/banbf_seanchas_rann_na_feirste/corpusfile.txt 
