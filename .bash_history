@@ -1,19 +1,3 @@
-ls
-rm cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb 
-cmake .
-less CMakeFiles/CMakeError.log 
-apt-cache search pthreads|grep dev
-sudo apt-get install libpthread-stubs0-dev 
-make
-ls
-cd src/
-ls
-cmake .
-cmake ..
-cd ..
-ls
-find . -name Makefile
-vi 3rdparty/caffe/Makefile
 cd 3rdparty/caffe/
 make
 cd ../..#
@@ -1998,3 +1982,19 @@ head -n 15 tstout |grep 1.0
 head -n 15 tstout |grep 1.0|awk '{print $2 "\t" $3 "\t" $1}'
 head -n 15 tstout |grep 1.0|awk '{print $2 "\t" $3 "\t" $1}' > thing.txt
 audacity 01-robert-louis-stevenson-wyspa-skarbow.mp3
+cd ../sphinx-alignment/
+ls
+cd cmusphinx-alignment-example/
+ls
+less align.sh 
+less zw.out 
+less psout
+less plps.dic 
+less align-ruga.sh 
+less ga-ru.dic 
+ffplay sample.wav 
+ffplay sample_original.wav 
+ls
+less psout.aud.txt 
+less test.txt
+less test.txt.fa 
