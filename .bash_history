@@ -1,18 +1,3 @@
-git diff
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
 ./tester 
 g++ tester.cpp FSA.cpp Node.cpp -o tester
 ./tester 
@@ -1998,3 +1983,18 @@ youtube-dl https://www.youtube.com/watch?v=dbAoj97kVsY ; youtube-dl https://www.
 youtube-dl https://www.youtube.com/watch?v=4I9Fu_2t5gU ; wget https://www.youtube.com/watch?v=4I9Fu_2t5gU
 youtube-dl https://www.youtube.com/watch?v=mpt1QW-SkzA ; wget https://www.youtube.com/watch?v=mpt1QW-SkzA
 youtube-dl https://www.youtube.com/watch?v=OnleYp18Jj8 ; wget https://www.youtube.com/watch?v=OnleYp18Jj8
+man wget
+cd ~/disk/Playing/
+mkdir web-corpora
+cd web-corpora/
+mkdir merrionstreet
+cd merrionstreet/
+ls
+man wget
+wget --warc-file=merrionstreet.warc -rl3 -np https://merrionstreet.ie
+find merrionstreet.ie -type f
+ls merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
+tree merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
+wget --warc-file=merrionstreet2 -rl5 -np https://merrionstreet.ie
+tree merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
+wget --warc-file=merrionstreet -rl7 -np https://merrionstreet.ie
