@@ -1,8 +1,3 @@
-echo liczp | uconv -x pl-pl_FONIPA
-echo liczb nową | uconv -x pl-pl_FONIPA
-echo zkąd | uconv -x pl-pl_FONIPA
-echo ee | uconv -x pl-pl_FONIPA
-cat /tmp/snuv-toks |uconv -x pl-pl_FONIPA
 cat /tmp/snuv-toks |uconv -x pl-pl_FONIPA|uconv -x IPA-XSampa
 cd ~/disk/Playing/
 git clone https://github.com/cmu-mtlab/label-collapse.git
@@ -1998,3 +1993,8 @@ vi en002.txt
 paste ga002.txt en002.txt 
 vi en002.txt
 vi gaen002.txt
+cd ~/disk/Playing/Corpora
+ls
+svn up
+find . -name tcd_rc_pmc_TEST_multisyn
+svn ls http://phoneticsrv3.lcs.tcd.ie/svn/
