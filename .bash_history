@@ -1,30 +1,3 @@
-cat xx33 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F43.mw
-cat xx34 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F44.mw
-cat xx35 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F45.mw
-cat xx36 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F46.mw
-less xx38
-cat xx38 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F49.mw
-cat xx39 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F50.mw
-cat xx40 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F51.mw
-cat xx41 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F52.mw
-cat xx42 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F53.mw
-cat xx43 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F54.mw
-cat xx44 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F55.mw
-cat xx45 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F56.mw
-cat xx46 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F57.mw
-cat xx47 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F58.mw
-less xx46
-less xx47
-less xx46
-less xx47
-less xx48
-less xx49
-less xx50
-less xx51
-less xx50
-cat xx48 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F59.mw
-cat xx49 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F60.mw
-cat xx50 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw
 cat xx51 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F62.mw
 cat xx52 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F63.mw
 cat xx53 |perl test-mw/w/ponc-jimin.pl |sed -e "s/'/’/g" > test-mw/w/Page\:Jimín_Mháire_Thaidhg.djvu%2F64.mw
@@ -1998,3 +1971,30 @@ cd voxforge/
 ls
 echo http://goofy.zamia.org/voxforge/en/ >> models.dir
 wget http://goofy.zamia.org/voxforge/en/srilm-voxforge-en-r20171030.arpa.gz http://goofy.zamia.org/voxforge/en/sequitur-voxforge-en-r20171030.gz http://goofy.zamia.org/voxforge/en/kaldi-chain-voxforge-en-r20171129.tar.xz http://goofy.zamia.org/voxforge/en/cmusphinx-cont-voxforge-en-r20171030.tar.xz http://goofy.zamia.org/voxforge/en/cmusphinx-ptm-voxforge-en-r20171030.tar.xz 
+ls
+ls Software/
+ls Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
+wc -l Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
+ls
+ls Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.fst 
+ls Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.list 
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.list 
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.fst 
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest.lts 
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/allophones.ga.xml 
+less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/allophones.ga_MU.xml 
+ls Software/
+ls Software/hts/
+ls Software/hts/hts_voices/
+ls Software/hts/hts_voices/tcd_gd_anb_hts_108k/
+less Software/hts/hts_voices/run_hts.pl 
+ls
+ls ../Corpora
+ls ../Corpora/ga_UL/
+ls ../Corpora/ga_UL/an_punk/
+ls ../Corpora/ga_UL/an_punk/mayo/mns/sents/punk07.txt 
+less ../Corpora/ga_UL/an_punk/mayo/mns/sents/punk07.txt 
+less ../Corpora/ga_UL/an_punk/mayo/mns/wav
+ffplay ../Corpora/ga_UL/an_punk/mayo/mns/wav/punk07.wav 
+ls
