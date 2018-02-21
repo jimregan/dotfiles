@@ -1,33 +1,3 @@
-cd disk/Playing/
-mkdir jupyter-notebooks
-cd jupyter-notebooks/
-git clone https://github.com/spatialaudio/digital-signal-processing-lecture.git
-jupyter
-man jupyter
-jupyter -h
-jupyter-run 
-cd /tmp/
-unzip ~/Downloads/downsizing.\(2017\).eng.1cd.\(7243820\).zip 
-less Downsizing.2017.KORSUB.HDRip.x264-STUTTERSHIT.srt 
-cd ..
-ls
-cd ../../Corpora
-ls
-svn up
-ls
-svn up
-cd asr_data_irish/
-ls
-ls data/
-cd data/
-ls
-find . -type f
-less ./comhra/ircl0002_spk2/corpusfile.txt
-ls ../../asr_data_irish/
-less ./comhra/ircl0002_spk2/corpusfile.txt
-ls ../..
-ls ../../cdroms/
-ls ../../cdroms/dunchaochain/
 less ./comhra/ircl0002_spk2/corpusfile.txt
 ls
 less spk2gender 
@@ -1998,3 +1968,33 @@ mv m9nXPwz66GM.txt poetry/geibheann/
 less poetry/geibheann/m9nXPwz66GM.txt 
 ls
 ls poetry/
+rm -rf src/openpose/CMakeFiles/
+rm -rf src/openpose/build/
+make -j 8
+ls
+cd build/
+ls
+make -j 8
+ls
+find . -type f
+cd ..
+./build/examples/openpose/openpose.bin --video examples/media/video.avi
+cd build/examples/openpose/
+make
+cd ..
+make
+cd build/
+make
+apt-cache search opencv
+apt-cache search opencv|grep dev
+sudo apt-get install libopencv-contrib-dev 
+sudo apt-get install libcv-dev
+cd ../..
+apt-cache search opencv3
+sudo apt-get install libtiff4-dev
+sudo apt-get install libtiff5-dev
+cd modern-ga/
+ls
+vi masalbeagdubh.in 
+wget https://corkirish.files.wordpress.com/2014/11/msf-full-draft.pdf
+ls
