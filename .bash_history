@@ -1,39 +1,3 @@
-ls
-cd inst/
-ls
-ls bin/
-jupyter kernelspec install cling
-cd ..
-jupyter kernelspec install cling
-ls
-cd cling-build/
-ls
-jupyter kernelspec install cling
-ls
-ls builddir/
-ls builddir/bin/
-cd ..
-find . -name cling
-./inst/bin/cling
-export PATH=$PWD/inst/bin:$PATH
-cd inst/share/cling/Jupyter/kernel/
-ls
-pip3 install -e .
-sudo pip3 install -e .
-jupyter-kernelspec install cling-cpp11
-sudo jupyter-kernelspec install cling-cpp11
-sudo jupyter-kernelspec install cling-cpp17
-sudo jupyter-kernelspec install cling-cpp14
-sudo cpan Devel::IPerl
-iperl 
-iperl
-cpan Devel::IPerl
-iperl 
-iperl console
-sudo cpan ZMQ::LibZMQ3
-sudo apt install libzmq3-dev 
-cling 
-cling -h
 cling --help
 cling --help|grep 14
 cling -std=c++14
@@ -1998,3 +1962,39 @@ less data/seanchas_rann_na_feirste/banbf_seanchas_rann_na_feirste/corpusfile.txt
 cd /tmp/
 youtube-dl --all-subs --skip-download  https://www.youtube.com/watch?v=oFk7dgS8V18
 youtube-dl --all-subs --write-auto-sub --skip-download  https://www.youtube.com/watch?v=oFk7dgS8V18
+cd ../..
+ls
+find . -name lab
+ls en_IE/nnc/Arctic/lab/nnc_arctic_
+ls en_IE/nnc/Arctic/lab/nnc_arctic_0450.sl 
+less en_IE/nnc/Arctic/lab/nnc_arctic_0450.sl 
+less en_IE/nnc/Arctic/lab/nnc_arctic_0450.lab 
+ffplay en_IE/nnc/Arctic/wav/nnc_arctic_0481.wav 
+
+find . -name lab
+ls en_IE/
+ffplay en_IE/anb/tcd_ANB_eng_cleaned/arctic_0510.wav 
+find . -name '*.wav' -or -name '*.ogg'
+find . -name '*.wav' -or -name '*.ogg' > /tmp/corpus-sounds
+ffplay ./ga_CO/pmg_recordings/RCPiarsachBheanchaointe/RECS/0001/MI0001RCPiarsachBheanchaointe_0469.wav
+ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0012.wav
+ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0003.wav
+ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0001.wav
+ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0002.wav
+ffplay ./ga_CO/pmg_recordings/RCPiarsachBheanchaointe/RECS/0001/MI0001RCPiarsachBheanchaointe_0443.wav
+less /tmp/corpus-sounds 
+mkdir ../kaldi/egs/harald
+echo $PWD/../kaldi/egs/harald
+ls
+ls ga_UL/seanchas_rann_na_feirste/wav/
+ls ga_UL/seanchas_rann_na_feirste/syncmaps/01_mo_bhaile_duchais_dodm.json 
+less ga_UL/seanchas_rann_na_feirste/syncmaps/01_mo_bhaile_duchais_dodm.json 
+ls ga_UL/seanchas_rann_na_feirste/orig_wav/
+ls ga_UL/seanchas_rann_na_feirste/wav/
+ls ga_UL/seanchas_rann_na_feirste/corpus/wav/
+cp ga_UL/seanchas_rann_na_feirste/corpus/wav/01_mo_bhaile_duchais_dodm_00* asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/
+mv asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/*.wav asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/
+cp ga_UL/seanchas_rann_na_feirste/corpus/wav/02_oireachtas_na_ndeise_dodm_00* asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/
+ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0001.wav 
+ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0002.wav 
+ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0003.wav 
