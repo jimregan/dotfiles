@@ -1,96 +1,3 @@
-cmake .
-cd ..
-git clone https://github.com/zeromq/cppzmq.git
-cd cppzmq/
-ls
-make .
-mkdir build
-cd build/
-cmake ..
-make
-cd ..
-make
-cd build/
-l
-ls
-sudo make install
-cd ../../xeus
-cmake .
-apt-get install libzmq-dev
-sudo apt-get install libzmq-dev
-cd ..
-git clone https://github.com/zeromq/libzmq.git
-cd libzmq/
-ls
-cmake .
-rm CMakeCache.txt
-mkdir cmake-make ; cd cmake-make
-cmake ..
-make
-sudo make install
-cd ../..
-cd xeus
-cmake .
-cd ../cppzmq/
-ls
-git status
-ls build/
-rm -rf build/
-mkdir build
-git status
-cd build/
-cmake ..
-sudo make install
-cd ../../xeus
-cmake .
-cd ..
-git clone https://github.com/weidai11/cryptopp.git
-cd cryptopp/
-ls
-make -f GNUmakefile
-sudo make -f GNUmakefile install
-cd ../xeus
-ls
-cmake .
-cd ..
-git clone https://github.com/noloader/cryptopp-cmake.git
-cp cryptopp-cmake/CMakeLists.txt cryptopp/
-cp cryptopp-cmake/cryptopp-config.cmake cryptopp/
-cd cryptopp
-ls
-cmake .
-make -j 8
-make
-sudo make install
-cd ../xeus
-cmake .
-cd ../cryptopp
-ls
-make clean
-cmake .
-less Makefile 
-make
-make -f Makefile -j 8
-sudo make -f Makefile install
-cd ../xeus
-cmake .
-mkdir build
-cd build/
-ls
-cmake ..
-less ../CMakeFiles/CMakeOutput.log 
-cd ..
-git status
-rm CMakeCache.txt xeusConfig.cmake xeusConfigVersion.cmake 
-rm -rf CMakeFiles/
-mkdir build
-cd build/
-ls
-cmake ..
-cd ..
-git status
-vi CMakeLists.txt 
-cd build/
 cmake ..
 ls
 rm -rf *
@@ -1998,3 +1905,96 @@ ls
 make
 # CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/openpose_caffe.dir/all' failed
 # pwd jim@HG658c:~/disk/Playing/openpose/build$
+cd ~/disk/Playing/cmudict/
+ls
+less cmudict.dict 
+grep boyd cmudict.dict 
+grep crotty cmudict.dict 
+less cmudict.dict 
+grep westmore cmudict.dict 
+grep hawkins cmudict.dict 
+grep awe cmudict.dict 
+grep slayer cmudict.dict 
+grep sepultura cmudict.dict 
+grep beatles cmudict.dict 
+grep sheeran cmudict.dict 
+grep EN cmudict.dict 
+grep charger cmudict.dict 
+grep phone cmudict.dict 
+grep higgins cmudict.dict 
+grep sean cmudict.dict 
+grep rte cmudict.dict 
+grep '^h ' cmudict.dict 
+grep '^a ' cmudict.dict 
+grep '^t ' cmudict.dict 
+grep '^r ' cmudict.dict 
+grep '^e ' cmudict.dict 
+grep '^cmu ' cmudict.dict 
+grep '^1 ' cmudict.dict 
+grep '^garfi ' cmudict.dict 
+grep '^garfield ' cmudict.dict 
+grep '^coccy' cmudict.dict 
+grep '^coccyx' cmudict.dict 
+grep '^fia' cmudict.dict 
+cat ../msf-asr/dict-en 
+cat ../msf-asr/pron/pronounce-as.tsv 
+cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'
+cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'
+cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl ~/disk/Playing/wolne-lektury-audio-corpus/filter-dict.pl cmudict.dict 
+less ~/disk/Playing/wolne-lektury-audio-corpus/filter-dict.pl 
+cp ~/disk/Playing/wolne-lektury-audio-corpus/filter-dict.pl .
+vi filter-dict.pl 
+cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
+grep wellington cmudict.dict 
+grep macho cmudict.dict 
+grep '^on ' cmudict.dict 
+grep spat cmudict.dict 
+git checkout -b missing
+vi cmudict.dict 
+cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
+grep sat cmudict.dict 
+grep zoom cmudict.dict 
+grep suma cmudict.dict 
+cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
+grep ella cmudict.dict 
+cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
+grep poor cmudict.dict 
+git diff
+grep father cmudict.
+grep father cmudict.dict 
+grep short cmudict.dict 
+grep crust cmudict.dict 
+grep open cmudict.dict 
+grep poodle cmudict.dict 
+grep strewn cmudict.dict 
+grep over cmudict.dict 
+grep caught cmudict.dict 
+grep cot cmudict.dict 
+grep caught cmudict.dict 
+grep AO cmudict.dict 
+grep yorker cmudict.dict 
+grep pure cmudict.dict 
+grep tooth cmudict.dict 
+grep 'oni ' cmudict.dict 
+git remote show origin
+grep netflix cmudict.dict 
+grep googl cmudict.dict 
+grep selfie cmudict.dict 
+grep duckface cmudict.dict 
+grep microsof cmudict.dict 
+grep net cmudict.dict 
+grep flicks cmudict.dict 
+grep orus cmudict.dict 
+grep roar cmudict.dict 
+grep cooper cmudict.dict 
+grep igate cmudict.dict 
+git diff
+grep city cmudict.dict 
+grep '^i ' cmudict.dict 
+grep tulate cmudict.dict 
+grep itious cmudict.dict 
+grep tarian cmudict.dict 
+grep ism cmudict.dict 
+grep book cmudict.dict 
+grep sow cmudict.dict 
+grep source cmudict.dict 
