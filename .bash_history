@@ -1,25 +1,3 @@
-cat inpages |perl ~/niamhbot.pl 
-less inpages 
-cat inpages |perl ~/niamhbot.pl 
-cd ../ocrodjvu/
-ls
-less lib/engines/tesseract.py
-./ocrodjvu 
-./ocrodjvu -h
-./ocrodjvu --list-languages
-find  . -name '*py' |xargs grep tessdata
-cp /usr/local/share/tessdata/spa.traineddata .
-./ocrodjvu --list-languages
-./ocrodjvu --list-engines
-./ocrodjvu -e tesseract --list-languages
-less lib/engines/tesseract.py
-ls
-apt-cache search any2djvu
-any2djvu -h
-ls
-tesseract
-tesseract -l as
-tesseract -l asasd
 cd disk/Playing/
 mkdir jupyter-notebooks
 cd jupyter-notebooks/
@@ -1998,3 +1976,25 @@ cd ..
 git clone https://github.com/spandanagella/verse.git
 git clone https://github.com/goccy/p5-Compiler-CodeGenerator-LLVM.git
 #git clone https://github.com/goccy/p5-Compiler-CodeGenerator-LLVM.git
+youtube-dl -h
+youtube-dl --help
+cd ~/disk/Playing/
+cd msf-asr/TG4/
+mkdir youtube
+cd youtube/
+less ~/disk/Playing/youtube-pl/dl.sh 
+#youtube-dl -x --audio-format=best
+less ~/disk/Playing/youtube-pl/dl.sh 
+vi dl.sh
+sh dl.sh 1mP0tuGp7hU
+less ~/disk/Playing/youtube-pl/dl.sh 
+vi dl.sh
+sh dl.sh 1mP0tuGp7hU
+ls
+audacity 1mP0tuGp7hU.m4a.wav 
+ls
+mv tmWNjkzVJNk.aud poetry/geibheann/
+mv m9nXPwz66GM.txt poetry/geibheann/
+less poetry/geibheann/m9nXPwz66GM.txt 
+ls
+ls poetry/
