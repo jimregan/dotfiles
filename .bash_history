@@ -1,124 +1,3 @@
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F42.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F43.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
-git commit -m git-mw
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F45.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F44.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
-git commit -m git-mw
-git push
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F49.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F51.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F50.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F49.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F4*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F5*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F52.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F53.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F54.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F55.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F54.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F55.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F56.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F5*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F58.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F57.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F58.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F59.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F60.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F62.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F57.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F59.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F61.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F63.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F64.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F65.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F66.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F67.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F68.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F5*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F6*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F69.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F70.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F71.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F72.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F73.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F74.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F75.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F76.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F77.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F78.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F79.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F6*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F7*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F80.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F81.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F82.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F83.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F84.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F85.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F8*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F86.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F87.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F8*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F88.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F89.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F90.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F91.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F92.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F93.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F94.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F95.mw 
-rm Page\:Jimín_Mháire_Thaidhg.djvu%2F95.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F8*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F9*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F97.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F98.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F100.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F99.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F100.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F9*
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F10*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F101.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F102.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F103.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F104.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F105.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F106.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F107.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F108.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F107.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F109.mw 
-git add Page\:Jimín_Mháire_Thaidhg.djvu%2F10*
-git commit -m git-mw
-git push
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F110.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F111.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F112.mw 
-vi Page\:Jimín_Mháire_Thaidhg.djvu%2F113.mw 
 vi Page\:Jimín_Mháire_Thaidhg.djvu%2F114.mw 
 vi Page\:Jimín_Mháire_Thaidhg.djvu%2F115.mw 
 vi Page\:Jimín_Mháire_Thaidhg.djvu%2F116.mw 
@@ -1998,3 +1877,124 @@ ls ../tesseract/contrib/genlangdata.pl
 less ../tesseract/contrib/genlangdata.pl 
 ks
 less ../tesseract/contrib/genlangdata.pl 
+vi pron-data/pronounce-as.tsv 
+git diff
+git commit -m more
+grep -i tarzan pron-data/*
+cat /tmp/topron |sed -e 's/, /\n/g'
+cat /tmp/topron |sed -e 's/, /\n/g' > /tmp/topronl
+cat /tmp/topron |sed -e 's/, /\n/g'|sed -e 's/rz/r-z/' > /tmp/topronr
+paste /tmp/topronl /tmp/topronr 
+paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
+git diff
+grep marznąć pron-data/gen.tsv 
+grep marznąć polimorf/polimorf.tab 
+grep zamarznać polimorf/polimorf.tab 
+grep zamarzać polimorf/polimorf.tab 
+grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}' > /tmp/leftin
+grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq > /tmp/topronl 
+grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq|sed -e 's/rz/r-z/' > /tmp/topronr
+paste /tmp/topronl /tmp/topronr  
+paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
+git diff
+. sourceme 
+mkleft
+grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq > /tmp/leftin
+mkleft
+mkrightin 
+less /tmp/rightin 
+paste /tmp/leftin /tmp/rightin 
+paste /tmp/leftin /tmp/rightin >> pron-data/gen.tsv 
+git diff
+git add pron-data/gen.tsv 
+git commit -m more
+grep marznąć polimorf/polimorf.tab 
+grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $2}'|sort|uniq
+grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq >  /tmp/leftin 
+mkleft
+git diff
+git diff|grep '^\+'
+git diff|grep '^\+'|grep '\t'
+git diff|grep '^\+' > /tmp/toblah
+vi /tmp/toblah 
+cat /tmp/toblah |awk '{print $2}'
+cat /tmp/toblah |awk '{print $2}'> /tmp/leftin 
+mkleft
+cat /tmp/toblah |awk '{print $1}'> /tmp/leftin 
+mkrightin 
+paste /tmp/leftin /tmp/rightin >> pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.*
+git commit -m more
+paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
+git diff
+git stash
+grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq >  /tmp/topronl 
+grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq |sed -e 's/rz/r-z/'>  /tmp/topronr 
+paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
+git diff
+git stash
+paste /tmp/topronl /tmp/topronr  |grep rź
+paste /tmp/topronl /tmp/topronr  |grep -v rź >> pron-data/pronounce-as.tsv 
+git diff
+git diff|grep '^\+' > /tmp/toblah
+vi /tmp/toblah 
+cat /tmp/toblah |awk '{print $2}'> /tmp/leftin 
+mkleft
+cat /tmp/toblah |awk '{print $1}'> /tmp/leftin 
+mkrightin 
+paste /tmp/leftin /tmp/rightin >> pron-data/pronounce-as.gen.tsv 
+git diff
+git stash
+grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq |sed -e 's/arz/ar-z/'>  /tmp/topronr 
+paste /tmp/topronl /tmp/topronr  |grep -v rź >> pron-data/pronounce-as.tsv 
+git diff
+git diff|grep '^\+' > /tmp/toblah
+vi /tmp/toblah 
+cat /tmp/toblah 
+cat /tmp/toblah |awk '{print $2}' > /tmp/leftin 
+mkleft
+cat /tmp/toblah |awk '{print $1}' > /tmp/leftin 
+mkrightin 
+paste /tmp/leftin /tmp/rightin >> pron-data/pronounce-as.gen.tsv 
+git diff
+git add pron-data/pronounce-as.*
+git commit -m more
+ls
+git status
+git am ---abort
+git am --abort
+git status
+git branch
+git push origin lexicon 
+cat pron-data/gen.tsv |sort|uniq > tmp
+mv tmp pron-data/gen.tsv 
+git diff
+git add pron-data/gen.tsv 
+git commit -m 'sort|uniq'
+git push origin lexicon 
+git checkout -b transcripty-stuff
+git checkout lexicon 
+ls
+mkdir trbits
+cp -r google-asr/ trbits/
+ls trbits/
+cp -r silences/ trbits/
+ls trbits/
+git rm -rf silences/
+git rm -rf google-asr/
+ls
+cp algdiff.pl ~
+git rm algdiff.pl 
+git commit -m 'rm intermediate junk'
+git push origin lexicon 
+git rm transcribe.py 
+git commit -m rm
+git push origin lexicon 
+git checkout master 
+git pull origin master 
+git branch -D lexicon 
+git checkout -b lexicon
+grep "Tiery'ego" pron-data/pronounce-as.*
+vi pron-data/pronounce-as.
+vi pron-data/pronounce-as.tsv 
