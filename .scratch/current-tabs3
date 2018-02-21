@@ -86,3 +86,5 @@ https://raw.githubusercontent.com/kaldi-asr/kaldi/5ea9b0da3ff3f5b3b762366be76b2c
 https://archive.org/details/wendischevolkss02schugoog
 https://github.com/Mjkim88/Pytorch-Torchtext-Seq2Seq
 
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}'
+~/disk/Playing/sphinx-alignment/cmusphinx-alignment-example

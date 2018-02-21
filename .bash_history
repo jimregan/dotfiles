@@ -1,4 +1,3 @@
-less model/model-final/tokenizer 
 cat test.txt
 grep gnacy plps.dic 
 rasic plps.dic 
@@ -1998,3 +1997,4 @@ kill -9 17775
 kill -9 26324
 kill -9 17860
 kill -9 17895
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}'
