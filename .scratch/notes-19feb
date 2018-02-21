@@ -1,0 +1,101 @@
+https://stackoverflow.com/questions/15929597/how-to-use-cmu-sphinx-for-forced-alignment-phoneme-recognition
+I'm working on simple TTS-engine. It would be good to have a automatic diphone segmentation system which takes a recorder sound and phoneme subscript (for single utterance) and sets the phoneme boundaries in the sound. Is it possible to be done with CMU Sphinx? Which version of sphinx I should to use?
+
+You can train a speaker-dependent model specific to your speaker with Sphinxtrain. For more details on training see
+
+http://cmusphinx.sourceforge.net/wiki/tutorialam
+
+To segment the database you can use sphinx3_align binary like this:
+
+  sphinx3_align \
+    -hmm <model_dir> \
+    -dict dictionary.dic \
+    -ctl db.fileids \
+    -cepdir <feats_folder> \
+    -cepext .mfc \
+    -insent db.transcription \
+    -outsent db.out \
+    -phlabdir phlabdir
+The phone-level alignment will be created in a folder called phlabdir
+
+https://github.com/JoshData/cmusphinx-alignment-example
+change
+
+https://github.com/saml/sphinx4-forced-alignment/blob/master/src/ForcedAlignment.java
+import edu.cmu.sphinx.frontend.util.AudioFileDataSource;
+import edu.cmu.sphinx.linguist.language.grammar.TextAlignerGrammar;
+import edu.cmu.sphinx.recognizer.Recognizer;
+import edu.cmu.sphinx.result.Result;
+import edu.cmu.sphinx.util.props.ConfigurationManager;
+        final String text = readFile(textPath).replaceAll("[^\\w']+", " ");
+        
+        final ConfigurationManager cm = new ConfigurationManager(configPath);
+        final Recognizer recognizer = (Recognizer) cm.lookup("recognizer");
+        final TextAlignerGrammar grammar = (TextAlignerGrammar) cm.lookup("textAlignGrammar");
+        grammar.setText(text);
+        recognizer.addResultListener(grammar);
+        recognizer.allocate();
+        final AudioFileDataSource dataSource = (AudioFileDataSource) cm.lookup("audioFileDataSource");
+        dataSource.setAudioFile(new File(audioPath), null);
+        
+        Result result;
+        while ((result = recognizer.recognize()) != null) {
+            final String resultText = result.getTimedBestResult(false, true);
+            System.out.println(resultText);
+        }
+
+
+https://www.reddit.com/r/MachineLearning/comments/467cfh/open_pretrained_models_for_speech_recognition/
+Hi,
+
+we have some decent open models for Kaldi toolkit. You can try them on our online platform www.cloudasr.com. The best one for English is https://www.cloudasr.com/demo/kams-en-hifi and can be downloaded from https://vystadial.ms.mff.cuni.cz/download/kams/tri5_nnet2_smbr_ivector_online.zip
+
+I also tried to implement CTC in Theano, see https://github.com/choko/ctc or you can have a look at Baidu's implementation https://github.com/baidu-research/warp-ctc
+
+
+https://github.com/kastnerkyle/ez-phones/blob/master/ps_shortcut.sh
+./pocketsphinx_continuous -infile $1 -hmm cmusphinx-en-us-5.2 -allphone en-us-phone.lm.dmp -time yes -backtrace yes -beam 1e-20 -pbeam 1e-20 -lw 2.0
+
+
+https://syl22-00.github.io/pocketsphinx.js/live-demo.html
+
+http://paracrawl.eu/download.html
+https://github.com/hainan-xv/zipporah/tree/master/scripts
+
+https://github.com/artetxem/vecmap
+A framework to learn bilingual word embedding mappings
+http://ixa.eus/sites/default/files/dokumentuak/11455/aaai18.pdf
+Generalizing and Improving Bilingual Word Embedding Mappings with a
+Multi-Step Framework of Linear Transformations
+
+https://github.com/artetxem/contexto
+An open source contextual dictionary
+
+https://www.techatbloomberg.com/blog/name-translation-wikipedia-work-chen-tse-tsai/
+
+https://darviz.mybluemix.net/#/
+https://github.com/karpathy/neuraltalk2
+
+http://www.perlmonks.org/?node_id=153259
+
+http://statmt.org/wmt18/translation-task.html#download
+
+https://www.reddit.com/r/MachineLearning/comments/7xww5z/d_style2vec_is_one_network_trained_or_two_network/
+
+https://ufal.mff.cuni.cz/tectomt/translation-example
+
+https://github.com/ufal/qtleap
+QTLeap Pilot MT systems using TectoMT
+
+
+
+https://github.com/ufal/neuralmonkey
+
+https://github.com/ufal/treex/blob/master/lib/Treex/Block/A2T/CS/AddPersPron.pm
+https://github.com/ufal/treex/blob/master/CONTRIBUTING.md
+http://ufal.mff.cuni.cz/treex
+https://github.com/ufal/morphodita
+
+https://github.com/PAIR-code/deeplearnjs
+
+
