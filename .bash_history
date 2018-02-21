@@ -1,6 +1,3 @@
-python3 -m spacy train pl /tmp/model /tmp/data/train.json -n 5
-#python3 -m spacy train pl /tmp/model /tmp/data/train.json /tmp/data/dev -n 5
-ls udpl/
 #python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
 python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
 grep PREPCASE udpl/pl-ud-*
@@ -1998,3 +1995,6 @@ less INSTALL
 cd src
 ls
 make
+cd disk/Playing/
+git clone https://github.com/zdevito/ATen
+lynx https://www.reddit.com/r/MachineLearning/comments/7xv4i2/d_any_updates_on_capsulnet/
