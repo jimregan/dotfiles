@@ -286,3 +286,13 @@ SelectedNavigationInTab - Tab: 4348, Index: 1, Time: 13163711200314995
 UpdateTabNavigation - Tab: 4348, Index: 0, Url: https://github.com/kaldi-asr/kaldi/blob/5ea9b0da3ff3f5b3b762366be76b2cc30e260887/egs/hub4_english/s5/local/run_segmentation_wsj.sh
 UpdateTabNavigation - Tab: 4348, Index: 1, Url: https://raw.githubusercontent.com/kaldi-asr/kaldi/5ea9b0da3ff3f5b3b762366be76b2cc30e260887/egs/hub4_english/s5/local/run_segmentation_wsj.sh
 RestoredEntry - Entry: 4348
+SelectedNavigationInTab - Tab: 4349, Index: 0, Time: 13163711437862038
+UpdateTabNavigation - Tab: 4349, Index: 0, Url: https://github.com/kaldi-asr/kaldi/commit/301850b13080050149ae29ab118b1955fad31bfe
+SelectedNavigationInTab - Tab: 4350, Index: 6, Time: 13163711441343436
+UpdateTabNavigation - Tab: 4350, Index: 2, Url: https://github.com/kaldi-asr/kaldi/issues/2082
+UpdateTabNavigation - Tab: 4350, Index: 3, Url: https://github.com/kaldi-asr/kaldi/commit/8e7793f32f6be7143c5a517aa011b137e1d85178
+UpdateTabNavigation - Tab: 4350, Index: 4, Url: https://github.com/kaldi-asr/kaldi
+UpdateTabNavigation - Tab: 4350, Index: 5, Url: https://github.com/kaldi-asr/kaldi/tree/master/egs
+UpdateTabNavigation - Tab: 4350, Index: 6, Url: https://github.com/kaldi-asr/kaldi/tree/master/egs/wsj
+UpdateTabNavigation - Tab: 4350, Index: 7, Url: https://github.com/kaldi-asr/kaldi/tree/master/egs/wsj/s5
+UpdateTabNavigation - Tab: 4350, Index: 8, Url: https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/run.sh
