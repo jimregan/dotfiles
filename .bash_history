@@ -1,13 +1,3 @@
-ps aux|grep ld
-ls
-cd ~/disk/Playing/
-mkdir r9y9
-cd r9y9/
-git clone https://github.com/r9y9/wavenet_vocoder.git
-cd wavenet_vocoder/
-pip install -e ".[train]"
-sudo pip install -e ".[train]"
-wget https://www.dropbox.com/sh/b1p32sxywo6xdnb/AAB2TU2DGhPDJgUzNc38Cz75a?dl=0
 rm AAB2TU2DGhPDJgUzNc38Cz75a\?dl\=0 
 cd ..
 git clone https://github.com/r9y9/nnmnkwii.git
@@ -1998,3 +1988,13 @@ ls
 less makeKaldiFiles.py 
 git pull origin master
 vi makeKaldiFiles.py 
+cd ../../msf-asr/
+vi pron/ulster.tsv 
+vi pron/connacht.tsv 
+vi pron/ulster.tsv 
+git add pron/ulster.tsv 
+git commit -m 'fix'
+git diff
+vi pron/pronounce-as.tsv 
+git diff
+vi pron/pronounce-as.tsv 
