@@ -1,56 +1,3 @@
-ls
-vi s0OZki_PuMg.txt
-ls
-vi s0OZki_PuMg.txt
-vo yD1yp9P6GdY.txt
-vi yD1yp9P6GdY.txt
-cd /tmp
-unzip ~/Downloads/re.zip 
-mkdir re
-cd re
-unzip ~/Downloads/re.zip 
-less FSA.cpp 
-vi Node.cpp 
-ls
-g++ Node.cpp -o Node.o
-vi Node.cpp 
-g++ Node.cpp -o Node.o
-less Node.h 
-vi Node.cpp 
-g++ Node.cpp -o Node.o
-g++ -c Node.cpp -o Node.o
-vi Node.cpp 
-unzip ~/Downloads/re.zip 
-#git add *.h *.cc
-git init .
-git add *.h *.cc
-git add *.h *.cpp
-git commit -m initial
-git diff
-git add Node.cpp 
-git commit -m update
-g++ -c FSA.cpp -o FSA.cpp 
-g++ -c FSA.cpp -o FSA.o
-ls
-g++ -c tester_pictures.cpp -o tester_pictures.o
-g++ -c tester.o -o tester.o
-g++ -c tester.cpp -o tester.o
-ls
-grep main *
-g++ -c tester.cpp -o tester
-./tester
-chmod a+x tester
-./tester 
-g++ tester.cpp -o tester
-g++ tester.cpp FSA.cpp -o tester
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester_pictures.cpp FSA.cpp Node.cpp -o tester_pictures
-./tester_pictures 
-less tester_pictures.cpp 
-grep gv *
-ls
-./tester 
 git diff
 ./tester 
 g++ tester.cpp FSA.cpp Node.cpp -o tester
@@ -1998,3 +1945,56 @@ git add mri.training_text
 git commit -m training_text
 less mri.training_text 
 git push origin master
+cd /tmp
+mkdir mtt
+cd mtt
+cat ../maori-extra 
+cat ../maori-extra |sort|uniq
+cat ../maori-extra |sort|uniq|wc
+cat ../maori-extra |sort|uniq > sort
+vi sort 
+wc -l sort punc 
+perl -MText::Format -e 'print Text::Format->new({columns => 50})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+sudo cpan Text::Format
+perl -MText::Format -e 'print Text::Format->new({columns => 50})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MText::Format -e 'print Text::Format->new->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MText::Format -e 'print Text::Format({tabstop=>0})->new->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MText::Format -e 'print Text::Format->new({tabstop=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MText::Format -e 'print Text::Format->new({hangingIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MText::Format -e 'print Text::Format->new({hangingIndent=>1})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MText::Format -e 'print Text::Format->new({firstIndent=>1})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
+perl -MList::Util'shuffle' -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
+perl -MList::Util'qw/shuffle/' -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
+perl -MList::Util -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
+perl -MList::Util=shuffle -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
+cat punc sort|perl -MList::Util=shuffle -MText::Format -ane '{chomp;push @foo, $_;}END{print Text::Format->new({firstIndent=>0})->format(shuffle(@foo));}'
+cat punc sort|perl -MList::Util=shuffle -MText::Format -ane '{chomp;push @foo, $_;}END{print Text::Format->new({firstIndent=>0})->format(shuffle(@foo));}' > /tmp/maori.tt
+cd ~/disk/Playing/msf-asr/
+ls
+mkdir youtube
+cd youtube/
+# https://www.youtube.com/watch?v=xYDLnnzfWgw
+mkdir antsnathaidmhor
+cd antsnathaidmhor
+youtube-dl https://www.youtube.com/watch?v=xYDLnnzfWgw
+ls
+cd ..
+mkdir UC3oTt_tHTu8RoExaxhoChuA
+cd UC3oTt_tHTu8RoExaxhoChuA/
+wget https://www.youtube.com/watch?v=--nPpjqNvOY
+youtube-dl https://www.youtube.com/watch?v=--nPpjqNvOY
+wget https://www.youtube.com/watch?v=GttclvJjNfE
+youtube-dl https://www.youtube.com/watch?v=GttclvJjNfE
+wget https://www.youtube.com/watch?v=JgEwKiWEGVE
+youtube-dl https://www.youtube.com/watch?v=JgEwKiWEGVE
+wget https://www.youtube.com/watch?v=1F8XMAeq_r8
+youtube-dl https://www.youtube.com/watch?v=1F8XMAeq_r8
+$((238 * 4))
+echo $((238 * 4))
+ls *1z*
+wget https://www.youtube.com/watch?v=dbAoj97kVsY
+youtube-dl https://www.youtube.com/watch?v=dbAoj97kVsY ; youtube-dl https://www.youtube.com/watch?v=tukRb_4qQYk ; wget https://www.youtube.com/watch?v=tukRb_4qQYk
+youtube-dl https://www.youtube.com/watch?v=4I9Fu_2t5gU ; wget https://www.youtube.com/watch?v=4I9Fu_2t5gU
+youtube-dl https://www.youtube.com/watch?v=mpt1QW-SkzA ; wget https://www.youtube.com/watch?v=mpt1QW-SkzA
+youtube-dl https://www.youtube.com/watch?v=OnleYp18Jj8 ; wget https://www.youtube.com/watch?v=OnleYp18Jj8
