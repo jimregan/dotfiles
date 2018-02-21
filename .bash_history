@@ -1998,3 +1998,122 @@ python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-
 ls -al model
 ls -al model/model-final/
 less model/model-final/tokenizer 
+cat test.txt
+grep gnacy plps.dic 
+rasic plps.dic 
+grep rasic plps.dic 
+grep '(' plps.dic 
+grep '(' plps.dic |grep -v '(1)'
+ls
+vi plps.dic 
+less ~/disk/Playing/msf-asr/scripts/number-dic.pl 
+cat plps.dic |sed -e 's/([0-9])//'
+cat plps.dic |sed -e 's/([0-9])//'|sort|uniq|perl ../../msf-asr/scripts/number-dic.pl 
+cat plps.dic |sed -e 's/([0-9])//'|sort|uniq|perl ../../msf-asr/scripts/number-dic.pl > tmp
+diff -u plps.dic tmp 
+diff -u plps.dic tmp |less
+mv tmp plps.dic 
+ls
+grep pocket *
+grep grammar *
+less pserr 
+ls
+less 1.out 
+cat wyspa-skarbow.txt-01.txt.sent
+cat wyspa-skarbow.txt-01.txt.sent|tr ' ' '\n'|wc
+wc -l 1.out 
+less 1.out 
+less wyspa-skarbow.txt-01.txt.sent
+less 1.out 
+cat 1.out |awk -F'"' '{print $2}'
+cat 1.out |awk -F'"' '{print $2}' > 1.words
+wdiff wyspa-skarbow.txt-01.txt.sent 1.words 
+wdiff wyspa-skarbow.txt-01.txt.sent 1.words |less
+less 1.jsgf 
+less 1.out 
+ls
+less 6.out 
+cat 6.out |awk -F'"' '{print $2}' > 6.words
+wdiff wyspa-skarbow.txt-06.txt.sent 6.words |less
+grep wystarczy chłopcze wyspa-skarbow.txt-06.txt
+wdiff wyspa-skarbow.txt-06.txt.sent 6.words |less
+grep -i 'wystarczy chłopcze' wyspa-skarbow.txt-06.txt
+grep -i 'wystarczy chłopcze' wyspa-skarbow.txt-06.txt.sent
+grep -i 'wystarczy chłopcze' wyspa-skarbow.txt-06.txt
+grep -i wystarczy  wyspa-skarbow.txt-06.txt
+grep -i wystarczy  wyspa-skarbow.txt-06.txt|grep chłopcze
+grep -i wystarczy  wyspa-skarbow.txt-06.txt.sent|grep chłopcze
+ls
+less align.sh 
+less 1.out 
+less 1.words 
+less 1.err 
+less 1.out 
+ls
+ls ..
+find . -name '*java'
+less Aligner.java 
+ls
+less 1.jsgf 
+grep pock *sh
+cat align.sh 
+pocketsphinx_batch -h
+pocketsphinx_batch --help
+pocketsphinx_batch 
+less plps.dic 
+vi plps.dic 
+pocketsphinx_batch 
+pocketsphinx_batch -jsgf 1.jsgf
+pocketsphinx_batch 
+ls cmusphinx-clarinpl/
+less cmusphinx-clarinpl/pl.dic
+pocketsphinx_batch -jsgf 1.jsgf -dic plps.dic 
+pocketsphinx_batch -jsgf 1.jsgf -dict plps.dic 
+pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic 
+pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic -infile
+ls
+pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
+vi plps.dic 
+#pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
+pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
+vi 1.jsgf 
+pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
+vi 1.jsgf 
+pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
+pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
+less tsterr 
+vi 1.jsgf 
+pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
+less tsterr 
+vi 1.jsgf 
+less tsterr 
+pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
+less tsterr 
+vi plps.dic 
+pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
+vi 1.jsgf 
+pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
+ls
+less 1.jsgf 
+wc -l wyspa-skarbow.txt-01.txt.sent
+less 1.jsgf 
+perl -e 'print map { "<g$_>" } (1..10)'
+perl -e 'print join " | " map { "<g$_>" } (1..10)'
+perl -e 'print join " | ", map { "<g$_>" } (1..10)'
+cat wyspa-skarbow.txt-01.txt.sent
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = ";pr join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{ml=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}$l++'END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l = 1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'my $l;BEGIN{$l = 1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
+cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l = 1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
+perl -e '$l=5;print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"'
+perl -e '$l=5;print "public <grm> = " . join " | ", map { local$_=$_;"<g$_>" } (1..$l) . ";\n"'
+perl -e 'print map { "<g$_>" } (1..10)'
+history -a
