@@ -1,32 +1,3 @@
-rm AAB2TU2DGhPDJgUzNc38Cz75a\?dl\=0 
-cd ..
-git clone https://github.com/r9y9/nnmnkwii.git
-git clone https://github.com/r9y9/deepvoice3_pytorch
-cd ..
-git clone https://github.com/ajbrock/Neural-Photo-Editor
-cd Neural-Photo-Editor/
-ls
-python NPE.py 
-apt-cache search tkinter
-#sudo apt-get install python-tk 
-apt-cache search tkColor
-apt-cache search tkColorChooser
-sudo apt-get install python-tk 
-python NPE.py 
-apt-cache search imagetk
-sudo apt-get install python-pil.imagetk
-python NPE.py 
-sudo pip install lasagna
-sudo pip install lasagne
-python NPE.py 
-sudo pip install downsample
-sudo pip install theano
-sudo pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
-python NPE.py 
-less GANcheckpoints.py
-sudo pip install path
-sudo pip install path.py
-python NPE.py 
 pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
 sudo pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
 pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
@@ -1998,3 +1969,32 @@ git diff
 vi pron/pronounce-as.tsv 
 git diff
 vi pron/pronounce-as.tsv 
+cd ~/Pla
+cd ~/disk/Playing/
+cd Corpora
+ls
+ls asr_data_irish/
+cd asr_data_irish/data/
+ls
+less README.txt 
+ls comhra/
+less comhra/spk2gender 
+ls
+ls synthesis_recordings/
+tree
+less synthesis_recordings/anb_text01/corpusfile.txt 
+ls
+less synthesis_recordings/anb_text01/corpusfile.txt 
+less synthesis_recordings/anb_named_entities/corpusfile.txt 
+ls ../
+ls ../../
+svn up
+svn log
+ls
+less synthesis_recordings/anb_named_entities/corpusfile.txt 
+less synthesis_recordings/anb_text01/corpusfile.txt 
+find ../.. -name '*text01-001_000*'
+ls ../../UISC/ANNOT/
+ls ../../UISC/
+find ../.. -name '*text01-*lab'
+less synthesis_recordings/anb_text01/corpusfile.txt 
