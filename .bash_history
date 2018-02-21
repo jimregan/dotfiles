@@ -1,44 +1,3 @@
-less ./comhra/ircl0002_spk2/corpusfile.txt
-ls
-less spk2gender 
-ls
-less synthesis_recordings/apm_an_punk/README.txt 
-less synthesis_recordings/nnc_corpas_beag/README.txt 
-ls ../../ga_MU/nnc/corpas_beag_newLTS/wav
-ls ..
-ls ../..
-ffplay ../../ga_MU/nnc/corpas_beag_newLTS/ogg/CI0001CDArcticOne_1252.ogg 
-ffplay ../../ga_MU/nnc/corpas_beag_newLTS/ogg/CI0001CDArcticOne_1251.ogg 
-less synthesis_recordings/nnc_corpas_beag/README.txt 
-less synthesis_recordings/nnc_corpas_beag/import.sh 
-grep fst ~/disk/Playing/kaldi/egs/wsj/s5/steps/*
-ls ~/disk/Playing/kaldi/egs/wsj/s5/steps/*fst*
-ls ~/disk/Playing/kaldi/egs/wsj/s5/steps/*hclg*
-grep -i hclg ~/disk/Playing/kaldi/egs/wsj/s5/steps/*
-jupyter
-cd ../../
-cd ..
-git clone https://github.com/NYPL/transcript-editor
-ls jupyter-notebooks/
-cd jupyter-notebooks/
-jupyter notebook
-vi ~/current-tabs.txt 
-vi ~/current-tabs2
-cd ../cling-run/
-ls
-cd cling-build/
-ls
-cd ..
-ls
-less cpt.py 
-find . -name '*[Cc][Mm]'
-find . -name '*[Cc][Mm]*'
-pip3 install miniconda
-python3 --version
-cd ~/disk/Playing/xeus-cling/
-ls
-cmake .
-cd ../xeus
 cmake .
 cd ..
 git clone https://github.com/zeromq/cppzmq.git
@@ -1998,3 +1957,44 @@ ls
 vi masalbeagdubh.in 
 wget https://corkirish.files.wordpress.com/2014/11/msf-full-draft.pdf
 ls
+cd build/
+ls
+make 
+vi Makefile 
+sudo ldconfig
+ls
+make 
+ls
+tree caffe/
+less caffe/src/openpose_caffe-stamp/openpose_caffe-patch 
+make
+make clean
+make
+cmake --help-policy CMP0022
+sudo apt-get install python-numpy
+cd ..
+less ubuntu/install_cmake.sh
+less ubuntu/install_caffe_and_openpose_if_cuda8.sh 
+bash ubuntu/install_caffe_and_openpose_if_cuda8.sh 
+cd build/
+make
+make clean
+make
+less Makefile 
+make -f CMakeFiles/Makefile2 openpose_caffe
+less CMakeFiles/Makefile2 
+make -f CMakeFiles/openpose_caffe.dir/build.make CMakeFiles/openpose_caffe.dir/depend
+make -f CMakeFiles/openpose_caffe.dir/build.make depend
+less CMakeFiles/openpose_caffe.dir/build.make 
+cmake -E cmake_depends "Unix Makefiles" /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build/CMakeFiles/openpose_caffe.dir/DependInfo.cmake --color=$(COLOR)
+cmake -E cmake_depends "Unix Makefiles" /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build/CMakeFiles/openpose_caffe.dir/DependInfo.cmake 
+less CMakeFiles/openpose_caffe.dir/build.make 
+make clean
+make
+less CMakeFiles/openpose_caffe.dir/build.make
+cmake -E cmake_echo_color --blue --bold --progress-dir=/home/jim/disk/Playing/openpose/build/CMakeFiles  "Performing build step for 'openpose_caffe'"
+less CMakeFiles/openpose_caffe.dir/build.make
+ls
+make
+# CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/openpose_caffe.dir/all' failed
+# pwd jim@HG658c:~/disk/Playing/openpose/build$
