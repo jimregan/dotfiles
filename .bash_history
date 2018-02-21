@@ -1,33 +1,3 @@
-ls
-mkdir build
-cd build/
-cmake ..
-apt-cache search pugi
-sudo apt-get install libpugixml-dev
-cd ../..
-git clone https://github.com/zeux/pugixml.git
-cd pugixml/
-ls
-cmake .
-sudo make install
-cd ../xeus-cling/
-cmake .
-cd ~/disk/Playing/
-git clone https://github.com/QuantStack/xtensor.git
-cd xtensor/
-ls
-cmake .
-cd ..
-git clone https://github.com/QuantStack/xtl.git
-cd xtl/
-ls
-cmake .
-make
-sudo make install
-cd ../xtensor/
-cmake .
-make
-sudo make install
 cd ..
 git clone https://github.com/QuantStack/xsimd.git
 cd xsimd/
@@ -1998,3 +1968,33 @@ ls
 ls hts_voices/
 ls hts_voices/tcd_gd_anb_hts_108k/
 file hts_voices/tcd_gd_anb_hts_108k/*
+ls
+mkdir poetry
+cd poetry/
+mkdir geibheann
+cd geibheann/
+sh ../../dl.sh https://www.youtube.com/watch?v=wTLGzKPNn9g
+sh ../../dl.sh https://www.youtube.com/watch?v=m9nXPwz66GM
+cd ..
+mkdir mo_ghrasa_idir_luibini
+cd mo_ghrasa_idir_luibini/
+sh ../../dl.sh https://www.youtube.com/watch?v=h55fdru6-uE
+sh ../../dl.sh JyvrZSC_EsY
+cat ../../dl.sh 
+youtube-dl -o '%(id)s.%(ext)s' JyvrZSC_EsY
+ls
+ffplay JyvrZSC_EsY.mp4 
+cd ../geibheann/
+ls
+youtube-dl -o '%(id)s.%(ext)s' m9nXPwz66GM
+ls
+youtube-dl -o '%(id)s.%(ext)s' tmWNjkzVJNk
+ls
+less ../../../../../youtube-pl/dl.sh 
+youtube-dl --write-sub --sub-lang=pl  --sub-format=vtt  -o '%(id)s.%(ext)s' tmWNjkzVJNk
+youtube-dl --write-sub --sub-lang=ga  --sub-format=vtt  -o '%(id)s.%(ext)s' tmWNjkzVJNk
+less tmWNjkzVJNk.ga.vtt 
+ls
+ffplay /tmp/foo.wav 
+cat tmWNjkzVJNk.ga.vtt |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl 
+cat tmWNjkzVJNk.ga.vtt |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl  > tmWNjkzVJNk.aud
