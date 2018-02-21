@@ -1,22 +1,3 @@
-ln -s ../../wsj/s5/steps/ steps
-ln -s ../../wsj/s5/utils utils
-ls -al
-git cp ../../commonvoice/s5/run.sh .
-cp ../../commonvoice/s5/run.sh .
-ls
-less run.sh 
-mkdir local
-cp ../../commonvoice/s5/local/download_and_untar.sh local/
-less local/download_and_untar.sh 
-git log
-ls
-vi run.sh 
-ls
-find data -name '*txt'
-cat data/snuv/snuv_database/157k36_38lat/175_38lat.txt
-find data -name '*txt' -exec cat {} \;|tr -d ')'|tr -d '('|tr ' ' '\n'|sort|uniq > /tmp/snuv-toks
-wc -l /tmp/snuv-toks 
-less /tmp/snuv-toks 
 cat /tmp/snuv-toks | uconv -x pl-pl_FONIPA
 cat /tmp/snuv-toks | uconv -x pl-pl_FONIPA|uconv -x ipa-sampa
 find /usr/local -name 'pl-pl_FONIPA*'
@@ -1998,3 +1979,22 @@ perl -e '$l=5;print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);
 perl -e '$l=5;print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"'
 cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}'
 history -a
+vi ~/disk/Playing/msf-asr/scripts/normalisations.tsv 
+cd ~/disk/Playing/msf-asr/
+git diff
+git add scripts/normalisations.tsv 
+git commit -m 'add more'
+vi mapping-errors.txt
+ls
+cd TG4/scripts/
+svn status
+perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5731565851001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=36'
+perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5721695053001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
+perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5708829256001&teideal=Dora&series=Dora&dlft=7'
+vi tg4-scrape.pl 
+perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31'
+svn diff
+vi tg4-scrape.pl 
+mv /tmp/edge-output /tmp/edge-output.js
+curl 'http://ssaiplayback.prod.boltdns.net/playback/once/v1/hls/v5/fairplay/1555966122001/4930e2b4-d152-46c8-973c-864ad7afdca9/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/master.m3u8?bc_token=NWFhN2Y4NjNfNzQxNDY0MmM3YWEwY2Y4OWY1NjI2MzIwYzQ1M2IwODYzM2YxZDdkNzc1YTFkODRiMjVkYzI4ZDE5MzYxMDc3MQ%3D%3D' > /tmp/bdo
+less /tmp/bdo 
