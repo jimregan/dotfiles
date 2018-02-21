@@ -1,53 +1,3 @@
-file *|grep PNG
-file *|grep PNG|awk -F':' '{print $1}'
-file *|grep PNG|awk -F':' '{print $1}'|sed -e 's/\.jpg$//'|while read i;do mv $i.jpg $i.png; convert $i.png $i.pbm; cjb2 -clean $i.pbm $i.djvu;done
-for i in *jpg;do identify -format "%w x %h %x x %y"  $i;done
-for i in *jpg;do identify -format "%w x %h %x x %y\n"  $i;done
-ls
-for i in *jpg;do num=$(basename $i .jpg); c44 -dpi 300 $i;done
-djvm -c ../La_Isla_del_Tesoro_-_Caballero_1901.djvu *.djvu
-cp ../La_Isla_del_Tesoro_-_Caballero_1901.djvu .
-ls -al La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-sudo mv ~/Downloads/spa.traineddata /usr/local/share/tessdata/
-../ocrodjvu/
-../ocrodjvu/ocrodjvu 
-../ocrodjvu/ocrodjvu -h
-#../ocrodjvu/ocrodjvu -l spa
-../ocrodjvu/ocrodjvu -l spa La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-../ocrodjvu/ocrodjvu -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-../ocrodjvu/ocrodjvu -e tesseract -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-which tesseract
-tesseract -l
-tesseract --list-langs
-../ocrodjvu/ocrodjvu -e tesseract -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-../ocrodjvu/ocrodjvu -e tesseract -l gle --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-vi ../ocrodjvu/ocrodjvu
-vi ../ocrodjvu/lib/engines/tesseract.py
-find ../ocrodjvu -name '*py'|xargs grep 'selected lang'
-vi ../ocrodjvu/lib/errors.py
-find ../ocrodjvu -name '*py'|xargs grep MissingLanguagePack
-vi ../ocrodjvu/lib/engines/tesseract.py
-vi ../ocrodjvu/lib/iso639.py
-../ocrodjvu/ocrodjvu -e tesseract -l es --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-../ocrodjvu/ocrodjvu -e tesseract -l esp --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-../ocrodjvu/ocrodjvu -e tesseract -l eng --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-ls /usr/local/share/tessdata/
-../ocrodjvu/ocrodjvu -e tesseract -l spa --in-place  La_Isla_del_Tesoro_-_Caballero_1901.djvu 
-cp La_Isla_del_Tesoro_-_Caballero_1901.djvu ..
-wget https://www.gutenberg.org/files/45438/45438-h/45438-h.htm
-wget https://www.gutenberg.org/files/45438/45438-h.zip
-unzip -l 45438-h.zip 
-unzip 45438-h.zip 
-mkdir imgup
-cp 45438-h/images/*_lg* imgup/
-ls imgup/
-cd imgup/
-for i in *;do mv $i La_Isla_del_Tesoro_-_Caballero_1901-$i;done
-ls
-cd ..
-ls
-vi 45438-h.htm 
-grep '<a' inpages 
 cat inpages |perl ~/niamhbot.pl 
 less inpages 
 cat inpages |perl ~/niamhbot.pl 
@@ -1998,3 +1948,53 @@ git pull origin irishnew
 git log
 git merge master
 git push origin irishnew 
+vi cmudict.dict 
+git diff
+vi cmudict.dict 
+git diff
+vi cmudict.dict 
+git diff
+vi cmudict.dict 
+git diff |grep AO
+vi cmudict.dict 
+git diff
+git diff|grep '^\+'
+git diff|grep '^\+'|head
+git diff|grep '^\+'|wc
+git add cmudict.dict 
+git commit -m '76 new words/alternatives'
+git remote add mine https://github.com/jimregan/cmudict.git
+git branch
+git push mine missing
+git branch -a
+git pull origin 
+git branch -a
+git checkout -b pull9-merge
+git fetch origin pull/9/head:pull9-merge
+git fetch origin pull/9/head
+git diff
+git log
+git branch -a
+git fetch origin pull/9/head:pull9
+git merge pull9
+git diff
+vi cmudict.dict 
+git add cmudict.dict 
+git commit -m 'fix merge conflict with #9, add stress, fix errors and add alternatives'
+git branch
+git push mine pull9-merge 
+python3 -m spacy download es_core_news_md
+sudo python3 -m spacy download es_core_news_md
+git checkout master
+git pull origin master
+git branch
+git checkout pull9-merge 
+git merge master
+vi cmudict.dict 
+git add cmudict.dict 
+git commit -m 'fix numbering'
+git push mine pull9-merge 
+cd ..
+git clone https://github.com/spandanagella/verse.git
+git clone https://github.com/goccy/p5-Compiler-CodeGenerator-LLVM.git
+#git clone https://github.com/goccy/p5-Compiler-CodeGenerator-LLVM.git
