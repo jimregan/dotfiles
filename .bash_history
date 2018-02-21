@@ -1,12 +1,3 @@
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
-g++ tester.cpp FSA.cpp Node.cpp -o tester
-./tester 
 ls /tmp/*ps
 ps2pdf /tmp/jim_fsa.ps 
 ls /tmp/*ps
@@ -1998,3 +1989,12 @@ tree merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
 wget --warc-file=merrionstreet2 -rl5 -np https://merrionstreet.ie
 tree merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
 wget --warc-file=merrionstreet -rl7 -np https://merrionstreet.ie
+cd ~/disk/Playing/
+ls
+git clone https://github.com/HaraldBerthelsen/kaldi_stuff.git
+mkdir api.ai
+cd api.ai/
+wget https://github.com/dialogflow/api-ai-english-asr-model/releases/download/1.0/api.ai-kaldi-asr-model.zip
+unzip -l api.ai-kaldi-asr-model.zip 
+unzip api.ai-kaldi-asr-model.zip 
+less api.ai-kaldi-asr-model/LICENCE 
