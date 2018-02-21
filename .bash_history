@@ -1,26 +1,3 @@
-pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
-sudo pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
-pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
-sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
-python NPE.py 
-ls
-grep conv3d2d *py
-grep dnn_conv3d *py
-grep dnn_conv2d *py
-grep dnn_pool *py
-grep dnn_batch_normalization_train *py
-grep sandbox *
-vi NPE.py 
-python NPE.py 
-ls
-file IAN_simple.npz 
-less IAN_simple.npz 
-apt-cache search lfs
-git lfs install
-git --version
-git pull origin master
-ls
-cd ..
 rm -rf Neural-Photo-Editor/
 git clone https://github.com/ajbrock/Neural-Photo-Editor
 git lfs install
@@ -1998,3 +1975,26 @@ ls ../../UISC/ANNOT/
 ls ../../UISC/
 find ../.. -name '*text01-*lab'
 less synthesis_recordings/anb_text01/corpusfile.txt 
+cd ..
+git clone https://github.com/Maratyszcza/NNPACK
+mkdir keithito
+cd keithito/
+git clone https://github.com/keithito/tacotron
+cd ../Corpora
+ls
+cd ga_UL/
+ls
+cd anb/
+ls
+find . -type f
+find . -name '*lab'
+less text01-001/lab/
+ls text01-001/lab/
+find . -name lab
+ls text01-004/lab/
+ls text02/lab/
+ls
+ls text01
+ls named-entities/lab/
+ls named-entities/wav_trimmed/
+ls
