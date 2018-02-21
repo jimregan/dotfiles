@@ -1,15 +1,3 @@
-cd ..
-git clone https://github.com/QuantStack/xsimd.git
-cd xsimd/
-cmake .
-cd ..
-git clone https://github.com/QuantStack/xeus-cling.git
-cd xeus-cling/
-ls
-cmake .
-cd ..
-git clone https://github.com/QuantStack/xeus.git
-cd xeus
 ls
 cmake .
 cd ..
@@ -1998,3 +1986,15 @@ ls
 ffplay /tmp/foo.wav 
 cat tmWNjkzVJNk.ga.vtt |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl 
 cat tmWNjkzVJNk.ga.vtt |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl  > tmWNjkzVJNk.aud
+cd ..
+find .  -name named-entities_186.wav
+find .  -name '*named-entities_186*'
+less ./ga_UL/anb/named-entities/lab/named-entities_186.lab
+ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg
+ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg|grep Duration
+ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg 2>& |grep Duration
+ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg  |grep Duration
+ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg 2>&1 |grep Duration
+ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_* 2>&1 |grep Duration
+for i in ./ga_UL/anb/named-entities/ogg/named-entities_*;do ffprobe $i 2>&1 |grep Duration; done
+for i in ./ga_UL/anb/named-entities/ogg/named-entities_*;do ffprobe $i 2>&1 |grep Duration; done >> /tmp/anb-durs
