@@ -1,6 +1,3 @@
-cd test/
-jupyter notebook
-cd ~/disk/Playing/cling-run/
 ls
 cd inst/
 ls
@@ -1998,3 +1995,6 @@ less data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
 less data/seanchas_rann_na_feirste/obmsm_seanchas_rann_na_feirste/corpusfile.txt 
 less data/seanchas_rann_na_feirste/fngcf_seanchas_rann_na_feirste/corpusfile.txt 
 less data/seanchas_rann_na_feirste/banbf_seanchas_rann_na_feirste/corpusfile.txt 
+cd /tmp/
+youtube-dl --all-subs --skip-download  https://www.youtube.com/watch?v=oFk7dgS8V18
+youtube-dl --all-subs --write-auto-sub --skip-download  https://www.youtube.com/watch?v=oFk7dgS8V18
