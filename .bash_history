@@ -1,17 +1,3 @@
-cat /tmp/snuv-toks | uconv -x pl-pl_FONIPA
-cat /tmp/snuv-toks | uconv -x pl-pl_FONIPA|uconv -x ipa-sampa
-find /usr/local -name 'pl-pl_FONIPA*'
-echo pięd | uconv -x pl-pl_FONIPA
-echo piędź | uconv -x pl-pl_FONIPA
-echo pięć | uconv -x pl-pl_FONIPA
-echo pięt | uconv -x pl-pl_FONIPA
-echo piędź | uconv -x pl-pl_FONIPA
-echo pięb | uconv -x pl-pl_FONIPA
-echo ślizg | uconv -x pl-pl_FONIPA
-echo liczb | uconv -x pl-pl_FONIPA
-echo mógł | uconv -x pl-pl_FONIPA
-echo ślizg- | uconv -x pl-pl_FONIPA
-echo ślizga | uconv -x pl-pl_FONIPA
 echo liczp | uconv -x pl-pl_FONIPA
 echo liczb nową | uconv -x pl-pl_FONIPA
 echo zkąd | uconv -x pl-pl_FONIPA
@@ -1998,3 +1984,17 @@ vi tg4-scrape.pl
 mv /tmp/edge-output /tmp/edge-output.js
 curl 'http://ssaiplayback.prod.boltdns.net/playback/once/v1/hls/v5/fairplay/1555966122001/4930e2b4-d152-46c8-973c-864ad7afdca9/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/master.m3u8?bc_token=NWFhN2Y4NjNfNzQxNDY0MmM3YWEwY2Y4OWY1NjI2MzIwYzQ1M2IwODYzM2YxZDdkNzc1YTFkODRiMjVkYzI4ZDE5MzYxMDc3MQ%3D%3D' > /tmp/bdo
 less /tmp/bdo 
+ls
+cd web-corpora/
+ls
+cd merrionstreet/
+ls
+mkdir corp
+cd corp/
+git init .
+vi ga001.txt
+vi ga002.txt
+vi en002.txt
+paste ga002.txt en002.txt 
+vi en002.txt
+vi gaen002.txt
