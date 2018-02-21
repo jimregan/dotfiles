@@ -1,52 +1,3 @@
-less model/model-final/ner/upper_model 
-less model/model-final/tagger/tag_map 
-less model/model-final/tokenizer 
-less model/model-final/parser/cfg 
-less model/model-final/parser/upper_model 
-python3 /tmp/spa.py 
-vi /tmp/spa.py 
-python3 /tmp/spa.py 
-vi /tmp/spa.py 
-python3 /tmp/spa.py 
-vi /tmp/spa.py 
-python3 /tmp/spa.py 
-cd ~/disk/Playing/
-git clone https://github.com/UniversalDependencies/UD_Irish
-cd UD_Irish/
-git remote add mine https://github.com/jimregan/UD_Irish.git
-git push mine master
-git checkout -b fix-vocative-adjectives
-ls
-grep uaisle *conllu
-grep 'Plur|PartType=Voc' *conllu
-grep 'PartType=Voc' *conllu
-vi ga-ud-dev.conllu 
-vi ga-ud-test.conllu 
-vi ga-ud-train.conllu 
-git diff
-git add ga-ud-*
-git commit -m 'vocative case mislabeled as parttype'
-git branch
-git push mine fix-vocative-adjectives 
-vi ga-ud-train.conllu 
-vi ga-ud-dev.conllu 
-vi ga-ud-test.conllu 
-vi ga-ud-train.conllu 
-git diff
-vi ga-ud-train.conllu 
-git diff
-git checkout master
-git diff
-git checkout -b more-lemmatisation
-git add ga-ud-train.conllu 
-git commit -m 'more lemmatisation/proper noun misses'
-git push mine more-lemmatisation 
-cd /tmp/
-#python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
-mkdir model2
-python3 -m spacy train pl /tmp/model /tmp/udpl/pl-ud-train.json /tmp/udpl/pl-ud-dev.json -n 5
-ls -al model
-ls -al model/model-final/
 less model/model-final/tokenizer 
 cat test.txt
 grep gnacy plps.dic 
@@ -1998,3 +1949,52 @@ grep tuesday cmudict.dict
 grep herb cmudict.dict 
 grep student cmudict.dict 
 grep stew cmudict.dict 
+cd ..
+cd msf-asr/
+mkdir edc
+rmdir edo
+rmdir edc
+mkdir edco
+cd edco/
+lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html
+lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3
+lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3|awk '{$1=""}{print}'
+lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3|awk '{$1=""}{print}'|sed -e 's/^ //'
+lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3|awk '{$1=""}{print}'|sed -e 's/^ //' > mp3s
+less mp3s 
+wget -i mp3s 
+wc -l mp3s 
+wget https://www.edco.ie/_fileupload/Fonn%202%20New%20Student%20CD/Fonn%202%20New%20CD%20Script.pdf
+wget https://www.edco.ie/_fileupload/Fonn%20booklets%20and%20CDs/Fonn%203%20supplement%20booklet%20opt.pdf
+pdftohtml Fonn\ 2\ New\ CD\ Script.pdf 
+ls
+lynx Fonn\ 2\ New\ CD\ Script.html 
+ffplay Dict\ and\ Dem\ 11.mp3 
+ls
+rm Dict\ *
+ls
+vi mp3s 
+fdupes .
+ffplay air5571s_scd1_track47.mp3
+pdftotext Fonn\ 2\ New\ CD\ Script.pdf 
+less Fonn\ 2\ New\ CD\ Script.txt
+ffplay air5571s_scd1_track1.mp3 
+ls
+kill -9 26965
+kill -9 31807
+kill -9 15732
+kill -9 17712
+ps aux|grep chromium
+kill -9 32529
+kill -9 30183
+kill -9 32301
+kill -9 30183
+kill -9 30133
+kill -9 29773
+kill -9 29483
+kill -9 28725
+kill -9 28275
+kill -9 17775
+kill -9 26324
+kill -9 17860
+kill -9 17895
