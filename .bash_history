@@ -1,350 +1,3 @@
-cat wyspa-skarbow.txt-01.txt.sent|tr ' ' '\n'|wc
-wc -l 1.out 
-less 1.out 
-less wyspa-skarbow.txt-01.txt.sent
-less 1.out 
-cat 1.out |awk -F'"' '{print $2}'
-cat 1.out |awk -F'"' '{print $2}' > 1.words
-wdiff wyspa-skarbow.txt-01.txt.sent 1.words 
-wdiff wyspa-skarbow.txt-01.txt.sent 1.words |less
-less 1.jsgf 
-less 1.out 
-ls
-less 6.out 
-cat 6.out |awk -F'"' '{print $2}' > 6.words
-wdiff wyspa-skarbow.txt-06.txt.sent 6.words |less
-grep wystarczy chłopcze wyspa-skarbow.txt-06.txt
-wdiff wyspa-skarbow.txt-06.txt.sent 6.words |less
-grep -i 'wystarczy chłopcze' wyspa-skarbow.txt-06.txt
-grep -i 'wystarczy chłopcze' wyspa-skarbow.txt-06.txt.sent
-grep -i 'wystarczy chłopcze' wyspa-skarbow.txt-06.txt
-grep -i wystarczy  wyspa-skarbow.txt-06.txt
-grep -i wystarczy  wyspa-skarbow.txt-06.txt|grep chłopcze
-grep -i wystarczy  wyspa-skarbow.txt-06.txt.sent|grep chłopcze
-ls
-less align.sh 
-less 1.out 
-less 1.words 
-less 1.err 
-less 1.out 
-ls
-ls ..
-find . -name '*java'
-less Aligner.java 
-ls
-less 1.jsgf 
-grep pock *sh
-cat align.sh 
-pocketsphinx_batch -h
-pocketsphinx_batch --help
-pocketsphinx_batch 
-less plps.dic 
-vi plps.dic 
-pocketsphinx_batch 
-pocketsphinx_batch -jsgf 1.jsgf
-pocketsphinx_batch 
-ls cmusphinx-clarinpl/
-less cmusphinx-clarinpl/pl.dic
-pocketsphinx_batch -jsgf 1.jsgf -dic plps.dic 
-pocketsphinx_batch -jsgf 1.jsgf -dict plps.dic 
-pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic 
-pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic -infile
-ls
-pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
-vi plps.dic 
-#pocketsphinx_continuous -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
-pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
-vi 1.jsgf 
-pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
-vi 1.jsgf 
-pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav
-pocketsphinx_continuous -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
-less tsterr 
-vi 1.jsgf 
-pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
-less tsterr 
-vi 1.jsgf 
-less tsterr 
-pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
-less tsterr 
-vi plps.dic 
-pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
-vi 1.jsgf 
-pocketsphinx_continuous  -time yes -hmm cmusphinx-clarinpl -jsgf 1.jsgf -dict plps.dic -infile 01-robert-louis-stevenson-wyspa-skarbow.mp3.wav > tstout 2> tsterr
-ls
-less 1.jsgf 
-wc -l wyspa-skarbow.txt-01.txt.sent
-less 1.jsgf 
-perl -e 'print map { "<g$_>" } (1..10)'
-perl -e 'print join " | " map { "<g$_>" } (1..10)'
-perl -e 'print join " | ", map { "<g$_>" } (1..10)'
-cat wyspa-skarbow.txt-01.txt.sent
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = ";pr join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{ml=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";}$l++'END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l=1}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{my $l = 1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'my $l;BEGIN{$l = 1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l = 1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"}'|less
-perl -e '$l=5;print "public <grm> = " . join " | ", map { "<g$_>" } (1..$l) . ";\n"'
-perl -e '$l=5;print "public <grm> = " . join " | ", map { local$_=$_;"<g$_>" } (1..$l) . ";\n"'
-perl -e 'print map { "<g$_>" } (1..10)'
-history -a
-perl -e '$l=5;print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}
-'
-perl -e '$l=5;print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"'
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}'
-history -a
-vi ~/disk/Playing/msf-asr/scripts/normalisations.tsv 
-cd ~/disk/Playing/msf-asr/
-git diff
-git add scripts/normalisations.tsv 
-git commit -m 'add more'
-vi mapping-errors.txt
-ls
-cd TG4/scripts/
-svn status
-perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5731565851001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=36'
-perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5721695053001&teideal=Cat%20a%27%20Hata&series=Cat%20a%27%20Hata&dlft=35'
-perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5708829256001&teideal=Dora&series=Dora&dlft=7'
-vi tg4-scrape.pl 
-perl tg4-scrape.pl 'https://www.tg4.ie/ga/player/baile/?pid=5728266473001&teideal=Ros%20na%20R%C3%BAn&series=Ros%20na%20R%C3%BAn&dlft=31'
-svn diff
-vi tg4-scrape.pl 
-mv /tmp/edge-output /tmp/edge-output.js
-curl 'http://ssaiplayback.prod.boltdns.net/playback/once/v1/hls/v5/fairplay/1555966122001/4930e2b4-d152-46c8-973c-864ad7afdca9/b7e8fb0d-49ce-471c-85bc-f5bedb57a103/master.m3u8?bc_token=NWFhN2Y4NjNfNzQxNDY0MmM3YWEwY2Y4OWY1NjI2MzIwYzQ1M2IwODYzM2YxZDdkNzc1YTFkODRiMjVkYzI4ZDE5MzYxMDc3MQ%3D%3D' > /tmp/bdo
-less /tmp/bdo 
-ls
-cd web-corpora/
-ls
-cd merrionstreet/
-ls
-mkdir corp
-cd corp/
-git init .
-vi ga001.txt
-vi ga002.txt
-vi en002.txt
-paste ga002.txt en002.txt 
-vi en002.txt
-vi gaen002.txt
-cd ~/disk/Playing/Corpora
-ls
-svn up
-find . -name tcd_rc_pmc_TEST_multisyn
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/
-cd ~/disk/Playing/
-ls
-git clone https://github.com/NYPL/oral-history.git
-git clone https://github.com/NYPL/transcript-editor
-cd transcript-editor/
-ls
-git pull origin master
-cd ..
-mkdir spotlight
-cd spotlight/
-wget https://dumps.wikimedia.org/plwiki/20180201/plwiki-20180201-pages-articles-multistream.xml.bz2
-cd ~/disk/Playing/
-cd languagetool
-git branch
-git log
-git checkout irishnew 
-git diff
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/placenames.txt
-git commit -m 'some more suggestions for English words'
-git checkout irishnew 
-git log
-git pull origin irishnew 
-git log
-git checkout master
-git pull upstream master 
-git checkout irish
-git log
-git checkout irishnew 
-git checkout -b more-irish
-git cherry-pick 9e6b87d390bdfe3359a970173d36a02a7de4f1e8
-git log
-git merge master
-git push origin more-irish 
-vi languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt 
-git add languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/english-homophones.txt languagetool-language-modules/ga/src/main/resources/org/languagetool/resource/ga/placenames.txt
-git commit -m 'some more suggestions for English words'
-git push origin more-irish 
-git checkout irishnew 
-git pull origin irishnew 
-git log
-git merge master
-git push origin irishnew 
-vi cmudict.dict 
-git diff
-vi cmudict.dict 
-git diff
-vi cmudict.dict 
-git diff
-vi cmudict.dict 
-git diff |grep AO
-vi cmudict.dict 
-git diff
-git diff|grep '^\+'
-git diff|grep '^\+'|head
-git diff|grep '^\+'|wc
-git add cmudict.dict 
-git commit -m '76 new words/alternatives'
-git remote add mine https://github.com/jimregan/cmudict.git
-git branch
-git push mine missing
-git branch -a
-git pull origin 
-git branch -a
-git checkout -b pull9-merge
-git fetch origin pull/9/head:pull9-merge
-git fetch origin pull/9/head
-git diff
-git log
-git branch -a
-git fetch origin pull/9/head:pull9
-git merge pull9
-git diff
-vi cmudict.dict 
-git add cmudict.dict 
-git commit -m 'fix merge conflict with #9, add stress, fix errors and add alternatives'
-git branch
-git push mine pull9-merge 
-python3 -m spacy download es_core_news_md
-sudo python3 -m spacy download es_core_news_md
-git checkout master
-git pull origin master
-git branch
-git checkout pull9-merge 
-git merge master
-vi cmudict.dict 
-git add cmudict.dict 
-git commit -m 'fix numbering'
-git push mine pull9-merge 
-cd ..
-git clone https://github.com/spandanagella/verse.git
-git clone https://github.com/goccy/p5-Compiler-CodeGenerator-LLVM.git
-#git clone https://github.com/goccy/p5-Compiler-CodeGenerator-LLVM.git
-youtube-dl -h
-youtube-dl --help
-cd ~/disk/Playing/
-cd msf-asr/TG4/
-mkdir youtube
-cd youtube/
-less ~/disk/Playing/youtube-pl/dl.sh 
-#youtube-dl -x --audio-format=best
-less ~/disk/Playing/youtube-pl/dl.sh 
-vi dl.sh
-sh dl.sh 1mP0tuGp7hU
-less ~/disk/Playing/youtube-pl/dl.sh 
-vi dl.sh
-sh dl.sh 1mP0tuGp7hU
-ls
-audacity 1mP0tuGp7hU.m4a.wav 
-ls
-mv tmWNjkzVJNk.aud poetry/geibheann/
-mv m9nXPwz66GM.txt poetry/geibheann/
-less poetry/geibheann/m9nXPwz66GM.txt 
-ls
-ls poetry/
-rm -rf src/openpose/CMakeFiles/
-rm -rf src/openpose/build/
-make -j 8
-ls
-cd build/
-ls
-make -j 8
-ls
-find . -type f
-cd ..
-./build/examples/openpose/openpose.bin --video examples/media/video.avi
-cd build/examples/openpose/
-make
-cd ..
-make
-cd build/
-make
-apt-cache search opencv
-apt-cache search opencv|grep dev
-sudo apt-get install libopencv-contrib-dev 
-sudo apt-get install libcv-dev
-cd ../..
-apt-cache search opencv3
-sudo apt-get install libtiff4-dev
-sudo apt-get install libtiff5-dev
-cd modern-ga/
-ls
-vi masalbeagdubh.in 
-wget https://corkirish.files.wordpress.com/2014/11/msf-full-draft.pdf
-ls
-cd build/
-ls
-make 
-vi Makefile 
-sudo ldconfig
-ls
-make 
-ls
-tree caffe/
-less caffe/src/openpose_caffe-stamp/openpose_caffe-patch 
-make
-make clean
-make
-cmake --help-policy CMP0022
-sudo apt-get install python-numpy
-cd ..
-less ubuntu/install_cmake.sh
-less ubuntu/install_caffe_and_openpose_if_cuda8.sh 
-bash ubuntu/install_caffe_and_openpose_if_cuda8.sh 
-cd build/
-make
-make clean
-make
-less Makefile 
-make -f CMakeFiles/Makefile2 openpose_caffe
-less CMakeFiles/Makefile2 
-make -f CMakeFiles/openpose_caffe.dir/build.make CMakeFiles/openpose_caffe.dir/depend
-make -f CMakeFiles/openpose_caffe.dir/build.make depend
-less CMakeFiles/openpose_caffe.dir/build.make 
-cmake -E cmake_depends "Unix Makefiles" /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build/CMakeFiles/openpose_caffe.dir/DependInfo.cmake --color=$(COLOR)
-cmake -E cmake_depends "Unix Makefiles" /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build /home/jim/disk/Playing/openpose/build/CMakeFiles/openpose_caffe.dir/DependInfo.cmake 
-less CMakeFiles/openpose_caffe.dir/build.make 
-make clean
-make
-less CMakeFiles/openpose_caffe.dir/build.make
-cmake -E cmake_echo_color --blue --bold --progress-dir=/home/jim/disk/Playing/openpose/build/CMakeFiles  "Performing build step for 'openpose_caffe'"
-less CMakeFiles/openpose_caffe.dir/build.make
-ls
-make
-# CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/openpose_caffe.dir/all' failed
-# pwd jim@HG658c:~/disk/Playing/openpose/build$
-cd ~/disk/Playing/cmudict/
-ls
-less cmudict.dict 
-grep boyd cmudict.dict 
-grep crotty cmudict.dict 
-less cmudict.dict 
-grep westmore cmudict.dict 
-grep hawkins cmudict.dict 
-grep awe cmudict.dict 
-grep slayer cmudict.dict 
-grep sepultura cmudict.dict 
-grep beatles cmudict.dict 
-grep sheeran cmudict.dict 
-grep EN cmudict.dict 
-grep charger cmudict.dict 
-grep phone cmudict.dict 
-grep higgins cmudict.dict 
-grep sean cmudict.dict 
-grep rte cmudict.dict 
-grep '^h ' cmudict.dict 
-grep '^a ' cmudict.dict 
-grep '^t ' cmudict.dict 
 grep '^r ' cmudict.dict 
 grep '^e ' cmudict.dict 
 grep '^cmu ' cmudict.dict 
@@ -1998,3 +1651,350 @@ make
 cd ~/disk/Playing/
 git clone https://github.com/amsehili/auditok
 find . -name 'deepsp*' -type d
+cd ../Classes/
+ls
+for i in *cpp;do /usr/bin/c++   -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
+find .. -name cocos2d.h
+ls
+grep SimpleA *
+less Audio.h 
+find /home/jim/disk/Playing/cocos2d-x/ -name SimpleAudioEngine.h
+find /home/jim/disk/Playing/cocos2d-x/ -name cocos2d.h
+for i in *cpp;do /usr/bin/c++ -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
+less /home/jim/disk/Playing/cocos2d-x/cocos/base/CCRef.h
+less /home/jim/disk/Playing/cocos2d-x/cocos/platform/CCPlatformDefine.h 
+for i in *cpp;do /usr/bin/c++ -DCC_TARGET_PLATFORM= -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
+less /home/jim/disk/Playing/cocos2d-x/cocos/platform/CCPlatformDefine.h 
+for i in *cpp;do /usr/bin/c++ -DCC_TARGET_PLATFORM=CC_PLATFORM_LINUX -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
+for i in *cpp;do /usr/bin/c++ -DCC_PLATFORM_LINUX -DCC_TARGET_PLATFORM=CC_PLATFORM_LINUX -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
+cd ../
+ls
+cd linux-build/
+ls
+rm -rf CMakeFiles/
+rm Makefile CMakeCache.txt 
+vi ../CMakeLists.txt 
+cmake ..
+cd ..
+cocos run -p linux
+ls
+cd linux-build/
+ls
+make
+ls
+find  . -name 'MyGame*'
+./bin/MyGame 
+sudo ldconfig
+./bin/MyGame 
+ls -al /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmod.so.6
+ls -al /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/
+rm /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmod.so.6
+rm /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmodL.so.6
+cd /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/
+ls
+ln -s libfmod.so.6 libfmod.so 
+ln -s libfmod.so libfmod.so.6 
+ls
+ln -s libfmodL.so libfmodL.so.6 
+cd -
+./bin/MyGame 
+cd ..
+ls Classes/*cpp|cat
+cd ..
+ls Classes/*cpp
+ls -l Classes/*cpp
+ls - Classes/*cpp
+ls -a Classes/*cpp
+ls -a Classes/*cpp|cat
+ls -a Classes/*h|cat
+cd ../redo/
+ls
+ls -al
+rm -rf proj.win32/Debug.win32/
+cmake .
+cocos run -p .
+cocos run -p linux
+;s
+ls
+man ln
+ln -sd ../../Playing/cocos2d-x/ cocos2d
+make
+ls
+cocos run -p linux
+less CMakecls
+ls
+rm -rf CMakeFiles/ CMakeCache.txt 
+cmake .
+less CMakeLists.txt 
+cmake -DLINUX .
+less CMakeLists.txt 
+ls
+rm -rf CMakeFiles/ CMakeCache.txt 
+less CMakeLists.txt 
+cocos run -p linux
+rm -rf CMakeFiles/ CMakeCache.txt 
+vi CMakeLists.txt 
+cocos run -p linux
+cocos help
+cocos -h
+cocos compile -p linux
+cocos compile 
+cocos deploy -p linux
+less linux-build/CMakeFiles/CMakeOutput.log 
+ls
+rm -rf linux-build/
+cocos deploy -p linux
+vi CMakeLists.txt 
+ls
+rm -rf linux-build/
+cocos deploy -p linux
+less linux-build/CMakeFiles/CMakeOutput.log 
+ls
+rm -rf linux-build/
+less CMakeLists.txt 
+ls
+cocos run -p linux
+less CMakeLists.txt 
+rm -rf linux-build/
+cocos run -p linux
+ls
+cd linux-build/
+ls
+make
+less ../proj.linux/main.cpp 
+less Makefile 
+less CMakeFiles/Makefile2 
+less ../Classes/AppDelegate.cpp 
+ls ../
+make
+less Makefile 
+less CMakeFiles/Makefile2 
+less CMakeFiles/MyGame.dir/build.make 
+less CMakeFiles/MyGame.dir/link.txt 
+sh CMakeFiles/MyGame.dir/link.txt ../Classes/*.cpp ../proj.linux/main.cpp 
+sh CMakeFiles/MyGame.dir/link.txt  ../proj.linux/main.cpp ../Classes/*.cpp
+sh CMakeFiles/MyGame.dir/link.txt  ../proj.linux/main.cpp 
+vi CMakeFiles/MyGame.dir/link.txt  
+sh CMakeFiles/MyGame.dir/link.txt  
+cat CMakeFiles/MyGame.dir/link.txt  
+cat CMakeFiles/MyGame.dir/depend.
+cat CMakeFiles/MyGame.dir/depend.make 
+cat CMakeFiles/MyGame.dir/flags.make 
+cat CMakeFiles/MyGame.dir/DependInfo.cmake 
+cat CMakeFiles/MyGame.dir/cmake_clean.cmake 
+cat CMakeFiles/MyGame.dir/build.make 
+cat CMakeFiles/MyGame.dir/link.txt  
+cd ..
+ls
+cmake .
+make
+ls
+less CMakeLists.txt 
+ls
+less Makefile 
+git status
+git diff
+ls
+cd cocos2d/
+sl
+ls
+make
+find /usr/include/ -name 'glfw3.h'
+find /usr/include/ -name 'glfw.h'
+less /usr/include/GL/glfw.h 
+sudo apt-get install libglfw3-dev
+make
+less /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
+make
+less /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
+make
+vi /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
+make
+vi /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
+cocos2d-x/build/install-deps-linux.sh 
+bash cocos2d-x/build/install-deps-linux.sh 
+bash build/install-deps-linux.sh 
+vi build/install-deps-linux.sh 
+sh ~/disk/Playing/cocos2d-x/build/install-deps-linux.sh 
+cd ..
+cocos run -p linux
+ls
+make
+ls
+ls lib/
+ls Screenshots/
+ls Resources/
+ls -al
+ls bin
+ls Classes/
+mkdir ../redo
+cp -r Screenshots/ ../redo/
+cp -r Resources/ ../redo/
+cp -r Classes/ ../redo/
+cp -r linux-build/ proj.* ../redo/
+ls
+cp .cocos-project.json CMakeLists.txt README.md ../redo/
+less cmake_install.cmake 
+ls
+less CMakeLists.txt 
+ls
+make
+ls
+cd ../../shared/
+du .
+ls
+cd demo1/
+ls
+cmake .
+apt-cache search glfw3
+sudo apt-get install libglfw3-dev
+cmake .
+ls
+cocos 
+cocos run -p linux
+ls
+find . -name '*cpp'
+less proj.linux/main.cpp 
+ls
+make
+cd cocos2d/
+ls
+cd build/
+cmake ..
+ls
+sh install-deps-linux.sh 
+cd ..
+sh build/install-deps-linux.sh 
+bash build/install-deps-linux.sh 
+ls tools
+ls
+cd build/
+ls
+git status
+rm -rf ../CMakeFiles/ 
+cmake ..
+rm -rf CMakeFiles/ CMakeCache.txt 
+cmake ..
+cd ..
+cmake .
+ls
+find . -type d -name tests
+git submodule update --init
+ls
+less README.cmake 
+mkdir bb
+cd bb
+cmake -G "Unix Makefiles" -DBUILD_CPP_TESTS=OFF -DBUILD_LUA_LIBS=OFF ..
+cd ..
+ls
+make
+cmake .
+rm -rf CMakeFiles/
+cmake .
+rm -rf CMakeFiles/ CMakeCache.txt 
+ls
+rm -rf bb/
+mkdir bb
+cd bb
+cmake -G "Unix Makefiles" -DBUILD_CPP_TESTS=OFF -DBUILD_LUA_LIBS=OFF ..
+less ../CMakeLists.txt 
+ls
+rm -rf *
+ls
+cmake -G "Unix Makefiles" -DBUILD_CPP_TESTS=OFF -DBUILD_LUA_LIBS=OFF ..
+ls
+rm -rf *
+cd ..
+ls
+python download-deps.py 
+find . -name '*sh'
+sh ./build/install-deps-linux.sh 
+bash ./build/install-deps-linux.sh 
+apt-cache search glfw
+sudo apt-get install libglfw3-dev
+sudo apt-get install libglfw-dev
+cd ..
+git clone https://github.com/cocos2d/cocos2d-x
+cd cocos2d-x/
+ls
+python download-deps.py
+ls
+git submodule update --init
+ls
+mkdir build
+cd build/
+ls
+make ..
+cmake ..
+apt-get install libsqlite3-dev 
+sudo apt-get install libsqlite3-dev 
+cmake ..
+sudo apt-get install libglew-dev 
+cmake ..
+sudo apt-get install libgtk-3-dev 
+cmake ..
+sudo apt-get install libcurlpp-dev 
+sudo apt-get install libcurl4-openssl-dev 
+cmake ..
+make -j 8
+sudo make install
+ls
+cd ..
+ls
+sudo python setup.py install
+. ~/.bashrc
+cd ../Yr4-Platform-Games-Development-CA/
+ls
+cocos run -p linux
+mv ~/Downloads/cocos-project.json .cocos-project.json
+cocos run -p linux
+less .cocos-project.json 
+ls
+cd executor/
+ls
+ls configs/
+less README
+cd ..
+git clone https://github.com/ctm/syn68k.git
+cd syn68k/
+ls
+./autogen.sh 
+l
+./configure 
+,ale
+make
+ls
+sudo make install
+cd ../executor/
+cd build/
+ls
+../src/configure 
+apt-cache search db4-devel
+apt-cache search db5-devel
+apt-cache search db
+apt-cache search db|grep dev
+apt-cache search db5-dev
+sudo apt-get install libdb5.3-dev 
+ls
+../src/configure 
+make
+cd ..
+git clone https://github.com/ctm/executor.git
+git clone https://github.com/joeaoregan/Yr4-Platform-Games-Development-CA.git
+cd Yr4-Platform-Games-Development-CA/
+ls
+tree
+less proj.android-studio/app/jni/Android.mk 
+make -f proj.android-studio/app/jni/Android.mk 
+ls
+ls Resources/
+ls
+ls proj.win32/
+ls proj.win32/main.cpp 
+less proj.win32/main.cpp 
+ls
+ls Classes/
+grep include Classes/*
+grep include Classes/*|awk -F':' '{print $2'
+grep include Classes/*|awk -F':' '{print $2}'
+grep include Classes/*|awk -F':' '{print $2}'|sort|uniq
