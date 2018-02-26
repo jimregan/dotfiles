@@ -1,20 +1,3 @@
-grep '(' plps.dic |grep -v '(1)'
-ls
-vi plps.dic 
-less ~/disk/Playing/msf-asr/scripts/number-dic.pl 
-cat plps.dic |sed -e 's/([0-9])//'
-cat plps.dic |sed -e 's/([0-9])//'|sort|uniq|perl ../../msf-asr/scripts/number-dic.pl 
-cat plps.dic |sed -e 's/([0-9])//'|sort|uniq|perl ../../msf-asr/scripts/number-dic.pl > tmp
-diff -u plps.dic tmp 
-diff -u plps.dic tmp |less
-mv tmp plps.dic 
-ls
-grep pocket *
-grep grammar *
-less pserr 
-ls
-less 1.out 
-cat wyspa-skarbow.txt-01.txt.sent
 cat wyspa-skarbow.txt-01.txt.sent|tr ' ' '\n'|wc
 wc -l 1.out 
 less 1.out 
@@ -1998,3 +1981,20 @@ wget https://www.clips.uantwerpen.be/conll2002/ner/data/esp.train.gz
 zless esp.train.gz 
 zcat esp.train.gz |wc
 python3
+cd ~/disk/Playing/Yr4-Platform-Games-Development-CA/
+git pull origin master
+cp Resources/* ../../shared/redo/Resources/
+cp -r Resources/* ../../shared/redo/Resources/
+ls ../../shared/redo/Resources/
+cp Screenshots/* ../../shared/redo/Screenshots/
+cp Classes/* ../../shared/redo/Classes/
+cp .cocos-project.json ../../shared/redo/
+cd ../..
+cd shared/redo/
+ls
+cd linux-build/
+make
+./bin/MyGame 
+cd ~/disk/Playing/
+git clone https://github.com/amsehili/auditok
+find . -name 'deepsp*' -type d
