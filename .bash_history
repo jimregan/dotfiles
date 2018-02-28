@@ -1,11 +1,3 @@
-grep '^r ' cmudict.dict 
-grep '^e ' cmudict.dict 
-grep '^cmu ' cmudict.dict 
-grep '^1 ' cmudict.dict 
-grep '^garfi ' cmudict.dict 
-grep '^garfield ' cmudict.dict 
-grep '^coccy' cmudict.dict 
-grep '^coccyx' cmudict.dict 
 grep '^fia' cmudict.dict 
 cat ../msf-asr/dict-en 
 cat ../msf-asr/pron/pronounce-as.tsv 
@@ -1998,3 +1990,11 @@ grep include Classes/*
 grep include Classes/*|awk -F':' '{print $2'
 grep include Classes/*|awk -F':' '{print $2}'
 grep include Classes/*|awk -F':' '{print $2}'|sort|uniq
+cd ../corpuscrawler/
+ls
+ls corpus
+cat corpus/mi.txt
+cat corpus/mi.txt|grep -v '^#'
+cat corpus/mi.txt|grep -v '^#' > /tmp/mi.txt
+cat corpus/gd.txt|grep -v '^#' > /tmp/gd.txt
+less /tmp/gd.txt 
