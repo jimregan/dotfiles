@@ -1,28 +1,3 @@
-grep '^fia' cmudict.dict 
-cat ../msf-asr/dict-en 
-cat ../msf-asr/pron/pronounce-as.tsv 
-cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'
-cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'
-cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl ~/disk/Playing/wolne-lektury-audio-corpus/filter-dict.pl cmudict.dict 
-less ~/disk/Playing/wolne-lektury-audio-corpus/filter-dict.pl 
-cp ~/disk/Playing/wolne-lektury-audio-corpus/filter-dict.pl .
-vi filter-dict.pl 
-cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
-grep wellington cmudict.dict 
-grep macho cmudict.dict 
-grep '^on ' cmudict.dict 
-grep spat cmudict.dict 
-git checkout -b missing
-vi cmudict.dict 
-cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
-grep sat cmudict.dict 
-grep zoom cmudict.dict 
-grep suma cmudict.dict 
-cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
-grep ella cmudict.dict 
-cat ../msf-asr/pron/pronounce-as.tsv |awk '{print $1}'|tr 'A-Z' 'a-z'|perl filter-dict.pl cmudict.dict 
-grep poor cmudict.dict 
-git diff
 grep father cmudict.
 grep father cmudict.dict 
 grep short cmudict.dict 
@@ -1998,3 +1973,28 @@ cat corpus/mi.txt|grep -v '^#'
 cat corpus/mi.txt|grep -v '^#' > /tmp/mi.txt
 cat corpus/gd.txt|grep -v '^#' > /tmp/gd.txt
 less /tmp/gd.txt 
+cd ~/disk/Playing/Corpora
+svn up
+cd /tmp/
+mkdir hyde
+mkdir hydedir
+cd hydedir/
+cp ../hyde .
+git init .
+git add hyde 
+git commit -m blah
+vi hyde 
+git diff
+vi hyde 
+git diff
+vi hyde 
+git diff
+vi hyde 
+cat hyde |perl ~/hyde.pl 
+ls
+less 14.txt 
+less 16.txt 
+rm 14.txt 
+for i in *.txt;do echo mv $i Page:Leabharsgeulaigh00hyde.djvu%2F$(basename $i .txt).mw;done
+for i in *.txt;do mv $i Page:Leabharsgeulaigh00hyde.djvu%2F$(basename $i .txt).mw;done
+mv Page\:Leabharsgeulaigh00hyde.djvu%2F* ~/disk/Playing/ga-wikibooks/test-mw/w/
