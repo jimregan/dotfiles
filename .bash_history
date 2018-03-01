@@ -1,26 +1,3 @@
-grep father cmudict.
-grep father cmudict.dict 
-grep short cmudict.dict 
-grep crust cmudict.dict 
-grep open cmudict.dict 
-grep poodle cmudict.dict 
-grep strewn cmudict.dict 
-grep over cmudict.dict 
-grep caught cmudict.dict 
-grep cot cmudict.dict 
-grep caught cmudict.dict 
-grep AO cmudict.dict 
-grep yorker cmudict.dict 
-grep pure cmudict.dict 
-grep tooth cmudict.dict 
-grep 'oni ' cmudict.dict 
-git remote show origin
-grep netflix cmudict.dict 
-grep googl cmudict.dict 
-grep selfie cmudict.dict 
-grep duckface cmudict.dict 
-grep microsof cmudict.dict 
-grep net cmudict.dict 
 grep flicks cmudict.dict 
 grep orus cmudict.dict 
 grep roar cmudict.dict 
@@ -1998,3 +1975,26 @@ rm 14.txt
 for i in *.txt;do echo mv $i Page:Leabharsgeulaigh00hyde.djvu%2F$(basename $i .txt).mw;done
 for i in *.txt;do mv $i Page:Leabharsgeulaigh00hyde.djvu%2F$(basename $i .txt).mw;done
 mv Page\:Leabharsgeulaigh00hyde.djvu%2F* ~/disk/Playing/ga-wikibooks/test-mw/w/
+cd ~/disk/Playing/
+ls
+ls ga-wikibooks/
+cd ga-wikibooks/test-mw/
+ls
+cd w/
+ls
+mv /tmp/togha/Page\:An_t-Ogha_Mor_-_Aonghas_Mac_Dhonnachaidh.djvu%2F* .
+git add Page\:An_t-Ogha_Mor_-_Aonghas_Mac_Dhonnachaidh.djvu%2F*
+git push
+git commit -m git-mw
+git push
+ls
+grep thuig Page\:An_t-Ogha_Mor_-_Aonghas_Mac_Dhonnachaidh.djvu%2F*
+netstat
+ls
+less Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw 
+git add Page\:Leabharsgeulaigh00hyde.djvu%2F*
+git commit -m add
+git push
+vi bar
+cat bar |perl ponc
+cat bar |perl ponc.pl 
