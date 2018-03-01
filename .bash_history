@@ -1998,3 +1998,77 @@ git push
 vi bar
 cat bar |perl ponc
 cat bar |perl ponc.pl 
+cd ..
+mkdir ossian-merlin
+cd ossian-merlin/
+git clone https://github.com/CSTR-Edinburgh/Ossian.git
+cd Ossian/
+ls
+./scripts/setup_tools.sh jaoregan htQfqLbJ
+ls
+cd tools/
+ls
+cd downloads/
+ls
+tar zxvf SPTK-3.6.tar.gz 
+rm SPTK-3.6.tar.gz 
+ls ../../../../kaldi/tools/flm/
+ls ../../../../kaldi/tools/
+ls ../../../../speech-syn/Software/
+ls ../../../../speech-syn/Voices/
+ls ../../../../speech-syn/Data/
+tree ../../../../speech-syn/Data/
+ls
+cp ~/Downloads/SPTK-3.6.tar.gz .
+tar zxvf SPTK-3.6.tar.gz 
+cd SPTK-3.6/
+ls
+cd ..
+rm -rf SPTK-3.6
+cd ..
+./scripts/setup_tools.sh jaoregan htQfqLbJ
+less ./scripts/setup_tools.sh 
+./scripts/setup_tools.sh jaoregan htQfqLbJ
+cd tools/downloads/
+ls
+tar zxvf SPTK-3.6.tar.gz 
+rm SPTK-3.6.tar.gz 
+cp ~/Downloads/SPTK-3.6.tar.gz .
+tar zxvf SPTK-3.6.tar.gz 
+cd ../..
+./scripts/setup_tools.sh jaoregan htQfqLbJ
+vi ./scripts/setup_tools.sh 
+./scripts/setup_tools.sh jaoregan htQfqLbJ
+cd tools/
+ls
+cd  ..
+wget https://www.dropbox.com/s/uaz1ue2dked8fan/romanian_toy_demo_corpus_for_ossian.tar?dl=0
+ls 
+ls corpus/
+python ./scripts/train.py -s rss_toy_demo -l rm naive_01_nn
+tar ztvf ~/Downloads/train-chuvash.tar.gz 
+tar ztvf ~/Downloads/train-chuvash.tar.gz |less
+export THEANO_FLAGS=""
+#python ./tools/merlin/src/run_merlin.py /home/josh/git/Ossian/train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg
+find . -name config.cfg
+python ./tools/merlin/src/run_merlin.py ./train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg
+find . -name config.cfg
+python ./tools/merlin/src/run_merlin.py ./train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg
+find /home/jim/disk/Laptop/ -name '*epub'
+ls /home/jim/disk/Laptop/
+ls /home/jim/disk/Laptop/Downloads/
+ls /home/jim/disk/Laptop/Downloads/*oss*
+ls /home/jim/disk/Laptop/Downloads/*epub
+ls /home/jim/disk/Laptop/Downloads/*zip
+ls /home/jim/disk/desktop/Downloads/*epub
+ls /home/jim/disk/desktop/Downloads/*elly*
+mkdir ./test/wav/
+python ./scripts/speak.py -l rm -s rss_toy_demo -o ./test/wav/romanian_test.wav naive_01_nn ./test/txt/romanian.txt
+python ./scripts/util/store_merlin_model.py train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg voices/rm/rss_toy_demo/naive_01_nn/processors/duration_predictor
+# josh@yoga:~/git/Ossian$ python ./scripts/util/store_merlin_model.py /home/josh/git/Ossian/train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg /home/josh/git/Ossian/voices/rm/rss_toy_demo/naive_01_nn/processors/acoustic_predictor
+python ./scripts/util/store_merlin_model.py /home/josh/git/Ossian/train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg /home/josh/git/Ossian/voices/rm/rss_toy_demo/naive_01_nn/processors/acoustic_predictor
+python ./scripts/util/store_merlin_model.py train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg voices/rm/rss_toy_demo/naive_01_nn/processors/acoustic_predictor
+python ./scripts/util/store_merlin_model.py train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg voices/rm/rss_toy_demo/naive_01_nn/processors/duration_predictor
+python ./scripts/speak.py -l rm -s rss_toy_demo -o ./test/wav/romanian_test.wav naive_01_nn ./test/txt/romanian.txt
+ffplay /home/jim/disk/Playing/ossian-merlin/Ossian/voices//rm/rss_toy_demo/naive_01_nn/output/wav/temp.wav
+history -a
