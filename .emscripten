@@ -1,0 +1,10 @@
+import os
+LLVM_ROOT='/home/jim/disk/Playing/emsdk/emsdk-portable/clang/fastcomp/build_incoming_64/bin'
+NODE_JS='/home/jim/disk/Playing/emsdk/emsdk-portable/node/8.9.1_64bit/bin/node'
+EMSCRIPTEN_ROOT='/home/jim/disk/Playing/emsdk/emsdk-portable/emscripten/incoming'
+EMSCRIPTEN_NATIVE_OPTIMIZER='/home/jim/disk/Playing/emsdk/emsdk-portable/emscripten/incoming_64bit_optimizer/optimizer'
+SPIDERMONKEY_ENGINE = ''
+V8_ENGINE = ''
+TEMP_DIR = '/tmp'
+COMPILER_ENGINE = NODE_JS
+JS_ENGINES = [NODE_JS]
