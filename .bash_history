@@ -1,37 +1,3 @@
-less ../ltsserver2016/res/dictionaries/ga_MU/lexicon_multiword_mu.txt 
-less ../ltsserver2016/res/dictionaries/cm/suffixes_list.txt 
-less ../ltsserver2016/res/dictionaries/cm/lexicon_multiword_cm.txt 
-less ../ltsserver2016/res/dictionaries/cm/lexicon_pseudo_comp_cm.txt 
-ls
-ls hts_voices/
-ls hts_voices/tcd_gd_anb_hts_108k/
-file hts_voices/tcd_gd_anb_hts_108k/*
-ls
-mkdir poetry
-cd poetry/
-mkdir geibheann
-cd geibheann/
-sh ../../dl.sh https://www.youtube.com/watch?v=wTLGzKPNn9g
-sh ../../dl.sh https://www.youtube.com/watch?v=m9nXPwz66GM
-cd ..
-mkdir mo_ghrasa_idir_luibini
-cd mo_ghrasa_idir_luibini/
-sh ../../dl.sh https://www.youtube.com/watch?v=h55fdru6-uE
-sh ../../dl.sh JyvrZSC_EsY
-cat ../../dl.sh 
-youtube-dl -o '%(id)s.%(ext)s' JyvrZSC_EsY
-ls
-ffplay JyvrZSC_EsY.mp4 
-cd ../geibheann/
-ls
-youtube-dl -o '%(id)s.%(ext)s' m9nXPwz66GM
-ls
-youtube-dl -o '%(id)s.%(ext)s' tmWNjkzVJNk
-ls
-less ../../../../../youtube-pl/dl.sh 
-youtube-dl --write-sub --sub-lang=pl  --sub-format=vtt  -o '%(id)s.%(ext)s' tmWNjkzVJNk
-youtube-dl --write-sub --sub-lang=ga  --sub-format=vtt  -o '%(id)s.%(ext)s' tmWNjkzVJNk
-less tmWNjkzVJNk.ga.vtt 
 ls
 ffplay /tmp/foo.wav 
 cat tmWNjkzVJNk.ga.vtt |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl 
@@ -1998,3 +1964,37 @@ python ./scripts/util/store_merlin_model.py train/rm/speakers/rss_toy_demo/naive
 python ./scripts/speak.py -l rm -s rss_toy_demo -o ./test/wav/romanian_test.wav naive_01_nn ./test/txt/romanian.txt
 ffplay /home/jim/disk/Playing/ossian-merlin/Ossian/voices//rm/rss_toy_demo/naive_01_nn/output/wav/temp.wav
 history -a
+cd ..
+ls
+git clone https://github.com/ftyers/Turkic_TTS.git
+cd ~
+cd Pictures/
+scrot -d 5 '%Y-%m-%d-%H:%M:%S.png' 
+ls
+rm Screenshot_20180304_01*
+cd ../disk/Playing/
+ls
+cd VoiceBridge/
+ls
+cd kaldi-master/
+ls
+cd src/
+ls
+find . -name '*.cpp'
+find . -name '*.cc'
+find . -name '*.cc' -or -name '*.h'
+find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ../../../kaldi/src/$i;done
+find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ../../../kaldi/src/$i;done > /tmp/kaldi-voicebridge.diff
+less /tmp/kaldi-voicebridge.diff 
+cd ..
+ls
+cd VoiceBridge/
+ls
+cd VoiceBridge/
+ls
+cd kaldi-win/
+ls
+cd src/
+ls
+find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ../../../kaldi/src/$i;done > /tmp/kaldi-voicebridge2.diff
+find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ~/disk/Playing/kaldi/src/$i;done > /tmp/kaldi-voicebridge2.diff
