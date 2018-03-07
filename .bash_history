@@ -1,13 +1,3 @@
-ls
-ffplay /tmp/foo.wav 
-cat tmWNjkzVJNk.ga.vtt |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl 
-cat tmWNjkzVJNk.ga.vtt |perl ~/disk/Playing/msf-asr/scripts/vtt-to-audacity.pl  > tmWNjkzVJNk.aud
-cd ..
-find .  -name named-entities_186.wav
-find .  -name '*named-entities_186*'
-less ./ga_UL/anb/named-entities/lab/named-entities_186.lab
-ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg
-ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg|grep Duration
 ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg 2>& |grep Duration
 ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg  |grep Duration
 ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg 2>&1 |grep Duration
@@ -1998,3 +1988,13 @@ cd src/
 ls
 find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ../../../kaldi/src/$i;done > /tmp/kaldi-voicebridge2.diff
 find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ~/disk/Playing/kaldi/src/$i;done > /tmp/kaldi-voicebridge2.diff
+mkdir /tmp/wesht
+vmstat
+atop
+ps aux|grep hromium
+ls bin
+ssh hg658c
+killall kwin
+top
+killall MyGame
+top
