@@ -1,0 +1,74 @@
+http://www.robots.ox.ac.uk/~vgg/data/voxceleb/voxceleb1_readme.txt
+
+The speaking face tracks are given in the following format, assuming that the video is saved in 360p resolution at 25fps.
+Frame {frame_number} [X Y W H]
+
+Use the following instructions to prepare the video:
+
+1. Install youtube-dl and ffmpeg
+
+2. Download the video using the following script:
+youtube-dl -f ''bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'' "YOUTUBE_ID" --output "SAVE_DIRECTORY/%%(id)s.%%(ext)s"
+
+3. Convert the video
+ffmpeg -threads 1 -y -i SAVE_DIRECTORY/INPUT_FILE_NAME -async 1 -qscale:v 5 -r 25 -deinterlace -vf scale=-1:360 OUTPUT_FILE_NAME
+
+https://arxiv.org/pdf/1802.08435.pdf
+Efficient Neural Audio Synthesis
+
+https://magenta.tensorflow.org/onsets-frames
+https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/magenta/onsets_frames_transcription/onsets_frames_transcription.ipynb
+
+http://aria42.com/blog/2014/12/understanding-lbfgs
+
+https://arxiv.org/pdf/1709.02840.pdf
+A Brief Introduction to Machine
+Learning for Engineers
+
+http://academictorrents.com
+http://academictorrents.com/details/c5af268ec55cf2d3b439e7311ad43101ba8322eb
+ Richard Feynman - The Character of Physical Law - 1 -The Law of Gravitation-JzWzLyGuPRY.mp4	154.79MB
+ Richard Feynman - The Character of Physical Law - 2 -The Relation of Mathematics to Physics-M9ZYEb0Vf8U.mp4	156.15MB
+ Richard Feynman - The Character of Physical Law - 3 -The Great Conservation Principles-r_IfV9fkBhk.mp4	158.82MB
+ Richard Feynman - The Character of Physical Law - 4 -Symmetry in Physical Law-8K09ylkIVNQ.mp4	156.80MB
+ Richard Feynman - The Character of Physical Law - 5 -The Distinction of Past and Future--Km7-6-J81k.mp4	132.50MB
+ Richard Feynman - The Character of Physical Law - 6 -Probability and Uncertainty-x5RQ3QF9GGI.mp4	153.53MB
+ Richard Feynman - The Character of Physical Law - 7 -Seeking New Laws-MIN_-Flswy0.mp4	161.32MB
+ http://www.feynmanlectures.caltech.edu/
+
+https://github.com/google/diff-match-patch/blob/master/cpp/diff_match_patch.h
+https://github.com/google/diff-match-patch/wiki/API
+https://github.com/google/diff-match-patch/wiki/Unidiff
+
+https://github.com/a-nagrani/VGGVox
+
+https://github.com/KartikTalwar/Duolingo
+
+https://metacpan.org/pod/Marpa::R2::HTML
+http://jeffreykegler.github.io/Ocean-of-Awareness-blog/individual/2011/11/how-to-parse-html.html
+
+https://github.com/timvideos/streaming-system
+https://www.pilosa.com/docs/latest/introduction/
+
+https://gist.github.com/esperlu/943776
+
+https://github.com/dumblob/mysql2sqlite.git
+
+https://github.com/MycroftAI/padatious
+
+https://github.com/kan-bayashi/PytorchWaveNetVocoder
+
+https://arxiv.org/pdf/1711.01161.pdf
+LEARNING FILTERBANKS FROM RAW SPEECH FOR PHONE RECOGNITION
+https://github.com/facebookresearch/tdfbanks
+
+http://academictorrents.com/details/52da574b6412862e199abeaea63e51bf8cea2140
+http://academictorrents.com/details/5daa22057577521a378b71e0f0de6a934bd5c2ea
+http://academictorrents.com/details/3e6f1876bbd46780602e72f4b122329fb668bd2c
+http://academictorrents.com/details/d2c8f8f1651740520b7dfab23438d89bc8c0c0ab
+
+
+http://delivery.acm.org/10.1145/3180000/3177116/p49-faridee.pdf?ip=51.37.160.70&id=3177116&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1520463927_d85bf71ac3fc56f9147e09b50b55f26b
+HappyFeet: Recognizing and Assessing Dance on the Floor
+
+
