@@ -1,119 +1,3 @@
-ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg 2>& |grep Duration
-ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg  |grep Duration
-ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_186.ogg 2>&1 |grep Duration
-ffprobe ./ga_UL/anb/named-entities/ogg/named-entities_* 2>&1 |grep Duration
-for i in ./ga_UL/anb/named-entities/ogg/named-entities_*;do ffprobe $i 2>&1 |grep Duration; done
-for i in ./ga_UL/anb/named-entities/ogg/named-entities_*;do ffprobe $i 2>&1 |grep Duration; done >> /tmp/anb-durs
-ffplay ./tg4_foghlaim/spoirt-agus-slainte/corpus/wav/spoirt-agus-slainte_1_spoirt-agus-slainte_1_0005.wav
-ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0003.wav
-ffplay ./tg4_foghlaim/spoirt-agus-slainte/corpus/wav/spoirt-agus-slainte_1_spoirt-agus-slainte_1_0004.wav
-ls
-ls cdroms/
-ls cdroms/coisceim/
-ls cdroms/coisceim/Fuaim/
-ls cdroms/coisceim/Fuaim/1/fear1.wav 
-ffplay cdroms/coisceim/Fuaim/1/fear1.wav 
-ffplay cdroms/coisceim/Fuaim/1/fear2.wav 
-ffplay cdroms/coisceim/Fuaim/2/fear2.wav 
-ffplay cdroms/coisceim/Fuaim/3/fear2.wav 
-ffplay cdroms/coisceim/Fuaim/3/fear1.wav 
-ls
-ffplay saytime-anb/wav/saytime-gu_011.wav 
-ffplay saytime-anb/readme 
-less saytime-anb/readme 
-less saytime-anb/xml/
-less saytime-anb/xml/saytime-gu_011.xml 
-ffplay saytime-anb/wav/saytime-gu_011.wav 
-ls
-ls UISC
-tree UISC/
-find UISC -name '*.wav'|less
-less ~/Downloads/tg2lab-1.01.pl 
-ls
-less asr_data_irish/data/README.txt 
-less asr_data_irish/data/NOTES 
-ls asr_data_irish/README.txt 
-less asr_data_irish/README.txt 
-cat asr_data_irish/README.txt 
-cd asr_data_irish/
-ls
-mkdir scripts
-cp -r ~/disk/Playing/kaldi_stuff/ .
-ls 
-rmdir scripts/
-mv kaldi_stuff/ scripts
-python scripts/makeKaldiFiles.py harald data/dodm_seanchas_rann_na_feirste/corpusfile.txt
-python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
-find .. -name '*mo_bhaile_duchais_dodm*wav'
-ffplay ../ga_UL/seanchas_rann_na_feirste/corpus/wav/01_mo_bhaile_duchais_dodm_0034.wav
-python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
-ls ../..
-ls
-ls data/
-mkdir -p data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/../../audio/dodm_seanchas_rann_na_feirste
-python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
-mkdir -p data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/../../audio/dodm_seanchas_rann_na_feirste/wav
-python scripts/makeKaldiFiles.py harald data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
-less /home/jim/disk/Playing/kaldi/egs/harald/data/local/dict/lexicon.txt
-less /home/jim/disk/Playing/kaldi/egs/harald/data/train/wav.scp
-less /home/jim/disk/Playing/kaldi/egs/harald/data/train/text
-less data/seanchas_rann_na_feirste/dodm_seanchas_rann_na_feirste/corpusfile.txt
-less data/seanchas_rann_na_feirste/obmsm_seanchas_rann_na_feirste/corpusfile.txt 
-less data/seanchas_rann_na_feirste/fngcf_seanchas_rann_na_feirste/corpusfile.txt 
-less data/seanchas_rann_na_feirste/banbf_seanchas_rann_na_feirste/corpusfile.txt 
-cd /tmp/
-youtube-dl --all-subs --skip-download  https://www.youtube.com/watch?v=oFk7dgS8V18
-youtube-dl --all-subs --write-auto-sub --skip-download  https://www.youtube.com/watch?v=oFk7dgS8V18
-cd ../..
-ls
-find . -name lab
-ls en_IE/nnc/Arctic/lab/nnc_arctic_
-ls en_IE/nnc/Arctic/lab/nnc_arctic_0450.sl 
-less en_IE/nnc/Arctic/lab/nnc_arctic_0450.sl 
-less en_IE/nnc/Arctic/lab/nnc_arctic_0450.lab 
-ffplay en_IE/nnc/Arctic/wav/nnc_arctic_0481.wav 
-
-find . -name lab
-ls en_IE/
-ffplay en_IE/anb/tcd_ANB_eng_cleaned/arctic_0510.wav 
-find . -name '*.wav' -or -name '*.ogg'
-find . -name '*.wav' -or -name '*.ogg' > /tmp/corpus-sounds
-ffplay ./ga_CO/pmg_recordings/RCPiarsachBheanchaointe/RECS/0001/MI0001RCPiarsachBheanchaointe_0469.wav
-ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0012.wav
-ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0003.wav
-ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0001.wav
-ffplay ./ga_CO/pmg_recordings/RCAlphaBet/RECS/0001/MI0001RCAlphaBet_0002.wav
-ffplay ./ga_CO/pmg_recordings/RCPiarsachBheanchaointe/RECS/0001/MI0001RCPiarsachBheanchaointe_0443.wav
-less /tmp/corpus-sounds 
-mkdir ../kaldi/egs/harald
-echo $PWD/../kaldi/egs/harald
-ls
-ls ga_UL/seanchas_rann_na_feirste/wav/
-ls ga_UL/seanchas_rann_na_feirste/syncmaps/01_mo_bhaile_duchais_dodm.json 
-less ga_UL/seanchas_rann_na_feirste/syncmaps/01_mo_bhaile_duchais_dodm.json 
-ls ga_UL/seanchas_rann_na_feirste/orig_wav/
-ls ga_UL/seanchas_rann_na_feirste/wav/
-ls ga_UL/seanchas_rann_na_feirste/corpus/wav/
-cp ga_UL/seanchas_rann_na_feirste/corpus/wav/01_mo_bhaile_duchais_dodm_00* asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/
-mv asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/*.wav asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/
-cp ga_UL/seanchas_rann_na_feirste/corpus/wav/02_oireachtas_na_ndeise_dodm_00* asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/
-ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0001.wav 
-ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0002.wav 
-ffplay asr_data_irish/data/audio/dodm_seanchas_rann_na_feirste/wav/01_mo_bhaile_duchais_dodm_0003.wav 
-ls -al *vtt
-less '16RNC -187 Kennedy-Humphrey Debate, 1960 WV Primary-oFk7dgS8V18.en.vtt'
-less '16RNC -187 Kennedy-Humphrey Debate, 1960 WV Primary-oFk7dgS8V18.ga.vtt'
-less ~/Downloads/16RNC\ -187\ Kennedy-Humphrey\ Debate\,\ 1960\ WV\ Primary-oFk7dgS8V18.en\ \[SubtitleTools.com\].srt 
-go get -u github.com/minio/minio
-sudo apt-get install golang-go
-go get -u github.com/minio/minio
-go help gopath
-sudo go help gopath
-sudo go get -u github.com/minio/minio
-mkdir ~/disk/Playing/go-stuff
-export GOPATH=$HOME/disk/Playing/go-stuff
-go get -u github.com/minio/minio
-go get -u http://github.com/minio/minio
 go get -u github.com/minio/minio
 echo $GOROOT
 go get -v -u github.com/minio/minio
@@ -1998,3 +1882,119 @@ killall kwin
 top
 killall MyGame
 top
+ls
+less helloworld.html 
+mkdir /tmp/hold
+cp speak*js /tmp/hold/
+cp helloworld.html /tmp/hold/
+cd ..
+ls
+git status
+git commit -m 'speak.js'
+git checkout gh-pages 
+ls
+tree
+ls
+mkdir js
+cp /tmp/hold/speak* js/
+git add js/
+git commit -m 'speak.js files'
+git checkout master
+ls
+ls -al
+cat .gitmodules 
+ls clippy.js/
+cd clippy.js/
+ls
+ls agents/
+ls
+less README.md 
+ls
+ls build/
+ls src/
+ls agents/
+ls
+less README.md 
+rm /tmp/hold/
+rm /tmp/hold/*
+ls
+ls agents/Clippy/* agents/Links/* build/clippy.* |zip /tmp/foo.zip -@
+cd ..
+git checkout gh-pages 
+unzip /tmp/foo.zip 
+less build/clippy.css 
+mkdir css
+mv build/clippy.css css/
+less build/clippy.js 
+less build/clippy.min.js 
+ls agents/Links/agent.js 
+less agents/Links/agent.js 
+git add agents/ css/ 
+mv build/clippy.min.js js/
+git add js/clippy.min.js 
+git commit -m clippy
+git rm -rf agents/
+git commit -m 'loaded from amazon'
+ls
+git status
+rm -rf build/
+ls
+mkdir ~/public_html
+mkdir ~/public_html/failteoir
+ls
+git checkout gh-pages 
+ls
+cd speak.js/
+ls
+echo feuch |espeak --ipa -v gd
+echo feuch |espeak --ipa -v ga
+echo feach |espeak --ipa -v ga
+echo féach |espeak --ipa -v ga
+echo feicim go bhfuil litir á scríobh agat |espeak --ipa -v ga
+echo tá mé ag léamh |espeak --ipa -v ga
+echo feicim go bhfuil litir á scríobh agat |espeak --ipa -v ga
+echo agam |espeak --ipa -v ga
+echo gan |espeak --ipa -v ga
+echo gan stad |espeak --ipa -v ga
+echo gan stad nó |espeak --ipa -v ga
+echo ar chor ar bith |espeak --ipa -v ga
+echo trom |espeak --ipa -v ga
+echo crann |espeak --ipa -v ga
+echo trúir |espeak --ipa -v ga
+echo trom |espeak --ipa -v ga
+echo crann |espeak --ipa -v ga
+echo ann |espeak --ipa -v ga
+echo amm |espeak --ipa -v ga
+echo t-am |espeak --ipa -v ga
+echo t-léine |espeak --ipa -v ga
+echo t.léine |espeak --ipa -v ga
+echo t,léine |espeak --ipa -v ga
+echo t léine |espeak --ipa -v ga
+echo t; léine |espeak --ipa -v ga
+echo 't; léine' |espeak --ipa -v ga
+echo www |espeak --ipa -v ga
+echo www |espeak --ipa -v en_US
+echo www |espeak --ipa -v en-US
+echo fuck it |espeak --ipa -v en-US
+echo fuck it man |espeak --ipa -v en-US
+echo fuck it maaaan |espeak --ipa -v en-US
+echo go fuck yourself, you fuckin fuck |espeak --ipa -v en-US
+echo go fuck yourself, you fuckin fuck |espeak --ipa -v en
+echo go fuck yourself, you fuckin fuck |espeak --ipa -v en-US
+echo go fuck yourself, you fuckin fuck |espeak --ipa -v en
+echo arelian |espeak --ipa -v en
+echo arelian |espeak --ipa -v en-US
+echo shithouse |espeak --ipa -v en-US
+echo shithouse |espeak --ipa -v en
+echo goat |espeak --ipa -v en
+echo goat |espeak --ipa -v en-US
+echo goat |espeak --ipa -v en
+echo fock |espeak --ipa -v en
+echo on the dort |espeak --ipa -v en
+echo on the dort |espeak --ipa -v en-US
+echo prick |espeak --ipa -v en-US
+echo whale oil beef hooked |espeak --ipa -v en-US
+echo three trees |espeak --ipa -v en-US
+echo three trees |espeak --ipa -v en
+echo cheese |espeak --ipa -v en
+echo da |espeak --ipa -v ru
