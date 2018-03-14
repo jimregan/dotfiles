@@ -1,117 +1,3 @@
-go get -u github.com/minio/minio
-echo $GOROOT
-go get -v -u github.com/minio/minio
-sudo apt-get remove golang-go
-docker pull minio/minio
-docker run -p 9000:9000 minio/minio server /data
-man docker
-man docker run
-sudo docker run -p 9000:9000 minio/minio server /data
-sudo systemctl restart docker
-sudo docker run -p 9000:9000 minio/minio server /data
-cd ../kaldi/egs/
-ls
-cd harald/
-ls
-tree
-less data/local/corpus.txt 
-find . -type f
-find . -type f -exec ls -al {} \;
-less data/local/dict/lexicon.txt 
-ls
-rm -rf data/
-cd ../kaldi_stuff/
-ls
-less makeKaldiFiles.py 
-git pull origin master
-vi makeKaldiFiles.py 
-cd ../../msf-asr/
-vi pron/ulster.tsv 
-vi pron/connacht.tsv 
-vi pron/ulster.tsv 
-git add pron/ulster.tsv 
-git commit -m 'fix'
-git diff
-vi pron/pronounce-as.tsv 
-git diff
-vi pron/pronounce-as.tsv 
-cd ~/Pla
-cd ~/disk/Playing/
-cd Corpora
-ls
-ls asr_data_irish/
-cd asr_data_irish/data/
-ls
-less README.txt 
-ls comhra/
-less comhra/spk2gender 
-ls
-ls synthesis_recordings/
-tree
-less synthesis_recordings/anb_text01/corpusfile.txt 
-ls
-less synthesis_recordings/anb_text01/corpusfile.txt 
-less synthesis_recordings/anb_named_entities/corpusfile.txt 
-ls ../
-ls ../../
-svn up
-svn log
-ls
-less synthesis_recordings/anb_named_entities/corpusfile.txt 
-less synthesis_recordings/anb_text01/corpusfile.txt 
-find ../.. -name '*text01-001_000*'
-ls ../../UISC/ANNOT/
-ls ../../UISC/
-find ../.. -name '*text01-*lab'
-less synthesis_recordings/anb_text01/corpusfile.txt 
-cd ..
-git clone https://github.com/Maratyszcza/NNPACK
-mkdir keithito
-cd keithito/
-git clone https://github.com/keithito/tacotron
-cd ../Corpora
-ls
-cd ga_UL/
-ls
-cd anb/
-ls
-find . -type f
-find . -name '*lab'
-less text01-001/lab/
-ls text01-001/lab/
-find . -name lab
-ls text01-004/lab/
-ls text02/lab/
-ls
-ls text01
-ls named-entities/lab/
-ls named-entities/wav_trimmed/
-ls
-for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk&t=4s https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc
-for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc; 
-for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc; done
-for i in https://www.youtube.com/watch?v=A_TqAoWcd5 https://www.youtube.com/watch?v=l5w_2s-qggI https://www.youtube.com/watch?v=FSQ3W90-u7g https://www.youtube.com/watch?v=sx-xzmta9uw https://www.youtube.com/watch?v=oCiH2CYQ4rU https://www.youtube.com/watch?v=yx_vKBaEfaE https://www.youtube.com/watch?v=M5FLARANXc8 https://www.youtube.com/watch?v=1j6PiEaGXoY https://www.youtube.com/watch?v=TXQAAoXQQBE https://www.youtube.com/watch?v=MKb6Forix9c https://www.youtube.com/watch?v=IpMkDP-Fgt0 https://www.youtube.com/watch?v=vMlv9t_k52Q https://www.youtube.com/watch?v=XskReOCpNio https://www.youtube.com/watch?v=pLmbELOAKEE https://www.youtube.com/watch?v=an-ueeTKcn8 https://www.youtube.com/watch?v=QQf5JZamijU https://www.youtube.com/watch?v=1F2ZPX11PsI https://www.youtube.com/watch?v=nYPG4A-Pzds https://www.youtube.com/watch?v=nnczRprwj5I https://www.youtube.com/watch?v=mMGSnxnwvMk https://www.youtube.com/watch?v=suqnWzAsFWU https://www.youtube.com/watch?v=NYmhy8ao06g https://www.youtube.com/watch?v=lds3jLZxJc8 https://www.youtube.com/watch?v=C6KJCspasXI https://www.youtube.com/watch?v=prs9YV_qDuA https://www.youtube.com/watch?v=pAkM9q7sjrQ https://www.youtube.com/watch?v=kz5etjnJvFM https://www.youtube.com/watch?v=j0vswwsG8kk https://www.youtube.com/watch?v=rE5zRATHkP4 https://www.youtube.com/watch?v=UVcVexNWo5Q  https://www.youtube.com/watch?v=NIdQLxBL5eo https://www.youtube.com/watch?v=tcDR5eFaXZ8 https://www.youtube.com/watch?v=KPpY5krYltU https://www.youtube.com/watch?v=REwih-BfcDg https://www.youtube.com/watch?v=oJeRh9OlTBg https://www.youtube.com/watch?v=Tjg5wbsG9Bs https://www.youtube.com/watch?v=nn_f0EpaWRM https://www.youtube.com/watch?v=3zitk_1PTjI https://www.youtube.com/watch?v=I_5oZjusuBc; do sh dl.sh $i;done
-ls
-cd ..
-git clone https://github.com/artetxem/vecmap
-ls
-ls msf-asr/scripts/
-ls msf-asr/
-less msf-asr/ga-to-cmudict.pl 
-less msf-asr/ga-ru.dic 
-less msf-asr/ga-std.pl 
-less find msf-asr -name '*pl'
-find msf-asr -name '*pl'
-ls wolne-lektury-audio-corpus/
-find wolne-lektury-audio-corpus -name '*pl'
-find wolne-lektury-audio-corpus -name '*pl' |xargs grep -i jsgf
-find wolne-lektury-audio-corpus -name '*pl' |xargs grep -i grammar
-find msf-asr/ -name '*pl' |xargs grep -i grammar
-vi ~/kashubian 
-vi ~/.scratch/current-tabs3
-cd ~/disk/Playing/
-mkdir 
-agfoghlaimgaeilge
 mkdir agfoghlaimgaeilge
 cd agfoghlaimgaeilge/
 ls
@@ -1998,3 +1884,117 @@ echo three trees |espeak --ipa -v en-US
 echo three trees |espeak --ipa -v en
 echo cheese |espeak --ipa -v en
 echo da |espeak --ipa -v ru
+cd ../mxnet/
+ls
+cd build/
+ls
+tree
+find . -name Makefile
+cd ..
+find . -name Makefile
+cd cpp-package/
+ls
+cd ..
+ls
+cd perl-package/
+ls
+cd AI-MXNet
+ls
+sudo make install
+perl ~/mxnet-example.pl 
+cd ..
+find . -name 'libmxnet.so.*'
+ls
+cd build/
+ls
+ls src/
+less src/initialize.d 
+cd ..
+ls
+cd cpp-package/
+ls
+mkdir build
+cd build/
+cmake ..
+make
+ls
+less Makefile 
+cd ..
+git pull origin master
+ls
+cd ..
+mv mxnet/ mxnet-old
+echo $LD_LIBRARY_PATH 
+git clone --recursive https://github.com/apache/incubator-mxnet
+cd incubator-mxnet/
+make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+find /usr/lib/ -name '*opencv*'
+apt-cache search opencv_imgcodecs
+apt-cache search imgcodecs
+sudo apt-get install libopencv-imgcodecs-dev
+find /usr/lib/ -name '*imgcodec*'
+find . -name im2rec.cc
+vi tools/im2rec.cc 
+make
+make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+ls
+ls build/
+find . -name '*.so'
+make install
+less Makefile 
+make clean
+sudo ldconfig
+make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+pkg-config --cflags --libs opencv
+pkg-config --cflags --libs opencv|grep code
+pkg-config --cflags --libs opencv|grep flann
+less /usr/include/opencv
+less /usr/include/opencv2/imgproc/imgproc.hpp 
+less /usr/include/opencv2/opencv.hpp 
+less /usr/include/opencv2/core/core.hpp 
+apt-cache search opencv_imgproc
+apt-cache search imgproc
+apt-cache search imgcodec
+vi Makefile 
+make -j $(nproc) USE_OPENCV=0 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+find . -name '*.so'
+ls
+cd perl-package/
+ls
+less README.md 
+cd ..
+MXNET_HOME=${PWD}
+sudo cpan PDL::CCS
+perl ~/mxnet-example.pl 
+ldconfig
+sudo cp /home/jim/disk/Playing/incubator-mxnet/lib/libmxnet.* /usr/local/lib/
+sudo ldconfig
+cd ..
+ls
+perl Makefile.PL 
+sudo make install
+cd ../AI-NNVMCAPI/
+perl Makefile.PL 
+sudo make install
+cd ../AI-MXNet
+perl Makefile.PL 
+sudo make install
+perl ~/mxnet-example.pl 
+sudo ldconfig
+perl ~/mxnet-example.pl 
+echo $LD_LIBRARY_PATH 
+ls $LD_LIBRARY_PATH 
+find /usr/local/ -name '    cd ${MXNET_HOME}/perl-package/AI-MXNetCAPI/
+find /usr/local -name 'libcudart.so.*'
+find /usr/local -name 'libcudart.so*'
+less ~/.bashrc
+grep cuda ~/.bashrc
+sudo LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH ldconfig
+perl ~/mxnet-example.pl 
+sudo make uninstall
+sudo rm -rf /usr/local/share/perl/5.22.1/AI/
+sudo rm -rf /usr/local/lib/x86_64-linux-gnu/perl/5.22.1/AI/
+sudo rm -rf /usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/AI/
+perl ~/mxnet-example.pl 
+. ~/.bashrc
+perl ~/mxnet-example.pl 
