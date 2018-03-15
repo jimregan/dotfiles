@@ -1,13 +1,3 @@
-grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'|sort|uniq|awk -F'&' '{print $1}' > agfoghlaimgaeilge
-wget -i agfoghlaimgaeilge 
-ls *.1
-rm *.1
-ls
-cat agfoghlaimgaeilge 
-cat agfoghlaimgaeilge |awk -F= '{print $NF}'
-while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
-cat agfoghlaimgaeilge|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
-cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
 #cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
 vi dl.sh 
 #cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
@@ -1998,3 +1988,13 @@ ls
 git remote add github https://github.com/jimregan/apertium-svn-2008.git
 git push -u github 
 cd /tmp
+cd ../..
+cd ../kaldi
+git pull origin master
+git remote show
+git pull origin master
+git branch
+ls
+less README.md 
+less egs/snuv/s5/run.sh 
+less ~/.cling_history 
