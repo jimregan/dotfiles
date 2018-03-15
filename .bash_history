@@ -1,18 +1,3 @@
-mkdir agfoghlaimgaeilge
-cd agfoghlaimgaeilge/
-ls
-less ../youtube-pl/dl.sh 
-cp ../youtube-pl/dl.sh .
-vi dl.sh 
-sh dl.sh https://www.youtube.com/watch?v=ntnwpHpssz4
-sh dl.sh https://www.youtube.com/watch?v=gvgkO40XcZw
-sh dl.sh https://www.youtube.com/watch?v=NbiGTCc7YaY
-ls
-grep 'href="/watch' /tmp/sraith
-grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print $1}'
-grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'
-grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'|sort|uniq
-grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'|sort|uniq|awk -F'&' '{print $1}'
 grep 'href="/watch' /tmp/sraith|awk -F'href="' '{print $2}'|awk -F'"' '{print "https://www.youtube.com" $1}'|sort|uniq|awk -F'&' '{print $1}' > agfoghlaimgaeilge
 wget -i agfoghlaimgaeilge 
 ls *.1
@@ -1998,3 +1983,18 @@ sudo rm -rf /usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/AI/
 perl ~/mxnet-example.pl 
 . ~/.bashrc
 perl ~/mxnet-example.pl 
+cd ~/disk/Playing/
+cd wiki.apertium.org/
+ls
+git pull
+git log
+ls
+grep svn *mw
+cd ..
+git clone http://repo.or.cz/apertium.git
+git clone http://repo.or.cz/apertium.git all-apertium-2008
+cd all-apertium-2008/
+ls
+git remote add github https://github.com/jimregan/apertium-svn-2008.git
+git push -u github 
+cd /tmp
