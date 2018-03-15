@@ -1,348 +1,3 @@
-#cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
-vi dl.sh 
-#cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
-cat agfoghlaimgaeilge|awk -F'=' '{print $NF}'|while read i;do grep 'Creative Commons' watch\?v\=$i && sh dl.sh $i;done
-ls
-vi /tmp/spa.py
-python3 /tmp/spa.py
-python3 -m spacy download en_core_web_lg
-sudo python3 -m spacy download en_core_web_lg
-vi /tmp/spa.py
-sudo python3 -m spacy download en_core_web_lg
-python3 /tmp/spa.py
-ls
-vi 3BxFehcuHX4.txt
-echo _n8s47Wa5i4 >> copyrighted-original-text
-vi _n8s47Wa5i4.txt
-ls
-wget https://drive.google.com/file/d/0B22sjr42mrVKYi1RWjNTbUV2aHM/view
-rm view 
-ls
-mv ~/Downloads/Sraith\ Pictiúr\ 2015.pdf .
-ls
-man pocketsphinx_batch 
-echo ../*sphinx*
-ls ../sphinx-alignment/
-ls ../sphinx-alignment/cmusphinx-alignment-example/zw.out 
-less ../sphinx-alignment/cmusphinx-alignment-example/zw.out 
-less 46.txt 
-less 47.txt 
-ls
-ls -al
-cat 46.txt 
-grep '[' *
-grep '\[' *
-less 97.txt 
-less 99.txt 
-less 100.txt 
-rm 100.txt 
-grep '\[' *
-cat 111.txt 
-cat 112.txt 
-rm 111.txt 
-rm 112.txt 
-grep '\[' *
-less 270.txt 
-cat 270.txt |iconv -f latin1 -t utf8
-cat 270.txt |iconv -f latin1 -t utf8|sed -e 's/\[\)a\]/ă/g'
-cat 270.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
-rm 238.txt 
-ls
-grep '\[' *
-cat 270.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
-cat 238.txt 
-rm 270.txt 
-cat 269.txt 
-cat 269.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
-echo æ|native2ascii -encoding utf8
-echo "\u00e6\u0328"|native2ascii -reverse -encoding utf8
-cat 268.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
-reset
-cat 268.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g'
-cat 268.txt |iconv -f latin1 -t utf8|sed -e 's/\[)a\]/ă/g;s/\[)A\]/Ă/g;s/\[)E\]/Ĕ/g;s/\[)e\]/ĕ/g'
-vi chars.sed
-cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |sed -e 's/\.\.+ */ || /g'
-cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |sed -e 's/[.][.]+ */ || /g'
-cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -e 's/\.\.+ */ || /g;
-cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -ane 's/\.\.+ */ || /g;print'
-cat 268.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -ane 's/\.\.+ */ || /g;print'
-vi chars.sed 
-cat 268.txt 
-rm 268.txt 
-cat 269.txt 
-rm 269.txt 
-cat 267.txt |iconv -f latin1 -t utf8|sed -f chars.sed |perl -ane 's/\.\.+ */ || /g;print'
-rm 271.txt 
-rm 267.txt 
-cat 272.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-cat 272.txt 
-cat 272.txt |iconv -f latin1 -t utf8
-rm 272.txt 
-cat 273.txt 
-cat 274.txt 
-cat 274.txt |iconv -f latin1 -t utf8
-cat 274.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-grep '\[' *
-cat 115.txt 
-rm 115.txt 
-grep '\[' *
-cat 116.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-rm 116.txt 
-grep '\[' *
-grep '\[' *txt
-cat 49.txt 
-rm 49.txt 
-grep '\[' *txt
-cat 77.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-cat 48.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-cat 47.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-cat 46.txt |iconv -f latin1 -t utf8|sed -f chars.sed 
-rm 46.txt 
-rm 47.txt 
-rm 48.txt 
-rm 49.txt 
-ls
-grep '\*' *
-vi 63.txt 
-vi 78.txt 
-for i in *txt;do dos2unix $i;done
-vi 78.txt 
-grep '\*' *
-vi 143.txt 
-vi 144.txt 
-vi 241.txt 
-vi 53.txt 
-vi 54.txt 
-vi 58.txt 
-vi 63.txt 
-vi 65.txt 
-rm 65.txt 
-vi 66.txt 
-cat 67.txt 
-rm 67.txt 
-cat 68.txt 
-vi 69.txt 
-vi 70.txt 
-vi 71.txt 
-vi 72.txt 
-vi 73.txt 
-vi 74.txt 
-vi 78.txt 
-vi 80.txt 
-vi 82.txt 
-cat 81.txt 
-rm 81.txt 
-vi 83.txt 
-ls ~/*bot*pl
-cp ~/niamhbot.pl .
-vi niamhbot.pl 
-less ~/niamhbot.pl 
-ls 8*
-grep '\[' 80.txt 
-grep '\*' 80.txt 
-perl niamhbot.pl 80.txt 
-cat 80.txt 
-rm 80.t
-perl niamhbot.pl 82.txt 
-cat 82.txt 
-rm 82.txt 
-perl niamhbot.pl 50.txt 
-cat 50.txt 
-rm 50.txt 
-perl niamhbot.pl 51.txt 
-grep '\[' 5*
-grep '\*' 5*
-for i in $(seq 52 59);do perl niamhbot.pl $i;sleep 5;done
-for i in $(seq 52 59);do perl niamhbot.pl $i.txt;sleep 5;done
-grep '\[' 6*
-vi 61.txt 
-vi 60.txt 
-vi 62.txt 
-vi 63.txt 
-for i in $(seq 60 63);do perl niamhbot.pl $i.txt;sleep 5;done
-vi 64.txt 
-vi 65.txt 
-vi 66.txt 
-for i in 64 66;do perl niamhbot.pl $i.txt;sleep 5;done
-for i in 209;do perl niamhbot.pl $i.txt;sleep 5;done
-rm 209.txt 
-vi 208.txt 
-vi 207.txt 
-for i in 207 208;do perl niamhbot.pl $i.txt;sleep 5;done
-rm 207.txt 
-rm 208.txt 
-rm 209.txt 
-cat 69.txt 
-cat 68.txt 
-cat 67.txt 
-grep '\[' 7*
-for i in $(seq 68 79);do perl niamhbot.pl $i.txt;sleep 5;done
-#for i in $(seq 83 99);do perl niamhbot.pl $i.txt;sleep 5;done
-grep '\[' 8*
-vi 85.txt 
-vi 83.txt 
-vi 86.txt 
-vi 88.txt 
-echo '{{nop}}' >> 89.txt 
-vi 89.txt 
-echo '{{nop}}' >> 90.txt 
-echo '{{nop}}' >> 93.txt 
-echo '{{nop}}' >> 94.txt 
-vi 96.txt 
-for i in $(seq 83 99);do perl niamhbot.pl $i.txt;sleep 5;done
-vi 101.txt 
-perl niamhbot.pl 210.txt 
-rm 210.txt 
-ls
-vi 101.txt 
-perl niamhbot.pl 101.txt 
-perl niamhbot.pl 102.txt 
-perl niamhbot.pl 103.txt 
-tail 104.txt 
-vi 104.txt 
-perl niamhbot.pl 104.txt 
-vi 104.txt 
-perl niamhbot.pl 104.txt 
-perl niamhbot.pl 105.txt 
-less 106.txt 
-perl niamhbot.pl 106.txt 
-for i in $(seq 107 110);do perl niamhbot.pl $i.txt;sleep 5;done
-perl niamhbot.pl 108.txt 
-perl niamhbot.pl 109.txt 
-perl niamhbot.pl 113.txt 
-perl niamhbot.pl 114.txt 
-vi 117.txt 
-perl niamhbot.pl 117.txt 
-perl niamhbot.pl 118.txt 
-echo '{{nop}}' >> 119.txt 
-perl niamhbot.pl 119.txt 
-perl niamhbot.pl 120.txt 
-perl niamhbot.pl 121.txt 
-grep '\[' 12*
-grep '\[' 13*
-grep '\[' 14*
-vi 147.txt 
-grep '\[' 15*
-grep '\[' 17*
-grep '\[' 16*
-vi 166.txt 
-grep '\*' 1[4-6]*
-for i in $(seq 122 169);do perl niamhbot.pl $i.txt;sleep 5;done
-grep '\[' 17*
-vi 170.txt 
-vi 179.txt 
-grep '\*' 17*
-vi 172.txt 
-grep '\*' 18*
-vi 183.txt 
-vi 184.txt 
-grep '\[' 18*
-grep '\[' 19*
-grep '\*' 19*
-vi 193.txt 
-for i in $(seq 170 199);do perl niamhbot.pl $i.txt;sleep 5;done
-grep — 1*
-vi 232.txt 
-vi 264.txt 
-perl niamhbot.pl 264.txt 
-for i in $(seq 179 199);do perl niamhbot.pl $i.txt;sleep 5;done
-grep '\[' 2*
-grep '\*' 2*
-grep '\[' 20*
-grep '\*' 20*
-for i in $(seq 200 206);do perl niamhbot.pl $i.txt;sleep 5;done
-perl niamhbot.pl 289.txt 
-less 273.txt 
-perl niamhbot.pl 273.txt 
-perl niamhbot.pl 288.txt 
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page6-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 6.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page9-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 9.jpg
-grep '\*' 21*
-grep '\[' 21*
-vi 217.txt 
-for i in $(seq 211 219);do perl niamhbot.pl $i.txt;sleep 5;done
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page211-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 211.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page30-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 30.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page31-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 31.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page33-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 33.jpg
-vi 220.txt 
-perl niamhbot.pl 220.txt 
-for i in *jpg;do cp $i tmp.jpg; convert tmp.jpg -level 49% -type Grayscale $i;done
-ls
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page33-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 33.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page31-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 31.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page30-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 30.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page9-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 9.jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page6-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 211.jpg
-ls *jpg
-wget 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/West_Irish_folk-tales_and_romances_-_William_Larminie.djvu/page211-1024px-West_Irish_folk-tales_and_romances_-_William_Larminie.djvu.jpg' -O 211.jpg
-for i in *jpg;do cp $i tmp.jpg; convert $i -level 49% -type Grayscale West_Irish_folk-tales_and_romances_-_William_Larminie-ornament-p$i;done
-for i in *jpg;do cp $i tmp.jpg; convert $i  -level-colors 'rgb(40,40,40),rgb(180,180,160)' -type Grayscale West_Irish_folk-tales_and_romances_-_William_Larminie-ornament-p$i;done
-rm *jpg
-ls
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0006.jp2&ext=jpg' -O 6.jpg
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0009.jp2&ext=jpg' -O 9.jpg
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0030.jp2&ext=jpg' -O 30.jpg
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0031.jp2&ext=jpg' -O 31.jpg
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0033.jp2&ext=jpg' -O 33.jpg
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0270.jp2&ext=jpg' -O 270.jpg
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0041.jp2&ext=jpg' -O 41.jpg
-wget 'https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0042.jp2&ext=jpg' -O 42.jpg
-wget "https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0062.jp2&ext=jpg" -O 62.jpg
-wget "https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0063.jp2&ext=jpg" -O 63.jpg
-ls
-grep '\[' 21*
-grep '\[' 22*
-vi 229.txt 
-grep '\*' 22*
-for i in $(seq 221 229);do perl niamhbot.pl $i.txt;sleep 5;done
-grep '\*' 23*
-grep '\[' 23*
-vi 230.txt 
-vi 236.txt 
-for i in $(seq 230 239);do perl niamhbot.pl $i.txt;sleep 5;done
-grep '\[' 24*
-less 241.txt 
-perl niamhbot.pl 240.txt 
-less 241.txt 
-less 242.txt 
-vi 243.txt 
-grep '\[' 24*
-grep '\*' 24*
-vi 249.txt 
-vi 250.txt 
-vi 249.txt 
-grep '\*' 25*
-vi 253.txt 
-grep '\*' 25*
-vi 255.txt 
-grep '\[' 25*
-vi 251.txt 
-grep '\*' 26*
-grep '\[' 26*
-for i in $(seq 241 263);do perl niamhbot.pl $i.txt;sleep 5;done
-vi 265.txt 
-vi 266.txt 
-for i in 265 266;do perl niamhbot.pl $i.txt;sleep 5;done
-grep '\*' 27[5-9]*
-vi 276.txt 
-grep '\[' 27[5-9]*
-grep '\*' 27[5-9]*
-vi 277.txt 
-grep '\*' 28*
-vi 287.txt 
-vi 282.txt 
-for i in $(seq 274 287);do perl niamhbot.pl $i.txt;sleep 5;done
-cat dinneen |perl dinneen.pl 
-cat dinneen |perl dinneen.pl > dinout
-sudo apt-get install gimp
-wget "https://ia802705.us.archive.org/zipview.php?zip=/12/items/westirishfolktal00larmuoft/westirishfolktal00larmuoft_raw_jp2.zip&file=westirishfolktal00larmuoft_raw_jp2%2Fwestirishfolktal00larmuoft_raw_0067.jp2&ext=jpg" -O 67.jpg
-cd ~/disk/Playing/wolne-lektury-audio-corpus/
-ls
-ffplay audio/042-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/043-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/044-autor-nieznany-piesn-o-rolandzie.mp3 
 ffplay audio/047-autor-nieznany-piesn-o-rolandzie.mp3 
 ffplay audio/048-autor-nieznany-piesn-o-rolandzie.mp3 
 ffplay audio/049-autor-nieznany-piesn-o-rolandzie.mp3 
@@ -1998,3 +1653,348 @@ ls
 less README.md 
 less egs/snuv/s5/run.sh 
 less ~/.cling_history 
+cd Pl
+cd disk/Playing/
+mkdir asvn
+cd asvn/
+ls
+mkdir 1
+cd 1
+git init .
+git svn clone --username=jimregan svn+ssh://jimregan@svn.code.sf.net/p/apertium/svn/nursery/apertium-en-pt
+vi ~/.subversion/config 
+git svn clone --username=jimregan svn+ssh://jimregan@svn.code.sf.net/p/apertium/svn/nursery/apertium-en-pt
+git svn pull
+git svn fetch
+ls
+ls apertium-en-pt/
+cd apertium-en-pt/
+git svn fetch
+cd ..
+git svn clone https://svn.code.sf.net/p/apertium/svn/branches/incubator/apertium-en-sco/
+ls
+cd apertium-en-sco/
+ls
+git log
+ls -al
+cd ..
+ls
+rm -rf apertium-en-*
+git svn clone -r1:12000 https://svn.code.sf.net/p/apertium/svn/incubator/
+ls
+cd incubator/
+ls
+git log
+ls
+cd ..
+ls
+git clone incubator lt-en
+cd lt-en/
+ls
+rm -rf apertium-[a-k]*
+ls
+rm -rf apertium-[m-z]*
+ls
+rm sl-nouns.dix README COPYING*
+ls
+rm apertium-lt-lv.lt-lv.dix 
+git ls-files
+ls
+git ls-files|grep apertium-lt-en.lt
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(git ls-files|grep -v apertium-lt-en.lt)
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(git ls-files|grep -v apertium-lt-en.lt)'
+git stash
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(git ls-files|grep -v apertium-lt-en.lt)'
+git status
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[a-m]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[oq-t]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch sl-nouns.dix'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch README'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING.GFDL'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-pa.*"'
+ls
+cd ..
+mv lt-en/ pl-misc
+git clone incubator lt-en
+cd lt-en/
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[a-k]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[m-t]*"'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "C*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "README"'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "sl-nouns.dix"'
+ls
+cd ..
+git clone lt-en lt-lv
+cd lt-en/
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-lt-lv.*"'
+ls
+git log
+git diff git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(
+git diff 0532d2
+git log
+git diff d322ee
+git log
+git format-patch -11
+less 0003-what-spectie-wants-spectie-gets.patch 
+less 0002-Adding-some-stuff.patch 
+less 0004-Changy.patch 
+less 0003-what-spectie-wants-spectie-gets.patch 
+cd ..
+rm -rf lt-*
+ls
+git clone incubator lt-en
+cd lt-en/
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[a-d]*"'
+l
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[a-k]*"'
+ls
+cd ..
+git clone lt-en/ en-pt
+cd en-pt/
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[a-o]*"'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[q-v]"'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[q-v]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[f-t]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-pl"'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-p[^t]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-e[o-u]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING.GFDL'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch README'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch sl-nouns.dix'
+ls
+git log
+cd ..
+ls
+cd lt-en/
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch sl-nouns.dix'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch README'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-en-[^l]*'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-en-l[va]*'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-e[osu]*'
+ls
+git log
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[f-km-z]*"'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "COPYING.*"'
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-lt-lv.lt-lv.dix'
+ls
+git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "COPYING"'
+git log
+ls
+git log
+git format-patch -25
+less 0003-what-spectie-wants-spectie-gets.patch 
+less 0004-trimmytrimtrim.patch 
+less 0003-what-spectie-wants-spectie-gets.patch 
+less 0004-trimmytrimtrim.patch 
+less 0005-stuff-from-wikt.patch 
+less 0003-what-spectie-wants-spectie-gets.patch 
+rm 0001-New-module-for-fragments.patch 
+rm 0002-Adding-some-stuff.patch 
+less 0003-what-spectie-wants-spectie-gets.patch 
+mkdir /tmp/patches
+mv 0003-what-spectie-wants-spectie-gets.patch /tmp/patches/
+ls
+less 0004-trimmytrimtrim.patch 
+head 0004-trimmytrimtrim.patch 
+head -n 2 0004-trimmytrimtrim.patch 
+head -n 2 0004-trimmytrimtrim.patch |tail -n 1
+head -n 2 0004-trimmytrimtrim.patch |tail -n 1|awk -F'[@>]' '{print $2}'
+head -n 2 0004-trimmytrimtrim.patch |tail -n 1|awk -F'[@>]' '{print $2}' >  /tmp/thing
+perl -pi.bak -ane 's/72bbbca6-d526-0410-a7d9-f06f51895060/users.sourceforge.net/;print'
+perl -pi.bak -ane 's/72bbbca6-d526-0410-a7d9-f06f51895060/users.sourceforge.net/;print' 00*
+ls
+less 0004-trimmytrimtrim.patch
+for i in *.bak;do mv $i $(basename $i .bak);done
+ls
+perl -pi.bak -ane 's/72bbbca6-d526-0410-a7d9-f06f51895060/users.sourceforge.net/' 00*
+less 0004-trimmytrimtrim.patch
+rm /tmp/patches/0003-what-spectie-wants-spectie-gets.patch 
+mv *.patch /tmp/patches/
+cd ..
+ls
+cd incubator/
+git svn clone -r1:14000 https://svn.code.sf.net/p/apertium/svn/incubator/
+ls
+rm -rf incubator/
+cd ..
+git svn fetch -r1:14000 https://svn.code.sf.net/p/apertium/svn/incubator/
+cd incubator/
+ls
+cd ..
+ls
+#git svn clone  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-eu-en
+ls incubator/
+git svn clone  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-eu-en
+cd apertium-eu-en/
+git log
+cd ..
+git svn clone  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-en-sco
+cd apertium-en-sco/
+ls
+git log
+cd ..
+ls
+cd incubator/
+ls
+less apertium-en-sco/README 
+cd ..
+cd lt-en/
+ls
+cd ..
+git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/ incubator20k
+mkdir incubator20k
+cd incubator20k/
+git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/ 
+git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/
+ls
+ls -al
+git init .
+git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/
+git svn clone -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/
+cd ..
+rm -rf incubator20k/
+git svn clone -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/ incubator20k
+git svn clone -r1:50000 https://svn.code.sf.net/p/apertium/svn/incubator/ incubator50k
+ls incubator
+#git svn clone https://svn.code.sf.net/p/apertium/svn/incubator/apertium-es-an
+man git-svn
+git svn -A~/disk/Laptop/Playing/apertium.gitauthors clone https://svn.code.sf.net/p/apertium/svn/incubator/apertium-es-an
+git svn -A/home/jim/disk/Laptop/Playing/apertium.gitauthors clone https://svn.code.sf.net/p/apertium/svn/incubator/apertium-es-an
+cd apertium-es-an/
+git log
+cd ..
+git svn -A/home/jim/disk/Laptop/Playing/apertium.gitauthors clone https://svn.code.sf.net/p/apertium/svn/trunk/apertium-es-an es-an2
+cd es-an2/
+git log
+cd ..
+git clone apertium-es-an/ esan1
+cd esan1/
+ls
+git log
+git pull ../es-an2/
+git diff
+cd ..
+rm -rf esan1/
+git clone apertium-es-an/ esan1
+cd esan1/
+git checkout -b trunk
+git pull -s their ../es-an2/
+git pull -s theirs ../es-an2/
+git pull -s tf ../es-an2/
+git --version
+git branch -a
+git log
+git branch -a
+git checkout es-an-incubator
+git log
+git checkout trunk
+cd ../es-an2/
+git branch
+git checkout -b es-an-trunk
+cd ../esan1/
+git fetch ../es-an2/
+git branch -a
+git fetch ../es-an2/ es-an-trunk
+git checkout es-an-trunk
+git branch -a
+git pull ../es-an2/ es-an-trunk
+git merge --abort
+git log
+ls
+git branch -a
+git fetch ../es-an2/ es-an-trunk
+git branch -a
+git checkout -b es-an-trunk
+git log
+git checkout FETCH_HEAD 
+git log
+git branch -D es-an-trunk
+git checkout -b es-an-trunk
+git log
+git checkout -b es-an-incubator 
+git checkout es-an-incubator 
+git log
+ls
+git branch
+cd ../apertium-spa-arg/
+git fetch ../es-an2/ es-an-trunk
+git checkout FETCH_HEAD 
+git checkout -b es-an-trunk
+git checkout master
+git log
+git fetch ../esan1/ es-an-incubator
+git checkout FETCH_HEAD 
+git log
+git checkout -b es-an-incubator
+git branch
+git push origin es-an-incubator 
+git remote add mine https://github.com/jimregan/apertium-spa-arg
+git push mine es-an-incubator 
+git push mine es-an-trunk 
+git branch
+git checkout -b graft1
+git merge es-an-trunk 
+git merge --abort
+git branch
+git log
+git checkout es-an-trunk 
+git log
+git format-patch --1 f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
+git format-patch -1 f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
+less 0001-mkdir.patch 
+git format-patch -1 016cb837f90c41250d6aaf8a73a66fba43c7cf78
+less 0001-reinstate-contents.patch 
+git log
+git format-patch --always -1 f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
+less 0001-mkdir.patch 
+rm 0001-reinstate-contents.patch 
+git checkout graft1 
+git am 0001-mkdir.patch
+git am --continue
+git cherry-pick  f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
+git commit --allow-empty
+git log
+git checkout -b graft2
+git merge es-an-trunk 
+git diff
+git merge --abort
+git merge --strategy-option theirs es-an-trunk 
+git log
+git merge --strategy-option theirs master 
+git log
+git branch
+git push mine graft2 
+git log
+cd ..
+ls
+rm -rf esan1/
+rm -rf es-an2/
+rm -rf apertium-es-an/
+rm -rf apertium-spa-arg/
+ls
+git svn clone https://svn.code.sf.net/p/apertium/svn/apertium-en-pl
+cd apertium-en-pl/
+git log
+git svn clone https://svn.code.sf.net/p/apertium/svn/trunk/apertium-en-pl en-pl2
