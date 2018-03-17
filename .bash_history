@@ -1,7 +1,3 @@
-ffplay audio/047-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/048-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/049-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/050-autor-nieznany-piesn-o-rolandzie.mp3 
 grep hiacyntów text/*
 ffplay audio/051-autor-nieznany-piesn-o-rolandzie.mp3 
 less text/piesn-o-rolandzie.txt-51.txt
@@ -1998,3 +1994,7 @@ git svn clone https://svn.code.sf.net/p/apertium/svn/apertium-en-pl
 cd apertium-en-pl/
 git log
 git svn clone https://svn.code.sf.net/p/apertium/svn/trunk/apertium-en-pl en-pl2
+git clone https://github.com/sebischair/NLU-Evaluation-Corpora
+git clone https://github.com/facebook/duckling
+git clone https://github.com/ucam-smt/ucam-smt
+git clone https://github.com/wiktorwalentynowiczit/morphodita-pl-poleval

@@ -102,3 +102,19 @@ http://mozart.ipipan.waw.pl/~kkrasnowska/PolEval/src/
 https://github.com/kwrobel-nlp/krnnt
 https://github.com/wiktorwalentynowiczit/morphodita-pl-poleval
 
+https://magenta.tensorflow.org/music-vae
+
+https://github.com/facebook/duckling/blob/master/Duckling/Duration/EN/Rules.hs
+https://github.com/facebook/duckling/blob/master/Duckling/Duration/GA/Rules.hs
+https://github.com/facebook/duckling/blob/master/Duckling/Duration/PL/Rules.hs
+https://github.com/facebook/duckling/blob/master/Duckling/Duration/PL/Corpus.hs
+https://github.com/facebook/duckling/commit/b637deedc731f3f80b365cefbef4abb632a2d600
+
+https://github.com/artetxem/vecmap
+
+
+<e lm="bilhão">
+
+<i>bilh</i>
+<par n="avi/ão__n"/>
+</e>
