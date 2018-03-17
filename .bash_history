@@ -1,311 +1,3 @@
-ffplay audio/054-autor-nieznany-piesn-o-rolandzie.mp3 
-ls
-vi trbits/google-asr/
-vi trbits/google-asr/054-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-vi trbits/google-asr/055-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-ffplay audio/055-autor-nieznany-piesn-o-rolandzie.mp3 
-vi trbits/google-asr/056-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-ffplay audio/059-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/060-autor-nieznany-piesn-o-rolandzie.mp3 
-vi trbits/google-asr/060-autor-nieznany-piesn-o-rolandzie.mp3.txt 
-ffplay audio/061-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/063-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/064-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/065-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/285-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/068-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/069-autor-nieznany-piesn-o-rolandzie.mp3 
-ffplay audio/077-autor-nieznany-piesn-o-rolandzie.mp3 
-grep pójde text/*77*
-grep pójd text/*77*
-grep pójd text/piesn-o-rolandzie.txt-77.txt
-less text/piesn-o-rolandzie.txt-77.txt
-grep '[-pojadę-] {+pójdę+}' /tmp/allwd 
-grep '[\-pojadę\-] {+pójdę+}' /tmp/allwd 
-grep '\[\-pojadę\-\] {+pójdę+}' /tmp/allwd 
-cd /tmp
-mkdir west
-cd west/
-for i in $(seq 42 96);do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=2" | sed -e 's/--/—/g' > $pg.txt;done
-curl 'https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=042.png&round_num=2'
-for i in $(seq 42 96);do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=2"  -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,pl;q=0.8,ga;q=0.7' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.pgdp.net/c/tools/project_manager/page_detail.php?project=projectID5a08b57239bd1&show_image_size=0' -H 'Cookie: DP_Session=dqigirsd6962ilmgjr5cdj9976; phpbb3_5l338_u=137232; phpbb3_5l338_k=19ea6cbb8720b497; phpbb3_5l338_sid=5f3e69f6ca9c447dbb79eae285b6a0f4' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed | sed -e 's/--/—/g' > $pg.txt;done
-for i in $(seq 97 285);do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=1"  -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,pl;q=0.8,ga;q=0.7' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.pgdp.net/c/tools/project_manager/page_detail.php?project=projectID5a08b57239bd1&show_image_size=0' -H 'Cookie: DP_Session=dqigirsd6962ilmgjr5cdj9976; phpbb3_5l338_u=137232; phpbb3_5l338_k=19ea6cbb8720b497; phpbb3_5l338_sid=5f3e69f6ca9c447dbb79eae285b6a0f4' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed | sed -e 's/--/—/g' > $pg.txt;done
-for i in $(seq 238);do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=1"  -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,pl;q=0.8,ga;q=0.7' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.pgdp.net/c/tools/project_manager/page_detail.php?project=projectID5a08b57239bd1&show_image_size=0' -H 'Cookie: DP_Session=dqigirsd6962ilmgjr5cdj9976; phpbb3_5l338_u=137232; phpbb3_5l338_k=19ea6cbb8720b497; phpbb3_5l338_sid=5f3e69f6ca9c447dbb79eae285b6a0f4' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed | sed -e 's/--/—/g' > $pg.txt;done
-for i in 234 238;do pg=$((i + 4));dp=$(printf "%03d" $i); curl "https://www.pgdp.net/c/tools/project_manager/downloadproofed.php?project=projectID5a08b57239bd1&image=$dp.png&round_num=1"  -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,pl;q=0.8,ga;q=0.7' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.pgdp.net/c/tools/project_manager/page_detail.php?project=projectID5a08b57239bd1&show_image_size=0' -H 'Cookie: DP_Session=dqigirsd6962ilmgjr5cdj9976; phpbb3_5l338_u=137232; phpbb3_5l338_k=19ea6cbb8720b497; phpbb3_5l338_sid=5f3e69f6ca9c447dbb79eae285b6a0f4' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed | sed -e 's/--/—/g' > $pg.txt;done
-wget https://dumps.wikimedia.org/gawiki/20180201/gawiki-20180201-pages-articles-multistream.xml.bz2
-cd ../
-mkdir voxforge
-ls
-cd voxforge/
-ls
-echo http://goofy.zamia.org/voxforge/en/ >> models.dir
-wget http://goofy.zamia.org/voxforge/en/srilm-voxforge-en-r20171030.arpa.gz http://goofy.zamia.org/voxforge/en/sequitur-voxforge-en-r20171030.gz http://goofy.zamia.org/voxforge/en/kaldi-chain-voxforge-en-r20171129.tar.xz http://goofy.zamia.org/voxforge/en/cmusphinx-cont-voxforge-en-r20171030.tar.xz http://goofy.zamia.org/voxforge/en/cmusphinx-ptm-voxforge-en-r20171030.tar.xz 
-ls
-ls Software/
-ls Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
-wc -l Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/combined_mary_lexicon.txt 
-ls
-ls Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.fst 
-ls Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.list 
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.list 
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/tagger/lextest_pos.fst 
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/lextest.lts 
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/lexicon/allophones.ga.xml 
-less Software/marytts-lang-ga/src/main/resources/marytts/language/ga/MU/lexicon/allophones.ga_MU.xml 
-ls Software/
-ls Software/hts/
-ls Software/hts/hts_voices/
-ls Software/hts/hts_voices/tcd_gd_anb_hts_108k/
-less Software/hts/hts_voices/run_hts.pl 
-ls
-ls ../Corpora
-ls ../Corpora/ga_UL/
-ls ../Corpora/ga_UL/an_punk/
-ls ../Corpora/ga_UL/an_punk/mayo/mns/sents/punk07.txt 
-less ../Corpora/ga_UL/an_punk/mayo/mns/sents/punk07.txt 
-less ../Corpora/ga_UL/an_punk/mayo/mns/wav
-ffplay ../Corpora/ga_UL/an_punk/mayo/mns/wav/punk07.wav 
-ls
-cd ../speech-syn/
-ls
-cd Data/
-ls
-ls Lexicon/
-ls Lexicon/Focloir-Poca_Original/
-less Lexicon/Focloir-Poca_Original/readme.txt 
-ls 
-cd ..
-ls
-ls Web/
-ls Web/festival_server/
-ls Web/caboigin_server/
-ls Web/caboigin_server/restart_synthesis.txt 
-less Web/caboigin_server/restart_synthesis.txt 
-find . -name tcd_rc_pmc_TEST_multisyn
-find . -name 'tcd_*'
-less ./Software/webreader/voices/tcd_rc_test.htsvoice
-ls ./Software/webreader/lib/
-ls
-ls Data/
-find Data -type f
-ls
-svn info --show-item repos-root-url 
-cd Web/
-svn info --show-item repos-root-url 
-svn ls http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn
-cd ..
-ls
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Voices
-svn co http://phoneticsrv3.lcs.tcd.ie/svn/speech-syn/Daisy
-cd ..
-mkdir festival-pl
-cd festival-pl/
-wget http://dl.dropbox.com/u/2552069/blog/festival_polish_voice.tgz
-wget 'http://redirect.viglink.com/?format=go&jsonp=vglnk_151756730872212&key=e4fd14f5d7f2bb6d80b8f8da1354718c&libId=jd5sdrqw0102aiyv000DAk2jg8g37&subId=f3dcc2ecf5785220ee825877de9776c4&loc=http%3A%2F%2Fubuntu.pl%2Fforum%2Fviewtopic.php%3Ft%3D101832&v=1&out=http%3A%2F%2Frepository.slacky.eu%2Fslackware-11.0%2Futilities%2Ffestvox%2Fnon-mbrola%2Fpol%2Fsrc%2Ffestival_polish_voice.tgz&ref=https%3A%2F%2Fwww.google.ie%2F&title=festival_polish_voice.tgz%20gdzie%20znale%C5%BA%C4%87%20-%20Ubuntu.pl%20-%20Forum%20Ubuntu&txt=Albo%20odrazu%20plik'
-file index.html\?format\=go\&jsonp\=vglnk_151756730872212\&key\=e4fd14f5d7f2bb6d80b8f8da1354718c\&libId\=jd5sdrqw0102aiyv000DAk2jg8g37\&subId\=f3dcc2ecf5785220ee825877de9776c4\&loc\=http%3A%2F%2Fubuntu.pl%2Fforum%2Fviewtopic.php%3Ft%3D101832\&v\=1\&out\=htt 
-mv index.html\?format\=go\&jsonp\=vglnk_151756730872212\&key\=e4fd14f5d7f2bb6d80b8f8da1354718c\&libId\=jd5sdrqw0102aiyv000DAk2jg8g37\&subId\=f3dcc2ecf5785220ee825877de9776c4\&loc\=http%3A%2F%2Fubuntu.pl%2Fforum%2Fviewtopic.php%3Ft%3D101832\&v\=1\&out\=htt festival_polish_voice.tgz
-tar zxvf festival_polish_voice.tgz 
-cd cstr_pl_em_diphone/
-ls
-less group/emlpc.group 
-ls
-less festvox/diphlist.scm 
-less festvox/number_decl.scm 
-for i in festvox/*;do grep 'for research, educational and individual use only' $i;done
-for i in festvox/*;do grep 'for research, educational and individual use only' $i && echo $i;done
-less festvox/cstr_pl_phones.scm 
-less festvox/cstr_pl_token.scm 
-less festvox/cstr_pl_lts.scm 
-ls
-less README 
-ls
-less przeczytajto.txt 
-ls
-git init .
-git add przeczytajto.txt README group/ festvox/
-git status
-git commit -m 'original files'
-less festvox/number_decl.scm 
-less festvox/cstr_pl_em_diphone.scm 
-cd ..
-mkdir merlin-etc
-cd merlin
-ls
-git pull origin master
-less misc/scripts/voice_conversion/dtw_aligner_festvox.py 
-less misc/scripts/voice_conversion/align_feats.py 
-less misc/scripts/voice_conversion/dtw_aligner.py 
-cd ..
-git clone https://github.com/CSTR-Edinburgh/magphase.git
-git clone https://github.com/google/REAPER.git
-cd REAPER/
-ls
-cmake .
-make
-ls
-#./reaper -i ../vctk-corpus/VCTK-Corpus/wav48/p
-less ../vctk-corpus/VCTK-Corpus/speaker-info.txt 
-./reaper -i ../vctk-corpus/VCTK-Corpus/wav48/p351/p351_140.wav -f p351_140.f0 -p p351_140.pm -a
-ls
-less p351_140.f0 
-less p351_140.pm 
-./reaper -h
-cd ..
-ls lip-r
-git clone https://github.com/astorfi/lip-reading-deeplearning
-ls
-mkdir micheal
-cd micheal/
-find .. -name dl.sh
-cp ../youtube-pl/dl.sh .
-sh dl.sh j0vswwsG8kk
-sh dl.sh https://www.youtube.com/watch?v=j0vswwsG8kk
-ls
-grep 'Creative Comm' watch\?v\=*
-cd aud
-cd audio/
-ls *sh
-less sil
-ls ../run-aeneas.sh 
-cd ../text/
-less run-aeneas.sh 
-cp run-aeneas-harald.sh run-aeneas-harald-json.sh
-vi run-aeneas-harald-json.sh 
-cat pairs.tsv 
-cat pairs.tsv |uniq
-sh run-aeneas-harald-json.sh 041-autor-nieznany-piesn-o-rolandzie.mp3        piesn-o-rolandzie.txt-41.txt
-vi run-aeneas-harald-json.sh 
-sh run-aeneas-harald-json.sh 041-autor-nieznany-piesn-o-rolandzie.mp3        piesn-o-rolandzie.txt-41.txt
-rm piesn-o-rolandzie.txt-41.txt.sil.aud 
-less piesn-o-rolandzie.txt-41.txt.json 
-less piesn-o-rolandzie.txt-41.txt
-cat piesn-o-rolandzie.txt-41.txt|perl ../split-sentence.pl 
-cat piesn-o-rolandzie.txt-41.txt|sed -e 's/?”././'|perl ../split-sentence.pl 
-cat piesn-o-rolandzie.txt-41.txt|sed -e 's/?”././;s/„//'|perl ../split-sentence.pl 
-cat piesn-o-rolandzie.txt-41.txt|sed -e 's/?”././;s/„//g'|perl ../split-sentence.pl 
-vi ../split-sentence.pl 
-cat piesn-o-rolandzie.txt-41.txt|perl ../split-sentence.pl 
-sh run-aeneas-harald-json.sh 041-autor-nieznany-piesn-o-rolandzie.mp3        piesn-o-rolandzie.txt-41.txt
-less piesn-o-rolandzie.txt-41.txt.json 
-perl ../json.pl 
-less piesn-o-rolandzie.txt-41.txt.json 
-perl ../json.pl 
-ls ../silences/041-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-less ../silences/041-autor-nieznany-piesn-o-rolandzie.mp3.sil 
-cd ../../..
-cd wolne-lektury-audio-corpus/
-ls
-git branch
-git diff
-git add specific-norms.tsv 
-git commit -m more
-cp ~/algdiff.pl .
-git add algdiff.pl 
-git commit -m blh
-less testnum.pl 
-perl algdiff.pl 
-less testnum.pl 
-perl algdiff.pl 
-git add algdiff.pl merge-google-with-silences.pl 
-git commit -m blahh
-cd ..
-git clone https://github.com/tesseract-ocr/langdata.git
-cd langdata/
-ls
-git checkout -b ryanfb-update-lat master
-git pull https://github.com/ryanfb/langdata.git update-lat
-git status
-vi lat/lat.wordlist 
-cat lat/lat.wordlist |sort |uniq > tmp
-mv tmp lat/lat.wordlist 
-git diff
-git stash
-git diff
-vi lat/lat.wordlist 
-git status
-vi lat/lat.wordlist 
-git stash
-vi lat/lat.wordlist 
-git branch
-git pull https://github.com/ryanfb/langdata.git update-lat
-git diff
-git fsck --unreachable | grep commit | cut -d" "  -f3 | xargs git log 
-git fsck --unreachable | grep commit | cut -d" "  -f3 | xargs git log --no-walk --grep=WIP --grep="index on"
-git log
-git reset lat/lat.wordlist --
-git log
-git reset befed5697d5fd3cd94a08e88dfd80f74931c262a --
-git log
-git status
-git stash
-git log
-git branch
-git checkout master
-git branch -D ryanfb-update-lat 
-git pull origin master 
-git checkout -b ryanfb-update-lat master
-git pull https://github.com/ryanfb/langdata.git update-lat
-rm lat/lat.config 
-rm lat/lat.unicharset 
-rm lat/lat.unicharambigs 
-rm lat/lat.xheights 
-git pull https://github.com/ryanfb/langdata.git update-lat
-vi lat/lat.wordlist 
-git diff
-grep '<' lat/lat.wordlist 
-git add lat/lat.wordlist 
-git commit -m 'lazy merge res'
-git log
-git push origin ryanfb-update-lat
-cat lat/lat.wordlist |sort |uniq > tmp
-mv tmp lat/lat.wordlist 
-git diff
-vi lat/lat.wordlist 
-git add lat/lat.wordlist 
-git commit -m 'sort|uniq'
-git push origin ryanfb-update-lat
-git checkout master 
-git fetch origin
-git checkout -b gcode_issue1392 origin/gcode_issue1392
-git merge master
-git status
-git diff
-less git checkout -b gcode_issue1392 origin/gcode_issue1392
-less vie/vie.wordlist.clean
-vi vie/vie.wordlist.clean
-git add vie/vie.wordlist.clean
-git commit -m merge
-git log
-git branch
-git push origin gcode_issue1392 
-ls
-ls lit/lit.word.bigrams 
-less lit/lit.word.bigrams 
-ls ../tesseract
-ls ../tesseract/contrib/genlangdata.pl 
-less ../tesseract/contrib/genlangdata.pl 
-ks
-less ../tesseract/contrib/genlangdata.pl 
-vi pron-data/pronounce-as.tsv 
-git diff
-git commit -m more
-grep -i tarzan pron-data/*
-cat /tmp/topron |sed -e 's/, /\n/g'
-cat /tmp/topron |sed -e 's/, /\n/g' > /tmp/topronl
-cat /tmp/topron |sed -e 's/, /\n/g'|sed -e 's/rz/r-z/' > /tmp/topronr
-paste /tmp/topronl /tmp/topronr 
-paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
-git diff
-grep marznąć pron-data/gen.tsv 
-grep marznąć polimorf/polimorf.tab 
-grep zamarznać polimorf/polimorf.tab 
-grep zamarzać polimorf/polimorf.tab 
-grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}' > /tmp/leftin
-grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq > /tmp/topronl 
-grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq|sed -e 's/rz/r-z/' > /tmp/topronr
-paste /tmp/topronl /tmp/topronr  
-paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
 git diff
 . sourceme 
 mkleft
@@ -1998,3 +1690,311 @@ cd ~/disk/Playing/
 git clone https://github.com/serge-sans-paille/pythran.git
 ls wav2l
 git clone https://github.com/facebookresearch/wav2letter
+cd ../..
+git clone https://github.com/facebookresearch/TensorComprehensions
+git clone https://github.com/halide/Halide
+git clone https://github.com/KartikTalwar/Duolingo
+git clone https://github.com/dumblob/mysql2sqlite.git
+git clone https://github.com/MycroftAI/padatious
+git clone https://github.com/apertium/apertium-la-en.git
+cd apertium-la-en/
+ls
+git pull origin master
+git checkout -b cc0
+ls
+git rm apertium-la-en.la.dix 
+git push origin cc0
+git checkout master 
+git checkout cc0
+git rm apertium-la-en.la.dix
+git status
+git rm -rf dev/
+git commit -m 'cc0 material'
+git push origin cc0
+cd ..
+git clone https://github.com/apertium/apertium-en-lt.git
+ls
+git clone https://github.com/apertium/apertium-en-it
+git clone https://github.com/apertium/apertium-en-mt
+cd apertium-en-mt/
+ls
+git log
+ls
+git checkout -b cc0 7adaf3313cb8aef85139699c20580b23c13783e6
+git log
+l
+git cherry-pick 4dd7675fa17dcaf3118c08e090fd114720b7b77b
+git cherry-pick 41848b66aa7613168496f359a71bdd196ba30e97
+git cherry-pick a24ea21fa1862d497a18d662d1fb800475de8d24
+git cherry-pick 4a5e3129a561aaef0c8ebf1b0969b5d856a6a159
+git diff
+vi apertium-en-mt.mt.metadix 
+vi apertium-en-mt.en-mt.dix 
+git diff
+vi apertium-en-mt.mt.metadix 
+git add apertium-en-mt.mt.metadix 
+git commit -m 'remove non-cc0 additions'
+git log
+git cherry-pick 4a5e3129a561aaef0c8ebf1b0969b5d856a6a159
+git diff
+git status
+git checkout -- apertium-en-mt.mt.metadix
+git diff
+git cherry-pick --abort 
+git status
+git log
+grep American apertium-en-mt.en-mt.dix 
+git log
+git status
+grep American apertium-en-mt.en-mt.dix 
+git cherry-pick 2acafe27220bdc4825d46d04fcf4a287b8062f82
+git cherry-pick a7b67dacba52675aea1888e85faefc19fa43c96c
+git diff
+git log
+git diff
+vi apertium-en-mt.mt.metadix 
+#git commit -m 'cherry-pick a7b67dacba52675aea1888e85faefc19fa43c96c'
+git add apertium-en-mt.mt.metadix 
+git commit -m 'cherry-pick a7b67dacba52675aea1888e85faefc19fa43c96c'
+git cherry-pick c760a117f61df6c6b3e2920f9d01cdf522d46290 
+git cherry-pick 43619209a3da25d4440720535e108eb6144ab299
+git diff
+git log
+git diff
+git cherry-pick --abort 
+git cherry-pick 43619209a3da25d4440720535e108eb6144ab299
+vi apertium-en-mt.en-mt.dix 
+git add apertium-en-mt.en-mt.dix 
+git commit -m 'cherry-pick 43619209a3da25d4440720535e108eb6144ab299'
+git cherry-pick 5ba32013528e09f4188d417c9efa792ea007fc03
+git diff
+vi apertium-en-mt.mt.metadix 
+git add apertium-en-mt.mt.metadix 
+git commit -m 'cherry-pick 5ba32013528e09f4188d417c9efa792ea007fc03'
+git cherry-pick adcde90354e81c9167101fcd544625a6e95ff098
+git cherry-pick 40f30e89e4a52c71fc9031bb6d542c8ab0525ad8
+git cherry-pick 52084649706cddcce05a7d8e73f0a1bda27a527e
+git cherry-pick 3a5a690094fa5829deb88b6ab6fb9e720c3b5831
+git cherry-pick c0771f108189bc06a1510285df8c2ff9f52b3e30
+git log
+ls
+less ../apertium-en-lt/LICENSE 
+cp ../apertium-en-lt/LICENSE .
+ls
+git rm *.xsl
+git commit -m 'rm GPL stylesheets'
+git add LICENSE 
+git commit -m 'add LICENSE'
+git status
+ls
+git branch
+git push origin cc0
+cd ../apertium-en-lt/
+ls
+less LICENSE 
+less apertium-en-lt.lt.dix 
+git log
+less apertium-en-lt.en-lt.dix 
+git branch
+git checkout -b recreate
+ls
+cp ~/Downloads/apertium-en-lt.lt.dix .
+git add apertium-en-lt.lt.dix 
+git diff
+ls
+less apertium-en-lt.lt.dix 
+git status
+git diff
+git log
+git stash
+git checkout -b 6160cce0ce89ccf120853fb02c882716e68da4d4
+ls
+cp ~/Downloads/apertium-en-lt.lt.dix .
+git add apertium-en-lt.lt.dix 
+git commit -m 'original monodix (svn: 4146)'
+ls
+git log
+git branch
+git checkout master
+git checkout -b cc0 6160cce0ce89ccf120853fb02c882716e68da4d4
+git checkout -b cc0 6160cc 
+git branch
+git log
+git checkout master
+git branch -D cc0
+git checkout -b cc0 6160cc 
+git log
+git checkout 6160cce0ce89ccf120853fb02c882716e68da4d4 
+git log
+git log > /tmp/log
+git checkout cc0 
+git cherry-pick 6fa11fab037107152dd940cd4c2dd70065cb3281
+git status
+git diff
+ls
+git cherry-pick --abort
+ls
+git log
+git cherry-pick 0d487688f59307ac6c39fa79ba8cf110327c5da2
+git cherry-pick 6fa11fab037107152dd940cd4c2dd70065cb3281
+git diff
+cp ~/Downloads/apertium-en-lt.lt.dix .
+git diff
+git add apertium-en-lt.lt.dix 
+git commit -m 'original monodix (svn: 4146)'
+git status
+git log
+git cherry-pick 1ba23a17e4f10564e92760347d8a5630bfed51ce
+git cherry-pick 896006d61df16d7e20ddf4f94923b6fcb4257b88
+git cherry-pick b2da9ffbe492d3f082f929f449ae5b19d2c88410
+git log
+git cherry-pick bc57c4c09bef09e22fb693770003befb50aa99a2
+cp ~/Downloads/apertium-en-lt.lt.dix .
+git status
+git diff
+git add apertium-en-lt.lt.dix 
+git commit -m 'partial cherry-pick of bc57c4c09bef09e22fb693770003befb50aa99a2'
+git log
+ls
+git cherry-pick decf3486ba08108121d005fe8010defd645e0e50
+git checkout master 
+git revert decf3486ba08108121d005fe8010defd645e0e50
+git push origin cc0 
+git push origin master 
+ls
+git branch
+git checkout cc0 
+ls
+git log
+git cherry-pick 432803582d276055f6896e57e3ca5c48aba4525c
+git diff
+git cherry-pick --abort
+git checkout -b cc0-1 6160cc 
+git cherry-pick 432803582d276055f6896e57e3ca5c48aba4525c
+git log
+git cherry-pick 9054896abdbfa4bf88a55c88f732f450d74bf45d
+git diff
+vi apertium-en-lt.lt.dix 
+git cherry-pick --abort
+git log
+ls
+less apertium-en-lt.lt.dix 
+ls
+git branch
+git checkout readd-history 
+ls
+git checkout cc0
+ls
+cd ..
+git clone https://github.com/apertium/apertium-lt-lv.git
+cd apertium-lt-lv/
+ls
+git checkout -b cc0
+cp ../apertium-en-lt/LICENSE .
+cp ../apertium-en-lt/apertium-en-lt.lt.dix apertium-lt-lv.lt.dix 
+git diff
+ls
+git add LICENSE apertium-lt-lv.lt.dix 
+git commit -m 'CC0 material'
+git push origin cc0
+cd ..
+git clone https://github.com/jimregan/apertium-pl-cs.git
+cd apertium-pl-cs
+ls
+git revert 1cb11828a398dd8afb2005b3395812a817e58367
+git revert f37d35c2f0d24479326bd0dd39152d9d9ebdaede
+ls
+git push origin master
+cd ..
+git clone https://github.com/apertium/apertium-pl-uk
+cd apertium-pl-uk/
+ls
+git checkout -b CC0
+git rm apertium-pl-uk.uk.acx autogen.sh 
+cat ChangeLog 
+git rm ChangeLog configure.ac COPYING Makefile.am modes.xml NEWS pl-uk.prob README uk-pl.prob 
+ls
+cat AUTHORS 
+git rm AUTHORS 
+ls dev/
+git revert f68f2e1c11f2c4067044e63a22488088e7fa5be3
+git commit -m 'remove (possibly) copied files'
+ls
+git rm *.t.x
+git rm *.t[123s]x
+git commit -m 'remove (possibly) copied files'
+ls
+git rm apertium-pl-uk.post-pl.dix 
+less apertium-pl-uk.pl.dix 
+git rm apertium-pl-uk.pl.dix 
+git commit -m 'remove (possibly) copied files'
+git revert f68f2e1c11f2c4067044e63a22488088e7fa5be3
+git revert 908237a760029a29d4b55e978462e318b3c929e9
+git diff
+vi apertium-pl-uk.uk.dix 
+git diff
+git status
+git log
+vi apertium-pl-uk.uk.dix 
+git diff
+vi apertium-pl-uk.uk.dix 
+git diff
+git status
+git revert --continue
+git diff
+vi apertium-pl-uk.uk.dix 
+git add apertium-pl-uk.uk.dix 
+git commit -m 'revert 908237a760029a29d4b55e978462e318b3c929e9 (?)'
+git status
+git revert --continue
+git revert --abort
+git checkout master
+git branch -D cc0
+git branch
+git branch -D CC0 
+git checkout -b CC0 83d8580046696207485926bf2dd0ceb66074245e
+git log
+ls
+git rm autogen.sh AUTHORS ChangeLog COPYING configure.ac modes.xml uk-pl.prob pl-uk.prob README NEWS dev/*
+ls
+git rm apertium-pl-uk.pl.dix 
+git rm apertium-pl-uk.post-pl.dix 
+git rm apertium-pl-uk.*.t[123s]x
+ls
+git rm Makefile.am 
+git commit -m 'remove (possibly) copied files'
+ls
+cp ../apertium-en-lt/LICENSE .
+less LICENSE 
+git add LICENSE 
+git commit -m 'add CC0'
+git push origin CC0 
+cd ..
+git clone https://github.com/jimregan/apertium-en-pl
+cd apertium-en-pl/
+ls
+less apertium-en-pl.pl.dix 
+cd ..
+git clone https://github.com/jimregan/apertium-en-ca
+git clone https://github.com/jimregan/apertium-ga-gd
+sudo apt-get install pdf2djvu 
+pdf2djvu ~/Downloads/Adama_Mickiewicza_Konrad_Wallenrod_i_Gra.pdf 
+pdf2djvu ~/Downloads/Adama_Mickiewicza_Konrad_Wallenrod_i_Gra.pdf > /tmp/QwQOAAAAIAAJ.djvu
+wget 'https://books.googleusercontent.com/books/content?req=AKW5QadkwEkpkPkt2vbJuelqwlmzq6jgiT7GqQvo3bEBzCTuO2Knza9kUU7lillpWSer1ODCJuApMezl3Rijwgt3I0ySD8m6q8C7-BB4-xCcjnEIdDNLBTLsf187nwxPOkQFlR7cTZI1lv-PaWlo_OOfw9qCHGCQYd7ztCUL7b73VkQTBVTV78McTEN9xWf9iOjEkrRWJdLiQg4-mX7WIPUTNzC3DB0PrTrxTtSOpQW0CBB0XgbE5aYLpYdCbUVLW1n7rMsTSwycAxIMznVyt6TXh8BHN0dCKC4KV7t9LNl4AxBNqUDSb-o' -O The_Books_and_the_Pilgrimage_of_the_Poli.pdf
+pdf2djvu The_Books_and_the_Pilgrimage_of_the_Poli.pdf > /tmp/The_Books_and_the_Pilgrimage_of_the_Poli.djvu
+cd /tmp/
+cp The_Books_and_the_Pilgrimage_of_the_Poli.djvu The_Books_and_the_Pilgrimage_of_the_Poli.orig.djvu
+djvu -d The_Books_and_the_Pilgrimage_of_the_Poli.djvu 1
+djvm -d The_Books_and_the_Pilgrimage_of_the_Poli.djvu 1
+cp The_Books_and_the_Pilgrimage_of_the_Poli.orig.djvu The_Books_and_the_Pilgrimage_of_the_Poli.djvu 
+djvm -d The_Books_and_the_Pilgrimage_of_the_Poli.djvu 1
+rm 16RNC\ -187\ Kennedy-Humphrey\ Debate\,\ 1960\ WV\ Primary-oFk7dgS8V18.*
+ls *djvu
+djvm -d QwQOAAAAIAAJ.djvu 1
+cd ~/disk/Playing/cling-run/
+ls
+find . -name cling
+
+find . -name cling -type f
+./inst/bin/cl
+./inst/bin/cling 
