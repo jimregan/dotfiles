@@ -1,7 +1,3 @@
-grep hiacyntów text/*
-ffplay audio/051-autor-nieznany-piesn-o-rolandzie.mp3 
-less text/piesn-o-rolandzie.txt-51.txt
-ffplay audio/052-autor-nieznany-piesn-o-rolandzie.mp3 
 ffplay audio/054-autor-nieznany-piesn-o-rolandzie.mp3 
 ls
 vi trbits/google-asr/
@@ -1998,3 +1994,7 @@ git clone https://github.com/sebischair/NLU-Evaluation-Corpora
 git clone https://github.com/facebook/duckling
 git clone https://github.com/ucam-smt/ucam-smt
 git clone https://github.com/wiktorwalentynowiczit/morphodita-pl-poleval
+cd ~/disk/Playing/
+git clone https://github.com/serge-sans-paille/pythran.git
+ls wav2l
+git clone https://github.com/facebookresearch/wav2letter
