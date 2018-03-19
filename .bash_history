@@ -1,17 +1,3 @@
-cd shared/redo/
-ls
-cd linux-build/
-make
-./bin/MyGame 
-cd ~/disk/Playing/
-git clone https://github.com/amsehili/auditok
-find . -name 'deepsp*' -type d
-cd ../Classes/
-ls
-for i in *cpp;do /usr/bin/c++   -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
-find .. -name cocos2d.h
-ls
-grep SimpleA *
 less Audio.h 
 find /home/jim/disk/Playing/cocos2d-x/ -name SimpleAudioEngine.h
 find /home/jim/disk/Playing/cocos2d-x/ -name cocos2d.h
@@ -1998,3 +1984,17 @@ ls ../apertium-en-es/*xsl
 less ../apertium-en-es/translate-to-default-equivalent.xsl 
 cp ../apertium-en-es/translate-to-default-equivalent.xsl .
 less ../apertium-en-es/Makefile.am 
+cd ../desktop/
+ls
+mkdir 2
+cd 2/
+cp -r ~/Pictures/ .
+ls
+cp -r ~/Documents/ .
+cp -r ~/Downloads/ .
+ls Downloads/
+rm ~/Downloads/*
+ls ~/Downloads/mp3/
+#rm -rf ~/Downloads/mp3/
+ls Downloads/mp3/
+rm -rf ~/Downloads/mp3/
