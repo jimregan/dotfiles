@@ -1,37 +1,3 @@
-sudo python3 setup.py install
-python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
-sudo python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
-less spacy/__init__.py
-less spacy/cli/info.py
-less spacy/util.py
-less spacy/symbols.pyx 
-less spacy/symbols.pyd
-less spacy/symbols.pxd 
-ls
-grep PREPCASE spacy/lang/pl/*
-git branch
-git log
-less spacy/morphology.pxd 
-find . -name '*.py' -or -name '*.pxd'
-ls
-ls spacy
-find . -name '*.py' -or -name '*.pxd' -or -name '*'pyx'
-find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'
-find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'|xargs grep PREPCASE
-find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'|xargs grep -i prepcase
-less spacy/symbols.pyx 
-less spacy/morphology.pyx 
-less spacy/symbols.pyx 
-less spacy/morphology.pyx 
-less spacy/symbols.pyx 
-less spacy/morphology.pyx 
-git diff
-sudo python3 setup.py install
-less spacy/morphology.pxd 
-sudo python3 setup.py install
-git diff
-grep -i animacy spacy/symbols.
-grep -i animacy spacy/symbols.*
 grep -i number spacy/symbols.*
 grep -i prepcase spacy/symbols.*
 grep -i gender spacy/symbols.*
@@ -1998,3 +1964,37 @@ bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noex
 ls /tmp/tmp.cw4jdZC86z/mri/
 less /tmp/tmp.cw4jdZC86z/mri/mri.Georgia_Italic.exp0.box 
 bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/mri --tessdata_dir /usr/local/share/tessdata/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
+#unicharset_extractor --output_unicharset /tmp/foo --norm_mode  $(ls ${TRAINING_DIR}/*.box)
+unicharset_extractor --output_unicharset /tmp/foo --norm_mode  $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)
+unicharset_extractor --output_unicharset /tmp/foo $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)
+less /tmp/tmp.bFt2EkvTGc/mri/mri.Arial_Bold.exp0.box
+cat /tmp/tmp.bFt2EkvTGc/mri/mri.Arial_Bold.exp0.box|awk '{print $1}'
+less /tmp/tmp.bFt2EkvTGc/mri/mri.Arial_Bold.exp0.box
+vim -b /tmp/tmp.bFt2EkvTGc/mri/mri.Arial_Bold.exp0.box
+unicharset_extractor --output_unicharset /tmp/foo $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)
+cat /tmp/tmp.bFt2EkvTGc/mri/mri.Arial_Bold.exp0.box|awk '{print $1}'
+cat /tmp/tmp.bFt2EkvTGc/mri/mri.Arial_Bold.exp0.box
+unicharset_extractor --output_unicharset /tmp/foo $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)
+vi normstrngs.cpp 
+vi unicharset_extractor.cpp 
+vi normstrngs.cpp 
+vi unicharset_extractor.cpp 
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0] != 1){print}'
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0] != 1){print;}'
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1){print;}'
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1){print "$_\n";}'
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1){print "$_\n";}'|native2ascii -encoding utf8
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1){print "$_\n";}'|native2ascii -encoding utf8|less
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0] && $l[0] ne '\t') != 1){print "$_\n";}'
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1 && $l[0] ne '\t'){print "$_\n";}'
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1 && $l[0] ne '\t'){print "$_\n";}'|hexdump
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1 && $l[0] ne '\t'){print "$l[0]\n";}' 
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1 && $l[0] ne '\t'){print "$l[0]\n";}' |sort|uniq
+cat $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)|perl -C7 -ane 'chomp;@l=split/ /;if(length($l[0]) != 1 && $l[0] ne '\t'){print "$l[0]\n";}' |sort|uniq|hexdump
+grep '^ff' /tmp/tmp.bFt2EkvTGc/mri/*.box
+grep '^fi' /tmp/tmp.bFt2EkvTGc/mri/*.box
+grep '^ffi' /tmp/tmp.bFt2EkvTGc/mri/*.box
+rm /tmp/tmp.bFt2EkvTGc/mri/mri.DejaVu_Sans_Ultra-Light.exp0.box
+unicharset_extractor --output_unicharset /tmp/foo $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)
+for i in $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box) ;do unicharset_extractor --output_unicharset /tmp/foo $i || echo $i broken;done
