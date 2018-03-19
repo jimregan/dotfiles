@@ -1,5 +1,3 @@
-cd linux-build/
-ls
 rm -rf CMakeFiles/
 rm Makefile CMakeCache.txt 
 vi ../CMakeLists.txt 
@@ -1998,3 +1996,5 @@ tar zxvf muct-landmarks-v1.tar.gz
 less muct-landmarks/README.txt 
 less muct-landmarks/muct76.shape 
 less muct-landmarks/muct76-opencv.csv 
+cd ~/disk/Playing/
+ls
