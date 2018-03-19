@@ -1,4 +1,3 @@
-rm -rf CMakeFiles/
 rm Makefile CMakeCache.txt 
 vi ../CMakeLists.txt 
 cmake ..
@@ -1998,3 +1997,4 @@ less muct-landmarks/muct76.shape
 less muct-landmarks/muct76-opencv.csv 
 cd ~/disk/Playing/
 ls
+lynx https://www.youtube.com/watch?v=uR-_8SGhYw8
