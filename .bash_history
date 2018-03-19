@@ -1,6 +1,3 @@
-youtube-dl https://www.youtube.com/watch?v=GttclvJjNfE
-wget https://www.youtube.com/watch?v=JgEwKiWEGVE
-youtube-dl https://www.youtube.com/watch?v=JgEwKiWEGVE
 wget https://www.youtube.com/watch?v=1F8XMAeq_r8
 youtube-dl https://www.youtube.com/watch?v=1F8XMAeq_r8
 $((238 * 4))
@@ -1998,3 +1995,6 @@ cd ~/disk/shared/redo/
 ls
 find . -type x
 ./linux-build/bin/MyGame 
+tar tvf romanian_toy_demo_corpus_for_ossian.tar?dl=0
+ls
+less recipes/naive_01_nn.cfg 
