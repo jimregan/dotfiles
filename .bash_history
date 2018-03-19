@@ -1,22 +1,3 @@
-kill -9 17775
-kill -9 26324
-kill -9 17860
-kill -9 17895
-cat wyspa-skarbow.txt-01.txt.sent | perl -ane 'BEGIN{$l=1;}{chomp;print "<g$l> = $_ ;\n";$l++;}END{print "public <grm> = ";print join " | ", map { "<g$_>" } (1..$l);print ";\n"}'
-cd /tmp/
-wget https://www.clips.uantwerpen.be/conll2002/ner/data/esp.train.gz
-zless esp.train.gz 
-zcat esp.train.gz |wc
-python3
-cd ~/disk/Playing/Yr4-Platform-Games-Development-CA/
-git pull origin master
-cp Resources/* ../../shared/redo/Resources/
-cp -r Resources/* ../../shared/redo/Resources/
-ls ../../shared/redo/Resources/
-cp Screenshots/* ../../shared/redo/Screenshots/
-cp Classes/* ../../shared/redo/Classes/
-cp .cocos-project.json ../../shared/redo/
-cd ../..
 cd shared/redo/
 ls
 cd linux-build/
@@ -1998,3 +1979,22 @@ less apertium-es-pt.pt.dix
 grep directriz apertium-es-pt.es-pt.dix 
 grep 'v=' apertium-es-pt.es-pt.dix 
 grep 'v=' apertium-es-pt.es-pt.dix |grep transac
+cd ~/disk/Playing/
+git clone https://github.com/jimregan/apertium-en-pt.git
+cd apertium-en-pt/
+ls
+sh autogen.sh 
+make
+ls
+git status
+echo '*.bin' >> .gitignore 
+cat .gitignore 
+git diff
+git status
+git add .gitignore 
+git commit -m 'update .gitignore'
+ls
+ls ../apertium-en-es/*xsl
+less ../apertium-en-es/translate-to-default-equivalent.xsl 
+cp ../apertium-en-es/translate-to-default-equivalent.xsl .
+less ../apertium-en-es/Makefile.am 
