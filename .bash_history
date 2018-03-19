@@ -1,83 +1,3 @@
-youtube-dl https://www.youtube.com/watch?v=OnleYp18Jj8 ; wget https://www.youtube.com/watch?v=OnleYp18Jj8
-man wget
-cd ~/disk/Playing/
-mkdir web-corpora
-cd web-corpora/
-mkdir merrionstreet
-cd merrionstreet/
-ls
-man wget
-wget --warc-file=merrionstreet.warc -rl3 -np https://merrionstreet.ie
-find merrionstreet.ie -type f
-ls merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
-tree merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
-wget --warc-file=merrionstreet2 -rl5 -np https://merrionstreet.ie
-tree merrionstreet.ie/ga/Seomra-Nuachta/Nuacht/
-wget --warc-file=merrionstreet -rl7 -np https://merrionstreet.ie
-cd ~/disk/Playing/
-ls
-git clone https://github.com/HaraldBerthelsen/kaldi_stuff.git
-mkdir api.ai
-cd api.ai/
-wget https://github.com/dialogflow/api-ai-english-asr-model/releases/download/1.0/api.ai-kaldi-asr-model.zip
-unzip -l api.ai-kaldi-asr-model.zip 
-unzip api.ai-kaldi-asr-model.zip 
-less api.ai-kaldi-asr-model/LICENCE 
-cd ~/disk/Playing/
-mkdir ga-qa
-cd ga-qa/
-echo https://gaeilgelecheile.weebly.com/ceisteanna-traacuteth-na-gceist.html >> urls
-lynx -dump https://gaeilgelecheile.weebly.com/ceisteanna-traacuteth-na-gceist.html
-lynx -dump https://gaeilgelecheile.weebly.com/ceisteanna-traacuteth-na-gceist.html > 1.txt
-less 1.txt 
-git clone https://github.com/ag-sc/QALD
-git clone https://github.com/brmson/yodaqa
-git clone https://github.com/kusha/qas
-git clone https://github.com/WDAqua/Qanary
-wget https://www.logainm.ie/scoil/pdf/logainm.ie-scoil2-10-trath-na-gceist.pdf
-ls
-echo https://www.logainm.ie/scoil/pdf/logainm.ie-scoil2-10-trath-na-gceist.pdf >> urls 
-ls
-ls -al merrionstreet.*
-zless merrionstreet.warc.warc.gz 
-zless merrionstreet2.warc.gz 
-cd ~/disk/Playing/
-git clone https://github.com/AI-TOOLKIT/VoiceBridge.git
-cd VoiceBridge/
-ls
-ls Redistributables/
-cd ~/disk/Playing/spaCy/
-git branch
-git checkout master
-git remote show 
-git pull origin master
-git push mine master 
-git push mine polish-tag-map
-git push mine polish-tag-map-train 
-git branch
-git checkout polish-tag-map-mrg
-git checkout polish-tag-map
-git checkout -b polish-tag-map-mrg
-git merge master
-ls
-less setup.py 
-python setup.py install
-sudo python setup.py install
-ls
-sudo python setup.py help
-sudo pip install -i requirements.txt 
-sudo -H pip install -i requirements.txt 
-sudo -H pip install -f requirements.txt 
-sudo -H pip install requirements.txt 
-sudo -H pip install $(cat requirements.txt )
-sudo python setup.py help
-sudo python setup.py install
-mkdir /tmp/udpl
-python -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
-ls /tmp/udpl/
-sudo python setup.py install
-python -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
-sudo -H pip3 install $(cat requirements.txt )
 sudo python3 setup.py install
 python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
 sudo python3 -m spacy convert ~/disk/Playing/UD_Polish/pl-ud-train.conllu /tmp/udpl/
@@ -1998,3 +1918,83 @@ cd ~/disk/Playing/cling-run/
 ls
 find . -name cling
 ./cling-build/builddir/bin/cling
+cd ~/disk/Playing/
+cd tesseract
+ls
+find . -name '*.sh'
+cd training/
+less tesstrain.sh 
+grep eng *
+grep eng *|grep -v leng
+#training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only --noextract_font_properties --langdata_dir ../../langdata/--tessdata_dir ./tessdata --output_dir  
+sh tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only --noextract_font_properties --langdata_dir ../../langdata/--tessdata_dir ./tessdata --output_dir  /tmp/lang/mri/
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only --noextract_font_properties --langdata_dir ../../langdata/--tessdata_dir ./tessdata --output_dir  /tmp/lang/mri/
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only --noextract_font_properties --langdata_dir ../../langdata/ --tessdata_dir ./tessdata --output_dir  /tmp/lang/mri/
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir ../../langdata/ --tessdata_dir ./tessdata --output_dir  /tmp/lang/mri/
+grep 'valid language' *
+vi language-specific.sh 
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir ../../langdata/ --tessdata_dir ./tessdata --output_dir  /tmp/lang/mri/
+vi language-specific.sh 
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir ../../langdata/ --tessdata_dir ./tessdata --output_dir  /tmp/lang/mri/
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir ../../langdata/ --tessdata_dir /tmp/lang/ --output_dir  /tmp/lang/mri/
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/mri/ --tessdata_dir /tmp/lang/ --output_dir  /tmp/lang/mri/ 
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/ --tessdata_dir /tmp/lang/ --output_dir  /tmp/lang/mri/ 
+bash tesstrain.sh 
+less tesstrain.sh 
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/ --tessdata_dir /tmp/lang/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
+ls
+less tesstrain.sh 
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/ --tessdata_dir /usr/local/share/tessdata/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
+less unicharset_extractor.cpp 
+cd ..
+git status
+git diff
+vi language-specific.sh
+vi training/language-specific.sh
+git diff training/language-specific.sh
+git add training/language-specific.sh
+git checkout -b gle_uncial
+git commit -m gle_uncial
+git push origin gle_uncial 
+git pull origin master 
+git checkout master 
+git stash 
+git pull origin master 
+git checkout gle_uncial 
+git merge master 
+ls
+make
+sudo make install
+cd training/
+vi language-specific.sh
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/ --tessdata_dir /usr/local/share/tessdata/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
+less normstrngs.cpp 
+grep unicharset *sh
+less tesstrain.sh 
+grep TRAINING_DIR *shg
+grep TRAINING_DIR *sh
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/mri --tessdata_dir /usr/local/share/tessdata/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
+grep unicharset *sh
+less tesstrain.sh 
+less tesstrain_utils.sh 
+less tesstrain.sh 
+less tesstrain_utils.sh 
+less tesstrain.sh 
+less tesstrain-local.sh 
+git status
+diff -u tesstrain.sh tesstrain-local.sh 
+less tesstrain-local.sh 
+less tesstrain.sh 
+less tesstrain_utils.sh 
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/mri --tessdata_dir /usr/local/share/tessdata/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
+ls /tmp/tmp.bFt2EkvTGc/mri/
+grep unicharset tesstrain*
+less tesstrain-local.sh 
+less tesstrain_utils.sh 
+less tesstrain.sh 
+less tesstrain_utils.sh 
+ls /tmp/tmp.bFt2EkvTGc/mri/
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/mri --tessdata_dir /usr/local/share/tessdata/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
+ls /tmp/tmp.cw4jdZC86z/mri/
+less /tmp/tmp.cw4jdZC86z/mri/mri.Georgia_Italic.exp0.box 
+bash tesstrain.sh --fonts_dir /usr/share/fonts --lang mri --linedata_only --noextract_font_properties --langdata_dir /home/jim/disk/Playing/langdata/mri --tessdata_dir /usr/local/share/tessdata/ --output_dir  /tmp/lang/mri/ --training_text /home/jim/disk/Playing/langdata/mri/mri.training_text --wordlist /home/jim/disk/Playing/langdata/mri/mri.wordlist 
