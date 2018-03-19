@@ -1,243 +1,3 @@
-git diff|grep '^\+'|grep '\t'
-git diff|grep '^\+' > /tmp/toblah
-vi /tmp/toblah 
-cat /tmp/toblah |awk '{print $2}'
-cat /tmp/toblah |awk '{print $2}'> /tmp/leftin 
-mkleft
-cat /tmp/toblah |awk '{print $1}'> /tmp/leftin 
-mkrightin 
-paste /tmp/leftin /tmp/rightin >> pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.*
-git commit -m more
-paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
-git diff
-git stash
-grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq >  /tmp/topronl 
-grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq |sed -e 's/rz/r-z/'>  /tmp/topronr 
-paste /tmp/topronl /tmp/topronr  >> pron-data/pronounce-as.tsv 
-git diff
-git stash
-paste /tmp/topronl /tmp/topronr  |grep rź
-paste /tmp/topronl /tmp/topronr  |grep -v rź >> pron-data/pronounce-as.tsv 
-git diff
-git diff|grep '^\+' > /tmp/toblah
-vi /tmp/toblah 
-cat /tmp/toblah |awk '{print $2}'> /tmp/leftin 
-mkleft
-cat /tmp/toblah |awk '{print $1}'> /tmp/leftin 
-mkrightin 
-paste /tmp/leftin /tmp/rightin >> pron-data/pronounce-as.gen.tsv 
-git diff
-git stash
-grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq |sed -e 's/arz/ar-z/'>  /tmp/topronr 
-paste /tmp/topronl /tmp/topronr  |grep -v rź >> pron-data/pronounce-as.tsv 
-git diff
-git diff|grep '^\+' > /tmp/toblah
-vi /tmp/toblah 
-cat /tmp/toblah 
-cat /tmp/toblah |awk '{print $2}' > /tmp/leftin 
-mkleft
-cat /tmp/toblah |awk '{print $1}' > /tmp/leftin 
-mkrightin 
-paste /tmp/leftin /tmp/rightin >> pron-data/pronounce-as.gen.tsv 
-git diff
-git add pron-data/pronounce-as.*
-git commit -m more
-ls
-git status
-git am ---abort
-git am --abort
-git status
-git branch
-git push origin lexicon 
-cat pron-data/gen.tsv |sort|uniq > tmp
-mv tmp pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m 'sort|uniq'
-git push origin lexicon 
-git checkout -b transcripty-stuff
-git checkout lexicon 
-ls
-mkdir trbits
-cp -r google-asr/ trbits/
-ls trbits/
-cp -r silences/ trbits/
-ls trbits/
-git rm -rf silences/
-git rm -rf google-asr/
-ls
-cp algdiff.pl ~
-git rm algdiff.pl 
-git commit -m 'rm intermediate junk'
-git push origin lexicon 
-git rm transcribe.py 
-git commit -m rm
-git push origin lexicon 
-git checkout master 
-git pull origin master 
-git branch -D lexicon 
-git checkout -b lexicon
-grep "Tiery'ego" pron-data/pronounce-as.*
-vi pron-data/pronounce-as.
-vi pron-data/pronounce-as.tsv 
-cd ~/disk/Playing/kaldi
-cd egs/clarinpl
-ls
-tree
-less data/train_sp_hires/wav.scp 
-echo {a,b}
-echo foo/{a,b}
-echo foo/{,b}
-echo foo/{,b}/c
-tail -f tstout 
-tail -f tsterr 
-tail -f tstout 
-tail -f tsterr 
-tail -f tstout 
-less tstout 
-less 1.jsgf 
-less tstout 
-less 1.jsgf 
-less tstout 
-grep -v 1.000 tstout 
-grep -v 1.000 tstout |wc
-less 1.jsgf 
-less tstout 
-head -n 15 tstout 
-head -n 15 tstout |grep 1.0
-head -n 15 tstout |grep 1.0|awk '{print $2 "\t" $3 "\t" $1}'
-head -n 15 tstout |grep 1.0|awk '{print $2 "\t" $3 "\t" $1}' > thing.txt
-audacity 01-robert-louis-stevenson-wyspa-skarbow.mp3
-cd ../sphinx-alignment/
-ls
-cd cmusphinx-alignment-example/
-ls
-less align.sh 
-less zw.out 
-less psout
-less plps.dic 
-less align-ruga.sh 
-less ga-ru.dic 
-ffplay sample.wav 
-ffplay sample_original.wav 
-ls
-less psout.aud.txt 
-less test.txt
-less test.txt.fa 
-git branch
-git checkout master 
-git checkout -b maori
-mkdir mri
-cd mri/
-ls
-ls ../gle
-less ../gle/gle.wordlist 
-ls
-less ../gle/gle.punc 
-less ../gle_uncial/gle_uncial.bigrams.clean 
-ls
-less mri.punc 
-less mri.bigrams.clean 
-grep '[^A-Za-z]' mri.bigrams.clean 
-vi mri.wordlist 
-vi mri.bigrams.clean 
-grep '[^A-Za-z]' mri.bigrams.clean 
-grep '[^A-Za-z]' mri.bigrams.clean |less
-mv mri.bigrams.clean mri.bigrams
-ls ../gle_uncial/
-less mri.numbers 
-ls
-git add mri.*
-git commit -m 'basic Maori data (wikipedia)'
-git push origin maori 
-cat mri.numbers /tmp/nums 
-cat mri.numbers /tmp/nums |sort|uniq
-cat mri.numbers /tmp/nums |sort|uniq > tmp
-mv tmp mri.numbers 
-git diff
-cat mri.punc /tmp/nums |sort|uniq > tmp
-mv tmp mri.punc 
-git diff
-cat mri.wordlist /tmp/nums |sort|uniq > tmp
-mv tmp mri.wordlist 
-git diff mri.wordlist
-vi mri.wordlist 
-cat mri.bigrams /tmp/nums |sort|uniq > tmp
-mv tmp mri.bigrams 
-git diff mri.bigrams
-git add mri.*
-git commit -m 'update with corpuscrawler-crawled data'
-git push origin maori 
-git log
-git checkout master
-git pull origin master
-cd ..
-git pull origin master
-git cherry-pick 3b6d3914d8f4f62260cdbff05d79fd5c8a3fd07d
-git push origin master
-ls /usr/share/fonts/
-less lit/lit.training_text
-less lit/desired_characters 
-less lit/lit.training_text
-cat lit/lit.training_text|tr ' ' '\n'
-cat lit/lit.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]'
-cat lit/lit.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-cat gle/gle.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-cat pol/pol.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-find . -name '*training_text'
-cat ita/ita.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-cat ron/ron.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-cat swe/swe.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-cat eng/eng.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-cat spa/spa.training_text|tr ' ' '\n'|grep -v '[a-zA-Z]' >> /tmp/maori-extra
-cat /tmp/maori-extra |sort|uniq
-for i in a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ā Ā Ū Ī ī ū Ō ō Ē ē;do grep $i mri/mri.wordlist |head -n 10 >> /tmp/maori-extra ;done
-less /tmp/maori-extra 
-wc -l /tmp/maori-extra 
-cd mri/
-cp /tmp/maori.tt mri.training_text
-git add mri.training_text 
-git commit -m training_text
-less mri.training_text 
-git push origin master
-cd /tmp
-mkdir mtt
-cd mtt
-cat ../maori-extra 
-cat ../maori-extra |sort|uniq
-cat ../maori-extra |sort|uniq|wc
-cat ../maori-extra |sort|uniq > sort
-vi sort 
-wc -l sort punc 
-perl -MText::Format -e 'print Text::Format->new({columns => 50})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-sudo cpan Text::Format
-perl -MText::Format -e 'print Text::Format->new({columns => 50})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MText::Format -e 'print Text::Format->new->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MText::Format -e 'print Text::Format({tabstop=>0})->new->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MText::Format -e 'print Text::Format->new({tabstop=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MText::Format -e 'print Text::Format->new({hangingIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MText::Format -e 'print Text::Format->new({hangingIndent=>1})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MText::Format -e 'print Text::Format->new({firstIndent=>1})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");'
-perl -MList::Util'shuffle' -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
-perl -MList::Util'qw/shuffle/' -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
-perl -MList::Util -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
-perl -MList::Util=shuffle -MText::Format -e 'print Text::Format->new({firstIndent=>0})->format("sdflsdf sdf llsdlf llsdfl lsdlf lsdlflsdlfl ll llsdlf ll lsldfl llsdlfl ll lsldll ll lsldf lll  l l lsldlf lsdlfl lsdlfl ll lsld ll l");print shuffle(1..10);'
-cat punc sort|perl -MList::Util=shuffle -MText::Format -ane '{chomp;push @foo, $_;}END{print Text::Format->new({firstIndent=>0})->format(shuffle(@foo));}'
-cat punc sort|perl -MList::Util=shuffle -MText::Format -ane '{chomp;push @foo, $_;}END{print Text::Format->new({firstIndent=>0})->format(shuffle(@foo));}' > /tmp/maori.tt
-cd ~/disk/Playing/msf-asr/
-ls
-mkdir youtube
-cd youtube/
-# https://www.youtube.com/watch?v=xYDLnnzfWgw
-mkdir antsnathaidmhor
-cd antsnathaidmhor
-youtube-dl https://www.youtube.com/watch?v=xYDLnnzfWgw
-ls
-cd ..
-mkdir UC3oTt_tHTu8RoExaxhoChuA
 cd UC3oTt_tHTu8RoExaxhoChuA/
 wget https://www.youtube.com/watch?v=--nPpjqNvOY
 youtube-dl https://www.youtube.com/watch?v=--nPpjqNvOY
@@ -1998,3 +1758,243 @@ git log
 git revert 5d6170
 git push origin  master 
 git checkout merge-en-es 
+vi Makefile.am 
+sh autogen.sh 
+make
+vi Makefile.am 
+sh autogen.sh 
+make
+ls
+git add Makefile.am translate-to-default-equivalent.xsl 
+git commit -m 'dust off'
+git push origin master 
+echo this is a test|apertium -d . en-pt
+ls
+git remote add theirs https://github.com/apertium/apertium-en-pt
+git push theirs master 
+ls
+git checkout -b testvoc
+cp ../apertium-en-es/testvoc-en-es testvoc-en-pt
+less testvoc-en-pt 
+git add testvoc-en-pt 
+git commit -m 'copy testvoc script from en-es'
+bash testvoc-en-pt 
+ls
+git status
+cat 828.expand 
+ls
+zcat comp--.expand.gz 
+ls -al
+git status
+rm config.in~ 828.expand comp*
+git status
+rm errors--
+rm errors--.superficial 
+ls
+vi testvoc-en-pt 
+git checkout master 
+less apertium-en-pt.pt.dix 
+ls
+git branch
+vimdiff apertium-en-pt.en-pt.t1x ../apertium-en-es/apertium-en-es.en-es.t1x 
+vi apertium-en-pt.en-pt.t1x 
+make
+vi apertium-en-pt.en-pt.t1x 
+vimdiff apertium-en-pt.en-pt.t1x ../apertium-en-es/apertium-en-es.en-es.t1x 
+make
+git diff
+vi ../apertium-en-es/apertium-en-es.en-es.t1x 
+cd ../apertium-en-es/
+git diff
+vi apertium-en-es.en-es.t1x 
+git diff
+vi apertium-en-es.en-es.t1x 
+git diff
+cat apertium-en-es.en-es.t1x |perl -ane 's/[ \t]*$//;print'
+cat apertium-en-es.en-es.t1x |perl -ane 's/[ \t]*$//;print' > tmp
+mv tmp apertium-en-es.en-es.t1x 
+git diff
+cat apertium-en-es.en-es.t2x |perl -ane 's/[ \t]*$//;print' > tmp
+mv tmp apertium-en-es.en-es.t2x 
+git diff
+git diff apertium-en-es.en-es.t2x
+git add apertium-en-es.en-es.t1x 
+git add apertium-en-es.en-es.t2x 
+cat apertium-en-es.en-es.t3x |perl -ane 's/[ \t]*$//;print' > tmp
+git diff
+mv tmp apertium-en-es.en-es.t3x 
+git diff
+git add apertium-en-es.en-es.t3x 
+git remote show
+git remote show origin 
+cd ../apertium-en-pt/
+cat apertium-en-pt.en-pt.t1x |perl -ane 's/[ \t]*$//;print' > tmp
+mv tmp apertium-en-pt.en-pt.t1x 
+git diff
+git add apertium-en-pt.en-pt.t1x 
+git commit -m 'trailing whitespace'
+git checkout master 
+cat apertium-en-pt.en-pt.t1x |perl -ane 's/[ \t]*$//;print' > tmp
+mv tmp apertium-en-pt.en-pt.t1x 
+git diff
+git add apertium-en-pt.en-pt.t1x 
+git commit -m 'trailing whitespace'
+git push origin master 
+git branch
+git checkout merge-en-es 
+vimdiff apertium-en-pt.en-pt.t1x ../apertium-en-es/apertium-en-es.en-es.t1x 
+vi apertium-en-pt.en-pt.t1x 
+git diff
+make
+git add apertium-en-pt.en-pt.t1x 
+git commit -m 'finished(?) merge'
+echo this is a test|apertium -d . en-pt
+echo He is going to wait|apertium -d . en-pt
+echo the dog |apertium -d . en-pt
+echo the cat |apertium -d . en-pt
+grep cat apertium-en-pt.en-pt.dix 
+grep '>cat<' apertium-en-pt.en-pt.dix 
+grep gato apertium-en-pt.pt.dix 
+vi apertium-en-pt.pt.dix 
+vi apertium-en-pt.en-pt.dix 
+make
+echo the cat |apertium -d . en-pt
+echo she is the cat |apertium -d . en-pt
+git add apertium-en-pt.en-pt.dix 
+git commit -m 'fix gato'
+less apertium-en-pt.en-pt.dix 
+grep '<s n="n"/></r>' apertium-en-pt.en-pt.dix 
+cp ~/disk/Playing/asvn/1/apertium-es-pt/apertium-es-pt.pt.dix apertium-en-pt.pt.dix 
+git diff
+git status
+git stash
+git log
+git checkout master 
+git cherry-pick df9d3a
+git log
+git push origin master 
+ls
+git checkout merge-en-es 
+git status
+echo en-pt.autobiltmp.dix >> .gitignore 
+echo pt-en.autobiltmp.dix >> .gitignore 
+git diff
+git add .gitignore 
+git commit -m update
+git status
+echo modes/ >> .gitignore 
+git status
+echo '*.mode' >> .gitignore 
+git commit -m 'update'
+git add .gitignore 
+git commit -m 'update'
+git status
+ls
+cat .gitignore 
+git push origin merge-en-es 
+git checkout master 
+git cherry-pick a019658
+git cherry-pick 
+git cherry-pick  85c8c10
+git log
+git push origin master 
+git status
+git checkout merge-en-es 
+ls
+cat ChangeLog 
+grep adep apertium-en-pt.pt.dix 
+grep '<s n="n"/></r>' apertium-en-pt.en-pt.dix 
+grep '<s n="n"/></r>' apertium-en-pt.en-pt.dix  > tofix
+cat tofix 
+cat tofix |awk -F'<r>' '{print $2}'|awk -F'<s' '{print $1}'
+cat tofix |awk -F'<r>' '{print $2}'|awk -F'<s' '{print $1}'|sed -e 's/<b\/>/ /g'
+cat tofix |awk -F'<r>' '{print $2}'|awk -F'<s' '{print $1}'|sed -e 's/<b\/>/ /g' > tofix-lems
+cat tofix-lems |lt-proc pt-en.automorf.bin 
+vi apertium-en-pt.en-pt.dix 
+cat tofix-lems |lt-proc pt-en.automorf.bin 
+cat tofix-lems |lt-proc pt-en.automorf.bin  > tofix-anal
+vi tofix-anal 
+grep '<sp>' tofix-anal 
+grep '<f><sg>' tofix-anal 
+grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'
+grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq
+grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' '
+echo teia de aranha|lt-proc pt-en.automorf.bin 
+grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > fsg
+grep '<mf><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > mfsg
+grep '<m><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > msg
+grep '<m><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > msp
+grep '<mf><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > mfsp
+grep '<f><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > fsp
+less fsg 
+grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > fsg
+grep '<mf><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > mfsg
+grep '<m><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > msg
+grep '<m><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > msp
+grep '<mf><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > mfsp
+grep '<f><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > fsp
+cat fsp 
+vi apertium-en-pt.pt.dix 
+vi apertium-en-pt.en-pt.dix 
+git diff
+git add apertium-en-pt.*
+git branch
+git commit -m 'some entry fixes'
+cat fsg
+cat fsg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"f\"/></r>!"}'
+cat fsg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"f\"/></r>!"}' > sedder
+cat apertium-en-pt.en-pt.dix |sed -f sedder 
+cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
+mv tmp apertium-en-pt.en-pt.dix 
+git diff
+git add apertium-en-pt.en-pt.dix 
+git commit -m 'auto add gender: f'
+cat mfsg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"mf\"/></r>!"}' > sedder
+less sedder 
+cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
+mv tmp apertium-en-pt.en-pt.dix 
+git diff
+git add apertium-en-pt.en-pt.dix 
+git commit -m 'auto add gender: mf'
+cat msg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"m\"/></r>!"}' > sedder
+cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
+mv tmp apertium-en-pt.en-pt.dix 
+git commit -m 'auto add gender: m'
+git add apertium-en-pt.en-pt.dix 
+git commit -m 'auto add gender: m'
+make
+vi Makefile.am 
+git status
+cat msp|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"m\"/><s n=\"sp\"/></r>!"}' > sedder
+cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
+mv tmp apertium-en-pt.en-pt.dix 
+git diff
+git add apertium-en-pt.en-pt.dix 
+git commit -m 'auto add gender: m.sp'
+vi apertium-en-pt.en-pt.dix 
+git add apertium-en-pt.en-pt.dix 
+git commit -m virus
+cat mfsp|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"mf\"/><s n=\"sp\"/></r>!"}' > sedder
+cat sedder 
+cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
+mv tmp apertium-en-pt.en-pt.dix 
+git diff
+cat fsp|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"f\"/><s n=\"sp\"/></r>!"}' > sedder
+cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
+mv tmp apertium-en-pt.en-pt.dix 
+git diff
+cat sedder 
+rm mfs* fs* ms*
+ls
+git branch
+git push origin merge-en-es 
+vi apertium-en-pt.en-pt.dix 
+git diff
+vi apertium-en-pt.pt.dix 
+git diff
+git add apertium-en-pt.*
+git commit -m 'billion'
+vi apertium-en-pt.pt.dix 
+vi apertium-en-pt.en-pt.dix 
+git add apertium-en-pt.*
+git commit -m 'trillion -- noping my way out of scale issues'
