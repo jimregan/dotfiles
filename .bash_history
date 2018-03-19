@@ -1,12 +1,3 @@
-wget https://www.youtube.com/watch?v=1F8XMAeq_r8
-youtube-dl https://www.youtube.com/watch?v=1F8XMAeq_r8
-$((238 * 4))
-echo $((238 * 4))
-ls *1z*
-wget https://www.youtube.com/watch?v=dbAoj97kVsY
-youtube-dl https://www.youtube.com/watch?v=dbAoj97kVsY ; youtube-dl https://www.youtube.com/watch?v=tukRb_4qQYk ; wget https://www.youtube.com/watch?v=tukRb_4qQYk
-youtube-dl https://www.youtube.com/watch?v=4I9Fu_2t5gU ; wget https://www.youtube.com/watch?v=4I9Fu_2t5gU
-youtube-dl https://www.youtube.com/watch?v=mpt1QW-SkzA ; wget https://www.youtube.com/watch?v=mpt1QW-SkzA
 youtube-dl https://www.youtube.com/watch?v=OnleYp18Jj8 ; wget https://www.youtube.com/watch?v=OnleYp18Jj8
 man wget
 cd ~/disk/Playing/
@@ -1998,3 +1989,12 @@ find . -type x
 tar tvf romanian_toy_demo_corpus_for_ossian.tar?dl=0
 ls
 less recipes/naive_01_nn.cfg 
+ls
+./face_detection_ex 
+./face_detection_ex ~/Pictures/fbdl/202*jpg
+less ../face_detection_ex.cpp 
+ls
+cd ~/disk/Playing/cling-run/
+ls
+find . -name cling
+./cling-build/builddir/bin/cling
