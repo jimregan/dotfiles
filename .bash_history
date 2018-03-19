@@ -1,151 +1,3 @@
-grep -i number spacy/symbols.*
-grep -i prepcase spacy/symbols.*
-grep -i gender spacy/symbols.*
-grep -i gender spacy/symbols.p*
-sudo python3 setup.py install
-git diff
-vi spacy/morphology.pxd 
-vi spacy/morphology.pyx 
-git checkout master
-git checkout -b animacy-morphology
-git add spacy/morphology.p*
-git commit -m 'fix typo/missing here too'
-git push mine animacy-morphology 
-less spacy/attrs.pxd 
-less spacy/attrs.pyx 
-less spacy/lang/pl/
-find . -name '*.py' -or -name '*.pxd' -or -name '*.pyx'|xargs grep -i prepcase
-less spacy/attrs.cpp 
-less spacy/attrs.pxd 
-less spacy/attrs.pyx 
-git diff
-git checkout master
-git pull origin master
-git checkout -b prepcase
-git add spacy/attrs.pyx 
-vi spacy/attrs.pxd 
-git commit -m 'missing PrepCase attribute'
-git push mine prepcase 
-sudo python3 setup.py install
-less /tmp/spa.py 
-sudo python3 setup.py install
-less /tmp/spa.py 
-git pull origin master
-git branch
-git checkout master
-git pull origin master
-git push mine master 
-sudo python3 setup.py install
-vi spacy/lang/pl/tokenizer_exceptions.py 
-git diff
-vi spacy/lang/pl/tokenizer_exceptions.py 
-vi spacy/lang/pl/tag_map.py 
-vi spacy/lang/pl/tokenizer_exceptions.py 
-git diff
-rm ~/Pictures/Screenshot_20180218_210057.png 
-cd ../
-cd spotlight/
-ls
-git clone https://github.com/dbpedia-spotlight/model-quickstarter
-git clone https://github.com/diffbot/wikistatsextractor
-cd ../wolne-lektury-audio-corpus/polimorf/
-ls
-grep pn\. polimorf.tab 
-grep pn. polimorf.tab 
-grep pn polimorf.tab |grep ponied
-grep itd polimorf.tab 
-grep w polimorf.tab 
-less polimorf.tab 
-youtube-dl https://www.youtube.com/watch?v=z_O84AgHLIw
-youtube-dl -h
-youtube-dl --list-extractors
-less ../../../youtube-pl/dl.sh 
-youtube-dl -x --audio-format=best https://www.youtube.com/watch?v=s0OZki_PuMg
-youtube-dl -x --audio-format=best yD1yp9P6GdY
-ls
-cd ..
-mkdir 
-acadamhghaothdobhair
-mkdir acadamhghaothdobhair
-cd acadamhghaothdobhair/
-youtube-dl https://www.youtube.com/watch?v=95WNJPgWqd8
-wget https://www.youtube.com/watch?v=95WNJPgWqd8
-wget https://www.youtube.com/watch?v=YaLlmGftPdA
-youtube-dl https://www.youtube.com/watch?v=YaLlmGftPdA
-wget https://www.youtube.com/watch?v=1zydx_rJIB0
-youtube-dl https://www.youtube.com/watch?v=1zydx_rJIB0
-mv AT\ Scoil\ agus\ brú\ Antoin\ xvid-1zydx_rJIB0.mp4 watch\?v\=1zydx_rJIB0 ../UC3oTt_tHTu8RoExaxhoChuA/
-cd /tmp/wesht/
-cp ~/Downloads/Westirishfolktal00larmuoft_raw_0095.jpg .
-cd ~/disk/Playing/
-git clone https://github.com/ufal/udpipe
-cd udpipe/
-ls
-less INSTALL 
-cd src
-ls
-make
-cd disk/Playing/
-git clone https://github.com/zdevito/ATen
-lynx https://www.reddit.com/r/MachineLearning/comments/7xv4i2/d_any_updates_on_capsulnet/
-cd ~/disk/Playing/
-cd cmudict/
-grep tomato cmudict.dict 
-grep tuesday cmudict.dict 
-grep aluminum cmudict.dict 
-grep aluminium cmudict.dict 
-grep new cmudict.dict 
-grep vase cmudict.dict 
-grep leisure cmudict.dict 
-grep tuesday cmudict.dict 
-grep herb cmudict.dict 
-grep student cmudict.dict 
-grep stew cmudict.dict 
-cd ..
-cd msf-asr/
-mkdir edc
-rmdir edo
-rmdir edc
-mkdir edco
-cd edco/
-lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html
-lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3
-lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3|awk '{$1=""}{print}'
-lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3|awk '{$1=""}{print}'|sed -e 's/^ //'
-lynx -dump https://www.edco.ie/online-teachers-resources/post-primary.2365.html|grep mp3|awk '{$1=""}{print}'|sed -e 's/^ //' > mp3s
-less mp3s 
-wget -i mp3s 
-wc -l mp3s 
-wget https://www.edco.ie/_fileupload/Fonn%202%20New%20Student%20CD/Fonn%202%20New%20CD%20Script.pdf
-wget https://www.edco.ie/_fileupload/Fonn%20booklets%20and%20CDs/Fonn%203%20supplement%20booklet%20opt.pdf
-pdftohtml Fonn\ 2\ New\ CD\ Script.pdf 
-ls
-lynx Fonn\ 2\ New\ CD\ Script.html 
-ffplay Dict\ and\ Dem\ 11.mp3 
-ls
-rm Dict\ *
-ls
-vi mp3s 
-fdupes .
-ffplay air5571s_scd1_track47.mp3
-pdftotext Fonn\ 2\ New\ CD\ Script.pdf 
-less Fonn\ 2\ New\ CD\ Script.txt
-ffplay air5571s_scd1_track1.mp3 
-ls
-kill -9 26965
-kill -9 31807
-kill -9 15732
-kill -9 17712
-ps aux|grep chromium
-kill -9 32529
-kill -9 30183
-kill -9 32301
-kill -9 30183
-kill -9 30133
-kill -9 29773
-kill -9 29483
-kill -9 28725
-kill -9 28275
 kill -9 17775
 kill -9 26324
 kill -9 17860
@@ -1998,3 +1850,151 @@ grep '^ffi' /tmp/tmp.bFt2EkvTGc/mri/*.box
 rm /tmp/tmp.bFt2EkvTGc/mri/mri.DejaVu_Sans_Ultra-Light.exp0.box
 unicharset_extractor --output_unicharset /tmp/foo $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box)
 for i in $(ls /tmp/tmp.bFt2EkvTGc/mri/*.box) ;do unicharset_extractor --output_unicharset /tmp/foo $i || echo $i broken;done
+cd ~/disk/Playing/apertium-en-lt/
+ls
+git branch
+git log
+git checkout -b readd-history 6160cc
+git log
+git apply /tmp/patches/0003-what-spectie-wants-spectie-gets.patch
+git log
+git status
+git stash
+git status
+rm apertium-en-lt.*
+git am /tmp/patches/0003-what-spectie-wants-spectie-gets.patch
+git log
+for i in /tmp/patches/00*;do echo $i;done
+git branch
+git log
+git push origin readd-history 
+for i in /tmp/patches/00*;do git am $i;done
+git log
+git push origin readd-history 
+cd ..
+git clone https://github.com/apertium/apertium-eu-en
+cd apertium-eu-en/
+ls
+git revert 387d6565cd48c1e684337569ac3286b8e2227bbb
+git reset .
+git add --patch modes.xml 
+git commit -m 'partial revert'
+git log
+git diff
+git status
+git reset --hard HEAD^
+git revert -n 387d6565cd48c1e684337569ac3286b8e2227bbb
+git reset HEAD .
+git add --patch modes.xml 
+git status
+git diff
+git commit -m 'partial revert'
+git stash
+git log
+cd ..
+git clone https://github.com/apertium/apertium-pl-csb
+cd apertium-pl-csb/
+ls
+git checkout -b cc0
+git rm *.t[0-9]x
+git rm [A-Z]*
+git rm ./[A-Z]*
+ls
+ls dev/
+less dev/incomplete-paradigms/pisanie 
+less dev/csb.list 
+less dev/extract-lemma-and-surface.pl 
+less dev/unigrams 
+ls
+git rm COPYING Makefile.am modes.xml NEWS README pl-csb.prob 
+ls
+git rm apertium-pl-csb.pl.dix 
+git rm apertium-pl-csb.post-pl.dix 
+ls
+cat AUTHORS 
+git rm autogen.sh AUTHORS 
+ls
+cat ChangeLog 
+git rm ChangeLog 
+ls
+git rm configure.ac csb-pl.prob 
+ls
+git rm apertium-pl-csb.pl.tsx 
+ls
+git rm apertium-pl-csb.pl.acx 
+ls
+less apertium-pl-csb.csb.tsx 
+git commit -m 'remove things that may have come from pl-cs'
+cp ../apertium-en-lt/LICENSE .
+less LICENSE 
+git add LICENSE 
+git commit -m 'add CC0'
+git push origin cc0 
+cd ..
+git clone https://github.com/apertium/apertium-pl-dsb
+cd  apertium-pl-dsb/
+ls
+git branch
+git checkout -b cc0
+ls
+git rm buscaPar.xsl principal.xsl 
+ls dev/
+less dev/corp.pl 
+less dev/sentences
+less dev/sentences-bare 
+git rm dev/sentences*
+ls
+cat Makefile.am 
+git rm Makefile.am 
+ls
+cp ../apertium-en-lt/LICENSE .
+git add LICENSE 
+git commit -m 'CC0'
+git push origin cc0 
+cd ..
+git clone https://github.com/apertium/apertium-pl-hsb
+cd apertium-pl-cs
+ls
+git log
+cd ..
+ls
+cd apertium-pl-cs/
+ls
+cd ..
+cd asvn/1/
+ls
+cd apertium-es-an/
+git log
+cd ..
+git clone https://github.com/apertium/apertium-spa-arg
+cd apertium-es-an/
+ls
+git log
+git checkout -b es-an-incubator
+cd ../apertium-spa-arg/
+ls
+git remote add ../apertium-es-an esan1
+git pull ../apertium-es-an 
+git log
+git branch -a
+git diff
+git stash
+git merge --abort
+git reset --merge
+git stash
+ls
+git status
+cd ..
+rm -rf apertium-spa-arg/
+git clone https://github.com/apertium/apertium-spa-arg
+git clone https://github.com/apertium/apertium-es-pt.git
+cd apertium-es-pt/
+grep '>en<' apertium-es-pt.es-pt.dix 
+grep '>en<' apertium-es-pt.es-pt.dix |grep pr
+less apertium-es-pt.es-pt.dix 
+less apertium-es-pt.pt.dix 
+grep habilita apertium-es-pt.pt.dix 
+less apertium-es-pt.pt.dix 
+grep directriz apertium-es-pt.es-pt.dix 
+grep 'v=' apertium-es-pt.es-pt.dix 
+grep 'v=' apertium-es-pt.es-pt.dix |grep transac
