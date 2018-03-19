@@ -1,15 +1,3 @@
-less Audio.h 
-find /home/jim/disk/Playing/cocos2d-x/ -name SimpleAudioEngine.h
-find /home/jim/disk/Playing/cocos2d-x/ -name cocos2d.h
-for i in *cpp;do /usr/bin/c++ -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
-less /home/jim/disk/Playing/cocos2d-x/cocos/base/CCRef.h
-less /home/jim/disk/Playing/cocos2d-x/cocos/platform/CCPlatformDefine.h 
-for i in *cpp;do /usr/bin/c++ -DCC_TARGET_PLATFORM= -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
-less /home/jim/disk/Playing/cocos2d-x/cocos/platform/CCPlatformDefine.h 
-for i in *cpp;do /usr/bin/c++ -DCC_TARGET_PLATFORM=CC_PLATFORM_LINUX -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
-for i in *cpp;do /usr/bin/c++ -DCC_PLATFORM_LINUX -DCC_TARGET_PLATFORM=CC_PLATFORM_LINUX -I/home/jim/disk/Playing/cocos2d-x/cocos -I/home/jim/disk/Playing/cocos2d-x/cocos/audio/include/  -std=c++11 -Wno-deprecated-declarations -Wno-reorder -g -Wall $i -o $(basename .cpp).o; done
-cd ../
-ls
 cd linux-build/
 ls
 rm -rf CMakeFiles/
@@ -1998,3 +1986,15 @@ ls ~/Downloads/mp3/
 #rm -rf ~/Downloads/mp3/
 ls Downloads/mp3/
 rm -rf ~/Downloads/mp3/
+cd ..
+git clone https://github.com/StephenMilborrow/muct
+cd muct/
+ls
+tar ztvf muct-b-jpg-v1.tar.gz 
+tar ztvf muct-b-jpg-v1.tar.gz |less
+ls
+tar ztvf muct-landmarks-v1.tar.gz 
+tar zxvf muct-landmarks-v1.tar.gz 
+less muct-landmarks/README.txt 
+less muct-landmarks/muct76.shape 
+less muct-landmarks/muct76-opencv.csv 
