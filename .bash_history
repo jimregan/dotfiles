@@ -1,7 +1,3 @@
-cd UC3oTt_tHTu8RoExaxhoChuA/
-wget https://www.youtube.com/watch?v=--nPpjqNvOY
-youtube-dl https://www.youtube.com/watch?v=--nPpjqNvOY
-wget https://www.youtube.com/watch?v=GttclvJjNfE
 youtube-dl https://www.youtube.com/watch?v=GttclvJjNfE
 wget https://www.youtube.com/watch?v=JgEwKiWEGVE
 youtube-dl https://www.youtube.com/watch?v=JgEwKiWEGVE
@@ -1998,3 +1994,7 @@ vi apertium-en-pt.pt.dix
 vi apertium-en-pt.en-pt.dix 
 git add apertium-en-pt.*
 git commit -m 'trillion -- noping my way out of scale issues'
+cd ~/disk/shared/redo/
+ls
+find . -type x
+./linux-build/bin/MyGame 
