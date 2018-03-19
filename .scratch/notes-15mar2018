@@ -115,8 +115,105 @@ https://github.com/artetxem/vecmap
 https://github.com/giuliopaci/SPro
 https://github.com/rainlabs/stranger
 
-<e lm="bilhão">
+https://github.com/mozilla/TTS/blob/master/layers/tacotron.py
+https://www.reddit.com/r/MachineLearning/comments/845uji/d_are_the_hyperrealistic_results_of_tacotron2_and/
+The issues in pronunciation are likely coming from issues in the dataset balance. There's a big difference between what a commercial TTS repo would use/read as normal text, and what a book has. See for example this paper. You can combat some of this with pronunciation hints in training as an easy workaround, but good data (in both quality, and database design) is the best approach.
+http://ieeexplore.ieee.org/document/6709856/
 
-<i>bilh</i>
-<par n="avi/ão__n"/>
-</e>
+Noise is good: https://arxiv.org/abs/1802.06901
+
+[–]kkastner 9 points 4 days ago* 
+The phoneme balance is pretty far off in LJ. If you read it, a lot of the sentences are like weird lists, or accounting registers or something. Remember most of these "industry grade" TTS databases were originally designed for concatenative synthesis - so you do things like care about sufficient coverage of every triphone and/or 5 gram, etc. These things will have a huge impact even if you train a parametric model on this dataset - the data has already been hand selected to be a representative support set for speech!
+
+Check out Lyrebird's API for example - the sentences they have you read are not normal. There's a variety of reasons for it, but the key takeaway is that pure natural speech in some sense is like "imbalanced data", and you often want to do specific things to improve coverage of certain sounds.
+
+Flaws in the model can't help, but I can guarantee r9y9 isn't making the silly DSP mistakes most other people tend to make (and there are a lot of pitfalls there to be avoided). Their work is some of the best, from both DSP and deep learning. I used their mgc implementation extensively in converting the WORLD vocoder to numpy (though it's ultimately too slow to be useful for much).
+
+Griffin-Lim implementations (or more appropriately, how much overlap you use in your time-frequency transforms) can be another pitfall that most people don't even realize if they haven't worked with speech data or done DSP in and of itself before.
+
+I really can't emphasize enough that the 50% overlap used in basically every package for default spectrogram settings is nowhere close to appropriate for TTS. The STRAIGHT vocoder Graves used in his original demo has a much, much higher overlap in time, something like 90-99%. And you can also have a lot of changes/improvements based on how you do windowing, or if you get funky and explore other time-frequency transforms.
+
+The text side of these character based models is no joke, we had a much more difficult time on English than other languages such as Spanish and Romanian. If you change conditioning input from character based to "sound" or phoneme based, a lot of simpler models start working because you eliminate the much of the uncertainty in English pronunciation.
+
+It isn't ideal, as we want to learn from characters but it goes to show that you have to put a ton of effort on the text side too, and a failure there can sink your whole model.
+
+Obviously this DSP stuff (beyond not messing up downsampling, and quantization) shouldn't effect WaveNet reimplementation or other "purely time" models, but in WaveNet your text "data" has to go through a classic speech pipeline for feature extraction/approximate alignment (which is already insanely nasty, and has a ton of custom settings you could tweak if you knew it well), then train a bunch of mini-models using the very latest tricks.
+
+See an example of just the text features (and not any combined text features...) from SPTK, or a slightly different one. Do you think those 186 different features between the datasets might matter (or be a bad idea) depending on dataset? I think so, but I don't know the text pipeline enough to tell.
+
+Heiga Zen is one of the very top TTS researchers, who focused on parametric TTS since forever - he knows the tools like SPTK all the way to the very bottom, and wrote a bunch of serious C code for DSP and feature extract in there... and also has some cool results combining deep learning knowledge and classic TTS.
+
+Then also take all that stuff you did with the text, make sure all the data feed and alignment is right and train a whole WaveNet on this, match architectures, etc. Remember that 32 GPUs likely means some kind of different optimizer than an off-the-shelf Adam, and you can see big differences in optimization with async gradient descent methods - often better stability and generalization. To fit the full WaveNet model AFAIK 2 GPUs is required - we couldn't ever fit the full model in a single GPU but maybe things have gotten bigger/better since then.
+
+It's an enormous effort - I spent basically 6 months just trying to automate a wrapper around the speech/text extraction pipeline from Merlin which was already more straightforward than anything I had found before then. The code for that script (which heavily leverages ~4 or 5 different crufty C packages internally) dwarfs my own library code for all the component parts of a model like the "reader" of char2wav, including several model setups.
+
+If you want some code you can run yourself today, also check out Facebook's Loop. It can get pretty high fidelity results (to my foreign/non-speaker ears at least) on certain datasets, but again data is everything. They (FB) also had a recent follow-up paper, but I don't know if code is available yet.
+
+TL;DR
+
+Progress in speech synthesis with neural networks has come at an insanely rapid pace, but make no mistake - the pipeline is more involved than many other areas. Expect that replication will be difficult, especially without access to the original data. Data is everything in TTS.
+
+Facebook's Loop: https://github.com/facebookresearch/loop
+on certain datasets: https://twitter.com/hiromu1996/status/934758563418742784
+Voiceloop [ARXIV: 1705.03122] + jsut [arXiv: 1711.00354] I try Japanese TTS, but the intonation is still subtle https://soundcloud.com/hiromu-yakura/sets/voiceloop-jsut-epoch-53 …
+
+
+
+[–]kkastner 11 points 4 days ago* 
+Definitely yes. I usually start with just the preproc. Even downsampling / mu-law encoding can cause aliasing or bit-noise if done inappropriately. Let alone more complicated things like STFT (what is the overlap? - I recommend > 80% personally - what is the window? is the griffin-lim implementation correct/converging?). I have spent a lot of time in my life debugging models, when I should have been re-checking my data processing.
+
+
+https://towardsdatascience.com/deep-neural-network-implemented-in-pure-sql-over-bigquery-f3ed245814d3
+
+https://www.tensorflow.org/extend/new_data_formats
+
+https://en.wikipedia.org/wiki/Comparison_of_distributed_file_systems
+https://github.com/quantcast/qfs
+https://github.com/orifs/ori
+
+https://github.com/aquynh/capstone
+
+https://github.com/antlr/grammars-v4/blob/master/vb6/VisualBasic6.g4
+
+https://github.com/brainsickcc/libvbgui/blob/wip/lib.c
+(Affero (ugh) VB6 compiler - GUI lib)
+
+
+https://arxiv.org/abs/1803.04831
+Independently Recurrent Neural Network (IndRNN): Building A Longer and Deeper RNN
+
+https://arxiv.org/abs/1803.04596
+Automatic Detection of Online Jihadist Hate Speech
+
+https://github.com/resonance-audio
+
+https://www.reddit.com/r/MachineLearning/comments/84r7ws/d_to_fine_tune_word_embeddings_or_not/
+
+https://blogs.technet.microsoft.com/machinelearning/2018/03/14/comparing-deep-learning-frameworks-a-rosetta-stone-approach/
+https://github.com/ilkarman/DeepLearningFrameworks
+
+https://www.tensorflow.org/extend/add_filesys
+
+https://arxiv.org/pdf/1712.09444.pdf
+Letter-Based Speech Recognition with Gated ConvNets
+
+
+https://www.reddit.com/r/MachineLearning/comments/85cwiu/d_wellwritten_paper_examples/
+
+https://arxiv.org/abs/1803.03635
+The Lottery Ticket Hypothesis: Training Pruned Neural Networks
+
+https://arxiv.org/pdf/1608.03542.pdf
+WIKIREADING: A Novel Large-scale Language Understanding Task over
+Wikipedia
+
+http://tomkenter.nl/pdf/kenter_byte-level_2018.pdf
+https://github.com/google-research-datasets/wiki-reading
+
+https://www.reddit.com/r/MachineLearning/comments/858c88/d_does_anyone_use_dropout_anymore/
+
+https://medium.com/@Synced/baidu-apollo-releases-massive-self-driving-dataset-teams-up-with-berkeley-deepdrive-5e785ab4053b
+http://apolloscape.auto/index.html
+
+https://github.com/Kyubyong/speaker_adapted_tts
+

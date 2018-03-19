@@ -1,21 +1,3 @@
-git diff
-. sourceme 
-mkleft
-grep zamarzać polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq > /tmp/leftin
-mkleft
-mkrightin 
-less /tmp/rightin 
-paste /tmp/leftin /tmp/rightin 
-paste /tmp/leftin /tmp/rightin >> pron-data/gen.tsv 
-git diff
-git add pron-data/gen.tsv 
-git commit -m more
-grep marznąć polimorf/polimorf.tab 
-grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $2}'|sort|uniq
-grep marznąć polimorf/polimorf.tab |awk -F'\t' '{print $1}'|sort|uniq >  /tmp/leftin 
-mkleft
-git diff
-git diff|grep '^\+'
 git diff|grep '^\+'|grep '\t'
 git diff|grep '^\+' > /tmp/toblah
 vi /tmp/toblah 
@@ -1998,3 +1980,21 @@ find . -name cling
 find . -name cling -type f
 ./inst/bin/cl
 ./inst/bin/cling 
+git diff
+git branch
+git add apertium-en-pt.en-pt.t1x 
+git commit -m 'merge some macro changes from en-es'
+git push mine master 
+git push origin  master 
+make
+vi apertium-en-pt.en-pt.t1x 
+git diff
+git log
+git checkout -b merge-en-es
+git add apertium-en-pt.en-pt.t1x 
+git commit -m 'more merge'
+git checkout master
+git log
+git revert 5d6170
+git push origin  master 
+git checkout merge-en-es 
