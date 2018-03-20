@@ -1,11 +1,3 @@
-rm Makefile CMakeCache.txt 
-vi ../CMakeLists.txt 
-cmake ..
-cd ..
-cocos run -p linux
-ls
-cd linux-build/
-ls
 make
 ls
 find  . -name 'MyGame*'
@@ -1998,3 +1990,11 @@ less muct-landmarks/muct76-opencv.csv
 cd ~/disk/Playing/
 ls
 lynx https://www.youtube.com/watch?v=uR-_8SGhYw8
+cd ..
+mkdir mixie
+cd mixie/
+ls
+youtube-dl https://www.youtube.com/watch?v=y7GLPr3LmTM&t=1s
+ls
+#
+ls
