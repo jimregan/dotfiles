@@ -1,5 +1,3 @@
-ls
-echo feuch |espeak --ipa -v gd
 echo feuch |espeak --ipa -v ga
 echo feach |espeak --ipa -v ga
 echo féach |espeak --ipa -v ga
@@ -1998,3 +1996,5 @@ ls -al shape_predictor_68_face_landmarks.dat
 ./face_landmark_detection_ex shape_predictor_68_face_landmarks.dat ~/Pictures/Pictures/Skype/Screen\ shot\ 2016-01-*png
 ./face_landmark_detection_ex shape_predictor_68_face_landmarks.dat ~/Pictures/fbdl/202*jpg
 less ../face_landmark_detection_ex.cpp 
+cd ../..
+git clone https://github.com/so-fancy/diff-so-fancy
