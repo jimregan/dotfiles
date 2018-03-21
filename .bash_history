@@ -1,25 +1,3 @@
-mkdir css
-mv build/clippy.css css/
-less build/clippy.js 
-less build/clippy.min.js 
-ls agents/Links/agent.js 
-less agents/Links/agent.js 
-git add agents/ css/ 
-mv build/clippy.min.js js/
-git add js/clippy.min.js 
-git commit -m clippy
-git rm -rf agents/
-git commit -m 'loaded from amazon'
-ls
-git status
-rm -rf build/
-ls
-mkdir ~/public_html
-mkdir ~/public_html/failteoir
-ls
-git checkout gh-pages 
-ls
-cd speak.js/
 ls
 echo feuch |espeak --ipa -v gd
 echo feuch |espeak --ipa -v ga
@@ -1998,3 +1976,25 @@ less mkwavs.sh
 ls
 less dictmp 
 less result/teanglann.align 
+cd ~/disk/Playing/
+git clone https://github.com/davisking/dlib.git
+cd dli
+cd dlib
+ls
+less README.md 
+mkdir build; cd build; cmake .. ; cmake --build .
+ls
+cd ..
+ls
+cd examples/
+ls
+mkdir build && cd build
+cake ..
+cmake ..
+./face_landmark_detection_ex 
+wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+bunzip2 shape_predictor_68_face_landmarks.dat.bz2 
+ls -al shape_predictor_68_face_landmarks.dat 
+./face_landmark_detection_ex shape_predictor_68_face_landmarks.dat ~/Pictures/Pictures/Skype/Screen\ shot\ 2016-01-*png
+./face_landmark_detection_ex shape_predictor_68_face_landmarks.dat ~/Pictures/fbdl/202*jpg
+less ../face_landmark_detection_ex.cpp 
