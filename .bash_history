@@ -1,61 +1,3 @@
-tree
-less proj.android-studio/app/jni/Android.mk 
-make -f proj.android-studio/app/jni/Android.mk 
-ls
-ls Resources/
-ls
-ls proj.win32/
-ls proj.win32/main.cpp 
-less proj.win32/main.cpp 
-ls
-ls Classes/
-grep include Classes/*
-grep include Classes/*|awk -F':' '{print $2'
-grep include Classes/*|awk -F':' '{print $2}'
-grep include Classes/*|awk -F':' '{print $2}'|sort|uniq
-cd ../corpuscrawler/
-ls
-ls corpus
-cat corpus/mi.txt
-cat corpus/mi.txt|grep -v '^#'
-cat corpus/mi.txt|grep -v '^#' > /tmp/mi.txt
-cat corpus/gd.txt|grep -v '^#' > /tmp/gd.txt
-less /tmp/gd.txt 
-cd ~/disk/Playing/Corpora
-svn up
-cd /tmp/
-mkdir hyde
-mkdir hydedir
-cd hydedir/
-cp ../hyde .
-git init .
-git add hyde 
-git commit -m blah
-vi hyde 
-git diff
-vi hyde 
-git diff
-vi hyde 
-git diff
-vi hyde 
-cat hyde |perl ~/hyde.pl 
-ls
-less 14.txt 
-less 16.txt 
-rm 14.txt 
-for i in *.txt;do echo mv $i Page:Leabharsgeulaigh00hyde.djvu%2F$(basename $i .txt).mw;done
-for i in *.txt;do mv $i Page:Leabharsgeulaigh00hyde.djvu%2F$(basename $i .txt).mw;done
-mv Page\:Leabharsgeulaigh00hyde.djvu%2F* ~/disk/Playing/ga-wikibooks/test-mw/w/
-cd ~/disk/Playing/
-ls
-ls ga-wikibooks/
-cd ga-wikibooks/test-mw/
-ls
-cd w/
-ls
-mv /tmp/togha/Page\:An_t-Ogha_Mor_-_Aonghas_Mac_Dhonnachaidh.djvu%2F* .
-git add Page\:An_t-Ogha_Mor_-_Aonghas_Mac_Dhonnachaidh.djvu%2F*
-git push
 git commit -m git-mw
 git push
 ls
@@ -1998,3 +1940,61 @@ less annotation/1422.txt
 wc -l annotation/*
 cd ../Corpora
 svn stat
+ls
+find . -name corpusfile.txt
+less ./data/mul_mo_sceal_fein/corpusfile.txt
+mkdir data/audio/mul_mo_sceal_fein/
+man ln
+less /tmp/audio-file-locs 
+ln -sd ../ga_MU/mo_sgeal_fein_CORK/corpus/wav/ data/audio/mul_mo_sceal_fein/wav
+ls data/audio/mul_mo_sceal_fein/wav
+ls -al data/audio/mul_mo_sceal_fein/wav
+ls -al data/audio/mul_mo_sceal_fein/wav/
+file data/audio/mul_mo_sceal_fein/wav 
+rm data/audio/mul_mo_sceal_fein/wav 
+ln -sd $PWD/../ga_MU/mo_sgeal_fein_CORK/corpus/wav/ data/audio/mul_mo_sceal_fein/wav
+ls -al data/audio/mul_mo_sceal_fein/wav/
+find . -name corpusfile.txt|head
+python scripts/makeKaldiFiles.py ./data/mul_mo_sceal_fein/corpusfile.txt
+python scripts/makeKaldiFiles.py harald ./data/mul_mo_sceal_fein/corpusfile.txt
+ls data/audio/mul_mo_sceal_fein/wav/tcd_ga_mu_mnl_msf_0001.wav 
+#ln -sd $PWD/../ga_MU/mo_sgeal_fein_CORK/corpus/wav/ data/audio/mul_mo_sceal_fein/wav
+rm data/audio/mul_mo_sceal_fein/wav
+#cp ../ga_MU/mo_sgeal_fein_CORK/corpus/wav/* data/audio/mul_mo_sceal_fein/wav
+mkdir data/audio/mul_mo_sceal_fein/wav
+cp ../ga_MU/mo_sgeal_fein_CORK/corpus/wav/* data/audio/mul_mo_sceal_fein/wav
+python scripts/makeKaldiFiles.py harald ./data/mul_mo_sceal_fein/corpusfile.txt
+vi ./data/mul_mo_sceal_fein/corpusfile.txt
+python scripts/makeKaldiFiles.py harald ./data/mul_mo_sceal_fein/corpusfile.txt
+ls
+find . -name corpusfile.txt
+find . -name corpusfile.txt -exec cat {} \;
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|awk 'BEGIN{FS=OFS="/"}{$NF="";print}'
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|awk 'BEGIN{FS=OFS="/"}{$NF="";print}'|sort|uniq
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|awk 'BEGIN{FS=OFS="/"}{$NF="";print}'|sort|uniq|sed -e 's/\.\.\/\.\.\///'
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|awk 'BEGIN{FS=OFS="/"}{$NF="";print}'|sort|uniq|sed -e 's/\.\.\/\.\.\///;s/\.\.\///;s/asrdata\//'
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|awk 'BEGIN{FS=OFS="/"}{$NF="";print}'|sort|uniq|sed -e 's/\.\.\/\.\.\///;s/\.\.\///;s/asrdata\///'
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|awk 'BEGIN{FS=OFS="/"}{$NF="";print}'|sort|uniq|sed -e 's/\.\.\/\.\.\///;s/\.\.\///;s/asrdata\///'|less
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|awk 'BEGIN{FS=OFS="/"}{$NF="";print}'|sort|uniq|sed -e 's/\.\.\/\.\.\///;s/\.\.\///;s/asrdata\///'|while read i;do mkdir -p  data/$i;done
+ls data/audio/
+less /tmp/audio-file-locs 
+tree data/audio/
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|sort|uniq|sed -e 's/\.\.\/\.\.\///;s/\.\.\///;s/asrdata\///'|while read i;do if [ -e data/$i ];then echo $i >> /tmp/iss;fi;done
+less /tmp/iss 
+find . -name corpusfile.txt -exec cat {} \;|awk -F'\t' '{print $3}'|sort|uniq|sed -e 's/\.\.\/\.\.\///;s/\.\.\///;s/asrdata\///'|while read i;do if [ ! -e data/$i ];then echo $i >> /tmp/isnot;fi;done
+wc -l /tmp/isnot 
+cat /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); find ../ga_* -name $fname;done
+cat /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); grep $fname /tmp/datafiles ;done
+cat /tmp/isnot 
+grep seanchas_rann_na_feirste /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles);  echo cp $from $i ;done
+grep seanchas_rann_na_feirste /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles);  echo cp $from data/$i ;done
+grep seanchas_rann_na_feirste /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles);  cp $from data/$i ;done
+vi /tmp/isnot 
+grep piarsach /tmp/isnot 
+grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles);  cp $from data/$i ;done
+grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles); echo cp $from data/$i ;done
+grep piarsach /tmp/isnot|tail -n 1 |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles); echo cp $from data/$i ;done
+grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles|tail -n 1); echo cp $from data/$i ;done
+grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles|tail -n 1); cp $from data/$i ;done
