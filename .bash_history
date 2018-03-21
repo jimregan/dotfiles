@@ -1,82 +1,3 @@
-head -n 2 0004-trimmytrimtrim.patch |tail -n 1|awk -F'[@>]' '{print $2}'
-head -n 2 0004-trimmytrimtrim.patch |tail -n 1|awk -F'[@>]' '{print $2}' >  /tmp/thing
-perl -pi.bak -ane 's/72bbbca6-d526-0410-a7d9-f06f51895060/users.sourceforge.net/;print'
-perl -pi.bak -ane 's/72bbbca6-d526-0410-a7d9-f06f51895060/users.sourceforge.net/;print' 00*
-ls
-less 0004-trimmytrimtrim.patch
-for i in *.bak;do mv $i $(basename $i .bak);done
-ls
-perl -pi.bak -ane 's/72bbbca6-d526-0410-a7d9-f06f51895060/users.sourceforge.net/' 00*
-less 0004-trimmytrimtrim.patch
-rm /tmp/patches/0003-what-spectie-wants-spectie-gets.patch 
-mv *.patch /tmp/patches/
-cd ..
-ls
-cd incubator/
-git svn clone -r1:14000 https://svn.code.sf.net/p/apertium/svn/incubator/
-ls
-rm -rf incubator/
-cd ..
-git svn fetch -r1:14000 https://svn.code.sf.net/p/apertium/svn/incubator/
-cd incubator/
-ls
-cd ..
-ls
-#git svn clone  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-eu-en
-ls incubator/
-git svn clone  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-eu-en
-cd apertium-eu-en/
-git log
-cd ..
-git svn clone  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-en-sco
-cd apertium-en-sco/
-ls
-git log
-cd ..
-ls
-cd incubator/
-ls
-less apertium-en-sco/README 
-cd ..
-cd lt-en/
-ls
-cd ..
-git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/ incubator20k
-mkdir incubator20k
-cd incubator20k/
-git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/ 
-git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/
-ls
-ls -al
-git init .
-git svn fetch -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/
-git svn clone -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/
-cd ..
-rm -rf incubator20k/
-git svn clone -r1:20000 https://svn.code.sf.net/p/apertium/svn/incubator/ incubator20k
-git svn clone -r1:50000 https://svn.code.sf.net/p/apertium/svn/incubator/ incubator50k
-ls incubator
-#git svn clone https://svn.code.sf.net/p/apertium/svn/incubator/apertium-es-an
-man git-svn
-git svn -A~/disk/Laptop/Playing/apertium.gitauthors clone https://svn.code.sf.net/p/apertium/svn/incubator/apertium-es-an
-git svn -A/home/jim/disk/Laptop/Playing/apertium.gitauthors clone https://svn.code.sf.net/p/apertium/svn/incubator/apertium-es-an
-cd apertium-es-an/
-git log
-cd ..
-git svn -A/home/jim/disk/Laptop/Playing/apertium.gitauthors clone https://svn.code.sf.net/p/apertium/svn/trunk/apertium-es-an es-an2
-cd es-an2/
-git log
-cd ..
-git clone apertium-es-an/ esan1
-cd esan1/
-ls
-git log
-git pull ../es-an2/
-git diff
-cd ..
-rm -rf esan1/
-git clone apertium-es-an/ esan1
-cd esan1/
 git checkout -b trunk
 git pull -s their ../es-an2/
 git pull -s theirs ../es-an2/
@@ -1998,3 +1919,82 @@ ps aux|grep emsc
 file /usr/share/emscripten/emcc
 less /usr/share/emscripten/emcc
 pwd >> ~/.scratch/notes-15mar2018 
+cd /tmp/
+mkdir lang
+cd lang/
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata 
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata eng.
+ls
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata eng.unicharset
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata eng.lstm-unicharset
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata eng.lstm-recoder
+ls
+less eng.lstm-recoder 
+less eng.lstm-unicharset 
+wc -l eng.lstm-unicharset 
+less eng.lstm-unicharset 
+cp eng.lstm-unicharset mri.lstm-unicharset 
+vi mri.lstm-unicharset 
+cat /tmp/macron 
+cat /tmp/macron |awk '{print $1" "$2" 0,255,0,255,0,0,0,0,0,0 " $4 " " $5 " " $6 " " $7 " " $8 " " $9" "$10" "$11" "$12}'
+cat /tmp/macron |awk '{print $1" "$2" 0,255,0,255,0,0,0,0,0,0 " $4 " " $5 " " $6 " " $7 " " $8 " " $9" "$10" "$11" "$12}' >> mri.lstm-unicharset 
+vi mri.lstm-unicharset 
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata eng.lstm-recoder
+ls
+mkdir mri
+#lstmtraining --model_output mri --continue_from /usr/local/share/tessdata/eng.traineddata --traineddata 
+mkdir mritd
+ls
+cp mri.lstm-unicharset mritd/
+cd mritd/
+cp ~/disk/Playing/langdata/mri/*dawg .
+ls
+cd ..
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata eng.lstm-recoder
+combine_tessdata -e /usr/local/share/tessdata/eng.traineddata eng.lstm
+ls
+cd mritd/
+#lstmtraining --model_output mri --continue_from ../eng.lstm --traineddata  --old_traineddata /usr/local/share/tessdata/eng.traineddata
+ls ../mri
+ls
+for i in lstm-*;do mv $i mri.$i;done
+combine_tessdata mri.lstm-*
+combine_tessdata -o mri.tessdata mri.lstm-*
+ls
+cd ..
+combine_tessdata mri/mri.
+ls
+mkdir engex
+cd engex/
+combine_tessdata -u /usr/local/share/tessdata/eng.traineddata
+combine_tessdata -d /usr/local/share/tessdata/eng.traineddata
+combine_tessdata -d /usr/local/share/tessdata/eng.traineddata ./eng.
+ls
+cd ..
+combine_tessdata -d /usr/local/share/tessdata/eng.traineddata engex/eng.
+ls engex/
+combine_tessdata -u /usr/local/share/tessdata/eng.traineddata engex/eng.
+ls engex/
+cd engex/
+ls
+less eng.version 
+less eng.lstm-recoder 
+cp eng.lstm ../mritd/mri.lstm
+cp eng.version ../mritd/mri.version
+cp eng.lstm-recoder ../mritd/mri.lstm-recoder
+cd ../mritd/
+cd ..
+combine_tessdata mritd/mri.
+ls
+ls mritd/
+cp mritd/mri.traineddata .
+ls /tmp/tmp.o2nT9v05jQ/mri/mri.unicharset
+ls /tmp/font_tmp.RwTYILU3jO/
+less /tmp/font_tmp.RwTYILU3jO/sample_text.txt 
+ls /tmp/font_tmp.RwTYILU3jO/
+ls /tmp/font_tmp.RwTYILU3jO/sample_text.txt
+less /tmp/font_tmp.RwTYILU3jO/sample_text.txt
+ls /tmp/font_tmp.GPUOR8Cb9C/
+ls /tmp/font_tmp.oBcFXVBpNp/
+less /tmp/font_tmp.oBcFXVBpNp/sample_text.txt 
+ls /tmp/font_tmp.91N5fP8z6Q
