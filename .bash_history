@@ -1,90 +1,3 @@
-git checkout -b trunk
-git pull -s their ../es-an2/
-git pull -s theirs ../es-an2/
-git pull -s tf ../es-an2/
-git --version
-git branch -a
-git log
-git branch -a
-git checkout es-an-incubator
-git log
-git checkout trunk
-cd ../es-an2/
-git branch
-git checkout -b es-an-trunk
-cd ../esan1/
-git fetch ../es-an2/
-git branch -a
-git fetch ../es-an2/ es-an-trunk
-git checkout es-an-trunk
-git branch -a
-git pull ../es-an2/ es-an-trunk
-git merge --abort
-git log
-ls
-git branch -a
-git fetch ../es-an2/ es-an-trunk
-git branch -a
-git checkout -b es-an-trunk
-git log
-git checkout FETCH_HEAD 
-git log
-git branch -D es-an-trunk
-git checkout -b es-an-trunk
-git log
-git checkout -b es-an-incubator 
-git checkout es-an-incubator 
-git log
-ls
-git branch
-cd ../apertium-spa-arg/
-git fetch ../es-an2/ es-an-trunk
-git checkout FETCH_HEAD 
-git checkout -b es-an-trunk
-git checkout master
-git log
-git fetch ../esan1/ es-an-incubator
-git checkout FETCH_HEAD 
-git log
-git checkout -b es-an-incubator
-git branch
-git push origin es-an-incubator 
-git remote add mine https://github.com/jimregan/apertium-spa-arg
-git push mine es-an-incubator 
-git push mine es-an-trunk 
-git branch
-git checkout -b graft1
-git merge es-an-trunk 
-git merge --abort
-git branch
-git log
-git checkout es-an-trunk 
-git log
-git format-patch --1 f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
-git format-patch -1 f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
-less 0001-mkdir.patch 
-git format-patch -1 016cb837f90c41250d6aaf8a73a66fba43c7cf78
-less 0001-reinstate-contents.patch 
-git log
-git format-patch --always -1 f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
-less 0001-mkdir.patch 
-rm 0001-reinstate-contents.patch 
-git checkout graft1 
-git am 0001-mkdir.patch
-git am --continue
-git cherry-pick  f6516f3a544ed807aa05e7c82b7f67d75d09e6e1
-git commit --allow-empty
-git log
-git checkout -b graft2
-git merge es-an-trunk 
-git diff
-git merge --abort
-git merge --strategy-option theirs es-an-trunk 
-git log
-git merge --strategy-option theirs master 
-git log
-git branch
-git push mine graft2 
 git log
 cd ..
 ls
@@ -1998,3 +1911,90 @@ ls /tmp/font_tmp.GPUOR8Cb9C/
 ls /tmp/font_tmp.oBcFXVBpNp/
 less /tmp/font_tmp.oBcFXVBpNp/sample_text.txt 
 ls /tmp/font_tmp.91N5fP8z6Q
+cd ..
+cd langdata/
+git branch
+git pull origin master 
+mkdir gla
+find . -name '*charset*'
+less Latin.unicharset 
+cat mri/mri.training_text 
+cat mri/mri.training_text |perl -C7 -ane 'chomp;@l=split//;print join("\n", @l);'
+cat mri/mri.training_text |perl -C7 -ane 'chomp;@l=split//;print join("\n", @l);'|sort|uniq
+cat mri/mri.training_text |perl -C7 -ane 'chomp;@l=split//;print join("\n", @l);print "\n";'|sort|uniq
+cat mri/mri.training_text |perl -C7 -ane 'chomp;@l=split//;print join("\n", @l);print "\n";'|sort|uniq|wc
+cat mri/mri.training_text |perl -C7 -ane 'chomp;@l=split//;print join("\n", @l);print "\n";'|sort|uniq|while read i;do grep "^$i" Latin.unicharset ;done
+cat mri/mri.training_text |perl -C7 -ane 'chomp;@l=split//;print join("\n", @l);print "\n";'|sort|uniq|while read i;do grep "^$i " Latin.unicharset ;done
+less mri/mri.training_text 
+grep ö mri/mri.training_text 
+cd mri/
+ls
+wordlist2dawg mri.wordlist mri.dawg /tmp/lang/mri.lstm-unicharset 
+mv mri.dawg lstm-word-dawg
+wordlist2dawg mri.punc lstm-punc-dawg /tmp/lang/mri.lstm-unicharset 
+wordlist2dawg mri.numbers lstm-number-dawg /tmp/lang/mri.lstm-unicharset 
+ls
+less /tmp/font_tmp.jnzDqn4fAr/sample_text.txt
+ls
+cp /tmp/lang/mri.lstm-unicharset mri.unicharset
+less mri.unicharset 
+less ../gle_uncial/gle_uncial.unicharset 
+git status
+rm lstm-*
+ls
+git diff
+less mri.numbers 
+ls /tmp/font_tmp.JuAKMG7V4X
+less /tmp/font_tmp.JuAKMG7V4X/69fb4bbe1b2fa860e172a32ebf28505c-le64.cache-6 
+file /tmp/font_tmp.JuAKMG7V4X/69fb4bbe1b2fa860e172a32ebf28505c-le64.cache-6 
+ls /tmp/tmp.CSZGBt5tCQ/mri/mri.Times_New_Roman_Italic.exp0
+display /tmp/tmp.CSZGBt5tCQ/mri/mri.Times_New_Roman_Italic.exp0.tif 
+display /tmp/tmp.CSZGBt5tCQ/mri/
+ls /tmp/tmp.CSZGBt5tCQ/mri/
+ls /tmp/tmp.CSZGBt5tCQ/mri/tesstrain.log 
+less /tmp/tmp.CSZGBt5tCQ/mri/tesstrain.log 
+less /tmp/tmp.CSZGBt5tCQ/mri/mri.Arial_Bold.exp0.box 
+vi mri.training_text 
+grep '\t' mri.training_text 
+cat mri.training_text 
+cat mri.training_text |tr '\t' ' '
+cat mri.training_text |tr '\t' ' ' > tm
+mv tm mri.training_text 
+git diff
+less 
+cat mri.training_text |native2ascii -encoding utf8
+printf "\xffc2"|native2ascii -encoding utf8
+cat mri.training_text |native2ascii -encoding utf8|grep c2
+cat mri.training_text |native2ascii -encoding utf8|grep c5
+grep Abraham mri.training_text 
+grep Adapt mri.training_text 
+echo € |native2ascii -encoding utf8|grep c5
+echo € |native2ascii -encoding utf8
+echo ē |native2ascii -encoding utf8
+vi mri.training_text 
+git diff
+vi mri.training_text 
+git diff
+perl -CSD -pe 's/\x{FFFD}//g' mri.training_text 
+ls
+perl -CSD -pe 's/\x{FFFD}//g' mri.training_text > tmp
+mv tmp mri.training_text 
+git diff
+perl -CSD -pe 's/\x{FFF5}//g' mri.training_text > tmp
+mv tmp mri.training_text 
+git diff
+git stash
+perl -CSD -pe 's/\x{FFF5}//g' mri.training_text > tmp
+mv tmp mri.training_text 
+git diff
+perl -CSD -pe 's/\x{FFC5}//g' mri.training_text > tmp
+mv tmp mri.training_text 
+git diff
+bim -b mri.training_text 
+vim -b mri.training_text 
+git status
+split -l 1 mri.training_text 
+ls
+mv xaa mri.training_text 
+mv xab mri.training_text 
+cat mri.training_text 
