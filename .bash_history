@@ -1,26 +1,3 @@
-git clone https://github.com/wiktorwalentynowiczit/morphodita-pl-poleval
-cd ~/disk/Playing/
-git clone https://github.com/serge-sans-paille/pythran.git
-ls wav2l
-git clone https://github.com/facebookresearch/wav2letter
-cd ../..
-git clone https://github.com/facebookresearch/TensorComprehensions
-git clone https://github.com/halide/Halide
-git clone https://github.com/KartikTalwar/Duolingo
-git clone https://github.com/dumblob/mysql2sqlite.git
-git clone https://github.com/MycroftAI/padatious
-git clone https://github.com/apertium/apertium-la-en.git
-cd apertium-la-en/
-ls
-git pull origin master
-git checkout -b cc0
-ls
-git rm apertium-la-en.la.dix 
-git push origin cc0
-git checkout master 
-git checkout cc0
-git rm apertium-la-en.la.dix
-git status
 git rm -rf dev/
 git commit -m 'cc0 material'
 git push origin cc0
@@ -1998,3 +1975,26 @@ ls result/* |zip result1.zip -@
 cd ..
 mkdir harald
 ls teanglann/
+cd ~/disk/Playing/spinx/
+ls
+cd teanglann/
+ls
+find . -name '*.dic'
+cat etc/teanglann.dic |perl -C7 -ane 's/[ \t]+/ /g;s/\([0-9]+\)//;print'
+cat etc/teanglann.dic |perl -C7 -ane 's/[ \t]+/ /g;s/\([0-9]+\)//;print'|sort|uniq
+cat etc/teanglann.dic |perl -C7 -ane 's/[ \t]+/ /g;s/\([0-9]+\)//;print'|sort|uniq|perl ~/disk/Playing/msf-asr/scripts/number-dic.pl 
+cat etc/teanglann.dic |perl -C7 -ane 's/[ \t]+/ /g;s/\([0-9]+\)//;print'|sort|uniq|perl ~/disk/Playing/msf-asr/scripts/number-dic.pl > tmp
+wc -l etc/teanglann.dic 
+wc -l tmp 
+mv tmp etc/teanglann.dic 
+sphinxtrain 
+sphinxtrain run
+ls
+vi etc/sphinx_train.cfg 
+sphinxtrain run
+ls result
+ls -al result/*
+less result/teanglann.match
+less result/teanglann.align 
+ffplay wav/0000014.wav 
+less result/teanglann.align 
