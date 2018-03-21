@@ -1,23 +1,3 @@
-ls clippy.js/
-cd clippy.js/
-ls
-ls agents/
-ls
-less README.md 
-ls
-ls build/
-ls src/
-ls agents/
-ls
-less README.md 
-rm /tmp/hold/
-rm /tmp/hold/*
-ls
-ls agents/Clippy/* agents/Links/* build/clippy.* |zip /tmp/foo.zip -@
-cd ..
-git checkout gh-pages 
-unzip /tmp/foo.zip 
-less build/clippy.css 
 mkdir css
 mv build/clippy.css css/
 less build/clippy.js 
@@ -1998,3 +1978,23 @@ for i in word.punc.unsorted word.bigrams.unsorted word.numbers.unsorted;do cat t
 less real.word.bigrams.unsorted 
 echo $(pwd)
 history
+cd ../..
+ls
+find . -name '*mfc*'
+cd spinx/
+ls
+find  . -size 0
+less teanglann/result/teanglann.match25462 
+less teanglann/result/teanglann.match28924 
+ls
+cd teanglann/
+ls
+ls wav/
+ls
+ls feat/
+ls
+find . -type f
+less mkwavs.sh 
+ls
+less dictmp 
+less result/teanglann.align 
