@@ -275,3 +275,71 @@ https://github.com/kan-bayashi/PytorchWaveNetVocoder
 
 /home/jim/disk/Playing/sphinx-alignment/cmusphinx-alignment-example
 /home/jim/disk/Playing/lip-reading-deeplearning
+
+diff --git a/.bash_history b/.bash_history
+index 4cabdcd..0422442 100644
+--- a/.bash_history
++++ b/.bash_history
+@@ -1998,3 +1998,62 @@ vi /tmp/wavlists
+ find . -name 'CI0001CDNamedEntities0*ogg' | sh grepconv.sh 
+ sh grepconv.sh 
+ find . -name 'CI0001CDNamedEntities0*ogg' -exec bash convfile.sh {} asr_data_irish/data/audio/nnc_named_entities/wav \;
++cd asr_data_irish/
++ls
++find . -name 'corpus*'
++find . -name 'corpus*' -exec cat {} #;
++find . -name 'corpus*' -exec cat {} \;
++find . -name 'corpus*' -exec cat {} \;|wc
++ls
++ls data/
++ls audio
++ls data/audio/
++mkdir -p data/audio/nnc_named_entities/wav/
++grep CI0001CDNamedEntities02 /tmp/wavlists 
++grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav;echo $out;done
++grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav;echo $i $out;done
++find . -name 'corpus*' -exec cat {} \;|wc
++find . -name 'corpus*' 
++less 
++less ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++less ~/bin/convert-mp3.sh 
++less ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++ls -al data/audio/nnc_named_entities/wav/
++rm data/audio/nnc_named_entities/wav/CI0001CDNamedEntities02_0*
++ls -al data/audio/nnc_named_entities/wav/
++ls -al data/audio/nnc_named_entities/wav/|grep 0170
++grep 0170 /tmp/wavlists 
++grep 0170 /tmp/wavlists |grep nnc
++ffplay /home/jim/disk/Playing/Corpora/ga_MU/nnc/CDNamedEntities02/ogg/CI0001CDNamedEntities02_0170.ogg 
++ls -al data/audio/nnc_named_entities/wav/|grep 0170
++ls -al data/audio/nnc_named_entities/wav/
++ffplay data/audio/nnc_named_entities/wav/CI0001CDNamedEntities02_0314.wav
++ls -al data/audio/nnc_named_entities/wav/|grep 0170
++ls
++less scripts/makeKaldiFiles.py 
++python scripts/makeKaldiFiles.py harald  ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++ls data/audio/nnc_named_entities/wav/CI0001CDNamedEntities0*|wc
++ls data/audio/nnc_named_entities/wav/CI0001CDNamedEntities0*
++ls data/audio/nnc_named_entities/wav/CI0001CDNamedEntities0*|wc
++rm data/audio/nnc_named_entities/wav/CI0001CDNamedEntities0*
++ls data/audio/nnc_named_entities/wav/CI0001CDNamedEntities0*
++ls data/audio/nnc_named_entities/wav/CI0001CDNamedEntities0*|wc
++ls data/audio/nnc_named_entities/wav/CI0001CDNamedEntities0* -al
++python scripts/makeKaldiFiles.py harald  ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++less /home/jim/disk/Playing/kaldi/egs/harald/data/test/utt2spk
++less /home/jim/disk/Playing/kaldi/egs/harald/data/test/wav.scp 
++less /home/jim/disk/Playing/kaldi/egs/harald/data/local/dict/lexicon.txt 
++less ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++ffplay data/audio/nnc_named_entities/wav/CI0001CDNamedEntities01_0170.wav 
++less /home/jim/disk/Playing/kaldi/egs/harald/data/local/dict/lexicon.txt 
++less ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++ffplay data/audio/nnc_named_entities/wav/CI0001CDNamedEntities02_0035.wav 
++vi ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++ffplay data/audio/nnc_named_entities/wav/CI0001CDNamedEntities01_0191.wav 
++vi ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++ffplay data/audio/nnc_named_entities/wav/CI0001CDNamedEntities02_0076.wav 
++vi ./data/synthesis_recordings/nnc_named_entities/corpusfile.txt
++ffplay data/audio/nnc_named_entities/wav/CI0001CDNamedEntities02_0218.wav 
++less /tmp/68.txt 
++echo $PWD
++history -a
