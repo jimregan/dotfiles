@@ -1,15 +1,3 @@
-less /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
-make
-less /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
-make
-vi /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
-make
-vi /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
-cocos2d-x/build/install-deps-linux.sh 
-bash cocos2d-x/build/install-deps-linux.sh 
-bash build/install-deps-linux.sh 
-vi build/install-deps-linux.sh 
-sh ~/disk/Playing/cocos2d-x/build/install-deps-linux.sh 
 cd ..
 cocos run -p linux
 ls
@@ -1998,3 +1986,15 @@ perl -e '$a=4; if($a % 2 == 0){print "yes"}'
 pwd
 pwd >> ~/.scratch/notes-15mar2018 
 history
+cd lip-reading-deeplearning/
+ls
+cat python_requirements.txt 
+less dlib
+ls -al
+ls data/
+sh install_dependencies.sh 
+sudo sh install_dependencies.sh 
+ls
+sh run.sh 
+ls
+pwd >> ~/.scratch/notes-15mar2018 
