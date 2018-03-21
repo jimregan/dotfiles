@@ -1,77 +1,3 @@
-cd ..
-cocos run -p linux
-ls
-make
-ls
-ls lib/
-ls Screenshots/
-ls Resources/
-ls -al
-ls bin
-ls Classes/
-mkdir ../redo
-cp -r Screenshots/ ../redo/
-cp -r Resources/ ../redo/
-cp -r Classes/ ../redo/
-cp -r linux-build/ proj.* ../redo/
-ls
-cp .cocos-project.json CMakeLists.txt README.md ../redo/
-less cmake_install.cmake 
-ls
-less CMakeLists.txt 
-ls
-make
-ls
-cd ../../shared/
-du .
-ls
-cd demo1/
-ls
-cmake .
-apt-cache search glfw3
-sudo apt-get install libglfw3-dev
-cmake .
-ls
-cocos 
-cocos run -p linux
-ls
-find . -name '*cpp'
-less proj.linux/main.cpp 
-ls
-make
-cd cocos2d/
-ls
-cd build/
-cmake ..
-ls
-sh install-deps-linux.sh 
-cd ..
-sh build/install-deps-linux.sh 
-bash build/install-deps-linux.sh 
-ls tools
-ls
-cd build/
-ls
-git status
-rm -rf ../CMakeFiles/ 
-cmake ..
-rm -rf CMakeFiles/ CMakeCache.txt 
-cmake ..
-cd ..
-cmake .
-ls
-find . -type d -name tests
-git submodule update --init
-ls
-less README.cmake 
-mkdir bb
-cd bb
-cmake -G "Unix Makefiles" -DBUILD_CPP_TESTS=OFF -DBUILD_LUA_LIBS=OFF ..
-cd ..
-ls
-make
-cmake .
-rm -rf CMakeFiles/
 cmake .
 rm -rf CMakeFiles/ CMakeCache.txt 
 ls
@@ -1998,3 +1924,77 @@ ls
 sh run.sh 
 ls
 pwd >> ~/.scratch/notes-15mar2018 
+cd ~/disk/Playing/Corpora
+ls
+find  . -name '*CI0001CDNamedEntities02*'
+find  . -name '*.ogg' -or -name '*.wav' > /tmp/wavlists
+grep CI0001CDNamedEntities02 /tmp/wavlists 
+grep CI0001CDNamedEntities02 /tmp/wavlists |less
+ffplay ./ga_MU/nnc/CDNamedEntities02/ogg/CI0001CDNamedEntities02_0213.ogg
+grep nnc_named_entities /tmp/wavlists |less
+grep nnc_named_entities /tmp/wavlists 
+grep CI0001CDNamedEntities02 /tmp/wavlists 
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i .$i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+find  $PWD -name '*.ogg' -or -name '*.wav' > /tmp/wavlists
+less /tmp/wavlists 
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities02 /tmp/wavlists 
+vi /tmp/wavlists 
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+vi /tmp/wavlists 
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do echo $i;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do echo $i;done|grep -v '^/'
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |grep 0170
+grep CI0001CDNamedEntities02 /tmp/wavlists |grep 0170|while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |grep 0170|while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done |while read i;do if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file;then echo $i >> /tmp/todo;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done |while read i;do if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file;then echo $i >> /tmp/todo;fi;done
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done |while read i;do if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todo;fi;done
+less /tmp/todo
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done |while read i;do if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+grep CI0001CDNamedEntities01 /tmp/wavlists |grep 0170|while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities01 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities01 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done |while read i;do if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+grep CI0001CDNamedEntities01 /tmp/wavlists 
+grep CI0001CDNamedEntities01 /tmp/wavlists |grep 0001
+grep CI0001CDNamedEntities01 /tmp/wavlists |grep 0001.
+grep CI0001CDNamedEntities01 /tmp/wavlists |grep 0001.o
+grep CI0001CDNamedEntities01 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities01 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; echo $out;done |while read i;do if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+grep CI0001CDNamedEntities01 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+less /tmp/todowav 
+grep CI0001CDNamedEntities02 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+less /tmp/todowav 
+cat /tmp/todowav |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+rm /tmp/todowav 
+grep CI0001CDNamedEntities0 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+wc -l /tmp/todowav 
+cat /tmp/todowav |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+rm /tmp/todowav 
+grep CI0001CDNamedEntities0 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+wc -l /tmp/todowav 
+cat /tmp/todowav |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; ffmpeg -i $i  -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/$out;done
+grep CI0001CDNamedEntities0 /tmp/wavlists|wc
+rm /tmp/todowav 
+grep CI0001CDNamedEntities0 /tmp/wavlists |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out=$(basename $file .ogg).wav; if [ ! -e asr_data_irish/data/audio/nnc_named_entities/wav/$file ];then echo $i >> /tmp/todowav;fi;done
+wc -l /tmp/todowav 
+cat /tmp/todowav |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out="$(basename $file ".ogg").wav"; ffmpeg -i "$i" -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/"$out";done
+cat /tmp/todowav |while read i;do file=$(echo $i|awk -F/ '{print $NF}');out="$(basename $file ".ogg").wav"; ffmpeg -i "$i" -acodec pcm_s16le -ac 1 -ar 16000 asr_data_irish/data/audio/nnc_named_entities/wav/"$out" || echo $i >> /tmp/fuck;done
+less /tmp/fuck 
+vi grepconv.sh
+grep CI0001CDNamedEntities0 /tmp/wavlists | bash grepconv.sh 
+vi grepconv.sh
+grep CI0001CDNamedEntities0 /tmp/wavlists | bash grepconv.sh 
+vi grepconv.sh
+grep CI0001CDNamedEntities0 /tmp/wavlists | bash grepconv.sh 
+cat /tmp/wavlists |grep CI0001CDNamedEntities0 | bash grepconv.sh 
+cat /tmp/wavlists |grep CI0001CDNamedEntities0 |head
+cat /tmp/wavlists |grep CI0001CDNamedEntities0 |grep 0100
+vi /tmp/wavlists 
+find . -name 'CI0001CDNamedEntities0*ogg' | sh grepconv.sh 
+sh grepconv.sh 
+find . -name 'CI0001CDNamedEntities0*ogg' -exec bash convfile.sh {} asr_data_irish/data/audio/nnc_named_entities/wav \;
