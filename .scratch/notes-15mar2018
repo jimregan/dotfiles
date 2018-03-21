@@ -418,3 +418,289 @@ index 2c1a08d..4b0819d 100644
 +find . -name corpusfile.txt -exec cat {} \;|grep idam
 
 /home/jim/public_html/failteoir
+diff --git a/.bash_history b/.bash_history
+index 62ac69c..9bd0eea 100644
+--- a/.bash_history
++++ b/.bash_history
+@@ -1,140 +1,3 @@
+-make
+-make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+-ls
+-ls build/
+-find . -name '*.so'
+-make install
+-less Makefile 
+-make clean
+-sudo ldconfig
+-make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+-pkg-config --cflags --libs opencv
+-pkg-config --cflags --libs opencv|grep code
+-pkg-config --cflags --libs opencv|grep flann
+-less /usr/include/opencv
+-less /usr/include/opencv2/imgproc/imgproc.hpp 
+-less /usr/include/opencv2/opencv.hpp 
+-less /usr/include/opencv2/core/core.hpp 
+-apt-cache search opencv_imgproc
+-apt-cache search imgproc
+-apt-cache search imgcodec
+-vi Makefile 
+-make -j $(nproc) USE_OPENCV=0 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+-find . -name '*.so'
+-ls
+-cd perl-package/
+-ls
+-less README.md 
+-cd ..
+-MXNET_HOME=${PWD}
+-sudo cpan PDL::CCS
+-perl ~/mxnet-example.pl 
+-ldconfig
+-sudo cp /home/jim/disk/Playing/incubator-mxnet/lib/libmxnet.* /usr/local/lib/
+-sudo ldconfig
+-cd ..
+-ls
+-perl Makefile.PL 
+-sudo make install
+-cd ../AI-NNVMCAPI/
+-perl Makefile.PL 
+-sudo make install
+-cd ../AI-MXNet
+-perl Makefile.PL 
+-sudo make install
+-perl ~/mxnet-example.pl 
+-sudo ldconfig
+-perl ~/mxnet-example.pl 
+-echo $LD_LIBRARY_PATH 
+-ls $LD_LIBRARY_PATH 
+-find /usr/local/ -name '    cd ${MXNET_HOME}/perl-package/AI-MXNetCAPI/
+-find /usr/local -name 'libcudart.so.*'
+-find /usr/local -name 'libcudart.so*'
+-less ~/.bashrc
+-grep cuda ~/.bashrc
+-sudo LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH ldconfig
+-perl ~/mxnet-example.pl 
+-sudo make uninstall
+-sudo rm -rf /usr/local/share/perl/5.22.1/AI/
+-sudo rm -rf /usr/local/lib/x86_64-linux-gnu/perl/5.22.1/AI/
+-sudo rm -rf /usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/AI/
+-perl ~/mxnet-example.pl 
+-. ~/.bashrc
+-perl ~/mxnet-example.pl 
+-cd ~/disk/Playing/
+-cd wiki.apertium.org/
+-ls
+-git pull
+-git log
+-ls
+-grep svn *mw
+-cd ..
+-git clone http://repo.or.cz/apertium.git
+-git clone http://repo.or.cz/apertium.git all-apertium-2008
+-cd all-apertium-2008/
+-ls
+-git remote add github https://github.com/jimregan/apertium-svn-2008.git
+-git push -u github 
+-cd /tmp
+-cd ../..
+-cd ../kaldi
+-git pull origin master
+-git remote show
+-git pull origin master
+-git branch
+-ls
+-less README.md 
+-less egs/snuv/s5/run.sh 
+-less ~/.cling_history 
+-cd Pl
+-cd disk/Playing/
+-mkdir asvn
+-cd asvn/
+-ls
+-mkdir 1
+-cd 1
+-git init .
+-git svn clone --username=jimregan svn+ssh://jimregan@svn.code.sf.net/p/apertium/svn/nursery/apertium-en-pt
+-vi ~/.subversion/config 
+-git svn clone --username=jimregan svn+ssh://jimregan@svn.code.sf.net/p/apertium/svn/nursery/apertium-en-pt
+-git svn pull
+-git svn fetch
+-ls
+-ls apertium-en-pt/
+-cd apertium-en-pt/
+-git svn fetch
+-cd ..
+-git svn clone https://svn.code.sf.net/p/apertium/svn/branches/incubator/apertium-en-sco/
+-ls
+-cd apertium-en-sco/
+-ls
+-git log
+-ls -al
+-cd ..
+-ls
+-rm -rf apertium-en-*
+-git svn clone -r1:12000 https://svn.code.sf.net/p/apertium/svn/incubator/
+-ls
+-cd incubator/
+-ls
+-git log
+-ls
+-cd ..
+-ls
+-git clone incubator lt-en
+-cd lt-en/
+-ls
+-rm -rf apertium-[a-k]*
+-ls
+-rm -rf apertium-[m-z]*
+-ls
+-rm sl-nouns.dix README COPYING*
+-ls
+-rm apertium-lt-lv.lt-lv.dix 
+-git ls-files
+-ls
+-git ls-files|grep apertium-lt-en.lt
+-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(git ls-files|grep -v apertium-lt-en.lt)
+ git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(git ls-files|grep -v apertium-lt-en.lt)'
+ git stash
+ ls
+@@ -1998,3 +1861,140 @@ vi index.html
+ pwd >> ~/.scratch/notes-15mar2018 
+ git status
+ ls -al
++cd ../..
++git clone https://github.com/syl22-00/pocketsphinx.js.git
++cd pocketsphinx.js/
++ls
++git checkout -b ga
++cd src/
++ls
++cd ..
++less README.md 
++git submodule init
++git submodule update
++ls
++git diff
++git stash
++git submodule update
++cd ..
++rm -rf pocketsphinx.js/
++git clone https://github.com/syl22-00/pocketsphinx.js.git
++cd pocketsphinx.js/
++git submodule init
++git submodule update
++cd ..
++rm -rf pocketsphinx.js/
++git clone --recursive https://github.com/syl22-00/pocketsphinx.js.git
++cd pocketsphinx.js/
++ls
++vi .gitmodules 
++git submodule init
++git submodule update
++git status
++git checkout -- pocketsphinx
++git status
++git diff
++ls
++git rm --cached pocketsphinx/
++git submodule update --init --recursive
++git clone --recursive https://github.com/cmusphinx/pocketsphinx.git
++ls
++ls sphinxbase/
++rmdir sphinxbase/
++git clone --recursive https://github.com/cmusphinx/sphinxbase.git
++mkdir build
++cd build/
++cmake ..
++make
++cd ..
++less README.md 
++sudo apt-get install emscripten
++less README.md 
++find /usr/ -name '[Ee]mscripten.cmake'
++rm -rf build/
++mkdir build
++cmake -DEMSCRIPTEN=1 -DCMAKE_TOOLCHAIN_FILE=/usr/share/emscripten/cmake/Modules/Platform/Emscripten.cmake ..
++cd build/
++cmake -DEMSCRIPTEN=1 -DCMAKE_TOOLCHAIN_FILE=/usr/share/emscripten/cmake/Modules/Platform/Emscripten.cmake ..
++make
++ls
++treee
++tree
++ls
++rm -rf *
++ls
++cmake -DEMSCRIPTEN=1 -DCMAKE_TOOLCHAIN_FILE=/usr/share/emscripten/cmake/Modules/Platform/Emscripten.cmake ..
++make
++ls /home/jim/disk/Playing/pocketsphinx.js/sphinxbase/src/libsphinxbase/fe
++ls
++rm -rf *
++cmake -DEMSCRIPTEN=1 -DCMAKE_TOOLCHAIN_FILE=/usr/share/emscripten/cmake/Modules/Platform/Emscripten.cmake ..
++make
++ps aux|grep python
++killall emcc
++ps aux|grep python
++kill -9 20948
++killall /usr/share/emscripten/emcc
++ps aux|grep python
++kill -9 20949
++ps aux|grep make
++killall make
++ps aux|grep python
++kill -9 20950 
++kill -9 20951
++kill -9 20952
++kill -9 20953
++kill -9 20954
++kill -9 20955
++kill -9 20957
++kill -9 20958
++kill -9 20959
++kill -9 20960
++kill -9 20961
++kill -9 20962
++kill -9 20963
++kill -9 20964
++ps aux|grep python
++kill -9 31598
++ps aux|grep python
++ls
++make
++ps aux|grep python
++killall python
++killall emcc
++ps aux|grep python
++kill -9 19579 
++kill -9 21023
++kill -9 21024
++kill -9 21025
++kill -9 21026
++kill -9 21027
++kill -9 21028
++kill -9 21029
++kill -9 21030
++ps aux|grep python
++ls
++file libpocketsphinx.so 
++less libpocketsphinx.so 
++make clean
++ls
++ls rm1_200/
++ls rm1_200/feat.params 
++less rm1_200/feat.params 
++less rm1_200/sendump 
++ls
++less Makefile 
++make
++less Makefile 
++less CMakeFiles/Makefile2
++make -f CMakeFiles/pocketsphinx.js.dir/build.make 
++make -F CMakeFiles/pocketsphinx.js.dir/build.make 
++less CMakeFiles/pocketsphinx.js.dir/build.make 
++make -F CMakeFiles/pocketsphinx.js.dir/build.make pocketsphinx.js
++make -f CMakeFiles/pocketsphinx.js.dir/build.make pocketsphinx.js
++less CMakeFiles/pocketsphinx.js.dir/build.make 
++ls
++/usr/share/emscripten/emcc -Oz -s TOTAL_MEMORY=100663296 --bind --memory-init-file 0 libpocketsphinx.so -o pocketsphinx.js --embed-file rm1_200
++sudo apt-get remove emscripten
++cp /tmp/allwd ~/.scratch/
++cp /tmp/isnot ~/.scratch/
