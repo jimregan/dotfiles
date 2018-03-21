@@ -1,144 +1,3 @@
-cat bar |perl ponc
-cat bar |perl ponc.pl 
-cd ..
-mkdir ossian-merlin
-cd ossian-merlin/
-git clone https://github.com/CSTR-Edinburgh/Ossian.git
-cd Ossian/
-ls
-./scripts/setup_tools.sh jaoregan htQfqLbJ
-ls
-cd tools/
-ls
-cd downloads/
-ls
-tar zxvf SPTK-3.6.tar.gz 
-rm SPTK-3.6.tar.gz 
-ls ../../../../kaldi/tools/flm/
-ls ../../../../kaldi/tools/
-ls ../../../../speech-syn/Software/
-ls ../../../../speech-syn/Voices/
-ls ../../../../speech-syn/Data/
-tree ../../../../speech-syn/Data/
-ls
-cp ~/Downloads/SPTK-3.6.tar.gz .
-tar zxvf SPTK-3.6.tar.gz 
-cd SPTK-3.6/
-ls
-cd ..
-rm -rf SPTK-3.6
-cd ..
-./scripts/setup_tools.sh jaoregan htQfqLbJ
-less ./scripts/setup_tools.sh 
-./scripts/setup_tools.sh jaoregan htQfqLbJ
-cd tools/downloads/
-ls
-tar zxvf SPTK-3.6.tar.gz 
-rm SPTK-3.6.tar.gz 
-cp ~/Downloads/SPTK-3.6.tar.gz .
-tar zxvf SPTK-3.6.tar.gz 
-cd ../..
-./scripts/setup_tools.sh jaoregan htQfqLbJ
-vi ./scripts/setup_tools.sh 
-./scripts/setup_tools.sh jaoregan htQfqLbJ
-cd tools/
-ls
-cd  ..
-wget https://www.dropbox.com/s/uaz1ue2dked8fan/romanian_toy_demo_corpus_for_ossian.tar?dl=0
-ls 
-ls corpus/
-python ./scripts/train.py -s rss_toy_demo -l rm naive_01_nn
-tar ztvf ~/Downloads/train-chuvash.tar.gz 
-tar ztvf ~/Downloads/train-chuvash.tar.gz |less
-export THEANO_FLAGS=""
-#python ./tools/merlin/src/run_merlin.py /home/josh/git/Ossian/train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg
-find . -name config.cfg
-python ./tools/merlin/src/run_merlin.py ./train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg
-find . -name config.cfg
-python ./tools/merlin/src/run_merlin.py ./train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg
-find /home/jim/disk/Laptop/ -name '*epub'
-ls /home/jim/disk/Laptop/
-ls /home/jim/disk/Laptop/Downloads/
-ls /home/jim/disk/Laptop/Downloads/*oss*
-ls /home/jim/disk/Laptop/Downloads/*epub
-ls /home/jim/disk/Laptop/Downloads/*zip
-ls /home/jim/disk/desktop/Downloads/*epub
-ls /home/jim/disk/desktop/Downloads/*elly*
-mkdir ./test/wav/
-python ./scripts/speak.py -l rm -s rss_toy_demo -o ./test/wav/romanian_test.wav naive_01_nn ./test/txt/romanian.txt
-python ./scripts/util/store_merlin_model.py train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg voices/rm/rss_toy_demo/naive_01_nn/processors/duration_predictor
-# josh@yoga:~/git/Ossian$ python ./scripts/util/store_merlin_model.py /home/josh/git/Ossian/train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg /home/josh/git/Ossian/voices/rm/rss_toy_demo/naive_01_nn/processors/acoustic_predictor
-python ./scripts/util/store_merlin_model.py /home/josh/git/Ossian/train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg /home/josh/git/Ossian/voices/rm/rss_toy_demo/naive_01_nn/processors/acoustic_predictor
-python ./scripts/util/store_merlin_model.py train/rm/speakers/rss_toy_demo/naive_01_nn/processors/acoustic_predictor/config.cfg voices/rm/rss_toy_demo/naive_01_nn/processors/acoustic_predictor
-python ./scripts/util/store_merlin_model.py train/rm/speakers/rss_toy_demo/naive_01_nn/processors/duration_predictor/config.cfg voices/rm/rss_toy_demo/naive_01_nn/processors/duration_predictor
-python ./scripts/speak.py -l rm -s rss_toy_demo -o ./test/wav/romanian_test.wav naive_01_nn ./test/txt/romanian.txt
-ffplay /home/jim/disk/Playing/ossian-merlin/Ossian/voices//rm/rss_toy_demo/naive_01_nn/output/wav/temp.wav
-history -a
-cd ..
-ls
-git clone https://github.com/ftyers/Turkic_TTS.git
-cd ~
-cd Pictures/
-scrot -d 5 '%Y-%m-%d-%H:%M:%S.png' 
-ls
-rm Screenshot_20180304_01*
-cd ../disk/Playing/
-ls
-cd VoiceBridge/
-ls
-cd kaldi-master/
-ls
-cd src/
-ls
-find . -name '*.cpp'
-find . -name '*.cc'
-find . -name '*.cc' -or -name '*.h'
-find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ../../../kaldi/src/$i;done
-find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ../../../kaldi/src/$i;done > /tmp/kaldi-voicebridge.diff
-less /tmp/kaldi-voicebridge.diff 
-cd ..
-ls
-cd VoiceBridge/
-ls
-cd VoiceBridge/
-ls
-cd kaldi-win/
-ls
-cd src/
-ls
-find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ../../../kaldi/src/$i;done > /tmp/kaldi-voicebridge2.diff
-find . -name '*.cc' -or -name '*.h' |while read i;do diff -u $i ~/disk/Playing/kaldi/src/$i;done > /tmp/kaldi-voicebridge2.diff
-mkdir /tmp/wesht
-vmstat
-atop
-ps aux|grep hromium
-ls bin
-ssh hg658c
-killall kwin
-top
-killall MyGame
-top
-ls
-less helloworld.html 
-mkdir /tmp/hold
-cp speak*js /tmp/hold/
-cp helloworld.html /tmp/hold/
-cd ..
-ls
-git status
-git commit -m 'speak.js'
-git checkout gh-pages 
-ls
-tree
-ls
-mkdir js
-cp /tmp/hold/speak* js/
-git add js/
-git commit -m 'speak.js files'
-git checkout master
-ls
-ls -al
-cat .gitmodules 
 ls clippy.js/
 cd clippy.js/
 ls
@@ -1998,3 +1857,144 @@ apt-cache search stack
 apt-cache search stack|grep hask
 sudo apt-get install haskell-stack
 stack install
+cd /tmp/
+cd ~/disk/Playing/wikiextractor/
+ls
+wget https://dumps.wikimedia.org/miwiki/20180201/miwiki-20180201-pages-articles-multistream.xml.bz2
+./WikiExtractor.py 
+./WikiExtractor.py  -h
+./WikiExtractor.py  miwiki-20180201-pages-articles-multistream.xml.bz2 
+ls
+bunzip2 miwiki-20180201-pages-articles-multistream.xml.bz2 
+./WikiExtractor.py  miwiki-20180201-pages-articles-multistream.xml 
+ls
+ls text/
+rm -rf text/
+./WikiExtractor.py  miwiki-20180201-pages-articles-multistream.xml 
+#find WikiExtractor -type f | while read i; do pfx=$(echo $i|tr '/' '_'); cat $i | perl genwordlists.pl -d OUTDIR -p $pfx; done
+mkdir outdir
+find WikiExtractor -type f | while read i; do pfx=$(echo $i|tr '/' '_'); cat $i | perl ../tesseract/contrib/genwordlists.pl -d outdir -p $pfx; done
+find text/ -type f | while read i; do pfx=$(echo $i|tr '/' '_'); cat $i | perl ../tesseract/contrib/genwordlists.pl -d outdir -p $pfx; done
+find text/ -type f | while read i; do pfx=$(echo $i|tr '/' '_'); cat $i | perl ../tesseract/contrib/genlangdata.pl -d outdir -p $pfx; done
+ls outdir/
+for i in word.bigrams.unsorted word.numbers.unsorted word.punc.unsorted wordlist.unsorted; do find outdir -name "*$i" -exec cat '{}' \;  | perl -CS -ane 'BEGIN{my %c=();} chomp; my($a,$b)=split/\t/;if(defined $c{$a}){$c{$a}+=$b} else {$c{$a} = $b;} END{while(my($k,$v)=each %c) {print "$v\t$k\n";}}'|sort -nr > tmp.$i ;done
+ls outdir/
+for i in word.punc.unsorted word.bigrams.unsorted word.numbers.unsorted;do cat tmp.$i |awk -F'\t' '{print $2 "\t" $1}' > real.$i ; done
+ls
+cat tmp.wordlist.unsorted | awk -F'\t' '{print $2}' > real.wordlist.unsorted
+less real.wordlist.unsorted 
+cat real.wordlist.unsorted |sort|uniq
+cat real.wordlist.unsorted |sort|uniq > sorted.wl
+vi sorted.wl 
+less sorted.wl 
+cat sorted.wl |sed -e 's/[A-Za-z]*//'
+cat sorted.wl |sed -e 's/[A-Za-z]*//'|grep -v '^$'
+grep ʂ sorted.wl 
+vi sorted.wl 
+grep ɔ sorted.wl 
+vi sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+vi sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+vi sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+vi sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+echo  |hexdump
+vi sorted.wl 
+cat sorted.wl |sort|uniq > tmp
+mv tmp sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+cat sorted.wl |sed -e 's/ / /g' |sort|uniq > tmp
+mv tmp sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+vi sorted.wl 
+cat sorted.wl |sort|uniq > tmp
+mv tmp sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+vi sorted.wl 
+cat sorted.wl |grep '[^A-Za-z]'
+cp sorted.wl ../langdata/mri/mri.wordlist
+less real.word.punc.unsorted 
+cat real.word.punc.unsorted |awk -F'\t' '{print $1}'
+cat real.word.punc.unsorted |awk -F'\t' '{print $1}' > ../langdata/mri/mri.punc
+cat real.word.bigrams.unsorted |awk -
+cat real.word.punc.unsorted |awk -F'\t' '{print $1}' > ../langdata/mri/mri.bigrams.clean
+cat real.word.bigrams.unsorted |awk -F'\t' '{print $1}' > ../langdata/mri/mri.bigrams.clean
+ls
+cat real.word.numbers.unsorted |awk -F'\t' '{print $1}' > ../langdata/mri/mri.numbers
+rm -rf text/
+rm real.word*
+ls
+rm tmp.word*
+ls
+rm sorted.wl 
+wget https://dumps.wikimedia.org/gdwiki/20180201/gdwiki-20180201-pages-articles-multistream.xml.bz2
+bunzip2 gdwiki-20180201-pages-articles-multistream.xml.bz2 
+./WikiExtractor.py  gdwiki-20180201-pages-articles-multistream.xml 
+#find text/ -type f | while read i; do pfx=$(echo $i|tr '/' '_'); cat $i | perl ../tesseract/contrib/genlangdata.pl -d outdir -p $pfx; done
+rm -rf outdir/
+mkdir outdir
+find text/ -type f | while read i; do pfx=$(echo $i|tr '/' '_'); cat $i | perl ../tesseract/contrib/genlangdata.pl -d outdir -p $pfx; done
+ls outdir/
+mkdir ccrawl
+cat /tmp/mi.txt | perl ../tesseract/contrib/genlangdata.pl -d ccrawl -p ccra; done
+cat /tmp/mi.txt | perl ../tesseract/contrib/genlangdata.pl -d ccrawl -p ccra
+ls ccrawl/
+less ccrawl/ccra.word.bigrams.unsorted 
+less ccrawl/ccra.word.numbers.unsorted 
+cat ccrawl/ccra.word.numbers.unsorted |grep -v http
+cat ccrawl/ccra.word.numbers.unsorted |grep -v http|awk -F'\t' '{print $1}'
+cat ccrawl/ccra.word.numbers.unsorted |grep -v http|awk -F'\t' '{print $1}' > /tmp/nums
+cat ccrawl/ccra.word.punc.unsorted |grep -v http|awk -F'\t' '{print $1}' > /tmp/nums
+cat ccrawl/ccra.wordlist.unsorted |grep -v http|awk -F'\t' '{print $1}' > /tmp/nums
+cat ccrawl/ccra.word.bigrams.unsorted |grep -v http|awk -F'\t' '{print $1}' > /tmp/nums
+for i in word.bigrams.unsorted word.numbers.unsorted word.punc.unsorted wordlist.unsorted; do find outdir -name "*$i" -exec cat '{}' \;  | perl -CS -ane 'BEGIN{my %c=();} chomp; my($a,$b)=split/\t/;if(defined $c{$a}){$c{$a}+=$b} else {$c{$a} = $b;} END{while(my($k,$v)=each %c) {print "$v\t$k\n";}}'|sort -nr > tmp.$i ;done
+for i in word.punc.unsorted word.bigrams.unsorted word.numbers.unsorted;do cat tmp.$i |awk -F'\t' '{print $2 "\t" $1}' > real.$i ; done
+less real.word.numbers.unsorted 
+cat /tmp/mi.txt | perl ../tesseract/contrib/genlangdata.pl -d ccrawl -p gd
+ls ccrawl/
+ls
+ls text/
+ls outdir/
+cp ccrawl/gd.word* outdir/
+for i in word.bigrams.unsorted word.numbers.unsorted word.punc.unsorted wordlist.unsorted; do find outdir -name "*$i" -exec cat '{}' \;  | perl -CS -ane 'BEGIN{my %c=();} chomp; my($a,$b)=split/\t/;if(defined $c{$a}){$c{$a}+=$b} else {$c{$a} = $b;} END{while(my($k,$v)=each %c) {print "$v\t$k\n";}}'|sort -nr > tmp.$i ;done
+for i in word.punc.unsorted word.bigrams.unsorted word.numbers.unsorted;do cat tmp.$i |awk -F'\t' '{print $2 "\t" $1}' > real.$i ; done
+less real.word.punc.unsorted 
+cat tmp.wordlist.unsorted 
+cat tmp.wordlist.unsorted |awk -F'\t' '{print $1}'
+cat tmp.wordlist.unsorted |awk -F'\t' '{print $2}'
+less tmp.wordlist.unsorted 
+ls
+rm ccrawl/ccra.word*
+ls outdir/
+ls
+rm tmp.word* real.word.*
+ls
+ls outdir/
+for i in word.bigrams.unsorted word.numbers.unsorted word.punc.unsorted wordlist.unsorted; do find outdir -name "*$i" -exec cat '{}' \;  | perl -CS -ane 'BEGIN{my %c=();} chomp; my($a,$b)=split/\t/;if(defined $c{$a}){$c{$a}+=$b} else {$c{$a} = $b;} END{while(my($k,$v)=each %c) {print "$v\t$k\n";}}'|sort -nr > tmp.$i ;done
+for i in word.punc.unsorted word.bigrams.unsorted word.numbers.unsorted;do cat tmp.$i |awk -F'\t' '{print $2 "\t" $1}' > real.$i ; done
+less real.word.bigrams.unsorted 
+ls
+rm -rf text/
+rm -rf outdir/
+rm -rf ccrawl/
+mkdir ccrawl
+cat /tmp/gd.txt | perl ../tesseract/contrib/genlangdata.pl -d ccrawl -p gd
+ls
+./WikiExtractor.py  gdwiki-20180201-pages-articles-multistream.xml 
+ls
+mkdir outdir
+find text/ -type f | while read i; do pfx=$(echo $i|tr '/' '_'); cat $i | perl ../tesseract/contrib/genlangdata.pl -d outdir -p $pfx; done
+vi ~/kashubian
+ls
+less real.word.bigrams.unsorted 
+rm real.word.* tmp.word* 
+ls
+ls outdir/
+for i in word.bigrams.unsorted word.numbers.unsorted word.punc.unsorted wordlist.unsorted; do find outdir -name "*$i" -exec cat '{}' \;  | perl -CS -ane 'BEGIN{my %c=();} chomp; my($a,$b)=split/\t/;if(defined $c{$a}){$c{$a}+=$b} else {$c{$a} = $b;} END{while(my($k,$v)=each %c) {print "$v\t$k\n";}}'|sort -nr > tmp.$i ;done
+ls
+for i in word.punc.unsorted word.bigrams.unsorted word.numbers.unsorted;do cat tmp.$i |awk -F'\t' '{print $2 "\t" $1}' > real.$i ; done
+less real.word.bigrams.unsorted 
+echo $(pwd)
+history
