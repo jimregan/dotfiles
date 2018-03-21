@@ -1,44 +1,3 @@
-git rm -rf dev/
-git commit -m 'cc0 material'
-git push origin cc0
-cd ..
-git clone https://github.com/apertium/apertium-en-lt.git
-ls
-git clone https://github.com/apertium/apertium-en-it
-git clone https://github.com/apertium/apertium-en-mt
-cd apertium-en-mt/
-ls
-git log
-ls
-git checkout -b cc0 7adaf3313cb8aef85139699c20580b23c13783e6
-git log
-l
-git cherry-pick 4dd7675fa17dcaf3118c08e090fd114720b7b77b
-git cherry-pick 41848b66aa7613168496f359a71bdd196ba30e97
-git cherry-pick a24ea21fa1862d497a18d662d1fb800475de8d24
-git cherry-pick 4a5e3129a561aaef0c8ebf1b0969b5d856a6a159
-git diff
-vi apertium-en-mt.mt.metadix 
-vi apertium-en-mt.en-mt.dix 
-git diff
-vi apertium-en-mt.mt.metadix 
-git add apertium-en-mt.mt.metadix 
-git commit -m 'remove non-cc0 additions'
-git log
-git cherry-pick 4a5e3129a561aaef0c8ebf1b0969b5d856a6a159
-git diff
-git status
-git checkout -- apertium-en-mt.mt.metadix
-git diff
-git cherry-pick --abort 
-git status
-git log
-grep American apertium-en-mt.en-mt.dix 
-git log
-git status
-grep American apertium-en-mt.en-mt.dix 
-git cherry-pick 2acafe27220bdc4825d46d04fcf4a287b8062f82
-git cherry-pick a7b67dacba52675aea1888e85faefc19fa43c96c
 git diff
 git log
 git diff
@@ -1998,3 +1957,44 @@ less result/teanglann.match
 less result/teanglann.align 
 ffplay wav/0000014.wav 
 less result/teanglann.align 
+top
+#kill -9 28841
+ps aux|grep chromium
+kill -9 32719
+ps aux|grep chromium
+ps aux|grep chromium|awk '{print $2}'
+ps aux|grep chromium|awk '{print $2}'|grep '^3'
+ps aux|grep chromium|awk '{print $2}'|grep '^3'|while read i;do kill -9 $i;done
+ps aux|grep chromium|awk '{print $2}'
+ps aux|grep chromium|awk '{print $2}'|grep '^3'|while read i;do kill -9 $i;done
+kill -9 29086
+ps aux|grep chromium|awk '{print $2}'
+kill -9 32719
+kill -9 32427
+kill -9 32403
+kill -9 32402
+kill -9 31451
+ps aux|grep chromium|awk '{print $2}'
+kill -9 32402
+top
+kill -9 28841
+top
+ps aux|grep chromium|awk '{print $2}'
+kill -9 32427
+ps aux|grep chromium|awk '{print $2}'
+kill -9 32427
+kill -9 28841
+kill -9 28852
+kill -9 29268
+ps aux|grep chromium|awk '{print $2}'
+top
+killall TaskScheduler
+killall TaskSchedule
+ps aux|grep TaskS
+top
+kill -9 14098
+top
+kill -9 14132
+top
+kill -9 14136
+top

@@ -465,61 +465,8 @@ index 2c1a08d..4b0819d 100644
 
 
 /home/jim/disk/Playing/spinx/teanglann
-diff --git a/.bash_history b/.bash_history
-index fa2fced..c3328ce 100644
---- a/.bash_history
-+++ b/.bash_history
-@@ -1,26 +1,3 @@
--git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-lt-lv.lt-lv.dix'
--ls
--git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "COPYING"'
--git log
--ls
--git log
--git format-patch -25
--less 0003-what-spectie-wants-spectie-gets.patch 
--less 0004-trimmytrimtrim.patch 
--less 0003-what-spectie-wants-spectie-gets.patch 
--less 0004-trimmytrimtrim.patch 
--less 0005-stuff-from-wikt.patch 
--less 0003-what-spectie-wants-spectie-gets.patch 
--rm 0001-New-module-for-fragments.patch 
--rm 0002-Adding-some-stuff.patch 
--less 0003-what-spectie-wants-spectie-gets.patch 
--mkdir /tmp/patches
--mv 0003-what-spectie-wants-spectie-gets.patch /tmp/patches/
--ls
--less 0004-trimmytrimtrim.patch 
--head 0004-trimmytrimtrim.patch 
--head -n 2 0004-trimmytrimtrim.patch 
--head -n 2 0004-trimmytrimtrim.patch |tail -n 1
- head -n 2 0004-trimmytrimtrim.patch |tail -n 1|awk -F'[@>]' '{print $2}'
- head -n 2 0004-trimmytrimtrim.patch |tail -n 1|awk -F'[@>]' '{print $2}' >  /tmp/thing
- perl -pi.bak -ane 's/72bbbca6-d526-0410-a7d9-f06f51895060/users.sourceforge.net/;print'
-@@ -1998,3 +1975,26 @@ less License.txt
- less ReadMe 
- ls
- less speakGenerator.js 
-+ls
-+ffplay wav/0000014.wav 
-+ffplay wav/0000015.wav 
-+ls
-+ls trans 
-+less trans 
-+ffplay wav/0000001.wav 
-+ffplay wav/0000002.wav 
-+ffplay wav/0000003.wav 
-+ffplay wav/0000004.wav 
-+ls
 +find . -name '*dic'
 +cat cmusphinx-ga-teanglann-0.1/ga.dic 
 +cat cmusphinx-ga-teanglann-0.1/ga.dic |grep dhiabh
-+ls
-+tree
-+tree|less
 +less etc/teanglann.dic 
-+top
-+ps aux|grep emsc
-+file /usr/share/emscripten/emcc
-+less /usr/share/emscripten/emcc
-+pwd >> ~/.scratch/notes-15mar2018 
+
