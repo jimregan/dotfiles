@@ -1,49 +1,3 @@
-ls
-tree
-find . -name Makefile
-cd ..
-find . -name Makefile
-cd cpp-package/
-ls
-cd ..
-ls
-cd perl-package/
-ls
-cd AI-MXNet
-ls
-sudo make install
-perl ~/mxnet-example.pl 
-cd ..
-find . -name 'libmxnet.so.*'
-ls
-cd build/
-ls
-ls src/
-less src/initialize.d 
-cd ..
-ls
-cd cpp-package/
-ls
-mkdir build
-cd build/
-cmake ..
-make
-ls
-less Makefile 
-cd ..
-git pull origin master
-ls
-cd ..
-mv mxnet/ mxnet-old
-echo $LD_LIBRARY_PATH 
-git clone --recursive https://github.com/apache/incubator-mxnet
-cd incubator-mxnet/
-make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
-find /usr/lib/ -name '*opencv*'
-apt-cache search opencv_imgcodecs
-apt-cache search imgcodecs
-sudo apt-get install libopencv-imgcodecs-dev
-find /usr/lib/ -name '*imgcodec*'
 find . -name im2rec.cc
 vi tools/im2rec.cc 
 make
@@ -1998,3 +1952,49 @@ find .. -name '*idam*'
 find . -name corpusfile.txt -exec cat {} \;
 find . -name corpusfile.txt -exec cat {} \;|grep idam
 ls ../ga_CO/
+cd ~/public_html/failteoir/
+ls
+cd ..
+rm -rf failteoir/
+git clone ~/disk/Playing/failteoir/ failteoir
+cd failteoir/
+ls
+git branch
+ls -al
+git log
+ls
+vi index.html
+sudo /etc/init.d/apache2 restart
+sudo service apache2 restart
+sudo apt-get install apache2
+sudo service apache2 restart
+less /var/log/
+ls /var/log/
+ls /var/log/apache2/
+less /var/log/apache2/access.log 
+less /var/log/apache2/error.log 
+sudo vi /etc/apache2/apache2.conf 
+grep '<Directory' /etc/apache2/conf-available/
+ls /etc/apache2/
+grep Directory /etc/apache2/*/*
+vi /etc/apache2/mods-available/userdir.conf 
+sudo a2enmod userdir
+sudo service apache2 restart
+ls
+vi index.html 
+ls css/clippy.css 
+ls js/
+vi index.html 
+ls
+cat index.html 
+git add index.html 
+git commit -m 'agent'
+vi index.html 
+ls js/
+vi index.html 
+ls js/
+vi js/speakClient.js 
+vi js/speakWorker.js 
+vi js/speakGenerator.js 
+vi index.html 
+pwd >> ~/.scratch/notes-15mar2018 

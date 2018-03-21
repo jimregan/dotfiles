@@ -417,3 +417,4 @@ index 2c1a08d..4b0819d 100644
 +find . -name corpusfile.txt -exec cat {} \;
 +find . -name corpusfile.txt -exec cat {} \;|grep idam
 
+/home/jim/public_html/failteoir
