@@ -1,98 +1,3 @@
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(git ls-files|grep -v apertium-lt-en.lt)'
-git stash
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(git ls-files|grep -v apertium-lt-en.lt)'
-git status
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[a-m]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[oq-t]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch sl-nouns.dix'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch README'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING.GFDL'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-pa.*"'
-ls
-cd ..
-mv lt-en/ pl-misc
-git clone incubator lt-en
-cd lt-en/
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[a-k]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[m-t]*"'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "C*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "README"'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "sl-nouns.dix"'
-ls
-cd ..
-git clone lt-en lt-lv
-cd lt-en/
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-lt-lv.*"'
-ls
-git log
-git diff git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch $(
-git diff 0532d2
-git log
-git diff d322ee
-git log
-git format-patch -11
-less 0003-what-spectie-wants-spectie-gets.patch 
-less 0002-Adding-some-stuff.patch 
-less 0004-Changy.patch 
-less 0003-what-spectie-wants-spectie-gets.patch 
-cd ..
-rm -rf lt-*
-ls
-git clone incubator lt-en
-cd lt-en/
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[a-d]*"'
-l
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[a-k]*"'
-ls
-cd ..
-git clone lt-en/ en-pt
-cd en-pt/
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[a-o]*"'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[q-v]"'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-[q-v]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[f-t]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-pl"'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-en-p[^t]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-e[o-u]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch COPYING.GFDL'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch README'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch sl-nouns.dix'
-ls
-git log
-cd ..
-ls
-cd lt-en/
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch sl-nouns.dix'
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch README'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-en-[^l]*'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-en-l[va]*'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-e[osu]*'
-ls
-git log
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "apertium-[f-km-z]*"'
-ls
-git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "COPYING.*"'
 git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch apertium-lt-lv.lt-lv.dix'
 ls
 git filter-branch -f --prune-empty --index-filter 'git rm --cached --ignore-unmatch "COPYING"'
@@ -1998,3 +1903,98 @@ ls
 sudo apt-get remove emscripten
 cp /tmp/allwd ~/.scratch/
 cp /tmp/isnot ~/.scratch/
+cd ../..
+git clone https://github.com/kripken/emscripten.git
+cd emscripten/
+ls
+./emconfigure
+./em-config 
+./emcmake
+./emcmake.py 
+ls
+./emsdk update
+find . -name emsdk
+./emcc tests/hello_world.cpp
+apt-cache search llvm
+sudo apt-get install clang-5.0
+./emcc tests/hello_world.cpp
+sudo update-alternatives --install /usr/bin/clang clang /usr/lib/llvm-5.0/bin/clang 100
+sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/lib/llvm-5.0/bin/clang++ 100
+./emcc tests/hello_world.cpp
+apt-cache search fastcomp
+apt-cache search emscripten
+cd ..
+mkdir emsdk
+cd emsdk/
+tar zxvf ~/Downloads/emsdk-portable.tar.gz 
+cd emsdk-portable/
+ls
+./emsdk 
+./emsdk install sdk-incoming-64bit
+./emsdk activate sdk-incoming-64bit
+ls
+. emsdk_env.sh 
+cd ../../pocketsphinx.js/build/
+ls
+rm -rf *
+ls ..
+cmake ..
+make
+ls
+rm -rf *
+ls
+./emsdk activate clang-incoming-64bit
+cd ../../emsdk/emsdk-portable/
+./emsdk activate clang-incoming-64bit
+./emsdk activate node-8.9.1-64bit 
+./emsdk activate emscripten-incoming-64bit
+cd -
+emcmake cmake ..
+make
+less pocketsphinx.js 
+cd ../..
+mkdir failteoir
+cd failteoir/
+ls
+git init .
+git checkout -b gh-pages
+cp ~-/pocketsphinx.js/build/pocketsphinx.js .
+ls
+git add pocketsphinx.js 
+git commit -m 'init'
+git branch
+git checkout master
+cd ..
+rm -rf failteoir/
+mkdir failteoir
+cd failteoir/
+echo Thing > README.md
+git init .
+git add README.md 
+git commit -m init
+git checkout -b gh-pages
+cp ~-/pocketsphinx.js/build/pocketsphinx.js .
+git add pocketsphinx.js 
+git commit -m 'first attempt'
+ls -al
+git checkout master 
+ls ../spinx/teanglann/feat/
+ls ../spinx/teanglann/
+ls ../spinx/teanglann/trees/
+ls ../spinx/teanglann/trees/teanglann.2000/
+git branch
+git submodule add https://github.com/syl22-00/pocketsphinx.js/ pocketsphinx.js
+git status
+git branch
+git commit -m 'add pocketsphinx.js'
+git submodule add https://github.com/smore-inc/clippy.js clippy.js
+git status
+git commit -m 'add clippy.js'
+git submodule add https://github.com/kripken/speak.js speak.js
+ls
+cd speak.js/
+ls
+less License.txt 
+less ReadMe 
+ls
+less speakGenerator.js 
