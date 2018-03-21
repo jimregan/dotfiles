@@ -1,36 +1,3 @@
-cd executor/
-ls
-ls configs/
-less README
-cd ..
-git clone https://github.com/ctm/syn68k.git
-cd syn68k/
-ls
-./autogen.sh 
-l
-./configure 
-,ale
-make
-ls
-sudo make install
-cd ../executor/
-cd build/
-ls
-../src/configure 
-apt-cache search db4-devel
-apt-cache search db5-devel
-apt-cache search db
-apt-cache search db|grep dev
-apt-cache search db5-dev
-sudo apt-get install libdb5.3-dev 
-ls
-../src/configure 
-make
-cd ..
-git clone https://github.com/ctm/executor.git
-git clone https://github.com/joeaoregan/Yr4-Platform-Games-Development-CA.git
-cd Yr4-Platform-Games-Development-CA/
-ls
 tree
 less proj.android-studio/app/jni/Android.mk 
 make -f proj.android-studio/app/jni/Android.mk 
@@ -1998,3 +1965,36 @@ less /tmp/68.txt
 echo $PWD
 history -a
 echo >> ~/.scratch/notes-15mar2018 
+cd /tmp/
+mkdir togha
+cd togha/
+cat ../68.txt |perl ~/toghasplit.pl 
+ls
+rm 0.txt 
+less 89.txt 
+rm *
+cat ../68.txt |perl ~/toghasplit.pl 
+ls
+cat 18.txt 
+rm 18.txt 
+less 107.txt 
+less 108.txt 
+rm *
+cat ../68.txt |perl ~/toghasplit.pl 
+rm 18.txt 
+ls
+less 108.txt 
+for i in *.txt;do mv $i "Page:An_t-Ogha_Mor_-_Aonghas_Mac_Dhonnachaidh.djvu%2F$i.mw";done
+ls
+cd ~/disk/Playing/
+ls hand_labels/hand_labels/
+ls hand_labels/hand_labels/readme.txt 
+lesss hand_labels/hand_labels/readme.txt 
+less hand_labels/hand_labels/readme.txt 
+less hand_labels/hand_labels/manual_train/072923551_01_r.json 
+ls helen/
+cd helen/
+less annotation/1422.txt 
+wc -l annotation/*
+cd ../Corpora
+svn stat
