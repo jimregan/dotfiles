@@ -470,3 +470,76 @@ index 2c1a08d..4b0819d 100644
 +cat cmusphinx-ga-teanglann-0.1/ga.dic |grep dhiabh
 +less etc/teanglann.dic 
 
+https://github.com/RReverser/serde-xml-rs
+https://stackoverflow.com/questions/37970355/read-xml-file-into-struct
+
+14
+down vote
+accepted
+Rust has great support for automatically generating (de)serialization code. There's the legacy rustc-serialize which requires very little setup. Then there's the serde crate which is a completely new (de)serialization framework that allows many formats and detailed custom configurations, but requires a little more initial setup.
+
+I'm going to describe how to use serde + serde_xml_rs to deserialize the XML to the Rust-structs.
+
+Add the crates to your Cargo.toml
+We could either implement the deserialization code manually, or we can generate it automatically by using the serde_derive crate.
+
+[dependencies]
+serde_derive = "1.0"
+serde = "1.0"
+serde_xml_rs = "0.2.0"
+Add annotations to your structs
+Serde needs to know about your structs. To aid it and not generate code for every single struct in your project, you need to annotate the structs you want. The Debug derivation is so we can easily print the structs with println! to inspect whether everything worked. The Deserialize bound is what notifies serde to generate code. If you want to treat the contents of an xml tag as text, you need to "rename" the field that should contain the text to $value. The naming of $value was done very arbitrarily in the creation of the serde_xml_rs crate, but can never collide with an actual field, because field names can't contain $ signs.
+
+#[macro_use]
+extern crate serde_derive;
+
+extern crate serde;
+extern crate serde_xml_rs;
+
+#[derive(Deserialize, Debug)]
+struct Note {
+    name: String,
+    body: Body,
+}
+
+#[derive(Deserialize, Debug)]
+struct Body {
+    name: String,
+    #[serde(rename="layer")]
+    layers: Vec<Layer>,
+}
+
+#[derive(Deserialize, Debug)]
+struct Layer {
+    content_type: String,
+    count: u8,
+    data: Vec<Data>,
+}
+
+#[derive(Deserialize, Debug)]
+struct Data {
+    id: u8,
+    #[serde(rename="$value")]
+    content: String,
+}
+Turn a String containing xml into an object
+Now comes the easy part. You call serde_xml::from_str on your string and you get either an error or a value of type Node:
+
+fn main() {
+    let note: Note = serde_xml_rs::deserialize(r##"
+<?xml version="1.0" encoding="UTF-8"?>
+<note name="title">
+  <body name="main_body">
+    <layer content_type="something" count="99">
+      <data id="13">
+        Datacontent
+      </data>
+    </layer>
+  </body>
+</note>
+    "##.as_bytes()).unwrap();
+    println!("{:#?}", note);
+}
+
+https://gobyexample.com/reading-files
+
