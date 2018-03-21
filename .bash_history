@@ -1,12 +1,3 @@
-git log
-cd ..
-ls
-rm -rf esan1/
-rm -rf es-an2/
-rm -rf apertium-es-an/
-rm -rf apertium-spa-arg/
-ls
-git svn clone https://svn.code.sf.net/p/apertium/svn/apertium-en-pl
 cd apertium-en-pl/
 git log
 git svn clone https://svn.code.sf.net/p/apertium/svn/trunk/apertium-en-pl en-pl2
@@ -1998,3 +1989,12 @@ ls
 mv xaa mri.training_text 
 mv xab mri.training_text 
 cat mri.training_text 
+cd ../../Corp
+cd ../../Corpora
+ls
+cd asr_data_irish/
+ls
+less README.txt 
+less scripts/abair_scripts/importSeanchasRannNaFeirste.py 
+ls
+ls data/
