@@ -1,26 +1,3 @@
-cat CMakeFiles/MyGame.dir/cmake_clean.cmake 
-cat CMakeFiles/MyGame.dir/build.make 
-cat CMakeFiles/MyGame.dir/link.txt  
-cd ..
-ls
-cmake .
-make
-ls
-less CMakeLists.txt 
-ls
-less Makefile 
-git status
-git diff
-ls
-cd cocos2d/
-sl
-ls
-make
-find /usr/include/ -name 'glfw3.h'
-find /usr/include/ -name 'glfw.h'
-less /usr/include/GL/glfw.h 
-sudo apt-get install libglfw3-dev
-make
 less /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
 make
 less /home/jim/disk/shared/demo1/cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
@@ -1998,3 +1975,26 @@ mv si-close_lr1e-4_wd0_bs20k_ns_up.zip egs/arctic/si-close/
 cd .
 cd ..
 git clone https://github.com/artetxem/undreamt/
+cd ..
+ls
+cd ..
+git clone https://github.com/phil-el/phetools.git
+cd sphinx-alignment/
+ls
+cd cmusphinx-alignment-example/
+ls
+vi gen-transcript-pl.sh
+less 1.out 
+less 2.out 
+less 03-stefan-zeromski-przedwiosnie-cz-iii-1.mp3.txt 
+less ga-ru.dic 
+ls ~/*pl
+less ~/toghabot.pl 
+grep open ~/*pl
+perl -e '$a=3; if($a % 2 == 0){print "yes"}'
+perl -e '$a=3; if($a % 2 == 1){print "yes"}'
+perl -e '$a=4; if($a % 2 == 1){print "yes"}'
+perl -e '$a=4; if($a % 2 == 0){print "yes"}'
+pwd
+pwd >> ~/.scratch/notes-15mar2018 
+history
