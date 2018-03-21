@@ -390,51 +390,6 @@ index 2c1a08d..4b0819d 100644
 +grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles|tail -n 1); echo cp $from data/$i ;done
 +grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles|tail -n 1); cp $from data/$i ;done
 
-
-diff --git a/.bash_history b/.bash_history
-index 5e703a0..bf07b5d 100644
---- a/.bash_history
-+++ b/.bash_history
-@@ -1,35 +1,3 @@
--echo t léine |espeak --ipa -v ga
--echo t; léine |espeak --ipa -v ga
--echo 't; léine' |espeak --ipa -v ga
--echo www |espeak --ipa -v ga
--echo www |espeak --ipa -v en_US
--echo www |espeak --ipa -v en-US
--echo fuck it |espeak --ipa -v en-US
--echo fuck it man |espeak --ipa -v en-US
--echo fuck it maaaan |espeak --ipa -v en-US
--echo go fuck yourself, you fuckin fuck |espeak --ipa -v en-US
--echo go fuck yourself, you fuckin fuck |espeak --ipa -v en
--echo go fuck yourself, you fuckin fuck |espeak --ipa -v en-US
--echo go fuck yourself, you fuckin fuck |espeak --ipa -v en
--echo arelian |espeak --ipa -v en
--echo arelian |espeak --ipa -v en-US
--echo shithouse |espeak --ipa -v en-US
--echo shithouse |espeak --ipa -v en
--echo goat |espeak --ipa -v en
--echo goat |espeak --ipa -v en-US
--echo goat |espeak --ipa -v en
--echo fock |espeak --ipa -v en
--echo on the dort |espeak --ipa -v en
--echo on the dort |espeak --ipa -v en-US
--echo prick |espeak --ipa -v en-US
--echo whale oil beef hooked |espeak --ipa -v en-US
--echo three trees |espeak --ipa -v en-US
--echo three trees |espeak --ipa -v en
--echo cheese |espeak --ipa -v en
--echo da |espeak --ipa -v ru
--cd ../mxnet/
--ls
--cd build/
- ls
- tree
- find . -name Makefile
-@@ -1998,3 +1966,35 @@ ffplay ENUK001.mp3
- cd ,,
- cd ..
- wget https://www.50languages.com/_1language/UKUK.ZIP
 +grep makeKaldiFiles.py ~/.bash_history 
 +find . -name corpusfile.txt
 +less ./data/mul_mo_sceal_fein/corpusfile.txt
@@ -459,11 +414,6 @@ index 5e703a0..bf07b5d 100644
 +find ../ga_* ../UISC -name '*.wav' -or -name '*.ogg' > /tmp/datafiles
 +cat /tmp/isnot|tail -n 30 |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); grep $fname /tmp/datafiles ;done
 +cat /tmp/isnot|head
-+find ../UISC -name 'idam0001_spk1_0001_001.*'
-+find ../UISC -name 'idam0001_*'
-+find .. -name 'idam0001_*'
-+find .. -name 'idam*'
-+find .. -name '*idam*'
 +find . -name corpusfile.txt -exec cat {} \;
 +find . -name corpusfile.txt -exec cat {} \;|grep idam
-+ls ../ga_CO/
+
