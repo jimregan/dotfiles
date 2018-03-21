@@ -239,4 +239,35 @@ http://bair.berkeley.edu/blog/2018/03/13/mcgan/
 https://www.youtube.com/watch?v=uR-_8SGhYw8
 Irish, no subs, clear for lipreading
 
+https://github.com/Jekub/Wapiti
+A simple and fast discriminative sequence labeling toolkit ( http://wapiti.limsi.fr )
+https://github.com/kermitt2/grobid
+A machine learning software for extracting information from scholarly documents
+https://github.com/allenai/science-parse
+Library and tools for extracting metadata from PDFs
+
+https://github.com/tensorlayer/tensorlayer/blob/master/example/tutorial_binarynet_mnist_cnn.py
+
+https://petewarden.com/2018/03/19/the-machine-learning-reproducibility-crisis/
+https://github.com/polyaxon/polyaxon
+
+https://github.com/allenai/ontoemma
+An ontology matcher for matching entities between knowledgebases
+
+https://arxiv.org/pdf/1803.07038.pdf
+Controlling Decoding for More Abstractive Summaries
+with Copy-Based Networks
+
+https://github.com/lincolnhard/head-pose-estimation/blob/master/video_test_shape.cpp
+
+dynamic binary analysis via platform emulation https://usercorn.party
+https://github.com/lunixbochs/usercorn
+
+https://github.com/reactos/reactos
+https://www.reactos.org/wiki/VirtualBox
+https://www.reactos.org/wiki/QEMU
+
+https://github.com/rust-lang/rust-by-example
+https://rustbyexample.com/
+
 

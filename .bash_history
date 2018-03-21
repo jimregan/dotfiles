@@ -1,104 +1,3 @@
-make
-ls
-find  . -name 'MyGame*'
-./bin/MyGame 
-sudo ldconfig
-./bin/MyGame 
-ls -al /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmod.so.6
-ls -al /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/
-rm /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmod.so.6
-rm /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmodL.so.6
-cd /home/jim/disk/shared/redo/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/
-ls
-ln -s libfmod.so.6 libfmod.so 
-ln -s libfmod.so libfmod.so.6 
-ls
-ln -s libfmodL.so libfmodL.so.6 
-cd -
-./bin/MyGame 
-cd ..
-ls Classes/*cpp|cat
-cd ..
-ls Classes/*cpp
-ls -l Classes/*cpp
-ls - Classes/*cpp
-ls -a Classes/*cpp
-ls -a Classes/*cpp|cat
-ls -a Classes/*h|cat
-cd ../redo/
-ls
-ls -al
-rm -rf proj.win32/Debug.win32/
-cmake .
-cocos run -p .
-cocos run -p linux
-;s
-ls
-man ln
-ln -sd ../../Playing/cocos2d-x/ cocos2d
-make
-ls
-cocos run -p linux
-less CMakecls
-ls
-rm -rf CMakeFiles/ CMakeCache.txt 
-cmake .
-less CMakeLists.txt 
-cmake -DLINUX .
-less CMakeLists.txt 
-ls
-rm -rf CMakeFiles/ CMakeCache.txt 
-less CMakeLists.txt 
-cocos run -p linux
-rm -rf CMakeFiles/ CMakeCache.txt 
-vi CMakeLists.txt 
-cocos run -p linux
-cocos help
-cocos -h
-cocos compile -p linux
-cocos compile 
-cocos deploy -p linux
-less linux-build/CMakeFiles/CMakeOutput.log 
-ls
-rm -rf linux-build/
-cocos deploy -p linux
-vi CMakeLists.txt 
-ls
-rm -rf linux-build/
-cocos deploy -p linux
-less linux-build/CMakeFiles/CMakeOutput.log 
-ls
-rm -rf linux-build/
-less CMakeLists.txt 
-ls
-cocos run -p linux
-less CMakeLists.txt 
-rm -rf linux-build/
-cocos run -p linux
-ls
-cd linux-build/
-ls
-make
-less ../proj.linux/main.cpp 
-less Makefile 
-less CMakeFiles/Makefile2 
-less ../Classes/AppDelegate.cpp 
-ls ../
-make
-less Makefile 
-less CMakeFiles/Makefile2 
-less CMakeFiles/MyGame.dir/build.make 
-less CMakeFiles/MyGame.dir/link.txt 
-sh CMakeFiles/MyGame.dir/link.txt ../Classes/*.cpp ../proj.linux/main.cpp 
-sh CMakeFiles/MyGame.dir/link.txt  ../proj.linux/main.cpp ../Classes/*.cpp
-sh CMakeFiles/MyGame.dir/link.txt  ../proj.linux/main.cpp 
-vi CMakeFiles/MyGame.dir/link.txt  
-sh CMakeFiles/MyGame.dir/link.txt  
-cat CMakeFiles/MyGame.dir/link.txt  
-cat CMakeFiles/MyGame.dir/depend.
-cat CMakeFiles/MyGame.dir/depend.make 
-cat CMakeFiles/MyGame.dir/flags.make 
-cat CMakeFiles/MyGame.dir/DependInfo.cmake 
 cat CMakeFiles/MyGame.dir/cmake_clean.cmake 
 cat CMakeFiles/MyGame.dir/build.make 
 cat CMakeFiles/MyGame.dir/link.txt  
@@ -1998,3 +1897,104 @@ youtube-dl https://www.youtube.com/watch?v=y7GLPr3LmTM&t=1s
 ls
 #
 ls
+git clone https://github.com/apertium/apertium-vi-en.git
+git clone https://github.com/apertium/apertium-en-lv
+cd apertium-en-lv/
+ls
+git log
+git revert https://github.com/apertium/apertium-vi-en.git
+git revert 6d046315866696c18dfa224715b7f0e90061cf0a
+git remote add mine https://github.com/jimregan/apertium-en-lv.git
+ls
+git push mine master
+cd ..
+pkg-config --libs opencv
+apt-cache search opencv
+mkdir deepspeech-play
+cd deepspeech-play/
+pip install deepspeech
+wget https://github.com/mozilla/DeepSpeech/releases/download/v0.1.1/deepspeech-0.1.1-models.tar.gz
+cd ..
+git clone https://github.com/LUMII-AILab/Tezaurs.git
+less Tezaurs/wordlists/entries.txt 
+cd -
+cd ..
+git clone https://github.com/faneshion/MatchZoo
+git clone https://github.com/pdonald/latvian
+git clone https://github.com/PeterisP/morphology
+git clone https://github.com/deepmipt/DeepPavlov
+cd DeepPavlov/
+git pull origin master
+cd ..
+git clone https://github.com/phil-el/phetools
+cd phetools/
+git pull origin master 
+cd ..
+git clone https://github.com/MycroftAI/padatious/
+cd padatious/
+git pull origin master 
+git pull origin 
+ls
+git branch
+cd ..
+git clone https://github.com/snipsco/rustling/
+git clone https://github.com/snipsco/rustling-ontology/
+git clone https://github.com/snipsco/snips-nlu
+git clone https://github.com/snipsco/snips-nlu-rs
+git clone https://github.com/RasaHQ/rasa_nlu
+git clone https://github.com/chartbeat-labs/textacy
+git clone https://github.com/artetxem/vecmap
+cd vecmap
+git pull origin master
+ls
+cd ..
+git clone https://github.com/giuliopaci/SPro
+git clone https://github.com/rainlabs/stranger
+top
+git clone https://github.com/facebookresearch/loop
+git clone https://github.com/ilkarman/DeepLearningFrameworks
+git clone https://github.com/DanielSWolf/rhubarb-lip-sync
+git clone https://github.com/azadis/MC-GAN
+git clone https://github.com/tracend/papagayo/
+git clone https://github.com/AKSW/NSpM
+mkdir poleval
+cd poleval/
+wget http://poleval.pl/task1/train-raw.txt.gz http://poleval.pl/task1/train-analyzed.xml.gz  http://poleval.pl/task1/train-gold.xml.gz http://poleval.pl/task1/test-analyzed.xml.gz http://poleval.pl/task1/test-raw.txt.gz http://poleval.pl/task1/tagger-eval.py 
+wget http://poleval.pl/task2/sentiment-treebank.tar.gz http://mozart.ipipan.waw.pl/~axw/poleval/poleval_test.tar.gz http://mozart.ipipan.waw.pl/~axw/poleval/sent-eval.py 
+zless poleval_test.tar.gz 
+ls
+tar ztvf sentiment-treebank.tar.gz 
+tar zxvf sentiment-treebank.tar.gz 
+zless poleval_test.tar.gz 
+tar zxvf poleval_test.tar.gz 
+zless train-gold.xml.gz 
+ss test-analyzed.xml.gz 
+zcat train-gold.xml.gz |grep ign
+git clone http://nlp.pwr.wroc.pl/corpus2.git
+cd corpus2/
+ls
+mkdir build
+cd build/
+ls
+cmake ..
+sudo apt-get install libloki-dev libxml++2.6-dev 
+ls
+rm -rf CMakeFiles/
+cmake ..
+make
+sudo apt-get install morfeusz
+zless ~/Downloads/sgjp-20180318.tab.gz 
+apt-cache search plucene
+sudo apt-get install libplucene-perl 
+cd ../..
+cd ..
+git clone https://github.com/lunixbochs/usercorn
+git clone https://github.com/Jekub/Wapiti
+git clone https://github.com/kan-bayashi/PytorchWaveNetVocoder
+cd PytorchWaveNetVocoder/
+$ wget "https://www.dropbox.com/s/xt7qqmfgamwpqqg/si-close_lr1e-4_wd0_bs20k_ns_up.zip?dl=0" -O si-close_lr1e-4_wd0_bs20k_ns_up.zip
+wget "https://www.dropbox.com/s/xt7qqmfgamwpqqg/si-close_lr1e-4_wd0_bs20k_ns_up.zip?dl=0" -O si-close_lr1e-4_wd0_bs20k_ns_up.zip
+mv si-close_lr1e-4_wd0_bs20k_ns_up.zip egs/arctic/si-close/
+cd .
+cd ..
+git clone https://github.com/artetxem/undreamt/
