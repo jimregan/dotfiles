@@ -1,10 +1,3 @@
-echo feuch |espeak --ipa -v ga
-echo feach |espeak --ipa -v ga
-echo féach |espeak --ipa -v ga
-echo feicim go bhfuil litir á scríobh agat |espeak --ipa -v ga
-echo tá mé ag léamh |espeak --ipa -v ga
-echo feicim go bhfuil litir á scríobh agat |espeak --ipa -v ga
-echo agam |espeak --ipa -v ga
 echo gan |espeak --ipa -v ga
 echo gan stad |espeak --ipa -v ga
 echo gan stad nó |espeak --ipa -v ga
@@ -1998,3 +1991,10 @@ ls -al shape_predictor_68_face_landmarks.dat
 less ../face_landmark_detection_ex.cpp 
 cd ../..
 git clone https://github.com/so-fancy/diff-so-fancy
+ssh jimregan
+ls
+cd mic
+cd micheal/
+ls
+ffplay QQf5JZamijU.m4a 
+ls
