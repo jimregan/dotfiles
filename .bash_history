@@ -1,14 +1,3 @@
-git commit -m git-mw
-git push
-ls
-grep thuig Page\:An_t-Ogha_Mor_-_Aonghas_Mac_Dhonnachaidh.djvu%2F*
-netstat
-ls
-less Page\:Leabharsgeulaigh00hyde.djvu%2F15.mw 
-git add Page\:Leabharsgeulaigh00hyde.djvu%2F*
-git commit -m add
-git push
-vi bar
 cat bar |perl ponc
 cat bar |perl ponc.pl 
 cd ..
@@ -1998,3 +1987,14 @@ grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}')
 grep piarsach /tmp/isnot|tail -n 1 |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles); echo cp $from data/$i ;done
 grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles|tail -n 1); echo cp $from data/$i ;done
 grep piarsach /tmp/isnot |while read i;do fname=$(echo $i|awk -F/ '{print $NF}'); from=$(grep $fname /tmp/datafiles|tail -n 1); cp $from data/$i ;done
+cd ..
+git clone https://git.joeyh.name/git/github-backup.git
+cd github-backup/
+ls
+less COPYRIGHT 
+less Utility/FileSystemEncoding.hs 
+sudo apt-get install stack
+apt-cache search stack
+apt-cache search stack|grep hask
+sudo apt-get install haskell-stack
+stack install
