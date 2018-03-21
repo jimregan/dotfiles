@@ -1,9 +1,3 @@
-cd apertium-en-pl/
-git log
-git svn clone https://svn.code.sf.net/p/apertium/svn/trunk/apertium-en-pl en-pl2
-git clone https://github.com/sebischair/NLU-Evaluation-Corpora
-git clone https://github.com/facebook/duckling
-git clone https://github.com/ucam-smt/ucam-smt
 git clone https://github.com/wiktorwalentynowiczit/morphodita-pl-poleval
 cd ~/disk/Playing/
 git clone https://github.com/serge-sans-paille/pythran.git
@@ -1998,3 +1992,9 @@ less README.txt
 less scripts/abair_scripts/importSeanchasRannNaFeirste.py 
 ls
 ls data/
+ls
+ls result/
+ls result/* |zip result1.zip -@
+cd ..
+mkdir harald
+ls teanglann/
