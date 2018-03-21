@@ -1,63 +1,3 @@
-cmake .
-rm -rf CMakeFiles/ CMakeCache.txt 
-ls
-rm -rf bb/
-mkdir bb
-cd bb
-cmake -G "Unix Makefiles" -DBUILD_CPP_TESTS=OFF -DBUILD_LUA_LIBS=OFF ..
-less ../CMakeLists.txt 
-ls
-rm -rf *
-ls
-cmake -G "Unix Makefiles" -DBUILD_CPP_TESTS=OFF -DBUILD_LUA_LIBS=OFF ..
-ls
-rm -rf *
-cd ..
-ls
-python download-deps.py 
-find . -name '*sh'
-sh ./build/install-deps-linux.sh 
-bash ./build/install-deps-linux.sh 
-apt-cache search glfw
-sudo apt-get install libglfw3-dev
-sudo apt-get install libglfw-dev
-cd ..
-git clone https://github.com/cocos2d/cocos2d-x
-cd cocos2d-x/
-ls
-python download-deps.py
-ls
-git submodule update --init
-ls
-mkdir build
-cd build/
-ls
-make ..
-cmake ..
-apt-get install libsqlite3-dev 
-sudo apt-get install libsqlite3-dev 
-cmake ..
-sudo apt-get install libglew-dev 
-cmake ..
-sudo apt-get install libgtk-3-dev 
-cmake ..
-sudo apt-get install libcurlpp-dev 
-sudo apt-get install libcurl4-openssl-dev 
-cmake ..
-make -j 8
-sudo make install
-ls
-cd ..
-ls
-sudo python setup.py install
-. ~/.bashrc
-cd ../Yr4-Platform-Games-Development-CA/
-ls
-cocos run -p linux
-mv ~/Downloads/cocos-project.json .cocos-project.json
-cocos run -p linux
-less .cocos-project.json 
-ls
 cd executor/
 ls
 ls configs/
@@ -2057,3 +1997,4 @@ ffplay data/audio/nnc_named_entities/wav/CI0001CDNamedEntities02_0218.wav
 less /tmp/68.txt 
 echo $PWD
 history -a
+echo >> ~/.scratch/notes-15mar2018 
