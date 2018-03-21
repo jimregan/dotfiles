@@ -1,18 +1,3 @@
-echo gan |espeak --ipa -v ga
-echo gan stad |espeak --ipa -v ga
-echo gan stad nó |espeak --ipa -v ga
-echo ar chor ar bith |espeak --ipa -v ga
-echo trom |espeak --ipa -v ga
-echo crann |espeak --ipa -v ga
-echo trúir |espeak --ipa -v ga
-echo trom |espeak --ipa -v ga
-echo crann |espeak --ipa -v ga
-echo ann |espeak --ipa -v ga
-echo amm |espeak --ipa -v ga
-echo t-am |espeak --ipa -v ga
-echo t-léine |espeak --ipa -v ga
-echo t.léine |espeak --ipa -v ga
-echo t,léine |espeak --ipa -v ga
 echo t léine |espeak --ipa -v ga
 echo t; léine |espeak --ipa -v ga
 echo 't; léine' |espeak --ipa -v ga
@@ -1998,3 +1983,18 @@ cd micheal/
 ls
 ffplay QQf5JZamijU.m4a 
 ls
+cd ..
+git clone https://github.com/deepmipt/DeepPavlov.git
+mkdir 50langs
+cd 50langs/
+wget https://www.50languages.com/book2/EN/ENUK/ENUK-all.zip
+unzip -l ENUK-all.zip 
+mkdir ENUK
+cd ENUK/
+unzip ../ENUK-all.zip 
+less _readme.htm 
+ls
+ffplay ENUK001.mp3 
+cd ,,
+cd ..
+wget https://www.50languages.com/_1language/UKUK.ZIP
