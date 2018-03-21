@@ -1,5 +1,3 @@
-find . -name im2rec.cc
-vi tools/im2rec.cc 
 make
 make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
 ls
@@ -1998,3 +1996,5 @@ vi js/speakWorker.js
 vi js/speakGenerator.js 
 vi index.html 
 pwd >> ~/.scratch/notes-15mar2018 
+git status
+ls -al
