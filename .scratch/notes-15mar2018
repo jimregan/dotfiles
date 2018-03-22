@@ -543,3 +543,23 @@ fn main() {
 
 https://gobyexample.com/reading-files
 
+https://hackernoon.com/train-your-machine-learning-models-on-googles-gpus-for-free-forever-a41bd309d6ad
+
+https://github.com/locuslab/TCN
+Sequence Modeling Benchmarks and Temporal Convolutional Networks (TCN)
+This repository contains the experiments done in the work An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling by Shaojie Bai, J. Zico Kolter and Vladlen Koltun.
+We specifically target a comprehensive set of tasks that have been repeatedly used to compare the effectiveness of different recurrent networks, and evaluate a simple, generic but powerful (purely) convolutional network on the recurrent nets' home turf.
+
+https://github.com/Jonathan-LeRoux/lws
+Fast spectrogram phase recovery using Local Weighted Sums (LWS)
+
+https://medium.com/@Arafat./introducing-tensorflow-ruby-api-e77a477ff16e
+
+https://github.com/cjgdev/aho_corasick
+A C++ implementation of the aho corasick pattern search algorithm
+
+
+https://dawn.cs.stanford.edu/2018/03/09/low-precision/
+HALP: High-Accuracy Low-Precision Training
+https://github.com/cc-hpc-itwm/TensorQuant
+
