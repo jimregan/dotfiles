@@ -1,68 +1,3 @@
-grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > fsg
-grep '<mf><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > mfsg
-grep '<m><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > msg
-grep '<m><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > msp
-grep '<mf><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > mfsp
-grep '<f><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > fsp
-cat fsp 
-vi apertium-en-pt.pt.dix 
-vi apertium-en-pt.en-pt.dix 
-git diff
-git add apertium-en-pt.*
-git branch
-git commit -m 'some entry fixes'
-cat fsg
-cat fsg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"f\"/></r>!"}'
-cat fsg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"f\"/></r>!"}' > sedder
-cat apertium-en-pt.en-pt.dix |sed -f sedder 
-cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
-mv tmp apertium-en-pt.en-pt.dix 
-git diff
-git add apertium-en-pt.en-pt.dix 
-git commit -m 'auto add gender: f'
-cat mfsg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"mf\"/></r>!"}' > sedder
-less sedder 
-cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
-mv tmp apertium-en-pt.en-pt.dix 
-git diff
-git add apertium-en-pt.en-pt.dix 
-git commit -m 'auto add gender: mf'
-cat msg|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"m\"/></r>!"}' > sedder
-cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
-mv tmp apertium-en-pt.en-pt.dix 
-git commit -m 'auto add gender: m'
-git add apertium-en-pt.en-pt.dix 
-git commit -m 'auto add gender: m'
-make
-vi Makefile.am 
-git status
-cat msp|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"m\"/><s n=\"sp\"/></r>!"}' > sedder
-cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
-mv tmp apertium-en-pt.en-pt.dix 
-git diff
-git add apertium-en-pt.en-pt.dix 
-git commit -m 'auto add gender: m.sp'
-vi apertium-en-pt.en-pt.dix 
-git add apertium-en-pt.en-pt.dix 
-git commit -m virus
-cat mfsp|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"mf\"/><s n=\"sp\"/></r>!"}' > sedder
-cat sedder 
-cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
-mv tmp apertium-en-pt.en-pt.dix 
-git diff
-cat fsp|awk '{gsub(" ", "<b/>");print "s!<r>" $0 "<s n=\"n\"/></r>!<r>" $0 "<s n=\"n\"/><s n=\"f\"/><s n=\"sp\"/></r>!"}' > sedder
-cat apertium-en-pt.en-pt.dix |sed -f sedder  > tmp
-mv tmp apertium-en-pt.en-pt.dix 
-git diff
-cat sedder 
-rm mfs* fs* ms*
-ls
-git branch
-git push origin merge-en-es 
-vi apertium-en-pt.en-pt.dix 
-git diff
-vi apertium-en-pt.pt.dix 
-git diff
 git add apertium-en-pt.*
 git commit -m 'billion'
 vi apertium-en-pt.pt.dix 
@@ -1998,3 +1933,68 @@ ls Public/
 ls Videos/
 ls Music/
 ls bin/
+ls
+cp -r asr_data_irish/ /media/jim/TOSHIBA/Corpora/
+df
+cp -r ga_CO/ /media/jim/TOSHIBA/Corpora/
+df
+cd ga_UL/
+#rsync -aP --no-links .
+cd ..
+rsync -aP --no-links ga_UL/ /media/jim/408C-AC9A/ga_UL/
+du -k ga_CO/
+du -k asr_data_irish/
+df
+du -k ga_CO/
+find /media/jim/TOSHIBA/Corpora/asr_data_irish/ -name .svn
+ls
+ls UISC/
+find UISC -type f
+ls
+find asr_data_irish -type 
+find asr_data_irish -type f
+find asr_data_irish -name corpusfile.txt
+find . -type f|grep irbs
+ls
+find . -type f|grep comhra
+ls ../
+cd ..
+find . -name .svn
+cd speech-syn/
+ls
+find . -type f|grep irbs
+ls Software/
+ls Software/comhra_test/
+ls Software/comhra_test/comhra/
+less Software/comhra_test/comhra/trs/irdb0002.trs 
+ls Software/
+ls Software/emily_sep16/
+du -k Software/
+df
+ls /media/jim/TOSHIBA/
+ls /media/jim/TOSHIBA/Corpora/
+ls
+cd Software/
+ls
+rsync -azP Abair jim@jimregan:/Users/jim/Playing/phlab/Abair/
+ls
+rsync -azP comhra_test/ jim@jimregan:/Users/jim/Playing/phlab/comhra/
+df
+du -k comhra_test/
+ls comhra_test/comhra/audio/
+ls comhra_test/comhra/wav/
+mkdir /media/jim/KINGSTON/comhra
+cd comhra_test/comhra/
+#cp wav/ xml xml_not_on_web/ /media/jim/KINGSTON/
+df
+du -k .
+less trs/iraa0035.trs 
+ls /media/jim/408C-AC9A/
+ls /media/jim/408C-AC9A/ga_UL/
+df
+ls
+mkdir /media/jim/TOSHIBA/comhra
+cp -r wav/ xml* /media/jim/TOSHIBA/comhra/
+cd disk/desktop/3/homedir/
+ls -al
+df
