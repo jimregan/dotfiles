@@ -1,63 +1,3 @@
-git cherry-pick --abort
-git checkout -b cc0-1 6160cc 
-git cherry-pick 432803582d276055f6896e57e3ca5c48aba4525c
-git log
-git cherry-pick 9054896abdbfa4bf88a55c88f732f450d74bf45d
-git diff
-vi apertium-en-lt.lt.dix 
-git cherry-pick --abort
-git log
-ls
-less apertium-en-lt.lt.dix 
-ls
-git branch
-git checkout readd-history 
-ls
-git checkout cc0
-ls
-cd ..
-git clone https://github.com/apertium/apertium-lt-lv.git
-cd apertium-lt-lv/
-ls
-git checkout -b cc0
-cp ../apertium-en-lt/LICENSE .
-cp ../apertium-en-lt/apertium-en-lt.lt.dix apertium-lt-lv.lt.dix 
-git diff
-ls
-git add LICENSE apertium-lt-lv.lt.dix 
-git commit -m 'CC0 material'
-git push origin cc0
-cd ..
-git clone https://github.com/jimregan/apertium-pl-cs.git
-cd apertium-pl-cs
-ls
-git revert 1cb11828a398dd8afb2005b3395812a817e58367
-git revert f37d35c2f0d24479326bd0dd39152d9d9ebdaede
-ls
-git push origin master
-cd ..
-git clone https://github.com/apertium/apertium-pl-uk
-cd apertium-pl-uk/
-ls
-git checkout -b CC0
-git rm apertium-pl-uk.uk.acx autogen.sh 
-cat ChangeLog 
-git rm ChangeLog configure.ac COPYING Makefile.am modes.xml NEWS pl-uk.prob README uk-pl.prob 
-ls
-cat AUTHORS 
-git rm AUTHORS 
-ls dev/
-git revert f68f2e1c11f2c4067044e63a22488088e7fa5be3
-git commit -m 'remove (possibly) copied files'
-ls
-git rm *.t.x
-git rm *.t[123s]x
-git commit -m 'remove (possibly) copied files'
-ls
-git rm apertium-pl-uk.post-pl.dix 
-less apertium-pl-uk.pl.dix 
-git rm apertium-pl-uk.pl.dix 
-git commit -m 'remove (possibly) copied files'
 git revert f68f2e1c11f2c4067044e63a22488088e7fa5be3
 git revert 908237a760029a29d4b55e978462e318b3c929e9
 git diff
@@ -1998,3 +1938,63 @@ ls KINGSTON/
 unzip -l KINGSTON/CNGv1-UNICODE.zip 
 cp KINGSTON/CNGv1-UNICODE.zip /tmp/
 df
+du -k .
+cd wolne-lektury-audio-corpus/
+du -k .
+df
+cp -r audio /media/jim/408C-AC9A/
+df
+cd ../Corpora
+ls
+du -k ga_UL/
+du -k ga_MU/
+cp -r ga_MU/ /media/jim/408C-AC9A/
+df
+cd ../speech-syn/
+ls
+du -k Software/comhra_test/
+ls
+ls Da
+ls Data/
+tree Data/
+du -k Data/
+df
+ls
+cd Software/
+ls
+cd Abair
+ls /media/jim/408C-AC9A/
+ls /media/jim/408C-AC9A/ga_UL/
+cd ..
+ls 
+ls ltsserver-rest/public/
+ls ltsserver-rest/README.txt 
+less ltsserver-rest/README.txt 
+less ltsserver-rest/source/app.d 
+less ltsserver-rest/build_ldc.sh 
+ls ltsserver2016
+ls ltsserver2016/source/
+less ltsserver2016/dub.json 
+ls
+ls hts/
+ls
+less Festival/irish_festival_files/TST_gu_anb_36000phns_multisyn.scm 
+less Festival/irish_festival_files/irish.scm 
+less Festival/irish_festival_files/irish/tcd_ga_lexicon.scm 
+tree Festival/
+tree Festival/|less
+ls Festival/irish_festival_files/
+du -k Festival/irish_festival_files/
+ls
+ls Praat_scripts/
+ls tcd_signal_processing/
+ls tcd_signal_processing/LPC_vocoder/
+ls compounds/
+ls
+less Analysing_Texts/Phoneme_Frequency_in_Irish.tex 
+less vocab/vocab/LICENCE.txt 
+ls
+ls -al hts/hts_voices/tcd_gd_anb_hts_108k/
+ls -al hts/hts_voices/tcd_gd_anb_hts_36k/
+ls
+ls haralds_unsorted/
