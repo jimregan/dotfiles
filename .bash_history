@@ -1,89 +1,3 @@
-git log
-ls
-git rm autogen.sh AUTHORS ChangeLog COPYING configure.ac modes.xml uk-pl.prob pl-uk.prob README NEWS dev/*
-ls
-git rm apertium-pl-uk.pl.dix 
-git rm apertium-pl-uk.post-pl.dix 
-git rm apertium-pl-uk.*.t[123s]x
-ls
-git rm Makefile.am 
-git commit -m 'remove (possibly) copied files'
-ls
-cp ../apertium-en-lt/LICENSE .
-less LICENSE 
-git add LICENSE 
-git commit -m 'add CC0'
-git push origin CC0 
-cd ..
-git clone https://github.com/jimregan/apertium-en-pl
-cd apertium-en-pl/
-ls
-less apertium-en-pl.pl.dix 
-cd ..
-git clone https://github.com/jimregan/apertium-en-ca
-git clone https://github.com/jimregan/apertium-ga-gd
-sudo apt-get install pdf2djvu 
-pdf2djvu ~/Downloads/Adama_Mickiewicza_Konrad_Wallenrod_i_Gra.pdf 
-pdf2djvu ~/Downloads/Adama_Mickiewicza_Konrad_Wallenrod_i_Gra.pdf > /tmp/QwQOAAAAIAAJ.djvu
-wget 'https://books.googleusercontent.com/books/content?req=AKW5QadkwEkpkPkt2vbJuelqwlmzq6jgiT7GqQvo3bEBzCTuO2Knza9kUU7lillpWSer1ODCJuApMezl3Rijwgt3I0ySD8m6q8C7-BB4-xCcjnEIdDNLBTLsf187nwxPOkQFlR7cTZI1lv-PaWlo_OOfw9qCHGCQYd7ztCUL7b73VkQTBVTV78McTEN9xWf9iOjEkrRWJdLiQg4-mX7WIPUTNzC3DB0PrTrxTtSOpQW0CBB0XgbE5aYLpYdCbUVLW1n7rMsTSwycAxIMznVyt6TXh8BHN0dCKC4KV7t9LNl4AxBNqUDSb-o' -O The_Books_and_the_Pilgrimage_of_the_Poli.pdf
-pdf2djvu The_Books_and_the_Pilgrimage_of_the_Poli.pdf > /tmp/The_Books_and_the_Pilgrimage_of_the_Poli.djvu
-cd /tmp/
-cp The_Books_and_the_Pilgrimage_of_the_Poli.djvu The_Books_and_the_Pilgrimage_of_the_Poli.orig.djvu
-djvu -d The_Books_and_the_Pilgrimage_of_the_Poli.djvu 1
-djvm -d The_Books_and_the_Pilgrimage_of_the_Poli.djvu 1
-cp The_Books_and_the_Pilgrimage_of_the_Poli.orig.djvu The_Books_and_the_Pilgrimage_of_the_Poli.djvu 
-djvm -d The_Books_and_the_Pilgrimage_of_the_Poli.djvu 1
-rm 16RNC\ -187\ Kennedy-Humphrey\ Debate\,\ 1960\ WV\ Primary-oFk7dgS8V18.*
-ls *djvu
-djvm -d QwQOAAAAIAAJ.djvu 1
-cd ~/disk/Playing/cling-run/
-ls
-find . -name cling
-
-find . -name cling -type f
-./inst/bin/cl
-./inst/bin/cling 
-git diff
-git branch
-git add apertium-en-pt.en-pt.t1x 
-git commit -m 'merge some macro changes from en-es'
-git push mine master 
-git push origin  master 
-make
-vi apertium-en-pt.en-pt.t1x 
-git diff
-git log
-git checkout -b merge-en-es
-git add apertium-en-pt.en-pt.t1x 
-git commit -m 'more merge'
-git checkout master
-git log
-git revert 5d6170
-git push origin  master 
-git checkout merge-en-es 
-vi Makefile.am 
-sh autogen.sh 
-make
-vi Makefile.am 
-sh autogen.sh 
-make
-ls
-git add Makefile.am translate-to-default-equivalent.xsl 
-git commit -m 'dust off'
-git push origin master 
-echo this is a test|apertium -d . en-pt
-ls
-git remote add theirs https://github.com/apertium/apertium-en-pt
-git push theirs master 
-ls
-git checkout -b testvoc
-cp ../apertium-en-es/testvoc-en-es testvoc-en-pt
-less testvoc-en-pt 
-git add testvoc-en-pt 
-git commit -m 'copy testvoc script from en-es'
-bash testvoc-en-pt 
-ls
-git status
 cat 828.expand 
 ls
 zcat comp--.expand.gz 
@@ -1998,3 +1912,89 @@ git add spacy/lang/pl/tokenizer_exceptions.py
 git commit -m 'more exceptions'
 git push mine polish-more-tokens 
 ssh jimregan
+cd ~/disk/Playing/
+git clone https://github.com/RReverser/serde-xml-rs
+git clone https://github.com/cjgdev/aho_corasick
+git clone https://github.com/tiny-dnn/tiny-dnn.git
+cd tiny-dnn/
+ls
+mkdir build
+cd build
+cmake -DBUILD_EXAMPLES=ON ..
+make
+apt-cache search protobuf
+sudo apt-get install mkdir build
+sudo apt-get install cmake -DBUILD_EXAMPLES=ON ..
+sudo apt-get install libprotobuf-dev libprotoc-dev 
+apt-cache search nnpack
+apt-cache search cblas
+apt-cache search opencl
+make
+file /usr/bin/c++
+ls /etc/alternatives/c++
+ls -al /etc/alternatives/c++
+ls
+less caffe.pb.cc 
+ls ..
+less ../examples/caffe_converter/caffe_converter.cpp 
+cd ..
+git clone https://github.com/glecorve/rnnlm2wfst.git
+cd rnnlm2wfst/
+ls
+git pull origin master 
+sh install.sh 
+bash install.sh 
+ls
+cd rnnlm-0.2b/
+ls
+make
+ls src/
+cd src/
+ls
+make
+ls
+cd ../bin/
+ls
+./rnn2fst 
+cd ../../openfst-1.3.2/
+ls
+make
+ls
+cd ../
+ls
+cd rnnlm-0.2b/
+ls
+make
+make clean
+ls
+make
+ls
+cd src/
+ls
+make
+ls
+ls ../bin/
+cd ../bin/
+./rnn2fst 
+cd ..
+ls
+cd ..
+ls
+less install.sh 
+cd ..
+git clone https://github.com/facebookresearch/StarSpace
+cd StarSpace/
+make
+ls
+./starspace 
+cd ..
+git clone https://github.com/facebookresearch/tdfbanks
+git clone https://github.com/salesforce/pytorch-qrnn/
+git clone https://github.com/salesforce/nonauto-nmt/
+ls
+cd Corpora
+du .
+svn up
+ls
+du asr_data_irish/
+ls
