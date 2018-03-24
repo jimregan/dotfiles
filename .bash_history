@@ -1,16 +1,3 @@
-git revert f68f2e1c11f2c4067044e63a22488088e7fa5be3
-git revert 908237a760029a29d4b55e978462e318b3c929e9
-git diff
-vi apertium-pl-uk.uk.dix 
-git diff
-git status
-git log
-vi apertium-pl-uk.uk.dix 
-git diff
-vi apertium-pl-uk.uk.dix 
-git diff
-git status
-git revert --continue
 git diff
 vi apertium-pl-uk.uk.dix 
 git add apertium-pl-uk.uk.dix 
@@ -1998,3 +1985,16 @@ ls -al hts/hts_voices/tcd_gd_anb_hts_108k/
 ls -al hts/hts_voices/tcd_gd_anb_hts_36k/
 ls
 ls haralds_unsorted/
+cd ~/disk/Playing/
+ls
+cd wolne-lektury-audio-corpus/
+ls
+du .
+ls
+ls icuplay/
+du .
+cd ..
+rsync -a wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing
+rsync -azP wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing/wolne
+rsync -azP --exclude=audio/ wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing/wolne
+rsync -azP wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing/wolne
