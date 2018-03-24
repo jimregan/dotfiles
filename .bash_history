@@ -1,17 +1,3 @@
-git cherry-pick --abort
-ls
-git log
-git cherry-pick 0d487688f59307ac6c39fa79ba8cf110327c5da2
-git cherry-pick 6fa11fab037107152dd940cd4c2dd70065cb3281
-git diff
-cp ~/Downloads/apertium-en-lt.lt.dix .
-git diff
-git add apertium-en-lt.lt.dix 
-git commit -m 'original monodix (svn: 4146)'
-git status
-git log
-git cherry-pick 1ba23a17e4f10564e92760347d8a5630bfed51ce
-git cherry-pick 896006d61df16d7e20ddf4f94923b6fcb4257b88
 git cherry-pick b2da9ffbe492d3f082f929f449ae5b19d2c88410
 git log
 git cherry-pick bc57c4c09bef09e22fb693770003befb50aa99a2
@@ -1998,3 +1984,17 @@ du -k UISC/ ga_*
 du -k asr_data_irish/
 mkdir /media/jim/TOSHIBA/Corpora
 rm -rf /media/jim/TOSHIBA/ga_UL/
+cd /media/jim/408C-AC9A/
+cd audio/
+du -k .
+ls
+du -k .
+df
+du -k .
+df
+cd 
+df
+cd disk/Playing/Corpora
+du -k ga_UL/
+cp -r ga_UL/ /media/jim/408C-AC9A/
+df
