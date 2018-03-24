@@ -1,17 +1,3 @@
-git add apertium-en-pt.en-pt.dix 
-git commit -m 'fix gato'
-less apertium-en-pt.en-pt.dix 
-grep '<s n="n"/></r>' apertium-en-pt.en-pt.dix 
-cp ~/disk/Playing/asvn/1/apertium-es-pt/apertium-es-pt.pt.dix apertium-en-pt.pt.dix 
-git diff
-git status
-git stash
-git log
-git checkout master 
-git cherry-pick df9d3a
-git log
-git push origin master 
-ls
 git checkout merge-en-es 
 git status
 echo en-pt.autobiltmp.dix >> .gitignore 
@@ -1998,3 +1984,17 @@ ls sphinx4/
 find cmusphinx-alignment-example -type f
 find cmusphinx-alignment-example -type f|zip /media/jim/KINGSTON/sphinxalign.zip -@
 df
+cd /tmp
+unzip ~/Downloads/frequency-ga.zip 
+less frequency.txt 
+unzip ~/Downloads/pota-focal.zip 
+less lexicon.xml 
+less frequency.txt 
+ls
+mv The_Books_and_the_Pilgrimage_of_the_Poli.* ~/disk/desktop/3/
+ls
+ls *djvu
+mv QwQOAAAAIAAJ.djvu ~/disk/desktop/3/
+ls
+less snuv
+less snuv-toks 
