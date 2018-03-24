@@ -1,82 +1,3 @@
-cat 828.expand 
-ls
-zcat comp--.expand.gz 
-ls -al
-git status
-rm config.in~ 828.expand comp*
-git status
-rm errors--
-rm errors--.superficial 
-ls
-vi testvoc-en-pt 
-git checkout master 
-less apertium-en-pt.pt.dix 
-ls
-git branch
-vimdiff apertium-en-pt.en-pt.t1x ../apertium-en-es/apertium-en-es.en-es.t1x 
-vi apertium-en-pt.en-pt.t1x 
-make
-vi apertium-en-pt.en-pt.t1x 
-vimdiff apertium-en-pt.en-pt.t1x ../apertium-en-es/apertium-en-es.en-es.t1x 
-make
-git diff
-vi ../apertium-en-es/apertium-en-es.en-es.t1x 
-cd ../apertium-en-es/
-git diff
-vi apertium-en-es.en-es.t1x 
-git diff
-vi apertium-en-es.en-es.t1x 
-git diff
-cat apertium-en-es.en-es.t1x |perl -ane 's/[ \t]*$//;print'
-cat apertium-en-es.en-es.t1x |perl -ane 's/[ \t]*$//;print' > tmp
-mv tmp apertium-en-es.en-es.t1x 
-git diff
-cat apertium-en-es.en-es.t2x |perl -ane 's/[ \t]*$//;print' > tmp
-mv tmp apertium-en-es.en-es.t2x 
-git diff
-git diff apertium-en-es.en-es.t2x
-git add apertium-en-es.en-es.t1x 
-git add apertium-en-es.en-es.t2x 
-cat apertium-en-es.en-es.t3x |perl -ane 's/[ \t]*$//;print' > tmp
-git diff
-mv tmp apertium-en-es.en-es.t3x 
-git diff
-git add apertium-en-es.en-es.t3x 
-git remote show
-git remote show origin 
-cd ../apertium-en-pt/
-cat apertium-en-pt.en-pt.t1x |perl -ane 's/[ \t]*$//;print' > tmp
-mv tmp apertium-en-pt.en-pt.t1x 
-git diff
-git add apertium-en-pt.en-pt.t1x 
-git commit -m 'trailing whitespace'
-git checkout master 
-cat apertium-en-pt.en-pt.t1x |perl -ane 's/[ \t]*$//;print' > tmp
-mv tmp apertium-en-pt.en-pt.t1x 
-git diff
-git add apertium-en-pt.en-pt.t1x 
-git commit -m 'trailing whitespace'
-git push origin master 
-git branch
-git checkout merge-en-es 
-vimdiff apertium-en-pt.en-pt.t1x ../apertium-en-es/apertium-en-es.en-es.t1x 
-vi apertium-en-pt.en-pt.t1x 
-git diff
-make
-git add apertium-en-pt.en-pt.t1x 
-git commit -m 'finished(?) merge'
-echo this is a test|apertium -d . en-pt
-echo He is going to wait|apertium -d . en-pt
-echo the dog |apertium -d . en-pt
-echo the cat |apertium -d . en-pt
-grep cat apertium-en-pt.en-pt.dix 
-grep '>cat<' apertium-en-pt.en-pt.dix 
-grep gato apertium-en-pt.pt.dix 
-vi apertium-en-pt.pt.dix 
-vi apertium-en-pt.en-pt.dix 
-make
-echo the cat |apertium -d . en-pt
-echo she is the cat |apertium -d . en-pt
 git add apertium-en-pt.en-pt.dix 
 git commit -m 'fix gato'
 less apertium-en-pt.en-pt.dix 
@@ -1998,3 +1919,82 @@ svn up
 ls
 du asr_data_irish/
 ls
+ls
+cd TOSHIBA/
+ls
+ls VIFAX/
+cd ..
+ls
+ls jim/
+ls
+ls 408C-AC9A/
+ls 408C-AC9A/djvu/
+ls 408C-AC9A/wordnet/
+ls
+ls 408C-AC9A/
+ls 408C-AC9A/ga-en/
+ls 408C-AC9A/polish/
+ls 408C-AC9A/music/
+ls 408C-AC9A/corpus 
+ls 408C-AC9A/
+ls 408C-AC9A/NCICorpus_text-utf8/
+ls 408C-AC9A/NCICorpus_text-utf8/CNG-1/
+ls 408C-AC9A/NCICorpus_text-utf8/CNG-1/cng_inf/itan0434.xml 
+less 408C-AC9A/NCICorpus_text-utf8/CNG-1/cng_inf/itan0434.xml 
+cd ../Playing/
+cd sphinx-alignment/
+ls
+du .
+du -m .
+ls
+ls sphinx4/
+ls cmusphinx-alignment-example/
+ls cmusphinx-alignment-example/cmusphinx-clarinpl/
+cd cmusphinx-alignment-example/
+ls
+rm *.wav
+rm *.mp3
+cd ..
+du -m .
+ls
+cd cmusphinx-alignment-example/
+ls
+ls cmusphinx-clarinpl/
+du .
+du -m .
+ls
+cd ..
+ls
+du -m sphinx4/
+du -m .
+du -m cmusphinx-alignment-example/
+cd cmusphinx-alignment-example/
+git status
+git log
+ls
+cd ..
+ls
+cd ..
+cd spinx/
+ls
+ls teanglann/
+ls harald/
+ls
+ls clarinpl/
+du -m .
+ls teanglann/wav/
+ls
+find . -type f
+find . -type f|grep -v teanglann/wav/
+find . -type f|grep -v teanglann/wav/|grep -v clarinpl/feat/
+find . -type f|grep -v teanglann/wav/|grep -v clarinpl/feat/|zip /tmp/spinx.zip -@
+find . -type f|grep -v teanglann/wav/|grep -v clarinpl/feat/|grep -v teanglann/feat/|zip /tmp/spinx.zip -@
+ls -al /tmp/spinx.zip 
+cp /tmp/spinx.zip /media/jim/KINGSTON/
+df
+cd ../sphinx-alignment/
+ls
+ls sphinx4/
+find cmusphinx-alignment-example -type f
+find cmusphinx-alignment-example -type f|zip /media/jim/KINGSTON/sphinxalign.zip -@
+df
