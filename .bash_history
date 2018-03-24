@@ -1,25 +1,3 @@
-git cherry-pick b2da9ffbe492d3f082f929f449ae5b19d2c88410
-git log
-git cherry-pick bc57c4c09bef09e22fb693770003befb50aa99a2
-cp ~/Downloads/apertium-en-lt.lt.dix .
-git status
-git diff
-git add apertium-en-lt.lt.dix 
-git commit -m 'partial cherry-pick of bc57c4c09bef09e22fb693770003befb50aa99a2'
-git log
-ls
-git cherry-pick decf3486ba08108121d005fe8010defd645e0e50
-git checkout master 
-git revert decf3486ba08108121d005fe8010defd645e0e50
-git push origin cc0 
-git push origin master 
-ls
-git branch
-git checkout cc0 
-ls
-git log
-git cherry-pick 432803582d276055f6896e57e3ca5c48aba4525c
-git diff
 git cherry-pick --abort
 git checkout -b cc0-1 6160cc 
 git cherry-pick 432803582d276055f6896e57e3ca5c48aba4525c
@@ -1997,4 +1975,26 @@ df
 cd disk/Playing/Corpora
 du -k ga_UL/
 cp -r ga_UL/ /media/jim/408C-AC9A/
+df
+cd disk/desktop/3/
+mkdir youtube-ga-more
+youtube-dl N-11Hwb7JnQ
+cd ../..
+mkdir 32g-pendrive
+cd 32g-pendrive/
+mount
+cp -r /media/jim/TOSHIBA/ .
+ls
+ls TOSHIBA/
+rm /tmp/Mollys.Game.2017.DVDScr.XVID.AC3.HQ.Hive-CM8.srt 
+ls TOSHIBA/labcds/
+ls /mnt/
+cp -r /media/jim/ .
+ls
+rm -rf jim/
+cp -r /media/jim/408C-AC9A/ .
+cp -r /media/jim/KINGSTON/ .
+ls KINGSTON/
+unzip -l KINGSTON/CNGv1-UNICODE.zip 
+cp KINGSTON/CNGv1-UNICODE.zip /tmp/
 df
