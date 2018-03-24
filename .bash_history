@@ -1,15 +1,3 @@
-git diff
-vi apertium-pl-uk.uk.dix 
-git add apertium-pl-uk.uk.dix 
-git commit -m 'revert 908237a760029a29d4b55e978462e318b3c929e9 (?)'
-git status
-git revert --continue
-git revert --abort
-git checkout master
-git branch -D cc0
-git branch
-git branch -D CC0 
-git checkout -b CC0 83d8580046696207485926bf2dd0ceb66074245e
 git log
 ls
 git rm autogen.sh AUTHORS ChangeLog COPYING configure.ac modes.xml uk-pl.prob pl-uk.prob README NEWS dev/*
@@ -1998,3 +1986,15 @@ rsync -a wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing
 rsync -azP wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing/wolne
 rsync -azP --exclude=audio/ wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing/wolne
 rsync -azP wolne-lektury-audio-corpus/ jim@jimregan:/Users/jim/Playing/wolne
+cd disk/Playing/
+ls
+cd spaCy/
+ls
+git status
+git diff
+git branch
+git checkout -b polish-more-tokens
+git add spacy/lang/pl/tokenizer_exceptions.py 
+git commit -m 'more exceptions'
+git push mine polish-more-tokens 
+ssh jimregan
