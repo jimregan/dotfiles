@@ -1,56 +1,3 @@
-git checkout merge-en-es 
-git status
-echo en-pt.autobiltmp.dix >> .gitignore 
-echo pt-en.autobiltmp.dix >> .gitignore 
-git diff
-git add .gitignore 
-git commit -m update
-git status
-echo modes/ >> .gitignore 
-git status
-echo '*.mode' >> .gitignore 
-git commit -m 'update'
-git add .gitignore 
-git commit -m 'update'
-git status
-ls
-cat .gitignore 
-git push origin merge-en-es 
-git checkout master 
-git cherry-pick a019658
-git cherry-pick 
-git cherry-pick  85c8c10
-git log
-git push origin master 
-git status
-git checkout merge-en-es 
-ls
-cat ChangeLog 
-grep adep apertium-en-pt.pt.dix 
-grep '<s n="n"/></r>' apertium-en-pt.en-pt.dix 
-grep '<s n="n"/></r>' apertium-en-pt.en-pt.dix  > tofix
-cat tofix 
-cat tofix |awk -F'<r>' '{print $2}'|awk -F'<s' '{print $1}'
-cat tofix |awk -F'<r>' '{print $2}'|awk -F'<s' '{print $1}'|sed -e 's/<b\/>/ /g'
-cat tofix |awk -F'<r>' '{print $2}'|awk -F'<s' '{print $1}'|sed -e 's/<b\/>/ /g' > tofix-lems
-cat tofix-lems |lt-proc pt-en.automorf.bin 
-vi apertium-en-pt.en-pt.dix 
-cat tofix-lems |lt-proc pt-en.automorf.bin 
-cat tofix-lems |lt-proc pt-en.automorf.bin  > tofix-anal
-vi tofix-anal 
-grep '<sp>' tofix-anal 
-grep '<f><sg>' tofix-anal 
-grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'
-grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq
-grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' '
-echo teia de aranha|lt-proc pt-en.automorf.bin 
-grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > fsg
-grep '<mf><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > mfsg
-grep '<m><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > msg
-grep '<m><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > msp
-grep '<mf><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > mfsp
-grep '<f><sp>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq|grep ' ' > fsp
-less fsg 
 grep '<f><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > fsg
 grep '<mf><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > mfsg
 grep '<m><sg>' tofix-anal |awk -F'^' '{print $2}'|awk -F/ '{print $1}'|sort|uniq > msg
@@ -1998,3 +1945,56 @@ mv QwQOAAAAIAAJ.djvu ~/disk/desktop/3/
 ls
 less snuv
 less snuv-toks 
+cd 
+ls
+ls Downloads/
+ls disk/
+ls disk/desktop/
+mkdir disk/desktop/3
+ls
+ls Videos/
+ls yangpp/
+ls yangpp/yangpp/
+mv yangpp/ disk/desktop/3/
+mv Calibre\ Library/ disk/desktop/3/
+mv *~ disk/desktop/3/
+mv *.txt disk/desktop/3/
+mv *.zip disk/desktop/3/
+ls
+mv a.out irish-* kaldi-new-eg-pull mech.pl mozilla.pdf mxnet-example.pl disk/desktop/3/
+mv *aud *aud.x disk/desktop/3/
+mv s[ac-z]* disk/desktop/3/
+ls
+mv tes* disk/desktop/3/
+mv cmusphinx/ disk/desktop/3/
+mv disamb/ disk/desktop/3/
+ls IA-Audio/
+mv IA-Audio/ disk/desktop/3/
+mv NetBeansProjects/ disk/desktop/3/
+mv nltk_data/ disk/desktop/3/
+mv tg4-poetry.tsv thing-she-pasted togha* trine.pl various-irish-youtube-things.tsv xml.pl disk/desktop/3/
+mv logs/ disk/desktop/3/
+ls perl5/
+ls perl5/bin/
+ls
+mv IdeaProjects/ disk/desktop/3/
+mv idea-IC-172.3317.76/ disk/desktop/3/
+ls
+ls projects/
+mv projects/ pron.tsv LanguageTool.log Joyce/ nematus-gru.py hyde.pl google-trans-frwiki-bio ga-cmudict foo.cc doing robinson-crusoe.txt-01.txt.* qa-notes-ga disk/desktop/3/
+mv public_html/ disk/desktop/3/
+ls Public/
+ls
+mv algdiff.pl 0001-ossian.patch aceh.translit ci/ netbeans-8.2/ niamhbot.pl open-tabs* pl-breaks pl-breaks2 disk/desktop/3/
+ls
+mv pl-breaks1 current-tabs2 data/ practice/ disk/desktop/3/
+ls
+ls Desktop/
+ls Documents/
+mv Documents/ disk/desktop/3/
+mv Pictures/ Downloads/ disk/desktop/3/
+ls
+ls Public/
+ls Videos/
+ls Music/
+ls bin/
