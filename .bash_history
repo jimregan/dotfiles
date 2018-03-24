@@ -1,86 +1,3 @@
-git diff
-git log
-git diff
-vi apertium-en-mt.mt.metadix 
-#git commit -m 'cherry-pick a7b67dacba52675aea1888e85faefc19fa43c96c'
-git add apertium-en-mt.mt.metadix 
-git commit -m 'cherry-pick a7b67dacba52675aea1888e85faefc19fa43c96c'
-git cherry-pick c760a117f61df6c6b3e2920f9d01cdf522d46290 
-git cherry-pick 43619209a3da25d4440720535e108eb6144ab299
-git diff
-git log
-git diff
-git cherry-pick --abort 
-git cherry-pick 43619209a3da25d4440720535e108eb6144ab299
-vi apertium-en-mt.en-mt.dix 
-git add apertium-en-mt.en-mt.dix 
-git commit -m 'cherry-pick 43619209a3da25d4440720535e108eb6144ab299'
-git cherry-pick 5ba32013528e09f4188d417c9efa792ea007fc03
-git diff
-vi apertium-en-mt.mt.metadix 
-git add apertium-en-mt.mt.metadix 
-git commit -m 'cherry-pick 5ba32013528e09f4188d417c9efa792ea007fc03'
-git cherry-pick adcde90354e81c9167101fcd544625a6e95ff098
-git cherry-pick 40f30e89e4a52c71fc9031bb6d542c8ab0525ad8
-git cherry-pick 52084649706cddcce05a7d8e73f0a1bda27a527e
-git cherry-pick 3a5a690094fa5829deb88b6ab6fb9e720c3b5831
-git cherry-pick c0771f108189bc06a1510285df8c2ff9f52b3e30
-git log
-ls
-less ../apertium-en-lt/LICENSE 
-cp ../apertium-en-lt/LICENSE .
-ls
-git rm *.xsl
-git commit -m 'rm GPL stylesheets'
-git add LICENSE 
-git commit -m 'add LICENSE'
-git status
-ls
-git branch
-git push origin cc0
-cd ../apertium-en-lt/
-ls
-less LICENSE 
-less apertium-en-lt.lt.dix 
-git log
-less apertium-en-lt.en-lt.dix 
-git branch
-git checkout -b recreate
-ls
-cp ~/Downloads/apertium-en-lt.lt.dix .
-git add apertium-en-lt.lt.dix 
-git diff
-ls
-less apertium-en-lt.lt.dix 
-git status
-git diff
-git log
-git stash
-git checkout -b 6160cce0ce89ccf120853fb02c882716e68da4d4
-ls
-cp ~/Downloads/apertium-en-lt.lt.dix .
-git add apertium-en-lt.lt.dix 
-git commit -m 'original monodix (svn: 4146)'
-ls
-git log
-git branch
-git checkout master
-git checkout -b cc0 6160cce0ce89ccf120853fb02c882716e68da4d4
-git checkout -b cc0 6160cc 
-git branch
-git log
-git checkout master
-git branch -D cc0
-git checkout -b cc0 6160cc 
-git log
-git checkout 6160cce0ce89ccf120853fb02c882716e68da4d4 
-git log
-git log > /tmp/log
-git checkout cc0 
-git cherry-pick 6fa11fab037107152dd940cd4c2dd70065cb3281
-git status
-git diff
-ls
 git cherry-pick --abort
 ls
 git log
@@ -1998,3 +1915,86 @@ kill -9 14132
 top
 kill -9 14136
 top
+cd disk/Playing/
+mkdir handpose
+cd handpose/
+ls
+mkdir msra
+cd msra/
+echo https://jimmysuen.github.io/ > url
+wget https://www.dropbox.com/s/c91xvevra867m6t/cvpr15_MSRAHandGestureDB.zip?dl=0
+mv cvpr15_MSRAHandGestureDB.zip\?dl\=0  cvpr15_MSRAHandGestureDB.zip
+unzip -l cvpr15_MSRAHandGestureDB.zip 
+unzip cvpr15_MSRAHandGestureDB.zip 
+df
+ls
+cd /tmp/
+ls
+ls *zi[
+ls *zip
+mkdir cng
+cd cng/
+unzip ../CNGv1-UNICODE.zip 
+ls
+cd UNICODE/
+ls
+less fiction/GM000060.SGM 
+cd ..
+ls
+cd UNICODE/
+ls
+find . -type f
+find . -type f|wc
+cd ~/disk/Playing/kaldi
+git status
+cd egs/
+ls
+cd harald/
+ls
+ls data/
+find . -type f
+find . -type f|zip /tmp/harald-kaldi.zip -@
+scp /tmp/harald-kaldi.zip jimregan:/tmp/
+cd ..
+ls
+cd snuv/
+ls
+git status
+git log
+git branch
+git push origin 
+git push  origin -a
+git push  origin snuv 
+git push  mine snuv 
+git push  mine shtooka 
+git push  mine pwr_polish 
+git push  mine teanglann 
+git status
+cd ../
+ls
+cd youtube-pl/
+ls
+du .
+find . -type f
+find . -type f|grep -v 'm4a$'
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|while read i;do file $i;done
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|grep -v 'opus$'|while read i;do file $i;done
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|grep -v 'opus$'|grep -v 'mkv$'|while read i;do file $i;done
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|grep -v 'opus$'|grep -v 'mkv$'|grep -v 'webm$'|while read i;do file $i;done
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|grep -v 'opus$'|grep -v 'mkv$'|grep -v 'webm$'|grep -v 'part-Seg'|while read i;do file $i;done
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|grep -v 'opus$'|grep -v 'mkv$'|grep -v 'webm$'|grep -v 'part-Seg'|while read i;do file $i;done|zip /tmp/test.zip -@
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|grep -v 'opus$'|grep -v 'mkv$'|grep -v 'webm$'|grep -v 'part-Seg'|zip /tmp/test.zip -@
+find . -type f|grep -v 'm4a$'|grep -v 'mp4$'|grep -v 'opus$'|grep -v 'mkv$'|grep -v 'webm$'|grep -v 'part-Seg'|grep -v 'part$'|zip /tmp/test.zip -@
+ls -al /tmp/test.zip 
+mv /tmp/test.zip /tmp/youtubepl.zip
+scp /tmp/youtubepl.zip jimregan:/tmp
+youtube-dl BOhEBWVHvRo
+cd ..
+cd Playing/Corpora
+ls
+du -k asr_data_irish/
+du -k UISC/ ga_*
+du -k asr_data_irish/
+mkdir /media/jim/TOSHIBA/Corpora
+rm -rf /media/jim/TOSHIBA/ga_UL/
