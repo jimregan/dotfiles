@@ -61,6 +61,13 @@ sub do503 {
 	print "<http://www.w3.org/2011/http-statusCodes#ServiceUnavailable>";
 	print " .\n";
 }
+sub do200 {
+	my $inurl = shift;
+	print "<$inurl> ";
+	print "<http://www.w3.org/2011/http#statusCodeValue> ";
+	print "<http://www.w3.org/2011/http-statusCodes#OK>";
+	print " .\n";
+}
 
 while (<>) {
 	if (/--[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] \d\d:\d\d:\d\d--  (.*)/) {
@@ -68,6 +75,9 @@ while (<>) {
 		$url =~ s/\(try: ?[0-9]*\) *//;
 	}
 	if (/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] \d\d:\d\d:\d\d ERROR 404: Not Found/) {
+		do404 ($url);
+	}
+	if (/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] \d\d:\d\d:\d\d ERROR 404: NOT FOUND\./) {
 		do404 ($url);
 	}
 	if (/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] \d\d:\d\d:\d\d ERROR 302 Moved Temporarily/) {
@@ -121,6 +131,9 @@ while (<>) {
 	}
 	if (/application\/vnd.wap.xhtml\+xml/) {
 		do404 ($url);
+	}
+	if (/200 OK/) {
+		do200 ($url);
 	}
 	if (/Length: ([0-9]*) /) {
 		print "<$url> <http://rdf.ookaboo.com/object/sizeInBytes> \"$1\" .\n";
