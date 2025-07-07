@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/joregan/pyfestus/tests'
+let g:netrw_dirhist_5='/Users/joregan/Playing/g2p_correction/app'
+let g:netrw_dirhist_4='/private/tmp/rdtmp'
+let g:netrw_dirhist_3='/private/tmp/not-the-30pct-seminar/edgy-joke'
+let g:netrw_dirhist_2='/Users/joregan/Playing/sync_asr/.git'
+let g:netrw_dirhist_1='/private/tmp/foo'
