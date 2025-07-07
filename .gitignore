@@ -68,3 +68,5 @@ IdeaProjects/
 .config/enchant/*.dic
 .config/enchant/*.dic
 .kde/share/config/kdialogrc
+.zsh_sessions/
+.bash_sessions/
