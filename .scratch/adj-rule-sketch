@@ -1,9 +1,0 @@
-AdjBase | <adj> | <adj> | 1-1 |  |  | big | mór
- | <adj><grade=comp> | níos<adv> <adj><grade=comp> |0-1 1-1 | | | bigger |
- | <adj><grade=sup> | is<adv> <adj><grade=comp> | 0-1 1-1 | | | biggest |
- | more<adv> <adj> | níos<adv> <adj><grade=comp> | 1-1 2-2 | | | more expensive |
- | most<adv> <adj> | is<adv> <adj><grade=comp> | 1-1 2-2 | | | more expensive |
-
-AdjP | <AdjBase> | <AdjBase> | 1-1 | | | | |
-AdjP | <AdjBase> <cnjcoo> <AdjBase> | <AdjBase> <cnjcoo> <AdjBase> | 1-1 2-2 3-3 |  |  | big and small | mór agus beag
-AdjP | <AdjBase> <cm> <AdjBase> <cnjcoo> <AdjBase> | <AdjBase> <AdjBase> <cnjcoo> <AdjBase> | 1-1 2-0 3-2 4-3 5-4 |  |  | orange, big and small | oráiste mór agus beag
