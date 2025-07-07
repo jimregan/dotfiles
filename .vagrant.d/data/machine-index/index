@@ -1,1 +1,0 @@
-{"version":1,"machines":{"10e1db0def9340719440a7e312964efe":{"local_data_path":"/Users/jim/Playing/vagrant-ubuntu/.vagrant","name":"default","provider":"virtualbox","state":"saved","vagrantfile_name":null,"vagrantfile_path":"/Users/jim/Playing/vagrant-ubuntu","updated_at":null,"extra_data":{"box":{"name":"ubuntu/trusty32","provider":"virtualbox","version":"14.04"}}}}}
