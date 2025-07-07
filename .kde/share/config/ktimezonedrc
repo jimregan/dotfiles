@@ -1,5 +1,0 @@
-[TimeZones]
-LocalZone=Europe/Dublin
-ZoneinfoDir=/usr/share/zoneinfo
-Zonetab=/usr/share/zoneinfo/zone.tab
-ZonetabCache=
