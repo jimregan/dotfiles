@@ -1,0 +1,31 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": false,
+        "File": ""
+    },
+    "Session": {
+        "Bookmarks": [
+        ],
+        "CurrentFile": "../../qpsr-tex/voice-source-studies/vss.bib",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "../../qpsr-tex/voice-source-studies/example.tex",
+                "FirstLine": 16,
+                "FoldedLines": "",
+                "Line": 50
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "../../qpsr-tex/voice-source-studies/vss.bib",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            }
+        ],
+        "MasterFile": ""
+    }
+}

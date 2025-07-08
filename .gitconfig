@@ -1,3 +1,12 @@
 [user]
 	name = Jim O'Regan
-	email = jaoregan@tcd.ie
+	email = joregan@kth.se
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
