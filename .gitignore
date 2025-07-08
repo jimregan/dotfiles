@@ -75,3 +75,5 @@ IdeaProjects/
 .vscode-server/data/
 .vscode-server/bin/
 .vscode-server/extensions/
+.mozilla/
+.gnupg/
