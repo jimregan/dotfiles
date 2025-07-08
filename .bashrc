@@ -116,18 +116,24 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ `uname` = "Linux" ]
-then
-    export PATH=$PATH:/usr/local/cuda-8.0/bin/
-    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-    alias config='/usr/bin/git --git-dir=/home/jim/.cfg/ --work-tree=/home/jim'
-	if [ -d $HOME/torch ]
-	then
-	    . $HOME/torch/install/bin/torch-activate
-	fi
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/joregan/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/joregan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/joregan/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/joregan/miniconda3/bin:$PATH"
+    fi
 fi
-if [ `uname` = "Darwin" ]
-then
-	export PATH=$PATH:/usr/local/bin/
-	alias config='/usr/local/bin/git --git-dir=/Users/jim/.cfg/ --work-tree=/Users/jim'
-fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+PATH="/home/joregan/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/joregan/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/joregan/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/joregan/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/joregan/perl5"; export PERL_MM_OPT;

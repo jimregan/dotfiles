@@ -1,0 +1,4 @@
+/home/joregan/miniconda3
+/home/joregan/miniconda3/envs/inass
+/home/joregan/miniconda3/envs/wolne
+/home/joregan/miniconda3/envs/whisperx
