@@ -70,3 +70,8 @@ IdeaProjects/
 .kde/share/config/kdialogrc
 .zsh_sessions/
 .bash_sessions/
+.wdm/drivers/
+.vscode/extensions/
+.npm/_cacache/
+.npm/_npx/
+.cargo/registry/
