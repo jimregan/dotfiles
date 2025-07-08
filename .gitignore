@@ -70,3 +70,10 @@ IdeaProjects/
 .kde/share/config/kdialogrc
 .zsh_sessions/
 .bash_sessions/
+.sudo_as_admin_successful
+.cpan/
+.vscode-server/data/
+.vscode-server/bin/
+.vscode-server/extensions/
+.mozilla/
+.gnupg/
